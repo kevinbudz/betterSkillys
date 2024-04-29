@@ -1,0 +1,5659 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x76f" id="Frozen Chest">
+      <Group>Crystals</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <TrackLoot/>
+      <Texture>
+         <File>battleOryxObjects16x16</File>
+         <Index>0x10</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Size>120</Size>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>0</Exp>
+   </Object>
+   <Object type="0xe71" id="Event Chest Xmas">
+      <DisplayId>Freed Frozen Chest</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <KeepDamageRecord/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x466</Index>
+      </Texture>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>160</Size>
+      <Exp>1000</Exp>
+      <StasisImmune/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0x5b4a" id="Halloween Haunted Event Chest">
+      <DisplayId>Event Chest</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <KeepDamageRecord/>
+      <TrackLoot/>
+      <Texture>
+         <File>autumnNexusObjects16x16</File>
+         <Index>0x214</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x214</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x215</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x216</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x217</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <MaxHitPoints>90000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>0</Size>
+      <Exp>1000</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x5b46" id="Halloween Chest Helper">
+      <DisplayId>Event Chest</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <KeepDamageRecord/>
+      <Texture>
+         <File>autumnNexusObjects16x16</File>
+         <Index>0x214</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x214</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x215</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x216</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x217</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>100</Size>
+      <Exp>1000</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x5b47" id="Spooky Protector">
+      <DisplayId>Spooky</DisplayId>
+      <Group>Halloween Chest Protector</Group>
+      <Class>Character</Class>
+      <Enemy/>
+      <KeepDamageRecord/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Animation prob="1" period="0">
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d0</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d2</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d3</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d2</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e0</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e2</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e3</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e2</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f0</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f2</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f3</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f2</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f0</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f2</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f3</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f2</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f0</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f2</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f3</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f2</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e0</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e2</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e3</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e2</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d0</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d2</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d3</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d2</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d1</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Flying/>
+      <MaxHitPoints>15000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>100</Size>
+      <Exp>1</Exp>
+      <StasisImmune/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0x5b48" id="Pumpmkin Protector">
+      <DisplayId>Pumpmkin</DisplayId>
+      <Group>Halloween Chest Protector</Group>
+      <Class>Character</Class>
+      <Enemy/>
+      <KeepDamageRecord/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Animation prob="1" period="0">
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d4</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d5</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d6</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d7</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d6</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d5</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e4</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e5</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e6</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e7</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e6</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e5</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f4</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f5</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f6</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f7</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f6</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f5</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f4</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f5</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f6</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f7</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f6</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f5</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f4</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f5</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f6</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f7</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f6</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f5</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e4</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e5</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e6</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e7</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e6</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e5</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d4</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d5</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d6</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d7</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d6</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d5</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Flying/>
+      <MaxHitPoints>15000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>100</Size>
+      <Exp>1</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x5b49" id="Skull Protector">
+      <DisplayId>Skull</DisplayId>
+      <Group>Halloween Chest Protector</Group>
+      <Class>Character</Class>
+      <Enemy/>
+      <KeepDamageRecord/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Animation prob="1" period="0">
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d8</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1da</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1db</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1da</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e8</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1ea</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1eb</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1ea</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f8</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1fa</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1fb</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1fa</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f8</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1fa</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1fb</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1fa</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f8</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1fa</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1fb</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1fa</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1f9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e8</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1ea</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1eb</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1ea</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1e9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d8</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1da</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1db</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1da</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x1d9</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Flying/>
+      <Z>0</Z>
+      <MaxHitPoints>15000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>100</Size>
+      <Exp>1</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x20cb" id="Shaitan Voice">
+      <DisplayId>Shaitan the Advisor</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>battleOryxObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x20c7" id="Shaitan Event Chest">
+      <DisplayId>Event Chest</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <KeepDamageRecord/>
+      <TrackLoot/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x466</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>battleOryxObjects16x16</File>
+            <Index>0x01</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>battleOryxObjects16x16</File>
+            <Index>0x02</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>battleOryxObjects16x16</File>
+            <Index>0x03</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>battleOryxObjects16x16</File>
+            <Index>0x04</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>battleOryxObjects16x16</File>
+            <Index>0x05</Index>
+         </Texture>
+      </AltTexture>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>160</Size>
+      <Exp>1000</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x20c8" id="Shaitan Fire Golem">
+      <Group>Golems</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rMid</File>
+         <Index>0x0e</Index>
+      </AnimatedTexture>
+      <HitSound>monster/golems_hit</HitSound>
+      <DeathSound>monster/golems_death</DeathSound>
+      <Size>140</Size>
+      <MaxHitPoints>4000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Exp>20</Exp>
+      <Projectile id="0">
+         <ObjectId>Red Fire</ObjectId>
+         <Damage>100</Damage>
+         <Speed>45</Speed>
+         <LifetimeMS>4500</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Red Fire</ObjectId>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2500</LifetimeMS>
+         <Size>220</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x20c9" id="Shaitan Red Devil">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>57</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>7500</MaxHitPoints>
+      <Defense>25</Defense>
+      <Projectile id="0">
+         <ObjectId>Fire Bolt</ObjectId>
+         <Damage>130</Damage>
+         <Speed>90</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Fire Bolt</ObjectId>
+         <Damage>100</Damage>
+         <Speed>75</Speed>
+         <Size>80</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <StasisImmune/>
+      <StunImmune/>
+   </Object>
+   <Object type="0x20ca" id="Shaitan Blight">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>56</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>15000</MaxHitPoints>
+      <Defense>50</Defense>
+      <Projectile id="0">
+         <ObjectId>Blue Bolt Shot</ObjectId>
+         <Damage>160</Damage>
+         <Speed>90</Speed>
+         <Size>80</Size>
+         <LifetimeMS>2200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Blue Bolt Shot</ObjectId>
+         <Damage>130</Damage>
+         <Speed>75</Speed>
+         <Size>60</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <StasisImmune/>
+      <StunImmune/>
+   </Object>
+   <Object type="0x96f" id="Event Pinata">
+      <DisplayId>Pinata</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <TrackLoot/>
+      <KeepDamageRecord/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x8b</Index>
+      </Texture>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Sound id="0">weapon/firework</Sound>
+      <Defense>0</Defense>
+      <Size>160</Size>
+      <Exp>1000</Exp>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x744D" id="Event Chest">
+      <DisplayId>Event Chest</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <KeepDamageRecord/>
+      <TrackLoot/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x466</Index>
+      </Texture>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>160</Size>
+      <Exp>1000</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x6f9" id="Event Chest MotMG LH">
+      <DisplayId>Event Chest</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <KeepDamageRecord/>
+      <TrackLoot/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x8d</Index>
+      </Texture>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>160</Size>
+      <Exp>1000</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x6fa" id="Event Chest MotMG LH Helper">
+      <DisplayId>Mysterious Voice</DisplayId>
+      <Class>Character</Class>
+      <Size>0</Size>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x8d</Index>
+      </Texture>
+   </Object>
+   <Object type="0x6dc" id="Oryx Portal Helper">
+      <DisplayId>Oryx the Mad God</DisplayId>
+      <Class>Character</Class>
+      <Size>100</Size>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x0c</Index>
+      </Texture>
+   </Object>
+   <Object type="0x744F" id="Event Chest MotMG">
+      <DisplayId>Event Chest</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <TrackLoot/>
+      <KeepDamageRecord/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x8d</Index>
+      </Texture>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>160</Size>
+      <Exp>1000</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0xf28" id="Event Chest O1">
+      <DisplayId>Event Chest</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <TrackLoot/>
+      <KeepDamageRecord/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x8d</Index>
+      </Texture>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>160</Size>
+      <Exp>1000</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0xf29" id="Event Chest O2">
+      <DisplayId>Event Chest</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <KeepDamageRecord/>
+      <TrackLoot/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x8d</Index>
+      </Texture>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>160</Size>
+      <Exp>1000</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x36a1" id="Event Chest O2 Court">
+      <DisplayId>Event Chest</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <TrackLoot/>
+      <KeepDamageRecord/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x8d</Index>
+      </Texture>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>160</Size>
+      <Exp>1000</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x7513" id="Xmas Event Chest">
+      <DisplayId>Santa's Sleigh</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <KeepDamageRecord/>
+      <Texture>
+         <File>battleOryxObjects16x16</File>
+         <Index>0x20</Index>
+      </Texture>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>160</Size>
+      <Exp>1000</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3cdd" id="Realm Closed Event Chest">
+      <DisplayId>Event Chest</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <KeepDamageRecord/>
+      <Quest/>
+      <Level>20</Level>
+      <TrackLoot/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x466</Index>
+      </Texture>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>240</Size>
+      <Exp>1000</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x809d" id="Wandering Turkey Event Chest">
+      <DisplayId>Wandering Turkey</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <KeepDamageRecord/>
+      <Quest/>
+      <Level>20</Level>
+      <TrackLoot/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>135</Index>
+      </AnimatedTexture>
+      <HitSound>monster/chicken_hit</HitSound>
+      <DeathSound>monster/chicken_death</DeathSound>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Defense>5</Defense>
+      <Size>140</Size>
+      <ShadowSize>0</ShadowSize>
+      <Exp>1000</Exp>
+      <Projectile id="0">
+         <ObjectId>Chicken Leg</ObjectId>
+         <Damage>80</Damage>
+         <Speed>45</Speed>
+         <LifetimeMS>4500</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <ConditionEffect duration="1">Bleeding</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Turkey Leg</ObjectId>
+         <Damage>90</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>3500</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <Boomerang/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Turkey Body</ObjectId>
+         <Damage>125</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>900</LifetimeMS>
+         <Size>130</Size>
+         <MultiHit/>
+         <Wavy/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Turkey Combo</ObjectId>
+         <Damage>105</Damage>
+         <Speed>45</Speed>
+         <LifetimeMS>4500</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Feather</ObjectId>
+         <Damage>80</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>2950</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <ConditionEffect duration="2">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Chicken Leg</ObjectId>
+         <Damage>80</Damage>
+         <Speed>45</Speed>
+         <LifetimeMS>2950</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <ConditionEffect duration="1">Bleeding</ConditionEffect>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Feather</ObjectId>
+         <Damage>70</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>1400</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <ConditionEffect duration="2">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>Turkey Leg</ObjectId>
+         <Damage>90</Damage>
+         <Speed>45</Speed>
+         <LifetimeMS>4500</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <Boomerang/>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>Chicken Leg</ObjectId>
+         <Damage>95</Damage>
+         <Speed>45</Speed>
+         <LifetimeMS>1400</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <ConditionEffect duration="1">Bleeding</ConditionEffect>
+      </Projectile>
+      <Projectile id="9">
+         <ObjectId>Feather</ObjectId>
+         <Damage>70</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>4500</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <ConditionEffect duration="2">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="10">
+         <ObjectId>Turkey Leg</ObjectId>
+         <Damage>90</Damage>
+         <Speed>45</Speed>
+         <LifetimeMS>2950</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <Boomerang/>
+      </Projectile>
+      <Projectile id="11">
+         <ObjectId>Turkey Shot Body</ObjectId>
+         <Speed>50</Speed>
+         <Damage>100</Damage>
+         <Size>90</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="12">
+         <ObjectId>Turkey Shot Bone</ObjectId>
+         <Speed>50</Speed>
+         <Damage>100</Damage>
+         <Size>90</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="13">
+         <ObjectId>Turkey Feather</ObjectId>
+         <Damage>95</Damage>
+         <Speed>65</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1600</LifetimeMS>
+         <ConditionEffect duration="1">Confused</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x7381" id="bs">
+      <DisplayId>????</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>58</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars16x16dEncounters2</File>
+            <Index>59</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="2">
+         <AnimatedTexture>
+            <File>chars16x16dEncounters2</File>
+            <Index>60</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <MaxHitPoints>20000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Size>100</Size>
+      <Exp>1000</Exp>
+      <StasisImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>White Bullet</ObjectId>
+         <Speed>70</Speed>
+         <Damage>60</Damage>
+         <Size>60</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>White Bullet</ObjectId>
+         <Speed>40</Speed>
+         <Damage>160</Damage>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x226d" id="Dimitus">
+      <DisplayId>Dimitus</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters</File>
+         <Index>38</Index>
+      </AnimatedTexture>
+      <HitSound>weapon/dirk</HitSound>
+      <DeathSound>monster/archdemon_death</DeathSound>
+      <MaxHitPoints>40000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Size>100</Size>
+      <Exp>2000</Exp>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>White Flame</ObjectId>
+         <Speed>50</Speed>
+         <Damage>120</Damage>
+         <Size>100</Size>
+         <LifetimeMS>5000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>White Superblast</ObjectId>
+         <Speed>40</Speed>
+         <Damage>200</Damage>
+         <Size>140</Size>
+         <LifetimeMS>6000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Cursed Slash</ObjectId>
+         <Speed>65</Speed>
+         <Damage>80</Damage>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="4">Bleeding</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Green Boomerang</ObjectId>
+         <Speed>50</Speed>
+         <Damage>60</Damage>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="4">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Ice Magic</ObjectId>
+         <Speed>30</Speed>
+         <Damage>30</Damage>
+         <Size>120</Size>
+         <LifetimeMS>5000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1.0">Paralyzed</ConditionEffect>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Dark Gray Spinner</ObjectId>
+         <Speed>50</Speed>
+         <Damage>60</Damage>
+         <Size>100</Size>
+         <LifetimeMS>5000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="4">Weak</ConditionEffect>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Purple Shuriken</ObjectId>
+         <Speed>50</Speed>
+         <Damage>60</Damage>
+         <Size>100</Size>
+         <LifetimeMS>5000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="4">Dazed</ConditionEffect>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>Mute Spell</ObjectId>
+         <Speed>50</Speed>
+         <Damage>60</Damage>
+         <Size>100</Size>
+         <LifetimeMS>5000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="5">Silenced</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x7512" id="Realm Closed Oryxmas Gift">
+      <DisplayId>Oryxmas Gift</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <KeepDamageRecord/>
+      <Quest/>
+      <Level>20</Level>
+      <RandomTexture>
+         <Texture>
+            <File>santaWorkshopObjects16x16</File>
+            <Index>0x1e</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects16x16</File>
+            <Index>0x2e</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects16x16</File>
+            <Index>0x3e</Index>
+         </Texture>
+      </RandomTexture>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>180</Size>
+      <Exp>1000</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x750f" id="Oryxmas Event Gift Small">
+      <DisplayId>Small Oryxmas Gift</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <RandomTexture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x40</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x43</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x41</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x42</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x44</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x45</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x46</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x47</Index>
+         </Texture>
+      </RandomTexture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>30</Exp>
+      <StasisImmune/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0x7510" id="Oryxmas Event Gift Medium">
+      <DisplayId>Medium Oryxmas Gift</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <RandomTexture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x48</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x49</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x4a</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x4b</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x4c</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x4d</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x4e</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x4f</Index>
+         </Texture>
+      </RandomTexture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>30</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x7511" id="Oryxmas Event Gift Large">
+      <DisplayId>Large Oryxmas Gift</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <RandomTexture>
+         <Texture>
+            <File>santaWorkshopObjects16x16</File>
+            <Index>0x1a</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects16x16</File>
+            <Index>0x1b</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects16x16</File>
+            <Index>0x1c</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects16x16</File>
+            <Index>0x1d</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects16x16</File>
+            <Index>0x1e</Index>
+         </Texture>
+      </RandomTexture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>30</Exp>
+      <StasisImmune/>
+      s
+   </Object>
+   <Object type="0x64c7" id="Snowy Initiator">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x6413" id="Ice Spike">
+      <Group>Snowmonsters</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x45d</Index>
+      </Texture>
+      <Size>100</Size>
+      <Exp>0</Exp>
+      <Invincible/>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>130</Damage>
+         <Speed>400</Speed>
+         <LifetimeMS>100</LifetimeMS>
+         <Size>75</Size>
+         <MultiHit/>
+         <ConditionEffect duration="3">Armor Broken</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x640f" id="Snowflakes Orbit">
+      <Group>Snowmonsters</Group>
+      <DisplayId>Snowy Snowflake</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x29</Index>
+      </Texture>
+      <Size>50</Size>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>0</Exp>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>100</Damage>
+         <Speed>0</Speed>
+         <Size>80</Size>
+         <LifetimeMS>100</LifetimeMS>
+         <ConditionEffect duration="3">Weak</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x6412" id="Big Snowflakes Orbit">
+      <Group>Snowmonsters</Group>
+      <DisplayId>Snowy Big Snowflake</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x29</Index>
+      </Texture>
+      <Size>120</Size>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>0</Exp>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>120</Damage>
+         <Speed>0</Speed>
+         <Size>80</Size>
+         <LifetimeMS>100</LifetimeMS>
+         <ConditionEffect duration="1">Slowed</ConditionEffect>
+         <ConditionEffect duration="2" target="1">Stasis</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x640c" id="Presentenichko">
+      <Group>Snowmonsters</Group>
+      <DisplayId>Snowy Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x5b</Index>
+      </Texture>
+      <Size>150</Size>
+      <MaxHitPoints>20000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>0</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0xb046" id="Snowmonster">
+      <Group>Snowmonsters</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>144</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>0</Exp>
+      <StunImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>snow flakes</ObjectId>
+         <Damage>130</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x640b" id="Snowy The Frost God">
+      <DisplayId>Snowy The Frost God</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <KeepDamageRecord/>
+      <Quest/>
+      <HealthBarBoss/>
+      <Level>20</Level>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>Ice Spinner</ObjectId>
+         <Damage>160</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>120</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Snowy Boulder</ObjectId>
+         <Damage>200</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <Size>200</Size>
+         <ConditionEffect duration="5">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>0</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>0</LifetimeMS>
+         <Size>0</Size>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Snowy God Bullet 2</ObjectId>
+         <Damage>140</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+      </Projectile>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>136</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>200</Size>
+      <ShadowSize>0</ShadowSize>
+      <Exp>1000</Exp>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x640e" id="Snowball Thrower">
+      <DisplayId>Snowball Thrower</DisplayId>
+      <Class>Character</Class>
+      <Group>Snowmonsters</Group>
+      <Enemy/>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x7a</Index>
+      </Texture>
+      <Animation prob="1" period="0.4">
+         <Frame time="0.1">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x7a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x7b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x7c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x7d</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Defense>10</Defense>
+      <Exp>0</Exp>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Snowball Bullet</ObjectId>
+         <Speed>30</Speed>
+         <Amplitude>0.6</Amplitude>
+         <Damage>150</Damage>
+         <LifetimeMS>6000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x1a51" id="Spawner">
+      <Group>Snowmonsters</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x5b</Index>
+      </Texture>
+      <Size>150</Size>
+      <MaxHitPoints>100</MaxHitPoints>
+   </Object>
+   <Object type="0x1a52" id="Snowy Bullet Split">
+      <DisplayId>Snowy The Frost God</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiChar8x8</File>
+         <Index>0xb4</Index>
+      </Texture>
+      <Size>0</Size>
+      <Enemy/>
+      <Invincible/>
+      <Projectile id="0">
+         <ObjectId>Snowy God Bullet 2</ObjectId>
+         <Damage>100</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0x1840" id="Realm Closed Easter Event Chest">
+      <DisplayId>Event Chest</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <KeepDamageRecord/>
+      <Quest/>
+      <Level>20</Level>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters</File>
+         <Index>41</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>160</Size>
+      <ShadowSize>0</ShadowSize>
+      <Exp>1000</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x1842" id="Easter Event Chest">
+      <DisplayId>Event Chest</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <KeepDamageRecord/>
+      <TrackLoot/>
+      <Texture>
+         <File>buffedBunnyObjects16x16</File>
+         <Index>0x1b</Index>
+      </Texture>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>160</Size>
+      <ShadowSize>0</ShadowSize>
+      <Exp>1000</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x1843" id="Alien Event Chest">
+      <DisplayId>Event Chest</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <KeepDamageRecord/>
+      <TrackLoot/>
+      <Texture>
+         <File>battleOryxObjects16x16</File>
+         <Index>0x30</Index>
+      </Texture>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>160</Size>
+      <Exp>1000</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x4b0d" id="Emergent Sapphire Bat">
+      <Group>Emergent Crystals</Group>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>crystalCaveChars8x8</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Exp>75</Exp>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Blue Shard Bolt</ObjectId>
+         <Damage>55</Damage>
+         <Speed>110</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x4b0e" id="Emergent Emerald Bat">
+      <Class>Character</Class>
+      <Group>Emergent Crystals</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>crystalCaveChars8x8</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Exp>75</Exp>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Green Shard Bolt</ObjectId>
+         <Damage>60</Damage>
+         <Speed>120</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x4b0f" id="Emergent Amethyst Bat">
+      <Class>Character</Class>
+      <Group>Emergent Crystals</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>crystalCaveChars8x8</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Exp>75</Exp>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Purple Shard Bolt</ObjectId>
+         <Damage>65</Damage>
+         <Speed>100</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <Frequency>2.1</Frequency>
+         <Amplitude>0.8</Amplitude>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Purple Shard Bolt</ObjectId>
+         <Damage>65</Damage>
+         <Speed>100</Speed>
+         <Size>100</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <Frequency>2.1</Frequency>
+         <Amplitude>0.5</Amplitude>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x4b10" id="Emergent Topaz Bat">
+      <Class>Character</Class>
+      <Group>Emergent Crystals</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>crystalCaveChars8x8</File>
+         <Index>5</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Exp>75</Exp>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Yellow Shard Bolt</ObjectId>
+         <Damage>60</Damage>
+         <Speed>90</Speed>
+         <Size>80</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Yellow Shard Bolt</ObjectId>
+         <Damage>60</Damage>
+         <Speed>30</Speed>
+         <Size>80</Size>
+         <LifetimeMS>6000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x4b11" id="Emergent Ruby Bat">
+      <Class>Character</Class>
+      <Group>Emergent Crystals</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>crystalCaveChars8x8</File>
+         <Index>6</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Exp>75</Exp>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Damage>70</Damage>
+         <Speed>120</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Damage>70</Damage>
+         <Speed>100</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Damage>70</Damage>
+         <Speed>80</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Damage>70</Damage>
+         <Speed>60</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Damage>70</Damage>
+         <Speed>40</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x4b12" id="Emergent Sapphire Slime">
+      <Class>Character</Class>
+      <Enemy/>
+      <Group>Emergent Crystals</Group>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>16</Index>
+      </AnimatedTexture>
+      <Size>60</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Exp>75</Exp>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Blue Shard Bolt</ObjectId>
+         <Damage>40</Damage>
+         <Speed>100</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="4">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x4b13" id="Emergent Emerald Slime">
+      <Class>Character</Class>
+      <Enemy/>
+      <Group>Emergent Crystals</Group>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>17</Index>
+      </AnimatedTexture>
+      <Size>60</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Exp>75</Exp>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Green Shard Bolt</ObjectId>
+         <Damage>40</Damage>
+         <Speed>100</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="4">Sick</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x4b14" id="Emergent Ruby Slime">
+      <Class>Character</Class>
+      <Enemy/>
+      <Group>Emergent Crystals</Group>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>18</Index>
+      </AnimatedTexture>
+      <Size>60</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Exp>75</Exp>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Damage>30</Damage>
+         <Speed>100</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3">Armor Broken</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x4b15" id="Emergent Topaz Slime">
+      <Class>Character</Class>
+      <Enemy/>
+      <Group>Emergent Crystals</Group>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>19</Index>
+      </AnimatedTexture>
+      <Size>60</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Exp>75</Exp>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Yellow Shard Bolt</ObjectId>
+         <Damage>50</Damage>
+         <Speed>100</Speed>
+         <Size>120</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2">Paralyzed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x4b16" id="Emergent Amethyst Slime">
+      <Class>Character</Class>
+      <Enemy/>
+      <Group>Emergent Crystals</Group>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>20</Index>
+      </AnimatedTexture>
+      <Size>60</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Purple Shard Bolt</ObjectId>
+         <Damage>50</Damage>
+         <Speed>60</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2">Quiet</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x4b17" id="Emergent Crystallised Charger">
+      <Enemy/>
+      <Class>Character</Class>
+      <Group>Emergent Crystals</Group>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>10</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Defense>20</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <Exp>800</Exp>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Blue Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>70</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>1.3</Frequency>
+         <Amplitude>0.8</Amplitude>
+      </Projectile>
+   </Object>
+   <Object type="0x4b18" id="Emergent Crystallised Watcher">
+      <Enemy/>
+      <Class>Character</Class>
+      <Group>Emergent Crystals</Group>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>11</Index>
+      </AnimatedTexture>
+      <Projectile id="1">
+         <ObjectId>Yellow Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>70</Damage>
+         <Speed>120</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Yellow Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>70</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Yellow Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>70</Damage>
+         <Speed>15</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Defense>20</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <Exp>800</Exp>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x4b19" id="Emergent Crystallised Crawler">
+      <Enemy/>
+      <Class>Character</Class>
+      <Group>Emergent Crystals</Group>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>12</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Defense>20</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <Exp>800</Exp>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Green Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>65</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>2</Frequency>
+         <Amplitude>0.5</Amplitude>
+         <ConditionEffect duration="3">Exposed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x4b1a" id="Emergent Crystallised Shrieker">
+      <Enemy/>
+      <Class>Character</Class>
+      <Group>Emergent Crystals</Group>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>13</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Defense>80</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <Exp>800</Exp>
+      <ParalyzeImmune/>
+      <Projectile id="8">
+         <ObjectId>pD Maw Shot 3</ObjectId>
+         <Size>100</Size>
+         <Damage>40</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>4500</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>80</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>600</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>80</Damage>
+         <Speed>120</Speed>
+         <LifetimeMS>600</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x4b1b" id="Emergent Crystallised Boomer">
+      <Enemy/>
+      <Class>Character</Class>
+      <Group>Emergent Crystals</Group>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>14</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Defense>20</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <Exp>800</Exp>
+      <ParalyzeImmune/>
+      <Projectile id="1">
+         <ObjectId>Purple Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>70</Damage>
+         <Speed>144</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Purple Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>70</Damage>
+         <Speed>89</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Purple Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>70</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x4b1c" id="Emergent Crystal Dark Flower">
+      <Enemy/>
+      <DisplayId>Emergent Crystallised Boomer</DisplayId>
+      <Class>Character</Class>
+      <Group>Protector</Group>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x10</Index>
+      </Texture>
+      <Size>60</Size>
+      <ShadowSize>0</ShadowSize>
+      <Invincible/>
+      <Flying/>
+   </Object>
+   <Object type="0x4b1d" id="Emergent Crystal Bud Dark">
+      <DisplayId>Emergent Crystallised Boomer</DisplayId>
+      <Enemy/>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>White Shard Bolt</ObjectId>
+         <Speed>10</Speed>
+         <Damage>60</Damage>
+         <Size>100</Size>
+         <LifetimeMS>80</LifetimeMS>
+         <MultiHit/>
+         <FaceDir/>
+         <ConditionEffect duration="5">Exposed</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>White Shard Bolt</ObjectId>
+         <Speed>90</Speed>
+         <Damage>60</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1700</LifetimeMS>
+         <MultiHit/>
+         <FaceDir/>
+         <ConditionEffect duration="5">Exposed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x4b1e" id="Amethyst Tower">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>24</Index>
+      </AnimatedTexture>
+      <Size>150</Size>
+      <NoMiniMap/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Exp>1000</Exp>
+      <God/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>crystalCaveChars16x16</File>
+            <Index>26</Index>
+         </AnimatedTexture>
+      </AltTexture>
+   </Object>
+   <Object type="0x4b1f" id="Sapphire Tower">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>21</Index>
+      </AnimatedTexture>
+      <Size>150</Size>
+      <NoMiniMap/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Exp>1000</Exp>
+      <God/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>crystalCaveChars16x16</File>
+            <Index>26</Index>
+         </AnimatedTexture>
+      </AltTexture>
+   </Object>
+   <Object type="0x4b20" id="Emerald Tower">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>22</Index>
+      </AnimatedTexture>
+      <Size>150</Size>
+      <NoMiniMap/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Exp>1000</Exp>
+      <God/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>crystalCaveChars16x16</File>
+            <Index>26</Index>
+         </AnimatedTexture>
+      </AltTexture>
+   </Object>
+   <Object type="0x4b21" id="Ruby Tower">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>25</Index>
+      </AnimatedTexture>
+      <Size>150</Size>
+      <NoMiniMap/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Exp>1000</Exp>
+      <God/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>crystalCaveChars16x16</File>
+            <Index>26</Index>
+         </AnimatedTexture>
+      </AltTexture>
+   </Object>
+   <Object type="0x4b22" id="Topaz Tower">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>23</Index>
+      </AnimatedTexture>
+      <Size>150</Size>
+      <NoMiniMap/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Exp>1000</Exp>
+      <God/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>crystalCaveChars16x16</File>
+            <Index>26</Index>
+         </AnimatedTexture>
+      </AltTexture>
+   </Object>
+   <Object type="0x4b23" id="Sapphire Revealer">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <Color>0x42A8F6</Color>
+      <Invincible/>
+      <Projectile id="0">
+         <ObjectId>Cardgage Curse</ObjectId>
+         <Damage>1</Damage>
+         <Speed>0</Speed>
+         <Size>0</Size>
+         <LifetimeMS>0</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x4b24" id="Emerald Revealer">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <Color>0x41E022</Color>
+      <Invincible/>
+      <Projectile id="0">
+         <ObjectId>Cardgage Curse</ObjectId>
+         <Damage>1</Damage>
+         <Speed>0</Speed>
+         <Size>0</Size>
+         <LifetimeMS>0</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x4b25" id="Topaz Revealer">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <Color>0xF29C50</Color>
+      <Invincible/>
+      <Projectile id="0">
+         <ObjectId>Cardgage Curse</ObjectId>
+         <Damage>1</Damage>
+         <Speed>0</Speed>
+         <Size>0</Size>
+         <LifetimeMS>0</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x4b26" id="Amethyst Revealer">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <Color>0xEA05FF</Color>
+      <Invincible/>
+      <Projectile id="0">
+         <ObjectId>Cardgage Curse</ObjectId>
+         <Damage>1</Damage>
+         <Speed>0</Speed>
+         <Size>0</Size>
+         <LifetimeMS>0</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x4b27" id="Ruby Revealer">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <Color>0xB83535</Color>
+      <Invincible/>
+      <Projectile id="0">
+         <ObjectId>Cardgage Curse</ObjectId>
+         <Damage>1</Damage>
+         <Speed>0</Speed>
+         <Size>0</Size>
+         <LifetimeMS>0</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x4b28" id="Sapphire Initiator">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+      <Terrain>Mountains</Terrain>
+      <SpawnProb>1</SpawnProb>
+      <PerRealmMax>1</PerRealmMax>
+   </Object>
+   <Object type="0x4b29" id="Emerald Initiator">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+      <Terrain>Mountains</Terrain>
+      <SpawnProb>1</SpawnProb>
+      <PerRealmMax>1</PerRealmMax>
+   </Object>
+   <Object type="0x4b2a" id="Topaz Initiator">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+      <Terrain>HighPlains</Terrain>
+      <SpawnProb>1</SpawnProb>
+      <PerRealmMax>1</PerRealmMax>
+   </Object>
+   <Object type="0x4b2b" id="Amethyst Initiator">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+      <Terrain>HighForest</Terrain>
+      <SpawnProb>1</SpawnProb>
+      <PerRealmMax>1</PerRealmMax>
+   </Object>
+   <Object type="0x4b2c" id="Ruby Initiator">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+      <Terrain>Mountains</Terrain>
+      <SpawnProb>1</SpawnProb>
+      <PerRealmMax>1</PerRealmMax>
+   </Object>
+   <Object type="0x4b2d" id="Keyper Initiator">
+      <DisplayId>The Keyper</DisplayId>
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+      <PerRealmMax>1</PerRealmMax>
+   </Object>
+   <Object type="0xb25c" id="Keyper Spawner">
+      <DisplayId>The Keyper</DisplayId>
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+      <Terrain>Mountains</Terrain>
+      <SpawnProb>1</SpawnProb>
+      <PerRealmMax>1</PerRealmMax>
+   </Object>
+   <Object type="0x4b2e" id="The Keyper">
+      <Class>Character</Class>
+      <Enemy/>
+      <Quest/>
+      <HealthBarBoss/>
+      <Level>20</Level>
+      <TrackLoot/>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>27</Index>
+      </AnimatedTexture>
+      <Size>1</Size>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Defense>10</Defense>
+      <Exp>2000</Exp>
+      <HitSound>monster/pirate_king_hit</HitSound>
+      <DeathSound>monster/pirate_king_death</DeathSound>
+      <ParalyzeImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Sound Wave</ObjectId>
+         <Speed>85</Speed>
+         <Damage>140</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="4">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Keytastrophe</ObjectId>
+         <Speed>90</Speed>
+         <LifetimeMS>2500</LifetimeMS>
+         <Amplitude>0.5</Amplitude>
+         <Frequency>0.5</Frequency>
+         <Damage>100</Damage>
+         <Size>100</Size>
+         <MultiHit/>
+         <ArmorPiercing/>
+         <Boomerang/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Confuse Shuriken</ObjectId>
+         <Damage>20</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="2">Confused</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x4b30" id="Prismimic Summoner">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+   </Object>
+   <Object type="0x4b2f" id="Prismimic Attacker">
+      <Class>Character</Class>
+      <Enemy/>
+      <DisplayId>Prismimic</DisplayId>
+      <TrackLoot/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>138</Index>
+      </AnimatedTexture>
+      <HitSound>monster/djinn_hit</HitSound>
+      <DeathSound>monster/ghost_god_death</DeathSound>
+      <MaxHitPoints>55000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Size>100</Size>
+      <God/>
+      <Exp>2000</Exp>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Sound id="0">monster/stone_walls_death</Sound>
+      <Sound id="1">spell/fire_nova</Sound>
+      <Sound id="2">weapon/firework</Sound>
+      <AltTexture id="3">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>137</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="2">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>138</Index>
+         </AnimatedTexture>
+         <Effect minRadius="0.5" maxRadius="10" color="0xFFFFFF" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+      </AltTexture>
+      <AltTexture id="6">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>143</Index>
+         </AnimatedTexture>
+         <Effect minRadius="0.5" maxRadius="10" color="0xFFFFFF" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+      </AltTexture>
+      <AltTexture id="7">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>140</Index>
+         </AnimatedTexture>
+         <Effect minRadius="0.5" maxRadius="10" color="0xFFFFFF" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+      </AltTexture>
+      <AltTexture id="9">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>151</Index>
+         </AnimatedTexture>
+         <Effect minRadius="0.5" maxRadius="10" color="0xFFFFFF" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+      </AltTexture>
+      <AltTexture id="10">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>152</Index>
+         </AnimatedTexture>
+         <Effect minRadius="0.5" maxRadius="10" color="0xFFFFFF" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+      </AltTexture>
+      <AltTexture id="13">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>148</Index>
+         </AnimatedTexture>
+         <Effect minRadius="0.5" maxRadius="10" color="0xFFFFFF" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+      </AltTexture>
+      <AltTexture id="17">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>156</Index>
+         </AnimatedTexture>
+         <Effect minRadius="0.5" maxRadius="10" color="0xFFFFFF" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+      </AltTexture>
+      <AltTexture id="19">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>144</Index>
+         </AnimatedTexture>
+         <Effect minRadius="0.5" maxRadius="10" color="0xFFFFFF" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+      </AltTexture>
+      <AltTexture id="20">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>139</Index>
+         </AnimatedTexture>
+         <Effect minRadius="0.5" maxRadius="10" color="0xFFFFFF" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+      </AltTexture>
+      <AltTexture id="21">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>150</Index>
+         </AnimatedTexture>
+         <Effect minRadius="0.5" maxRadius="10" color="0xFFFFFF" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+      </AltTexture>
+      <Projectile id="2">
+         <ObjectId>White Shard Bolt</ObjectId>
+         <Damage>110</Damage>
+         <Speed>45</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>80</Size>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>White Bullet</ObjectId>
+         <Speed>62</Speed>
+         <Damage>60</Damage>
+         <Size>60</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="1.4">Blind</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Cyan Fairy Magic</ObjectId>
+         <Damage>130</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2900</LifetimeMS>
+         <Size>200</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Red Fire</ObjectId>
+         <Speed>80</Speed>
+         <Damage>70</Damage>
+         <Size>110</Size>
+         <LifetimeMS>2300</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="11">
+         <ObjectId>Fire Boomerang</ObjectId>
+         <Damage>125</Damage>
+         <Speed>25</Speed>
+         <Size>75</Size>
+         <LifetimeMS>5000</LifetimeMS>
+         <ConditionEffect duration="3">Quiet</ConditionEffect>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="12">
+         <ObjectId>Yellow Energy Shot</ObjectId>
+         <Damage>125</Damage>
+         <Speed>90</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="3">Weak</ConditionEffect>
+      </Projectile>
+      <Projectile id="16">
+         <ObjectId>White Ball Blast</ObjectId>
+         <Speed>85</Speed>
+         <Size>120</Size>
+         <Damage>180</Damage>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+      <Projectile id="17">
+         <ObjectId>White Star Stunner</ObjectId>
+         <Speed>40</Speed>
+         <Size>100</Size>
+         <Damage>100</Damage>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="4">Dazed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="18">
+         <ObjectId>FR Boss Shard</ObjectId>
+         <Size>120</Size>
+         <Damage>160</Damage>
+         <Speed>35</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="19">
+         <ObjectId>FR Boss Shard</ObjectId>
+         <Size>120</Size>
+         <Damage>160</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="20">
+         <ObjectId>FR Boss Shard</ObjectId>
+         <Size>120</Size>
+         <Damage>160</Damage>
+         <Speed>105</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="21">
+         <ObjectId>Golden Coin</ObjectId>
+         <Damage>150</Damage>
+         <Speed>70</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1600</LifetimeMS>
+         <ConditionEffect duration="1.5">Confused</ConditionEffect>
+         <ParticleTrail/>
+      </Projectile>
+      <Projectile id="22">
+         <ObjectId>Black Ball</ObjectId>
+         <Damage>250</Damage>
+         <Speed>80</Speed>
+         <Size>200</Size>
+         <LifetimeMS>1800</LifetimeMS>
+      </Projectile>
+      <Projectile id="33">
+         <ObjectId>Unicorn Horn</ObjectId>
+         <Damage>90</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>160</Size>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="34">
+         <ObjectId>Rainbow Brick</ObjectId>
+         <Damage>70</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>160</Size>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="35">
+         <ObjectId>Great Basilisk Beam</ObjectId>
+         <Damage>60</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>28</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="36">
+         <ObjectId>Great Basilisk Beam</ObjectId>
+         <Damage>80</Damage>
+         <Speed>58</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>45</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="37">
+         <ObjectId>Great Basilisk Beam</ObjectId>
+         <Damage>100</Damage>
+         <Speed>63</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>73</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="38">
+         <ObjectId>Great Basilisk Beam</ObjectId>
+         <Damage>120</Damage>
+         <Speed>71</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>117</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="39">
+         <ObjectId>Great Basilisk Beam</ObjectId>
+         <Damage>140</Damage>
+         <Speed>84</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>190</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="40">
+         <ObjectId>Great Basilisk Wave</ObjectId>
+         <Damage>130</Damage>
+         <Speed>105</Speed>
+         <LifetimeMS>2500</LifetimeMS>
+         <Size>110</Size>
+      </Projectile>
+      <Projectile id="41">
+         <ObjectId>Great Basilisk Star</ObjectId>
+         <Damage>50</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2500</LifetimeMS>
+         <Size>90</Size>
+         <ConditionEffect duration="2.4">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="42">
+         <ObjectId>Green Magic</ObjectId>
+         <Speed>56</Speed>
+         <Damage>200</Damage>
+         <Size>200</Size>
+         <LifetimeMS>2600</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="43">
+         <ObjectId>Green Blob</ObjectId>
+         <Speed>100</Speed>
+         <Damage>230</Damage>
+         <Size>185</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="5">Weak</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x4b31" id="Prismimic Defender">
+      <Class>Character</Class>
+      <Enemy/>
+      <DisplayId>Prismimic</DisplayId>
+      <TrackLoot/>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>138</Index>
+      </AnimatedTexture>
+      <HitSound>monster/djinn_hit</HitSound>
+      <DeathSound>monster/ghost_god_death</DeathSound>
+      <MaxHitPoints>45000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Size>100</Size>
+      <God/>
+      <Exp>2000</Exp>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Sound id="0">monster/stone_walls_death</Sound>
+      <Sound id="1">spell/fire_nova</Sound>
+      <Sound id="2">weapon/firework</Sound>
+      <AltTexture id="3">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>137</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="2">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>138</Index>
+         </AnimatedTexture>
+         <Effect minRadius="0.5" maxRadius="10" color="0xFFFFFF" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+      </AltTexture>
+      <AltTexture id="4">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>141</Index>
+         </AnimatedTexture>
+         <Effect minRadius="0.5" maxRadius="10" color="0xFFFFFF" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+      </AltTexture>
+      <AltTexture id="5">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>142</Index>
+         </AnimatedTexture>
+         <Effect minRadius="0.5" maxRadius="10" color="0xFFFFFF" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+      </AltTexture>
+      <AltTexture id="8">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>149</Index>
+         </AnimatedTexture>
+         <Effect minRadius="0.5" maxRadius="10" color="0xFFFFFF" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+      </AltTexture>
+      <AltTexture id="11">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>153</Index>
+         </AnimatedTexture>
+         <Effect minRadius="0.5" maxRadius="10" color="0xFFFFFF" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+      </AltTexture>
+      <AltTexture id="12">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>155</Index>
+         </AnimatedTexture>
+         <Effect minRadius="0.5" maxRadius="10" color="0xFFFFFF" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+      </AltTexture>
+      <AltTexture id="14">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>145</Index>
+         </AnimatedTexture>
+         <Effect minRadius="0.5" maxRadius="10" color="0xFFFFFF" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+      </AltTexture>
+      <AltTexture id="15">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>146</Index>
+         </AnimatedTexture>
+         <Effect minRadius="0.5" maxRadius="10" color="0xFFFFFF" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+      </AltTexture>
+      <AltTexture id="16">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>147</Index>
+         </AnimatedTexture>
+         <Effect minRadius="0.5" maxRadius="10" color="0xFFFFFF" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+      </AltTexture>
+      <AltTexture id="18">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>157</Index>
+         </AnimatedTexture>
+         <Effect minRadius="0.5" maxRadius="10" color="0xFFFFFF" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+      </AltTexture>
+      <AltTexture id="19">
+         <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>154</Index>
+         </AnimatedTexture>
+         <Effect minRadius="0.5" maxRadius="10" color="0xFFFFFF" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+      </AltTexture>
+      <Projectile id="2">
+         <ObjectId>White Bullet</ObjectId>
+         <Damage>110</Damage>
+         <Speed>45</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>80</Size>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>White Bullet</ObjectId>
+         <Speed>62</Speed>
+         <Damage>60</Damage>
+         <Size>60</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="1.4">Blind</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Gold Fireball</ObjectId>
+         <Damage>90</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>150</Size>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>White Bullet</ObjectId>
+         <Speed>40</Speed>
+         <Damage>150</Damage>
+         <Size>150</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>Silver Shield</ObjectId>
+         <Speed>60</Speed>
+         <Damage>110</Damage>
+         <Size>120</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="4">Weak</ConditionEffect>
+      </Projectile>
+      <Projectile id="9">
+         <ObjectId>Dagger</ObjectId>
+         <Damage>100</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2400</LifetimeMS>
+      </Projectile>
+      <Projectile id="10">
+         <ObjectId>Ruthven Shot</ObjectId>
+         <Damage>90</Damage>
+         <Speed>65</Speed>
+         <Size>100</Size>
+         <LifetimeMS>3400</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="13">
+         <ObjectId>Armor Pierce Bullet</ObjectId>
+         <Speed>30</Speed>
+         <ArmorPiercing/>
+         <Damage>80</Damage>
+         <Size>120</Size>
+         <LifetimeMS>6000</LifetimeMS>
+      </Projectile>
+      <Projectile id="14">
+         <ObjectId>Poison Fireball</ObjectId>
+         <Damage>70</Damage>
+         <Speed>85</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="15">
+         <ObjectId>Red Star</ObjectId>
+         <Damage>30</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>1750</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="2.5">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="31">
+         <ObjectId>Green Star</ObjectId>
+         <Damage>30</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="23">
+         <ObjectId>EH Yellow Glaive</ObjectId>
+         <Damage>70</Damage>
+         <Speed>25</Speed>
+         <Size>100</Size>
+         <LifetimeMS>4250</LifetimeMS>
+         <ConditionEffect duration=".8">Paralyzed</ConditionEffect>
+         <ConditionEffect duration="3">Dazed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="24">
+         <ObjectId>EH Red Glaive</ObjectId>
+         <Damage>90</Damage>
+         <Speed>40</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2250</LifetimeMS>
+         <ConditionEffect duration="6">Armor Broken</ConditionEffect>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="25">
+         <ObjectId>EH Blue Glaive</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1590</LifetimeMS>
+         <ConditionEffect duration="2">Quiet</ConditionEffect>
+         <ConditionEffect duration="6" target="1">Stasis</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="26">
+         <ObjectId>Orange Sonic Bat Wave</ObjectId>
+         <Speed>60</Speed>
+         <Damage>60</Damage>
+         <LifetimeMS>6000</LifetimeMS>
+         <ConditionEffect duration="6">Unstable</ConditionEffect>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="27">
+         <ObjectId>Armor Pierce Bullet</ObjectId>
+         <Damage>100</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>6000</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="28">
+         <ObjectId>Ice Burst</ObjectId>
+         <Damage>70</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>6000</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="29">
+         <ObjectId>Grey Boomerang</ObjectId>
+         <Speed>55</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>6000</LifetimeMS>
+         <ConditionEffect duration="2">Quiet</ConditionEffect>
+         <ConditionEffect duration="4">Dazed</ConditionEffect>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="30">
+         <ObjectId>Ice Burst</ObjectId>
+         <Damage>70</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>6000</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="32">
+         <ObjectId>Brown Magic</ObjectId>
+         <Speed>90</Speed>
+         <Damage>40</Damage>
+         <Size>40</Size>
+         <LifetimeMS>2600</LifetimeMS>
+         <MultiHit/>
+         <Boomerang/>
+         <Amplitude>2</Amplitude>
+         <Frequency>2.5</Frequency>
+         <ConditionEffect duration="1">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="33">
+         <ObjectId>Yellow Star</ObjectId>
+         <Speed>57</Speed>
+         <Damage>65</Damage>
+         <Size>80</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1.5">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="34">
+         <ObjectId>White Big Spinner</ObjectId>
+         <Size>170</Size>
+         <Damage>100</Damage>
+         <Speed>35</Speed>
+         <LifetimeMS>9000</LifetimeMS>
+         <ConditionEffect duration="1.5">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="35">
+         <ObjectId>Blade</ObjectId>
+         <Damage>17</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+      </Projectile>
+      <Projectile id="36">
+         <ObjectId>Black Ball</ObjectId>
+         <Damage>25</Damage>
+         <Speed>130</Speed>
+         <LifetimeMS>1100</LifetimeMS>
+      </Projectile>
+      <Projectile id="37">
+         <ObjectId>BB Egg Cannon 1</ObjectId>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <ConditionEffect duration="2.5">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="38">
+         <ObjectId>BB Bunny Blaster</ObjectId>
+         <Damage>130</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1400</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x6578" id="Heroic UDL Spawner">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>-1</Size>
+   </Object>
+   <Object type="0x6579" id="Heroic Abyss Spawner">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>-1</Size>
+   </Object>
+   <Object type="0x657a" id="Beer Spawner">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x657c" id="Halloween Initiator">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x65fc" id="Battle Nexus Spawner">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>-1</Size>
+   </Object>
+   <Object type="0x65fd" id="Wormhole Token Initiator">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x65fe" id="Calbrik Initiator">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x65ff" id="Alien Realm Leprechaun Spawner">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+      <SpawnProb>1</SpawnProb>
+      <PerRealmMax>1</PerRealmMax>
+      <Terrain>MidForest</Terrain>
+   </Object>
+   <Object type="0x6600" id="Alien Biff Spawner">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+      <SpawnProb>1</SpawnProb>
+      <PerRealmMax>1</PerRealmMax>
+      <Terrain>Mountains</Terrain>
+   </Object>
+   <Object type="0x6601" id="Alien Realm Leprechaun Initiator">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x6602" id="Alien Biff Initiator">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x6603" id="Realm Leprechaun Spawner">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+      <SpawnProb>1</SpawnProb>
+      <PerRealmMax>1</PerRealmMax>
+      <Terrain>MidForest</Terrain>
+   </Object>
+   <Object type="0x6604" id="Realm Leprechaun Spawner 2">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+      <SpawnProb>1</SpawnProb>
+      <PerRealmMax>1</PerRealmMax>
+      <Terrain>MidForest</Terrain>
+   </Object>
+   <Object type="0x6605" id="Realm Leprechaun Initiator">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x6606" id="Biff Spawner">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+      <SpawnProb>1</SpawnProb>
+      <PerRealmMax>1</PerRealmMax>
+      <Terrain>Mountains</Terrain>
+   </Object>
+   <Object type="0x6607" id="Biff Initiator">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object id="RSM Snowman Body Generator" type="0xb3fa">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>136</Index>
+      </AnimatedTexture>
+      <Size>-1</Size>
+      <Color>0xA2F3F5</Color>
+      <Enemy/>
+      <Invincible/>
+      <Terrain>Mountains</Terrain>
+      <SpawnProb>0.0</SpawnProb>
+      <PerRealmMax>1</PerRealmMax>
+   </Object>
+   <Object id="RSM Snowman Body" type="0xb3bd">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x198</Index>
+      </Texture>
+      <Size>100</Size>
+   </Object>
+   <Object id="RSM Pirate Mark" type="0xb3be">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1b6</Index>
+      </Texture>
+      <Size>100</Size>
+      <Enemy/>
+      <MaxHitPoints>15000</MaxHitPoints>
+   </Object>
+   <Object id="RSM Spider Mark" type="0xb3bf">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1c6</Index>
+      </Texture>
+      <Size>100</Size>
+      <Enemy/>
+      <MaxHitPoints>15000</MaxHitPoints>
+   </Object>
+   <Object id="RSM Jungle Mark" type="0xb3c0">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1bb</Index>
+      </Texture>
+      <Size>100</Size>
+      <Enemy/>
+      <MaxHitPoints>15000</MaxHitPoints>
+   </Object>
+   <Object id="RSM Snake Mark" type="0xb3c1">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1b7</Index>
+      </Texture>
+      <Size>100</Size>
+      <Enemy/>
+      <MaxHitPoints>15000</MaxHitPoints>
+   </Object>
+   <Object id="RSM Sprite Mark" type="0xb3c2">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1bc</Index>
+      </Texture>
+      <Size>100</Size>
+      <Enemy/>
+      <MaxHitPoints>15000</MaxHitPoints>
+   </Object>
+   <Object id="RSM Undead Mark" type="0xb3c3">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1c7</Index>
+      </Texture>
+      <Size>100</Size>
+      <Enemy/>
+      <MaxHitPoints>15000</MaxHitPoints>
+   </Object>
+   <Object id="RSM Abyss Mark" type="0xb3c4">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1b8</Index>
+      </Texture>
+      <Size>100</Size>
+      <Enemy/>
+      <MaxHitPoints>15000</MaxHitPoints>
+   </Object>
+   <Object id="RSM Manor Mark" type="0xb3c5">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1bd</Index>
+      </Texture>
+      <Size>100</Size>
+      <Enemy/>
+      <MaxHitPoints>15000</MaxHitPoints>
+   </Object>
+   <Object id="RSM Cemetery Mark" type="0xb3c6">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1c8</Index>
+      </Texture>
+      <Size>100</Size>
+      <Enemy/>
+      <MaxHitPoints>15000</MaxHitPoints>
+   </Object>
+   <Object id="RSM Locker Mark" type="0xb3c7">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1b9</Index>
+      </Texture>
+      <Size>100</Size>
+      <Enemy/>
+      <MaxHitPoints>15000</MaxHitPoints>
+   </Object>
+   <Object id="RSM Ice Mark" type="0xb3c8">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1be</Index>
+      </Texture>
+      <Size>100</Size>
+      <Enemy/>
+      <MaxHitPoints>15000</MaxHitPoints>
+   </Object>
+   <Object id="RSM Parasite Mark" type="0xb3c9">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1c9</Index>
+      </Texture>
+      <Size>100</Size>
+      <Enemy/>
+      <MaxHitPoints>15000</MaxHitPoints>
+   </Object>
+   <Object id="RSM Ocean Mark" type="0xb3ca">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1ba</Index>
+      </Texture>
+      <Size>100</Size>
+      <Enemy/>
+      <MaxHitPoints>15000</MaxHitPoints>
+   </Object>
+   <Object id="RSM Tomb Mark" type="0xb3cb">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1bf</Index>
+      </Texture>
+      <Size>100</Size>
+      <Enemy/>
+      <MaxHitPoints>15000</MaxHitPoints>
+   </Object>
+   <Object id="RSM Chamber Mark" type="0xb3cc">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1ca</Index>
+      </Texture>
+      <Size>100</Size>
+      <Enemy/>
+      <MaxHitPoints>15000</MaxHitPoints>
+   </Object>
+   <Object id="RSM Snowman Boss Dead" type="0xb3cd">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>chars16x16dMountains2</File>
+         <Index>11</Index>
+      </AnimatedTexture>
+      <DisplayId>Jack Frost</DisplayId>
+      <Size>-1</Size>
+   </Object>
+   <Object id="RSM Hat Pirate" type="0xb3ce">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1b6</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object id="RSM Hat Snake" type="0xb3cf">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1b7</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object id="RSM Hat Abyss" type="0xb3d0">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1b8</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object id="RSM Hat Locker" type="0xb3d1">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1b9</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object id="RSM Hat Ocean" type="0xb3d2">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1ba</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object id="RSM Nose Jungle" type="0xb3d3">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1bb</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object id="RSM Nose Sprite" type="0xb3d4">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1bc</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object id="RSM Nose Manor" type="0xb3d5">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1bd</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object id="RSM Nose Ice" type="0xb3d6">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1be</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object id="RSM Nose Tomb" type="0xb3d7">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1bf</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object id="RSM Eyes Spider" type="0xb3d8">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1c6</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object id="RSM Eyes Undead" type="0xb3d9">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1c7</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object id="RSM Eyes Cemetery" type="0xb3da">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1c8</Index>
+      </Texture>
+      <Size>-1</Size>
+   </Object>
+   <Object id="RSM Eyes Parasite" type="0xb3db">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1c9</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object id="RSM Eyes Chamber" type="0xb3dc">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1ca</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object id="RSM Body" type="0xb3f9">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>136</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object id="RSM Hat" type="0xb3fc">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1b6</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0x1b7</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0x1b8</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0x1b9</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0x1ba</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <Size>100</Size>
+   </Object>
+   <Object id="RSM Nose" type="0xb3fd">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1bb</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0x1bc</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0x1bd</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0x1be</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0x1bf</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <Size>100</Size>
+   </Object>
+   <Object id="RSM Eyes" type="0xb3fe">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x1c6</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0x1c7</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0x1c8</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0x1c9</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0x1ca</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <Size>100</Size>
+   </Object>
+   <Object id="RSM Snowman Boss" type="0xb3dd">
+      <Class>Character</Class>
+      <Enemy/>
+      <KeepDamageRecord/>
+      <DisplayId>Jack Frost</DisplayId>
+      <AnimatedTexture>
+         <File>chars16x16dMountains2</File>
+         <Index>11</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flaming_skulls_hit</HitSound>
+      <DeathSound>monster/cubes_death</DeathSound>
+      <Size>140</Size>
+      <MaxHitPoints>90000</MaxHitPoints>
+      <Defense>12</Defense>
+      <Exp>3000</Exp>
+      <God/>
+      <Quest/>
+      <HealthBarBoss/>
+      <Level>20</Level>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <Projectile id="0">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Damage>85</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <Wavy/>
+         <Boomerang/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Ice Burst</ObjectId>
+         <Damage>100</Damage>
+         <Speed>35</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <Amplitude>1.5</Amplitude>
+         <Frequency>3</Frequency>
+         <ArmorPiercing/>
+         <FaceDir/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Eternal Snowflake Shot</ObjectId>
+         <Speed>25</Speed>
+         <Damage>50</Damage>
+         <LifetimeMS>7000</LifetimeMS>
+         <ConditionEffect duration="1">Slowed</ConditionEffect>
+         <Amplitude>1.5</Amplitude>
+         <Frequency>3</Frequency>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>snow flakes</ObjectId>
+         <Damage>70</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <Size>85</Size>
+         <ConditionEffect duration="2">Weak</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>XMAS Frozen Arrow</ObjectId>
+         <Damage>95</Damage>
+         <Speed>120</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Icicle Shot</ObjectId>
+         <Damage>40</Damage>
+         <Speed>110</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="3">Darkness</ConditionEffect>
+         <Size>135</Size>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>FR Boss Ball</ObjectId>
+         <Speed>30</Speed>
+         <Damage>110</Damage>
+         <Size>90</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="2">Unstable</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>FR God Wave</ObjectId>
+         <Damage>90</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>3500</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
+         <Boomerang/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>FR Boss Shard</ObjectId>
+         <Damage>100</Damage>
+         <Speed>70</Speed>
+         <Size>110</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+         <FaceDir/>
+         <ConditionEffect duration="0.8">Paralyzed</ConditionEffect>
+      </Projectile>
+      <Projectile id="9">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <Wavy/>
+      </Projectile>
+      <Projectile id="10">
+         <ObjectId>Yeti Boulder</ObjectId>
+         <Damage>225</Damage>
+         <Speed>40</Speed>
+         <Size>180</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="11">
+         <ObjectId>FR Boss Big</ObjectId>
+         <Speed>25</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>6000</LifetimeMS>
+         <Size>125</Size>
+      </Projectile>
+      <Projectile id="12">
+         <ObjectId>Aqua Missile</ObjectId>
+         <Damage>30</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>140</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="1">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="13">
+         <ObjectId>Aqua Missile</ObjectId>
+         <Damage>55</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Amplitude>5</Amplitude>
+         <Frequency>0.95</Frequency>
+         <Size>120</Size>
+         <FaceDir/>
+         <ConditionEffect duration="1">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="14">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Damage>105</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <Wavy/>
+         <Boomerang/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="15">
+         <ObjectId>Ice Burst</ObjectId>
+         <Damage>120</Damage>
+         <Speed>35</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <Amplitude>1.5</Amplitude>
+         <Frequency>3</Frequency>
+         <ArmorPiercing/>
+         <FaceDir/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="16">
+         <ObjectId>Eternal Snowflake Shot</ObjectId>
+         <Speed>25</Speed>
+         <Damage>70</Damage>
+         <LifetimeMS>7000</LifetimeMS>
+         <ConditionEffect duration="1">Slowed</ConditionEffect>
+         <Amplitude>1.5</Amplitude>
+         <Frequency>3</Frequency>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="17">
+         <ObjectId>snow flakes</ObjectId>
+         <Damage>90</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <Size>85</Size>
+         <ConditionEffect duration="2">Weak</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="18">
+         <ObjectId>XMAS Frozen Arrow</ObjectId>
+         <Damage>115</Damage>
+         <Speed>120</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="19">
+         <ObjectId>Icicle Shot</ObjectId>
+         <Damage>60</Damage>
+         <Speed>110</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="3">Darkness</ConditionEffect>
+         <Size>135</Size>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="20">
+         <ObjectId>FR Boss Ball</ObjectId>
+         <Speed>30</Speed>
+         <Damage>130</Damage>
+         <Size>90</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="2">Unstable</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="21">
+         <ObjectId>FR God Wave</ObjectId>
+         <Damage>110</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>3500</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
+         <Boomerang/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="22">
+         <ObjectId>FR Boss Shard</ObjectId>
+         <Damage>120</Damage>
+         <Speed>70</Speed>
+         <Size>110</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+         <FaceDir/>
+         <ConditionEffect duration="0.8">Paralyzed</ConditionEffect>
+      </Projectile>
+      <Projectile id="23">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Damage>100</Damage>
+         <Speed>60</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <Wavy/>
+      </Projectile>
+      <Projectile id="24">
+         <ObjectId>Yeti Boulder</ObjectId>
+         <Damage>245</Damage>
+         <Speed>40</Speed>
+         <Size>180</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="25">
+         <ObjectId>FR Boss Big</ObjectId>
+         <Speed>25</Speed>
+         <Damage>140</Damage>
+         <LifetimeMS>6000</LifetimeMS>
+         <Size>125</Size>
+      </Projectile>
+      <Projectile id="26">
+         <ObjectId>Aqua Missile</ObjectId>
+         <Damage>50</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>140</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="1">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="27">
+         <ObjectId>Aqua Missile</ObjectId>
+         <Damage>75</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Amplitude>5</Amplitude>
+         <Frequency>0.95</Frequency>
+         <Size>120</Size>
+         <FaceDir/>
+         <ConditionEffect duration="1">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="28">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Damage>125</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <Wavy/>
+         <Boomerang/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="29">
+         <ObjectId>Ice Burst</ObjectId>
+         <Damage>140</Damage>
+         <Speed>35</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <Amplitude>1.5</Amplitude>
+         <Frequency>3</Frequency>
+         <ArmorPiercing/>
+         <FaceDir/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="30">
+         <ObjectId>Eternal Snowflake Shot</ObjectId>
+         <Speed>25</Speed>
+         <Damage>90</Damage>
+         <LifetimeMS>7000</LifetimeMS>
+         <ConditionEffect duration="1">Slowed</ConditionEffect>
+         <Amplitude>1.5</Amplitude>
+         <Frequency>3</Frequency>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="31">
+         <ObjectId>snow flakes</ObjectId>
+         <Damage>110</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <Size>85</Size>
+         <ConditionEffect duration="2">Weak</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="32">
+         <ObjectId>XMAS Frozen Arrow</ObjectId>
+         <Damage>135</Damage>
+         <Speed>120</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="33">
+         <ObjectId>Icicle Shot</ObjectId>
+         <Damage>80</Damage>
+         <Speed>110</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="3">Darkness</ConditionEffect>
+         <Size>135</Size>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="34">
+         <ObjectId>FR Boss Ball</ObjectId>
+         <Speed>30</Speed>
+         <Damage>160</Damage>
+         <Size>90</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="2">Unstable</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="35">
+         <ObjectId>FR God Wave</ObjectId>
+         <Damage>130</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>3500</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
+         <Boomerang/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="36">
+         <ObjectId>FR Boss Shard</ObjectId>
+         <Damage>140</Damage>
+         <Speed>70</Speed>
+         <Size>110</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+         <FaceDir/>
+         <ConditionEffect duration="0.8">Paralyzed</ConditionEffect>
+      </Projectile>
+      <Projectile id="37">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Damage>120</Damage>
+         <Speed>60</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <Wavy/>
+      </Projectile>
+      <Projectile id="38">
+         <ObjectId>Yeti Boulder</ObjectId>
+         <Damage>265</Damage>
+         <Speed>40</Speed>
+         <Size>180</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="39">
+         <ObjectId>FR Boss Big</ObjectId>
+         <Speed>25</Speed>
+         <Damage>160</Damage>
+         <LifetimeMS>6000</LifetimeMS>
+         <Size>125</Size>
+      </Projectile>
+      <Projectile id="40">
+         <ObjectId>Aqua Missile</ObjectId>
+         <Damage>70</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>140</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="1">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="41">
+         <ObjectId>Aqua Missile</ObjectId>
+         <Damage>95</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Amplitude>5</Amplitude>
+         <Frequency>0.95</Frequency>
+         <Size>120</Size>
+         <FaceDir/>
+         <ConditionEffect duration="1">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="42">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Damage>145</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <Wavy/>
+         <Boomerang/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="43">
+         <ObjectId>Ice Burst</ObjectId>
+         <Damage>160</Damage>
+         <Speed>35</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <Amplitude>1.5</Amplitude>
+         <Frequency>3</Frequency>
+         <ArmorPiercing/>
+         <FaceDir/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="44">
+         <ObjectId>Eternal Snowflake Shot</ObjectId>
+         <Speed>25</Speed>
+         <Damage>110</Damage>
+         <LifetimeMS>7000</LifetimeMS>
+         <ConditionEffect duration="1">Slowed</ConditionEffect>
+         <Amplitude>1.5</Amplitude>
+         <Frequency>3</Frequency>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="45">
+         <ObjectId>snow flakes</ObjectId>
+         <Damage>130</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <Size>85</Size>
+         <ConditionEffect duration="2">Weak</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="46">
+         <ObjectId>XMAS Frozen Arrow</ObjectId>
+         <Damage>155</Damage>
+         <Speed>120</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="47">
+         <ObjectId>Icicle Shot</ObjectId>
+         <Damage>100</Damage>
+         <Speed>110</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="3">Darkness</ConditionEffect>
+         <Size>135</Size>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="48">
+         <ObjectId>FR Boss Ball</ObjectId>
+         <Speed>30</Speed>
+         <Damage>180</Damage>
+         <Size>90</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="2">Unstable</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="49">
+         <ObjectId>FR God Wave</ObjectId>
+         <Damage>150</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>3500</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
+         <Boomerang/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="50">
+         <ObjectId>FR Boss Shard</ObjectId>
+         <Damage>160</Damage>
+         <Speed>70</Speed>
+         <Size>110</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+         <FaceDir/>
+         <ConditionEffect duration="0.8">Paralyzed</ConditionEffect>
+      </Projectile>
+      <Projectile id="51">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Damage>140</Damage>
+         <Speed>60</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <Wavy/>
+      </Projectile>
+      <Projectile id="52">
+         <ObjectId>Yeti Boulder</ObjectId>
+         <Damage>285</Damage>
+         <Speed>40</Speed>
+         <Size>180</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="53">
+         <ObjectId>FR Boss Big</ObjectId>
+         <Speed>25</Speed>
+         <Damage>180</Damage>
+         <LifetimeMS>6000</LifetimeMS>
+         <Size>125</Size>
+      </Projectile>
+      <Projectile id="54">
+         <ObjectId>Aqua Missile</ObjectId>
+         <Damage>90</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>140</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="1">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="55">
+         <ObjectId>Aqua Missile</ObjectId>
+         <Damage>115</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Amplitude>5</Amplitude>
+         <Frequency>0.95</Frequency>
+         <Size>120</Size>
+         <FaceDir/>
+         <ConditionEffect duration="1">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="56">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Damage>165</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <Wavy/>
+         <Boomerang/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="57">
+         <ObjectId>Ice Burst</ObjectId>
+         <Damage>180</Damage>
+         <Speed>35</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <Amplitude>1.5</Amplitude>
+         <Frequency>3</Frequency>
+         <ArmorPiercing/>
+         <FaceDir/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="58">
+         <ObjectId>Eternal Snowflake Shot</ObjectId>
+         <Speed>25</Speed>
+         <Damage>130</Damage>
+         <LifetimeMS>7000</LifetimeMS>
+         <ConditionEffect duration="1">Slowed</ConditionEffect>
+         <Amplitude>1.5</Amplitude>
+         <Frequency>3</Frequency>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="59">
+         <ObjectId>snow flakes</ObjectId>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <Size>85</Size>
+         <ConditionEffect duration="2">Weak</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="60">
+         <ObjectId>XMAS Frozen Arrow</ObjectId>
+         <Damage>175</Damage>
+         <Speed>120</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="61">
+         <ObjectId>Icicle Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>110</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="3">Darkness</ConditionEffect>
+         <Size>135</Size>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="62">
+         <ObjectId>FR Boss Ball</ObjectId>
+         <Speed>30</Speed>
+         <Damage>200</Damage>
+         <Size>90</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="2">Unstable</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="63">
+         <ObjectId>FR God Wave</ObjectId>
+         <Damage>170</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>3500</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
+         <Boomerang/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="64">
+         <ObjectId>FR Boss Shard</ObjectId>
+         <Damage>180</Damage>
+         <Speed>70</Speed>
+         <Size>110</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+         <FaceDir/>
+         <ConditionEffect duration="0.8">Paralyzed</ConditionEffect>
+      </Projectile>
+      <Projectile id="65">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Damage>160</Damage>
+         <Speed>60</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <Wavy/>
+      </Projectile>
+      <Projectile id="66">
+         <ObjectId>Yeti Boulder</ObjectId>
+         <Damage>305</Damage>
+         <Speed>40</Speed>
+         <Size>180</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="67">
+         <ObjectId>FR Boss Big</ObjectId>
+         <Speed>25</Speed>
+         <Damage>200</Damage>
+         <LifetimeMS>6000</LifetimeMS>
+         <Size>125</Size>
+      </Projectile>
+      <Projectile id="68">
+         <ObjectId>Aqua Missile</ObjectId>
+         <Damage>110</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>140</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="1">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="69">
+         <ObjectId>Aqua Missile</ObjectId>
+         <Damage>135</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Amplitude>5</Amplitude>
+         <Frequency>0.95</Frequency>
+         <Size>120</Size>
+         <FaceDir/>
+         <ConditionEffect duration="1">Confused</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object id="RSM Melted Snowman Sand" type="0xb3de">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Melted Snowman</DisplayId>
+      <AnimatedTexture>
+         <File>chars8x8dBeach</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>95</MaxHitPoints>
+      <Defense>2</Defense>
+      <Exp>15</Exp>
+      <Terrain>ShoreSand</Terrain>
+      <SpawnProb>0.0</SpawnProb>
+      <Spawn>
+         <Mean>3</Mean>
+         <StdDev>1</StdDev>
+         <Min>2</Min>
+         <Max>5</Max>
+      </Spawn>
+      <Projectile id="0">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Speed>50</Speed>
+         <Damage>6</Damage>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object id="RSM Melted Snowman Plains" type="0xb3ff">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Melted Snowman</DisplayId>
+      <AnimatedTexture>
+         <File>chars8x8dBeach</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>95</MaxHitPoints>
+      <Defense>2</Defense>
+      <Exp>15</Exp>
+      <Terrain>ShorePlains</Terrain>
+      <SpawnProb>0.0</SpawnProb>
+      <Spawn>
+         <Mean>3</Mean>
+         <StdDev>1</StdDev>
+         <Min>2</Min>
+         <Max>5</Max>
+      </Spawn>
+      <Projectile id="0">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Speed>50</Speed>
+         <Damage>6</Damage>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object id="RSM Lil' Snowman Plains" type="0xb3df">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Lil' Snowman</DisplayId>
+      <AnimatedTexture>
+         <File>chars8x8dBeach</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>185</MaxHitPoints>
+      <Defense>5</Defense>
+      <Exp>25</Exp>
+      <Terrain>LowPlains</Terrain>
+      <SpawnProb>0.0</SpawnProb>
+      <Spawn>
+         <Mean>3</Mean>
+         <StdDev>1</StdDev>
+         <Min>2</Min>
+         <Max>5</Max>
+      </Spawn>
+      <Projectile id="0">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Speed>50</Speed>
+         <Damage>10</Damage>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object id="RSM Lil' Snowman Forest" type="0xb400">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Lil' Snowman</DisplayId>
+      <AnimatedTexture>
+         <File>chars8x8dBeach</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>185</MaxHitPoints>
+      <Defense>5</Defense>
+      <Exp>25</Exp>
+      <Terrain>LowForest</Terrain>
+      <SpawnProb>0.0</SpawnProb>
+      <Spawn>
+         <Mean>3</Mean>
+         <StdDev>1</StdDev>
+         <Min>2</Min>
+         <Max>5</Max>
+      </Spawn>
+      <Projectile id="0">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Speed>50</Speed>
+         <Damage>10</Damage>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object id="RSM Lil' Snowman Sand" type="0xb401">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Lil' Snowman</DisplayId>
+      <AnimatedTexture>
+         <File>chars8x8dBeach</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>185</MaxHitPoints>
+      <Defense>5</Defense>
+      <Exp>25</Exp>
+      <Terrain>LowSand</Terrain>
+      <SpawnProb>0.0</SpawnProb>
+      <Spawn>
+         <Mean>3</Mean>
+         <StdDev>1</StdDev>
+         <Min>2</Min>
+         <Max>5</Max>
+      </Spawn>
+      <Projectile id="0">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Speed>50</Speed>
+         <Damage>10</Damage>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object id="RSM Small Snowman Forest" type="0xb3e0">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Small Snowman</DisplayId>
+      <AnimatedTexture>
+         <File>chars16x16dMountains2</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>280</MaxHitPoints>
+      <Exp>50</Exp>
+      <Defense>5</Defense>
+      <Terrain>MidForest</Terrain>
+      <SpawnProb>0.0</SpawnProb>
+      <Spawn>
+         <Mean>3</Mean>
+         <StdDev>1</StdDev>
+         <Min>2</Min>
+         <Max>5</Max>
+      </Spawn>
+      <Projectile id="0">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Speed>50</Speed>
+         <Damage>25</Damage>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object id="RSM Small Snowman Plains" type="0xb402">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Small Snowman</DisplayId>
+      <AnimatedTexture>
+         <File>chars16x16dMountains2</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>280</MaxHitPoints>
+      <Defense>5</Defense>
+      <Exp>50</Exp>
+      <Terrain>MidPlains</Terrain>
+      <SpawnProb>0.0</SpawnProb>
+      <Spawn>
+         <Mean>3</Mean>
+         <StdDev>1</StdDev>
+         <Min>2</Min>
+         <Max>5</Max>
+      </Spawn>
+      <Projectile id="0">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Speed>50</Speed>
+         <Damage>25</Damage>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object id="RSM Small Snowman Sand" type="0xb403">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Small Snowman</DisplayId>
+      <AnimatedTexture>
+         <File>chars16x16dMountains2</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>280</MaxHitPoints>
+      <Defense>5</Defense>
+      <Exp>50</Exp>
+      <Terrain>MidSand</Terrain>
+      <SpawnProb>0.0</SpawnProb>
+      <Spawn>
+         <Mean>3</Mean>
+         <StdDev>1</StdDev>
+         <Min>2</Min>
+         <Max>5</Max>
+      </Spawn>
+      <Projectile id="0">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Speed>50</Speed>
+         <Damage>25</Damage>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object id="RSM Snowman Plains" type="0xb3e1">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Snowman</DisplayId>
+      <AnimatedTexture>
+         <File>chars16x16dMountains2</File>
+         <Index>5</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>5</Defense>
+      <Exp>90</Exp>
+      <Terrain>HighPlains</Terrain>
+      <SpawnProb>0.0</SpawnProb>
+      <Spawn>
+         <Mean>3</Mean>
+         <StdDev>1</StdDev>
+         <Min>2</Min>
+         <Max>5</Max>
+      </Spawn>
+      <Projectile id="0">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Speed>50</Speed>
+         <Damage>45</Damage>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object id="RSM Snowman Forest" type="0xb404">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Snowman</DisplayId>
+      <AnimatedTexture>
+         <File>chars16x16dMountains2</File>
+         <Index>5</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>5</Defense>
+      <Exp>90</Exp>
+      <Terrain>HighForest</Terrain>
+      <SpawnProb>0.0</SpawnProb>
+      <Spawn>
+         <Mean>3</Mean>
+         <StdDev>1</StdDev>
+         <Min>2</Min>
+         <Max>5</Max>
+      </Spawn>
+      <Projectile id="0">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Speed>50</Speed>
+         <Damage>45</Damage>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object id="RSM Snowman Sand" type="0xb405">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Snowman</DisplayId>
+      <AnimatedTexture>
+         <File>chars16x16dMountains2</File>
+         <Index>5</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>5</Defense>
+      <Exp>90</Exp>
+      <Terrain>HighSand</Terrain>
+      <SpawnProb>0.0</SpawnProb>
+      <Spawn>
+         <Mean>3</Mean>
+         <StdDev>1</StdDev>
+         <Min>2</Min>
+         <Max>5</Max>
+      </Spawn>
+      <Projectile id="0">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Speed>50</Speed>
+         <Damage>45</Damage>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object id="RSM Frost Snowman God" type="0xb3e2">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Frost Snowman God</DisplayId>
+      <AnimatedTexture>
+         <File>chars16x16dMountains2</File>
+         <Index>7</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>1750</MaxHitPoints>
+      <Defense>15</Defense>
+      <Exp>150</Exp>
+      <God/>
+      <Terrain>Mountains</Terrain>
+      <SpawnProb>0.0</SpawnProb>
+      <Spawn>
+         <Mean>3</Mean>
+         <StdDev>1</StdDev>
+         <Min>2</Min>
+         <Max>5</Max>
+      </Spawn>
+      <Projectile id="0">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Speed>50</Speed>
+         <Damage>100</Damage>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object id="RSM Chill Snowman God" type="0xb3e3">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Chill Snowman God</DisplayId>
+      <AnimatedTexture>
+         <File>chars16x16dMountains2</File>
+         <Index>9</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>1850</MaxHitPoints>
+      <Defense>15</Defense>
+      <Exp>150</Exp>
+      <God/>
+      <Terrain>Mountains</Terrain>
+      <SpawnProb>0.0</SpawnProb>
+      <Spawn>
+         <Mean>3</Mean>
+         <StdDev>1</StdDev>
+         <Min>2</Min>
+         <Max>5</Max>
+      </Spawn>
+      <Projectile id="0">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Speed>70</Speed>
+         <Damage>80</Damage>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object id="RSM Cool Snowman God" type="0xb3e4">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Cool Snowman God</DisplayId>
+      <AnimatedTexture>
+         <File>chars16x16dMountains2</File>
+         <Index>6</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>15</Defense>
+      <Exp>150</Exp>
+      <God/>
+      <Terrain>Mountains</Terrain>
+      <SpawnProb>0.0</SpawnProb>
+      <Spawn>
+         <Mean>3</Mean>
+         <StdDev>1</StdDev>
+         <Min>2</Min>
+         <Max>5</Max>
+      </Spawn>
+      <Projectile id="0">
+         <ObjectId>XMAS Frozen Arrow</ObjectId>
+         <Damage>95</Damage>
+         <Speed>110</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object id="RSM Icy Snowman God" type="0xb3e5">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Icy Snowman God</DisplayId>
+      <AnimatedTexture>
+         <File>chars16x16dMountains2</File>
+         <Index>10</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Defense>15</Defense>
+      <Exp>150</Exp>
+      <God/>
+      <Terrain>Mountains</Terrain>
+      <SpawnProb>0.0</SpawnProb>
+      <Spawn>
+         <Mean>3</Mean>
+         <StdDev>1</StdDev>
+         <Min>2</Min>
+         <Max>5</Max>
+      </Spawn>
+      <Projectile id="0">
+         <ObjectId>FR Boss Ball</ObjectId>
+         <Speed>80</Speed>
+         <Damage>90</Damage>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object id="RSM Cold Snowman God" type="0xb3e6">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Cold Snowman God</DisplayId>
+      <AnimatedTexture>
+         <File>chars16x16dMountains2</File>
+         <Index>8</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>1800</MaxHitPoints>
+      <Defense>15</Defense>
+      <Exp>150</Exp>
+      <God/>
+      <Terrain>Mountains</Terrain>
+      <SpawnProb>0.0</SpawnProb>
+      <Spawn>
+         <Mean>3</Mean>
+         <StdDev>1</StdDev>
+         <Min>2</Min>
+         <Max>5</Max>
+      </Spawn>
+   </Object>
+   <Object type="0x6435" id="Broken Heart">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x6d</Index>
+      </Texture>
+      <Size>120</Size>
+      <Exp>0</Exp>
+      <Invincible/>
+   </Object>
+   <Object type="0x1b0b" id="Broken Heart 2">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x6d</Index>
+      </Texture>
+      <Size>120</Size>
+      <Exp>0</Exp>
+      <Invincible/>
+   </Object>
+   <Object type="0x1b0c" id="Broken Heart 3">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x6d</Index>
+      </Texture>
+      <Size>120</Size>
+      <Exp>0</Exp>
+      <Invincible/>
+   </Object>
+   <Object type="0x1b0d" id="Broken Heart 4">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x6d</Index>
+      </Texture>
+      <Size>120</Size>
+      <Exp>0</Exp>
+      <Invincible/>
+   </Object>
+   <Object type="0x1b0e" id="Broken Heart 5">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x6d</Index>
+      </Texture>
+      <Size>120</Size>
+      <Exp>0</Exp>
+      <Invincible/>
+   </Object>
+   <Object type="0x1b0f" id="Broken Heart 6">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x6d</Index>
+      </Texture>
+      <Size>100</Size>
+      <Exp>0</Exp>
+      <Invincible/>
+   </Object>
+   <Object type="0x1b10" id="Broken Heart 7">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x6d</Index>
+      </Texture>
+      <Size>120</Size>
+      <Exp>0</Exp>
+      <Invincible/>
+   </Object>
+   <Object type="0x1b11" id="Broken Heart 8">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x6d</Index>
+      </Texture>
+      <Size>120</Size>
+      <Exp>0</Exp>
+      <Invincible/>
+   </Object>
+   <Object type="0x1b12" id="Hearts Transformer">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <Exp>0</Exp>
+      <NoMiniMap/>
+      <Invincible/>
+   </Object>
+   <Object type="0x1b17" id="Bella Portal Spawner">
+      <NoMiniMap/>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+      <Exp>0</Exp>
+      <Invincible/>
+   </Object>
+   <Object type="0x5f0b" id="Bella Portal Spawner2">
+      <DisplayId>Valentine's Flower</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>160</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Size>160</Size>
+      <Exp>1000</Exp>
+      <ShadowSize>0</ShadowSize>
+      <TrackLoot/>
+   </Object>
+   <Object type="0x6436" id="Whole Heart">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x6c</Index>
+      </Texture>
+      <Size>120</Size>
+      <ShadowSize>0</ShadowSize>
+      <Exp>0</Exp>
+      <Invincible/>
+      <Projectile id="0">
+         <ObjectId>Succubus Bullet</ObjectId>
+         <Speed>35</Speed>
+         <Damage>0</Damage>
+         <Size>50</Size>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+         <LifetimeMS>6000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x6437" id="Broken Heart Arrow">
+      <NoMiniMap/>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x5f3</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <Exp>0</Exp>
+      <Invincible/>
+   </Object>
+   <Object type="0x1b14" id="BellaEncMap">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <Exp>0</Exp>
+      <Invincible/>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x1b15" id="BellaEncMap2">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <Exp>0</Exp>
+      <Invincible/>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x1b16" id="Hearts Transformer 2">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x6c</Index>
+      </Texture>
+      <Size>50</Size>
+      <Exp>0</Exp>
+      <Invincible/>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x5f0a" id="Arrow Maker">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x5f0c" id="Valentine's Heart">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Invincible/>
+      <Color>0xFF69B4</Color>
+      <ShadowSize>0</ShadowSize>
+      <Quest/>
+      <Enemy/>
+      <Level>20</Level>
+      <Size>0</Size>
+      <Portrait>
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0x6c</Index>
+         </Texture>
+      </Portrait>
+   </Object>
+   <Object type="0x2635" id="Yellow Leprechaun">
+      <DisplayId>Yellow Leprechaun</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>stPatricksChars8x8</File>
+         <Index>6</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dwarves_hit</HitSound>
+      <DeathSound>monster/dwarves_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>487</Exp>
+      <Quest/>
+      <Level>20</Level>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>Razorlight</ObjectId>
+         <Speed>10</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>2500</LifetimeMS>
+         <FaceDir/>
+         <Parametric/>
+         <Magnitude>3.0</Magnitude>
+         <Size>110</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="1.0">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Razorlight</ObjectId>
+         <Speed>10</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>800</LifetimeMS>
+         <Size>110</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <Wavy/>
+         <ConditionEffect duration="1.0">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Rainbow Rod Beam</ObjectId>
+         <Speed>70</Speed>
+         <Damage>70</Damage>
+         <LifetimeMS>2600</LifetimeMS>
+         <Size>130</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="2.0">Hexed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x7290" id="Sanctuary Sword Lock">
+      <Enemy/>
+      <Invincible/>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x8c</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x7291" id="Sanctuary Shield Lock">
+      <Enemy/>
+      <Invincible/>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x8d</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x7292" id="Sanctuary Helmet Lock">
+      <Enemy/>
+      <Invincible/>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x8e</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x7293" id="Sanctuary Full Lock">
+      <Enemy/>
+      <Invincible/>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>oryxSanctuaryObjects8x8</File>
+         <Index>0x47</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+</Objects>

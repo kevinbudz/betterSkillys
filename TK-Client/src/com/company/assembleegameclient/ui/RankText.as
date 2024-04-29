@@ -57,16 +57,12 @@ package com.company.assembleegameclient.ui
          text.text = this.numStars_.toString();
          text.updateMetrics();
          text.filters = [new DropShadowFilter(0,0,0,1,4,4,2)];
+         text.y = 2;
          this.sprite_.addChild(text);
          icon = !!this.largeText_?FameUtil.numStarsToBigImage(this.numStars_):FameUtil.numStarsToImage(this.numStars_);
          icon.x = text.width + 2;
          this.sprite_.addChild(icon);
          icon.y = int(text.height / 2 - icon.height / 2) + 1;
-         var w:int = icon.x + icon.width;
-         this.sprite_.graphics.clear();
-         this.sprite_.graphics.beginFill(0,0.4);
-         this.sprite_.graphics.drawRoundRect(-2,icon.y - 3,w + 6,icon.height + 8,12,12);
-         this.sprite_.graphics.endFill();
          addChild(this.sprite_);
          if(this.prefix_ != null)
          {

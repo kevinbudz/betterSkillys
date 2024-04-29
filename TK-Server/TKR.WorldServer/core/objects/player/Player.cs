@@ -7,7 +7,6 @@ using System.Linq;
 using TKR.Shared;
 using TKR.Shared.database.character.inventory;
 using TKR.Shared.database.party;
-using TKR.Shared.discord;
 using TKR.Shared.resources;
 using TKR.WorldServer.core.net.datas;
 using TKR.WorldServer.core.net.handlers;
@@ -251,8 +250,6 @@ namespace TKR.WorldServer.core.objects
             Inventory = new Inventory(this, Utils.ResizeArray(Client.Character.Items.Select(_ => (_ == 0xffff || !gameData.Items.ContainsKey(_)) ? null : gameData.Items[_]).ToArray(), 28), Utils.ResizeArray(Client.Character.Datas, 28));
             Inventory.InventoryChanged += (sender, e) => Stats.ReCalculateValues();
             SlotTypes = Utils.ResizeArray(gameData.Classes[ObjectType].SlotTypes, 28);
-
-            _talismanEffects = new StatTypeValue<int>(this, StatDataType.TALISMAN_EFFECT_MASK_STAT, 0);
 
             Stats = new StatsManager(this);
 
@@ -931,34 +928,6 @@ namespace TKR.WorldServer.core.objects
         {
             var maxed = GetMaxedStats();
             var deathMessage = Name + " (" + maxed + (UpgradeEnabled ? "/16, " : "/8, ") + Client.Character.Fame + ") has been killed by " + killer + "! ";
-            try
-            {
-                var discord = World.GameServer.Configuration.discordIntegration;
-                var players = World.Players.Count(p => p.Value.Client != null);
-                var builder = discord.MakeDeathAnnounce(
-                    World.GameServer.Configuration.serverInfo,
-                    players,
-                    World.MaxPlayers,
-                    World.InstanceType == WorldResourceInstanceType.Dungeon,
-                    discord.ripIco,
-                    Name,
-                    (int)Client.Rank.Rank,
-                    Stars,
-                    ObjectDesc.IdName,
-                    Level,
-                    Fame,
-                    UpgradeEnabled,
-                    maxed,
-                    killer
-                );
-#pragma warning disable
-                discord.SendWebhook(discord.webhookDeathEvent, builder.Value);
-#pragma warning restore
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"[Death] Discord Intergration error");
-            }
 
             if ((maxed >= 6 || Fame >= 1000) && !IsAdmin)
             {
@@ -1161,8 +1130,6 @@ namespace TKR.WorldServer.core.objects
                 var vitalityStat = Stats[6];
 
                 HealthRegenCarry += (1.0 + (0.36 * vitalityStat)) * time.DeltaTime;
-                if (HasTalismanEffect(TalismanEffectType.CallToArms))
-                    HealthRegenCarry *= 2.0;
                 if (HasConditionEffect(ConditionEffectIndex.Healing))
                     HealthRegenCarry += 20.0 * time.DeltaTime;
 
@@ -1180,8 +1147,6 @@ namespace TKR.WorldServer.core.objects
                 var wisdomStat = Stats[7];
 
                 ManaRegenCarry += (1.0 + (0.24 * wisdomStat)) * time.DeltaTime;
-                if (HasTalismanEffect(TalismanEffectType.CallToArms))
-                    ManaRegenCarry *= 2.0;
 
                 if (HasConditionEffect(ConditionEffectIndex.MPTRegeneration))
                     ManaRegenCarry += 20.0 * time.DeltaTime;

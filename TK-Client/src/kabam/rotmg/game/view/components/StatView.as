@@ -55,6 +55,7 @@ package kabam.rotmg.game.view.components
          this.valText_.text = "-";
          this.valText_.updateMetrics();
          this.valText_.filters = [new DropShadowFilter(0,0,0)];
+         this.valText_.y = -3;
          addChild(this.valText_);
          this.redOnZero_ = redOnZero;
          this.mouseOver = new NativeSignal(this,MouseEvent.MOUSE_OVER,MouseEvent);

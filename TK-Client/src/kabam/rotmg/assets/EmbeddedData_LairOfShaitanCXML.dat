@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x741b" id="md1 Head of Shaitan">
+      <DisplayId>Shaitan the Advisor</DisplayId>
+      <Class>Character</Class>
+      <Group>Spawners</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>92</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>250</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>65000</MaxHitPoints>
+      <Defense>60</Defense>
+      <Exp>8000</Exp>
+      <ParalyzeImmune/>
+      <DazedImmune/>
+      <StasisImmune/>
+      <StunImmune/>
+      <EventChestBoss/>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x16a</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x16b</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x16c</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x16d</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x16e</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="7">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x16f</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="8">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x170</Index>
+         </Texture>
+      </AltTexture>
+      <Projectile id="0">
+         <ObjectId>Armor Pierce Bullet</ObjectId>
+         <Speed>55</Speed>
+         <ArmorPiercing/>
+         <Damage>150</Damage>
+         <LifetimeMS>6000</LifetimeMS>
+         <Size>125</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Weakness Bullet</ObjectId>
+         <Speed>55</Speed>
+         <ArmorPiercing/>
+         <Damage>70</Damage>
+         <LifetimeMS>6000</LifetimeMS>
+         <Size>125</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x741c" id="md1 Right Hand of Shaitan">
+      <DisplayId>Right Hand of Shaitan</DisplayId>
+      <Class>Character</Class>
+      <Group>Spawners</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>90</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>200</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>17500</MaxHitPoints>
+      <Defense>70</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <StasisImmune/>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x158</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x159</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <Projectile id="0">
+         <ObjectId>White Bullet</ObjectId>
+         <Speed>40</Speed>
+         <Damage>125</Damage>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Armor Pierce Bullet</ObjectId>
+         <Speed>30</Speed>
+         <ArmorPiercing/>
+         <Damage>100</Damage>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Paralyze Bullet</ObjectId>
+         <Speed>40</Speed>
+         <Damage>50</Damage>
+         <LifetimeMS>500</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="0.5">Paralyzed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x742c" id="md1 Right Smashing Hand">
+      <DisplayId>Right Hand of Shaitan</DisplayId>
+      <Class>Character</Class>
+      <Group>Spawners</Group>
+      <Enemy/>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x168</Index>
+      </Texture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>200</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>20000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Silence Bullet</ObjectId>
+         <Speed>35</Speed>
+         <Damage>70</Damage>
+         <LifetimeMS>1600</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="1.0">Quiet</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x741d" id="md1 Left Hand of Shaitan">
+      <DisplayId>Left Hand of Shaitan</DisplayId>
+      <Class>Character</Class>
+      <Group>Spawners</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>91</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>200</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>17500</MaxHitPoints>
+      <Defense>70</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <StasisImmune/>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x15A</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x15B</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <Projectile id="0">
+         <ObjectId>White Bullet</ObjectId>
+         <Speed>40</Speed>
+         <Damage>125</Damage>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Armor Pierce Bullet</ObjectId>
+         <Speed>30</Speed>
+         <ArmorPiercing/>
+         <Damage>100</Damage>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Paralyze Bullet</ObjectId>
+         <Speed>40</Speed>
+         <Damage>50</Damage>
+         <LifetimeMS>500</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="0.5">Paralyzed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x742b" id="md1 Left Smashing Hand">
+      <DisplayId>Left Hand of Shaitan</DisplayId>
+      <Class>Character</Class>
+      <Group>Spawners</Group>
+      <Enemy/>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x169</Index>
+      </Texture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>200</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>20000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Silence Bullet</ObjectId>
+         <Speed>35</Speed>
+         <Damage>70</Damage>
+         <LifetimeMS>1600</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="1.0">Quiet</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x741e" id="md1 Right Hand spawner">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x741f" id="md1 Left Hand spawner">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x7420" id="md1 Governor">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x7429" id="md1 LeftHandSmash">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x742a" id="md1 RightHandSmash">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x7424" id="md1 Right Burst">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x7425" id="md1 Mid Burst">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x7426" id="md1 Left Burst">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x7430" id="md1 Lava Makers">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x7421" id="md1 Right Hand of Shaitan fake">
+      <DisplayId>Right Hand of Shaitan</DisplayId>
+      <Class>Character</Class>
+      <Group>Spawners</Group>
+      <Enemy/>
+      <NoMiniMap/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>90</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>200</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Defense>70</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <DazedImmune/>
+      <StasisImmune/>
+      <StunImmune/>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x158</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x159</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+   </Object>
+   <Object type="0x7422" id="md1 Left Hand of Shaitan fake">
+      <DisplayId>Left Hand of Shaitan</DisplayId>
+      <Class>Character</Class>
+      <Group>Spawners</Group>
+      <Enemy/>
+      <NoMiniMap/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>91</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>200</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <DazedImmune/>
+      <StasisImmune/>
+      <StunImmune/>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x15A</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x15B</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+   </Object>
+   <Object type="0x7423" id="md1 CreepyHands">
+      <DisplayId>Creepy Small Hands</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>90</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>50</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>3600</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>0</Exp>
+      <Projectile id="0">
+         <ObjectId>Armor Pierce Bullet</ObjectId>
+         <Speed>20</Speed>
+         <Damage>13</Damage>
+         <LifetimeMS>250</LifetimeMS>
+         <Size>50</Size>
+         <ArmorPiercing/>
+         <ConditionEffect duration="0.5">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x7428" id="md1 CreepyHead">
+      <DisplayId>Creepy Small Heads</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>92</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>75</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>25</Defense>
+      <Exp>0</Exp>
+      <Projectile id="0">
+         <ObjectId>Armor Pierce Bullet</ObjectId>
+         <Speed>20</Speed>
+         <Damage>70</Damage>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0x7431" id="md1 Loot Balloon Shaitan">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x466</Index>
+      </Texture>
+      <MaxHitPoints>80000</MaxHitPoints>
+      <Defense>35</Defense>
+      <Size>160</Size>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <DazedImmune/>
+      <StasisImmune/>
+      <StunImmune/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0xaab3" id="Shaitan Portal Dropper">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+</Objects>

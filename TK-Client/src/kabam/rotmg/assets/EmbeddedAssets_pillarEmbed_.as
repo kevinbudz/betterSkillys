@@ -1,11 +1,17 @@
-package kabam.rotmg.assets {
-import mx.core.*;
+﻿// Decompiled by AS3 Sorcerer 6.08
+// www.as3sorcerer.com
 
-[Embed(source="EmbeddedAssets_pillarEmbed_.dat", mimeType="application/octet-stream")]
-public class EmbeddedAssets_pillarEmbed_ extends ByteArrayAsset {
-   public function EmbeddedAssets_pillarEmbed_() {
-      super();
+//kabam.rotmg.assets.EmbeddedAssets_pillarEmbed_
 
-   }
-}
-}
+package kabam.rotmg.assets
+{
+    import mx.core.ByteArrayAsset;
+
+[Embed(source="EmbeddedAssets_pillar.dat", mimeType="application/octet-stream")]
+    public class EmbeddedAssets_pillarEmbed_ extends ByteArrayAsset 
+    {
+
+
+    }
+}//package kabam.rotmg.assets
+

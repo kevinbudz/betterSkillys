@@ -1,6 +1,8 @@
 ﻿package kabam.rotmg.ui.view.components
 {
 import com.company.rotmg.graphics.ScreenGraphic;
+
+import flash.display.Graphics;
 import flash.display.Sprite;
 import flash.geom.Rectangle;
 import io.decagames.rotmg.ui.buttons.SliceScalingButton;
@@ -29,8 +31,7 @@ public class MenuOptionsBar extends Sprite
 
     private const rightObjects:Array = [];
 
-    public function MenuOptionsBar()
-    {
+    public function MenuOptionsBar() {
         super();
     }
 

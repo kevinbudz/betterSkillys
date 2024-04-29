@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x0802" id="South Tutorial Gun">
+      <Class>GameObject</Class>
+      <Model>Tower</Model>
+      <Enemy/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xc8</Index>
+      </Texture>
+      <Invincible/>
+      <Projectile>
+         <ObjectId>Green Blob</ObjectId>
+         <Speed>40</Speed>
+         <Damage>5</Damage>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x0803" id="North Tutorial Gun">
+      <Class>GameObject</Class>
+      <Model>Tower</Model>
+      <Enemy/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xc8</Index>
+      </Texture>
+      <Invincible/>
+      <Projectile>
+         <ObjectId>Green Blob</ObjectId>
+         <Speed>40</Speed>
+         <Damage>5</Damage>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x0804" id="East Tutorial Gun">
+      <Class>GameObject</Class>
+      <Model>Tower</Model>
+      <Enemy/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xc8</Index>
+      </Texture>
+      <Invincible/>
+      <Projectile>
+         <ObjectId>Green Blob</ObjectId>
+         <Speed>40</Speed>
+         <Damage>5</Damage>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x0805" id="West Tutorial Gun">
+      <Class>GameObject</Class>
+      <Model>Tower</Model>
+      <Enemy/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xc8</Index>
+      </Texture>
+      <Invincible/>
+      <Projectile>
+         <ObjectId>Green Blob</ObjectId>
+         <Speed>40</Speed>
+         <Damage>5</Damage>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x0146" id="West Tutorial Hallway Gun">
+      <Class>GameObject</Class>
+      <Model>Tower</Model>
+      <Enemy/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xc8</Index>
+      </Texture>
+      <Invincible/>
+      <Projectile>
+         <ObjectId>Blue Mystic Shot</ObjectId>
+         <Speed>25</Speed>
+         <Damage>4</Damage>
+         <LifetimeMS>7000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x0147" id="Dummy Tutorial Gun">
+      <Class>GameObject</Class>
+      <Model>Tower</Model>
+      <Enemy/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xc8</Index>
+      </Texture>
+      <Invincible/>
+   </Object>
+   <Object type="0x0148" id="East Tutorial Hallway Gun">
+      <Class>GameObject</Class>
+      <Model>Tower</Model>
+      <Enemy/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xc8</Index>
+      </Texture>
+      <Invincible/>
+      <Projectile>
+         <ObjectId>Blue Mystic Shot</ObjectId>
+         <Speed>17</Speed>
+         <Damage>4</Damage>
+         <LifetimeMS>10350</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x0149" id="Tutorial Straight Aggregate Gun">
+      <Class>GameObject</Class>
+      <Model>Tower</Model>
+      <Enemy/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xc8</Index>
+      </Texture>
+      <Invincible/>
+      <Projectile>
+         <ObjectId>Fire Mystic Shot</ObjectId>
+         <Speed>5</Speed>
+         <Damage>0</Damage>
+         <LifetimeMS>2000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x014a" id="Tutorial Diagonal Aggregate Gun">
+      <Class>GameObject</Class>
+      <Model>Tower</Model>
+      <Enemy/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xc8</Index>
+      </Texture>
+      <Invincible/>
+      <Projectile>
+         <ObjectId>Fire Mystic Shot</ObjectId>
+         <Speed>7</Speed>
+         <Damage>0</Damage>
+         <LifetimeMS>2000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x014b" id="Tutorial Aggregate Gun">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xc8</Index>
+      </Texture>
+      <Invincible/>
+      <Size>0</Size>
+      <Projectile>
+         <ObjectId>Fire Mystic Shot</ObjectId>
+         <Speed>25</Speed>
+         <Damage>10</Damage>
+         <LifetimeMS>6750</LifetimeMS>
+         <Size>200</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x014c" id="Tutorial Aggregate Activate Trigger">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0xd0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x014d" id="Tutorial Aggregate Placer">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0xd0</Index>
+      </Texture>
+      <Invincible/>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x014e" id="Evil Chicken Remnant">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lofiProjs</File>
+            <Index>0x60</Index>
+         </Texture>
+         <Texture>
+            <File>lofiProjs</File>
+            <Index>0x61</Index>
+         </Texture>
+         <Texture>
+            <File>lofiProjs</File>
+            <Index>0x62</Index>
+         </Texture>
+      </RandomTexture>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0x014f" id="Evil Chicken God Explosion">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiProjs</File>
+         <Index>0x60</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x0195" id="Tutorial Chicken Killed Clear">
+      <Class>GameObject</Class>
+      <Size>0</Size>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0xd0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0196" id="Evil Chicken Remnant AltTexture">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiProjs</File>
+         <Index>0x62</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0246" id="Evil Chicken Room Closer">
+      <Class>GameObject</Class>
+      <Size>0</Size>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0xd0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0806" id="Tutorial Loot Bag">
+      <Class>Container</Class>
+      <Container/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj</File>
+         <Index>0x08</Index>
+      </Texture>
+      <Size>75</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+      <Equipment>0x0a4f, -1, -1, -1, -1, -1, -1, -1</Equipment>
+   </Object>
+   <Object type="0x0808" id="Up Arrow">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x14</Index>
+      </Texture>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0x0809" id="UpLeft Arrow">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x15</Index>
+      </Texture>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0x080a" id="UpRight Arrow">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x16</Index>
+      </Texture>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0x080b" id="Grey Up Arrow">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x17</Index>
+      </Texture>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0x071d" id="Portal to Nexus">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Nexus</DungeonName>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x36</Index>
+      </Texture>
+   </Object>
+   <Object type="0x071e" id="Kitchen Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Kitchen</DungeonName>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xdf</Index>
+      </Texture>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x0745" id="Nexus Explanation Obj">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x0746" id="Nexus Explanation Portal">
+      <Class>Portal</Class>
+      <DisplayId>Nexus Explanation</DisplayId>
+      <DungeonName>Nexus Explanation</DungeonName>
+      <IntergamePortal/>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x36</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0747" id="Vault Explanation Portal">
+      <Class>Portal</Class>
+      <DisplayId>Vault Explanation</DisplayId>
+      <DungeonName>Vault Explanation</DungeonName>
+      <IntergamePortal/>
+      <Texture>
+         <File>lofiEnvironment3</File>
+         <Index>0xf8</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0748" id="Guild Explanation Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Guild Explanation</DisplayId>
+      <DungeonName>Guild Explanation</DungeonName>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x54</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x027b" id="Exalted Kitchen Portal">
+      <Class>Portal</Class>
+      <DisplayId>Exalted Kitchen</DisplayId>
+      <DungeonName>Exalted Kitchen</DungeonName>
+      <IntergamePortal/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xdf</Index>
+      </Texture>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x0261" id="Kitchen Loot Chest">
+      <Class>Container</Class>
+      <Container/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj</File>
+         <Index>0x02</Index>
+      </Texture>
+      <Size>100</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+      <Equipment>0x0a22, -1, -1, 0xa98, -1, 0xa23, 0x0a22, -1</Equipment>
+   </Object>
+   <Object type="0x0273" id="Kitchen Loot Chest Aligner">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObj</File>
+         <Index>0x02</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x0277" id="Kitchen Captain Wall Clear">
+      <Class>GameObject</Class>
+      <Size>0</Size>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0xd0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0278" id="Tutorial Butcher Activate Trigger">
+      <Class>GameObject</Class>
+      <Size>0</Size>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0xd0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0279" id="Tutorial Butcher Guard Throw North">
+      <Class>GameObject</Class>
+      <Size>0</Size>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0xd0</Index>
+      </Texture>
+   </Object>
+   <Object type="0x027a" id="Tutorial Butcher Guard Throw South">
+      <Class>GameObject</Class>
+      <Size>0</Size>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0xd0</Index>
+      </Texture>
+   </Object>
+</Objects>

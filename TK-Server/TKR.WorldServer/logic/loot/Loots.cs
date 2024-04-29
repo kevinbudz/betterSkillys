@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using TKR.Shared;
 using TKR.Shared.database.character.inventory;
-using TKR.Shared.discord;
 using TKR.Shared.resources;
 using TKR.WorldServer.core;
 using TKR.WorldServer.core.objects;
@@ -60,13 +59,11 @@ namespace TKR.WorldServer.logic.loot
          *  Mythical 9
          */
 
-        public static readonly ushort[] BAG_ID_TO_TYPE = new ushort[] { 0x0500, 0x0506, 0x0503, 0x0532, 0x0509, 0x050B, 0x0533, 0x050C, 0x5076, 0xa002 };
-        public static readonly ushort[] BOOSTED_BAG_ID_TO_TYPE = new ushort[] { 0x0534, 0x0535, 0x0536, 0x0537, 0x0538, 0x0539, 0x053b, 0x053a, 0x5077, 0xa003 };
+        public static readonly ushort[] BAG_ID_TO_TYPE = new ushort[] { 0x0500, 0x0506, 0x0503, 0x0532, 0x0509, 0x050B, 0x0533, 0x050C };
+        public static readonly ushort[] BOOSTED_BAG_ID_TO_TYPE = new ushort[] { 0x0534, 0x0535, 0x0536, 0x0537, 0x0538, 0x0539, 0x053b, 0x053a };
 
         public static bool DropsInSoulboundBag(ItemType type, int tier)
         {
-            if (type == ItemType.Talisman)
-                return true;
             if (type == ItemType.Ring)
                 if (tier >= 2)
                     return true;
@@ -122,18 +119,6 @@ namespace TKR.WorldServer.logic.loot
                 default: break;
             }
             allLoot += player.LDBoostTime > 0 ? 0.25 : 0;
-            if (player.HasTalismanEffect(TalismanEffectType.PocketChange))
-                allLoot += 0.3;
-            if (player.HasTalismanEffect(TalismanEffectType.LuckOfTheIrish))
-                allLoot += 0.2;
-            if (player.HasTalismanEffect(TalismanEffectType.PartyOfOne))
-            {
-                var partyOfOneAmount = 50;
-                if (player.World.Players.Count != 1)
-                    partyOfOneAmount = -(player.World.Players.Count - 1); // - 1 so it doesnt include self if 50 ppl in world -> -49%
-                if (partyOfOneAmount > 0)
-                    allLoot += partyOfOneAmount / 100;
-            }
             allLoot += NexusWorld.WeekendLootBoostEvent;
             return allLoot;
         }
@@ -249,13 +234,6 @@ namespace TKR.WorldServer.logic.loot
                     if (i.Threshold >= 0 && i.Threshold < percentageOfDamage)
                     {
                         Item item = null;
-                        if (i.ItemType == ItemType.Talisman)
-                        {
-                            item = enemy.GameServer.ItemDustWeights.Talismans.GetRandom(Random.Shared);
-                            drops.Add(item);
-                            continue;
-                        }
-
                         if (i.ItemType != ItemType.None)
                         {
                             var items = GetItems(i.ItemType, i.Tier);
@@ -309,13 +287,6 @@ namespace TKR.WorldServer.logic.loot
             foreach (var priv in privDrops)
                 if (priv.Value.Count > 0)
                 {
-                    if (enemy.ObjectDesc.Quest || enemy.ObjectDesc.Encounter)
-                        if (priv.Key.HasTalismanEffect(TalismanEffectType.LuckOfTheIrish) && Random.Shared.NextDouble() <= 0.02)
-                        {
-                            priv.Key.World.ForeachPlayer(p => p.SendInfo($"{priv.Key.Name} has received double loot!"));
-                            ProcessPrivateBags(enemy, priv.Value, enemy.GameServer, priv.Key);
-                        }
-
                     ProcessPrivateBags(enemy, priv.Value, enemy.GameServer, priv.Key);
                 }
         }
@@ -371,48 +342,6 @@ namespace TKR.WorldServer.logic.loot
                     var world = player.World;
 
                     player.Client.SendPacket(new GlobalNotificationMessage(0, isMythical ? "mythical_loot" : "legendary_loot"));
-
-                    #region Discord Bot Message
-
-                    if (!player.IsAdmin && !player.GameServer.Configuration.serverInfo.testing)
-                    {
-                        var discord = core.Configuration.discordIntegration;
-                        var players = world.Players.Count(p => p.Value.Client != null);
-
-                        try
-                        {
-                            var builder = discord.MakeLootBuilder(
-                                core.Configuration.serverInfo,
-                                player.World.IsRealm ? player.World.DisplayName : player.World.IdName,
-                                players,
-                                world.MaxPlayers,
-                                world.InstanceType == WorldResourceInstanceType.Dungeon,
-                                isMythical ? "Mythical" : isLegendary ? "Legendary" : "Talisman",
-                                isMythical ? discord.mtBagImage : discord.lgBagImage,
-                                isMythical ? discord.mtImage : discord.lgImage,
-                                player.Name,
-                                player.Client.Rank.Rank,
-                                player.Stars,
-                                i.ObjectId,
-                                player.ObjectDesc.IdName,
-                                player.Level,
-                                player.Fame,
-                                player.GetMaxedStats()
-                            );
-
-                            if (!discord.CanSendLootNotification(player.Stars, player.ObjectDesc.IdName.ToLower()) && builder.HasValue)
-#pragma warning disable
-                                discord.SendWebhook(discord.webhookLootEvent, builder.Value);
-#pragma warning restore
-                        }
-                        catch (Exception ex)
-                        {
-                            Console.WriteLine($"Failed to call discord.MakeLootBuilder {ex}");
-                        }
-                    }
-
-                    #endregion Discord Bot Message
-
                     if (player != null)
                     {
                         var msg = new StringBuilder($"[{player.Client.Account.Name}] has obtained ");

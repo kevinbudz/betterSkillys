@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x50a" id="atst Wall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x161</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lofiEnvironment2</File>
+            <Index>0x161</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x5000" id="Test Horn">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0x2b3</Index>
+      </Texture>
+      <SlotType>9</SlotType>
+      <Description>A horn claimed from Oryx's iconic helmet. To hold this in one's hand is a monumental insult to the Mad God's ego.</Description>
+      <ExtraTooltipData>
+         <EffectInfo name="Mad God's Hubris" description="Gain +10 dexterity while attacking if your health is BELOW 90% Max HP"/>
+      </ExtraTooltipData>
+      <ActivateOnEquip amount="140" stat="0">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip amount="5" stat="21">IncrementStat</ActivateOnEquip>
+      <OnPlayerShootActivate cooldown="0.6" noStack="true" hpMinThresholdRelative="0.9" proc="1" amount="10" duration="1.4" stat="28" color="-1">StatBoostSelf</OnPlayerShootActivate>
+      <BagType>6</BagType>
+      <FameBonus>8</FameBonus>
+      <feedPower>1000</feedPower>
+      <Soulbound/>
+   </Object>
+   <Object type="0x741a" id="atst Low Range Obj">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rHero1</File>
+         <Index>0x01</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>0</Exp>
+      <AlwaysPositiveHealth/>
+      <Projectile id="0">
+         <ObjectId>Blue Star</ObjectId>
+         <Speed>25</Speed>
+         <Damage>1</Damage>
+         <LifetimeMS>5000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x7fef" id="Pumpkin Master">
+      <DisplayId>The Pumpkin Master</DisplayId>
+      <Class>Character</Class>
+      <Group>Master</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars16x16rEmbed</File>
+         <Index>13</Index>
+      </AnimatedTexture>
+      <Portrait>
+         <AnimatedTexture>
+            <File>d3Chars16x16rEmbed</File>
+            <Index>13</Index>
+         </AnimatedTexture>
+      </Portrait>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x190</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x191</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x192</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x193</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x194</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x195</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="7">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x196</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/skull_shrine_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Size>1</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>85000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>12000</Exp>
+      <Level>20</Level>
+      <Quest/>
+      <HealthBarBoss/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>Orange Pumpkin Blast</ObjectId>
+         <Speed>30</Speed>
+         <Damage>150</Damage>
+         <LifetimeMS>5000</LifetimeMS>
+         <Size>140</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Orange Shot</ObjectId>
+         <Speed>85</Speed>
+         <Damage>70</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Orange Pumpkin Blast</ObjectId>
+         <Speed>60</Speed>
+         <Damage>80</Damage>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>100</Size>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Orange Shot</ObjectId>
+         <Speed>35</Speed>
+         <Damage>55</Damage>
+         <LifetimeMS>7000</LifetimeMS>
+         <Size>80</Size>
+         <ConditionEffect duration="7" target="1">Stasis</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Orange Pumpkin Blast</ObjectId>
+         <Speed>50</Speed>
+         <Damage>150</Damage>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>140</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0x7ff0" id="PumpkinHomingFire">
+      <DisplayId>Pumpkin Blast</DisplayId>
+      <Class>Character</Class>
+      <Group>Statue</Group>
+      <Enemy/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x273</Index>
+      </Texture>
+      <Animation period="0" prob="1">
+         <Frame time="0.6">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x273</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x277</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.6">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0x278</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <HitSound>monster/flaming_skulls_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Size>130</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Exp>0</Exp>
+      <Level>20</Level>
+      <Flying/>
+      <Z>0.2</Z>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Pumpkin Wave</ObjectId>
+         <Speed>100</Speed>
+         <Damage>90</Damage>
+         <LifetimeMS>4000</LifetimeMS>
+         <ArmorPiercing/>
+         <Size>100</Size>
+         <ConditionEffect duration="2">Dazed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x7ff1" id="Pumpkin Huntress Statue">
+      <DisplayId>Huntress Pumpkin</DisplayId>
+      <Class>Character</Class>
+      <Group>Statues</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars16x16rEmbed</File>
+         <Index>12</Index>
+      </AnimatedTexture>
+      <Size>75</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Exp>0</Exp>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x7ff2" id="Pumpkin Huntress">
+      <DisplayId>Huntress Pumpkin</DisplayId>
+      <Class>Character</Class>
+      <Group>Statues</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars16x16rEmbed</File>
+         <Index>12</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flaming_skulls_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Size>75</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>292</Exp>
+      <Level>20</Level>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Purple Arrow</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>90</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Indigo Dark Arrow</ObjectId>
+         <Damage>150</Damage>
+         <Speed>85</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0x7ff3" id="Pumpkin Huntress Trap">
+      <DisplayId>Pumpkin Trap</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x273</Index>
+      </Texture>
+      <HitSound>monster/flaming_skulls_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Defense>50</Defense>
+      <Exp>0</Exp>
+      <Size>60</Size>
+      <ShadowSize>90</ShadowSize>
+      <StasisImmune/>
+      <StunImmune/>
+      <Projectile id="1">
+         <ObjectId>Orange Pumpkin Blast</ObjectId>
+         <Size>90</Size>
+         <Damage>55</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>650</LifetimeMS>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x7ff4" id="Pumpkin Trickster Statue">
+      <DisplayId>Trickster Pumpkin</DisplayId>
+      <Class>Character</Class>
+      <Group>Statues</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars16x16rEmbed</File>
+         <Index>10</Index>
+      </AnimatedTexture>
+      <Size>75</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Exp>0</Exp>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x7ff5" id="Pumpkin Trickster">
+      <DisplayId>Trickster Pumpkin</DisplayId>
+      <Class>Character</Class>
+      <Group>Statues</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars16x16rEmbed</File>
+         <Index>10</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flaming_skulls_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Size>75</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>292</Exp>
+      <Level>20</Level>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Spirit Dagger Slash</ObjectId>
+         <Damage>150</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Ghost Sr Slash</ObjectId>
+         <Damage>80</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x7ff6" id="Pumpkin Puppet Clone">
+      <DisplayId>Pumpkin Clone</DisplayId>
+      <Class>Character</Class>
+      <Group>Statues</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars16x16rEmbed</File>
+         <Index>10</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flaming_skulls_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Size>75</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>8000</MaxHitPoints>
+      <Defense>10</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Spirit Bolt</ObjectId>
+         <Damage>70</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>70</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x7ff7" id="Confuse Pumpkin Statue">
+      <DisplayId>Pumpkin of Chaos</DisplayId>
+      <Class>Character</Class>
+      <Group>Statues</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars16x16rEmbed</File>
+         <Index>11</Index>
+      </AnimatedTexture>
+      <Size>75</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Exp>0</Exp>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x7ff8" id="Pumpkin Confuse Puppet">
+      <DisplayId>Pumpkin of Chaos</DisplayId>
+      <Class>Character</Class>
+      <Group>Statue</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars16x16rEmbed</File>
+         <Index>11</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flaming_skulls_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Size>75</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Exp>390</Exp>
+      <Level>20</Level>
+      <ParalyzeImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Puppet Purple Wheel</ObjectId>
+         <Speed>60</Speed>
+         <Damage>90</Damage>
+         <Size>100</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Puppet Purple Wheel</ObjectId>
+         <Speed>60</Speed>
+         <Damage>90</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <Amplitude>0.6</Amplitude>
+         <Frequency>1</Frequency>
+         <MultiHit/>
+         <ConditionEffect duration="2">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Pink Swipe</ObjectId>
+         <Speed>60</Speed>
+         <Damage>150</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x7ff9" id="Bleed Pumpkin Puppet Statue">
+      <DisplayId>Pumpkin of Pain</DisplayId>
+      <Class>Character</Class>
+      <Group>Statues</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars16x16rEmbed</File>
+         <Index>9</Index>
+      </AnimatedTexture>
+      <Size>75</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>45000</MaxHitPoints>
+      <Exp>0</Exp>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x7ffa" id="Bleed Pumpkin Puppet">
+      <DisplayId>Pumpkin of Pain</DisplayId>
+      <Class>Character</Class>
+      <Group>Statue</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars16x16rEmbed</File>
+         <Index>9</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flaming_skulls_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Size>75</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>35000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Exp>390</Exp>
+      <Level>20</Level>
+      <StasisImmune/>
+      <StunImmune/>
+      <Projectile id="0">
+         <ObjectId>Puppet Red Wheel</ObjectId>
+         <Speed>55</Speed>
+         <Damage>150</Damage>
+         <LifetimeMS>2500</LifetimeMS>
+         <ConditionEffect duration="2">Bleeding</ConditionEffect>
+         <Size>90</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Puppet Red Wheel</ObjectId>
+         <Speed>55</Speed>
+         <Damage>150</Damage>
+         <LifetimeMS>2500</LifetimeMS>
+         <ConditionEffect duration="2">Bleeding</ConditionEffect>
+         <Size>90</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+</Objects>

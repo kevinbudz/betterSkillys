@@ -67,7 +67,6 @@ package com.company.assembleegameclient.map.partyoverlay
          var questObj:GameObject = this.map_.quest_.getObject(time);
          if(questObj != go_)
          {
-            map_.gs_.bossHealthBar.setGameObject(questObj);
             setGameObject(questObj);
             setToolTip(this.getToolTip(questObj,time));
          }

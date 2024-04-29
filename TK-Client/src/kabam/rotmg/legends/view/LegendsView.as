@@ -41,9 +41,7 @@ import kabam.rotmg.legends.model.Legend;
       
       private var mainContainer:Sprite;
 
-      private var buttonsBackground:SliceScalingBitmap;
-
-      private var closeButton:SliceScalingButton;
+      private var closeButton:TitleMenuOption;
       
       private var scrollBar:Scrollbar;
       
@@ -66,7 +64,7 @@ import kabam.rotmg.legends.model.Legend;
          this.makeLines();
          this.makeScrollbar();
          this.makeTimespanTabs();
-         this.makeMenuBar();
+         this.makeCloseButton();
       }
       
       private function makeScreenBase() : void
@@ -117,7 +115,13 @@ import kabam.rotmg.legends.model.Legend;
       
       private function makeScreenGraphic() : void
       {
-         //addChild(new ScreenGraphic());
+         var box:Sprite = new Sprite();
+         var b:Graphics = box.graphics;
+         b.clear();
+         b.beginFill(0, 0.5);
+         b.drawRect(0, 525, 800, 75);
+         b.endFill();
+         addChild(box);
       }
       
       private function makeLines() : void
@@ -181,18 +185,13 @@ import kabam.rotmg.legends.model.Legend;
          this.selectedTab.setIsSelected(true);
       }
 
-      private function makeMenuBar() : void
+      private function makeCloseButton() : void
       {
-         this.buttonsBackground = TextureParser.instance.getSliceScalingBitmap("UI","popup_header_title",800);
-         this.buttonsBackground.y = 502.5;
-         addChild(this.buttonsBackground);
-         this.closeButton = new SliceScalingButton(TextureParser.instance.getSliceScalingBitmap("UI","generic_green_button"));
-         this.closeButton.x = 350;
-         this.closeButton.y = 520;
-         this.closeButton.width = 100;
-         this.closeButton.setLabel("back",DefaultLabelFormat.questButtonCompleteLabel);
+         this.closeButton = new TitleMenuOption("done",36,false);
+         this.closeButton.x = 400 - this.closeButton.width / 2;
+         this.closeButton.y = 530;
          addChild(this.closeButton);
-         this.closeButton.clicked2.add(this.onCloseClick);
+         this.closeButton.addEventListener(MouseEvent.CLICK,this.onCloseClick);
       }
 
       private function onCloseClick(event:MouseEvent) : void

@@ -12,11 +12,10 @@ public class CharacterWindowBackground extends Sprite
       
       public function CharacterWindowBackground()
       {
-//         var bg:Sprite = new Sprite();
-//         bg.graphics.beginFill(3552822);
-//         bg.graphics.drawRect(0,0,200,600);
-//         addChild(bg);
-         addChild(new Bitmap(new HudViewBackground().bitmapData));
+         var bg:Sprite = new Sprite();
+         bg.graphics.beginFill(0x3F3F3F);
+         bg.graphics.drawRect(0,0,200,600);
+         addChild(bg);
       }
    }
 }

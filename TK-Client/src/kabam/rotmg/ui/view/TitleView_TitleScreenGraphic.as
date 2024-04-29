@@ -2,7 +2,7 @@
 package kabam.rotmg.ui.view {
 import mx.core.BitmapAsset;
 
-[Embed(source="clientimage.png")]
+[Embed(source="TitleView_TitleScreenGraphic.png")]
 public class TitleView_TitleScreenGraphic extends BitmapAsset {
 
 

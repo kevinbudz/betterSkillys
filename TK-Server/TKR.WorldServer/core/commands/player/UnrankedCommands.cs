@@ -638,25 +638,6 @@ namespace TKR.WorldServer.core.commands.player
 
             if (player.LDBoostTime > 0)
                 player.SendInfo($"Loot Drop provides: 25%");
-
-            if (player.HasTalismanEffect(TalismanEffectType.PocketChange))
-                player.SendInfo($"Pocket Change provides: 30%");
-
-            if (player.HasTalismanEffect(TalismanEffectType.LuckOfTheIrish))
-            {
-                player.SendInfo($"Luck of the Irish provides: 20%");
-                player.SendInfo($"Luck of the Irish provides: 2% chance to double loot");
-            }
-
-            if (player.HasTalismanEffect(TalismanEffectType.PartyOfOne))
-            {
-                var partyOfOneAmount = 50;
-                if (player.World.Players.Count != 1)
-                    partyOfOneAmount = -(player.World.Players.Count - 1); // - 1 so it doesnt include self if 50 ppl in world -> -49%
-                if(partyOfOneAmount > 0)
-                    player.SendInfo($"Party of One provides: {partyOfOneAmount}% ");
-            }
-
             if (NexusWorld.WeekendLootBoostEvent > 0.0f)
                 player.SendInfo($"Weekend Bonus provides: {(int)(NexusWorld.WeekendLootBoostEvent * 100.0)}%");
 

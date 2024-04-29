@@ -50,15 +50,29 @@ public class ServersScreen extends Sprite
       public var gotoTitle:Signal;
       public var updateServers:Signal;
       private var nexusClicked:NativeSignal;
+      private var title:SimpleText;
 
       public function ServersScreen()
       {
          super();
          addChild(new ScreenBase());
          this.gotoTitle = new Signal();
-         this.updateServers = new Signal()
+         this.updateServers = new Signal();
          addChild(new ScreenBase());
          addChild(new AccountScreen());
+         this.makeTitleText();
+      }
+
+      private function makeTitleText() : void
+      {
+         this.title = new SimpleText(32,11776947,false,0,0);
+         this.title.setBold(true);
+         this.title.text = "Servers";
+         this.title.updateMetrics();
+         this.title.filters = [new DropShadowFilter(0,0,0,1,8,8)];
+         this.title.x = 400 - this.title.width / 2;
+         this.title.y = 24;
+         addChild(this.title);
       }
       
       private function onScrollBarChange(event:Event) : void
@@ -101,7 +115,15 @@ public class ServersScreen extends Sprite
             this.scrollBar_.addEventListener(Event.CHANGE,this.onScrollBarChange);
             addChild(this.scrollBar_);
          }
-         addChild(new ScreenGraphic());
+
+         var box:Sprite = new Sprite();
+         var b:Graphics = box.graphics;
+         b.clear();
+         b.beginFill(0, 0.5);
+         b.drawRect(0, 525, 800, 75);
+         b.endFill();
+         addChild(box);
+
          this.doneButton_ = new TitleMenuOption("done",36,false);
          this.doneButton_.addEventListener(MouseEvent.CLICK,this.onDone);
          addChild(this.doneButton_);
@@ -112,7 +134,7 @@ public class ServersScreen extends Sprite
          g.lineTo(stage.stageWidth,100);
          g.lineStyle();
          this.doneButton_.x = stage.stageWidth / 2 - this.doneButton_.width / 2;
-         this.doneButton_.y = 524;
+         this.doneButton_.y = 530;
 
          this.button = new IconButton(AssetLibrary.getImageFromSet("lofiInterfaceBig",15),"Refresh","refresh_button_servers");
          this.button.x = 604;

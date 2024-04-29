@@ -1,0 +1,1177 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0xc85" id="Common Feline Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x100</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>0</Tier>
+      <Description>A common feline pet egg.</Description>
+      <PetFamily>Feline</PetFamily>
+      <Rarity>Common</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>50</feedPower>
+      <DropTradable/>
+      <Track/>
+   </Object>
+   <Object type="0xc86" id="Uncommon Feline Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x101</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>1</Tier>
+      <Description>An uncommon feline pet egg.</Description>
+      <PetFamily>Feline</PetFamily>
+      <Rarity>Uncommon</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>300</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xc87" id="Rare Feline Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x102</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>2</Tier>
+      <Description>A rare feline pet egg.</Description>
+      <PetFamily>Feline</PetFamily>
+      <Rarity>Rare</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>700</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xc88" id="Legendary Feline Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x103</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>3</Tier>
+      <Description>A legendary feline pet egg.</Description>
+      <PetFamily>Feline</PetFamily>
+      <Rarity>Legendary</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>3000</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xc89" id="Common Canine Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x104</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>0</Tier>
+      <Description>A common canine pet egg.</Description>
+      <PetFamily>Canine</PetFamily>
+      <Rarity>Common</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>50</feedPower>
+      <DropTradable/>
+      <Track/>
+   </Object>
+   <Object type="0xc8a" id="Uncommon Canine Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x105</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>1</Tier>
+      <Description>An uncommon canine pet egg.</Description>
+      <PetFamily>Canine</PetFamily>
+      <Rarity>Uncommon</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>300</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xc8b" id="Rare Canine Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x106</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>2</Tier>
+      <Description>A rare canine pet egg.</Description>
+      <PetFamily>Canine</PetFamily>
+      <Rarity>Rare</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>700</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xc8c" id="Legendary Canine Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x107</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>3</Tier>
+      <Description>A legendary canine pet egg.</Description>
+      <PetFamily>Canine</PetFamily>
+      <Rarity>Legendary</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>3000</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xc8d" id="Common Avian Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x108</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>0</Tier>
+      <Description>A common avian pet egg.</Description>
+      <PetFamily>Avian</PetFamily>
+      <Rarity>Common</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>50</feedPower>
+      <DropTradable/>
+      <Track/>
+   </Object>
+   <Object type="0xc8e" id="Uncommon Avian Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x109</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>1</Tier>
+      <Description>An uncommon avian pet egg.</Description>
+      <PetFamily>Avian</PetFamily>
+      <Rarity>Uncommon</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>300</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xc8f" id="Rare Avian Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x10a</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>2</Tier>
+      <Description>A rare avian pet egg.</Description>
+      <PetFamily>Avian</PetFamily>
+      <Rarity>Rare</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>700</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xc90" id="Legendary Avian Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x10b</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>3</Tier>
+      <Description>A legendary avian pet egg.</Description>
+      <PetFamily>Avian</PetFamily>
+      <Rarity>Legendary</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>3000</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xc91" id="Common Exotic Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x10c</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>0</Tier>
+      <Description>A common exotic pet egg.</Description>
+      <PetFamily>Exotic</PetFamily>
+      <Rarity>Common</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>50</feedPower>
+      <DropTradable/>
+      <Track/>
+   </Object>
+   <Object type="0xc92" id="Uncommon Exotic Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x10d</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>1</Tier>
+      <Description>An uncommon exotic pet egg.</Description>
+      <PetFamily>Exotic</PetFamily>
+      <Rarity>Uncommon</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>300</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xc93" id="Rare Exotic Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x10e</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>2</Tier>
+      <Description>A rare exotic pet egg.</Description>
+      <PetFamily>Exotic</PetFamily>
+      <Rarity>Rare</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>700</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xc94" id="Legendary Exotic Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x10f</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>3</Tier>
+      <Description>A legendary exotic pet egg.</Description>
+      <PetFamily>Exotic</PetFamily>
+      <Rarity>Legendary</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>3000</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xc95" id="Common Farm Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x110</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>0</Tier>
+      <Description>A common farm pet egg.</Description>
+      <PetFamily>Farm</PetFamily>
+      <Rarity>Common</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>50</feedPower>
+      <DropTradable/>
+      <Track/>
+   </Object>
+   <Object type="0xc96" id="Uncommon Farm Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x111</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>1</Tier>
+      <Description>An uncommon farm pet egg.</Description>
+      <PetFamily>Farm</PetFamily>
+      <Rarity>Uncommon</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>300</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xc97" id="Rare Farm Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x112</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>2</Tier>
+      <Description>A rare farm pet egg.</Description>
+      <PetFamily>Farm</PetFamily>
+      <Rarity>Rare</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>700</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xc98" id="Legendary Farm Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x113</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>3</Tier>
+      <Description>A legendary farm pet egg.</Description>
+      <PetFamily>Farm</PetFamily>
+      <Rarity>Legendary</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>3000</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xc99" id="Common Woodland Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x114</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>0</Tier>
+      <Description>A common woodland pet egg.</Description>
+      <PetFamily>Woodland</PetFamily>
+      <Rarity>Common</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>50</feedPower>
+      <DropTradable/>
+      <Track/>
+   </Object>
+   <Object type="0xc9a" id="Uncommon Woodland Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x115</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>1</Tier>
+      <Description>An uncommon woodland pet egg.</Description>
+      <PetFamily>Woodland</PetFamily>
+      <Rarity>Uncommon</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>300</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xc9b" id="Rare Woodland Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x116</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>2</Tier>
+      <Description>A rare woodland pet egg.</Description>
+      <PetFamily>Woodland</PetFamily>
+      <Rarity>Rare</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>700</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xc9c" id="Legendary Woodland Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x117</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>3</Tier>
+      <Description>A legendary woodland pet egg.</Description>
+      <PetFamily>Woodland</PetFamily>
+      <Rarity>Legendary</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>3000</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xc9d" id="Common Reptile Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x118</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>0</Tier>
+      <Description>A common reptile pet egg.</Description>
+      <PetFamily>Reptile</PetFamily>
+      <Rarity>Common</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>50</feedPower>
+      <DropTradable/>
+      <Track/>
+   </Object>
+   <Object type="0xc9e" id="Uncommon Reptile Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x119</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>1</Tier>
+      <Description>An uncommon reptile pet egg.</Description>
+      <PetFamily>Reptile</PetFamily>
+      <Rarity>Uncommon</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>300</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xc9f" id="Rare Reptile Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x11a</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>2</Tier>
+      <Description>A rare reptile pet egg.</Description>
+      <PetFamily>Reptile</PetFamily>
+      <Rarity>Rare</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>700</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xca0" id="Legendary Reptile Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x11b</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>3</Tier>
+      <Description>A legendary reptile pet egg.</Description>
+      <PetFamily>Reptile</PetFamily>
+      <Rarity>Legendary</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>3000</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xca1" id="Common Insect Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x11c</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>0</Tier>
+      <Description>A common insect pet egg.</Description>
+      <PetFamily>Insect</PetFamily>
+      <Rarity>Common</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>50</feedPower>
+      <DropTradable/>
+      <Track/>
+   </Object>
+   <Object type="0xca2" id="Uncommon Insect Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x11d</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>1</Tier>
+      <Description>An uncommon insect pet egg.</Description>
+      <PetFamily>Insect</PetFamily>
+      <Rarity>Uncommon</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>300</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xca3" id="Rare Insect Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x11e</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>2</Tier>
+      <Description>A rare insect pet egg.</Description>
+      <PetFamily>Insect</PetFamily>
+      <Rarity>Rare</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>700</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xca4" id="Legendary Insect Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x11f</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>3</Tier>
+      <Description>A legendary insect pet egg.</Description>
+      <PetFamily>Insect</PetFamily>
+      <Rarity>Legendary</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>3000</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xca5" id="Common Penguin Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x120</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>0</Tier>
+      <Description>A common penguin pet egg.</Description>
+      <PetFamily>Penguin</PetFamily>
+      <Rarity>Common</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>50</feedPower>
+      <DropTradable/>
+      <Track/>
+   </Object>
+   <Object type="0xca6" id="Uncommon Penguin Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x121</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>1</Tier>
+      <Description>An uncommon penguin pet egg.</Description>
+      <PetFamily>Penguin</PetFamily>
+      <Rarity>Uncommon</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>300</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xca7" id="Rare Penguin Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x122</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>2</Tier>
+      <Description>A rare penguin pet egg.</Description>
+      <PetFamily>Penguin</PetFamily>
+      <Rarity>Rare</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>700</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xca8" id="Legendary Penguin Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x123</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>3</Tier>
+      <Description>A legendary penguin pet egg.</Description>
+      <PetFamily>Penguin</PetFamily>
+      <Rarity>Legendary</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>3000</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xca9" id="Common Aquatic Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x124</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>0</Tier>
+      <Description>A common aquatic pet egg.</Description>
+      <PetFamily>Aquatic</PetFamily>
+      <Rarity>Common</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>50</feedPower>
+      <DropTradable/>
+      <Track/>
+   </Object>
+   <Object type="0xcaa" id="Uncommon Aquatic Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x125</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>1</Tier>
+      <Description>An uncommon aquatic pet egg.</Description>
+      <PetFamily>Aquatic</PetFamily>
+      <Rarity>Uncommon</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>300</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xcab" id="Rare Aquatic Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x126</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>2</Tier>
+      <Description>A rare aquatic pet egg.</Description>
+      <PetFamily>Aquatic</PetFamily>
+      <Rarity>Rare</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>700</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xcac" id="Legendary Aquatic Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x127</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>3</Tier>
+      <Description>A legendary aquatic pet egg.</Description>
+      <PetFamily>Aquatic</PetFamily>
+      <Rarity>Legendary</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>3000</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xcad" id="Common Spooky Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x128</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>0</Tier>
+      <Description>A common spooky pet egg.</Description>
+      <PetFamily>Spooky</PetFamily>
+      <Rarity>Common</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>50</feedPower>
+      <DropTradable/>
+      <Track/>
+   </Object>
+   <Object type="0xcae" id="Uncommon Spooky Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x129</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>1</Tier>
+      <Description>An uncommon spooky pet egg.</Description>
+      <PetFamily>Spooky</PetFamily>
+      <Rarity>Uncommon</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>300</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xcaf" id="Rare Spooky Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x12a</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>2</Tier>
+      <Description>A rare spooky pet egg.</Description>
+      <PetFamily>Spooky</PetFamily>
+      <Rarity>Rare</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>700</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xcb0" id="Legendary Spooky Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x12b</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>3</Tier>
+      <Description>A legendary spooky pet egg.</Description>
+      <PetFamily>Spooky</PetFamily>
+      <Rarity>Legendary</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>3000</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xcb1" id="Common Humanoid Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x12c</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>0</Tier>
+      <Description>A common humanoid pet egg.</Description>
+      <PetFamily>Humanoid</PetFamily>
+      <Rarity>Common</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>50</feedPower>
+      <DropTradable/>
+      <Track/>
+   </Object>
+   <Object type="0xcb2" id="Uncommon Humanoid Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x12d</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>1</Tier>
+      <Description>An uncommon humanoid pet egg.</Description>
+      <PetFamily>Humanoid</PetFamily>
+      <Rarity>Uncommon</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>300</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xcb3" id="Rare Humanoid Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x12e</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>2</Tier>
+      <Description>A rare humanoid pet egg.</Description>
+      <PetFamily>Humanoid</PetFamily>
+      <Rarity>Rare</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>700</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xcb4" id="Legendary Humanoid Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x12f</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>3</Tier>
+      <Description>A legendary humanoid pet egg.</Description>
+      <PetFamily>Humanoid</PetFamily>
+      <Rarity>Legendary</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>3000</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xcb5" id="Common ???? Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x130</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>0</Tier>
+      <Description>A common  ? ? ? ?  pet egg.</Description>
+      <PetFamily>? ? ? ?</PetFamily>
+      <Rarity>Common</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>50</feedPower>
+      <DropTradable/>
+      <Track/>
+   </Object>
+   <Object type="0xcb6" id="Uncommon ???? Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x131</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>1</Tier>
+      <Description>An uncommon  ? ? ? ?  pet egg.</Description>
+      <PetFamily>? ? ? ?</PetFamily>
+      <Rarity>Uncommon</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>300</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xcb7" id="Rare ???? Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x132</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>2</Tier>
+      <Description>A rare  ? ? ? ?  pet egg.</Description>
+      <PetFamily>? ? ? ?</PetFamily>
+      <Rarity>Rare</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>700</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xcb8" id="Legendary ???? Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x133</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>3</Tier>
+      <Description>A legendary  ? ? ? ?  pet egg.</Description>
+      <PetFamily>? ? ? ?</PetFamily>
+      <Rarity>Legendary</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>3000</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xcb9" id="Common Automaton Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x134</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>0</Tier>
+      <Description>A common automaton pet egg.</Description>
+      <PetFamily>Automaton</PetFamily>
+      <Rarity>Common</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>50</feedPower>
+      <DropTradable/>
+      <Track/>
+   </Object>
+   <Object type="0xcba" id="Uncommon Automaton Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x135</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>1</Tier>
+      <Description>An uncommon automaton pet egg.</Description>
+      <PetFamily>Automaton</PetFamily>
+      <Rarity>Uncommon</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>300</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xcbb" id="Rare Automaton Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x136</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>2</Tier>
+      <Description>A rare automaton pet egg.</Description>
+      <PetFamily>Automaton</PetFamily>
+      <Rarity>Rare</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>700</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xcbc" id="Legendary Automaton Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x137</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>3</Tier>
+      <Description>A legendary automaton pet egg.</Description>
+      <PetFamily>Automaton</PetFamily>
+      <Rarity>Legendary</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>3000</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xcbd" id="Common Mystery Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0xfc</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>0</Tier>
+      <Description>A common pet egg of an unknown pet family.</Description>
+      <Rarity>Common</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>50</feedPower>
+      <DropTradable/>
+      <Track/>
+   </Object>
+   <Object type="0xcbe" id="Uncommon Mystery Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0xfd</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>1</Tier>
+      <Description>An uncommon pet egg of an unknown pet family.</Description>
+      <Rarity>Uncommon</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <BagType>3</BagType>
+      <feedPower>300</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xcbf" id="Rare Mystery Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0xfe</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>2</Tier>
+      <Description>A rare pet egg of an unknown pet family.</Description>
+      <Rarity>Rare</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>700</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0xcc0" id="Legendary Mystery Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0xff</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>3</Tier>
+      <Description>A legendary pet egg of an unknown pet family.</Description>
+      <Rarity>Legendary</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <feedPower>3000</feedPower>
+      <Track/>
+   </Object>
+   <Object type="0x74a7" id="Pure Legendary Mystery Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0xbc</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>3</Tier>
+      <Description>A legendary pet egg of an unknown pet family with no nutritious value.</Description>
+      <Rarity>Legendary</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <Track/>
+   </Object>
+   <Object type="0x74a8" id="Pure Rare Mystery Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0xbd</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>2</Tier>
+      <Description>A rare pet egg of an unknown pet family with no nutritious value.</Description>
+      <Rarity>Rare</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <Track/>
+   </Object>
+   <Object type="0x74a9" id="Pure Legendary Humanoid Egg">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0xbe</Index>
+      </Texture>
+      <SlotType>26</SlotType>
+      <Tier>3</Tier>
+      <Description>A legendary humanoid pet egg with no nutritious value.</Description>
+      <PetFamily>Humanoid</PetFamily>
+      <Rarity>Legendary</Rarity>
+      <Activate>CreatePet</Activate>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>3</BagType>
+      <Track/>
+   </Object>
+</Objects>

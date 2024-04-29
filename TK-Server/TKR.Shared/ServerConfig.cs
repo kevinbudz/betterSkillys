@@ -1,6 +1,5 @@
 ﻿using Newtonsoft.Json;
 using System.IO;
-using TKR.Shared.discord;
 using TKR.Shared.isc.data;
 
 namespace TKR.Shared
@@ -44,8 +43,6 @@ namespace TKR.Shared
         public DbInfo dbInfo { get; set; } = new DbInfo();
         public ServerInfo serverInfo { get; set; } = new ServerInfo();
         public ServerSettings serverSettings { get; set; } = new ServerSettings();
-        public DiscordIntegration discordIntegration { get; set; } = new DiscordIntegration();
-
         public static ServerConfig ReadFile(string fileName)
         {
             using (var r = new StreamReader(fileName))

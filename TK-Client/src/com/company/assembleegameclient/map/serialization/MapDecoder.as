@@ -90,6 +90,7 @@ package com.company.assembleegameclient.map.serialization
       {
          var objType:int = ObjectLibrary.idToType_[obj["id"]];
          var objXML:XML = ObjectLibrary.xmlLibrary_[objType];
+         trace(objXML);
          var go:GameObject = ObjectLibrary.getObjectFromType(objType);
          go.size_ = !!obj.hasOwnProperty("size")?int(obj["size"]):int(go.props_.getSize());
          return go;

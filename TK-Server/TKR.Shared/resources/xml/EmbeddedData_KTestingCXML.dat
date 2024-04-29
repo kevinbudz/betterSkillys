@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0xaaaa" id="Totalia Bullet">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x164</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xaaab" id="Totalia Star">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x165</Index>
+      </Texture>
+      <Rotation>80</Rotation>
+   </Object>
+   <Object type="0xaaac" id="Totalia Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x166</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xaaad" id="Totalia Crescent">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x167</Index>
+      </Texture>
+      <Rotation>50</Rotation>
+   </Object>
+   <Object type="0xaaae" id="Totalia Bat Eye">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x168</Index>
+      </Texture>
+   </Object>
+   <Object type="0xaaef" id="Totalia Bat Body">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x169</Index>
+      </Texture>
+   </Object>
+   <Object type="0x231a" id="Pile Spawn MidForest">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <Enemy/>
+      <Invincible/>
+      <PerRealmMax>2</PerRealmMax>
+      <Terrain>MidForest</Terrain>
+   </Object>
+   <Object type="0x231b" id="Pile Spawn MidPlains">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <Enemy/>
+      <Invincible/>
+      <PerRealmMax>2</PerRealmMax>
+      <Terrain>MidPlains</Terrain>
+   </Object>
+   <Object type="0x231c" id="Pile Spawn MidSand">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <Enemy/>
+      <Invincible/>
+      <PerRealmMax>2</PerRealmMax>
+      <Terrain>MidSand</Terrain>
+   </Object>
+   <Object type="0x231d" id="Pile Spawn HighForest">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <Enemy/>
+      <Invincible/>
+      <PerRealmMax>2</PerRealmMax>
+      <Terrain>HighForest</Terrain>
+   </Object>
+   <Object type="0x231e" id="Pile Spawn HighPlains">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <Enemy/>
+      <Invincible/>
+      <PerRealmMax>2</PerRealmMax>
+      <Terrain>HighPlains</Terrain>
+   </Object>
+   <Object type="0x231f" id="Pile Spawn HighSand">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <Enemy/>
+      <Invincible/>
+      <PerRealmMax>2</PerRealmMax>
+      <Terrain>HighSand</Terrain>
+   </Object>
+   <Object type="0x2320" id="Pile Spawn God">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <Enemy/>
+      <Invincible/>
+      <PerRealmMax>3</PerRealmMax>
+      <Terrain>Mountains</Terrain>
+   </Object>
+   <Object type="0x7460" id="Totalia Death">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x7fc8" id="Pile of Bones">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x0e</Index>
+      </Texture>
+      <MinSize>80</MinSize>
+      <MaxSize>90</MaxSize>
+      <SizeStep>2</SizeStep>
+      <Sound id="0">monster/rocks_death</Sound>
+   </Object>
+   <Object type="0x3ccf" id="Totalia the Malevolent">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters</File>
+         <Index>37</Index>
+      </AnimatedTexture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>char_select</DeathSound>
+      <Size>120</Size>
+      <MaxHitPoints>80000</MaxHitPoints>
+      <Defense>20</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <DazedImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>Totalia Bullet</ObjectId>
+         <Speed>60</Speed>
+         <Damage>120</Damage>
+         <Size>90</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <FaceDir/>
+         <Amplitude>1.2</Amplitude>
+         <Frequency>4</Frequency>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Totalia Star</ObjectId>
+         <Speed>50</Speed>
+         <Damage>140</Damage>
+         <Size>110</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <Amplitude>1.0</Amplitude>
+         <Frequency>2</Frequency>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Invisible</ObjectId>
+         <Speed>0</Speed>
+         <Damage>0</Damage>
+         <LifetimeMS>0</LifetimeMS>
+         <Size>0</Size>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Totalia Bolt</ObjectId>
+         <Speed>60</Speed>
+         <Damage>130</Damage>
+         <Size>90</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <FaceDir/>
+         <Amplitude>2</Amplitude>
+         <Frequency>2</Frequency>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Totalia Bat Body</ObjectId>
+         <Speed>50</Speed>
+         <Damage>120</Damage>
+         <Size>90</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Totalia Bat Eye</ObjectId>
+         <Speed>50</Speed>
+         <Damage>120</Damage>
+         <Size>90</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Armor Pierce Bullet</ObjectId>
+         <Speed>0</Speed>
+         <Damage>80</Damage>
+         <Size>90</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>Totalia Crescent</ObjectId>
+         <Speed>50</Speed>
+         <Damage>90</Damage>
+         <Size>100</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0x6fe8" id="Totalia Bat">
+      <DisplayId>Totalia's Bat Swarm</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>autumnNexusChars16x16</File>
+         <Index>0x3</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <Size>80</Size>
+      <Flying/>
+      <Z>0.2</Z>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Projectile>
+         <ObjectId>Purple Spit</ObjectId>
+         <Speed>50</Speed>
+         <Damage>65</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1600</LifetimeMS>
+         <MultiHit/>
+         <FaceDir/>
+         <Amplitude>1.25</Amplitude>
+         <Frequency>0.35</Frequency>
+         <ConditionEffect duration="1.6">Dazed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xafb" id="New Ability Dropper">
+      <Class>Character</Class>
+      <StasisImmune/>
+      <Enemy/>
+      <NoMiniMap/>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Exp>0</Exp>
+      <Size>80</Size>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x54</Index>
+      </Texture>
+   </Object>
+   <Object type="0x8da" id="Admin Prism">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj6</File>
+         <Index>0xb0</Index>
+      </Texture>
+      <SlotType>22</SlotType>
+      <Description>A prism used for unprecedented velocity by the Cult of Admin.</Description>
+      <Usable/>
+      <MpCost>0</MpCost>
+      <ActivateOnEquip stat="22" amount="125">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="27" amount="1000">IncrementStat</ActivateOnEquip>
+      <Activate maxDistance="20">Teleport</Activate>
+      <BagType>6</BagType>
+      <feedPower>100000</feedPower>
+      <Soulbound/>
+   </Object>
+   <Object type="0x5e22" id="TileSwap">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x0e</Index>
+      </Texture>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x108f" id="TG TP">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>54</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <MaxHitPoints>100000</MaxHitPoints>
+   </Object>
+   <Object type="0xcf2" id="TG">
+      <DisplayId>Test Guill</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>17</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>d3Chars8x8rEmbed</File>
+            <Index>18</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <Size>160</Size>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <ShadowSize>50</ShadowSize>
+      <Projectile id="0">
+         <ObjectId>Darkness Bolt</ObjectId>
+         <Speed>80</Speed>
+         <Damage>0</Damage>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Darkness Bolt</ObjectId>
+         <Speed>20</Speed>
+         <Damage>0</Damage>
+         <Size>0</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Darkness Bolt</ObjectId>
+         <Speed>77.3333</Speed>
+         <Damage>0</Damage>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Golden Blast</ObjectId>
+         <Damage>0</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <Size>120</Size>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>White Star Stunner</ObjectId>
+         <Damage>0</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <Size>120</Size>
+         <ConditionEffect duration="1">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Rainbow Blaster</ObjectId>
+         <Damage>8</Damage>
+         <Speed>10</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>20</Size>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Rainbow Blaster</ObjectId>
+         <Speed>40</Speed>
+         <Damage>1</Damage>
+         <Size>40</Size>
+         <LifetimeMS>20000</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Color>0x00ff00</Color>
+   </Object>
+   <Object type="0x63d" id="Decaract">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiChar8x8</File>
+         <Index>0xb5</Index>
+      </Texture>
+      <Invincible/>
+      <Size>0</Size>
+      <Hero/>
+      <Quest/>
+      <HealthBarBoss/>
+      <God/>
+      <Level>20</Level>
+   </Object>
+   <Object type="0xc0c" id="0Def">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>17</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <Defense>0</Defense>
+      <MaxHitPoints>100000</MaxHitPoints>
+   </Object>
+   <Object type="0xc0d" id="20Def">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>17</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <Defense>20</Defense>
+      <MaxHitPoints>100000</MaxHitPoints>
+   </Object>
+   <Object type="0xc0e" id="60Def">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>17</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <Defense>60</Defense>
+      <MaxHitPoints>100000</MaxHitPoints>
+   </Object>
+   <Object type="0x0752" id="Stat Baloon">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>54</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <Exp>0</Exp>
+      <MaxHitPoints>4000</MaxHitPoints>
+      <Z>0.3</Z>
+      <ShadowSize>50</ShadowSize>
+   </Object>
+   <Object type="0x0d0e" id="Head">
+      <DisplayId>Willem's Head</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>58</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>chars16x16dEncounters2</File>
+            <Index>59</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="2">
+         <AnimatedTexture>
+            <File>chars16x16dEncounters2</File>
+            <Index>60</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <MaxHitPoints>400000</MaxHitPoints>
+      <Defense>50</Defense>
+      <Exp>20000</Exp>
+      <Size>120</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>0.3</Z>
+      <Flying/>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Speed>0</Speed>
+         <Damage>0</Damage>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Rainbow Blaster</ObjectId>
+         <Speed>25</Speed>
+         <Damage>200</Damage>
+         <Size>80</Size>
+         <LifetimeMS>10000</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Green Spinner</ObjectId>
+         <Speed>60</Speed>
+         <Damage>0</Damage>
+         <Size>80</Size>
+         <LifetimeMS>5000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="60">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x97a" id="Admin Blade">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0xf0</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x97b" id="Admin Magic">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0xf1</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x97c" id="Admin Arrow">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0xf2</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x97d" id="Admin Stab">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0xf3</Index>
+      </Texture>
+   </Object>
+   <Object type="0x97e" id="Admin Missile">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0xf4</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x97f" id="Admin Slash">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0xf5</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x9d4" id="Admin Sword">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <SlotType>1</SlotType>
+      <Description>The sacred blade of the Cult of Admin. Not to be trifled with.</Description>
+      <RateOfFire>1.5</RateOfFire>
+      <OldSound>bladeSwing</OldSound>
+      <Projectile>
+         <ObjectId>Admin Blade</ObjectId>
+         <Speed>120</Speed>
+         <MinDamage>2000</MinDamage>
+         <MaxDamage>2000</MaxDamage>
+         <LifetimeMS>600</LifetimeMS>
+      </Projectile>
+      <BagType>6</BagType>
+      <feedPower>100000</feedPower>
+      <Soulbound/>
+   </Object>
+   <Object type="0x9d6" id="Admin Wand">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0xe1</Index>
+      </Texture>
+      <SlotType>8</SlotType>
+      <Description>Only advanced acolytes of the Cult of Admin may wield this weapon.</Description>
+      <RateOfFire>1.5</RateOfFire>
+      <OldSound>magicShoot</OldSound>
+      <Projectile>
+         <ObjectId>Admin Magic</ObjectId>
+         <Speed>150</Speed>
+         <LifetimeMS>600</LifetimeMS>
+         <MinDamage>3000</MinDamage>
+         <MaxDamage>3000</MaxDamage>
+         <MultiHit/>
+      </Projectile>
+      <BagType>6</BagType>
+      <feedPower>100000</feedPower>
+      <Soulbound/>
+   </Object>
+   <Object type="0x9d7" id="Admin Bow">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0xe2</Index>
+      </Texture>
+      <SlotType>3</SlotType>
+      <Description>The Cult of Admin is always on the hunt for the unworthy.</Description>
+      <RateOfFire>1.2</RateOfFire>
+      <OldSound>arrowShoot</OldSound>
+      <Projectile>
+         <ObjectId>Admin Arrow</ObjectId>
+         <Speed>160</Speed>
+         <MinDamage>1000</MinDamage>
+         <MaxDamage>1000</MaxDamage>
+         <LifetimeMS>600</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <NumProjectiles>5</NumProjectiles>
+      <ArcGap>8</ArcGap>
+      <BagType>6</BagType>
+      <feedPower>100000</feedPower>
+      <Soulbound/>
+   </Object>
+   <Object type="0x9d8" id="Admin Dagger">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0xe3</Index>
+      </Texture>
+      <SlotType>2</SlotType>
+      <Description>A cursed dagger imbued with the infinite power of the Cult of Admin.</Description>
+      <RateOfFire>1.2</RateOfFire>
+      <OldSound>daggerSwing</OldSound>
+      <Projectile>
+         <ObjectId>Admin Stab</ObjectId>
+         <Speed>150</Speed>
+         <MinDamage>2000</MinDamage>
+         <MaxDamage>2000</MaxDamage>
+         <LifetimeMS>600</LifetimeMS>
+      </Projectile>
+      <NumProjectiles>3</NumProjectiles>
+      <ArcGap>10</ArcGap>
+      <BagType>6</BagType>
+      <feedPower>100000</feedPower>
+      <Soulbound/>
+   </Object>
+   <Object type="0x9d3" id="Admin Staff">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0xe4</Index>
+      </Texture>
+      <SlotType>17</SlotType>
+      <Description>A godly weapon belonging to the Cult of Admin.</Description>
+      <RateOfFire>1.2</RateOfFire>
+      <OldSound>magicShoot</OldSound>
+      <Projectile>
+         <ObjectId>Admin Missile</ObjectId>
+         <Speed>180</Speed>
+         <MinDamage>2000</MinDamage>
+         <MaxDamage>2000</MaxDamage>
+         <LifetimeMS>600</LifetimeMS>
+         <Amplitude>0.5</Amplitude>
+         <Frequency>2</Frequency>
+         <PassesCover/>
+      </Projectile>
+      <NumProjectiles>2</NumProjectiles>
+      <ArcGap>0</ArcGap>
+      <BagType>6</BagType>
+      <feedPower>100000</feedPower>
+      <Soulbound/>
+   </Object>
+   <Object type="0x9c2" id="Admin Katana">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0xe5</Index>
+      </Texture>
+      <SlotType>24</SlotType>
+      <Description>The finest katana, forged by the Cult of Admin. Its blade cuts anything.</Description>
+      <RateOfFire>1.2</RateOfFire>
+      <OldSound>bladeSwing</OldSound>
+      <Projectile>
+         <ObjectId>Admin Slash</ObjectId>
+         <Speed>150</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <MinDamage>2000</MinDamage>
+         <MaxDamage>2000</MaxDamage>
+         <MultiHit/>
+      </Projectile>
+      <NumProjectiles>2</NumProjectiles>
+      <ArcGap>2</ArcGap>
+      <BagType>6</BagType>
+      <feedPower>100000</feedPower>
+      <Soulbound/>
+   </Object>
+</Objects>

@@ -3,9 +3,13 @@ package kabam.rotmg.classes.view
    import com.company.assembleegameclient.screens.AccountScreen;
    import com.company.assembleegameclient.screens.TitleMenuOption;
    import com.company.rotmg.graphics.ScreenGraphic;
-   import flash.display.Shape;
+import com.company.ui.SimpleText;
+
+import flash.display.Graphics;
+import flash.display.Shape;
    import flash.display.Sprite;
    import flash.events.MouseEvent;
+import flash.filters.DropShadowFilter;
 
 import io.decagames.rotmg.ui.buttons.SliceScalingButton;
 import io.decagames.rotmg.ui.defaults.DefaultLabelFormat;
@@ -26,10 +30,11 @@ import kabam.rotmg.ui.view.components.ScreenBase;
       private const base:ScreenBase = makeScreenBase();
       private const account:AccountScreen = makeAccountScreen();
       private const lines:Shape = makeLines();
+      private const titleText:SimpleText = makeTitleText();
       private const creditsDisplay:CreditDisplay = makeCreditDisplay();
-      private const menuOptions:MenuOptionsBar = makeMenuOptionsBar();
-      private const playBtn:SliceScalingButton = makePlayButton();
-      private const backBtn:SliceScalingButton = makeBackButton();
+      private const menuOptions:Sprite = makeMenuOptionsBar();
+      private const playBtn:TitleMenuOption = makePlayButton();
+      private const backBtn:TitleMenuOption = makeBackButton();
       private const list:CharacterSkinListView = makeListView();
       private const detail:ClassDetailView = makeClassDetailView();
       public const play:Signal = new NativeMappedSignal(playBtn,MouseEvent.CLICK);
@@ -40,13 +45,27 @@ import kabam.rotmg.ui.view.components.ScreenBase;
       {
       }
 
-      private function makeMenuOptionsBar():MenuOptionsBar {
-         var local1:MenuOptionsBar = new MenuOptionsBar();
-         this.buttonsBackground = TextureParser.instance.getSliceScalingBitmap("UI","popup_header_title",800);
-         this.buttonsBackground.y = 502.5;
-         addChild(this.buttonsBackground);
-         addChild(local1);
-         return(local1);
+      private function makeTitleText():SimpleText {
+         var title:SimpleText = new SimpleText(32, 11776947, false, 0, 0);
+         title.setBold(true);
+         title.text = "Skins";
+         title.updateMetrics();
+         title.filters = [new DropShadowFilter(0, 0, 0, 1, 8, 8)];
+         title.x = 400 - title.width / 2;
+         title.y = 24;
+         addChild(title);
+         return title;
+      }
+
+      private function makeMenuOptionsBar():Sprite {
+         var box:Sprite = new Sprite();
+         var b:Graphics = box.graphics;
+         b.clear();
+         b.beginFill(0, 0.5);
+         b.drawRect(0, 525, 800, 75);
+         b.endFill();
+         addChild(box);
+         return box;
       }
       
       private function makeScreenBase() : ScreenBase
@@ -67,7 +86,7 @@ import kabam.rotmg.ui.view.components.ScreenBase;
       {
          var display:CreditDisplay = new CreditDisplay();
          display.x = 800;
-         display.y = 20;
+         display.y = 32;
          addChild(display);
          return display;
       }
@@ -77,44 +96,38 @@ import kabam.rotmg.ui.view.components.ScreenBase;
          var shape:Shape = new Shape();
          shape.graphics.clear();
          shape.graphics.lineStyle(2,5526612);
-         shape.graphics.moveTo(0,105);
-         shape.graphics.lineTo(800,105);
-         shape.graphics.moveTo(346,105);
-         shape.graphics.lineTo(346,526);
+         shape.graphics.moveTo(0,100);
+         shape.graphics.lineTo(800,100);
+         shape.graphics.moveTo(346,100);
+         shape.graphics.lineTo(346,525);
          addChild(shape);
          return shape;
       }
 
-      private function makePlayButton():SliceScalingButton {
-         var _local1:SliceScalingButton;
-         _local1 = new SliceScalingButton(TextureParser.instance.getSliceScalingBitmap("UI","generic_green_button"));
-         setDefault(_local1,"play",100,false);
-         _local1.x = (400 - (_local1.width / 2));
-         _local1.y = this.buttonsBackground.y + 17;
-         addChild(_local1);
-         return (_local1);
-      }
-
-      private function makeBackButton():SliceScalingButton {
-         var _local1:SliceScalingButton;
-         _local1 = new SliceScalingButton(TextureParser.instance.getSliceScalingBitmap("UI","generic_green_button"));
-         setDefault(_local1,"back",100,true);
-         _local1.x = 90;
-         _local1.y = this.buttonsBackground.y + 17;
-         addChild(_local1);
-         return (_local1);
-      }
-
-      private static function setDefault(param1:SliceScalingButton, param2:String, param3:int = 100, param4:Boolean = true) : void
+      private function makeScreenGraphic() : ScreenGraphic
       {
-         param1.setLabel(param2,DefaultLabelFormat.questButtonCompleteLabel);
-         param1.x = 0;
-         param1.y = 0;
-         param1.width = param3;
-         if(param4)
-         {
-            GreyScale.greyScaleToDisplayObject(param1,true);
-         }
+         var graphic:ScreenGraphic = new ScreenGraphic();
+         addChild(graphic);
+         return graphic;
+      }
+
+      private function makePlayButton() : TitleMenuOption
+      {
+         var option:TitleMenuOption = null;
+         option = new TitleMenuOption("play",36,false);
+         option.x = 400 - option.width / 2;
+         option.y = 525;
+         addChild(option);
+         return option;
+      }
+
+      private function makeBackButton() : TitleMenuOption
+      {
+         var option:TitleMenuOption = new TitleMenuOption("back",22,false);
+         option.x = 30;
+         option.y = 535;
+         addChild(option);
+         return option;
       }
       
       private function makeListView() : CharacterSkinListView
@@ -137,7 +150,7 @@ import kabam.rotmg.ui.view.components.ScreenBase;
 
       public function setPlayButtonEnabled(activate:Boolean):void {
          if (!activate) {
-            this.playBtn.disabled = true;
+            this.playBtn.deactivate();
          }
       }
    }

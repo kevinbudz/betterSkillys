@@ -7,9 +7,6 @@ package com.company.assembleegameclient.screens.charrects
    import flash.display.Shape;
    import flash.filters.DropShadowFilter;
 
-import io.decagames.rotmg.ui.buttons.SliceScalingButton;
-import io.decagames.rotmg.ui.texture.TextureParser;
-
 import kabam.rotmg.assets.services.IconFactory;
 import kabam.rotmg.assets.services.IconFactory;
    import kabam.rotmg.core.model.PlayerModel;
@@ -23,39 +20,54 @@ import kabam.rotmg.assets.services.IconFactory;
       public function BuyCharacterRect(model:PlayerModel)
       {
          super(2039583,4342338);
-         this.makeIcon();
+         var icon:Shape = this.buildIcon();
+         icon.x = 7;
+         icon.y = 9;
+         addChild(icon);
          makeContainer();
          this.classNameText_ = new SimpleText(18,16777215,false,0,0);
          this.classNameText_.setBold(true);
          this.classNameText_.text = "Buy " + this.getOrdinalString(model.getMaxCharacters() + 1) + " Character Slot";
          this.classNameText_.updateMetrics();
          this.classNameText_.filters = [new DropShadowFilter(0,0,0,1,8,8)];
-         this.classNameText_.x = 160;
-         this.classNameText_.y = 17;
+         this.classNameText_.x = 58;
+         this.classNameText_.y = 13;
          selectContainer.addChild(this.classNameText_);
          this.priceText_ = new SimpleText(18,16777215,false,0,0);
          this.priceText_.text = model.getNextCharSlotPrice().toString();
          this.priceText_.updateMetrics();
          this.priceText_.filters = [new DropShadowFilter(0,0,0,1,8,8)];
-         this.priceText_.x = 620;
-         this.priceText_.y = 25;
+         this.priceText_.x = WIDTH - 45 - this.priceText_.width;
+         this.priceText_.y = 18;
          selectContainer.addChild(this.priceText_);
-         var bd:BitmapData = model.isNextCharSlotCurrencyFame() ? IconFactory.makeFame() : IconFactory.makeCoin();
+         var bd:BitmapData =
+                 model.isNextCharSlotCurrencyFame() ?
+                         IconFactory.makeFame() :
+                         IconFactory.makeCoin();
          this.currency_ = new Bitmap(bd);
-         this.currency_.x = 600;
-         this.currency_.y = 25;
+         this.currency_.x = WIDTH - 43;
+         this.currency_.y = 18;
          selectContainer.addChild(this.currency_);
       }
-
-      private function makeIcon():void {
-         var _local1:SliceScalingButton;
-         _local1 = new SliceScalingButton(TextureParser.instance.getSliceScalingBitmap("UI", "add_button", 20));
-         _local1.x = 110;
-         _local1.y = ((HEIGHT - _local1.height) * 0.5);
-         addChild(_local1);
+      
+      private function buildIcon() : Shape
+      {
+         var shape:Shape = new Shape();
+         var g:Graphics = shape.graphics;
+         g.beginFill(3880246);
+         g.lineStyle(1,4603457);
+         g.drawCircle(19,19,19);
+         g.lineStyle();
+         g.endFill();
+         g.beginFill(2039583);
+         g.drawRect(11,17,16,4);
+         g.endFill();
+         g.beginFill(2039583);
+         g.drawRect(17,11,4,16);
+         g.endFill();
+         return shape;
       }
       
-
       private function getOrdinalString(num:int) : String
       {
          var str:String = num.toString();

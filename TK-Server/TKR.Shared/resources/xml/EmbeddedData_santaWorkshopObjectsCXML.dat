@@ -1,0 +1,2982 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x3cb7" id="SW Decorated Col L">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cb8" id="SW Decorated Col R">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x01</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cb9" id="SW Brick Col L">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x02</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x02</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x06</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x0a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x06</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cba" id="SW Brick Col R">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x03</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x03</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x07</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x0b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x07</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cbb" id="SW Fence Col L">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x04</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x04</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x08</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x0c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x08</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cbc" id="SW Fence Col R">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x05</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x05</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x09</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x0d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x09</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3d2b" id="SW Fire Flicker">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>160</Size>
+      <ShadowSize>100</ShadowSize>
+      <ShadowColor>0xFFFDB9</ShadowColor>
+   </Object>
+   <Object type="0x3cc7" id="SW Window SouthL01">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x20</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cc8" id="SW Window SouthL02">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x21</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cc9" id="SW Window SouthL03">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x22</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cca" id="SW Window SouthR01">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x23</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3ccb" id="SW Window SouthR02">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x24</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3ccc" id="SW Window SouthR03">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x25</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cde" id="SW Window WestL01">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x30</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cdf" id="SW Window WestL02">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x31</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3ce0" id="SW Window WestL03">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3ce1" id="SW Window WestR01">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x33</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3ce2" id="SW Window WestR02">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x34</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3ce3" id="SW Window WestR03">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x35</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3ce4" id="SW Window EastL01">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x40</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3ce5" id="SW Window EastL02">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x41</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3ce6" id="SW Window EastL03">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x42</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3ce7" id="SW Window EastR01">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x43</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3ce8" id="SW Window EastR02">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x44</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3ce9" id="SW Window EastR03">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x45</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3d53" id="SW Dark Wood FP1">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x80</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0x80</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0xa0</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0xc0</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0x3d54" id="SW Dark Wood FP2">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x81</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0x81</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0xa1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0xc1</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0x3d55" id="SW Dark Wood FP3">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x82</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0x82</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0xa2</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0xc2</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0x3d56" id="SW Dark Wood FP4">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x83</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0x83</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0xa3</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0xc3</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0x3d57" id="SW Dark Wood FP5">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x84</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0x84</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0xa4</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0xc4</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0x3d58" id="SW Dark Wood FP6">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x85</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0x85</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0xa5</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0xc5</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0x3d59" id="SW Dark Wood FP7">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x91</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0x91</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0xb1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0xd1</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0x3d5a" id="SW Dark Wood FP8">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x92</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0x92</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0xb2</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0xd2</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0x3d5b" id="SW Dark Wood FP9">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x93</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0x93</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0xb3</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0xd3</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0x3d5c" id="SW Dark Wood FP10">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x94</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0x94</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0xb4</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0xd4</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+   </Object>
+   <Object type="0x3cf0" id="SW Window OutSouthL01">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x50</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cf1" id="SW Window OutSouthL02">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x51</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cf2" id="SW Window OutSouthL03">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x52</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cf3" id="SW Window OutSouthR01">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x53</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cf4" id="SW Window OutSouthR02">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x54</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cf5" id="SW Window OutSouthR03">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x55</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cf6" id="SW Window OutWestL01">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x60</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cf7" id="SW Window OutWestL02">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x61</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cf8" id="SW Window OutWestL03">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x62</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cf9" id="SW Window OutWestR01">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x63</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cfa" id="SW Window OutWestR02">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x64</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cfb" id="SW Window OutWestR03">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x65</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cfc" id="SW Window OutEastL01">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x70</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cfd" id="SW Window OutEastL02">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x71</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cfe" id="SW Window OutEastL03">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x72</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cff" id="SW Window OutEastR01">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x73</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3d00" id="SW Window OutEastR02">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x74</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3d01" id="SW Window OutEastR03">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x75</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3ccd" id="SW Brick Wall">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x10</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3d1d" id="SW Fake Wall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>santaWorkshopObjects16x16</File>
+            <Index>0xff</Index>
+         </Texture>
+      </Top>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x3cbe" id="SW Brick Wall Wreath L">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x11</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cbf" id="SW Brick Wall Wreath R">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x12</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3d03" id="SW Brick Wall Clock L">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x13</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3d04" id="SW Brick Wall Clock R">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x14</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cd8" id="SW Fancy Column">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x15</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3d02" id="SW Peppermint Column">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x16</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3d09" id="SW Lights Door L">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x82</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x82</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x84</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3d0a" id="SW Lights Door R">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x83</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x83</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x85</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3cbd" id="SW Xmas Tree">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x17</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>150</ShadowSize>
+      <Size>150</Size>
+   </Object>
+   <Object type="0x3d06" id="SW Xmas Tree Small">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x18</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>90</ShadowSize>
+      <Size>90</Size>
+   </Object>
+   <Object type="0x3d2c" id="SW Xmas Tree R2">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x27</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>150</ShadowSize>
+      <Size>150</Size>
+   </Object>
+   <Object type="0x3d2d" id="SW Xmas Tree Small R2">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x28</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>90</ShadowSize>
+      <Size>90</Size>
+   </Object>
+   <Object type="0x3d2e" id="SW Xmas Tree R3">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x37</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>150</ShadowSize>
+      <Size>150</Size>
+   </Object>
+   <Object type="0x3d2f" id="SW Xmas Tree Small R3">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x38</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>90</ShadowSize>
+      <Size>90</Size>
+   </Object>
+   <Object type="0x3d05" id="SW Star Lightsource">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x19</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>100</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d31" id="SW Star Lightsource R2">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x29</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>100</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d32" id="SW Star Lightsource R3">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x39</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>100</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d0b" id="SW Snowglobe">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x0f</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>90</ShadowSize>
+      <Size>90</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d0c" id="SW Golden Cage">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x0e</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>100</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d38" id="SW Candy Canes">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x47</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <Size>90</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d51" id="SW Pillar Bow">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x66</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <Size>90</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d52" id="SW Pillar Star">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x67</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <Size>90</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d48" id="SW Rocking Chair">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x4c</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>100</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3d37" id="SW Lights 1">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x48</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x48</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x4a</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d3d" id="SW Lights 2">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x49</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x49</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x4b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d40" id="SW Lights 3">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x48</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x48</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x4a</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d36" id="SW Lights 4">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x49</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x49</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x4b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d3a" id="SW Lights Gate 1">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x48</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x48</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x4a</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d3e" id="SW Lights Gate 2">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x49</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x49</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x4b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d4a" id="SW Lantern Reindeer Large">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x4e</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x4e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x4f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>100</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d4d" id="SW Lantern Reindeer Small">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x68</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x68</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x69</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>80</ShadowSize>
+      <Size>80</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d5d" id="SW Lantern Reindeer Large Right">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x6a</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x6a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x6b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>100</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d5e" id="SW Lantern Reindeer Small Right">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x6c</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x6c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x6d</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>80</ShadowSize>
+      <Size>80</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d49" id="SW Lantern Outdoor">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x56</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <ShadowSize>100</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d4b" id="SW Lantern Black 1">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x58</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x58</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x59</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <ShadowSize>100</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+      <ShadowColor>0xFFEF96</ShadowColor>
+   </Object>
+   <Object type="0x3d4e" id="SW Lantern Red">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x5a</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x5a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x5b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <ShadowSize>80</ShadowSize>
+      <Size>80</Size>
+      <NoMiniMap/>
+      <ShadowColor>0xFFEF96</ShadowColor>
+   </Object>
+   <Object type="0x3d4f" id="SW Lantern White">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x5c</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x5c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x5d</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <ShadowSize>60</ShadowSize>
+      <Size>60</Size>
+      <NoMiniMap/>
+      <ShadowColor>0xFFEF96</ShadowColor>
+   </Object>
+   <Object type="0x3d50" id="SW Lantern Black 2">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x5e</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x5e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x5f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <ShadowSize>100</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+      <ShadowColor>0xFFEF96</ShadowColor>
+   </Object>
+   <Object type="0x3d4c" id="SW Snow">
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x75</Index>
+      </Texture>
+      <Size>-1</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+      <Effect color="0xFFFFEF" rate="4" life="3" lifeVariance=".25" speed="0" speedVariance=".5" size="5" rise="-.6" riseVariance=".1" rangeX="5" rangeY="5">CustomParticles</Effect>
+   </Object>
+   <Object type="0x3cce" id="SW Portal">
+      <DisplayId>Santa's Workshop</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Santa Workshop</DungeonName>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Animation prob="1" period="0">
+         <Frame time="0.4">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0x00</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>santaWorkshopObjects8x8</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x3cd0" id="SW Toy Snow Globe">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x10</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x11</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x12</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x13</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3cd1" id="SW Toy Ball">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x14</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x15</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x16</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x17</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3cd2" id="SW Toy Xmas">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x18</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x19</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x1a</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x1b</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3cd3" id="SW Toy Animal">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x1c</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x1d</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x1e</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x1f</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3cd4" id="SW Toy Royal Doll">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x20</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x21</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x22</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x24</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3cd5" id="SW Toy Building">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x25</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x26</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x34</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x35</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3cd6" id="SW Toy Colored">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x28</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x29</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x2a</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x2b</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x2c</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3cd7" id="SW Toy Weapon">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x27</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x2d</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x2e</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x2f</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3cea" id="SW Toy Wooden">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x30</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x31</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x32</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x33</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x36</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x37</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3cda" id="SW Toy Present">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x38</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x39</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x3a</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x3b</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x3c</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x3d</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x3e</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x3f</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d33" id="SW Toy Waldo">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x26</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <Size>50</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d20" id="SW Gift Small TutoT1R1">
+      <DisplayId>Small Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x40</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>90</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>12</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3d21" id="SW Gift Medium TutoT2R1">
+      <DisplayId>Medium Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x48</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>550</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>20</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3d22" id="SW Gift Large TutoT3R1">
+      <DisplayId>Large Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x1c</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>90</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>30</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3ced" id="SW Gift Small TutoT1R2">
+      <DisplayId>Small Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x53</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>90</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>15</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3cee" id="SW Gift Medium TutoT2R2">
+      <DisplayId>Medium Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x5d</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>25</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3cef" id="SW Gift Large TutoT3R2">
+      <DisplayId>Large Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x2a</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>90</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>40</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3d1e" id="SW Gift Small TutoT1R3">
+      <DisplayId>Small Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x65</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>90</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>25</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3d1f" id="SW Gift Medium TutoT2R3">
+      <DisplayId>Medium Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x6b</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>700</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>35</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3d30" id="SW Gift Large TutoT3R3">
+      <DisplayId>Large Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x3e</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>90</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>50</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3cdb" id="SW Gift Small R1T1">
+      <DisplayId>Small Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <RandomTexture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x40</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x43</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x41</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x42</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x44</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x45</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x46</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x47</Index>
+         </Texture>
+      </RandomTexture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>90</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>12</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3cdc" id="SW Gift Medium R1T2">
+      <DisplayId>Medium Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <RandomTexture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x48</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x49</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x4a</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x4b</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x4c</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x4d</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x4e</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x4f</Index>
+         </Texture>
+      </RandomTexture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>550</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>20</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3cc1" id="SW Gift Large R1T3 RedYellow">
+      <DisplayId>Large Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x1a</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>90</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>30</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3cc2" id="SW Gift Large R1T3 BlueWhite">
+      <DisplayId>Large Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x1b</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>30</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3cc3" id="SW Gift Large R1T3 WhiteGreen">
+      <DisplayId>Large Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x1c</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>30</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3cc4" id="SW Gift Large R1T3 GreenRed">
+      <DisplayId>Large Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x1d</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>30</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3cc5" id="SW Gift Large R1T3 YellowGreen">
+      <DisplayId>Large Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x1e</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>30</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3cc6" id="SW Gift Large R1T3 RedWhite">
+      <DisplayId>Large Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x1f</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>30</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3d42" id="SW Room1 Gift Healer">
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x71</Index>
+      </Texture>
+      <Size>0</Size>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3ceb" id="SW Gift Small R2T1">
+      <DisplayId>Small Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <RandomTexture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x51</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x50</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x53</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x52</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x54</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x55</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x56</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x57</Index>
+         </Texture>
+      </RandomTexture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>90</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>50</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3cec" id="SW Gift Medium R2T2">
+      <DisplayId>Medium Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <RandomTexture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x59</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x58</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x5a</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x5b</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x5c</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x5d</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x5e</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x5f</Index>
+         </Texture>
+      </RandomTexture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>50</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3d0e" id="SW Gift Large R2T3 RedYellow">
+      <DisplayId>Large Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x2a</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>90</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>60</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3d0f" id="SW Gift Large R2T3 BlueWhite">
+      <DisplayId>Large Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x2b</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>60</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3d10" id="SW Gift Large R2T3 WhiteGreen">
+      <DisplayId>Large Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>60</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3d11" id="SW Gift Large R2T3 GreenRed">
+      <DisplayId>Large Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x2d</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>60</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3d12" id="SW Gift Large R2T3 YellowGreen">
+      <DisplayId>Large Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x2e</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>60</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3d13" id="SW Gift Large R2T3 RedWhite">
+      <DisplayId>Large Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x2f</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>60</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3d43" id="SW Room2 Gift Healer">
+      <DisplayId>Presents Healer</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x72</Index>
+      </Texture>
+      <Size>0</Size>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3d15" id="SW Gift Small R3T1">
+      <DisplayId>Small Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <RandomTexture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x63</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x60</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x61</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x62</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x64</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x65</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x66</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x67</Index>
+         </Texture>
+      </RandomTexture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>90</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>1440</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>50</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3d16" id="SW Gift Medium R3T2">
+      <DisplayId>Medium Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <RandomTexture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x6b</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x68</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x69</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x6a</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x6c</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x6d</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x6e</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x6f</Index>
+         </Texture>
+      </RandomTexture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>1440</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>50</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3d17" id="SW Gift Large R3T3 RedYellow">
+      <DisplayId>Large Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x3a</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>90</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>60</Exp>
+      <StasisImmune/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0x3d18" id="SW Gift Large R3T3 BlueWhite">
+      <DisplayId>Large Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x3b</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>60</Exp>
+      <StasisImmune/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0x3d19" id="SW Gift Large R3T3 WhiteGreen">
+      <DisplayId>Large Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x3c</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>60</Exp>
+      <StasisImmune/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0x3d1a" id="SW Gift Large R3T3 GreenRed">
+      <DisplayId>Large Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x3d</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>60</Exp>
+      <StasisImmune/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0x3d1b" id="SW Gift Large R3T3 YellowGreen">
+      <DisplayId>Large Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x3e</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>60</Exp>
+      <StasisImmune/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0x3d1c" id="SW Gift Large R3T3 RedWhite">
+      <DisplayId>Large Present</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x3f</Index>
+      </Texture>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>60</Exp>
+      <StasisImmune/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0x3d44" id="SW Room3 Gift Healer">
+      <DisplayId>Presents Healer</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x73</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3d3f" id="SW Screen Changer">
+      <DisplayId>Screen Changer</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x36</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>santaWorkshopObjects16x16</File>
+            <Index>0x46</Index>
+         </Texture>
+      </AltTexture>
+      <NoMiniMap/>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3d34" id="SW Craig Anchor">
+      <DisplayId>Craig the Intern</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x18</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3d46" id="SW Pet Stasis Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0xff</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3d45" id="SW Pet Manager">
+      <DisplayId>Pet Manager</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x74</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3d41" id="SW Clock">
+      <DisplayId>Santa's Clock</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x70</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3d47" id="SW Clock 2">
+      <DisplayId>Santa's Clock</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x70</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3d26" id="TP Tile A">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3d27" id="TP Tile B">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3d28" id="TP Tile C">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3d29" id="TP Tile D">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3d3b" id="SW Security tile A">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3d3c" id="SW Security tile B">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3d39" id="SW Elf">
+      <DisplayId>Elf Guard</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x0c</Index>
+      </Texture>
+      <Size>90</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d07" id="SW Tree Helper 1">
+      <DisplayId>Vanilla</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x0d</Index>
+      </Texture>
+      <Size>90</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d08" id="SW Tree Helper 2">
+      <DisplayId>Cinnamon</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x0e</Index>
+      </Texture>
+      <Size>90</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d35" id="SW Tree Helper 3">
+      <DisplayId>Ginger</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x0f</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>90</Size>
+   </Object>
+   <Object type="0x3d23" id="SW Door GuardTutorial">
+      <DisplayId>Blue Nutcracker</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x08</Index>
+      </Texture>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3d0d" id="SW Door Guard1">
+      <DisplayId>Red Nutcracker</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x09</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3d14" id="SW Door Guard2">
+      <DisplayId>Green Nutcracker</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3d2a" id="Strange Voice">
+      <DisplayId>Craig the Intern</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x0b</Index>
+      </Texture>
+      <Size>100</Size>
+   </Object>
+</Objects>

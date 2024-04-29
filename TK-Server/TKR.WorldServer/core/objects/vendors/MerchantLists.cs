@@ -21,94 +21,22 @@ namespace TKR.WorldServer.core.objects.vendors
 
         private static readonly List<ISellableItem> Consumables = new List<ISellableItem>
         {
-            new ShopItem("Magic Potion", 1),
-            new ShopItem("Special Dust", 5000),
-            new ShopItem("Health Potion", 1),
-            new ShopItem("XP Booster 20 min", 100),
-            new ShopItem("Loot Drop Potion", 200),
-            new ShopItem("Item Dust", 175),
-            new ShopItem("Backpack", 250),
-            new ShopItem("Char Slot Unlocker", 300),
-            new ShopItem("Vault Chest Unlocker", 300),
-            new ShopItem("Loot Drop Potion", 200)
         };
 
         private static readonly List<ISellableItem> KeysGold = new List<ISellableItem>
         {
-            new ShopItem("Strange Library Key", 250),
-            new ShopItem("Cemetery Key", 150),
-            new ShopItem("Lost Halls Key", 500),
-            new ShopItem("Defiled Graveyard Key", 350),
-            new ShopItem("Davy's Key", 250),
-            new ShopItem("The Crawling Depths Key", 250),
-            new ShopItem("Shatters Key", 500),
-            new ShopItem("Ocean Trench Key", 250),
-            new ShopItem("Tomb of the Ancients Key", 500),
-            new ShopItem("Deadwater Docks Key", 250),
-            new ShopItem("Woodland Labyrinth Key", 250),
-            new ShopItem("Spider Den Key", 150),
-            new ShopItem("Undead Lair Key", 150),
-            new ShopItem("Sprite World Key", 150),
-            new ShopItem("Abyss of Demons Key", 150),
-            new ShopItem("Snake Pit Key", 150),
-            new ShopItem("Beachzone Key", 150),
-            new ShopItem("Lab Key", 150),
-            new ShopItem("Totem Key", 250),
-            new ShopItem("Toxic Sewers Key", 150),
-            new ShopItem("Manor Key", 250),
-            new ShopItem("Candy Key", 250),
-            new ShopItem("Cemetery Key", 150),
-            new ShopItem("Davy's Key", 250),
-            new ShopItem("Ocean Trench Key", 250),
-            new ShopItem("Tomb of the Ancients Key", 350)
         };
 
         private static readonly List<ISellableItem> KeysFame = new List<ISellableItem>
         {
-            new ShopItem("Strange Library Key", 1200),
-            new ShopItem("Cemetery Key", 400),
-            new ShopItem("Lost Halls Key", 5000),
-            new ShopItem("Defiled Graveyard Key", 3500),
-            new ShopItem("Davy's Key", 1200),
-            new ShopItem("The Crawling Depths Key", 2000),
-            new ShopItem("Shatters Key", 5000),
-            new ShopItem("Ocean Trench Key", 1200),
-            new ShopItem("Deadwater Docks Key", 1200),
-            new ShopItem("Woodland Labyrinth Key", 1200),
-            new ShopItem("Spider Den Key", 400),
-            new ShopItem("Undead Lair Key", 400),
-            new ShopItem("Sprite World Key", 400),
-            new ShopItem("Abyss of Demons Key", 400),
-            new ShopItem("Snake Pit Key", 400),
-            new ShopItem("Beachzone Key", 500),
-            new ShopItem("Lab Key", 400),
-            new ShopItem("Totem Key", 1200),
-            new ShopItem("Toxic Sewers Key", 400),
-            new ShopItem("Manor Key", 1200),
-            new ShopItem("Candy Key", 1200),
-            new ShopItem("Cemetery Key", 400),
-            new ShopItem("Davy's Key", 1200),
-            new ShopItem("Ocean Trench Key", 1200),
-            new ShopItem("Tomb of the Ancients Key", 3500)
         };
 
         private static readonly List<ISellableItem> PurchasableFame = new List<ISellableItem>
         {
-            new ShopItem("50 Fame", 53),
-            new ShopItem("100 Fame", 105),
-            new ShopItem("500 Fame", 525),
-            new ShopItem("1000 Fame", 1050),
-            new ShopItem("5000 Fame", 5250)
         };
 
         private static readonly List<ISellableItem> Special = new List<ISellableItem>
         {
-            new ShopItem("Glowing Talisman", 100),
-            new ShopItem("XP Booster 20 min", 25),
-            new ShopItem("Loot Drop Potion", 100),
-            new ShopItem("Backpack", 100),
-            new ShopItem("Char Slot Unlocker", 300),
-            new ShopItem("Vault Chest Unlocker", 200)
         };
 
         public static void Initialize(GameServer gameServer)

@@ -50,7 +50,6 @@ import kabam.rotmg.messaging.impl.incoming.MapInfo;
 import kabam.rotmg.servers.api.Server;
 import kabam.rotmg.stage3D.Renderer;
 import kabam.rotmg.ui.UIUtils;
-import kabam.rotmg.ui.view.BossHealthBar;
 import kabam.rotmg.ui.view.HUDView;
 
 import org.osflash.signals.Signal;
@@ -84,7 +83,6 @@ public class GameSprite extends Sprite
    private var isGameStarted:Boolean;
    private var displaysPosY:uint = 4;
    public var chatPlayerMenu:PlayerMenu;
-   public var bossHealthBar:BossHealthBar;
 
    public function GameSprite(server:Server, gameId:int, createCharacter:Boolean, charId:int, keyTime:int, key:ByteArray, model:PlayerModel, mapJSON:String)
    {
@@ -107,10 +105,6 @@ public class GameSprite extends Sprite
       else{
          this.updateScaleForTextBox(1.0);
       }
-
-      this.bossHealthBar = new BossHealthBar();
-      this.bossHealthBar.visible = false;
-      addChild(this.bossHealthBar);
    }
 
    public function updateScaleForTextBox(percentage:Number):void{
@@ -160,34 +154,27 @@ public class GameSprite extends Sprite
       this.modelInitialized.dispatch();
 
       if(this.map.showDisplays_)
-      {
          this.showSafeAreaDisplays();
-      }
-
       if(this.map.name_ == "Tutorial")
-      {
          this.startTutorial();
-      }
-
       if (this.map.name_ == "Nexus")
-      {
          isNexus_ = true;
-      }
-
       if (this.map.name_ == "Vault")
-      {
          isVault_ = true;
-      }
-      //Parameters.save();
+
       this.hidePreloader();
       stage.dispatchEvent(new Event(Event.RESIZE));
       this.parent.parent.setChildIndex((this.parent.parent as Layers).top, 2);
 
-      if(Parameters.data_.showStatistics){
+      if(Parameters.data_.showStatistics)
+      {
+         this.creditDisplay_.visible = false;
          this.enableGameStatistics();
+      } else
+      {
+         this.creditDisplay_.visible = true;
       }
 
-      WebMain.STAGE.vsyncEnabled = Parameters.data_.vsync;
       WebMain.STAGE.frameRate = Parameters.data_.fps;
    }
 
@@ -212,21 +199,6 @@ public class GameSprite extends Sprite
       this.rankText_.y = this.displaysPosY;
       this.displaysPosY = this.displaysPosY + UIUtils.NOTIFICATION_SPACE;
       addChild(this.rankText_);
-   }
-
-   private function callTracking(functionName:String) : void
-   {
-      if(ExternalInterface.available == false)
-      {
-         return;
-      }
-      try
-      {
-         ExternalInterface.call(functionName);
-      }
-      catch(err:Error)
-      {
-      }
    }
 
    private function startTutorial() : void
@@ -299,20 +271,6 @@ public class GameSprite extends Sprite
             this.creditDisplay_.x = (this.hudView.x - (6 * this.creditDisplay_.scaleX));
          }
       }
-      if (this.bossHealthBar != null)
-      {
-         if (uiscale)
-         {
-            this.bossHealthBar.scaleX = result;
-            this.bossHealthBar.scaleY = 1;
-            this.bossHealthBar.y = 0;
-         }
-         else
-         {
-            this.bossHealthBar.scaleX = sWidth;
-            this.bossHealthBar.scaleY = sHeight;
-         }
-      }
       if (this.rankText_ != null)
       {
          if (uiscale)
@@ -367,7 +325,7 @@ public class GameSprite extends Sprite
       else {
          this.gameStatistics_ = new GameStatistics();
          this.gameStatistics_.x = 600 - this.gameStatistics_.width * 2 - 24;
-         this.gameStatistics_.y = 64;
+         this.gameStatistics_.y = 8;
          addChild(this.gameStatistics_);
       }
    }
@@ -431,38 +389,8 @@ public class GameSprite extends Sprite
          Projectile.dispose();
          FreeList.dispose();
          this.gsc_.disconnect();
-         Parameters.DamageCounter = [];
          if(this.gameStatistics_ != null && contains(this.gameStatistics_)){
             removeChild(this.gameStatistics_);
-         }
-      }
-   }
-
-   public function DamageCounter() : void
-   {
-      var gameObject:GameObject = null;
-      var objectId:int = 0;
-
-      for each(gameObject in map.goDict_)
-      {
-         if((gameObject.props_.isQuest_ || gameObject.props_.isChest_) && Parameters.DamageCounter[gameObject.objectId_] > 0 && objectId == 0)
-         {
-            objectId = gameObject.objectId_;
-         }
-
-         if(objectId == 0){
-            bossHealthBar.setDamageInflicted(-1);
-         }
-
-         if((gameObject.props_.isQuest_ || gameObject.props_.isChest_) && Parameters.DamageCounter[gameObject.objectId_] > 0)
-         {
-            if(gameObject != null)
-            {
-               if(Parameters.DamageCounter[gameObject.objectId_] > gameObject.maxHP_)
-                  Parameters.DamageCounter[gameObject.objectId_] = gameObject.maxHP_;
-               var dmgInflicted = Parameters.DamageCounter[gameObject.objectId_] / gameObject.maxHP_ * 100;
-               bossHealthBar.setDamageInflicted(dmgInflicted);
-            }
          }
       }
    }
@@ -475,10 +403,6 @@ public class GameSprite extends Sprite
       {
          this.closed.dispatch();
          return;
-      }
-
-      if(this.bossHealthBar != null && this.bossHealthBar.visible){
-         this.bossHealthBar.draw();
       }
 
       this.updateNearestInteractive();
@@ -522,7 +446,6 @@ public class GameSprite extends Sprite
          this.moveRecords_.addRecord(time,player.x_,player.y_);
       }
       this.lastUpdate_ = time;
-      DamageCounter();
    }
 
    public function onChatDown(param1:MouseEvent) : void

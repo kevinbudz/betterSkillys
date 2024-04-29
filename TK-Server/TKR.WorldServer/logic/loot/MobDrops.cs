@@ -49,11 +49,10 @@ namespace TKR.WorldServer.logic.loot
     public class TierLoot : MobDrops
     {
         private static readonly int[] WeaponT = new int[] { 1, 2, 3, 8, 17, 24 };
-        private static readonly int[] AbilityT = new int[] { 4, 5, 11, 12, 13, 15, 16, 18, 19, 20, 21, 22, 23, 25, 27};
+        private static readonly int[] AbilityT = new int[] { 4, 5, 11, 12, 13, 15, 16, 18, 19, 20, 21, 22, 23, 25 };
         private static readonly int[] ArmorT = new int[] { 6, 7, 14, };
         private static readonly int[] RingT = new int[] { 9 };
         private static readonly int[] PotionT = new int[] { 10 };
-        private static readonly int[] TalismanT = new int[] { 26 };
 
         public static int[] GetSlotTypes(ItemType itemType)
         {
@@ -70,8 +69,6 @@ namespace TKR.WorldServer.logic.loot
                     types = RingT; break;
                 case ItemType.Potion:
                     types = PotionT; break;
-                case ItemType.Talisman:
-                    types = TalismanT; break;
                 default:
                     throw new NotSupportedException(itemType.ToString());
             }
@@ -90,8 +87,6 @@ namespace TKR.WorldServer.logic.loot
                 return ItemType.Ring;
             if (PotionT.Contains(slotType))
                 return ItemType.Potion;
-            if (TalismanT.Contains(slotType))
-                return ItemType.Talisman;
             throw new NotSupportedException(slotType.ToString());
         }
 
@@ -99,22 +94,10 @@ namespace TKR.WorldServer.logic.loot
         {
             LootDefs.Add(new LootDef(null, probability, threshold, tier, type));
         }
-
-        public static TierLoot TalismanLoot(double probability = 1.0, double threshold = 0.01) => new TierLoot(-1, ItemType.Talisman, probability, 0, threshold);
     }
 
     public class LootTemplates : MobDrops
     {
-        public static MobDrops[] DustLoot()
-        {
-            return new MobDrops[]
-            {
-                new ItemLoot("Potion Dust", 0.005), // 0.5%
-                new ItemLoot("Item Dust", 0.025),  // 2.5%
-                new ItemLoot("Miscellaneous Dust", 0.015), // 1.5%
-                new ItemLoot("Special Dust", 0.00025) // 0.25%
-             };
-        }
     }
 
     public class Threshold : MobDrops

@@ -50,7 +50,6 @@
         ItemDust,
         MiscellaneousDust,
         SpecialDust,
-        TalismanFragment,
         ShurikenAbilityDamaging,
         ShurikenAbilityBerserk,
         GenericActivate,

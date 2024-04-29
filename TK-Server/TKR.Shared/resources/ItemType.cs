@@ -8,7 +8,6 @@
         Ring,
         Potion,
         StatPot,
-        Talisman,
         None
     }
 }

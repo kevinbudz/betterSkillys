@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<GroundTypes>
+   <Ground type="0x519" id="SpiderDirt Unwalkable">
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0x1c</Index>
+      </Texture>
+      <Edge>
+         <Texture>
+            <File>lofiEnvironment2</File>
+            <Index>0x23</Index>
+         </Texture>
+      </Edge>
+      <Corner>
+         <Texture>
+            <File>lofiEnvironment2</File>
+            <Index>0x25</Index>
+         </Texture>
+      </Corner>
+      <RandomOffset/>
+      <NoWalk/>
+      <BlendPriority>4</BlendPriority>
+   </Ground>
+   <Ground type="0x51a" id="Spider Dirt Hole Unwalkable">
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x02</Index>
+      </Texture>
+      <NoWalk/>
+      <BlendPriority>4</BlendPriority>
+   </Ground>
+   <Ground type="0x51b" id="Jungle Temple Floor TL">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x51c" id="Jungle Temple Floor TR">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x51d" id="Jungle Temple Floor BR">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x51e" id="Jungle Temple Floor BL">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x51f" id="ST Evil Water">
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x09</Index>
+      </Texture>
+      <DisplayId>Evil Rainwater</DisplayId>
+      <MinDamage>55</MinDamage>
+      <MaxDamage>55</MaxDamage>
+      <Animate dx=".33" dy=".33">Flow</Animate>
+      <BlendPriority>5</BlendPriority>
+      <Sink/>
+      <Speed>.67</Speed>
+   </Ground>
+   <Ground type="0x520" id="Jungle Temple Floor Gold 1">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x05</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x521" id="Jungle Temple Floor Gold 2">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x06</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x522" id="Jungle Temple Floor Gold 3">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x07</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x523" id="Jungle Temple Floor Gold Blue">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x08</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x524" id="Jungle Temple Floor Gold Green">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x09</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x525" id="Jungle Temple Floor Red 1">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x0b</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x526" id="Jungle Temple Floor Red 2">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x0c</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x527" id="Jungle Temple Floor Red 3">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x0d</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x528" id="Jungle Temple Floor Red Blue">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x0e</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x529" id="Jungle Temple Floor Red Green">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x0f</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x52a" id="Jungle Temple Floor Red Red">
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x10</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+</GroundTypes>

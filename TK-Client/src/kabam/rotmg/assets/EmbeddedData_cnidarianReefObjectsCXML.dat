@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x9f0" id="Bubble Blast">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cnidarianReefObjects8x8</File>
+         <Index>0x26</Index>
+      </Texture>
+      <Rotation>70</Rotation>
+      <Size>115</Size>
+   </Object>
+   <Object type="0x9f1" id="Bubble Wave">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cnidarianReefObjects8x8</File>
+         <Index>0x27</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+      <Size>115</Size>
+   </Object>
+   <Object type="0x9f2" id="Bubble Laser">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cnidarianReefObjects16x16</File>
+         <Index>0x08</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x9fa" id="Cnidarian Reef Portal">
+      <DisplayId>Cnidarian Reef</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Cnidarian Reef</DungeonName>
+      <Texture>
+         <File>cnidarianReefObjects8x8</File>
+         <Index>0x06</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x9f3" id="CR Blue Cnidarian">
+      <Class>Character</Class>
+      <DisplayId>Blue Cnidarian</DisplayId>
+      <Enemy/>
+      <Group>Cnidarian Minions</Group>
+      <Size>95</Size>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>20</Exp>
+      <ShadowColor>0x479CFF</ShadowColor>
+      <ParalyzeImmune/>
+      <Texture>
+         <File>cnidarianReefObjects8x8</File>
+         <Index>0x20</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>cnidarianReefObjects8x8</File>
+            <Index>0x21</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>cnidarianReefObjects8x8</File>
+            <Index>0x22</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>cnidarianReefObjects8x8</File>
+            <Index>0x23</Index>
+         </Texture>
+      </AltTexture>
+      <Projectile id="1">
+         <ObjectId>Blue Star</ObjectId>
+         <Damage>80</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>250</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="2.5">Sick</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x9f4" id="CR Pink Cnidarian">
+      <Class>Character</Class>
+      <DisplayId>Pink Cnidarian</DisplayId>
+      <Enemy/>
+      <Group>Cnidarian Minions</Group>
+      <Size>95</Size>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>20</Exp>
+      <ShadowColor>0xFF478A</ShadowColor>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Texture>
+         <File>cnidarianReefObjects8x8</File>
+         <Index>0x1c</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>cnidarianReefObjects8x8</File>
+            <Index>0x1d</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>cnidarianReefObjects8x8</File>
+            <Index>0x1e</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>cnidarianReefObjects8x8</File>
+            <Index>0x1f</Index>
+         </Texture>
+      </AltTexture>
+      <Projectile id="1">
+         <ObjectId>Purple Magic</ObjectId>
+         <Damage>125</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x9f5" id="CR Green Cnidarian">
+      <Class>Character</Class>
+      <DisplayId>Green Cnidarian</DisplayId>
+      <Enemy/>
+      <Group>Cnidarian Minions</Group>
+      <Size>95</Size>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>20</Exp>
+      <ShadowColor>0x93FF47</ShadowColor>
+      <ParalyzeImmune/>
+      <Texture>
+         <File>cnidarianReefObjects8x8</File>
+         <Index>0x18</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>cnidarianReefObjects8x8</File>
+            <Index>0x19</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>cnidarianReefObjects8x8</File>
+            <Index>0x1a</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>cnidarianReefObjects8x8</File>
+            <Index>0x1b</Index>
+         </Texture>
+      </AltTexture>
+      <Projectile id="1">
+         <ObjectId>Green Star</ObjectId>
+         <Damage>100</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>250</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="4">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x9f6" id="CR Gold Cnidarian">
+      <Class>Character</Class>
+      <DisplayId>Gold Cnidarian</DisplayId>
+      <Enemy/>
+      <Size>95</Size>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <MaxHitPoints>4000</MaxHitPoints>
+      <Defense>15</Defense>
+      <Exp>500</Exp>
+      <ShadowColor>0xFFA447</ShadowColor>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Texture>
+         <File>cnidarianReefObjects8x8</File>
+         <Index>0x14</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>cnidarianReefObjects8x8</File>
+            <Index>0x15</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>cnidarianReefObjects8x8</File>
+            <Index>0x16</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>cnidarianReefObjects8x8</File>
+            <Index>0x17</Index>
+         </Texture>
+      </AltTexture>
+      <Projectile id="1">
+         <ObjectId>InkBubbles</ObjectId>
+         <Damage>40</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>333</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="3">Blind</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x9f7" id="CR Royal Cnidarian">
+      <Class>Character</Class>
+      <DisplayId>Royal Cnidarian</DisplayId>
+      <Enemy/>
+      <Size>130</Size>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <MaxHitPoints>160000</MaxHitPoints>
+      <Defense>35</Defense>
+      <Exp>12000</Exp>
+      <ShadowColor>0xFFA447</ShadowColor>
+      <Quest/>
+      <HealthBarBoss/>
+      <God/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <EventChestBoss/>
+      <TrackLoot/>
+      <Texture>
+         <File>cnidarianReefObjects16x16</File>
+         <Index>0x04</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>cnidarianReefObjects16x16</File>
+            <Index>0x05</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>cnidarianReefObjects16x16</File>
+            <Index>0x06</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>cnidarianReefObjects16x16</File>
+            <Index>0x07</Index>
+         </Texture>
+      </AltTexture>
+      <Portrait>
+         <Texture>
+            <File>cnidarianReefObjects16x16</File>
+            <Index>0x07</Index>
+         </Texture>
+      </Portrait>
+      <Projectile id="1">
+         <ObjectId>Bubble Blast</ObjectId>
+         <Damage>100</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>110</Size>
+         <ConditionEffect duration="1">Dazed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Bubble Wave</ObjectId>
+         <Damage>140</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>125</Size>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Lightning Blast</ObjectId>
+         <Damage>0</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>400</LifetimeMS>
+         <Size>110</Size>
+         <ConditionEffect duration="0.5">Paralyzed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Bubble Laser</ObjectId>
+         <Damage>175</Damage>
+         <Speed>45</Speed>
+         <LifetimeMS>6666</LifetimeMS>
+         <Size>130</Size>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x9f8" id="CR Lasers">
+      <Class>Character</Class>
+      <DisplayId>Royal Cnidarian</DisplayId>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <Invincible/>
+      <Exp>0</Exp>
+      <Projectile id="1">
+         <ObjectId>Bubble Laser</ObjectId>
+         <Damage>175</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <Size>130</Size>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x9fe" id="CR Realm Portal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x9e1" id="CR Small Blue Coral">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cnidarianReefObjects8x8</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <HitSound>monster/trees_hit</HitSound>
+      <DeathSound>monster/trees_death</DeathSound>
+      <MinSize>130</MinSize>
+      <MaxSize>160</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x9e2" id="CR Small Green Coral">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cnidarianReefObjects8x8</File>
+         <Index>0x0b</Index>
+      </Texture>
+      <HitSound>monster/trees_hit</HitSound>
+      <DeathSound>monster/trees_death</DeathSound>
+      <MinSize>130</MinSize>
+      <MaxSize>160</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x9e3" id="CR Small Red Coral">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cnidarianReefObjects8x8</File>
+         <Index>0x0c</Index>
+      </Texture>
+      <HitSound>monster/trees_hit</HitSound>
+      <DeathSound>monster/trees_death</DeathSound>
+      <MinSize>130</MinSize>
+      <MaxSize>160</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x9e4" id="CR Small Yellow Coral">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cnidarianReefObjects8x8</File>
+         <Index>0x0d</Index>
+      </Texture>
+      <HitSound>monster/trees_hit</HitSound>
+      <DeathSound>monster/trees_death</DeathSound>
+      <MinSize>130</MinSize>
+      <MaxSize>160</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x9e5" id="CR Reef Weed A">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cnidarianReefObjects8x8</File>
+         <Index>0x0e</Index>
+      </Texture>
+      <HitSound>monster/trees_hit</HitSound>
+      <DeathSound>monster/trees_death</DeathSound>
+      <MinSize>100</MinSize>
+      <MaxSize>130</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+   </Object>
+   <Object type="0x9e6" id="CR Reef Weed B">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cnidarianReefObjects8x8</File>
+         <Index>0x0f</Index>
+      </Texture>
+      <HitSound>monster/trees_hit</HitSound>
+      <DeathSound>monster/trees_death</DeathSound>
+      <MinSize>100</MinSize>
+      <MaxSize>130</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+   </Object>
+   <Object type="0x9e7" id="CR Reef Weed C">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cnidarianReefObjects8x8</File>
+         <Index>0x10</Index>
+      </Texture>
+      <HitSound>monster/trees_hit</HitSound>
+      <DeathSound>monster/trees_death</DeathSound>
+      <MinSize>100</MinSize>
+      <MaxSize>130</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+   </Object>
+   <Object type="0x9e8" id="CR Reef Rock A">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cnidarianReefObjects8x8</File>
+         <Index>0x11</Index>
+      </Texture>
+      <HitSound>monster/trees_hit</HitSound>
+      <DeathSound>monster/trees_death</DeathSound>
+      <MinSize>130</MinSize>
+      <MaxSize>160</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x9e9" id="CR Reef Rock B">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cnidarianReefObjects8x8</File>
+         <Index>0x12</Index>
+      </Texture>
+      <HitSound>monster/trees_hit</HitSound>
+      <DeathSound>monster/trees_death</DeathSound>
+      <MinSize>130</MinSize>
+      <MaxSize>160</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x9ea" id="CR Reef Rock C">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cnidarianReefObjects8x8</File>
+         <Index>0x13</Index>
+      </Texture>
+      <HitSound>monster/trees_hit</HitSound>
+      <DeathSound>monster/trees_death</DeathSound>
+      <MinSize>130</MinSize>
+      <MaxSize>160</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x9eb" id="CR Big Blue Coral">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cnidarianReefObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <HitSound>monster/trees_hit</HitSound>
+      <DeathSound>monster/trees_death</DeathSound>
+      <MinSize>130</MinSize>
+      <MaxSize>160</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x9ec" id="CR Big Green Coral">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cnidarianReefObjects16x16</File>
+         <Index>0x01</Index>
+      </Texture>
+      <HitSound>monster/trees_hit</HitSound>
+      <DeathSound>monster/trees_death</DeathSound>
+      <MinSize>130</MinSize>
+      <MaxSize>160</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x9ed" id="CR Big Red Coral">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cnidarianReefObjects16x16</File>
+         <Index>0x02</Index>
+      </Texture>
+      <HitSound>monster/trees_hit</HitSound>
+      <DeathSound>monster/trees_death</DeathSound>
+      <MinSize>130</MinSize>
+      <MaxSize>160</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x9ee" id="CR Big Yellow Coral">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cnidarianReefObjects16x16</File>
+         <Index>0x03</Index>
+      </Texture>
+      <HitSound>monster/trees_hit</HitSound>
+      <DeathSound>monster/trees_death</DeathSound>
+      <MinSize>130</MinSize>
+      <MaxSize>160</MaxSize>
+      <SizeStep>5</SizeStep>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0x9ef" id="CR Wall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>cnidarianReefObjects8x8</File>
+         <Index>0x04</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>cnidarianReefObjects8x8</File>
+            <Index>0x05</Index>
+         </Texture>
+      </Top>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+</Objects>

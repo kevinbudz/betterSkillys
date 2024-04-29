@@ -30,7 +30,7 @@ public class GameStatistics extends Sprite {
       this.ping_.setAlignment("right");
       this.ping_.useTextDimensions();
       this.ping_.filters = FilterUtil.getTextOutlineFilter();
-      this.ping_.y = this.fps_.height;
+      this.ping_.y = this.fps_.height - 2;
       addChild(this.ping_);
       this.mem_ = new SimpleText(17, 0xFFFFFF);
       this.mem_.text = "MEM";
@@ -39,7 +39,7 @@ public class GameStatistics extends Sprite {
       this.mem_.setAlignment("right");
       this.mem_.useTextDimensions();
       this.mem_.filters = FilterUtil.getTextOutlineFilter();
-      this.mem_.y = this.ping_.y + this.ping_.height;
+      this.mem_.y = this.ping_.y + this.ping_.height - 2;
       addChild(this.mem_);
 
        addEventListener(Event.ADDED_TO_STAGE, init, false, 0, true);
@@ -73,7 +73,7 @@ public class GameStatistics extends Sprite {
 
             fps_.setText("FPS: " + fps);
             ping_.setText("PING: " + lastPing_);
-            mem_.setText("MEM: " + Number((System.totalMemory * 0.000000954).toFixed(2)) + " MB");
+            mem_.setText("MEM: " + Number((System.totalMemory * 0.000000954).toFixed(1)));
 
             fps = 0;
         }

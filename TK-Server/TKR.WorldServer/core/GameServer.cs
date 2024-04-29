@@ -26,7 +26,6 @@ namespace TKR.WorldServer.core
         public string InstanceId { get; private set; }
         public ServerConfig Configuration { get; private set; }
         public Resources Resources { get; private set; }
-        public ItemDustWeights ItemDustWeights { get; private set; }
         public Database Database { get; private set; }
         public MarketSweeper MarketSweeper { get; private set; }
         public ConnectionManager ConnectionManager { get; private set; }
@@ -62,8 +61,7 @@ namespace TKR.WorldServer.core
             ThreadPool.GetMinThreads(out int workerThreads, out int completionPortThreads);
             ThreadPool.SetMinThreads(250, completionPortThreads);
 
-            Resources = new Resources(Configuration.serverSettings.resourceFolder, true, ExportXMLS);
-            ItemDustWeights = new ItemDustWeights(this);
+            Resources = new Resources(Configuration.serverSettings.resourceFolder, true, false);
             Database = new Database(Resources, Configuration);
             MarketSweeper = new MarketSweeper(Database);
             ConnectionManager = new ConnectionManager(this);
@@ -93,31 +91,6 @@ namespace TKR.WorldServer.core
 
         public void Run()
         {
-            if (ExportXMLS)
-            {
-                if (!Directory.Exists("GenerateXMLS"))
-                    _ = Directory.CreateDirectory("GenerateXMLS");
-
-                var f = File.CreateText("GenerateXMLS/EmbeddedData_ObjectsCXML.xml");
-                f.Write(Resources.GameData.ObjectCombinedXML.ToString());
-                f.Close();
-
-                var f3 = File.CreateText("GenerateXMLS/EmbeddedData_SkinsCXML.xml");
-                f3.Write(Resources.GameData.SkinsCombinedXML.ToString());
-                f3.Close();
-
-                var f4 = File.CreateText("GenerateXMLS/EmbeddedData_PlayersCXML.xml");
-                f4.Write(Resources.GameData.CombinedXMLPlayers.ToString());
-                f4.Close();
-
-                var f2 = File.CreateText("GenerateXMLS/EmbeddedData_GroundsCXML.xml");
-                f2.Write(Resources.GameData.GroundCombinedXML.ToString());
-                f2.Close();
-
-                Console.WriteLine("GenerateXMLS is done ready for copying to src\\kabam\\rotmg\\assets");
-            }
-
-            ItemDustWeights.Initialize();
             CommandManager.Initialize(this);
             Loot.Initialize(this);
             MobDrops.Initialize(this);

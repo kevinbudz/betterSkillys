@@ -70,7 +70,7 @@ public class MyPlayerToolTip extends ToolTip
          _loc3_ = 40;
          this.hpBar_ = new StatusBar(176,16,14693428,5526612,"HP");
          this.hpBar_.x = 6;
-         this.hpBar_.y = _loc3_;
+         this.hpBar_.y = _loc3_ + 2;
          addChild(this.hpBar_);
          _loc3_ = Number(_loc3_ + 24);
          this.mpBar_ = new StatusBar(176,16,6325472,5526612,"MP");
@@ -107,17 +107,17 @@ public class MyPlayerToolTip extends ToolTip
             _loc3_ = Number(_loc3_ + 92);
          }
          _loc3_ = Number(_loc3_ + 8);
-         this.lineBreak_ = new LineBreakDesign(100,1842204);
-         this.lineBreak_.x = 6;
-         this.lineBreak_.y = _loc3_;
+         this.lineBreak_ = new LineBreakDesign(175,1842204);
+         this.lineBreak_.x = 7;
+         this.lineBreak_.y = _loc3_ - 7;
          addChild(this.lineBreak_);
          var numStars:int = charStats == null?int(0):int(charStats.numStars());
          this.bestLevel_ = new SimpleText(14,6206769,false,0,0);
          this.bestLevel_.text = numStars + " of 5 Class Quests Completed\n" + "Best Level Achieved: " + (charStats != null?charStats.bestLevel():0).toString() + "\n" + "Best Fame Achieved: " + (charStats != null?charStats.bestFame():0).toString();
          this.bestLevel_.updateMetrics();
          this.bestLevel_.filters = [new DropShadowFilter(0,0,0)];
-         this.bestLevel_.x = 8;
-         this.bestLevel_.y = height - 2;
+         this.bestLevel_.x = 6;
+         this.bestLevel_.y = height;
          addChild(this.bestLevel_);
          var nextStarFame:int = FameUtil.nextStarFame(charStats == null?int(0):int(charStats.bestFame()),0);
          if(nextStarFame > 0)
@@ -136,7 +136,7 @@ public class MyPlayerToolTip extends ToolTip
       {
          this.hpBar_.draw(this.player_.hp_,this.player_.maxHP_,this.player_.maxHPBoost_,this.player_.maxHPMax_,Math.max(this.player_.maxHP_ - this.player_.maxHPBoost_ - this.player_.maxHPMax_,0), this.player_.level_);
          this.mpBar_.draw(this.player_.mp_,this.player_.maxMP_,this.player_.maxMPBoost_,this.player_.maxMPMax_,Math.max(this.player_.maxMP_ - this.player_.maxMPBoost_ - this.player_.maxMPMax_,0), this.player_.level_);
-         this.lineBreak_.setWidthColor(width - 10,1842204);
+         this.lineBreak_.setWidthColor(175,1842204);
          super.draw();
       }
    }

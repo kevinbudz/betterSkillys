@@ -9,7 +9,7 @@ package kabam.rotmg.classes.view
    {
       public static const PADDING:int = 5;
       public static const WIDTH:int = 442;
-      public static const HEIGHT:int = 400;
+      public static const HEIGHT:int = 410;
        
       
       private const list:VerticalScrollingList = makeList();

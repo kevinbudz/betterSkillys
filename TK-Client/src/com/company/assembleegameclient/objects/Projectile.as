@@ -321,16 +321,6 @@ public class Projectile extends BasicObject
             {
                map_.gs_.gsc_.enemyHit(time, this.bulletId_, target.objectId_, dead);
                target.damage(this.containerType_, dmg, this.projProps_.effects_, dead, this, false);
-               if(target != null && (target.props_.isQuest_ || target.props_.isChest_))
-               {
-                  if(isNaN(Parameters.DamageCounter[target.objectId_]))
-                  {
-                     Parameters.DamageCounter[target.objectId_] = 0;
-                  }
-                  var targetId:* = target.objectId_;
-                  var damage:* = Parameters.DamageCounter[targetId] + dmg;
-                  Parameters.DamageCounter[targetId] = damage;
-               }
             }
             else if(!this.projProps_.multiHit_)
             {

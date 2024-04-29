@@ -85,10 +85,7 @@ namespace TKR.WorldServer.core.objects
 
             if (exp != 0)
             {
-                if (HasTalismanEffect(TalismanEffectType.KnownAfterDeath))
-                    Experience += exp * 2;
-                else
-                    Experience += exp;
+                Experience += exp;
             }
 
             FameCounter.Killed(enemy, killer);

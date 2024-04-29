@@ -1,0 +1,2888 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x3680" id="El Dorado Spirit Skull">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+   </Object>
+   <Object type="0x3681" id="Great Basilisk Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x20</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x3682" id="Great Basilisk Beam">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x21</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x3683" id="Great Basilisk Star">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x22</Index>
+      </Texture>
+      <Rotation>-180</Rotation>
+   </Object>
+   <Object type="0x3684" id="Great Basilisk Wave">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x23</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x3685" id="Great Basilisk Tooth">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x24</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x3686" id="Great Basilisk Shield">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x26</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x3687" id="Basilisk Bite">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x27</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x3688" id="Basilisk Swipe">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x28</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x3689" id="Basilisk Spit">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x29</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x368a" id="Basilisk Wheel">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x2a</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+   </Object>
+   <Object type="0x368b" id="Basilisk Barrier">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x2b</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x368c" id="Basilisk Energy">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x2c</Index>
+      </Texture>
+   </Object>
+   <Object type="0x368d" id="Basilisk Claw">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x2d</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x368e" id="El Dorado Spike">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x2e</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x368f" id="El Dorado Line">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x2f</Index>
+      </Texture>
+   </Object>
+   <Object type="0x3690" id="El Dorado Gold">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x30</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x3691" id="El Dorado Curse">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x33</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x3692" id="Demonic Blast">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x31</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x3693" id="Demonic Wave">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x32</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x3694" id="Insectile Spike">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x34</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x3695" id="Insectile Goo">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x35</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x3696" id="Avian Spinner">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x36</Index>
+      </Texture>
+      <Rotation>-130</Rotation>
+   </Object>
+   <Object type="0x3697" id="Avian Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x37</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x3698" id="Lightning Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x38</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x3699" id="Static Ball">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x39</Index>
+      </Texture>
+      <Rotation>-110</Rotation>
+   </Object>
+   <Object type="0x369a" id="Electric Discharge">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x3a</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x369b" id="Static Star">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x3b</Index>
+      </Texture>
+      <Rotation>-200</Rotation>
+   </Object>
+   <Object type="0x369c" id="Electric Field">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x3c</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x369d" id="Volt Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x3d</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x369e" id="Storm Swirl">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x3e</Index>
+      </Texture>
+      <Rotation>60</Rotation>
+   </Object>
+   <Object type="0x36f8" id="El Dorado Shield">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x4f</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x369f" id="Secluded Thicket Portal">
+      <DisplayId>Secluded Thicket</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Secluded Thicket</DungeonName>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x04</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x36a6" id="Tezcacoatl the Great Basilisk">
+      <DisplayId>Tezcacoatl the Great Basilisk</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>secludedThicketChars16x16</File>
+         <Index>6</Index>
+      </AnimatedTexture>
+      <Portrait>
+         <AnimatedTexture>
+            <File>secludedThicketChars16x16</File>
+            <Index>6</Index>
+         </AnimatedTexture>
+      </Portrait>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>35</Defense>
+      <Exp>3000</Exp>
+      <Size>130</Size>
+      <HitSound>monster/cyclops_hit</HitSound>
+      <DeathSound>monster/cyclops_death</DeathSound>
+      <Quest/>
+      <HealthBarBoss/>
+      <God/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <DontFaceAttacks/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>Great Basilisk Beam</ObjectId>
+         <Damage>60</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>28</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Great Basilisk Beam</ObjectId>
+         <Damage>80</Damage>
+         <Speed>58</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>45</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Great Basilisk Beam</ObjectId>
+         <Damage>100</Damage>
+         <Speed>63</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>73</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Great Basilisk Beam</ObjectId>
+         <Damage>120</Damage>
+         <Speed>71</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>117</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Great Basilisk Beam</ObjectId>
+         <Damage>140</Damage>
+         <Speed>84</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>190</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Great Basilisk Star</ObjectId>
+         <Damage>50</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2500</LifetimeMS>
+         <Size>90</Size>
+         <ConditionEffect duration="2.4">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Great Basilisk Wave</ObjectId>
+         <Damage>130</Damage>
+         <Speed>105</Speed>
+         <LifetimeMS>2500</LifetimeMS>
+         <Size>110</Size>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>Great Basilisk Wave</ObjectId>
+         <Damage>65</Damage>
+         <Speed>60</Speed>
+         <Size>130</Size>
+         <LifetimeMS>500</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+         <Boomerang/>
+         <ConditionEffect duration="0.4">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="9">
+         <ObjectId>Great Basilisk Tooth</ObjectId>
+         <Damage>90</Damage>
+         <Speed>100</Speed>
+         <Size>90</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="10">
+         <ObjectId>Great Basilisk Shield</ObjectId>
+         <Damage>250</Damage>
+         <Speed>20</Speed>
+         <Size>200</Size>
+         <LifetimeMS>3200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="11">
+         <ObjectId>Great Basilisk Shield</ObjectId>
+         <Damage>120</Damage>
+         <Speed>45</Speed>
+         <Size>135</Size>
+         <LifetimeMS>2800</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="19">
+         <ObjectId>Great Basilisk Bolt</ObjectId>
+         <Damage>130</Damage>
+         <Speed>70</Speed>
+         <Size>110</Size>
+         <LifetimeMS>1850</LifetimeMS>
+      </Projectile>
+      <Projectile id="20">
+         <ObjectId>Great Basilisk Bolt</ObjectId>
+         <Damage>180</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+      </Projectile>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>secludedThicketChars16x16</File>
+            <Index>8</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="2">
+         <AnimatedTexture>
+            <File>secludedThicketChars16x16</File>
+            <Index>19</Index>
+         </AnimatedTexture>
+      </AltTexture>
+   </Object>
+   <Object type="0x36a7" id="Adult Basilisk">
+      <DisplayId>Adult Basilisk</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>secludedThicketChars8x8</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>15</Defense>
+      <Exp>0</Exp>
+      <Size>120</Size>
+      <HitSound>monster/dragons_hit</HitSound>
+      <DeathSound>monster/dragons_death</DeathSound>
+      <ShadowSize>80</ShadowSize>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <DontFaceAttacks/>
+      <Projectile id="0">
+         <ObjectId>Basilisk Bite</ObjectId>
+         <Damage>40</Damage>
+         <Speed>150</Speed>
+         <LifetimeMS>130</LifetimeMS>
+         <Size>85</Size>
+         <MultiHit/>
+         <ConditionEffect duration="3">Bleeding</ConditionEffect>
+         <ConditionEffect duration="3">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Basilisk Swipe</ObjectId>
+         <Damage>45</Damage>
+         <Speed>50</Speed>
+         <Size>105</Size>
+         <LifetimeMS>500</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3">Weak</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Basilisk Spit</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1850</LifetimeMS>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Basilisk Barrier</ObjectId>
+         <Damage>20</Damage>
+         <Speed>40</Speed>
+         <Size>90</Size>
+         <LifetimeMS>450</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Basilisk Claw</ObjectId>
+         <Damage>75</Damage>
+         <Speed>70</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1600</LifetimeMS>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Basilisk Energy</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Basilisk Energy</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <Size>100</Size>
+         <LifetimeMS>900</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>Basilisk Energy</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <Size>100</Size>
+         <LifetimeMS>850</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>Basilisk Wheel</ObjectId>
+         <Damage>60</Damage>
+         <Size>100</Size>
+         <Speed>0</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <ConditionEffect duration="1">Confused</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x36a8" id="Adult Basilisk 2">
+      <DisplayId>Adult Basilisk</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>secludedThicketChars8x8</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>15</Defense>
+      <Exp>0</Exp>
+      <Size>120</Size>
+      <HitSound>monster/dragons_hit</HitSound>
+      <DeathSound>monster/dragons_death</DeathSound>
+      <ShadowSize>80</ShadowSize>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <DontFaceAttacks/>
+      <Projectile id="0">
+         <ObjectId>Basilisk Bite</ObjectId>
+         <Damage>40</Damage>
+         <Speed>150</Speed>
+         <LifetimeMS>130</LifetimeMS>
+         <Size>85</Size>
+         <MultiHit/>
+         <ConditionEffect duration="3">Bleeding</ConditionEffect>
+         <ConditionEffect duration="3">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Basilisk Swipe</ObjectId>
+         <Damage>45</Damage>
+         <Speed>50</Speed>
+         <Size>105</Size>
+         <LifetimeMS>500</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3">Weak</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Basilisk Spit</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1850</LifetimeMS>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Basilisk Barrier</ObjectId>
+         <Damage>20</Damage>
+         <Speed>40</Speed>
+         <Size>90</Size>
+         <LifetimeMS>450</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Basilisk Claw</ObjectId>
+         <Damage>75</Damage>
+         <Speed>70</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1600</LifetimeMS>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Basilisk Energy</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Basilisk Energy</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <Size>100</Size>
+         <LifetimeMS>900</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>Basilisk Energy</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <Size>100</Size>
+         <LifetimeMS>850</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>Basilisk Wheel</ObjectId>
+         <Damage>60</Damage>
+         <Size>100</Size>
+         <Speed>0</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <ConditionEffect duration="1">Confused</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x36a9" id="Adult Basilisk 3">
+      <DisplayId>Adult Basilisk</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>secludedThicketChars8x8</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>15</Defense>
+      <Exp>0</Exp>
+      <Size>120</Size>
+      <HitSound>monster/dragons_hit</HitSound>
+      <DeathSound>monster/dragons_death</DeathSound>
+      <ShadowSize>80</ShadowSize>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <DontFaceAttacks/>
+      <Projectile id="0">
+         <ObjectId>Basilisk Bite</ObjectId>
+         <Damage>40</Damage>
+         <Speed>150</Speed>
+         <LifetimeMS>130</LifetimeMS>
+         <Size>85</Size>
+         <MultiHit/>
+         <ConditionEffect duration="3">Bleeding</ConditionEffect>
+         <ConditionEffect duration="3">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Basilisk Swipe</ObjectId>
+         <Damage>45</Damage>
+         <Speed>50</Speed>
+         <Size>105</Size>
+         <LifetimeMS>500</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3">Weak</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Basilisk Spit</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1850</LifetimeMS>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Basilisk Barrier</ObjectId>
+         <Damage>20</Damage>
+         <Speed>40</Speed>
+         <Size>90</Size>
+         <LifetimeMS>450</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Basilisk Claw</ObjectId>
+         <Damage>75</Damage>
+         <Speed>70</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1600</LifetimeMS>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Basilisk Energy</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <Size>100</Size>
+         <LifetimeMS>950</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Basilisk Energy</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <Size>100</Size>
+         <LifetimeMS>800</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>Basilisk Energy</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <Size>100</Size>
+         <LifetimeMS>800</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>Basilisk Wheel</ObjectId>
+         <Damage>60</Damage>
+         <Size>100</Size>
+         <Speed>0</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <ConditionEffect duration="1">Confused</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x36aa" id="Adult Basilisk 4">
+      <DisplayId>Adult Basilisk</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>secludedThicketChars8x8</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>15</Defense>
+      <Exp>0</Exp>
+      <Size>120</Size>
+      <HitSound>monster/dragons_hit</HitSound>
+      <DeathSound>monster/dragons_death</DeathSound>
+      <ShadowSize>80</ShadowSize>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <DontFaceAttacks/>
+      <Projectile id="0">
+         <ObjectId>Basilisk Bite</ObjectId>
+         <Damage>40</Damage>
+         <Speed>150</Speed>
+         <LifetimeMS>130</LifetimeMS>
+         <Size>85</Size>
+         <MultiHit/>
+         <ConditionEffect duration="3">Bleeding</ConditionEffect>
+         <ConditionEffect duration="3">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Basilisk Swipe</ObjectId>
+         <Damage>45</Damage>
+         <Speed>50</Speed>
+         <Size>105</Size>
+         <LifetimeMS>500</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3">Weak</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Basilisk Spit</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1850</LifetimeMS>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Basilisk Barrier</ObjectId>
+         <Damage>20</Damage>
+         <Speed>40</Speed>
+         <Size>90</Size>
+         <LifetimeMS>450</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Basilisk Claw</ObjectId>
+         <Damage>75</Damage>
+         <Speed>70</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1600</LifetimeMS>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Basilisk Energy</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <Size>100</Size>
+         <LifetimeMS>950</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Basilisk Energy</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <Size>100</Size>
+         <LifetimeMS>800</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>Basilisk Energy</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <Size>100</Size>
+         <LifetimeMS>800</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>Basilisk Wheel</ObjectId>
+         <Damage>60</Damage>
+         <Size>100</Size>
+         <Speed>0</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <ConditionEffect duration="1">Confused</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x36ab" id="Adult Basilisk 5">
+      <DisplayId>Adult Basilisk</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>secludedThicketChars8x8</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>15</Defense>
+      <Exp>0</Exp>
+      <Size>120</Size>
+      <HitSound>monster/dragons_hit</HitSound>
+      <DeathSound>monster/dragons_death</DeathSound>
+      <ShadowSize>80</ShadowSize>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <DontFaceAttacks/>
+      <Projectile id="0">
+         <ObjectId>Basilisk Bite</ObjectId>
+         <Damage>40</Damage>
+         <Speed>150</Speed>
+         <LifetimeMS>130</LifetimeMS>
+         <Size>85</Size>
+         <MultiHit/>
+         <ConditionEffect duration="3">Bleeding</ConditionEffect>
+         <ConditionEffect duration="3">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Basilisk Swipe</ObjectId>
+         <Damage>45</Damage>
+         <Speed>50</Speed>
+         <Size>105</Size>
+         <LifetimeMS>500</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3">Weak</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Basilisk Spit</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1850</LifetimeMS>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Basilisk Barrier</ObjectId>
+         <Damage>20</Damage>
+         <Speed>40</Speed>
+         <Size>90</Size>
+         <LifetimeMS>450</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Basilisk Claw</ObjectId>
+         <Damage>75</Damage>
+         <Speed>70</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1600</LifetimeMS>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Basilisk Energy</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Basilisk Energy</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <Size>100</Size>
+         <LifetimeMS>900</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>Basilisk Energy</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <Size>100</Size>
+         <LifetimeMS>850</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>Basilisk Wheel</ObjectId>
+         <Damage>60</Damage>
+         <Size>100</Size>
+         <Speed>0</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <ConditionEffect duration="1">Confused</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x36ac" id="Adult Basilisk 6">
+      <DisplayId>Adult Basilisk</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>secludedThicketChars8x8</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>15</Defense>
+      <Exp>0</Exp>
+      <Size>120</Size>
+      <HitSound>monster/dragons_hit</HitSound>
+      <DeathSound>monster/dragons_death</DeathSound>
+      <ShadowSize>80</ShadowSize>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <DontFaceAttacks/>
+      <Projectile id="0">
+         <ObjectId>Basilisk Bite</ObjectId>
+         <Damage>40</Damage>
+         <Speed>150</Speed>
+         <LifetimeMS>130</LifetimeMS>
+         <Size>85</Size>
+         <MultiHit/>
+         <ConditionEffect duration="3">Bleeding</ConditionEffect>
+         <ConditionEffect duration="3">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Basilisk Swipe</ObjectId>
+         <Damage>45</Damage>
+         <Speed>50</Speed>
+         <Size>105</Size>
+         <LifetimeMS>500</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3">Weak</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Basilisk Spit</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1850</LifetimeMS>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Basilisk Barrier</ObjectId>
+         <Damage>20</Damage>
+         <Speed>40</Speed>
+         <Size>90</Size>
+         <LifetimeMS>450</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Basilisk Claw</ObjectId>
+         <Damage>75</Damage>
+         <Speed>70</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1600</LifetimeMS>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Basilisk Energy</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Basilisk Energy</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <Size>100</Size>
+         <LifetimeMS>900</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>Basilisk Energy</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <Size>100</Size>
+         <LifetimeMS>850</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>Basilisk Wheel</ObjectId>
+         <Damage>60</Damage>
+         <Size>100</Size>
+         <Speed>0</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <ConditionEffect duration="1">Confused</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x36ad" id="El Dorado">
+      <DisplayId>El Dorado</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>secludedThicketChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>120000</MaxHitPoints>
+      <Defense>65</Defense>
+      <Exp>4000</Exp>
+      <Size>160</Size>
+      <HitSound>monster/wooden_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Quest/>
+      <HealthBarBoss/>
+      <God/>
+      <DontFaceAttacks/>
+      <DontFaceMovement/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <DazedImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>El Dorado Spike</ObjectId>
+         <Damage>80</Damage>
+         <Speed>45</Speed>
+         <Size>100</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>El Dorado Line</ObjectId>
+         <Damage>0</Damage>
+         <Speed>70</Speed>
+         <Size>210</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>El Dorado Gold</ObjectId>
+         <Damage>200</Damage>
+         <Speed>80</Speed>
+         <Size>130</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>El Dorado Curse</ObjectId>
+         <Speed>80</Speed>
+         <Damage>90</Damage>
+         <Size>130</Size>
+         <LifetimeMS>2100</LifetimeMS>
+         <Amplitude>2.5</Amplitude>
+         <Frequency>0.5</Frequency>
+         <FaceDir/>
+         <MultiHit/>
+         <ConditionEffect duration="3">Curse</ConditionEffect>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>El Dorado Shield</ObjectId>
+         <Damage>50</Damage>
+         <Speed>45</Speed>
+         <Size>120</Size>
+         <LifetimeMS>500</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+         <Boomerang/>
+         <ConditionEffect duration="5">Curse</ConditionEffect>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x36ae" id="Demon Tribesman">
+      <DisplayId>Demon Tribesman</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>secludedThicketChars16x16</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <HitSound>monster/ogres_hit</HitSound>
+      <DeathSound>monster/ogres_death</DeathSound>
+      <Size>1</Size>
+      <Exp>1000</Exp>
+      <God/>
+      <MaxHitPoints>35000</MaxHitPoints>
+      <Defense>25</Defense>
+      <StasisImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>Demonic Wave</ObjectId>
+         <Damage>120</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>650</LifetimeMS>
+         <Size>130</Size>
+         <MultiHit/>
+         <ConditionEffect duration="2.6">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Demonic Blast</ObjectId>
+         <Damage>75</Damage>
+         <Speed>110</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <Size>120</Size>
+         <ConditionEffect duration="4">Slowed</ConditionEffect>
+      </Projectile>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>secludedThicketChars16x16</File>
+            <Index>1</Index>
+         </AnimatedTexture>
+         <Effect cooldown="0.1" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36af" id="Insect Tribesman">
+      <DisplayId>Insect Tribesman</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>secludedThicketChars16x16</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <HitSound>monster/ogres_hit</HitSound>
+      <DeathSound>monster/ogres_death</DeathSound>
+      <Size>1</Size>
+      <Exp>1000</Exp>
+      <God/>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Defense>35</Defense>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>Insectile Spike</ObjectId>
+         <Damage>90</Damage>
+         <Speed>35</Speed>
+         <LifetimeMS>9000</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="3">Sick</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Insectile Goo</ObjectId>
+         <Damage>60</Damage>
+         <Speed>95</Speed>
+         <LifetimeMS>2100</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="1.2">Blind</ConditionEffect>
+      </Projectile>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>secludedThicketChars16x16</File>
+            <Index>2</Index>
+         </AnimatedTexture>
+         <Effect cooldown="0.1" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36b0" id="Bird Tribesman">
+      <DisplayId>Bird Tribesman</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>secludedThicketChars16x16</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <HitSound>monster/ogres_hit</HitSound>
+      <DeathSound>monster/ogres_death</DeathSound>
+      <Size>1</Size>
+      <Exp>1000</Exp>
+      <God/>
+      <MaxHitPoints>35000</MaxHitPoints>
+      <Defense>40</Defense>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>Avian Spinner</ObjectId>
+         <Damage>100</Damage>
+         <Speed>105</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="2">Confused</ConditionEffect>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Avian Bolt</ObjectId>
+         <Damage>135</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>3400</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="1">Quiet</ConditionEffect>
+      </Projectile>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>secludedThicketChars16x16</File>
+            <Index>3</Index>
+         </AnimatedTexture>
+         <Effect cooldown="0.1" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36b1" id="El Dorado Spirit">
+      <DisplayId>El Dorado Spirit</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>secludedThicketChars16x16</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <HitSound>monster/ghosts_hit</HitSound>
+      <DeathSound>monster/ghosts_death</DeathSound>
+      <Size>100</Size>
+      <Z>0.2</Z>
+      <Flying/>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>El Dorado Spirit Skull</ObjectId>
+         <Damage>200</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <Size>200</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x36b2" id="Jungle Flame">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>summerNexusObjects16x16</File>
+         <Index>0x4f</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>summerNexusObjects16x16</File>
+               <Index>0x50</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>summerNexusObjects16x16</File>
+               <Index>0x51</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>summerNexusObjects16x16</File>
+               <Index>0x52</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>summerNexusObjects16x16</File>
+               <Index>0x4f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <DisplayId>Jungle Flame</DisplayId>
+      <Size>100</Size>
+      <Invincible/>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>25</Damage>
+         <Size>80</Size>
+         <Speed>100</Speed>
+         <LifetimeMS>80</LifetimeMS>
+         <ArmorPiercing/>
+         <ConditionEffect duration="2">Armor Broken</ConditionEffect>
+         <ConditionEffect duration="3">Bleeding</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x36b3" id="Demon Mask">
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Color>0xbf0000</Color>
+      <Animation prob="1.0" period="1.2">
+         <Frame time="0.2">
+            <Texture>
+               <File>secludedThicketObjects8x8</File>
+               <Index>0x00</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>secludedThicketObjects8x8</File>
+               <Index>0x1d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>secludedThicketObjects8x8</File>
+               <Index>0x00</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>secludedThicketObjects8x8</File>
+               <Index>0x1a</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <Z>0.2</Z>
+      <Flying/>
+   </Object>
+   <Object type="0x36b4" id="Insect Mask">
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x01</Index>
+      </Texture>
+      <Color>0x65b200</Color>
+      <Animation prob="1.0" period="1.2">
+         <Frame time="0.2">
+            <Texture>
+               <File>secludedThicketObjects8x8</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>secludedThicketObjects8x8</File>
+               <Index>0x1e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>secludedThicketObjects8x8</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>secludedThicketObjects8x8</File>
+               <Index>0x1b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <Z>0.2</Z>
+      <Flying/>
+   </Object>
+   <Object type="0x36b5" id="Bird Mask">
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x02</Index>
+      </Texture>
+      <Color>0x001ee5</Color>
+      <Animation prob="1.0" period="1.2">
+         <Frame time="0.2">
+            <Texture>
+               <File>secludedThicketObjects8x8</File>
+               <Index>0x02</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>secludedThicketObjects8x8</File>
+               <Index>0x1f</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>secludedThicketObjects8x8</File>
+               <Index>0x02</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>secludedThicketObjects8x8</File>
+               <Index>0x1c</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <Z>0.2</Z>
+      <Flying/>
+   </Object>
+   <Object type="0x36b6" id="ST D1">
+      <DisplayId>Demon Mask</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Demonic Blast</ObjectId>
+         <Damage>65</Damage>
+         <Speed>80</Speed>
+         <Size>130</Size>
+         <LifetimeMS>1125</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>secludedThicketObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Effect cooldown="0.2" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36b7" id="ST D2">
+      <DisplayId>Demon Mask</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Demonic Blast</ObjectId>
+         <Damage>65</Damage>
+         <Speed>80</Speed>
+         <Size>130</Size>
+         <LifetimeMS>1125</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>secludedThicketObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Effect cooldown="0.2" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36b8" id="ST D3">
+      <DisplayId>Demon Mask</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Demonic Blast</ObjectId>
+         <Damage>65</Damage>
+         <Speed>80</Speed>
+         <Size>130</Size>
+         <LifetimeMS>1125</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>secludedThicketObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Effect cooldown="0.2" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36b9" id="ST D4">
+      <DisplayId>Demon Mask</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Demonic Blast</ObjectId>
+         <Damage>65</Damage>
+         <Speed>80</Speed>
+         <Size>130</Size>
+         <LifetimeMS>1125</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>secludedThicketObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Effect cooldown="0.2" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36ba" id="ST D5">
+      <DisplayId>Demon Mask</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Demonic Blast</ObjectId>
+         <Damage>65</Damage>
+         <Speed>80</Speed>
+         <Size>130</Size>
+         <LifetimeMS>1750</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>secludedThicketObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Effect cooldown="0.2" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36bb" id="ST D6">
+      <DisplayId>Demon Mask</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Demonic Blast</ObjectId>
+         <Damage>65</Damage>
+         <Speed>80</Speed>
+         <Size>130</Size>
+         <LifetimeMS>1750</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>secludedThicketObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Effect cooldown="0.2" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36bc" id="ST D7">
+      <DisplayId>Demon Mask</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Demonic Blast</ObjectId>
+         <Damage>65</Damage>
+         <Speed>80</Speed>
+         <Size>130</Size>
+         <LifetimeMS>1750</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>secludedThicketObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Effect cooldown="0.2" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36bd" id="ST D8">
+      <DisplayId>Demon Mask</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Demonic Blast</ObjectId>
+         <Damage>65</Damage>
+         <Speed>80</Speed>
+         <Size>130</Size>
+         <LifetimeMS>1750</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>secludedThicketObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Effect cooldown="0.2" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36be" id="ST D9">
+      <DisplayId>Demon Mask</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Demonic Blast</ObjectId>
+         <Damage>65</Damage>
+         <Speed>80</Speed>
+         <Size>130</Size>
+         <LifetimeMS>1125</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>secludedThicketObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Effect cooldown="0.2" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36bf" id="ST D10">
+      <DisplayId>Demon Mask</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Demonic Blast</ObjectId>
+         <Damage>65</Damage>
+         <Speed>80</Speed>
+         <Size>130</Size>
+         <LifetimeMS>1125</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>secludedThicketObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Effect cooldown="0.2" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36c0" id="ST D11">
+      <DisplayId>Demon Mask</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Demonic Blast</ObjectId>
+         <Damage>65</Damage>
+         <Speed>80</Speed>
+         <Size>130</Size>
+         <LifetimeMS>1125</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>secludedThicketObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Effect cooldown="0.2" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36c1" id="ST D12">
+      <DisplayId>Demon Mask</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Demonic Blast</ObjectId>
+         <Damage>65</Damage>
+         <Speed>80</Speed>
+         <Size>130</Size>
+         <LifetimeMS>1125</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>secludedThicketObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Effect cooldown="0.2" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36c2" id="ST I1">
+      <DisplayId>Insect Mask</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x01</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Insectile Spike</ObjectId>
+         <Damage>70</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>2250</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="1.4">Sick</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>secludedThicketObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Effect cooldown="0.2" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36c3" id="ST I2">
+      <DisplayId>Insect Mask</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x01</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Insectile Spike</ObjectId>
+         <Damage>70</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>3500</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="1.4">Sick</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>secludedThicketObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Effect cooldown="0.2" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36c4" id="ST I3">
+      <DisplayId>Insect Mask</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x01</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Insectile Spike</ObjectId>
+         <Damage>70</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>3500</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="1.4">Sick</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>secludedThicketObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Effect cooldown="0.2" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36c5" id="ST I4">
+      <DisplayId>Insect Mask</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x01</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Insectile Spike</ObjectId>
+         <Damage>70</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>2250</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="1.4">Sick</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>secludedThicketObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Effect cooldown="0.2" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36c6" id="ST B1">
+      <DisplayId>Bird Mask</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x02</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Avian Spinner</ObjectId>
+         <Damage>80</Damage>
+         <Speed>85</Speed>
+         <LifetimeMS>3700</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="2">Confused</ConditionEffect>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>secludedThicketObjects8x8</File>
+            <Index>0x02</Index>
+         </Texture>
+         <Effect cooldown="0.2" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36c7" id="ST B2">
+      <DisplayId>Bird Mask</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x02</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Avian Spinner</ObjectId>
+         <Damage>80</Damage>
+         <Speed>85</Speed>
+         <LifetimeMS>3700</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="2">Confused</ConditionEffect>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>secludedThicketObjects8x8</File>
+            <Index>0x02</Index>
+         </Texture>
+         <Effect cooldown="0.2" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36c8" id="ST B3">
+      <DisplayId>Bird Mask</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x02</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Avian Spinner</ObjectId>
+         <Damage>80</Damage>
+         <Speed>85</Speed>
+         <LifetimeMS>3700</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="2">Confused</ConditionEffect>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>secludedThicketObjects8x8</File>
+            <Index>0x02</Index>
+         </Texture>
+         <Effect cooldown="0.2" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36c9" id="ST B4">
+      <DisplayId>Bird Mask</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x02</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Avian Spinner</ObjectId>
+         <Damage>80</Damage>
+         <Speed>85</Speed>
+         <LifetimeMS>3700</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="2">Confused</ConditionEffect>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>secludedThicketObjects8x8</File>
+            <Index>0x02</Index>
+         </Texture>
+         <Effect cooldown="0.2" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0x36ca" id="Xolotl the Lightning God">
+      <DisplayId>Xolotl the Lightning God</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>secludedThicketChars16x16</File>
+         <Index>5</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>120000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Exp>10000</Exp>
+      <Size>135</Size>
+      <HitSound>monster/archdemon_hit</HitSound>
+      <DeathSound>monster/archdemon_death</DeathSound>
+      <Quest/>
+      <HealthBarBoss/>
+      <God/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <EventChestBoss/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>Lightning Shot</ObjectId>
+         <Damage>125</Damage>
+         <Speed>70</Speed>
+         <Size>90</Size>
+         <LifetimeMS>5000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Static Ball</ObjectId>
+         <Damage>80</Damage>
+         <Speed>80</Speed>
+         <Size>90</Size>
+         <LifetimeMS>5000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3">Bleeding</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Electric Discharge</ObjectId>
+         <Damage>140</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <Size>80</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Static Star</ObjectId>
+         <Damage>130</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>10000</LifetimeMS>
+         <Magnitude>8</Magnitude>
+         <PassesCover/>
+         <Parametric/>
+         <FaceDir/>
+         <Size>120</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Electric Field</ObjectId>
+         <Speed>150</Speed>
+         <Damage>0</Damage>
+         <Size>100</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="2">Petrify</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>secludedThicketChars16x16</File>
+            <Index>9</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="2">
+         <AnimatedTexture>
+            <File>secludedThicketChars16x16</File>
+            <Index>10</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="3">
+         <AnimatedTexture>
+            <File>secludedThicketChars16x16</File>
+            <Index>11</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="4">
+         <AnimatedTexture>
+            <File>secludedThicketChars16x16</File>
+            <Index>12</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="5">
+         <AnimatedTexture>
+            <File>secludedThicketChars16x16</File>
+            <Index>13</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="6">
+         <AnimatedTexture>
+            <File>secludedThicketChars16x16</File>
+            <Index>14</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="7">
+         <AnimatedTexture>
+            <File>secludedThicketChars16x16</File>
+            <Index>15</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="8">
+         <AnimatedTexture>
+            <File>secludedThicketChars16x16</File>
+            <Index>16</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="9">
+         <AnimatedTexture>
+            <File>secludedThicketChars16x16</File>
+            <Index>17</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="10">
+         <AnimatedTexture>
+            <File>secludedThicketChars16x16</File>
+            <Index>18</Index>
+         </AnimatedTexture>
+      </AltTexture>
+   </Object>
+   <Object type="0x36cb" id="Lightning Totem">
+      <DisplayId>Lightning Totem</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>secludedThicketChars16x16</File>
+         <Index>7</Index>
+      </AnimatedTexture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>20000</MaxHitPoints>
+      <Defense>20</Defense>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <DontFaceAttacks/>
+      <DontFaceMovement/>
+      <Projectile id="0">
+         <ObjectId>Electric Field</ObjectId>
+         <Damage>105</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2350</LifetimeMS>
+         <PassesCover/>
+         <MultiHit/>
+         <ConditionEffect duration="2">Silenced</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Volt Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>40</Damage>
+         <Speed>120</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <ConditionEffect duration="0.3">Paralyzed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x36cc" id="Lightning Target">
+      <NoMiniMap/>
+      <DisplayId>Lightning Target</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <Flying/>
+      <Animation sync="true" prob="1" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x00</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x36cd" id="Lightning Target 2">
+      <NoMiniMap/>
+      <DisplayId>Lightning Target</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <Flying/>
+      <Animation sync="true" prob="1" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x00</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x36ce" id="Lightning Target 3">
+      <NoMiniMap/>
+      <DisplayId>Lightning Target</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <Flying/>
+      <Animation sync="true" prob="1" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x00</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x36cf" id="Lightning Target T">
+      <NoMiniMap/>
+      <DisplayId>Lightning Target</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <Flying/>
+      <Animation sync="true" prob="1" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x00</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x36d0" id="Lightning Target X">
+      <NoMiniMap/>
+      <DisplayId>Lightning Target</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <Flying/>
+      <Animation sync="true" prob="1" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x00</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x36d1" id="Lightning Target N">
+      <NoMiniMap/>
+      <DisplayId>Lightning Target</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <Flying/>
+      <Animation sync="true" prob="1" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x00</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x36d2" id="Lightning Target E">
+      <NoMiniMap/>
+      <DisplayId>Lightning Target</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <Flying/>
+      <Animation sync="true" prob="1" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x00</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x36d3" id="Lightning Target S">
+      <NoMiniMap/>
+      <DisplayId>Lightning Target</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <Flying/>
+      <Animation sync="true" prob="1" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x00</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x36d4" id="Lightning Target W">
+      <NoMiniMap/>
+      <DisplayId>Lightning Target</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <Flying/>
+      <Animation sync="true" prob="1" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x00</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x36d5" id="Lightning Target NE">
+      <NoMiniMap/>
+      <DisplayId>Lightning Target</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <Flying/>
+      <Animation sync="true" prob="1" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x00</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x36d6" id="Lightning Target NW">
+      <NoMiniMap/>
+      <DisplayId>Lightning Target</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <Flying/>
+      <Animation sync="true" prob="1" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x00</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x36d7" id="Lightning Target SE">
+      <NoMiniMap/>
+      <DisplayId>Lightning Target</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <Flying/>
+      <Animation sync="true" prob="1" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x00</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x36d8" id="Lightning Target SW">
+      <NoMiniMap/>
+      <DisplayId>Lightning Target</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <Flying/>
+      <Animation sync="true" prob="1" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x00</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x36d9" id="Lightning Strike">
+      <Enemy/>
+      <NoMiniMap/>
+      <DisplayId>Lightning Strike</DisplayId>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>mountainTempleChars16x16</File>
+         <Index>9</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>300</Size>
+      <ShadowSize>0</ShadowSize>
+      <Invincible/>
+      <Flying/>
+      <Exp>0</Exp>
+      <Sound id="0">lightning</Sound>
+   </Object>
+   <Object type="0x36da" id="Storm Generator">
+      <DisplayId>Xolotl the Lightning God</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <Invincible/>
+      <Projectile id="3">
+         <ObjectId>Storm Swirl</ObjectId>
+         <Damage>25</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <Size>80</Size>
+         <Boomerang/>
+         <MultiHit/>
+         <PassesCover/>
+         <ArmorPiercing/>
+         <Amplitude>2</Amplitude>
+         <Frequency>2</Frequency>
+         <ConditionEffect duration="3">Silenced</ConditionEffect>
+         <ConditionEffect duration="3" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Storm Swirl</ObjectId>
+         <Damage>0</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>0</LifetimeMS>
+         <Size>80</Size>
+         <Boomerang/>
+         <MultiHit/>
+         <PassesCover/>
+         <Amplitude>2</Amplitude>
+         <Frequency>2</Frequency>
+      </Projectile>
+      <Sound id="0">monster/archdemon_death</Sound>
+   </Object>
+   <Object type="0x36db" id="Dialogue Controller">
+      <DisplayId>Xolotl the Lightning God</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>-1</Size>
+   </Object>
+   <Object type="0x36dc" id="Target Controller">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x36dd" id="Fake Lightning Target">
+      <DisplayId>Stupid Loophole</DisplayId>
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>31</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x36de" id="The Ultimate Loophole">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x36f7" id="Retreat Taunt Controller">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x36df" id="ST First Door Helper">
+      <DisplayId>Niegil</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x36e0" id="ST First Boss Closer">
+      <DisplayId>sucks</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x36e1" id="ST Second Door Helper">
+      <DisplayId>Sparky also sucks</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x36e2" id="ST Third Boss Helper">
+      <DisplayId>Dataminer please piss off</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x36e3" id="ST Temple TL">
+      <DisplayId>Key</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x36e4" id="ST Temple TR">
+      <DisplayId>coding</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x36e5" id="ST Temple BR">
+      <DisplayId>Mis</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x36e6" id="ST Temple BL">
+      <DisplayId>format</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x36e7" id="ST Summon Helper">
+      <DisplayId>Please stop breaking I really want this system to work</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x45c</Index>
+      </Texture>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x36e8" id="ST Bas Anchor 1">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>31</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x36e9" id="ST Bas Anchor 2">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>31</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x36ea" id="ST Bas Anchor 3">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>31</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x36eb" id="ST Bas Anchor 4">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>31</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x36ec" id="ST Bas Anchor 5">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>31</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x36ed" id="ST Bas Anchor 6">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>31</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x36ef" id="Thicket Tree Big">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x11</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x12</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x13</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x14</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <Color>0x598923</Color>
+   </Object>
+   <Object type="0x36f0" id="Thicket Plant Unbreakable">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x6b</Index>
+         </Texture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x6c</Index>
+         </Texture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x6d</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <Color>0x275130</Color>
+   </Object>
+   <Object type="0x36f1" id="Thicket Flowers Solid">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x67</Index>
+         </Texture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x68</Index>
+         </Texture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x69</Index>
+         </Texture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x6a</Index>
+         </Texture>
+      </RandomTexture>
+      <DrawOnGround/>
+      <OccupySquare/>
+      <NoMiniMap/>
+      <Static/>
+   </Object>
+   <Object type="0x36f2" id="Thicket Grass Solid">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x63</Index>
+         </Texture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x64</Index>
+         </Texture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x65</Index>
+         </Texture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x66</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <Color>0x8EB518</Color>
+   </Object>
+   <Object type="0x36f3" id="Lightning Totem Rubble">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>secludedThicketObjects16x16</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Texture>
+            <File>secludedThicketObjects16x16</File>
+            <Index>0x02</Index>
+         </Texture>
+         <Texture>
+            <File>secludedThicketObjects16x16</File>
+            <Index>0x03</Index>
+         </Texture>
+         <Texture>
+            <File>secludedThicketObjects16x16</File>
+            <Index>0x04</Index>
+         </Texture>
+      </RandomTexture>
+      <Size>120</Size>
+      <Static/>
+   </Object>
+   <Object type="0x36f6" id="Thicket Brazier">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>secludedThicketObjects16x16</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <Animation period="0.0" prob="1.0">
+         <Frame time="0.2">
+            <Texture>
+               <File>secludedThicketObjects16x16</File>
+               <Index>0x0a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>secludedThicketObjects16x16</File>
+               <Index>0x0b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>secludedThicketObjects16x16</File>
+               <Index>0x0c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>secludedThicketObjects16x16</File>
+               <Index>0x0d</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <FullOccupy/>
+      <OccupySquare/>
+      <ShadowSize>80</ShadowSize>
+      <Size>90</Size>
+      <NoMiniMap/>
+      <Static/>
+   </Object>
+   <Object type="0x36f4" id="El Dorado Temple Wall">
+      <Class>Wall</Class>
+      <RandomTexture>
+         <Texture>
+            <File>secludedThicketObjects8x8</File>
+            <Index>0x11</Index>
+         </Texture>
+         <Texture>
+            <File>secludedThicketObjects8x8</File>
+            <Index>0x12</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <RandomTexture>
+            <Texture>
+               <File>lofiEnvironment2</File>
+               <Index>0xe8</Index>
+            </Texture>
+            <Texture>
+               <File>lofiEnvironment2</File>
+               <Index>0xe9</Index>
+            </Texture>
+            <Texture>
+               <File>lofiEnvironment2</File>
+               <Index>0xea</Index>
+            </Texture>
+         </RandomTexture>
+      </Top>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x36f5" id="El Dorado Temple Bricks">
+      <Class>Wall</Class>
+      <Texture>
+         <File>secludedThicketObjects8x8</File>
+         <Index>0x13</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lofiEnvironment2</File>
+            <Index>0xed</Index>
+         </Texture>
+      </Top>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+</Objects>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<GroundTypes>
+   <Ground type="0x9f1" id="CR Ground">
+      <RandomTexture>
+         <Texture>
+            <File>cnidarianReefObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>cnidarianReefObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Texture>
+            <File>cnidarianReefObjects8x8</File>
+            <Index>0x02</Index>
+         </Texture>
+         <Texture>
+            <File>cnidarianReefObjects8x8</File>
+            <Index>0x03</Index>
+         </Texture>
+      </RandomTexture>
+      <Edge>
+         <Texture>
+            <File>lofiEnvironment2</File>
+            <Index>0x69</Index>
+         </Texture>
+      </Edge>
+      <Corner>
+         <Texture>
+            <File>lofiEnvironment2</File>
+            <Index>0x6a</Index>
+         </Texture>
+      </Corner>
+      <InnerCorner>
+         <Texture>
+            <File>lofiEnvironment2</File>
+            <Index>0x6b</Index>
+         </Texture>
+      </InnerCorner>
+      <Top>
+         <Texture>
+            <File>lofiEnvironment2</File>
+            <Index>0x6c</Index>
+         </Texture>
+      </Top>
+      <TopAnimate dx=".2" dy=".2">Wave</TopAnimate>
+   </Ground>
+</GroundTypes>

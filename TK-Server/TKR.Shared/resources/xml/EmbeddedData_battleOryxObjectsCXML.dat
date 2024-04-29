@@ -1,0 +1,2052 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0xf21" id="oryxPandemonium Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Mad God Mayhem</DisplayId>
+      <DungeonName>Oryx Pandemonium Decaract</DungeonName>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0xc0</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Animation prob="1" period="0.8">
+         <Frame time="0.4">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xc1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xc2</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x53b" id="oryxPandemonium Toxic Portal">
+      <Class>GameObject</Class>
+      <DisplayId>Mad God Mayhem</DisplayId>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0xbc</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Animation prob="1" period="0">
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xba</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xbb</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xbc</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xbd</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x53c" id="oryxPandemonium Frostlord Portal">
+      <Class>GameObject</Class>
+      <DisplayId>Mad God Mayhem</DisplayId>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0xbc</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Animation prob="1" period="0">
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xba</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xbb</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xbc</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xbd</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x53d" id="oryxPandemonium Nightmare Portal">
+      <Class>GameObject</Class>
+      <DisplayId>Mad God Mayhem</DisplayId>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0xbc</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Animation prob="1" period="0">
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xba</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xbb</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xbc</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xbd</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x53e" id="oryxPandemonium Biff Portal">
+      <Class>GameObject</Class>
+      <DisplayId>Mad God Mayhem</DisplayId>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0xbc</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Animation prob="1" period="0">
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xba</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xbb</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xbc</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xbd</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x53f" id="oryxPandemonium Decaract Portal">
+      <Class>GameObject</Class>
+      <DisplayId>Mad God Mayhem</DisplayId>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0xbc</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Animation prob="1" period="0">
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xba</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xbb</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xbc</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xbd</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x540" id="oryxPandemonium Beekeeper Portal">
+      <Class>GameObject</Class>
+      <DisplayId>Mad God Mayhem</DisplayId>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0xbc</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Animation prob="1" period="0">
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xba</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xbb</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xbc</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xbd</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x546" id="oryxPandemonium Encore Portal">
+      <Class>GameObject</Class>
+      <DisplayId>Mad God Mayhem</DisplayId>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0xbc</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Animation prob="1" period="0">
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xba</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xbb</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xbc</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d2LofiObjEmbed</File>
+               <Index>0xbd</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x541" id="Portal Pandemonium 1">
+      <DisplayId>Oryx the Mad God</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0xb2</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb2</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb3</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb4</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb5</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb6</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb7</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="7">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb8</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="8">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb9</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="9">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xba</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="10">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x542" id="Portal Pandemonium 2">
+      <DisplayId>Oryx the Mad God</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0xb2</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb2</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb3</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb4</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb5</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb6</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb7</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="7">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb8</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="8">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb9</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="9">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xba</Index>
+         </Texture>
+      </AltTexture>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x543" id="Portal Pandemonium 3">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0xb2</Index>
+      </Texture>
+      <DisplayId>Oryx the Mad God</DisplayId>
+      <AltTexture id="1">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb2</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb3</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb4</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb5</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb6</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb7</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="7">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb8</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="8">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb9</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="9">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xba</Index>
+         </Texture>
+      </AltTexture>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x548" id="Portal Pandemonium 4">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0xb2</Index>
+      </Texture>
+      <DisplayId>Oryx the Mad God</DisplayId>
+      <AltTexture id="1">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb2</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb3</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb4</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb5</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb6</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb7</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="7">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb8</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="8">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xb9</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="9">
+         <Texture>
+            <File>d2LofiObjEmbed</File>
+            <Index>0xba</Index>
+         </Texture>
+      </AltTexture>
+      <Size>100</Size>
+   </Object>
+   <Object type="0xcfc" id="Statue Oryx Intro">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x1e</Index>
+      </Texture>
+      <Static/>
+      <Size>200</Size>
+      <OccupySquare/>
+   </Object>
+   <Object type="0xf2a" id="MOTMG Apiary">
+      <Class>GameObject</Class>
+      <Model>ThreeSideCube</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0xf2b" id="MOTMG Apiary 2">
+      <Class>GameObject</Class>
+      <Model>ThreeSideCube</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0xf2c" id="MOTMG Apiary 3">
+      <Class>GameObject</Class>
+      <Model>ThreeSideCube</Model>
+      <Texture>
+         <File>epicHiveObjects16x16</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0xf2d" id="MOTMG Fake Apiary">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <OccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Static/>
+   </Object>
+   <Object type="0xf2e" id="MOTMG SLBY">
+      <Group>SLB</Group>
+      <Class>Character</Class>
+      <DisplayId>Experimental Yellow Soldier Bee 2.0</DisplayId>
+      <Enemy/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/snake_queen_hit</HitSound>
+      <DeathSound>monster/snake_queen_death</DeathSound>
+      <MaxHitPoints>40000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>195</Exp>
+      <Flying/>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Yellow Stinger Small</ObjectId>
+         <Damage>125</Damage>
+         <Speed>40</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>EH Yellow Stinger Large</ObjectId>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration="2">Dazed</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>EH Yellow Glaive</ObjectId>
+         <Damage>80</Damage>
+         <Speed>30</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration=".8">Paralyzed</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>EH Yellow Ball</ObjectId>
+         <Damage>50</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration=".6">Paralyzed</ConditionEffect>
+         <ConditionEffect duration="3">Dazed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xf2f" id="MOTMG SLBR">
+      <Group>SLB</Group>
+      <Class>Character</Class>
+      <DisplayId>Experimental Red Soldier Bee 2.0</DisplayId>
+      <Enemy/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/snake_queen_hit</HitSound>
+      <DeathSound>monster/snake_queen_death</DeathSound>
+      <MaxHitPoints>40000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>195</Exp>
+      <Flying/>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Red Stinger Small</ObjectId>
+         <Damage>90</Damage>
+         <Speed>40</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>EH Red Stinger Large</ObjectId>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration="4">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>EH Red Glaive</ObjectId>
+         <Damage>80</Damage>
+         <Speed>30</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration=".8">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>EH Red Ball</ObjectId>
+         <Damage>75</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+         <ConditionEffect duration="2">Confused</ConditionEffect>
+         <ConditionEffect duration="5">Armor Broken</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xf30" id="MOTMG SLBB">
+      <Group>SLB</Group>
+      <Class>Character</Class>
+      <DisplayId>Experimental Blue Soldier Bee 2.0</DisplayId>
+      <Enemy/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/snake_queen_hit</HitSound>
+      <DeathSound>monster/snake_queen_death</DeathSound>
+      <MaxHitPoints>40000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>195</Exp>
+      <Flying/>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Blue Stinger Small</ObjectId>
+         <Damage>100</Damage>
+         <Speed>40</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>EH Blue Stinger Large</ObjectId>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration="4" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>EH Blue Glaive</ObjectId>
+         <Damage>80</Damage>
+         <Speed>30</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="2">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>EH Blue Ball</ObjectId>
+         <Damage>75</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+         <ConditionEffect duration="2">Weak</ConditionEffect>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xf31" id="MOTMG Beekeeper Flame">
+      <Class>Character</Class>
+      <Enemy/>
+      <NoMiniMap/>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <Texture>
+         <File>summerNexusObjects16x16</File>
+         <Index>0x4f</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>summerNexusObjects16x16</File>
+               <Index>0x50</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>summerNexusObjects16x16</File>
+               <Index>0x51</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>summerNexusObjects16x16</File>
+               <Index>0x52</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>summerNexusObjects16x16</File>
+               <Index>0x4f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <DisplayId>The Beekeeper</DisplayId>
+      <Size>100</Size>
+      <Invincible/>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>90</Damage>
+         <Size>80</Size>
+         <Speed>0</Speed>
+         <LifetimeMS>100</LifetimeMS>
+         <ConditionEffect duration="4.5">Armor Broken</ConditionEffect>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0xf32" id="MOTMG Beekeeper Flame Short">
+      <Class>Character</Class>
+      <Enemy/>
+      <NoMiniMap/>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <Texture>
+         <File>summerNexusObjects16x16</File>
+         <Index>0x4f</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>summerNexusObjects16x16</File>
+               <Index>0x50</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>summerNexusObjects16x16</File>
+               <Index>0x51</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>summerNexusObjects16x16</File>
+               <Index>0x52</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>summerNexusObjects16x16</File>
+               <Index>0x4f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <DisplayId>The Beekeeper</DisplayId>
+      <Size>80</Size>
+      <Invincible/>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>90</Damage>
+         <Size>80</Size>
+         <Speed>0</Speed>
+         <LifetimeMS>100</LifetimeMS>
+         <ConditionEffect duration="4.5">Armor Broken</ConditionEffect>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0xf33" id="MOTMG Secret Flame Spawner">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xf34" id="MOTMG Secret Bullet Spawner">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <DisplayId>The Beekeeper</DisplayId>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Invincible/>
+      <Enemy/>
+      <Projectile id="0">
+         <ObjectId>Demon Fire Blast</ObjectId>
+         <Damage>75</Damage>
+         <Speed>40</Speed>
+         <Size>100</Size>
+         <LifetimeMS>5000</LifetimeMS>
+         <ConditionEffect duration="3">Confused</ConditionEffect>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LavaBombBlast</ObjectId>
+         <Damage>120</Damage>
+         <Speed>40</Speed>
+         <Size>120</Size>
+         <LifetimeMS>3875</LifetimeMS>
+         <Boomerang/>
+         <ConditionEffect duration=".6">Confused</ConditionEffect>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0xf35" id="MOTMG Beekeeper Summoner">
+      <Class>Character</Class>
+      <DisplayId>The Beekeeper</DisplayId>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xf36" id="MOTMG Beekeeper">
+      <Class>Character</Class>
+      <DisplayId>The Beekeeper</DisplayId>
+      <AnimatedTexture>
+         <File>epicHiveChars16x16</File>
+         <Index>9</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Enemy/>
+      <Quest/>
+      <HealthBarBoss/>
+      <Size>120</Size>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Exp>1000</Exp>
+      <Defense>35</Defense>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <EventChestBoss/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>Fire Bullet</ObjectId>
+         <Damage>140</Damage>
+         <Speed>50</Speed>
+         <Size>120</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+         <Amplitude>1.5</Amplitude>
+         <Frequency>0.25</Frequency>
+         <ParticleTrail color="ffa500"/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Fire Bullet</ObjectId>
+         <Damage>140</Damage>
+         <Speed>60</Speed>
+         <Size>80</Size>
+         <LifetimeMS>2750</LifetimeMS>
+         <MultiHit/>
+         <Wavy/>
+         <ParticleTrail color="ffa500"/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Fire Bullet</ObjectId>
+         <Damage>140</Damage>
+         <Speed>75</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+         <Amplitude>1</Amplitude>
+         <Frequency>0.25</Frequency>
+         <ParticleTrail color="ffa500"/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Demon Fire Blast</ObjectId>
+         <Damage>75</Damage>
+         <Speed>50</Speed>
+         <Size>120</Size>
+         <LifetimeMS>3500</LifetimeMS>
+         <ConditionEffect duration="3">Confused</ConditionEffect>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Demon Fire Blast</ObjectId>
+         <Damage>50</Damage>
+         <Speed>70</Speed>
+         <Size>120</Size>
+         <LifetimeMS>3500</LifetimeMS>
+         <ConditionEffect duration="3">Confused</ConditionEffect>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0xf37" id="MOTMG Secret Fat Bees">
+      <Group>Secret Bees</Group>
+      <DisplayId>Yellow Killer Bee</DisplayId>
+      <Enemy/>
+      <StunImmune/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <HitSound>monster/scorpions_hit</HitSound>
+      <DeathSound>monster/scorpions_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>25</Defense>
+      <Flying/>
+      <Exp>30</Exp>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Yellow Stinger Small</ObjectId>
+         <Damage>130</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1750</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xf38" id="MOTMG Secret Red Fat Bees">
+      <Group>Secret Bees</Group>
+      <DisplayId>Red Killer Bee</DisplayId>
+      <Enemy/>
+      <ParalyzeImmune/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <HitSound>monster/pythons_hit</HitSound>
+      <DeathSound>monster/pythons_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>25</Defense>
+      <Flying/>
+      <Exp>30</Exp>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Red Stinger Small</ObjectId>
+         <Damage>80</Damage>
+         <Speed>70</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xf39" id="MOTMG Secret Blue Fat Bees">
+      <Group>Secret Bees</Group>
+      <DisplayId>Blue Killer Bee</DisplayId>
+      <Enemy/>
+      <Exp>30</Exp>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>epicHiveChars8x8</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <HitSound>monster/scorpions_hit</HitSound>
+      <DeathSound>monster/scorpions_death</DeathSound>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>25</Defense>
+      <Flying/>
+      <Z>0.24</Z>
+      <Projectile id="0">
+         <ObjectId>EH Blue Stinger Small</ObjectId>
+         <Damage>100</Damage>
+         <Speed>75</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1300</LifetimeMS>
+         <ConditionEffect duration="2">Weak</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xf3a" id="MOTMG Beekeeper Anchor">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xf25" id="MotMG pD Helper">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xf26" id="MotMG fL Helper">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xf27" id="MotMG toxic Helper">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x549" id="MotMG Encore Helper">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xf17" id="MotMG Gulpord">
+      <DisplayId>Gulpord the Slime God</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>126</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Size>120</Size>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Defense>25</Defense>
+      <Quest/>
+      <God/>
+      <StasisImmune/>
+      <NoArticle/>
+      <Level>1</Level>
+      <Exp>500</Exp>
+      <EventChestBoss/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>Poison Fireball</ObjectId>
+         <Damage>70</Damage>
+         <Speed>85</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Red Star</ObjectId>
+         <Damage>30</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>1750</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="2.5">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Green Star</ObjectId>
+         <Damage>30</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Green Star</ObjectId>
+         <Damage>30</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2400</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="1.5">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xf18" id="MotMG Boss Minion">
+      <DisplayId>Gulpord Slime</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>131</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0xf19" id="MotMG Gulpord M">
+      <DisplayId>Gulpord the Slime God</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>126</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Size>70</Size>
+      <MaxHitPoints>8000</MaxHitPoints>
+      <Defense>25</Defense>
+      <StasisImmune/>
+      <NoArticle/>
+      <Exp>0</Exp>
+      <Projectile id="0">
+         <ObjectId>Poison Fireball</ObjectId>
+         <Damage>60</Damage>
+         <Speed>85</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Size>80</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Red Star</ObjectId>
+         <Damage>30</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>1750</LifetimeMS>
+         <Size>80</Size>
+         <ConditionEffect duration="1">Armor Broken</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xf1a" id="MotMG Gulpord S">
+      <DisplayId>Gulpord the Slime God</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>126</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Size>50</Size>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>25</Defense>
+      <Exp>0</Exp>
+      <StasisImmune/>
+      <NoArticle/>
+      <Projectile id="0">
+         <ObjectId>Poison Fireball</ObjectId>
+         <Damage>55</Damage>
+         <Speed>85</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Size>60</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Red Star</ObjectId>
+         <Damage>25</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>1750</LifetimeMS>
+         <Size>70</Size>
+         <ConditionEffect duration="1">Armor Broken</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xf1b" id="MotMG pD Boss Target">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xf1c" id="MotMG pD Boss">
+      <DisplayId>Nightmare Colony</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>parasiteDenChars16x16</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/archdemon_death</DeathSound>
+      <BloodProb>0.5</BloodProb>
+      <BloodColor>0xB50000</BloodColor>
+      <DontFaceAttacks/>
+      <Size>170</Size>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>5000</Defense>
+      <Exp>40000</Exp>
+      <Quest/>
+      <HealthBarBoss/>
+      <EventChestBoss/>
+      <TrackLoot/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>pD Wall Shot</ObjectId>
+         <Damage>150</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2700</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <ConditionEffect duration="4.0">Weak</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>pD Maw Shot 2</ObjectId>
+         <Damage>70</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>2285</LifetimeMS>
+         <Size>80</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>pD Maw Shot 3</ObjectId>
+         <Damage>70</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>2285</LifetimeMS>
+         <Size>80</Size>
+         <Amplitude>0.40</Amplitude>
+         <Frequency>2</Frequency>
+         <MultiHit/>
+         <FaceDir/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>pD Boss Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>170</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>pD Boss Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>170</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>pD Quiet Wave</ObjectId>
+         <Size>130</Size>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="4.0">Quiet</ConditionEffect>
+      </Projectile>
+      <StunImmune/>
+      <StasisImmune/>
+   </Object>
+   <Object type="0xf1d" id="MotMG pD Boss Support">
+      <DisplayId>Nightmare Colony</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x49</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0x48</Index>
+         </Texture>
+      </AltTexture>
+      <DrawOnGround/>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <Invincible/>
+      <Exp>0</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Tongue Shot</ObjectId>
+         <Damage>150</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>1600</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>pD Quiet Wave</ObjectId>
+         <Size>130</Size>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="4.0">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Puppet Green Wheel</ObjectId>
+         <Speed>35</Speed>
+         <Damage>10</Damage>
+         <LifetimeMS>7000</LifetimeMS>
+         <Size>80</Size>
+         <ConditionEffect duration="4" target="1">Stasis</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <EventChestBoss/>
+   </Object>
+   <Object type="0xf1e" id="MotMG Biff">
+      <DisplayId>Biff the Buffed Bunny</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>buffedBunnyChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <HitSound>monster/archdemon_hit</HitSound>
+      <DeathSound>monster/archdemon_death</DeathSound>
+      <Size>120</Size>
+      <Quest/>
+      <HealthBarBoss/>
+      <Level>20</Level>
+      <MaxHitPoints>80000</MaxHitPoints>
+      <Defense>0</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <EventChestBoss/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>BB Egg Cannon 1</ObjectId>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <ConditionEffect duration="2.5">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>BB Bunny Blaster</ObjectId>
+         <Damage>130</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1400</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>BB Bunny Blaster</ObjectId>
+         <Damage>130</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>1400</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>BB Egg Cannon 1</ObjectId>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="2.5">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>BB Egg Cannon 1</ObjectId>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2200</LifetimeMS>
+         <ConditionEffect duration="2.5">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>BB Bunny Blaster</ObjectId>
+         <Damage>130</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xf1f" id="MotMG FrostLord">
+      <DisplayId>Permafrost Lord</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>d3Chars16x16rEmbed</File>
+         <Index>35</Index>
+      </AnimatedTexture>
+      <DontFaceAttacks/>
+      <DontFaceMovement/>
+      <HitSound>monster/golems_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>140</Size>
+      <MaxHitPoints>120000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>2000</Exp>
+      <God/>
+      <Quest/>
+      <HealthBarBoss/>
+      <Level>20</Level>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Speed>0</Speed>
+         <Damage>0</Damage>
+         <LifetimeMS>0</LifetimeMS>
+         <Size>0</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>FR Boss Shard</ObjectId>
+         <Size>120</Size>
+         <Damage>160</Damage>
+         <Speed>35</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>FR Boss Shard</ObjectId>
+         <Size>120</Size>
+         <Damage>160</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>FR Boss Shard</ObjectId>
+         <Size>120</Size>
+         <Damage>160</Damage>
+         <Speed>105</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>FR Boss Flake</ObjectId>
+         <Size>90</Size>
+         <Damage>120</Damage>
+         <Speed>20</Speed>
+         <LifetimeMS>2700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+         <Amplitude>1.8</Amplitude>
+         <Frequency>1.0</Frequency>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>FR Boss Flake</ObjectId>
+         <Size>90</Size>
+         <Damage>120</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+         <Amplitude>2.0</Amplitude>
+         <Frequency>1.0</Frequency>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>FR Boss Flake</ObjectId>
+         <Size>90</Size>
+         <Damage>120</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>2700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+         <Amplitude>2.2</Amplitude>
+         <Frequency>1.0</Frequency>
+         <PassesCover/>
+         <ConditionEffect duration="5">Weak</ConditionEffect>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>FR Boss Big</ObjectId>
+         <Size>200</Size>
+         <Damage>250</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>FR Boss Ball</ObjectId>
+         <Damage>130</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>2700</LifetimeMS>
+         <Size>80</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x536" id="Battle Decaract">
+      <DisplayId>Decaract</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiChar8x8</File>
+         <Index>0xb5</Index>
+      </Texture>
+      <Invincible/>
+      <Size>0</Size>
+      <Hero/>
+      <Quest/>
+      <God/>
+      <Level>20</Level>
+   </Object>
+   <Object type="0x537" id="Oryx Ultra">
+      <DisplayId>Decaract</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x1c</Index>
+      </Texture>
+      <Animation prob=".6" period="0.0">
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObjBig</File>
+               <Index>0x1c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.3">
+            <Texture>
+               <File>lofiObjBig</File>
+               <Index>0x1d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObjBig</File>
+               <Index>0x1e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.3">
+            <Texture>
+               <File>lofiObjBig</File>
+               <Index>0x1f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Animation prob=".4" period="0.0">
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObjBig</File>
+               <Index>0x1c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObjBig</File>
+               <Index>0x20</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObjBig</File>
+               <Index>0x21</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObjBig</File>
+               <Index>0x20</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Hero/>
+      <Quest/>
+      <HealthBarBoss/>
+      <God/>
+      <Level>20</Level>
+      <StasisImmune/>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <EventChestBoss/>
+      <TrackLoot/>
+      <Size>130</Size>
+   </Object>
+   <Object type="0x538" id="Oryx Eye">
+      <DisplayId>Oryx Eye</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiChar8x8</File>
+         <Index>0xb5</Index>
+      </Texture>
+      <MaxHitPoints>1250</MaxHitPoints>
+      <Size>80</Size>
+      <Exp>6</Exp>
+      <Projectile id="0">
+         <ObjectId>Green Bolt</ObjectId>
+         <Speed>150</Speed>
+         <Damage>55</Damage>
+         <LifetimeMS>500</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>White Bolt</ObjectId>
+         <Speed>80</Speed>
+         <Damage>85</Damage>
+         <LifetimeMS>800</LifetimeMS>
+         <MultiHit/>
+         <Size>120</Size>
+         <ConditionEffect duration="2.5">Sick</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x550" id="Oryx Eye Ultra">
+      <DisplayId>Oryx Eye</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiChar8x8</File>
+         <Index>0xb5</Index>
+      </Texture>
+      <MaxHitPoints>1250</MaxHitPoints>
+      <Size>80</Size>
+      <Exp>6</Exp>
+      <Projectile id="0">
+         <ObjectId>Green Bolt</ObjectId>
+         <Speed>150</Speed>
+         <Damage>75</Damage>
+         <LifetimeMS>500</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>White Bolt</ObjectId>
+         <Speed>180</Speed>
+         <Damage>85</Damage>
+         <LifetimeMS>500</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="4.0">Sick</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x539" id="Oryx Tower">
+      <DisplayId>Pentaract Tower</DisplayId>
+      <Enemy/>
+      <HealthBarBoss/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiChar216x16</File>
+         <Index>0x38</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.0">
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x00</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiChar216x16</File>
+               <Index>0x38</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x00</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x02</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x03</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x02</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Projectile id="0">
+         <ObjectId>Silver Shield</ObjectId>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>600</LifetimeMS>
+         <ConditionEffect duration="2">Stunned</ConditionEffect>
+         <Size>160</Size>
+      </Projectile>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Size>120</Size>
+      <Exp>19</Exp>
+      <God/>
+      <StasisImmune/>
+      <KeepDamageRecord/>
+   </Object>
+   <Object type="0x53a" id="Oryx Tower Corpse">
+      <DisplayId>Pentaract Tower Corpse</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiChar216x16</File>
+         <Index>0x38</Index>
+      </Texture>
+      <MaxHitPoints>8000</MaxHitPoints>
+      <Size>0</Size>
+      <Exp>0</Exp>
+      <God/>
+   </Object>
+   <Object type="0x544" id="MotMG Decaract Helper">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x545" id="MotMG Biff Helper">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x547" id="MOTMG Encore">
+      <DisplayId>The Puppet Master</DisplayId>
+      <Class>Character</Class>
+      <Group>Master</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars16x16rEmbed</File>
+         <Index>0x02</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>d3Chars16x16rEmbed</File>
+            <Index>0x01</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="2">
+         <AnimatedTexture>
+            <File>d3Chars16x16rEmbed</File>
+            <Index>0x03</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>140</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>1636</Exp>
+      <Level>20</Level>
+      <Quest/>
+      <HealthBarBoss/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <EventChestBoss/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>Jester Bolt</ObjectId>
+         <Speed>30</Speed>
+         <Damage>175</Damage>
+         <LifetimeMS>5000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Puppet Green Wheel</ObjectId>
+         <Speed>85</Speed>
+         <Damage>80</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Jester Bolt</ObjectId>
+         <Speed>60</Speed>
+         <Damage>90</Damage>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Puppet Green Wheel</ObjectId>
+         <Speed>35</Speed>
+         <Damage>65</Damage>
+         <LifetimeMS>7000</LifetimeMS>
+         <Size>80</Size>
+         <ConditionEffect duration="7" target="1">Stasis</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Jester Bolt</ObjectId>
+         <Speed>50</Speed>
+         <Damage>165</Damage>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>140</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x54a" id="MOTMG Confuse Puppet Statue">
+      <DisplayId>Puppet of Chaos</DisplayId>
+      <Class>Character</Class>
+      <Group>Statues</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>0x06</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Exp>0</Exp>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x54b" id="MOTMG Confuse Puppet">
+      <DisplayId>Puppet of Chaos</DisplayId>
+      <Class>Character</Class>
+      <Group>Statue</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>0x06</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>130</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>40000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Exp>390</Exp>
+      <Level>20</Level>
+      <ParalyzeImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Puppet Purple Wheel</ObjectId>
+         <Speed>60</Speed>
+         <Damage>90</Damage>
+         <Size>100</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Puppet Purple Wheel</ObjectId>
+         <Speed>60</Speed>
+         <Damage>90</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <Amplitude>0.6</Amplitude>
+         <Frequency>1</Frequency>
+         <MultiHit/>
+         <ConditionEffect duration="2">Confused</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Pink Swipe</ObjectId>
+         <Speed>60</Speed>
+         <Damage>150</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x54c" id="MOTMG Bleed Puppet Statue">
+      <DisplayId>Puppet of Pain</DisplayId>
+      <Class>Character</Class>
+      <Group>Statues</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>0x07</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>45000</MaxHitPoints>
+      <Exp>0</Exp>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x54d" id="MOTMG Bleed Puppet">
+      <DisplayId>Puppet of Pain</DisplayId>
+      <Class>Character</Class>
+      <Group>Statue</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>0x07</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>130</Size>
+      <ShadowSize>90</ShadowSize>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Exp>390</Exp>
+      <Level>20</Level>
+      <StasisImmune/>
+      <StunImmune/>
+      <Projectile id="0">
+         <ObjectId>Puppet Red Wheel</ObjectId>
+         <Speed>55</Speed>
+         <Damage>150</Damage>
+         <LifetimeMS>2500</LifetimeMS>
+         <ConditionEffect duration="2">Bleeding</ConditionEffect>
+         <Size>90</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Puppet Red Wheel</ObjectId>
+         <Speed>55</Speed>
+         <Damage>150</Damage>
+         <LifetimeMS>2500</LifetimeMS>
+         <ConditionEffect duration="2">Bleeding</ConditionEffect>
+         <Size>90</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x54f" id="MOTMG Final">
+      <DisplayId>Oryx the Mad God</DisplayId>
+      <Class>Character</Class>
+      <Group>Statues</Group>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>0x07</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x552" id="Decaract Teleporter Target">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb251" id="MGM Anchor Gulpord">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb252" id="MGM Anchor Permafrost">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb253" id="MGM Anchor Biff">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb254" id="MGM Anchor Nightmare">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb255" id="MGM Anchor Beekeeper">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb256" id="MGM Anchor Encore">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb257" id="MGM Anchor Decaract">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x553" id="Decaract Teleporter">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>autumnNexusObjects16x16</File>
+         <Index>0x201</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+</Objects>

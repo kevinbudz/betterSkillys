@@ -1,246 +1,205 @@
+// Decompiled by AS3 Sorcerer 6.08
+// www.as3sorcerer.com
+
+//com.company.assembleegameclient.objects.ObjectProperties
+
 package com.company.assembleegameclient.objects
 {
-   import com.company.assembleegameclient.sound.SoundEffectLibrary;
-   import flash.utils.Dictionary;
-   
-   public class ObjectProperties
+import flash.utils.Dictionary;
+import com.company.assembleegameclient.sound.SoundEffectLibrary;
+
+public class ObjectProperties
+{
+
+   public var type_:int;
+   public var id_:String;
+   public var displayId_:String;
+   public var shadowSize_:int;
+   public var isPlayer_:Boolean = false;
+   public var isEnemy_:Boolean = false;
+   public var drawOnGround_:Boolean = false;
+   public var drawUnder_:Boolean = false;
+   public var occupySquare_:Boolean = false;
+   public var fullOccupy_:Boolean = false;
+   public var enemyOccupySquare_:Boolean = false;
+   public var static_:Boolean = false;
+   public var noMiniMap_:Boolean = false;
+   public var noHealthBar_:Boolean = false;
+   public var healthBar_:int = 0;
+   public var protectFromGroundDamage_:Boolean = false;
+   public var protectFromSink_:Boolean = false;
+   public var z_:Number = 0;
+   public var flying_:Boolean = false;
+   public var color_:int = -1;
+   public var showName_:Boolean = false;
+   public var dontFaceAttacks_:Boolean = false;
+   public var dontFaceMovement_:Boolean = false;
+   public var bloodProb_:Number = 0;
+   public var bloodColor_:uint = 0xFF0000;
+   public var shadowColor_:uint = 0;
+   public var sounds_:Object = null;
+   public var portrait_:TextureData = null;
+   public var minSize_:int = 100;
+   public var maxSize_:int = 100;
+   public var sizeStep_:int = 5;
+   public var whileMoving_:WhileMovingProperties = null;
+   public var belonedDungeon:String = "";
+   public var oldSound_:String = null;
+   public var projectiles_:Dictionary = new Dictionary();
+   public var angleCorrection_:Number = 0;
+   public var rotation_:Number = 0;
+
+   public function ObjectProperties(_arg_1:XML)
    {
-       
-      
-      public var type_:int;
-      
-      public var id_:String;
-      
-      public var displayId_:String;
-      
-      public var shadowSize_:int;
-
-      public var isQuest_:Boolean = false;
-
-      public var isChest_:Boolean = false;
-
-      public var isPlayer_:Boolean = false;
-      
-      public var isEnemy_:Boolean = false;
-
-      public var isSpecialEnemy_:Boolean = false;
-      
-      public var drawOnGround_:Boolean = false;
-      
-      public var drawUnder_:Boolean = false;
-      
-      public var occupySquare_:Boolean = false;
-      
-      public var fullOccupy_:Boolean = false;
-      
-      public var enemyOccupySquare_:Boolean = false;
-      
-      public var static_:Boolean = false;
-      
-      public var noMiniMap_:Boolean = false;
-      
-      public var protectFromGroundDamage_:Boolean = false;
-      
-      public var protectFromSink_:Boolean = false;
-      
-      public var z_:Number = 0;
-      
-      public var flying_:Boolean = false;
-      
-      public var color_:uint = 16777215;
-      
-      public var showName_:Boolean = false;
-      
-      public var dontFaceAttacks_:Boolean = false;
-      
-      public var bloodProb_:Number = 0.0;
-      
-      public var bloodColor_:uint = 16711680;
-      
-      public var shadowColor_:uint = 0;
-      
-      public var sounds_:Object = null;
-      
-      public var portrait_:TextureData = null;
-      
-      public var minSize_:int = 100;
-      
-      public var maxSize_:int = 100;
-      
-      public var sizeStep_:int = 5;
-      
-      public var whileMoving_:WhileMovingProperties = null;
-      
-      public var oldSound_:String = null;
-      
-      public var projectiles_:Dictionary;
-      
-      public var angleCorrection_:Number = 0;
-      
-      public var rotation_:Number = 0;
-
-      public var isMythicTalisman_:Boolean;
-      public var isLegendaryTalisman_:Boolean;
-      public var isCommonTalisman_:Boolean;
-      public var onlyOneTalisman_:Boolean;
-      public var talismanEffect_:String;
-
-      public function ObjectProperties(objectXML:XML)
+      var _local_2:XML;
+      var _local_3:XML;
+      var _local_4:int;
+      super();
+      if (_arg_1 == null)
       {
-         var projectileXML:XML = null;
-         var soundXML:XML = null;
-         var bulletType:int = 0;
-         this.projectiles_ = new Dictionary();
-         super();
-         if(objectXML == null)
+         return;
+      }
+      this.type_ = int(_arg_1.@type);
+      this.id_ = String(_arg_1.@id);
+      this.displayId_ = this.id_;
+      if (_arg_1.hasOwnProperty("DisplayId"))
+      {
+         this.displayId_ = _arg_1.DisplayId;
+      }
+      this.shadowSize_ = ((_arg_1.hasOwnProperty("ShadowSize")) ? _arg_1.ShadowSize : 100);
+      this.isPlayer_ = _arg_1.hasOwnProperty("Player");
+      this.isEnemy_ = _arg_1.hasOwnProperty("Enemy");
+      this.drawOnGround_ = _arg_1.hasOwnProperty("DrawOnGround");
+      if (((this.drawOnGround_) || (_arg_1.hasOwnProperty("DrawUnder"))))
+      {
+         this.drawUnder_ = true;
+      }
+      this.occupySquare_ = _arg_1.hasOwnProperty("OccupySquare");
+      this.fullOccupy_ = _arg_1.hasOwnProperty("FullOccupy");
+      this.enemyOccupySquare_ = _arg_1.hasOwnProperty("EnemyOccupySquare");
+      this.static_ = _arg_1.hasOwnProperty("Static");
+      this.noMiniMap_ = _arg_1.hasOwnProperty("NoMiniMap");
+      if (_arg_1.hasOwnProperty("HealthBar"))
+      {
+         this.healthBar_ = _arg_1.HealthBar;
+      }
+      this.protectFromGroundDamage_ = _arg_1.hasOwnProperty("ProtectFromGroundDamage");
+      this.protectFromSink_ = _arg_1.hasOwnProperty("ProtectFromSink");
+      this.flying_ = _arg_1.hasOwnProperty("Flying");
+      this.showName_ = _arg_1.hasOwnProperty("ShowName");
+      this.dontFaceAttacks_ = _arg_1.hasOwnProperty("DontFaceAttacks");
+      this.dontFaceMovement_ = _arg_1.hasOwnProperty("DontFaceMovement");
+      if (_arg_1.hasOwnProperty("Z"))
+      {
+         this.z_ = Number(_arg_1.Z);
+      }
+      if (_arg_1.hasOwnProperty("Color"))
+      {
+         this.color_ = uint(_arg_1.Color);
+      }
+      if (_arg_1.hasOwnProperty("Size"))
+      {
+         this.minSize_ = (this.maxSize_ = _arg_1.Size);
+         if (this.maxSize_ == -1)
          {
-            return;
-         }
-         this.type_ = int(objectXML.@type);
-         this.id_ = String(objectXML.@id);
-         this.displayId_ = this.id_;
-         if(objectXML.hasOwnProperty("DisplayId"))
-         {
-            this.displayId_ = objectXML.DisplayId;
-         }
-         this.isChest_ = objectXML.hasOwnProperty("Chest");
-         this.isQuest_ = objectXML.hasOwnProperty("Quest");
-         this.shadowSize_ = Boolean(objectXML.hasOwnProperty("ShadowSize"))?int(objectXML.ShadowSize):int(100);
-         this.isPlayer_ = objectXML.hasOwnProperty("Player");
-         this.isEnemy_ = objectXML.hasOwnProperty("Enemy");
-         this.isSpecialEnemy_ = objectXML.hasOwnProperty("SpecialEnemy");
-         this.drawOnGround_ = objectXML.hasOwnProperty("DrawOnGround");
-         if(this.drawOnGround_ || objectXML.hasOwnProperty("DrawUnder"))
-         {
-            this.drawUnder_ = true;
-         }
-         this.occupySquare_ = objectXML.hasOwnProperty("OccupySquare");
-         this.fullOccupy_ = objectXML.hasOwnProperty("FullOccupy");
-         this.enemyOccupySquare_ = objectXML.hasOwnProperty("EnemyOccupySquare");
-         this.static_ = objectXML.hasOwnProperty("Static");
-         this.noMiniMap_ = objectXML.hasOwnProperty("NoMiniMap");
-         this.protectFromGroundDamage_ = objectXML.hasOwnProperty("ProtectFromGroundDamage");
-         this.protectFromSink_ = objectXML.hasOwnProperty("ProtectFromSink");
-         this.flying_ = objectXML.hasOwnProperty("Flying");
-         this.showName_ = objectXML.hasOwnProperty("ShowName");
-         this.dontFaceAttacks_ = objectXML.hasOwnProperty("DontFaceAttacks");
-         if(objectXML.hasOwnProperty("Z"))
-         {
-            this.z_ = Number(objectXML.Z);
-         }
-         if(objectXML.hasOwnProperty("Color"))
-         {
-            this.color_ = uint(objectXML.Color);
-         }
-         if(objectXML.hasOwnProperty("Size"))
-         {
-            this.minSize_ = this.maxSize_ = objectXML.Size;
-         }
-         else
-         {
-            if(objectXML.hasOwnProperty("MinSize"))
-            {
-               this.minSize_ = objectXML.MinSize;
-            }
-            if(objectXML.hasOwnProperty("MaxSize"))
-            {
-               this.maxSize_ = objectXML.MaxSize;
-            }
-            if(objectXML.hasOwnProperty("SizeStep"))
-            {
-               this.sizeStep_ = objectXML.SizeStep;
-            }
-         }
-         this.oldSound_ = Boolean(objectXML.hasOwnProperty("OldSound")) ? String(objectXML.OldSound) : null;
-         for each(projectileXML in objectXML.Projectile)
-         {
-            bulletType = int(projectileXML.@id);
-            this.projectiles_[bulletType] = new ProjectileProperties(projectileXML);
-         }
-         this.angleCorrection_ = Boolean(objectXML.hasOwnProperty("AngleCorrection"))?Number(Number(objectXML.AngleCorrection) * Math.PI / 4):Number(0);
-         this.rotation_ = Boolean(objectXML.hasOwnProperty("Rotation"))?Number(objectXML.Rotation):Number(0);
-         if(objectXML.hasOwnProperty("BloodProb"))
-         {
-            this.bloodProb_ = Number(objectXML.BloodProb);
-         }
-         if(objectXML.hasOwnProperty("BloodColor"))
-         {
-            this.bloodColor_ = uint(objectXML.BloodColor);
-         }
-         if(objectXML.hasOwnProperty("ShadowColor"))
-         {
-            this.shadowColor_ = uint(objectXML.ShadowColor);
-         }
-         for each(soundXML in objectXML.Sound)
-         {
-            if(this.sounds_ == null)
-            {
-               this.sounds_ = {};
-            }
-            this.sounds_[int(soundXML.@id)] = soundXML.toString();
-         }
-         if(objectXML.hasOwnProperty("Portrait"))
-         {
-            this.portrait_ = new TextureData(XML(objectXML.Portrait));
-         }
-         if(objectXML.hasOwnProperty("WhileMoving"))
-         {
-            this.whileMoving_ = new WhileMovingProperties(XML(objectXML.WhileMoving));
-         }
-
-         if(objectXML.hasOwnProperty("Talisman")){
-            var t:XMLList = objectXML.Talisman;
-            isMythicTalisman_ = t.hasOwnProperty("Mythical");
-            isLegendaryTalisman_ = t.hasOwnProperty("Legendary");
-            isCommonTalisman_ = t.hasOwnProperty("Common");
-            onlyOneTalisman_ = t.hasOwnProperty("OnlyOne");
-
-            if(t.hasOwnProperty("Provides")){
-               talismanEffect_ = t.Provides.@effect;
-            }
+            this.minSize_ = (this.maxSize_ = 0);
          }
       }
-      
-      public function loadSounds() : void
+      else
       {
-         var sound:String = null;
-         if(this.sounds_ == null)
+         if (_arg_1.hasOwnProperty("MinSize"))
          {
-            return;
+            this.minSize_ = _arg_1.MinSize;
          }
-         for each(sound in this.sounds_)
+         if (_arg_1.hasOwnProperty("MaxSize"))
          {
-            SoundEffectLibrary.load(sound);
+            this.maxSize_ = _arg_1.MaxSize;
+         }
+         if (_arg_1.hasOwnProperty("SizeStep"))
+         {
+            this.sizeStep_ = _arg_1.SizeStep;
          }
       }
-      
-      public function getSize() : int
+      this.oldSound_ = ((_arg_1.hasOwnProperty("OldSound")) ? String(_arg_1.OldSound) : null);
+      for each (_local_2 in _arg_1.Projectile)
       {
-         if(this.minSize_ == this.maxSize_)
+         _local_4 = int(_local_2.@id);
+         this.projectiles_[_local_4] = new ProjectileProperties(_local_2);
+      }
+      this.angleCorrection_ = ((_arg_1.hasOwnProperty("AngleCorrection")) ? ((Number(_arg_1.AngleCorrection) * Math.PI) / 4) : 0);
+      this.rotation_ = ((_arg_1.hasOwnProperty("Rotation")) ? _arg_1.Rotation : 0);
+      if (_arg_1.hasOwnProperty("BloodProb"))
+      {
+         this.bloodProb_ = Number(_arg_1.BloodProb);
+      }
+      if (_arg_1.hasOwnProperty("BloodColor"))
+      {
+         this.bloodColor_ = uint(_arg_1.BloodColor);
+      }
+      if (_arg_1.hasOwnProperty("ShadowColor"))
+      {
+         this.shadowColor_ = uint(_arg_1.ShadowColor);
+      }
+      for each (_local_3 in _arg_1.Sound)
+      {
+         if (this.sounds_ == null)
          {
-            return this.minSize_;
+            this.sounds_ = {}
          }
-         var maxSteps:int = (this.maxSize_ - this.minSize_) / this.sizeStep_;
-         return this.minSize_ + int(Math.random() * maxSteps) * this.sizeStep_;
+         this.sounds_[int(_local_3.@id)] = _local_3.toString();
+      }
+      if (_arg_1.hasOwnProperty("Portrait"))
+      {
+         this.portrait_ = new TextureDataConcrete(XML(_arg_1.Portrait));
+      }
+      if (_arg_1.hasOwnProperty("WhileMoving"))
+      {
+         this.whileMoving_ = new WhileMovingProperties(XML(_arg_1.WhileMoving));
       }
    }
+
+   public function loadSounds():void
+   {
+      var _local_1:String;
+      if (this.sounds_ == null)
+      {
+         return;
+      }
+      for each (_local_1 in this.sounds_)
+      {
+         SoundEffectLibrary.load(_local_1);
+      }
+   }
+
+   public function getSize():int
+   {
+      if (this.minSize_ == this.maxSize_)
+      {
+         return (this.minSize_);
+      }
+      var _local_1:int = int(((this.maxSize_ - this.minSize_) / this.sizeStep_));
+      return (this.minSize_ + (int((Math.random() * _local_1)) * this.sizeStep_));
+   }
+
+
 }
+}//package com.company.assembleegameclient.objects
 
 class WhileMovingProperties
 {
-    
-   
-   public var z_:Number = 0.0;
-   
+
+   public var z_:Number = 0;
    public var flying_:Boolean = false;
-   
-   function WhileMovingProperties(whileMovingXML:XML)
+
+   public function WhileMovingProperties(_arg_1:XML)
    {
-      super();
-      if(whileMovingXML.hasOwnProperty("Z"))
+      if (_arg_1.hasOwnProperty("Z"))
       {
-         this.z_ = Number(whileMovingXML.Z);
+         this.z_ = Number(_arg_1.Z);
       }
-      this.flying_ = whileMovingXML.hasOwnProperty("Flying");
+      this.flying_ = _arg_1.hasOwnProperty("Flying");
    }
+
 }
+
+

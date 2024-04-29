@@ -1,0 +1,3182 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x1581" id="GC Brown Mushroom Spore">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x16</Index>
+      </Texture>
+      <Rotation>200</Rotation>
+   </Object>
+   <Object type="0x1582" id="GC Brown Mushroom Blast">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x17</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1583" id="GC Red Mushroom Spear">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x18</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x1584" id="GC Red Mushroom Wave">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x19</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1585" id="GC Red Mushroom Magic">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x1a</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x1586" id="GC Red Mushroom Blast">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x1b</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1587" id="GC Red Mushroom Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x1c</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+   </Object>
+   <Object type="0x1588" id="GC Blue Mushroom Spear">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x1d</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x1589" id="GC Blue Mushroom Spore">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x1e</Index>
+      </Texture>
+      <Rotation>200</Rotation>
+   </Object>
+   <Object type="0x158a" id="GC Blue Mushroom Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x1f</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+   </Object>
+   <Object type="0x158b" id="GC Blue Mushroom Blast">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x24</Index>
+      </Texture>
+   </Object>
+   <Object type="0x158c" id="GC Yellow Mushroom Spore">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x25</Index>
+      </Texture>
+      <Rotation>200</Rotation>
+   </Object>
+   <Object type="0x158d" id="GC Yellow Mushroom Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x26</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+   </Object>
+   <Object type="0x158e" id="GC Yellow Mushroom Blast">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x27</Index>
+      </Texture>
+   </Object>
+   <Object type="0x158f" id="GC Yellow Mushroom Wave">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x28</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1590" id="GC Green Mushroom Spear">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x29</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x1591" id="GC Green Mushroom Wave">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x2a</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1592" id="GC Green Mushroom Blast">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x2b</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1593" id="GC Purple Mushroom Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+   </Object>
+   <Object type="0x1594" id="GC Purple Mushroom Spear">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x2d</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x1595" id="GC Purple Mushroom Magic">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x2e</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x1596" id="GC Purple Mushroom Spore">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x2f</Index>
+      </Texture>
+      <Rotation>200</Rotation>
+   </Object>
+   <Object type="0x1597" id="GC Purple Mushroom Blast">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x3c</Index>
+      </Texture>
+   </Object>
+   <Object type="0x159d" id="GC Blue Worm Ball">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x3d</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1598" id="GC Blue Worm Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x3e</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x1599" id="GC Red Worm Ball">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x3f</Index>
+      </Texture>
+   </Object>
+   <Object type="0x159a" id="GC Red Worm Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x48</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x159b" id="GC Yellow Worm Ball">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x49</Index>
+      </Texture>
+   </Object>
+   <Object type="0x159c" id="GC Yellow Worm Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x4a</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xb26f" id="GC Gigantic Cave Portal">
+      <DisplayId>Fungal Cavern</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Fungal Cavern</DungeonName>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x10</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0xb27b" id="GC Crystal">
+      <Class>Character</Class>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x67</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <TrackLoot/>
+      <Color>0xFE79F1</Color>
+      <Enemy/>
+      <Exp>800</Exp>
+   </Object>
+   <Object type="0xb27c" id="GC Destroyed Crystal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x67</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb27d" id="GC Destroyed Crystal Explo">
+      <Class>GameObject</Class>
+      <DisplayId>Cavern Crystal</DisplayId>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x67</Index>
+      </Texture>
+      <Size>-1</Size>
+      <Projectile id="0">
+         <ObjectId>Purple Shard Bolt</ObjectId>
+         <Damage>50</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="6">Quiet</ConditionEffect>
+      </Projectile>
+      <Effect minRadius="0.5" maxRadius="10" color="0xFF93CD" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+   </Object>
+   <Object type="0xb27e" id="GC Charging Crystal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x67</Index>
+      </Texture>
+      <Size>0</Size>
+      <Z>0.5</Z>
+      <Flying/>
+   </Object>
+   <Object type="0xb27f" id="GC Drill Charge">
+      <DisplayId>Drill</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x0c</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>fungalCavernObjects16x16</File>
+            <Index>0x0d</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>fungalCavernObjects16x16</File>
+            <Index>0x0e</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>fungalCavernObjects16x16</File>
+            <Index>0x0f</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>fungalCavernObjects16x16</File>
+            <Index>0x19</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>fungalCavernObjects16x16</File>
+            <Index>0x1a</Index>
+         </Texture>
+      </AltTexture>
+      <Size>140</Size>
+   </Object>
+   <Object type="0xb276" id="GC Drill Fill N">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x0d</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb277" id="GC Drill Fill S">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x0d</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb278" id="GC Drill Fill W">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x0d</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb279" id="GC Drill Fill E">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x0d</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb27a" id="GC Drill Dwarf">
+      <DisplayId>Dwarf Miner</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x0d</Index>
+      </Texture>
+      <Size>120</Size>
+   </Object>
+   <Object type="0xb280" id="GC Drill Wall">
+      <Class>Wall</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x6b</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x6c</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x6d</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x6e</Index>
+         </Texture>
+      </Top>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x6fb1" id="GC Drill">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x1a</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>fungalCavernObjects16x16</File>
+            <Index>0x1b</Index>
+         </Texture>
+      </AltTexture>
+      <Size>140</Size>
+   </Object>
+   <Object type="0xb28b" id="GC Ambush Spawner">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x8f</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb282" id="GC Decoration Generator Small">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x0c</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb283" id="GC Decoration Generator Medium">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x0d</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb284" id="GC Decoration Generator Large">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x0e</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb285" id="GC Enemy Generator Easy">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x06</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb286" id="GC Enemy Generator Normal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x07</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb287" id="GC Enemy Generator Hard">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x08</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb288" id="GC Enemy Center Generator Easy">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x09</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb289" id="GC Enemy Center Generator Normal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb28a" id="GC Enemy Center Generator Hard">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x0b</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb2a9" id="GC Mushroom Slammer Melee">
+      <Class>Character</Class>
+      <DisplayId>Mushroom Brawler</DisplayId>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>75</Exp>
+      <StunImmune/>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0xb2aa" id="GC Mushroom Slammer Mage">
+      <Class>Character</Class>
+      <DisplayId>Mushroom Alchemist</DisplayId>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Defense>10</Defense>
+      <Exp>75</Exp>
+      <StunImmune/>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0xb29c" id="GC Mushroom Slammer Leader">
+      <Class>Character</Class>
+      <DisplayId>Mushroom Chieftain</DisplayId>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars16x16</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>8000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Exp>800</Exp>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <StasisImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>GC Brown Mushroom Blast</ObjectId>
+         <Damage>200</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>GC Brown Mushroom Spore</ObjectId>
+         <Damage>120</Damage>
+         <Speed>35</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <Wavy/>
+         <ConditionEffect duration="3">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>GC Brown Mushroom Spore</ObjectId>
+         <Damage>120</Damage>
+         <Speed>20</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <Frequency>8</Frequency>
+         <Amplitude>0.2</Amplitude>
+         <ConditionEffect duration="4">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>GC Brown Mushroom Spore</ObjectId>
+         <Damage>120</Damage>
+         <Speed>28</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <Frequency>8</Frequency>
+         <Amplitude>0.2</Amplitude>
+         <ConditionEffect duration="3">Quiet</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xb304" id="GC Mushroom Circler Melee">
+      <Class>Character</Class>
+      <DisplayId>Mushroom Soldier</DisplayId>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <Defense>20</Defense>
+      <Exp>75</Exp>
+      <HitSound>monster/elves_death</HitSound>
+      <DeathSound>monster/flaming_skulls_death</DeathSound>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Projectile id="0">
+         <ObjectId>GC Red Mushroom Spear</ObjectId>
+         <Speed>90</Speed>
+         <Damage>120</Damage>
+         <Size>120</Size>
+         <LifetimeMS>900</LifetimeMS>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>GC Red Mushroom Wave</ObjectId>
+         <Speed>70</Speed>
+         <Damage>160</Damage>
+         <Size>110</Size>
+         <LifetimeMS>1200</LifetimeMS>
+         <ConditionEffect duration="3">Stunned</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xb272" id="GC Mushroom Circler Mage">
+      <Class>Character</Class>
+      <DisplayId>Mushroom Oracle</DisplayId>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <Size>120</Size>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Defense>10</Defense>
+      <Exp>75</Exp>
+      <Projectile id="0">
+         <ObjectId>GC Red Mushroom Magic</ObjectId>
+         <Damage>110</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb275" id="GC Mushroom Circler Leader">
+      <Class>Character</Class>
+      <Enemy/>
+      <DisplayId>Mushroom Keeper</DisplayId>
+      <AnimatedTexture>
+         <File>fungalCavernChars16x16</File>
+         <Index>5</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <Size>120</Size>
+      <MaxHitPoints>8000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Exp>800</Exp>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <StasisImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>GC Red Mushroom Blast</ObjectId>
+         <Damage>75</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <ArmorPiercing/>
+         <PassesCover/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>GC Red Mushroom Shot</ObjectId>
+         <Damage>200</Damage>
+         <Speed>35</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>120</Size>
+         <ConditionEffect duration="5">Armor Broken</ConditionEffect>
+         <PassesCover/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb270" id="GC Mushroom Passive Melee">
+      <Class>Character</Class>
+      <DisplayId>Mushroom Sentinel</DisplayId>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <Size>120</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>75</Exp>
+      <Projectile id="0">
+         <ObjectId>GC Blue Mushroom Spear</ObjectId>
+         <Damage>120</Damage>
+         <Speed>90</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb2ab" id="GC Mushroom Passive Mage">
+      <Class>Character</Class>
+      <Enemy/>
+      <DisplayId>Mushroom Stalker</DisplayId>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>5</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <Size>120</Size>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Defense>10</Defense>
+      <Exp>75</Exp>
+      <Projectile id="0">
+         <ObjectId>GC Blue Mushroom Spore</ObjectId>
+         <Damage>120</Damage>
+         <Speed>20</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <Amplitude>2</Amplitude>
+         <Frequency>0.5</Frequency>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>GC Blue Mushroom Spore</ObjectId>
+         <Damage>120</Damage>
+         <Speed>25</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <Amplitude>2</Amplitude>
+         <Frequency>0.5</Frequency>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>GC Blue Mushroom Spore</ObjectId>
+         <Damage>120</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <Amplitude>2</Amplitude>
+         <Frequency>0.5</Frequency>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>GC Blue Mushroom Spore</ObjectId>
+         <Damage>120</Damage>
+         <Speed>35</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <Amplitude>2</Amplitude>
+         <Frequency>0.5</Frequency>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>GC Blue Mushroom Spore</ObjectId>
+         <Damage>120</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <Amplitude>2</Amplitude>
+         <Frequency>0.5</Frequency>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb274" id="GC Mushroom Passive Leader">
+      <Class>Character</Class>
+      <Enemy/>
+      <DisplayId>Mushroom Guardian</DisplayId>
+      <AnimatedTexture>
+         <File>fungalCavernChars16x16</File>
+         <Index>6</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <Size>120</Size>
+      <MaxHitPoints>8000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Exp>800</Exp>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <StasisImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>GC Blue Mushroom Blast</ObjectId>
+         <Damage>120</Damage>
+         <Speed>65</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <PassesCover/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>GC Blue Mushroom Shot</ObjectId>
+         <Damage>200</Damage>
+         <Speed>35</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>160</Size>
+         <ConditionEffect duration="5">Silenced</ConditionEffect>
+         <PassesCover/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb2ac" id="GC Mushroom Coward Melee">
+      <Class>Character</Class>
+      <DisplayId>Mushroom Rogue</DisplayId>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>6</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>75</Exp>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>GC Yellow Mushroom Spore</ObjectId>
+         <Damage>120</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>650</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>GC Yellow Mushroom Spore</ObjectId>
+         <Damage>120</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>850</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>GC Yellow Mushroom Spore</ObjectId>
+         <Damage>120</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>1250</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb29e" id="GC Mushroom Coward Mage">
+      <Class>Character</Class>
+      <DisplayId>Mushroom Mage</DisplayId>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>7</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Defense>10</Defense>
+      <Exp>75</Exp>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>GC Yellow Mushroom Shot</ObjectId>
+         <Damage>100</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ArmorPiercing/>
+         <Frequency>24</Frequency>
+         <Amplitude>0.125</Amplitude>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>GC Yellow Mushroom Shot</ObjectId>
+         <Damage>100</Damage>
+         <Speed>35</Speed>
+         <LifetimeMS>5715</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ArmorPiercing/>
+         <Frequency>24</Frequency>
+         <Amplitude>0.125</Amplitude>
+      </Projectile>
+   </Object>
+   <Object type="0xb29d" id="GC Mushroom Coward Leader">
+      <Class>Character</Class>
+      <DisplayId>Mushroom Sorcerer</DisplayId>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars16x16</File>
+         <Index>7</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>8000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Exp>800</Exp>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <StasisImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>GC Yellow Mushroom Blast</ObjectId>
+         <Damage>150</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>10000</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>GC Yellow Mushroom Shot</ObjectId>
+         <Damage>150</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <Frequency>0.5</Frequency>
+         <Amplitude>4</Amplitude>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>GC Yellow Mushroom Shot</ObjectId>
+         <Damage>150</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <Frequency>0.5</Frequency>
+         <Amplitude>8</Amplitude>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>GC Yellow Mushroom Wave</ObjectId>
+         <Damage>200</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>GC Yellow Mushroom Wave</ObjectId>
+         <Damage>200</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>GC Yellow Mushroom Wave</ObjectId>
+         <Damage>200</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb29f" id="GC Mushroom Charger Melee">
+      <Class>Character</Class>
+      <DisplayId>Mushroom Brute</DisplayId>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>8</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <Size>120</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>75</Exp>
+      <Projectile id="0">
+         <ObjectId>GC Green Mushroom Spear</ObjectId>
+         <Damage>120</Damage>
+         <Speed>120</Speed>
+         <Size>80</Size>
+         <LifetimeMS>1200</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>GC Green Mushroom Spear</ObjectId>
+         <Damage>120</Damage>
+         <Speed>100</Speed>
+         <Size>80</Size>
+         <LifetimeMS>1200</LifetimeMS>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>GC Green Mushroom Spear</ObjectId>
+         <Damage>120</Damage>
+         <Speed>80</Speed>
+         <Size>80</Size>
+         <LifetimeMS>1200</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb2ad" id="GC Mushroom Charger Mage">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Sporatic Mushroom</DisplayId>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>9</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <Size>120</Size>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Defense>10</Defense>
+      <Exp>75</Exp>
+      <Projectile id="0">
+         <ObjectId>GC Green Mushroom Spear</ObjectId>
+         <Damage>120</Damage>
+         <Speed>60</Speed>
+         <Size>80</Size>
+         <LifetimeMS>1200</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb2ae" id="GC Mushroom Charger Leader">
+      <Class>Character</Class>
+      <Enemy/>
+      <DisplayId>Mushroom Berserker</DisplayId>
+      <AnimatedTexture>
+         <File>fungalCavernChars16x16</File>
+         <Index>8</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>8000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Exp>800</Exp>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <StasisImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>GC Green Mushroom Spear</ObjectId>
+         <Damage>120</Damage>
+         <Speed>80</Speed>
+         <Size>80</Size>
+         <LifetimeMS>1800</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>GC Green Mushroom Wave</ObjectId>
+         <Damage>200</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>1300</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>GC Green Mushroom Blast</ObjectId>
+         <Damage>120</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>10000</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb2af" id="GC Mushroom Spiral Melee">
+      <Class>Character</Class>
+      <Enemy/>
+      <DisplayId>Mushroom Champion</DisplayId>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>10</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>75</Exp>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>GC Purple Mushroom Shot</ObjectId>
+         <Damage>100</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0xb2b0" id="GC Mushroom Spiral Mage">
+      <Class>Character</Class>
+      <Enemy/>
+      <DisplayId>Mushroom Caster</DisplayId>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>11</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Defense>10</Defense>
+      <Exp>75</Exp>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>GC Purple Mushroom Magic</ObjectId>
+         <Damage>160</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>GC Purple Mushroom Spear</ObjectId>
+         <Damage>120</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb2a0" id="GC Mushroom Spiral Leader">
+      <Class>Character</Class>
+      <Enemy/>
+      <DisplayId>Mushroom Shaman</DisplayId>
+      <AnimatedTexture>
+         <File>fungalCavernChars16x16</File>
+         <Index>9</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>8000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Exp>800</Exp>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <StasisImmune/>
+      <TrackLoot/>
+      <Projectile id="1">
+         <ObjectId>GC Purple Mushroom Spore</ObjectId>
+         <Damage>110</Damage>
+         <Speed>20</Speed>
+         <LifetimeMS>7000</LifetimeMS>
+         <Size>90</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <Frequency>6</Frequency>
+         <Amplitude>2</Amplitude>
+         <ConditionEffect duration="3">Weak</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Invisible</ObjectId>
+         <Speed>0</Speed>
+         <Damage>0</Damage>
+         <LifetimeMS>0</LifetimeMS>
+         <Size>0</Size>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>GC Purple Mushroom Shot</ObjectId>
+         <Damage>110</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <Frequency>0.5</Frequency>
+         <Amplitude>3</Amplitude>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>GC Purple Mushroom Shot</ObjectId>
+         <Damage>110</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <Frequency>0.5</Frequency>
+         <Amplitude>6</Amplitude>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>GC Purple Mushroom Shot</ObjectId>
+         <Damage>110</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <Frequency>0.5</Frequency>
+         <Amplitude>8</Amplitude>
+      </Projectile>
+   </Object>
+   <Object type="0xb306" id="GC Cavecrawler Webslinger">
+      <DisplayId>Cavecrawler Webslinger</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>39</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Size>100</Size>
+      <Defense>15</Defense>
+      <Exp>150</Exp>
+      <Projectile id="0">
+         <ObjectId>Web Thread</ObjectId>
+         <Speed>24</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="4.0">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>GC Purple Mushroom Magic</ObjectId>
+         <Speed>50</Speed>
+         <Damage>180</Damage>
+         <LifetimeMS>1500</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb308" id="GC Cavecrawler Bat">
+      <DisplayId>Cavecrawler Bloodsucker</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars16x16</File>
+         <Index>10</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <Size>80</Size>
+      <Flying/>
+      <Z>0.2</Z>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Defense>15</Defense>
+      <Exp>150</Exp>
+      <Projectile>
+         <ObjectId>GC Red Mushroom Magic</ObjectId>
+         <Speed>50</Speed>
+         <Damage>100</Damage>
+         <Size>100</Size>
+         <LifetimeMS>2400</LifetimeMS>
+         <MultiHit/>
+         <FaceDir/>
+         <Amplitude>1.25</Amplitude>
+         <Frequency>0.35</Frequency>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>GC Red Mushroom Shot</ObjectId>
+         <Speed>0</Speed>
+         <Damage>200</Damage>
+         <Size>100</Size>
+         <LifetimeMS>3500</LifetimeMS>
+         <MultiHit/>
+         <FaceDir/>
+         <Amplitude>0.25</Amplitude>
+         <Frequency>0.35</Frequency>
+      </Projectile>
+   </Object>
+   <Object type="0xb298" id="GC Blue Worm">
+      <DisplayId>Cavecrawler Glowworm</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>12</Index>
+      </AnimatedTexture>
+      <HitSound>monster/lizard_god_hit</HitSound>
+      <DeathSound>monster/ogres_death</DeathSound>
+      <Size>160</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>800</Exp>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>GC Blue Worm Ball</ObjectId>
+         <Damage>150</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2400</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>GC Blue Worm Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2400</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb299" id="GC Blue Worm Body">
+      <DisplayId>Cavecrawler Glowworm</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>13</Index>
+      </AnimatedTexture>
+      <Size>140</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>GC Blue Worm Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2400</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb29a" id="GC Blue Worm Tail">
+      <DisplayId>Cavecrawler Glowworm</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>13</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>GC Blue Worm Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2400</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb2b1" id="GC Red Worm">
+      <DisplayId>Cavecrawler Leech</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>14</Index>
+      </AnimatedTexture>
+      <HitSound>monster/lizard_god_hit</HitSound>
+      <DeathSound>monster/ogres_death</DeathSound>
+      <Size>160</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>800</Exp>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>GC Red Worm Ball</ObjectId>
+         <Damage>150</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2400</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>GC Red Worm Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2400</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb2b2" id="GC Red Worm Body">
+      <DisplayId>Cavecrawler Leech</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>15</Index>
+      </AnimatedTexture>
+      <Size>140</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>GC Red Worm Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2400</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb2b3" id="GC Red Worm Tail">
+      <DisplayId>Cavecrawler Leech</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>15</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>GC Red Worm Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2400</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb2b4" id="GC Yellow Worm">
+      <DisplayId>Cavecrawler Maggot</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>16</Index>
+      </AnimatedTexture>
+      <HitSound>monster/lizard_god_hit</HitSound>
+      <DeathSound>monster/ogres_death</DeathSound>
+      <Size>160</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>4000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>800</Exp>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>GC Yellow Worm Ball</ObjectId>
+         <Damage>150</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2400</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>GC Yellow Worm Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2400</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb2b5" id="GC Yellow Worm Body">
+      <DisplayId>Cavecrawler Maggot</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>17</Index>
+      </AnimatedTexture>
+      <Size>140</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>GC Yellow Worm Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2400</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb2b6" id="GC Yellow Worm Tail">
+      <DisplayId>Cavecrawler Maggot</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>17</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>GC Yellow Worm Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2400</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb28e" id="GC Boss Target">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa3</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb28f" id="GC Boss Support">
+      <DisplayId>Crystal Worm Father</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <HitSound>monster/lizard_god_hit</HitSound>
+      <DeathSound>monster/ogres_death</DeathSound>
+      <Size>140</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>10000</Exp>
+      <StunImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>White Shard Bolt</ObjectId>
+         <Damage>200</Damage>
+         <Speed>20</Speed>
+         <LifetimeMS>7000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Dark Shard</ObjectId>
+         <Damage>180</Damage>
+         <Speed>25</Speed>
+         <LifetimeMS>7000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>White Shard Bolt</ObjectId>
+         <Damage>200</Damage>
+         <Speed>15</Speed>
+         <LifetimeMS>9000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb2a1" id="GC Boss Child">
+      <DisplayId>Crystal Worm Child</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>18</Index>
+      </AnimatedTexture>
+      <HitSound>monster/lizard_god_hit</HitSound>
+      <DeathSound>monster/ogres_death</DeathSound>
+      <Size>160</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>20000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>10000</Exp>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>White Shard Bolt</ObjectId>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Yellow Shard Bolt</ObjectId>
+         <Damage>160</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>2400</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <Boomerang/>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object type="0xb2a2" id="GC Boss Child Body">
+      <DisplayId>Crystal Worm Child</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>19</Index>
+      </AnimatedTexture>
+      <Size>160</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Crystal Bolt</ObjectId>
+         <Damage>150</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb2a3" id="GC Boss Child Tail">
+      <DisplayId>Crystal Worm Child</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>20</Index>
+      </AnimatedTexture>
+      <Size>160</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Crystal Bolt</ObjectId>
+         <Damage>150</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb290" id="GC Boss">
+      <DisplayId>Crystal Worm Mother</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <HitSound>monster/lizard_god_hit</HitSound>
+      <DeathSound>monster/ogres_death</DeathSound>
+      <Size>140</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>90000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>20000</Exp>
+      <Quest/>
+      <HealthBarBoss/>
+      <ParalyzeImmune/>
+      <EventChestBoss/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>White Shard Bolt</ObjectId>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>White Shard Bolt</ObjectId>
+         <Damage>150</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Yellow Shard Bolt</ObjectId>
+         <Damage>160</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>3200</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <Boomerang/>
+         <FaceDir/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Damage>150</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Damage>150</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Damage>150</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0xb291" id="GC Boss Body">
+      <DisplayId>Crystal Worm Mother</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars16x16</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <Size>140</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>7000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Crystal Bolt</ObjectId>
+         <Damage>150</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Crystal Bolt</ObjectId>
+         <Damage>150</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Crystal Bolt</ObjectId>
+         <Damage>200</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="8">Quiet</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xb292" id="GC Boss Body Weakpoint">
+      <DisplayId>Crystal Worm Mother</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars16x16</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <Size>140</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Crystal Bolt</ObjectId>
+         <Damage>150</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Crystal Bolt</ObjectId>
+         <Damage>150</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb293" id="GC Boss Body Bomb">
+      <DisplayId>Crystal Worm Mother</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars16x16</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <Size>140</Size>
+      <Invincible/>
+      <Exp>0</Exp>
+      <HealthBar>-1</HealthBar>
+      <Projectile id="0">
+         <ObjectId>Purple Shard Bolt</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>2600</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <ConditionEffect duration="4">Quiet</ConditionEffect>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb294" id="GC Boss Body Death">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x61</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb295" id="GC Boss Body Dead State">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x61</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb296" id="GC Boss Body Dead State Weakpoint">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x61</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb297" id="GC Boss Tail">
+      <DisplayId>Crystal Worm Mother</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars16x16</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>16000</MaxHitPoints>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <StasisImmune/>
+      <DontFaceAttacks/>
+      <Projectile id="0">
+         <ObjectId>Purple Shard Bolt</ObjectId>
+         <Damage>200</Damage>
+         <Speed>24</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb29b" id="GC split">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xb9</Index>
+      </Texture>
+      <Size>120</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>8000</MaxHitPoints>
+      <Projectile id="0">
+         <ObjectId>Red Star</ObjectId>
+         <Damage>80</Damage>
+         <Speed>35</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0xb30e" id="GC Small Blue Mushroom">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <ShadowSize>200</ShadowSize>
+      <Color>0x1EB3D9</Color>
+      <ShadowColor>0x1EB3D9</ShadowColor>
+      <Static/>
+   </Object>
+   <Object type="0xb311" id="GC Small Red Mushroom">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x01</Index>
+      </Texture>
+      <ShadowSize>200</ShadowSize>
+      <Color>0xD93A1E</Color>
+      <ShadowColor>0xD93A1E</ShadowColor>
+      <Static/>
+   </Object>
+   <Object type="0xb312" id="GC Small Yellow Mushroom">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x02</Index>
+      </Texture>
+      <ShadowSize>200</ShadowSize>
+      <Color>0xE6D412</Color>
+      <ShadowColor>0xE6D412</ShadowColor>
+      <Static/>
+   </Object>
+   <Object type="0xb281" id="GC Small Brown Mushroom">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x05</Index>
+      </Texture>
+      <ShadowSize>200</ShadowSize>
+      <Color>0x8F725E</Color>
+      <ShadowColor>0x8F725E</ShadowColor>
+      <Static/>
+   </Object>
+   <Object type="0xb2a7" id="GC Small Green Mushroom">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x0f</Index>
+      </Texture>
+      <ShadowSize>200</ShadowSize>
+      <Color>0x64A85D</Color>
+      <ShadowColor>0x64A85D</ShadowColor>
+      <Static/>
+   </Object>
+   <Object type="0xb2a8" id="GC Small Purple Mushroom">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x15</Index>
+      </Texture>
+      <ShadowSize>200</ShadowSize>
+      <Color>0x754985</Color>
+      <ShadowColor>0x754985</ShadowColor>
+      <Static/>
+   </Object>
+   <Object type="0xb30f" id="GC Large Blue Mushroom">
+      <Class>GameObject</Class>
+      <Size>140</Size>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <ShadowSize>300</ShadowSize>
+      <Color>0x1EB3D9</Color>
+      <ShadowColor>0x1EB3D9</ShadowColor>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0xb313" id="GC Large Red Mushroom">
+      <Class>GameObject</Class>
+      <Size>140</Size>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x01</Index>
+      </Texture>
+      <ShadowSize>300</ShadowSize>
+      <Color>0xD93A1E</Color>
+      <ShadowColor>0xD93A1E</ShadowColor>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0xb314" id="GC Large Yellow Mushroom">
+      <Class>GameObject</Class>
+      <Size>140</Size>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x02</Index>
+      </Texture>
+      <ShadowSize>300</ShadowSize>
+      <Color>0xE6D412</Color>
+      <ShadowColor>0xE6D412</ShadowColor>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0xb2a4" id="GC Large Brown Mushroom">
+      <Class>GameObject</Class>
+      <Size>140</Size>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x03</Index>
+      </Texture>
+      <ShadowSize>300</ShadowSize>
+      <Color>0x8F725E</Color>
+      <ShadowColor>0x8F725E</ShadowColor>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0xb2a5" id="GC Large Green Mushroom">
+      <Class>GameObject</Class>
+      <Size>140</Size>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x04</Index>
+      </Texture>
+      <ShadowSize>300</ShadowSize>
+      <Color>0x64A85D</Color>
+      <ShadowColor>0x64A85D</ShadowColor>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0xb2a6" id="GC Large Purple Mushroom">
+      <Class>GameObject</Class>
+      <Size>140</Size>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x05</Index>
+      </Texture>
+      <ShadowSize>300</ShadowSize>
+      <Color>0x754985</Color>
+      <ShadowColor>0x754985</ShadowColor>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0xb310" id="GC Wall">
+      <Class>CaveWall</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x20</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Connects/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0xb388" id="GC Wooden Arch">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>fungalCavernObjects16x16</File>
+            <Index>0x63</Index>
+         </Texture>
+         <Texture>
+            <File>fungalCavernObjects16x16</File>
+            <Index>0x64</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+   </Object>
+   <Object type="0xb389" id="GC Wooden Lamp">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x69</Index>
+      </Texture>
+      <ShadowSize>120</ShadowSize>
+      <ShadowColor>0xE677FF</ShadowColor>
+      <Static/>
+   </Object>
+   <Object type="0xb38a" id="GC Empty Minecart">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x65</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb38b" id="GC Crystal Minecart">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x68</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb38c" id="GC Container Minecart">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x66</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb38d" id="GC Container">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x39</Index>
+      </Texture>
+      <Static/>
+   </Object>
+   <Object type="0xb38e" id="GC Rail H">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x34</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0xb38f" id="GC Rail V">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x33</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0xb390" id="GC Rail TR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x35</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0xb391" id="GC Rail TL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x36</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0xb392" id="GC Rail BR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x37</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0xb393" id="GC Rail BL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x38</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0xb394" id="GC Pickaxe">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>fungalCavernObjects8x8</File>
+            <Index>0x3a</Index>
+         </Texture>
+         <Texture>
+            <File>fungalCavernObjects8x8</File>
+            <Index>0x3b</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+   </Object>
+   <Object type="0x2742" id="Crystal Charger">
+      <Enemy/>
+      <DisplayId>Crystallised Charger</DisplayId>
+      <Class>Character</Class>
+      <Group>Crystal Monsters</Group>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>10</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Defense>20</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <Exp>800</Exp>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>Blue Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>145</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>1.3</Frequency>
+         <Amplitude>0.8</Amplitude>
+      </Projectile>
+   </Object>
+   <Object type="0x2743" id="Crystal Watcher">
+      <Enemy/>
+      <DisplayId>Crystallised Watcher</DisplayId>
+      <Class>Character</Class>
+      <Group>Crystal Monsters</Group>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>11</Index>
+      </AnimatedTexture>
+      <Projectile id="1">
+         <ObjectId>Yellow Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>145</Damage>
+         <Speed>120</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Yellow Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>145</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Yellow Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>145</Damage>
+         <Speed>15</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Defense>20</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <Exp>800</Exp>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0x2744" id="Crystal Splitter">
+      <Enemy/>
+      <DisplayId>Crystallised Crawler</DisplayId>
+      <Class>Character</Class>
+      <Group>Crystal Monsters</Group>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>12</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Defense>20</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <Exp>800</Exp>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>Green Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>130</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>2</Frequency>
+         <Amplitude>0.5</Amplitude>
+         <ConditionEffect duration="3">Exposed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x2745" id="Crystal Shrieker">
+      <Enemy/>
+      <DisplayId>Crystallised Shrieker</DisplayId>
+      <Class>Character</Class>
+      <Group>Crystal Monsters</Group>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>13</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Defense>80</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <Exp>800</Exp>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="8">
+         <ObjectId>pD Maw Shot 3</ObjectId>
+         <Size>100</Size>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>4500</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>160</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>600</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>160</Damage>
+         <Speed>120</Speed>
+         <LifetimeMS>600</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x2746" id="Crystal Boomer">
+      <Enemy/>
+      <DisplayId>Crystallised Boomer</DisplayId>
+      <Class>Character</Class>
+      <Group>Crystal Monsters</Group>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>14</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Defense>20</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <Exp>800</Exp>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="1">
+         <ObjectId>Purple Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>145</Damage>
+         <Speed>144</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Purple Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>145</Damage>
+         <Speed>89</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Purple Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>145</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x274b" id="Sapphire Bat">
+      <Group>Crystal Bats</Group>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>crystalCaveChars8x8</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Exp>75</Exp>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Blue Shard Bolt</ObjectId>
+         <Damage>115</Damage>
+         <Speed>110</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x274c" id="Emerald Bat">
+      <Class>Character</Class>
+      <Group>Crystal Bats</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>crystalCaveChars8x8</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Exp>75</Exp>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Green Shard Bolt</ObjectId>
+         <Damage>120</Damage>
+         <Speed>120</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x274d" id="Amethyst Bat">
+      <Class>Character</Class>
+      <Group>Crystal Bats</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>crystalCaveChars8x8</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Exp>75</Exp>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Purple Shard Bolt</ObjectId>
+         <Damage>130</Damage>
+         <Speed>100</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <Frequency>2.1</Frequency>
+         <Amplitude>0.8</Amplitude>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Purple Shard Bolt</ObjectId>
+         <Damage>130</Damage>
+         <Speed>100</Speed>
+         <Size>100</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <Frequency>2.1</Frequency>
+         <Amplitude>0.5</Amplitude>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x274e" id="Topaze Bat">
+      <Class>Character</Class>
+      <DisplayId>Topaz Bat</DisplayId>
+      <Group>Crystal Bats</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>crystalCaveChars8x8</File>
+         <Index>5</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Exp>75</Exp>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Yellow Shard Bolt</ObjectId>
+         <Damage>120</Damage>
+         <Speed>90</Speed>
+         <Size>80</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Yellow Shard Bolt</ObjectId>
+         <Damage>120</Damage>
+         <Speed>30</Speed>
+         <Size>80</Size>
+         <LifetimeMS>6000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x274f" id="Ruby Bat">
+      <Class>Character</Class>
+      <Group>Crystal Bats</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>crystalCaveChars8x8</File>
+         <Index>6</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Exp>75</Exp>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Damage>140</Damage>
+         <Speed>120</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Damage>140</Damage>
+         <Speed>100</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Damage>140</Damage>
+         <Speed>80</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Damage>140</Damage>
+         <Speed>60</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Damage>140</Damage>
+         <Speed>40</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x275b" id="Crystal Dark Flower">
+      <Enemy/>
+      <DisplayId>Crystallised Boomer</DisplayId>
+      <Class>Character</Class>
+      <Group>Protector</Group>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x10</Index>
+      </Texture>
+      <Size>60</Size>
+      <ShadowSize>0</ShadowSize>
+      <Invincible/>
+      <Flying/>
+   </Object>
+   <Object type="0x275c" id="Crystal Bud Dark">
+      <DisplayId>Crystallised Boomer</DisplayId>
+      <Enemy/>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>White Shard Bolt</ObjectId>
+         <Speed>10</Speed>
+         <Damage>120</Damage>
+         <Size>100</Size>
+         <LifetimeMS>80</LifetimeMS>
+         <MultiHit/>
+         <FaceDir/>
+         <ConditionEffect duration="5">Exposed</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>White Shard Bolt</ObjectId>
+         <Speed>90</Speed>
+         <Damage>120</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1700</LifetimeMS>
+         <MultiHit/>
+         <FaceDir/>
+         <ConditionEffect duration="5">Exposed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x275d" id="Saphhire Slime">
+      <DisplayId>Sapphire Slime</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>16</Index>
+      </AnimatedTexture>
+      <Size>60</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Exp>75</Exp>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Blue Shard Bolt</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="4">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x275e" id="Emerald Slime">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>17</Index>
+      </AnimatedTexture>
+      <Size>60</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Exp>75</Exp>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Green Shard Bolt</ObjectId>
+         <Damage>80</Damage>
+         <Speed>100</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="4">Sick</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x275f" id="Ruby Slime">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>18</Index>
+      </AnimatedTexture>
+      <Size>60</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Exp>75</Exp>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Damage>65</Damage>
+         <Speed>100</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3">Armor Broken</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x2760" id="Topaze Slime">
+      <Class>Character</Class>
+      <DisplayId>Topaz Slime</DisplayId>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>19</Index>
+      </AnimatedTexture>
+      <Size>60</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Exp>75</Exp>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Yellow Shard Bolt</ObjectId>
+         <Damage>100</Damage>
+         <Speed>100</Speed>
+         <Size>120</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2">Paralyzed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x159e" id="CC Crystal Worm Child">
+      <DisplayId>Crystal Worm Child</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>18</Index>
+      </AnimatedTexture>
+      <HitSound>monster/lizard_god_hit</HitSound>
+      <DeathSound>monster/ogres_death</DeathSound>
+      <Size>160</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>1200</Exp>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>White Shard Bolt</ObjectId>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Yellow Shard Bolt</ObjectId>
+         <Damage>160</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>2400</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <Boomerang/>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object type="0x159f" id="CC Crystal Worm Child Body">
+      <DisplayId>Crystal Worm Child</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>19</Index>
+      </AnimatedTexture>
+      <Size>160</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Crystal Bolt</ObjectId>
+         <Damage>150</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0x15a0" id="CC Crystal Worm Child Tail">
+      <DisplayId>Crystal Worm Child</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>fungalCavernChars8x8</File>
+         <Index>20</Index>
+      </AnimatedTexture>
+      <Size>160</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Crystal Bolt</ObjectId>
+         <Damage>150</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0x15a1" id="Amethyst Slime">
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>20</Index>
+      </AnimatedTexture>
+      <Size>60</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Purple Shard Bolt</ObjectId>
+         <Damage>100</Damage>
+         <Speed>60</Speed>
+         <Size>80</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2">Quiet</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x15a2" id="CC Wooden Lamp">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x43</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x53</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+   </Object>
+   <Object type="0x15a3" id="CC Empty Minecart">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x40</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x50</Index>
+         </Texture>
+      </RandomTexture>
+   </Object>
+   <Object type="0x15a4" id="CC Crystal Minecart">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x42</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x52</Index>
+         </Texture>
+      </RandomTexture>
+   </Object>
+   <Object type="0x15a5" id="CC Container Minecart">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x41</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x51</Index>
+         </Texture>
+      </RandomTexture>
+   </Object>
+   <Object type="0x15a6" id="CC Container">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x14c</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x14d</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+   </Object>
+   <Object type="0x15a7" id="CC Rail H">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x141</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x147</Index>
+         </Texture>
+      </RandomTexture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x15a8" id="CC Rail V">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x140</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x146</Index>
+         </Texture>
+      </RandomTexture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x15a9" id="CC Rail TR">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x142</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x148</Index>
+         </Texture>
+      </RandomTexture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x15aa" id="CC Rail TL">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x143</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x149</Index>
+         </Texture>
+      </RandomTexture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x15ab" id="CC Rail BR">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x144</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x14a</Index>
+         </Texture>
+      </RandomTexture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x15ac" id="CC Rail BL">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x145</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x14b</Index>
+         </Texture>
+      </RandomTexture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x15ad" id="CC Pickaxe">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x14e</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x14f</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x150</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x151</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+   </Object>
+   <Object type="0x15ae" id="CC Rail U">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x152</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x15af" id="CC Rail R">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x153</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x15b0" id="CC Rail D">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x154</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x15b1" id="CC Rail L">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x155</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x15b2" id="CC Big Sapphire Crystal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x55</Index>
+      </Texture>
+      <Static/>
+   </Object>
+   <Object type="0x15b3" id="CC Medium Sapphire Crystal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x54</Index>
+      </Texture>
+      <Static/>
+   </Object>
+   <Object type="0x15b4" id="CC Small Sapphire Crystal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x158</Index>
+      </Texture>
+      <Static/>
+   </Object>
+   <Object type="0x15b5" id="CC Big Emerald Crystal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x57</Index>
+      </Texture>
+      <Static/>
+   </Object>
+   <Object type="0x15b6" id="CC Medium Emerald Crystal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x56</Index>
+      </Texture>
+      <Static/>
+   </Object>
+   <Object type="0x15b7" id="CC Small Emerald Crystal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x159</Index>
+      </Texture>
+      <Static/>
+   </Object>
+   <Object type="0x15b8" id="CC Big Topaz Crystal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x59</Index>
+      </Texture>
+      <Static/>
+   </Object>
+   <Object type="0x15b9" id="CC Medium Topaz Crystal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x58</Index>
+      </Texture>
+      <Static/>
+   </Object>
+   <Object type="0x15ba" id="CC Small Topaz Crystal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x15a</Index>
+      </Texture>
+      <Static/>
+   </Object>
+   <Object type="0x15bb" id="CC Big Amethyst Crystal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x5a</Index>
+      </Texture>
+      <Static/>
+   </Object>
+   <Object type="0x15bc" id="CC Medium Amethyst Crystal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x15c</Index>
+      </Texture>
+      <Static/>
+   </Object>
+   <Object type="0x15bd" id="CC Small Amethyst Crystal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x15b</Index>
+      </Texture>
+      <Static/>
+   </Object>
+   <Object type="0x15be" id="CC Big Ruby Crystal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x5c</Index>
+      </Texture>
+      <Static/>
+   </Object>
+   <Object type="0x15bf" id="CC Medium Ruby Crystal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x5b</Index>
+      </Texture>
+      <Static/>
+   </Object>
+   <Object type="0x15c0" id="CC Small Ruby Crystal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x15d</Index>
+      </Texture>
+      <Static/>
+   </Object>
+</Objects>

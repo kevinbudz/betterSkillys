@@ -38,19 +38,19 @@ public class ItemGridMediator extends Mediator
 
       [Inject]
       public var view:ItemGrid;
-      
+
       [Inject]
       public var mapModel:MapModel;
-      
+
       [Inject]
       public var playerModel:PlayerModel;
-      
+
       [Inject]
       public var potionInventoryModel:PotionInventoryModel;
-      
+
       [Inject]
       public var hudModel:HUDModel;
-      
+
       [Inject]
       public var tabStripModel:TabStripModel;
 
@@ -59,7 +59,7 @@ public class ItemGridMediator extends Mediator
       {
          super();
       }
-      
+
       override public function initialize() : void
       {
          this.view.addEventListener(ItemTileEvent.ITEM_MOVE,this.onTileMove);
@@ -67,12 +67,12 @@ public class ItemGridMediator extends Mediator
          this.view.addEventListener(ItemTileEvent.ITEM_DOUBLE_CLICK,this.onDoubleClick);
          this.view.addEventListener(ItemTileEvent.ITEM_CTRL_CLICK,this.onCtrlClick);
       }
-      
+
       override public function destroy() : void
       {
          super.destroy();
       }
-      
+
       private function onTileMove(e:ItemTileEvent) : void
       {
          var targetTile:InteractiveItemTile = null;
@@ -128,7 +128,7 @@ public class ItemGridMediator extends Mediator
          }
          sourceTile.resetItemPosition();
       }
-      
+
       private function addToPotionStack(sourceTile:InteractiveItemTile) : void
       {
          if(!GameServerConnection.instance || !this.view.interactive || !sourceTile || this.potionInventoryModel.getPotionModel(sourceTile.getItemId()).maxPotionCount <= this.hudModel.gameSprite.map.player_.getPotionCount(sourceTile.getItemId()))
@@ -139,7 +139,7 @@ public class ItemGridMediator extends Mediator
          sourceTile.setItem(ItemConstants.NO_ITEM, null);
          sourceTile.updateUseability(this.view.curPlayer);
       }
-      
+
       private static function canSwapItems(sourceTile:InteractiveItemTile, targetTile:InteractiveItemTile) : Boolean
       {
 
@@ -208,7 +208,7 @@ public class ItemGridMediator extends Mediator
          }
          itemTile.setItem(-1, null);
       }
-      
+
       private function swapItemTiles(sourceTile:ItemTile, destTile:ItemTile) : Boolean
       {
          if(!GameServerConnection.instance || !this.view.interactive || !sourceTile || !destTile)
@@ -224,7 +224,7 @@ public class ItemGridMediator extends Mediator
          destTile.updateUseability(this.view.curPlayer);
          return true;
       }
-      
+
       private function dropWithoutDestTile(sourceTile:ItemTile, container:Container, containerIndex:int) : void
       {
          if(!GameServerConnection.instance || !this.view.interactive || !sourceTile || !container)
@@ -234,7 +234,7 @@ public class ItemGridMediator extends Mediator
          GameServerConnection.instance.invSwap(this.view.curPlayer,this.view.owner,sourceTile.tileId,sourceTile.itemSprite.itemId,container,containerIndex,-1);
          sourceTile.setItem(ItemConstants.NO_ITEM, null);
       }
-      
+
       private function onShiftClick(e:ItemTileEvent) : void
       {
          var tile:InteractiveItemTile = e.tile;
@@ -243,7 +243,7 @@ public class ItemGridMediator extends Mediator
             GameServerConnection.instance.useItem_new(tile.ownerGrid.owner,tile.tileId);
          }
       }
-      
+
       private function onCtrlClick(e:ItemTileEvent) : void
       {
          var tile:InteractiveItemTile = null;
@@ -263,7 +263,7 @@ public class ItemGridMediator extends Mediator
             }
          }
       }
-      
+
       private function onDoubleClick(e:ItemTileEvent) : void
       {
          var tile:InteractiveItemTile = e.tile;
@@ -280,12 +280,12 @@ public class ItemGridMediator extends Mediator
             this.equipOrUseInventory(tile);
          }
       }
-      
+
       private function isStackablePotion(tile:InteractiveItemTile) : Boolean
       {
          return tile.getItemId() == PotionInventoryModel.HEALTH_POTION_ID || tile.getItemId() == PotionInventoryModel.MAGIC_POTION_ID;
       }
-      
+
       private function pickUpItem(tile:InteractiveItemTile) : void
       {
          var nextAvailable:int = this.view.curPlayer.nextAvailableInventorySlot();
@@ -294,7 +294,7 @@ public class ItemGridMediator extends Mediator
             GameServerConnection.instance.invSwap(this.view.curPlayer,this.view.owner,tile.tileId,tile.itemSprite.itemId,this.view.curPlayer,nextAvailable,ItemConstants.NO_ITEM);
          }
       }
-      
+
       private function equipOrUseContainer(tile:InteractiveItemTile) : void
       {
          var tileOwner:GameObject = tile.ownerGrid.owner;
@@ -309,28 +309,15 @@ public class ItemGridMediator extends Mediator
             GameServerConnection.instance.useItem_new(tileOwner,tile.tileId);
          }
       }
-      
+
       private function equipOrUseInventory(tile:InteractiveItemTile) : void
       {
          var tileOwner:GameObject = tile.ownerGrid.owner;
          var player:Player = this.view.curPlayer;
-         var objectType:int = tile.getItemId();
-
-         var props:ObjectProperties = ObjectLibrary.propsLibrary_[objectType];
-
-         var offset:int = GeneralConstants.NUM_EQUIPMENT_SLOTS + GeneralConstants.NUM_INVENTORY_SLOTS + GeneralConstants.NUM_BACKPACK_SLOTS;
-         if (props.onlyOneTalisman_) {
-            for (var i:int = offset; i < offset + GeneralConstants.NUM_TALISMAN_SLOTS; i++) {
-               if (player.equipment_[i] == objectType) {
-                  return;
-               }
-            }
-         }
-
-         var matchingSlotIndex:int = ObjectLibrary.getMatchingSlotIndex(objectType, player);
+         var matchingSlotIndex:int = ObjectLibrary.getMatchingSlotIndex(tile.getItemId(),player);
          if(matchingSlotIndex != -1)
          {
-            GameServerConnection.instance.invSwap(player,tileOwner,tile.tileId,objectType,player,matchingSlotIndex,player.equipment_[matchingSlotIndex]);
+            GameServerConnection.instance.invSwap(player,tileOwner,tile.tileId,tile.getItemId(),player,matchingSlotIndex,player.equipment_[matchingSlotIndex]);
          }
          else
          {

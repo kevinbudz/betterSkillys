@@ -1,11 +1,17 @@
-package kabam.rotmg.assets {
-import mx.core.*;
+﻿// Decompiled by AS3 Sorcerer 6.08
+// www.as3sorcerer.com
 
-[Embed(source="EmbeddedAssets_mountainTempleObjects16x16Embed_.png")]
-public class EmbeddedAssets_mountainTempleObjects16x16Embed_ extends BitmapAsset {
-    public function EmbeddedAssets_mountainTempleObjects16x16Embed_() {
-        super();
-        return;
+//kabam.rotmg.assets.EmbeddedAssets_mountainTempleObjects16x16Embed_
+
+package kabam.rotmg.assets
+{
+    import mx.core.BitmapAsset;
+
+[Embed(source="EmbeddedAssets_mountainTempleObjects16x16.png")]
+    public class EmbeddedAssets_mountainTempleObjects16x16Embed_ extends BitmapAsset 
+    {
+
+
     }
-}
-}
+}//package kabam.rotmg.assets
+

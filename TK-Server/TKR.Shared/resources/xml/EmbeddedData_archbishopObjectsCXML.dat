@@ -1,0 +1,3704 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object id="Wall Rosace 1" type="0x1a54">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>1</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Wall Rosace 2" type="0x1a55">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>2</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Wall Rosace 3" type="0x1a56">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>3</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Wall Rosace 4" type="0x1a57">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>4</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Light Shaft Quad" type="0x1a59">
+      <Class>GameObject</Class>
+      <Model>Light Shaft Quad</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x21</Index>
+      </Texture>
+      <Static/>
+      <Rotation>180</Rotation>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Wall Skull mid section" type="0x1a5a">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>5</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Skull right section" type="0x1a5b">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>6</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Skull left section" type="0x1a5c">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>7</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Light Shaft 0" type="0x1a58">
+      <Class>GameObject</Class>
+      <Model>Light Shaft</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x21</Index>
+      </Texture>
+      <Animation period="0.8" prob="1" sync="true">
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x21</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x22</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x23</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x24</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <Rotation>0</Rotation>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Light Shaft 90" type="0x1a5d">
+      <Class>GameObject</Class>
+      <Model>Light Shaft</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x21</Index>
+      </Texture>
+      <Animation period="0.8" prob="1" sync="true">
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x21</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x22</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x23</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x24</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <Rotation>90</Rotation>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Light Shaft 180" type="0x1a5e">
+      <Class>GameObject</Class>
+      <Model>Light Shaft</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x21</Index>
+      </Texture>
+      <Animation period="0.8" prob="1" sync="true">
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x21</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x22</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x23</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x24</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <Rotation>180</Rotation>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Light Shaft 270" type="0x1a5f">
+      <Class>GameObject</Class>
+      <Model>Light Shaft</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x21</Index>
+      </Texture>
+      <Animation period="0.8" prob="1" sync="true">
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x21</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x22</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x23</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x24</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <Rotation>270</Rotation>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Wall blue window right section" type="0x1a60">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>8</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall blue window mid section" type="0x1a61">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>9</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall blue window left section" type="0x1a62">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>10</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Oryx Cage" type="0x1a63">
+      <Class>GameObject</Class>
+      <Model>Oryx Cage</Model>
+      <RandomTexture>
+         <Texture>
+            <File>archbishopObjects16x16</File>
+            <Index>0x0a</Index>
+         </Texture>
+         <Texture>
+            <File>archbishopObjects16x16</File>
+            <Index>0x0b</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Oryx Cage Hung" type="0x1a64">
+      <Class>GameObject</Class>
+      <Model>Oryx Hung Cage</Model>
+      <RandomTexture>
+         <Texture>
+            <File>archbishopObjects16x16</File>
+            <Index>0x0a</Index>
+         </Texture>
+         <Texture>
+            <File>archbishopObjects16x16</File>
+            <Index>0x0b</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Hung Cage Bones" type="0x1a65">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x2c</Index>
+         </Texture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x2d</Index>
+         </Texture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x2e</Index>
+         </Texture>
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </RandomTexture>
+      <NoMiniMap/>
+      <Size>85</Size>
+      <Z>2.5</Z>
+   </Object>
+   <Object id="Hung Cage Helper" type="0x1a66">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object id="Oryx Door 0" type="0x1a67">
+      <Class>GameObject</Class>
+      <Model>Oryx Door</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>18</Index>
+      </Texture>
+      <Rotation>0</Rotation>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Oryx Door 90" type="0x1a68">
+      <Class>GameObject</Class>
+      <Model>Oryx Door</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>18</Index>
+      </Texture>
+      <Rotation>90</Rotation>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Oryx Door 180" type="0x1a69">
+      <Class>GameObject</Class>
+      <Model>Oryx Door</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>18</Index>
+      </Texture>
+      <Rotation>180</Rotation>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Oryx Door 270" type="0x1a6a">
+      <Class>GameObject</Class>
+      <Model>Oryx Door</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>18</Index>
+      </Texture>
+      <Rotation>270</Rotation>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Invisible Wall" type="0x1a6b">
+      <Class>Wall</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </Top>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object id="Grounded Cage Bones" type="0x1a6c">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x2c</Index>
+         </Texture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x2d</Index>
+         </Texture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x2e</Index>
+         </Texture>
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </RandomTexture>
+      <Size>85</Size>
+   </Object>
+   <Object id="Cage Helper" type="0x1a6d">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object id="Wall Beisa Beam Single" type="0x1a6e">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>11</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Beisa Beam Planks Both" type="0x1a6f">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>12</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Beisa Beam Planks Left" type="0x1a70">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>13</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Beisa Planks Mid" type="0x1a71">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>14</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Beisa Beam Planks Right" type="0x1a72">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>15</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Leucoryx column dark" type="0x1a73">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>80</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Leucoryx column tall skull A" type="0x1a74">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>81</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Leucoryx column tall skull B" type="0x1a75">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>82</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Leucoryx column small skull A" type="0x1a76">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>83</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Leucoryx Left Window A" type="0x1a77">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>84</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Leucoryx Left Window B" type="0x1a78">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>85</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Leucoryx Left Window C" type="0x1a79">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>86</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Leucoryx Left Window D" type="0x1a7a">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>87</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Leucoryx Left Window E" type="0x1a7b">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>88</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Leucoryx column small skull B" type="0x1a7c">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>89</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Leucoryx Right Window A" type="0x1a7d">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>90</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Leucoryx Right Window B" type="0x1a7e">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>91</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Leucoryx Right Window C" type="0x1a7f">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>92</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Leucoryx Right Window D" type="0x1a80">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>93</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Leucoryx Right Window E" type="0x1a81">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>94</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Leucoryx column light A" type="0x1a82">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>95</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Leucoryx Main Window A" type="0x1a83">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>96</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Leucoryx Main Window B" type="0x1a84">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>97</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Leucoryx Main Window C" type="0x1a85">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>98</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Leucoryx Main Window D" type="0x1a86">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>99</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Leucoryx Main Window E" type="0x1a87">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>100</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Leucoryx column light B" type="0x1a88">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>101</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Leucoryx vertical table A" type="0x1a89">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x90</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx vertical table B" type="0x1a8a">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x91</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx vertical table C" type="0x1a8b">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x92</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx vertical table D" type="0x1a8c">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x93</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx vertical table E" type="0x1a8d">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x94</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx vertical table F" type="0x1a8e">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x95</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx vertical table G" type="0x1a8f">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x96</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx vertical table H" type="0x1a90">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x97</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx vertical table I" type="0x1a91">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x98</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx horizontal table A" type="0x1a92">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xa0</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx horizontal table B" type="0x1a93">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xa1</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx horizontal table C" type="0x1a94">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xa2</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx horizontal table D" type="0x1a95">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xa3</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx horizontal table F" type="0x1a96">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xa5</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx horizontal table G" type="0x1a97">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xa6</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx horizontal table H" type="0x1a98">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xa7</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx horizontal table I" type="0x1a99">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xa8</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx vertical light border top" type="0x1a9a">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xb0</Index>
+      </Texture>
+      <Animation period="0.6" prob="1">
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0xb0</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0xb1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0xb2</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Candlelight single A" type="0x1a9b">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x3c</Index>
+      </Texture>
+      <Animation period="0.6" prob="1">
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x3d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x3e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x3f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <NoMiniMap/>
+      <Size>85</Size>
+      <Z>0.5</Z>
+   </Object>
+   <Object id="Candlelight single B" type="0x71a0">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x4c</Index>
+      </Texture>
+      <Animation period="0.6" prob="1">
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x4d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x4e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x4f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <NoMiniMap/>
+      <Size>85</Size>
+      <Z>0.5</Z>
+   </Object>
+   <Object id="Candlelight double" type="0x71a1">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x5c</Index>
+      </Texture>
+      <Animation period="0.6" prob="1">
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x5d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x5e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x5f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <NoMiniMap/>
+      <Size>85</Size>
+      <Z>0.5</Z>
+   </Object>
+   <Object id="Candlelight triple A" type="0x71a2">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x6c</Index>
+      </Texture>
+      <Animation period="0.6" prob="1">
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x6d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x6e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x6f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <NoMiniMap/>
+      <Size>85</Size>
+      <Z>0.5</Z>
+   </Object>
+   <Object id="Candlelight triple B" type="0x71a3">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x7c</Index>
+      </Texture>
+      <Animation period="0.6" prob="1">
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x7d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x7e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x7f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <NoMiniMap/>
+      <Size>85</Size>
+      <Z>0.5</Z>
+   </Object>
+   <Object id="Candlelight quadruple" type="0x71a4">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x8c</Index>
+      </Texture>
+      <Animation period="0.6" prob="1">
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x8d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x8e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x8f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <NoMiniMap/>
+      <Size>85</Size>
+      <Z>0.5</Z>
+   </Object>
+   <Object id="Leucoryx vertical light border bot" type="0x71a5">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xc0</Index>
+      </Texture>
+      <Animation period="0.6" prob="1">
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0xc0</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0xc1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0xc2</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx inner light" type="0x71a6">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xd0</Index>
+      </Texture>
+      <Animation period="0.6" prob="1">
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0xd0</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0xd1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0xd2</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx horizontal light border left" type="0x71a7">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xb3</Index>
+      </Texture>
+      <Animation period="0.6" prob="1">
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0xb3</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0xb4</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0xb5</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx horizontal light border right" type="0x71a8">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xc3</Index>
+      </Texture>
+      <Animation period="0.6" prob="1">
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0xc3</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0xc4</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0xc5</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx vertical light border top helper" type="0x71a9">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x1e</Index>
+      </Texture>
+   </Object>
+   <Object id="Leucoryx vertical light border bot helper" type="0x71aa">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x1e</Index>
+      </Texture>
+   </Object>
+   <Object id="Leucoryx horizontal light border left helper" type="0x71ab">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x1e</Index>
+      </Texture>
+   </Object>
+   <Object id="Leucoryx horizontal light border right helper" type="0x71ac">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x1e</Index>
+      </Texture>
+   </Object>
+   <Object id="Leucoryx inner light helper" type="0x71ad">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x1e</Index>
+      </Texture>
+   </Object>
+   <Object id="Black Bones A" type="0x71ae">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xc6</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0xc6</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0xc7</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0xc8</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0xc9</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x300</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x301</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="7">
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x302</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="8">
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x303</Index>
+         </Texture>
+      </AltTexture>
+      <NoMiniMap/>
+      <Size>85</Size>
+      <Z>0.5</Z>
+   </Object>
+   <Object id="Black Bones B" type="0x71af">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xd5</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x304</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x305</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x306</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0xd5</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0xd6</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0xd7</Index>
+         </Texture>
+      </AltTexture>
+      <NoMiniMap/>
+      <Size>85</Size>
+      <Z>0.5</Z>
+   </Object>
+   <Object id="Small cross" type="0x71b0">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x307</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0xd8</Index>
+         </Texture>
+      </AltTexture>
+      <NoMiniMap/>
+      <Size>85</Size>
+      <Z>0.5</Z>
+   </Object>
+   <Object id="Small altar prop" type="0x71b1">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x308</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x308</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x309</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x30a</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0xd9</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x1c0</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x1c1</Index>
+         </Texture>
+      </AltTexture>
+      <NoMiniMap/>
+      <Size>85</Size>
+      <Z>0.5</Z>
+   </Object>
+   <Object id="Leucoryx Double A" type="0x71b2">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0xa6</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xb6</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx Double B" type="0x71b3">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0xa7</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xb7</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx Double C" type="0x71b4">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0xa8</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xb8</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx Double D" type="0x71b5">
+      <Class>Wall</Class>
+      <Top>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0xa9</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xb9</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="Leucoryx altar cross helper" type="0x71b6">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x1d</Index>
+      </Texture>
+   </Object>
+   <Object id="Leucoryx altar prop helper" type="0x71b7">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x1d</Index>
+      </Texture>
+   </Object>
+   <Object id="Leucoryx statue A" type="0x71b8">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x100</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>archbishopObjects16x16</File>
+            <Index>0x31</Index>
+         </Texture>
+      </AltTexture>
+      <NoMiniMap/>
+      <Size>85</Size>
+      <Z>1</Z>
+   </Object>
+   <Object id="Leucoryx statue B" type="0x71b9">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x101</Index>
+      </Texture>
+      <NoMiniMap/>
+      <AltTexture id="1">
+         <Texture>
+            <File>archbishopObjects16x16</File>
+            <Index>0x32</Index>
+         </Texture>
+      </AltTexture>
+      <Size>85</Size>
+      <Z>1</Z>
+   </Object>
+   <Object id="Leucoryx large cross" type="0x71ba">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x102</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>archbishopObjects16x16</File>
+            <Index>0x33</Index>
+         </Texture>
+      </AltTexture>
+      <NoMiniMap/>
+      <Size>85</Size>
+      <Z>1</Z>
+   </Object>
+   <Object id="Leucoryx large bones" type="0x71bb">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x103</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>archbishopObjects16x16</File>
+            <Index>0x103</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>archbishopObjects16x16</File>
+            <Index>0x104</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>archbishopObjects16x16</File>
+            <Index>0x105</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>archbishopObjects16x16</File>
+            <Index>0x34</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>archbishopObjects16x16</File>
+            <Index>0x35</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>archbishopObjects16x16</File>
+            <Index>0x36</Index>
+         </Texture>
+      </AltTexture>
+      <NoMiniMap/>
+      <Size>80</Size>
+      <Z>1</Z>
+   </Object>
+   <Object id="High Candle A helper" type="0x71bc">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x1d</Index>
+      </Texture>
+   </Object>
+   <Object id="Leucoryx statue A helper" type="0x71bd">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x1d</Index>
+      </Texture>
+   </Object>
+   <Object id="Leucoryx statue B helper" type="0x71be">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x1d</Index>
+      </Texture>
+   </Object>
+   <Object id="Leucoryx large bones helper" type="0x71bf">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x1d</Index>
+      </Texture>
+   </Object>
+   <Object id="Leucoryx large cross helper" type="0x71c0">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x1d</Index>
+      </Texture>
+   </Object>
+   <Object id="High Candlelight triple A" type="0x71c1">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x6c</Index>
+      </Texture>
+      <Animation period="0.6" prob="1">
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x6d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x6e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x6f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <NoMiniMap/>
+      <Size>85</Size>
+      <Z>0.5</Z>
+   </Object>
+   <Object id="High Candlelight triple B" type="0x71c2">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x7c</Index>
+      </Texture>
+      <Animation period="0.6" prob="1">
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x7d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x7e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>archbishopObjects16x16</File>
+               <Index>0x7f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <NoMiniMap/>
+      <Size>85</Size>
+      <Z>0.5</Z>
+   </Object>
+   <Object id="High Candle B helper" type="0x71c3">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x1d</Index>
+      </Texture>
+   </Object>
+   <Object id="Leucoryx inner bones helper" type="0x71c4">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x1e</Index>
+      </Texture>
+   </Object>
+   <Object id="Leucoryx horizontal bones border left helper" type="0x71c5">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x1e</Index>
+      </Texture>
+   </Object>
+   <Object id="Leucoryx horizontal bones border right helper" type="0x71c6">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x1e</Index>
+      </Texture>
+   </Object>
+   <Object id="Rosace light B" type="0x71c7">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x151</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Rosace light C" type="0x71c8">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x152</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Rosace light D" type="0x71c9">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x160</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Rosace light E" type="0x71ca">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x161</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Rosace light F" type="0x71cb">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x162</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Rosace light G" type="0x71cc">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x170</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Rosace light H" type="0x71cd">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x171</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Rosace light I" type="0x71ce">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x172</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Left Rosace light A" type="0x71cf">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x180</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Left Rosace light B" type="0x71d0">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x190</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Left Rosace light C" type="0x71d1">
+      <Class>GameObject</Class>
+      <Static/>
+      <DrawOnGround/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1a0</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Left Rosace light D" type="0x71d2">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1b0</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Right Rosace light A" type="0x71d3">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x181</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Right Rosace light B" type="0x71d4">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x191</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Right Rosace light C" type="0x71d5">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1a1</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Right Rosace light D" type="0x71d6">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1b1</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Rosace light A" type="0x71d7">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x150</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Left Window light A" type="0x71d8">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x153</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Left Window light B" type="0x71d9">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x154</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Left Window light C" type="0x71da">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x155</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Left Window light D" type="0x71db">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x156</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Left Window light E" type="0x71dc">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x157</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Left Window light F" type="0x71dd">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x163</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Left Window light G" type="0x71de">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x164</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Left Window light H" type="0x71df">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x165</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Left Window light I" type="0x71e0">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x166</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Left Window light J" type="0x71e1">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x167</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Right Window light A" type="0x71e2">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x173</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Right Window light B" type="0x71e3">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x174</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Right Window light C" type="0x71e4">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x175</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>85</Size>
+      <Z>0</Z>
+   </Object>
+   <Object id="Right Window light D" type="0x71e5">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x176</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Right Window light E" type="0x71e6">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x177</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Right Window light F" type="0x71e7">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x183</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Right Window light G" type="0x71e8">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x184</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Right Window light H" type="0x71e9">
+      <Class>GameObject</Class>
+      <Static/>
+      <DrawOnGround/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x185</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Right Window light I" type="0x71ea">
+      <Class>GameObject</Class>
+      <Static/>
+      <DrawOnGround/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x186</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Right Window light J" type="0x71eb">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Static/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x187</Index>
+      </Texture>
+      <NoMiniMap/>
+   </Object>
+   <Object id="Wall Lx column A" type="0x71ec">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>102</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx skull A" type="0x71ed">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>103</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx skull B" type="0x71ef">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>104</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx side rosace A" type="0x71f0">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>105</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx side rosace B" type="0x71f1">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>106</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx side rosace C" type="0x71f2">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>107</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx side rosace D" type="0x71f3">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>108</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx side rosace E" type="0x71f4">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>109</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx side crosses A" type="0x71f5">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>110</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx side crosses B" type="0x71f6">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>111</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx side crosses C" type="0x71f7">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>112</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx side crosses D" type="0x71f8">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>113</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx side crosses E" type="0x71f9">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>114</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx side crosses F" type="0x71fA">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>115</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx side crosses G" type="0x71fB">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>116</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx side long window A" type="0x71fC">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>117</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx side long window B" type="0x71fD">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>118</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx side long window C" type="0x71fE">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>119</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx side long window D" type="0x71fF">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>120</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx Right column A" type="0x7200">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>102</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx Right skull A" type="0x7201">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>103</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx Right skull B" type="0x7202">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>104</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx Right side rosace A" type="0x7203">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>105</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx Right side rosace B" type="0x7204">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>106</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx Right side rosace C" type="0x7205">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>107</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx Right side rosace D" type="0x7206">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>108</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx Right side rosace E" type="0x7207">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>109</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx Right side crosses A" type="0x7208">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>110</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx Right side crosses B" type="0x7209">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>111</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx Right side crosses C" type="0x1b1c">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>112</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx Right side crosses D" type="0x1b1d">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>113</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx Right side crosses E" type="0x1b1e">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>114</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx Right side crosses F" type="0x1b1f">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>115</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx Right side crosses G" type="0x1b20">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>116</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx Right side long window A" type="0x1b21">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>117</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx Right side long window B" type="0x1b22">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>118</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx Right side long window C" type="0x1b23">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>119</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Wall Lx Right side long window D" type="0x1b24">
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>120</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Lx left rosace A" type="0x1b25">
+      <Class>GameObject</Class>
+      <DrawOnGround/>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x11a</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>85</Size>
+      <Z>0</Z>
+   </Object>
+   <Object id="Gemsbok oryx wall 0" type="0x1b26">
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>0x14</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Gemsbok oryx wall 1" type="0x1b27">
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>0x15</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <BlocksSight/>
+   </Object>
+   <Object id="Gemsbok altar 0" type="0x1b28">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x41</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Gemsbok altar 1" type="0x1b29">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x42</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Gemsbok altar 2" type="0x1b2a">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x43</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Gemsbok altar 3" type="0x1b2b">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x44</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Gemsbok altar 4" type="0x1b2c">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x45</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Gemsbok altar 5" type="0x1b2d">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x46</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Gemsbok altar 6" type="0x1b2e">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x47</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Gemsbok altar 7" type="0x1b2f">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x48</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Gemsbok altar 8" type="0x1b30">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x49</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Gemsbok altar 9" type="0x1b31">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x4a</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Gemsbok altar 0 SE" type="0xb48b">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x41</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <Rotation>180</Rotation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Gemsbok altar 1 SE" type="0xb48c">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x42</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <Rotation>180</Rotation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Gemsbok altar 2 SE" type="0xb48d">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x43</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <Rotation>180</Rotation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Gemsbok altar 3 SE" type="0xb48e">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x44</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <Rotation>180</Rotation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Gemsbok altar 4 SE" type="0xb48f">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x45</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <Rotation>180</Rotation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Gemsbok altar 5 SE" type="0xb490">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x46</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <Rotation>180</Rotation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Gemsbok altar 6 SE" type="0xb491">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x47</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <Rotation>180</Rotation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Gemsbok altar 7 SE" type="0xb492">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x48</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <Rotation>180</Rotation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Gemsbok altar 8 SE" type="0xb493">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x49</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <Rotation>180</Rotation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Gemsbok altar 9 SE" type="0xb494">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0x4a</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <Rotation>180</Rotation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Gemsbok oryx wall 0 SE" type="0xb495">
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>0x14</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <Rotation>180</Rotation>
+      <BlocksSight/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="Gemsbok oryx wall 1 SE" type="0xb496">
+      <Texture>
+         <File>archbishopObjects64x64</File>
+         <Index>0x15</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Four High Wall</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <Rotation>180</Rotation>
+      <BlocksSight/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object id="O3 Table paper A" type="0x1b32">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper B" type="0x1b33">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xe1</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper C" type="0x1b34">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xe2</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper D" type="0x1b35">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xe3</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper E" type="0x1b36">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xe4</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper F" type="0x1b37">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xe5</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper G" type="0x1b38">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xe6</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper H" type="0x1b39">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xe7</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper I" type="0x1b3a">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xe8</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper J" type="0x1b3b">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xe9</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper K" type="0x1b3c">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xea</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper L" type="0x1b3d">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xeb</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper M" type="0x1b3e">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xec</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper N" type="0x1b3f">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xed</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper O" type="0x1b40">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xee</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper P" type="0x1b41">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xef</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper Q" type="0x1b42">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xf0</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper R" type="0x1b43">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xf1</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper S" type="0x1b44">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xf2</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper T" type="0x1b45">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xf3</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper U" type="0x1b46">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xf4</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper V" type="0x1b47">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xf5</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper W" type="0x1b48">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xf6</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper X" type="0x1b49">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xf7</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper Y" type="0x1b4a">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xf8</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper Z" type="0x1b4b">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xf9</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper AA" type="0x1b4c">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xfa</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper AB" type="0x1b4d">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xfb</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper AC" type="0x1b4e">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xfc</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 Table paper AD" type="0x1b4f">
+      <Texture>
+         <File>archbishopObjects16x16</File>
+         <Index>0xfd</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object id="O3 props A" type="0x1b50">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x220</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <DrawOnGround/>
+   </Object>
+   <Object id="O3 props B" type="0x1b51">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x221</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <DrawOnGround/>
+   </Object>
+   <Object id="O3 props C" type="0x1b52">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x222</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <DrawOnGround/>
+   </Object>
+   <Object id="O3 props D" type="0x1b53">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x223</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <DrawOnGround/>
+   </Object>
+   <Object id="O3 props E" type="0x1b54">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x224</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <DrawOnGround/>
+   </Object>
+   <Object id="O3 props F" type="0x1b55">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x225</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <DrawOnGround/>
+   </Object>
+   <Object id="O3 props G" type="0x1b56">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x226</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <DrawOnGround/>
+   </Object>
+   <Object id="O3 props H" type="0x1b57">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x227</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <DrawOnGround/>
+   </Object>
+   <Object id="O3 props I" type="0x1b58">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x228</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <DrawOnGround/>
+   </Object>
+   <Object id="O3 props J" type="0x1b59">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x229</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <DrawOnGround/>
+   </Object>
+   <Object id="O3 props K" type="0x1b5a">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x22a</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <DrawOnGround/>
+   </Object>
+   <Object id="O3 props L" type="0x1b5b">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x22b</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <DrawOnGround/>
+   </Object>
+   <Object id="O3 props M" type="0x1b5c">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x22c</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <DrawOnGround/>
+   </Object>
+   <Object id="O3 props N" type="0x1b5d">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x22d</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <DrawOnGround/>
+   </Object>
+   <Object id="O3 props O" type="0x1b5e">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x22e</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <DrawOnGround/>
+   </Object>
+   <Object id="O3 props P" type="0x1b5f">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x22f</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+   </Object>
+   <Object id="O3 props Q" type="0x1b60">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x230</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+   </Object>
+   <Object id="O3 props R" type="0x1b61">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x231</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+   </Object>
+   <Object id="O3 props S" type="0x1b62">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x232</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+   </Object>
+   <Object id="O3 props T" type="0x1b63">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x233</Index>
+      </Texture>
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+   </Object>
+</Objects>

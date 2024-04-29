@@ -38,21 +38,6 @@ public class TierUtil
                 color = 16777215;
                 tierTag = "T" + xml.Tier;
             }
-            else if (talisman){
-
-                if(props.isMythicTalisman_){
-                    color = TooltipHelper.MYTHICAL_COLOR;
-                }
-                else if(props.isLegendaryTalisman_){
-                    color = TooltipHelper.LEGENDARY_COLOR;
-                }
-                else{
-                    color = 16777215;
-
-                }
-
-                tierTag = "TL";
-            }
             else if(xml.hasOwnProperty("Rare")){
                 color = 0x7E00E8;
                 tierTag = "UT";

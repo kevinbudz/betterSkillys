@@ -325,7 +325,7 @@ package kabam.rotmg.minimap.view
                   if(go.props_.isEnemy_)
                   {
                      fillColor = 16711680;
-                     if(go.props_.isSpecialEnemy_)
+                     /*if(go.props_.isSpecialEnemy_)
                      {
                         if(go.objectType_ == 0x0935)
                            fillColor = 0x00FFFF;
@@ -333,7 +333,7 @@ package kabam.rotmg.minimap.view
                            fillColor = 0xDCDCDC;
                         else if(go.objectType_ == 0x4937)
                            fillColor = 0xFF8C00;
-                     }
+                     }*/
                   }
                   else
                   {

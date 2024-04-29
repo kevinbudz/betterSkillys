@@ -42,7 +42,6 @@ namespace TKR.WorldServer.core
             ApplyEquipBonus();
             ApplyActivateBonus();
             IncrementStatBoost();
-            _player.RecalculateTalismanEffects();
 
             for (var i = 0; i < _boost.Length; i++)
                 _boostSV[i].SetValue(_boost[i]);

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<GroundTypes>
+   <Ground type="0xb26f" id="GC Grass">
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x10</Index>
+      </Texture>
+      <RandomOffset/>
+      <BlendPriority>4</BlendPriority>
+   </Ground>
+   <Ground type="0xb270" id="GC Stone">
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x11</Index>
+      </Texture>
+      <RandomOffset/>
+      <BlendPriority>5</BlendPriority>
+   </Ground>
+   <Ground type="0xb271" id="GC Worm Goop">
+      <DisplayId>Crystallized Water</DisplayId>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x73</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+      <Animate dx=".33" dy=".33">Flow</Animate>
+      <Sink/>
+      <Speed>.666</Speed>
+   </Ground>
+   <Ground type="0xb272" id="GC Mushroom Water">
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x12</Index>
+      </Texture>
+      <Animate dx=".33" dy=".33">Flow</Animate>
+      <Sink/>
+      <Speed>.4</Speed>
+   </Ground>
+   <Ground type="0xb273" id="GC Grass Light">
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x13</Index>
+      </Texture>
+      <RandomOffset/>
+      <BlendPriority>3</BlendPriority>
+   </Ground>
+   <Ground type="0xb2a5" id="GC Wood Horizontal">
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x42</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0xb2a6" id="GC Wood Vertical">
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x43</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0xd00" id="FC Lava">
+      <RandomTexture>
+         <Texture>
+            <File>fungalCavernObjects8x8</File>
+            <Index>0x54</Index>
+         </Texture>
+         <Texture>
+            <File>fungalCavernObjects8x8</File>
+            <Index>0x55</Index>
+         </Texture>
+         <Texture>
+            <File>fungalCavernObjects8x8</File>
+            <Index>0x54</Index>
+         </Texture>
+         <Texture>
+            <File>fungalCavernObjects8x8</File>
+            <Index>0x55</Index>
+         </Texture>
+         <Texture>
+            <File>fungalCavernObjects8x8</File>
+            <Index>0x44</Index>
+         </Texture>
+         <Texture>
+            <File>fungalCavernObjects8x8</File>
+            <Index>0x45</Index>
+         </Texture>
+         <Texture>
+            <File>fungalCavernObjects8x8</File>
+            <Index>0x46</Index>
+         </Texture>
+         <Texture>
+            <File>fungalCavernObjects8x8</File>
+            <Index>0x47</Index>
+         </Texture>
+      </RandomTexture>
+      <BlendPriority>3</BlendPriority>
+      <NoWalk/>
+   </Ground>
+</GroundTypes>

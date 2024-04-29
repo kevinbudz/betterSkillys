@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<GroundTypes>
+   <Ground type="0x123" id="pD Colony Slot">
+      <RandomTexture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0x50</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0x51</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0x52</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0x124" id="pD Creepasite">
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0xd0</Index>
+      </Texture>
+      <RandomOffset/>
+      <BlendPriority>-5</BlendPriority>
+   </Ground>
+   <Ground type="0x125" id="pD Creepasite 2">
+      <RandomTexture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xd1</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xd2</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xd3</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xd4</Index>
+         </Texture>
+      </RandomTexture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x126" id="pD Creepasite Light">
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x61</Index>
+      </Texture>
+      <RandomOffset/>
+      <BlendPriority>-7</BlendPriority>
+   </Ground>
+   <Ground type="0x133" id="pD Creepasite Light Top">
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x61</Index>
+      </Texture>
+      <RandomOffset/>
+      <BlendPriority>10</BlendPriority>
+   </Ground>
+   <Ground type="0x128" id="pD Barrel Slot">
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0xc6</Index>
+      </Texture>
+      <BlendPriority>5</BlendPriority>
+      <Color>0x97652A</Color>
+   </Ground>
+   <Ground type="0x129" id="pD Cobble">
+      <RandomTexture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xe0</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xe1</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xf2</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xf3</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0x130" id="pD Cobble Pebble">
+      <RandomTexture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xe2</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xe3</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0x131" id="pD Wall Blend">
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0xff</Index>
+      </Texture>
+      <BlendPriority>99</BlendPriority>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0x132" id="pD Boss Floor">
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0xc7</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb3bb" id="Infested Water">
+      <Texture>
+         <File>lofiEnvironment3</File>
+         <Index>0x19e</Index>
+      </Texture>
+      <Sink/>
+      <Speed>0.6</Speed>
+      <Animate dx=".4" dy=".4">Wave</Animate>
+      <BlendPriority>-10</BlendPriority>
+   </Ground>
+   <Ground type="0xb3bc" id="Infested Water Dark">
+      <Texture>
+         <File>lofiEnvironment3</File>
+         <Index>0x19d</Index>
+      </Texture>
+      <NoWalk/>
+      <Animate dx=".4" dy=".4">Wave</Animate>
+      <BlendPriority>-11</BlendPriority>
+   </Ground>
+</GroundTypes>

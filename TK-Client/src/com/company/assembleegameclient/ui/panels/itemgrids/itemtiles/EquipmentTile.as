@@ -11,19 +11,19 @@ import com.company.assembleegameclient.objects.Player;
    import flash.display.BitmapData;
    import flash.filters.ColorMatrixFilter;
    import kabam.rotmg.constants.ItemConstants;
-   
+
    public class EquipmentTile extends InteractiveItemTile
    {
 
       private static const greyColorFilter:ColorMatrixFilter = new ColorMatrixFilter(MoreColorUtil.singleColorFilterMatrix(3552822));
-       
-      
+
+
       public var backgroundDetail:Bitmap;
-      
+
       public var itemType:int;
-      
+
       private var minManaUsage:int;
-      
+
       public function EquipmentTile(id:int, parentGrid:ItemGrid, isInteractive:Boolean, bgColor:int = -1)
       {
          if(bgColor != -1){
@@ -31,50 +31,14 @@ import com.company.assembleegameclient.objects.Player;
          }
          super(id,parentGrid,isInteractive);
       }
-      
+
       override public function canHoldItem(type:int) : Boolean
       {
-         if(this.itemType == ItemConstants.TALISMAN_TYPE) {
-            var properties:ObjectProperties = ObjectLibrary.propsLibrary_[type];
-            if (properties != null)
-            {
-               if(tileId < 24 && !properties.isCommonTalisman_){
-                  return false;
-               }
-               if((tileId == 26 || tileId == 27) && !properties.isMythicTalisman_){
-                  return false;
-               }
-               if((tileId == 24 || tileId == 25) && !properties.isLegendaryTalisman_){
-                  return false;
-               }
-            }
-         }
          return type <= 0 || this.itemType == ObjectLibrary.getSlotTypeFromType(type);
       }
 
       override public function canHoldItemPlayer(player:Player, type:int) : Boolean
       {
-         if(this.itemType == ItemConstants.TALISMAN_TYPE) {
-            var properties:ObjectProperties = ObjectLibrary.propsLibrary_[type];
-            if (properties != null)
-            {
-               for(var i = 20; i < 28; i++){
-                  if(player.equipment_[i] == type && properties.onlyOneTalisman_){
-                     return false;
-                  }
-               }
-
-               if(tileId < 24 && !properties.isCommonTalisman_){
-                  return false;
-               }
-               if((tileId == 26 || tileId == 27) && !properties.isMythicTalisman_){
-                  return false;
-               }
-               if((tileId == 24 || tileId == 25) && !properties.isLegendaryTalisman_){
-                  return false;
-               }
-            }
-         }
          return type <= 0 || this.itemType == ObjectLibrary.getSlotTypeFromType(type);
       }
 
@@ -158,14 +122,6 @@ import com.company.assembleegameclient.objects.Player;
             case ItemConstants.SHURIKEN_TYPE:
                bd = AssetLibrary.getImageFromSet("lofiObj3", 555);
                break;
-            case ItemConstants.TALISMAN_TYPE:
-               bd = AssetLibrary.getImageFromSet("lofiObj3", 0);
-               dx = 1;
-               dy = 1;
-               break;
-            case ItemConstants.BOLAS_TYPE:
-               bd = AssetLibrary.getImageFromSet("lofiObj6", 0xe0);
-               break;
          }
 
          if(bd != null)
@@ -185,7 +141,7 @@ import com.company.assembleegameclient.objects.Player;
          }
          this.itemType = type;
       }
-      
+
       override public function setItem(itemId:int, itemData:Object) : Boolean
       {
          var itemChanged:Boolean = super.setItem(itemId, itemData);
@@ -196,7 +152,7 @@ import com.company.assembleegameclient.objects.Player;
          }
          return itemChanged;
       }
-      
+
       private function updateMinMana() : void
       {
          var itemDataXML:XML = null;
@@ -224,7 +180,7 @@ import com.company.assembleegameclient.objects.Player;
             this.minManaUsage = 0;
          }
       }
-      
+
       public function updateDim(player:Player, slot:int) : void
       {
          var canUse:Boolean = true;
@@ -238,12 +194,12 @@ import com.company.assembleegameclient.objects.Player;
          }
          itemSprite.setDim(!canUse || player && player.mp_ < this.minManaUsage);
       }
-      
+
       override protected function beginDragCallback() : void
       {
          this.backgroundDetail.visible = true;
       }
-      
+
       override protected function endDragCallback() : void
       {
          this.backgroundDetail.visible = itemSprite.itemId <= 0;

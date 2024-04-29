@@ -9,15 +9,11 @@
     "type": "Account",
     "name": "AppEngine",
     "bindAddress": "*",
-    "port": 2000
+    "port": 8080
   },
   "serverSettings": {
     "logFolder": "./logs",
     "resourceFolder": "./resources",
     "sendGridApiKey": ""
-  },
-  "discordIntegration": {
-    "botName": "Android",
-    "botToken": ""
   }
 }

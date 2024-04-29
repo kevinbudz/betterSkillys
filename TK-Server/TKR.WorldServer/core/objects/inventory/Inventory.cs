@@ -167,34 +167,6 @@ namespace TKR.WorldServer.core.objects.inventory
                     for (var i = InventoryConstants.NUM_EQUIPMENT_SLOTS; i < InventoryConstants.NUM_EQUIPMENT_SLOTS + InventoryConstants.NUM_INVENTORY_SLOTS || plr.HasBackpack && i < plr.Inventory.Length; i++)
                         if (_items[i] == null)
                             return i;
-
-                    if (item.SlotType == InventoryConstants.TALISMAN_SLOT_TYPE)
-                    {
-                        var offset = InventoryConstants.NUM_EQUIPMENT_SLOTS + InventoryConstants.NUM_INVENTORY_SLOTS + InventoryConstants.NUM_BACKPACK_SLOTS;
-                        for (var i = offset; i < offset + InventoryConstants.NUM_TALISMAN_SLOTS; i++)
-                            if (_items[i] != null && item.TalismanItemDesc != null && item.TalismanItemDesc.OnlyOne && _items[i].ObjectType == item.ObjectType)
-                                return -1;
-
-                        if (item.TalismanItemDesc.Common)
-                        {
-                            for (var i = offset; i < offset + 4; i++)
-                                if (_items[i] == null && playerDesc.SlotTypes[i] == item.SlotType)
-                                    return i;
-
-                        }
-                        else if (item.TalismanItemDesc.Legendary)
-                        {
-                            for (var i = offset + 4; i < offset + 6; i++)
-                                if (_items[i] == null && playerDesc.SlotTypes[i] == item.SlotType)
-                                    return i;
-                        }
-                        else if (item.TalismanItemDesc.Mythic)
-                        {
-                            for (var i = offset + 6; i < offset + 8; i++)
-                                if (_items[i] == null && playerDesc.SlotTypes[i] == item.SlotType)
-                                    return i;
-                        }
-                    }
                 }
                 else
                 {

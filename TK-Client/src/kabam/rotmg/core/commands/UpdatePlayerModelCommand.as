@@ -25,7 +25,7 @@ import kabam.rotmg.core.model.PlayerModel;
       {
          this.model.setCharacterList(new SavedCharactersList(this.data));
          this.model.isInvalidated = false;
-         Music.load(this.model.getMenuMusic());
+         //Music.load(this.model.getMenuMusic());
       }
    }
 }

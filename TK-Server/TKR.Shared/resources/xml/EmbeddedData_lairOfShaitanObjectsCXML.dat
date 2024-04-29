@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x6d9a" id="md2 Head of Shaitan">
+      <DisplayId>Shaitan the Advisor</DisplayId>
+      <Class>Character</Class>
+      <Group>Spawners</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>92</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skull_shrine_hit</HitSound>
+      <DeathSound>monster/skull_shrine_death</DeathSound>
+      <Size>250</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>180000</MaxHitPoints>
+      <Defense>60</Defense>
+      <Exp>20000</Exp>
+      <ParalyzeImmune/>
+      <DazedImmune/>
+      <StasisImmune/>
+      <StunImmune/>
+      <EventChestBoss/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>Fire Storm</ObjectId>
+         <Speed>45</Speed>
+         <Damage>150</Damage>
+         <LifetimeMS>6000</LifetimeMS>
+         <Size>125</Size>
+         <ArmorPiercing/>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="9">
+         <ObjectId>Oryx Horde Small Dark Burst</ObjectId>
+         <Speed>60</Speed>
+         <Damage>39</Damage>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>125</Size>
+         <ArmorPiercing/>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="3">Silenced</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Dragon Attack Red Firewave</ObjectId>
+         <Speed>30</Speed>
+         <Damage>70</Damage>
+         <LifetimeMS>6000</LifetimeMS>
+         <Size>125</Size>
+         <ConditionEffect duration="2">Weak</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Science Fire Ball</ObjectId>
+         <Speed>40</Speed>
+         <Damage>80</Damage>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="0.5">Paralyzed</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="9">
+         <AnimatedTexture>
+            <File>lairOfShaitanChars16x16</File>
+            <Index>0</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="10">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="11">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>1</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="12">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>2</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="13">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>3</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="14">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>4</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="15">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>5</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="16">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>6</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x16a</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x16b</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x16c</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x16d</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x16e</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="7">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x16f</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="8">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x170</Index>
+         </Texture>
+      </AltTexture>
+      <Projectile id="4">
+         <ObjectId>Web Thread</ObjectId>
+         <Speed>55</Speed>
+         <Damage>40</Damage>
+         <LifetimeMS>5000</LifetimeMS>
+         <Size>160</Size>
+         <ConditionEffect duration="2">Armor Broken</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>md2 laser body</ObjectId>
+         <Speed>100</Speed>
+         <Damage>160</Damage>
+         <LifetimeMS>5000</LifetimeMS>
+         <Size>280</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>md2 laser tail</ObjectId>
+         <Speed>100</Speed>
+         <Damage>160</Damage>
+         <LifetimeMS>5000</LifetimeMS>
+         <Size>280</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>md2 laser head</ObjectId>
+         <Speed>100</Speed>
+         <Damage>160</Damage>
+         <LifetimeMS>5000</LifetimeMS>
+         <Size>280</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Purple Shuriken</ObjectId>
+         <Speed>120</Speed>
+         <Damage>60</Damage>
+         <LifetimeMS>5000</LifetimeMS>
+         <Size>100</Size>
+         <Amplitude>1</Amplitude>
+         <Frequency>9</Frequency>
+         <ArmorPiercing/>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0x6d9b" id="md2 Right Hand of Shaitan">
+      <DisplayId>Right Hand of Shaitan</DisplayId>
+      <Class>Character</Class>
+      <Group>Spawners</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>91</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flaming_skulls_hit</HitSound>
+      <DeathSound>monster/flaming_skulls_death</DeathSound>
+      <Size>200</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>10500</MaxHitPoints>
+      <Defense>70</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <StasisImmune/>
+      <StunImmune/>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x158</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x159</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <Projectile id="0">
+         <ObjectId>Fire Bullet</ObjectId>
+         <Speed>70</Speed>
+         <Damage>125</Damage>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Fire Storm</ObjectId>
+         <Speed>30</Speed>
+         <ArmorPiercing/>
+         <Damage>100</Damage>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Science Fire Ball</ObjectId>
+         <Speed>40</Speed>
+         <Damage>50</Damage>
+         <LifetimeMS>500</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="0.5">Paralyzed</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0x6d97" id="md2 Explode">
+      <DisplayId>Shaitan the Advisor</DisplayId>
+      <Class>Character</Class>
+      <Group>Spawners</Group>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>200</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>20000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <StasisImmune/>
+      <StunImmune/>
+      <Projectile id="0">
+         <ObjectId>Dragon Attack Red Firewave</ObjectId>
+         <Speed>35</Speed>
+         <Damage>70</Damage>
+         <LifetimeMS>1600</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="1.0">Quiet</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x6e11" id="md2 playerlock">
+      <DisplayId>Right Hand of Shaitan</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x6d9c" id="md2 Left Hand of Shaitan">
+      <DisplayId>Left Hand of Shaitan</DisplayId>
+      <Class>Character</Class>
+      <Group>Spawners</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>90</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flaming_skulls_hit</HitSound>
+      <DeathSound>monster/flaming_skulls_death</DeathSound>
+      <Size>200</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>10500</MaxHitPoints>
+      <Defense>70</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <StasisImmune/>
+      <StunImmune/>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x15A</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0x15B</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <Projectile id="0">
+         <ObjectId>Fire Bullet</ObjectId>
+         <Speed>70</Speed>
+         <Damage>125</Damage>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Fire Storm</ObjectId>
+         <Speed>30</Speed>
+         <ArmorPiercing/>
+         <Damage>100</Damage>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Science Fire Ball</ObjectId>
+         <Speed>40</Speed>
+         <Damage>50</Damage>
+         <LifetimeMS>500</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="0.5">Paralyzed</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0x6d9d" id="md2 Left Smashing Hand">
+      <DisplayId>Left Hand of Shaitan</DisplayId>
+      <Class>Character</Class>
+      <Group>Spawners</Group>
+      <Enemy/>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x169</Index>
+      </Texture>
+      <HitSound>monster/flaming_skulls_hit</HitSound>
+      <DeathSound>monster/flaming_skulls_death</DeathSound>
+      <Size>200</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>20000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <StasisImmune/>
+      <StunImmune/>
+      <Projectile id="0">
+         <ObjectId>Dragon Attack Red Firewave</ObjectId>
+         <Speed>35</Speed>
+         <Damage>70</Damage>
+         <LifetimeMS>1600</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="1.0">Quiet</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x6d9f" id="md2 Right Hand spawner">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x6da0" id="md2 Left Hand spawner">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x6e00" id="md2 LeftHandSmash">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x6e01" id="md2 Up Burst">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x6e02" id="md2 Right Burst">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x6e03" id="md2 Mid Burst">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x6e04" id="md2 Left Burst">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x6e05" id="md2 Lava Makers">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x6e06" id="md2 super hot jumping lava">
+      <DisplayId>Bubbling Lava</DisplayId>
+      <Class>Character</Class>
+      <Group>Spawners</Group>
+      <Enemy/>
+      <NoMiniMap/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>90</Index>
+      </AnimatedTexture>
+      <Size>80</Size>
+      <ShadowSize>0</ShadowSize>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>0x08</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>0x09</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>0x0a</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>0x0b</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>0x0c</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="7">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>0x0d</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="8">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>0x0e</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="9">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>0x0f</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="10">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>0x10</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="11">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>0x11</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="12">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>0x12</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="13">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>0x13</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="14">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>0x14</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="15">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>0x15</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="16">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>0x16</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="17">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>0x17</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="18">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>0x18</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="19">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>0x19</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="20">
+         <Texture>
+            <File>lairOfShaitanObjects16x16</File>
+            <Index>0x1a</Index>
+         </Texture>
+      </AltTexture>
+      <Invincible/>
+   </Object>
+   <Object type="0x6e07" id="md2 landspawner">
+      <DisplayId>Left Hand of Shaitan</DisplayId>
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>91</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x6e08" id="md2 CreepyHands">
+      <DisplayId>Creepy Small Hands</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>90</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flaming_skulls_hit</HitSound>
+      <DeathSound>monster/flaming_skulls_death</DeathSound>
+      <Size>50</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>1250</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>0</Exp>
+      <Projectile id="0">
+         <ObjectId>Fire Storm</ObjectId>
+         <Speed>20</Speed>
+         <Damage>23</Damage>
+         <LifetimeMS>250</LifetimeMS>
+         <Size>50</Size>
+         <ArmorPiercing/>
+         <ConditionEffect duration="0.5">Slowed</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0x6e09" id="md2 CreepyHead">
+      <DisplayId>Creepy Small Heads</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>92</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flaming_skulls_hit</HitSound>
+      <DeathSound>monster/flaming_skulls_death</DeathSound>
+      <Size>75</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Defense>25</Defense>
+      <Exp>0</Exp>
+      <Projectile id="0">
+         <ObjectId>Fire Storm</ObjectId>
+         <Speed>25</Speed>
+         <Damage>70</Damage>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>100</Size>
+         <ArmorPiercing/>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Flame Breath</ObjectId>
+         <Speed>55</Speed>
+         <Damage>90</Damage>
+         <Size>100</Size>
+         <LifetimeMS>8000</LifetimeMS>
+         <PassesCover/>
+         <MultiHit/>
+         <ConditionEffect duration="2.4" target="1">Stasis</ConditionEffect>
+      </Projectile>
+   </Object>
+</Objects>

@@ -1,0 +1,4036 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0xb382" id="AI Alien Pink Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xdc</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb383" id="AI Alien Green Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xdf</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xb384" id="AI Alien Tank Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xde</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb385" id="AI Alien Laser Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xdb</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb386" id="AI Alien Bomb Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xdd</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb31a" id="AI Alien Invasion Controller">
+      <Class>GameObject</Class>
+      <DisplayId>Commander Calbrik</DisplayId>
+      <Enemy/>
+      <Invincible/>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>43</Index>
+      </AnimatedTexture>
+      <Size>-1</Size>
+      <Terrain>Mountains</Terrain>
+      <SpawnProb>0.15</SpawnProb>
+      <PerRealmMax>1</PerRealmMax>
+   </Object>
+   <Object type="0xb387" id="AI Alien Taunt">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>43</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb31b" id="AI Alien Invasion Spawner">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>35</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb31c" id="AI Alien Army Dead">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>35</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb31d" id="AI Alien Mini Machine Dead">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>42</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb31e" id="AI Alien Machine Dead">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>40</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb31f" id="AI Alien Dead">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>43</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb320" id="AI Alien Soldier">
+      <DisplayId>Alien Soldier</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Group>AI Alien Army</Group>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>36</Index>
+      </AnimatedTexture>
+      <HitSound>monster/abyss_demons_hit</HitSound>
+      <DeathSound>monster/abyss_demons_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Defense>25</Defense>
+      <Exp>100</Exp>
+      <Projectile id="0">
+         <ObjectId>AI Alien Pink Shot</ObjectId>
+         <Damage>100</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>600</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb321" id="AI Alien Caster">
+      <DisplayId>Alien Caster</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Group>AI Alien Army</Group>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>35</Index>
+      </AnimatedTexture>
+      <HitSound>monster/abyss_demons_hit</HitSound>
+      <DeathSound>monster/abyss_demons_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>600</MaxHitPoints>
+      <Defense>25</Defense>
+      <Exp>100</Exp>
+      <Projectile id="0">
+         <ObjectId>AI Alien Pink Shot</ObjectId>
+         <Damage>80</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb322" id="AI Alien Elite">
+      <DisplayId>Alien Elite</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Group>AI Alien Army</Group>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>37</Index>
+      </AnimatedTexture>
+      <HitSound>monster/abyss_demons_hit</HitSound>
+      <DeathSound>monster/abyss_demons_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>1400</MaxHitPoints>
+      <Defense>25</Defense>
+      <Exp>100</Exp>
+      <Projectile id="0">
+         <ObjectId>AI Alien Pink Shot</ObjectId>
+         <Damage>110</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>600</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb323" id="AI Alien Mini Satellite">
+      <DisplayId>Alien Mini Satellite</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Group>AI Alien Mini Machine</Group>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>41</Index>
+      </AnimatedTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>25</Defense>
+      <Exp>150</Exp>
+      <Z>0.25</Z>
+      <Flying/>
+      <Projectile id="0">
+         <ObjectId>AI Alien Green Shot</ObjectId>
+         <Damage>130</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb324" id="AI Alien Mini Tank">
+      <DisplayId>Alien Mini Tank</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Group>AI Alien Mini Machine</Group>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>42</Index>
+      </AnimatedTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>25</Defense>
+      <Exp>150</Exp>
+      <Projectile id="0">
+         <ObjectId>AI Alien Tank Shot</ObjectId>
+         <Damage>100</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>900</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb325" id="AI Alien Tank">
+      <DisplayId>Alien Tank</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Group>AI Alien Machine</Group>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>40</Index>
+      </AnimatedTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>25</Defense>
+      <Exp>200</Exp>
+      <Projectile id="0">
+         <ObjectId>AI Alien Tank Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>900</LifetimeMS>
+         <Size>120</Size>
+      </Projectile>
+   </Object>
+   <Object type="0xb326" id="AI Alien Pod">
+      <DisplayId>Alien Pod</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Group>AI Alien Machine</Group>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>39</Index>
+      </AnimatedTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>25</Defense>
+      <Exp>200</Exp>
+      <Projectile id="0">
+         <ObjectId>AI Alien Green Shot</ObjectId>
+         <Damage>130</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>120</Size>
+      </Projectile>
+   </Object>
+   <Object type="0xb327" id="AI Alien UFO">
+      <DisplayId>Alien UFO</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>43</Index>
+      </AnimatedTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>140</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>25</Defense>
+      <Exp>2000</Exp>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Z>0.1</Z>
+      <Flying/>
+      <Quest/>
+      <HealthBarBoss/>
+      <Level>20</Level>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>AI Alien Laser Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>180</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Alien Green Shot</ObjectId>
+         <Damage>130</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb273" id="AI Alien UFO Event">
+      <DisplayId>Alien UFO</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>43</Index>
+      </AnimatedTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>140</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>25</Defense>
+      <Exp>2000</Exp>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Z>0.1</Z>
+      <Flying/>
+      <Quest/>
+      <HealthBarBoss/>
+      <Level>20</Level>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>AI Alien Laser Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>180</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Alien Green Shot</ObjectId>
+         <Damage>130</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb328" id="AI Alien UFO Bomb">
+      <DisplayId>Alien UFO Bomb</DisplayId>
+      <Enemy/>
+      <Invincible/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>38</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <Projectile id="0">
+         <ObjectId>AI Alien Bomb Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb26c" id="AI Realm Wormhole Generator">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb300" id="AI Leprechaun Wormhole Generator">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb2d1" id="AI Malogia Wormhole Generator">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x1c</Index>
+      </Texture>
+      <Size>-1</Size>
+      <Color>0xD96750</Color>
+   </Object>
+   <Object type="0xb2d2" id="AI Untaris Wormhole Generator">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x20</Index>
+      </Texture>
+      <Size>-1</Size>
+      <Color>0x4CA3CF</Color>
+   </Object>
+   <Object type="0xb2d3" id="AI Forax Wormhole Generator">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x24</Index>
+      </Texture>
+      <Size>-1</Size>
+      <Color>0x52D820</Color>
+   </Object>
+   <Object type="0xb2d4" id="AI Katalund Wormhole Generator">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x28</Index>
+      </Texture>
+      <Size>-1</Size>
+      <Color>0xFFFF7A</Color>
+   </Object>
+   <Object type="0xb2d5" id="AI Realm Wormhole">
+      <DisplayId>Realm Wormhole</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <Animation prob="1">
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x2c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x2d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x2e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x2f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0xb356" id="AI Nexus Background Ship">
+      <Class>GameObject</Class>
+      <Size>140</Size>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x40</Index>
+      </Texture>
+      <Animation prob="1">
+         <Frame time="0.6">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x40</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.6">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x41</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0xb357" id="AI Nexus Map Changer">
+      <Class>GameObject</Class>
+      <Size>0</Size>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x40</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb358" id="AI Nexus Ship">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>44</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>0.8</Z>
+      <Flying/>
+   </Object>
+   <Object type="0xb360" id="AI Malogia Blorgian Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xb9</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xb361" id="AI Malogia Phorgian Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xba</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb362" id="AI Malogia Znorgian Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xbb</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xb363" id="AI Malogia Ptorgian Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xbc</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xb364" id="AI Malogia Neo Ptorgian Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xbd</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xb365" id="AI Malogia Neo Znorgian Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xbe</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xb366" id="AI Malogia Suesogian Shot Red">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xbf</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xb367" id="AI Malogia Suesogian Shot Purple">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xc0</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xb368" id="AI Malogia Boulder Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xda</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb2b8" id="AI Malogia Wormhole">
+      <DisplayId>Malogia</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Malogia</DungeonName>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x1c</Index>
+      </Texture>
+      <Animation prob="1">
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x1c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x1d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x1e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x1f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0xb2b9" id="AI Wormhole Gauntlet Controller Red">
+      <DisplayId>Alien Satellite</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x14</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x18</Index>
+         </Texture>
+      </AltTexture>
+      <Size>100</Size>
+      <Z>0.6</Z>
+      <Flying/>
+   </Object>
+   <Object type="0xb34e" id="AI Malogia UFO">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x30</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x31</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x32</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x33</Index>
+         </Texture>
+      </AltTexture>
+      <Z>0.6</Z>
+      <Flying/>
+   </Object>
+   <Object type="0xb353" id="AI Malogia Satellite Core">
+      <DisplayId>Satellite Core</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <HitSound>monster/sprite_god_hit</HitSound>
+      <DeathSound>monster/sprite_god_death</DeathSound>
+      <Size>100</Size>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x42</Index>
+      </Texture>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Exp>500</Exp>
+      <TrackLoot/>
+   </Object>
+   <Object type="0x1ad5" id="AI Malogia Satellite Core Tokens">
+      <DisplayId>Satellite Core</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <HitSound>monster/sprite_god_hit</HitSound>
+      <DeathSound>monster/sprite_god_death</DeathSound>
+      <Size>100</Size>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x42</Index>
+      </Texture>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Exp>500</Exp>
+      <TrackLoot/>
+   </Object>
+   <Object type="0xb2c8" id="AI Wormhole Gauntlet Timer Red">
+      <Class>GameObject</Class>
+      <DisplayId>Alien Satellite</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x14</Index>
+      </Texture>
+      <Size>-1</Size>
+   </Object>
+   <Object type="0xb2ba" id="AI Blorgian">
+      <DisplayId>Blorgian</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>11</Index>
+      </AnimatedTexture>
+      <HitSound>monster/demons_hit</HitSound>
+      <DeathSound>monster/demons_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Exp>100</Exp>
+      <Defense>25</Defense>
+      <Z>0.24</Z>
+      <Flying/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Malogia Blorgian Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Malogia Blorgian Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>AI Malogia Blorgian Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb2bb" id="AI Blorgling">
+      <DisplayId>Blorgling</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>18</Index>
+      </AnimatedTexture>
+      <HitSound>monster/demons_hit</HitSound>
+      <DeathSound>monster/demons_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Exp>50</Exp>
+      <Defense>15</Defense>
+      <Z>0.24</Z>
+      <Flying/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Malogia Blorgian Shot</ObjectId>
+         <Damage>90</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb2bc" id="AI Blorgorm">
+      <DisplayId>Blorgorm</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>13</Index>
+      </AnimatedTexture>
+      <HitSound>monster/demons_hit</HitSound>
+      <DeathSound>monster/demons_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Exp>175</Exp>
+      <Defense>35</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Malogia Blorgian Shot</ObjectId>
+         <Damage>150</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Malogia Blorgian Shot</ObjectId>
+         <Damage>150</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>AI Malogia Blorgian Shot</ObjectId>
+         <Damage>150</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb2bd" id="AI Phorgian">
+      <DisplayId>Phorgian</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>12</Index>
+      </AnimatedTexture>
+      <HitSound>monster/archdemon_hit</HitSound>
+      <DeathSound>monster/archdemon_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Exp>175</Exp>
+      <Defense>35</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Malogia Phorgian Shot</ObjectId>
+         <Damage>110</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="1.4">Unstable</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Malogia Phorgian Shot</ObjectId>
+         <Damage>110</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2250</LifetimeMS>
+         <ConditionEffect duration="1.4">Unstable</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>AI Malogia Phorgian Shot</ObjectId>
+         <Damage>110</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration="1.4">Unstable</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xb2be" id="AI Phorgling">
+      <DisplayId>Phorgling</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>19</Index>
+      </AnimatedTexture>
+      <HitSound>monster/archdemon_hit</HitSound>
+      <DeathSound>monster/archdemon_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Exp>75</Exp>
+      <Defense>25</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Malogia Phorgian Shot</ObjectId>
+         <Damage>90</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration="1.4">Unstable</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xb2bf" id="AI Znorgian">
+      <DisplayId>Znorgian</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>14</Index>
+      </AnimatedTexture>
+      <HitSound>monster/medusa_hit</HitSound>
+      <DeathSound>monster/medusa_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Exp>125</Exp>
+      <Defense>25</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Malogia Znorgian Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>160</Damage>
+         <Speed>110</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Malogia Znorgian Shot</ObjectId>
+         <Size>80</Size>
+         <Damage>100</Damage>
+         <Speed>110</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb2c0" id="AI Znorgling">
+      <DisplayId>Znorgling</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>20</Index>
+      </AnimatedTexture>
+      <HitSound>monster/medusa_hit</HitSound>
+      <DeathSound>monster/medusa_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Exp>50</Exp>
+      <Defense>15</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Malogia Znorgian Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>100</Damage>
+         <Speed>110</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb2c1" id="AI Ptorgian">
+      <DisplayId>Ptorgian</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>15</Index>
+      </AnimatedTexture>
+      <HitSound>monster/lizard_god_hit</HitSound>
+      <DeathSound>monster/lizard_god_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Exp>100</Exp>
+      <Defense>25</Defense>
+      <WhileMoving>
+         <Z>0.30</Z>
+         <Flying/>
+      </WhileMoving>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Malogia Ptorgian Shot</ObjectId>
+         <Speed>50</Speed>
+         <Damage>80</Damage>
+         <LifetimeMS>2000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb2c2" id="AI Neo Ptorgian">
+      <DisplayId>Neo Ptorgian</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>17</Index>
+      </AnimatedTexture>
+      <HitSound>monster/lizard_god_hit</HitSound>
+      <DeathSound>monster/lizard_god_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>15000</MaxHitPoints>
+      <Exp>150</Exp>
+      <Defense>25</Defense>
+      <WhileMoving>
+         <Z>0.30</Z>
+         <Flying/>
+      </WhileMoving>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>AI Malogia Neo Ptorgian Shot</ObjectId>
+         <Speed>80</Speed>
+         <Damage>110</Damage>
+         <LifetimeMS>2000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Malogia Neo Znorgian Shot</ObjectId>
+         <Speed>30</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>5000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb2c3" id="AI Neo Znorgian">
+      <DisplayId>Neo Znorgian</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>10</Index>
+      </AnimatedTexture>
+      <HitSound>monster/medusa_hit</HitSound>
+      <DeathSound>monster/medusa_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Exp>200</Exp>
+      <Defense>25</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>AI Malogia Neo Znorgian Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>160</Damage>
+         <Speed>110</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Malogia Neo Znorgian Shot</ObjectId>
+         <Size>80</Size>
+         <Damage>100</Damage>
+         <Speed>110</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0xb359" id="AI Neo Ptorgian Boss">
+      <DisplayId>Neo Ptorgian</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>17</Index>
+      </AnimatedTexture>
+      <HitSound>monster/lizard_god_hit</HitSound>
+      <DeathSound>monster/lizard_god_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>15000</MaxHitPoints>
+      <Exp>2000</Exp>
+      <Defense>25</Defense>
+      <Quest/>
+      <HealthBarBoss/>
+      <WhileMoving>
+         <Z>0.30</Z>
+         <Flying/>
+      </WhileMoving>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>AI Malogia Neo Ptorgian Shot</ObjectId>
+         <Speed>80</Speed>
+         <Damage>110</Damage>
+         <LifetimeMS>2000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Malogia Neo Znorgian Shot</ObjectId>
+         <Speed>30</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>5000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb305" id="AI Neo Znorgian Boss">
+      <DisplayId>Neo Znorgian</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>10</Index>
+      </AnimatedTexture>
+      <HitSound>monster/medusa_hit</HitSound>
+      <DeathSound>monster/medusa_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Exp>4000</Exp>
+      <Defense>25</Defense>
+      <Quest/>
+      <HealthBarBoss/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>AI Malogia Neo Znorgian Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>160</Damage>
+         <Speed>110</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Malogia Neo Znorgian Shot</ObjectId>
+         <Size>80</Size>
+         <Damage>100</Damage>
+         <Speed>110</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0xb2c4" id="AI Suesogian">
+      <DisplayId>Suesogian</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>16</Index>
+      </AnimatedTexture>
+      <HitSound>monster/cyclops_hit</HitSound>
+      <DeathSound>monster/cyclops_death</DeathSound>
+      <Size>140</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Exp>6000</Exp>
+      <Defense>30</Defense>
+      <Quest/>
+      <HealthBarBoss/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <EventChestBoss/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>AI Malogia Suesogian Shot Red</ObjectId>
+         <Size>80</Size>
+         <Damage>150</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>2100</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Malogia Suesogian Shot Purple</ObjectId>
+         <Size>80</Size>
+         <Damage>90</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>2100</LifetimeMS>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0xb2c7" id="AI Malogia Boulder">
+      <DisplayId>Malogian Boulder</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xd9</Index>
+      </Texture>
+      <Size>120</Size>
+      <ShadowSize>100</ShadowSize>
+      <Invincible/>
+      <Projectile id="0">
+         <ObjectId>AI Malogia Boulder Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>120</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb2c5" id="AI Malogia Big Tree">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x10</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x11</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x12</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x13</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0xb2c6" id="AI Malogia Small Tree">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x60</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x61</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x62</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x63</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0xb341" id="AI Malogia Campfire">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x46</Index>
+      </Texture>
+      <Animation prob="1">
+         <Frame time="0.2">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x46</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x47</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x48</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x49</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0xb342" id="AI Malogia Background Blorgling">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>18</Index>
+      </AnimatedTexture>
+      <Z>0.24</Z>
+      <Flying/>
+   </Object>
+   <Object type="0xb343" id="AI Malogia Background Blorgian">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>11</Index>
+      </AnimatedTexture>
+      <Z>0.24</Z>
+      <Flying/>
+   </Object>
+   <Object type="0xb344" id="AI Malogia Background Blorgorm">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>13</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0xb345" id="AI Malogia Background Ptorgian">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>15</Index>
+      </AnimatedTexture>
+      <WhileMoving>
+         <Z>0.30</Z>
+         <Flying/>
+      </WhileMoving>
+   </Object>
+   <Object type="0xb346" id="AI Malogia Background Znorgian">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <DisplayId>Znorgian</DisplayId>
+      <Size>100</Size>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>14</Index>
+      </AnimatedTexture>
+      <Projectile id="0">
+         <ObjectId>AI Malogia Znorgian Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>1</Damage>
+         <Speed>110</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Malogia Znorgian Shot</ObjectId>
+         <Size>80</Size>
+         <Damage>1</Damage>
+         <Speed>110</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb349" id="AI Malogia Background Znorgling">
+      <Enemy/>
+      <Invincible/>
+      <DisplayId>Znorgling</DisplayId>
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>20</Index>
+      </AnimatedTexture>
+      <Projectile id="0">
+         <ObjectId>AI Malogia Znorgian Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>1</Damage>
+         <Speed>110</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb347" id="AI Malogia Background Phorgian">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <DisplayId>Phorgian</DisplayId>
+      <Size>100</Size>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>12</Index>
+      </AnimatedTexture>
+      <Projectile id="0">
+         <ObjectId>AI Malogia Phorgian Shot</ObjectId>
+         <Damage>110</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="1.4">Unstable</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Malogia Phorgian Shot</ObjectId>
+         <Damage>110</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2250</LifetimeMS>
+         <ConditionEffect duration="1.4">Unstable</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>AI Malogia Phorgian Shot</ObjectId>
+         <Damage>110</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration="1.4">Unstable</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xb348" id="AI Malogia Background Phorgling">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <DisplayId>Phorgling</DisplayId>
+      <Size>100</Size>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>19</Index>
+      </AnimatedTexture>
+      <Projectile id="0">
+         <ObjectId>AI Malogia Phorgian Shot</ObjectId>
+         <Damage>90</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration="1.4">Unstable</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xb369" id="AI Untaris Bubblar Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xc1</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb36a" id="AI Untaris Waltan Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xc2</Index>
+      </Texture>
+      <Rotation>80</Rotation>
+   </Object>
+   <Object type="0xb36b" id="AI Untaris Shred Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xc4</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xb36c" id="AI Untaris Plex Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xc6</Index>
+      </Texture>
+      <Rotation>80</Rotation>
+   </Object>
+   <Object type="0xb36d" id="AI Untaris Neo Waltan Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xc3</Index>
+      </Texture>
+      <Rotation>80</Rotation>
+   </Object>
+   <Object type="0xb36e" id="AI Untaris Neo Shred Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xc5</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xb36f" id="AI Untaris Tarul Shot Teeth">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xc7</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb370" id="AI Untaris Tarul Shot Ice">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xc8</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb2b7" id="AI Untaris Wormhole">
+      <DisplayId>Untaris</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Untaris</DungeonName>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x20</Index>
+      </Texture>
+      <Animation prob="1">
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x20</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x21</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x22</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x23</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0xb2c9" id="AI Wormhole Gauntlet Controller Blue">
+      <DisplayId>Alien Satellite</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x15</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x18</Index>
+         </Texture>
+      </AltTexture>
+      <Size>100</Size>
+      <Z>0.6</Z>
+      <Flying/>
+   </Object>
+   <Object type="0xb34f" id="AI Untaris UFO">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x34</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x35</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x36</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x37</Index>
+         </Texture>
+      </AltTexture>
+      <Z>0.6</Z>
+      <Flying/>
+   </Object>
+   <Object type="0xb354" id="AI Untaris Satellite Core">
+      <DisplayId>Satellite Core</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <HitSound>monster/sprite_god_hit</HitSound>
+      <DeathSound>monster/sprite_god_death</DeathSound>
+      <Size>100</Size>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x43</Index>
+      </Texture>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Exp>500</Exp>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0x1ad6" id="AI Untaris Satellite Core Tokens">
+      <DisplayId>Satellite Core</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <HitSound>monster/sprite_god_hit</HitSound>
+      <DeathSound>monster/sprite_god_death</DeathSound>
+      <Size>100</Size>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x43</Index>
+      </Texture>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Exp>500</Exp>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0xb2ca" id="AI Wormhole Gauntlet Timer Blue">
+      <Class>GameObject</Class>
+      <DisplayId>Alien Satellite</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x15</Index>
+      </Texture>
+      <Size>-1</Size>
+   </Object>
+   <Object type="0xb2d6" id="AI Untaris Teleporter N">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x79</Index>
+      </Texture>
+      <Animation prob="1">
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x79</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7c</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <Color>0x1EB3D9</Color>
+      <ShadowColor>0x1EB3D9</ShadowColor>
+      <Z>0.2</Z>
+   </Object>
+   <Object type="0xb2d7" id="AI Untaris Teleporter E">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x79</Index>
+      </Texture>
+      <Animation prob="1">
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x79</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7c</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <Color>0x1EB3D9</Color>
+      <ShadowColor>0x1EB3D9</ShadowColor>
+      <Z>0.2</Z>
+   </Object>
+   <Object type="0xb2d8" id="AI Untaris Teleporter S">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x79</Index>
+      </Texture>
+      <Animation prob="1">
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x79</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7c</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <Color>0x1EB3D9</Color>
+      <ShadowColor>0x1EB3D9</ShadowColor>
+      <Z>0.2</Z>
+   </Object>
+   <Object type="0xb2d9" id="AI Untaris Teleporter W">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x79</Index>
+      </Texture>
+      <Animation prob="1">
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x79</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7c</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <Color>0x1EB3D9</Color>
+      <ShadowColor>0x1EB3D9</ShadowColor>
+      <Z>0.2</Z>
+   </Object>
+   <Object type="0xb2da" id="AI Untaris Teleporter C N">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x79</Index>
+      </Texture>
+      <Animation prob="1">
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x79</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7c</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <Color>0x1EB3D9</Color>
+      <ShadowColor>0x1EB3D9</ShadowColor>
+      <Z>0.2</Z>
+   </Object>
+   <Object type="0xb2db" id="AI Untaris Teleporter C E">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x79</Index>
+      </Texture>
+      <Animation prob="1">
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x79</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7c</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <Color>0x1EB3D9</Color>
+      <ShadowColor>0x1EB3D9</ShadowColor>
+      <Z>0.2</Z>
+   </Object>
+   <Object type="0xb2dc" id="AI Untaris Teleporter C S">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x79</Index>
+      </Texture>
+      <Animation prob="1">
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x79</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7c</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <Color>0x1EB3D9</Color>
+      <ShadowColor>0x1EB3D9</ShadowColor>
+      <Z>0.2</Z>
+   </Object>
+   <Object type="0xb2dd" id="AI Untaris Teleporter C W">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x79</Index>
+      </Texture>
+      <Animation prob="1">
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x79</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0x7c</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <Color>0x1EB3D9</Color>
+      <ShadowColor>0x1EB3D9</ShadowColor>
+      <Z>0.2</Z>
+   </Object>
+   <Object type="0xb2de" id="AI Untaris Anchor N">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x6b</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb2df" id="AI Untaris Anchor E">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x6b</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb2e0" id="AI Untaris Anchor S">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x6b</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb2e1" id="AI Untaris Anchor W">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x6b</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb2e2" id="AI Untaris Anchor C N">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x6b</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb2e3" id="AI Untaris Anchor C E">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x6b</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb2e4" id="AI Untaris Anchor C S">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x6b</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb2e5" id="AI Untaris Anchor C W">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x6b</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb2e6" id="AI Bubblarion">
+      <DisplayId>Bubblarion</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>21</Index>
+      </AnimatedTexture>
+      <HitSound>monster/blobs_hit</HitSound>
+      <DeathSound>monster/blobs_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Exp>50</Exp>
+      <Defense>15</Defense>
+      <Z>0.24</Z>
+      <Flying/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Untaris Bubblar Shot</ObjectId>
+         <Damage>80</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <Size>80</Size>
+      </Projectile>
+   </Object>
+   <Object type="0xb2e7" id="AI Bubblar">
+      <DisplayId>Bubblar</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>22</Index>
+      </AnimatedTexture>
+      <HitSound>monster/blobs_hit</HitSound>
+      <DeathSound>monster/blobs_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Exp>75</Exp>
+      <Defense>15</Defense>
+      <Z>0.24</Z>
+      <Flying/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Untaris Bubblar Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb2e8" id="AI Bubblaris">
+      <DisplayId>Bubblaris</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>18</Index>
+      </AnimatedTexture>
+      <HitSound>monster/blobs_hit</HitSound>
+      <DeathSound>monster/blobs_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Exp>175</Exp>
+      <Defense>15</Defense>
+      <Z>0.24</Z>
+      <Flying/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Untaris Bubblar Shot</ObjectId>
+         <Damage>140</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb2e9" id="AI Waltan Head">
+      <DisplayId>Waltan</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>23</Index>
+      </AnimatedTexture>
+      <HitSound>monster/snakes_hit</HitSound>
+      <DeathSound>monster/snakes_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Exp>100</Exp>
+      <Defense>20</Defense>
+      <Z>0.6</Z>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Untaris Waltan Shot</ObjectId>
+         <Damage>100</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb2ea" id="AI Waltan Body">
+      <DisplayId>Waltan</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>24</Index>
+      </AnimatedTexture>
+      <HitSound>monster/snakes_hit</HitSound>
+      <DeathSound>monster/snakes_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Exp>0</Exp>
+      <Defense>10</Defense>
+      <Z>0.6</Z>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Untaris Waltan Shot</ObjectId>
+         <Damage>90</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Boomerang/>
+      </Projectile>
+   </Object>
+   <Object type="0xb2eb" id="AI Shredling">
+      <DisplayId>Shredling</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>25</Index>
+      </AnimatedTexture>
+      <HitSound>monster/abyss_brutes_hit</HitSound>
+      <DeathSound>monster/abyss_brutes_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Exp>50</Exp>
+      <Defense>15</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Untaris Shred Shot</ObjectId>
+         <Damage>90</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>800</LifetimeMS>
+         <Amplitude>0.75</Amplitude>
+         <Frequency>2.5</Frequency>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object type="0xb2ec" id="AI Shred">
+      <DisplayId>Shred</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>19</Index>
+      </AnimatedTexture>
+      <HitSound>monster/abyss_brutes_hit</HitSound>
+      <DeathSound>monster/abyss_brutes_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Exp>125</Exp>
+      <Defense>20</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Untaris Shred Shot</ObjectId>
+         <Damage>90</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>800</LifetimeMS>
+         <Amplitude>0.75</Amplitude>
+         <Frequency>2.5</Frequency>
+         <FaceDir/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Untaris Shred Shot</ObjectId>
+         <Damage>150</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <Amplitude>2.5</Amplitude>
+         <Frequency>1</Frequency>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object type="0xb2ed" id="AI Plexling">
+      <DisplayId>Plexling</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>26</Index>
+      </AnimatedTexture>
+      <HitSound>monster/ghosts_hit</HitSound>
+      <DeathSound>monster/ghosts_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Exp>75</Exp>
+      <Defense>20</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Untaris Plex Shot</ObjectId>
+         <Size>80</Size>
+         <Damage>120</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb2ef" id="AI Plex">
+      <DisplayId>Plex</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>20</Index>
+      </AnimatedTexture>
+      <HitSound>monster/ghosts_hit</HitSound>
+      <DeathSound>monster/ghosts_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Exp>175</Exp>
+      <Defense>30</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Untaris Plex Shot</ObjectId>
+         <Size>80</Size>
+         <Damage>140</Damage>
+         <Speed>5</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb2f0" id="AI Neo Shred">
+      <DisplayId>Neo Shred</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>21</Index>
+      </AnimatedTexture>
+      <HitSound>monster/abyss_brutes_hit</HitSound>
+      <DeathSound>monster/abyss_brutes_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Exp>200</Exp>
+      <Defense>25</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>AI Untaris Neo Shred Shot</ObjectId>
+         <Damage>125</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>800</LifetimeMS>
+         <Amplitude>0.75</Amplitude>
+         <Frequency>2.5</Frequency>
+         <FaceDir/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Untaris Neo Shred Shot</ObjectId>
+         <Damage>150</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <Amplitude>2.5</Amplitude>
+         <Frequency>1</Frequency>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object type="0xb2f1" id="AI Neo Waltan Head">
+      <DisplayId>Neo Waltan</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>27</Index>
+      </AnimatedTexture>
+      <HitSound>monster/snakes_hit</HitSound>
+      <DeathSound>monster/snakes_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>8000</MaxHitPoints>
+      <Exp>150</Exp>
+      <Defense>30</Defense>
+      <Z>0.6</Z>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>AI Untaris Neo Waltan Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb2f2" id="AI Neo Waltan Body">
+      <DisplayId>Neo Waltan</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>28</Index>
+      </AnimatedTexture>
+      <HitSound>monster/snakes_hit</HitSound>
+      <DeathSound>monster/snakes_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Exp>0</Exp>
+      <Defense>15</Defense>
+      <Z>0.6</Z>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Untaris Neo Waltan Shot</ObjectId>
+         <Damage>110</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Boomerang/>
+      </Projectile>
+   </Object>
+   <Object type="0xb35a" id="AI Neo Shred Boss">
+      <DisplayId>Neo Shred</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>21</Index>
+      </AnimatedTexture>
+      <HitSound>monster/abyss_brutes_hit</HitSound>
+      <DeathSound>monster/abyss_brutes_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Exp>4000</Exp>
+      <Defense>25</Defense>
+      <Quest/>
+      <HealthBarBoss/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>AI Untaris Neo Shred Shot</ObjectId>
+         <Damage>125</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>800</LifetimeMS>
+         <Amplitude>0.75</Amplitude>
+         <Frequency>2.5</Frequency>
+         <FaceDir/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Untaris Neo Shred Shot</ObjectId>
+         <Damage>150</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <Amplitude>2.5</Amplitude>
+         <Frequency>1</Frequency>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object type="0xb35b" id="AI Neo Waltan Head Boss">
+      <DisplayId>Neo Waltan</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>27</Index>
+      </AnimatedTexture>
+      <HitSound>monster/snakes_hit</HitSound>
+      <DeathSound>monster/snakes_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>8000</MaxHitPoints>
+      <Exp>2000</Exp>
+      <Defense>30</Defense>
+      <Z>0.6</Z>
+      <Quest/>
+      <HealthBarBoss/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>AI Untaris Neo Waltan Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb2f6" id="AI Tarul Controller">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xab</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb2f3" id="AI Tarul">
+      <DisplayId>Tarul</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Portrait>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0xab</Index>
+         </Texture>
+      </Portrait>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xab</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0xa9</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0xaa</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <DrawOnGround/>
+      <HitSound>monster/beholder_hit</HitSound>
+      <DeathSound>monster/beholder_death</DeathSound>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Exp>6000</Exp>
+      <Defense>30</Defense>
+      <Quest/>
+      <HealthBarBoss/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <EventChestBoss/>
+      <Projectile id="0">
+         <ObjectId>AI Untaris Tarul Shot Ice</ObjectId>
+         <Damage>150</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>140</Size>
+      </Projectile>
+   </Object>
+   <Object type="0xb2f4" id="AI Tarul Mouth">
+      <DisplayId>Tarul Mouth</DisplayId>
+      <Enemy/>
+      <Invincible/>
+      <Class>Character</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x95</Index>
+      </Texture>
+      <Size>0</Size>
+      <Projectile id="0">
+         <ObjectId>AI Untaris Tarul Shot Teeth</ObjectId>
+         <Damage>120</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>140</Size>
+      </Projectile>
+   </Object>
+   <Object type="0xb2f7" id="AI Tarul Mouth Anim">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x95</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb2f5" id="AI Tarul Tentacle">
+      <DisplayId>Tarul Tentacle</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>22</Index>
+      </AnimatedTexture>
+      <HitSound>monster/beholder_hit</HitSound>
+      <DeathSound>monster/beholder_death</DeathSound>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>12000</MaxHitPoints>
+      <Exp>0</Exp>
+      <Defense>30</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Untaris Tarul Shot Ice</ObjectId>
+         <Damage>120</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>140</Size>
+      </Projectile>
+   </Object>
+   <Object type="0xb32a" id="AI Untaris Meteorite">
+      <Class>GameObject</Class>
+      <Size>140</Size>
+      <RandomTexture>
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x4e</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x4f</Index>
+         </Texture>
+      </RandomTexture>
+      <Z>0.3</Z>
+   </Object>
+   <Object type="0xb32b" id="AI Untaris Rock">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <RandomTexture>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x8d</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x8e</Index>
+         </Texture>
+      </RandomTexture>
+   </Object>
+   <Object type="0xb32c" id="AI Untaris Background Rock">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <RandomTexture>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x9d</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x9e</Index>
+         </Texture>
+      </RandomTexture>
+   </Object>
+   <Object type="0xb32d" id="AI Untaris Background Bubblaris">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x4a</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb32e" id="AI Untaris Background Bubblarion">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x4c</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb32f" id="AI Untaris Background Bubblar">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x4b</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb330" id="AI Untaris Background Shredling">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>25</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+   </Object>
+   <Object type="0xb331" id="AI Untaris Background Shred">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>19</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+   </Object>
+   <Object type="0xb332" id="AI Untaris Background Plexling">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xad</Index>
+      </Texture>
+      <Animation prob="1">
+         <Frame time="4.0">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0xad</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0xae</Index>
+            </Texture>
+         </Frame>
+         <Frame time="1.8">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0xaf</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>alienInvasionObjects8x8</File>
+               <Index>0xae</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0xb333" id="AI Untaris Background Plex">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x5b</Index>
+      </Texture>
+      <Animation prob="1">
+         <Frame time="4.0">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x5b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x5c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="1.8">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x5d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x5c</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0xb371" id="AI Forax Larveye Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xc9</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xb372" id="AI Forax Watcher Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xca</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xb373" id="AI Forax Jelleye Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xcb</Index>
+      </Texture>
+      <Rotation>80</Rotation>
+   </Object>
+   <Object type="0xb374" id="AI Forax Hunger Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xcc</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb375" id="AI Forax Neo Hunger Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xce</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb376" id="AI Forax Neo Larveye Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xcd</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xb377" id="AI Forax Acidus Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xcf</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb2cb" id="AI Forax Wormhole">
+      <DisplayId>Forax</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Forax</DungeonName>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x24</Index>
+      </Texture>
+      <Animation prob="1">
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x24</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x25</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x26</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x27</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0xb2cc" id="AI Wormhole Gauntlet Controller Green">
+      <DisplayId>Alien Satellite</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x16</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x18</Index>
+         </Texture>
+      </AltTexture>
+      <Size>100</Size>
+      <Z>0.6</Z>
+      <Flying/>
+   </Object>
+   <Object type="0xb350" id="AI Forax UFO">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x38</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x39</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x3a</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x3b</Index>
+         </Texture>
+      </AltTexture>
+      <Z>0.6</Z>
+      <Flying/>
+   </Object>
+   <Object type="0xb355" id="AI Forax Satellite Core">
+      <DisplayId>Satellite Core</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <HitSound>monster/sprite_god_hit</HitSound>
+      <DeathSound>monster/sprite_god_death</DeathSound>
+      <Size>100</Size>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x44</Index>
+      </Texture>
+      <Z>0.2</Z>
+      <Flying/>
+      <TrackLoot/>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Exp>500</Exp>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x1ad7" id="AI Forax Satellite Core Tokens">
+      <DisplayId>Satellite Core</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <HitSound>monster/sprite_god_hit</HitSound>
+      <DeathSound>monster/sprite_god_death</DeathSound>
+      <Size>100</Size>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x44</Index>
+      </Texture>
+      <Z>0.2</Z>
+      <Flying/>
+      <TrackLoot/>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Exp>500</Exp>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0xb2cd" id="AI Wormhole Gauntlet Timer Green">
+      <Class>GameObject</Class>
+      <DisplayId>Alien Satellite</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x16</Index>
+      </Texture>
+      <Size>-1</Size>
+   </Object>
+   <Object type="0xb2ee" id="AI Wormhole Land Helper Green">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x16</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb2f8" id="AI Watchling">
+      <DisplayId>Watchling</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>30</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Exp>50</Exp>
+      <Defense>15</Defense>
+      <Z>0.24</Z>
+      <Flying/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Forax Watcher Shot</ObjectId>
+         <Damage>80</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <Size>120</Size>
+      </Projectile>
+   </Object>
+   <Object type="0xb2f9" id="AI Watcher">
+      <DisplayId>Watcher</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>26</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Exp>100</Exp>
+      <Defense>20</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Forax Watcher Shot</ObjectId>
+         <Damage>100</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <Size>120</Size>
+      </Projectile>
+   </Object>
+   <Object type="0xb2fa" id="AI Watcher Sentinel">
+      <DisplayId>Watcher Sentinel</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>25</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Exp>175</Exp>
+      <Defense>30</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Forax Watcher Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <Size>120</Size>
+      </Projectile>
+   </Object>
+   <Object type="0xb2fb" id="AI Hunger">
+      <DisplayId>Hunger</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>24</Index>
+      </AnimatedTexture>
+      <HitSound>monster/ogres_hit</HitSound>
+      <DeathSound>monster/ogres_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Exp>100</Exp>
+      <Defense>25</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Forax Hunger Shot</ObjectId>
+         <Damage>100</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>600</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb2fc" id="AI Baby Jelleye">
+      <DisplayId>Baby Jelleye</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>31</Index>
+      </AnimatedTexture>
+      <HitSound>monster/blobs_hit</HitSound>
+      <DeathSound>monster/blobs_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Exp>75</Exp>
+      <Defense>10</Defense>
+      <Z>0.6</Z>
+      <Flying/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Forax Jelleye Shot</ObjectId>
+         <Damage>90</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb2fd" id="AI Jelleye">
+      <DisplayId>Jelleye</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>27</Index>
+      </AnimatedTexture>
+      <HitSound>monster/blobs_hit</HitSound>
+      <DeathSound>monster/blobs_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Exp>175</Exp>
+      <Defense>15</Defense>
+      <Z>0.6</Z>
+      <Flying/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Forax Jelleye Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb2fe" id="AI Baby Larveye">
+      <DisplayId>Baby Larveye</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>29</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flying_brain_hit</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Exp>50</Exp>
+      <Defense>15</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Forax Larveye Shot</ObjectId>
+         <Damage>80</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>375</LifetimeMS>
+         <Amplitude>1.2</Amplitude>
+         <Frequency>0.5</Frequency>
+         <FaceDir/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Forax Larveye Shot</ObjectId>
+         <Damage>80</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <Amplitude>1.2</Amplitude>
+         <Frequency>0.5</Frequency>
+         <FaceDir/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>AI Forax Larveye Shot</ObjectId>
+         <Damage>80</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>625</LifetimeMS>
+         <Amplitude>1.2</Amplitude>
+         <Frequency>0.5</Frequency>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object type="0xb2ff" id="AI Larveye">
+      <DisplayId>Larveye</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>23</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flying_brain_hit</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Exp>125</Exp>
+      <Defense>25</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Forax Larveye Shot</ObjectId>
+         <Damage>110</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <Amplitude>1.2</Amplitude>
+         <Frequency>0.5</Frequency>
+         <FaceDir/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Forax Larveye Shot</ObjectId>
+         <Damage>110</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <Amplitude>1.2</Amplitude>
+         <Frequency>0.5</Frequency>
+         <FaceDir/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>AI Forax Larveye Shot</ObjectId>
+         <Damage>110</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <Amplitude>1.2</Amplitude>
+         <Frequency>0.5</Frequency>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object type="0xb301" id="AI Neo Hunger">
+      <DisplayId>Neo Hunger</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>28</Index>
+      </AnimatedTexture>
+      <HitSound>monster/ogres_hit</HitSound>
+      <DeathSound>monster/ogres_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>15000</MaxHitPoints>
+      <Exp>150</Exp>
+      <Defense>25</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>AI Forax Neo Hunger Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>600</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb302" id="AI Neo Larveye">
+      <DisplayId>Neo Larveye</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>29</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flying_brain_hit</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Exp>200</Exp>
+      <Defense>25</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>AI Forax Neo Larveye Shot</ObjectId>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <Amplitude>1.2</Amplitude>
+         <Frequency>0.5</Frequency>
+         <FaceDir/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Forax Neo Larveye Shot</ObjectId>
+         <Damage>150</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <Amplitude>1.2</Amplitude>
+         <Frequency>0.5</Frequency>
+         <FaceDir/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>AI Forax Neo Larveye Shot</ObjectId>
+         <Damage>150</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <Amplitude>1.2</Amplitude>
+         <Frequency>0.5</Frequency>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object type="0xb35c" id="AI Neo Hunger Boss">
+      <DisplayId>Neo Hunger</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>28</Index>
+      </AnimatedTexture>
+      <HitSound>monster/ogres_hit</HitSound>
+      <DeathSound>monster/ogres_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>15000</MaxHitPoints>
+      <Exp>2000</Exp>
+      <Defense>25</Defense>
+      <Quest/>
+      <HealthBarBoss/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>AI Forax Neo Hunger Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>600</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb35d" id="AI Neo Larveye Boss">
+      <DisplayId>Neo Larveye</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>29</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flying_brain_hit</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Exp>4000</Exp>
+      <Defense>25</Defense>
+      <Quest/>
+      <HealthBarBoss/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>AI Forax Neo Larveye Shot</ObjectId>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <Amplitude>1.2</Amplitude>
+         <Frequency>0.5</Frequency>
+         <FaceDir/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Forax Neo Larveye Shot</ObjectId>
+         <Damage>150</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <Amplitude>1.2</Amplitude>
+         <Frequency>0.5</Frequency>
+         <FaceDir/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>AI Forax Neo Larveye Shot</ObjectId>
+         <Damage>150</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <Amplitude>1.2</Amplitude>
+         <Frequency>0.5</Frequency>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object type="0xb303" id="AI Acidus">
+      <DisplayId>Acidus</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>30</Index>
+      </AnimatedTexture>
+      <HitSound>monster/archdemon_hit</HitSound>
+      <DeathSound>monster/archdemon_death</DeathSound>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Exp>6000</Exp>
+      <Defense>30</Defense>
+      <Quest/>
+      <HealthBarBoss/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <EventChestBoss/>
+      <Projectile id="0">
+         <ObjectId>AI Forax Acidus Shot</ObjectId>
+         <Damage>180</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Forax Acidus Shot</ObjectId>
+         <Damage>150</Damage>
+         <Speed>80</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>AI Forax Acidus Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>70</Speed>
+         <Size>80</Size>
+         <LifetimeMS>2000</LifetimeMS>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>AI Forax Acidus Shot</ObjectId>
+         <Damage>90</Damage>
+         <Speed>60</Speed>
+         <Size>60</Size>
+         <LifetimeMS>2000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb334" id="AI Forax Plant Big 1">
+      <Class>GameObject</Class>
+      <Size>140</Size>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x4d</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb335" id="AI Forax Plant Big 2">
+      <Class>GameObject</Class>
+      <Size>140</Size>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x50</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb336" id="AI Forax Plant Small 1">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x9f</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb337" id="AI Forax Plant Small 2">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xac</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb338" id="AI Forax Lily Pad">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x8f</Index>
+      </Texture>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0xb339" id="AI Forax Background Watcher">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <DisplayId>Watcher</DisplayId>
+      <Size>100</Size>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>26</Index>
+      </AnimatedTexture>
+      <Projectile id="0">
+         <ObjectId>AI Forax Watcher Shot</ObjectId>
+         <Damage>1</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <Size>120</Size>
+      </Projectile>
+   </Object>
+   <Object type="0xb33a" id="AI Forax Background Watchling">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <DisplayId>Watchling</DisplayId>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>30</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <Z>0.24</Z>
+      <Flying/>
+      <Projectile id="0">
+         <ObjectId>AI Forax Watcher Shot</ObjectId>
+         <Damage>1</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <Size>120</Size>
+      </Projectile>
+   </Object>
+   <Object type="0xb33b" id="AI Forax Background Watcher Sentinel">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <DisplayId>Watcher Sentinel</DisplayId>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>25</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <Projectile id="0">
+         <ObjectId>AI Forax Watcher Shot</ObjectId>
+         <Damage>1</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <Size>120</Size>
+      </Projectile>
+   </Object>
+   <Object type="0xb340" id="AI Forax Background Hunger">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <DisplayId>Hunger</DisplayId>
+      <Size>100</Size>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>24</Index>
+      </AnimatedTexture>
+      <Projectile id="0">
+         <ObjectId>AI Forax Hunger Shot</ObjectId>
+         <Damage>1</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>600</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb33c" id="AI Forax Background Baby Larveye">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>29</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0xb33d" id="AI Forax Background Larveye">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>23</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0xb33e" id="AI Forax Background Baby Jelleye">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>31</Index>
+      </AnimatedTexture>
+      <Z>0.6</Z>
+      <Flying/>
+   </Object>
+   <Object type="0xb33f" id="AI Forax Background Jelleye">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>27</Index>
+      </AnimatedTexture>
+      <Z>0.6</Z>
+      <Flying/>
+   </Object>
+   <Object type="0xb378" id="AI Katalund Walker Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xd0</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb379" id="AI Katalund Stinger Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xd1</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xb37a" id="AI Katalund Reaper Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xd2</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb37b" id="AI Katalund Titan Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xd3</Index>
+      </Texture>
+      <Rotation>80</Rotation>
+   </Object>
+   <Object type="0xb37c" id="AI Katalund Neo Titan Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xd4</Index>
+      </Texture>
+      <Rotation>80</Rotation>
+   </Object>
+   <Object type="0xb37d" id="AI Katalund Neo Walker Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xd5</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb37e" id="AI Katalund Sphinx Shot Wave">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xd6</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb37f" id="AI Katalund Sphinx Shot Red">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xd7</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xb380" id="AI Katalund Sphinx Shot Yellow">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xd8</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xb2ce" id="AI Katalund Wormhole">
+      <DisplayId>Katalund</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Katalund</DungeonName>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x28</Index>
+      </Texture>
+      <Animation prob="1">
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x28</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x29</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x2a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>alienInvasionObjects16x16</File>
+               <Index>0x2b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0xb2cf" id="AI Wormhole Gauntlet Controller Yellow">
+      <DisplayId>Alien Satellite</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x17</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x18</Index>
+         </Texture>
+      </AltTexture>
+      <Size>100</Size>
+      <Z>0.6</Z>
+      <Flying/>
+   </Object>
+   <Object type="0xb351" id="AI Katalund UFO">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x3c</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x3d</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x3e</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x3f</Index>
+         </Texture>
+      </AltTexture>
+      <Z>0.6</Z>
+      <Flying/>
+   </Object>
+   <Object type="0xb352" id="AI Katalund Satellite Core">
+      <DisplayId>Satellite Core</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <HitSound>monster/sprite_god_hit</HitSound>
+      <DeathSound>monster/sprite_god_death</DeathSound>
+      <Size>100</Size>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x45</Index>
+      </Texture>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Exp>500</Exp>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0x1ad8" id="AI Katalund Satellite Core Tokens">
+      <DisplayId>Satellite Core</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <HitSound>monster/sprite_god_hit</HitSound>
+      <DeathSound>monster/sprite_god_death</DeathSound>
+      <Size>100</Size>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x45</Index>
+      </Texture>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Exp>500</Exp>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0xb2d0" id="AI Wormhole Gauntlet Timer Yellow">
+      <Class>GameObject</Class>
+      <DisplayId>Alien Satellite</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x17</Index>
+      </Texture>
+      <Size>-1</Size>
+   </Object>
+   <Object type="0xb28c" id="AI Wormhole Yellow Breath">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x17</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb28d" id="AI Wormhole Land Helper Yellow">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>alienInvasionObjects16x16</File>
+         <Index>0x17</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb307" id="AI Nano Silver Walker">
+      <DisplayId>Nano Silver Walker</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>32</Index>
+      </AnimatedTexture>
+      <HitSound>monster/traps_hit</HitSound>
+      <DeathSound>monster/traps_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Exp>50</Exp>
+      <Defense>20</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Katalund Walker Shot</ObjectId>
+         <Damage>80</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb309" id="AI Silver Walker">
+      <DisplayId>Silver Walker</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>31</Index>
+      </AnimatedTexture>
+      <HitSound>monster/traps_hit</HitSound>
+      <DeathSound>monster/traps_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Exp>125</Exp>
+      <Defense>25</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Katalund Walker Shot</ObjectId>
+         <Damage>110</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb30a" id="AI Iron Titan">
+      <DisplayId>Iron Titan</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>32</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dwarf_god_hit</HitSound>
+      <DeathSound>monster/dwarf_god_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Exp>100</Exp>
+      <Defense>30</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Katalund Titan Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>2400</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb30b" id="AI Nano Steel Reaper">
+      <DisplayId>Nano Steel Reaper</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>33</Index>
+      </AnimatedTexture>
+      <HitSound>monster/golems_hit</HitSound>
+      <DeathSound>monster/golems_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Exp>50</Exp>
+      <Defense>20</Defense>
+      <Z>0.2</Z>
+      <Flying/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Katalund Reaper Shot</ObjectId>
+         <Damage>90</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb30c" id="AI Steel Reaper">
+      <DisplayId>Steel Reaper</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>34</Index>
+      </AnimatedTexture>
+      <HitSound>monster/golems_hit</HitSound>
+      <DeathSound>monster/golems_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Exp>100</Exp>
+      <Defense>25</Defense>
+      <Z>0.2</Z>
+      <Flying/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Katalund Reaper Shot</ObjectId>
+         <Damage>100</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb30d" id="AI Giga Steel Reaper">
+      <DisplayId>Giga Steel Reaper</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>33</Index>
+      </AnimatedTexture>
+      <HitSound>monster/golems_hit</HitSound>
+      <DeathSound>monster/golems_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Exp>175</Exp>
+      <Defense>30</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Katalund Reaper Shot</ObjectId>
+         <Damage>110</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb315" id="AI Nano Platinum Stinger">
+      <DisplayId>Nano Platinum Stinger</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>34</Index>
+      </AnimatedTexture>
+      <HitSound>monster/wooden_walls_hit</HitSound>
+      <DeathSound>monster/wooden_walls_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Exp>75</Exp>
+      <Defense>25</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Katalund Stinger Shot</ObjectId>
+         <Damage>80</Damage>
+         <Speed>110</Speed>
+         <LifetimeMS>800</LifetimeMS>
+         <ConditionEffect duration="1.0">Paralyzed</ConditionEffect>
+         <Size>120</Size>
+      </Projectile>
+   </Object>
+   <Object type="0xb316" id="AI Platinum Stinger">
+      <DisplayId>Platinum Stinger</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>35</Index>
+      </AnimatedTexture>
+      <HitSound>monster/wooden_walls_hit</HitSound>
+      <DeathSound>monster/wooden_walls_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Exp>175</Exp>
+      <Defense>30</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>AI Katalund Stinger Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>110</Speed>
+         <LifetimeMS>800</LifetimeMS>
+         <ConditionEffect duration="2.0">Paralyzed</ConditionEffect>
+         <Size>120</Size>
+      </Projectile>
+   </Object>
+   <Object type="0xb317" id="AI Neo Silver Walker">
+      <DisplayId>Neo Silver Walker</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>36</Index>
+      </AnimatedTexture>
+      <HitSound>monster/traps_hit</HitSound>
+      <DeathSound>monster/traps_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Exp>200</Exp>
+      <Defense>35</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>AI Katalund Neo Walker Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb318" id="AI Neo Iron Titan">
+      <DisplayId>Neo Iron Titan</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>37</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dwarf_god_hit</HitSound>
+      <DeathSound>monster/dwarf_god_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>15000</MaxHitPoints>
+      <Exp>150</Exp>
+      <Defense>40</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>AI Katalund Neo Titan Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2800</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Katalund Neo Titan Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>110</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb35e" id="AI Neo Silver Walker Boss">
+      <DisplayId>Neo Silver Walker</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>36</Index>
+      </AnimatedTexture>
+      <HitSound>monster/traps_hit</HitSound>
+      <DeathSound>monster/traps_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Exp>4000</Exp>
+      <Defense>35</Defense>
+      <Quest/>
+      <HealthBarBoss/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>AI Katalund Neo Walker Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb35f" id="AI Neo Iron Titan Boss">
+      <DisplayId>Neo Iron Titan</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>37</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dwarf_god_hit</HitSound>
+      <DeathSound>monster/dwarf_god_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>15000</MaxHitPoints>
+      <Exp>2000</Exp>
+      <Defense>40</Defense>
+      <Quest/>
+      <HealthBarBoss/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>AI Katalund Neo Titan Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2800</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Katalund Neo Titan Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>110</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb319" id="AI Golden Sphinx">
+      <DisplayId>Golden Sphinx</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars16x16</File>
+         <Index>38</Index>
+      </AnimatedTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>40000</MaxHitPoints>
+      <Exp>6000</Exp>
+      <Defense>50</Defense>
+      <Quest/>
+      <HealthBarBoss/>
+      <Z>0.15</Z>
+      <Flying/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <EventChestBoss/>
+      <Projectile id="0">
+         <ObjectId>AI Katalund Sphinx Shot Yellow</ObjectId>
+         <Damage>100</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>AI Katalund Sphinx Shot Wave</ObjectId>
+         <Damage>60</Damage>
+         <Speed>100</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>AI Katalund Sphinx Shot Red</ObjectId>
+         <Damage>150</Damage>
+         <Speed>110</Speed>
+         <Size>120</Size>
+         <LifetimeMS>2000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb329" id="AI Factory Wall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x84</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x85</Index>
+         </Texture>
+      </Top>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0xb34d" id="AI Katalund Small Parts 1">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x7d</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x7f</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x89</Index>
+         </Texture>
+      </RandomTexture>
+   </Object>
+   <Object type="0xb34a" id="AI Katalund Small Parts 2">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x7e</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x88</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x8a</Index>
+         </Texture>
+      </RandomTexture>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0xb34b" id="AI Katalund Big Parts 1">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x51</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x52</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x53</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x54</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x55</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0xb34c" id="AI Katalund Big Parts 2">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x56</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x57</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x58</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x59</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects16x16</File>
+            <Index>0x5a</Index>
+         </Texture>
+      </RandomTexture>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0xb381" id="Alien Decoy">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>alienInvasionChars8x8</File>
+         <Index>39</Index>
+      </AnimatedTexture>
+      <Friendly/>
+   </Object>
+</Objects>

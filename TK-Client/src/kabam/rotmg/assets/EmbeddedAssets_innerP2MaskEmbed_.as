@@ -1,11 +1,17 @@
-package kabam.rotmg.assets {
-import mx.core.*;
+﻿// Decompiled by AS3 Sorcerer 6.08
+// www.as3sorcerer.com
 
-[Embed(source="EmbeddedAssets_innerP2MaskEmbed_.png")]
-public class EmbeddedAssets_innerP2MaskEmbed_ extends BitmapAsset {
-   public function EmbeddedAssets_innerP2MaskEmbed_() {
-      super();
+//kabam.rotmg.assets.EmbeddedAssets_innerP2MaskEmbed_
 
-   }
-}
-}
+package kabam.rotmg.assets
+{
+    import mx.core.BitmapAsset;
+
+[Embed(source="EmbeddedAssets_innerP2Mask.png")]
+    public class EmbeddedAssets_innerP2MaskEmbed_ extends BitmapAsset 
+    {
+
+
+    }
+}//package kabam.rotmg.assets
+

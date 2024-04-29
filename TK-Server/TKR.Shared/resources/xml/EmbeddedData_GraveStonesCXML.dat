@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x0723" id="Gravestone 1">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiChar28x8</File>
+         <Index>0x6c</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0724" id="Gravestone 2">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiChar28x8</File>
+         <Index>0x6d</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0725" id="Gravestone 3">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiChar28x8</File>
+         <Index>0x6e</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0726" id="Gravestone 4">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiChar28x8</File>
+         <Index>0x6f</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0727" id="Gravestone 5">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiChar216x16</File>
+         <Index>0x13</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0728" id="Gravestone 6">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiChar216x16</File>
+         <Index>0x14</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0729" id="Gravestone 7">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiChar216x16</File>
+         <Index>0x15</Index>
+      </Texture>
+   </Object>
+   <Object type="0x072a" id="Gravestone 8">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiChar216x16</File>
+         <Index>0x16</Index>
+      </Texture>
+   </Object>
+   <Object type="0x072b" id="Gravestone 9">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiChar216x16</File>
+         <Index>0x17</Index>
+      </Texture>
+   </Object>
+   <Object type="0x072c" id="Gravestone 10">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiChar216x16</File>
+         <Index>0x27</Index>
+      </Texture>
+   </Object>
+   <Object type="0x072d" id="Gravestone 11">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiChar216x16</File>
+         <Index>0x3d</Index>
+      </Texture>
+   </Object>
+   <Object type="0x164" id="Supporter Gravestone Rank 1">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiGravestone8x8</File>
+         <Index>0x80</Index>
+      </Texture>
+      <Animation prob="1" period="0.8">
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiGravestone8x8</File>
+               <Index>0x80</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiGravestone8x8</File>
+               <Index>0x81</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x165" id="Supporter Gravestone Rank 2">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiGravestone8x8</File>
+         <Index>0x90</Index>
+      </Texture>
+      <Animation prob="1" period="0.8">
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiGravestone8x8</File>
+               <Index>0x90</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiGravestone8x8</File>
+               <Index>0x91</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x166" id="Supporter Gravestone Rank 3">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiGravestone8x8</File>
+         <Index>0x82</Index>
+      </Texture>
+      <Animation prob="1" period="0.8">
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiGravestone8x8</File>
+               <Index>0x82</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiGravestone8x8</File>
+               <Index>0x83</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x167" id="Supporter Gravestone Rank 4">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiGravestone8x8</File>
+         <Index>0x92</Index>
+      </Texture>
+      <Animation prob="1" period="0.8">
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiGravestone8x8</File>
+               <Index>0x92</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiGravestone8x8</File>
+               <Index>0x93</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x168" id="Supporter Gravestone Rank 5">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiGravestone16x16</File>
+         <Index>0x22</Index>
+      </Texture>
+      <Animation prob="1" period="0.8">
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiGravestone16x16</File>
+               <Index>0x22</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiGravestone16x16</File>
+               <Index>0x23</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x169" id="Supporter Gravestone Rank 6">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiGravestone16x16</File>
+         <Index>0x24</Index>
+      </Texture>
+      <Animation prob="1" period="0.8">
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiGravestone16x16</File>
+               <Index>0x24</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiGravestone16x16</File>
+               <Index>0x25</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x16a" id="Supporter Gravestone Rank 7">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiGravestone16x16</File>
+         <Index>0x26</Index>
+      </Texture>
+      <Animation prob="1" period="0.8">
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiGravestone16x16</File>
+               <Index>0x26</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiGravestone16x16</File>
+               <Index>0x27</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x16b" id="Supporter Gravestone Rank 8">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiGravestone16x16</File>
+         <Index>0x28</Index>
+      </Texture>
+      <Animation prob="1" period="0.8">
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiGravestone16x16</File>
+               <Index>0x28</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiGravestone16x16</File>
+               <Index>0x29</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x16c" id="Supporter Gravestone Rank 9">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiGravestone16x16</File>
+         <Index>0x2a</Index>
+      </Texture>
+      <Animation prob="1" period="0.8">
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiGravestone16x16</File>
+               <Index>0x2a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiGravestone16x16</File>
+               <Index>0x2b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x16d" id="Supporter Gravestone Rank 10">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiGravestone16x16</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <Animation prob="1" period="0.8">
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiGravestone16x16</File>
+               <Index>0x2c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiGravestone16x16</File>
+               <Index>0x2d</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x16e" id="Supporter Gravestone Rank 11">
+      <Class>GameObject</Class>
+      <ShowName/>
+      <Texture>
+         <File>lofiGravestone16x16</File>
+         <Index>0x2f</Index>
+      </Texture>
+      <Animation prob="1" period="0.8">
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiGravestone16x16</File>
+               <Index>0x2e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiGravestone16x16</File>
+               <Index>0x2f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+</Objects>

@@ -47,52 +47,6 @@ namespace TKR.WorldServer.core.objects
 
         public bool PoisonWis = false;
 
-        public void AEItemDust(TickTime time, Item item, Position target, int slot, int objId, ActivateEffect eff)
-        {
-            var entity = World.GetEntity(objId);
-
-            var dustItem = World.GameServer.ItemDustWeights.ItemDusts.GetRandom(Random.Shared);
-            if (entity is Container container)
-                container.Inventory[slot] = dustItem;
-            else
-                Inventory[slot] = dustItem;
-
-            SendInfo($"You Scattered a Item Dust and obtained a [{dustItem.DisplayId ?? dustItem.ObjectId}]");
-        }
-
-        public void AETalismanFragment(TickTime time, Item item, Position target, int slot, int objId, ActivateEffect eff)
-        {
-            var dustItem = World.GameServer.ItemDustWeights.Talismans.GetRandom(Random.Shared);
-            var entity = World.GetEntity(objId);
-
-            if (Random.Shared.NextDouble() < 0.05)
-            {
-                dustItem = null;
-                SendInfo($"The talisman crumbles in your hands");
-            }
-
-            if (entity is Container container)
-                container.Inventory[slot] = dustItem;
-            else
-                Inventory[slot] = dustItem;
-
-            if(dustItem != null)
-                SendInfo($"Opened a Talisman Fragment and obtained a {dustItem.DisplayName ?? dustItem.ObjectId}");
-        }
-
-        public void AESpecialDust(TickTime time, Item item, Position target, int slot, int objId, ActivateEffect eff)
-        {
-            var entity = World.GetEntity(objId);
-
-            var dustItem = World.GameServer.ItemDustWeights.SpecialDust.GetRandom(Random.Shared);
-            if (entity is Container container)
-                container.Inventory[slot] = dustItem;
-            else
-                Inventory[slot] = dustItem;
-
-            GameServer.ChatManager.AnnounceLoot($"[{Name}] Scattered a Special Dust and Obtained [{dustItem.DisplayId ?? dustItem.ObjectId}]!");
-        }
-
         public void AEUnlockChest(TickTime time, Item item, Position target, int slot, int objId, ActivateEffect eff)
         {
             Player player = this;
@@ -396,33 +350,6 @@ namespace TKR.WorldServer.core.objects
                         AEXPBoost(time, item, target, slot, objId, eff);
                         break;
 
-                    case ActivateEffects.MagicDust:
-                        AEMagicDust(time, item, target, slot, objId, eff);
-                        break;
-
-                    case ActivateEffects.FrozenCoin:
-                        AEFrozenCoin(time, item, target, slot, objId, eff);
-                        break;
-
-                    case ActivateEffects.SpecialDust:
-                        AESpecialDust(time, item, target, slot, objId, eff);
-                        break;
-
-                    case ActivateEffects.TalismanFragment:
-                        AETalismanFragment(time, item, target, slot, objId, eff);
-                        break;
-
-                    case ActivateEffects.MiscellaneousDust:
-                        AEMiscellaneousDust(time, item, target, slot, objId, eff);
-                        break;
-
-                    case ActivateEffects.ItemDust:
-                        AEItemDust(time, item, target, slot, objId, eff);
-                        break;
-
-                    case ActivateEffects.PotionDust:
-                        AEPotionDust(time, item, target, slot, objId, eff);
-                        break;
 
                     case ActivateEffects.UnlockChest:
                         AEUnlockChest(time, item, target, slot, objId, eff);
@@ -1225,56 +1152,6 @@ namespace TKR.WorldServer.core.objects
             ActivateHealMp(this, eff.Amount);
         }
 
-        private void AEMagicDust(TickTime time, Item item, Position target, int slot, int objId, ActivateEffect eff)
-        {
-            if (Inventory.Data[slot] == null)
-            {
-                SendError("Something wrong happens with your Magic Dust!");
-                return;
-            }
-         
-            if (Inventory.Data[slot].Stack < Inventory.Data[slot].MaxStack)
-                return;
-
-            var entity = World.GetEntity(objId);
-
-            var dustItem = World.GameServer.ItemDustWeights.MagicDust.GetRandom(Random.Shared);
-            if (entity is Container container)
-                container.Inventory[slot] = dustItem;
-            else
-                Inventory[slot] = dustItem;
-            
-            SendInfo($"Used a Magic Dust and obtained a {dustItem.DisplayName ?? dustItem.ObjectId}");
-
-            Inventory.Data[slot] = null;
-            InvokeStatChange((StatDataType)((int)StatDataType.InventoryData0 + slot), Inventory.Data[slot]?.GetData() ?? "{}");
-        }
-
-        private void AEFrozenCoin(TickTime time, Item item, Position target, int slot, int objId, ActivateEffect eff)
-        {
-            if (Inventory.Data[slot] == null)
-            {
-                SendError("Something wrong happened with your Frozen Coin!");
-                return;
-            }
-
-            if (Inventory.Data[slot].Stack < Inventory.Data[slot].MaxStack)
-                return;
-
-            var entity = World.GetEntity(objId);
-
-            var dustItem = World.GameServer.ItemDustWeights.FrozenCoin.GetRandom(Random.Shared);
-            if (entity is Container container)
-                container.Inventory[slot] = dustItem;
-            else
-                Inventory[slot] = dustItem;
-
-            GameServer.ChatManager.AnnounceLoot($"[{Name}] Stacked 200x CoEF Coins and Obtained [{dustItem.DisplayId ?? dustItem.ObjectId}]!");
-
-            Inventory.Data[slot] = null;
-            InvokeStatChange((StatDataType)((int)StatDataType.InventoryData0 + slot), Inventory.Data[slot]?.GetData() ?? "{}");
-        }
-
         private void AEMagicNova(TickTime time, Item item, Position target, ActivateEffect eff)
         {
             this.AOE(eff.Range, true, player =>
@@ -1287,19 +1164,6 @@ namespace TKR.WorldServer.core.objects
                 Color = new ARGB(0xffffffff),
                 Pos1 = new Position() { X = eff.Range }
             }, this);
-        }
-
-        private void AEMiscellaneousDust(TickTime time, Item item, Position target, int slot, int objId, ActivateEffect eff)
-        {
-            var entity = World.GetEntity(objId);
-
-            var dustItem = World.GameServer.ItemDustWeights.MiscDust.GetRandom(Random.Shared);
-            if (entity is Container container)
-                container.Inventory[slot] = dustItem;
-            else
-                Inventory[slot] = dustItem;
-
-            SendInfo($"You Scattered used a Miscellaneous Dust and obtained a {dustItem.DisplayName ?? dustItem.ObjectId}");
         }
 
         private void AEPet(TickTime time, Item item, Position target, ActivateEffect eff)
@@ -1360,19 +1224,6 @@ namespace TKR.WorldServer.core.objects
                     ((Enemy)entity).Damage(this, ref time, impDamage, true);
                 });
             });
-        }
-
-        private void AEPotionDust(TickTime time, Item item, Position target, int slot, int objId, ActivateEffect eff)
-        {
-            var entity = World.GetEntity(objId);
-
-            var dustItem = World.GameServer.ItemDustWeights.PotionDust.GetRandom(Random.Shared);
-            if (entity is Container container)
-                container.Inventory[slot] = dustItem;
-            else
-                Inventory[slot] = dustItem;
-
-            SendInfo($"You used a Potion Dust and obtained a {dustItem.DisplayName ?? dustItem.ObjectId}");
         }
 
         private void AERemoveNegativeConditions(TickTime time, Item item, Position target, ActivateEffect eff)

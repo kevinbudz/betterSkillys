@@ -86,9 +86,6 @@ public class EquipmentToolTip extends ToolTip
 
          this.props_ = ObjectLibrary.propsLibrary_[objectType];
 
-         this.isMythicalItem = props_.isMythicTalisman_ || this.objectXML_.hasOwnProperty("Mythical")
-         this.isLegendaryItem = props_.isLegendaryTalisman_ || this.objectXML_.hasOwnProperty("Legendary");
-
           if(isLegendaryItem){
               this.backgroundColor = this.playerCanUse || this.player_ == null ? 0x2c2d3d : 6036765;
               this.outlineColor = this.playerCanUse || player == null? TooltipHelper.LEGENDARY_COLOR : 10965039;
@@ -202,39 +199,7 @@ public class EquipmentToolTip extends ToolTip
 
       private function makeItemEffectsText():void {
 
-         if(this.props_.talismanEffect_ != null)
-         {
-            this.itemEffectText_ = new SimpleText(13, 0x7550C4, false, MAX_WIDTH);
-            this.itemEffectText_.setBold(true);
-            this.itemEffectText_.wordWrap = true;
-            switch(this.props_.talismanEffect_)
-            {
-              //legendary
-               case "Weak Immunity":
-                  this.itemEffectText_.text = "Weak Immunity -> Immunity to being Weakened";
-                  break;
-               case "Call To Arms":
-                  this.itemEffectText_.text = "Call to Arms -> Regeneration is doubled";
-                  break;
-               case "Party Of One":
-                  this.itemEffectText_.text = "Party of One -> 50% more chance to get loot, but -1% for every player (Wont go below 0%)";
-                  break;
-               case "Pocket Change":
-                  this.itemEffectText_.text = "Pocket Change -> You have a 30% increased loot chance";
-                  break;
-               // mythical
-               case "Stun Immunity":
-                  this.itemEffectText_.text = "Stun Immunity -> Immunity to being Stunned";
-                  break;
-               case "Luck Of The Irish":
-                  this.itemEffectText_.text = "Luck of the Irish -> You have a 30% increased loot chance and an 2% chance to double your drops from bosses";
-                  break;
-               case "Known After Death":
-                  this.itemEffectText_.text = "Known After Death -> Experience from killing mobs is doubled";
-                  break;
-            }
-         }
-         else if(isLegendaryItem)
+         if(isLegendaryItem)
          {
             this.itemEffectText_ = new SimpleText(13, 0xebb011, false, MAX_WIDTH);
             this.itemEffectText_.setBold(true);
@@ -315,7 +280,7 @@ public class EquipmentToolTip extends ToolTip
             }
          }
 
-         if(isLegendaryItem || isMythicalItem || props_.talismanEffect_){
+         if(isLegendaryItem || isMythicalItem){
             switch(Parameters.data_.itemDataOutlines)
             {
                case 0:
@@ -881,11 +846,6 @@ public class EquipmentToolTip extends ToolTip
                this.effects.push(new Effect("",this.compareIncrementStat(activateXML)));
             }
          }
-
-         if(this.props_.talismanEffect_ != null) {
-            this.effects.push(new Effect("Passive", ""));
-            this.effects.push(new Effect("", " - " + this.props_.talismanEffect_));
-         }
       }
 
       private function compareIncrementStat(activateXML:XML) : String
@@ -921,10 +881,6 @@ public class EquipmentToolTip extends ToolTip
 
       private function addEquipmentItemRestrictions() : void
       {
-         if(this.props_.onlyOneTalisman_) {
-            this.restrictions.push(new Restriction("Only one can be equip", 0x7fce6d,true));
-         }
-
          this.restrictions.push(new Restriction("Must be equipped to use",11776947,false));
          if(this.isInventoryFull || this.inventoryOwnerType == InventoryOwnerTypes.CURRENT_PLAYER)
          {

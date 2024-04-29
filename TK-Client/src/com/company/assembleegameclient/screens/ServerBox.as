@@ -50,16 +50,16 @@ package com.company.assembleegameclient.screens
                  text = "Crowded";
              }
              if(server.usageText() != null) {
-                 text += " " + server.usageText();
+                 text += "\n" + server.usageText();
              }
 
              this.statusText_ = new SimpleText(18, color, false, 0, 0);
              this.statusText_.setBold(true);
-             this.statusText_.text = text;
+             this.statusText_.htmlText = "<p align=\"center\">" + text + "</p>";
              this.statusText_.updateMetrics();
              this.statusText_.filters = [new DropShadowFilter(0, 0, 0, 1, 8, 8)];
-             this.statusText_.x = WIDTH / 2 + (WIDTH / 4 - this.statusText_.width / 2);
-             this.statusText_.y = ServerBox.HEIGHT / 2 - this.nameText_.height / 2;
+             this.statusText_.x = WIDTH - 65 - (this.statusText_.width / 2);
+             this.statusText_.y = 4;
              addChild(this.statusText_);
          }
          this.draw();

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x190" id="Apple">
+      <DisplayId>Apple of Extreme Maxening</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj</File>
+         <Index>0x0f</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>It's healthy!\nMaxes any class to 8/8 and adds a Backpack.</Description>
+      <Sound>use_potion</Sound>
+      <Activate stat="6" amount="18050">IncrementStat</Activate>
+      <Activate stat="0" amount="2000">IncrementStat</Activate>
+      <Activate stat="3" amount="2000">IncrementStat</Activate>
+      <Activate stat="20" amount="2000">IncrementStat</Activate>
+      <Activate stat="21" amount="2000">IncrementStat</Activate>
+      <Activate stat="22" amount="2000">IncrementStat</Activate>
+      <Activate stat="26" amount="2000">IncrementStat</Activate>
+      <Activate stat="27" amount="2000">IncrementStat</Activate>
+      <Activate stat="28" amount="2000">IncrementStat</Activate>
+      <Consumable/>
+      <Backpack/>
+      <Potion/>
+      <BagType>8</BagType>
+      <Soulbound/>
+   </Object>
+   <Object type="0x18f" id="Gift">
+      <DisplayId>Gift of Krathan</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiEnvironment3</File>
+         <Index>0x22</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Use it and simply hit the class you need equipment for! Recommended to be used in your vault.\n\nConsume responsibly!</Description>
+      <Sound>use_potion</Sound>
+      <Activate objectId="Testing Gift Spawner">Pet</Activate>
+      <Consumable/>
+      <BagType>8</BagType>
+      <Soulbound/>
+      <feedPower>50000</feedPower>
+   </Object>
+   <Object type="0x641" id="Keys">
+      <DisplayId>Skeleton Key</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj</File>
+         <Index>0x21</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Opens everything! For testing purposes.</Description>
+      <Sound>use_potion</Sound>
+      <Activate id="Key Spawner">Create</Activate>
+      <Consumable/>
+      <BagType>8</BagType>
+      <Soulbound/>
+      <feedPower>50000</feedPower>
+   </Object>
+   <Object type="0x933" id="TKeys">
+      <DisplayId>Testing Gift</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj</File>
+         <Index>0x20</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Spawns an object that drops keys and items. For testing purposes.</Description>
+      <Sound>use_potion</Sound>
+      <Activate id="Testing Key Dropper">Create</Activate>
+      <Consumable/>
+      <BagType>8</BagType>
+      <Soulbound/>
+      <feedPower>50000</feedPower>
+   </Object>
+   <Object type="0x025c" id="LH Lost Halls Debug Item">
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>29</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>For all Lost Halls Testing needs! For testing purposes only!</Description>
+      <Sound>use_potion</Sound>
+      <Consumable/>
+      <BagType>0</BagType>
+      <Soulbound/>
+      <Activate id="LH Lost Halls Debug">Create</Activate>
+   </Object>
+   <Object type="0x174f" id="Test TP">
+      <DisplayId>Godlands Teleporter</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0xf2</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Teleports the user near the mountains.</Description>
+      <Soulbound/>
+      <Activate id="Death Flower">TeleportToObject</Activate>
+      <BagType>8</BagType>
+      <InvUse/>
+   </Object>
+   <Object type="0x10a2" id="Shatters TP">
+      <DisplayId>Cursed Crown Teleporter</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters2</File>
+         <Index>87</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Teleports the user to the Cursed Crown in the Shatters.</Description>
+      <Soulbound/>
+      <Activate id="shtrs The Cursed Crown">TeleportToObject</Activate>
+      <BagType>8</BagType>
+      <InvUse/>
+   </Object>
+   <Object type="0x10fa" id="Test Close">
+      <DisplayId>Realm Closer</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0xf4</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Kills 1 Heroes of Oryx.</Description>
+      <Soulbound/>
+      <Activate amount="1">KillRealmHeroes</Activate>
+      <BagType>8</BagType>
+      <InvUse/>
+   </Object>
+   <Object type="0x0249" id="Test Ring">
+      <DisplayId>Creator's Ring</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj</File>
+         <Index>0x2d</Index>
+      </Texture>
+      <SlotType>9</SlotType>
+      <Description>A ring worn by powerful creators in the goal to observe their brand new creation.</Description>
+      <ActivateOnEquip stat="0" amount="99999">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="26" amount="99999">IncrementStat</ActivateOnEquip>
+      <ActivateOnEquip stat="20" amount="5000">IncrementStat</ActivateOnEquip>
+      <BagType>8</BagType>
+      <FameBonus>7</FameBonus>
+      <feedPower>1500</feedPower>
+      <Soulbound/>
+   </Object>
+   <Object type="0x1a50" id="Snowy Spawner">
+      <DisplayId>Snowy Spawner</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>oryxHordeObjects8x8</File>
+         <Index>0x29</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Use this to spawn Snowy for testing purposes!</Description>
+      <Sound>use_potion</Sound>
+      <Activate id="Spawner">Create</Activate>
+      <InvUse/>
+      <BagType>8</BagType>
+      <Soulbound/>
+      <feedPower>10</feedPower>
+   </Object>
+   <Object type="0x705e" id="InvinceMe">
+      <DisplayId>Testosterone</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x15a</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Renders the user invincible for a day through sheer confidence.</Description>
+      <InvUse/>
+      <BagType>6</BagType>
+      <Activate effect="Invincible" duration="86400">ConditionEffectSelf</Activate>
+      <Soulbound/>
+   </Object>
+   <Object type="0x710c" id="tots">
+      <Class>Equipment</Class>
+      <Item/>
+      <DisplayId>Totalia Summoner</DisplayId>
+      <AnimatedTexture>
+         <File>chars16x16dEncounters</File>
+         <Index>37</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Summons Totalia.</Description>
+      <Sound>use_key</Sound>
+      <Soulbound/>
+      <Activate id="Totalia the Malevolent" cooldown="30">Create</Activate>
+      <feedPower>200</feedPower>
+      <BagType>8</BagType>
+      <InvUse/>
+   </Object>
+   <Object type="0x1aa8" id="frpk">
+      <Class>Equipment</Class>
+      <Item/>
+      <DisplayId>FR Test Permakey</DisplayId>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x0fe</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A key which opens an entrance to FR Test FOREVER, AND EVER, AND EVER... \n\nKeys can only be used once you have 10 or more stars!</Description>
+      <Sound>use_key</Sound>
+      <Soulbound/>
+      <Activate id="FR Test Portal" cooldown="30">CreatePortal</Activate>
+      <feedPower>200</feedPower>
+      <BagType>8</BagType>
+      <Track/>
+      <InvUse/>
+   </Object>
+   <Object type="0x1fe3" id="frs">
+      <Class>Equipment</Class>
+      <Item/>
+      <DisplayId>FR God Spawner</DisplayId>
+      <AnimatedTexture>
+         <File>d3Chars16x16rEmbed</File>
+         <Index>34</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Spawn a Snow Construct.\n\nBe a responsible tester and don't use this in the Nexus!</Description>
+      <Sound>use_key</Sound>
+      <Soulbound/>
+      <Activate id="FR God">Create</Activate>
+      <feedPower>200</feedPower>
+      <BagType>8</BagType>
+      <Track/>
+      <InvUse/>
+   </Object>
+   <Object type="0x1958" id="tgs">
+      <Class>Equipment</Class>
+      <Item/>
+      <DisplayId>Test Guill Spawner</DisplayId>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>17</Index>
+      </AnimatedTexture>
+      <SlotType>10</SlotType>
+      <Description>Spawns Test Guill!</Description>
+      <Sound>use_key</Sound>
+      <Soulbound/>
+      <Activate id="TG">Create</Activate>
+      <feedPower>200</feedPower>
+      <BagType>8</BagType>
+      <Track/>
+      <InvUse/>
+   </Object>
+   <Object type="0xbb2" id="Prod Enemy Item">
+      <DisplayId>Enemy Spawner</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>lofiChar8x8</File>
+         <Index>0xb5</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>Can spawn certain enemies. For testing purposes.</Description>
+      <Sound>use_key</Sound>
+      <InvUse/>
+      <Soulbound/>
+      <BagType>5</BagType>
+      <Activate id="Prod Enemy Spawner">Create</Activate>
+   </Object>
+</Objects>

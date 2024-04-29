@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Dungeons>
+   <Dungeon id="Nexus Explanation">
+      <Width>256</Width>
+      <Height>256</Height>
+      <CenterStartRoom/>
+      <Visibility>Full</Visibility>
+      <Room id="start">
+         <LocalJM>nexus_tutorial_new/nexusMarket_fullTutorial_challenger.jm</LocalJM>
+      </Room>
+   </Dungeon>
+   <Dungeon id="Nexus">
+      <Width>256</Width>
+      <Height>256</Height>
+      <DefaultTile>Space</DefaultTile>
+      <CenterStartRoom/>
+      <Visibility>Full</Visibility>
+      <ShowDisplays/>
+      <GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 2</GlobalReplaceTile>
+      <GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 3</GlobalReplaceTile>
+      <GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 4</GlobalReplaceTile>
+      <GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 5</GlobalReplaceTile>
+      <Room id="start">
+         <LocalJM>nexus_original_challenger.jm</LocalJM>
+      </Room>
+   </Dungeon>
+   <Dungeon id="Vault">
+      <Width>128</Width>
+      <Height>128</Height>
+      <Background>2</Background>
+      <DefaultTile>Space</DefaultTile>
+      <CenterStartRoom/>
+      <Visibility>Full</Visibility>
+      <ShowDisplays/>
+      <GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 2</GlobalReplaceTile>
+      <GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 3</GlobalReplaceTile>
+      <GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 4</GlobalReplaceTile>
+      <GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 5</GlobalReplaceTile>
+      <Room id="start">
+         <LocalJM>vault_challenger_20.jm</LocalJM>
+      </Room>
+   </Dungeon>
+   <Dungeon id="Daily Quest Room">
+      <DisplayId>Daily Quest Room</DisplayId>
+      <Width>32</Width>
+      <Height>32</Height>
+      <CenterStartRoom/>
+      <Visibility>Path</Visibility>
+      <WallObj>
+         <Obj>Cave Wall</Obj>
+      </WallObj>
+      <WallTile>Composite</WallTile>
+      <SurroundWith>Dark Cobblestone</SurroundWith>
+      <NoPlayerTeleport/>
+      <NoSave/>
+      <NoTrade/>
+      <Room id="start">
+         <LocalJM>daily_quests_and_login.jm</LocalJM>
+      </Room>
+   </Dungeon>
+   <Dungeon id="Daily Login Room">
+      <DisplayId>The Login Tinkerer</DisplayId>
+      <Width>64</Width>
+      <Height>64</Height>
+      <CenterStartRoom/>
+      <Visibility>Path</Visibility>
+      <WallObj>
+         <Obj>Cave Wall</Obj>
+      </WallObj>
+      <WallTile>Composite</WallTile>
+      <SurroundWith>Dark Cobblestone</SurroundWith>
+      <NoPlayerTeleport/>
+      <NoSave/>
+      <NoTrade/>
+      <Room id="start">
+         <LocalJM>daily_login.jm</LocalJM>
+      </Room>
+   </Dungeon>
+   <Dungeon id="Guild Hall">
+      <DisplayId>Guild Hall</DisplayId>
+      <Width>64</Width>
+      <Height>64</Height>
+      <CenterStartRoom/>
+      <Visibility>Full</Visibility>
+      <ShowDisplays/>
+      <Room id="start">
+         <LocalJM>guild_hall/1.jm</LocalJM>
+         <Enemies>
+            <Enemy minNum="1" maxNum="1">Guill</Enemy>
+         </Enemies>
+      </Room>
+   </Dungeon>
+   <Dungeon id="Guild Hall 2">
+      <DisplayId>Guild Hall</DisplayId>
+      <Width>64</Width>
+      <Height>64</Height>
+      <CenterStartRoom/>
+      <Visibility>Full</Visibility>
+      <ShowDisplays/>
+      <Room id="start">
+         <LocalJM>guild_hall/2_new.jm</LocalJM>
+         <Enemies>
+            <Enemy minNum="1" maxNum="1">Guill</Enemy>
+         </Enemies>
+      </Room>
+   </Dungeon>
+   <Dungeon id="Guild Hall 3">
+      <DisplayId>Guild Hall</DisplayId>
+      <Width>64</Width>
+      <Height>64</Height>
+      <CenterStartRoom/>
+      <Visibility>Full</Visibility>
+      <ShowDisplays/>
+      <Room id="start">
+         <LocalJM>guild_hall/3_new.jm</LocalJM>
+         <Enemies>
+            <Enemy minNum="1" maxNum="1">Guill</Enemy>
+         </Enemies>
+      </Room>
+   </Dungeon>
+   <Dungeon id="Guild Hall 4">
+      <DisplayId>Guild Hall</DisplayId>
+      <Width>64</Width>
+      <Height>64</Height>
+      <CenterStartRoom/>
+      <Visibility>Full</Visibility>
+      <ShowDisplays/>
+      <Room id="start">
+         <LocalJM>guild_hall/4_new.jm</LocalJM>
+         <Enemies>
+            <Enemy minNum="1" maxNum="1">Guill</Enemy>
+         </Enemies>
+      </Room>
+   </Dungeon>
+   <Dungeon id="Cloth Bazaar">
+      <PlayerLimit>150</PlayerLimit>
+      <Width>64</Width>
+      <Height>64</Height>
+      <CenterStartRoom/>
+      <Visibility>Full</Visibility>
+      <ShowDisplays/>
+      <GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 2</GlobalReplaceTile>
+      <GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 3</GlobalReplaceTile>
+      <GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 4</GlobalReplaceTile>
+      <GlobalReplaceTile func="perlinProb" dx=".01" dy=".01" mult="0.40" groundRestrict="White Floor 1">White Floor 5</GlobalReplaceTile>
+      <Room id="start">
+         <LocalJM>cloth_bazaar.jm</LocalJM>
+      </Room>
+   </Dungeon>
+   <Dungeon id="Pet Yard">
+      <DisplayId>Pet Yard</DisplayId>
+      <Width>64</Width>
+      <Height>64</Height>
+      <CenterStartRoom/>
+      <Visibility>Full</Visibility>
+      <ShowDisplays/>
+      <Room id="start">
+         <LocalJM>pet_yard/petYard_1.jm</LocalJM>
+      </Room>
+   </Dungeon>
+   <Dungeon id="Pet Yard 2">
+      <DisplayId>Pet Yard</DisplayId>
+      <Width>64</Width>
+      <Height>64</Height>
+      <CenterStartRoom/>
+      <Visibility>Full</Visibility>
+      <ShowDisplays/>
+      <Room id="start">
+         <LocalJM>pet_yard/petYard_2.jm</LocalJM>
+      </Room>
+   </Dungeon>
+   <Dungeon id="Pet Yard 3">
+      <DisplayId>Pet Yard</DisplayId>
+      <Width>64</Width>
+      <Height>64</Height>
+      <CenterStartRoom/>
+      <Visibility>Full</Visibility>
+      <ShowDisplays/>
+      <Room id="start">
+         <LocalJM>pet_yard/petYard_3.jm</LocalJM>
+      </Room>
+   </Dungeon>
+   <Dungeon id="Pet Yard 4">
+      <DisplayId>Pet Yard</DisplayId>
+      <Width>64</Width>
+      <Height>64</Height>
+      <CenterStartRoom/>
+      <Visibility>Full</Visibility>
+      <ShowDisplays/>
+      <Room id="start">
+         <LocalJM>pet_yard/petYard_4.jm</LocalJM>
+      </Room>
+   </Dungeon>
+   <Dungeon id="Pet Yard 5">
+      <DisplayId>Pet Yard</DisplayId>
+      <Width>64</Width>
+      <Height>64</Height>
+      <CenterStartRoom/>
+      <Visibility>Full</Visibility>
+      <ShowDisplays/>
+      <Room id="start">
+         <LocalJM>pet_yard/petYard_5.jm</LocalJM>
+      </Room>
+   </Dungeon>
+</Dungeons>

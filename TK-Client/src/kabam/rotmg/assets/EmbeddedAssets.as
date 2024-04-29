@@ -3,11 +3,10 @@ package kabam.rotmg.assets
    public class EmbeddedAssets
    {
 
-      public static const StarburstSpinner:Class = EmbeddedAssets_StarburstSpinner;
-      public static const DarknessBackground:Class = EmbeddedAssets_DarknessBackground;
-
-       public static var emotesEmbed_:Class = EmbeddedAssets_emotesEmbed_;
       public static var particlesEmbed:Class = EmbeddedAssets_particlesEmbed;
+      public static const StarburstSpinner:Class = EmbeddedAssets_StarburstSpinner;
+      public static const EvolveBackground:Class = EmbeddedAssets_EvolveBackground;
+      public static const DarknessBackground:Class = EmbeddedAssets_DarknessBackground;
       public static var lofiCharEmbed_:Class = EmbeddedAssets_lofiCharEmbed_;
       public static var lofiChar2Embed_:Class = EmbeddedAssets_lofiChar2Embed_;
       public static var lofiCharBigEmbed_:Class = EmbeddedAssets_lofiCharBigEmbed_;
@@ -22,12 +21,13 @@ package kabam.rotmg.assets
       public static var lofiObj3Embed_:Class = EmbeddedAssets_lofiObj3Embed_;
       public static var lofiObj4Embed_:Class = EmbeddedAssets_lofiObj4Embed_;
       public static var lofiObj5Embed_:Class = EmbeddedAssets_lofiObj5Embed_;
+      public static var lofiObj5bEmbed_:Class = EmbeddedAssets_lofiObj5bEmbed_;
       public static var lofiObj6Embed_:Class = EmbeddedAssets_lofiObj6Embed_;
-      public static var lofiObj7Embed_:Class = EmbeddedAssets_lofiObj7Embed_;
       public static var lofiObjBigEmbed_:Class = EmbeddedAssets_lofiObjBigEmbed_;
       public static var lofiObj40x40Embed_:Class = EmbeddedAssets_lofiObj40x40Embed_;
       public static var lofiProjsEmbed_:Class = EmbeddedAssets_lofiProjsEmbed_;
       public static var lofiProjsBigEmbed_:Class = EmbeddedAssets_lofiProjsBigEmbed_;
+      public static var lofiParticlesShockerEmbed_:Class = EmbeddedAssets_lofiParticlesShockerEmbed_;
       public static var lofiPartsEmbed_:Class = EmbeddedAssets_lofiPartsEmbed_;
       public static var chars8x8rBeachEmbed_:Class = EmbeddedAssets_chars8x8rBeachEmbed_;
       public static var chars8x8dBeachEmbed_:Class = EmbeddedAssets_chars8x8dBeachEmbed_;
@@ -48,6 +48,7 @@ package kabam.rotmg.assets
       public static var chars16x16dEncountersEmbed_:Class = EmbeddedAssets_chars16x16dEncountersEmbed_;
       public static var chars16x16dEncounters2Embed_:Class = EmbeddedAssets_chars16x16dEncounters2Embed_;
       public static var chars16x16rEncountersEmbed_:Class = EmbeddedAssets_chars16x16rEncountersEmbed_;
+      public static var lofiGravestoneEmbed_:Class = EmbeddedAssets_lofiGravestoneEmbed_;
       public static var playersEmbed_:Class = EmbeddedAssets_playersEmbed_;
       public static var playersMaskEmbed_:Class = EmbeddedAssets_playersMaskEmbed_;
       public static var playersSkinsEmbed_:Class = EmbeddedAssets_playersSkinsEmbed_;
@@ -55,8 +56,10 @@ package kabam.rotmg.assets
       public static var playersSkins16Embed_:Class = EmbeddedAssets_playersSkins16Embed_;
       public static var playersSkins16MaskEmbed_:Class = EmbeddedAssets_playersSkins16MaskEmbed_;
       public static var chars8x8rPets1Embed_:Class = EmbeddedAssets_chars8x8rPets1Embed_;
+      public static var chars8x8rPets2Embed_:Class = EmbeddedAssets_chars8x8rPets2Embed_;
       public static var chars8x8rPets1MaskEmbed_:Class = EmbeddedAssets_chars8x8rPets1MaskEmbed_;
       public static var chars8x8rPetsKaratePenguin_:Class = EmbeddedAssets_chars8x8rPetsKaratePenguin_;
+      public static var petsDivineEmbed_:Class = EmbeddedAssets_petsDivineEmbed_;
       public static var redLootBagEmbed_:Class = EmbeddedAssets_redLootBagEmbed_;
       public static var starsEmbed_:Class = EmbeddedAssets_starsEmbed_;
       public static var textile4x4Embed_:Class = EmbeddedAssets_textile4x4Embed_;
@@ -77,9 +80,9 @@ package kabam.rotmg.assets
       private static var gasEmitter_:Class = EmbeddedAssets_gasEmitter_;
       private static var cloningVatEmbed_:Class = EmbeddedAssets_cloningVatEmbed_;
       private static var crateEmbed_:Class = EmbeddedAssets_crateEmbed_;
-      private static var cubeEmbed_:Class = EmbeddedAssets_cubeEmbed_;
       private static var threeSideCubeEmbed_:Class = EmbeddedAssets_threeSideCubeEmbed_;
       private static var squatty3Side_:Class = EmbeddedAssets_squatty3Side_;
+      private static var cubeEmbed_:Class = EmbeddedAssets_cubeEmbed_;
       private static var bigcubeEmbed_:Class = EmbeddedAssets_bigcubeEmbed_;
       private static var icosahedronEmbed_:Class = EmbeddedAssets_icosahedronEmbed_;
       private static var octahedronEmbed_:Class = EmbeddedAssets_octahedronEmbed_;
@@ -94,6 +97,8 @@ package kabam.rotmg.assets
       private static var tableEdgeEmbed_:Class = EmbeddedAssets_tableEdgeEmbed_;
       private static var signEmbed_:Class = EmbeddedAssets_signEmbed_;
       private static var webEmbed_:Class = EmbeddedAssets_webEmbed_;
+      private static var twoHighWall_:Class = EmbeddedAssets_twoHighWall_;
+      private static var columnOneAndHalfEmbed_:Class = EmbeddedAssets_columnOneAndHalfEmbed_;
       private static var candyColBrokenEmbed_:Class = EmbeddedAssets_candyColBrokenEmbed_;
       private static var candyColWholeEmbed_:Class = EmbeddedAssets_candyColWholeEmbed_;
       private static var candyDoughnut1Embed_:Class = EmbeddedAssets_candyDoughnut1Embed_;
@@ -112,12 +117,19 @@ package kabam.rotmg.assets
       private static var largeMonument2Embed_:Class = EmbeddedAssets_largeMonument2Embed_;
       private static var largeMonument3Embed_:Class = EmbeddedAssets_largeMonument3Embed_;
       private static var jackoEmbed_:Class = EmbeddedAssets_jackoEmbed_;
-      public static var HanamiParts8x8Embed_:Class = EmbeddedAssets_HanamiParts8x8Embed_;
+      private static var petUpgrader_:Class = EmbeddedAssets_petUpgrader_;
+      private static var oryxCage_:Class = EmbeddedAssets_oryxCage_;
+      private static var oryxCageHung_:Class = EmbeddedAssets_oryxCageHung_;
+      private static var oryxDoor_:Class = EmbeddedAssets_oryxDoor_;
+      private static var templeColumnEmbed_:Class = EmbeddedAssets_templeColumnEmbed_;
+      private static var oryxWallWholeEmbed_:Class = EmbeddedAssets_oryxWallWholeEmbed_;
+      private static var lightShaftEmbed_:Class = EmbeddedAssets_lightShaftEmbed_;
+      private static var lightShaftQuadEmbed_:Class = EmbeddedAssets_lightShaftQuadEmbed_;
+      private static var fourBlockWallEmbed_:Class = EmbeddedAssets_fourBlockWallEmbed_;
       public static var d1Chars8x8rEmbed_:Class = EmbeddedAssets_d1Chars8x8rEmbed_;
       public static var d1Chars16x16rEmbed_:Class = EmbeddedAssets_d1Chars16x16rEmbed_;
       public static var d1LofiObjEmbed_:Class = EmbeddedAssets_d1LofiObjEmbed_;
       public static var d1LofiObjBigEmbed_:Class = EmbeddedAssets_d1LofiObjBigEmbed_;
-      public static var d2Chars8x8rEmbed_:Class = EmbeddedAssets_d2Chars8x8rEmbed_;
       public static var d2Chars16x16rEmbed_:Class = EmbeddedAssets_d2Chars16x16rEmbed_;
       public static var d2LofiObjEmbed_:Class = EmbeddedAssets_d2LofiObjEmbed_;
       public static var d2LofiObjBigEmbed_:Class = EmbeddedAssets_d2LofiObjBigEmbed_;
@@ -126,40 +138,123 @@ package kabam.rotmg.assets
       public static var d3LofiObjEmbed_:Class = EmbeddedAssets_d3LofiObjEmbed_;
       public static var d3LofiObjBigEmbed_:Class = EmbeddedAssets_d3LofiObjBigEmbed_;
       public static var cursorsEmbed_:Class = EmbeddedAssets_cursorsEmbed_;
+      public static var parasiteDenChars8x8Embed_:Class = EmbeddedAssets_parasiteDenChars8x8Embed_;
+      public static var parasiteDenChars16x16Embed_:Class = EmbeddedAssets_parasiteDenChars16x16Embed_;
+      public static var parasiteDenObjects8x8Embed_:Class = EmbeddedAssets_parasiteDenObjects8x8Embed_;
+      public static var parasiteDenObjects16x16Embed_:Class = EmbeddedAssets_parasiteDenObjects16x16Embed_;
+      public static var stPatricksChars8x8Embed_:Class = EmbeddedAssets_stPatricksChars8x8Embed_;
+      public static var stPatricksChars16x16Embed_:Class = EmbeddedAssets_stPatricksChars16x16Embed_;
       public static var stPatricksObjects8x8Embed_:Class = EmbeddedAssets_stPatricksObjects8x8Embed_;
+      public static var stPatricksObjects16x16Embed_:Class = EmbeddedAssets_stPatricksObjects16x16Embed_;
+      public static var buffedBunnyChars16x16Embed_:Class = EmbeddedAssets_buffedBunnyChars16x16Embed_;
       public static var buffedBunnyObjects8x8Embed_:Class = EmbeddedAssets_buffedBunnyObjects8x8Embed_;
       public static var buffedBunnyObjects16x16Embed_:Class = EmbeddedAssets_buffedBunnyObjects16x16Embed_;
+      public static var theMachineObjects8x8Embed_:Class = EmbeddedAssets_theMachineObjects8x8Embed_;
+      public static var theMachineObjects16x16Embed_:Class = EmbeddedAssets_theMachineObjects16x16Embed_;
+      public static var theMachineChars16x16Embed_:Class = EmbeddedAssets_theMachineChars16x16Embed_;
+      public static var theMachineChars8x8Embed_:Class = EmbeddedAssets_theMachineChars8x8Embed_;
+      public static var theGoldenArcherEmbed_:Class = EmbeddedAssets_theGoldenArcherEmbed_;
+      public static var theGoldenArcherMaskEmbed_:Class = EmbeddedAssets_theGoldenArcherMaskEmbed_;
       public static var mountainTempleChars8x8Embed_:Class = EmbeddedAssets_mountainTempleChars8x8Embed_;
       public static var mountainTempleChars16x16Embed_:Class = EmbeddedAssets_mountainTempleChars16x16Embed_;
       public static var mountainTempleObjects8x8Embed_:Class = EmbeddedAssets_mountainTempleObjects8x8Embed_;
       public static var mountainTempleObjects16x16Embed_:Class = EmbeddedAssets_mountainTempleObjects16x16Embed_;
+      public static var oryxHordeChars8x8Embed_:Class = EmbeddedAssets_oryxHordeChars8x8Embed_;
+      public static var oryxHordeChars16x16Embed_:Class = EmbeddedAssets_oryxHordeChars16x16Embed_;
+      public static var oryxHordeObjects8x8Embed_:Class = EmbeddedAssets_oryxHordeObjects8x8Embed_;
+      public static var oryxHordeObjects16x16Embed_:Class = EmbeddedAssets_oryxHordeObjects16x16Embed_;
+      public static var battleOryxChars8x8Embed_:Class = EmbeddedAssets_battleOryxChars8x8Embed_;
+      public static var battleOryxChars16x16Embed_:Class = EmbeddedAssets_battleOryxChars16x16Embed_;
+      public static var battleOryxObjects8x8Embed_:Class = EmbeddedAssets_battleOryxObjects8x8Embed_;
+      public static var battleOryxObjects16x16Embed_:Class = EmbeddedAssets_battleOryxObjects16x16Embed_;
+      public static var santaWorkshopChars8x8Embed_:Class = EmbeddedAssets_santaWorkshopChars8x8Embed_;
+      public static var santaWorkshopChars16x16Embed_:Class = EmbeddedAssets_santaWorkshopChars16x16Embed_;
+      public static var santaWorkshopObjects8x8Embed_:Class = EmbeddedAssets_santaWorkshopObjects8x8Embed_;
+      public static var santaWorkshopObjects16x16Embed_:Class = EmbeddedAssets_santaWorkshopObjects16x16Embed_;
+      public static var Hanami8x8charsEmbed_:Class = EmbeddedAssets_Hanami8x8charsEmbed_;
       public static var SakuraEnvironment16x16Embed_:Class = EmbeddedAssets_SakuraEnvironment16x16Embed_;
       public static var SakuraEnvironment8x8Embed_:Class = EmbeddedAssets_SakuraEnvironment8x8Embed_;
-      public static var Custom8x8EncountersEmbed_:Class = EmbeddedAssets_Custom8x8EncountersEmbed_;
-      public static var Custom16x16EncountersEmbed_:Class = EmbeddedAssets_Custom16x16EncountersEmbed_;
-      public static var Custom16x16EnvironmentEmbed_:Class = EmbeddedAssets_Custom16x16EnvironmentEmbed_;
-      public static var Custom32x32EncountersEmbed_:Class = EmbeddedAssets_Custom32x32EncountersEmbed_;
-      public static var CustomEnvironment16x16Embed_:Class = EmbeddedAssets_customEnvironment16x16Embed_;
-      public static var CustomEnvironmentEmbed_:Class = EmbeddedAssets_customEnvironmentEmbed_;
-      public static var CustomEnvironmentMortomusEmbed_:Class = EmbeddedAssets_customEnvironmentMortomusEmbed_;
-      public static var CustomEnvironment1Embed_:Class = EmbeddedAssets_customEnvironment1Embed_;
-      public static var CustomObjects32x32Embed_:Class = EmbeddedAssets_CustomObjects32x32Embed_;
-      public static var CustomObjectsSkillTreeEmbed_:Class = EmbeddedAssets_CustomObjectsSkillTreeEmbed_;
-      public static var CustomObjEmbed_:Class = EmbeddedAssets_CustomObjEmbed_;
-      public static var CustomObj1Embed_:Class = EmbeddedAssets_CustomObj1Embed_;
-      public static var CustomProjsEmbed_:Class = EmbeddedAssets_CustomProjsEmbed_;
-      public static var CustomProjsBigEmbed_:Class = EmbeddedAssets_CustomProjsBigEmbed_;
-      public static var mageEmbed_:Class = EmbeddedAssets_mageEmbed_;
-      public static var LostHallsProjsEmbed_:Class = EmbeddedAssets_LostHallsProjsEmbed_;
-      public static var LostHallsObjEmbed_:Class = EmbeddedAssets_LostHallsObjEmbed_;
-      public static var LostHallsChars16x16aEmbed_:Class = EmbeddedAssets_LostHallsChars16x16aEmbed_;
-      public static var LostHallsChars16x16bEmbed_:Class = EmbeddedAssets_LostHallsChars16x16bEmbed_;
-      public static var LostHallsBossesEmbed_:Class = EmbeddedAssets_LostHallsBossesEmbed_;
-      public static var LostHallsProjs2Embed_:Class = EmbeddedAssets_LostHallsProjs2Embed_;
-      public static var LostHallsObjects16x16Embed_:Class = EmbeddedAssets_LostHallsObjects16x16Embed_;
-      public static var Engine32x32Embed:Class = EmbeddedAssets_Engine32x32Embed_;
-      public static var tieredItems:Class = EmbeddedAssets_TieredItems;
-
+      public static var HanamiParts8x8Embed_:Class = EmbeddedAssets_HanamiParts8x8Embed_;
+      public static var summerNexusChars8x8Embed_:Class = EmbeddedAssets_summerNexusChars8x8Embed_;
+      public static var summerNexusChars16x16Embed_:Class = EmbeddedAssets_summerNexusChars16x16Embed_;
+      public static var summerNexusObjects8x8Embed_:Class = EmbeddedAssets_summerNexusObjects8x8Embed_;
+      public static var summerNexusObjects16x16Embed_:Class = EmbeddedAssets_summerNexusObjects16x16Embed_;
+      public static var autumnNexusObjects8x8Embed_:Class = EmbeddedAssets_autumnNexusObjects8x8Embed_;
+      public static var autumnNexusObjects16x16Embed_:Class = EmbeddedAssets_autumnNexusObjects16x16Embed_;
+      public static var autumnNexusChars8x8Embed_:Class = EmbeddedAssets_autumnNexusChars8x8Embed_;
+      public static var autumnNexusChars16x16Embed_:Class = EmbeddedAssets_autumnNexusChars16x16Embed_;
+      public static var xmasNexusObjects8x8Embed_:Class = EmbeddedAssets_xmasNexusObjects8x8Embed_;
+      public static var xmasNexusObjects16x16Embed_:Class = EmbeddedAssets_xmasNexusObjects16x16Embed_;
+      public static var xmasNexusChars16x16Embed_:Class = EmbeddedAssets_xmasNexusChars16x16Embed_;
+      public static var xmasNexusChars8x8Embed_:Class = EmbeddedAssets_xmasNexusChars8x8Embed_;
+      public static var epicHiveChars8x8Embed_:Class = EmbeddedAssets_epicHiveChars8x8Embed_;
+      public static var epicHiveChars16x16Embed_:Class = EmbeddedAssets_epicHiveChars16x16Embed_;
+      public static var epicHiveObjects8x8Embed_:Class = EmbeddedAssets_epicHiveObjects8x8Embed_;
+      public static var epicHiveObjects16x16Embed_:Class = EmbeddedAssets_epicHiveObjects16x16Embed_;
+      public static var lostHallsObjects8x8Embed_:Class = EmbeddedAssets_lostHallsObjects8x8Embed_;
+      public static var lostHallsObjects16x16Embed_:Class = EmbeddedAssets_lostHallsObjects16x16Embed_;
+      public static var lostHallsChars16x16Embed_:Class = EmbeddedAssets_lostHallsChars16x16Embed_;
+      public static var lostHallsChars8x8Embed_:Class = EmbeddedAssets_lostHallsChars8x8Embed_;
+      public static var magicWoodsChars8x8Embed_:Class = EmbeddedAssets_magicWoodsChars8x8Embed_;
+      public static var magicWoodsChars16x16Embed_:Class = EmbeddedAssets_magicWoodsChars16x16Embed_;
+      public static var magicWoodsObjects8x8Embed_:Class = EmbeddedAssets_magicWoodsObjects8x8Embed_;
+      public static var magicWoodsObjects16x16Embed_:Class = EmbeddedAssets_magicWoodsObjects16x16Embed_;
+      public static var cnidarianReefObjects8x8Embed_:Class = EmbeddedAssets_cnidarianReefObjects8x8Embed_;
+      public static var cnidarianReefObjects16x16Embed_:Class = EmbeddedAssets_cnidarianReefObjects16x16Embed_;
+      public static var secludedThicketChars8x8Embed_:Class = EmbeddedAssets_secludedThicketChars8x8Embed_;
+      public static var secludedThicketChars16x16Embed_:Class = EmbeddedAssets_secludedThicketChars16x16Embed_;
+      public static var secludedThicketObjects8x8Embed_:Class = EmbeddedAssets_secludedThicketObjects8x8Embed_;
+      public static var secludedThicketObjects16x16Embed_:Class = EmbeddedAssets_secludedThicketObjects16x16Embed_;
+      public static var cursedLibraryObjects8x8Embed_:Class = EmbeddedAssets_cursedLibraryObjects8x8Embed_;
+      public static var cursedLibraryObjects16x16Embed_:Class = EmbeddedAssets_cursedLibraryObjects16x16Embed_;
+      public static var cursedLibraryChars16x16Embed_:Class = EmbeddedAssets_cursedLibraryChars16x16Embed_;
+      public static var cursedLibraryChars8x8Embed_:Class = EmbeddedAssets_cursedLibraryChars8x8Embed_;
+      public static var cursedLibraryCharsAvalon16x16Embed_:Class = EmbeddedAssets_cursedLibraryCharsAvalon16x16Embed_;
+      public static var lairOfDraconisObjects8x8Embed_:Class = EmbeddedAssets_lairOfDraconisObjects8x8Embed_;
+      public static var lairOfDraconisObjects16x16Embed_:Class = EmbeddedAssets_lairOfDraconisObjects16x16Embed_;
+      public static var lairOfDraconisChars16x16Embed_:Class = EmbeddedAssets_lairOfDraconisChars16x16Embed_;
+      public static var lairOfDraconisChars8x8Embed_:Class = EmbeddedAssets_lairOfDraconisChars8x8Embed_;
+      public static var lairOfShaitanObjects8x8Embed_:Class = EmbeddedAssets_lairOfShaitanObjects8x8Embed_;
+      public static var lairOfShaitanObjects16x16Embed_:Class = EmbeddedAssets_lairOfShaitanObjects16x16Embed_;
+      public static var lairOfShaitanChars16x16Embed_:Class = EmbeddedAssets_lairOfShaitanChars16x16Embed_;
+      public static var alienInvasionObjects8x8Embed_:Class = EmbeddedAssets_alienInvasionObjects8x8Embed_;
+      public static var alienInvasionObjects16x16Embed_:Class = EmbeddedAssets_alienInvasionObjects16x16Embed_;
+      public static var alienInvasionChars16x16Embed_:Class = EmbeddedAssets_alienInvasionChars16x16Embed_;
+      public static var alienInvasionChars8x8Embed_:Class = EmbeddedAssets_alienInvasionChars8x8Embed_;
+      public static var crystalCaveObjects8x8Embed_:Class = EmbeddedAssets_crystalCaveObjects8x8Embed_;
+      public static var crystalCaveObjects16x16Embed_:Class = EmbeddedAssets_crystalCaveObjects16x16Embed_;
+      public static var crystalCaveChars16x16Embed_:Class = EmbeddedAssets_crystalCaveChars16x16Embed_;
+      public static var crystalCaveChars8x8Embed_:Class = EmbeddedAssets_crystalCaveChars8x8Embed_;
+      public static var fungalCavernObjects8x8Embed_:Class = EmbeddedAssets_fungalCavernObjects8x8Embed_;
+      public static var fungalCavernObjects16x16Embed_:Class = EmbeddedAssets_fungalCavernObjects16x16Embed_;
+      public static var fungalCavernChars16x16Embed_:Class = EmbeddedAssets_fungalCavernChars16x16Embed_;
+      public static var fungalCavernChars8x8Embed_:Class = EmbeddedAssets_fungalCavernChars8x8Embed_;
+      public static var lofiParticlesBeamEmbed_:Class = EmbeddedAssets_lofiParticlesBeamEmbed_;
+      public static var lofiParticlesElectricEmbed_:Class = EmbeddedAssets_lofiParticlesElectricEmbed_;
+      public static var lofiParticlesSkullEmbed_:Class = EmbeddedAssets_lofiParticlesSkullEmbed_;
+      public static var lofi_particlesMusicNotesEmbed_:Class = EmbeddedAssets_lofi_particlesMusicNotesEmbed_;
+      public static var innerWorkingsObjects8x8Embed_:Class = EmbeddedAssets_innerWorkingsObjects8x8Embed_;
+      public static var innerWorkingsObjects16x16Embed_:Class = EmbeddedAssets_innerWorkingsObjects16x16Embed_;
+      public static var innerWorkingsChars16x16Embed_:Class = EmbeddedAssets_innerWorkingsChars16x16Embed_;
+      public static var innerWorkingsChars8x8Embed_:Class = EmbeddedAssets_innerWorkingsChars8x8Embed_;
+      public static var oryxSanctuaryObjects8x8Embed_:Class = EmbeddedAssets_oryxSanctuaryObjects8x8Embed_;
+      public static var oryxSanctuaryObjects16x16Embed_:Class = EmbeddedAssets_oryxSanctuaryObjects16x16Embed_;
+      public static var oryxSanctuaryObjects32x32Embed_:Class = EmbeddedAssets_oryxSanctuaryObjects32x32Embed_;
+      public static var oryxSanctuaryChars32x32Embed_:Class = EmbeddedAssets_oryxSanctuaryChars32x32Embed_;
+      public static var oryxSanctuaryChars16x16Embed_:Class = EmbeddedAssets_oryxSanctuaryChars16x16Embed_;
+      public static var oryxSanctuaryChars8x8Embed_:Class = EmbeddedAssets_oryxSanctuaryChars8x8Embed_;
+      public static var lofiParticlesHolyBeamEmbed_:Class = EmbeddedAssets_lofiParticlesHolyBeamEmbed_;
+      public static var lofiParticlesTelegraphEmbed_:Class = EmbeddedAssets_lofiParticlesTelegraphEmbed_;
+      public static var lofiParticlesMeteorEmbed_:Class = EmbeddedAssets_lofiParticlesMeteorEmbed_;
+      public static var archbishopObjects8x8Embed_:Class = EmbeddedAssets_archbishopObjects8x8Embed_;
+      public static var archbishopObjects16x16Embed_:Class = EmbeddedAssets_archbishopObjects16x16Embed_;
+      public static var archbishopChars16x16Embed_:Class = EmbeddedAssets_archbishopChars16x16Embed_;
+      public static var archbishopChars8x8Embed_:Class = EmbeddedAssets_archbishopChars8x8Embed_;
+      public static var archbishopObjects64x64Embed_:Class = EmbeddedAssets_archbishopObjects64x64Embed_;
+      public static var ancientRuinsObjects8x8Embed_:Class = EmbeddedAssets_ancientRuinsObjects8x8Embed_;
+      public static var ancientRuinsObjects16x16Embed_:Class = EmbeddedAssets_ancientRuinsObjects16x16Embed_;
+      public static var ancientRuinsChars16x16Embed_:Class = EmbeddedAssets_ancientRuinsChars16x16Embed_;
+      public static var ancientRuinsChars8x8Embed_:Class = EmbeddedAssets_ancientRuinsChars8x8Embed_;
       public static var models_:Object = {
          "Monster Tank1":new monsterTank1Embed_(),
          "Monster Tank2":new monsterTank2Embed_(),
@@ -169,9 +264,9 @@ package kabam.rotmg.assets
          "Lab Tank":new labTankEmbed_(),
          "Tesla":new teslaEmbed_(),
          "CloningVat":new cloningVatEmbed_(),
-         "ThreeSideCube": new threeSideCubeEmbed_(),
-         "Squatty3Side": new squatty3Side_(),
          "Crate":new crateEmbed_(),
+         "ThreeSideCube":new threeSideCubeEmbed_(),
+         "Squatty3Side":new squatty3Side_(),
          "Cube":new cubeEmbed_(),
          "Big Cube":new bigcubeEmbed_(),
          "Ico":new icosahedronEmbed_(),
@@ -189,6 +284,8 @@ package kabam.rotmg.assets
          "Web":new webEmbed_(),
          "Candy Col Broken":new candyColBrokenEmbed_(),
          "Candy Col Whole":new candyColWholeEmbed_(),
+         "Column One and a Half":new columnOneAndHalfEmbed_(),
+         "Two High Wall":new twoHighWall_(),
          "Candy Doughnut 1":new candyDoughnut1Embed_(),
          "Candy Doughnut 2":new candyDoughnut2Embed_(),
          "Candy Doughnut 3":new candyDoughnut3Embed_(),
@@ -204,8 +301,17 @@ package kabam.rotmg.assets
          "Large Monument 1":new largeMonument1Embed_(),
          "Large Monument 2":new largeMonument2Embed_(),
          "Large Monument 3":new largeMonument3Embed_(),
-         "Jacko":new jackoEmbed_()
-      };
+         "Jacko":new jackoEmbed_(),
+         "Column":new templeColumnEmbed_(),
+         "Oryx Wall":new oryxWallWholeEmbed_(),
+         "Four High Wall":new fourBlockWallEmbed_(),
+         "Light Shaft":new lightShaftEmbed_(),
+         "Light Shaft Quad":new lightShaftQuadEmbed_(),
+         "Pet Upgrader Obj":new petUpgrader_(),
+         "Oryx Cage":new oryxCage_(),
+         "Oryx Hung Cage":new oryxCageHung_(),
+         "Oryx Door":new oryxDoor_()
+      }
        
       
       public function EmbeddedAssets()

@@ -1,9 +1,0 @@
-<Objects>
-  <Object type="0x18c8" id="Character Changer NonStatic">
-    <Class>GameObject</Class>
-    <Texture>
-      <File>lofiChar8x8</File>
-      <Index>0x08</Index>
-    </Texture>
-  </Object>
-</Objects>

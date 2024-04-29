@@ -1,0 +1,2722 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0xaba5" id="Spectral Slash">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x50</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xaba6" id="Scribe Spike">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x51</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xaba7" id="Scholar Spell">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x52</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xaba8" id="Cardgage Curse">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x53</Index>
+      </Texture>
+   </Object>
+   <Object type="0xabaa" id="Corruption Cut">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x55</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xabab" id="Corruption Star">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x56</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+   </Object>
+   <Object type="0xabac" id="Centrifuge Cyclone">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x57</Index>
+      </Texture>
+      <Rotation>130</Rotation>
+   </Object>
+   <Object type="0xabad" id="Corruption Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x58</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xabae" id="Twisted Tongue">
+      <Class>Projectile</Class>
+      <RandomTexture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x59</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x5a</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x5b</Index>
+         </Texture>
+      </RandomTexture>
+      <Rotation>70</Rotation>
+   </Object>
+   <Object type="0xabaf" id="HyPEr rEalIsTIC BLoOd">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x5c</Index>
+      </Texture>
+   </Object>
+   <Object type="0xabb0" id="Literature Wave">
+      <Class>Projectile</Class>
+      <RandomTexture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x60</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x61</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x62</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x63</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x64</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x65</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x66</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x67</Index>
+         </Texture>
+      </RandomTexture>
+   </Object>
+   <Object type="0xabb1" id="Candle Fireball">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x68</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xabb2" id="Ronin Slash">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x69</Index>
+      </Texture>
+   </Object>
+   <Object type="0xabb3" id="Corruption Spinner">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x6b</Index>
+      </Texture>
+      <Rotation>-200</Rotation>
+   </Object>
+   <Object type="0xabb4" id="Corruption Gaze">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x6c</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xabb9" id="Book Bash">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x5d</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xABBA" id="Student Scythe">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x5e</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xabbb" id="Headless Halberd">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x6d</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xabbc" id="Headless Harbinger">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x6e</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xabbd" id="Corruption Stab">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x6f</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xabc5" id="Sharpened Fingernail">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x71</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xabc6" id="Finger Gun">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x72</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0xab56" id="Cursed Library Portal">
+      <DisplayId>Cursed Library</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Cursed Library</DungeonName>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x7a</Index>
+      </Texture>
+      <Animation period="0" prob="1">
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x7a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x7b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x7c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x7d</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0xab61" id="Library Beholder">
+      <DisplayId>Enlightened Beholder</DisplayId>
+      <Group>Library Heal Receivers</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>cursedLibraryChars16x16</File>
+         <Index>19</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>1500</MaxHitPoints>
+      <Defense>12</Defense>
+      <Size>100</Size>
+      <HitSound>monster/beholder_hit</HitSound>
+      <DeathSound>monster/beholder_death</DeathSound>
+      <Flying/>
+      <God/>
+      <Projectile id="0">
+         <ObjectId>White Bolt</ObjectId>
+         <Damage>120</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2700</LifetimeMS>
+         <Size>120</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Purple Star</ObjectId>
+         <Damage>0</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="5">Blind</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xab7f" id="Library Deholder">
+      <DisplayId>Deholder</DisplayId>
+      <Group>Library Heal Receivers</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>cursedLibraryChars16x16</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>18</Defense>
+      <Size>100</Size>
+      <HitSound>monster/beholder_hit</HitSound>
+      <DeathSound>monster/beholder_death</DeathSound>
+      <Flying/>
+      <StasisImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>HyPEr rEalIsTIC BLoOd</ObjectId>
+         <Damage>180</Damage>
+         <Speed>50</Speed>
+         <Size>90</Size>
+         <LifetimeMS>10000</LifetimeMS>
+         <Magnitude>3</Magnitude>
+         <PassesCover/>
+         <Parametric/>
+         <FaceDir/>
+         <ConditionEffect duration="1">Bleeding</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xab80" id="Library Eye of the Edified">
+      <DisplayId>Eye of the Edified</DisplayId>
+      <Group>Library Heal Receivers</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>cursedLibraryChars16x16</File>
+         <Index>5</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>1800</MaxHitPoints>
+      <Defense>6</Defense>
+      <Size>80</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <Z>0.3</Z>
+      <Flying/>
+   </Object>
+   <Object type="0xab67" id="Library Lips of the Lost">
+      <DisplayId>Lips of the Lost</DisplayId>
+      <Group>Library Heal Receivers</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>cursedLibraryChars16x16</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>2600</MaxHitPoints>
+      <Defense>30</Defense>
+      <Size>100</Size>
+      <ShadowSize>85</ShadowSize>
+      <HitSound>monster/medusa_hit</HitSound>
+      <DeathSound>monster/medusa_death</DeathSound>
+      <StasisImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>Twisted Tongue</ObjectId>
+         <Damage>95</Damage>
+         <Speed>55</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1600</LifetimeMS>
+         <ConditionEffect duration="1">Quiet</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Cardgage Curse</ObjectId>
+         <Damage>0</Damage>
+         <Speed>35</Speed>
+         <Size>110</Size>
+         <LifetimeMS>900</LifetimeMS>
+         <ConditionEffect duration="7">Curse</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xab82" id="Library Hand of the Helpless">
+      <DisplayId>Hand of the Helpless</DisplayId>
+      <Group>Library Heal Receivers</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>cursedLibraryChars16x16</File>
+         <Index>6</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>3900</MaxHitPoints>
+      <Defense>35</Defense>
+      <Size>100</Size>
+      <ShadowSize>85</ShadowSize>
+      <HitSound>monster/ghost_god_hit</HitSound>
+      <DeathSound>monster/ghost_god_death</DeathSound>
+      <StasisImmune/>
+      <StunImmune/>
+      <TrackLoot/>
+      <AltTexture id="0">
+         <AnimatedTexture>
+            <File>cursedLibraryChars16x16</File>
+            <Index>6</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>cursedLibraryChars16x16</File>
+            <Index>7</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="2">
+         <AnimatedTexture>
+            <File>cursedLibraryChars16x16</File>
+            <Index>8</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <Projectile id="0">
+         <ObjectId>Finger Gun</ObjectId>
+         <Damage>95</Damage>
+         <Speed>90</Speed>
+         <Size>85</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Finger Gun</ObjectId>
+         <Damage>120</Damage>
+         <Speed>75</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Finger Gun</ObjectId>
+         <Damage>110</Damage>
+         <Speed>65</Speed>
+         <Size>90</Size>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Finger Gun</ObjectId>
+         <Damage>105</Damage>
+         <Speed>58</Speed>
+         <Size>85</Size>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Sharpened Fingernail</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1250</LifetimeMS>
+         <Amplitude>1.75</Amplitude>
+         <Frequency>0.56</Frequency>
+         <ConditionEffect duration="1">Confused</ConditionEffect>
+         <PassesCover/>
+         <MultiHit/>
+         <FaceDir/>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Sharpened Fingernail</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <Amplitude>1.5</Amplitude>
+         <Frequency>0.55</Frequency>
+         <ConditionEffect duration="1">Confused</ConditionEffect>
+         <PassesCover/>
+         <MultiHit/>
+         <FaceDir/>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>Sharpened Fingernail</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>750</LifetimeMS>
+         <Amplitude>1.25</Amplitude>
+         <Frequency>0.55</Frequency>
+         <ConditionEffect duration="1">Confused</ConditionEffect>
+         <PassesCover/>
+         <MultiHit/>
+         <FaceDir/>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>Sharpened Fingernail</ObjectId>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>500</LifetimeMS>
+         <Amplitude>1</Amplitude>
+         <Frequency>0.54</Frequency>
+         <ConditionEffect duration="1">Confused</ConditionEffect>
+         <PassesCover/>
+         <MultiHit/>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object type="0xab64" id="Library Maggot">
+      <DisplayId>Vile Maggot</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x3d</Index>
+      </Texture>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Defense>2</Defense>
+      <Size>40</Size>
+      <ShadowSize>85</ShadowSize>
+      <HitSound>monster/slimes_hit</HitSound>
+      <DeathSound>monster/slimes_death</DeathSound>
+      <HealthBar>-1</HealthBar>
+      <Animation period="0" prob="1">
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x3d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x3e</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>30</Damage>
+         <Speed>0</Speed>
+         <Size>80</Size>
+         <LifetimeMS>200</LifetimeMS>
+         <ArmorPiercing/>
+         <ConditionEffect duration="3">Sick</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xab63" id="Library Poltergeist">
+      <DisplayId>Poltergeist</DisplayId>
+      <Group>Library Heal Receivers</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>cursedLibraryChars8x8</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>1300</MaxHitPoints>
+      <Defense>10</Defense>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <HitSound>monster/ghosts_hit</HitSound>
+      <DeathSound>monster/ghosts_death</DeathSound>
+      <NoMiniMap/>
+      <AltTexture id="1">
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x8a</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x8b</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x8c</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <Projectile id="0">
+         <ObjectId>Spectral Slash</ObjectId>
+         <Damage>30</Damage>
+         <Speed>75</Speed>
+         <Size>90</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <ConditionEffect duration="2.6">Curse</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xab66" id="Library Soulless Scribe">
+      <DisplayId>Soulless Scribe</DisplayId>
+      <Group>Library Soulless Squad</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>cursedLibraryChars8x8</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>2200</MaxHitPoints>
+      <Defense>20</Defense>
+      <Size>100</Size>
+      <HitSound>monster/mummies_hit</HitSound>
+      <DeathSound>monster/mummies_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Scribe Spike</ObjectId>
+         <Damage>75</Damage>
+         <Speed>60</Speed>
+         <Size>80</Size>
+         <LifetimeMS>2800</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xab83" id="Library Soulless Scholar">
+      <DisplayId>Soulless Scholar</DisplayId>
+      <Group>Library Soulless Squad</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>cursedLibraryChars8x8</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>2600</MaxHitPoints>
+      <Defense>15</Defense>
+      <Size>100</Size>
+      <HitSound>monster/mummies_hit</HitSound>
+      <DeathSound>monster/mummies_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Scholar Spell</ObjectId>
+         <Damage>90</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1600</LifetimeMS>
+         <Amplitude>1.9</Amplitude>
+         <Frequency>0.5</Frequency>
+         <ConditionEffect duration="3.2">Slowed</ConditionEffect>
+         <PassesCover/>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object type="0xab84" id="Library Soulless Student">
+      <DisplayId>Soulless Student</DisplayId>
+      <Group>Library Soulless Squad</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>cursedLibraryChars8x8</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>1400</MaxHitPoints>
+      <Defense>30</Defense>
+      <Size>100</Size>
+      <HitSound>monster/mummies_hit</HitSound>
+      <DeathSound>monster/mummies_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Student Scythe</ObjectId>
+         <Damage>90</Damage>
+         <Speed>100</Speed>
+         <Size>80</Size>
+         <LifetimeMS>700</LifetimeMS>
+         <Wavy/>
+      </Projectile>
+   </Object>
+   <Object type="0xab98" id="Library Soulless Trio">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>cursedLibraryChars16x16</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xab65" id="Library Bookwyrm">
+      <DisplayId>Bookwyrm</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>cursedLibraryChars16x16</File>
+         <Index>15</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>2800</MaxHitPoints>
+      <Defense>20</Defense>
+      <Size>80</Size>
+      <HitSound>monster/dragons_hit</HitSound>
+      <DeathSound>monster/dragons_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>Book Bash</ObjectId>
+         <Damage>125</Damage>
+         <Speed>50</Speed>
+         <Size>120</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <ConditionEffect duration="2">Stunned</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xab81" id="Library Headless Specter">
+      <DisplayId>Headless Specter</DisplayId>
+      <Group>Library Heal Receivers</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>cursedLibraryChars16x16</File>
+         <Index>18</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>4205</MaxHitPoints>
+      <Defense>35</Defense>
+      <Size>90</Size>
+      <HitSound>monster/cyclops_hit</HitSound>
+      <DeathSound>monster/cyclops_death</DeathSound>
+      <Z>0.2</Z>
+      <Flying/>
+      <StasisImmune/>
+      <StunImmune/>
+      <Projectile id="0">
+         <ObjectId>Headless Halberd</ObjectId>
+         <Damage>85</Damage>
+         <Speed>60</Speed>
+         <Size>120</Size>
+         <LifetimeMS>1600</LifetimeMS>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Headless Halberd</ObjectId>
+         <Damage>105</Damage>
+         <Speed>45</Speed>
+         <Size>150</Size>
+         <LifetimeMS>1600</LifetimeMS>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Headless Harbinger</ObjectId>
+         <Damage>120</Damage>
+         <Speed>30</Speed>
+         <Size>135</Size>
+         <LifetimeMS>1333</LifetimeMS>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xaba9" id="Library Book Bomb">
+      <DisplayId>Book Bomb</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <RandomTexture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x03</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x04</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x05</Index>
+         </Texture>
+      </RandomTexture>
+      <HitSound>monster/hobbits_hit</HitSound>
+      <DeathSound>monster/hobbits_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>10</Defense>
+      <Exp>0</Exp>
+      <StasisImmune/>
+      <Projectile id="1">
+         <ObjectId>Literature Wave</ObjectId>
+         <Damage>80</Damage>
+         <Speed>45</Speed>
+         <Size>130</Size>
+         <LifetimeMS>7333</LifetimeMS>
+         <ConditionEffect duration="2">Dazed</ConditionEffect>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Sound id="0">spell/fire_spray</Sound>
+   </Object>
+   <Object type="0xabc7" id="Library Avalon Candle Helper">
+      <DisplayId>Avalon the Archivist</DisplayId>
+      <Enemy/>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+      <Projectile id="0">
+         <ObjectId>Centrifuge Cyclone</ObjectId>
+         <Damage>10</Damage>
+         <Speed>5</Speed>
+         <Size>85</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Invincible/>
+   </Object>
+   <Object type="0xab93" id="Library Avalon the Archivist">
+      <DisplayId>Avalon the Archivist</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>cursedLibraryCharsAvalon16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>2000</Exp>
+      <Size>130</Size>
+      <HitSound>monster/lizard_god_hit</HitSound>
+      <DeathSound>monster/lizard_god_death</DeathSound>
+      <Quest/>
+      <HealthBarBoss/>
+      <God/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <DazedImmune/>
+      <DontFaceAttacks/>
+      <EventChestBoss/>
+      <TrackLoot/>
+      <Projectile id="1">
+         <ObjectId>Literature Wave</ObjectId>
+         <Damage>140</Damage>
+         <Speed>60</Speed>
+         <Size>130</Size>
+         <LifetimeMS>5500</LifetimeMS>
+         <ConditionEffect duration="3">Stunned</ConditionEffect>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Candle Fireball</ObjectId>
+         <Damage>100</Damage>
+         <Speed>62</Speed>
+         <Size>90</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <ConditionEffect duration="4">Stunned</ConditionEffect>
+         <MultiHit/>
+         <Boomerang/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Candle Fireball</ObjectId>
+         <Damage>100</Damage>
+         <Speed>67</Speed>
+         <Size>90</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <ConditionEffect duration="4">Stunned</ConditionEffect>
+         <MultiHit/>
+         <Boomerang/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Candle Fireball</ObjectId>
+         <Damage>100</Damage>
+         <Speed>85</Speed>
+         <Size>90</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <ConditionEffect duration="4">Stunned</ConditionEffect>
+         <MultiHit/>
+         <Boomerang/>
+      </Projectile>
+   </Object>
+   <Object type="0xab94" id="Library Corruption Phantom">
+      <DisplayId>Corruption Phantom</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>cursedLibraryChars16x16</File>
+         <Index>13</Index>
+      </AnimatedTexture>
+      <MaxHitPoints>20000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>2500</Exp>
+      <Size>150</Size>
+      <HitSound>monster/skull_shrine_hit</HitSound>
+      <DeathSound>monster/skull_shrine_death</DeathSound>
+      <Z>0.4</Z>
+      <Quest/>
+      <HealthBarBoss/>
+      <God/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <StunImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>Corruption Bolt</ObjectId>
+         <Damage>140</Damage>
+         <Speed>60</Speed>
+         <Size>110</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="2.4">Sick</ConditionEffect>
+         <PassesCover/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Corruption Star</ObjectId>
+         <Damage>50</Damage>
+         <Speed>55</Speed>
+         <Size>80</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <PassesCover/>
+         <Boomerang/>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Corruption Spinner</ObjectId>
+         <Damage>160</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>10000</LifetimeMS>
+         <Magnitude>4</Magnitude>
+         <PassesCover/>
+         <Parametric/>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object type="0xab9a" id="Library Corruption Phantom Wisp Charger">
+      <DisplayId>Corruption Phantom Wisp Charger</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>cursedLibraryChars8x8</File>
+         <Index>6</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flaming_skulls_hit</HitSound>
+      <DeathSound>monster/flaming_skulls_death</DeathSound>
+      <Size>80</Size>
+      <Z>0.3</Z>
+      <Flying/>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Defense>0</Defense>
+      <StunImmune/>
+      <Projectile id="0">
+         <ObjectId>Corruption Stab</ObjectId>
+         <Damage>85</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>750</LifetimeMS>
+         <Size>85</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Corruption Stab</ObjectId>
+         <Damage>95</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>300</LifetimeMS>
+         <Size>85</Size>
+      </Projectile>
+   </Object>
+   <Object type="0xab9b" id="Library Corruption Phantom Wisp Stalker">
+      <DisplayId>Corruption Phantom Wisp Stalker</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>cursedLibraryChars8x8</File>
+         <Index>7</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flaming_skulls_hit</HitSound>
+      <DeathSound>monster/flaming_skulls_death</DeathSound>
+      <Size>80</Size>
+      <Z>0.3</Z>
+      <Flying/>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>0</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Corruption Star</ObjectId>
+         <Damage>50</Damage>
+         <Speed>55</Speed>
+         <Size>80</Size>
+         <LifetimeMS>3800</LifetimeMS>
+         <PassesCover/>
+         <Boomerang/>
+         <ConditionEffect duration="1.4">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xab9c" id="Library Corruption Phantom Wisp Watcher">
+      <DisplayId>Corruption Phantom Wisp Watcher</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>cursedLibraryChars8x8</File>
+         <Index>8</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flaming_skulls_hit</HitSound>
+      <DeathSound>monster/flaming_skulls_death</DeathSound>
+      <Size>80</Size>
+      <Z>0.3</Z>
+      <Flying/>
+      <MaxHitPoints>7500</MaxHitPoints>
+      <Defense>0</Defense>
+      <StunImmune/>
+      <Projectile id="0">
+         <ObjectId>Corruption Gaze</ObjectId>
+         <Damage>100</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Amplitude>0.5</Amplitude>
+         <Frequency>2</Frequency>
+         <Size>85</Size>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object type="0xab9d" id="Library Corruption Phantom Wisp Ravager">
+      <DisplayId>Corruption Phantom Wisp Ravager</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>cursedLibraryChars8x8</File>
+         <Index>9</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flaming_skulls_hit</HitSound>
+      <DeathSound>monster/flaming_skulls_death</DeathSound>
+      <Size>80</Size>
+      <Z>0.3</Z>
+      <Flying/>
+      <MaxHitPoints>9000</MaxHitPoints>
+      <Defense>0</Defense>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Corruption Spinner</ObjectId>
+         <Damage>160</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>10000</LifetimeMS>
+         <Magnitude>4</Magnitude>
+         <Size>100</Size>
+         <PassesCover/>
+         <Parametric/>
+      </Projectile>
+   </Object>
+   <Object type="0xab95" id="Library RealmEye Corrupt">
+      <DisplayId>The Realm Eye</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cursedLibraryObjects16x16</File>
+         <Index>0x28</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <Z>0.5</Z>
+      <Animation period="0" prob="1">
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x48</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x49</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x40</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x41</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x42</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x43</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x44</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x45</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x46</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x47</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Effect speed="0" color="0x8B0000" rate="35" rangeY="8" rangeX="8" riseVariance=".1" rise="1" size="5" speedVariance=".5" lifeVariance=".1" life=".8">CustomParticles</Effect>
+   </Object>
+   <Object type="0xab96" id="Library RealmEye">
+      <DisplayId>The Realm Eye</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cursedLibraryObjects16x16</File>
+         <Index>0x38</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <Z>0.5</Z>
+      <Color>0xFFFFFF</Color>
+      <Animation period="0" prob="1">
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x38</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x39</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x30</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x31</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x32</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x33</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x34</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x35</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x36</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x37</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0xab9e" id="Library Switch Corrupted">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <DrawOnGround/>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x48</Index>
+      </Texture>
+      <AltTexture id="0">
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x48</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x47</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x74</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x75</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x76</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x47</Index>
+         </Texture>
+         <Effect color="0x8B0000" minRadius="0.0" maxRadius="3" rise="2.5" life="1.2" amount="30" speed="0.02">Circle</Effect>
+      </AltTexture>
+      <Sound id="0">weapon/poor_quality_bow</Sound>
+      <Sound id="1">weapon/mithril_sword</Sound>
+   </Object>
+   <Object type="0xab9f" id="Library Corruption Trigger">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+         <Effect cooldown="0.2" particle="SwirlingMist">XMLEffect</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0xabb6" id="Library Switch Revealer">
+      <DisplayId>Ocean</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <Invincible/>
+      <Projectile id="0">
+         <ObjectId>Cardgage Curse</ObjectId>
+         <Damage>1</Damage>
+         <Speed>0</Speed>
+         <Size>0</Size>
+         <LifetimeMS>0</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xab60" id="Library Switch">
+      <DisplayId>Man</DisplayId>
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <DrawOnGround/>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x02</Index>
+      </Texture>
+      <AltTexture id="0">
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x02</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+      </AltTexture>
+      <Sound id="0">weapon/poor_quality_bow</Sound>
+      <Sound id="1">weapon/mithril_sword</Sound>
+   </Object>
+   <Object type="0xab86" id="Library Bookshelf Anchor Vertical Start Up">
+      <DisplayId>Take</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xab87" id="Library Bookshelf Anchor Vertical Start Down">
+      <DisplayId>Me</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xab88" id="Library Bookshelf Anchor Horizontal Start Up">
+      <DisplayId>By</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xab89" id="Library Bookshelf Anchor Horizontal Start Down">
+      <DisplayId>The</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xab97" id="Library Sky Beam">
+      <DisplayId>Hand</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>-1</Size>
+      <Effect color="0xFFFFFF" minRadius="0.2" maxRadius="1" rise="0.5" speed="0.7" zOffset="3.0">SkyBeam</Effect>
+   </Object>
+   <Object type="0xabb8" id="Library Purification Circle">
+      <DisplayId>Lead</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>-1</Size>
+      <Sound id="0">spell/major_heal</Sound>
+      <Effect color="0xFFFFFF" minRadius="2.5" maxRadius="9.5" rise="3.4" life="2" amount="45" speed="0.05">Circle</Effect>
+   </Object>
+   <Object type="0xab99" id="Library Torch Remover">
+      <DisplayId>Me</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xabc8" id="Library Tome Toss">
+      <DisplayId>To</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xaba0" id="Library Tome of Knowledge">
+      <DisplayId>The</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <Size>80</Size>
+      <ShadowSize>80</ShadowSize>
+      <AltTexture id="1">
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x2a</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x2b</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x2c</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x2d</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x2e</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x2f</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="7">
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x1e</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="8">
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x1f</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="9">
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x2c</Index>
+         </Texture>
+      </AltTexture>
+   </Object>
+   <Object type="0xab8a" id="Library Avalon Anchor NW">
+      <DisplayId>Land</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xab8b" id="Library Avalon Anchor N">
+      <DisplayId>That</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xab8c" id="Library Avalon Anchor NE">
+      <DisplayId>You</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xab8d" id="Library Avalon Anchor W">
+      <DisplayId>Understand</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xab8e" id="Library Avalon Anchor C">
+      <DisplayId>Ocean</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xab8f" id="Library Avalon Anchor E">
+      <DisplayId>Man</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xab90" id="Library Avalon Anchor SW">
+      <DisplayId>The</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xab91" id="Library Avalon Anchor S">
+      <DisplayId>Voyage</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xab92" id="Library Avalon Anchor SE">
+      <DisplayId>To</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xabc9" id="Library Corruption NW">
+      <DisplayId>The</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x80</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="2">
+         <Frame time="0.8">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x80</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x83</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x86</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x83</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0xabca" id="Library Corruption N">
+      <DisplayId>Corner</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x81</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="2">
+         <Frame time="0.8">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x81</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x84</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x87</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x84</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0xabcb" id="Library Corruption NE">
+      <DisplayId>Of</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x82</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="2">
+         <Frame time="0.8">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x82</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x85</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x88</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x85</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0xabcc" id="Library Corruption W">
+      <DisplayId>The</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x90</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="2">
+         <Frame time="0.8">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x90</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x93</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x96</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x93</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0xabcd" id="Library Corruption C">
+      <DisplayId>Globe</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x91</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="2">
+         <Frame time="0.8">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x91</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x94</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x97</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x94</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0xabce" id="Library Corruption E">
+      <DisplayId>Is</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x92</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="2">
+         <Frame time="0.8">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x92</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x95</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x98</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x95</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0xabcf" id="Library Corruption SW">
+      <DisplayId>A</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0xa0</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="2">
+         <Frame time="0.8">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0xa0</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0xa3</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0xa6</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0xa3</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0xabd0" id="Library Corruption S">
+      <DisplayId>Real</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0xa1</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="2">
+         <Frame time="0.8">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0xa1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0xa4</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0xa7</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0xa4</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0xabd1" id="Library Corruption SE">
+      <DisplayId>Trip</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0xa2</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period="2">
+         <Frame time="0.8">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0xa2</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0xa5</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0xa8</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0xa5</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0xab58" id="Library Stone Wall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x1a</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x19</Index>
+         </Texture>
+      </Top>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0xab59" id="Library Flame Wall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x1c</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x19</Index>
+         </Texture>
+      </Top>
+      <Animation prob="1" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x1b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x1c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x1d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x1c</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0xabb7" id="Library Corrupt Flame Wall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x4e</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x19</Index>
+         </Texture>
+      </Top>
+      <Animation prob="1" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x4d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x4e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x4f</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects8x8</File>
+               <Index>0x4e</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0xab5a" id="Library Bookshelf">
+      <Class>Wall</Class>
+      <RandomTexture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x10</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x11</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x12</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x13</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x14</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x15</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x0f</Index>
+         </Texture>
+      </Top>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0xab5b" id="Library Bookshelf Empty">
+      <Class>Wall</Class>
+      <RandomTexture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x16</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x17</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x18</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x0f</Index>
+         </Texture>
+      </Top>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0xabbe" id="Library Bookshelf Empty Destructible">
+      <Class>Wall</Class>
+      <RandomTexture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x16</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x17</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x18</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x0f</Index>
+         </Texture>
+      </Top>
+      <MaxHitPoints>3100</MaxHitPoints>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Enemy/>
+      <Exp>0</Exp>
+   </Object>
+   <Object type="0xab5f" id="Library Secret Wall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x70</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x19</Index>
+         </Texture>
+      </Top>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0xab85" id="Library Bookshelf Empty Warning">
+      <Class>Wall</Class>
+      <RandomTexture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x3a</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x3b</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x3c</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x39</Index>
+         </Texture>
+      </Top>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0xab5c" id="Library Decor Pillar">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>cursedLibraryObjects16x16</File>
+         <Index>0x06</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0xab5d" id="Library Stone Pillar">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>cursedLibraryObjects16x16</File>
+         <Index>0x07</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0xab5e" id="Library Bookshelf Pillar">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <RandomTexture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x08</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x09</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x0a</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x0b</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x0c</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x0d</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x0e</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x0f</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x10</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x11</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0xab68" id="Library Table Outer">
+      <Class>GameObject</Class>
+      <Model>Table</Model>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x24</Index>
+      </Texture>
+      <Color>0x06070A</Color>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>180</ShadowSize>
+   </Object>
+   <Object type="0xab69" id="Library Table Outer UL">
+      <Class>GameObject</Class>
+      <Model>Table Edge</Model>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x24</Index>
+      </Texture>
+      <Color>0x06070A</Color>
+      <Rotation>0</Rotation>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>180</ShadowSize>
+   </Object>
+   <Object type="0xab6a" id="Library Table Outer UR">
+      <Class>GameObject</Class>
+      <Model>Table Edge</Model>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x25</Index>
+      </Texture>
+      <Color>0x06070A</Color>
+      <Rotation>90</Rotation>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>180</ShadowSize>
+   </Object>
+   <Object type="0xab6b" id="Library Table Outer LR">
+      <Class>GameObject</Class>
+      <Model>Table Edge</Model>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x27</Index>
+      </Texture>
+      <Color>0x06070A</Color>
+      <Rotation>180</Rotation>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>180</ShadowSize>
+   </Object>
+   <Object type="0xab6c" id="Library Table Outer LL">
+      <Class>GameObject</Class>
+      <Model>Table Edge</Model>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x26</Index>
+      </Texture>
+      <Color>0x06070A</Color>
+      <Rotation>270</Rotation>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>180</ShadowSize>
+   </Object>
+   <Object type="0xab6d" id="Library Table Inner">
+      <Class>GameObject</Class>
+      <Model>Table</Model>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x1e</Index>
+      </Texture>
+      <Color>0x06070F</Color>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>180</ShadowSize>
+   </Object>
+   <Object type="0xab6e" id="Library Table Inner Paper">
+      <Class>GameObject</Class>
+      <Model>Table</Model>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x22</Index>
+      </Texture>
+      <Color>0x06070F</Color>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>180</ShadowSize>
+   </Object>
+   <Object type="0xab6f" id="Library Table Inner Paper Stack">
+      <Class>GameObject</Class>
+      <Model>Table</Model>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x23</Index>
+      </Texture>
+      <Color>0x06070F</Color>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>180</ShadowSize>
+   </Object>
+   <Object type="0xab70" id="Library Table Inner Object">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x1e</Index>
+      </Texture>
+   </Object>
+   <Object type="0xabbf" id="Library Table Outer Object">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>cursedLibraryObjects8x8</File>
+         <Index>0x1e</Index>
+      </Texture>
+   </Object>
+   <Object type="0xab71" id="Library Small Book Hover">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x28</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x2b</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x2d</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x2f</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x31</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x33</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x34</Index>
+         </Texture>
+      </RandomTexture>
+      <Size>80</Size>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+      <Z>0.45</Z>
+   </Object>
+   <Object type="0xab72" id="Library Big Book Hover">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x29</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x2a</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x2c</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x2e</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x30</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x32</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x34</Index>
+         </Texture>
+      </RandomTexture>
+      <Size>80</Size>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+      <Z>0.45</Z>
+   </Object>
+   <Object type="0xab73" id="Library Open Book Hover">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x02</Index>
+         </Texture>
+      </RandomTexture>
+      <Size>80</Size>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+      <Z>0.45</Z>
+   </Object>
+   <Object type="0xab74" id="Library Book Stack Hover">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x03</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x04</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x05</Index>
+         </Texture>
+      </RandomTexture>
+      <Size>80</Size>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+      <Z>0.45</Z>
+   </Object>
+   <Object type="0xab75" id="Library Candle Small Hover">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cursedLibraryObjects16x16</File>
+         <Index>0x1a</Index>
+      </Texture>
+      <Animation period="0.0" prob="1.0">
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x1a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x1b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x1c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x1d</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>80</Size>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+      <Z>0.45</Z>
+   </Object>
+   <Object type="0xab76" id="Library Candle Medium Hover">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cursedLibraryObjects16x16</File>
+         <Index>0x16</Index>
+      </Texture>
+      <Animation period="0.0" prob="1.0">
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x16</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x17</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x18</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x19</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>80</Size>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+      <Z>0.45</Z>
+   </Object>
+   <Object type="0xab77" id="Library Candle Big Hover">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cursedLibraryObjects16x16</File>
+         <Index>0x12</Index>
+      </Texture>
+      <Animation period="0.0" prob="1.0">
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x12</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x13</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x14</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x15</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>80</Size>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+      <Z>0.45</Z>
+   </Object>
+   <Object type="0xab78" id="Library Small Book">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x28</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x2b</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x2d</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x2f</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x31</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x33</Index>
+         </Texture>
+      </RandomTexture>
+      <OccupySquare/>
+      <Size>80</Size>
+      <NoMiniMap/>
+      <Static/>
+   </Object>
+   <Object type="0xab79" id="Library Big Book">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x29</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x2a</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x2c</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x2e</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x30</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects8x8</File>
+            <Index>0x32</Index>
+         </Texture>
+      </RandomTexture>
+      <OccupySquare/>
+      <Size>80</Size>
+      <NoMiniMap/>
+      <Static/>
+   </Object>
+   <Object type="0xab7a" id="Library Open Book">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x02</Index>
+         </Texture>
+      </RandomTexture>
+      <OccupySquare/>
+      <Size>80</Size>
+      <NoMiniMap/>
+      <Static/>
+   </Object>
+   <Object type="0xab7b" id="Library Book Stack">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x03</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x04</Index>
+         </Texture>
+         <Texture>
+            <File>cursedLibraryObjects16x16</File>
+            <Index>0x05</Index>
+         </Texture>
+      </RandomTexture>
+      <OccupySquare/>
+      <Size>80</Size>
+      <NoMiniMap/>
+      <Static/>
+   </Object>
+   <Object type="0xab7c" id="Library Candle Small">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cursedLibraryObjects16x16</File>
+         <Index>0x1a</Index>
+      </Texture>
+      <Animation period="0.0" prob="1.0">
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x1a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x1b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x1c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x1d</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <Size>80</Size>
+      <ShadowSize>40</ShadowSize>
+      <ShadowColor>0x00B5F7</ShadowColor>
+      <NoMiniMap/>
+      <Static/>
+   </Object>
+   <Object type="0xab7d" id="Library Candle Medium">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cursedLibraryObjects16x16</File>
+         <Index>0x16</Index>
+      </Texture>
+      <Animation period="0.0" prob="1.0">
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x16</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x17</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x18</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x19</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <Size>80</Size>
+      <ShadowSize>70</ShadowSize>
+      <ShadowColor>0x00B5F7</ShadowColor>
+      <NoMiniMap/>
+      <Static/>
+   </Object>
+   <Object type="0xab7e" id="Library Candle Big">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>cursedLibraryObjects16x16</File>
+         <Index>0x12</Index>
+      </Texture>
+      <Animation period="0.0" prob="1.0">
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x12</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x13</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x14</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>cursedLibraryObjects16x16</File>
+               <Index>0x15</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <Size>80</Size>
+      <ShadowSize>100</ShadowSize>
+      <ShadowColor>0x00B5F7</ShadowColor>
+      <NoMiniMap/>
+      <Static/>
+   </Object>
+</Objects>

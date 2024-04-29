@@ -126,7 +126,6 @@ public class GameConfig implements IConfig
          this.mediatorMap.map(InteractPanel).toMediator(InteractPanelMediator);
          this.mediatorMap.map(ItemGrid).toMediator(ItemGridMediator);
          this.mediatorMap.map(InventoryGrid).toMediator(InventoryGridMediator);
-         this.mediatorMap.map(EquippedTalismanGrid).toMediator(EquippedTalismanGridMediator);
          this.mediatorMap.map(TextBox).toMediator(TextBoxMediator);
          this.mediatorMap.map(MapOverlay).toMediator(MapOverlayMediator);
          this.mediatorMap.map(Map).toMediator(MapMediator);

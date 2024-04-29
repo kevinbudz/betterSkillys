@@ -88,7 +88,7 @@ import kabam.rotmg.game.view.components.TabStripView;
       {
          addChild(this.background);
          addChild(this.miniMap);
-         addChild(new Bitmap(new MinimapOverlay().bitmapData));
+         //addChild(new Bitmap(new MinimapOverlay().bitmapData));
          addChild(this.tabStrip);
          addChild(this.characterDetails);
          addChild(this.statMeters);

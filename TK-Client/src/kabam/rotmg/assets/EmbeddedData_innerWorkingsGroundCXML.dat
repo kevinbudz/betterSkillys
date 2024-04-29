@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<GroundTypes>
+   <Ground type="0xac0f" id="TM NoWalk Server Tile">
+      <Texture>
+         <File>innerWorkingsObjects8x8</File>
+         <Index>0x19</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xac10" id="TM Surge Half Up Tile">
+      <Texture>
+         <File>innerWorkingsObjects8x8</File>
+         <Index>0x37</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac11" id="TM Surge Half Down Tile">
+      <Texture>
+         <File>innerWorkingsObjects8x8</File>
+         <Index>0x38</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac12" id="TM Surge Half Diagonal LR Tile">
+      <Texture>
+         <File>innerWorkingsObjects8x8</File>
+         <Index>0x35</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac13" id="TM Surge Half Diagonal UL Tile">
+      <Texture>
+         <File>innerWorkingsObjects8x8</File>
+         <Index>0x36</Index>
+      </Texture>
+   </Ground>
+</GroundTypes>

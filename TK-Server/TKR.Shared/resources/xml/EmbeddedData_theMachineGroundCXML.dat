@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<GroundTypes>
+   <Ground type="0xabd0" id="Machine Bright 1">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Color>0x051B12</Color>
+   </Ground>
+   <Ground type="0xabd1" id="Machine Bright 2">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x01</Index>
+      </Texture>
+      <Color>0x051B12</Color>
+   </Ground>
+   <Ground type="0xabd2" id="Machine Bright 3">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x02</Index>
+      </Texture>
+      <Color>0x051B12</Color>
+   </Ground>
+   <Ground type="0xabd3" id="Machine Bright 4">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x03</Index>
+      </Texture>
+      <Color>0x051B12</Color>
+   </Ground>
+   <Ground type="0xabd4" id="Machine Bright 5">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x04</Index>
+      </Texture>
+      <Color>0x051B12</Color>
+   </Ground>
+   <Ground type="0xabd5" id="Machine Bright 6">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x10</Index>
+      </Texture>
+      <Color>0x051B12</Color>
+   </Ground>
+   <Ground type="0xabd6" id="Machine Bright 7">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x11</Index>
+      </Texture>
+      <Color>0x051B12</Color>
+   </Ground>
+   <Ground type="0xabd7" id="Machine Bright 8">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x12</Index>
+      </Texture>
+      <Color>0x051B12</Color>
+   </Ground>
+   <Ground type="0xabd8" id="Machine Bright 9">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x13</Index>
+      </Texture>
+      <Color>0x051B12</Color>
+   </Ground>
+   <Ground type="0xabd9" id="Machine Bright 10">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x14</Index>
+      </Texture>
+      <Color>0x051B12</Color>
+   </Ground>
+   <Ground type="0xabda" id="Machine Mid 1">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x20</Index>
+      </Texture>
+      <Color>0x031008</Color>
+   </Ground>
+   <Ground type="0xabdb" id="Machine Mid 2">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x21</Index>
+      </Texture>
+      <Color>0x031008</Color>
+   </Ground>
+   <Ground type="0xabdc" id="Machine Mid 3">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x22</Index>
+      </Texture>
+      <Color>0x031008</Color>
+   </Ground>
+   <Ground type="0xabdd" id="Machine Mid 4">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x23</Index>
+      </Texture>
+      <Color>0x031008</Color>
+   </Ground>
+   <Ground type="0xabde" id="Machine Mid 5">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x24</Index>
+      </Texture>
+      <Color>0x031008</Color>
+   </Ground>
+   <Ground type="0xabdf" id="Machine Mid 6">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x30</Index>
+      </Texture>
+      <Color>0x031008</Color>
+   </Ground>
+   <Ground type="0xabe0" id="Machine Mid 7">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x31</Index>
+      </Texture>
+      <Color>0x031008</Color>
+   </Ground>
+   <Ground type="0xabe1" id="Machine Mid 8">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Color>0x031008</Color>
+   </Ground>
+   <Ground type="0xabe2" id="Machine Mid 9">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x33</Index>
+      </Texture>
+      <Color>0x031008</Color>
+   </Ground>
+   <Ground type="0xabe3" id="Machine Mid 10">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x34</Index>
+      </Texture>
+      <Color>0x031008</Color>
+   </Ground>
+   <Ground type="0xabe4" id="Machine Dim 1">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x40</Index>
+      </Texture>
+      <Color>0x020803</Color>
+   </Ground>
+   <Ground type="0xabe5" id="Machine Dim 2">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x41</Index>
+      </Texture>
+      <Color>0x020803</Color>
+   </Ground>
+   <Ground type="0xabe6" id="Machine Dim 3">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x42</Index>
+      </Texture>
+      <Color>0x020803</Color>
+   </Ground>
+   <Ground type="0xabe7" id="Machine Dim 4">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x43</Index>
+      </Texture>
+      <Color>0x020803</Color>
+   </Ground>
+   <Ground type="0xabe8" id="Machine Dim 5">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x44</Index>
+      </Texture>
+      <Color>0x020803</Color>
+   </Ground>
+   <Ground type="0xabe9" id="Machine Dim 6">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x50</Index>
+      </Texture>
+      <Color>0x020803</Color>
+   </Ground>
+   <Ground type="0xabea" id="Machine Dim 7">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x51</Index>
+      </Texture>
+      <Color>0x020803</Color>
+   </Ground>
+   <Ground type="0xabeb" id="Machine Dim 8">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x52</Index>
+      </Texture>
+      <Color>0x020803</Color>
+   </Ground>
+   <Ground type="0xabec" id="Machine Dim 9">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x53</Index>
+      </Texture>
+      <Color>0x020803</Color>
+   </Ground>
+   <Ground type="0xabed" id="Machine Dim 10">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x54</Index>
+      </Texture>
+      <Color>0x020803</Color>
+   </Ground>
+   <Ground type="0xabee" id="Machine Server Tile">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x0b</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabef" id="Machine Surge Server Tile">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x0e</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabf0" id="Machine Surge Bright 1">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x05</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabf1" id="Machine Surge Bright 2">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x06</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabf2" id="Machine Surge Bright 3">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x07</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabf3" id="Machine Surge Bright 4">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x08</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabf4" id="Machine Surge Bright 5">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x09</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabf5" id="Machine Surge Bright 6">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x15</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabf6" id="Machine Surge Bright 7">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x16</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabf7" id="Machine Surge Bright 8">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x17</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabf8" id="Machine Surge Bright 9">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x18</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabf9" id="Machine Surge Bright 10">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x19</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabfa" id="Machine Surge Mid 1">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x25</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabfb" id="Machine Surge Mid 2">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x26</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabfc" id="Machine Surge Mid 3">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x27</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabfd" id="Machine Surge Mid 4">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x28</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabfe" id="Machine Surge Mid 5">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x29</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xabff" id="Machine Surge Mid 6">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x35</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac00" id="Machine Surge Mid 7">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x36</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac01" id="Machine Surge Mid 8">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x37</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac02" id="Machine Surge Mid 9">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x38</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac03" id="Machine Surge Mid 10">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x39</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac04" id="Machine Surge Dim 1">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x45</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac05" id="Machine Surge Dim 2">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x46</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac06" id="Machine Surge Dim 3">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x47</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac07" id="Machine Surge Dim 4">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x48</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac08" id="Machine Surge Dim 5">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x49</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac09" id="Machine Surge Dim 6">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x55</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac0a" id="Machine Surge Dim 7">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x56</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac0b" id="Machine Surge Dim 8">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x57</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac0c" id="Machine Surge Dim 9">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x58</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac0d" id="Machine Surge Dim 10">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x59</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xac0e" id="Exposed Code">
+      <Texture>
+         <File>theMachineObjects8x8</File>
+         <Index>0x60</Index>
+      </Texture>
+      <Animate dx="2">Flow</Animate>
+      <MinDamage>50</MinDamage>
+      <MaxDamage>50</MaxDamage>
+      <Sink/>
+      <Speed>1.2</Speed>
+   </Ground>
+</GroundTypes>

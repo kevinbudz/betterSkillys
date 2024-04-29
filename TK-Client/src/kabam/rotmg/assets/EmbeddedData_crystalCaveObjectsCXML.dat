@@ -1,0 +1,3876 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x272f" id="White Shard Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x272a" id="Blue Shard Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x01</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x272b" id="Green Shard Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x02</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x272c" id="Yellow Shard Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x03</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x272d" id="Red Shard Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x04</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x272e" id="Purple Shard Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x05</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x2756" id="Crystal Green Shard">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x06</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x2757" id="Crystal Purple Shard">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x07</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x2731" id="Crystal Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x11</Index>
+      </Texture>
+      <AngleCorrection>0</AngleCorrection>
+   </Object>
+   <Object type="0x2733" id="Dark Purple Shard Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x12</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x2732" id="Dark Shard">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x13</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6546" id="Dark Blue Shard">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x14</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x2758" id="Crystal Big Green Shard">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x16</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x2759" id="Crystal Big Purple Shard">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x17</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6547" id="Green Large Shard Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x18</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6548" id="Green Prism">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x19</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6549" id="Green Beam">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x1a</Index>
+      </Texture>
+   </Object>
+   <Object type="0x654a" id="Green Small Spinner">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x1b</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x654b" id="Green small Shard">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x28</Index>
+      </Texture>
+   </Object>
+   <Object type="0x654c" id="Green Big Spinner">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x29</Index>
+      </Texture>
+      <Rotation>10</Rotation>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x654d" id="Green Lightning Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x2a</Index>
+      </Texture>
+      <AngleCorrection>0</AngleCorrection>
+   </Object>
+   <Object type="0x654e" id="Green Small Prism">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x2b</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x654f" id="Red Large Shard Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x1c</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6550" id="Red Prism">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x1d</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6551" id="Red Beam">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x1e</Index>
+      </Texture>
+   </Object>
+   <Object type="0x6552" id="Red Small Spinner">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x1f</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6553" id="Red small Shard">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x2c</Index>
+      </Texture>
+   </Object>
+   <Object type="0x6555" id="Red Big Spinner">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x2d</Index>
+      </Texture>
+      <Rotation>10</Rotation>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6556" id="Red Lightning Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x2e</Index>
+      </Texture>
+      <AngleCorrection>0</AngleCorrection>
+   </Object>
+   <Object type="0x6557" id="Red Small Prism">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x2f</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6558" id="Yellow Large Shard Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x38</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6559" id="Yellow Prism">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x39</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x655a" id="Yellow Beam">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x3a</Index>
+      </Texture>
+   </Object>
+   <Object type="0x655b" id="Yellow Small Spinner">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x3b</Index>
+      </Texture>
+      <Rotation>1</Rotation>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x655c" id="Yellow small Shard">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x48</Index>
+      </Texture>
+   </Object>
+   <Object type="0x655d" id="Yellow Big Spinner">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x49</Index>
+      </Texture>
+      <Rotation>10</Rotation>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x655e" id="Yellow Lightning Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x4a</Index>
+      </Texture>
+      <AngleCorrection>0</AngleCorrection>
+   </Object>
+   <Object type="0x655f" id="Yellow Small Prism">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x4b</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6560" id="Blue Large Shard Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x3c</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6561" id="Blue Prism">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x3d</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6562" id="Blue Beam">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x3e</Index>
+      </Texture>
+   </Object>
+   <Object type="0x6563" id="Blue Small Spinner">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x3f</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6564" id="Blue small Shard">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x4c</Index>
+      </Texture>
+   </Object>
+   <Object type="0x6565" id="Blue Big Spinner">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x4d</Index>
+      </Texture>
+      <Rotation>10</Rotation>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6566" id="Blue Lightning Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x4e</Index>
+      </Texture>
+      <AngleCorrection>0</AngleCorrection>
+   </Object>
+   <Object type="0x6567" id="Blue Small Prism">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x4f</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6568" id="Purple Large Shard Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x58</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6569" id="Purple Prism">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x59</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x656a" id="Purple Beam">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x5a</Index>
+      </Texture>
+   </Object>
+   <Object type="0x656b" id="Purple Small Spinner">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x5b</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x656c" id="Purple small Shard">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x68</Index>
+      </Texture>
+   </Object>
+   <Object type="0x656d" id="Purple Big Spinner">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x69</Index>
+      </Texture>
+      <Rotation>10</Rotation>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x656e" id="Purple Lightning Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x6a</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x656f" id="Purple Small Prism">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x6b</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6570" id="White Large Shard Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x5c</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6571" id="White Prism">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x5d</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6572" id="White Beam Crystal">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x5e</Index>
+      </Texture>
+   </Object>
+   <Object type="0x6573" id="White Small Spinner">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x5f</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6574" id="White small Shard">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x6c</Index>
+      </Texture>
+   </Object>
+   <Object type="0x6575" id="White Big Spinner">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x6d</Index>
+      </Texture>
+      <Rotation>10</Rotation>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x6576" id="White Lightning Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x6e</Index>
+      </Texture>
+      <AngleCorrection>0</AngleCorrection>
+   </Object>
+   <Object type="0x6577" id="White Small Prism">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x6f</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x15c2" id="Enlightenment Star">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x85</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+   </Object>
+   <Object type="0x2712" id="Crystallised Lizard">
+      <Enemy/>
+      <DisplayId>Crystallised Lizard</DisplayId>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>140</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Defense>30</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <HealthBarBoss/>
+      <Exp>5000</Exp>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>XMAS Lightning Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>160</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>5</Frequency>
+         <Amplitude>1.5</Amplitude>
+      </Projectile>
+   </Object>
+   <Object type="0x2717" id="Crystal Wall Lead">
+      <DisplayId>Crystal Wall</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x2723" id="Crystal Wall">
+      <Enemy/>
+      <DisplayId>Crystal Wall</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xf1</Index>
+      </Texture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <Invincible/>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>95</Damage>
+         <Speed>30</Speed>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="1.5">Confused</ConditionEffect>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+         <LifetimeMS>200</LifetimeMS>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Frozen Wand Icicle</ObjectId>
+         <Size>100</Size>
+         <Damage>115</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Frozen Wand Icicle</ObjectId>
+         <Size>100</Size>
+         <Damage>115</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>2</Frequency>
+         <Amplitude>0.2</Amplitude>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Frozen Wand Icicle</ObjectId>
+         <Size>100</Size>
+         <Damage>115</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>2</Frequency>
+         <Amplitude>0.3</Amplitude>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>Frozen Wand Icicle</ObjectId>
+         <Size>100</Size>
+         <Damage>115</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>2</Frequency>
+         <Amplitude>0.5</Amplitude>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>Frozen Wand Icicle</ObjectId>
+         <Size>100</Size>
+         <Damage>115</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>2</Frequency>
+         <Amplitude>0.8</Amplitude>
+      </Projectile>
+   </Object>
+   <Object type="0x2713" id="Crystallised Monstrosity">
+      <Enemy/>
+      <DisplayId>Crystallised Monstrosity</DisplayId>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>140</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Defense>30</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <Exp>5000</Exp>
+      <ParalyzeImmune/>
+      <HealthBarBoss/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>Purple Lightning Bolt</ObjectId>
+         <Damage>145</Damage>
+         <Speed>80</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+         <FaceDir/>
+         <ConditionEffect duration="8">Confused</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x2725" id="Crystallised Follower">
+      <Enemy/>
+      <DisplayId>Crystal Seed</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x10</Index>
+      </Texture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>60</Size>
+      <ShadowSize>0</ShadowSize>
+      <Exp>50</Exp>
+      <Invincible/>
+      <Projectile id="1">
+         <ObjectId>Crystal Bolt</ObjectId>
+         <Speed>1</Speed>
+         <Damage>0</Damage>
+         <Size>100</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="0.4">Slowed</ConditionEffect>
+         <MultiHit/>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object type="0x273e" id="Crystal Whip">
+      <DisplayId>Crystal Entity</DisplayId>
+      <Enemy/>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>White Shard Bolt</ObjectId>
+         <Speed>1</Speed>
+         <Damage>160</Damage>
+         <Size>100</Size>
+         <LifetimeMS>220</LifetimeMS>
+         <MultiHit/>
+         <FaceDir/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>White Shard Bolt</ObjectId>
+         <Speed>80</Speed>
+         <Damage>160</Damage>
+         <Size>100</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object type="0x2714" id="Crystallised Fish">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x38</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x39</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x3a</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x3b</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x3c</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>140</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Defense>30</Defense>
+      <StasisImmune/>
+      <HealthBarBoss/>
+      <Flying/>
+      <TrackLoot/>
+      <Exp>5000</Exp>
+      <Z>0.3</Z>
+      <Projectile id="0">
+         <ObjectId>Crystal Shard</ObjectId>
+         <Damage>100</Damage>
+         <Speed>70</Speed>
+         <Size>100</Size>
+         <LifetimeMS>800</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Crystal Green Shard</ObjectId>
+         <Size>89</Size>
+         <Damage>160</Damage>
+         <Speed>144</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Crystal Green Shard</ObjectId>
+         <Size>144</Size>
+         <Damage>160</Damage>
+         <Speed>89</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Crystal Green Shard</ObjectId>
+         <Size>233</Size>
+         <Damage>160</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Crystal Green Shard</ObjectId>
+         <Size>144</Size>
+         <Damage>160</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>600</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x2715" id="cc">
+      <Enemy/>
+      <DisplayId>Crystallised Cyclops</DisplayId>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>140</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Defense>30</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <HealthBarBoss/>
+      <Exp>5000</Exp>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="1">
+         <ObjectId>Crystal Shard</ObjectId>
+         <Size>100</Size>
+         <Damage>160</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>2220</LifetimeMS>
+         <Amplitude>0.1</Amplitude>
+         <Frequency>0.21</Frequency>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Stinger</ObjectId>
+         <Size>100</Size>
+         <Damage>160</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>2220</LifetimeMS>
+         <Amplitude>0.1</Amplitude>
+         <Frequency>0.21</Frequency>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Crystal Shard</ObjectId>
+         <Size>100</Size>
+         <Damage>20</Damage>
+         <Speed>20</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Crystal Shard</ObjectId>
+         <Size>100</Size>
+         <Damage>20</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Crystal Shard</ObjectId>
+         <Size>100</Size>
+         <Damage>20</Damage>
+         <Speed>120</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Crystal Shard</ObjectId>
+         <Size>100</Size>
+         <Damage>20</Damage>
+         <Speed>160</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>Crystal Shard</ObjectId>
+         <Size>100</Size>
+         <Damage>20</Damage>
+         <Speed>200</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>pD Maw Shot 3</ObjectId>
+         <Size>100</Size>
+         <Damage>85</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x2716" id="cs">
+      <Enemy/>
+      <DisplayId>Crystallised Scorpion</DisplayId>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>5</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>crystalCaveChars16x16</File>
+            <Index>9</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>140</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Defense>30</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <Exp>5000</Exp>
+      <ParalyzeImmune/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>Crystal Shard</ObjectId>
+         <Damage>225</Damage>
+         <Speed>120</Speed>
+         <Size>100</Size>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Yellow Big Spinner</ObjectId>
+         <Damage>115</Damage>
+         <Speed>100</Speed>
+         <Size>80</Size>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x2718" id="CrystalHelper">
+      <Class>Character</Class>
+      <Group>Helper</Group>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x2719" id="HelperTop">
+      <Class>Character</Class>
+      <Group>Helper</Group>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x271a" id="HelperTopRight">
+      <Class>Character</Class>
+      <Group>Helper</Group>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x271b" id="HelperBotRight">
+      <Class>Character</Class>
+      <Group>Helper</Group>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x271c" id="HelperBotLeft">
+      <Class>Character</Class>
+      <Group>Helper</Group>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x271d" id="HelperTopLeft">
+      <Class>Character</Class>
+      <Group>Helper</Group>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x2729" id="mc">
+      <Enemy/>
+      <DisplayId>Crystal Entity</DisplayId>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>28</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/djinn_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>120000</MaxHitPoints>
+      <Defense>50</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <Exp>40000</Exp>
+      <HealthBarBoss/>
+      <ParalyzeImmune/>
+      <EventChestBoss/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Size>100</Size>
+         <Damage>0</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>100</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Blue Small Prism</ObjectId>
+         <Size>100</Size>
+         <Damage>150</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>XMAS Lightning Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>90</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>2</Frequency>
+         <Amplitude>2</Amplitude>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Purple Shard Bolt</ObjectId>
+         <Size>130</Size>
+         <Damage>160</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>White Big Spinner</ObjectId>
+         <Size>120</Size>
+         <Damage>150</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Blue Big Spinner</ObjectId>
+         <Size>100</Size>
+         <Damage>150</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>600</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Red Big Spinner</ObjectId>
+         <Size>80</Size>
+         <Damage>150</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>5</Frequency>
+         <Amplitude>0.15</Amplitude>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>Purple Big Spinner</ObjectId>
+         <Size>60</Size>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>3</Frequency>
+         <Amplitude>0.15</Amplitude>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>Fractal Telegrapher</ObjectId>
+         <Size>100</Size>
+         <Damage>1</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>200</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="9">
+         <ObjectId>Fractal Telegrapher</ObjectId>
+         <Size>100</Size>
+         <Damage>1</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>600</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x2734" id="Crystal Orbiter 1">
+      <Enemy/>
+      <DisplayId>Crystal Orbiter</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x11</Index>
+      </Texture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <Exp>50</Exp>
+      <ParalyzeImmune/>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Size>80</Size>
+         <Damage>35</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Stinger</ObjectId>
+         <Size>100</Size>
+         <Damage>160</Damage>
+         <Speed>144</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Amplitude>0.1</Amplitude>
+         <Frequency>0.21</Frequency>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x2735" id="Crystal Orbiter 2">
+      <Enemy/>
+      <DisplayId>Crystal Orbiter</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x11</Index>
+      </Texture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <Exp>50</Exp>
+      <ParalyzeImmune/>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Size>80</Size>
+         <Damage>35</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Stinger</ObjectId>
+         <Size>100</Size>
+         <Damage>160</Damage>
+         <Speed>144</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Amplitude>0.1</Amplitude>
+         <Frequency>0.21</Frequency>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x2736" id="Crystal Orbiter 3">
+      <Enemy/>
+      <DisplayId>Crystal Orbiter</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x11</Index>
+      </Texture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <Exp>50</Exp>
+      <ParalyzeImmune/>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Size>80</Size>
+         <Damage>35</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Stinger</ObjectId>
+         <Size>100</Size>
+         <Damage>160</Damage>
+         <Speed>144</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Amplitude>0.1</Amplitude>
+         <Frequency>0.21</Frequency>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x2737" id="mc placer1">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x2738" id="mc Dance Helper">
+      <DisplayId>Crystal Entity</DisplayId>
+      <Enemy/>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="1">
+         <ObjectId>Green Prism</ObjectId>
+         <Speed>50</Speed>
+         <Damage>90</Damage>
+         <Size>100</Size>
+         <LifetimeMS>3500</LifetimeMS>
+         <MultiHit/>
+         <FaceDir/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Crystal Bolt</ObjectId>
+         <Speed>50</Speed>
+         <Damage>45</Damage>
+         <Size>100</Size>
+         <LifetimeMS>3500</LifetimeMS>
+         <MultiHit/>
+         <FaceDir/>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0x2730" id="Crystal Flower">
+      <Enemy/>
+      <DisplayId>Crystal Seed</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x10</Index>
+      </Texture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>60</Size>
+      <ShadowSize>0</ShadowSize>
+      <Exp>50</Exp>
+      <Invincible/>
+      <Projectile id="1">
+         <ObjectId>Crystal Bolt</ObjectId>
+         <Speed>1</Speed>
+         <Damage>0</Damage>
+         <Size>100</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="0.4">Slowed</ConditionEffect>
+         <MultiHit/>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object type="0x2739" id="Crystal Bud 1">
+      <DisplayId>Crystal Entity</DisplayId>
+      <Enemy/>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>White Shard Bolt</ObjectId>
+         <Speed>1</Speed>
+         <Damage>120</Damage>
+         <Size>100</Size>
+         <LifetimeMS>800</LifetimeMS>
+         <MultiHit/>
+         <FaceDir/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>White Shard Bolt</ObjectId>
+         <Speed>60</Speed>
+         <Damage>120</Damage>
+         <Size>100</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object type="0x273a" id="Crystal Cave Portal">
+      <DisplayId>Crystal Cavern</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Crystal Cavern</DungeonName>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x44</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x65ee" id="Crystal Cave Portal Temp">
+      <DisplayId>Crystal Cavern</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Crystal Cavern</DungeonName>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x44</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x273b" id="Crystal Cave Key">
+      <DisplayId>Crystal Cavern Key</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x34</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>A key which opens an entrance to the Crystal Cavern. The deepest depths of the Abandoned Mineshaft protect an enigmatic diety.</Description>
+      <Sound>use_key</Sound>
+      <Soulbound/>
+      <Track/>
+      <BagType>8</BagType>
+      <Consumable/>
+      <feedPower>200</feedPower>
+      <Activate id="Crystal Cave Portal Temp">CreatePortal</Activate>
+   </Object>
+   <Object type="0x273c" id="mc Pylons Manager">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x273d" id="Crystal Storm Helper">
+      <DisplayId>Crystal Entity</DisplayId>
+      <Enemy/>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="3">
+         <ObjectId>Crystal Shard</ObjectId>
+         <Size>100</Size>
+         <Damage>160</Damage>
+         <Speed>20</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Crystal Shard</ObjectId>
+         <Size>100</Size>
+         <Damage>160</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Crystal Shard</ObjectId>
+         <Size>100</Size>
+         <Damage>160</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Crystal Shard</ObjectId>
+         <Size>100</Size>
+         <Damage>160</Damage>
+         <Speed>140</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>Crystal Shard</ObjectId>
+         <Size>100</Size>
+         <Damage>85</Damage>
+         <Speed>180</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>pD Maw Shot 3</ObjectId>
+         <Size>100</Size>
+         <Damage>85</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x273f" id="mc Teleporter Helper">
+      <DisplayId>Crystal Entity</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x2740" id="Crystal Fish Flower">
+      <Enemy/>
+      <DisplayId>Crystal Seed</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x26</Index>
+      </Texture>
+      <Flying/>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>60</Size>
+      <ShadowSize>0</ShadowSize>
+      <Invincible/>
+   </Object>
+   <Object type="0x2741" id="Crystal Bud Fish">
+      <DisplayId>Crystal Entity</DisplayId>
+      <Enemy/>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Crystal Green Shard</ObjectId>
+         <Speed>1</Speed>
+         <Damage>120</Damage>
+         <Size>100</Size>
+         <LifetimeMS>800</LifetimeMS>
+         <MultiHit/>
+         <FaceDir/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Crystal Green Shard</ObjectId>
+         <Speed>89</Speed>
+         <Damage>120</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1700</LifetimeMS>
+         <MultiHit/>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object type="0x2755" id="Crystal Safe Floor">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x08</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x09</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x0a</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x0b</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x0c</Index>
+         </Texture>
+      </RandomTexture>
+      <DrawOnGround/>
+      <Static/>
+      <ProtectFromGroundDamage/>
+      <ProtectFromSink/>
+   </Object>
+   <Object type="0x275a" id="Crystal Prop">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x40</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x41</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0x42</Index>
+         </Texture>
+      </RandomTexture>
+      <OccupySquare/>
+      <Static/>
+      <NoMiniMap/>
+      <Size>120</Size>
+      <ShadowSize>60</ShadowSize>
+   </Object>
+   <Object type="0x6445" id="CC Small Room Decorator">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x9b</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x6447" id="CC Medium Room Decorator">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x9d</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x6448" id="CC Large Room Decorator">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x9e</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x6449" id="CC Enemy Generator Easy">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x06</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x644a" id="CC Enemy Generator Normal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x07</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x644b" id="CC Enemy Generator Hard">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x08</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x644c" id="CC Enemy Center Generator Easy">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x09</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x644d" id="CC Enemy Center Generator Normal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x644e" id="CC Enemy Center Generator Hard">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x0b</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x644f" id="CC Crystal">
+      <Class>Character</Class>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x67</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Color>0xFE79F1</Color>
+      <Enemy/>
+      <TrackLoot/>
+      <Exp>800</Exp>
+   </Object>
+   <Object type="0x6450" id="CC Destroyed Crystal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x67</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x6451" id="CC Destroyed Crystal Explo">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x67</Index>
+      </Texture>
+      <Enemy/>
+      <Invincible/>
+      <Size>-1</Size>
+      <Projectile id="0">
+         <ObjectId>Purple Shard Bolt</ObjectId>
+         <Damage>50</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="6">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Purple Shard Bolt</ObjectId>
+         <Damage>50</Damage>
+         <Speed>120</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="6">Quiet</ConditionEffect>
+      </Projectile>
+      <Effect minRadius="0.5" maxRadius="10" color="0xFF93CD" size="100" life="0.60" amount="150">ExplosionComplex</Effect>
+   </Object>
+   <Object type="0x6452" id="CC Charging Crystal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x67</Index>
+      </Texture>
+      <Size>0</Size>
+      <Z>0.5</Z>
+      <Flying/>
+   </Object>
+   <Object type="0x6453" id="CC Drill Charge">
+      <DisplayId>Drill</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x23</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x23</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x24</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x25</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x26</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x27</Index>
+         </Texture>
+      </AltTexture>
+      <Size>140</Size>
+   </Object>
+   <Object type="0x15c1" id="CC Drill Dwarf">
+      <DisplayId>Dwarf Miner</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x0d</Index>
+      </Texture>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x6454" id="CC Drill Wall">
+      <Class>Wall</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x6b</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x6c</Index>
+         </Texture>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x6d</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lofiObj3</File>
+            <Index>0x6e</Index>
+         </Texture>
+      </Top>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x6455" id="CC Drill">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x27</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x37</Index>
+         </Texture>
+      </AltTexture>
+      <Size>140</Size>
+      <Effect color="0xFF93CD" minRadius="0.0" maxRadius="9" rise="2.5" life="4.0" amount="40" speed="0.02">Circle</Effect>
+   </Object>
+   <Object type="0x6500" id="GC Encounter Gauntlet Controller">
+      <DisplayId>Dwarf Miner</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x0d</Index>
+      </Texture>
+      <Size>120</Size>
+      <Hero/>
+      <Quest/>
+      <God/>
+      <Encounter/>
+      <Level>20</Level>
+      <PerRealmMax>1</PerRealmMax>
+   </Object>
+   <Object type="0x6501" id="GC Encounter Portal">
+      <DisplayId>GC encounter</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>GC encounter</DungeonName>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x44</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x6502" id="GC Encounter Key">
+      <DisplayId>GC Encounter Key</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x34</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>GC encounter</Description>
+      <Sound>use_key</Sound>
+      <Soulbound/>
+      <Track/>
+      <BagType>8</BagType>
+      <feedPower>200</feedPower>
+      <InvUse/>
+      <Activate id="GC Encounter Portal">CreatePortal</Activate>
+   </Object>
+   <Object type="0x6503" id="GC Encounter Crystal">
+      <Class>Character</Class>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x67</Index>
+      </Texture>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Color>0xFE79F1</Color>
+      <Enemy/>
+      <Invincible/>
+      <Size>160</Size>
+   </Object>
+   <Object type="0x6504" id="GC Encounter Drill">
+      <DisplayId>Drill</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Invincible/>
+      <Size>120</Size>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x23</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x23</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x33</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x24</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x34</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x25</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x35</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="7">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x26</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="8">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x36</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="9">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x27</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="10">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x37</Index>
+         </Texture>
+      </AltTexture>
+   </Object>
+   <Object type="0x6508" id="EarthRising">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Animation prob="0.5" period="0">
+         <Frame time="0.1">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x0a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x0b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x0c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x0b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x0a</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Animation prob="0.5" period="0">
+         <Frame time="0.1">
+            <Texture>
+               <File>crystalCaveObjects16x16</File>
+               <Index>0x06</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>crystalCaveObjects16x16</File>
+               <Index>0x07</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>crystalCaveObjects16x16</File>
+               <Index>0x08</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>crystalCaveObjects16x16</File>
+               <Index>0x07</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>crystalCaveObjects16x16</File>
+               <Index>0x06</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Effect particle="Dirt" cooldown="3">XMLEffect</Effect>
+      <MinSize>60</MinSize>
+      <MaxSize>140</MaxSize>
+      <SizeStep>20</SizeStep>
+      <ShadowSize>0</ShadowSize>
+      <Flying/>
+   </Object>
+   <Object type="0x6509" id="GC Enc Boss">
+      <DisplayId>Crystal Worm Father</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <HealthBarBoss/>
+      <AnimatedTexture>
+         <File>fungalCavernChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <HitSound>monster/lizard_god_hit</HitSound>
+      <DeathSound>monster/ogres_death</DeathSound>
+      <Size>0</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>75000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>10000</Exp>
+      <TrackLoot/>
+      <Projectile id="1">
+         <ObjectId>Dark Shard</ObjectId>
+         <Damage>180</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>7000</LifetimeMS>
+         <Size>140</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="0">
+         <ObjectId>White Shard Bolt</ObjectId>
+         <Damage>200</Damage>
+         <Speed>13</Speed>
+         <LifetimeMS>14000</LifetimeMS>
+         <Size>140</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>White Shard Bolt</ObjectId>
+         <Damage>200</Damage>
+         <Speed>21</Speed>
+         <LifetimeMS>18000</LifetimeMS>
+         <Size>140</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>White Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>120</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Boomerang/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>White Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>120</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>0.3</Frequency>
+         <Amplitude>1.3</Amplitude>
+         <Boomerang/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>White Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>120</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>0.5</Frequency>
+         <Amplitude>0.8</Amplitude>
+         <Boomerang/>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>White Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>120</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>0.8</Frequency>
+         <Amplitude>0.5</Amplitude>
+         <Boomerang/>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>White Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>120</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>1.3</Frequency>
+         <Amplitude>0.3</Amplitude>
+         <Boomerang/>
+      </Projectile>
+   </Object>
+   <Object type="0x650a" id="EarthWorm">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Animation prob="0.5" period="0">
+         <Frame time="0.1">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x0a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x0b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x0c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x0b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x0a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="2">
+            <Texture>
+               <File>invisible</File>
+               <Index>0</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Animation prob="0.5" period="0">
+         <Frame time="0.1">
+            <Texture>
+               <File>crystalCaveObjects16x16</File>
+               <Index>0x06</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>crystalCaveObjects16x16</File>
+               <Index>0x07</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>crystalCaveObjects16x16</File>
+               <Index>0x08</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>crystalCaveObjects16x16</File>
+               <Index>0x07</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>crystalCaveObjects16x16</File>
+               <Index>0x06</Index>
+            </Texture>
+         </Frame>
+         <Frame time="2">
+            <Texture>
+               <File>invisible</File>
+               <Index>0</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Effect particle="Dirt" cooldown="3">XMLEffect</Effect>
+      <MinSize>60</MinSize>
+      <MaxSize>140</MaxSize>
+      <SizeStep>20</SizeStep>
+      <ShadowSize>0</ShadowSize>
+      <Flying/>
+   </Object>
+   <Object type="0x650c" id="GC Enc Worm Picker">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>fungalCavernObjects16x16</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x650d" id="GC Death Morel">
+      <DisplayId>Death Morel</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x15</Index>
+      </Texture>
+      <HitSound>monster/lizard_god_hit</HitSound>
+      <DeathSound>monster/ogres_death</DeathSound>
+      <Size>-1</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>0</Exp>
+      <AltTexture id="1">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x15</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x16</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x17</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x18</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x19</Index>
+         </Texture>
+      </AltTexture>
+      <Projectile id="0">
+         <ObjectId>GC Yellow Mushroom Blast</ObjectId>
+         <Damage>120</Damage>
+         <Speed>25</Speed>
+         <LifetimeMS>10000</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>GC Yellow Mushroom Blast</ObjectId>
+         <Damage>80</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>10000</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0x650e" id="CC Wall">
+      <Class>CaveWall</Class>
+      <RandomTexture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xca</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xc9</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xc8</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xc7</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xc6</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects8x8</File>
+            <Index>0xc5</Index>
+         </Texture>
+      </RandomTexture>
+      <NoWallTextureRepeat/>
+      <ShadowSize>0</ShadowSize>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Connects/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x650f" id="FC MineShaft WE Right Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x6510" id="FC MineShaft WE Left Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x0b</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x6511" id="FC Wall Roof">
+      <Class>GameObject</Class>
+      <Model>Column One and a Half</Model>
+      <RandomTexture>
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x0d</Index>
+         </Texture>
+      </RandomTexture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x6512" id="FC MineShaft WE R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <Static/>
+      <NoMiniMap/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x6513" id="FC MineShaft WE L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x0b</Index>
+      </Texture>
+      <Static/>
+      <NoMiniMap/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x6514" id="FC MineShaft WE Mid">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x0c</Index>
+      </Texture>
+      <Static/>
+      <NoMiniMap/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x6515" id="FC MineShaft NS R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <Static/>
+      <NoMiniMap/>
+      <Rotation>0</Rotation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x6516" id="FC MineShaft NS L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x0b</Index>
+      </Texture>
+      <Static/>
+      <NoMiniMap/>
+      <Rotation>0</Rotation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x6517" id="FC MineShaft NS Mid">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x0c</Index>
+      </Texture>
+      <Static/>
+      <NoMiniMap/>
+      <Rotation>0</Rotation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x6518" id="FC MineShaft NS Right Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x6519" id="FC MineShaft NS Left Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x0b</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x651b" id="Crystal Stalagmite">
+      <Class>GameObject</Class>
+      <Size>100</Size>
+      <RandomTexture>
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x30</Index>
+         </Texture>
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x31</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+   </Object>
+   <Object type="0x651c" id="GC Encounter Enemy Generator Wave 1">
+      <Class>Character</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x06</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x651d" id="GC Encounter Enemy Generator Wave 2">
+      <Class>Character</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x06</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x651e" id="GC Encounter Enemy Generator Wave 3">
+      <Class>Character</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x06</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x651f" id="GC Encounter Enemy Generator Wave 4">
+      <Class>Character</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x06</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x6520" id="GC Encounter Enemy Generator Wave 5">
+      <Class>Character</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x06</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x6521" id="GC Encounter Enemy Generator Wave 6">
+      <Class>Character</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x06</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x6522" id="GC Encounter Enemy Generator Wave 7">
+      <Class>Character</Class>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x06</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x6523" id="Crystal Edge Single TL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x80</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x6524" id="Crystal MT">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x81</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x6525" id="Crystal Edge Single TR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x82</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x6526" id="Crystal Inner TL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x83</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x6527" id="Crystal Inner TR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x84</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x6528" id="Crystal ML">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x90</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x6529" id="Crystal MM">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x91</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x652a" id="Crystal MR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x92</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x652b" id="Crystal Inner BL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x93</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x652c" id="Crystal Inner BR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x94</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x652d" id="Crystal Edge Single BL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xa0</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x652e" id="Crystal MB">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xa1</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x652f" id="Crystal Edge Single BR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xa2</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x6530" id="Crystal Inner BLTR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xa3</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x6531" id="Crystal Inner TLBR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x6532" id="Crystal Edge Mid BL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xb0</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x6533" id="Crystal Edge Bot BL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xb1</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x6534" id="Crystal Edge Top BL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xb2</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x6535" id="Crystal Round TL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xb3</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x6536" id="Crystal Round TR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xb4</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x6537" id="Crystal Edge Mid TR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xc0</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x6538" id="Crystal Edge Bot TR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xc1</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x6539" id="Crystal Edge Top TR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xc2</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x653a" id="Crystal Round BL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xc3</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x653b" id="Crystal Round BR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xc4</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x653c" id="Crystal Edge Mid TL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xd0</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x653d" id="Crystal Edge Bot TL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xd1</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x653e" id="Crystal Edge Top TL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xd2</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x653f" id="Crystal Square TL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xd3</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x6540" id="Crystal Square TR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xd4</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x6541" id="Crystal Edge Mid BR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x6542" id="Crystal Edge Bot BR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xe1</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x6543" id="Crystal Edge Top BR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xe2</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x6544" id="Crystal Square BL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xe3</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x6545" id="Crystal Square BR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0xe4</Index>
+      </Texture>
+      <DrawOnGround/>
+      <ProtectFromSink/>
+      <Static/>
+   </Object>
+   <Object type="0x65d3" id="Mine Wood Support">
+      <Class>GameObject</Class>
+      <Model>Column One and a Half</Model>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x42</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0x65d4" id="FC MineShaft WE Right Roof Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x65d5" id="FC MineShaft NS Right Roof Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x65d6" id="GC H Rail Cart Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x34</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x65d7" id="GC V Rail Cart Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>fungalCavernObjects8x8</File>
+         <Index>0x33</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x65d8" id="FC Enc Wall">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x0e</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x65d9" id="FC Enc Roof">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x0d</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x65da" id="mcv2">
+      <Enemy/>
+      <DisplayId>Crystal Entity</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x10</Index>
+      </Texture>
+      <NoArticle/>
+      <HitSound>monster/djinn_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>120000</MaxHitPoints>
+      <Defense>50</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <Exp>50</Exp>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Size>100</Size>
+         <Damage>0</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>100</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Stinger</ObjectId>
+         <Size>80</Size>
+         <Damage>90</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>6666</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Stinger</ObjectId>
+         <Size>100</Size>
+         <Damage>160</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Stinger</ObjectId>
+         <Size>80</Size>
+         <Damage>90</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>3333</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>0.45</Frequency>
+         <Amplitude>0.5</Amplitude>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>White Big Spinner</ObjectId>
+         <Size>60</Size>
+         <Damage>150</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Frozen Wand Icicle</ObjectId>
+         <Size>100</Size>
+         <Damage>150</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>2</Frequency>
+         <Amplitude>0.2</Amplitude>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Frozen Wand Icicle</ObjectId>
+         <Size>100</Size>
+         <Damage>150</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>2</Frequency>
+         <Amplitude>0.3</Amplitude>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>Frozen Wand Icicle</ObjectId>
+         <Size>100</Size>
+         <Damage>150</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>2</Frequency>
+         <Amplitude>0.5</Amplitude>
+      </Projectile>
+      <Projectile id="10">
+         <ObjectId>XMAS Lightning Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>90</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>2</Frequency>
+         <Amplitude>2</Amplitude>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="11">
+         <ObjectId>Dark Shard</ObjectId>
+         <Size>80</Size>
+         <Damage>90</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>6666</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="12">
+         <ObjectId>Dark Shard</ObjectId>
+         <Size>100</Size>
+         <Damage>120</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="13">
+         <ObjectId>Dark Shard</ObjectId>
+         <Size>100</Size>
+         <Damage>120</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>2500</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>0.3</Frequency>
+         <Amplitude>1.3</Amplitude>
+      </Projectile>
+      <Projectile id="14">
+         <ObjectId>Dark Shard</ObjectId>
+         <Size>100</Size>
+         <Damage>120</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>2500</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>0.5</Frequency>
+         <Amplitude>0.8</Amplitude>
+      </Projectile>
+      <Projectile id="15">
+         <ObjectId>Dark Shard</ObjectId>
+         <Size>100</Size>
+         <Damage>120</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>2500</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>0.8</Frequency>
+         <Amplitude>0.5</Amplitude>
+      </Projectile>
+      <Projectile id="16">
+         <ObjectId>Dark Shard</ObjectId>
+         <Size>100</Size>
+         <Damage>120</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>2500</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>1.3</Frequency>
+         <Amplitude>0.3</Amplitude>
+      </Projectile>
+      <Projectile id="17">
+         <ObjectId>Dark Shard</ObjectId>
+         <Size>80</Size>
+         <Damage>90</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>6666</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="18">
+         <ObjectId>Dark Shard</ObjectId>
+         <Size>130</Size>
+         <Damage>160</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="19">
+         <ObjectId>White Big Spinner</ObjectId>
+         <Size>120</Size>
+         <Damage>150</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="20">
+         <ObjectId>White Big Spinner</ObjectId>
+         <Size>100</Size>
+         <Damage>150</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>600</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="21">
+         <ObjectId>White Big Spinner</ObjectId>
+         <Size>80</Size>
+         <Damage>150</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>5</Frequency>
+         <Amplitude>0.15</Amplitude>
+      </Projectile>
+      <Projectile id="22">
+         <ObjectId>WR Bullet</ObjectId>
+         <Size>60</Size>
+         <Damage>150</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Frequency>3</Frequency>
+         <Amplitude>0.15</Amplitude>
+      </Projectile>
+      <Projectile id="23">
+         <ObjectId>White Big Spinner</ObjectId>
+         <Size>40</Size>
+         <Damage>1</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>220</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="24">
+         <ObjectId>White Big Spinner</ObjectId>
+         <Size>60</Size>
+         <Damage>1</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>220</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="25">
+         <ObjectId>White Big Spinner</ObjectId>
+         <Size>80</Size>
+         <Damage>1</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>220</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="26">
+         <ObjectId>White Big Spinner</ObjectId>
+         <Size>100</Size>
+         <Damage>150</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+         <Boomerang/>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>Fractal Telegrapher</ObjectId>
+         <Size>100</Size>
+         <Damage>1</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>200</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="9">
+         <ObjectId>Fractal Telegrapher</ObjectId>
+         <Size>100</Size>
+         <Damage>1</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>600</LifetimeMS>
+         <FaceDir/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x65db" id="Crystal test">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x38</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x39</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x3a</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x3b</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>crystalCaveObjects16x16</File>
+            <Index>0x3c</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/medusa_hit</HitSound>
+      <DeathSound>monster/medusa_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Flying/>
+      <Z>0.3</Z>
+      <Projectile id="0">
+         <ObjectId>Crystal Shard</ObjectId>
+         <Damage>100</Damage>
+         <Speed>70</Speed>
+         <Size>100</Size>
+         <LifetimeMS>800</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Crystal Green Shard</ObjectId>
+         <Size>55</Size>
+         <Damage>160</Damage>
+         <Speed>89</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Crystal Green Shard</ObjectId>
+         <Size>89</Size>
+         <Damage>160</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Crystal Green Shard</ObjectId>
+         <Size>144</Size>
+         <Damage>160</Damage>
+         <Speed>34</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Crystal Green Shard</ObjectId>
+         <Size>144</Size>
+         <Damage>160</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>600</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x65dc" id="Crystal snipe">
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x38</Index>
+      </Texture>
+      <HitSound>monster/medusa_hit</HitSound>
+      <DeathSound>monster/medusa_death</DeathSound>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <Invincible/>
+      <Flying/>
+      <Z>0.3</Z>
+      <Projectile id="0">
+         <ObjectId>Crystal Green Shard</ObjectId>
+         <Size>144</Size>
+         <Damage>160</Damage>
+         <Speed>2</Speed>
+         <LifetimeMS>250</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Crystal Green Shard</ObjectId>
+         <Size>144</Size>
+         <Damage>160</Damage>
+         <Speed>200</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x65de" id="newCs">
+      <Enemy/>
+      <DisplayId>Crystallised Scorpion</DisplayId>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>crystalCaveChars16x16</File>
+         <Index>5</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>crystalCaveChars16x16</File>
+            <Index>9</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Defense>30</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <HealthBarBoss/>
+      <Exp>5000</Exp>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Crystal Shard</ObjectId>
+         <Damage>225</Damage>
+         <Speed>120</Speed>
+         <Size>100</Size>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x65df" id="Split Scorpion">
+      <Enemy/>
+      <DisplayId>Crystallised Scorpion</DisplayId>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>crystalCaveChars8x8</File>
+         <Index>7</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>100</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Crystal Shard</ObjectId>
+         <Damage>275</Damage>
+         <Speed>120</Speed>
+         <Size>100</Size>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x65e0" id="Real Split Scorpion">
+      <Enemy/>
+      <DisplayId>Crystallised Scorpion</DisplayId>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>crystalCaveChars8x8</File>
+         <Index>7</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>30</Defense>
+      <StasisImmune/>
+      <StunImmune/>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x65e1" id="Scorpion Spawner">
+      <DisplayId>Crystallised Scorpion</DisplayId>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>crystalCaveChars8x8</File>
+         <Index>7</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x65e2" id="Target Scorpion Spawner">
+      <DisplayId>Crystallised Scorpion</DisplayId>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>crystalCaveChars8x8</File>
+         <Index>7</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x65e3" id="Target Scorpion">
+      <Enemy/>
+      <DisplayId>Crystallised Scorpion</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>oryxHordeObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Flying/>
+      <Animation sync="true" prob="1" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x00</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>oryxHordeObjects16x16</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>200</Size>
+      <ShadowSize>0</ShadowSize>
+      <Invincible/>
+   </Object>
+   <Object type="0x65e4" id="Explosion Scorpion">
+      <Enemy/>
+      <DisplayId>Crystallised Scorpion</DisplayId>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>crystalCaveChars8x8</File>
+         <Index>7</Index>
+      </AnimatedTexture>
+      <NoArticle/>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <Invincible/>
+      <Projectile id="0">
+         <ObjectId>Crystal Shard</ObjectId>
+         <Damage>175</Damage>
+         <Speed>120</Speed>
+         <Size>100</Size>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x65e5" id="Crystal Spike">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Animation prob="1" period="0">
+         <Frame time=".4">
+            <Texture>
+               <File>crystalCaveObjects16x16</File>
+               <Index>0x47</Index>
+            </Texture>
+         </Frame>
+         <Frame time=".1">
+            <Texture>
+               <File>crystalCaveObjects16x16</File>
+               <Index>0x48</Index>
+            </Texture>
+         </Frame>
+         <Frame time=".1">
+            <Texture>
+               <File>crystalCaveObjects16x16</File>
+               <Index>0x49</Index>
+            </Texture>
+         </Frame>
+         <Frame time=".4">
+            <Texture>
+               <File>crystalCaveObjects16x16</File>
+               <Index>0x4a</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Effect particle="Dirt" cooldown="3">XMLEffect</Effect>
+      <MinSize>160</MinSize>
+      <MaxSize>160</MaxSize>
+      <SizeStep>20</SizeStep>
+      <ShadowSize>0</ShadowSize>
+      <Flying/>
+   </Object>
+   <Object type="0x65e6" id="Fractal Telegrapher">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x1a</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x65e7" id="Crystal Telegrapher">
+      <DisplayId>Crystal Entity</DisplayId>
+      <Enemy/>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Fractal Telegrapher</ObjectId>
+         <Speed>1</Speed>
+         <Damage>1</Damage>
+         <Size>200</Size>
+         <LifetimeMS>800</LifetimeMS>
+         <MultiHit/>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object type="0x65e8" id="Crystal Telegrapher Shooter">
+      <DisplayId>Crystal Entity</DisplayId>
+      <Enemy/>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Projectile id="0">
+         <ObjectId>Fractal Telegrapher</ObjectId>
+         <Speed>20</Speed>
+         <Damage>1</Damage>
+         <Size>200</Size>
+         <LifetimeMS>800</LifetimeMS>
+         <MultiHit/>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object type="0x65e9" id="Pulse Entity">
+      <DisplayId>Crystal Entity</DisplayId>
+      <Enemy/>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>crystalCaveObjects8x8</File>
+         <Index>0x36</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <Flying/>
+      <Z>0.2</Z>
+      <Projectile id="0">
+         <ObjectId>White Big Spinner</ObjectId>
+         <Speed>0</Speed>
+         <Damage>150</Damage>
+         <Size>0</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <MultiHit/>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object type="0x65ea" id="Pulse Lock">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Crystal Entity</DisplayId>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x38</Index>
+      </Texture>
+      <HitSound>monster/medusa_hit</HitSound>
+      <DeathSound>monster/medusa_death</DeathSound>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <Invincible/>
+      <Flying/>
+      <Z>0.3</Z>
+      <Projectile id="0">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>0</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>250</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>160</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x65eb" id="Pulse Lock P2">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Crystal Entity</DisplayId>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x38</Index>
+      </Texture>
+      <HitSound>monster/medusa_hit</HitSound>
+      <DeathSound>monster/medusa_death</DeathSound>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <Invincible/>
+      <Flying/>
+      <Z>0.3</Z>
+      <Projectile id="0">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>0</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>250</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>160</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x65ec" id="Pulse Lock P3">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Crystal Entity</DisplayId>
+      <Texture>
+         <File>crystalCaveObjects16x16</File>
+         <Index>0x38</Index>
+      </Texture>
+      <HitSound>monster/medusa_hit</HitSound>
+      <DeathSound>monster/medusa_death</DeathSound>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <Invincible/>
+      <Flying/>
+      <Z>0.3</Z>
+      <Projectile id="0">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>0</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>250</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Red Shard Bolt</ObjectId>
+         <Size>100</Size>
+         <Damage>160</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+</Objects>

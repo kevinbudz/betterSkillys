@@ -1,0 +1,2337 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x78e" id="pD Blob Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x10</Index>
+      </Texture>
+      <Rotation>100</Rotation>
+   </Object>
+   <Object type="0x78f" id="pD Maw Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x11</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x79a" id="pD Maw Shot 2">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x14</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x7a0" id="pD Maw Shot 3">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x13</Index>
+      </Texture>
+   </Object>
+   <Object type="0x79f" id="pD Walker Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x15</Index>
+      </Texture>
+   </Object>
+   <Object type="0x7ab" id="pD Stalker Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x16</Index>
+      </Texture>
+   </Object>
+   <Object type="0x799" id="pD Tongue Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x12</Index>
+      </Texture>
+   </Object>
+   <Object type="0x7ac" id="pD Sword Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x18</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x7ad" id="pD Wand Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x29</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x7ae" id="pD Bow Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x2a</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x7af" id="pD Dagger Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x2b</Index>
+      </Texture>
+   </Object>
+   <Object type="0x7b0" id="pD Staff Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x7b1" id="pD Katana Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x2d</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x7b2" id="pD Wall Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x1f</Index>
+      </Texture>
+      <Rotation>500</Rotation>
+   </Object>
+   <Object type="0x7b3" id="pD Quiet Wave">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0xa7</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x7b7" id="pD Boss Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x27</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x7bd" id="pD Pterasite Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0xa6</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x7bf" id="pD Swarm Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x0d</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x798" id="Parasite Chambers Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>Parasite Chambers</DisplayId>
+      <DungeonName>Parasite Chambers</DungeonName>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x01</Index>
+      </Texture>
+      <Animation prob="0.3" period="0.4">
+         <Frame time="0.1">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x02</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x03</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x04</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x05</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Animation prob="0.05" period="1.2">
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x06</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Animation prob="0.1" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x06</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Animation prob="0.05" period="0.6">
+         <Frame time="0.3">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x01</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.3">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x06</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x7a6" id="pD Swords">
+      <Group>Host Players</Group>
+      <DisplayId>Sword Wielding Host</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <RandomTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>11</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>12</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>13</Index>
+         </AnimatedTexture>
+      </RandomTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <BloodProb>0.5</BloodProb>
+      <BloodColor>0xB50000</BloodColor>
+      <Size>100</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>2600</MaxHitPoints>
+      <Defense>50</Defense>
+      <Exp>150</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Sword Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>149</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>525</LifetimeMS>
+      </Projectile>
+      <StunImmune/>
+   </Object>
+   <Object type="0x7a8" id="pD Wands">
+      <Group>Host Players</Group>
+      <DisplayId>Wand Wielding Host</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <RandomTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>14</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>15</Index>
+         </AnimatedTexture>
+      </RandomTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <BloodProb>0.5</BloodProb>
+      <BloodColor>0xB50000</BloodColor>
+      <Size>100</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>1800</MaxHitPoints>
+      <Defense>30</Defense>
+      <Exp>138</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Wand Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>71</Damage>
+         <Speed>144</Speed>
+         <LifetimeMS>750</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x7aa" id="pD Bows">
+      <Group>Host Players</Group>
+      <DisplayId>Bow Wielding Host</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <RandomTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>16</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>17</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>30</Index>
+         </AnimatedTexture>
+      </RandomTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <BloodProb>0.5</BloodProb>
+      <BloodColor>0xB50000</BloodColor>
+      <Size>100</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>2200</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>150</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Bow Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>40</Damage>
+         <Speed>128</Speed>
+         <LifetimeMS>660</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x7a9" id="pD Daggers">
+      <Group>Host Players</Group>
+      <DisplayId>Dagger Wielding Host</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <RandomTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>18</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>19</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>20</Index>
+         </AnimatedTexture>
+      </RandomTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <BloodProb>0.5</BloodProb>
+      <BloodColor>0xB50000</BloodColor>
+      <Size>100</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>2200</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>150</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Dagger Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>81</Damage>
+         <Speed>112</Speed>
+         <LifetimeMS>600</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x7a5" id="pD Staves">
+      <Group>Host Players</Group>
+      <DisplayId>Staff Wielding Host</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <RandomTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>21</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>22</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>23</Index>
+         </AnimatedTexture>
+      </RandomTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <BloodProb>0.5</BloodProb>
+      <BloodColor>0xB50000</BloodColor>
+      <Size>100</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>1800</MaxHitPoints>
+      <Defense>30</Defense>
+      <Exp>138</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Staff Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>50</Damage>
+         <Speed>144</Speed>
+         <LifetimeMS>713</LifetimeMS>
+         <Amplitude>0.5</Amplitude>
+         <Frequency>2</Frequency>
+      </Projectile>
+   </Object>
+   <Object type="0x7a7" id="pD Katanas">
+      <Group>Host Players</Group>
+      <DisplayId>Katana Wielding Host</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <RandomTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>24</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>25</Index>
+         </AnimatedTexture>
+      </RandomTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <BloodProb>0.5</BloodProb>
+      <BloodColor>0xB50000</BloodColor>
+      <Size>100</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>2200</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>150</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Katana Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>95</Damage>
+         <Speed>104</Speed>
+         <LifetimeMS>548</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x95a" id="pD Swords Scout">
+      <Group>Host Players Scouts</Group>
+      <DisplayId>Sword Wielding Host</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <RandomTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>11</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>12</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>13</Index>
+         </AnimatedTexture>
+      </RandomTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <BloodProb>0.5</BloodProb>
+      <BloodColor>0xB50000</BloodColor>
+      <Size>100</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>1700</MaxHitPoints>
+      <Defense>50</Defense>
+      <Exp>130</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Sword Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>99</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>525</LifetimeMS>
+      </Projectile>
+      <StunImmune/>
+   </Object>
+   <Object type="0x95b" id="pD Wands Scout">
+      <Group>Host Players Scouts</Group>
+      <DisplayId>Wand Wielding Host</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <RandomTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>14</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>15</Index>
+         </AnimatedTexture>
+      </RandomTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <BloodProb>0.5</BloodProb>
+      <BloodColor>0xB50000</BloodColor>
+      <Size>100</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Defense>30</Defense>
+      <Exp>92</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Wand Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>47</Damage>
+         <Speed>144</Speed>
+         <LifetimeMS>750</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x95c" id="pD Bows Scout">
+      <Group>Host Players Scouts</Group>
+      <DisplayId>Bow Wielding Host</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <RandomTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>16</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>17</Index>
+         </AnimatedTexture>
+      </RandomTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <BloodProb>0.5</BloodProb>
+      <BloodColor>0xB50000</BloodColor>
+      <Size>100</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>1450</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>111</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Bow Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>25</Damage>
+         <Speed>128</Speed>
+         <LifetimeMS>660</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x95d" id="pD Daggers Scout">
+      <Group>Host Players Scouts</Group>
+      <DisplayId>Dagger Wielding Host</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <RandomTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>18</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>19</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>20</Index>
+         </AnimatedTexture>
+      </RandomTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <BloodProb>0.5</BloodProb>
+      <BloodColor>0xB50000</BloodColor>
+      <Size>100</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>1450</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>111</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Dagger Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>54</Damage>
+         <Speed>112</Speed>
+         <LifetimeMS>600</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x95e" id="pD Staves Scout">
+      <Group>Host Players Scouts</Group>
+      <DisplayId>Staff Wielding Host</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <RandomTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>21</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>22</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>23</Index>
+         </AnimatedTexture>
+      </RandomTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <BloodProb>0.5</BloodProb>
+      <BloodColor>0xB50000</BloodColor>
+      <Size>100</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Defense>30</Defense>
+      <Exp>92</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Staff Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>32</Damage>
+         <Speed>144</Speed>
+         <LifetimeMS>713</LifetimeMS>
+         <Amplitude>0.5</Amplitude>
+         <Frequency>2</Frequency>
+      </Projectile>
+   </Object>
+   <Object type="0x95f" id="pD Katanas Scout">
+      <Group>Host Players Scouts</Group>
+      <DisplayId>Katana Wielding Host</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <RandomTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>24</Index>
+         </AnimatedTexture>
+         <AnimatedTexture>
+            <File>parasiteDenChars8x8</File>
+            <Index>25</Index>
+         </AnimatedTexture>
+      </RandomTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <BloodProb>0.5</BloodProb>
+      <BloodColor>0xB50000</BloodColor>
+      <Size>100</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>1450</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>111</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Katana Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>63</Damage>
+         <Speed>104</Speed>
+         <LifetimeMS>548</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x7c9" id="pD Stalker Scout">
+      <DisplayId>Parasitic Stalker</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>parasiteDenChars8x8</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <HitSound>monster/lizard_god_hit</HitSound>
+      <DeathSound>monster/dwarves_death</DeathSound>
+      <Size>110</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>400</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Stalker Shot</ObjectId>
+         <Damage>130</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2200</LifetimeMS>
+         <Size>100</Size>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0x791" id="pD Stalker">
+      <DisplayId>Parasitic Stalker</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>parasiteDenChars8x8</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <HitSound>monster/lizard_god_hit</HitSound>
+      <DeathSound>monster/dwarves_death</DeathSound>
+      <Size>110</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>2600</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>400</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Stalker Shot</ObjectId>
+         <Damage>130</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>2200</LifetimeMS>
+         <Size>100</Size>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0x792" id="pD Skin Collector">
+      <DisplayId>Flesh Collector</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>parasiteDenChars8x8</File>
+         <Index>5</Index>
+      </AnimatedTexture>
+      <HitSound>monster/cyclops_hit</HitSound>
+      <DeathSound>monster/cyclops_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>156</Exp>
+      <Projectile id="0">
+         <ObjectId>Big Fireball</ObjectId>
+         <Damage>10</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>1600</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x793" id="pD Walker">
+      <DisplayId>Walking Horror</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>parasiteDenChars16x16</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <HitSound>monster/lizard_god_hit</HitSound>
+      <DeathSound>monster/ogres_death</DeathSound>
+      <Size>110</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>3500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>800</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Walker Shot</ObjectId>
+         <Damage>150</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>2400</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x7c7" id="pD Maw Scout">
+      <DisplayId>Horror Maw</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>parasiteDenChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <HitSound>monster/abyss_brutes_hit</HitSound>
+      <DeathSound>monster/abyss_demons_death</DeathSound>
+      <Size>115</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>800</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Maw Shot</ObjectId>
+         <Damage>140</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>1600</LifetimeMS>
+         <Size>130</Size>
+         <Amplitude>1.8</Amplitude>
+         <Frequency>0.492</Frequency>
+         <MultiHit/>
+         <FaceDir/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>pD Maw Shot</ObjectId>
+         <Damage>140</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>1400</LifetimeMS>
+         <Size>130</Size>
+         <Amplitude>2.9</Amplitude>
+         <Frequency>0.492</Frequency>
+         <MultiHit/>
+         <FaceDir/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>pD Maw Shot 2</ObjectId>
+         <Damage>160</Damage>
+         <Speed>46</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <Size>120</Size>
+         <PassesCover/>
+      </Projectile>
+      <StunImmune/>
+   </Object>
+   <Object type="0x7c8" id="pD Tongue Scout">
+      <DisplayId>Furious Lasher</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>parasiteDenChars16x16</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <HitSound>monster/demons_hit</HitSound>
+      <DeathSound>monster/abyss_brutes_death</DeathSound>
+      <Size>110</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>800</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Tongue Shot</ObjectId>
+         <Damage>140</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>1600</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0x794" id="pD Maw">
+      <DisplayId>Horror Maw</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>parasiteDenChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <HitSound>monster/abyss_brutes_hit</HitSound>
+      <DeathSound>monster/abyss_demons_death</DeathSound>
+      <Size>115</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>4000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>800</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Maw Shot</ObjectId>
+         <Damage>140</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>1600</LifetimeMS>
+         <Size>130</Size>
+         <Amplitude>1.8</Amplitude>
+         <Frequency>0.492</Frequency>
+         <MultiHit/>
+         <FaceDir/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>pD Maw Shot</ObjectId>
+         <Damage>140</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>1400</LifetimeMS>
+         <Size>130</Size>
+         <Amplitude>2.9</Amplitude>
+         <Frequency>0.492</Frequency>
+         <MultiHit/>
+         <FaceDir/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>pD Maw Shot 2</ObjectId>
+         <Damage>160</Damage>
+         <Speed>46</Speed>
+         <LifetimeMS>1800</LifetimeMS>
+         <Size>120</Size>
+         <PassesCover/>
+      </Projectile>
+      <StunImmune/>
+   </Object>
+   <Object type="0x795" id="pD Tongue">
+      <DisplayId>Furious Lasher</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>parasiteDenChars16x16</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <HitSound>monster/demons_hit</HitSound>
+      <DeathSound>monster/abyss_brutes_death</DeathSound>
+      <Size>110</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>3500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>800</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Tongue Shot</ObjectId>
+         <Damage>140</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>1600</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0x785" id="pD EBM">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>parasiteDenChars8x8</File>
+         <Index>8</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x7b4" id="EBM">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>parasiteDenChars8x8</File>
+         <Index>8</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x7b5" id="pD Explo">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>-1</Size>
+      <Effect maxRadius="3.7" color="0xFF9000" size="100">ExplosionComplex</Effect>
+   </Object>
+   <Object type="0x786" id="pD Barrel">
+      <DisplayId>Explosive Barrel</DisplayId>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>parasiteDenChars8x8</File>
+         <Index>8</Index>
+      </AnimatedTexture>
+      <Color>0xFF9000</Color>
+      <HitSound>monster/cyclops_hit</HitSound>
+      <DeathSound>monster/cyclops_death</DeathSound>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x796" id="pD Barrel Explosion">
+      <DisplayId>Explosive Barrel</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>-1</Size>
+      <Sound id="0">spell/fire_nova</Sound>
+      <Effect minRadius="0.5" maxRadius="3.7" color="0xFF9000" size="100" life="0.35" amount="100">ExplosionComplex</Effect>
+   </Object>
+   <Object type="0x7c4" id="pD Scout Squad">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>parasiteDenChars8x8</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x7c2" id="pD Scout Colony">
+      <DisplayId>Scout Colony</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>parasiteDenObjects16x16</File>
+         <Index>0</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>parasiteDenObjects16x16</File>
+            <Index>1</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>parasiteDenObjects16x16</File>
+            <Index>2</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/blobs_death</DeathSound>
+      <BloodProb>0.5</BloodProb>
+      <BloodColor>0xB50000</BloodColor>
+      <Size>100</Size>
+      <MaxHitPoints>12000</MaxHitPoints>
+      <Defense>50</Defense>
+      <Exp>1000</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x7c0" id="pD Blob Scout">
+      <DisplayId>Parasitic Blob Scout</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>parasiteDenChars8x8</File>
+         <Index>27</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <Size>110</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>1300</MaxHitPoints>
+      <Defense>10</Defense>
+      <Exp>60</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Blob Shot</ObjectId>
+         <Damage>80</Damage>
+         <Speed>56</Speed>
+         <LifetimeMS>2400</LifetimeMS>
+         <Size>80</Size>
+         <ConditionEffect duration="4.0">Sick</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0x789" id="pD Blob">
+      <DisplayId>Parasitic Blob</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>parasiteDenChars8x8</File>
+         <Index>28</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>1600</MaxHitPoints>
+      <Defense>10</Defense>
+      <Exp>80</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Blob Shot</ObjectId>
+         <Damage>80</Damage>
+         <Speed>56</Speed>
+         <LifetimeMS>2400</LifetimeMS>
+         <Size>80</Size>
+         <ConditionEffect duration="4.0">Sick</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x7c1" id="pD Blob Guardian">
+      <DisplayId>Parasitic Blob Guardian</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>parasiteDenChars8x8</File>
+         <Index>29</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <Size>105</Size>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>100</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Blob Shot</ObjectId>
+         <Damage>80</Damage>
+         <Speed>56</Speed>
+         <LifetimeMS>2400</LifetimeMS>
+         <Size>80</Size>
+         <ConditionEffect duration="4.0">Sick</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0x7bb" id="pD Colony Goop">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x61</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x7c3" id="pD Colony Life">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x61</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x7bc" id="pD Colony Death">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x61</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x790" id="pD Blob Colony">
+      <DisplayId>Blob Colony</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>parasiteDenObjects16x16</File>
+         <Index>0</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>parasiteDenObjects16x16</File>
+            <Index>1</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>parasiteDenObjects16x16</File>
+            <Index>2</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/blobs_death</DeathSound>
+      <BloodProb>0.5</BloodProb>
+      <BloodColor>0xB50000</BloodColor>
+      <Size>120</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>12000</MaxHitPoints>
+      <Defense>2000</Defense>
+      <Exp>2000</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x7a2" id="pD Creepasite Maker">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x61</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x787" id="pD Pterasite">
+      <DisplayId>Pterasite</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0xa0</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xa1</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xa2</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xa3</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>80</ShadowSize>
+      <Z>0.4</Z>
+      <Flying/>
+      <Invincible/>
+      <Exp>300</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Pterasite Shot</ObjectId>
+         <Damage>50</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <Size>110</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="3.0">Bleeding</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x7a3" id="pD Pterasite Bomb">
+      <DisplayId>Pterasite Bomb</DisplayId>
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>120</Size>
+      <Invincible/>
+      <Exp>0</Exp>
+      <Projectile id="0">
+         <ObjectId>Poison Fireball</ObjectId>
+         <Damage>90</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1400</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <ConditionEffect duration="6">Slowed</ConditionEffect>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0x78b" id="pD Pterasite Bomb Proj">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0xa5</Index>
+      </Texture>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x7a4" id="pD Pterasite Colony">
+      <DisplayId>Pterasite Colony</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>parasiteDenObjects16x16</File>
+         <Index>0x10</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>parasiteDenObjects16x16</File>
+            <Index>0x11</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>parasiteDenObjects16x16</File>
+            <Index>0x12</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/blobs_death</DeathSound>
+      <BloodProb>0.5</BloodProb>
+      <BloodColor>0xB50000</BloodColor>
+      <Size>120</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>12000</MaxHitPoints>
+      <Defense>2000</Defense>
+      <Exp>2000</Exp>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x7be" id="pD Swarm Colony">
+      <DisplayId>Swarm Colony</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>parasiteDenObjects16x16</File>
+         <Index>0x20</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>parasiteDenObjects16x16</File>
+            <Index>0x21</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>parasiteDenObjects16x16</File>
+            <Index>0x21</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/blobs_death</DeathSound>
+      <BloodProb>0.5</BloodProb>
+      <BloodColor>0xB50000</BloodColor>
+      <Size>120</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>12000</MaxHitPoints>
+      <Defense>2000</Defense>
+      <Exp>2000</Exp>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Speed>10</Speed>
+         <Damage>0</Damage>
+         <LifetimeMS>0</LifetimeMS>
+         <Parametric/>
+         <Size>0</Size>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>pD Swarm Shot</ObjectId>
+         <Speed>10</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>2500</LifetimeMS>
+         <FaceDir/>
+         <Parametric/>
+         <Magnitude>3.0</Magnitude>
+         <Size>110</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="4.0">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>pD Swarm Shot</ObjectId>
+         <Speed>10</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>5500</LifetimeMS>
+         <FaceDir/>
+         <Parametric/>
+         <Magnitude>5.0</Magnitude>
+         <Size>110</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="4.0">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>pD Swarm Shot</ObjectId>
+         <Speed>10</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>7500</LifetimeMS>
+         <FaceDir/>
+         <Parametric/>
+         <Magnitude>6.0</Magnitude>
+         <Size>110</Size>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="4.0">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>pD Maw Shot 3</ObjectId>
+         <Damage>60</Damage>
+         <Speed>92</Speed>
+         <LifetimeMS>1600</LifetimeMS>
+         <Size>80</Size>
+         <PassesCover/>
+      </Projectile>
+      <StunImmune/>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x788" id="pD Painling">
+      <DisplayId>Painling</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>parasiteDenChars8x8</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0x21</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>75</ShadowSize>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>300</Exp>
+      <Projectile id="0">
+         <ObjectId>Poison Fireball</ObjectId>
+         <Damage>90</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1400</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+         <ConditionEffect duration="6">Slowed</ConditionEffect>
+         <PassesCover/>
+      </Projectile>
+      <ParalyzeImmune/>
+   </Object>
+   <Object type="0x78a" id="pD Painling Explosion">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x21</Index>
+      </Texture>
+      <Size>100</Size>
+      <ShadowSize>75</ShadowSize>
+   </Object>
+   <Object type="0x801" id="pD Boss Target">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x800" id="pD Boss">
+      <DisplayId>Nightmare Colony</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>parasiteDenChars16x16</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/archdemon_death</DeathSound>
+      <BloodProb>0.5</BloodProb>
+      <BloodColor>0xB50000</BloodColor>
+      <DontFaceAttacks/>
+      <Size>170</Size>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>5000</Defense>
+      <Exp>40000</Exp>
+      <Quest/>
+      <HealthBarBoss/>
+      <EventChestBoss/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>pD Wall Shot</ObjectId>
+         <Damage>150</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2700</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <ConditionEffect duration="4.0">Weak</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>pD Maw Shot 2</ObjectId>
+         <Damage>70</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>2285</LifetimeMS>
+         <Size>80</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>pD Maw Shot 3</ObjectId>
+         <Damage>70</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>2285</LifetimeMS>
+         <Size>80</Size>
+         <Amplitude>0.40</Amplitude>
+         <Frequency>2</Frequency>
+         <MultiHit/>
+         <FaceDir/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>pD Boss Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>170</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>pD Boss Shot</ObjectId>
+         <Size>100</Size>
+         <Damage>170</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>pD Quiet Wave</ObjectId>
+         <Size>130</Size>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="4.0">Quiet</ConditionEffect>
+      </Projectile>
+      <StunImmune/>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x81e" id="pD Infested Chest">
+      <DisplayId>Infested Chest</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x3c</Index>
+      </Texture>
+      <Size>140</Size>
+      <HitSound>monster/flayers_hit</HitSound>
+      <DeathSound>monster/flayers_death</DeathSound>
+      <MaxHitPoints>50000</MaxHitPoints>
+      <Exp>12000</Exp>
+      <TrackLoot/>
+   </Object>
+   <Object type="0x7b6" id="pD Boss Support">
+      <DisplayId>Nightmare Colony</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x49</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0x48</Index>
+         </Texture>
+      </AltTexture>
+      <DrawOnGround/>
+      <HitSound>monster/cyclops_hit</HitSound>
+      <DeathSound>monster/cyclops_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <Invincible/>
+      <Exp>0</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Tongue Shot</ObjectId>
+         <Damage>150</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>1600</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>pD Quiet Wave</ObjectId>
+         <Size>130</Size>
+         <Damage>80</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="4.0">Quiet</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Puppet Green Wheel</ObjectId>
+         <Speed>35</Speed>
+         <Damage>10</Damage>
+         <LifetimeMS>7000</LifetimeMS>
+         <Size>80</Size>
+         <ConditionEffect duration="4" target="1">Stasis</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x7c6" id="pD Blood Slurp">
+      <DisplayId>Blood Slurp</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>parasiteDenChars8x8</File>
+         <Index>26</Index>
+      </AnimatedTexture>
+      <HitSound>monster/cubes_hit</HitSound>
+      <DeathSound>monster/blobs_death</DeathSound>
+      <Size>120</Size>
+      <MaxHitPoints>3200</MaxHitPoints>
+      <Defense>25</Defense>
+      <Exp>2000</Exp>
+      <Projectile id="0">
+         <ObjectId>pD Maw Shot 2</ObjectId>
+         <Speed>60</Speed>
+         <Damage>100</Damage>
+         <Size>80</Size>
+         <LifetimeMS>1800</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>pD Maw Shot 3</ObjectId>
+         <Speed>60</Speed>
+         <Damage>120</Damage>
+         <Size>80</Size>
+         <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x79b" id="pD Spawn TP">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x36</Index>
+      </Texture>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x79c" id="pD Spawn TP Target">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa3</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x79d" id="pD Boss TP">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment2</File>
+         <Index>0x36</Index>
+      </Texture>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x79e" id="pD Boss TP Target">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa3</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x80c" id="pD Wall Maw">
+      <Class>Wall</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x30</Index>
+      </Texture>
+      <Animation prob="0.1" period="1.0">
+         <Frame time="1.0">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x30</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Animation prob="0.1" period="1.0">
+         <Frame time="1.0">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x31</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Animation prob="0.3" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x30</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x31</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Animation prob="0.3" period="0.6">
+         <Frame time="0.3">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x30</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.3">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x31</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Top>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0x32</Index>
+         </Texture>
+      </Top>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x819" id="pD Wall Maw Close">
+      <Class>Wall</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x33</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0x32</Index>
+         </Texture>
+      </Top>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x80d" id="pD Wall Vein">
+      <Class>Wall</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0xf8</Index>
+      </Texture>
+      <Animation prob="0.4" period="1.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0xf8</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0xf9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0xfa</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0xfb</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0xfc</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0xfd</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0xfe</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Animation prob="0.1" period="1.4">
+         <Frame time="0.1">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0xf8</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0xf9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0xfa</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0xfb</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0xfc</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0xfd</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0xfe</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Top>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xe9</Index>
+         </Texture>
+      </Top>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x80e" id="pD Wall Flesh">
+      <Class>Wall</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0xe8</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xe9</Index>
+         </Texture>
+      </Top>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x813" id="pD Wall Bricks">
+      <Class>Wall</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0xf0</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xf1</Index>
+         </Texture>
+      </Top>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x81a" id="pD Wall Bricks Small">
+      <Class>Wall</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0xd7</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xf1</Index>
+         </Texture>
+      </Top>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x81b" id="pD Wall Bricks Cracked">
+      <Class>Wall</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0xd6</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xf1</Index>
+         </Texture>
+      </Top>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x814" id="pD Wall Bricks Goop">
+      <Class>Wall</Class>
+      <RandomTexture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xf4</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xf5</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xf6</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xf1</Index>
+         </Texture>
+      </Top>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0x80f" id="pD Obstacle">
+      <DisplayId>Pulsating Obstacle</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x90</Index>
+      </Texture>
+      <HitSound>monster/eggs_hit</HitSound>
+      <DeathSound>monster/blobs_death</DeathSound>
+      <Animation prob="0.3" period="1.0">
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x90</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x91</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x92</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x91</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x90</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Animation prob="0.3" period="1.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x90</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x91</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x92</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x93</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x92</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x91</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x90</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <MinSize>110</MinSize>
+      <MaxSize>120</MaxSize>
+      <SizeStep>2</SizeStep>
+      <MaxHitPoints>200</MaxHitPoints>
+   </Object>
+   <Object type="0x7c5" id="pD Obstacle Explosion">
+      <DisplayId>Pulsating Obstacle</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x97</Index>
+      </Texture>
+      <MaxHitPoints>200000</MaxHitPoints>
+      <Exp>0</Exp>
+      <Enemy/>
+      <HealthBar>-1</HealthBar>
+      <Projectile id="0">
+         <ObjectId>pD Quiet Wave</ObjectId>
+         <Damage>80</Damage>
+         <Speed>68</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+         <ConditionEffect duration="4">Quiet</ConditionEffect>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0x818" id="pD Blockade">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>parasiteDenObjects16x16</File>
+            <Index>0x03</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects16x16</File>
+            <Index>0x04</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects16x16</File>
+            <Index>0x05</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects16x16</File>
+            <Index>0x06</Index>
+         </Texture>
+      </RandomTexture>
+      <MinSize>100</MinSize>
+      <MaxSize>120</MaxSize>
+      <SizeStep>20</SizeStep>
+      <Static/>
+      <OccupySquare/>
+      <BlocksSight/>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Exp>0</Exp>
+      <Enemy/>
+      <HealthBar>-1</HealthBar>
+   </Object>
+   <Object type="0x810" id="pD Pulsing Ground 1">
+      <Class>GameObject</Class>
+      <Static/>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x40</Index>
+      </Texture>
+      <Animation prob="0.1" period="0.8">
+         <Frame time="0.1">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x40</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x41</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Animation prob="0.1" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x40</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x41</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Animation prob="0.2" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x40</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x41</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0x816" id="pD Pulsing Ground 2">
+      <Class>GameObject</Class>
+      <Static/>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x44</Index>
+      </Texture>
+      <Animation prob="0.1" period="0.8">
+         <Frame time="0.1">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x44</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x45</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Animation prob="0.1" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x44</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x45</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Animation prob="0.2" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x44</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x45</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0x815" id="pD Goop Ground">
+      <Class>GameObject</Class>
+      <Static/>
+      <RandomTexture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xe4</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xe5</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xe6</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0xe7</Index>
+         </Texture>
+      </RandomTexture>
+      <DrawOnGround/>
+   </Object>
+   <Object type="0x811" id="pD Web">
+      <Class>SpiderWeb</Class>
+      <Model>Web</Model>
+      <RandomTexture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0x42</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0x43</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0x34</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0x35</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0x46</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x817" id="pD Web Maw">
+      <Class>SpiderWeb</Class>
+      <Model>Web</Model>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x36</Index>
+      </Texture>
+      <Animation prob="0.1" period="1.0">
+         <Frame time="0.8">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x36</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Animation prob="0.1" period="1.0">
+         <Frame time="0.8">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x37</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Animation prob="0.3" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x36</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x37</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Animation prob="0.3" period="0.6">
+         <Frame time="0.3">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x36</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.3">
+            <Texture>
+               <File>parasiteDenObjects8x8</File>
+               <Index>0x37</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x812" id="pD Pool of Blood">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0x80</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0x81</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0x82</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0x83</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0x84</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0x85</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0x86</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0x87</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects8x8</File>
+            <Index>0x88</Index>
+         </Texture>
+      </RandomTexture>
+      <DrawOnGround/>
+      <Size>100</Size>
+      <Static/>
+   </Object>
+   <Object type="0x81c" id="pD Weapon Rack">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x3a</Index>
+      </Texture>
+      <Color>0x4D4D4D</Color>
+      <Size>100</Size>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0x81d" id="pD Book">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x3b</Index>
+      </Texture>
+      <Size>120</Size>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0x81f" id="pD Candelabra">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>parasiteDenObjects16x16</File>
+         <Index>0x13</Index>
+      </Texture>
+      <Color>0x4D4D4D</Color>
+      <ShadowSize>50</ShadowSize>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Animation prob="1.0" period="0.0">
+         <Frame time="0.2">
+            <RandomTexture>
+               <Texture>
+                  <File>parasiteDenObjects16x16</File>
+                  <Index>0x13</Index>
+               </Texture>
+               <Texture>
+                  <File>parasiteDenObjects16x16</File>
+                  <Index>0x14</Index>
+               </Texture>
+               <Texture>
+                  <File>parasiteDenObjects16x16</File>
+                  <Index>0x15</Index>
+               </Texture>
+               <Texture>
+                  <File>parasiteDenObjects16x16</File>
+                  <Index>0x16</Index>
+               </Texture>
+            </RandomTexture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0xb39e" id="Infested pD Blockade">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>parasiteDenObjects16x16</File>
+            <Index>0x03</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects16x16</File>
+            <Index>0x04</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects16x16</File>
+            <Index>0x05</Index>
+         </Texture>
+         <Texture>
+            <File>parasiteDenObjects16x16</File>
+            <Index>0x06</Index>
+         </Texture>
+      </RandomTexture>
+      <MinSize>140</MinSize>
+      <MaxSize>180</MaxSize>
+      <SizeStep>20</SizeStep>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0xb396" id="Infested pD Colony Death">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>parasiteDenObjects8x8</File>
+         <Index>0x61</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+</Objects>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<GroundTypes>
+   <Ground type="0x70dc" id="Ancient Ruins Tile">
+      <RandomTexture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x1b</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x1c</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x0a</Index>
+         </Texture>
+      </RandomTexture>
+      <Color>0x8C774D</Color>
+   </Ground>
+   <Ground type="0x70dd" id="Ancient Ruins Tile 2">
+      <RandomTexture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x1b</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x1c</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x0a</Index>
+         </Texture>
+      </RandomTexture>
+      <Color>0x8C774D</Color>
+   </Ground>
+   <Ground type="0x70de" id="Ancient Ruins Sandy Tile">
+      <Texture>
+         <File>ancientRuinsObjects8x8</File>
+         <Index>0x09</Index>
+      </Texture>
+      <Color>0x8C774D</Color>
+   </Ground>
+   <Ground type="0x70df" id="Ancient Ruins Flower Tile">
+      <Texture>
+         <File>ancientRuinsObjects8x8</File>
+         <Index>0x13</Index>
+      </Texture>
+      <Color>0x8C774D</Color>
+   </Ground>
+   <Ground type="0x70e0" id="Ancient Ruins Big Square Tile">
+      <RandomTexture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x15</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x57</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x58</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x59</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x5a</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x0b</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x0b</Index>
+         </Texture>
+      </RandomTexture>
+      <BlendPriority>1</BlendPriority>
+      <Color>0xB7934B</Color>
+   </Ground>
+   <Ground type="0x70e1" id="Ancient Ruins Small Squares Tile">
+      <RandomTexture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x0c</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x16</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x62</Index>
+         </Texture>
+      </RandomTexture>
+      <BlendPriority>1</BlendPriority>
+      <Color>0x94643A</Color>
+   </Ground>
+   <Ground type="0x70e2" id="Ancient Ruins Brick Tile">
+      <RandomTexture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x17</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x60</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x61</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x0d</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x0d</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x0d</Index>
+         </Texture>
+      </RandomTexture>
+      <BlendPriority>1</BlendPriority>
+      <Color>0xE6D383</Color>
+   </Ground>
+   <Ground type="0x70e3" id="Ancient Ruins Plate Tile">
+      <RandomTexture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x18</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x5c</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x5d</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x5e</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x5f</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x0e</Index>
+         </Texture>
+         <Texture>
+            <File>ancientRuinsObjects8x8</File>
+            <Index>0x0e</Index>
+         </Texture>
+      </RandomTexture>
+      <BlendPriority>1</BlendPriority>
+      <Color>0xD3B770</Color>
+   </Ground>
+   <Ground type="0x70e4" id="Ancient Ruins Gold Tile">
+      <Texture>
+         <File>ancientRuinsObjects8x8</File>
+         <Index>0x05</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0x70e5" id="Ancient Ruins Pedestal Tile">
+      <Texture>
+         <File>ancientRuinsObjects8x8</File>
+         <Index>0x06</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0x70e6" id="Ancient Ruins Quicksand">
+      <Texture>
+         <File>ancientRuinsObjects8x8</File>
+         <Index>0x20</Index>
+      </Texture>
+      <BlendPriority>3</BlendPriority>
+      <Sinking/>
+      <Speed>0.7</Speed>
+      <Animate dx=".1" dy=".1">Flow</Animate>
+      <Color>0xC5A55E</Color>
+   </Ground>
+   <Ground type="0x70e7" id="Ancient Ruins Quicksand No Sink">
+      <Texture>
+         <File>ancientRuinsObjects8x8</File>
+         <Index>0x20</Index>
+      </Texture>
+      <BlendPriority>3</BlendPriority>
+      <Animate dx=".1" dy=".1">Flow</Animate>
+      <Color>0xC5A55E</Color>
+   </Ground>
+   <Ground type="0x70e8" id="Ancient Ruins Sand Tile">
+      <Texture>
+         <File>ancientRuinsObjects8x8</File>
+         <Index>0x12</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+</GroundTypes>

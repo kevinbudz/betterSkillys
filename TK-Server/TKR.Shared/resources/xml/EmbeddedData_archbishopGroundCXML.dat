@@ -1,0 +1,1236 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<GroundTypes>
+   <Ground id="Shade 1 O3 Sanctuary Rug L Edge L" type="0x622a">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x9c</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 1 O3 Sanctuary Rug L Edge R" type="0x622b">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x9e</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 1 O3 Sanctuary Rug L Edge U" type="0x622c">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x8d</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 1 O3 Sanctuary Rug L Edge D" type="0x622d">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xad</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 1 O3 Sanctuary Rug L Corner UL" type="0x622e">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x8c</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 1 O3 Sanctuary Rug L Corner UR" type="0x6263">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x8e</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 1 O3 Sanctuary Rug L Corner DL" type="0x6264">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xac</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 1 O3 Sanctuary Rug L Corner DR" type="0x6265">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xae</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 1 O3 Sanctuary Rug L Inner UL" type="0x6266">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x9b</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 1 O3 Sanctuary Rug L Inner UR" type="0x6267">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x9a</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 1 O3 Sanctuary Rug L Inner DL" type="0x6234">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x8b</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 1 O3 Sanctuary Rug L Inner DR" type="0x6235">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x8a</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 1 O3 Sanctuary Rug L Emblem 1" type="0x6236">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x8f</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 1 O3 Sanctuary Rug L Emblem 2" type="0x6237">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x9f</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 1 O3 Sanctuary Rug L Emblem 3" type="0x6238">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xaf</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 1 O3 Sanctuary Rug L Emblem 4" type="0x6239">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xaa</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 1 O3 Sanctuary Rug L Emblem 5" type="0x623a">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xab</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 1 O3 Sanctuary Rug L Emblem 6" type="0x623b">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x9d</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 2 O3 Sanctuary Rug L Edge L" type="0x623d">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xcc</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 2 O3 Sanctuary Rug L Edge R" type="0x623e">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xce</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 2 O3 Sanctuary Rug L Edge U" type="0x623f">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xbd</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 2 O3 Sanctuary Rug L Edge D" type="0x6240">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xdd</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 2 O3 Sanctuary Rug L Corner UL" type="0x6241">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xbc</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 2 O3 Sanctuary Rug L Corner UR" type="0x6242">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xbe</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 2 O3 Sanctuary Rug L Corner DL" type="0x6243">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xdc</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 2 O3 Sanctuary Rug L Corner DR" type="0x6244">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xde</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 2 O3 Sanctuary Rug L Inner UL" type="0x6245">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xcb</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 2 O3 Sanctuary Rug L Inner UR" type="0x6246">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xca</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 2 O3 Sanctuary Rug L Inner DL" type="0x6247">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xbb</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 2 O3 Sanctuary Rug L Inner DR" type="0x6248">
+      <Color>0x0D69D9</Color>
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xba</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 2 O3 Sanctuary Rug L Emblem 1" type="0x6249">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xbf</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 2 O3 Sanctuary Rug L Emblem 2" type="0x624a">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xcf</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 2 O3 Sanctuary Rug L Emblem 3" type="0x624b">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xdf</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 2 O3 Sanctuary Rug L Emblem 4" type="0x624c">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xda</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 2 O3 Sanctuary Rug L Emblem 5" type="0x624d">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xdb</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Shade 2 O3 Sanctuary Rug L Emblem 6" type="0x624e">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xcd</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile light" type="0x624f">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xd3</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile dark" type="0x6250">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xd4</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile light connector" type="0x6251">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x104</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile light horizontal" type="0x6252">
+      <RandomTexture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x100</Index>
+         </Texture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x101</Index>
+         </Texture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x102</Index>
+         </Texture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x103</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground id="leucoryx main tile light vertical" type="0x6253">
+      <RandomTexture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x114</Index>
+         </Texture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x124</Index>
+         </Texture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x134</Index>
+         </Texture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x144</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground id="leucoryx main tile light A top row 1" type="0x6254">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x110</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile light A top row 2" type="0x6255">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x111</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile light A top row 3" type="0x6256">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x112</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile light A top row 4" type="0x6257">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x113</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile light B mid row 1" type="0x6258">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x120</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile light B mid row 2" type="0x6259">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x121</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile light B mid row 3" type="0x625a">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x122</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile light B mid row 4" type="0x625b">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x123</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile light C mid bot row 1" type="0x625c">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x130</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile light C mid bot row 2" type="0x625d">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x131</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile light C mid bot row 3" type="0x625e">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x132</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile light C mid bot row 4" type="0x625f">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x133</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile light D bot row 1" type="0x6260">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x140</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile light D bot row 2" type="0x6261">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x141</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile light D bot row 3" type="0x6262">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x142</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile dark A top row 2" type="0x6268">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x116</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile dark A top row 3" type="0x6269">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x117</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile dark A top row 4" type="0x626a">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x118</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile dark B mid row 1" type="0x626b">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x125</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile dark B mid row 2" type="0x626c">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x126</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile dark B mid row 3" type="0x626d">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x127</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile dark B mid row 4" type="0x626e">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x128</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile dark C mid bot row 1" type="0x626f">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x135</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile dark C mid bot row 2" type="0x6270">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x136</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile dark C mid bot row 3" type="0x6271">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x137</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile dark C mid bot row 4" type="0x6272">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x138</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile dark D bot row 1" type="0x6273">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x145</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile dark D bot row 2" type="0x6274">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x146</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile dark D bot row 3" type="0x6275">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x147</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile dark D bot row 4" type="0x6276">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x148</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs rug A left" type="0x6277">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xd0</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs rug B mid" type="0x6278">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xd1</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs rug C right" type="0x6279">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xd2</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs tl light row 1 A" type="0x627a">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xa0</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs tl light row 1 B" type="0x627b">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xa1</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs tl light row 1 C" type="0x627c">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xa2</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs tl light row 2 A" type="0x627d">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xb0</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs tl light row 2 B" type="0x627e">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xb1</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs tl light row 2 C" type="0x627f">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xb2</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs tl light row 3 A" type="0x6280">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xc0</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs tl light row 3 B" type="0x6281">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xc1</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs tl light row 3 C" type="0x6282">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xc2</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs tl dark row 1 A" type="0x6283">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xa3</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs tl dark row 1 B" type="0x6284">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xa4</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs tl dark row 1 C" type="0x6285">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xa5</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs tl dark row 2 A" type="0x6286">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xb3</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs tl dark row 2 B" type="0x6287">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xb4</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs tl dark row 2 C" type="0x6288">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xb5</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs tl dark row 3 A" type="0x6289">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xc3</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs tl dark row 3 B" type="0x628a">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xc4</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs tl dark row 3 C" type="0x628b">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xc5</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile light D bot row 4" type="0x628c">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x143</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile dark connector" type="0x628d">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x109</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx main tile dark horizontal" type="0x628e">
+      <RandomTexture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x105</Index>
+         </Texture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x106</Index>
+         </Texture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x107</Index>
+         </Texture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x108</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground id="leucoryx main tile dark vertical" type="0x628f">
+      <RandomTexture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x119</Index>
+         </Texture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x129</Index>
+         </Texture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x139</Index>
+         </Texture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x149</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground id="leucoryx main tile dark A top row 1" type="0x6290">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x115</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs shade 2 tl light row 1 A" type="0x6291">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xda</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs shade 2 tl light row 1 B" type="0x6292">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xdb</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs shade 2 tl light row 1 C" type="0x6293">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xdc</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs shade 2 tl light row 2 A" type="0x6294">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xea</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs shade 2 tl light row 2 B" type="0x6295">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xeb</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs shade 2 tl light row 2 C" type="0x6296">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xec</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs shade 2 tl light row 3 A" type="0x6297">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xfa</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs shade 2 tl light row 3 B" type="0x6298">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xfb</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs shade 2 tl light row 3 C" type="0x6299">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xfc</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs shade 2 tl dark row 1 A" type="0x629a">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xdd</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs shade 2 tl dark row 1 B" type="0x629b">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xde</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs shade 2 tl dark row 1 C" type="0x629c">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xdf</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs shade 2 tl dark row 2 A" type="0x629d">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xed</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs shade 2 tl dark row 2 B" type="0x629e">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xee</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs shade 2 tl dark row 2 C" type="0x629f">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xef</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs shade 2 tl dark row 3 A" type="0x62a0">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xfd</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs shade 2 tl dark row 3 B" type="0x62a1">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xfe</Index>
+      </Texture>
+   </Ground>
+   <Ground id="leucoryx stairs shade 2 tl dark row 3 C" type="0x62a2">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0xff</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok plain ground 0" type="0x62a3">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1d0</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok plain ground 1" type="0x62a4">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1d1</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok plain ground 2" type="0x62a5">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1d2</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok plain ground 3" type="0x62a6">
+      <RandomTexture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x1d3</Index>
+         </Texture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x1d4</Index>
+         </Texture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x1d5</Index>
+         </Texture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x1d6</Index>
+         </Texture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x1d7</Index>
+         </Texture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x1d8</Index>
+         </Texture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x1d9</Index>
+         </Texture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x1da</Index>
+         </Texture>
+         <Texture>
+            <File>archbishopObjects8x8</File>
+            <Index>0x1db</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground id="Gemsbok plain ground 4" type="0x62a7">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1d4</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok plain ground 5" type="0x62a8">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1d5</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok plain ground 6" type="0x62a9">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1d6</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok plain ground 7" type="0x62aa">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1d7</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok plain ground 8" type="0x62ab">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1d8</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok plain ground 9" type="0x62ac">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1d9</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok plain ground 10" type="0x62ad">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1da</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok plain ground 11" type="0x62ae">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1db</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok red rug 0" type="0x62af">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1dc</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok red rug 1" type="0x62b0">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1dd</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok red rug 2" type="0x62b1">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1de</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok red rug 3" type="0x62b2">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1df</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok red rug 4" type="0x62b3">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1e0</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok red rug 5" type="0x62b4">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1e1</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok red rug 6" type="0x62b5">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1e2</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok red rug 7" type="0x62b6">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1e3</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok red rug 8" type="0x62b7">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1e4</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok red rug 9" type="0x62b8">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1e5</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok red rug 10" type="0x62b9">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1e6</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok red rug 11" type="0x62ba">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1e7</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok red rug 12" type="0x62bb">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1e8</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok blue rug 0" type="0x62bc">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1e9</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok blue rug 1" type="0x62bd">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1ea</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok blue rug 2" type="0x62be">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1eb</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok blue rug 3" type="0x62bf">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1ec</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok blue rug 4" type="0x62c0">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1ed</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok blue rug 5" type="0x62c1">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1ee</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok blue rug 6" type="0x62c2">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1ef</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok blue rug 7" type="0x62c3">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1f0</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok blue rug 8" type="0x62c4">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1f1</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok blue rug 9" type="0x62c5">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1f2</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok blue rug 10" type="0x62c6">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1f3</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok blue rug 11" type="0x62c7">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1f4</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok blue rug 12" type="0x62e4">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1f5</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground id="Gemsbok gold pedestal 0" type="0x62c8">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1f6</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok gold pedestal 1" type="0x62c9">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1f7</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok gold pedestal 2" type="0x62ca">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1f8</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok gold pedestal 3" type="0x62cb">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1f9</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok gold pedestal 4" type="0x62cc">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1fa</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok gold pedestal 5" type="0x62cd">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1fb</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok gold pedestal 6" type="0x62ce">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1fc</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok gold pedestal 7" type="0x62cf">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1fd</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok gold pedestal 8" type="0x62d0">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1fe</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok gold pedestal 9" type="0x62d1">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x1ff</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok gold pedestal 10" type="0x62d2">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x200</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok gold pedestal 11" type="0x62d3">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x201</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok gold pedestal 12" type="0x62d4">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x202</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok gold pedestal 13" type="0x62d5">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x203</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok gold pedestal 14" type="0x62d6">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x204</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok gold pedestal 15" type="0x62d7">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x205</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok light ground 0" type="0x62d8">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x206</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok light ground 1" type="0x62d9">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x207</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok light ground 2" type="0x62da">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x208</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok light ground 3" type="0x62db">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x209</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok light ground 4" type="0x62dc">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x20a</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok light ground 5" type="0x62dd">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x20b</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok light ground 6" type="0x62de">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x20c</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok light ground 7" type="0x62df">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x20d</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok light ground 8" type="0x62e0">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x20e</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok light ground 9" type="0x62e1">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x20f</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok light ground 10" type="0x62e2">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x210</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok light ground 11" type="0x62e3">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x211</Index>
+      </Texture>
+   </Ground>
+   <Ground id="Gemsbok light ground 12" type="0x62e5">
+      <Texture>
+         <File>archbishopObjects8x8</File>
+         <Index>0x212</Index>
+      </Texture>
+   </Ground>
+</GroundTypes>

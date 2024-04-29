@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<GroundTypes>
+   <Ground type="0xb274" id="AI Malogia Ground 1">
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x64</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0xb275" id="AI Malogia Background">
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x65</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb276" id="AI Malogia Ground 2">
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x65</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb277" id="AI Untaris Ground 1">
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x69</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0xb278" id="AI Untaris Ground 2">
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x6a</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb279" id="AI Untaris Ground Tarul">
+      <RandomTexture>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x99</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x9a</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x9b</Index>
+         </Texture>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x9c</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb27a" id="AI Untaris Tarul Mouth TL 1">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x90</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb27b" id="AI Untaris Tarul Mouth TL 2">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x93</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb27c" id="AI Untaris Tarul Mouth TL 3">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x96</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb286" id="AI Untaris Tarul Mouth T 1">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x91</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb287" id="AI Untaris Tarul Mouth T 2">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x94</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb288" id="AI Untaris Tarul Mouth T 3">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x97</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb27d" id="AI Untaris Tarul Mouth TR 1">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x92</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb27e" id="AI Untaris Tarul Mouth TR 2">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x95</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb27f" id="AI Untaris Tarul Mouth TR 3">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x98</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb289" id="AI Untaris Tarul Mouth L 1">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xa0</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb28a" id="AI Untaris Tarul Mouth L 2">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xa3</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb28b" id="AI Untaris Tarul Mouth L 3">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xa6</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb28c" id="AI Untaris Tarul Mouth C 1">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xa1</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb28d" id="AI Untaris Tarul Mouth C 2">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb28e" id="AI Untaris Tarul Mouth C 3">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xa7</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb28f" id="AI Untaris Tarul Mouth R 1">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xa2</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb290" id="AI Untaris Tarul Mouth R 2">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xa5</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb291" id="AI Untaris Tarul Mouth R 3">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xa8</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb280" id="AI Untaris Tarul Mouth BL 1">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xb0</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb281" id="AI Untaris Tarul Mouth BL 2">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xb3</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb282" id="AI Untaris Tarul Mouth BL 3">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xb6</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb292" id="AI Untaris Tarul Mouth B 1">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xb1</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb293" id="AI Untaris Tarul Mouth B 2">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xb4</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb294" id="AI Untaris Tarul Mouth B 3">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xb7</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb283" id="AI Untaris Tarul Mouth BR 1">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xb2</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb284" id="AI Untaris Tarul Mouth BR 2">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xb5</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb285" id="AI Untaris Tarul Mouth BR 3">
+      <DisplayId>Tarul's Mouth</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0xb8</Index>
+      </Texture>
+      <MinDamage>80</MinDamage>
+      <MaxDamage>80</MaxDamage>
+   </Ground>
+   <Ground type="0xb2a4" id="AI Untaris Background">
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x8c</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb295" id="AI Forax Ground 1">
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x66</Index>
+      </Texture>
+      <BlendPriority>3</BlendPriority>
+   </Ground>
+   <Ground type="0xb296" id="AI Forax Ground 2">
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x73</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0xb297" id="AI Forax Water">
+      <DisplayId>Forax Acid River</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x74</Index>
+      </Texture>
+      <MinDamage>25</MinDamage>
+      <MaxDamage>25</MaxDamage>
+      <Animate dx=".33" dy=".33">Flow</Animate>
+      <Sink/>
+      <Speed>.25</Speed>
+      <BlendPriority>1</BlendPriority>
+   </Ground>
+   <Ground type="0xb298" id="AI Forax Water Dark">
+      <DisplayId>Forax Acid River</DisplayId>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x75</Index>
+      </Texture>
+      <MinDamage>25</MinDamage>
+      <MaxDamage>25</MaxDamage>
+      <Animate dx=".33" dy=".33">Flow</Animate>
+      <Sink/>
+      <NoWalk/>
+      <Speed>.25</Speed>
+      <BlendPriority>0</BlendPriority>
+   </Ground>
+   <Ground type="0xb2a3" id="AI Forax Background">
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x66</Index>
+      </Texture>
+      <BlendPriority>3</BlendPriority>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb299" id="AI Katalund Ground 1">
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x76</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0xb29a" id="AI Katalund Ground 2">
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x77</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb29b" id="AI Katalund Gas 1">
+      <Top>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x78</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x76</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0xb29c" id="AI Katalund Gas 2">
+      <Top>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x78</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x77</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb29d" id="AI Katalund Factory Ground">
+      <Top>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x78</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x86</Index>
+      </Texture>
+      <BlendPriority>3</BlendPriority>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb29f" id="AI Katalund Factory Treadmill Up">
+      <Top>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x78</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x87</Index>
+      </Texture>
+      <BlendPriority>3</BlendPriority>
+      <Animate dy="2.5">Flow</Animate>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb2a0" id="AI Katalund Factory Treadmill Down">
+      <Top>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x78</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x87</Index>
+      </Texture>
+      <BlendPriority>3</BlendPriority>
+      <Animate dy="-2.5">Flow</Animate>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb2a1" id="AI Katalund Factory Treadmill Left">
+      <Top>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x78</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x8b</Index>
+      </Texture>
+      <BlendPriority>3</BlendPriority>
+      <Animate dx="2.5">Flow</Animate>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb2a2" id="AI Katalund Factory Treadmill Right">
+      <Top>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x78</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x8b</Index>
+      </Texture>
+      <BlendPriority>3</BlendPriority>
+      <Animate dx="-2.5">Flow</Animate>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb29e" id="AI Katalund Background">
+      <Top>
+         <Texture>
+            <File>alienInvasionObjects8x8</File>
+            <Index>0x78</Index>
+         </Texture>
+      </Top>
+      <Texture>
+         <File>alienInvasionObjects8x8</File>
+         <Index>0x76</Index>
+      </Texture>
+      <BlendPriority>2</BlendPriority>
+      <NoWalk/>
+   </Ground>
+</GroundTypes>

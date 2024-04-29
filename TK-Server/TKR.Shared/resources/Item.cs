@@ -62,7 +62,6 @@ namespace TKR.Shared.resources
         public bool TypeOfConsumable;
         public bool Usable;
         public bool XpBoost;
-        public TalismanItemDesc TalismanItemDesc;
 
         public readonly List<XElement> Activates;
         public readonly List<XElement> ActivateOnEquips;
@@ -154,9 +153,6 @@ namespace TKR.Shared.resources
             Clarification = e.HasElement("Clarification");
             SonicBlaster = e.HasElement("SonicBlaster");
             Vampiric = e.HasElement("Vampiric");
-
-            if (e.HasElement("Talisman", out var telem))
-                TalismanItemDesc = new TalismanItemDesc(telem);
         }
     }
 }

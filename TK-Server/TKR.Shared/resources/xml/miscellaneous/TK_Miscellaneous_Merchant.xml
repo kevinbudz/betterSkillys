@@ -1,9 +1,0 @@
-<Objects>
-  <Object type="0x01ca" id="Merchant">
-    <Class>Merchant</Class>
-    <Texture>
-      <File>lofiObj2</File>
-      <Index>0x77</Index>
-    </Texture>
-  </Object>
-</Objects>

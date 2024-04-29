@@ -316,7 +316,6 @@ namespace TKR.WorldServer.core.miscfile
             var user = e.Content.User;
             var message = e.Content.Message;
             var messageTemplate = $"({DateTime.UtcNow:hh:mm:ss}) Staff {user} says: {message}";
-            var botName = GameServer.Configuration.discordIntegration.botName;
             var clients = GameServer.ConnectionManager.Clients
                 .Keys.Where(_ => _.Player != null);
             foreach (var client in clients)
@@ -325,7 +324,7 @@ namespace TKR.WorldServer.core.miscfile
                     ObjectId = -1,
                     BubbleTime = 10,
                     NumStars = 70,
-                    Name = botName,
+                    Name = "Announcer",
                     Recipient = client.Player.Name,
                     Txt = messageTemplate
                 });

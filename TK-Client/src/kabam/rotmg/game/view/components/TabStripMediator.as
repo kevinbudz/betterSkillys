@@ -2,8 +2,6 @@ package kabam.rotmg.game.view.components
 {
    import com.company.assembleegameclient.objects.Player;
 import com.company.assembleegameclient.parameters.Parameters;
-import com.company.assembleegameclient.ui.panels.EquippedTalismanGrid;
-import com.company.assembleegameclient.ui.panels.itemgrids.EquippedGrid;
 import com.company.assembleegameclient.ui.panels.itemgrids.InventoryGrid;
    import flash.display.Bitmap;
    import flash.display.Sprite;
@@ -72,7 +70,6 @@ import kabam.rotmg.ui.signals.UpdateBackpackTabSignal;
             {
                this.updateBackpack.add(this.onUpdateBackPack);
             }
-            this.addTalismanTab(player);
             this.addStatsTab();
          }
          else{
@@ -86,7 +83,6 @@ import kabam.rotmg.ui.signals.UpdateBackpackTabSignal;
             {
                this.updateBackpack.add(this.onUpdateBackPack);
             }
-            this.addTalismanTab(player);
          }
       }
       
@@ -148,20 +144,6 @@ import kabam.rotmg.ui.signals.UpdateBackpackTabSignal;
          backpackContent.addChild(backpackPotionsInventory);
          var icon:Bitmap = this.iconFactory.makeIconBitmap(26);
          this.view.addTab(icon,backpackContent);
-      }
-
-      private function addTalismanTab(player:Player) : void
-      {
-         var talismanContent:Sprite = new Sprite();
-         talismanContent.name = TabStripModel.TALISMANS;
-         var talisman:EquippedTalismanGrid = new EquippedTalismanGrid(player, player, GeneralConstants.NUM_EQUIPMENT_SLOTS + GeneralConstants.NUM_INVENTORY_SLOTS + GeneralConstants.NUM_TALISMAN_SLOTS);
-         talismanContent.x = talismanContent.y = 7;
-         talismanContent.addChild(talisman);
-         var talismanInventory:PotionInventoryView = new PotionInventoryView();
-         talismanInventory.y = talisman.height + 4;
-         talismanContent.addChild(talismanInventory);
-         var icon:Bitmap = this.iconFactory.makeIconBitmap(28);
-         this.view.addTab(icon, talismanContent);
       }
    }
 }

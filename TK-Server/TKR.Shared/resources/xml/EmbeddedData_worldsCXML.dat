@@ -1,0 +1,44 @@
+﻿<Worlds>
+	<World id="Testing">
+		<Width>256</Width>
+		<Height>256</Height>
+		<Dungeon/>
+		<Persists/>
+	</World>
+	<World id="Realm of the Mad God">
+		<Width>2048</Width>
+		<Height>2048</Height>
+		<MapJM>realm.jm</MapJM>
+		<Music>
+			<Track>wanderlust</Track>
+		</Music>
+		<Persists/>
+	</World>
+	<World id="Nexus">
+		<Width>256</Width>
+		<Height>256</Height>
+		<Capacity>300</Capacity>
+		<MapJM>nexus.jm</MapJM>
+		<Instance enum="nexus"/>
+		<Music>
+			<Track>wanderlust</Track>
+		</Music>
+		<Persists/>
+		<ShowDisplays/>
+		<!--<DisableShooting/>-->
+		<!--<DisableAbilities/>-->
+		<DisableTeleport/>
+	</World>
+	<World id="Vault">
+		<Width>256</Width>
+		<Height>256</Height>
+		<Capacity>1</Capacity>
+		<MapJM>vault.jm</MapJM>
+		<Instance enum="vault"/>
+		<CreateInstance/>
+		<Persists/>
+		<DisableShooting/>
+		<DisableAbilities/>
+		<DisableTeleport/>
+	</World>
+</Worlds>

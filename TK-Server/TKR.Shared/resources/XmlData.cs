@@ -31,7 +31,6 @@ namespace TKR.Shared.resources
         private readonly Dictionary<string, WorldResource> Worlds = new Dictionary<string, WorldResource>();
         private readonly Dictionary<string, byte[]> WorldDataCache = new Dictionary<string, byte[]>();
         private static readonly Logger Log = LogManager.GetCurrentClassLogger();
-        public ItemDusts ItemDusts { get; private set; }
 
         public XElement ObjectCombinedXML;
         public XElement CombinedXMLPlayers;
@@ -233,13 +232,7 @@ namespace TKR.Shared.resources
         }
 
         private void ProcessXml(XElement root, bool exportXmls = false)
-        {
-            if (root.Name.LocalName == "Dusts")
-            {
-                ItemDusts = new ItemDusts(root);
-                return;
-            }
-
+        { 
             AddWorlds(root);
             AddObjects(root, exportXmls);
             AddGrounds(root, exportXmls);
