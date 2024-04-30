@@ -92,7 +92,7 @@ import kabam.rotmg.game.view.components.TabStripView;
          addChild(this.tabStrip);
          addChild(this.characterDetails);
          addChild(this.statMeters);
-         addChild(this.nexusIndicatorBitmap_);
+         //addChild(this.nexusIndicatorBitmap_);
       }
 
       private function positionAssets() : void

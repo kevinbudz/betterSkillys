@@ -1,17 +1,17 @@
 ﻿<AppSettings>
     <MenuMusic>menumusic</MenuMusic>
 	<DeadMusic>menumusic</DeadMusic>
-	<VaultChestPrice>300</VaultChestPrice>
+	<VaultChestPrice>250</VaultChestPrice>
   <NewAccounts>
-    <MaxCharSlot>1</MaxCharSlot>
-    <VaultCount>1</VaultCount>
+    <MaxCharSlot>2</MaxCharSlot>
+    <VaultCount>2</VaultCount>
     <Fame>0</Fame>
     <Credits>0</Credits>
-    <SlotCost>1250</SlotCost>
-    <SlotCurrency>1</SlotCurrency>
+    <SlotCost>500</SlotCost>
+    <SlotCurrency>0</SlotCurrency>
 	<!--<TestingRegister/>-->
-    <!--<ClassesUnlocked />-->
-    <!--<SkinsUnlocked />-->
+    <ClassesUnlocked />
+    <SkinsUnlocked />
   </NewAccounts>
   <NewCharacters>
     <Level>1</Level>

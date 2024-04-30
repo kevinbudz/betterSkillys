@@ -11122,7 +11122,7 @@
       <feedPower>145</feedPower>
       <DropTradable/>
    </Object>
-   <Object type="0wwwwwwwwwwwwwwwwwwwwwwwwwwx228e" id="Vinesword">
+   <Object type="0x228e" id="Vinesword">
       <Class>Equipment</Class>
       <Item/>
       <Texture>

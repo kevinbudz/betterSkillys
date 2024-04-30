@@ -134,8 +134,8 @@ public class MyPlayerToolTip extends ToolTip
       
       override public function draw() : void
       {
-         this.hpBar_.draw(this.player_.hp_,this.player_.maxHP_,this.player_.maxHPBoost_,this.player_.maxHPMax_,Math.max(this.player_.maxHP_ - this.player_.maxHPBoost_ - this.player_.maxHPMax_,0), this.player_.level_);
-         this.mpBar_.draw(this.player_.mp_,this.player_.maxMP_,this.player_.maxMPBoost_,this.player_.maxMPMax_,Math.max(this.player_.maxMP_ - this.player_.maxMPBoost_ - this.player_.maxMPMax_,0), this.player_.level_);
+         this.hpBar_.draw(this.player_.hp_,this.player_.maxHP_,this.player_.maxHPBoost_,this.player_.maxHPMax_);
+         this.mpBar_.draw(this.player_.mp_,this.player_.maxMP_,this.player_.maxMPBoost_,this.player_.maxMPMax_);
          this.lineBreak_.setWidthColor(175,1842204);
          super.draw();
       }

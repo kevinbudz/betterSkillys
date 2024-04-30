@@ -107,7 +107,6 @@ public class WebMain extends Sprite {
                 .configure(ClassesConfig)
                 .configure(Stage3DConfig)
                 .configure(HUDConfig)
-                .configure(EngineConfig)
                 .configure(this);
         this.context.logLevel = LogLevel.DEBUG;
     }

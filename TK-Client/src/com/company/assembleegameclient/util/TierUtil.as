@@ -29,7 +29,6 @@ public class TierUtil
         var treasure:* = !xml.hasOwnProperty("Treasure");
         var petFood:* = !xml.hasOwnProperty("PetFood");
         var tier:Boolean = xml.hasOwnProperty("Tier");
-        var talisman:Boolean = xml.hasOwnProperty("SlotType") && xml.SlotType == 26;
         if(isnotpet && consumable && treasure && petFood && noTierTag)
         {
             label = new UILabel();
@@ -38,43 +37,14 @@ public class TierUtil
                 color = 16777215;
                 tierTag = "T" + xml.Tier;
             }
-            else if(xml.hasOwnProperty("Rare")){
-                color = 0x7E00E8;
-                tierTag = "UT";
-            }
             else if(xml.hasOwnProperty("@setType"))
             {
-                color = 0x7E00E8;
-                tierTag = "UT";
-            }
-            else if(xml.hasOwnProperty("SetTier"))
-            {
-                color = 0xb2bdd6;
+                color = TooltipHelper.SET_COLOR;
                 tierTag = "ST";
-            }
-            else if (xml.hasOwnProperty("SNormal"))
-            {
-                color = 0x7E00E8;
-                tierTag = "UT";
-            }
-            else if (xml.hasOwnProperty("SPlus"))
-            {
-                color = 0x7E00E8;
-                tierTag = "UT";
-            }
-            else if (xml.hasOwnProperty("Legendary"))
-            {
-                color = 0xFFCD00;
-                tierTag = "LG";
-            }
-            else if (xml.hasOwnProperty("Mythical"))
-            {
-                color = 0x9b111e;
-                tierTag = "MT";
             }
             else
             {
-                color = 0xb9f4ff;
+                color = TooltipHelper.UNTIERED_COLOR;
                 tierTag = "UT";
             }
             label.text = tierTag;

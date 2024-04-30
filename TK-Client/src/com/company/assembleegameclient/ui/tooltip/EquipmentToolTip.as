@@ -86,18 +86,9 @@ public class EquipmentToolTip extends ToolTip
 
          this.props_ = ObjectLibrary.propsLibrary_[objectType];
 
-          if(isLegendaryItem){
-              this.backgroundColor = this.playerCanUse || this.player_ == null ? 0x2c2d3d : 6036765;
-              this.outlineColor = this.playerCanUse || player == null? TooltipHelper.LEGENDARY_COLOR : 10965039;
-          }else if(isMythicalItem){
-              this.backgroundColor = this.playerCanUse || this.player_ == null ? 0x222226 : 6036765;
-              this.outlineColor = this.playerCanUse || player == null? TooltipHelper.MYTHICAL_COLOR : 10965039;
-          }
-          else {
-              this.backgroundColor = this.playerCanUse || this.player_ == null ? 0x363636 : 6036765;
-              this.outlineColor = this.playerCanUse || player == null ? 0x9B9B9B : 10965039;
-          }
-          super(backgroundColor, 1, outlineColor, 1, true);
+         this.backgroundColor = this.playerCanUse || this.player_ == null ? 0x363636 : 6036765;
+         this.outlineColor = this.playerCanUse || player == null ? 0x9B9B9B : 10965039;
+         super(backgroundColor, 1, outlineColor, 1, true);
 
          if(this.player_ == null)
          {
@@ -131,7 +122,6 @@ public class EquipmentToolTip extends ToolTip
          this.makeLineTwo();
          this.makeRestrictionList();
          this.makeRestrictionText();
-         this.makeItemEffectsText();
       }
 
       private function addRateOfFire() : void {
@@ -197,101 +187,6 @@ public class EquipmentToolTip extends ToolTip
          addChild(this.icon_);
       }
 
-      private function makeItemEffectsText():void {
-
-         if(isLegendaryItem)
-         {
-            this.itemEffectText_ = new SimpleText(13, 0xebb011, false, MAX_WIDTH);
-            this.itemEffectText_.setBold(true);
-            this.itemEffectText_.wordWrap = true;
-            if(this.objectXML_.hasOwnProperty("OutOfOneMind")){
-               this.itemEffectText_.text = "Out of One’s Mind -> Has a 2% to get Berserk for 3 seconds. 4 seconds Cooldown.";
-            }
-            else if(this.objectXML_.hasOwnProperty("SteamRoller")) {
-               this.itemEffectText_.text = "Steamroller -> Has a 5% chance to get Armored for 5 seconds. 10 seconds Cooldown.";
-            }
-            else if(this.objectXML_.hasOwnProperty("Mutilate")){
-               this.itemEffectText_.text = "Mutilate -> Has a 8% chance to get Damaging for 3 seconds. 4 seconds Cooldown. ";
-            }
-            else if(this.objectXML_.hasOwnProperty("Demonized")){
-               this.itemEffectText_.text = "Demonized -> Upon hitting an enemy you have a 3% chance to Curse it for 5 Seconds. After applying the effect, 4 seconds Cooldown.";
-            }
-            else if(this.objectXML_.hasOwnProperty("Clarification")){
-               this.itemEffectText_.text = "Clarification -> Upon getting hit you have a 10% chance that your MP will be restored 30%. 15 seconds Cooldown.";
-            }
-            else if(this.objectXML_.hasOwnProperty("SonicBlaster")){
-               this.itemEffectText_.text = "Sonic Blaster -> Upon drinking a MP potion, you get Speedy and Invisible for 6 seconds. 30 seconds Cooldown.";
-            }
-            else if(this.objectXML_.hasOwnProperty("Lucky")){
-               this.itemEffectText_.text = "Lucky 15's -> 10% of increasing each stat by 15 (100 HP and MP) for 5 seconds. 20 seconds Cooldown.";
-            }
-            else if(this.objectXML_.hasOwnProperty("Insanity")){
-               this.itemEffectText_.text = "Insanity -> Has a 5% to get Berserk and Damaging for 3 seconds. 7 seconds Cooldown.";
-            }
-            else if(this.objectXML_.hasOwnProperty("HolyProtection")){
-               this.itemEffectText_.text = "Holy Protection -> 10% chance of being Purified (remove all Negative Status). 15 seconds Cooldown.";
-            }
-            else if(this.objectXML_.hasOwnProperty("GodBless")){
-               this.itemEffectText_.text = "God Bless -> Upon getting hit you have a 3% chance to get Invulnerable for 3 seconds. 5 seconds Cooldown.";
-            }
-            else if(this.objectXML_.hasOwnProperty("GodTouch")){
-               this.itemEffectText_.text = "God Touch -> Upon getting hit you have a 2% chance to get healed 25% of your health. 30 seconds Cooldown.";
-            }
-            else if(this.objectXML_.hasOwnProperty("Electrify")){
-               this.itemEffectText_.text = "Electrify -> Upon hitting an enemy, you have a 3% chance to “cast” a scepter-like ability that deals 1000 damage and inflicts Slowed for 3 seconds to up to 5 targets.";
-            }
-            else if(this.objectXML_.hasOwnProperty("Vampiric")){
-               var numProj:int = this.objectXML_.NumProjectiles;
-               var multi:Boolean = this.objectXML_.Projectile.hasOwnProperty("MultiHit")
-               var chance:Number = 3 - ((numProj / 3))
-               chance = multi ? chance / 1.5 : chance;
-               this.itemEffectText_.text = "Vampriric -> Upon hitting an enemy, you have a "+ round2(chance,1) +"% chance to “cast” a skull-like ability that deals 300 damage AOE damage and heals for 50hp.";
-            }
-         }
-         else if(isMythicalItem)
-         {
-            this.itemEffectText_ = new SimpleText(13, 0xcf1433, false, MAX_WIDTH);
-            this.itemEffectText_.setBold(true);
-            this.itemEffectText_.wordWrap = true;
-            if(this.objectXML_.hasOwnProperty("Lucky")){
-               this.itemEffectText_.text = "Lucky 15's -> 10% of increasing each stat by 15 (100 HP and MP) for 5 seconds. 20 seconds Cooldown.";
-            }
-            else if(this.objectXML_.hasOwnProperty("Insanity")){
-               this.itemEffectText_.text = "Insanity -> Has a 5% to get Berserk and Damaging for 3 seconds. 7 seconds Cooldown.";
-            }
-            else if(this.objectXML_.hasOwnProperty("HolyProtection")){
-               this.itemEffectText_.text = "Holy Protection -> 10% chance of being Purified (remove all Negative Status). 15 seconds Cooldown.";
-            }
-            else if(this.objectXML_.hasOwnProperty("GodBless")){
-               this.itemEffectText_.text = "God Bless -> Upon getting hit you have a 3% chance to get Invulnerable for 3 seconds. 5 seconds Cooldown.";
-            }
-            else if(this.objectXML_.hasOwnProperty("GodTouch")){
-               this.itemEffectText_.text = "God Touch -> Upon getting hit you have a 2% chance to get healed 25% of your health. 30 seconds Cooldown.";
-            }
-            else if(this.objectXML_.hasOwnProperty("Electrify")){
-               this.itemEffectText_.text = "Electrify -> Upon hitting an enemy, you have a 3% chance to “cast” a scepter-like ability that deals 1000 damage and inflicts Slowed for 3 seconds to up to 5 targets.";
-            }
-            else if(this.objectXML_.hasOwnProperty("Vampiric")){
-               var numProj:int = this.objectXML_.NumProjectiles;
-               var multi:Boolean = this.objectXML_.Projectile.hasOwnProperty("MultiHit")
-               var chance:Number = 3 - ((numProj / 3))
-               chance = multi ? chance / 1.5 : chance;
-               this.itemEffectText_.text = "Vampriric -> Upon hitting an enemy, you have a "+ round2(chance,1) +"% chance to “cast” a skull-like ability that deals 300 damage AOE damage and heals for 50hp.";
-            }
-         }
-
-         if(isLegendaryItem || isMythicalItem){
-            switch(Parameters.data_.itemDataOutlines)
-            {
-               case 0:
-                  this.itemEffectText_.filters = FilterUtil.getTextOutlineFilter();
-                  break;
-               case 1:
-                  this.itemEffectText_.filters = [new DropShadowFilter(0,0,0,0.5,12,12)];
-            }
-            addChild(this.itemEffectText_);
-         }
-      }
 
       private function addTierText() : void
       {
@@ -372,12 +267,6 @@ public class EquipmentToolTip extends ToolTip
               case 1:
                   this.titleText_.filters = [new DropShadowFilter(0, 0, 0, 0.5, 12, 12)];
           }
-          if(isLegendaryItem){
-              this.titleText_.setColor(TooltipHelper.LEGENDARY_COLOR);
-          }else if(isMythicalItem){
-              this.titleText_.setColor(TooltipHelper.MYTHICAL_COLOR);
-          }
-
          addChild(this.titleText_);
       }
 
@@ -445,19 +334,19 @@ public class EquipmentToolTip extends ToolTip
       {
          var fameBonus:int = 0;
          var text:String = null;
-         var textColor:String = null;
+         var textColor:uint = null;
          var curFameBonus:int = 0;
          if(this.objectXML_.hasOwnProperty("FameBonus"))
          {
             fameBonus = int(this.objectXML_.FameBonus);
             text = fameBonus + "%";
-            textColor = this.playerCanUse?TooltipHelper.BETTER_COLOR:TooltipHelper.NO_DIFF_COLOR;
+            textColor = ((this.playerCanUse) ? TooltipHelper.BETTER_COLOR : TooltipHelper.NO_DIFF_COLOR);
             if(this.curItemXML_ != null && this.curItemXML_.hasOwnProperty("FameBonus"))
             {
                curFameBonus = int(this.curItemXML_.FameBonus.text());
                textColor = TooltipHelper.getTextColor(fameBonus - curFameBonus);
             }
-            this.effects.push(new Effect("Fame Bonus",TooltipHelper.wrapInFontTag(text,textColor)));
+            this.effects.push(new Effect("Fame Bonus",TooltipHelper.wrapInFontTag(text,textColor.toString())));
          }
       }
 
@@ -855,7 +744,7 @@ public class EquipmentToolTip extends ToolTip
          var otherAmount:int = 0;
          var stat:int = int(activateXML.@stat);
          var amount:int = int(activateXML.@amount);
-         var textColor:String = this.playerCanUse?TooltipHelper.BETTER_COLOR:TooltipHelper.NO_DIFF_COLOR;
+         var textColor:uint = this.playerCanUse?TooltipHelper.BETTER_COLOR:TooltipHelper.NO_DIFF_COLOR;
          var otherMatches:XMLList = null;
          if(this.curItemXML_ != null)
          {
@@ -874,9 +763,9 @@ public class EquipmentToolTip extends ToolTip
          else
          {
             amountString = String(amount);
-            textColor = "#ff0000";
+            textColor = 0xFF0000;
          }
-         return TooltipHelper.wrapInFontTag(amountString + " " + StatData.statToName(stat),textColor);
+         return TooltipHelper.wrapInFontTag(amountString + " " + StatData.statToName(stat),textColor.toString());
       }
 
       private function addEquipmentItemRestrictions() : void
@@ -1079,19 +968,7 @@ public class EquipmentToolTip extends ToolTip
 
       private function addDescriptionText() : void
       {
-         var _local_1:int;
-          if(this.objectXML_.hasOwnProperty("@setType") || this.objectXML_.hasOwnProperty("SetTier")) {
-            _local_1 = TooltipHelper.SET_COLOR;
-         }
-         else if(this.objectXML_.hasOwnProperty("SNormal")) {
-            _local_1 = TooltipHelper.S;
-         }
-         else if(this.objectXML_.hasOwnProperty("SPlus")) {
-            _local_1 = TooltipHelper.SPlus;
-         }
-         else{
-            _local_1 = 0xB3B3B3;
-         }
+         var _local_1:int = 0xB3B3B3;
          this.descText_ = new SimpleText(14, _local_1, false, MAX_WIDTH, 0);
          this.descText_.wordWrap = true;
          this.descText_.text = String(this.objectXML_.Description);

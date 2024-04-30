@@ -106,11 +106,11 @@ package com.company.assembleegameclient.ui.tooltip
             y = 12;
          }
       }
-      
+
       override public function draw() : void
       {
-         this.hpBar_.draw(this.player_.hp_,this.player_.maxHP_,this.player_.maxHPBoost_,this.player_.maxHPMax_,Math.max(this.player_.maxHP_ - this.player_.maxHPBoost_ - this.player_.maxHPMax_,0), this.player_.level_);
-         this.mpBar_.draw(this.player_.mp_,this.player_.maxMP_,this.player_.maxMPBoost_,this.player_.maxMPMax_,Math.max(this.player_.maxMP_ - this.player_.maxMPBoost_ - this.player_.maxMPMax_,0), this.player_.level_);
+         this.hpBar_.draw(this.player_.hp_,this.player_.maxHP_,this.player_.maxHPBoost_,this.player_.maxHPMax_);
+         this.mpBar_.draw(this.player_.mp_,this.player_.maxMP_,this.player_.maxMPBoost_,this.player_.maxMPMax_);
          this.eGrid.setItems(this.player_.equipment_, this.player_.equipData_);
          this.rankText_.draw(this.player_.numStars_);
          super.draw();

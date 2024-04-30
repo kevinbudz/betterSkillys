@@ -99,18 +99,6 @@ public class GameSprite extends Sprite
       this.textBox_.addEventListener(MouseEvent.MOUSE_DOWN,this.onChatDown);
       this.textBox_.addEventListener(MouseEvent.MOUSE_UP,this.onChatUp);
       this.idleWatcher_ = new IdleWatcher();
-      if(Parameters.data_.FS){
-         this.updateScaleForTextBox(0.9);
-      }
-      else{
-         this.updateScaleForTextBox(1.0);
-      }
-   }
-
-   public function updateScaleForTextBox(percentage:Number):void{
-      this.textBox_.scaleX = percentage;
-      this.textBox_.scaleY = percentage;
-      this.textBox_.y = this.textBox_.h_ - (this.textBox_.h_ * this.textBox_.scaleY);
    }
 
    public function setFocus(focus:GameObject) : void
@@ -270,6 +258,17 @@ public class GameSprite extends Sprite
          {
             this.creditDisplay_.x = (this.hudView.x - (6 * this.creditDisplay_.scaleX));
          }
+      }
+      if (this.textBox_ != null) {
+         if (uiscale) {
+            this.textBox_.scaleX = result;
+            this.textBox_.scaleY = 1;
+         } else {
+            this.textBox_.scaleX = sWidth;
+            this.textBox_.scaleY = sHeight;
+         }
+         // this.textBox_.y = 300 + 300 * (1 - this.textBox_.scaleY);
+         //trace("resize",chatBox_.y,chatBox_.list.y)
       }
       if (this.rankText_ != null)
       {

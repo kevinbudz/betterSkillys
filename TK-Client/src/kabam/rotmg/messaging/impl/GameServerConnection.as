@@ -10,7 +10,6 @@ import com.company.assembleegameclient.map.GroundLibrary;
 import com.company.assembleegameclient.map.Map;
 import com.company.assembleegameclient.map.mapoverlay.CharacterStatusText;
 import com.company.assembleegameclient.objects.Container;
-import com.company.assembleegameclient.objects.Engine;
 import com.company.assembleegameclient.objects.FlashDescription;
 import com.company.assembleegameclient.objects.GameObject;
 import com.company.assembleegameclient.objects.Merchant;
@@ -1872,14 +1871,6 @@ public class GameServerConnection
                      player.SPS_Modal.draw();
                   }
                   continue;
-               case StatData.ENGINE_VALUE:
-                  (go as Engine).currentValue_ = value;
-                  continue;
-
-               case StatData.ENGINE_TIME:
-                  (go as Engine).engineTime_ = value;
-                  continue;
-
                case StatData.BASESTAT:
                   player.baseStat = value;
                   continue;

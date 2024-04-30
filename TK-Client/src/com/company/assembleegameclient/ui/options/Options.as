@@ -13,6 +13,7 @@ import com.company.util.AssetLibrary;
 import com.company.util.KeyCodes;
 
 import flash.display.BitmapData;
+import flash.display.Graphics;
 import flash.display.Sprite;
 import flash.display.StageDisplayState;
 import flash.display.StageQuality;
@@ -62,10 +63,9 @@ public class Options extends Sprite
 
    private var gs_:GameSprite;
    private var title_:SimpleText;
-   private var continueButton_:SliceScalingButton;
-   private var resetToDefaultsButton_:SliceScalingButton;
-   private var homeButton_:SliceScalingButton;
-   private var menuOptionsBar:MenuOptionsBar;
+   private var continueButton_:TitleMenuOption;
+   private var resetToDefaultsButton_:TitleMenuOption;
+   private var homeButton_:TitleMenuOption;
    private var optionsBackground:SliceScalingBitmap;
    private var tabs_:Vector.<OptionsTabTitle>;
    private var selected_:OptionsTabTitle = null;
@@ -96,28 +96,16 @@ public class Options extends Sprite
       this.title_.x = 800 / 2 - this.title_.width / 2;
       this.title_.y = 8;
       addChild(this.title_);
-      this.optionsBackground = TextureParser.instance.getSliceScalingBitmap("UI", "popup_header_title", 800);
-      this.optionsBackground.y = 510;
-      addChild(this.optionsBackground);
-      this.continueButton_ = new SliceScalingButton(TextureParser.instance.getSliceScalingBitmap("UI", "generic_green_button"));
-      setDefault(this.continueButton_, "continue", 100, false);
-      this.continueButton_.addEventListener(MouseEvent.CLICK, this.onContinueClick);
-      this.resetToDefaultsButton_ = new SliceScalingButton(TextureParser.instance.getSliceScalingBitmap("UI", "generic_green_button"));
-      setDefault(this.resetToDefaultsButton_, "reset to default", 100, true);
-      this.resetToDefaultsButton_.addEventListener(MouseEvent.CLICK, this.onResetToDefaultsClick);
-      this.homeButton_ = new SliceScalingButton(TextureParser.instance.getSliceScalingBitmap("UI", "generic_green_button"));
-      setDefault(this.homeButton_, "back to home", 100, true);
-      this.menuOptionsBar = new MenuOptionsBar();
-      this.menuOptionsBar.addButton(this.continueButton_, MenuOptionsBar.CENTER);
-      this.menuOptionsBar.addButton(this.resetToDefaultsButton_, MenuOptionsBar.LEFT);
-      this.menuOptionsBar.addButton(this.homeButton_, MenuOptionsBar.RIGHT);
-      this.continueButton_.y = this.continueButton_.y + 7;
-      this.resetToDefaultsButton_.x = this.resetToDefaultsButton_.x - 120;
-      this.resetToDefaultsButton_.y = this.resetToDefaultsButton_.y + 7;
-      this.homeButton_.x = this.homeButton_.x + 120;
-      this.homeButton_.y = this.homeButton_.y + 7;
-      this.homeButton_.addEventListener(MouseEvent.CLICK, this.onHomeClick);
-      addChild(this.menuOptionsBar);
+      this.makeBar();
+      this.continueButton_ = new TitleMenuOption("continue",36,false);
+      this.continueButton_.addEventListener(MouseEvent.CLICK,this.onContinueClick);
+      addChild(this.continueButton_);
+      this.resetToDefaultsButton_ = new TitleMenuOption("reset to defaults",22,false);
+      this.resetToDefaultsButton_.addEventListener(MouseEvent.CLICK,this.onResetToDefaultsClick);
+      addChild(this.resetToDefaultsButton_);
+      this.homeButton_ = new TitleMenuOption("back to home",22,false);
+      this.homeButton_.addEventListener(MouseEvent.CLICK,this.onHomeClick);
+      addChild(this.homeButton_);
       var xOffset:int = 14;
       for(var i:int = 0; i < TABS.length; i++)
       {
@@ -133,16 +121,15 @@ public class Options extends Sprite
       addEventListener(Event.REMOVED_FROM_STAGE,this.onRemovedFromStage);
    }
 
-   public static function setDefault(param1:SliceScalingButton, param2:String, param3:int = 100, param4:Boolean = true) : void
+   private function makeBar():void
    {
-      param1.setLabel(param2,DefaultLabelFormat.defaultModalTitle);
-      param1.x = 0;
-      param1.y = 0;
-      param1.width = param3;
-      if(param4)
-      {
-         GreyScale.greyScaleToDisplayObject(param1,true);
-      }
+      var box:Sprite = new Sprite();
+      var b:Graphics = box.graphics;
+      b.clear();
+      b.beginFill(0, 0.5);
+      b.drawRect(0, 525, 800, 75);
+      b.endFill();
+      addChild(box);
    }
 
    private function onContinueClick(event:MouseEvent) : void
@@ -233,12 +220,12 @@ public class Options extends Sprite
 
    private function onAddedToStage(event:Event) : void
    {
-      /*this.continueButton_.x = stage.stageWidth / 2 - this.continueButton_.width / 2;
-      this.continueButton_.y = 520;
+      this.continueButton_.x = stage.stageWidth / 2 - this.continueButton_.width / 2;
+      this.continueButton_.y = 525;
       this.resetToDefaultsButton_.x = 20;
-      this.resetToDefaultsButton_.y = 532;
+      this.resetToDefaultsButton_.y = 535;
       this.homeButton_.x = 620;
-      this.homeButton_.y = 532;*/
+      this.homeButton_.y = 535;
       this.setSelected(this.tabs_[0]);
       stage.addEventListener(KeyboardEvent.KEY_DOWN,this.onKeyDown,false,1);
       stage.addEventListener(KeyboardEvent.KEY_UP,this.onKeyUp,false,1);
@@ -413,15 +400,6 @@ public class Options extends Sprite
 
     private function fsv3() : void
    {
-       if(Parameters.data_.FS){
-           stage.scaleMode = StageScaleMode.NO_SCALE;
-          this.gs_.updateScaleForTextBox(0.9);
-       }
-       else{
-           stage.scaleMode = StageScaleMode.EXACT_FIT;
-           this.gs_.updateScaleForTextBox(1.0);
-       }
-
       Parameters.root.dispatchEvent(new Event(Event.RESIZE));
    }
 
@@ -463,7 +441,7 @@ public class Options extends Sprite
    }
 
    private static function onBarTextToggle():void {
-      StatusBar.barTextSignal.dispatch(Parameters.data_.toggleBarText);
+      //StatusBar.barTextSignal.dispatch(Parameters.data_.toggleBarText);
    }
 
    private function onShowQuestPortraitsChange() : void
