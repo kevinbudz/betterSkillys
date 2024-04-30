@@ -414,7 +414,7 @@ namespace TKR.WorldServer.core.worlds
             {
                 BubbleTime = 0,
                 NumStars = -1,
-                Name = "The Talisman King",
+                Name = "Oryx the Mad Gad",
                 Txt = sb.ToString(),
                 TextColor = 0xFFFFFF,
                 NameColor = 0xFF681F
@@ -440,7 +440,7 @@ namespace TKR.WorldServer.core.worlds
 
         public void Init()
         {
-            SpawnEvent("Talisman King", new TalismanKing(), 1024, 1024);
+            SpawnEvent("Skull Shrine", new SkullShrine(), 1024, 1024);
 
             var events = _events;
             var evt = events[Random.Shared.Next(0, events.Count)];
@@ -501,8 +501,8 @@ namespace TKR.WorldServer.core.worlds
 
         public void OnPlayerEntered(Player player)
         {
-            player.SendInfo("Welcome to Talisman's Kingdom!");
-            player.SendEnemy("The Talisman King", "You are a pest to my kingdom!");
+            player.SendInfo("Welcome to betterSkilys");
+            player.SendEnemy("Oryx the Mad God", "You are a pest to my kingdom!");
             player.SendInfo("Use [WASDQE] to move; click to shoot!");
             player.SendInfo("Type \"/commands\" for more help");
         }
@@ -522,7 +522,7 @@ namespace TKR.WorldServer.core.worlds
 
         private static double GetUniform(Random rand) => ((uint)(rand.NextDouble() * uint.MaxValue) + 1.0) * 2.328306435454494e-10;
 
-        private void BroadcastMsg(string message) => World.GameServer.ChatManager.TalismanKing(World, message);
+        private void BroadcastMsg(string message) => World.GameServer.ChatManager.Oryx(World, message);
 
         private void EnsurePopulation()
         {

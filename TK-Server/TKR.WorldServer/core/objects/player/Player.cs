@@ -434,10 +434,6 @@ namespace TKR.WorldServer.core.objects
 
             SetNewbiePeriod();
             PlayerUpdate = new PlayerUpdate(this);
-
-            if (owner is NexusWorld nexus)
-                if (nexus.EngineStage != 0)
-                    EngineNotif($"The engine runs smoothly with enough fuel to last a while.");
         }
 
         public void HandleIO(ref TickTime time)
@@ -854,23 +850,6 @@ namespace TKR.WorldServer.core.objects
             stats[StatDataType.InventoryData1] = Inventory.Data[1]?.GetData() ?? "{}";
             stats[StatDataType.InventoryData2] = Inventory.Data[2]?.GetData() ?? "{}";
             stats[StatDataType.InventoryData3] = Inventory.Data[3]?.GetData() ?? "{}";
-
-            stats[StatDataType.TALISMAN_0_STAT] = Inventory[20]?.ObjectType ?? -1;
-            stats[StatDataType.TALISMAN_1_STAT] = Inventory[21]?.ObjectType ?? -1;
-            stats[StatDataType.TALISMAN_2_STAT] = Inventory[22]?.ObjectType ?? -1;
-            stats[StatDataType.TALISMAN_3_STAT] = Inventory[23]?.ObjectType ?? -1;
-            stats[StatDataType.TALISMAN_4_STAT] = Inventory[24]?.ObjectType ?? -1;
-            stats[StatDataType.TALISMAN_5_STAT] = Inventory[25]?.ObjectType ?? -1;
-            stats[StatDataType.TALISMAN_6_STAT] = Inventory[26]?.ObjectType ?? -1;
-            stats[StatDataType.TALISMAN_7_STAT] = Inventory[27]?.ObjectType ?? -1;
-            stats[StatDataType.TALISMANDATA_0_STAT] = Inventory.Data[20]?.GetData() ?? "{}";
-            stats[StatDataType.TALISMANDATA_1_STAT] = Inventory.Data[21]?.GetData() ?? "{}";
-            stats[StatDataType.TALISMANDATA_2_STAT] = Inventory.Data[22]?.GetData() ?? "{}";
-            stats[StatDataType.TALISMANDATA_3_STAT] = Inventory.Data[23]?.GetData() ?? "{}";
-            stats[StatDataType.TALISMANDATA_4_STAT] = Inventory.Data[24]?.GetData() ?? "{}";
-            stats[StatDataType.TALISMANDATA_5_STAT] = Inventory.Data[25]?.GetData() ?? "{}";
-            stats[StatDataType.TALISMANDATA_6_STAT] = Inventory.Data[26]?.GetData() ?? "{}";
-            stats[StatDataType.TALISMANDATA_7_STAT] = Inventory.Data[27]?.GetData() ?? "{}";
         }
 
         private void CerberusClaws(TickTime time)

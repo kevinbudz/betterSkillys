@@ -36,8 +36,6 @@ namespace TKR.WorldServer.core.objects.inventory
         public const int SCEPTER_SLOT_TYPE = 23;
         public const int KATANA_SLOT_TYPE = 24;
         public const int SHURIKEN_SLOT_TYPE = 25;
-        public const int TALISMAN_SLOT_TYPE = 26;
-        public const int BOLAS_SLOT_TYPE = 27;
 
         public const int MAXIMUM_INTERACTION_DISTANCE = 1;
         public const int NUM_EQUIPMENT_SLOTS = 4;
@@ -252,8 +250,6 @@ namespace TKR.WorldServer.core.objects.inventory
                 InventoryConstants.SCEPTER_SLOT_TYPE => "Scepter",
                 InventoryConstants.KATANA_SLOT_TYPE => "Katana",
                 InventoryConstants.SHURIKEN_SLOT_TYPE => "Shuriken",
-                InventoryConstants.TALISMAN_SLOT_TYPE => "Talisman",
-                InventoryConstants.BOLAS_SLOT_TYPE => "Bolas",
                 _ => "Invalid Type!",
             };
         }

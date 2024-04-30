@@ -628,14 +628,6 @@ namespace TKR.WorldServer.core.commands.player
 
         protected override bool Process(Player player, TickTime time, string args)
         {
-            switch (player.GameServer.WorldManager.Nexus.EngineStage)
-            {
-                case 1: player.SendInfo($"Stage 1 Strange Engine provides: 25%"); break;
-                case 2: player.SendInfo($"Stage 2 Strange Engine provides: 50%"); break;
-                case 3: player.SendInfo($"Stage 3 Strange Engine provides: 75%"); break;
-                default: break;
-            }
-
             if (player.LDBoostTime > 0)
                 player.SendInfo($"Loot Drop provides: 25%");
             if (NexusWorld.WeekendLootBoostEvent > 0.0f)

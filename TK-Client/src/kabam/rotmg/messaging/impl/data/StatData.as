@@ -127,26 +127,6 @@ public class StatData
    public static const SPS_VITALITY_COUNT_MAX:int = 155;
    public static const SPS_WISDOM_COUNT:int = 156;
    public static const SPS_WISDOM_COUNT_MAX:int = 157;
-   public static const ENGINE_VALUE:int = 158;
-   public static const ENGINE_TIME:int = 159;
-   public static const TALISMAN_0_STAT:int = 161;
-   public static const TALISMAN_1_STAT:int = 162;
-   public static const TALISMAN_2_STAT:int = 163;
-   public static const TALISMAN_3_STAT:int = 164;
-   public static const TALISMAN_4_STAT:int = 165;
-   public static const TALISMAN_5_STAT:int = 166;
-   public static const TALISMAN_6_STAT:int = 167;
-   public static const TALISMAN_7_STAT:int = 168;
-   public static const TALISMANDATA_0_STAT:int = 169;
-   public static const TALISMANDATA_1_STAT:int = 170;
-   public static const TALISMANDATA_2_STAT:int = 171;
-   public static const TALISMANDATA_3_STAT:int = 172;
-   public static const TALISMANDATA_4_STAT:int = 173;
-   public static const TALISMANDATA_5_STAT:int = 174;
-   public static const TALISMANDATA_6_STAT:int = 175;
-   public static const TALISMANDATA_7_STAT:int = 176;
-   public static const TALISMAN_EFFECT_MASK_STAT :int = 177;
-
 
    public var statType_:uint = 0;
 
@@ -220,14 +200,6 @@ public class StatData
          case BACKPACKDATA5:
          case BACKPACKDATA6:
          case BACKPACKDATA7:
-         case TALISMANDATA_0_STAT:
-         case TALISMANDATA_1_STAT:
-         case TALISMANDATA_2_STAT:
-         case TALISMANDATA_3_STAT:
-         case TALISMANDATA_4_STAT:
-         case TALISMANDATA_5_STAT:
-         case TALISMANDATA_6_STAT:
-         case TALISMANDATA_7_STAT:
             return true;
          default:
             return false;

@@ -139,7 +139,7 @@ namespace TKR.WorldServer.core.miscfile
             StaticLogger.Instance.Info($"[{world.IdName}({world.Id})] <{name}> {text}");
         }
 
-        public void TalismanKing(World world, string text)
+        public void Oryx(World world, string text)
         {
             if (string.IsNullOrWhiteSpace(text))
                 return;
@@ -148,7 +148,7 @@ namespace TKR.WorldServer.core.miscfile
             {
                 BubbleTime = 0,
                 NumStars = -1,
-                Name = "#The Talisman King",
+                Name = "#Oryx the Mad God",
                 Txt = text
             });
         }

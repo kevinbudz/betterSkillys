@@ -1764,17 +1764,6 @@ public class GameServerConnection
                   index = stat.statType_ - StatData.BACKPACK_0_STAT + GeneralConstants.NUM_EQUIPMENT_SLOTS + GeneralConstants.NUM_INVENTORY_SLOTS;
                   (go as Player).equipment_[index] = value;
                   continue;
-               case StatData.TALISMAN_0_STAT:
-               case StatData.TALISMAN_1_STAT:
-               case StatData.TALISMAN_2_STAT:
-               case StatData.TALISMAN_3_STAT:
-               case StatData.TALISMAN_4_STAT:
-               case StatData.TALISMAN_5_STAT:
-               case StatData.TALISMAN_6_STAT:
-               case StatData.TALISMAN_7_STAT:
-                  index = stat.statType_ - StatData.TALISMAN_0_STAT + GeneralConstants.NUM_EQUIPMENT_SLOTS + GeneralConstants.NUM_INVENTORY_SLOTS + GeneralConstants.NUM_TALISMAN_SLOTS;
-                  (go as Player).equipment_[index] = value;
-                  continue;
                case StatData.SPS_LIFE_COUNT:
                   player.SPS_Life = value;
                   if (player.SPS_Modal != null) {
@@ -1929,21 +1918,6 @@ public class GameServerConnection
                case StatData.BACKPACKDATA7:
                   index = stat.statType_ - StatData.BACKPACKDATA0 + GeneralConstants.NUM_EQUIPMENT_SLOTS + GeneralConstants.NUM_INVENTORY_SLOTS;
                   (go as Player).equipData_[index] = JSON.parse(stat.strStatValue_);
-                  continue;
-               case StatData.TALISMANDATA_0_STAT:
-               case StatData.TALISMANDATA_1_STAT:
-               case StatData.TALISMANDATA_2_STAT:
-               case StatData.TALISMANDATA_3_STAT:
-               case StatData.TALISMANDATA_4_STAT:
-               case StatData.TALISMANDATA_5_STAT:
-               case StatData.TALISMANDATA_6_STAT:
-               case StatData.TALISMANDATA_7_STAT:
-                  index = stat.statType_ - StatData.TALISMANDATA_0_STAT + GeneralConstants.NUM_EQUIPMENT_SLOTS + GeneralConstants.NUM_INVENTORY_SLOTS+ GeneralConstants.NUM_TALISMAN_SLOTS;
-                  (go as Player).equipData_[index] = JSON.parse(stat.strStatValue_);
-                  continue;
-
-               case StatData.TALISMAN_EFFECT_MASK_STAT:
-                  (go as Player).talismanEffectMask_ = stat.statValue_;
                   continue;
                default:
                   trace("unhandled stat: " + stat.statType_);

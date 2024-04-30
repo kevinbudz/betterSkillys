@@ -10,7 +10,6 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using TKR.Shared.database.account;
 using TKR.Shared.database.character;
-using TKR.Shared.database.engine;
 using TKR.Shared.database.guild;
 using TKR.Shared.database.leaderboard;
 using TKR.Shared.database.market;
@@ -1079,8 +1078,6 @@ namespace TKR.Shared.database
 
             return false;
         }
-
-        public DbEngine GetDbEngine(string serverName) => new DbEngine(_db, serverName);
 
         public void UnlockClass(DbAccount acc, ushort type)
         {

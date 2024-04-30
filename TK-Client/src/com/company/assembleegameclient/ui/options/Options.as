@@ -50,7 +50,7 @@ public class Options extends Sprite
    private static const GRAPHICS_TAB:String = "Graphics";
    private static const SOUND_TAB:String = "Sound";
    private static const MISC_TAB:String = "Misc";
-   private static const HOTKEYSV2:String = "Hot Keys 2";
+   private static const HOTKEYSV2:String = "Recon";
    public static const CHAT_COMMAND:String = "chatCommand";
    public static const CHAT:String = "chat";
    public static const TELL:String = "tell";
@@ -349,31 +349,28 @@ public class Options extends Sprite
       if (!Parameters.GPURenderError) {
          this.addOption(new ChoiceOption("GPURender", new <String>["On","Off"],[true,false],"Hardware Acceleration","Enables Hardware Acceleration if your system supports it",this.renderer));
       }
+      this.addOption(new ChoiceOption("hpBars", new <String>["On","Off"], [true,false], "Health Bars", "This toggles whether to health bars under entities (players & enemies).", null));
+      this.addOption(new ChoiceOption("uiQuality", new <String>["On","Off"], [true, false], "UI Quality", "Enable High/Low UI Quality.", this.onUIQualityToggle));
+      this.addOption(new ChoiceOption("hideList", new <String>["Off", "Locked", "Guild", "Party", "L/G/P"], [0, 1, 2, 3, 4], "Hide Players", "Hide players on screen", null));
+      this.addOption(new ChoiceOption("showTierTag", new <String>["On","Off"], [true,false], "Show Tier Tag","This toggles whether to show tier tags on your gear", onToggleTierTag));
       this.addOption(new ChoiceOption("fps", new <String>["60", "75", "120", "144", "240", "244", "360"], [60, 75, 120, 144, 240, 244, 360], "FPS", "Increase or Decrease the framerate.", this.fps));
       this.addOption(new ChoiceOption("showStatistics", new <String>["On","Off"], [true, false], "Performance Monitor", "Enable/Disable Statistics.", this.statistics));
    }
 
    private function addMiscOptions() : void
    {
-      this.addOption(new ChoiceOption("inventoryFirstTabOption", new <String>["Default", "Inv First"],[false, true],"Tab Layout","Change the order of tabs to be Default or Inventories first.",null));
-      this.addOption(new ChoiceOption("reduceParticles",new <String>["High","Low","NoParticles"],[2,1,0],"Change Particles Effect","Reduce or Increase the Particles Effect!",null));
-      this.addOption(new ChoiceOption("itemDataOutlines",new <String>["On","Off"],[0,1],"Change Item Data Outlines","Change the outlines of the xml\'s!",null));
+      this.addOption(new ChoiceOption("disableAllyParticles", new <String>["On","Off"], [true, false], "Disable ally Particles", "Disable particles produces by shooting ally.", null));
+      this.addOption(new ChoiceOption("disableAllParticles", new <String>["On","Off"], [true, false], "Disable ALL Particles", "Enable/Disable ALL Particles.", null));
+      this.addOption(new ChoiceOption("itemDataOutlines",new <String>["On","Off"],[0,1],"Tooltip Outlines","Change the outlines of the xml\'s!",null));
       //this.addOption(new ChoiceOption("eyeCandyParticles", new <String>["On","Off"], [true,false], "Eye Candy Particles", "This toggles whether to show eye candy particles, disabling this will improve performance.", null));
-      this.addOption(new ChoiceOption("hpBars", new <String>["On","Off"], [true,false], "Health Bars", "This toggles whether to health bars under entities (players & enemies).", null));
       this.addOption(new ChoiceOption("allyShots", new <String>["On","Off"], [true,false], "Ally Shots", "This toggles whether to show and render ally shots. Disable this to improve performance.", null));
       this.addOption(new ChoiceOption("allyDamage", new <String>["On","Off"], [true,false], "Ally Damage", "This toggles whether to show damage dealt to and by allies. Disable this to improve performance.", null));
       this.addOption(new ChoiceOption("noAllyNotifications", new <String>["On","Off"], [true, false], "Disable Ally Notifications", "Disable text notifications above allies.", null));
-      this.addOption(new ChoiceOption("dynamicHPcolor", new <String>["On","Off"],[true,false],"Dynamic Damage Text Color","Makes the damage text change color based on health",null));
-      this.addOption(new ChoiceOption("smartProjectiles", new <String>["On", "Off"], [true,false], "Projectile Direction", "Makes projectiles face the direction they're going.", null));
       this.addOption(new ChoiceOption("projOutline", new <String>["On", "Off"], [true,false], "Projectile Outline", "Makes projectiles have an outline.", null));
-      this.addOption(new ChoiceOption("sellMaxyPots", new <String>["Off", "Sell", "Store"], [0, 1, 2], "Sell/Store Maxy Pots", "Sell/Store Pots that you are Maxed.", null));
-      this.addOption(new ChoiceOption("showTierTag", new <String>["On","Off"], [true,false], "Show Tier Tag","This toggles whether to show tier tags on your gear", onToggleTierTag));
-      this.addOption(new ChoiceOption("HPBarcolors",new <String>["On","Off"],[true,false],"HP Background Colors","Make the background of HPBar and others have color.",null));
-      this.addOption(new ChoiceOption("FS", new <String>["On","Off"], [true,false], "Fullscreen", "Get a better view of the Game, but it cost a lot of performance. To use this, is recommended play it on Flash Player 18", this.fsv3));
-      this.addOption(new ChoiceOption("hideList", new <String>["Off", "Locked", "Guild", "Party", "L/G/P"], [0, 1, 2, 3, 4], "Hide Players", "Hide players on screen", null));
-      this.addOption(new ChoiceOption("disableAllyParticles", new <String>["On","Off"], [true, false], "Disable ally Particles", "Disable particles produces by shooting ally.", null));
-      this.addOption(new ChoiceOption("uiQuality", new <String>["On","Off"], [true, false], "UI Quality", "Enable High/Low UI Quality.", this.onUIQualityToggle));
-      this.addOption(new ChoiceOption("disableAllParticles", new <String>["On","Off"], [true, false], "Disable ALL Particles", "Enable/Disable ALL Particles.", null));
+      this.addOption(new ChoiceOption("smartProjectiles", new <String>["On", "Off"], [true,false], "Projectile Direction", "Makes projectiles face the direction they're going.", null));
+      this.addOption(new ChoiceOption("sellMaxyPots", new <String>["Off", "Sell", "Store"], [0, 1, 2], "Sell/Store Potions", "Sell/Store Pots that you are Maxed.", null));
+      this.addOption(new ChoiceOption("HPBarcolors",new <String>["On","Off"],[true,false],"Dynamic HP Colors","Make the background of HPBar and others have color.",null));
+      this.addOption(new ChoiceOption("dynamicHPcolor", new <String>["On","Off"],[true,false],"Dynamic Damage Text","Makes the damage text change color based on health",null));
    }
 
     private function renderer() : void

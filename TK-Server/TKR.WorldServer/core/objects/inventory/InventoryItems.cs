@@ -21,8 +21,6 @@ namespace TKR.WorldServer.core.objects.inventory
                 var sti = (int)StatDataType.Inventory0 + i;
                 if (i >= 12)
                     sti = (int)StatDataType.BackPack0 + i - 12;
-                if (i >= 20)
-                    sti = (int)StatDataType.TALISMAN_0_STAT + i - 20;
 
                 _itemTypes[i] = new StatTypeValue<int>(container as Entity, (StatDataType)sti, items[i]?.ObjectType ?? -1, container is Player && i > 3);
                 _items[i] = items[i];

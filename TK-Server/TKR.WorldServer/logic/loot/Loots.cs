@@ -111,13 +111,6 @@ namespace TKR.WorldServer.logic.loot
             if (player == null)
                 return 0;
             var allLoot = 0.0;
-            switch (player.GameServer.WorldManager.Nexus.EngineStage)
-            {
-                case 1: allLoot += 0.25; break;
-                case 2: allLoot += 0.5; break;
-                case 3: allLoot += 0.75; break;
-                default: break;
-            }
             allLoot += player.LDBoostTime > 0 ? 0.25 : 0;
             allLoot += NexusWorld.WeekendLootBoostEvent;
             return allLoot;

@@ -65,8 +65,6 @@ public class EquipmentToolTip extends ToolTip
        private var repeat:int = 0;
       private var itemData_:Object = null;
       private var props_:ObjectProperties = null;
-      private var isMythicalItem:Boolean;
-      private var isLegendaryItem:Boolean;
 
       public function EquipmentToolTip(objectType:int, player:Player, invType:int, inventoryOwnerType:String, inventorySlotID:uint = 1.0, isMarketItem:Boolean = false, itemData:Object = null)
       {
@@ -195,6 +193,14 @@ public class EquipmentToolTip extends ToolTip
          {
             this.tierText_.y = this.icon_.height / 2 - this.titleText_.actualHeight_ / 2;
             this.tierText_.x = MAX_WIDTH - 30;
+            switch(Parameters.data_.itemDataOutlines)
+            {
+               case 0:
+                  this.tierText_.filters = FilterUtil.getTextOutlineFilter();
+                  break;
+               case 1:
+                  this.tierText_.filters = [new DropShadowFilter(0,0,0,0.5,12,12)];
+            }
             addChild(this.tierText_);
          }
       }
@@ -294,11 +300,6 @@ public class EquipmentToolTip extends ToolTip
          if(this.effects.length != 0 || this.comparisonResults.text != "" || this.objectXML_.hasOwnProperty("ExtraTooltipData"))
          {
             this.line1_ = new LineBreakDesign(MAX_WIDTH - 12,0);
-             if(isLegendaryItem){
-                 this.line1_.setWidthColor(MAX_WIDTH-12,0x967bb6);
-             }else if(isMythicalItem){
-                 this.line1_.setWidthColor(MAX_WIDTH-12,0xFFFFFF);
-             }
             addChild(this.line1_);
             this.effectsText_ = new SimpleText(14,11776947,false,MAX_WIDTH - this.icon_.width - 4,0);
             this.effectsText_.wordWrap = true;
@@ -932,11 +933,6 @@ public class EquipmentToolTip extends ToolTip
 
       private function makeLineTwo():void{
          this.line2_ = new LineBreakDesign((MAX_WIDTH - 12), 0);
-          if(isLegendaryItem){
-              this.line2_.setWidthColor(MAX_WIDTH-12,0x967bb6);
-          }else if(isMythicalItem){
-              this.line2_.setWidthColor(MAX_WIDTH-12,0xFFFFFF);
-          }
          addChild(this.line2_);
       }
 

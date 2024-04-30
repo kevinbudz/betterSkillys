@@ -236,11 +236,6 @@ namespace TKR.WorldServer.utils
                 case 24:
                 case 25:
                 case 26:
-                case 27:
-                    e.InvokeStatChange((StatDataType)((int)StatDataType.TALISMAN_0_STAT + slot), (e as IContainer).Inventory[slot]?.ObjectType ?? -1);
-                    e.InvokeStatChange((StatDataType)((int)StatDataType.TALISMANDATA_0_STAT + slot), (e as IContainer).Inventory.Data[slot]?.GetData() ?? "{}");
-                    break;
-
                 case 254:
                     e.InvokeStatChange(StatDataType.HealthStackCount, (e as Player).HealthPots.Count);
                     break;

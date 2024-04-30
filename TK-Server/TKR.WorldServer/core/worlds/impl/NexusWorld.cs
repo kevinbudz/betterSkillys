@@ -42,26 +42,13 @@ namespace TKR.WorldServer.core.worlds.impl
 
         public KingdomPortalMonitor PortalMonitor { get; private set; }
 
-        public int EngineStage { get; private set; }
-        public int EngineFuel { get; private set; }
-        public int EngineStageTime { get; private set; }
-        public Engine Engine { get; private set; }
-
         public NexusWorld(GameServer gameServer, int id, WorldResource resource) : base(gameServer, id, resource)
         {
         }
 
         public override void Init()
         {
-            var engine = GameServer.Database.GetDbEngine(GameServer.Configuration.serverInfo.name);
-            EngineStage = engine.EngineStage;
-            EngineFuel = engine.EngineFuel;
-            EngineStageTime = engine.EngineStageTime;
-
             var lootRegions = GetRegionPoints(TileRegion.Hallway_1);
-            foreach (var loot in lootRegions)
-                Engine = (Engine)CreateNewEntity("Engine", loot.Key.X + 0.5f, loot.Key.Y + 0.5f);
-
             var marketRegions = GetRegionPoints(TileRegion.Hallway);
 
             if (marketRegions.Length > 0)
@@ -176,156 +163,6 @@ namespace TKR.WorldServer.core.worlds.impl
                 WeekendLootBoostEvent = 0.0f;
                 GameServer.ChatManager.ServerAnnounce("The weekend loot event has ended!");
             }
-        }
-
-        private void HandleEngineTimeouts(ref TickTime time)
-        {
-            var currentTime = DateTime.UtcNow.ToUnixTimestamp();
-            if (currentTime >= EngineStageTime + ENGINE_STAGE1_TIMEOUT)
-                ResetEngineState(1);
-            if (currentTime >= EngineStageTime + ENGINE_STAGE2_TIMEOUT)
-                ResetEngineState(2);
-            if (currentTime >= EngineStageTime + ENGINE_STAGE3_TIMEOUT)
-                ResetEngineState(3);
-        }
-
-        private void ResetEngineState(int state)
-        {
-            //Player.GameServer.ChatManager.AnnounceEngine($"The machine slowly powers down");
-
-            var amount = 0;
-            if (state == 1)
-            {
-                if (EngineStage == 3)
-                {
-                    amount = ENGINE_THIRD_STAGE_AMOUNT;
-                }
-                if (EngineStage == 2)
-                {
-                    amount = ENGINE_SECOND_STAGE_AMOUNT;
-                }
-                if (EngineStage == 1)
-                {
-                    amount = ENGINE_FIRST_STAGE_AMOUNT;
-                }
-            }
-            if (state == 2)
-            {
-                if (EngineStage == 3)
-                {
-                    amount = ENGINE_THIRD_STAGE_AMOUNT;
-                }
-                if (EngineStage == 2)
-                {
-                    amount = ENGINE_SECOND_STAGE_AMOUNT;
-                }
-                if (EngineStage == 1)
-                {
-                    amount = ENGINE_FIRST_STAGE_AMOUNT;
-                }
-            }
-            if (state == 3)
-            {
-                if (EngineStage == 3)
-                {
-                    amount = ENGINE_THIRD_STAGE_AMOUNT;
-                }
-                if (EngineStage == 2)
-                {
-                    amount = ENGINE_SECOND_STAGE_AMOUNT;
-                }
-                if (EngineStage == 1)
-                {
-                    amount = ENGINE_FIRST_STAGE_AMOUNT;
-                }
-            }
-
-            TryAddFuelToEngine(null, -amount);
-        }
-
-        public bool TryAddFuelToEngine(Player player, int amount)
-        {
-            if (Engine.CurrentAmount == ENGINE_THIRD_STAGE_AMOUNT && amount >= 0)
-                return false;
-
-            // clamp it to the max
-            var current = Engine.CurrentAmount + amount;
-
-            switch (EngineStage)
-            {
-                case 0:
-                    if (current >= ENGINE_FIRST_STAGE_AMOUNT && current < ENGINE_SECOND_STAGE_AMOUNT)
-                        SetEngineSetStage(1, player);
-                    else if (current >= ENGINE_SECOND_STAGE_AMOUNT && current < ENGINE_THIRD_STAGE_AMOUNT)
-                        SetEngineSetStage(2, player);
-                    else if (current >= ENGINE_THIRD_STAGE_AMOUNT)
-                        SetEngineSetStage(3, player);
-                    break;
-                case 1:
-                    if (current < ENGINE_FIRST_STAGE_AMOUNT)
-                        SetEngineSetStage(0, player);
-                    else if (current >= ENGINE_SECOND_STAGE_AMOUNT && current < ENGINE_THIRD_STAGE_AMOUNT)
-                        SetEngineSetStage(2, player);
-                    else if (current >= ENGINE_THIRD_STAGE_AMOUNT)
-                        SetEngineSetStage(3, player);
-                    break;
-                case 2:
-                    if (current < ENGINE_FIRST_STAGE_AMOUNT)
-                        SetEngineSetStage(0, player);
-                    else if (current >= ENGINE_FIRST_STAGE_AMOUNT && current < ENGINE_SECOND_STAGE_AMOUNT)
-                        SetEngineSetStage(1, player);
-                    else if (current >= ENGINE_THIRD_STAGE_AMOUNT)
-                        SetEngineSetStage(3, player);
-                    break;
-                case 3:
-                    if (current < ENGINE_FIRST_STAGE_AMOUNT)
-                        SetEngineSetStage(0, player);
-                    else if (current >= ENGINE_FIRST_STAGE_AMOUNT && current < ENGINE_SECOND_STAGE_AMOUNT)
-                        SetEngineSetStage(1, player);
-                    else if (current >= ENGINE_SECOND_STAGE_AMOUNT && current < ENGINE_THIRD_STAGE_AMOUNT)
-                        SetEngineSetStage(2, player);
-                    break;
-            }
-
-            Engine.CurrentAmount = EngineFuel = Math.Min(Math.Max(current, 0), ENGINE_THIRD_STAGE_AMOUNT);
-            Engine.EngineTime = EngineStageTime;
-
-            var engine = GameServer.Database.GetDbEngine(GameServer.Configuration.serverInfo.name);
-            engine.AddFuel(player?.Name ?? "Server", amount);
-            engine.Save();
-            return true;
-        }
-
-        public void SetEngine(Engine engine) => Engine = engine;
-
-        private void SetEngineSetStage(int state, Player player)
-        {
-            var time = DateTime.UtcNow.ToUnixTimestamp();
-            switch (state)
-            {
-                case 0:
-                    time = EngineStageTime = 0;
-                    break;
-                case 1:
-                    time = EngineStageTime = time + ENGINE_STAGE1_TIMEOUT;
-                    break;
-                case 2:
-                    time = EngineStageTime = time + ENGINE_STAGE2_TIMEOUT;
-                    break;
-                case 3:
-                    time = EngineStageTime = time + ENGINE_STAGE3_TIMEOUT;
-                    break;
-            }
-
-            EngineStage = state;
-            if (player != null)
-                GameServer.ChatManager.AnnounceEngine($"[{player.Name}] adds the last bit of fuel and kicks the machine, it powers on to Stage " + state + "!");
-            else
-                GameServer.ChatManager.AnnounceEngine($"The Strange Engine slowly powers down.");
-
-            var engine = GameServer.Database.GetDbEngine(GameServer.Configuration.serverInfo.name);
-            engine.SetEngineStage(state, time);
-            engine.Save();
-        }
+        }      
     }
 }

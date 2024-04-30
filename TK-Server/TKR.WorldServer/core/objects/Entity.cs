@@ -167,24 +167,18 @@ namespace TKR.WorldServer.core.objects
                 case "MoneyChanger":
                 case "NameChanger":
                     return new StaticObject(gameServer, objectType, hp, true, false, true);
-
                 case "Character":   //Other characters means enemy
                     return new Enemy(gameServer, objectType);
-
                 case "GuildHallPortal":
                 case "ArenaPortal":
                 case "Portal":
                     return new Portal(gameServer, objectType);
-
                 case "ClosedVaultChest":
                     return new ClosedVaultChest(gameServer, objectType);
-
                 case "Merchant":
                     return new NexusMerchant(gameServer, objectType);
-
                 case "GuildMerchant":
                     return new GuildMerchant(gameServer, objectType);
-
                 case "ClosedVaultChestGold":
                 case "VaultChest":
                 case "MarketNPC":
@@ -192,9 +186,6 @@ namespace TKR.WorldServer.core.objects
                 case "Forge":
                 case "StatNPC":
                     return new SellableMerchant(gameServer, objectType);
-
-                case "Engine":
-                    return new Engine(gameServer, objectType);
             }
             return new StaticObject(gameServer, objectType, null, true, false, false);
         }

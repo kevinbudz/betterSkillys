@@ -35,6 +35,8 @@ public class TierUtil
             if(tier)
             {
                 color = 16777215;
+                if (xml.hasOwnProperty("Uncommon"))
+                    color = TooltipHelper.UNCOMMON_COLOR;
                 tierTag = "T" + xml.Tier;
             }
             else if(xml.hasOwnProperty("@setType"))
@@ -45,6 +47,12 @@ public class TierUtil
             else
             {
                 color = TooltipHelper.UNTIERED_COLOR;
+                if (xml.hasOwnProperty("Uncommon"))
+                    color = TooltipHelper.UNCOMMON_COLOR;
+                if (xml.hasOwnProperty("Rare"))
+                    color = TooltipHelper.RARE_COLOR;
+                if (xml.hasOwnProperty("Legendary"))
+                    color = TooltipHelper.LEGENDARY_COLOR;
                 tierTag = "UT";
             }
             label.text = tierTag;
