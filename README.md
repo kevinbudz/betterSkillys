@@ -14,5 +14,5 @@ An attempt of making a better 7.0, using TK-Reborn as a base.
 ## Credits.
 - Runes,
 - Slendergo, Orb, GlassBBQ (accreditted on TK-Reborn),
-- Zolmex (used a lot of repos. off his GitHub),
+- Zolmex (he has a lot of good GitHub repositories),
 - . . . .
