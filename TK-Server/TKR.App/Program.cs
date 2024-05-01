@@ -60,6 +60,8 @@ namespace TKR.App
                 core.Logger.Info($"Request: \"{context.Request.Path}\" from: {context.Connection.RemoteIpAddress}");
                 await next();
             });
+            
+            app.UseMiddleware<ExceptionMiddleware>();
 
             app.Run();
         }

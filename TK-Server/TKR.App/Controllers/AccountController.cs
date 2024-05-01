@@ -50,8 +50,11 @@ namespace TKR.App.Controllers
         }
 
         [HttpPost("purchaseCharSlot")]
-        public void PurchaseCharSlot([FromForm] string guid, [FromForm] string password)
+        public async void PurchaseCharSlot([FromForm] string guid, [FromForm] string password)
         {
+            // works but currently keeps you with account in use
+            // need to fix
+
             var db = _core.Database;
 
             var status = db.Verify(guid, password, out var acc);
@@ -80,10 +83,10 @@ namespace TKR.App.Controllers
                     var trans = db.Conn.CreateTransaction();
                     var t1 = db.UpdateCurrency(acc, -price, currency, trans);
                     trans.AddCondition(Condition.HashEqual(acc.Key, "maxCharSlot", acc.MaxCharSlot));
-                    trans.HashIncrementAsync(acc.Key, "maxCharSlot");
+                    await trans.HashIncrementAsync(acc.Key, "maxCharSlot");
                     var t2 = trans.ExecuteAsync();
 
-                    Task.WhenAll(t1, t2).ContinueWith(r =>
+                    await Task.WhenAll(t1, t2).ContinueWith(r =>
                     {
                         if (t2.IsCanceled || !t2.Result)
                         {

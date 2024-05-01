@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading;
 using System.Threading.Tasks;
@@ -34,17 +35,20 @@ namespace TKR.WorldServer.core.worlds
 
                 var realmTime = new TickTime();
 
+                var elapsed = 0L;
                 while (!Stopped)
                 {
                     World.ProcessPlayerIO(ref realmTime);
 
                     var currentMS = realmTime.TotalElapsedMs = watch.ElapsedMilliseconds;
+                    var dt = currentMS - lastMS;
+                    lastMS = currentMS;
 
-                    var delta = (int)(currentMS - lastMS);
-                    if (delta >= TICK_TIME_MS)
+                    elapsed += dt;
+                    if(elapsed >= TICK_TIME_MS)
                     {
                         realmTime.TickCount++;
-                        realmTime.ElapsedMsDelta = delta;
+                        realmTime.ElapsedMsDelta = (int)elapsed;
 
                         try
                         {
@@ -59,7 +63,7 @@ namespace TKR.WorldServer.core.worlds
                             Console.WriteLine($"[{World.IdName} {World.Id}] Tick: {e.StackTrace}");
                         }
 
-                        lastMS = currentMS; //+= delta; // TICK_TIME_MS;
+                        elapsed = 0;
                     }
 
                     if (World.Players.Count == 0)

@@ -119,12 +119,7 @@ namespace TKR.WorldServer.core
                 // server close event
                 if (!restart && DateTime.UtcNow >= RestartCloseTime)
                 {
-                    // announce to the server of the restart
-                    // restarting crashes for some reason :(
-                    // todo future me will fix
-
-                    foreach (var world in WorldManager.GetWorlds())
-                        ChatManager.ServerAnnounce("Server **Restart** in 5 minutes, prepare to leave");
+                    ChatManager.ServerAnnounce("Server **Restart** in 5 minutes, prepare to leave");
 
                     Console.WriteLine("[Restart] Procdure Commensing");
                     ConnectionListener.Disable();
@@ -152,7 +147,10 @@ namespace TKR.WorldServer.core
             Dispose();
 
             if (restart)
-                _ = Process.Start(AppDomain.CurrentDomain.FriendlyName);
+            {
+                // need to test linux builds
+                _ = Process.Start($"{AppDomain.CurrentDomain.FriendlyName}.exe");
+            }
 
             Console.WriteLine("[Program] Terminated");
             Thread.Sleep(10000);
