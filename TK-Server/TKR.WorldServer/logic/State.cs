@@ -71,6 +71,16 @@ namespace TKR.WorldServer.logic
             else return false;
         }
 
+        public event EventHandler<BehaviorEventArgs> Death;
+
+        internal void OnDeath(BehaviorEventArgs e)
+        {
+            if (Death != null)
+                Death(this, e);
+            if (Parent != null)
+                Parent.OnDeath(e);
+        }
+
         public override string ToString()
         {
             return Name;

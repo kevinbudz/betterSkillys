@@ -41,7 +41,6 @@ namespace TKR.WorldServer.core.objects.inventory
         public const int NUM_EQUIPMENT_SLOTS = 4;
         public const int NUM_INVENTORY_SLOTS = 8;
         public const int NUM_BACKPACK_SLOTS = 8;
-        public const int NUM_TALISMAN_SLOTS = 8;
     }
 
     public sealed class Inventory : IEnumerable<Item>

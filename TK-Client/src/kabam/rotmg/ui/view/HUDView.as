@@ -114,15 +114,8 @@ import kabam.rotmg.game.view.components.TabStripView;
       public function setPlayerDependentAssets(gs:GameSprite) : void
       {
          var player:Player = gs.map.player_;
-         this.equippedGridBG = new Sprite();
-         this.equippedGridBG.x = this.EQUIPMENT_INVENTORY_POSITION.x - 3;
-         this.equippedGridBG.y = this.EQUIPMENT_INVENTORY_POSITION.y - 3;
-         var fill_:GraphicsSolidFill = new GraphicsSolidFill(6776679,1);
-         var path_:GraphicsPath = new GraphicsPath(new Vector.<int>(),new Vector.<Number>());
-         var graphicsData_:Vector.<IGraphicsData> = new <IGraphicsData>[fill_,path_,GraphicsUtil.END_FILL];
-         GraphicsUtil.drawCutEdgeRect(0,0,178,46,6,[1,1,1,1],path_);
-         this.equippedGridBG.graphics.drawGraphicsData(graphicsData_);
-         addChild(this.equippedGridBG);
+
+         this.createEquippedGridBackground();
          this.equippedGrid = new EquippedGrid(player, player.slotTypes_, player);
          this.equippedGrid.x = this.EQUIPMENT_INVENTORY_POSITION.x;
          this.equippedGrid.y = this.EQUIPMENT_INVENTORY_POSITION.y;
@@ -131,6 +124,30 @@ import kabam.rotmg.game.view.components.TabStripView;
          this.interactPanel.x = this.INTERACT_PANEL_POSITION.x;
          this.interactPanel.y = this.INTERACT_PANEL_POSITION.y;
          addChild(this.interactPanel);
+      }
+
+      private function createEquippedGridBackground():void
+      {
+         var box1:Vector.<IGraphicsData>;
+         var box2:Vector.<IGraphicsData>;
+
+         var fill:GraphicsSolidFill = new GraphicsSolidFill(0x676767, 1);
+         var path:GraphicsPath = new GraphicsPath(new Vector.<int>(), new Vector.<Number>());
+
+         box1 = new <IGraphicsData>[fill, path, GraphicsUtil.END_FILL];
+         GraphicsUtil.drawCutEdgeRect(0, 0, 178, 46, 6, [1, 1, 1, 1], path);
+
+         path = new GraphicsPath(new Vector.<int>(), new Vector.<Number>());
+         fill = new GraphicsSolidFill(0x454545, 1);
+         box2 = new <IGraphicsData>[fill, path, GraphicsUtil.END_FILL];
+         GraphicsUtil.drawCutEdgeRect(3, 3, 172, 40, 6, [1, 1, 1, 1], path);
+
+         this.equippedGridBG = new Sprite();
+         this.equippedGridBG.x = (this.EQUIPMENT_INVENTORY_POSITION.x - 3);
+         this.equippedGridBG.y = (this.EQUIPMENT_INVENTORY_POSITION.y - 3);
+         this.equippedGridBG.graphics.drawGraphicsData(box1);
+         this.equippedGridBG.graphics.drawGraphicsData(box2);
+         addChild(this.equippedGridBG);
       }
 
       public function draw() : void

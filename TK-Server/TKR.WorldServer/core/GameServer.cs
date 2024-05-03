@@ -61,7 +61,7 @@ namespace TKR.WorldServer.core
             ThreadPool.GetMinThreads(out int workerThreads, out int completionPortThreads);
             ThreadPool.SetMinThreads(250, completionPortThreads);
 
-            Resources = new Resources(Configuration.serverSettings.resourceFolder, true, false);
+            Resources = new Resources(Configuration.serverSettings.resourceFolder, true, true);
             Database = new Database(Resources, Configuration);
             MarketSweeper = new MarketSweeper(Database);
             ConnectionManager = new ConnectionManager(this);

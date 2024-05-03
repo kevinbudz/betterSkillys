@@ -18,7 +18,7 @@
 		<Width>256</Width>
 		<Height>256</Height>
 		<Capacity>300</Capacity>
-		<MapJM>nexus.jm</MapJM>
+		<MapJM>nexus_winter.jm</MapJM>
 		<Instance enum="nexus"/>
 		<Music>
 			<Track>wanderlust</Track>
@@ -40,5 +40,221 @@
 		<DisableShooting/>
 		<DisableAbilities/>
 		<DisableTeleport/>
+	</World>
+	<World id="Guild Hall 1">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>guild/guild_hall.jm</MapJM>
+		<Instance enum="guild"/>
+		<DisableShooting/>
+		<DisableAbilities/>
+	</World>
+	<World id="Guild Hall 2">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>guild/guild_hall1.jm</MapJM>
+		<Instance enum="guild"/>
+		<DisableShooting/>
+		<DisableAbilities/>
+	</World>
+	<World id="Guild Hall 3">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>guild/guild_hall2.jm</MapJM>
+		<Instance enum="guild"/>
+		<DisableShooting/>
+		<DisableAbilities/>
+	</World>
+	<World id="Guild Hall 4">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>guild/guild_hall3.jm</MapJM>
+		<Instance enum="guild"/>
+		<DisableShooting/>
+		<DisableAbilities/>
+	</World>
+	<World id="Undead Lair">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>undead_lair/undead_lair1.jm</MapJM>
+		<MapJM>undead_lair/undead_lair2.jm</MapJM>
+		<MapJM>undead_lair/undead_lair3.jm</MapJM>
+		<MapJM>undead_lair/undead_lair4.jm</MapJM>
+		<MapJM>undead_lair/undead_lair5.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
+	<World id="Snake Pit">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>snake_pit.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
+	<World id="Abyss of Demons">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>abyss/abyss_of_demons.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
+	<World id="Belladonna's Garden">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>belladonna.jm</MapJM>
+		<Dungeon/>
+	</World>
+	<World id="Bilgewater's Grotto">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>bilgewaters_grotto.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
+	<World id="Candyland Hunting Grounds">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>candyland_hunting_grounds.jm</MapJM>
+		<Dungeon/>
+	</World>
+	<World id="Oryx's Castle">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>oryx_castle.jm</MapJM>
+		<VisibilityType>2</VisibilityType>
+		<Dungeon/>
+		<DisableTeleport/>
+	</World>
+	<World id="Tomb of the Ancients">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>tomb_of_the_ancients.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
+	<World id="Forbidden Jungle">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>forbidden_jungle.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
+	<World id="Puppet Master's Encore">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>puppet_master_encore.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
+	<World id="Mad Lab">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>mad_lab.jm</MapJM>
+		<VisibilityType>2</VisibilityType>
+		<Dungeon/>
+	</World>
+	<World id="Manor of the Immortals">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>manor.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
+	<World id="Lost Halls">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>lost_halls.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
+	<World id="Marketplace">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>marketplace.jm</MapJM>
+		<Persists/>
+	</World>
+	<World id="Pirate Cave">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>pirate_cave.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
+	<World id="Cave of A Thousand Treasures">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>cave_of_thousand_treasures.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
+	<World id="Ocean Trench">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>ocean_trench.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
+	<World id="Deadwater Docks">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>deadwater_docks.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
+	<World id="Forest Maze">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>forest_maze.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
+	<World id="Oryx's Chamber">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>oryx_chamber.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
+	<World id="Toxic Sewers">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>toxic_sewers.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
+	<World id="The Shatters">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>the_shatters.jm</MapJM>
+		<DisableTeleport/>
+		<VisibilityType>2</VisibilityType>
+		<Dungeon/>
+	</World>
+	<World id="Spider Den">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>spider_den.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
+	<World id="The Crawling Depths">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>the_crawling_depths.jm</MapJM>
+		<Dungeon/>
+		<VisibilityType>1</VisibilityType>
+	</World>
+	<World id="Sprite World">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>sprite_world/sprite_world.jm</MapJM>
+		<Dungeon/>
+	</World>
+	<World id="Woodland Labyrinth">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>woodland_labyrinth.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
 	</World>
 </Worlds>

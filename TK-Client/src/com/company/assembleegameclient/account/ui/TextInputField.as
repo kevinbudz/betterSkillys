@@ -19,8 +19,10 @@ package com.company.assembleegameclient.account.ui
       public var inputText_:SimpleText;
       
       public var errorText_:SimpleText;
+
+      public var detailText_:SimpleText;
       
-      public function TextInputField(name:String, isPassword:Boolean, error:String)
+      public function TextInputField(name:String, isPassword:Boolean, error:String, detailText:String = "")
       {
          super();
          this.nameText_ = new SimpleText(18,11776947,false,0,0);
@@ -29,6 +31,17 @@ package com.company.assembleegameclient.account.ui
          this.nameText_.updateMetrics();
          this.nameText_.filters = [new DropShadowFilter(0,0,0)];
          addChild(this.nameText_);
+         if (detailText != "")
+         {
+            this.detailText_ = new SimpleText(18,11776947,false,0,0);
+            this.detailText_.setBold(true);
+            this.detailText_.text = detailText;
+            this.detailText_.updateMetrics();
+            this.detailText_.filters = [new DropShadowFilter(0,0,0)];
+            this.detailText_.x = -(this.detailText_.width + 5);
+            this.detailText_.y = 32;
+            addChild(this.detailText_);
+         }
          this.inputText_ = new SimpleText(20,11776947,true,238,30);
          this.inputText_.y = 30;
          this.inputText_.x = 6;

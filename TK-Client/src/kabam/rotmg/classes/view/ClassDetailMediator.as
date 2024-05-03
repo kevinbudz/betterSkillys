@@ -78,7 +78,7 @@ package kabam.rotmg.classes.view
       
       private function delayedFocusSet(e:TimerEvent) : void
       {
-         var animation:Animation = this.skins[this.nextSkin.id] = this.skins[this.nextSkin.id] || this.factory.makeWalkingIcon(this.nextSkin.template,200);
+         var animation:Animation = this.skins[this.nextSkin.id] = this.skins[this.nextSkin.id] || this.factory.makeWalkingIcon(this.nextSkin.template,this.nextSkin.is16x16 ? 100 : 200);
          this.view.setWalkingAnimation(animation);
       }
       

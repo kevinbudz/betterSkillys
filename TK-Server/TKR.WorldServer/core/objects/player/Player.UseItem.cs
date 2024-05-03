@@ -334,14 +334,6 @@ namespace TKR.WorldServer.core.objects
             {
                 switch (eff.Effect)
                 {
-                    case ActivateEffects.UpgradeStat:
-                        AEUpgradeStat(time, item, target, objId, slot, eff);
-                        break;
-
-                    case ActivateEffects.UpgradeActivate:
-                        AEUpgradeActivate(time, item, target, objId, slot, eff);
-                        break;
-
                     case ActivateEffects.Fame:
                         AEAddFame(time, item, target, eff);
                         break;
@@ -349,149 +341,111 @@ namespace TKR.WorldServer.core.objects
                     case ActivateEffects.XPBoost:
                         AEXPBoost(time, item, target, slot, objId, eff);
                         break;
-
-
                     case ActivateEffects.UnlockChest:
                         AEUnlockChest(time, item, target, slot, objId, eff);
                         break;
-
                     case ActivateEffects.UnlockSlotChar:
                         AEUnlockSlotChar(time, item, target, slot, objId, eff);
                         break;
-
                     case ActivateEffects.LDBoost:
                         AELDBoost(time, item, target, eff);
                         break;
-
                     case ActivateEffects.GenericActivate:
                         AEGenericActivate(time, item, target, eff);
                         break;
-
                     case ActivateEffects.Create:
                         AECreate(time, item, target, slot, eff);
                         break;
-
                     case ActivateEffects.Dye:
                         AEDye(time, item, target, eff);
                         break;
-
                     case ActivateEffects.Shoot: break; // handled in PlayerShoot.cs
-
                     case ActivateEffects.IncrementStat:
                         AEIncrementStat(time, item, target, eff, objId, slot, sellmaxed);
                         break;
-
                     case ActivateEffects.Heal:
                         AEHeal(time, item, target, eff);
                         break;
-
                     case ActivateEffects.Magic:
                         AEMagic(time, item, target, eff);
                         break;
-
                     case ActivateEffects.HealNova:
                         AEHealNova(time, item, target, eff);
                         break;
-
                     case ActivateEffects.StatBoostSelf:
                         AEStatBoostSelf(time, item, target, eff);
                         break;
-
                     case ActivateEffects.StatBoostAura:
                         AEStatBoostAura(time, item, target, eff);
                         break;
-
                     case ActivateEffects.BulletNova:
                         AEBulletNova(item, target, eff);
                         break;
-
                     case ActivateEffects.ConditionEffectSelf:
                         AEConditionEffectSelf(time, item, target, eff);
                         break;
-
                     case ActivateEffects.ConditionEffectAura:
                         AEConditionEffectAura(time, item, target, eff);
                         break;
-
                     case ActivateEffects.Teleport:
                         AETeleport(time, item, target, eff);
                         break;
-
                     case ActivateEffects.PoisonGrenade:
                         AEPoisonGrenade(time, item, target, eff);
                         break;
-
                     case ActivateEffects.VampireBlast:
                         AEVampireBlast(time, item, target, eff);
                         break;
-
                     case ActivateEffects.Trap:
                         AETrap(time, item, target, eff);
                         break;
-
                     case ActivateEffects.StasisBlast:
                         StasisBlast(time, item, target, eff);
                         break;
-
                     case ActivateEffects.Decoy:
                         AEDecoy(time, item, target, eff);
                         break;
-
                     case ActivateEffects.Lightning:
                         AELightning(time, item, target, eff);
                         break;
-
                     case ActivateEffects.UnlockPortal:
                         AEUnlockPortal(time, item, target, eff);
                         break;
-
                     case ActivateEffects.MagicNova:
                         AEMagicNova(time, item, target, eff);
                         break;
-
                     case ActivateEffects.ClearConditionEffectAura:
                         AEClearConditionEffectAura(time, item, target, eff);
                         break;
-
                     case ActivateEffects.RemoveNegativeConditions:
                         AERemoveNegativeConditions(time, item, target, eff);
                         break;
-
                     case ActivateEffects.ClearConditionEffectSelf:
                         AEClearConditionEffectSelf(time, item, target, eff);
                         break;
-
                     case ActivateEffects.RemoveNegativeConditionsSelf:
                         AERemoveNegativeConditionSelf(time, item, target, eff);
                         break;
-
                     case ActivateEffects.ShurikenAbility:
                         AEShurikenAbility(clientTime, time, item, target, eff, useType);
                         break;
-
                     case ActivateEffects.ShurikenAbilityBerserk:
                         AEShurikenAbilityBerserk(clientTime, time, item, target, eff, useType);
                         break;
-
                     case ActivateEffects.ShurikenAbilityDamaging:
                         AEShurikenAbilityDamaging(clientTime, time, item, target, eff, useType);
                         break;
-
                     case ActivateEffects.DazeBlast:
                         break;
-
                     case ActivateEffects.PermaPet:
                         AEPermaPet(time, item, target, eff);
                         break;
-
                     case ActivateEffects.Pet:
                         AEPet(time, item, target, eff);
                         break;
-
                     case ActivateEffects.Backpack:
                         AEBackpack(time, item, target, slot, objId, eff);
                         break;
-
                     default:
                         StaticLogger.Instance.Warn("Activate effect {0} not implemented.", eff.Effect);
                         break;
@@ -741,27 +695,7 @@ namespace TKR.WorldServer.core.objects
 
         private void AEIncrementStat(TickTime time, Item item, Position target, ActivateEffect eff, int objId, int slot, int sellMaxed)
         {
-            var addition = 0;
-            switch (Client.Rank.Rank)
-            {
-                case RankingType.Supporter1:
-                    addition = 10;
-                    break;
-                case RankingType.Supporter2:
-                    addition = 20;
-                    break;
-                case RankingType.Supporter3:
-                    addition = 30;
-                    break;
-                case RankingType.Supporter4:
-                    addition = 40;
-                    break;
-                case RankingType.Supporter5:
-                    addition = 50;
-                    break;
-            }
-            var totalAllowed = 50 + addition;
-
+            var totalAllowed = 50;
             var idx = StatsManager.GetStatIndex((StatDataType)eff.Stats);
             var statInfo = GameServer.Resources.GameData.Classes[ObjectType].Stats;
             var statname = StatsManager.StatIndexToName(idx);
@@ -778,7 +712,7 @@ namespace TKR.WorldServer.core.objects
                 }
             }
 
-            if (!UpgradeEnabled && item.Maxy && Stats.Base[idx] >= statInfo[idx].MaxValue)
+            if (!UpgradeEnabled && Stats.Base[idx] >= statInfo[idx].MaxValue)
             {
                 if (container != null)
                 {
@@ -845,7 +779,20 @@ namespace TKR.WorldServer.core.objects
                 }
                 else
                 {
-                    SendInfo($"Added {storeAmount} {statname} to your Potion Storage! [{storedAmount} / {totalAllowed}]");
+                    bool checkVowel = statname.Substring(0, 1) == "A";
+                    string accForVowel = checkVowel ? "n" : "";
+                    switch (storeAmount)
+                    {
+                        case 1:
+                            SendInfo($"Added a{accForVowel} {statname} potion to your storage! [{storedAmount}/{totalAllowed}]");
+                            break;
+                        case 2:
+                            SendInfo($"Added two {statname} potions to your storage! [{storedAmount}/{totalAllowed}]");
+                            break;
+                        default:
+                            SendInfo($"Added multiple {statname} potions to your storage! [{storedAmount}/{totalAllowed}]");
+                            break;
+                    }
                 }
 
                 return;
@@ -1456,78 +1403,6 @@ namespace TKR.WorldServer.core.objects
             //    Message = "Unlocked by " + Name
             //});
             //World.PlayersBroadcastAsParallel(_ => _.SendInfo($"{world.SBName} unlocked by {Name}!"));
-        }
-
-        private void AEUpgradeActivate(TickTime time, Item item, Position target, int objId, int slot, ActivateEffect eff)
-        {
-            var playerDesc = GameServer.Resources.GameData.Classes[ObjectType];
-            var maxed = playerDesc.Stats.Where((t, i) => Stats.Base[i] >= t.MaxValue).Count();
-            var entity = World.GetEntity(objId);
-            var container = entity as Container;
-            if (maxed < 8)
-            {
-                SendError("You must be 8/8 to Upgrade.");
-                if (container != null)
-                    container.Inventory[slot] = item;
-                else
-                    Inventory[slot] = item;
-                return;
-            }
-            if (UpgradeEnabled)
-            {
-                SendInfo("You already have your Character Upgraded.");
-                if (container != null)
-                    container.Inventory[slot] = item;
-                else
-                    Inventory[slot] = item;
-                return;
-            }
-            SendInfo("Your Character has been Upgraded successfully.");
-            UpgradeEnabled = true;
-        }
-
-        private void AEUpgradeStat(TickTime time, Item item, Position target, int objId, int slot, ActivateEffect eff)
-        {
-            var entity = World.GetEntity(objId);
-            var container = entity as Container;
-            if (UpgradeEnabled)
-            {
-                var idx = StatsManager.GetStatIndex((StatDataType)eff.Stats);
-                var statname = StatsManager.StatIndexToName(idx);
-                if (statname == "MpRegen")
-                    statname = "Wisdom";
-                else if (statname == "HpRegen")
-                    statname = "Vitality";
-                else if (statname == "MaxHitPoints")
-                    statname = "Life";
-                else if (statname == "MaxMagicPoints")
-                    statname = "Mana";
-
-                var statInfo = GameServer.Resources.GameData.Classes[ObjectType].Stats;
-
-                Stats.Base[idx] += eff.Amount;
-                if (Stats.Base[idx] > statInfo[idx].MaxValue + (idx < 2 ? 50 : 10))
-                {
-                    Stats.Base[idx] = statInfo[idx].MaxValue + (idx < 2 ? 50 : 10);
-                    SendInfo("You're maxed.");
-                    if (container != null)
-                        container.Inventory[slot] = item;
-                    else
-                        Inventory[slot] = item;
-                    return;
-                }
-
-                SendInfo($"Soul of {statname} consumed. {statInfo[idx].MaxValue + (idx < 2 ? 50 : 10) - Stats.Base[idx]} left to Max.");
-            }
-            else
-            {
-                SendInfo("A character that isn't Upgraded can't use Soul Potions.");
-                if (container != null)
-                    container.Inventory[slot] = item;
-                else
-                    Inventory[slot] = item;
-                return;
-            }
         }
 
         private void AEVampireBlast(TickTime time, Item item, Position target, ActivateEffect eff)

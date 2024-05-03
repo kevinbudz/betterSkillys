@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x21d2" id="Orange Sonic Bat Wave">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x148</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x21d4" id="Ice Sonic Bat Spinner">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x149</Index>
+      </Texture>
+      <Rotation>60</Rotation>
+   </Object>
+   <Object type="0x768" id="Yeti Boulder">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d3LofiObjEmbed16</File>
+         <Index>0x57</Index>
+      </Texture>
+      <Rotation>180</Rotation>
+   </Object>
+   <Object type="0x21d8" id="Yeti Snowball">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x14d</Index>
+      </Texture>
+      <Rotation>180</Rotation>
+   </Object>
+   <Object type="0x763" id="ic shielded king">
+      <DisplayId>Creepy Weird Dark Spirit Mirror Image Monster</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>122</Index>
+      </AnimatedTexture>
+      <Effect particle="SwirlingMist" cooldown="0.6">XMLEffect</Effect>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>3500</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>390</Exp>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Ghost Boss Slash</ObjectId>
+         <Damage>90</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2200</LifetimeMS>
+         <MultiHit/>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x762" id="ic CreepyTime">
+      <DisplayId>Creepy Weird Dark Spirit Mirror Image Monster</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>122</Index>
+      </AnimatedTexture>
+      <Effect particle="SwirlingMist" cooldown="0.6">XMLEffect</Effect>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>160</Size>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>585</Exp>
+      <Projectile id="0">
+         <ObjectId>Ghost Boss Slash</ObjectId>
+         <Speed>65</Speed>
+         <Damage>130</Damage>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+         <Size>130</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x765" id="ic Whirlwind">
+      <DisplayId>Icy Whirlwind</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>117</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dark_elves_hit</HitSound>
+      <DeathSound>monster/dark_elves_death</DeathSound>
+      <Size>100</Size>
+      <MaxHitPoints>2600</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>100</Exp>
+      <Projectile id="0">
+         <ObjectId>Ice Burst</ObjectId>
+         <Damage>70</Damage>
+         <Speed>25</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Confuse Shuriken</ObjectId>
+         <Speed>25</Speed>
+         <ArmorPiercing/>
+         <Damage>80</Damage>
+         <LifetimeMS>1000</LifetimeMS>
+         <ConditionEffect duration="2.0">Confused</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x748e" id="ic boss spawner live">
+      <DisplayId>A Strange Presence</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x54F</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x764" id="ic boss manager">
+      <DisplayId>A Voice From Beyond</DisplayId>
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>116</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x761" id="ic boss purifier generator">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x760" id="ic boss purifier">
+      <DisplayId>Cursed Grave</DisplayId>
+      <Class>Character</Class>
+      <Model>Monument 3</Model>
+      <HealthBar>32</HealthBar>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0x32</Index>
+      </Texture>
+      <HitSound>monster/trees_hit</HitSound>
+      <DeathSound>monster/trees_death</DeathSound>
+      <MaxHitPoints>8000</MaxHitPoints>
+      <Exp>200</Exp>
+      <Size>100</Size>
+      <ShadowSize>0</ShadowSize>
+      <Enemy/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Paralyze Bullet</ObjectId>
+         <Damage>0</Damage>
+         <Speed>30</Speed>
+         <Size>125</Size>
+         <LifetimeMS>2200</LifetimeMS>
+         <ConditionEffect duration="0.7">Paralyzed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x75F" id="ic Esben the Unwilling">
+      <DisplayId>Esben the Unwilling</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>121</Index>
+      </AnimatedTexture>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>160</Size>
+      <ShadowSize>50</ShadowSize>
+      <MaxHitPoints>60000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>10000</Exp>
+      <Quest/>
+      <HealthBarBoss/>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <DazedImmune/>
+      <EventChestBoss/>
+      <TrackLoot/>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+         <Effect particle="SwirlingMist" cooldown="0.6">XMLEffect</Effect>
+      </AltTexture>
+      <AltTexture id="2">
+         <AnimatedTexture>
+            <File>chars8x8rEncounters</File>
+            <Index>116</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lofiCharBig</File>
+            <Index>0x180</Index>
+         </Texture>
+      </AltTexture>
+      <Projectile id="0">
+         <ObjectId>Orange Sonic Bat Wave</ObjectId>
+         <Speed>60</Speed>
+         <Damage>60</Damage>
+         <LifetimeMS>6000</LifetimeMS>
+         <ConditionEffect duration="6">Unstable</ConditionEffect>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Armor Pierce Bullet</ObjectId>
+         <Damage>100</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>6000</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Ice Burst</ObjectId>
+         <Damage>70</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>6000</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Ice Burst</ObjectId>
+         <Damage>70</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>6000</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Grey Boomerang</ObjectId>
+         <Speed>55</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>6000</LifetimeMS>
+         <ConditionEffect duration="2">Quiet</ConditionEffect>
+         <ConditionEffect duration="4">Dazed</ConditionEffect>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x0e5b" id="Snow Bat Mama">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>124</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <MaxHitPoints>3500</MaxHitPoints>
+      <Defense>10</Defense>
+      <Exp>780</Exp>
+      <Z>0.14</Z>
+      <Flying/>
+      <Size>120</Size>
+      <ShadowSize>80</ShadowSize>
+      <Projectile id="0">
+         <ObjectId>Orange Sonic Bat Wave</ObjectId>
+         <Damage>100</Damage>
+         <Speed>18</Speed>
+         <Size>100</Size>
+         <LifetimeMS>1300</LifetimeMS>
+         <ConditionEffect duration="3.0">Unstable</ConditionEffect>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Orange Sonic Bat Wave</ObjectId>
+         <Damage>100</Damage>
+         <Speed>36</Speed>
+         <Size>110</Size>
+         <LifetimeMS>1300</LifetimeMS>
+         <ConditionEffect duration="3.0">Unstable</ConditionEffect>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Orange Sonic Bat Wave</ObjectId>
+         <Damage>100</Damage>
+         <Speed>54</Speed>
+         <Size>120</Size>
+         <LifetimeMS>1300</LifetimeMS>
+         <ConditionEffect duration="3.0">Unstable</ConditionEffect>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Confuse Shuriken</ObjectId>
+         <Damage>120</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="3.0">Confused</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0x0e5a" id="Snow Bat">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>119</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Defense>5</Defense>
+      <Exp>160</Exp>
+      <Z>0.24</Z>
+      <Flying/>
+      <Size>90</Size>
+      <ShadowSize>80</ShadowSize>
+      <Projectile id="0">
+         <ObjectId>Ice Sonic Bat Spinner</ObjectId>
+         <Damage>100</Damage>
+         <Speed>0</Speed>
+         <Size>110</Size>
+         <LifetimeMS>5000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x0e59" id="Mini Yeti">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>118</Index>
+      </AnimatedTexture>
+      <HitSound>monster/orcs_hit</HitSound>
+      <DeathSound>monster/orcs_death</DeathSound>
+      <Size>100</Size>
+      <Exp>160</Exp>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>1600</MaxHitPoints>
+      <Projectile id="0">
+         <ObjectId>Yeti Snowball</ObjectId>
+         <Damage>80</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <ArmorPiercing/>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x0e58" id="Big Yeti">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>123</Index>
+      </AnimatedTexture>
+      <HitSound>monster/ogres_hit</HitSound>
+      <DeathSound>monster/ogres_death</DeathSound>
+      <Size>120</Size>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Exp>780</Exp>
+      <Defense>0</Defense>
+      <BloodProb>0.5</BloodProb>
+      <BloodColor>0xED454D</BloodColor>
+      <Projectile id="0">
+         <ObjectId>Yeti Boulder</ObjectId>
+         <Damage>200</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>5000</LifetimeMS>
+         <Size>200</Size>
+         <ConditionEffect duration="5">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>0</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>0</LifetimeMS>
+         <Size>0</Size>
+      </Projectile>
+   </Object>
+   <Object type="0x2027" id="Iceion">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>130</Index>
+      </AnimatedTexture>
+      <HitSound>monster/scorpions_hit</HitSound>
+      <DeathSound>monster/scorpions_death</DeathSound>
+      <MaxHitPoints>5500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>780</Exp>
+      <Size>120</Size>
+      <ShadowSize>80</ShadowSize>
+      <Projectile id="0">
+         <ObjectId>Grey Boomerang</ObjectId>
+         <Damage>120</Damage>
+         <Speed>60</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="2.0">Quiet</ConditionEffect>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Assassin Swipe</ObjectId>
+         <Damage>180</Damage>
+         <Speed>70</Speed>
+         <Size>140</Size>
+         <LifetimeMS>2500</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0x2203" id="Lizicle">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>134</Index>
+      </AnimatedTexture>
+      <HitSound>monster/scorpions_hit</HitSound>
+      <DeathSound>monster/scorpions_death</DeathSound>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>780</Exp>
+      <Size>120</Size>
+      <ShadowSize>80</ShadowSize>
+      <Projectile id="1">
+         <ObjectId>Crystal Shard</ObjectId>
+         <Size>100</Size>
+         <Damage>180</Damage>
+         <Speed>35</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Crystal Shard</ObjectId>
+         <Size>100</Size>
+         <Damage>180</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Crystal Shard</ObjectId>
+         <Size>100</Size>
+         <Damage>180</Damage>
+         <Speed>105</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>FR Boss Ball</ObjectId>
+         <Damage>130</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>2700</LifetimeMS>
+         <Size>80</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x202c" id="Partial Ice Floor">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x158</Index>
+      </Texture>
+      <DrawOnGround/>
+      <Static/>
+      <ProtectFromGroundDamage/>
+      <ProtectFromSink/>
+   </Object>
+</Objects>

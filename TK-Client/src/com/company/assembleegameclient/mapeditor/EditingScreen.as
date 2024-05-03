@@ -66,8 +66,9 @@ public class EditingScreen extends Sprite
          super();
          addChild(new ScreenBase());
          addChild(new AccountScreen());
-         this._search = new TextInputField("", false, "");
-         this._search.x = 525;
+         this._search = new TextInputField("", false, "", "Search");
+         this._search.x = 550;
+         this._search.y = 6;
          addChild(this._search);
          this.json = StaticInjectorContext.getInjector().getInstance(JsonParser);
          this.commandMenu_ = new MECommandMenu();

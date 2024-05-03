@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x0501" id="Treasure Chest">
+      <Class>Container</Class>
+      <Container/>
+      <CanPutNormalObjects/>
+      <Texture>
+         <File>lofiObj</File>
+         <Index>0x02</Index>
+      </Texture>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x0502" id="Gravestone">
+      <Class>Container</Class>
+      <Container/>
+      <ShowName/>
+      <CanPutNormalObjects/>
+      <Texture>
+         <File>lofiObj</File>
+         <Index>0x13</Index>
+      </Texture>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x0504" id="Vault Chest">
+      <Class>Container</Class>
+      <Container/>
+      <CanPutNormalObjects/>
+      <CanPutSoulboundObjects/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x0e</Index>
+      </Texture>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x0505" id="Closed Vault Chest">
+      <Class>ClosedVaultChest</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x0f</Index>
+      </Texture>
+   </Object>
+   <Object type="0x0744" id="Gift Chest">
+      <Class>OneWayContainer</Class>
+      <Container/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x7f</Index>
+      </Texture>
+      <Size>120</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x0743" id="Gift Chest Closed">
+      <Class>ClosedGiftChest</Class>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x7e</Index>
+      </Texture>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x141" id="Arena Reward Chest">
+      <Class>OneWayContainer</Class>
+      <Container/>
+      <Texture>
+         <File>lofiObj2</File>
+         <Index>0x7f</Index>
+      </Texture>
+      <Size>120</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x0503" id="Soulbound Loot Bag">
+      <Class>Container</Class>
+      <Container/>
+      <CanPutSoulboundObjects/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj4</File>
+         <Index>0xd2</Index>
+      </Texture>
+      <Size>80</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x0500" id="Loot Bag 0">
+      <Class>Container</Class>
+      <Container/>
+      <CanPutNormalObjects/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj4</File>
+         <Index>0xd0</Index>
+      </Texture>
+      <Size>80</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x0506" id="Loot Bag 1">
+      <DisplayId>Loot Bag</DisplayId>
+      <Class>Container</Class>
+      <Container/>
+      <CanPutNormalObjects/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj4</File>
+         <Index>0xd1</Index>
+      </Texture>
+      <Size>80</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x0507" id="Loot Bag 2">
+      <DisplayId>Loot Bag</DisplayId>
+      <Class>Container</Class>
+      <Container/>
+      <CanPutNormalObjects/>
+      <CanPutSoulboundObjects/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj4</File>
+         <Index>0xd2</Index>
+      </Texture>
+      <Size>80</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x0508" id="Loot Bag 3">
+      <DisplayId>Loot Bag</DisplayId>
+      <Class>Container</Class>
+      <Container/>
+      <CanPutNormalObjects/>
+      <CanPutSoulboundObjects/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj4</File>
+         <Index>0xd3</Index>
+      </Texture>
+      <Size>80</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x050E" id="Loot Bag 7">
+      <DisplayId>Loot Bag</DisplayId>
+      <Class>Container</Class>
+      <Container/>
+      <CanPutNormalObjects/>
+      <CanPutSoulboundObjects/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj4</File>
+         <Index>0xd4</Index>
+      </Texture>
+      <Size>80</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x0509" id="Loot Bag 4">
+      <DisplayId>Loot Bag</DisplayId>
+      <Class>Container</Class>
+      <Container/>
+      <CanPutNormalObjects/>
+      <CanPutSoulboundObjects/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj4</File>
+         <Index>0xd5</Index>
+      </Texture>
+      <Size>80</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x050B" id="Loot Bag 5">
+      <DisplayId>Loot Bag</DisplayId>
+      <Class>Container</Class>
+      <Container/>
+      <CanPutNormalObjects/>
+      <CanPutSoulboundObjects/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj4</File>
+         <Index>0xd6</Index>
+      </Texture>
+      <Size>80</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x50f" id="Loot Bag 8">
+      <DisplayId>Loot Bag</DisplayId>
+      <Class>Container</Class>
+      <Container/>
+      <CanPutNormalObjects/>
+      <CanPutSoulboundObjects/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj4</File>
+         <Index>0xd7</Index>
+      </Texture>
+      <Size>80</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x6ac" id="Loot Bag 9">
+      <DisplayId>Loot Bag</DisplayId>
+      <Class>Container</Class>
+      <Container/>
+      <CanPutNormalObjects/>
+      <CanPutSoulboundObjects/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj4</File>
+         <Index>0xd8</Index>
+      </Texture>
+      <Size>80</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x050C" id="Loot Bag 6">
+      <DisplayId>Loot Bag</DisplayId>
+      <Class>Container</Class>
+      <Container/>
+      <CanPutNormalObjects/>
+      <CanPutSoulboundObjects/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj4</File>
+         <Index>0xd9</Index>
+      </Texture>
+      <Size>80</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x6ad" id="Loot Bag 0 Boost">
+      <Class>Container</Class>
+      <Container/>
+      <CanPutNormalObjects/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj4</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Size>80</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x6ae" id="Loot Bag 1 Boost">
+      <DisplayId>Loot Bag</DisplayId>
+      <Class>Container</Class>
+      <Container/>
+      <CanPutNormalObjects/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj4</File>
+         <Index>0xe1</Index>
+      </Texture>
+      <Size>80</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x6ba" id="Loot Bag 2 Boost">
+      <DisplayId>Loot Bag</DisplayId>
+      <Class>Container</Class>
+      <Container/>
+      <CanPutNormalObjects/>
+      <CanPutSoulboundObjects/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj4</File>
+         <Index>0xe2</Index>
+      </Texture>
+      <Size>80</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x6bb" id="Loot Bag 3 Boost">
+      <DisplayId>Loot Bag</DisplayId>
+      <Class>Container</Class>
+      <Container/>
+      <CanPutNormalObjects/>
+      <CanPutSoulboundObjects/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj4</File>
+         <Index>0xe3</Index>
+      </Texture>
+      <Size>80</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x6bc" id="Loot Bag 7 Boost">
+      <DisplayId>Loot Bag</DisplayId>
+      <Class>Container</Class>
+      <Container/>
+      <CanPutNormalObjects/>
+      <CanPutSoulboundObjects/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj4</File>
+         <Index>0xe4</Index>
+      </Texture>
+      <Size>80</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x6bd" id="Loot Bag 4 Boost">
+      <DisplayId>Loot Bag</DisplayId>
+      <Class>Container</Class>
+      <Container/>
+      <CanPutNormalObjects/>
+      <CanPutSoulboundObjects/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj4</File>
+         <Index>0xe5</Index>
+      </Texture>
+      <Size>80</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x6be" id="Loot Bag 5 Boost">
+      <DisplayId>Loot Bag</DisplayId>
+      <Class>Container</Class>
+      <Container/>
+      <CanPutNormalObjects/>
+      <CanPutSoulboundObjects/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj4</File>
+         <Index>0xe6</Index>
+      </Texture>
+      <Size>80</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x6bf" id="Loot Bag 8 Boost">
+      <DisplayId>Loot Bag</DisplayId>
+      <Class>Container</Class>
+      <Container/>
+      <CanPutNormalObjects/>
+      <CanPutSoulboundObjects/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj4</File>
+         <Index>0xe7</Index>
+      </Texture>
+      <Size>80</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x6c0" id="Loot Bag 9 Boost">
+      <DisplayId>Loot Bag</DisplayId>
+      <Class>Container</Class>
+      <Container/>
+      <CanPutNormalObjects/>
+      <CanPutSoulboundObjects/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj4</File>
+         <Index>0xe8</Index>
+      </Texture>
+      <Size>80</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+   <Object type="0x0510" id="Loot Bag 6 Boost">
+      <DisplayId>Loot Bag</DisplayId>
+      <Class>Container</Class>
+      <Container/>
+      <CanPutNormalObjects/>
+      <CanPutSoulboundObjects/>
+      <Loot/>
+      <Texture>
+         <File>lofiObj4</File>
+         <Index>0xe9</Index>
+      </Texture>
+      <Size>80</Size>
+      <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+   </Object>
+</Objects>

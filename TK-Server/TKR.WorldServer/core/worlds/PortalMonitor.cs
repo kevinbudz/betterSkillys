@@ -22,26 +22,21 @@ namespace TKR.WorldServer.core.worlds
 
         private static readonly List<string> Names = new List<string>()
         {
-            "Meanem Empire",
-            "Aidisha Empire",
-            "Chasal Empire",
-            "Upiria Kingdom",
-            "Weaston Kingdom",
-            "Shikecaea Dynasty",
-            "Kreakimore Empire",
-            "Ecechourean Empire",
-            "Vrostudel Empire",
-            "Raesrerin Kingdom",
-            "Asoborg Kingdom",
-            "Ochaitia Dynasty",
-            "Purian Kingdom",
-            "Yuiria Empire",
-            "Exunao Dynasty",
-            "Yullaicia Dynasty",
-            "Poggisha Empire",
-            "Grukhanid Empire",
-            "Gaethibet Kingdom",
-            "Daphethen Dynasty"
+            "Lich", "Goblin", "Ghost",
+            "Giant", "Gorgon","Blob",
+            "Leviathan", "Unicorn", "Minotaur",
+            "Cube", "Pirate", "Spider",
+            "Snake", "Deathmage", "Gargoyle",
+            "Scorpion", "Djinn", "Phoenix",
+            "Satyr", "Drake", "Orc",
+            "Flayer", "Cyclops", "Sprite",
+            "Chimera", "Kraken", "Hydra",
+            "Slime", "Ogre", "Hobbit",
+            "Titan", "Medusa", "Golem",
+            "Demon", "Skeleton", "Mummy",
+            "Imp", "Bat", "Wyrm",
+            "Spectre", "Reaper", "Beholder",
+            "Dragon", "Harpy"
         };
 
         private static readonly List<string> Actives = new List<string>();

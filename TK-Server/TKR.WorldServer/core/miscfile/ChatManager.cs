@@ -34,15 +34,6 @@ namespace TKR.WorldServer.core.miscfile
                     client.Player.AnnouncementReceived(text, player.Name);
         }
 
-        public void AnnounceEternalLoot(string text)
-        {
-            if (string.IsNullOrWhiteSpace(text))
-                return;
-            foreach (var client in GameServer.ConnectionManager.Clients.Keys)
-                if (client.Player != null)
-                    client.Player.SendEternalNotif(text);
-        }
-
         public void AnnounceForger(string text)
         {
             if (string.IsNullOrWhiteSpace(text))
@@ -52,15 +43,6 @@ namespace TKR.WorldServer.core.miscfile
                     client.Player.ForgerNotif(text);
         }
 
-        public void AnnounceEngine(string text)
-        {
-            if (string.IsNullOrWhiteSpace(text))
-                return;
-            foreach (var client in GameServer.ConnectionManager.Clients.Keys)
-                if (client.Player != null)
-                    client.Player.EngineNotif(text);
-        }
-
         public void AnnounceLoot(string text)
         {
             if (string.IsNullOrWhiteSpace(text))
@@ -68,15 +50,6 @@ namespace TKR.WorldServer.core.miscfile
             foreach (var client in GameServer.ConnectionManager.Clients.Keys)
                 if (client.Player != null)
                     client.Player.SendLootNotif(text);
-        }
-
-        public void AnnounceMythicalLoot(string text)
-        {
-            if (string.IsNullOrWhiteSpace(text))
-                return;
-            foreach (var client in GameServer.ConnectionManager.Clients.Keys)
-                if (client.Player != null)
-                    client.Player.SendMythicalNotif(text);
         }
 
         public bool Guild(Player src, string text)

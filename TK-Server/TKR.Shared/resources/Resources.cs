@@ -14,7 +14,7 @@ namespace TKR.Shared.resources
         public AppSettings Settings { get; private set; } = new AppSettings();
         public Dictionary<string, byte[]> WebFiles { get; private set; } = new Dictionary<string, byte[]>();
 
-        public Resources(string resourcePath, bool wServer, bool exportXmls = false)
+        public Resources(string resourcePath, bool wServer, bool exportXmls = true)
         {
             Log.Info("Loading resources...");
             ResourcePath = Path.GetFullPath(resourcePath);

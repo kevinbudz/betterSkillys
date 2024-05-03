@@ -27,8 +27,7 @@ namespace TKR.WorldServer.core.worlds.impl
             var vaultChest = new DbVaultSingle(Client.Account, Client.Account.VaultCount - 1);
             var con = new Container(Client.GameServer, 0x0504, null, false, vaultChest)
             {
-                BagOwners = new int[] { Client.Account.AccountId },
-                Size = 65
+                BagOwners = new int[] { Client.Account.AccountId }
             };
             con.Inventory.SetItems(con.Inventory.ConvertTypeToItemArray(vaultChest.Items));
             con.Inventory.SetDataItems(vaultChest.ItemDatas);

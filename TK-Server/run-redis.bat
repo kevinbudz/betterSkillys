@@ -1,1 +1,0 @@
-docker run --network redis --name redis --expose 6379 -p 6380:6379 -d -it -v redis_volume:/data redis:alpine redis-server /data/redis.conf

@@ -2,7 +2,9 @@ package com.company.assembleegameclient.screens.charrects
 {
    import com.company.assembleegameclient.appengine.CharacterStats;
    import com.company.assembleegameclient.appengine.SavedCharacter;
-   import flash.display.Bitmap;
+import com.company.assembleegameclient.parameters.Parameters;
+
+import flash.display.Bitmap;
    import flash.display.BitmapData;
    import flash.display.DisplayObject;
    import flash.display.Sprite;
@@ -75,7 +77,7 @@ package com.company.assembleegameclient.screens.charrects
       {
          var type:CharacterClass = this.classes.getCharacterClass(savedChar.objectType());
          var skin:CharacterSkin = type.skins.getSkin(savedChar.skinType()) || type.skins.getDefaultSkin();
-         var data:BitmapData = this.assetFactory.makeIcon(skin.template,100,savedChar.tex1(),savedChar.tex2());
+         var data:BitmapData = this.assetFactory.makeIcon(skin.template,skin.is16x16 ? 50 : 100,savedChar.tex1(),savedChar.tex2());
          return new Bitmap(data);
       }
       

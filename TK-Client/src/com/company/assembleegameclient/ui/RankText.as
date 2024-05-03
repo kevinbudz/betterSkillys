@@ -57,7 +57,7 @@ package com.company.assembleegameclient.ui
          text.text = this.numStars_.toString();
          text.updateMetrics();
          text.filters = [new DropShadowFilter(0,0,0,1,4,4,2)];
-         text.y = 2;
+         text.y = 1;
          this.sprite_.addChild(text);
          icon = !!this.largeText_?FameUtil.numStarsToBigImage(this.numStars_):FameUtil.numStarsToImage(this.numStars_);
          icon.x = text.width + 2;

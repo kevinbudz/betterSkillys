@@ -66,19 +66,19 @@ namespace TKR.WorldServer.core.objects
                     case 2:
                         {
                             Legendary = true;
-                            GlowEnemy = 0xFFFFFF;
+                            GlowEnemy = 0xD865A5;
                         }
                         break;
                     case 1:
                         {
                             Epic = true;
-                            GlowEnemy = 0x4B0082;
+                            GlowEnemy = 0xC183AF;
                         }
                         break;
                     case 0:
                         {
                             Rare = true;
-                            GlowEnemy = 0xEAC117;
+                            GlowEnemy = 0x82D9BC;
                         }
                         break;
                 }
@@ -174,6 +174,7 @@ namespace TKR.WorldServer.core.objects
             return 0;
         }
 
+        public event EventHandler<BehaviorEventArgs> OnDeath;
         public void Death(ref TickTime time)
         {
             if (!Dead)

@@ -41,7 +41,7 @@ package com.company.assembleegameclient.ui.menu
             this.teleportOption_.y = 8;
             this.teleportOption_.addEventListener(MouseEvent.CLICK,this.onTeleport);
             addChild(this.teleportOption_);
-            this.lineBreakDesign_ = new LineBreakDesign(width - 24,1842204);
+            this.lineBreakDesign_ = new LineBreakDesign(width - 24,0x151515);
             this.lineBreakDesign_.x = 6;
             this.lineBreakDesign_.y = 40;
             addChild(this.lineBreakDesign_);

@@ -107,7 +107,7 @@ public class MyPlayerToolTip extends ToolTip
             _loc3_ = Number(_loc3_ + 92);
          }
          _loc3_ = Number(_loc3_ + 8);
-         this.lineBreak_ = new LineBreakDesign(175,1842204);
+         this.lineBreak_ = new LineBreakDesign(175,0x151515);
          this.lineBreak_.x = 7;
          this.lineBreak_.y = _loc3_ - 7;
          addChild(this.lineBreak_);

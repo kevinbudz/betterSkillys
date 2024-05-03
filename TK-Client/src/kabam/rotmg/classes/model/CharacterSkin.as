@@ -12,6 +12,7 @@ package kabam.rotmg.classes.model
       public var unlockLevel:int;
       public var template:CharacterTemplate;
       public var cost:int;
+      public var is16x16:Boolean = false;
       private var state:CharacterSkinState;
       private var isSelected:Boolean;
       

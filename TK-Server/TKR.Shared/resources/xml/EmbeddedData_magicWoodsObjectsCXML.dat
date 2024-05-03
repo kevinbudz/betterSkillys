@@ -1,0 +1,2079 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x887" id="Lesser Gray Fairy Magic">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x17</Index>
+      </Texture>
+      <Rotation>-180</Rotation>
+   </Object>
+   <Object type="0x888" id="Standard Gray Fairy Magic">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x16</Index>
+      </Texture>
+      <Rotation>-180</Rotation>
+   </Object>
+   <Object type="0x889" id="Greater Gray Fairy Magic">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x15</Index>
+      </Texture>
+      <Rotation>-180</Rotation>
+   </Object>
+   <Object type="0x88a" id="Bright Green Fairy Boomerang">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x18</Index>
+      </Texture>
+      <Rotation>50</Rotation>
+   </Object>
+   <Object type="0x88b" id="Dark Green Fairy Boomerang">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x19</Index>
+      </Texture>
+      <Rotation>50</Rotation>
+   </Object>
+   <Object type="0x88c" id="Lesser Red Fairy Spear">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x1c</Index>
+      </Texture>
+   </Object>
+   <Object type="0x88d" id="Standard Red Fairy Spear">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x1b</Index>
+      </Texture>
+   </Object>
+   <Object type="0x88e" id="Greater Red Fairy Spear">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x1a</Index>
+      </Texture>
+   </Object>
+   <Object type="0x820" id="Orange Fairy Breath">
+      <Class>Projectile</Class>
+      <RandomTexture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x3b</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x3c</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x3d</Index>
+         </Texture>
+      </RandomTexture>
+      <AngleCorrection>1</AngleCorrection>
+      <Rotation>70</Rotation>
+   </Object>
+   <Object type="0x88f" id="Brown Fairy Wave">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x1d</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x84f" id="Sky Blue Fairy Boomerang">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x1e</Index>
+      </Texture>
+      <Rotation>50</Rotation>
+   </Object>
+   <Object type="0x84e" id="Dark Purple Fairy Spike">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x20</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x84d" id="Dark Magenta Fairy Wave">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x23</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x84c" id="Pink Fairy Blade">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x24</Index>
+      </Texture>
+   </Object>
+   <Object type="0x84b" id="Bright Purple Fairy Pellet">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x25</Index>
+      </Texture>
+   </Object>
+   <Object type="0x84a" id="Bright Purple Fairy Blast">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x26</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x849" id="Bright Purple Fairy Mystical">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x27</Index>
+      </Texture>
+   </Object>
+   <Object type="0x848" id="Cyan Fairy Bolt">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x28</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x847" id="Cyan Fairy Spike">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x29</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x846" id="Cyan Fairy Magic">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x2a</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x845" id="Seafoam Green Fairy Shockwave">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x2b</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x844" id="Seafoam Green Fairy Blast">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x2c</Index>
+      </Texture>
+   </Object>
+   <Object type="0x843" id="Faint Pink Fairy Star">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x2d</Index>
+      </Texture>
+      <Rotation>60</Rotation>
+   </Object>
+   <Object type="0x842" id="Faint Pink Fairy Hallucinogenic Star">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x2e</Index>
+      </Texture>
+      <Rotation>60</Rotation>
+   </Object>
+   <Object type="0x82e" id="Cyan Fairy Spinner">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x37</Index>
+      </Texture>
+      <Rotation>50</Rotation>
+   </Object>
+   <Object type="0x82c" id="Cyan Fairy Mystical">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x38</Index>
+      </Texture>
+   </Object>
+   <Object type="0x82b" id="Cyan Fairy Wave">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x39</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x82a" id="Cyan Fairy Boomerang">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x3a</Index>
+      </Texture>
+      <Rotation>50</Rotation>
+   </Object>
+   <Object type="0x829" id="Cyan Fairy Blast">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x42</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x87c" id="Magic Woods Portal">
+      <DisplayId>Magic Woods</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>Magic Woods</DungeonName>
+      <Texture>
+         <File>magicWoodsObjects8x8</File>
+         <Index>0x35</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x528" id="MW Cowardice Portal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object id="MW Gharr" type="0x850">
+      <DisplayId>Gharr</DisplayId>
+      <Group>Lesser Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>100</Size>
+      <Z>0.3</Z>
+      <Flying/>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Defense>5</Defense>
+      <Projectile id="0">
+         <ObjectId>Lesser Gray Fairy Magic</ObjectId>
+         <Damage>45</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object id="MW Tiar" type="0x851">
+      <DisplayId>Tiar</DisplayId>
+      <Group>Standard Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>115</Size>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>10</Defense>
+      <Projectile id="0">
+         <ObjectId>Standard Gray Fairy Magic</ObjectId>
+         <Damage>75</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>800</LifetimeMS>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object id="MW Itani" type="0x852">
+      <DisplayId>Itani</DisplayId>
+      <Group>Greater Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>130</Size>
+      <Z>0.1</Z>
+      <Flying/>
+      <MaxHitPoints>600</MaxHitPoints>
+      <Defense>15</Defense>
+      <Projectile id="0">
+         <ObjectId>Greater Gray Fairy Magic</ObjectId>
+         <Damage>105</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <ArmorPiercing/>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object id="MW Iatho" type="0x853">
+      <DisplayId>Iatho</DisplayId>
+      <Group>Lesser Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>100</Size>
+      <Z>0.3</Z>
+      <Flying/>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Defense>5</Defense>
+   </Object>
+   <Object id="MW SayIt" type="0x854">
+      <DisplayId>SayIt</DisplayId>
+      <Group>Standard Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>115</Size>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>450</MaxHitPoints>
+      <Defense>8</Defense>
+   </Object>
+   <Object id="MW Eendi" type="0x855">
+      <DisplayId>Eendi</DisplayId>
+      <Group>Greater Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars16x16</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>130</Size>
+      <Z>0.1</Z>
+      <Flying/>
+      <MaxHitPoints>650</MaxHitPoints>
+      <Defense>10</Defense>
+   </Object>
+   <Object id="MW Ril" type="0x856">
+      <DisplayId>Ril</DisplayId>
+      <Group>Lesser Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>100</Size>
+      <Z>0.3</Z>
+      <Flying/>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Defense>1</Defense>
+      <Projectile id="0">
+         <ObjectId>Bright Green Fairy Boomerang</ObjectId>
+         <Damage>60</Damage>
+         <Speed>50</Speed>
+         <Size>80</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <Boomerang/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Dark Green Fairy Boomerang</ObjectId>
+         <Damage>40</Damage>
+         <Speed>50</Speed>
+         <Size>70</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <PassesCover/>
+         <Boomerang/>
+      </Projectile>
+   </Object>
+   <Object id="MW Laen" type="0x857">
+      <DisplayId>Laen</DisplayId>
+      <Group>Standard Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>5</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>115</Size>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Defense>2</Defense>
+      <Projectile id="0">
+         <ObjectId>Bright Green Fairy Boomerang</ObjectId>
+         <Damage>75</Damage>
+         <Speed>40</Speed>
+         <Size>90</Size>
+         <LifetimeMS>3200</LifetimeMS>
+         <Boomerang/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Dark Green Fairy Boomerang</ObjectId>
+         <Damage>55</Damage>
+         <Speed>55</Speed>
+         <Size>80</Size>
+         <LifetimeMS>3800</LifetimeMS>
+         <PassesCover/>
+         <Boomerang/>
+      </Projectile>
+   </Object>
+   <Object id="MW Oeti" type="0x858">
+      <DisplayId>Oeti</DisplayId>
+      <Group>Greater Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars16x16</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>130</Size>
+      <Z>0.1</Z>
+      <Flying/>
+      <MaxHitPoints>700</MaxHitPoints>
+      <Defense>3</Defense>
+      <Projectile id="0">
+         <ObjectId>Bright Green Fairy Boomerang</ObjectId>
+         <Damage>90</Damage>
+         <Speed>40</Speed>
+         <Size>100</Size>
+         <LifetimeMS>3300</LifetimeMS>
+         <Boomerang/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Dark Green Fairy Boomerang</ObjectId>
+         <Damage>70</Damage>
+         <Speed>50</Speed>
+         <Size>90</Size>
+         <LifetimeMS>3900</LifetimeMS>
+         <PassesCover/>
+         <Boomerang/>
+      </Projectile>
+   </Object>
+   <Object id="MW Tal" type="0x859">
+      <DisplayId>Tal</DisplayId>
+      <Group>Unspawned Lesser Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>6</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>100</Size>
+      <Z>0.3</Z>
+      <Flying/>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Defense>2</Defense>
+   </Object>
+   <Object id="MW Vorck" type="0x85a">
+      <DisplayId>Vorck</DisplayId>
+      <Group>Unspawned Standard Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>7</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>115</Size>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Defense>4</Defense>
+   </Object>
+   <Object id="MW Iri" type="0x85b">
+      <DisplayId>Iri</DisplayId>
+      <Group>Unspawned Greater Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars16x16</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>130</Size>
+      <Z>0.1</Z>
+      <Flying/>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>6</Defense>
+   </Object>
+   <Object id="MW Zhiar" type="0x85c">
+      <DisplayId>Zhair</DisplayId>
+      <Group>Lesser Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>8</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>100</Size>
+      <Z>0.3</Z>
+      <Flying/>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Defense>0</Defense>
+      <Projectile id="0">
+         <ObjectId>Lesser Red Fairy Spear</ObjectId>
+         <Damage>50</Damage>
+         <Speed>95</Speed>
+         <LifetimeMS>700</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+   </Object>
+   <Object id="MW Rilr" type="0x85d">
+      <DisplayId>Rilr</DisplayId>
+      <Group>Standard Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>9</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>115</Size>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Defense>0</Defense>
+      <Projectile id="0">
+         <ObjectId>Standard Red Fairy Spear</ObjectId>
+         <Damage>60</Damage>
+         <Speed>85</Speed>
+         <LifetimeMS>750</LifetimeMS>
+         <Size>95</Size>
+      </Projectile>
+   </Object>
+   <Object id="MW Queq" type="0x85e">
+      <DisplayId>Queq</DisplayId>
+      <Group>Greater Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars16x16</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>130</Size>
+      <Z>0.1</Z>
+      <Flying/>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Defense>0</Defense>
+      <Projectile id="0">
+         <ObjectId>Greater Red Fairy Spear</ObjectId>
+         <Damage>70</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>800</LifetimeMS>
+         <Size>90</Size>
+      </Projectile>
+   </Object>
+   <Object id="MW Radph" type="0x85f">
+      <DisplayId>Radph</DisplayId>
+      <Group>Unspawned Lesser Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>10</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>100</Size>
+      <Z>0.3</Z>
+      <Flying/>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Defense>10</Defense>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>30</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>100</LifetimeMS>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object id="MW Eango" type="0x860">
+      <DisplayId>Eango</DisplayId>
+      <Group>Unspawned Standard Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>11</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>115</Size>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>60</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>100</LifetimeMS>
+         <ConditionEffect duration="2">Confused</ConditionEffect>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object id="MW Vorv" type="0x861">
+      <DisplayId>Vorv</DisplayId>
+      <Group>Unspawned Greater Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars16x16</File>
+         <Index>5</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>130</Size>
+      <Z>0.1</Z>
+      <Flying/>
+      <MaxHitPoints>700</MaxHitPoints>
+      <Defense>20</Defense>
+      <Projectile id="0">
+         <ObjectId>Orange Fairy Breath</ObjectId>
+         <Damage>60</Damage>
+         <Speed>45</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Orange Fairy Breath</ObjectId>
+         <Damage>60</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>110</Size>
+      </Projectile>
+   </Object>
+   <Object id="MW Orothi" type="0x862">
+      <DisplayId>Orothi</DisplayId>
+      <Group>Lesser Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>12</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>100</Size>
+      <Z>0.3</Z>
+      <Flying/>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Defense>3</Defense>
+      <Projectile id="0">
+         <ObjectId>Brown Fairy Wave</ObjectId>
+         <Damage>30</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>500</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object id="MW Risrr" type="0x863">
+      <DisplayId>Risrr</DisplayId>
+      <Group>Standard Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>13</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>115</Size>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>450</MaxHitPoints>
+      <Defense>6</Defense>
+      <Projectile id="0">
+         <ObjectId>Brown Fairy Wave</ObjectId>
+         <Damage>50</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>700</LifetimeMS>
+         <Size>125</Size>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object id="MW Rayr" type="0x864">
+      <DisplayId>Rayr</DisplayId>
+      <Group>Greater Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars16x16</File>
+         <Index>6</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>130</Size>
+      <Z>0.1</Z>
+      <Flying/>
+      <MaxHitPoints>700</MaxHitPoints>
+      <Defense>9</Defense>
+      <Projectile id="0">
+         <ObjectId>Brown Fairy Wave</ObjectId>
+         <Damage>70</Damage>
+         <Speed>30</Speed>
+         <LifetimeMS>900</LifetimeMS>
+         <Size>150</Size>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object id="MW Uoro" type="0x865">
+      <DisplayId>Uoro</DisplayId>
+      <Group>Lesser Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>14</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>100</Size>
+      <Z>0.3</Z>
+      <Flying/>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Defense>4</Defense>
+      <Projectile id="0">
+         <ObjectId>Sky Blue Fairy Boomerang</ObjectId>
+         <Damage>70</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>1300</LifetimeMS>
+         <Size>90</Size>
+         <Boomerang/>
+      </Projectile>
+   </Object>
+   <Object id="MW Ehoni" type="0x866">
+      <DisplayId>Ehoni</DisplayId>
+      <Group>Standard Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>15</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>115</Size>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Defense>8</Defense>
+      <Projectile id="0">
+         <ObjectId>Sky Blue Fairy Boomerang</ObjectId>
+         <Damage>80</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>1450</LifetimeMS>
+         <Size>100</Size>
+         <Boomerang/>
+      </Projectile>
+   </Object>
+   <Object id="MW Darq" type="0x867">
+      <DisplayId>Darq</DisplayId>
+      <Group>Greater Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars16x16</File>
+         <Index>7</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>130</Size>
+      <Z>0.1</Z>
+      <Flying/>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>12</Defense>
+      <Projectile id="0">
+         <ObjectId>Sky Blue Fairy Boomerang</ObjectId>
+         <Damage>90</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>1600</LifetimeMS>
+         <Size>110</Size>
+         <Boomerang/>
+      </Projectile>
+   </Object>
+   <Object id="MW Drac" type="0x868">
+      <DisplayId>Drac</DisplayId>
+      <Group>Lesser Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>16</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>100</Size>
+      <Z>0.3</Z>
+      <Flying/>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Defense>10</Defense>
+      <Projectile id="0">
+         <ObjectId>Dark Purple Fairy Spike</ObjectId>
+         <Damage>45</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>350</LifetimeMS>
+         <Size>90</Size>
+         <ConditionEffect duration="1">Quiet</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object id="MW Odaru" type="0x869">
+      <DisplayId>Odaru</DisplayId>
+      <Group>Standard Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>17</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>115</Size>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>450</MaxHitPoints>
+      <Defense>15</Defense>
+      <Projectile id="0">
+         <ObjectId>Dark Purple Fairy Spike</ObjectId>
+         <Damage>60</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>550</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="2">Quiet</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object id="MW Idrae" type="0x86a">
+      <DisplayId>Idrae</DisplayId>
+      <Group>Greater Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars16x16</File>
+         <Index>8</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>130</Size>
+      <Z>0.1</Z>
+      <Flying/>
+      <MaxHitPoints>550</MaxHitPoints>
+      <Defense>20</Defense>
+      <Projectile id="0">
+         <ObjectId>Dark Purple Fairy Spike</ObjectId>
+         <Damage>90</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>750</LifetimeMS>
+         <Size>110</Size>
+         <ConditionEffect duration="3">Quiet</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object id="MW Issz" type="0x86b">
+      <DisplayId>Issz</DisplayId>
+      <Group>Unspawned Lesser Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>18</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>100</Size>
+      <Z>0.3</Z>
+      <Flying/>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Defense>35</Defense>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>40</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>100</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object id="MW Deyst" type="0x86c">
+      <DisplayId>Deyst</DisplayId>
+      <Group>Unspawned Standard Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>19</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>115</Size>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Defense>25</Defense>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>75</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>100</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object id="MW Utanu" type="0x86d">
+      <DisplayId>Utanu</DisplayId>
+      <Group>Unspawned Greater Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars16x16</File>
+         <Index>9</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>130</Size>
+      <Z>0.1</Z>
+      <Flying/>
+      <MaxHitPoints>700</MaxHitPoints>
+      <Defense>15</Defense>
+      <Projectile id="0">
+         <ObjectId>Dark Magenta Fairy Wave</ObjectId>
+         <Damage>120</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>500</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object id="MW Lauk" type="0x86e">
+      <DisplayId>Lauk</DisplayId>
+      <Group>Unspawned Lesser Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>20</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>100</Size>
+      <Z>0.3</Z>
+      <Flying/>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Defense>0</Defense>
+      <Projectile id="0">
+         <ObjectId>Pink Fairy Blade</ObjectId>
+         <Damage>45</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>650</LifetimeMS>
+         <Size>80</Size>
+         <ConditionEffect duration="0.6">Dazed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object id="MW Yangu" type="0x86f">
+      <DisplayId>Yangu</DisplayId>
+      <Group>Unspawned Standard Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>21</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>115</Size>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>3</Defense>
+      <Projectile id="0">
+         <ObjectId>Pink Fairy Blade</ObjectId>
+         <Damage>75</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>900</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="1.6">Dazed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object id="MW Urake" type="0x870">
+      <DisplayId>Urake</DisplayId>
+      <Group>Unspawned Greater Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars16x16</File>
+         <Index>10</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>130</Size>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Defense>7</Defense>
+      <Projectile id="0">
+         <ObjectId>Pink Fairy Blade</ObjectId>
+         <Damage>135</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>120</Size>
+         <ConditionEffect duration="2.2">Stunned</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object id="MW Seus" type="0x871">
+      <DisplayId>Seus</DisplayId>
+      <Group>Lesser Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>22</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>100</Size>
+      <Z>0.3</Z>
+      <Flying/>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>8</Defense>
+      <Projectile id="0">
+         <ObjectId>Bright Purple Fairy Pellet</ObjectId>
+         <Damage>75</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>750</LifetimeMS>
+         <Size>110</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Bright Purple Fairy Pellet</ObjectId>
+         <Damage>70</Damage>
+         <Speed>120</Speed>
+         <LifetimeMS>300</LifetimeMS>
+         <Size>110</Size>
+      </Projectile>
+   </Object>
+   <Object id="MW Yimi" type="0x872">
+      <DisplayId>Yimi</DisplayId>
+      <Group>Standard Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>23</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>115</Size>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Defense>4</Defense>
+      <Projectile id="0">
+         <ObjectId>Bright Purple Fairy Blast</ObjectId>
+         <Damage>90</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Amplitude>0.5</Amplitude>
+         <Frequency>2</Frequency>
+         <Size>70</Size>
+         <FaceDir/>
+      </Projectile>
+   </Object>
+   <Object id="MW Oalei" type="0x873">
+      <DisplayId>Oalei</DisplayId>
+      <Group>Unspawned Greater Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars16x16</File>
+         <Index>11</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>130</Size>
+      <Z>0.1</Z>
+      <Flying/>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Defense>10</Defense>
+      <Projectile id="0">
+         <ObjectId>Bright Purple Fairy Mystical</ObjectId>
+         <Damage>155</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>10000</LifetimeMS>
+         <Magnitude>4</Magnitude>
+         <PassesCover/>
+         <Parametric/>
+      </Projectile>
+   </Object>
+   <Object id="MW Serl" type="0x874">
+      <DisplayId>Serl</DisplayId>
+      <Group>Lesser Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>24</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>100</Size>
+      <Z>0.3</Z>
+      <Flying/>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Defense>1</Defense>
+      <Projectile id="0">
+         <ObjectId>Cyan Fairy Bolt</ObjectId>
+         <Damage>75</Damage>
+         <Speed>100</Speed>
+         <LifetimeMS>600</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object id="MW Scheev" type="0x875">
+      <DisplayId>Scheev</DisplayId>
+      <Group>Standard Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>25</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>115</Size>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Defense>8</Defense>
+      <Projectile id="0">
+         <ObjectId>Cyan Fairy Spike</ObjectId>
+         <Damage>90</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>800</LifetimeMS>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object id="MW Oshyu" type="0x876">
+      <DisplayId>Oshyu</DisplayId>
+      <Group>Greater Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars16x16</File>
+         <Index>12</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>130</Size>
+      <Z>0.1</Z>
+      <Flying/>
+      <MaxHitPoints>550</MaxHitPoints>
+      <Defense>9</Defense>
+      <Projectile id="0">
+         <ObjectId>Cyan Fairy Magic</ObjectId>
+         <Damage>80</Damage>
+         <Speed>85</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="3">Weak</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object id="MW Sek" type="0x877">
+      <DisplayId>Sek</DisplayId>
+      <Group>Lesser Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>26</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>100</Size>
+      <Z>0.3</Z>
+      <Flying/>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Defense>0</Defense>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>15</Damage>
+         <Speed>0</Speed>
+         <LifetimeMS>100</LifetimeMS>
+         <ConditionEffect duration="1.6">Slowed</ConditionEffect>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object id="MW Iawa" type="0x878">
+      <DisplayId>Iawa</DisplayId>
+      <Group>Standard Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>27</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>115</Size>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Defense>2</Defense>
+      <Projectile id="0">
+         <ObjectId>Seafoam Green Fairy Shockwave</ObjectId>
+         <Damage>90</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object id="MW Eashy" type="0x879">
+      <DisplayId>Eashy</DisplayId>
+      <Group>Unspawned Greater Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars16x16</File>
+         <Index>13</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>130</Size>
+      <Z>0.1</Z>
+      <Flying/>
+      <MaxHitPoints>700</MaxHitPoints>
+      <Defense>4</Defense>
+      <Projectile id="0">
+         <ObjectId>Seafoam Green Fairy Blast</ObjectId>
+         <Damage>135</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1350</LifetimeMS>
+         <Size>130</Size>
+         <ConditionEffect duration="1">Blind</ConditionEffect>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object id="MW Lorz" type="0x87a">
+      <DisplayId>Lorz</DisplayId>
+      <Group>Lesser Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>28</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>100</Size>
+      <Z>0.3</Z>
+      <Flying/>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Defense>10</Defense>
+      <Projectile id="0">
+         <ObjectId>Faint Pink Fairy Star</ObjectId>
+         <Damage>105</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>1300</LifetimeMS>
+         <Size>120</Size>
+      </Projectile>
+   </Object>
+   <Object id="MW Eati" type="0x87b">
+      <DisplayId>Eati</DisplayId>
+      <Group>Standard Fairies</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars8x8</File>
+         <Index>29</Index>
+      </AnimatedTexture>
+      <HitSound>monster/sprites_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <Size>115</Size>
+      <Z>0.2</Z>
+      <Flying/>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Defense>20</Defense>
+      <Projectile id="0">
+         <ObjectId>Faint Pink Fairy Hallucinogenic Star</ObjectId>
+         <Damage>50</Damage>
+         <Speed>90</Speed>
+         <LifetimeMS>800</LifetimeMS>
+         <Amplitude>2</Amplitude>
+         <Frequency>0.5</Frequency>
+         <Size>90</Size>
+         <PassesCover/>
+         <ConditionEffect duration="3">Hallucinating</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Faint Pink Fairy Hallucinogenic Star</ObjectId>
+         <Damage>60</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>800</LifetimeMS>
+         <Amplitude>4</Amplitude>
+         <Frequency>0.5</Frequency>
+         <Size>100</Size>
+         <PassesCover/>
+         <ConditionEffect duration="4">Hallucinating</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object id="MW Utanu Order" type="0x886">
+      <DisplayId>Utanu Order</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object id="MW End Portal Generator" type="0x82d">
+      <DisplayId>End Portal Generator</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object id="MW Boss Spawner" type="0x82f">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars16x16</File>
+         <Index>15</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object id="MW Fountain Spirit" type="0x830">
+      <DisplayId>Fountain Spirit</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>magicWoodsChars16x16</File>
+         <Index>16</Index>
+      </AnimatedTexture>
+      <Portrait>
+         <AnimatedTexture>
+            <File>magicWoodsChars16x16</File>
+            <Index>16</Index>
+         </AnimatedTexture>
+      </Portrait>
+      <HitSound>monster/sprite_god_hit</HitSound>
+      <DeathSound>monster/sprite_god_death</DeathSound>
+      <Size>1</Size>
+      <Z>0.1</Z>
+      <Flying/>
+      <MaxHitPoints>15000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>1500</Exp>
+      <Quest/>
+      <HealthBarBoss/>
+      <God/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <EventChestBoss/>
+      <TrackLoot/>
+      <Sound id="0">monster/wooden_walls_death</Sound>
+      <Projectile id="0">
+         <ObjectId>Cyan Fairy Magic</ObjectId>
+         <Damage>130</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2900</LifetimeMS>
+         <Size>200</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Cyan Fairy Spike</ObjectId>
+         <Damage>80</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>2800</LifetimeMS>
+         <Size>120</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Cyan Fairy Bolt</ObjectId>
+         <Damage>50</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>3500</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Cyan Fairy Spinner</ObjectId>
+         <Damage>0</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Size>90</Size>
+         <ConditionEffect duration="3">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>Cyan Fairy Mystical</ObjectId>
+         <Damage>105</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>10000</LifetimeMS>
+         <Magnitude>3</Magnitude>
+         <PassesCover/>
+         <Parametric/>
+         <FaceDir/>
+         <Size>90</Size>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>Cyan Fairy Mystical</ObjectId>
+         <Damage>105</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>10000</LifetimeMS>
+         <Magnitude>6</Magnitude>
+         <PassesCover/>
+         <Parametric/>
+         <FaceDir/>
+         <Size>90</Size>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>Cyan Fairy Mystical</ObjectId>
+         <Damage>105</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>10000</LifetimeMS>
+         <Magnitude>9</Magnitude>
+         <PassesCover/>
+         <Parametric/>
+         <FaceDir/>
+         <Size>90</Size>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>Cyan Fairy Blast</ObjectId>
+         <Damage>55</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Amplitude>5</Amplitude>
+         <Frequency>0.95</Frequency>
+         <Size>120</Size>
+         <FaceDir/>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>Cyan Fairy Boomerang</ObjectId>
+         <Damage>60</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <Amplitude>0.25</Amplitude>
+         <Frequency>7</Frequency>
+         <ConditionEffect duration="1">Confused</ConditionEffect>
+         <Size>100</Size>
+         <MultiHit/>
+         <Boomerang/>
+      </Projectile>
+      <Projectile id="9">
+         <ObjectId>Cyan Fairy Wave</ObjectId>
+         <Damage>75</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>800</LifetimeMS>
+         <Size>130</Size>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="10">
+         <ObjectId>Cyan Fairy Spike</ObjectId>
+         <Damage>65</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>2800</LifetimeMS>
+         <Size>100</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x2233" id="MW Blessing">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0x94</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x87e" id="Magic Woods Tree">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>magicWoodsObjects16x16</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects16x16</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects16x16</File>
+            <Index>0x02</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <Color>0x2CB242</Color>
+   </Object>
+   <Object type="0x87f" id="Magic Woods Bush Solid">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x02</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <Color>0x227B40</Color>
+   </Object>
+   <Object type="0x880" id="Magic Woods Flower Solid">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x03</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x04</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <Color>0x2CB242</Color>
+   </Object>
+   <Object type="0x881" id="Magic Woods Stone Solid">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x05</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x06</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x07</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x08</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x09</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x0a</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <Color>0x227B40</Color>
+   </Object>
+   <Object type="0x882" id="Magic Woods Lily Pad">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x10</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x11</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x12</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x13</Index>
+         </Texture>
+      </RandomTexture>
+      <DrawOnGround/>
+      <Static/>
+   </Object>
+   <Object type="0x883" id="Magic Woods Decor">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x02</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x03</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x04</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x05</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x06</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x07</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x08</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x09</Index>
+         </Texture>
+         <Texture>
+            <File>magicWoodsObjects8x8</File>
+            <Index>0x0a</Index>
+         </Texture>
+      </RandomTexture>
+      <Size>85</Size>
+      <Static/>
+   </Object>
+   <Object type="0x83b" id="MW Small Fountain">
+      <Class>GameObject</Class>
+      <Model>CloningVat</Model>
+      <Texture>
+         <File>autumnNexusObjects16x16</File>
+         <Index>0x50</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x50</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x51</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x52</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x53</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x83a" id="MW Big Fountain Top">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>autumnNexusObjects16x16</File>
+         <Index>0x47</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x47</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x48</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x49</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x4a</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x839" id="MW Fountain Inner Top Left">
+      <Class>GameObject</Class>
+      <Model>CloningVat</Model>
+      <Texture>
+         <File>autumnNexusObjects16x16</File>
+         <Index>0x54</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x54</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x55</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x56</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x57</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x838" id="MW Fountain Inner Top">
+      <Class>GameObject</Class>
+      <Model>CloningVat</Model>
+      <Texture>
+         <File>autumnNexusObjects16x16</File>
+         <Index>0x58</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x58</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x59</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x5a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x5b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x837" id="MW Fountain Inner Top Right">
+      <Class>GameObject</Class>
+      <Model>CloningVat</Model>
+      <Texture>
+         <File>autumnNexusObjects16x16</File>
+         <Index>0x5c</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x5c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x5d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x5e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x5f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x836" id="MW Fountain Inner Right">
+      <Class>GameObject</Class>
+      <Model>CloningVat</Model>
+      <Texture>
+         <File>autumnNexusObjects16x16</File>
+         <Index>0x64</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x64</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x65</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x66</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x67</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x835" id="MW Fountain Inner Bottom Right">
+      <Class>GameObject</Class>
+      <Model>CloningVat</Model>
+      <Texture>
+         <File>autumnNexusObjects16x16</File>
+         <Index>0x70</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x70</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x71</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x72</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x73</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x834" id="MW Fountain Inner Bottom">
+      <Class>GameObject</Class>
+      <Model>CloningVat</Model>
+      <Texture>
+         <File>autumnNexusObjects16x16</File>
+         <Index>0x6c</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x6c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x6d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x6e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x6f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x833" id="MW Fountain Inner Bottom Left">
+      <Class>GameObject</Class>
+      <Model>CloningVat</Model>
+      <Texture>
+         <File>autumnNexusObjects16x16</File>
+         <Index>0x68</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x68</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x69</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x6a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x6b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x832" id="MW Fountain Inner Left">
+      <Class>GameObject</Class>
+      <Model>CloningVat</Model>
+      <Texture>
+         <File>autumnNexusObjects16x16</File>
+         <Index>0x60</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x60</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x61</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x62</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>autumnNexusObjects16x16</File>
+               <Index>0x63</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x831" id="MW Stone Pillar">
+      <Class>ConnectedWall</Class>
+      <Texture>
+         <File>autumnNexusObjects16x16</File>
+         <Index>0x4b</Index>
+      </Texture>
+      <DotTexture>
+         <File>autumnNexusObjects16x16</File>
+         <Index>0x4c</Index>
+      </DotTexture>
+      <ShortLineTexture>
+         <File>autumnNexusObjects16x16</File>
+         <Index>0x4c</Index>
+      </ShortLineTexture>
+      <LTexture>
+         <File>autumnNexusObjects16x16</File>
+         <Index>0x4c</Index>
+      </LTexture>
+      <LineTexture>
+         <File>autumnNexusObjects16x16</File>
+         <Index>0x4c</Index>
+      </LineTexture>
+      <TTexture>
+         <File>autumnNexusObjects16x16</File>
+         <Index>0x4c</Index>
+      </TTexture>
+      <CrossTexture>
+         <File>autumnNexusObjects16x16</File>
+         <Index>0x4c</Index>
+      </CrossTexture>
+      <BaseIndent>0.3</BaseIndent>
+      <TopIndent>0.3</TopIndent>
+      <Height>0.5</Height>
+      <Static/>
+      <OccupySquare/>
+      <Connects/>
+      <NoWallTextureRepeat/>
+   </Object>
+</Objects>

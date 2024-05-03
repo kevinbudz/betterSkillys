@@ -48,6 +48,8 @@ public class ObjectProperties
    public var projectiles_:Dictionary = new Dictionary();
    public var angleCorrection_:Number = 0;
    public var rotation_:Number = 0;
+   public var isQuest_:Boolean = false;
+   public var isChest_:Boolean = false;
 
    public function ObjectProperties(_arg_1:XML)
    {
@@ -79,6 +81,8 @@ public class ObjectProperties
       this.enemyOccupySquare_ = _arg_1.hasOwnProperty("EnemyOccupySquare");
       this.static_ = _arg_1.hasOwnProperty("Static");
       this.noMiniMap_ = _arg_1.hasOwnProperty("NoMiniMap");
+      this.isChest_ = _arg_1.hasOwnProperty("Chest");
+      this.isQuest_ = _arg_1.hasOwnProperty("Quest");
       if (_arg_1.hasOwnProperty("HealthBar"))
       {
          this.healthBar_ = _arg_1.HealthBar;

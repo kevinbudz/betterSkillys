@@ -1,0 +1,6261 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x3e66" id="XN Market Shop 01">
+      <Class>GameObject</Class>
+      <Model>Large Monument 1</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>270</Size>
+   </Object>
+   <Object type="0x3e67" id="XN Market Shop 02">
+      <Class>GameObject</Class>
+      <Model>Large Monument 1</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x01</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>270</Size>
+   </Object>
+   <Object type="0x3e68" id="XN Market Shop 03">
+      <Class>GameObject</Class>
+      <Model>Large Monument 1</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x02</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>240</Size>
+   </Object>
+   <Object type="0x3e69" id="XN Market Shop 04">
+      <Class>GameObject</Class>
+      <Model>Large Monument 1</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x03</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>240</Size>
+   </Object>
+   <Object type="0x3e6a" id="XN Market Shop 05">
+      <Class>GameObject</Class>
+      <Model>Large Monument 1</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x04</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>300</Size>
+   </Object>
+   <Object type="0x3e6b" id="XN Market Shop 06">
+      <Class>GameObject</Class>
+      <Model>Large Monument 1</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x05</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>300</Size>
+   </Object>
+   <Object type="0x3e6c" id="XN Market Shop 07">
+      <Class>GameObject</Class>
+      <Model>Large Monument 1</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x06</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>300</Size>
+   </Object>
+   <Object type="0x3e6d" id="XN Market Shop 08">
+      <Class>GameObject</Class>
+      <Model>Large Monument 1</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x07</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Size>300</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e6e" id="XN Market Shop 09">
+      <Class>GameObject</Class>
+      <Model>Large Monument 1</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x08</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Size>300</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e6f" id="XN Market Shop 10">
+      <Class>GameObject</Class>
+      <Model>Large Monument 1</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x09</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Size>300</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e70" id="XN Stend facade 01 R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <Static/>
+      <NoMiniMap/>
+      <Rotation>90</Rotation>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e71" id="XN Stend facade 01 L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x0b</Index>
+      </Texture>
+      <Static/>
+      <Rotation>90</Rotation>
+      <NoMiniMap/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e72" id="XN Stend facade 02 R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x0a</Index>
+      </Texture>
+      <Static/>
+      <NoMiniMap/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e73" id="XN Stend facade 02 L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x0b</Index>
+      </Texture>
+      <Static/>
+      <NoMiniMap/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e74" id="XN Gate Decorated WE R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x0c</Index>
+      </Texture>
+      <Static/>
+      <Rotation>90</Rotation>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e75" id="XN Gate Decorated WE L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x0d</Index>
+      </Texture>
+      <Static/>
+      <Rotation>90</Rotation>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3f6e" id="XN Gate Decorated NS R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x0c</Index>
+      </Texture>
+      <Static/>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3f6f" id="XN Gate Decorated NS L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x0d</Index>
+      </Texture>
+      <Static/>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3f70" id="XN Gate Bow WE R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x0e</Index>
+      </Texture>
+      <Static/>
+      <Rotation>90</Rotation>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3f71" id="XN Gate Bow WE L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x0f</Index>
+      </Texture>
+      <Static/>
+      <Rotation>90</Rotation>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3f72" id="XN Gate Bow NS R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x0e</Index>
+      </Texture>
+      <Static/>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3f73" id="XN Gate Bow NS L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x0f</Index>
+      </Texture>
+      <Static/>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3f7a" id="XN Gate Door NS R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x131</Index>
+      </Texture>
+      <Static/>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3f7b" id="XN Gate Door NS L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x132</Index>
+      </Texture>
+      <Static/>
+      <NoMiniMap/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3f7c" id="XN Gate Door WE R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x131</Index>
+      </Texture>
+      <Static/>
+      <NoMiniMap/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3f7d" id="XN Gate Door WE L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x132</Index>
+      </Texture>
+      <Static/>
+      <NoMiniMap/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e76" id="XN Wall Garland 01">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x10</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e77" id="XN Wall Garland 02">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x11</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e78" id="XN Wall Garland 03">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x12</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e79" id="XN Wall Garland 04">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x13</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e7a" id="XN Wall Garland 05">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x14</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e7b" id="XN Wall Garland 06">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x15</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e7c" id="XN Wall Wreath R">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x16</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e7d" id="XN Wall Wreath L">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x17</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e7e" id="XN Wall Icicle R">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x18</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e7f" id="XN Wall Icicle L">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x19</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e80" id="XN Wall Snowflake">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x1a</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e81" id="XN Wall Curtain R">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x1b</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e82" id="XN Wall Curtain L">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x1c</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3f74" id="XN Wall Painting 1 R">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x135</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3f75" id="XN Wall Painting 1 L">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x136</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3f76" id="XN Wall Painting 2 R">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x137</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3f77" id="XN Wall Painting 2 L">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x138</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3f78" id="XN Roof Green">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x133</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3f79" id="XN Roof Green R">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x133</Index>
+      </Texture>
+      <Static/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3f7f" id="XN Roof Red">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x134</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3f80" id="XN Roof Red R">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x134</Index>
+      </Texture>
+      <Static/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3f81" id="XN Wall Roof">
+      <Class>GameObject</Class>
+      <Model>Candy Col Whole</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x139</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e83" id="XN Cake Display R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x1d</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e84" id="XN Cake Display M">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x1e</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e85" id="XN Cake Display L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x1f</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e86" id="XN Window Lights R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x20</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x20</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x22</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e87" id="XN Window Lights L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x21</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x21</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x23</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e88" id="XN Window Lattice R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x24</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e89" id="XN Window Lattice L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x25</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e8a" id="XN Window 1 Panel R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x26</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e8b" id="XN Window 1 Panel L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x27</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e8c" id="XN Window 2 Panel R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x28</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e8d" id="XN Window 2 Panel L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x29</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x3e8e" id="XN Window Garland R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x2a</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Rotation>90</Rotation>
+   </Object>
+   <Object type="0x3e8f" id="XN Window Garland M">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x2b</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Rotation>90</Rotation>
+   </Object>
+   <Object type="0x3e90" id="XN Window Garland L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Rotation>90</Rotation>
+   </Object>
+   <Object type="0x3e91" id="XN Window Decorated R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x2d</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Rotation>90</Rotation>
+   </Object>
+   <Object type="0x3e92" id="XN Window Decorated M">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x2e</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Rotation>90</Rotation>
+   </Object>
+   <Object type="0x3e93" id="XN Window Decorated L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x2f</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Rotation>90</Rotation>
+   </Object>
+   <Object type="0x3ec7" id="XN Lantern Red D">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x70</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x70</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x71</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>100</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+      <ShadowColor>0xFFEF96</ShadowColor>
+   </Object>
+   <Object type="0x3ec8" id="XN Lantern Black 01">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x72</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x72</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x73</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>100</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+      <ShadowColor>0xFFEF96</ShadowColor>
+   </Object>
+   <Object type="0x3ec9" id="XN Lantern White">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x74</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x74</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x75</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>80</ShadowSize>
+      <Size>80</Size>
+      <NoMiniMap/>
+      <ShadowColor>0xFFEF96</ShadowColor>
+   </Object>
+   <Object type="0x3eca" id="XN Lantern Black 02">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x76</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x76</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x77</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>100</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+      <ShadowColor>0xFFEF96</ShadowColor>
+   </Object>
+   <Object type="0x3ecb" id="XN Lantern Red">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x78</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x79</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x78</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>80</ShadowSize>
+      <Size>80</Size>
+      <NoMiniMap/>
+      <ShadowColor>0xFFEF96</ShadowColor>
+   </Object>
+   <Object type="0x3ecc" id="XN Lantern Outdoor S">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x7a</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".6">
+         <Frame time="0.3">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x7a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.3">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x7b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Size>100</Size>
+      <NoMiniMap/>
+      <ShadowSize>100</ShadowSize>
+      <ShadowColor>0xFFEF96</ShadowColor>
+   </Object>
+   <Object type="0x3ecd" id="XN Lantern Outdoor D">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x7c</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".6">
+         <Frame time="0.3">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x7c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.3">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x7d</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>100</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+      <ShadowColor>0xFFEF96</ShadowColor>
+   </Object>
+   <Object type="0x3ece" id="XN Lantern Outdoor R">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x7e</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".6">
+         <Frame time="0.3">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x7e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.3">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x7f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>100</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+      <ShadowColor>0xFFEF96</ShadowColor>
+   </Object>
+   <Object type="0x3fe5" id="XN Lantern Outdoor R2">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x56</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>100</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+      <ShadowColor>0xFFEF96</ShadowColor>
+   </Object>
+   <Object type="0x3ed5" id="XN Sleigh Red">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x9c</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>100</ShadowSize>
+      <Size>120</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3e94" id="XN GB House 01">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x30</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x30</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x31</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3e95" id="XN GB House 02">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x32</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x32</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x33</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3e96" id="XN GB House 03">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x34</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x34</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x35</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3e97" id="XN GB House 04">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x36</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x36</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x37</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3e98" id="XN GB House 05">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x38</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x38</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x39</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3e99" id="XN GB House 06">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x3a</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3e9a" id="XN GB House 07">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x3b</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3e9b" id="XN GB House 08">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x3c</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3e9c" id="XN GB House 09">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x3d</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3e9d" id="XN GB Sign">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x3e</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x3e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x3f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3e9e" id="XN GB IC Choc">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x40</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3e9f" id="XN GB IC Straw">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x41</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ea0" id="XN GB IC Vanil">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x42</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ea1" id="XN GB IC Mint">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x43</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ea2" id="XN GB IC Mix">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x44</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ea3" id="XN GB IC Hill Choc">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x48</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ea4" id="XN GB IC Hill Vanil">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x49</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ea5" id="XN GB CCane Red Double">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x4a</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ea6" id="XN GB CCane White">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x4b</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ea7" id="XN GB Red">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x4c</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ea8" id="XN GB Lolipop">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x4d</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ea9" id="XN GB CCane Sign">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x59</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ead" id="XN GB Tree 01">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x50</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".6">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x50</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x51</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eae" id="XN GB Tree 02">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x52</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".6">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x52</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x53</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eaa" id="XN GB Cookie">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x45</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eab" id="XN GB Smore">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x46</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eac" id="XN GB Biscuit">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x47</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eaf" id="XN GB Tree 03">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x54</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eb0" id="XN GB Bush 01">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x55</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eb1" id="XN GB Bush 02">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x56</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eb2" id="XN GB Deer Small">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x57</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eb3" id="XN GB Deer Big">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x58</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eb4" id="XN GB Gate R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x4e</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>135</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eb5" id="XN GB Gate L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x4f</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>45</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eb6" id="XN GB Biscuit Fence N_S">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x5a</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3efa" id="XN GB Biscuit Fence W_E">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x5a</Index>
+      </Texture>
+      <Static/>
+      <Rotation>90</Rotation>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3efb" id="XN GB Biscuit Fence NW">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x5a</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>45</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3efc" id="XN GB Biscuit Fence NE">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x5a</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>135</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eb7" id="XN GB Dark Fence NS 01">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x5b</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eb8" id="XN GB Dark Fence NS 02">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x5C</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3efd" id="XN GB Dark Fence WE 01">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x5b</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3efe" id="XN GB Dark Fence WE 02">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x5C</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eb9" id="XN GB Pretzel Fence NS R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x5d</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eba" id="XN GB Pretzel Fence NS M">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x5e</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ebb" id="XN GB Pretzel Fence NS L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x5f</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eff" id="XN GB Pretzel Fence WE R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x5d</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Rotation>90</Rotation>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f00" id="XN GB Pretzel Fence WE M">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x5e</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Rotation>90</Rotation>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f01" id="XN GB Pretzel Fence WE L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x5f</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Rotation>90</Rotation>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3fc5" id="XN IC Herm Head">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x150</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x3fc6" id="XN IC Herm Tent B">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x151</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x152</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3fc7" id="XN IC Herm Tent S">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x153</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x154</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3fc8" id="XN IC Herm Min">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x0e</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3ebc" id="XN Tree Lights 01">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x60</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x60</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x61</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ebd" id="XN Tree Lights 02">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x62</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x62</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x63</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ebe" id="XN Tree Lights 03">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x64</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x64</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x65</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ebf" id="XN Tree Lights 04">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x66</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x66</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x67</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ec0" id="XN Tree Lights 05">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x68</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x68</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x69</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ec1" id="XN Bush Lights 01">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x6a</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ec2" id="XN Bush Lights 02">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x6b</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ec3" id="XN Bush Lights 03">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x6c</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ec4" id="XN Bush Lights 04">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x6d</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ec5" id="XN Bush Lights 05">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x6e</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ec6" id="XN Bush Lights 06">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x6f</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ecf" id="XN Tent">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x80</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ed0" id="XN Carousel">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x81</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x81</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x82</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x83</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x84</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x85</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x86</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x87</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x88</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x89</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x8a</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3ed1" id="XN Angel">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x8b</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x8b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x8c</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Flying>0.5</Flying>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3ed2" id="XN Angel Right">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x8d</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3ed3" id="XN Angel Left">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x8e</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3ed4" id="XN Floor Clock">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x8f</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0x3ed6" id="XN Sleigh Lights">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x9d</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x9d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x9e</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>100</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ed7" id="XN Pine Garland R2">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x90</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ed8" id="XN Pine Garland R1">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x91</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ed9" id="XN Pine Garland L2">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x92</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eda" id="XN Pine Garland L1">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x93</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3edb" id="XN Fir Lights R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x94</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x94</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x95</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3edc" id="XN Fir Lights M">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x96</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x96</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x97</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3edd" id="XN Fir Lights L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x98</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x98</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x99</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ede" id="XN Mistletoe">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x9a</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <Flying/>
+      <Z>1</Z>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0x3edf" id="XN Mistletoe Column">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x9b</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <Size>90</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ee4" id="XN Garland Yellow E">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xa4</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xa6</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ee5" id="XN Garland Yellow W">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xa5</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xa5</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xa7</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ee6" id="XN Garland Yellow N">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xa4</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xa6</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ee7" id="XN Garland Yellow S">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xa5</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xa5</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xa7</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ee8" id="XN Garland Orange E">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xa8</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xa8</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xaa</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ee9" id="XN Garland Orange W">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xa9</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xa9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xab</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eea" id="XN Garland Orange N">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xa8</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xa8</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xaa</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eeb" id="XN Garland Orange S">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xa9</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xa9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xab</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eec" id="XN Garland Blue E">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xb0</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xb0</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xb2</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eed" id="XN Garland Blue W">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xb1</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xb1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xb3</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eee" id="XN Garland Blue N">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xb0</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xb0</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xb2</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3eef" id="XN Garland Blue S">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xb1</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xb1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xb3</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ef0" id="XN Garland GreenRed E">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xb4</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xb4</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xb6</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ef1" id="XN Garland GreenRed W">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xb5</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xb5</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xb7</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ef2" id="XN Garland GreenRed N">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xb4</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xb4</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xb6</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ef3" id="XN Garland GreenRed S">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xb5</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xb5</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xb7</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ef4" id="XN Garland Golden E">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xb8</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xb8</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xba</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ef5" id="XN Garland Golden W">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xb9</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xb9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xbb</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ef6" id="XN Garland Golden N">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xb8</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xb8</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xba</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ef7" id="XN Garland Golden S">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xb9</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xb9</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xbb</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f02" id="XN SW Garland 45 01">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x48</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x48</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x4a</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>45</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f03" id="XN SW Garland 45 02">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x49</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x49</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x4b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>45</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f04" id="XN SW Garland 135 01">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x48</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x48</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x4a</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>135</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f05" id="XN SW Garland 135 02">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x49</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".8">
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x49</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>santaWorkshopObjects16x16</File>
+               <Index>0x4b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>135</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ef8" id="XN Bengal Light Yellow">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xac</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".6">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xac</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xad</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xae</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <ShadowSize>100</ShadowSize>
+      <ShadowColor>0xFFEF96</ShadowColor>
+      <Size>100</Size>
+      <NoMiniMap/>
+      <Effect color="0xFCE977">FountainSnowy</Effect>
+   </Object>
+   <Object type="0x3ef9" id="XN Bengal Light Golden">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xbc</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".6">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xbc</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xbd</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xbe</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <ShadowSize>100</ShadowSize>
+      <ShadowColor>0xFFEF96</ShadowColor>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f06" id="XN Stars">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xaf</Index>
+      </Texture>
+      <Static/>
+      <Animation sync="true" prob="1" period=".6">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xaf</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xbf</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <NoMiniMap/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Flying/>
+      <Z>0.5</Z>
+   </Object>
+   <Object type="0x3f07" id="XN WF Tree Wide">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xc0</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xc1</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xc4</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xc5</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xc7</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xc8</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f08" id="XN WF Tree Narrow">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xc2</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xc3</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xc6</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f09" id="XN WF Tree Ugly">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xc9</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f0a" id="XN WF Bush">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xca</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xcb</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xcc</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xcd</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xce</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xcf</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f0b" id="XN WF Bush Berries R">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xd0</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f0c" id="XN WF Bush Berries O">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xd1</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f0d" id="XN WF Bush Tall">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xd2</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xd3</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f0e" id="XN WF Herb Small">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xd4</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xd5</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xd6</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xd7</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f0f" id="XN WF Herb Big">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xd8</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xd9</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xda</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xdb</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f10" id="XN WF Fir Tree">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xdc</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xdd</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xde</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xdf</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x3f11" id="XN WF Tree Base">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xe0</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f12" id="XN WF Tree Branch">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xe1</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f13" id="XN WF Tree Log">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xe2</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f14" id="XN WF Tree Axe">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xe3</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f15" id="XN WF Shack">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xe4</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>150</Size>
+   </Object>
+   <Object type="0x3f16" id="XN Snow Pile">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xe5</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xe6</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f18" id="XN Ice Crystal S">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xf0</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f19" id="XN Ice Crystal B">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xf1</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f1a" id="XN Ice Tower S">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xf2</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f1b" id="XN Ice Tower M">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xf3</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f1c" id="XN Ice Tower B">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xf4</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f1d" id="XN Ice Flag">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xf6</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xf6</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xf7</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f1e" id="XN Ice Lantern">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xf8</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xf8</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0xf9</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f42" id="XN Ice Lantern R">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x120</Index>
+      </Texture>
+      <Animation sync="true" prob="1" period=".4">
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x121</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>xmasNexusObjects16x16</File>
+               <Index>0x120</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f1f" id="XN Ice Spiral">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xfa</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xfb</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xfc</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f20" id="XN Ice Rocks">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xfd</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xfe</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0xff</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f21" id="XN Ice Medusa">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x100</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x3f22" id="XN Ice Oryx">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x101</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>180</Size>
+   </Object>
+   <Object type="0x3f23" id="XN Ice King">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x102</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x3f24" id="XN Ice Urgle">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x103</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x3f25" id="XN Ice Mixcoatl">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x104</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x3f26" id="XN Ice Bes">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x105</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>150</Size>
+   </Object>
+   <Object type="0x3f27" id="XN Ice Malphas">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x106</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x3f28" id="XN Ice Idol">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x107</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x3f29" id="XN Ice Cgnome">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x108</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x3f2a" id="XN Ice Bearer">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x109</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x3f2b" id="XN Ice Drake">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x10a</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x3f2c" id="XN Ice Pyrr">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x10b</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>150</Size>
+   </Object>
+   <Object type="0x3f2d" id="XN Ice Thessal">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x10c</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>150</Size>
+   </Object>
+   <Object type="0x3f5a" id="XN Ice Totem">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x122</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f2e" id="XN Ice Tree">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x10d</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x10e</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x10f</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f2f" id="XN Snowflake S">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x112</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f30" id="XN Snowflake B">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x113</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f31" id="XN Ice Gate NS R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x110</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f32" id="XN Ice Gate NS L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x111</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f33" id="XN Ice Gate WE R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x110</Index>
+      </Texture>
+      <Static/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f34" id="XN Ice Gate WE L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x111</Index>
+      </Texture>
+      <Static/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f35" id="XN Ice Wall NS">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xf5</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f36" id="XN Ice Wall WE">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xf5</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f37" id="XN Decor Ball R">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x114</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>60</Size>
+      <Flying/>
+      <Z>0.5</Z>
+   </Object>
+   <Object type="0x3f38" id="XN Decor Ball G">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x115</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>60</Size>
+      <Flying/>
+      <Z>1.5</Z>
+   </Object>
+   <Object type="0x3f39" id="XN Decor Ball W">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x116</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>60</Size>
+      <Flying/>
+      <Z>1</Z>
+   </Object>
+   <Object type="0x3f3a" id="XN Bells">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x117</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>80</Size>
+      <Flying/>
+      <Z>1.5</Z>
+   </Object>
+   <Object type="0x3f3b" id="XN Star Large">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x118</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <Flying/>
+      <Z>3.5</Z>
+   </Object>
+   <Object type="0x3f5b" id="XN Ccane Heart">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x119</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>60</Size>
+      <Flying/>
+      <Z>1.2</Z>
+   </Object>
+   <Object type="0x3f3c" id="XN Bow Ccane">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x11a</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>60</Size>
+      <Flying/>
+      <Z>1.2</Z>
+   </Object>
+   <Object type="0x3f3d" id="XN Bow R WE">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x11b</Index>
+      </Texture>
+      <Static/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f3e" id="XN Bow L WE">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x11c</Index>
+      </Texture>
+      <Static/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f3f" id="XN Ribbon R WE">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x11d</Index>
+      </Texture>
+      <Static/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f40" id="XN Ribbon L WE">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x11e</Index>
+      </Texture>
+      <Static/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f5d" id="XN Bow R NS">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x11b</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f5e" id="XN Bow L NS">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x11c</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f5f" id="XN Ribbon R NS">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x11d</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f60" id="XN Ribbon L NS">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x11e</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f41" id="XN Snowflake Gate">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x11f</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+      <Flying/>
+      <Z>0.5</Z>
+   </Object>
+   <Object type="0x3f43" id="XN GB Ccane White S">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f44" id="XN GBhouse S">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x02</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x03</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x04</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f45" id="XN Ice Trap Element">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x15</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f46" id="XN Ice Egg">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x16</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f47" id="XN Ice Sphere">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x17</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f48" id="XN Ice Wbag">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x18</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f49" id="XN Ice Snake">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x19</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f4a" id="XN Ice Blob">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x1a</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f4b" id="XN Ice Trix">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x1b</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f4c" id="XN Ice Coral Cyan">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x11</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f4d" id="XN Ice Coral Blue">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x12</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f4e" id="XN Ice Slurphome 01">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x13</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f4f" id="XN Ice Slurphome 02">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x14</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f50" id="XN Ice Lolipops 01">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x1c</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f51" id="XN Ice Lolipops 02">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x1d</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f52" id="XN Ice Imp">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x1e</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f53" id="XN Ice Demon">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x1f</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f54" id="XN FurTree S">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x05</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x06</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x07</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x08</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f55" id="XN Pine Cone">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x09</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x0a</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x0b</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>40</Size>
+   </Object>
+   <Object type="0x3f56" id="XN Dry Grass B">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x60</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x61</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x62</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f57" id="XN Dry Bush">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x63</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x64</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x65</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x66</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f58" id="XN Dry Bush Snow">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x67</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x68</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x69</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x6a</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f59" id="XN Dry Grass S">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x6b</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x6c</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x6d</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x6e</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x6f</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f61" id="XN Evergreen Tree">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x9f</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>140</Size>
+      <Flying/>
+      <Z>1.5</Z>
+   </Object>
+   <Object type="0x3fcf" id="XN EvergreenTree Base">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x9f</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>140</Size>
+   </Object>
+   <Object type="0x3f62" id="XN Ice Guard R">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x123</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x3f63" id="XN Ice Guard L">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x124</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x3f64" id="XN Ccane Pillar">
+      <Class>GameObject</Class>
+      <Model>Pillar</Model>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x7d</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0x3f65" id="XN Ice Pillar">
+      <Class>ConnectedWall</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x7e</Index>
+      </Texture>
+      <BaseIndent>0.4</BaseIndent>
+      <TopIndent>0.4</TopIndent>
+      <Height>0.8</Height>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Connects/>
+   </Object>
+   <Object type="0x3f66" id="XN Ice TombWall">
+      <Class>ConnectedWall</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x76</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x77</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x78</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x79</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x7a</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x7b</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x7c</Index>
+         </Texture>
+      </RandomTexture>
+      <DotTexture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x70</Index>
+      </DotTexture>
+      <ShortLineTexture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x71</Index>
+      </ShortLineTexture>
+      <LTexture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x72</Index>
+      </LTexture>
+      <LineTexture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x73</Index>
+      </LineTexture>
+      <TTexture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x74</Index>
+      </TTexture>
+      <CrossTexture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x75</Index>
+      </CrossTexture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+      <Connects/>
+      <NoWallTextureRepeat/>
+   </Object>
+   <Object type="0x3f67" id="XN Ice Troll">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x125</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+   </Object>
+   <Object type="0x3f68" id="XN Ice Sphinx">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x126</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Size>140</Size>
+   </Object>
+   <Object type="0x3f69" id="XN Table Outdoor">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x127</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x128</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x129</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x12a</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f6a" id="XN Table Indoor">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x12b</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x12c</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x12d</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x12e</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f7e" id="XN Table Empty">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x12f</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f6b" id="XN Chair Tall">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x130</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f6c" id="XN Chair">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x0c</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f6d" id="XN Bar Stool">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x0d</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3fc9" id="XN Bow Small">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x14f</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+      <Flying/>
+      <Z>0.4</Z>
+   </Object>
+   <Object type="0x3f89" id="XN Gift Big 01">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x3a</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>90</Size>
+   </Object>
+   <Object type="0x3f8a" id="XN Gift Big 02">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x3b</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>90</Size>
+   </Object>
+   <Object type="0x3f8b" id="XN Gift Big 03">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x3c</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>90</Size>
+   </Object>
+   <Object type="0x3f8c" id="XN Gift Big 04">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x3d</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>90</Size>
+   </Object>
+   <Object type="0x3f8d" id="XN Gift Big 05">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x3e</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>90</Size>
+   </Object>
+   <Object type="0x3f8e" id="XN Gift Big 06">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x3f</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>90</Size>
+   </Object>
+   <Object type="0x3f8f" id="XN Gift Small">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x51</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x50</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x53</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x52</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x54</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x55</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x56</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x57</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>90</Size>
+   </Object>
+   <Object type="0x3f90" id="XN Gift Medium">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x6b</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x68</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x69</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x6a</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x6c</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x6d</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x6e</Index>
+         </Texture>
+         <Texture>
+            <File>santaWorkshopObjects8x8</File>
+            <Index>0x6f</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3f91" id="XN Boat">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x140</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x141</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x142</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x143</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x144</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+      <Z>-1</Z>
+   </Object>
+   <Object type="0x3ff0" id="XN Rope NS R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x156</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ff1" id="XN Rope NS L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x157</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ff2" id="XN Rope WE R">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x156</Index>
+      </Texture>
+      <Static/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3ff3" id="XN Rope WE L">
+      <Class>GameObject</Class>
+      <Model>Gate</Model>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x157</Index>
+      </Texture>
+      <Static/>
+      <Rotation>90</Rotation>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f92" id="XN Ginger Fence Pillar">
+      <Class>ConnectedWall</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x7f</Index>
+      </Texture>
+      <BaseIndent>0.4</BaseIndent>
+      <TopIndent>0.4</TopIndent>
+      <Height>1</Height>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Connects/>
+   </Object>
+   <Object type="0x3f93" id="XN Shop Side Block">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x96</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <FullOccupy/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Size>0</Size>
+   </Object>
+   <Object id="XN Barrel" type="0x3fe0">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x76</Index>
+         </Texture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x77</Index>
+         </Texture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x78</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <OccupySquare/>
+      <HitSound>monster/wooden_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <StasisImmune/>
+      <Enemy/>
+      <NoMiniMap/>
+      <Exp>0</Exp>
+      <Size>100</Size>
+      <ShadowSize>80</ShadowSize>
+   </Object>
+   <Object id="XN Barrel ND" type="0x3fe2">
+      <Class>GameObject</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x76</Index>
+         </Texture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x77</Index>
+         </Texture>
+         <Texture>
+            <File>lofiEnvironment3</File>
+            <Index>0x78</Index>
+         </Texture>
+      </RandomTexture>
+      <Static/>
+      <Size>100</Size>
+      <ShadowSize>80</ShadowSize>
+      <OccupySquare/>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3fe3" id="XN Bunny spwnr">
+      <DisplayId>Bunny spawner</DisplayId>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rEncounters</File>
+         <Index>82</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f82" id="XN WLR Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x20</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3f97" id="XN WLL Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x21</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3ee0" id="XN WGR Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x2a</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3ee1" id="XN WGM Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x2b</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3ee2" id="XN WGL Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3ee3" id="XN CDR Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x1d</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3f98" id="XN CDM Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x1e</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3f99" id="XN CDL Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x1f</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3f9a" id="XN WLatR Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x24</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3f9b" id="XN WLatL Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x25</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3f9c" id="XN WPR Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x28</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3f9d" id="XN WPL Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x29</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3f9e" id="XN WPGR Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x2d</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3f9f" id="XN WPGM Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x2e</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3fa0" id="XN WPGL Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x2f</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3fb0" id="XN GateNSR Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x131</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3fb1" id="XN GateNSL Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x132</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3fb2" id="XN GateWER Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x131</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3fb3" id="XN GateWEL Helper">
+      <Class>GameObject</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x132</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3f83" id="XN Nexus Helper">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x90</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3f84" id="XN IceRink Helper">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x94</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3f85" id="XN IceTrack Helper">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x93</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3f86" id="XN GBLand Helper">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x91</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3f87" id="XN WinLake Helper">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x95</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3f88" id="XN WinCafe Helper">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x92</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3fcc" id="XN SnowGround Helper">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x146</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3fa7" id="XN S">
+      <DisplayId>Tree branch</DisplayId>
+      <Description>A simple wooden stick. Not suitable for practice!</Description>
+      <ExtraTooltipData>
+         <EffectInfo description="1 of 8" name="Snowman accessory"/>
+      </ExtraTooltipData>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x9e</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Activate id="XN S spwnr">Create</Activate>
+      <feedPower>0</feedPower>
+   </Object>
+   <Object type="0x3fa6" id="XN C">
+      <DisplayId>Coal</DisplayId>
+      <Description>A set of coals, straight out of some bad kid's stocking!</Description>
+      <ExtraTooltipData>
+         <EffectInfo description="2 of 8" name="Snowman accessory"/>
+      </ExtraTooltipData>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x9d</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Activate id="XN C spwnr">Create</Activate>
+      <feedPower>0</feedPower>
+   </Object>
+   <Object type="0x3f96" id="XN CSm">
+      <DisplayId>Small Carrot</DisplayId>
+      <Description>A nice crunchy carrot. Keep it away from bunnies!</Description>
+      <ExtraTooltipData>
+         <EffectInfo description="3 of 8" name="Snowman accessory"/>
+      </ExtraTooltipData>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x97</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Soulbound/>
+      <Consumable/>
+      <BagType>2</BagType>
+      <Activate id="XN CSm spwnr">Create</Activate>
+      <feedPower>0</feedPower>
+   </Object>
+   <Object type="0x3fa1" id="XN CGr">
+      <DisplayId>Carrot</DisplayId>
+      <Description>A nice fresh carrot. Keep it away from bunnies!</Description>
+      <ExtraTooltipData>
+         <EffectInfo description="4 of 8" name="Snowman accessory"/>
+      </ExtraTooltipData>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x98</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Activate id="XN CGr spwnr">Create</Activate>
+      <feedPower>0</feedPower>
+   </Object>
+   <Object type="0x3fa2" id="XN TH">
+      <DisplayId>Top Hat</DisplayId>
+      <Description>A fancy snowman helmet. Gives no def bonuses, only style points!</Description>
+      <ExtraTooltipData>
+         <EffectInfo description="5 of 8" name="Snowman accessory"/>
+      </ExtraTooltipData>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x99</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Activate id="XN TH spwnr">Create</Activate>
+      <feedPower>0</feedPower>
+   </Object>
+   <Object type="0x3fa3" id="XN SH">
+      <DisplayId>Santa Hat</DisplayId>
+      <Description>The most fitting holiday decoration!</Description>
+      <ExtraTooltipData>
+         <EffectInfo description="6 of 8" name="Snowman accessory"/>
+      </ExtraTooltipData>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x9a</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Soulbound/>
+      <Consumable/>
+      <BagType>2</BagType>
+      <Activate id="XN SH spwnr">Create</Activate>
+      <feedPower>0</feedPower>
+   </Object>
+   <Object type="0x3fa4" id="XN GS">
+      <DisplayId>Green Striped Scarf</DisplayId>
+      <Description>A warm green scarf, protects against cold and looks very fashionable.</Description>
+      <ExtraTooltipData>
+         <EffectInfo description="7 of 8" name="Snowman accessory"/>
+      </ExtraTooltipData>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x9b</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Activate id="XN GS spwnr">Create</Activate>
+      <feedPower>0</feedPower>
+   </Object>
+   <Object type="0x3fa5" id="XN RS">
+      <DisplayId>Red Striped Scarf</DisplayId>
+      <Description>A festive-looking wool scarf, the best addition to the holiday outfit!</Description>
+      <ExtraTooltipData>
+         <EffectInfo description="8 of 8" name="Snowman accessory"/>
+      </ExtraTooltipData>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x9c</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Activate id="XN RS spwnr">Create</Activate>
+      <feedPower>0</feedPower>
+   </Object>
+   <Object type="0x3fd9" id="XN Test Sn Base">
+      <DisplayId>XN Test Sn Base</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x146</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>For testing purposes only!</Description>
+      <Sound>spell/light_heal</Sound>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Activate id="XN Sn Jm spwnr">Create</Activate>
+      <feedPower>0</feedPower>
+   </Object>
+   <Object type="0x3fda" id="XN Test Dropper">
+      <DisplayId>Test Dropper</DisplayId>
+      <Class>Equipment</Class>
+      <Item/>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x9c</Index>
+      </Texture>
+      <SlotType>10</SlotType>
+      <Description>For testing purposes only!</Description>
+      <Sound>spell/light_heal</Sound>
+      <Consumable/>
+      <Soulbound/>
+      <BagType>2</BagType>
+      <Activate id="XN Test Chest">Create</Activate>
+      <feedPower>0</feedPower>
+   </Object>
+   <Object type="0x3fdb" id="XN Test Chest">
+      <DisplayId>XN Test Chest</DisplayId>
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x6c</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Size>120</Size>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>25</Exp>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+      <Projectile id="0">
+         <ObjectId>SW Pet Stasis Shot</ObjectId>
+         <Damage>0</Damage>
+         <Speed>50</Speed>
+         <Size>50</Size>
+         <LifetimeMS>5000</LifetimeMS>
+         <ConditionEffect duration="10" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <StasisImmune/>
+   </Object>
+   <Object type="0x3ff4" id="XN IceTrack Tree">
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x158</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x159</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x15a</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x15b</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>xmasNexusObjects16x16</File>
+            <Index>0x158</Index>
+         </Texture>
+      </AltTexture>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3ff5" id="XN IceTrack Snowman">
+      <Class>Character</Class>
+      <DisplayId>Race Expert</DisplayId>
+      <NoMiniMap/>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x8f</Index>
+      </Texture>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3fce" id="XN S spwnr">
+      <DisplayId>S spawner</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>-1</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3fd0" id="XN C spwnr">
+      <DisplayId>C spawner</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>-1</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3fd1" id="XN CSm spwnr">
+      <DisplayId>CSm spawner</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>-1</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3fd2" id="XN CGr spwnr">
+      <DisplayId>CGr spawner</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>-1</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3fd3" id="XN TH spwnr">
+      <DisplayId>TH spawner</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>-1</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3fd4" id="XN SH spwnr">
+      <DisplayId>SH spawner</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>-1</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3fd5" id="XN GS spwnr">
+      <DisplayId>GS spawner</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>-1</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3fd6" id="XN RS spwnr">
+      <DisplayId>RS spawner</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>-1</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3f95" id="XN Fruit Basket">
+      <DisplayId>Fruit Basket</DisplayId>
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>GameObject</Class>
+      <Static/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x13a</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Size>80</Size>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>25</Exp>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+   </Object>
+   <Object type="0x3fa8" id="XN Vegetable Basket">
+      <DisplayId>Vegetable Basket</DisplayId>
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>GameObject</Class>
+      <Static/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x13b</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Size>80</Size>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>25</Exp>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+   </Object>
+   <Object type="0x3faa" id="XN Gift White">
+      <DisplayId>White Gift</DisplayId>
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>GameObject</Class>
+      <Static/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x13c</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Size>80</Size>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>25</Exp>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+   </Object>
+   <Object type="0x3fab" id="XN Gift Black">
+      <DisplayId>White Gift</DisplayId>
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>GameObject</Class>
+      <Static/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x13d</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Size>80</Size>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>25</Exp>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+   </Object>
+   <Object type="0x3fac" id="XN Brushwood">
+      <DisplayId>Brushwood</DisplayId>
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>GameObject</Class>
+      <Static/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x13e</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Size>100</Size>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>25</Exp>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+   </Object>
+   <Object type="0x3fad" id="XN Coal Bucket">
+      <DisplayId>Coal Bucket</DisplayId>
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>GameObject</Class>
+      <Static/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x13f</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Size>80</Size>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>25</Exp>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+   </Object>
+   <Object type="0x3fae" id="XN GiftFair">
+      <DisplayId>Gift Fair</DisplayId>
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>GameObject</Class>
+      <Static/>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Size>80</Size>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>25</Exp>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+   </Object>
+   <Object type="0x3faf" id="XN CandyBox">
+      <DisplayId>Box of Candy</DisplayId>
+      <Enemy/>
+      <NoMiniMap/>
+      <Class>GameObject</Class>
+      <Static/>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x145</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Size>80</Size>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Exp>25</Exp>
+      <HitSound>monster/default_hit</HitSound>
+      <DeathSound>monster/default_death</DeathSound>
+   </Object>
+   <Object type="0x3fcb" id="XN Snow Blast 1">
+      <DisplayId>Snow blast</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>-1</Size>
+      <Sound id="0">spell/fire_nova</Sound>
+      <Effect minRadius="0.5" maxRadius="3.7" color="0x78d1ff" size="100" life="0.35" amount="100">ExplosionComplex</Effect>
+   </Object>
+   <Object type="0x3fcd" id="XN Snow Blast 2">
+      <DisplayId>Snow blast</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>-1</Size>
+      <Sound id="0">spell/fire_nova</Sound>
+      <Effect minRadius="0.5" maxRadius="3.7" color="0x78d1ff" size="100" life="0.35" amount="100">ExplosionComplex</Effect>
+   </Object>
+   <Object type="0x3f5c" id="XN Snowball Small">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>xmasNexusChars8x8</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <Color>0x78d1ff</Color>
+      <HitSound>monster/trees_death</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>50</ShadowSize>
+      <ShadowColor>0xBBCEDE</ShadowColor>
+   </Object>
+   <Object type="0x3f94" id="XN Snowball Big">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>xmasNexusChars8x8</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <Color>0x78d1ff</Color>
+      <HitSound>monster/trees_death</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>80</ShadowSize>
+      <ShadowColor>0xBBCEDE</ShadowColor>
+   </Object>
+   <Object type="0x3fdd" id="XN SnBallSm spwnr">
+      <DisplayId>Small snowball spawner</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x2e</Index>
+      </Texture>
+      <Size>0</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3fde" id="XN SnBallBig spwnr">
+      <DisplayId>Big snowball spawner</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x2f</Index>
+      </Texture>
+      <Size>0</Size>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3fdf" id="XN SnBall Killer">
+      <DisplayId>Snowball destroyer</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x0f</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+      <NoMiniMap/>
+   </Object>
+   <Object type="0x3fe4" id="XN Blast">
+      <DisplayId>Consumable blast</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>-1</Size>
+      <Sound id="0">spell/light_heal</Sound>
+      <Effect minRadius="0.5" maxRadius="3.7" color="0xb8f2ff" size="80" life="0.35" amount="100">ExplosionComplex</Effect>
+   </Object>
+   <Object type="0x3fe6" id="XN Orange Basket">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x155</Index>
+      </Texture>
+      <Static/>
+      <ShadowSize>0</ShadowSize>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <Size>80</Size>
+   </Object>
+   <Object type="0x3fe7" id="XN Dessert">
+      <Class>Character</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x84</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x85</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x86</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x87</Index>
+         </Texture>
+      </RandomTexture>
+      <ShadowSize>0</ShadowSize>
+      <Size>80</Size>
+      <Flying>0.5</Flying>
+   </Object>
+   <Object type="0x3fe8" id="XN Drink">
+      <Class>Character</Class>
+      <RandomTexture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x88</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x89</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x8a</Index>
+         </Texture>
+         <Texture>
+            <File>xmasNexusObjects8x8</File>
+            <Index>0x8b</Index>
+         </Texture>
+      </RandomTexture>
+      <ShadowSize>0</ShadowSize>
+      <Size>80</Size>
+      <Flying>0.5</Flying>
+   </Object>
+   <Object type="0x3fe9" id="XN OrangeSm">
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x82</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Size>80</Size>
+      <Flying>0.5</Flying>
+   </Object>
+   <Object type="0x3fea" id="XN OrangeBig">
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x83</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+      <Size>80</Size>
+      <Flying>0.5</Flying>
+   </Object>
+   <Object type="0x3feb" id="XN Table Drink">
+      <Class>GameObject</Class>
+      <Model>Table</Model>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x8c</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Color>0x280d01</Color>
+   </Object>
+   <Object type="0x3fec" id="XN Table Dessert">
+      <Class>GameObject</Class>
+      <Model>Table</Model>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x8c</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Color>0x280d01</Color>
+   </Object>
+   <Object type="0x3fed" id="XN Table Corner">
+      <Class>GameObject</Class>
+      <Model>Table</Model>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x8e</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Color>0x280d01</Color>
+   </Object>
+   <Object type="0x3fee" id="XN Table OrangeSm">
+      <Class>GameObject</Class>
+      <Model>Table</Model>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x8d</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Color>0x280d01</Color>
+   </Object>
+   <Object type="0x3fef" id="XN Table OrangeB">
+      <Class>GameObject</Class>
+      <Model>Table</Model>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x8d</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>0</ShadowSize>
+      <Color>0x280d01</Color>
+   </Object>
+   <Object type="0x3fe1" id="XN Sn Helper Big">
+      <DisplayId>Sn Helper Big</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xef</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>100</Size>
+      <ShadowSize>80</ShadowSize>
+      <ShadowColor>0xBBCEDE</ShadowColor>
+      <DeathSound>spell/light_heal</DeathSound>
+   </Object>
+   <Object type="0x3fca" id="XN Sn Helper Small">
+      <DisplayId>Sn Helper</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x9f</Index>
+      </Texture>
+      <NoMiniMap/>
+      <DeathSound>spell/light_heal</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>80</ShadowSize>
+      <ShadowColor>0xBBCEDE</ShadowColor>
+   </Object>
+   <Object type="0x3fb4" id="XN Sn Base">
+      <DisplayId>Sn base helper</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x146</Index>
+      </Texture>
+      <NoMiniMap/>
+      <DeathSound>spell/light_heal</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>80</ShadowSize>
+      <ShadowColor>0xBBCEDE</ShadowColor>
+   </Object>
+   <Object type="0x3fb5" id="XN Sn Base S">
+      <DisplayId>Sn base S helper</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x147</Index>
+      </Texture>
+      <NoMiniMap/>
+      <DeathSound>spell/light_heal</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>80</ShadowSize>
+      <ShadowColor>0xBBCEDE</ShadowColor>
+   </Object>
+   <Object type="0x3fb6" id="XN Sn Base SC">
+      <DisplayId>Sn base SC helper</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x148</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>100</Size>
+      <ShadowSize>80</ShadowSize>
+      <ShadowColor>0xBBCEDE</ShadowColor>
+      <DeathSound>spell/light_heal</DeathSound>
+   </Object>
+   <Object type="0x3fb7" id="XN Sn Base SCCSm">
+      <DisplayId>Sn base SCCSm helper</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x149</Index>
+      </Texture>
+      <NoMiniMap/>
+      <DeathSound>spell/light_heal</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>80</ShadowSize>
+      <ShadowColor>0xBBCEDE</ShadowColor>
+   </Object>
+   <Object type="0x3fb8" id="XN Sn Base SCCGr">
+      <DisplayId>Sn base SCCGr helper</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x14a</Index>
+      </Texture>
+      <NoMiniMap/>
+      <DeathSound>spell/light_heal</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>80</ShadowSize>
+      <ShadowColor>0xBBCEDE</ShadowColor>
+   </Object>
+   <Object type="0x3fb9" id="XN Sn Base SCCSm SH">
+      <DisplayId>Sn base SCCSm SH helper</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x14b</Index>
+      </Texture>
+      <NoMiniMap/>
+      <DeathSound>spell/light_heal</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>80</ShadowSize>
+      <ShadowColor>0xBBCEDE</ShadowColor>
+   </Object>
+   <Object type="0x3fba" id="XN Sn Base SCCGr SH">
+      <DisplayId>Sn base SCCGr SH helper</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x14c</Index>
+      </Texture>
+      <NoMiniMap/>
+      <DeathSound>spell/light_heal</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>80</ShadowSize>
+      <ShadowColor>0xBBCEDE</ShadowColor>
+   </Object>
+   <Object type="0x3fbb" id="XN Sn Base SCCSm TH">
+      <DisplayId>Sn base SCCSm TH helper</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x14d</Index>
+      </Texture>
+      <NoMiniMap/>
+      <DeathSound>spell/light_heal</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>80</ShadowSize>
+      <ShadowColor>0xBBCEDE</ShadowColor>
+   </Object>
+   <Object type="0x3fbc" id="XN Sn Base SCCGr TH">
+      <DisplayId>Sn base SCCGr TH helper</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0x14e</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>100</Size>
+      <ShadowSize>80</ShadowSize>
+      <ShadowColor>0xBBCEDE</ShadowColor>
+      <DeathSound>spell/light_heal</DeathSound>
+   </Object>
+   <Object type="0x3f17" id="XN Snowman">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xef</Index>
+      </Texture>
+      <Static/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <ShadowSize>80</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3fbd" id="XN Sn01">
+      <DisplayId>Snowman</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xe7</Index>
+      </Texture>
+      <ShadowSize>80</ShadowSize>
+      <ShadowColor>0xBBCEDE</ShadowColor>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3fbe" id="XN Sn02">
+      <DisplayId>Snowman</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xe8</Index>
+      </Texture>
+      <ShadowSize>80</ShadowSize>
+      <ShadowColor>0xBBCEDE</ShadowColor>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3fbf" id="XN Sn03">
+      <DisplayId>Snowman</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xe9</Index>
+      </Texture>
+      <ShadowSize>80</ShadowSize>
+      <ShadowColor>0xBBCEDE</ShadowColor>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3fc0" id="XN Sn04">
+      <DisplayId>Snowman</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xea</Index>
+      </Texture>
+      <ShadowSize>80</ShadowSize>
+      <ShadowColor>0xBBCEDE</ShadowColor>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3fc1" id="XN Sn05">
+      <DisplayId>Snowman</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xeb</Index>
+      </Texture>
+      <ShadowSize>80</ShadowSize>
+      <ShadowColor>0xBBCEDE</ShadowColor>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3fc2" id="XN Sn06">
+      <DisplayId>Snowman</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xec</Index>
+      </Texture>
+      <ShadowSize>80</ShadowSize>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3fc3" id="XN Sn07">
+      <DisplayId>Snowman</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xed</Index>
+      </Texture>
+      <ShadowSize>80</ShadowSize>
+      <ShadowColor>0xBBCEDE</ShadowColor>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3fc4" id="XN Sn08">
+      <DisplayId>Snowman</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>xmasNexusObjects16x16</File>
+         <Index>0xee</Index>
+      </Texture>
+      <ShadowSize>80</ShadowSize>
+      <ShadowColor>0xBBCEDE</ShadowColor>
+      <Size>100</Size>
+   </Object>
+   <Object type="0x3fd7" id="XN Craig Anchor">
+      <DisplayId>Craig The Intern</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects16x16</File>
+         <Index>0x18</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x3fd8" id="XN Craig">
+      <DisplayId>Craig The Intern</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x0b</Index>
+      </Texture>
+      <Size>100</Size>
+      <NoMiniMap/>
+   </Object>
+</Objects>

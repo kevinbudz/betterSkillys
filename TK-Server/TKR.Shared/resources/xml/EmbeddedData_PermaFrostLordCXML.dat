@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x1aa1" id="FR Test Portal">
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DisplayId>FR Test</DisplayId>
+      <DungeonName>FR Test</DungeonName>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0x7c</Index>
+      </Texture>
+   </Object>
+   <Object type="0x183c" id="FR Boss Shard">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x108</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x1864" id="FR Boss Flake">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x109</Index>
+      </Texture>
+      <Rotation>180</Rotation>
+   </Object>
+   <Object type="0x18de" id="FR Boss Ball">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x118</Index>
+      </Texture>
+   </Object>
+   <Object type="0x18e1" id="FR Boss Big">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d3LofiObjEmbed16</File>
+         <Index>0x45</Index>
+      </Texture>
+      <Rotation>180</Rotation>
+   </Object>
+   <Object type="0x18f4" id="FR God Wave">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x119</Index>
+      </Texture>
+   </Object>
+   <Object type="0x1fd6" id="FR God">
+      <DisplayId>Snow Construct</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d3Chars16x16rEmbed</File>
+         <Index>34</Index>
+      </AnimatedTexture>
+      <HitSound>monster/golems_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>85</Size>
+      <MaxHitPoints>2500</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>350</Exp>
+      <God/>
+      <Terrain>Mountains</Terrain>
+      <PerRealmMax>50</PerRealmMax>
+      <Projectile id="0">
+         <ObjectId>FR God Wave</ObjectId>
+         <Damage>110</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>2700</LifetimeMS>
+         <Size>80</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x1a9d" id="FR God Soul">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x0fe</Index>
+      </Texture>
+      <Animation prob="0.6" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>d3LofiObjEmbed</File>
+               <Index>0x0fe</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>d3LofiObjEmbed</File>
+               <Index>0x0ff</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Animation prob="0.4" period="0.6">
+         <Frame time="0.1">
+            <Texture>
+               <File>d3LofiObjEmbed</File>
+               <Index>0x0fe</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d3LofiObjEmbed</File>
+               <Index>0x0ff</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d3LofiObjEmbed</File>
+               <Index>0x0fe</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d3LofiObjEmbed</File>
+               <Index>0x0ff</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d3LofiObjEmbed</File>
+               <Index>0x0fe</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d3LofiObjEmbed</File>
+               <Index>0x0ff</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>60</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>0.5</Z>
+      <Flying/>
+   </Object>
+   <Object type="0x1fe1" id="FR God Soul Demo">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x0fe</Index>
+      </Texture>
+      <Animation prob="0.6" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>d3LofiObjEmbed</File>
+               <Index>0x0fe</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>d3LofiObjEmbed</File>
+               <Index>0x0ff</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Animation prob="0.4" period="0.6">
+         <Frame time="0.1">
+            <Texture>
+               <File>d3LofiObjEmbed</File>
+               <Index>0x0fe</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d3LofiObjEmbed</File>
+               <Index>0x0ff</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d3LofiObjEmbed</File>
+               <Index>0x0fe</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d3LofiObjEmbed</File>
+               <Index>0x0ff</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d3LofiObjEmbed</File>
+               <Index>0x0fe</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>d3LofiObjEmbed</File>
+               <Index>0x0ff</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>60</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>0.5</Z>
+      <Flying/>
+   </Object>
+   <Object type="0x1fd7" id="FR God Death">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>d3Chars16x16rEmbed</File>
+         <Index>34</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x1add" id="FR God Nova">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>d3Chars16x16rEmbed</File>
+         <Index>34</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x1fde" id="FR Spawn">
+      <DisplayId>Permafrost Lord</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d3LofiObjEmbed16</File>
+         <Index>0x46</Index>
+      </Texture>
+      <Size>140</Size>
+      <Terrain>Mountains</Terrain>
+      <Enemy/>
+      <NoMiniMap/>
+      <Invincible/>
+   </Object>
+   <Object type="0x1fee" id="FR Boss">
+      <DisplayId>Permafrost Lord</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>d3Chars16x16rEmbed</File>
+         <Index>35</Index>
+      </AnimatedTexture>
+      <DontFaceAttacks/>
+      <DontFaceMovement/>
+      <HitSound>monster/golems_hit</HitSound>
+      <DeathSound>monster/rocks_death</DeathSound>
+      <Size>140</Size>
+      <MaxHitPoints>120000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>2000</Exp>
+      <God/>
+      <TrackLoot/>
+      <Quest/>
+      <HealthBarBoss/>
+      <Level>20</Level>
+      <StasisImmune/>
+      <StunImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Speed>0</Speed>
+         <Damage>0</Damage>
+         <LifetimeMS>0</LifetimeMS>
+         <Size>0</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>FR Boss Shard</ObjectId>
+         <Size>120</Size>
+         <Damage>160</Damage>
+         <Speed>35</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>FR Boss Shard</ObjectId>
+         <Size>120</Size>
+         <Damage>160</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>FR Boss Shard</ObjectId>
+         <Size>120</Size>
+         <Damage>160</Damage>
+         <Speed>105</Speed>
+         <LifetimeMS>1700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>FR Boss Flake</ObjectId>
+         <Size>90</Size>
+         <Damage>120</Damage>
+         <Speed>20</Speed>
+         <LifetimeMS>2700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+         <Amplitude>1.8</Amplitude>
+         <Frequency>1.0</Frequency>
+         <PassesCover/>
+         <ConditionEffect duration="5">Weak</ConditionEffect>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>FR Boss Flake</ObjectId>
+         <Size>90</Size>
+         <Damage>120</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>2700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+         <Amplitude>2.0</Amplitude>
+         <Frequency>1.0</Frequency>
+         <PassesCover/>
+         <ConditionEffect duration="5">Weak</ConditionEffect>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>FR Boss Flake</ObjectId>
+         <Size>90</Size>
+         <Damage>120</Damage>
+         <Speed>75</Speed>
+         <LifetimeMS>2700</LifetimeMS>
+         <Boomerang/>
+         <MultiHit/>
+         <Amplitude>2.2</Amplitude>
+         <Frequency>1.0</Frequency>
+         <PassesCover/>
+         <ConditionEffect duration="5">Weak</ConditionEffect>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>FR Boss Big</ObjectId>
+         <Size>200</Size>
+         <Damage>250</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <PassesCover/>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>FR Boss Ball</ObjectId>
+         <Damage>130</Damage>
+         <Speed>65</Speed>
+         <LifetimeMS>2700</LifetimeMS>
+         <Size>80</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+</Objects>

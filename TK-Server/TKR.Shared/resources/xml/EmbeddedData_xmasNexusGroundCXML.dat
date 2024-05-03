@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<GroundTypes>
+   <Ground type="0x10fb" id="XN Finish Line">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x10</Index>
+      </Texture>
+      <SlideAmount>0.95</SlideAmount>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x10fc" id="XN MTrailNW">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x20</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x10fd" id="XN MTrailNL">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x21</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x10fe" id="XN MTrailNR">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x22</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x10ff" id="XN MTrailNE">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x23</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1100" id="XN MTrailEU">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x24</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1101" id="XN MTrailED">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x25</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1102" id="XN MTrailSE">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x26</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1103" id="XN MTrailSR">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x27</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1104" id="XN MTrailSL">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x28</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1105" id="XN MTrailSW">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x29</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1106" id="XN MTrailWD">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x2a</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1107" id="XN MTrailWU">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x2b</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1108" id="XN MTrailE Loop">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x2c</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1109" id="XN MTrail SW Loop">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x2d</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x110a" id="XN ChTrailNW">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x30</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x110b" id="XN ChTrailN">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x31</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x110c" id="XN ChTrailNE">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x32</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x110d" id="XN ChTrailW">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x33</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x110e" id="XN ChTrailE">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x34</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x110f" id="XN ChTrailSW">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x35</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1110" id="XN ChTrailS">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x36</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1111" id="XN ChTrailSE">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x37</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1112" id="XN HTrailS01">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x38</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1113" id="XN HTrailS02">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x39</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1114" id="XN HTrailS03">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x3a</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1115" id="XN HTrailT11">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x3b</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1116" id="XN HTrailT21">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x3c</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1117" id="XN HTrailS22">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x3d</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1118" id="XN HTrailS31">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x3e</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1119" id="XN HTrailS32">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x3f</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x111a" id="XN MooseTrail01">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x40</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x111b" id="XN MooseTrail02">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x41</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x111c" id="XN BearTrail01">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x42</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x111d" id="XN BearTrail02">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x43</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x111e" id="XN IceShoreNW">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x44</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x111f" id="XN IceShoreN">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x45</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1120" id="XN IceShoreNE">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x46</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1121" id="XN IceShoreW">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x47</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1122" id="XN IceShoreE">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x48</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1123" id="XN IceShoreSW">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x49</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1124" id="XN IceShoreS">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x4a</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1125" id="XN IceShoreSE">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x4b</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1126" id="XN IceLake Island01">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x4c</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1127" id="XN IceLake Island02">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x4d</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1128" id="XN IceLake Island03">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x4e</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1129" id="XN IceLake Island04">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x4f</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x112a" id="XN StreamNW">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x50</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x112b" id="XN StreamN">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x51</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x112c" id="XN StreamNE">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x52</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x112d" id="XN StreamW">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x53</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x112e" id="XN StreamE">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x54</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x112f" id="XN StreamSW">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x55</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1130" id="XN StreamS">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x56</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1131" id="XN StreamSE">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x57</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1132" id="XN IceStick">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x58</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1133" id="XN IceLeaves01">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x59</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1134" id="XN IceLeaf">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x5a</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1135" id="XN IceLeaves02">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x5b</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0x1136" id="XN Nexus Speedy">
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x04</Index>
+      </Texture>
+      <Speed>1.4</Speed>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1137" id="XN Ice Speedy">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x5c</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+      <SlideAmount>0.95</SlideAmount>
+      <Speed>1.2</Speed>
+   </Ground>
+   <Ground type="0x113f" id="XN Shallow Water">
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x5c</Index>
+      </Texture>
+      <Sink/>
+      <Animate dx="0" dy="0.3">Wave</Animate>
+      <Speed>0.7</Speed>
+      <BlendPriority>0</BlendPriority>
+   </Ground>
+   <Ground type="0x1140" id="XN Deep Water">
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x5b</Index>
+      </Texture>
+      <NoWalk/>
+      <Animate dx="0" dy="0.3">Wave</Animate>
+      <BlendPriority>2</BlendPriority>
+   </Ground>
+   <Ground type="0x1138" id="XN Dark Wood NoWalk">
+      <Texture>
+         <File>santaWorkshopObjects8x8</File>
+         <Index>0x03</Index>
+      </Texture>
+      <NoWalk/>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x1139" id="XN Snow NoWalk">
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x1c0</Index>
+      </Texture>
+      <NoWalk/>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x113a" id="XN ICLight">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x81</Index>
+      </Texture>
+      <Sink/>
+      <Speed>0.7</Speed>
+      <BlendPriority>0</BlendPriority>
+   </Ground>
+   <Ground type="0x113b" id="XN ICDark">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x80</Index>
+      </Texture>
+      <Sink/>
+      <NoWalk/>
+      <BlendPriority>4</BlendPriority>
+   </Ground>
+   <Ground type="0x113c" id="XN Snowy Rock">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x5d</Index>
+      </Texture>
+      <BlendPriority>6</BlendPriority>
+   </Ground>
+   <Ground type="0x113d" id="XN Snow Dark">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x5e</Index>
+      </Texture>
+      <BlendPriority>4</BlendPriority>
+      <Speed>0.95</Speed>
+   </Ground>
+   <Ground type="0x113e" id="XN Snow Darkest">
+      <Texture>
+         <File>xmasNexusObjects8x8</File>
+         <Index>0x5f</Index>
+      </Texture>
+      <BlendPriority>4</BlendPriority>
+      <Speed>0.95</Speed>
+   </Ground>
+</GroundTypes>

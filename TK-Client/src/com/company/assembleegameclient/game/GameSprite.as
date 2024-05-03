@@ -1,5 +1,6 @@
 package com.company.assembleegameclient.game
 {
+import com.company.assembleegameclient.game.GameStatistics;
 import com.company.assembleegameclient.map.Camera;
 import com.company.assembleegameclient.map.Map;
 import com.company.assembleegameclient.objects.GameObject;
@@ -50,6 +51,7 @@ import kabam.rotmg.messaging.impl.incoming.MapInfo;
 import kabam.rotmg.servers.api.Server;
 import kabam.rotmg.stage3D.Renderer;
 import kabam.rotmg.ui.UIUtils;
+import kabam.rotmg.ui.view.BossHealthBar;
 import kabam.rotmg.ui.view.HUDView;
 
 import org.osflash.signals.Signal;
@@ -83,6 +85,7 @@ public class GameSprite extends Sprite
    private var isGameStarted:Boolean;
    private var displaysPosY:uint = 4;
    public var chatPlayerMenu:PlayerMenu;
+   public var bossHealthBar:BossHealthBar;
 
    public function GameSprite(server:Server, gameId:int, createCharacter:Boolean, charId:int, keyTime:int, key:ByteArray, model:PlayerModel, mapJSON:String)
    {
@@ -99,6 +102,40 @@ public class GameSprite extends Sprite
       this.textBox_.addEventListener(MouseEvent.MOUSE_DOWN,this.onChatDown);
       this.textBox_.addEventListener(MouseEvent.MOUSE_UP,this.onChatUp);
       this.idleWatcher_ = new IdleWatcher();
+      this.bossHealthBar = new BossHealthBar();
+      this.bossHealthBar.x = 5;
+      this.bossHealthBar.y = 5;
+      this.bossHealthBar.visible = false;
+      addChild(this.bossHealthBar);
+   }
+
+   public function updateBossBar() : void
+   {
+      var gameObject:GameObject = null;
+      var objectId:int = 0;
+
+      for each(gameObject in map.goDict_)
+      {
+         if((gameObject.props_.isQuest_ || gameObject.props_.isChest_) && Parameters.DamageCounter[gameObject.objectId_] > 0 && objectId == 0)
+         {
+            objectId = gameObject.objectId_;
+         }
+
+         if(objectId == 0){
+            bossHealthBar.setDamageInflicted(-1);
+         }
+
+         if((gameObject.props_.isQuest_ || gameObject.props_.isChest_) && Parameters.DamageCounter[gameObject.objectId_] > 0)
+         {
+            if(gameObject != null)
+            {
+               if(Parameters.DamageCounter[gameObject.objectId_] > gameObject.maxHP_)
+                  Parameters.DamageCounter[gameObject.objectId_] = gameObject.maxHP_;
+               var dmgInflicted = Parameters.DamageCounter[gameObject.objectId_] / gameObject.maxHP_ * 100;
+               bossHealthBar.setDamageInflicted(dmgInflicted);
+            }
+         }
+      }
    }
 
    public function setFocus(focus:GameObject) : void
@@ -239,9 +276,22 @@ public class GameSprite extends Sprite
          this.map.scaleX = (sWidth * Parameters.data_.mscale);
          this.map.scaleY = (sHeight * Parameters.data_.mscale);
       }
-      if (this.hudView != null)
+      if (this.bossHealthBar != null)
       {
          if (uiscale)
+         {
+            this.bossHealthBar.scaleX = result;
+            this.bossHealthBar.scaleY = 1;
+         }
+         else
+         {
+            this.bossHealthBar.scaleX = sWidth;
+            this.bossHealthBar.scaleY = sHeight;
+         }
+      }
+      if (this.hudView != null)
+      {
+         if (!Parameters.data_.hudscale)
          {
             this.hudView.scaleX = result;
             this.hudView.scaleY = 1;
@@ -251,7 +301,7 @@ public class GameSprite extends Sprite
          {
             this.hudView.scaleX = sWidth;
             this.hudView.scaleY = sHeight;
-            this.hudView.y = (300 * (1 - sHeight));
+            //this.hudView.y = (300 * (1 - sHeight));
          }
          this.hudView.x = (800 - (200 * this.hudView.scaleX));
          if (this.creditDisplay_ != null)
@@ -263,11 +313,12 @@ public class GameSprite extends Sprite
          if (uiscale) {
             this.textBox_.scaleX = result;
             this.textBox_.scaleY = 1;
+            this.textBox_.y = 0;
          } else {
             this.textBox_.scaleX = sWidth;
             this.textBox_.scaleY = sHeight;
+            this.textBox_.y = (600 * (1 - sHeight));
          }
-         // this.textBox_.y = 300 + 300 * (1 - this.textBox_.scaleY);
          //trace("resize",chatBox_.y,chatBox_.list.y)
       }
       if (this.rankText_ != null)
@@ -313,18 +364,43 @@ public class GameSprite extends Sprite
             this.creditDisplay_.scaleY = sHeight;
          }
       }
+      if (this.gameStatistics_ != null)
+      {
+         if (uiscale)
+         {
+            this.gameStatistics_.scaleX = result;
+            this.gameStatistics_.scaleY = 1;
+         }
+         else
+         {
+            this.gameStatistics_.scaleX = sWidth;
+            this.gameStatistics_.scaleY = sHeight;
+         }
+      }
+      if (this.gameStatistics_ != null)
+      {
+         this.gameStatistics_.x = this.hudView.x - (this.gameStatistics_.container_.width * this.gameStatistics_.scaleX);
+      }
    }
 
    public var gameStatistics_:GameStatistics;
-
    public function enableGameStatistics():void {
       if (this.gameStatistics_ != null) {
          this.gameStatistics_.visible = true;
       }
       else {
          this.gameStatistics_ = new GameStatistics();
-         this.gameStatistics_.x = 600 - this.gameStatistics_.width * 2 - 24;
-         this.gameStatistics_.y = 8;
+         if (Parameters.data_.uiscale)
+         {
+            this.gameStatistics_.scaleX = (800 / stage.stageWidth) / (600 / stage.stageHeight);
+            this.gameStatistics_.scaleY = 1;
+         }
+         else
+         {
+            this.gameStatistics_.scaleX = 800 / stage.stageWidth;
+            this.gameStatistics_.scaleY = 600 / stage.stageHeight;
+         }
+         this.gameStatistics_.x = this.hudView.x - (this.gameStatistics_.container_.width * this.gameStatistics_.scaleX);
          addChild(this.gameStatistics_);
       }
    }
@@ -388,6 +464,7 @@ public class GameSprite extends Sprite
          Projectile.dispose();
          FreeList.dispose();
          this.gsc_.disconnect();
+         Parameters.DamageCounter = [];
          if(this.gameStatistics_ != null && contains(this.gameStatistics_)){
             removeChild(this.gameStatistics_);
          }
@@ -405,6 +482,9 @@ public class GameSprite extends Sprite
       }
 
       this.updateNearestInteractive();
+      if(this.bossHealthBar != null && this.bossHealthBar.visible){
+         this.bossHealthBar.draw();
+      }
 
       this.map.update(time,dt);
       this.camera_.update(dt);
@@ -445,6 +525,7 @@ public class GameSprite extends Sprite
          this.moveRecords_.addRecord(time,player.x_,player.y_);
       }
       this.lastUpdate_ = time;
+      updateBossBar();
    }
 
    public function onChatDown(param1:MouseEvent) : void

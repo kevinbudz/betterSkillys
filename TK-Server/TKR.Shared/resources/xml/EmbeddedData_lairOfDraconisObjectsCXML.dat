@@ -1,0 +1,5064 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0xb1c4" id="LOD Rock Dragon Portal">
+      <DisplayId>Rock Dragon Test</DisplayId>
+      <Class>Portal</Class>
+      <IntergamePortal/>
+      <DungeonName>LOD Rock Dragon</DungeonName>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x6f</Index>
+      </Texture>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0xb228" id="LOD Boost Chooser">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x04</Index>
+      </Texture>
+      <Size>0</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0xb229" id="LOD Feargus Soul Boost">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x04</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x04</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x05</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x06</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x07</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <Effect color="0x232323" rate="15" life=".5" lifeVariance="0" speed="0" speedVariance="0" size="8" rise="0" riseAcc="0" riseVariance="0" rangeX="4" rangeY="4">CustomParticles</Effect>
+   </Object>
+   <Object type="0xb22a" id="LOD Pyyr Soul Boost">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x10</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x10</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x11</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x12</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x13</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <Effect color="0xC10900" rate="15" life=".5" lifeVariance="0" speed="0" speedVariance="0" size="8" rise="0" riseAcc="0" riseVariance="0" rangeX="4" rangeY="4">CustomParticles</Effect>
+   </Object>
+   <Object type="0xb22b" id="LOD Nikao Soul Boost">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x08</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x08</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x09</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <Effect color="0x1046BB" rate="15" life=".5" lifeVariance="0" speed="0" speedVariance="0" size="8" rise="0" riseAcc="0" riseVariance="0" rangeX="4" rangeY="4">CustomParticles</Effect>
+   </Object>
+   <Object type="0xb22c" id="LOD Limoz Soul Boost">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x0c</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <Effect color="0x22440C" rate="15" life=".5" lifeVariance="0" speed="0" speedVariance="0" size="8" rise="0" riseAcc="0" riseVariance="0" rangeX="4" rangeY="4">CustomParticles</Effect>
+   </Object>
+   <Object type="0xb16e" id="LOD Altar of Draconis">
+      <DisplayId>Altar of Draconis</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x09</Index>
+      </Texture>
+      <Size>120</Size>
+      <Z>1.2</Z>
+      <ShadowSize>0</ShadowSize>
+      <Animation prob="1" period="1.8">
+         <Frame time="0.1">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x09</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x0a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x0b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x0a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.1">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x09</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x08</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x0c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x08</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0xb180" id="LOD Order Handler">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x09</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb16f" id="LOD Feargus Statue">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x04</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x04</Index>
+         </Texture>
+         <Effect color="0x000000" rate="20" life=".2" lifeVariance="0.1" speed="0" speedVariance="0" size="3" rise="0" riseAcc="0" riseVariance="0" rangeX="1" rangeY="1">CustomParticles</Effect>
+      </AltTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_hit</DeathSound>
+      <Size>180</Size>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>15</Defense>
+      <StasisImmune/>
+   </Object>
+   <Object type="0xb170" id="LOD Limoz Statue">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x01</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x05</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x05</Index>
+         </Texture>
+         <Effect color="0x00FF00" rate="20" life=".2" lifeVariance="0.1" speed="0" speedVariance="0" size="3" rise="0" riseAcc="0" riseVariance="0" rangeX="1" rangeY="1">CustomParticles</Effect>
+      </AltTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_hit</DeathSound>
+      <Size>180</Size>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>15</Defense>
+      <StasisImmune/>
+   </Object>
+   <Object type="0xb171" id="LOD Pyyr Statue">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x02</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x06</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x06</Index>
+         </Texture>
+         <Effect color="0xFF0000" rate="20" life=".2" lifeVariance="0.1" speed="0" speedVariance="0" size="3" rise="0" riseAcc="0" riseVariance="0" rangeX="1" rangeY="1">CustomParticles</Effect>
+      </AltTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_hit</DeathSound>
+      <Size>180</Size>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>15</Defense>
+      <StasisImmune/>
+   </Object>
+   <Object type="0xb172" id="LOD Nikao Statue">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x03</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x07</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x07</Index>
+         </Texture>
+         <Effect color="0x0000FF" rate="20" life=".2" lifeVariance="0.1" speed="0" speedVariance="0" size="3" rise="0" riseAcc="0" riseVariance="0" rangeX="1" rangeY="1">CustomParticles</Effect>
+      </AltTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_hit</DeathSound>
+      <Size>180</Size>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>15</Defense>
+      <StasisImmune/>
+   </Object>
+   <Object type="0xb224" id="LOD Feargus Death Statue">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x31</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x32</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x33</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x34</Index>
+         </Texture>
+         <Effect color="0x000000" rate="20" life=".2" lifeVariance="0.1" speed="0" speedVariance="0" size="3" rise="0" riseAcc="0" riseVariance="0" rangeX="1" rangeY="1">CustomParticles</Effect>
+      </AltTexture>
+      <Size>180</Size>
+   </Object>
+   <Object type="0xb225" id="LOD Limoz Death Statue">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x35</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x36</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x37</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x38</Index>
+         </Texture>
+         <Effect color="0x00FF00" rate="20" life=".2" lifeVariance="0.1" speed="0" speedVariance="0" size="3" rise="0" riseAcc="0" riseVariance="0" rangeX="1" rangeY="1">CustomParticles</Effect>
+      </AltTexture>
+      <Size>180</Size>
+   </Object>
+   <Object type="0xb226" id="LOD Pyyr Death Statue">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x2d</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x2e</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x2f</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x30</Index>
+         </Texture>
+         <Effect color="0xFF0000" rate="20" life=".2" lifeVariance="0.1" speed="0" speedVariance="0" size="3" rise="0" riseAcc="0" riseVariance="0" rangeX="1" rangeY="1">CustomParticles</Effect>
+      </AltTexture>
+      <Size>180</Size>
+   </Object>
+   <Object type="0xb227" id="LOD Nikao Death Statue">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x29</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x2a</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x2b</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x2c</Index>
+         </Texture>
+         <Effect color="0x0000FF" rate="20" life=".2" lifeVariance="0.1" speed="0" speedVariance="0" size="3" rise="0" riseAcc="0" riseVariance="0" rangeX="1" rangeY="1">CustomParticles</Effect>
+      </AltTexture>
+      <Size>180</Size>
+   </Object>
+   <Object type="0xb18b" id="LOD Feargus Arrival">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x5b</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb18e" id="LOD Nikao Arrival">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x5b</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb18c" id="LOD Limoz Arrival">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x5b</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb18d" id="LOD Pyyr Arrival">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x5b</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb219" id="LOD Feargus Soul 1">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x04</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x04</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x05</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x06</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x07</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0xb1b6" id="LOD Feargus Soul 2">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x04</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x04</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x05</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x06</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x07</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0xb1b7" id="LOD Feargus Soul 3">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x04</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x04</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x05</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x06</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x07</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0xb1b8" id="LOD Feargus Soul 4">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x04</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x04</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x05</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x06</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x07</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0xb21a" id="LOD Nikao Soul 1">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x08</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x08</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x09</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0xb1b9" id="LOD Nikao Soul 2">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x08</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x08</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x09</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0xb1ba" id="LOD Nikao Soul 3">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x08</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x08</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x09</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0xb1bb" id="LOD Nikao Soul 4">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x08</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x08</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x09</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0b</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0xb21b" id="LOD Limoz Soul 1">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x0c</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0xb1bc" id="LOD Limoz Soul 2">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x0c</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0xb1c9" id="LOD Limoz Soul 3">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x0c</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0xb1bd" id="LOD Limoz Soul 4">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x0c</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x0f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0xb21c" id="LOD Pyyr Soul 1">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x10</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x10</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x11</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x12</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x13</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0xb1be" id="LOD Pyyr Soul 2">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x10</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x10</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x11</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x12</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x13</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0xb1bf" id="LOD Pyyr Soul 3">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x10</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x10</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x11</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x12</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x13</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0xb1c0" id="LOD Pyyr Soul 4">
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x10</Index>
+      </Texture>
+      <Animation prob="1.0" period="0.8">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x10</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x11</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x12</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x13</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>100</Size>
+      <ShadowSize>60</ShadowSize>
+      <Z>.4</Z>
+      <Flying/>
+      <TrackLoot/>
+   </Object>
+   <Object type="0xb173" id="LOD Debug">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x5b</Index>
+      </Texture>
+      <Size>-1</Size>
+   </Object>
+   <Object type="0xb178" id="LOD Feargus Spawner">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb179" id="LOD Nikao Spawner">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb17c" id="LOD Limoz Spawner">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb17d" id="LOD Pyyr Spawner">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb1c3" id="LOD Ivory Spawner">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb174" id="LOD Feargus the Obsidian Dragon">
+      <DisplayId>Feargus the Obsidian Dragon</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Portrait>
+         <AnimatedTexture>
+            <File>lairOfDraconisChars16x16</File>
+            <Index>0</Index>
+         </AnimatedTexture>
+      </Portrait>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x0d</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x39</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x3a</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x3b</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x3c</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="7">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x3d</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="8">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x5f</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/dragons_hit</HitSound>
+      <DeathSound>monster/dragons_death</DeathSound>
+      <Size>180</Size>
+      <MaxHitPoints>65000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>8000</Exp>
+      <Quest/>
+      <HealthBarBoss/>
+      <God/>
+      <KeepDamageRecord/>
+      <ParalyzeImmune/>
+      <DazedImmune/>
+      <StasisImmune/>
+      <StunImmune/>
+      <Projectile id="0">
+         <ObjectId>LOD Black Ray</ObjectId>
+         <Speed>55</Speed>
+         <Damage>160</Damage>
+         <Size>240</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Black Spin</ObjectId>
+         <Speed>90</Speed>
+         <Damage>120</Damage>
+         <Size>200</Size>
+         <LifetimeMS>6000</LifetimeMS>
+         <Parametric/>
+         <Magnitude>6</Magnitude>
+         <ConditionEffect duration="3" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>LOD Black Shot</ObjectId>
+         <Speed>55</Speed>
+         <Damage>100</Damage>
+         <Size>140</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>LOD Black Bullet</ObjectId>
+         <Speed>80</Speed>
+         <Damage>120</Damage>
+         <Size>140</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>LOD Blue Fireball</ObjectId>
+         <Speed>75</Speed>
+         <Damage>75</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1500</LifetimeMS>
+         <ConditionEffect duration="4">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>LOD Blue Blast</ObjectId>
+         <Speed>60</Speed>
+         <Damage>100</Damage>
+         <Size>140</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="4">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>LOD Red Spinning Fireball</ObjectId>
+         <Speed>60</Speed>
+         <Damage>50</Damage>
+         <Size>110</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="3">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>LOD Red Big Fireball</ObjectId>
+         <Speed>75</Speed>
+         <Damage>150</Damage>
+         <Size>200</Size>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="9">
+         <ObjectId>LOD Green Spin Ball</ObjectId>
+         <Damage>120</Damage>
+         <Speed>40</Speed>
+         <Size>90</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <ConditionEffect duration="4">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="10">
+         <ObjectId>LOD Green Spine</ObjectId>
+         <Speed>30</Speed>
+         <Damage>120</Damage>
+         <Size>120</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb21e" id="LOD Shade of Feargus">
+      <DisplayId>Shade of Feargus</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x39</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x3a</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x3b</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x3c</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x3d</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="7">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x5f</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/dragons_hit</HitSound>
+      <DeathSound>monster/dragons_death</DeathSound>
+      <Size>175</Size>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>15</Defense>
+      <Exp>0</Exp>
+      <Projectile id="0">
+         <ObjectId>LOD Black Shot</ObjectId>
+         <Speed>80</Speed>
+         <Damage>100</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Blue Blast</ObjectId>
+         <Speed>100</Speed>
+         <Damage>100</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1400</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>LOD Red Small Fireball</ObjectId>
+         <Speed>60</Speed>
+         <Damage>100</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>LOD Green Bullet</ObjectId>
+         <Speed>80</Speed>
+         <Damage>80</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2">Sick</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xb17a" id="LOD Shade of Feargus Ram">
+      <DisplayId>Shade of Feargus</DisplayId>
+      <Enemy/>
+      <Invincible/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <Size>140</Size>
+      <Projectile id="0">
+         <ObjectId>LOD Red Firewave</ObjectId>
+         <Speed>120</Speed>
+         <Damage>80</Damage>
+         <Size>200</Size>
+         <LifetimeMS>600</LifetimeMS>
+         <ArmorPiercing/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Green Spin Ball</ObjectId>
+         <Speed>3</Speed>
+         <Damage>100</Damage>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="4">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>LOD Black Bullet</ObjectId>
+         <Speed>80</Speed>
+         <Damage>120</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1200</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb241" id="LOD Shade of Feargus N">
+      <DisplayId>Shade of Feargus</DisplayId>
+      <Enemy/>
+      <Invincible/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <Size>175</Size>
+      <Projectile id="0">
+         <ObjectId>LOD Black Bullet</ObjectId>
+         <Speed>100</Speed>
+         <Damage>140</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Blue Blast</ObjectId>
+         <Speed>100</Speed>
+         <Damage>120</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>LOD Green Bullet</ObjectId>
+         <Speed>100</Speed>
+         <Damage>100</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>LOD Red Small Fireball</ObjectId>
+         <Speed>100</Speed>
+         <Damage>120</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0xb242" id="LOD Shade of Feargus E">
+      <DisplayId>Shade of Feargus</DisplayId>
+      <Enemy/>
+      <Invincible/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <Size>175</Size>
+      <Projectile id="0">
+         <ObjectId>LOD Black Bullet</ObjectId>
+         <Speed>100</Speed>
+         <Damage>140</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Blue Blast</ObjectId>
+         <Speed>100</Speed>
+         <Damage>120</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>LOD Green Bullet</ObjectId>
+         <Speed>100</Speed>
+         <Damage>100</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>LOD Red Small Fireball</ObjectId>
+         <Speed>100</Speed>
+         <Damage>120</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0xb243" id="LOD Shade of Feargus S">
+      <DisplayId>Shade of Feargus</DisplayId>
+      <Enemy/>
+      <Invincible/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <Size>175</Size>
+      <Projectile id="0">
+         <ObjectId>LOD Black Bullet</ObjectId>
+         <Speed>100</Speed>
+         <Damage>140</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Blue Blast</ObjectId>
+         <Speed>100</Speed>
+         <Damage>120</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>LOD Green Bullet</ObjectId>
+         <Speed>100</Speed>
+         <Damage>100</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>LOD Red Small Fireball</ObjectId>
+         <Speed>100</Speed>
+         <Damage>120</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0xb244" id="LOD Shade of Feargus W">
+      <DisplayId>Shade of Feargus</DisplayId>
+      <Enemy/>
+      <Invincible/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <Size>175</Size>
+      <Projectile id="0">
+         <ObjectId>LOD Black Bullet</ObjectId>
+         <Speed>100</Speed>
+         <Damage>140</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Blue Blast</ObjectId>
+         <Speed>100</Speed>
+         <Damage>120</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>LOD Green Bullet</ObjectId>
+         <Speed>100</Speed>
+         <Damage>100</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>LOD Red Small Fireball</ObjectId>
+         <Speed>100</Speed>
+         <Damage>120</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0xb17b" id="LOD Obsidian Soul Shard">
+      <DisplayId>Obsidian Soul Shard</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars8x8</File>
+         <Index>0</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+      </AltTexture>
+      <Size>150</Size>
+      <HitSound>monster/orcs_hit</HitSound>
+      <DeathSound>monster/orcs_death</DeathSound>
+      <MaxHitPoints>7000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>0</Exp>
+      <WhileMoving>
+         <Z>0.4</Z>
+         <Flying/>
+      </WhileMoving>
+      <Projectile id="0">
+         <ObjectId>LOD Black Shot</ObjectId>
+         <Speed>55</Speed>
+         <Damage>100</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1200</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Red Small Fireball</ObjectId>
+         <Speed>55</Speed>
+         <Damage>70</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1200</LifetimeMS>
+         <ConditionEffect duration="2">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>LOD Blue Blast</ObjectId>
+         <Speed>55</Speed>
+         <Damage>100</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1200</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>LOD Green Bullet</ObjectId>
+         <Speed>55</Speed>
+         <Damage>80</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1200</LifetimeMS>
+         <ConditionEffect duration="2">Sick</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xb240" id="LOD Feargus Spike">
+      <DisplayId>Spike</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <NoMiniMap/>
+      <Invincible/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x45d</Index>
+      </Texture>
+      <Size>120</Size>
+      <Exp>0</Exp>
+   </Object>
+   <Object type="0xb245" id="LOD Feargus Freezer">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x15c</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb1c5" id="LOD Feargus Unfreezer">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x15c</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb24f" id="LOD Feargus Egg Spawner">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x00</Index>
+      </Texture>
+      <Size>100</Size>
+   </Object>
+   <Object type="0xb249" id="LOD Feargus Green Gas Spawner 1">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x5b</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb1ff" id="LOD Feargus Green Gas Spawner 2">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x5b</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb22e" id="LOD Feargus Green Gas Spawner 3">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x5b</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb24a" id="LOD Feargus Wind Controller">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x5b</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb24e" id="LOD Feargus Wind N">
+      <DisplayId>Feargus the Obsidian Dragon</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Invincible/>
+      <NoMiniMap/>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x18</Index>
+      </Texture>
+      <Size>0</Size>
+      <Exp>0</Exp>
+      <Projectile id="0">
+         <ObjectId>Beam</ObjectId>
+         <Speed>120</Speed>
+         <Damage>0</Damage>
+         <Size>200</Size>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Black Spin</ObjectId>
+         <Speed>80</Speed>
+         <Damage>120</Damage>
+         <Size>180</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="5" target="1">Stasis</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xb24d" id="LOD Feargus Wind E">
+      <DisplayId>Feargus the Obsidian Dragon</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Invincible/>
+      <NoMiniMap/>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x18</Index>
+      </Texture>
+      <Size>0</Size>
+      <Exp>0</Exp>
+      <Projectile id="0">
+         <ObjectId>Beam</ObjectId>
+         <Speed>120</Speed>
+         <Damage>0</Damage>
+         <Size>200</Size>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Green Spin Ball</ObjectId>
+         <Speed>80</Speed>
+         <Damage>120</Damage>
+         <Size>140</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="3">Sick</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xb24c" id="LOD Feargus Wind W">
+      <DisplayId>Feargus the Obsidian Dragon</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Invincible/>
+      <NoMiniMap/>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x18</Index>
+      </Texture>
+      <Size>0</Size>
+      <Exp>0</Exp>
+      <Projectile id="0">
+         <ObjectId>Beam</ObjectId>
+         <Speed>120</Speed>
+         <Damage>0</Damage>
+         <Size>200</Size>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Red Spinning Fireball</ObjectId>
+         <Speed>80</Speed>
+         <Damage>120</Damage>
+         <Size>140</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="5">Armor Broken</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xb24b" id="LOD Feargus Wind S">
+      <DisplayId>Feargus the Obsidian Dragon</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Invincible/>
+      <NoMiniMap/>
+      <Texture>
+         <File>d3LofiObjEmbed</File>
+         <Index>0x18</Index>
+      </Texture>
+      <Size>0</Size>
+      <Exp>0</Exp>
+      <Projectile id="0">
+         <ObjectId>Beam</ObjectId>
+         <Speed>120</Speed>
+         <Damage>0</Damage>
+         <Size>200</Size>
+         <LifetimeMS>3000</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Blue Fireball</ObjectId>
+         <Speed>80</Speed>
+         <Damage>120</Damage>
+         <Size>140</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="5">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xb175" id="LOD Nikao the Azure Dragon">
+      <DisplayId>Nikao the Azure Dragon</DisplayId>
+      <Group>Dragon Gods</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <Portrait>
+         <AnimatedTexture>
+            <File>lairOfDraconisChars16x16</File>
+            <Index>1</Index>
+         </AnimatedTexture>
+      </Portrait>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x0e</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x28</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x25</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x26</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x27</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/dragons_hit</HitSound>
+      <DeathSound>monster/dragons_death</DeathSound>
+      <Size>180</Size>
+      <MaxHitPoints>65000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>8000</Exp>
+      <Quest/>
+      <HealthBarBoss/>
+      <God/>
+      <KeepDamageRecord/>
+      <ParalyzeImmune/>
+      <DazedImmune/>
+      <StasisImmune/>
+      <StunImmune/>
+      <Projectile id="0">
+         <ObjectId>LOD Blue Fireball</ObjectId>
+         <Speed>75</Speed>
+         <Damage>100</Damage>
+         <Size>150</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Blue Blast</ObjectId>
+         <Speed>65</Speed>
+         <Damage>140</Damage>
+         <Size>125</Size>
+         <LifetimeMS>3500</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>LOD Blue Storm</ObjectId>
+         <Speed>60</Speed>
+         <Damage>100</Damage>
+         <Size>90</Size>
+         <LifetimeMS>2500</LifetimeMS>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>LOD Black Bullet</ObjectId>
+         <Speed>60</Speed>
+         <Damage>140</Damage>
+         <Size>150</Size>
+         <LifetimeMS>3250</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>LOD Blue Blast</ObjectId>
+         <Speed>65</Speed>
+         <Damage>140</Damage>
+         <Size>125</Size>
+         <LifetimeMS>3500</LifetimeMS>
+         <Amplitude>2</Amplitude>
+         <Frequency>0.5</Frequency>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>LOD Green Spine</ObjectId>
+         <Speed>70</Speed>
+         <Damage>90</Damage>
+         <Size>100</Size>
+         <LifetimeMS>3250</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>LOD Blue Bullet</ObjectId>
+         <Speed>55</Speed>
+         <Damage>180</Damage>
+         <Size>120</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>LOD Black Spin</ObjectId>
+         <Speed>60</Speed>
+         <Damage>110</Damage>
+         <Size>140</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="9">
+         <ObjectId>LOD Green Spin Ball</ObjectId>
+         <Speed>60</Speed>
+         <Damage>80</Damage>
+         <Size>100</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="10">
+         <ObjectId>LOD Red Orb</ObjectId>
+         <Speed>60</Speed>
+         <Damage>80</Damage>
+         <Size>150</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="11">
+         <ObjectId>LOD Blue Fireball</ObjectId>
+         <Speed>200</Speed>
+         <Damage>0</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1125</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="12">
+         <ObjectId>LOD Red Big Fireball</ObjectId>
+         <Damage>200</Damage>
+         <Speed>40</Speed>
+         <Size>300</Size>
+         <LifetimeMS>5500</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="13">
+         <ObjectId>LOD Red Spinning Fireball</ObjectId>
+         <Damage>90</Damage>
+         <Speed>70</Speed>
+         <Size>125</Size>
+         <LifetimeMS>3250</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1.5">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="14">
+         <ObjectId>LOD Black Bullet</ObjectId>
+         <Speed>60</Speed>
+         <Damage>140</Damage>
+         <Size>150</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="15">
+         <ObjectId>LOD Blue Bullet</ObjectId>
+         <Speed>80</Speed>
+         <Damage>120</Damage>
+         <Size>90</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="16">
+         <ObjectId>LOD Green Spine</ObjectId>
+         <Speed>70</Speed>
+         <Damage>90</Damage>
+         <Size>120</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1.5">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="17">
+         <ObjectId>LOD Red Big Fireball</ObjectId>
+         <Speed>60</Speed>
+         <Damage>120</Damage>
+         <Size>150</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="19">
+         <ObjectId>LOD Blue Fireball</ObjectId>
+         <Speed>60</Speed>
+         <Damage>75</Damage>
+         <Size>120</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="1">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb181" id="LOD Blue Egg">
+      <DisplayId>Blue Egg</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <ShadowSize>80</ShadowSize>
+      <MaxHitPoints>12000</MaxHitPoints>
+      <Size>140</Size>
+      <HitSound>monster/eggs_hit</HitSound>
+      <DeathSound>monster/eggs_death</DeathSound>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x01</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x5d</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xcb</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0xcc</Index>
+         </Texture>
+      </AltTexture>
+      <Color>0x68DEFF</Color>
+      <Sound id="0">monster/eggs_death</Sound>
+      <StasisImmune/>
+   </Object>
+   <Object type="0xb182" id="LOD Azure Soul Shard">
+      <DisplayId>Azure Soul Shard</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars8x8</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/orcs_hit</HitSound>
+      <DeathSound>monster/orcs_death</DeathSound>
+      <Size>120</Size>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>20</Defense>
+      <ParalyzeImmune/>
+      <Exp>0</Exp>
+      <Projectile id="0">
+         <ObjectId>LOD Blue Blast</ObjectId>
+         <Damage>85</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <Size>90</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Black Bullet</ObjectId>
+         <Damage>60</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>600</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>LOD Green Bullet</ObjectId>
+         <Damage>85</Damage>
+         <Speed>70</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <Size>85</Size>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>LOD Red Big Fireball</ObjectId>
+         <Damage>40</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>1500</LifetimeMS>
+         <Size>120</Size>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>LOD Black Bullet</ObjectId>
+         <Damage>60</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <Size>100</Size>
+         <Boomerang/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>LOD Green Bullet</ObjectId>
+         <Damage>70</Damage>
+         <Speed>50</Speed>
+         <LifetimeMS>1200</LifetimeMS>
+         <Size>85</Size>
+         <ConditionEffect duration="1">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>LOD Blue Blast</ObjectId>
+         <Damage>100</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>1000</LifetimeMS>
+         <Size>90</Size>
+      </Projectile>
+   </Object>
+   <Object type="0xb220" id="LOD Nikao Helper">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x0e</Index>
+      </Texture>
+      <Size>-1</Size>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x0e</Index>
+         </Texture>
+         <Effect color="0x7B44A9" minRadius="0" maxRadius="12" rise="2.5" life="4.8" amount="75" speed="0.01">Circle</Effect>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x0e</Index>
+         </Texture>
+         <Effect color="0x68DEFF" minRadius="0" maxRadius="12" rise="2.5" life="4.8" amount="75" speed="0.01">Circle</Effect>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x0e</Index>
+         </Texture>
+         <Effect color="0x9CAB5F" minRadius="0" maxRadius="12" rise="2.5" life="4.8" amount="75" speed="0.01">Circle</Effect>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x0e</Index>
+         </Texture>
+         <Effect color="0xE92B2B" minRadius="0" maxRadius="12" rise="2.5" life="4.8" amount="75" speed="0.01">Circle</Effect>
+      </AltTexture>
+   </Object>
+   <Object type="0xb221" id="LOD Pool Spawner">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb222" id="LOD Pool Finder">
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <Color>0xFFFF00</Color>
+   </Object>
+   <Object type="0xb223" id="LOD Blue Egg Corpse">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb258" id="LOD Nikao Shot Spawner 1">
+      <DisplayId>Nikao the Azure Dragon</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <Projectile id="0">
+         <ObjectId>LOD Blue Fireball</ObjectId>
+         <Speed>75</Speed>
+         <Damage>100</Damage>
+         <Size>150</Size>
+         <LifetimeMS>3500</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xb1ac" id="LOD Nikao Shot Spawner 2">
+      <DisplayId>Nikao the Azure Dragon</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <Projectile id="0">
+         <ObjectId>LOD Blue Blast</ObjectId>
+         <Speed>65</Speed>
+         <Damage>140</Damage>
+         <Size>125</Size>
+         <LifetimeMS>3500</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Blue Blast</ObjectId>
+         <Speed>65</Speed>
+         <Damage>140</Damage>
+         <Size>125</Size>
+         <LifetimeMS>3500</LifetimeMS>
+         <Amplitude>2</Amplitude>
+         <Frequency>0.5</Frequency>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb263" id="LOD Limoz the Veridian Dragon">
+      <DisplayId>Limoz the Veridian Dragon</DisplayId>
+      <Group>Dragon Gods</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x0f</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x5d</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/dragons_hit</HitSound>
+      <DeathSound>monster/dragons_death</DeathSound>
+      <Size>180</Size>
+      <MaxHitPoints>65000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>8000</Exp>
+      <Level>20</Level>
+      <Quest/>
+      <HealthBarBoss/>
+      <God/>
+      <KeepDamageRecord/>
+      <ParalyzeImmune/>
+      <DazedImmune/>
+      <StasisImmune/>
+      <StunImmune/>
+      <Projectile id="0">
+         <ObjectId>LOD Green Spin Ball</ObjectId>
+         <Damage>125</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>2500</LifetimeMS>
+         <Size>140</Size>
+         <PassesCover/>
+         <Amplitude>0.3</Amplitude>
+         <Frequency>2.0</Frequency>
+         <ConditionEffect duration="2">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Green Spin Ball</ObjectId>
+         <Damage>125</Damage>
+         <Speed>50</Speed>
+         <Size>130</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <PassesCover/>
+         <ConditionEffect duration="3">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>LOD Green Spine</ObjectId>
+         <Speed>65</Speed>
+         <Damage>130</Damage>
+         <Size>120</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>LOD Green Ball</ObjectId>
+         <Damage>140</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>2500</LifetimeMS>
+         <Size>150</Size>
+         <PassesCover/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>LOD Green Ball</ObjectId>
+         <Damage>140</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>4000</LifetimeMS>
+         <Size>150</Size>
+         <PassesCover/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>LOD Black Bullet</ObjectId>
+         <Speed>60</Speed>
+         <Damage>110</Damage>
+         <Size>140</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="4" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>LOD Blue Fireball</ObjectId>
+         <Speed>70</Speed>
+         <Damage>75</Damage>
+         <Size>140</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>LOD Red Big Fireball</ObjectId>
+         <Speed>55</Speed>
+         <Damage>100</Damage>
+         <Size>300</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="2">Armor Broken</ConditionEffect>
+         <ArmorPiercing/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>LOD Green Spin Ball</ObjectId>
+         <Damage>125</Damage>
+         <Speed>50</Speed>
+         <Size>140</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <PassesCover/>
+         <ConditionEffect duration="2">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="9">
+         <ObjectId>LOD Black Bullet</ObjectId>
+         <Speed>50</Speed>
+         <Damage>125</Damage>
+         <Size>140</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="10">
+         <ObjectId>LOD Blue Fireball</ObjectId>
+         <Speed>50</Speed>
+         <Damage>125</Damage>
+         <Size>140</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="11">
+         <ObjectId>LOD Red Spinning Fireball</ObjectId>
+         <Speed>50</Speed>
+         <Damage>125</Damage>
+         <Size>140</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="2">Armor Broken</ConditionEffect>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="12">
+         <ObjectId>LOD Green Ball</ObjectId>
+         <Damage>100</Damage>
+         <Speed>55</Speed>
+         <LifetimeMS>2500</LifetimeMS>
+         <Size>100</Size>
+         <PassesCover/>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="13">
+         <ObjectId>LOD Green Arrow</ObjectId>
+         <Speed>65</Speed>
+         <Damage>130</Damage>
+         <Size>180</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb262" id="LOD Abundant Shield">
+      <DisplayId>Abundant Shield</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x6b</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x6c</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x6d</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x6e</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <Size>100</Size>
+      <Z>0.25</Z>
+      <MaxHitPoints>8500</MaxHitPoints>
+      <Defense>20</Defense>
+      <ParalyzeImmune/>
+      <DazedImmune/>
+      <StasisImmune/>
+      <StunImmune/>
+      <Exp>0</Exp>
+      <HitSound>monster/dwarves_hit</HitSound>
+      <DeathSound>spell/fire_spray</DeathSound>
+      <Sound id="0">monster/eggs_death</Sound>
+      <Sound id="1">spell/fire_spray</Sound>
+      <Projectile id="0">
+         <ObjectId>LOD Green Spine</ObjectId>
+         <Speed>40</Speed>
+         <Damage>100</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Green Ball</ObjectId>
+         <Speed>60</Speed>
+         <Damage>100</Damage>
+         <Size>100</Size>
+         <LifetimeMS>500</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>LOD Green Ball</ObjectId>
+         <Speed>70</Speed>
+         <Damage>120</Damage>
+         <Size>125</Size>
+         <LifetimeMS>1430</LifetimeMS>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>LOD Green Spine</ObjectId>
+         <Speed>80</Speed>
+         <Damage>80</Damage>
+         <Size>125</Size>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb261" id="LOD Veridian Soul Shard">
+      <DisplayId>Veridian Soul Shard</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars8x8</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <Size>120</Size>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>0</Exp>
+      <HitSound>monster/orcs_hit</HitSound>
+      <DeathSound>monster/orcs_death</DeathSound>
+      <Projectile id="1">
+         <ObjectId>LOD Black Bullet</ObjectId>
+         <Speed>50</Speed>
+         <Damage>80</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1400</LifetimeMS>
+         <ConditionEffect duration="2" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>LOD Blue Blast</ObjectId>
+         <Speed>70</Speed>
+         <Damage>75</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <ConditionEffect duration="1.5">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>LOD Green Bullet</ObjectId>
+         <Speed>60</Speed>
+         <Damage>70</Damage>
+         <LifetimeMS>1167</LifetimeMS>
+         <Size>100</Size>
+         <ConditionEffect duration="1">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>LOD Red Small Fireball</ObjectId>
+         <Speed>45</Speed>
+         <Damage>40</Damage>
+         <Size>100</Size>
+         <LifetimeMS>1556</LifetimeMS>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0xb260" id="LOD Limoz Shot Spawner">
+      <DisplayId>Limoz the Veridian Dragon</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Invincible/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <Projectile id="4">
+         <ObjectId>LOD Blue Blast</ObjectId>
+         <Speed>60</Speed>
+         <Damage>125</Damage>
+         <Size>135</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>LOD Black Bullet</ObjectId>
+         <Speed>60</Speed>
+         <Damage>110</Damage>
+         <Size>140</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="4" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>LOD Blue Fireball</ObjectId>
+         <Speed>70</Speed>
+         <Damage>75</Damage>
+         <Size>140</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>LOD Red Big Fireball</ObjectId>
+         <Speed>55</Speed>
+         <Damage>100</Damage>
+         <Size>300</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="2">Armor Broken</ConditionEffect>
+         <ArmorPiercing/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb25e" id="LOD Limoz Helper">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb25d" id="LOD Abundant Shield Projectile">
+      <DisplayId>Abundant Shield</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x6b</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <Size>100</Size>
+      <Invincible/>
+      <Exp>0</Exp>
+      <Sound id="1">spell/fire_spray</Sound>
+      <Projectile id="0">
+         <ObjectId>LOD Green Ball</ObjectId>
+         <Speed>60</Speed>
+         <Damage>85</Damage>
+         <Size>100</Size>
+         <LifetimeMS>600</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2">Sick</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xb25a" id="LOD Veridian Soul Shard Corpse">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars8x8</File>
+         <Index>2</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb176" id="LOD Pyyr the Crimson Dragon">
+      <DisplayId>Pyyr the Crimson Dragon</DisplayId>
+      <Group>Red Dragon God Group</Group>
+      <Enemy/>
+      <Class>Character</Class>
+      <Portrait>
+         <AnimatedTexture>
+            <File>lairOfDraconisChars16x16</File>
+            <Index>3</Index>
+         </AnimatedTexture>
+      </Portrait>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x10</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x5e</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/dragons_hit</HitSound>
+      <DeathSound>monster/dragons_death</DeathSound>
+      <Size>180</Size>
+      <MaxHitPoints>65000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>8000</Exp>
+      <Level>20</Level>
+      <Quest/>
+      <HealthBarBoss/>
+      <God/>
+      <KeepDamageRecord/>
+      <ParalyzeImmune/>
+      <DazedImmune/>
+      <StasisImmune/>
+      <StunImmune/>
+      <Projectile id="0">
+         <ObjectId>LOD Red Big Fireball</ObjectId>
+         <Speed>45</Speed>
+         <Damage>200</Damage>
+         <Size>400</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Black Spin</ObjectId>
+         <Speed>90</Speed>
+         <Damage>120</Damage>
+         <Size>180</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="2" target="1">Stasis</ConditionEffect>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>LOD Blue Storm</ObjectId>
+         <Speed>80</Speed>
+         <Damage>100</Damage>
+         <Size>120</Size>
+         <LifetimeMS>3200</LifetimeMS>
+         <Boomerang/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>LOD Green Spin Ball</ObjectId>
+         <Speed>45</Speed>
+         <Damage>80</Damage>
+         <Size>200</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <ConditionEffect duration="2">Sick</ConditionEffect>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>LOD Red Orb</ObjectId>
+         <Speed>70</Speed>
+         <Damage>75</Damage>
+         <Size>180</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>LOD Red Big Fireball</ObjectId>
+         <Speed>75</Speed>
+         <Damage>120</Damage>
+         <Size>200</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>LOD Red Spinning Fireball</ObjectId>
+         <Speed>70</Speed>
+         <Damage>50</Damage>
+         <Size>120</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="4">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>LOD Red Big Fireball</ObjectId>
+         <Speed>75</Speed>
+         <Damage>200</Damage>
+         <Size>400</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>LOD Black Bullet</ObjectId>
+         <Speed>75</Speed>
+         <Damage>120</Damage>
+         <Size>160</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="9">
+         <ObjectId>LOD Blue Fireball</ObjectId>
+         <Speed>80</Speed>
+         <Damage>85</Damage>
+         <Size>140</Size>
+         <LifetimeMS>3200</LifetimeMS>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="10">
+         <ObjectId>LOD Green Spine</ObjectId>
+         <Speed>95</Speed>
+         <Damage>110</Damage>
+         <Size>140</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="11">
+         <ObjectId>LOD Black Ray</ObjectId>
+         <Speed>85</Speed>
+         <Damage>120</Damage>
+         <Size>200</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="12">
+         <ObjectId>LOD Blue Blast</ObjectId>
+         <Speed>80</Speed>
+         <Damage>100</Damage>
+         <Size>120</Size>
+         <LifetimeMS>3200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="13">
+         <ObjectId>LOD Green Ball</ObjectId>
+         <Speed>80</Speed>
+         <Damage>100</Damage>
+         <Size>180</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb183" id="LOD Red Egg 1">
+      <DisplayId>Red Egg</DisplayId>
+      <Class>GameObject</Class>
+      <ShadowSize>80</ShadowSize>
+      <Size>140</Size>
+      <Z>-0.20</Z>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x03</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x5c</Index>
+         </Texture>
+      </AltTexture>
+   </Object>
+   <Object type="0xb184" id="LOD Red Egg 2">
+      <DisplayId>Red Egg</DisplayId>
+      <Class>GameObject</Class>
+      <ShadowSize>80</ShadowSize>
+      <Size>140</Size>
+      <Z>-0.20</Z>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x03</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x5c</Index>
+         </Texture>
+      </AltTexture>
+   </Object>
+   <Object type="0xb216" id="LOD Red Egg Fake">
+      <DisplayId>Red Egg</DisplayId>
+      <Class>GameObject</Class>
+      <ShadowSize>80</ShadowSize>
+      <Size>140</Size>
+      <Z>-0.20</Z>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x03</Index>
+      </Texture>
+   </Object>
+   <Object type="0xb17e" id="LOD Crimson Soul Shard">
+      <DisplayId>Crimson Soul Shard</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars8x8</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <Size>150</Size>
+      <HitSound>monster/orcs_hit</HitSound>
+      <DeathSound>monster/orcs_death</DeathSound>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Exp>0</Exp>
+      <Defense>20</Defense>
+      <Z>.4</Z>
+      <Flying/>
+      <Projectile id="0">
+         <ObjectId>LOD Red Small Fireball</ObjectId>
+         <Speed>55</Speed>
+         <Damage>100</Damage>
+         <Size>100</Size>
+         <LifetimeMS>950</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Black Shot</ObjectId>
+         <Speed>90</Speed>
+         <Damage>120</Damage>
+         <Size>100</Size>
+         <LifetimeMS>950</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>LOD Blue Fireball</ObjectId>
+         <Speed>60</Speed>
+         <Damage>85</Damage>
+         <Size>80</Size>
+         <LifetimeMS>900</LifetimeMS>
+         <ConditionEffect duration="2">Slowed</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>LOD Green Spin Ball</ObjectId>
+         <Speed>55</Speed>
+         <Damage>85</Damage>
+         <Size>100</Size>
+         <LifetimeMS>950</LifetimeMS>
+         <ConditionEffect duration="2">Sick</ConditionEffect>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb17f" id="LOD Pyyr Lava Maker">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb21d" id="LOD Pyyr Order Handler">
+      <Class>GameObject</Class>
+      <Size>0</Size>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+   </Object>
+   <Object type="0xb188" id="LOD Shade Tornado">
+      <DisplayId>Shade Tornado</DisplayId>
+      <Enemy/>
+      <Class>Character</Class>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x3e</Index>
+      </Texture>
+      <Animation prob="1" period="0.8">
+         <Frame time="0.4">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x3e</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x3f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Flying/>
+      <Size>160</Size>
+      <Invincible/>
+      <Exp>0</Exp>
+      <Projectile id="0">
+         <ObjectId>LOD Black Spin</ObjectId>
+         <Speed>75</Speed>
+         <Damage>50</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="4" target="1">Stasis</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xb189" id="LOD Ivory Wyvern">
+      <DisplayId>Ivory Wyvern</DisplayId>
+      <Class>Character</Class>
+      <Group>Wyvern</Group>
+      <Enemy/>
+      <Portrait>
+         <AnimatedTexture>
+            <File>lairOfDraconisChars16x16</File>
+            <Index>4</Index>
+         </AnimatedTexture>
+      </Portrait>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x66</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x67</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x68</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x69</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x60</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x61</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="7">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x62</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="8">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x63</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/dragons_hit</HitSound>
+      <DeathSound>monster/dragons_death</DeathSound>
+      <Size>180</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>16000</Exp>
+      <Level>20</Level>
+      <Quest/>
+      <HealthBarBoss/>
+      <ParalyzeImmune/>
+      <StasisImmune/>
+      <DazedImmune/>
+      <StunImmune/>
+      <EventChestBoss/>
+      <TrackLoot/>
+      <Projectile id="0">
+         <ObjectId>LOD White Shot</ObjectId>
+         <Speed>65</Speed>
+         <Damage>150</Damage>
+         <LifetimeMS>5000</LifetimeMS>
+         <Size>140</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD White Blast</ObjectId>
+         <Speed>100</Speed>
+         <Damage>150</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>LOD White Blast</ObjectId>
+         <Speed>65</Speed>
+         <Damage>125</Damage>
+         <Size>135</Size>
+         <LifetimeMS>3250</LifetimeMS>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>LOD White Ball</ObjectId>
+         <Speed>80</Speed>
+         <Damage>125</Damage>
+         <Size>140</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>LOD White Blast</ObjectId>
+         <Speed>75</Speed>
+         <Damage>120</Damage>
+         <Size>140</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="5">
+         <ObjectId>LOD Black Ray</ObjectId>
+         <Speed>110</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>180</Size>
+      </Projectile>
+      <Projectile id="6">
+         <ObjectId>LOD Blue Storm</ObjectId>
+         <Speed>65</Speed>
+         <Damage>100</Damage>
+         <LifetimeMS>3400</LifetimeMS>
+         <Boomerang/>
+         <Size>140</Size>
+      </Projectile>
+      <Projectile id="7">
+         <ObjectId>LOD Green Bullet</ObjectId>
+         <Speed>85</Speed>
+         <Damage>100</Damage>
+         <LifetimeMS>5000</LifetimeMS>
+         <MultiHit/>
+         <Size>140</Size>
+      </Projectile>
+      <Projectile id="8">
+         <ObjectId>LOD Red Big Fireball</ObjectId>
+         <Speed>75</Speed>
+         <Damage>120</Damage>
+         <Size>300</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="9">
+         <ObjectId>LOD Black Bullet</ObjectId>
+         <Speed>80</Speed>
+         <Damage>150</Damage>
+         <Size>140</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="10">
+         <ObjectId>LOD Blue Fireball</ObjectId>
+         <Speed>85</Speed>
+         <Damage>80</Damage>
+         <Size>150</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="11">
+         <ObjectId>LOD Green Spine</ObjectId>
+         <Speed>70</Speed>
+         <Damage>85</Damage>
+         <Size>100</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="1">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="12">
+         <ObjectId>LOD Red Big Fireball</ObjectId>
+         <Speed>60</Speed>
+         <Damage>125</Damage>
+         <Size>150</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="13">
+         <ObjectId>LOD Black Bullet</ObjectId>
+         <Speed>75</Speed>
+         <Damage>120</Damage>
+         <Size>160</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="14">
+         <ObjectId>LOD Blue Fireball</ObjectId>
+         <Speed>80</Speed>
+         <Damage>70</Damage>
+         <Size>140</Size>
+         <LifetimeMS>3200</LifetimeMS>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="15">
+         <ObjectId>LOD Green Spine</ObjectId>
+         <Speed>95</Speed>
+         <Damage>125</Damage>
+         <Size>140</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="16">
+         <ObjectId>LOD Red Orb</ObjectId>
+         <Speed>70</Speed>
+         <Damage>75</Damage>
+         <Size>180</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="17">
+         <ObjectId>LOD Black Spin</ObjectId>
+         <Speed>90</Speed>
+         <Damage>120</Damage>
+         <Size>200</Size>
+         <LifetimeMS>6000</LifetimeMS>
+         <Parametric/>
+         <Magnitude>6</Magnitude>
+         <ConditionEffect duration="3" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="18">
+         <ObjectId>LOD Blue Blast</ObjectId>
+         <Speed>60</Speed>
+         <Damage>75</Damage>
+         <Size>140</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+      </Projectile>
+      <Projectile id="19">
+         <ObjectId>LOD Green Bullet</ObjectId>
+         <Speed>30</Speed>
+         <Damage>100</Damage>
+         <Size>120</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="20">
+         <ObjectId>LOD Red Spinning Fireball</ObjectId>
+         <Speed>55</Speed>
+         <Damage>50</Damage>
+         <Size>110</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="3">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="21">
+         <ObjectId>LOD Black Spin</ObjectId>
+         <Speed>80</Speed>
+         <Damage>150</Damage>
+         <Size>180</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <ConditionEffect duration="3" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="22">
+         <ObjectId>LOD Green Spin Ball</ObjectId>
+         <Speed>45</Speed>
+         <Damage>120</Damage>
+         <Size>90</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <ConditionEffect duration="3">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="23">
+         <ObjectId>LOD Black Bullet</ObjectId>
+         <Speed>30</Speed>
+         <Damage>150</Damage>
+         <Size>100</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="24">
+         <ObjectId>LOD Blue Fireball</ObjectId>
+         <Speed>30</Speed>
+         <Damage>150</Damage>
+         <Size>100</Size>
+         <LifetimeMS>4000</LifetimeMS>
+      </Projectile>
+      <Projectile id="25">
+         <ObjectId>LOD Green Ball</ObjectId>
+         <Speed>30</Speed>
+         <Damage>150</Damage>
+         <Size>100</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="26">
+         <ObjectId>LOD Red Orb</ObjectId>
+         <Speed>30</Speed>
+         <Damage>150</Damage>
+         <Size>100</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="27">
+         <ObjectId>LOD Red Big Fireball</ObjectId>
+         <Speed>55</Speed>
+         <Damage>100</Damage>
+         <Size>300</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <ConditionEffect duration="2">Armor Broken</ConditionEffect>
+         <ArmorPiercing/>
+         <PassesCover/>
+      </Projectile>
+   </Object>
+   <Object type="0xb18a" id="LOD Ivory Controller">
+      <DisplayId>Altar of Draconis</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x09</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <Size>120</Size>
+      <Z>1.2</Z>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0xb1a6" id="LOD Ivory Anchor E">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb1a7" id="LOD Ivory Anchor S">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb1a8" id="LOD Ivory Anchor W">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb1a9" id="LOD Ivory Anchor N">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb1aa" id="LOD Ivory Treasure Thrower">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x09</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb1a5" id="LOD Mirror Wyvern">
+      <DisplayId>Mirror Wyvern</DisplayId>
+      <Class>Character</Class>
+      <Group>Wyvern</Group>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>4</Index>
+      </AnimatedTexture>
+      <HitSound>monster/dragons_hit</HitSound>
+      <DeathSound>monster/dragons_death</DeathSound>
+      <Size>180</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>40</Defense>
+      <Exp>0</Exp>
+      <ParalyzeImmune/>
+      <StasisImmune/>
+      <StunImmune/>
+      <Projectile id="0">
+         <ObjectId>LOD White Shot</ObjectId>
+         <Speed>65</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>5000</LifetimeMS>
+         <Size>140</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD White Blast</ObjectId>
+         <Speed>100</Speed>
+         <Damage>120</Damage>
+         <Size>140</Size>
+         <LifetimeMS>1800</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb1ab" id="LOD White Dragon Orb">
+      <DisplayId>White Dragon Orb</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x40</Index>
+      </Texture>
+      <Animation prob="1" period="0">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x41</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x40</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x42</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x43</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x42</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x40</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x41</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x44</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Defense>50</Defense>
+      <Exp>0</Exp>
+      <Size>100</Size>
+      <ShadowSize>30</ShadowSize>
+      <Z>0.26</Z>
+      <Flying/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>LOD White Blast</ObjectId>
+         <Speed>43</Speed>
+         <Damage>100</Damage>
+         <Size>100</Size>
+         <LifetimeMS>2500</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD White Shot</ObjectId>
+         <Damage>100</Damage>
+         <Speed>40</Speed>
+         <LifetimeMS>2000</LifetimeMS>
+         <Size>80</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb1ad" id="LOD Black Dragon Orb">
+      <DisplayId>Black Dragon Orb</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x45</Index>
+      </Texture>
+      <Animation prob="1" period="0">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x46</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x45</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x47</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x48</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x47</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x45</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x46</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x49</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Defense>50</Defense>
+      <Exp>0</Exp>
+      <Size>100</Size>
+      <ShadowSize>30</ShadowSize>
+      <Z>0.26</Z>
+      <Flying/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>LOD Black Bullet</ObjectId>
+         <Speed>40</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>2500</LifetimeMS>
+         <ConditionEffect duration="3" target="1">Stasis</ConditionEffect>
+         <Size>100</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb1ae" id="LOD Blue Dragon Orb">
+      <DisplayId>Blue Dragon Orb</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x4a</Index>
+      </Texture>
+      <Animation prob="1" period="0">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x4b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x4a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x4c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x4d</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x4c</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x4a</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x4b</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x4e</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Defense>50</Defense>
+      <Exp>0</Exp>
+      <Size>100</Size>
+      <ShadowSize>30</ShadowSize>
+      <Z>0.26</Z>
+      <Flying/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>LOD Blue Storm</ObjectId>
+         <Speed>40</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>5000</LifetimeMS>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+         <Size>100</Size>
+         <MultiHit/>
+         <Boomerang/>
+      </Projectile>
+   </Object>
+   <Object type="0xb1af" id="LOD Green Dragon Orb">
+      <DisplayId>Green Dragon Orb</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x50</Index>
+      </Texture>
+      <Animation prob="1" period="0">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x51</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x50</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x52</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x53</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x52</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x50</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x51</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x54</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Defense>50</Defense>
+      <Exp>0</Exp>
+      <Size>100</Size>
+      <ShadowSize>30</ShadowSize>
+      <Z>0.26</Z>
+      <Flying/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>LOD Green Spin Ball</ObjectId>
+         <Speed>40</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>2500</LifetimeMS>
+         <ConditionEffect duration="3">Sick</ConditionEffect>
+         <Size>120</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb1b0" id="LOD Red Dragon Orb">
+      <DisplayId>Red Dragon Orb</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x55</Index>
+      </Texture>
+      <Animation prob="1" period="0">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x56</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x55</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x57</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x58</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x57</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x55</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x56</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x59</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <MaxHitPoints>30000</MaxHitPoints>
+      <Defense>50</Defense>
+      <Exp>0</Exp>
+      <Size>100</Size>
+      <ShadowSize>30</ShadowSize>
+      <Z>0.26</Z>
+      <Flying/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>LOD Red Spinning Fireball</ObjectId>
+         <Speed>40</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>2500</LifetimeMS>
+         <ConditionEffect duration="3">Armor Broken</ConditionEffect>
+         <Size>100</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb1b1" id="LOD Ivory Pyyr Soul">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x4f</Index>
+      </Texture>
+      <Size>80</Size>
+      <ShadowSize>40</ShadowSize>
+   </Object>
+   <Object type="0xb1b2" id="LOD Ivory Nikao Soul">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x5a</Index>
+      </Texture>
+      <Size>80</Size>
+      <ShadowSize>40</ShadowSize>
+   </Object>
+   <Object type="0xb1b3" id="LOD Ivory Limoz Soul">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x5c</Index>
+      </Texture>
+      <Size>80</Size>
+      <ShadowSize>40</ShadowSize>
+   </Object>
+   <Object type="0xb1b4" id="LOD Ivory Feargus Soul">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x5b</Index>
+      </Texture>
+      <Size>80</Size>
+      <ShadowSize>40</ShadowSize>
+   </Object>
+   <Object type="0xb18f" id="LOD Feargus Ivory Statue">
+      <Class>Character</Class>
+      <Enemy/>
+      <DisplayId>Statue of Feargus</DisplayId>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x00</Index>
+      </Texture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>lairOfDraconisChars16x16</File>
+            <Index>5</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_hit</DeathSound>
+      <Size>180</Size>
+      <MaxHitPoints>20000</MaxHitPoints>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>LOD Black Bullet</ObjectId>
+         <Speed>40</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>5000</LifetimeMS>
+         <Size>140</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb190" id="LOD Feargus Ivory Support Statue">
+      <Class>Character</Class>
+      <Enemy/>
+      <Invincible/>
+      <DisplayId>Statue of Feargus</DisplayId>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>5</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x00</Index>
+         </Texture>
+      </AltTexture>
+      <Size>180</Size>
+      <Projectile id="0">
+         <ObjectId>LOD Black Ray</ObjectId>
+         <Speed>60</Speed>
+         <Damage>140</Damage>
+         <Size>240</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Black Spin</ObjectId>
+         <Speed>40</Speed>
+         <Damage>80</Damage>
+         <Size>200</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <Amplitude>1.2</Amplitude>
+         <Frequency>1</Frequency>
+         <MultiHit/>
+         <ConditionEffect duration="3" target="1">Stasis</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>LOD Black Shot</ObjectId>
+         <Speed>55</Speed>
+         <Damage>100</Damage>
+         <Size>120</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb191" id="LOD Limoz Ivory Statue">
+      <Class>Character</Class>
+      <Enemy/>
+      <DisplayId>Statue of Limoz</DisplayId>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x01</Index>
+      </Texture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>lairOfDraconisChars16x16</File>
+            <Index>7</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_hit</DeathSound>
+      <Size>180</Size>
+      <MaxHitPoints>20000</MaxHitPoints>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>LOD Green Bullet</ObjectId>
+         <Speed>40</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>5000</LifetimeMS>
+         <Size>140</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb1a0" id="LOD Limoz Ivory Support Statue">
+      <Class>Character</Class>
+      <Enemy/>
+      <Invincible/>
+      <DisplayId>Statue of Limoz</DisplayId>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>7</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x01</Index>
+         </Texture>
+      </AltTexture>
+      <Size>180</Size>
+      <Projectile id="0">
+         <ObjectId>LOD Green Spine</ObjectId>
+         <Speed>70</Speed>
+         <Damage>100</Damage>
+         <Size>100</Size>
+         <LifetimeMS>3400</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Green Spin Ball</ObjectId>
+         <Speed>40</Speed>
+         <Damage>80</Damage>
+         <Size>140</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3">Sick</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>LOD Green Arrow</ObjectId>
+         <Speed>50</Speed>
+         <Damage>120</Damage>
+         <Size>240</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb1a1" id="LOD Pyyr Ivory Statue">
+      <Class>Character</Class>
+      <Enemy/>
+      <DisplayId>Statue of Pyyr</DisplayId>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x02</Index>
+      </Texture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>lairOfDraconisChars16x16</File>
+            <Index>8</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_hit</DeathSound>
+      <Size>180</Size>
+      <MaxHitPoints>20000</MaxHitPoints>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>LOD Red Small Fireball</ObjectId>
+         <Speed>40</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>5000</LifetimeMS>
+         <Size>140</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb1a2" id="LOD Pyyr Ivory Support Statue">
+      <Class>Character</Class>
+      <Enemy/>
+      <Invincible/>
+      <DisplayId>Statue of Pyyr</DisplayId>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>8</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x02</Index>
+         </Texture>
+      </AltTexture>
+      <Size>180</Size>
+      <Projectile id="0">
+         <ObjectId>LOD Red Big Fireball</ObjectId>
+         <Speed>75</Speed>
+         <Damage>200</Damage>
+         <Size>240</Size>
+         <LifetimeMS>3200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Red Spinning Fireball</ObjectId>
+         <Speed>40</Speed>
+         <Damage>80</Damage>
+         <Size>120</Size>
+         <LifetimeMS>4000</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3">Armor Broken</ConditionEffect>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>LOD Red Firewave</ObjectId>
+         <Speed>80</Speed>
+         <Damage>90</Damage>
+         <Size>160</Size>
+         <LifetimeMS>2400</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>LOD Red Firewave</ObjectId>
+         <Speed>60</Speed>
+         <Damage>90</Damage>
+         <Size>140</Size>
+         <LifetimeMS>2400</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+      <Projectile id="4">
+         <ObjectId>LOD Red Firewave</ObjectId>
+         <Speed>40</Speed>
+         <Damage>90</Damage>
+         <Size>120</Size>
+         <LifetimeMS>2400</LifetimeMS>
+         <MultiHit/>
+         <ArmorPiercing/>
+      </Projectile>
+   </Object>
+   <Object type="0xb1a3" id="LOD Nikao Ivory Statue">
+      <Class>Character</Class>
+      <Enemy/>
+      <DisplayId>Statue of Nikao</DisplayId>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x03</Index>
+      </Texture>
+      <AltTexture id="1">
+         <AnimatedTexture>
+            <File>lairOfDraconisChars16x16</File>
+            <Index>6</Index>
+         </AnimatedTexture>
+      </AltTexture>
+      <HitSound>monster/rocks_hit</HitSound>
+      <DeathSound>monster/rocks_hit</DeathSound>
+      <Size>180</Size>
+      <MaxHitPoints>20000</MaxHitPoints>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>LOD Blue Blast</ObjectId>
+         <Speed>40</Speed>
+         <Damage>120</Damage>
+         <LifetimeMS>5000</LifetimeMS>
+         <Size>140</Size>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb1a4" id="LOD Nikao Ivory Support Statue">
+      <Class>Character</Class>
+      <Enemy/>
+      <Invincible/>
+      <DisplayId>Statue of Nikao</DisplayId>
+      <AnimatedTexture>
+         <File>lairOfDraconisChars16x16</File>
+         <Index>6</Index>
+      </AnimatedTexture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x03</Index>
+         </Texture>
+      </AltTexture>
+      <Size>180</Size>
+      <Projectile id="0">
+         <ObjectId>LOD Blue Bullet</ObjectId>
+         <Speed>80</Speed>
+         <Damage>120</Damage>
+         <Size>90</Size>
+         <LifetimeMS>3000</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>LOD Blue Storm</ObjectId>
+         <Speed>60</Speed>
+         <Damage>80</Damage>
+         <Size>120</Size>
+         <LifetimeMS>4500</LifetimeMS>
+         <MultiHit/>
+         <ConditionEffect duration="3">Slowed</ConditionEffect>
+         <Boomerang/>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>LOD Blue Fireball</ObjectId>
+         <Speed>80</Speed>
+         <Damage>120</Damage>
+         <Size>120</Size>
+         <LifetimeMS>2400</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0xb1ca" id="LOD Rock Dragon Marker BR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xb0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb1cb" id="LOD Rock Dragon Marker BL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xb0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb1cc" id="LOD Rock Dragon Marker TR">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xb0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb1cd" id="LOD Rock Dragon Marker TL">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xb0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb1ce" id="LOD Rock Dragon Marker C">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xb0</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb1d0" id="LOD Rock Dragon Movement">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xb8</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb1d1" id="LOD Rock Dragon Head">
+      <Enemy/>
+      <DisplayId>Rock Dragon</DisplayId>
+      <Class>Character</Class>
+      <Portrait>
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0xb5</Index>
+         </Texture>
+      </Portrait>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>99</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <MaxHitPoints>36000</MaxHitPoints>
+      <Defense>50</Defense>
+      <Exp>4000</Exp>
+      <Size>140</Size>
+      <Flying/>
+      <Z>0.34</Z>
+      <DontFaceAttacks/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Hero/>
+      <Encounter/>
+      <PerRealmMax>1</PerRealmMax>
+      <Quest/>
+      <HealthBarBoss/>
+      <God/>
+      <Level>20</Level>
+      <TrackLoot/>
+      <AltTexture id="1">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0xb5</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0xb6</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0xb7</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0xb8</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0xc6</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0xc7</Index>
+         </Texture>
+      </AltTexture>
+      <Projectile id="0">
+         <ObjectId>Fire Bust Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>120</Speed>
+         <Size>120</Size>
+         <LifetimeMS>800</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Fire Bust Shot</ObjectId>
+         <Damage>120</Damage>
+         <Speed>70</Speed>
+         <Size>120</Size>
+         <LifetimeMS>800</LifetimeMS>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Dragon Eye Laser</ObjectId>
+         <Damage>140</Damage>
+         <Speed>140</Speed>
+         <Size>280</Size>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+         <PassesCover/>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Dragon Eye Blast</ObjectId>
+         <Damage>160</Damage>
+         <Speed>45</Speed>
+         <Size>180</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ParticleTrail/>
+      </Projectile>
+   </Object>
+   <Object type="0xb1d2" id="LOD Rock Dragon Leader 1">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>99</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb1d3" id="LOD Rock Dragon Leader 2">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>99</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb1b5" id="LOD Rock Dragon Cleanup">
+      <Class>GameObject</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>99</Index>
+      </AnimatedTexture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0xb1d4" id="LOD Rock Dragon Body">
+      <Enemy/>
+      <Class>Character</Class>
+      <Group>LOD Rock Dragon Body Segments</Group>
+      <DisplayId>Rock Dragon</DisplayId>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xb0</Index>
+      </Texture>
+      <Animation prob="1" period="1.2">
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObjBig</File>
+               <Index>0xaf</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObjBig</File>
+               <Index>0xb0</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.4">
+            <Texture>
+               <File>lofiObjBig</File>
+               <Index>0xb1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObjBig</File>
+               <Index>0xb0</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>10</Defense>
+      <Exp>0</Exp>
+      <Size>120</Size>
+      <Flying/>
+      <Z>0.35</Z>
+      <DontFaceAttacks/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>100</Damage>
+         <Speed>0</Speed>
+         <Size>180</Size>
+         <LifetimeMS>100</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb1d5" id="LOD Rock Dragon Body Eye">
+      <Enemy/>
+      <Class>Character</Class>
+      <Group>LOD Rock Dragon Body Segments</Group>
+      <DisplayId>Rock Dragon</DisplayId>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x6a</Index>
+      </Texture>
+      <AltTexture id="1">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x72</Index>
+         </Texture>
+         --&gt;
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x73</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x71</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>lairOfDraconisObjects16x16</File>
+            <Index>0x70</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>lofiObjBig</File>
+            <Index>0xb0</Index>
+         </Texture>
+      </AltTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <MaxHitPoints>8000</MaxHitPoints>
+      <Defense>10</Defense>
+      <Exp>0</Exp>
+      <Size>120</Size>
+      <Flying/>
+      <Z>0.35</Z>
+      <DontFaceAttacks/>
+      <StasisImmune/>
+      <ParalyzeImmune/>
+      <Projectile id="0">
+         <ObjectId>Invisible</ObjectId>
+         <Damage>100</Damage>
+         <Speed>0</Speed>
+         <Size>180</Size>
+         <LifetimeMS>100</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Dragon Eye Blast</ObjectId>
+         <Damage>120</Damage>
+         <Speed>65</Speed>
+         <Size>180</Size>
+         <LifetimeMS>2000</LifetimeMS>
+      </Projectile>
+   </Object>
+   <Object type="0xb1d6" id="LOD Rock Dragon Bomb">
+      <Enemy/>
+      <DisplayId>Rock Dragon</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xb9</Index>
+      </Texture>
+      <Exp>0</Exp>
+      <Size>120</Size>
+      <Animation prob="1.0" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObjBig</File>
+               <Index>0xaf</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObjBig</File>
+               <Index>0xb9</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Projectile id="0">
+         <ObjectId>Body Bomb Blast</ObjectId>
+         <Damage>150</Damage>
+         <Speed>100</Speed>
+         <Size>160</Size>
+         <LifetimeMS>600</LifetimeMS>
+      </Projectile>
+      <Invincible/>
+   </Object>
+   <Object type="0xb198" id="LOD Rock Dragon Bomb Eye">
+      <Enemy/>
+      <DisplayId>Rock Dragon</DisplayId>
+      <Class>Character</Class>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x6f</Index>
+      </Texture>
+      <Exp>0</Exp>
+      <Size>120</Size>
+      <Animation prob="1.0" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x71</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lairOfDraconisObjects16x16</File>
+               <Index>0x6f</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Projectile id="0">
+         <ObjectId>Dragon Eye Laser</ObjectId>
+         <Damage>150</Damage>
+         <Speed>100</Speed>
+         <Size>280</Size>
+         <LifetimeMS>1200</LifetimeMS>
+         <MultiHit/>
+      </Projectile>
+      <Invincible/>
+   </Object>
+   <Object type="0xb1d7" id="LOD Rock Dragon Tail">
+      <Enemy/>
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars16x16rEncounters</File>
+         <Index>100</Index>
+      </AnimatedTexture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <Invincible/>
+      <Exp>0</Exp>
+      <Size>120</Size>
+      <Flying/>
+      <Z>0.35</Z>
+   </Object>
+   <Object type="0xb1d8" id="LOD Rock Dragon Bat">
+      <Enemy/>
+      <Class>Character</Class>
+      <DisplayId>Rock Dragon Bat</DisplayId>
+      <Texture>
+         <File>lofiObjBig</File>
+         <Index>0xc0</Index>
+      </Texture>
+      <HitSound>monster/bats_hit</HitSound>
+      <DeathSound>monster/bats_death</DeathSound>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>10</Defense>
+      <Exp>0</Exp>
+      <Size>100</Size>
+      <Z>0.2</Z>
+      <Flying/>
+      <ShadowSize>80</ShadowSize>
+      <Animation prob="1.0" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObjBig</File>
+               <Index>0xc0</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObjBig</File>
+               <Index>0xc1</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Projectile id="0">
+         <ObjectId>Sonic Bat Boom Rock</ObjectId>
+         <Damage>80</Damage>
+         <Speed>80</Speed>
+         <Size>200</Size>
+         <LifetimeMS>600</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Sonic Bat Boom Rock</ObjectId>
+         <Damage>60</Damage>
+         <Speed>70</Speed>
+         <Size>160</Size>
+         <LifetimeMS>600</LifetimeMS>
+      </Projectile>
+      <Projectile id="2">
+         <ObjectId>Sonic Bat Boom Rock</ObjectId>
+         <Damage>40</Damage>
+         <Speed>60</Speed>
+         <Size>120</Size>
+         <LifetimeMS>600</LifetimeMS>
+      </Projectile>
+      <Projectile id="3">
+         <ObjectId>Sonic Bat Spinner Rock</ObjectId>
+         <Damage>80</Damage>
+         <Speed>50</Speed>
+         <Size>100</Size>
+         <LifetimeMS>2000</LifetimeMS>
+         <ConditionEffect duration="1.6">Slowed</ConditionEffect>
+      </Projectile>
+   </Object>
+   <Object type="0xb192" id="LOD Black Wall">
+      <Class>Wall</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x36</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x37</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x38</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x38</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x38</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x39</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0xb193" id="LOD Blue Wall">
+      <Class>Wall</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x3a</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x3b</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x3c</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x3c</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x3c</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x3d</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0xb194" id="LOD Green Wall">
+      <Class>Wall</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x3e</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x3f</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x40</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x40</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x40</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x41</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0xb195" id="LOD Red Wall">
+      <Class>Wall</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x42</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x43</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x44</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x44</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x44</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x45</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0xb196" id="LOD White Wall">
+      <Class>Wall</Class>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x46</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x47</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0xb197" id="LOD Gold Wall">
+      <Class>Wall</Class>
+      <RandomTexture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x4a</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x4b</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x4c</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x4c</Index>
+         </Texture>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x4c</Index>
+         </Texture>
+      </RandomTexture>
+      <Top>
+         <Texture>
+            <File>lairOfDraconisObjects8x8</File>
+            <Index>0x4d</Index>
+         </Texture>
+      </Top>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+      <BlocksSight/>
+   </Object>
+   <Object type="0xb187" id="LOD Volcanic Rock">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x63</Index>
+      </Texture>
+      <Animation prob="0.15" period="1">
+         <Frame time="0.25">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x63</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.25">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x64</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.25">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x65</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.25">
+            <Texture>
+               <File>lairOfDraconisObjects8x8</File>
+               <Index>0x66</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+      <Size>160</Size>
+      <ShadowSize>100</ShadowSize>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0xb259" id="LOD Black Rock Top">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x69</Index>
+      </Texture>
+      <Size>160</Size>
+      <ShadowSize>100</ShadowSize>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0xb231" id="LOD Black Rock Bot">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x68</Index>
+      </Texture>
+      <Size>160</Size>
+      <ShadowSize>100</ShadowSize>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0xb250" id="LOD Green Rock">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x67</Index>
+      </Texture>
+      <Size>160</Size>
+      <ShadowSize>100</ShadowSize>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0xb25b" id="LOD Blue Rock">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects8x8</File>
+         <Index>0x6a</Index>
+      </Texture>
+      <Size>160</Size>
+      <ShadowSize>0</ShadowSize>
+      <Static/>
+      <OccupySquare/>
+   </Object>
+   <Object type="0xb19a" id="LOD Candelabra">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x16</Index>
+      </Texture>
+      <ShadowSize>50</ShadowSize>
+      <Animation prob="1.0" period="0.0">
+         <Frame time="0.2">
+            <RandomTexture>
+               <Texture>
+                  <File>lairOfDraconisObjects16x16</File>
+                  <Index>0x16</Index>
+               </Texture>
+               <Texture>
+                  <File>lairOfDraconisObjects16x16</File>
+                  <Index>0x17</Index>
+               </Texture>
+               <Texture>
+                  <File>lairOfDraconisObjects16x16</File>
+                  <Index>0x18</Index>
+               </Texture>
+               <Texture>
+                  <File>lairOfDraconisObjects16x16</File>
+                  <Index>0x19</Index>
+               </Texture>
+            </RandomTexture>
+         </Frame>
+      </Animation>
+      <Static/>
+      <HitSound>monster/stone_walls_hit</HitSound>
+      <DeathSound>monster/stone_walls_death</DeathSound>
+   </Object>
+   <Object type="0xb19b" id="LOD Table UL">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x1a</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0xb19c" id="LOD Table UM">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x1b</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0xb19d" id="LOD Table UR">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x1c</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0xb19e" id="LOD Table ML">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x1d</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0xb19f" id="LOD Table MM">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x1e</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0xb200" id="LOD Table MR">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x1f</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0xb201" id="LOD Table LL">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x20</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0xb202" id="LOD Table LM">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x21</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0xb203" id="LOD Table LR">
+      <Class>GameObject</Class>
+      <Model>Squatty3Side</Model>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x22</Index>
+      </Texture>
+      <Static/>
+      <FullOccupy/>
+      <OccupySquare/>
+      <EnemyOccupySquare/>
+   </Object>
+   <Object type="0xb1c1" id="LOD Ivory Treasure 1">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x64</Index>
+      </Texture>
+      <Size>180</Size>
+   </Object>
+   <Object type="0xb1c2" id="LOD Ivory Treasure 2">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lairOfDraconisObjects16x16</File>
+         <Index>0x65</Index>
+      </Texture>
+      <Size>180</Size>
+   </Object>
+</Objects>

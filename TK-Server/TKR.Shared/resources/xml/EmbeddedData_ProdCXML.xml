@@ -401,7 +401,7 @@
       <ActivateOnEquip stat="26" amount="7">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="27" amount="7">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="21" amount="15">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>650</feedPower>
    </Object>
@@ -419,7 +419,7 @@
       <ActivateOnEquip stat="3" amount="25">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="26" amount="5">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="27" amount="10">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>5</FameBonus>
       <feedPower>400</feedPower>
    </Object>
@@ -438,7 +438,7 @@
       <ActivateOnEquip stat="27" amount="3">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="21" amount="5">IncrementStat</ActivateOnEquip>
       <Usable/>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <MpCost>120</MpCost>
       <Activate effect="Healing" duration="3" range="5" useWisMod="true">ConditionEffectAura</Activate>
@@ -472,7 +472,7 @@
          <MultiHit/>
       </Projectile>
       <ActivateOnEquip stat="20" amount="2">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <OldSound>bladeSwing</OldSound>
       <feedPower>500</feedPower>
@@ -489,7 +489,7 @@
       <Description>...finally, I cornered and killed the beast. When I awoke in a cold sweat...I felt youthful, powerful.</Description>
       <ActivateOnEquip stat="0" amount="60">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="21" amount="15">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>700</feedPower>
    </Object>
@@ -507,7 +507,7 @@
       <ActivateOnEquip stat="3" amount="50">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="20" amount="5">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="27" amount="8">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>5</FameBonus>
       <feedPower>400</feedPower>
    </Object>
@@ -531,7 +531,7 @@
       <Activate effect="Berserk" duration="3" useWisMod="true">ConditionEffectSelf</Activate>
       <Cooldown>6</Cooldown>
       <Usable/>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <MpCost>150</MpCost>
       <feedPower>700</feedPower>
@@ -558,7 +558,7 @@
          <Size>60</Size>
       </Projectile>
       <ActivateOnEquip stat="26" amount="2">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <OldSound>magicShoot</OldSound>
       <NumProjectiles>2</NumProjectiles>
@@ -586,7 +586,7 @@
          <Amplitude>0.2</Amplitude>
          <Frequency>0.2</Frequency>
       </Projectile>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <OldSound>daggerSwing</OldSound>
       <feedPower>900</feedPower>
@@ -620,7 +620,7 @@
       <Activate>Shoot</Activate>
       <ArcGap>36</ArcGap>
       <NumProjectiles>10</NumProjectiles>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <MpCost>110</MpCost>
       <Cooldown>6</Cooldown>
@@ -640,7 +640,7 @@
       <ActivateOnEquip amount="9" stat="21">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip amount="7" stat="27">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip amount="100" stat="3">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>750</feedPower>
       <Soulbound/>
@@ -661,7 +661,7 @@
       <ActivateOnEquip amount="2" stat="27">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip amount="2" stat="28">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip amount="3" stat="21">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>500</feedPower>
       <Soulbound/>
@@ -687,7 +687,7 @@
          <Amplitude>0.5</Amplitude>
          <Frequency>0.48</Frequency>
       </Projectile>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>800</feedPower>
       <NumProjectiles>2</NumProjectiles>
@@ -715,7 +715,7 @@
          <ArmorPiercing/>
       </Projectile>
       <Usable/>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>900</feedPower>
       <MpCost>80</MpCost>
@@ -736,7 +736,7 @@
       <ActivateOnEquip stat="3" amount="50">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="21" amount="10">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="22" amount="3">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>550</feedPower>
       <Soulbound/>
@@ -754,7 +754,7 @@
       <ActivateOnEquip stat="3" amount="75">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="28" amount="7">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="21" amount="6">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>500</feedPower>
       <Soulbound/>
@@ -780,7 +780,7 @@
          <Size>100</Size>
          <MultiHit/>
       </Projectile>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <OldSound>bladeSwing</OldSound>
       <feedPower>900</feedPower>
@@ -816,7 +816,7 @@
       <ArcGap>10</ArcGap>
       <NumProjectiles>3</NumProjectiles>
       <Usable/>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <MpCost>95</MpCost>
       <feedPower>800</feedPower>
@@ -834,7 +834,7 @@
       <Description>Made from the Heart of Zaarvox by Ulricht the first Dragon Tamer.</Description>
       <ActivateOnEquip stat="21" amount="17">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="22" amount="6">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>600</feedPower>
       <Soulbound/>
@@ -851,7 +851,7 @@
       <Description>Given to the initiates who survive the first challenge.</Description>
       <ActivateOnEquip stat="0" amount="115">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="22" amount="5">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>600</feedPower>
       <Soulbound/>
@@ -882,7 +882,7 @@
       <ArcGap>3</ArcGap>
       <FameBonus>5</FameBonus>
       <feedPower>800</feedPower>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <Soulbound/>
       <OldSound>magicShoot</OldSound>
    </Object>
@@ -906,7 +906,7 @@
       </ExtraTooltipData>
       <FameBonus>6</FameBonus>
       <feedPower>900</feedPower>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <Soulbound/>
    </Object>
    <Object type="0x9de" id="NecroST2" setType="0x000e" setName="Hollow King Necromancer Set">
@@ -926,7 +926,7 @@
       <ActivateOnEquip stat="3" amount="35">IncrementStat</ActivateOnEquip>
       <FameBonus>4</FameBonus>
       <feedPower>750</feedPower>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <Soulbound/>
    </Object>
    <Object type="0x9df" id="NecroST3" setType="0x000e" setName="Hollow King Necromancer Set">
@@ -944,7 +944,7 @@
       <ActivateOnEquip stat="26" amount="5">IncrementStat</ActivateOnEquip>
       <FameBonus>4</FameBonus>
       <feedPower>650</feedPower>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <Soulbound/>
    </Object>
    <Object type="0x258a" id="Bow of Eternal Frost">
@@ -968,7 +968,7 @@
          <MultiHit/>
       </Projectile>
       <ArcGap>8</ArcGap>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>3</FameBonus>
       <NumProjectiles>3</NumProjectiles>
       <OldSound>arrowShoot</OldSound>
@@ -992,7 +992,7 @@
          <MaxDamage>270</MaxDamage>
          <LifetimeMS>350</LifetimeMS>
       </Projectile>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>3</FameBonus>
       <OldSound>bladeSwing</OldSound>
       <feedPower>310</feedPower>
@@ -1016,7 +1016,7 @@
          <MaxDamage>135</MaxDamage>
          <MultiHit/>
       </Projectile>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>3</FameBonus>
       <OldSound>magicShoot</OldSound>
       <feedPower>310</feedPower>
@@ -1040,7 +1040,7 @@
          <LifetimeMS>400</LifetimeMS>
          <ParticleTrail intensity="0.3" lifetimeMS="200">0x1ba38f</ParticleTrail>
       </Projectile>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>3</FameBonus>
       <OldSound>daggerSwing</OldSound>
       <feedPower>310</feedPower>
@@ -1065,7 +1065,7 @@
          <Amplitude>0.5</Amplitude>
          <Frequency>2</Frequency>
       </Projectile>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>3</FameBonus>
       <NumProjectiles>2</NumProjectiles>
       <ArcGap>0</ArcGap>
@@ -1092,7 +1092,7 @@
          <MultiHit/>
          <ParticleTrail intensity="0.3" lifetimeMS="200">0x1ba38f</ParticleTrail>
       </Projectile>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>3</FameBonus>
       <OldSound>bladeSwing</OldSound>
       <feedPower>310</feedPower>
@@ -1175,7 +1175,7 @@
       <Description>Stolen from the Queen Bee herself, this scepter possesses the power to destroy evil.</Description>
       <Sound>spell/fire_spray</Sound>
       <Usable/>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>2</FameBonus>
       <MpCost>70</MpCost>
       <Activate arcDegrees="45" totalDamage="100" wisDamageBase="40" maxTargets="6" color="0xffdf00">Lightning</Activate>
@@ -1193,7 +1193,7 @@
       <SlotType>21</SlotType>
       <Description>A magical honeycomb that was once crucial in repelling an assault from the Hornet Rebellion.</Description>
       <Usable/>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>2</FameBonus>
       <MpCost>90</MpCost>
       <Activate effect="Slowed" duration="5" range="2" color="0xffdf00" target="enemy" center="mouse" visualEffect="8" useWisMod="false">GenericActivate</Activate>
@@ -1368,7 +1368,7 @@
       <Usable/>
       <NumProjectiles>3</NumProjectiles>
       <ArcGap>8</ArcGap>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>5</FameBonus>
       <MpCost>90</MpCost>
       <Activate>Shoot</Activate>
@@ -1396,7 +1396,7 @@
       <Consumable/>
       <Backpack/>
       <Potion/>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <Soulbound/>
    </Object>
    <Object type="0x16d6" id="Enchanted Ice Blade">
@@ -1515,7 +1515,7 @@
       <Description>Protective leather armor fashioned from the frozen, but resilient scales of a frost drake.\n\nSprite Credits: Poshun</Description>
       <ActivateOnEquip stat="21" amount="17">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="28" amount="5">IncrementStat</ActivateOnEquip>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>435</feedPower>
       <Soulbound/>
@@ -1533,7 +1533,7 @@
       <ActivateOnEquip stat="21" amount="13">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="27" amount="6">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="3" amount="55">IncrementStat</ActivateOnEquip>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>435</feedPower>
       <Soulbound/>
@@ -1565,7 +1565,7 @@
       <SlotType>7</SlotType>
       <Description>A sturdy suit of armor, reinforced with ice plating. It's worn by the bravest warriors known to challenge the Mad God.\n\nSprite Credits: Poshun</Description>
       <ActivateOnEquip stat="21" amount="24">IncrementStat</ActivateOnEquip>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>435</feedPower>
       <Soulbound/>
@@ -1677,7 +1677,7 @@
          <Size>100</Size>
       </Projectile>
       <NumProjectiles>1</NumProjectiles>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>3</FameBonus>
       <OldSound>daggerSwing</OldSound>
       <feedPower>310</feedPower>
@@ -2057,7 +2057,7 @@
       <Description>Chitin armor fashioned from the exoskeleton of a yellow Beehemoth. Ultra-light and extremely flexible, yet surprisingly tough.</Description>
       <ActivateOnEquip stat="21" amount="17">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="22" amount="5">IncrementStat</ActivateOnEquip>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>5</FameBonus>
       <feedPower>650</feedPower>
       <Soulbound/>
@@ -2074,7 +2074,7 @@
       <Description>Chitin armor fashioned from the exoskeleton of a red Beehemoth. Ultra-light and extremely flexible, yet surprisingly tough.</Description>
       <ActivateOnEquip stat="21" amount="17">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="22" amount="5">IncrementStat</ActivateOnEquip>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>5</FameBonus>
       <feedPower>650</feedPower>
       <Soulbound/>
@@ -2091,7 +2091,7 @@
       <Description>Chitin armor fashioned from the exoskeleton of a blue Beehemoth. Ultra-light and extremely flexible, yet surprisingly tough.</Description>
       <ActivateOnEquip stat="21" amount="17">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="22" amount="5">IncrementStat</ActivateOnEquip>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>5</FameBonus>
       <feedPower>650</feedPower>
       <Soulbound/>
@@ -2122,7 +2122,7 @@
       <ArcGap>4</ArcGap>
       <FameBonus>4</FameBonus>
       <feedPower>800</feedPower>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <Soulbound/>
       <OldSound>arrowShoot</OldSound>
    </Object>
@@ -2148,7 +2148,7 @@
       <Activate objectId="EH Trap Helper" color="0xFFC300">ObjectToss</Activate>
       <FameBonus>4</FameBonus>
       <feedPower>700</feedPower>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <Soulbound/>
    </Object>
    <Object type="0x08f9" id="HuntressST2" setType="0x000f" setName="Swarming Huntress Set">
@@ -2166,7 +2166,7 @@
       <ActivateOnEquip stat="20" amount="3">IncrementStat</ActivateOnEquip>
       <FameBonus>4</FameBonus>
       <feedPower>500</feedPower>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <Soulbound/>
    </Object>
    <Object type="0x08fa" id="HuntressST3" setType="0x000f" setName="Swarming Huntress Set">
@@ -2184,7 +2184,7 @@
       <ActivateOnEquip stat="20" amount="4">IncrementStat</ActivateOnEquip>
       <FameBonus>4</FameBonus>
       <feedPower>500</feedPower>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <Soulbound/>
    </Object>
    <Object type="0x0258" id="TricksterST0" setType="0x0010" setName="Lost Golem Set">
@@ -2206,7 +2206,7 @@
          <MaxDamage>130</MaxDamage>
          <LifetimeMS>450</LifetimeMS>
       </Projectile>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>6</FameBonus>
       <OldSound>daggerSwing</OldSound>
       <feedPower>900</feedPower>
@@ -2228,7 +2228,7 @@
          <EffectInfo name="Explosion" description="Dazed for 2 seconds within 1.75 sqrs"/>
       </ExtraTooltipData>
       <MpCost>65</MpCost>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>5</FameBonus>
       <feedPower>950</feedPower>
       <Soulbound/>
@@ -2246,7 +2246,7 @@
       <ActivateOnEquip stat="21" amount="14">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="20" amount="8">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="26" amount="7">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>700</feedPower>
       <Soulbound/>
@@ -2264,7 +2264,7 @@
       <ActivateOnEquip stat="0" amount="70">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="21" amount="5">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="22" amount="5">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>5</FameBonus>
       <feedPower>700</feedPower>
       <Soulbound/>
@@ -2406,7 +2406,7 @@
       <ActivateOnEquip stat="3" amount="20">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="22" amount="3">IncrementStat</ActivateOnEquip>
       <Usable/>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>4</FameBonus>
       <MpCost>90</MpCost>
       <Activate totalDamage="300" decrDamage="40" wisDamageBase="80" maxTargets="5">Lightning</Activate>
@@ -2422,7 +2422,7 @@
       <SlotType>21</SlotType>
       <Description>A skillfully decorated snowglobe that is actually a warlock's sinister tool of inquisition, imprisoning foes in a realm of infinite winter.\n\nSprite Credits: Dappertron</Description>
       <Usable/>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>4</FameBonus>
       <MpCost>90</MpCost>
       <Activate effect="Berserk" duration="2" useWisMod="true">ConditionEffectSelf</Activate>
@@ -2446,7 +2446,7 @@
       <ActivateOnEquip stat="0" amount="20">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="3" amount="20">IncrementStat</ActivateOnEquip>
       <Usable/>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>4</FameBonus>
       <MpCost>85</MpCost>
       <Activate effect="Berserk" duration="6" range="4">ConditionEffectAura</Activate>
@@ -2481,7 +2481,7 @@
       <ActivateOnEquip stat="28" amount="6">IncrementStat</ActivateOnEquip>
       <ConditionEffect duration="3">Paralyzed</ConditionEffect>
       <Usable/>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>4</FameBonus>
       <MpCost>75</MpCost>
       <Activate>Shoot</Activate>
@@ -2497,7 +2497,7 @@
       <SlotType>19</SlotType>
       <Description>A monstrous skull hewed with incantations of darkness to absorb life energy from the souls of the wicked.\n\nSprite Credits: Dappertron</Description>
       <Usable/>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>4</FameBonus>
       <MpCost>115</MpCost>
       <ActivateOnEquip stat="0" amount="90">IncrementStat</ActivateOnEquip>
@@ -2526,7 +2526,7 @@
       <ActivateOnEquip stat="0" amount="20">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="3" amount="20">IncrementStat</ActivateOnEquip>
       <Usable/>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>4</FameBonus>
       <MpCost>80</MpCost>
       <Activate>BulletNova</Activate>
@@ -2545,7 +2545,7 @@
       <ActivateOnEquip stat="0" amount="20">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="3" amount="20">IncrementStat</ActivateOnEquip>
       <Usable/>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>4</FameBonus>
       <MpCost>105</MpCost>
       <Activate radius="6.5" totalDamage="350" condDuration="6">Trap</Activate>
@@ -2578,7 +2578,7 @@
       <ActivateOnEquip stat="3" amount="20">IncrementStat</ActivateOnEquip>
       <ConditionEffect duration="3">Stunned</ConditionEffect>
       <Usable/>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>4</FameBonus>
       <MpCost>100</MpCost>
       <Activate>Shoot</Activate>
@@ -2598,7 +2598,7 @@
       <ActivateOnEquip stat="0" amount="20">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="3" amount="20">IncrementStat</ActivateOnEquip>
       <Usable/>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>4</FameBonus>
       <MpCost>90</MpCost>
       <Activate duration="9" speed="1.25">Decoy</Activate>
@@ -2616,7 +2616,7 @@
       <Description>A most holy manuscript taken from an ancient celestial library, brimming with golden light that wrests the innocent from the clutches of death.\n\nSprite Credits: Dappertron</Description>
       <Sound>spell/major_heal</Sound>
       <Usable/>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>4</FameBonus>
       <MpCost>85</MpCost>
       <Activate effect="Healing" duration="6" range="5" useWisMod="true">ConditionEffectAura</Activate>
@@ -2637,7 +2637,7 @@
       <SlotType>18</SlotType>
       <Description>The bitter poison of evergreen berries that has also absorbed a great deal of of energy from evil spirits.\n\nSprite Credits: Dappertron</Description>
       <Usable/>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>4</FameBonus>
       <MpCost>100</MpCost>
       <Activate radius="5" impactDamage="200" totalDamage="900" duration="4.5" throwTime="0.8">PoisonGrenade</Activate>
@@ -2661,7 +2661,7 @@
       <ActivateOnEquip stat="0" amount="20">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="3" amount="20">IncrementStat</ActivateOnEquip>
       <Usable/>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>4</FameBonus>
       <MpCost>85</MpCost>
       <Activate effect="Invisible" duration="5.5">ConditionEffectSelf</Activate>
@@ -2679,7 +2679,7 @@
       <Description>A sacred seal of the bitter Frost Kingdoms, bearing a wreathlike design that invokes a symbol of strength and endurance in the midst of winter.\n\nSprite Credits: Dappertron</Description>
       <Sound>spell/light_heal</Sound>
       <Usable/>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>4</FameBonus>
       <MpCost>90</MpCost>
       <Activate stat="0" amount="75" duration="4" range="4.5" noStack="true" useWisMod="true">StatBoostAura</Activate>
@@ -2719,7 +2719,7 @@
       <ActivateOnEquip stat="0" amount="20">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="3" amount="20">IncrementStat</ActivateOnEquip>
       <Usable/>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>4</FameBonus>
       <MpCost>0</MpCost>
       <MpEndCost>90</MpEndCost>
@@ -3053,7 +3053,7 @@
       <ActivateOnEquip amount="3" stat="28">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip amount="3" stat="22">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip amount="15" stat="3">IncrementStat</ActivateOnEquip>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>2</FameBonus>
       <feedPower>275</feedPower>
       <Soulbound/>
@@ -3071,7 +3071,7 @@
       <ActivateOnEquip amount="2" stat="26">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip amount="2" stat="27">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip amount="2" stat="28">IncrementStat</ActivateOnEquip>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>1</FameBonus>
       <feedPower>200</feedPower>
       <Soulbound/>
@@ -3247,7 +3247,7 @@
          <MaxDamage>265</MaxDamage>
          <LifetimeMS>818</LifetimeMS>
       </Projectile>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>650</feedPower>
       <Soulbound/>
@@ -3269,7 +3269,7 @@
       <Activate effect="Stunned" duration="1">ConditionEffectSelf</Activate>
       <Cooldown>0.5</Cooldown>
       <MpCost>100</MpCost>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>700</feedPower>
       <Soulbound/>
@@ -3289,7 +3289,7 @@
       <ActivateOnEquip stat="28" amount="-5">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="20" amount="8">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="27" amount="4">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>600</feedPower>
       <Soulbound/>
@@ -3309,7 +3309,7 @@
       <ActivateOnEquip stat="3" amount="50">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="22" amount="5">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="28" amount="-3">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>600</feedPower>
       <Soulbound/>
@@ -3336,7 +3336,7 @@
       <RateOfFire>1.2</RateOfFire>
       <NumProjectiles>1</NumProjectiles>
       <ActivateOnEquip stat="26" amount="-2">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <feedPower>1000</feedPower>
       <FameBonus>5</FameBonus>
       <Soulbound/>
@@ -3356,7 +3356,7 @@
       <ActivateOnEquip stat="26" amount="-2">IncrementStat</ActivateOnEquip>
       <MpCost>120</MpCost>
       <Usable/>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <feedPower>850</feedPower>
       <FameBonus>6</FameBonus>
       <Soulbound/>
@@ -3374,7 +3374,7 @@
       <ActivateOnEquip stat="21" amount="15">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="20" amount="6">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="26" amount="-2">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <feedPower>700</feedPower>
       <FameBonus>4</FameBonus>
       <Soulbound/>
@@ -3393,7 +3393,7 @@
       <ActivateOnEquip stat="20" amount="5">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="27" amount="5">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="26" amount="-2">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <feedPower>650</feedPower>
       <FameBonus>4</FameBonus>
       <Soulbound/>
@@ -3624,7 +3624,7 @@
       <Description>The Tlatoani used this robe to aid them in casting their most powerful magic spells. Like their other ceremonial garbs, it rarely saw much combat application.</Description>
       <ActivateOnEquip amount="180" stat="3">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="27" amount="10">IncrementStat</ActivateOnEquip>
-      <BagType>4</BagType>
+      <BagType>6</BagType>
       <FameBonus>3</FameBonus>
       <feedPower>500</feedPower>
       <Soulbound/>
@@ -3671,7 +3671,7 @@
       <ActivateOnEquip stat="21" amount="10">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="20" amount="7">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="28" amount="7">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <Soulbound/>
       <FameBonus>4</FameBonus>
       <feedPower>750</feedPower>
@@ -3688,7 +3688,7 @@
       <Description>It is believed that Oryx siphons a drop of blood from each hero he slays for use in this intimidating crimson ring.</Description>
       <ActivateOnEquip stat="0" amount="120">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="21" amount="4">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <Soulbound/>
       <FameBonus>4</FameBonus>
       <feedPower>650</feedPower>
@@ -3723,7 +3723,7 @@
       <Activate>Shoot</Activate>
       <NumProjectiles>5</NumProjectiles>
       <Activate stat="21" amount="15" duration="2.5">StatBoostSelf</Activate>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <Soulbound/>
       <FameBonus>4</FameBonus>
       <feedPower>800</feedPower>
@@ -3750,7 +3750,7 @@
          <Size>100</Size>
          <ArmorPiercing/>
       </Projectile>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <Soulbound/>
       <FameBonus>4</FameBonus>
       <feedPower>850</feedPower>
@@ -3886,7 +3886,7 @@
       <RateOfFire>1</RateOfFire>
       <NumProjectiles>3</NumProjectiles>
       <ArcGap>8</ArcGap>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <feedPower>0</feedPower>
       <FameBonus>6</FameBonus>
       <Soulbound/>
@@ -3915,7 +3915,7 @@
       <MpCost>70</MpCost>
       <Activate>Shoot</Activate>
       <Usable/>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <feedPower>0</feedPower>
       <FameBonus>6</FameBonus>
       <Soulbound/>
@@ -3931,7 +3931,7 @@
       <SlotType>6</SlotType>
       <Description>An illustrious lineage of acclaimed bowmen have passed down this famed attire. It boasts such immense defensive power that its wearer is considered invincible.</Description>
       <ActivateOnEquip amount="1" stat="21">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <feedPower>0</feedPower>
       <FameBonus>6</FameBonus>
       <Soulbound/>
@@ -3947,7 +3947,7 @@
       <SlotType>9</SlotType>
       <Description>A legendary citrine ring said to grant unfathomable amounts of dexterity to those who possess it.</Description>
       <ActivateOnEquip stat="28" amount="1">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <feedPower>0</feedPower>
       <FameBonus>6</FameBonus>
       <Soulbound/>
@@ -4534,7 +4534,7 @@
          <ArmorPiercing/>
          <FaceDir/>
       </Projectile>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <OldSound>bladeSwing</OldSound>
       <Soulbound/>
@@ -4570,7 +4570,7 @@
          <PassesCover/>
       </Projectile>
       <Usable/>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <MpCost>0</MpCost>
       <MpEndCost>90</MpEndCost>
@@ -4594,7 +4594,7 @@
       <ActivateOnEquip stat="21" amount="9">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="20" amount="8">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="28" amount="8">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>650</feedPower>
       <Soulbound/>
@@ -4612,7 +4612,7 @@
       <ActivateOnEquip stat="0" amount="80">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="26" amount="5">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="22" amount="5">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>550</feedPower>
       <Soulbound/>
@@ -4637,7 +4637,7 @@
          <LifetimeMS>200</LifetimeMS>
          <MultiHit/>
       </Projectile>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <NumProjectiles>1</NumProjectiles>
       <OldSound>arrowShoot</OldSound>
@@ -4670,7 +4670,7 @@
       <ConditionEffect duration="2.5">Slowed</ConditionEffect>
       <Activate effect="Speedy" duration="3">ConditionEffectSelf</Activate>
       <Usable/>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <MpCost>120</MpCost>
       <Activate>Shoot</Activate>
@@ -4694,7 +4694,7 @@
       <ActivateOnEquip stat="21" amount="14">IncrementStat</ActivateOnEquip>
       <FameBonus>4</FameBonus>
       <feedPower>700</feedPower>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <Soulbound/>
    </Object>
    <Object type="0x1e47" id="ArcherST3" setType="0x1e48" setName="Phantom Archer Set">
@@ -4712,7 +4712,7 @@
       <ActivateOnEquip stat="0" amount="50">IncrementStat</ActivateOnEquip>
       <FameBonus>4</FameBonus>
       <feedPower>600</feedPower>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <Soulbound/>
    </Object>
    <Object type="0x57d" id="Tome of Forbidden Knowledge">
@@ -4806,7 +4806,7 @@
          <EffectInfo name="Effect" description="Restores 150 HP when taking damage when below 300 HP."/>
          <EffectInfo name="Cooldown" description="60 seconds."/>
       </ExtraTooltipData>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <OnPlayerHitActivate hpMinThreshold="300" proc="1" cooldown="60" duration="5" amount="150">Heal</OnPlayerHitActivate>
       <feedPower>850</feedPower>
@@ -4834,7 +4834,7 @@
       </Projectile>
       <NumProjectiles>4</NumProjectiles>
       <ArcGap>10</ArcGap>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <OldSound>bladeSwing</OldSound>
       <feedPower>750</feedPower>
@@ -4858,7 +4858,7 @@
       <Activate stat="21" amount="15" duration="4">StatBoostSelf</Activate>
       <Activate stat="22" amount="-15" duration="4">StatBoostSelf</Activate>
       <Usable/>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <MpCost>115</MpCost>
       <feedPower>600</feedPower>
@@ -4877,7 +4877,7 @@
       <ActivateOnEquip stat="0" amount="40">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="3" amount="40">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="21" amount="20">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>4</FameBonus>
       <feedPower>500</feedPower>
       <Soulbound/>
@@ -4895,7 +4895,7 @@
       <ActivateOnEquip stat="0" amount="45">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="3" amount="45">IncrementStat</ActivateOnEquip>
       <ActivateOnEquip stat="21" amount="8">IncrementStat</ActivateOnEquip>
-      <BagType>8</BagType>
+      <BagType>7</BagType>
       <FameBonus>5</FameBonus>
       <feedPower>500</feedPower>
       <Soulbound/>
@@ -5312,7 +5312,7 @@
 			<MaxDamage>135</MaxDamage>
 			<MultiHit/>
 		</Projectile>
-		<BagType>4</BagType>
+		<BagType>6</BagType>
 		<FameBonus>3</FameBonus>
 		<OldSound>magicShoot</OldSound>
 		<feedPower>310</feedPower>
@@ -5341,7 +5341,7 @@
 			<Amplitude>0.5</Amplitude>
 			<Frequency>2</Frequency>
 		</Projectile>
-		<BagType>4</BagType>
+		<BagType>6</BagType>
 		<FameBonus>4</FameBonus>
 		<NumProjectiles>2</NumProjectiles>
 		<ArcGap>0</ArcGap>
@@ -5372,7 +5372,7 @@
 		<ActivateOnEquip stat="0" amount="20">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip stat="3" amount="20">IncrementStat</ActivateOnEquip>
 		<Usable/>
-		<BagType>4</BagType>
+		<BagType>6</BagType>
 		<FameBonus>4</FameBonus>
 		<MpCost>80</MpCost>
 		<Activate>BulletNova</Activate>
@@ -5394,7 +5394,7 @@
 		<ActivateOnEquip stat="21" amount="13">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip stat="27" amount="6">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip stat="3" amount="55">IncrementStat</ActivateOnEquip>
-		<BagType>4</BagType>
+		<BagType>6</BagType>
 		<FameBonus>4</FameBonus>
 		<feedPower>435</feedPower>
 	</Object>
@@ -5411,7 +5411,7 @@
 			<EffectInfo name="Set" description="Summer Solstice"/>
 		</ExtraTooltipData>
 		<ActivateOnEquip stat="21" amount="8">IncrementStat</ActivateOnEquip>
-		<BagType>4</BagType>
+		<BagType>6</BagType>
 		<FameBonus>4</FameBonus>
 		<feedPower>300</feedPower>
 	</Object>
@@ -5487,7 +5487,7 @@
 			<MaxDamage>175</MaxDamage>
 			<LifetimeMS>400</LifetimeMS>
 		</Projectile>
-		<BagType>4</BagType>
+		<BagType>6</BagType>
 		<FameBonus>4</FameBonus>
 		<OldSound>daggerSwing</OldSound>
 		<feedPower>450</feedPower>
@@ -5515,7 +5515,7 @@
 		</Projectile>
 		<ArcGap>36</ArcGap>
 		<NumProjectiles>10</NumProjectiles>
-		<BagType>4</BagType>
+		<BagType>6</BagType>
 		<FameBonus>1</FameBonus>
 		<OldSound>bladeSwing</OldSound>
 	</Object>
@@ -5539,7 +5539,7 @@
 			<Amplitude>2</Amplitude>
 			<Frequency>2</Frequency>
 		</Projectile>
-		<BagType>4</BagType>
+		<BagType>6</BagType>
 		<NumProjectiles>5</NumProjectiles>
 		<ArcGap>15</ArcGap>
 		<OldSound>arrowShoot</OldSound>
@@ -5564,7 +5564,7 @@
 			<Amplitude>0.5</Amplitude>
 			<Frequency>1</Frequency>
 		</Projectile>
-		<BagType>4</BagType>
+		<BagType>6</BagType>
 		<NumProjectiles>7</NumProjectiles>
 		<ArcGap>90</ArcGap>
 		<OldSound>magicShoot</OldSound>
@@ -5591,7 +5591,7 @@
 			<PassesCover/>
 		</Projectile>
 		<NumProjectiles>4</NumProjectiles>
-		<BagType>4</BagType>
+		<BagType>6</BagType>
 		<OldSound>magicShoot</OldSound>
 		<feedPower>0</feedPower>
 	</Object>
@@ -5613,7 +5613,7 @@
 			<MinDamage>50</MinDamage>
 			<MaxDamage>50</MaxDamage>
 		</Projectile>
-		<BagType>4</BagType>
+		<BagType>6</BagType>
 		<OldSound>daggerSwing</OldSound>
 		<feedPower>0</feedPower>
 	</Object>
@@ -5758,33 +5758,6 @@
 		<BagType>6</BagType>
 		<FameBonus>5</FameBonus>
 		<feedPower>700</feedPower>
-		<Soulbound/>
-	</Object>
-	<Object type="0x7565" id="Celestial Blade">
-		<DisplayId>Celestial Blade</DisplayId>
-		<Class>Equipment</Class>
-		<Item/>
-		<Texture>
-			<File>lairOfDraconisObjects8x8</File>
-			<Index>0x53</Index>
-		</Texture>
-		<SlotType>24</SlotType>
-		<Description>An ancient weapon imbued with the power of the cosmos.</Description>
-		<Sound>weapon/long_sword</Sound>
-		<RateOfFire>1</RateOfFire>
-		<Projectile>
-			<ObjectId>LOD Celestial Slash</ObjectId>
-			<Speed>130</Speed>
-			<MinDamage>200</MinDamage>
-			<MaxDamage>220</MaxDamage>
-			<LifetimeMS>400</LifetimeMS>
-			<Amplitude>0.65</Amplitude>
-			<Frequency>0.2</Frequency>
-		</Projectile>
-		<BagType>6</BagType>
-		<FameBonus>6</FameBonus>
-		<feedPower>850</feedPower>
-		<OldSound>bladeSwing</OldSound>
 		<Soulbound/>
 	</Object>
 	<Object type="0xcdb" id="Pirate King's Cutlass">
@@ -6064,7 +6037,7 @@
 			<MaxDamage>270</MaxDamage>
 			<LifetimeMS>350</LifetimeMS>
 		</Projectile>
-		<BagType>4</BagType>
+		<BagType>6</BagType>
 		<FameBonus>3</FameBonus>
 		<OldSound>bladeSwing</OldSound>
 		<feedPower>310</feedPower>
@@ -6097,7 +6070,7 @@
 		<SlotType>7</SlotType>
 		<Description>A piece of heavy plate mail forged in the dungeons of Oryx's castle, it is decorated with dark red Almandine stones.</Description>
 		<ActivateOnEquip stat="21" amount="24">IncrementStat</ActivateOnEquip>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>4</FameBonus>
 		<feedPower>435</feedPower>
 	</Object>
@@ -6111,7 +6084,7 @@
 		<SlotType>9</SlotType>
 		<Description>Set with stones as red as Oryx's favorite Cabernet Sauvignon.</Description>
 		<ActivateOnEquip stat="0" amount="140">IncrementStat</ActivateOnEquip>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>4</FameBonus>
 		<feedPower>300</feedPower>
 	</Object>
@@ -6142,7 +6115,7 @@
 		<ActivateOnEquip stat="27" amount="2">IncrementStat</ActivateOnEquip>
 		<ConditionEffect duration="3">Stunned</ConditionEffect>
 		<Usable/>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>4</FameBonus>
 		<MpCost>100</MpCost>
 		<Activate>Shoot</Activate>
@@ -6168,7 +6141,7 @@
 			<LifetimeMS>350</LifetimeMS>
 			<Size>80</Size>
 		</Projectile>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>4</FameBonus>
 		<OldSound>bladeSwing</OldSound>
 		<feedPower>450</feedPower>
@@ -6315,7 +6288,7 @@
 		<Activate stat="20" amount="2">IncrementStat</Activate>
 		<Consumable/>
 		<Potion/>
-		<BagType>5</BagType>
+		<BagType>3</BagType>
 		<feedPower>200</feedPower>
 		<Track/>
 	</Object>
@@ -6333,7 +6306,7 @@
 		<Activate stat="21" amount="2">IncrementStat</Activate>
 		<Consumable/>
 		<Potion/>
-		<BagType>5</BagType>
+		<BagType>3</BagType>
 		<feedPower>200</feedPower>
 		<Track/>
 	</Object>
@@ -6351,7 +6324,7 @@
 		<Activate stat="22" amount="2">IncrementStat</Activate>
 		<Consumable/>
 		<Potion/>
-		<BagType>5</BagType>
+		<BagType>3</BagType>
 		<feedPower>200</feedPower>
 		<Track/>
 	</Object>
@@ -6369,7 +6342,7 @@
 		<Activate stat="26" amount="2">IncrementStat</Activate>
 		<Consumable/>
 		<Potion/>
-		<BagType>5</BagType>
+		<BagType>3</BagType>
 		<feedPower>200</feedPower>
 		<Track/>
 	</Object>
@@ -6387,7 +6360,7 @@
 		<Activate stat="27" amount="2">IncrementStat</Activate>
 		<Consumable/>
 		<Potion/>
-		<BagType>5</BagType>
+		<BagType>3</BagType>
 		<feedPower>200</feedPower>
 		<Track/>
 	</Object>
@@ -6405,7 +6378,7 @@
 		<Activate stat="28" amount="2">IncrementStat</Activate>
 		<Consumable/>
 		<Potion/>
-		<BagType>5</BagType>
+		<BagType>3</BagType>
 		<feedPower>200</feedPower>
 		<Track/>
 	</Object>
@@ -6422,7 +6395,7 @@
 		<Activate stat="0" amount="10">IncrementStat</Activate>
 		<Consumable/>
 		<Potion/>
-		<BagType>5</BagType>
+		<BagType>3</BagType>
 		<feedPower>350</feedPower>
 		<Track/>
 	</Object>
@@ -6439,7 +6412,7 @@
 		<Activate stat="3" amount="10">IncrementStat</Activate>
 		<Consumable/>
 		<Potion/>
-		<BagType>5</BagType>
+		<BagType>3</BagType>
 		<feedPower>350</feedPower>
 		<Track/>
 	</Object>
@@ -7222,7 +7195,7 @@
 		<ActivateOnEquip amount="40" stat="0">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip amount="3" stat="28">IncrementStat</ActivateOnEquip>
 		<MpCost>70</MpCost>
-		<BagType>4</BagType>
+		<BagType>6</BagType>
 		<FameBonus>4</FameBonus>
 		<feedPower>350</feedPower>
 		<Soulbound/>
@@ -7242,7 +7215,7 @@
 		<Cooldown>6</Cooldown>
 		<ActivateOnEquip amount="6" stat="21">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip amount="6" stat="22">IncrementStat</ActivateOnEquip>
-		<BagType>4</BagType>
+		<BagType>6</BagType>
 		<FameBonus>4</FameBonus>
 		<feedPower>350</feedPower>
 		<Soulbound/>
@@ -7361,7 +7334,7 @@
 			<EffectInfo description="100-300" name="Blade Damage"/>
 			<EffectInfo description="5.5" name="Scythe Range"/>
 		</ExtraTooltipData>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>5</FameBonus>
 		<feedPower>900</feedPower>
 		<Soulbound/>
@@ -7394,7 +7367,7 @@
 		</Texture>
 		<SlotType>13</SlotType>
 		<Description>A dark and flowing cape donned by masters of the twilight hours.</Description>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>5</FameBonus>
 		<MpCost>120</MpCost>
 		<Cooldown>5.5</Cooldown>
@@ -7423,7 +7396,7 @@
 		</ExtraTooltipData>
 		<ActivateOnEquip amount="15" stat="21">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip amount="5" stat="20">IncrementStat</ActivateOnEquip>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>4</FameBonus>
 		<feedPower>750</feedPower>
 		<Soulbound/>
@@ -7442,7 +7415,7 @@
 		<ActivateOnEquip amount="80" stat="0">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip amount="5" stat="27">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip amount="5" stat="26">IncrementStat</ActivateOnEquip>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<feedPower>550</feedPower>
 		<FameBonus>4</FameBonus>
 		<Soulbound/>
@@ -7478,7 +7451,7 @@
 		</Projectile>
 		<NumProjectiles>2</NumProjectiles>
 		<ArcGap>0</ArcGap>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>5</FameBonus>
 		<feedPower>800</feedPower>
 		<Soulbound/>
@@ -7516,7 +7489,7 @@
 		<OnPlayerAbilityActivate targetMouse="true" mustWear="0x527c" arcGap="16" cooldown="0.2" gapAngle="0" gapTiles="0" maxDistance="3" minDistance="3" numShots="2" offsetAngle="0" proc="1" type="0x4217">BulletCreate</OnPlayerAbilityActivate>
 		<OnPlayerAbilityActivate targetMouse="true" mustWear="0x527c" arcGap="16" cooldown="0.2" gapAngle="0" gapTiles="0" maxDistance="4" minDistance="4" numShots="2" offsetAngle="0" proc="1" type="0x4218">BulletCreate</OnPlayerAbilityActivate>
 		<Usable/>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>5</FameBonus>
 		<MpCost>100</MpCost>
 		<Soulbound/>
@@ -7539,7 +7512,7 @@
 		<SlotType>6</SlotType>
 		<ActivateOnEquip amount="15" stat="21">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip amount="10" stat="26">IncrementStat</ActivateOnEquip>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>4</FameBonus>
 		<feedPower>700</feedPower>
 		<Soulbound/>
@@ -7557,7 +7530,7 @@
 		<ActivateOnEquip amount="5" stat="21">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip amount="5" stat="26">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip amount="50" stat="0">IncrementStat</ActivateOnEquip>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>4</FameBonus>
 		<feedPower>600</feedPower>
 		<Soulbound/>
@@ -7679,7 +7652,7 @@
 		<ActivateOnEquip amount="3" stat="21">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip amount="4" stat="22">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip amount="4" stat="20">IncrementStat</ActivateOnEquip>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>5</FameBonus>
 		<feedPower>750</feedPower>
 		<Soulbound/>
@@ -7698,7 +7671,7 @@
 		<ActivateOnEquip amount="80" stat="3">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip amount="3" stat="22">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip amount="3" stat="20">IncrementStat</ActivateOnEquip>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>5</FameBonus>
 		<feedPower>800</feedPower>
 		<Soulbound/>
@@ -7737,7 +7710,7 @@
 		<Usable/>
 		<Activate>Shoot</Activate>
 		<Soulbound/>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>5</FameBonus>
 		<MpCost>120</MpCost>
 		<feedPower>900</feedPower>
@@ -7766,7 +7739,7 @@
 			<FaceDir/>
 		</Projectile>
 		<NumProjectiles>1</NumProjectiles>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>5</FameBonus>
 		<feedPower>850</feedPower>
 		<Soulbound/>
@@ -7783,7 +7756,7 @@
 		<Description>What serves as the life support for all of the artificial creatures constructed by the Crystal Entity is also capable of bestowing strength and energy to organic life.</Description>
 		<ActivateOnEquip amount="100" stat="0">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip amount="5" stat="20">IncrementStat</ActivateOnEquip>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>5</FameBonus>
 		<Soulbound/>
 		<feedPower>750</feedPower>
@@ -7801,7 +7774,7 @@
 		<ActivateOnEquip amount="200" stat="0">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip amount="5" stat="22">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip amount="5" stat="26">IncrementStat</ActivateOnEquip>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>5</FameBonus>
 		<Soulbound/>
 		<feedPower>800</feedPower>
@@ -7828,7 +7801,7 @@
 		<Cooldown>3</Cooldown>
 		<NumProjectiles>0</NumProjectiles>
 		<OnPlayerHitActivate arcGap="10" cooldown="2" damageThreshold="0" gapAngle="0" gapTiles="0" maxDistance="5.5" minDistance="5.5" numShots="3" offsetAngle="360" proc="1" type="0x4b47">BulletCreate</OnPlayerHitActivate>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>5</FameBonus>
 		<Soulbound/>
 		<feedPower>950</feedPower>
@@ -7876,7 +7849,7 @@
 		</Projectile>
 		<NumProjectiles>3</NumProjectiles>
 		<ArcGap>10</ArcGap>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>5</FameBonus>
 		<Soulbound/>
 		<feedPower>900</feedPower>
@@ -7893,7 +7866,7 @@
 		<Description>A cursed gemstone imbued with numerous plagues. While unfavorable to one's stamina, it proves itself useful with the associated resistances.</Description>
 		<ActivateOnEquip amount="150" stat="0">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip amount="-5" stat="22">IncrementStat</ActivateOnEquip>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>5</FameBonus>
 		<Soulbound/>
 		<feedPower>600</feedPower>
@@ -7913,7 +7886,7 @@
 		<ActivateOnEquip amount="30" stat="0">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip amount="30" stat="3">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip amount="-5" stat="22">IncrementStat</ActivateOnEquip>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>5</FameBonus>
 		<Soulbound/>
 		<feedPower>700</feedPower>
@@ -7934,7 +7907,7 @@
 			<EffectInfo description="6 seconds" name="Poison Cooldown"/>
 		</ExtraTooltipData>
 		<Usable/>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>5</FameBonus>
 		<MpCost>105</MpCost>
 		<Activate color="0xADC718" impactDamage="650" radius="3" throwTime="0.8" totalDamage="0">PoisonGrenade</Activate>
@@ -7965,7 +7938,7 @@
 			<Size>100</Size>
 		</Projectile>
 		<NumProjectiles>1</NumProjectiles>
-		<BagType>8</BagType>
+		<BagType>7</BagType>
 		<FameBonus>5</FameBonus>
 		<Soulbound/>
 		<feedPower>850</feedPower>

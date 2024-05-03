@@ -36,24 +36,13 @@
         XPBoost,
         LDBoost,
         LTBoost,
-        Forge,
-        UpgradeStat,
-        UpgradeActivate,
-        MagicDust,
-        FrozenCoin,
         UnlockSkin,
         MysteryDyes,
         Fame,
         UnlockChest,
         UnlockSlotChar,
-        PotionDust,
-        ItemDust,
-        MiscellaneousDust,
-        SpecialDust,
         ShurikenAbilityDamaging,
         ShurikenAbilityBerserk,
-        GenericActivate,
-        FuelEngine,
-        Bolas
+        GenericActivate
     }
 }

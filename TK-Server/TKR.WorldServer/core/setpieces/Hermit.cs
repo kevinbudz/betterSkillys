@@ -5,6 +5,6 @@ namespace TKR.WorldServer.core.setpieces
     internal class Hermit : ISetPiece
     {
         public override int Size => 32;
-        public override string Map => "set_piece/hermit.jm";
+        public override string Map => "setpieces/hermit.jm";
     }
 }

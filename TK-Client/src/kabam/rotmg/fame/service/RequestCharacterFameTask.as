@@ -47,7 +47,9 @@ import kabam.lib.tasks.BaseTask;
       public var texture1:int;
       
       public var texture2:int;
-      
+
+      public var size:int;
+
       public function RequestCharacterFameTask()
       {
          super();
@@ -109,6 +111,7 @@ import kabam.lib.tasks.BaseTask;
          this.template = skin.template;
          this.texture1 = Boolean(charXml.hasOwnProperty("Tex1"))?int(charXml.Tex1):int(0);
          this.texture2 = Boolean(charXml.hasOwnProperty("Tex2"))?int(charXml.Tex2):int(0);
+         this.size = ((skin.is16x16) ? 140 : 250);
       }
       
       private function getDeathDate() : String

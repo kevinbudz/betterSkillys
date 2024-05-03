@@ -1145,6 +1145,17 @@ public class GameServerConnection
          {
             return;
          }
+
+         if(damage.objectId_ == playerId_) {
+            if (target != null && (target.props_.isQuest_ || target.props_.isChest_)) {
+               if (isNaN(Parameters.DamageCounter[damage.targetId_])) {
+                  Parameters.DamageCounter[damage.targetId_] = 0;
+               }
+               var targetId:* = damage.targetId_;
+               var damageAdd:* = Parameters.DamageCounter[targetId] + damage.damageAmount_;
+               Parameters.DamageCounter[targetId] = damageAdd;
+            }
+         }
       }
 
       private function onServerPlayerShoot(serverPlayerShoot:ServerPlayerShoot) : void

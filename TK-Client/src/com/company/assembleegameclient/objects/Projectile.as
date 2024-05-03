@@ -57,6 +57,7 @@ public class Projectile extends BasicObject
    private var staticVector3D_:Vector3D;
    protected var shadowGradientFill_:GraphicsGradientFill;
    protected var shadowPath_:GraphicsPath;
+   private var size:int;
 
    public function Projectile()
    {
@@ -113,17 +114,16 @@ public class Projectile extends BasicObject
       this.damagesEnemies_ = !this.damagesPlayers_;
       this.sound_ = this.containerProps_.oldSound_;
       this.multiHitDict_ = this.projProps_.multiHit_ ? new Dictionary() : null;
-      if(this.projProps_.size_ >= 0)
-      {
-         size = this.projProps_.size_;
+      if (this.projProps_.size_ > 0) {
+         this.size = this.projProps_.size_;
       }
-      else
-      {
-         size = ObjectLibrary.getSizeFromType(this.containerType_);
+      else {
+         this.size = ObjectLibrary.getSizeFromType(this.containerType_);
       }
-      if (Parameters.data_.projOutline) {
-         this.texture_ = TextureRedrawer.redraw(this.texture_, size * 4, false, 0, true, 3, 15.5 * (size / 800));
-      }
+      var _local_12:Number = (this.texture_.width / 8);
+      this.p_.setSize((8 * ((this.size * ((Parameters.data_.projOutline) ? (_local_12 * 2) : 1)) / 100)));
+      if (this.texture_.width >= 16)
+         this.size /= this.texture_.width / 8;
       this.p_.setSize(8 * (size / 100));
       this.damage_ = 0;
    }
@@ -321,6 +321,16 @@ public class Projectile extends BasicObject
             {
                map_.gs_.gsc_.enemyHit(time, this.bulletId_, target.objectId_, dead);
                target.damage(this.containerType_, dmg, this.projProps_.effects_, dead, this, false);
+               if(target != null && (target.props_.isQuest_ || target.props_.isChest_))
+               {
+                  if(isNaN(Parameters.DamageCounter[target.objectId_]))
+                  {
+                     Parameters.DamageCounter[target.objectId_] = 0;
+                  }
+                  var targetId:* = target.objectId_;
+                  var damage:* = Parameters.DamageCounter[targetId] + dmg;
+                  Parameters.DamageCounter[targetId] = damage;
+               }
             }
             else if(!this.projProps_.multiHit_)
             {
@@ -382,36 +392,29 @@ public class Projectile extends BasicObject
       return minGO;
    }
 
-   override public function draw(graphicsData:Vector.<IGraphicsData>, camera:Camera, time:int) : void
+   override public function draw(_arg_1:Vector.<IGraphicsData>, _arg_2:Camera, _arg_3:int):void
    {
-      var texture:BitmapData = this.texture_;
-      var r:Number = this.props_.rotation_ == 0?Number(0):Number(time / this.props_.rotation_);
+      var _local_4:BitmapData = this.texture_;
+      if (Parameters.data_.projOutline)
+      {
+         _local_4 = TextureRedrawer.redraw(_local_4, this.size, true, 0);
+      };
+      var _local_5:Number = ((this.props_.rotation_ == 0) ? 0 : (_arg_3 / this.props_.rotation_));
       this.staticVector3D_.x = x_;
       this.staticVector3D_.y = y_;
       this.staticVector3D_.z = z_;
-      this.p_.draw(graphicsData,this.staticVector3D_,this.angle_ - camera.angleRad_ + this.props_.angleCorrection_ + r,camera.wToS_,camera,texture);
-      var angle:Number = !Parameters.data_.smartProjectiles ? Number(Number(this.angle_)) : Number(Number(this.getDirectionAngle(time)));
-      angle = this.projProps_.faceDir_ ? Number(this.getDirectionAngle(time)) : angle;
-      var angleCorrection:Number = Number(Number(angle - camera.angleRad_ + this.props_.angleCorrection_ + r));
-      this.p_.draw(graphicsData,this.staticVector3D_,angleCorrection,camera.wToS_,camera,texture);
-      if(this.projProps_.particleTrail_)
+      var _local_6:Number = ((Parameters.data_.smartProjectiles) ? this.getDirectionAngle(_arg_3) : this.angle_);
+      var _local_7:Number = (((_local_6 - _arg_2.angleRad_) + this.props_.angleCorrection_) + _local_5);
+      this.p_.draw(_arg_1, this.staticVector3D_, _local_7, _arg_2.wToS_, _arg_2, _local_4);
+      if (this.projProps_.particleTrail_)
       {
-         var partTrailLifeTimeMS:int;
-         partTrailLifeTimeMS = this.projProps_.particleTrailLifetimeMS != -1?int(this.projProps_.particleTrailLifetimeMS):600;
-         var _loc11_:int;
-         _loc11_ = 0;
-         for(; _loc11_ < 3; _loc11_++)
+         if (Parameters.data_.eyeCandyParticles)
          {
-            if(map_ != null && map_.player_.objectId_ != this.ownerId_)
-            {
-               if(this.projProps_.particleTrailIntensity_ == -1 && Math.random() * 100 > this.projProps_.particleTrailIntensity_)
-               {
-                  continue;
-               }
-            }
-            map_.addObj(new SparkParticle(100,this.projProps_.particleTrailColor_,partTrailLifeTimeMS,0.5,RandomUtil.plusMinus(3),RandomUtil.plusMinus(3)),x_,y_);
-         }
-      }
+            map_.addObj(new SparkParticle(100, 0xFF00FF, 600, 0.5, RandomUtil.plusMinus(3), RandomUtil.plusMinus(3)), x_, y_);
+            map_.addObj(new SparkParticle(100, 0xFF00FF, 600, 0.5, RandomUtil.plusMinus(3), RandomUtil.plusMinus(3)), x_, y_);
+            map_.addObj(new SparkParticle(100, 0xFF00FF, 600, 0.5, RandomUtil.plusMinus(3), RandomUtil.plusMinus(3)), x_, y_);
+         };
+      };
    }
 
    private function getDirectionAngle(time:*) : Number

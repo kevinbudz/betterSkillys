@@ -436,13 +436,6 @@
         <Activate id="Treasure Cave Portal">Create</Activate>
     </Object>
 
-    <Object type="0x5e2e" id="Treasure Cave Portal">
-        <Class>Portal</Class>
-        <IntergamePortal/>
-        <DungeonName>Cave of A Thousand Treasures</DungeonName>
-        <Texture><File>lofiObj3</File><Index>0x20f</Index></Texture>
-    </Object>
-
     <Object type="0x5e3a" id="Treasure Oryx Defender">
         <Class>Character</Class>
         <Enemy/>

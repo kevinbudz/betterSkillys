@@ -75,38 +75,6 @@ package com.company.assembleegameclient.ui.tooltip
          addChild(this.clickMessage_);
       }
 
-      override protected function position() : void
-      {
-         if(stage == null)
-         {
-            return;
-         }
-         if(stage.mouseX < stage.stageWidth / 2)
-         {
-            x = stage.mouseX + 12;
-         }
-         else
-         {
-            x = stage.mouseX - width - 1;
-         }
-         if(x < 12)
-         {
-            x = 12;
-         }
-         if(stage.mouseY < stage.stageHeight / 3)
-         {
-            y = stage.mouseY + 12;
-         }
-         else
-         {
-            y = stage.mouseY - height - 1;
-         }
-         if(y < 12)
-         {
-            y = 12;
-         }
-      }
-
       override public function draw() : void
       {
          this.hpBar_.draw(this.player_.hp_,this.player_.maxHP_,this.player_.maxHPBoost_,this.player_.maxHPMax_);

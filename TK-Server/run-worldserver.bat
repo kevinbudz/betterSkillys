@@ -1,2 +1,0 @@
-set /p port=Enter port:
-docker run  -m 32GB --restart unless-stopped --network redis --name WorldServer-%port% -e IS_DOCKER=true -p %port%:%port% -d -v tkr_resources:/data tkr-worldserver /data/%port%.json

@@ -49,20 +49,13 @@ public enum MessageId : byte
     QUESTOBJID = 43,
     CHOOSENAME = 44,
     NAMERESULT = 45,
-
-    //Guild
     CREATEGUILD = 46,
-
     GUILDRESULT = 47,
     GUILDREMOVE = 48,
     GUILDINVITE = 49,
-
     ALLYSHOOT = 50,
     ENEMYSHOOT = 51,
-
-    //Trade
     REQUESTTRADE = 52,
-
     TRADEREQUESTED = 53,
     TRADESTART = 54,
     CHANGETRADE = 55,
@@ -71,7 +64,6 @@ public enum MessageId : byte
     CANCELTRADE = 58,
     TRADEDONE = 59,
     TRADEACCEPTED = 60,
-
     CLIENTSTAT = 61,
     CHECKCREDITS = 62,
     ESCAPE = 63,
@@ -82,19 +74,12 @@ public enum MessageId : byte
     PLAYSOUND = 68,
     GLOBAL_NOTIFICATION = 69,
     RESKIN = 70,
-
-    //Magician
-    UPGRADESTAT = 71,
-
-    //Music
-    SWITCH_MUSIC = 73,
-
-    //Forge
-    FORGEFUSION = 74,
-
-    //Market
+    PARTY_INVITE = 71,
+    INVITED_TO_PARTY = 72,
+    JOIN_PARTY = 73,
+    USE_STORAGE = 74,
+    SWITCH_MUSIC = 75,
     MARKET_SEARCH = 75,
-
     MARKET_SEARCH_RESULT = 76,
     MARKET_BUY = 77,
     MARKET_BUY_RESULT = 78,
@@ -103,19 +88,5 @@ public enum MessageId : byte
     MARKET_REMOVE = 81,
     MARKET_REMOVE_RESULT = 82,
     MARKET_MY_OFFERS = 83,
-    MARKET_MY_OFFERS_RESULT = 84,
-
-    OPTIONS = 85,
-
-    /* Bounty */
-    BOUNTYREQUEST = 86, /* Start the Bounty */
-    BOUNTYMEMBERLISTREQUEST = 87, /* Client ask for Players in the Area */
-    BOUNTYMEMBERLISTSEND = 88, /* Server sends all the data to the Client */
-
-    /* Party System */
-    PARTY_INVITE = 89,
-    INVITED_TO_PARTY = 90,
-    JOIN_PARTY = 91,
-    POTION_STORAGE_INTERACTION = 92,
-    ENGINE_FUEL_ACTION = 102
+    MARKET_MY_OFFERS_RESULT = 84
 }

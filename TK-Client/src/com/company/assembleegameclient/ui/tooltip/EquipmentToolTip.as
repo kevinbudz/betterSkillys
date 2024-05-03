@@ -65,6 +65,7 @@ public class EquipmentToolTip extends ToolTip
        private var repeat:int = 0;
       private var itemData_:Object = null;
       private var props_:ObjectProperties = null;
+      private var padding_:int = 0;
 
       public function EquipmentToolTip(objectType:int, player:Player, invType:int, inventoryOwnerType:String, inventorySlotID:uint = 1.0, isMarketItem:Boolean = false, itemData:Object = null)
       {
@@ -250,7 +251,7 @@ public class EquipmentToolTip extends ToolTip
       }
 
       private function addTitle() : void {
-          var color:int = this.playerCanUse || this.player_ == null ? int(16777215) : int(16549442);
+          var color:int = this.playerCanUse ? 0xffffff : 10965039;
           this.titleText_ = new SimpleText(16, color, false, MAX_WIDTH - this.icon_.width - 4 - 30, 0);
           this.titleText_.setBold(true);
           this.titleText_.wordWrap = true;
@@ -299,7 +300,7 @@ public class EquipmentToolTip extends ToolTip
          this.yOffset = this.descText_.y + this.descText_.height;
          if(this.effects.length != 0 || this.comparisonResults.text != "" || this.objectXML_.hasOwnProperty("ExtraTooltipData"))
          {
-            this.line1_ = new LineBreakDesign(MAX_WIDTH - 12,0);
+            this.line1_ = new LineBreakDesign(MAX_WIDTH - 12, 0x151515);
             addChild(this.line1_);
             this.effectsText_ = new SimpleText(14,11776947,false,MAX_WIDTH - this.icon_.width - 4,0);
             this.effectsText_.wordWrap = true;
@@ -396,84 +397,6 @@ public class EquipmentToolTip extends ToolTip
          else if(this.objectXML_.hasOwnProperty("Quantity"))
          {
             this.effects.push(new Effect("Stack",this.objectXML_.Quantity));
-         }
-      }
-
-      /*override protected function position() : void
-      {
-         var _loc1_:Number = NaN;
-         var _loc2_:Number = NaN;
-         var _loc3_:Number = 800 / stage.stageWidth;
-         var _loc4_:Number = 600 / stage.stageHeight;
-         if(this.parent is MemMarketItem)
-         {
-            _loc1_ = (stage.mouseX + stage.stageWidth / 2 - 400) / stage.stageWidth * 800;
-            _loc2_ = (stage.mouseY + stage.stageHeight / 2 - 300) / stage.stageHeight * 600;
-         }
-         //else
-         //{
-            //_loc1_ = (stage.stageWidth - 800) / 2 + stage.mouseX;
-            //_loc2_ = (stage.stageHeight - 600) / 2 + stage.mouseY;
-            //this.parent.scaleX = _loc3_;
-            //this.parent.scaleY = _loc4_;
-         //}
-         if(stage == null)
-         {
-            return;
-         }
-         if(stage.mouseX + 0.5 * stage.stageWidth - 400 < stage.stageWidth / 2)
-         {
-            x = _loc1_ + 12;
-         }
-         else
-         {
-            x = _loc1_ - width - 1;
-         }
-         if(x < 12)
-         {
-            x = 12;
-         }
-         if(stage.mouseY + 0.5 * stage.stageHeight - 300 < stage.stageHeight / 3)
-         {
-            y = _loc2_ + 12;
-         }
-         else
-         {
-            y = _loc2_ - height - 1;
-         }
-         if(y < 12)
-         {
-            y = 12;
-         }
-      }*/
-
-      override protected function position() : void
-      {
-         if(isMarketItem){
-
-         }
-         else
-         {
-            if(stage == null)
-            {
-               return;
-            }
-            if(stage.mouseX < stage.stageWidth / 2)
-            {
-               x = stage.mouseX + 12;
-            }
-            else
-            {
-               x = stage.mouseX - width - 1;
-            }
-            if(stage.mouseY < stage.stageHeight / 3)
-            {
-               y = stage.mouseY + 12;
-            }
-            else
-            {
-               y = stage.mouseY - height - 1;
-            }
          }
       }
 
@@ -678,7 +601,7 @@ public class EquipmentToolTip extends ToolTip
          this.descText_.y = (this.icon_.height + 2);
          if (this.line1_ != null && this.effectsText_ != null) {
             this.line1_.x = 8;
-            this.line1_.y = ((this.descText_.y + this.descText_.height));
+            this.line1_.y = ((this.descText_.y + this.descText_.height)) + this.padding_;
             this.effectsText_.x = 4;
             this.effectsText_.y = (this.line1_.y + 8);
          }
@@ -932,7 +855,7 @@ public class EquipmentToolTip extends ToolTip
       }
 
       private function makeLineTwo():void{
-         this.line2_ = new LineBreakDesign((MAX_WIDTH - 12), 0);
+         this.line2_ = new LineBreakDesign((MAX_WIDTH - 12), 0x151515);
          addChild(this.line2_);
       }
 
@@ -969,6 +892,8 @@ public class EquipmentToolTip extends ToolTip
          this.descText_.wordWrap = true;
          this.descText_.text = String(this.objectXML_.Description);
          this.descText_.useTextDimensions();
+         if (this.descText_.height < 20)
+            this.padding_ = 5;
          switch(Parameters.data_.itemDataOutlines)
          {
             case 0:
@@ -980,18 +905,6 @@ public class EquipmentToolTip extends ToolTip
          this.descText_.updateMetrics();
          addChild(this.descText_);
       }
-
-      /*private function addDescriptionText() : void
-      {
-         this.descText_ = new SimpleText(14,11776947,false,MAX_WIDTH,0);
-         this.descText_.wordWrap = true;
-         this.descText_.text = String(this.objectXML_.Description);
-         this.descText_.updateMetrics();
-         this.descText_.filters = [new DropShadowFilter(0,0,0,0.5,12,12)];
-         this.descText_.x = 4;
-         this.descText_.y = this.icon_.height + 2;
-         addChild(this.descText_);
-      }*/
 
       private function round2(num:Number, decimals:int):Number
       {

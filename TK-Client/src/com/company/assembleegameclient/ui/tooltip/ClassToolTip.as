@@ -79,7 +79,7 @@ package com.company.assembleegameclient.ui.tooltip
          this.descriptionText_.x = 8;
          this.descriptionText_.y = 40;
          addChild(this.descriptionText_);
-         this.lineBreak_ = new LineBreakDesign(100,1842204);
+         this.lineBreak_ = new LineBreakDesign(100,0x151515);
          this.lineBreak_.x = 6;
          this.lineBreak_.y = height;
          addChild(this.lineBreak_);

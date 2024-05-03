@@ -1,1 +1,0 @@
-explorer.exe \\wsl$\docker-desktop-data\version-pack-data\community\docker\volumes

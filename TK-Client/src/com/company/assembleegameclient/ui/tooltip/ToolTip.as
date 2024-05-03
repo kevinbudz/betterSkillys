@@ -46,7 +46,7 @@ public class ToolTip extends Sprite
 
    public var outlineFill_:GraphicsSolidFill= new GraphicsSolidFill(16777215,1);
 
-   private var lineStyle_:GraphicsStroke = new GraphicsStroke(1,false,LineScaleMode.NORMAL,CapsStyle.NONE,JointStyle.ROUND,3,outlineFill_);
+   private var lineStyle_:GraphicsStroke = new GraphicsStroke(2,false,LineScaleMode.NORMAL,CapsStyle.NONE,JointStyle.ROUND,3,outlineFill_);
 
    private var path_:GraphicsPath = new GraphicsPath(new Vector.<int>(),new Vector.<Number>());
 
@@ -137,100 +137,35 @@ public class ToolTip extends Sprite
    }
 
 
-   /*protected function position():void
+   private function position():void
    {
-      var _local_1:Number;
-      var _local_2:Number;
-      var _local_3:Number = (800 / stage.stageWidth);
-      var _local_4:Number = (600 / stage.stageHeight);
-      if ((this.parent is Options))
-      {
-         _local_1 = ((((stage.mouseX + (stage.stageWidth / 2)) - 400) / stage.stageWidth) * 800);
-         _local_2 = ((((stage.mouseY + (stage.stageHeight / 2)) - 300) / stage.stageHeight) * 600);
-      }
-      else
-      {
-         _local_1 = (((stage.stageWidth - 800) / 2) + stage.mouseX);
-         _local_2 = (((stage.stageHeight - 600) / 2) + stage.mouseY);
-         if (((this.parent is TooltipsView)))
-         {
-            if (Parameters.data_.FS)
-            {
-               this.parent.scaleX = (_local_3 / _local_4);
-               this.parent.scaleY = 1;
-               _local_1 = (_local_1 * _local_4);
-               _local_2 = (_local_2 * _local_4);
-            }
-            else
-            {
-               this.parent.scaleX = _local_3;
-               this.parent.scaleY = _local_4;
-            }
-         }
-      }
       if (stage == null)
       {
          return;
-      }
-      if (((stage.mouseX + (0.5 * stage.stageWidth)) - 400) < (stage.stageWidth / 2))
+      };
+      if (stage.mouseX < (800 / 2))
       {
-         x = (_local_1 + 12);
+         x = (stage.mouseX + 12);
       }
       else
       {
-         x = ((_local_1 - width) - 1);
-      }
-      if (x < 12)
+         x = ((stage.mouseX - width) - 1);
+      };
+      if (stage.mouseY < (600 / 3))
       {
-         x = 12;
-      }
-      if (((stage.mouseY + (0.5 * stage.stageHeight)) - 300) < (stage.stageHeight / 3))
-      {
-         y = (_local_2 + 12);
+         y = (stage.mouseY + 12);
       }
       else
       {
-         y = ((_local_2 - height) - 1);
-      }
+         y = ((stage.mouseY - height) - 1);
+      };
       if (y < 12)
       {
          y = 12;
-      }
-   }*/
-
-   protected function position() : void
-   {
-      if(stage == null)
-      {
-         return;
-      }
-      if(stage.mouseX < stage.stageWidth / 2)
-      {
-         x = stage.mouseX + 12;
-      }
-      else
-      {
-         x = stage.mouseX - width - 1;
-      }
-      if(x < 12)
-      {
-         x = 12;
-      }
-      if(stage.mouseY < stage.stageHeight / 3)
-      {
-         y = stage.mouseY + 12;
-      }
-      else
-      {
-         y = stage.mouseY - height - 1;
-      }
-      if(y < 12)
-      {
-         y = 12;
-      }
+      };
    }
 
-   public function draw() : void
+   public function draw():void
    {
       this.backgroundFill_.color = this.background_;
       this.backgroundFill_.alpha = this.backgroundAlpha_;

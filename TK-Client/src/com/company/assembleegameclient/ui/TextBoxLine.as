@@ -11,6 +11,9 @@ import flash.text.engine.GroupElement;
 import flash.text.engine.TextBlock;
 import flash.text.engine.TextElement;
 
+import kabam.rotmg.Emojis.Emote;
+import kabam.rotmg.Emojis.Emotes;
+
 public class TextBoxLine
 {
    private static var ELEMENT_FORMATS:ElementFormats = new ElementFormats();
@@ -42,12 +45,29 @@ public class TextBoxLine
       this.textColor_ = textColor;
    }
 
+   private static function containsEmotes(_arg_1:String):Boolean
+   {
+      var _local_3:String;
+      var _local_2:Array = _arg_1.split(" ");
+      for each (_local_3 in _local_2)
+      {
+         if (Emotes.hasEmote(_local_3))
+         {
+            return (true);
+         };
+      };
+      return (false);
+   }
+
    public function getTextBlock() : TextBlock
    {
       var vec:Vector.<ContentElement> = new Vector.<ContentElement>(0);
       var nameFormat:ElementFormat = ELEMENT_FORMATS.playerFormat_;
       var sepFormat:ElementFormat = ELEMENT_FORMATS.sepFormat_;
       var textFormat:ElementFormat = ELEMENT_FORMATS.normalFormat_;
+      var spacing:Array;
+      var str:String;
+      var emote:Emote;
       var name:String = this.name_;
       if(this.nameColor_ != 0){
          var loc1:ElementFormats = new ElementFormats(this.nameColor_);
@@ -121,7 +141,24 @@ public class TextBoxLine
       {
          vec.push(new TextElement("<" + name + ">",nameFormat),new TextElement(" ",sepFormat));
       }
-      vec.push(new TextElement(this.text_,textFormat));
+      if (containsEmotes(this.text_))
+      {
+         spacing = this.text_.split(" ");
+         for each (str in spacing)
+         {
+            if (Emotes.hasEmote(str))
+            {
+               emote = Emotes.getEmote(str);
+               vec.push(new GraphicElement(emote.clone(), emote.width, (emote.height - 5), ELEMENT_FORMATS.normalFormat_))
+            } else
+            {
+               vec.push(new TextElement((str + " "), ELEMENT_FORMATS.normalFormat_));
+            }
+         }
+      } else
+      {
+         vec.push(new TextElement(this.text_,textFormat));
+      }
       var groupElement:GroupElement = new GroupElement(vec);
       return new TextBlock(groupElement);
    }

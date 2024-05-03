@@ -1,6 +1,7 @@
 package kabam.rotmg.classes.view
 {
-   import com.company.assembleegameclient.util.Currency;
+import com.company.assembleegameclient.parameters.Parameters;
+import com.company.assembleegameclient.util.Currency;
    import com.company.util.AssetLibrary;
    import flash.display.Bitmap;
    import flash.display.BitmapData;
@@ -50,11 +51,12 @@ package kabam.rotmg.classes.view
          button.setWidth(120);
          return button;
       }
-      
-      private function makeIcon(model:CharacterSkin) : Bitmap
+
+      private function makeIcon(_arg_1:CharacterSkin):Bitmap
       {
-         var data:BitmapData = this.characters.makeIcon(model.template);
-         return new Bitmap(data);
+         var _local_2:int = _arg_1.is16x16 ? 50 : 100;
+         var _local_3:BitmapData = this.characters.makeIcon(_arg_1.template, _local_2);
+         return (new Bitmap(_local_3));
       }
    }
 }

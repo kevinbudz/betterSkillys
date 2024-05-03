@@ -42,6 +42,10 @@ import kabam.rotmg.assets.model.CharacterTemplate;
          skin.cost = xml.Cost || 300;
          skin.template = new CharacterTemplate(file,index);
          var character:CharacterClass = this.model.getCharacterClass(xml.PlayerClassType);
+         if (file.indexOf("16") >= 0)
+         {
+            skin.is16x16 = true;
+         }
          character.skins.addSkin(skin);
       }
    }

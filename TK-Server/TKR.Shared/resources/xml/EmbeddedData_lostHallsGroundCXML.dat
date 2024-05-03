@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<GroundTypes>
+   <Ground type="0xb01a" id="LH Main Tile">
+      <RandomTexture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1cc</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1cd</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1ce</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1cf</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1da</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1db</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1dc</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1dd</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb01b" id="LH Main Tile Bloody">
+      <RandomTexture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x199</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x19a</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb01c" id="LH Gem Tile">
+      <RandomTexture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x03</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x04</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x05</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x06</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x07</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x08</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x09</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x0a</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x0b</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x0c</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x0d</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x0e</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb01d" id="LH Hall Tile">
+      <RandomTexture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x0f</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x19b</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb025" id="LH Cult Main Tile">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x29</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb027" id="LH Cult Bloody Tile">
+      <Color>0x361F11</Color>
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x2a</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb098" id="LH Void Landmark N">
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x447</Index>
+      </Texture>
+      <DisplayId>Pure Evil</DisplayId>
+      <MinDamage>75</MinDamage>
+      <MaxDamage>75</MaxDamage>
+      <Animate dx=".35">Flow</Animate>
+      <Sink/>
+      <RandomOffset/>
+      <Speed>.333</Speed>
+      <BlendPriority>1</BlendPriority>
+   </Ground>
+   <Ground type="0xb099" id="LH Void Landmark E">
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x447</Index>
+      </Texture>
+      <DisplayId>Pure Evil</DisplayId>
+      <MinDamage>75</MinDamage>
+      <MaxDamage>75</MaxDamage>
+      <Animate dx=".35">Flow</Animate>
+      <Sink/>
+      <RandomOffset/>
+      <Speed>.333</Speed>
+      <BlendPriority>1</BlendPriority>
+   </Ground>
+   <Ground type="0xb09a" id="LH Void Landmark S">
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x447</Index>
+      </Texture>
+      <DisplayId>Pure Evil</DisplayId>
+      <MinDamage>75</MinDamage>
+      <MaxDamage>75</MaxDamage>
+      <Animate dx=".35">Flow</Animate>
+      <Sink/>
+      <RandomOffset/>
+      <Speed>.333</Speed>
+      <BlendPriority>1</BlendPriority>
+   </Ground>
+   <Ground type="0xb09b" id="LH Void Landmark W">
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x447</Index>
+      </Texture>
+      <DisplayId>Pure Evil</DisplayId>
+      <MinDamage>75</MinDamage>
+      <MaxDamage>75</MaxDamage>
+      <Animate dx=".35">Flow</Animate>
+      <Sink/>
+      <RandomOffset/>
+      <Speed>.333</Speed>
+      <BlendPriority>1</BlendPriority>
+   </Ground>
+   <Ground type="0xb09c" id="LH Void Landmark C">
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x447</Index>
+      </Texture>
+      <DisplayId>Pure Evil</DisplayId>
+      <MinDamage>75</MinDamage>
+      <MaxDamage>75</MaxDamage>
+      <Animate dx=".35">Flow</Animate>
+      <Sink/>
+      <RandomOffset/>
+      <Speed>.333</Speed>
+      <BlendPriority>1</BlendPriority>
+   </Ground>
+   <Ground type="0xb09d" id="LH Void Landmark Stop">
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x447</Index>
+      </Texture>
+      <DisplayId>Pure Evil</DisplayId>
+      <MinDamage>75</MinDamage>
+      <MaxDamage>75</MaxDamage>
+      <Animate dx=".35">Flow</Animate>
+      <Sink/>
+      <RandomOffset/>
+      <Speed>.333</Speed>
+      <BlendPriority>1</BlendPriority>
+   </Ground>
+   <Ground type="0xb04a" id="LH Void Pure Evil Deep">
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x447</Index>
+      </Texture>
+      <DisplayId>Pure Evil</DisplayId>
+      <MinDamage>90</MinDamage>
+      <MaxDamage>90</MaxDamage>
+      <Animate dx=".35">Flow</Animate>
+      <Sink/>
+      <RandomOffset/>
+      <Speed>.333</Speed>
+      <BlendPriority>1</BlendPriority>
+   </Ground>
+   <Ground type="0xb04b" id="LH Void Pure Evil Depths">
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x447</Index>
+      </Texture>
+      <DisplayId>Pure Evil</DisplayId>
+      <MinDamage>115</MinDamage>
+      <MaxDamage>115</MaxDamage>
+      <Animate dx=".35">Flow</Animate>
+      <Sink/>
+      <RandomOffset/>
+      <Speed>.333</Speed>
+      <BlendPriority>1</BlendPriority>
+   </Ground>
+   <Ground type="0xb122" id="LH Titan Tile">
+      <RandomTexture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1cc</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1cd</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1ce</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1cf</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1da</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1db</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1dc</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1dd</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb02c" id="LH Spectral Tile A">
+      <RandomTexture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb02d" id="LH Spectral Tile B">
+      <RandomTexture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb02e" id="LH Spectral Tile C">
+      <RandomTexture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb02f" id="LH Spectral Tile D">
+      <RandomTexture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb030" id="LH Sentry Tile">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0xac</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb031" id="LH Spectral Tile 1">
+      <RandomTexture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb032" id="LH Spectral Tile 2">
+      <RandomTexture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb033" id="LH Spectral Tile 3">
+      <RandomTexture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb034" id="LH Spectral Tile 4">
+      <RandomTexture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x00</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x01</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb035" id="LH Void Platform">
+      <RandomTexture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1ba</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1bb</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1bc</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1bd</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1ba</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1bb</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1bc</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1bd</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1ba</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1bb</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1bc</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1bd</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1c0</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1c1</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1c2</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1c3</Index>
+         </Texture>
+      </RandomTexture>
+      <BlendPriority>3</BlendPriority>
+   </Ground>
+   <Ground type="0xb036" id="LH Hall Tile NoWalk">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x0f</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb037" id="LH Water Tile">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x198</Index>
+      </Texture>
+      <Animate dx=".5" dy=".5">Flow</Animate>
+      <BlendPriority>1</BlendPriority>
+      <Sink/>
+      <Speed>.5</Speed>
+   </Ground>
+   <Ground type="0xb038" id="LH Ice Tile">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x197</Index>
+      </Texture>
+      <Speed>1</Speed>
+      <SlideAmount>0.95</SlideAmount>
+   </Ground>
+   <Ground type="0xb01e" id="LH Hole Tile">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x196</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb039" id="LH Hall Tile Bloody">
+      <RandomTexture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x19c</Index>
+         </Texture>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x19d</Index>
+         </Texture>
+      </RandomTexture>
+   </Ground>
+   <Ground type="0xb03a" id="LH Main Tile UL">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x193</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb03b" id="LH Main Tile U">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x194</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb03c" id="LH Main Tile UR">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x195</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb03d" id="LH Main Tile L">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1a3</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb03e" id="LH Main Tile R">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1a5</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb03f" id="LH Main Tile BL">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1b3</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb040" id="LH Main Tile B">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1b4</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb041" id="LH Main Tile BR">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1b5</Index>
+      </Texture>
+   </Ground>
+   <Ground type="0xb01f" id="LH Hole Tile UL">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x190</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb020" id="LH Hole Tile U">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x191</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb021" id="LH Hole Tile UR">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x192</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb022" id="LH Hole Tile L">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1a0</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb023" id="LH Hole Tile C">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1a1</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb024" id="LH Hole Tile R">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1a2</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb026" id="LH Hole Tile BL">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1b0</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb028" id="LH Hole Tile B">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1b1</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb029" id="LH Hole Tile BR">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1b2</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb02a" id="LH Hole Edge Tile UL">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x19e</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb02b" id="LH Hole Edge Tile U">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x19f</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb047" id="LH Hole Edge Tile UR">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1a6</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb042" id="LH Hole Edge Tile L">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1a7</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb043" id="LH Hole Edge Tile R">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1a8</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb044" id="LH Hole Edge Tile BL">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1a9</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb045" id="LH Hole Edge Tile B">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1aa</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb046" id="LH Hole Edge Tile BR">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x1ab</Index>
+      </Texture>
+      <NoWalk/>
+   </Ground>
+   <Ground type="0xb048" id="LH Cult Top Tile H">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x29</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1b6</Index>
+         </Texture>
+      </Top>
+   </Ground>
+   <Ground type="0xb049" id="LH Cult Top Tile V">
+      <Texture>
+         <File>lostHallsObjects8x8</File>
+         <Index>0x29</Index>
+      </Texture>
+      <Top>
+         <Texture>
+            <File>lostHallsObjects8x8</File>
+            <Index>0x1b7</Index>
+         </Texture>
+      </Top>
+   </Ground>
+</GroundTypes>

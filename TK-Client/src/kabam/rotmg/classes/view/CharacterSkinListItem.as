@@ -311,7 +311,8 @@ package kabam.rotmg.classes.view
       {
          graphics.clear();
          graphics.beginFill(AVAILABLE_COLOR);
-         graphics.drawRect(0,0,width,HEIGHT);
+         graphics.lineStyle(3, 11776947);
+         graphics.drawRoundRect(0,0,width,HEIGHT, 18, 18);
          graphics.endFill();
       }
    }

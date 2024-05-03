@@ -49,7 +49,7 @@ public class Parameters {
     public static var GPURenderFrame:Boolean = false;
     private static var savedOptions_:SharedObject = null;
     private static var keyNames_:Dictionary = new Dictionary();
-    public static const skinTypes16:Vector.<int> = new <int>[1027, 0x0404, 1029, 1030, 10973, 19494, 19531, 6346, 30056, 5505, 7766, 7769];
+    public static const skinTypes16:Vector.<int> = new <int>[1027, 0x0404, 1029, 1030, 10973, 19494, 19531, 6346, 30056, 5505, 7766, 7769, 0x45df, 0x21a6, 0x1b64, 0x0402, 0x4f58, 0x745a, 0x2756, 0x24bf, 0x7a00, 0x21df, 0x24bd, 0x0401, 0x745C, 0xbdc, 0x4b4b, 0x4c04, 0x08fb, 0x1849, 0x745B, 0x4b48, 0x08fd, 0xbc1, 0x4b9d, 0x5b41, 0x4b50];
     public static const itemTypes16:Vector.<int> = new <int>[5473, 5474, 5475, 5476, 10939, 19494, 19531, 6347, 5506];
 
     public static function load():void {

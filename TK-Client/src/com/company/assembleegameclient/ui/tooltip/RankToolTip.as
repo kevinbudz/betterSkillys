@@ -48,7 +48,7 @@ package com.company.assembleegameclient.ui.tooltip
          this.howToText_.x = 6;
          this.howToText_.y = 30;
          addChild(this.howToText_);
-         this.lineBreak_ = new LineBreakDesign(100,1842204);
+         this.lineBreak_ = new LineBreakDesign(100,0x151515);
          this.lineBreak_.x = 6;
          this.lineBreak_.y = height + 10;
          addChild(this.lineBreak_);

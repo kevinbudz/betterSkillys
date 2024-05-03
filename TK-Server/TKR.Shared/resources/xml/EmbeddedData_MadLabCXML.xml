@@ -822,19 +822,6 @@
 
     </Object>
 
-    <Object type="0x0890" id="Mad Lab Portal">
-        <Class>Portal</Class>
-        <IntergamePortal/>
-        <DungeonName>Mad Lab</DungeonName>
-        <Texture><File>lofiObj3</File><Index>0x1ab</Index></Texture>
-        <Animation prob="1" period="1">
-            <Frame time="0.25"><Texture><File>lofiObj3</File><Index>0x1ac</Index></Texture></Frame>
-            <Frame time="0.25"><Texture><File>lofiObj3</File><Index>0x1ad</Index></Texture></Frame>
-            <Frame time="0.25"><Texture><File>lofiObj3</File><Index>0x1ae</Index></Texture></Frame>
-            <Frame time="0.25"><Texture><File>lofiObj3</File><Index>0x1ad</Index></Texture></Frame>
-        </Animation>
-    </Object>
-
 
     <Object type="0x0891" id="FERAL Controller">
         <Texture><File>invisible</File><Index>0</Index></Texture>

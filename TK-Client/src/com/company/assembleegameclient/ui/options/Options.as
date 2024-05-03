@@ -220,7 +220,7 @@ public class Options extends Sprite
 
    private function onAddedToStage(event:Event) : void
    {
-      this.continueButton_.x = stage.stageWidth / 2 - this.continueButton_.width / 2;
+      this.continueButton_.x = 400 - this.continueButton_.width / 2;
       this.continueButton_.y = 525;
       this.resetToDefaultsButton_.x = 20;
       this.resetToDefaultsButton_.y = 535;
@@ -362,6 +362,8 @@ public class Options extends Sprite
       this.addOption(new ChoiceOption("disableAllyParticles", new <String>["On","Off"], [true, false], "Disable ally Particles", "Disable particles produces by shooting ally.", null));
       this.addOption(new ChoiceOption("disableAllParticles", new <String>["On","Off"], [true, false], "Disable ALL Particles", "Enable/Disable ALL Particles.", null));
       this.addOption(new ChoiceOption("itemDataOutlines",new <String>["On","Off"],[0,1],"Tooltip Outlines","Change the outlines of the xml\'s!",null));
+      this.addOption(new ChoiceOption("uiscale", new <String>["On","Off"], [true, false], "Element Scaling", "Scales chat and other elements.", this.renderer));
+      this.addOption(new ChoiceOption("hudscale", new <String>["On","Off"], [true, false], "HUD Scaling", "Scales chat and other elements.", this.renderer));
       //this.addOption(new ChoiceOption("eyeCandyParticles", new <String>["On","Off"], [true,false], "Eye Candy Particles", "This toggles whether to show eye candy particles, disabling this will improve performance.", null));
       this.addOption(new ChoiceOption("allyShots", new <String>["On","Off"], [true,false], "Ally Shots", "This toggles whether to show and render ally shots. Disable this to improve performance.", null));
       this.addOption(new ChoiceOption("allyDamage", new <String>["On","Off"], [true,false], "Ally Damage", "This toggles whether to show damage dealt to and by allies. Disable this to improve performance.", null));

@@ -1,10 +1,16 @@
-package com.company.assembleegameclient.objects {
-import flash.display.BitmapData;
-import flash.geom.ColorTransform;
+// Decompiled by AS3 Sorcerer 6.08
+// www.as3sorcerer.com
 
+//com.company.assembleegameclient.objects.FlashDescription
+
+package com.company.assembleegameclient.objects
+{
+import flash.geom.ColorTransform;
+import flash.display.BitmapData;
 import kabam.rotmg.stage3D.GraphicsFillExtra;
 
-public class FlashDescription {
+public class FlashDescription
+{
 
    public var startTime_:int;
    public var color_:uint;
@@ -14,36 +20,43 @@ public class FlashDescription {
    public var targetG:int;
    public var targetB:int;
 
-   public function FlashDescription(startTime:int, color:uint, period_:Number, repeats:int) {
-      super();
-      this.startTime_ = startTime;
-      this.color_ = color;
-      this.periodMS_ = period_ * 1000;
-      this.repeats_ = repeats;
-      this.targetR = color >> 16 & 255;
-      this.targetG = color >> 8 & 255;
-      this.targetB = color & 255;
-   }
-   public function applyCPU(texture:BitmapData, time:int):BitmapData {
-      var t:int = (time - this.startTime_) % this.periodMS_;
-      var v:Number = Math.sin(t / this.periodMS_ * Math.PI);
-      var mv:Number = v * 0.5;
-      var ct:ColorTransform = new ColorTransform(1 - mv, 1 - mv, 1 - mv, 1, mv * this.targetR, mv * this.targetG, mv * this.targetB, 0);
-      var newTexture:BitmapData = texture.clone();
-      newTexture.colorTransform(newTexture.rect, ct);
-      return newTexture;
+   public function FlashDescription(_arg_1:int, _arg_2:uint, _arg_3:Number, _arg_4:int)
+   {
+      this.startTime_ = _arg_1;
+      this.color_ = _arg_2;
+      this.periodMS_ = (_arg_3 * 1000);
+      this.repeats_ = _arg_4;
+      this.targetR = ((_arg_2 >> 16) & 0xFF);
+      this.targetG = ((_arg_2 >> 8) & 0xFF);
+      this.targetB = (_arg_2 & 0xFF);
    }
 
-   public function applyGPU(texture:BitmapData, time:int):void {
-      var t:int = (time - this.startTime_) % this.periodMS_;
-      var v:Number = Math.sin(t / this.periodMS_ * Math.PI);
-      var mv:Number = v * 0.5;
-      var ct:ColorTransform = new ColorTransform(1 - mv, 1 - mv, 1 - mv, 1, mv * this.targetR, mv * this.targetG, mv * this.targetB, 0);
-      GraphicsFillExtra.setColorTransform(texture, ct);
+   public function apply(_arg_1:BitmapData, _arg_2:int):BitmapData
+   {
+      var _local_3:int = ((_arg_2 - this.startTime_) % this.periodMS_);
+      var _local_4:Number = Math.sin(((_local_3 / this.periodMS_) * Math.PI));
+      var _local_5:Number = (_local_4 * 0.5);
+      var _local_6:ColorTransform = new ColorTransform((1 - _local_5), (1 - _local_5), (1 - _local_5), 1, (_local_5 * this.targetR), (_local_5 * this.targetG), (_local_5 * this.targetB), 0);
+      var _local_7:BitmapData = _arg_1.clone();
+      _local_7.colorTransform(_local_7.rect, _local_6);
+      return (_local_7);
    }
 
-   public function doneAt(time:int):Boolean {
-      return time > this.startTime_ + this.periodMS_ * this.repeats_;
+   public function applyGPUTextureColorTransform(_arg_1:BitmapData, _arg_2:int):void
+   {
+      var _local_3:int = ((_arg_2 - this.startTime_) % this.periodMS_);
+      var _local_4:Number = Math.sin(((_local_3 / this.periodMS_) * Math.PI));
+      var _local_5:Number = (_local_4 * 0.5);
+      var _local_6:ColorTransform = new ColorTransform((1 - _local_5), (1 - _local_5), (1 - _local_5), 1, (_local_5 * this.targetR), (_local_5 * this.targetG), (_local_5 * this.targetB), 0);
+      GraphicsFillExtra.setColorTransform(_arg_1, _local_6);
    }
+
+   public function doneAt(_arg_1:int):Boolean
+   {
+      return (_arg_1 > (this.startTime_ + (this.periodMS_ * this.repeats_)));
+   }
+
+
 }
-}
+}//package com.company.assembleegameclient.objects
+

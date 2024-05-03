@@ -185,7 +185,7 @@ public class GameObject extends BasicObject {
     public var nameText_:SimpleText = null;
     public var nameBitmapData_:BitmapData = null;
     protected var glowColor_:int = 0;
-    protected var glowColorEnemy_:int = 0;
+    public var glowColorEnemy_:int = 0;
     protected var portrait_:BitmapData = null;
     protected var portrait2_:BitmapData = null;
     protected var texturingCache_:Dictionary = null;
@@ -426,22 +426,23 @@ public class GameObject extends BasicObject {
         this.path_.data = this.vS_;
 
         if (!(this.props_.isPlayer_ && this != this.map_.player_)) {
-            if (this.flash_ != null) {
-                if (this.flash_.doneAt(time)) {
-                    this.flash_ = null;
-                    if (Parameters.isGpuRender()) {
-                        GraphicsFillExtra.clearColorTransform(texture);
+            if (this.flash_ != null)
+            {
+                if (!this.flash_.doneAt(time))
+                {
+                    if (Parameters.isGpuRender())
+                    {
+                        this.flash_.applyGPUTextureColorTransform(texture, time);
                     }
-                } else {
-                    if(Parameters.isGpuRender()) {
-                        this.flash_.applyGPU(texture,time);
-                    } else {
-                        texture = this.flash_.applyCPU(texture,time);
+                    else
+                    {
+                        texture = this.flash_.apply(texture, time);
                     }
                 }
-            }
-            else if(Parameters.isGpuRender() && GraphicsFillExtra.getColorTransform(texture) != null) {
-                GraphicsFillExtra.clearColorTransform(texture);
+                else
+                {
+                    this.flash_ = null;
+                }
             }
         }
 

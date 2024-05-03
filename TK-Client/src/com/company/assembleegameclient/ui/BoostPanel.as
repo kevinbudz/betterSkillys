@@ -89,7 +89,7 @@ public class BoostPanel extends Sprite {
 
     private function addDropTimerIfAble(_arg1:SignalWaiter):void {
         if (this.player.dropBoost) {
-            this.dropBoostTimer = returnBoostTimer("1.1x Drop Rate ", this.player.dropBoost);
+            this.dropBoostTimer = returnBoostTimer("1.25x Drop Rate ", this.player.dropBoost);
             this.addTimer(_arg1, this.dropBoostTimer);
         }
     }
