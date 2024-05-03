@@ -336,7 +336,7 @@ public class EquipmentToolTip extends ToolTip
       {
          var fameBonus:int = 0;
          var text:String = null;
-         var textColor:uint = null;
+         var textColor:uint;
          var curFameBonus:int = 0;
          if(this.objectXML_.hasOwnProperty("FameBonus"))
          {
@@ -894,6 +894,9 @@ public class EquipmentToolTip extends ToolTip
          this.descText_.useTextDimensions();
          if (this.descText_.height < 20)
             this.padding_ = 5;
+         else
+            this.padding_ = -(this.descText_.height / 10);
+
          switch(Parameters.data_.itemDataOutlines)
          {
             case 0:

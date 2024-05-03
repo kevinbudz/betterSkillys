@@ -10,13 +10,13 @@ namespace TKR.WorldServer.core.commands
         internal class ColorNameChat : Command
         {
             public override RankingType RankRequirement => RankingType.Supporter1;
-            public override string CommandName => "colornamechat";
+            public override string CommandName => "namecolor";
 
             protected override bool Process(Player player, TickTime time, string color)
             {
                 if (string.IsNullOrWhiteSpace(color))
                 {
-                    player.SendInfo("Usage: /colorchat <color> \n Number of the color needs to be a HexCode (0xFFFFFF = White, use 0x instahead #), search in google HexCode + Color. PS: /cnc its the alias of this command. \nBe careful with the color you choose, you may not be able to read!");
+                    player.SendInfo("Usage: /namecolor <color> \n (use hexcode format: 0xFFFFFF)");
                     return true;
                 }
 

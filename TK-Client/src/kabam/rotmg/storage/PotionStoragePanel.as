@@ -1,4 +1,4 @@
-package kabam.rotmg.PotionStorage {
+package kabam.rotmg.storage {
 import com.company.assembleegameclient.game.GameSprite;
 import com.company.assembleegameclient.objects.GameObject;
 import com.company.assembleegameclient.parameters.Parameters;

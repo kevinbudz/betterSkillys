@@ -49,18 +49,17 @@ namespace TKR.WorldServer.logic.loot
         /*  
          *  Brown 0,
          *  Pink 1,
-         *  Purple 2,
-         *  Gold 3, 
-         *  Cyan 4, 
-         *  Blue 5, 
-         *  Orange 6, 
-         *  White 7,
-         *  Legenadry 8,
-         *  Mythical 9
+         *  Purple 2, 
+         *  Cyan 3, 
+         *  Blue 4, 
+         *  Gold 5, 
+         *  White 6,
+         *  Orange 7,
+         *  Egg 8
          */
 
-        public static readonly ushort[] BAG_ID_TO_TYPE = new ushort[] { 0x0500, 0x0506, 0x0503, 0x0532, 0x0509, 0x050B, 0x0533, 0x050C };
-        public static readonly ushort[] BOOSTED_BAG_ID_TO_TYPE = new ushort[] { 0x0534, 0x0535, 0x0536, 0x0537, 0x0538, 0x0539, 0x053b, 0x053a };
+        public static readonly ushort[] BAG_ID_TO_TYPE = new ushort[] { 0x0500, 0x0506, 0x0503, 0x0509, 0x050B, 0x050E, 0x050C, 0x0508 };
+        public static readonly ushort[] BOOSTED_BAG_ID_TO_TYPE = new ushort[] { 0x6ad, 0x6ae, 0x6ba, 0x6bd, 0x6be, 0x6bc, 0x0510, 0x6bb };
 
         public static bool DropsInSoulboundBag(ItemType type, int tier)
         {
@@ -105,17 +104,6 @@ namespace TKR.WorldServer.logic.loot
 
             Items = Items.OrderBy(_ => _.Key).ToDictionary(_ => _.Key, _ => _.Value);
         }
-
-        public static double GetPlayerLootBoost(Player player)
-        {
-            if (player == null)
-                return 0;
-            var allLoot = 0.0;
-            allLoot += player.LDBoostTime > 0 ? 0.25 : 0;
-            allLoot += NexusWorld.WeekendLootBoostEvent;
-            return allLoot;
-        }
-
         private List<LootDef> GetEnemyClasifiedLoot(List<LootDef> list, Enemy enemy)
         {
             var gameData = enemy.GameServer.Resources.GameData;
@@ -124,31 +112,12 @@ namespace TKR.WorldServer.logic.loot
 
             if (enemy.Legendary)
             {
-                list.Add(new LootDef("Glowing Shard", 0.20, 0.001)); // 8%
-                list.Add(new LootDef("Glowing Shard", 0.20, 0.001)); // 8%
-                list.Add(new LootDef("Glowing Shard", 0.20, 0.001)); // 8%
-                list.Add(new LootDef("Potion Dust", 0.08, 0.001)); // 8%
-                list.Add(new LootDef("Potion Dust", 0.08, 0.001)); // 8%
-                list.Add(new LootDef("Item Dust", 0.12, 0.001)); // 12%
-                list.Add(new LootDef("Miscellaneous Dust", 0.05, 0.001)); // 5% 
-                list.Add(new LootDef("Special Dust", 0.003, 0.001)); // 3%
             }
             else if (enemy.Epic)
             {
-                list.Add(new LootDef("Glowing Shard", 0.10, 0.001)); // 8%
-                list.Add(new LootDef("Glowing Shard", 0.10, 0.001)); // 8%
-                list.Add(new LootDef("Potion Dust", 0.05, 0.001)); // 5%
-                list.Add(new LootDef("Item Dust", 0.08, 0.001)); //8%
-                list.Add(new LootDef("Miscellaneous Dust", 0.02, 0.001)); //2%
-                list.Add(new LootDef("Special Dust", 0.001, 0.001)); // 1%
             }
             else if (enemy.Rare)
             {
-                list.Add(new LootDef("Glowing Shard", 0.08, 0.001)); // 8%
-                list.Add(new LootDef("Potion Dust", 0.03, 0.001));//3%
-                list.Add(new LootDef("Item Dust", 0.05, 0.001)); //5%
-                list.Add(new LootDef("Miscellaneous Dust", 0.01, 0.001)); //1%
-                list.Add(new LootDef("Special Dust", 0.0005, 0.001)); //0.5%
             }
 
             return list;
@@ -164,7 +133,7 @@ namespace TKR.WorldServer.logic.loot
                 return;
 
             var possDrops = new List<LootDef>();
-            GetEnemyClasifiedLoot(possDrops, enemy);
+            // GetEnemyClasifiedLoot(possDrops, enemy);
             foreach (var i in this)
                 i.Populate(possDrops);
 
@@ -191,7 +160,7 @@ namespace TKR.WorldServer.logic.loot
             }
 
             if(pubDrops.Count > 0)
-                ProcessPublicDrops(pubDrops, enemy);
+                ProcessPublic(pubDrops, enemy);
 
             var playersAvaliable = enemy.DamageCounter.GetPlayerData();
             if (playersAvaliable == null)
@@ -204,16 +173,15 @@ namespace TKR.WorldServer.logic.loot
                 if (player == null || player.World == null || player.Client == null)
                     continue;
 
-                var playerDamage = tupPlayer.Item2;
-                var percentageOfDamage = Math.Round(100.0 * (playerDamage / (double)enemy.DamageCounter.TotalDamage), 4) / 100;
+                double enemyBoost = 0;
+                if (enemy.Rare) enemyBoost = .25;
+                if (enemy.Epic) enemyBoost = .5;
+                if (enemy.Legendary) enemyBoost = .75;
 
-                var playerLootBoost = GetPlayerLootBoost(player);
-
-                if (enemy.ObjectDesc.Event)
-                {
-                    player.Stacks[0].Push(player.GameServer.Resources.GameData.Items[0xa22]);
-                    player.Stacks[1].Push(player.GameServer.Resources.GameData.Items[0xa23]);
-                }
+                var dmgBoost = Math.Round(tupPlayer.Item2 / (double)enemy.DamageCounter.TotalDamage, 4) / 100;
+                var ldBoost = player.LDBoostTime > 0 ? 0.25 : 0;
+                var wkndBoost = NexusWorld.WeekendLootBoostEvent;
+                var totalBoost = 1 + (ldBoost + wkndBoost + dmgBoost + enemyBoost);
 
                 var gameData = enemy.GameServer.Resources.GameData;
 
@@ -222,9 +190,9 @@ namespace TKR.WorldServer.logic.loot
                 {
                     var c = Random.Shared.NextDouble();
 
-                    var probability = i.Probabilty + i.Probabilty * playerLootBoost;
+                    var probability = i.Probabilty * totalBoost;
 
-                    if (i.Threshold >= 0 && i.Threshold < percentageOfDamage)
+                    if (i.Threshold >= 0 && i.Threshold < Math.Round(tupPlayer.Item2 / (double)enemy.DamageCounter.TotalDamage, 4))
                     {
                         Item item = null;
                         if (i.ItemType != ItemType.None)
@@ -237,7 +205,6 @@ namespace TKR.WorldServer.logic.loot
                         {
                             if (!gameData.IdToObjectType.TryGetValue(i.Item, out var type))
                                 continue;
-
                             if (!gameData.Items.TryGetValue(type, out item))
                                 continue;
                         }
@@ -246,19 +213,6 @@ namespace TKR.WorldServer.logic.loot
                         {
                             player.SendError($"There was a error calculating the item roll for item: {i.Item}, please report this [#1]");
                             continue;
-                        }
-
-                        if (player.ToggleLootChanceNotification)
-                        {
-                            var isEligible = item.Mythical || item.Legendary;
-                            if (isEligible)
-                            {
-                                var baseChance = Math.Floor(1.0 / i.Probabilty);
-                                var chance = Math.Floor(1.0 / probability);
-                                var roll = Math.Floor(c / probability);
-
-                                player.SendInfo($"[{item.DisplayId ?? item.ObjectId}] {roll}/{chance} (Base: {baseChance})");
-                            }
                         }
 
                         if (c >= probability)
@@ -278,13 +232,15 @@ namespace TKR.WorldServer.logic.loot
             }
 
             foreach (var priv in privDrops)
+            {
                 if (priv.Value.Count > 0)
                 {
-                    ProcessPrivateBags(enemy, priv.Value, enemy.GameServer, priv.Key);
+                    ProcessSoulbound(enemy, priv.Value, enemy.GameServer, priv.Key);
                 }
+            }
         }
 
-        private static void ProcessPublicDrops(List<Item> drops, Enemy enemy)
+        private static void ProcessPublic(List<Item> drops, Enemy enemy)
         {
             var bagType = 0;
             var idx = 0;
@@ -310,7 +266,7 @@ namespace TKR.WorldServer.logic.loot
                 DropBag(enemy, ownerIds, bagType, items, false);
         }
 
-        private static void ProcessPrivateBags(Enemy enemy, IEnumerable<Item> loots, GameServer core, params Player[] owners)
+        private static void ProcessSoulbound(Enemy enemy, IEnumerable<Item> loots, GameServer core, params Player[] owners)
         {
             var player = owners[0] ?? null;
             var idx = 0;
@@ -318,33 +274,24 @@ namespace TKR.WorldServer.logic.loot
             var items = new Item[8];
             var boosted = false;
 
-            if (owners.Count() == 1 && GetPlayerLootBoost(player) > 1.0)
+            var hitters = enemy.DamageCounter.GetHitters();
+            var dmgBoost = (hitters[player] / (double)enemy.DamageCounter.TotalDamage) / 4;
+
+            if (owners.Count() == 1 && player.LDBoostTime > 0 || (Math.Round(hitters[player] / (double)enemy.DamageCounter.TotalDamage, 4) > .25 && Random.Shared.NextDouble() > .5))
                 boosted = true;
 
             bagType = loots.Max(_ => _.BagType);
 
             foreach (var i in loots)
             {
-                var isMythical = i.Mythical;
-                var isLegendary = i.Legendary;
-
-                var isEligible = isMythical || isLegendary;
-                if (player != null && isEligible)
+                if (player != null)
                 {
                     var chat = core.ChatManager;
                     var world = player.World;
-
-                    player.Client.SendPacket(new GlobalNotificationMessage(0, isMythical ? "mythical_loot" : "legendary_loot"));
-                    if (player != null)
+                    if (player != null && bagType == 6)
                     {
-                        var msg = new StringBuilder($"[{player.Client.Account.Name}] has obtained ");
-                        if (i.Legendary)
-                            msg.Append("a Legendary");
-                        else if (i.Mythical)
-                            msg.Append("a Mythical");
-
-                        var hitters = enemy.DamageCounter.GetHitters();
-                        msg.Append($" [{i.DisplayId ?? i.ObjectId}], by doing {Math.Round(100.0 * (hitters[owners[0]] / (double)enemy.DamageCounter.TotalDamage), 0)}% damage!");
+                        var msg = new StringBuilder($" {player.Client.Account.Name} has obtained:");
+                        msg.Append($" [{i.DisplayId ?? i.ObjectId}], by doing {Math.Round(100.0 * (hitters[player] / (double)enemy.DamageCounter.TotalDamage), 0)}% damage!");
                         chat.AnnounceLoot(msg.ToString());
                     }
                 }
@@ -367,6 +314,8 @@ namespace TKR.WorldServer.logic.loot
         private static void DropBag(Enemy enemy, int[] owners, int bagType, Item[] items, bool boosted)
         {
             var bag = BAG_ID_TO_TYPE[bagType];
+            if (boosted)
+                bag = BOOSTED_BAG_ID_TO_TYPE[bagType];
 
             var container = new Container(enemy.GameServer, bag, 1500 * 60, true);
 

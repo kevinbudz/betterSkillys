@@ -67,7 +67,6 @@ import kabam.lib.net.api.MessageMap;
 import kabam.lib.net.api.MessageProvider;
 import kabam.lib.net.impl.Message;
 import kabam.lib.net.impl.SocketServer;
-import kabam.rotmg.BountyBoard.SubscriptionUI.signals.BountyMemberListSendSignal;
 import kabam.rotmg.account.core.Account;
 import kabam.rotmg.application.api.ApplicationSetup;
 import kabam.rotmg.classes.model.CharacterClass;
@@ -286,42 +285,21 @@ public class GameServerConnection
       public static const PLAYSOUND:int = 68;
       public static const GLOBAL_NOTIFICATION:int = 69;
       public static const RESKIN:int = 70;
-
-      /* Magician */
-      public static const UPGRADESTAT:int = 71;
-
-      /* Music */
-      public static const SWITCH_MUSIC:int = 73;
-
-      /* Forge */
-      public static const FORGEFUSION:int = 74;
-
-      /* Market */
-      public static const MARKET_SEARCH:int = 75;
-      public static const MARKET_SEARCH_RESULT:int = 76;
-      public static const MARKET_BUY:int = 77;
-      public static const MARKET_BUY_RESULT:int = 78;
-      public static const MARKET_ADD:int = 79;
-      public static const MARKET_ADD_RESULT:int = 80;
-      public static const MARKET_REMOVE:int = 81;
-      public static const MARKET_REMOVE_RESULT:int = 82;
-      public static const MARKET_MY_OFFERS:int = 83;
-      public static const MARKET_MY_OFFERS_RESULT:int = 84;
-
-      /* Bounty */
-      public static const BOUNTYREQUEST:int = 86; /* Start the Bounty */
-      public static const BOUNTYMEMBERLISTREQUEST:int = 87; /* Client ask for Players in the Area */
-      public static const BOUNTYMEMBERLISTSEND:int = 88; /* Server sends all the data to the Client */
-
-      /* Party System */
-      public static const PARTY_INVITE:int = 89;
-      public static const INVITED_TO_PARTY:int = 90;
-      public static const JOIN_PARTY:int = 91;
-      public static const POTION_STORAGE_INTERACTION:int = 92;
-      public static const POTIONSTORAGEREQUEST:int = 93;
-      public static const USEPOTION:int = 94;
-
-      public static const ENGINE_FUEL_ACTION:int = 102;
+      public static const PARTY_INVITE:int = 71;
+      public static const INVITED_TO_PARTY:int = 72;
+      public static const JOIN_PARTY:int = 73;
+      public static const USE_STORAGE:int = 74;
+      public static const SWITCH_MUSIC:int = 75;
+      public static const MARKET_SEARCH:int = 76;
+      public static const MARKET_SEARCH_RESULT:int = 77;
+      public static const MARKET_BUY:int = 78;
+      public static const MARKET_BUY_RESULT:int = 79;
+      public static const MARKET_ADD:int = 80;
+      public static const MARKET_ADD_RESULT:int = 81;
+      public static const MARKET_REMOVE:int = 82;
+      public static const MARKET_REMOVE_RESULT:int = 83;
+      public static const MARKET_MY_OFFERS:int = 84;
+      public static const MARKET_MY_OFFERS_RESULT:int = 85;
 
       private static const TO_MILLISECONDS:int = 1000;
 
@@ -469,21 +447,10 @@ public class GameServerConnection
          messages.map(JOINGUILD).toMessage(JoinGuild);
          messages.map(CHANGEGUILDRANK).toMessage(ChangeGuildRank);
          messages.map(EDITACCOUNTLIST).toMessage(EditAccountList);
-         messages.map(UPGRADESTAT).toMessage(UpgradeStat);
-         messages.map(FORGEFUSION).toMessage(ForgeFusion);
-         messages.map(ENGINE_FUEL_ACTION).toMessage(FuelEngineAction);
          messages.map(ESCAPE).toMessage(Escape);
-
-         /* Bounty */
-         messages.map(BOUNTYREQUEST).toMessage(BountyRequest);
-         messages.map(BOUNTYMEMBERLISTREQUEST).toMessage(BountyMemberListRequest);
-         messages.map(BOUNTYMEMBERLISTSEND).toMessage(BountyMemberListSend).toMethod(this.onBountyMembersListGet);
-
-         /* Party System */
          messages.map(PARTY_INVITE).toMessage(PartyInvite);
          messages.map(INVITED_TO_PARTY).toMessage(InvitedToParty).toMethod(this.onInvitedToParty);
          messages.map(JOIN_PARTY).toMessage(JoinParty);
-
          messages.map(FAILURE).toMessage(Failure).toMethod(this.onFailure);
          messages.map(CREATE_SUCCESS).toMessage(CreateSuccess).toMethod(this.onCreateSuccess);
          messages.map(TEXT).toMessage(Text).toMethod(this.onText);
@@ -519,8 +486,6 @@ public class GameServerConnection
          messages.map(INVITEDTOGUILD).toMessage(InvitedToGuild).toMethod(this.onInvitedToGuild);
          messages.map(SWITCH_MUSIC).toMessage(SwitchMusic).toMethod(this.onSwitchMusic);
          messages.map(PLAYSOUND).toMessage(PlaySound).toMethod(this.onPlaySound);
-
-         /* Market */
          messages.map(MARKET_SEARCH).toMessage(MarketSearch);
          messages.map(MARKET_SEARCH_RESULT).toMessage(MarketSearchResult).toMethod(this.onMarketSearchResult);
          messages.map(MARKET_BUY).toMessage(MarketBuy);
@@ -531,10 +496,7 @@ public class GameServerConnection
          messages.map(MARKET_REMOVE_RESULT).toMessage(MarketRemoveResult).toMethod(this.onMarketRemoveResult);
          messages.map(MARKET_MY_OFFERS).toMessage(MarketMyOffers);
          messages.map(MARKET_MY_OFFERS_RESULT).toMessage(MarketMyOffersResult).toMethod(this.onMarketMyOffersResult);
-
-         messages.map(POTION_STORAGE_INTERACTION).toMessage(PotionStorageInteraction);
-         messages.map(USEPOTION).toMessage(UsePotion);
-
+         messages.map(USE_STORAGE).toMessage(PotionStorageInteraction);
          messages.map(AOEACK).toMessage(AoeAck);
          messages.map(SHOOTACK).toMessage(ShootAck);
       }
@@ -606,14 +568,9 @@ public class GameServerConnection
          messages.unmap(FILE);
          messages.unmap(INVITEDTOGUILD);
          messages.unmap(PLAYSOUND);
-         messages.unmap(UPGRADESTAT);
-         messages.unmap(FORGEFUSION);
-         messages.unmap(ENGINE_FUEL_ACTION);
          messages.unmap(ESCAPE);
          messages.unmap(AOEACK);
          messages.unmap(SHOOTACK);
-
-         /* Market */
          messages.unmap(MARKET_SEARCH);
          messages.unmap(MARKET_SEARCH_RESULT);
          messages.unmap(MARKET_BUY);
@@ -624,19 +581,11 @@ public class GameServerConnection
          messages.unmap(MARKET_REMOVE_RESULT);
          messages.unmap(MARKET_MY_OFFERS);
          messages.unmap(MARKET_MY_OFFERS_RESULT);
-
-         /* Bounty */
-         messages.unmap(BOUNTYREQUEST);
-         messages.unmap(BOUNTYMEMBERLISTREQUEST);
-
-         /* Party System */
          messages.unmap(PARTY_INVITE);
          messages.unmap(INVITED_TO_PARTY);
          messages.unmap(JOIN_PARTY);
 
-         messages.unmap(POTION_STORAGE_INTERACTION);
-
-         /* Music */
+         messages.unmap(USE_STORAGE);
          messages.unmap(SWITCH_MUSIC);
       }
 
@@ -874,7 +823,7 @@ public class GameServerConnection
       }
 
       public function PotionInteraction(type:int, action:int):void{
-         var _local_1:PotionStorageInteraction = (this.messages.require(GameServerConnection.POTION_STORAGE_INTERACTION) as PotionStorageInteraction);
+         var _local_1:PotionStorageInteraction = (this.messages.require(GameServerConnection.USE_STORAGE) as PotionStorageInteraction);
          _local_1.type_ = type;
          _local_1.action_ = action;
          this.serverConnection.sendMessage(_local_1);
@@ -1034,20 +983,6 @@ public class GameServerConnection
          acceptTrade.myOffer_ = myOffer;
          acceptTrade.yourOffer_ = yourOffer;
          this.serverConnection.sendMessage(acceptTrade);
-      }
-
-      public function acceptFusion(myInventory:Vector.<ForgeItem>) : void
-      {
-         var forgeFusion:ForgeFusion = this.messages.require(FORGEFUSION) as ForgeFusion;
-         forgeFusion.myInv = myInventory;
-         this.serverConnection.sendMessage(forgeFusion);
-      }
-
-      public function acceptFuel(myInventory:Vector.<FuelEngine>) : void
-      {
-         var fuelEngine:FuelEngineAction = this.messages.require(ENGINE_FUEL_ACTION) as FuelEngineAction;
-         fuelEngine.myInv = myInventory;
-         this.serverConnection.sendMessage(fuelEngine);
       }
 
       public function cancelTrade() : void
@@ -1355,12 +1290,6 @@ public class GameServerConnection
                break;
             case "showKeyUI":
                ShowKeyUISignal.instance.dispatch();
-               break;
-            case "legendary_loot":
-               LegendaryPopUpSignal.instance.dispatch();
-               break;
-            case "mythical_loot":
-               MythicalPopUpSignal.instance.dispatch();
                break;
          }
       }
@@ -2383,11 +2312,6 @@ public class GameServerConnection
          add.currency_ = currency;
          add.hours_ = hours;
          this.serverConnection.sendMessage(add);
-      }
-
-      public function onBountyMembersListGet(playersIds:BountyMemberListSend) : void
-      {
-         BountyMemberListSendSignal.instance.dispatch(playersIds);
       }
 
        private function onInvitedToParty(invitedToParty:InvitedToParty) : void

@@ -58,7 +58,6 @@ namespace TKR.Shared.database.account
         public string Notes { get => GetValue<string>("notes"); set => SetValue("notes", value); }
         public int PartyId { get => GetValue<int>("partyId"); set => SetValue("partyId", value); }
         public string PassResetToken { get => GetValue<string>("passResetToken"); set => SetValue("passResetToken", value); }
-        public bool ToggleLootChanceNotification { get => GetValue<bool>("lootNotificationToggle"); set => SetValue("lootNotificationToggle", value); }
         public DateTime RegTime { get => GetValue<DateTime>("regTime"); set => SetValue("regTime", value); }
         public int SetBaseStat { get => GetValue<int>("setBaseStat"); set => SetValue("setBaseStat", value); }
         public int Size { get => GetValue<int>("size"); set => SetValue("size", value); }

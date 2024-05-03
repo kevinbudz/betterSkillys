@@ -40,8 +40,6 @@ import io.decagames.rotmg.ui.spinner.NumberSpinnerMediator;
 import io.decagames.rotmg.ui.tabs.UITab;
 import io.decagames.rotmg.ui.tabs.UITabMediator;
 
-import kabam.rotmg.Forge.ForgeModal;
-import kabam.rotmg.Forge.ForgeModalMediator;
 import kabam.rotmg.account.core.services.GetCharListTask;
 import kabam.rotmg.account.core.services.LoadAccountTask;
 import kabam.rotmg.account.core.view.AccountInfoMediator;
@@ -49,7 +47,6 @@ import kabam.rotmg.account.core.view.AccountInfoView;
 import kabam.rotmg.account.core.view.RegisterPromptDialog;
 import kabam.rotmg.account.core.view.RegisterPromptDialogMediator;
 import kabam.rotmg.application.api.ApplicationSetup;
-import kabam.rotmg.assets.task.GetServerXmlsTask;
 import kabam.rotmg.game.model.PotionInventoryModel;
 import kabam.rotmg.game.view.NameChangerPanel;
 import kabam.rotmg.game.view.NameChangerPanelMediator;
@@ -59,10 +56,7 @@ import kabam.rotmg.ui.commands.EnterGameCommand;
 import kabam.rotmg.ui.commands.HUDInitCommand;
 import kabam.rotmg.ui.commands.RefreshScreenAfterLoginCommand;
 import kabam.rotmg.ui.commands.ShowKeyUICommand;
-import kabam.rotmg.ui.commands.ShowLegendaryPopUICommand;
 import kabam.rotmg.ui.commands.ShowLoadingUICommand;
-import kabam.rotmg.ui.commands.ShowMythicalPopUICommand;
-import kabam.rotmg.ui.commands.ShowTalismanPopUICommand;
 import kabam.rotmg.ui.commands.ShowTitleUICommand;
 import kabam.rotmg.ui.model.HUDModel;
 import kabam.rotmg.ui.noservers.NoServersDialogFactory;
@@ -82,7 +76,6 @@ import kabam.rotmg.ui.signals.ShowKeyUISignal;
 import kabam.rotmg.ui.signals.ShowLoadingUISignal;
 import kabam.rotmg.ui.signals.ShowTitleUISignal;
 import kabam.rotmg.ui.signals.StatsTabHotKeyInputSignal;
-import kabam.rotmg.ui.signals.TalismanPopUpSignal;
 import kabam.rotmg.ui.signals.UpdateBackpackTabSignal;
 import kabam.rotmg.ui.signals.UpdateHUDSignal;
 import kabam.rotmg.ui.signals.UpdatePotionInventorySignal;
@@ -193,25 +186,6 @@ public class UIConfig implements IConfig
       this.mediatorMap.map(StatMetersView).toMediator(StatMetersMediator);
       this.mediatorMap.map(HUDView).toMediator(HUDMediator);
       this.mediatorMap.map(PotionSlotView).toMediator(PotionSlotMediator);
-      this.mediatorMap.map(ForgeModal).toMediator(ForgeModalMediator);
-      this.commandMap.map(LegendaryPopUpSignal).toCommand(ShowLegendaryPopUICommand);
-      this.commandMap.map(MythicalPopUpSignal).toCommand(ShowMythicalPopUICommand);
-      this.uiDECA();
-      this.customUIs();
-      this.setupKeyUI();
-      this.mapNoServersDialogFactory();
-      this.setupCharacterWindow();
-      this.startup.addSignal(ShowLoadingUISignal,-1);
-      this.startup.addTask(GetCharListTask); // switching those works
-      this.startup.addTask(LoadAccountTask);
-//      this.startup.addTask(GetServerXmlsTask);
-      this.startup.addSignal(ShowTitleUISignal,StartupSequence.LAST);
-   }
-   private function customUIs():void{
-      this.mediatorMap.map(ForgeModal).toMediator(ForgeModalMediator);
-   }
-
-   private function uiDECA():void{
       this.injector.map(ClosePopupSignal).asSingleton();
       this.mediatorMap.map(UIScrollbar).toMediator(UIScrollbarMediator);
       this.mediatorMap.map(UITab).toMediator(UITabMediator);
@@ -221,6 +195,13 @@ public class UIConfig implements IConfig
       this.mediatorMap.map(BuyGoldButton).toMediator(BuyGoldButtonMediator);
       this.mediatorMap.map(ClosePopupButton).toMediator(CancelButtonMediator);
       this.mediatorMap.map(ConfirmationModal).toMediator(ConfirmationModalMediator);
+      this.startup.addSignal(ShowLoadingUISignal,-1);
+      this.startup.addTask(GetCharListTask); // switching those works
+      this.startup.addTask(LoadAccountTask);
+      this.startup.addSignal(ShowTitleUISignal,StartupSequence.LAST);
+      this.setupKeyUI();
+      this.mapNoServersDialogFactory();
+      this.setupCharacterWindow();
    }
 
    private function setupKeyUI() : void

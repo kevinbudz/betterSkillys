@@ -1,4 +1,4 @@
-package kabam.rotmg.PotionStorage.assets {
+package kabam.rotmg.storage.assets {
 import mx.core.*;
 
 [Embed(source="def.png")]

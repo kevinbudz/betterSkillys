@@ -172,30 +172,10 @@ namespace TKR.WorldServer.core.objects
         {
             BubbleTime = 0,
             NumStars = -1,
-            Name = "DeathNotifier",
+            Name = "Death",
             Txt = text,
             TextColor = 0xFFFFFF,
             NameColor = 0xff2f00
-        });
-
-        internal void ForgerNotif(string text) => Client.SendPacket(new Text()
-        {
-            BubbleTime = 0,
-            NumStars = -1,
-            Name = "Forger",
-            Txt = text,
-            TextColor = 0xFFFFFF,
-            NameColor = 696969
-        });
-
-        internal void EngineNotif(string text) => Client.SendPacket(new Text()
-        {
-            BubbleTime = 0,
-            NumStars = -1,
-            Name = "Strange Engine",
-            Txt = text,
-            TextColor = 0xFFFFFF,
-            NameColor = 0x3e9bff
         });
 
         internal void GuildReceived(int objId, int stars, string from, string text) => Client.SendPacket(new Text()
@@ -218,35 +198,14 @@ namespace TKR.WorldServer.core.objects
             Txt = text
         });
 
-        internal void SendEternalNotif(string text) => Client.SendPacket(new Text()
-        {
-            BubbleTime = 0,
-            NumStars = -1,
-            Name = "LootNotifier",
-            Txt = text,
-
-            TextColor = 0xFFFFFF,
-            NameColor = 0x98ff98
-        });
-
         internal void SendLootNotif(string text) => Client.SendPacket(new Text()
         {
             BubbleTime = 0,
             NumStars = -1,
-            Name = "LootNotifier",
+            Name = "Loot Notifier",
             Txt = text,
             TextColor = 0xFFFFFF,
             NameColor = 0xAD054F
-        });
-
-        internal void SendMythicalNotif(string text) => Client.SendPacket(new Text()
-        {
-            BubbleTime = 0,
-            NumStars = -1,
-            Name = "LootNotifier",
-            Txt = text,
-            TextColor = 0xFFFFFF,
-            NameColor = 0xff0000
         });
 
         internal void TellReceived(int objId, int stars, int admin, string from, string to, string text) => Client.SendPacket(new Text()

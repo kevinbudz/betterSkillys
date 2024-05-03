@@ -34,7 +34,7 @@ public class TextureRedrawer {
    private static var colorTexture1:BitmapData = new BitmapDataSpy(1, 1, false);
 
    private static var colorTexture2:BitmapData = new BitmapDataSpy(1, 1, false);
-   static var rect:Rectangle = new Rectangle();
+   private static var rect:Rectangle = new Rectangle();
 
    public static function redraw(tex:BitmapData, size:int, padBottom:Boolean, glowColor:uint, useCache:Boolean = true, sMult:Number = 5, glowMult:Number = 1.4):BitmapData {
       var hash:* = getHash(size, padBottom, glowColor, sMult, glowColor);

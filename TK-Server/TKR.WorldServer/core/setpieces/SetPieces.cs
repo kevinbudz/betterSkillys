@@ -14,15 +14,6 @@ namespace TKR.WorldServer.core.setpieces
     {
         private static readonly List<Tuple<ISetPiece, int, int, TerrainType[]>> Sets = new List<Tuple<ISetPiece, int, int, TerrainType[]>>()
         {
-            /*MakeSetPiece(new KageKami(), 4, 5, TerrainType.HighForest, TerrainType.HighPlains),
-            MakeSetPiece(new Building(), 80, 100, TerrainType.LowForest, TerrainType.LowPlains, TerrainType.MidForest),
-            MakeSetPiece(new Graveyard(), 5, 10, TerrainType.LowSand, TerrainType.LowPlains),
-            //SetPiece(new Castle(), 4, 7, TerrainType.HighForest, TerrainType.HighPlains),
-            MakeSetPiece(new TempleA(), 10, 20, TerrainType.MidForest, TerrainType.MidPlains),
-            MakeSetPiece(new TempleB(), 10, 20, TerrainType.MidForest, TerrainType.MidPlains),
-            MakeSetPiece(new Avatar(), 1, 1, TerrainType.Mountains),
-            MakeSetPiece(new NamedEntitySetPiece("Spectral Sentry"), 1, 1, TerrainType.Mountains),
-            MakeSetPiece(new NamedEntitySetPiece("Crystal Prisoner"), 1, 1, TerrainType.Mountains)*/
         };
         private static Tuple<ISetPiece, int, int, TerrainType[]> MakeSetPiece(ISetPiece piece, int min, int max, params TerrainType[] terrains) => Tuple.Create(piece, min, max, terrains);
 

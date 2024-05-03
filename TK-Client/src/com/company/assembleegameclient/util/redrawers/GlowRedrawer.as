@@ -22,8 +22,8 @@ public class GlowRedrawer
     private static var glowHashes:Dictionary = new Dictionary();
 
     public static function clearCache():void{
-        for each (var _local3 in glowHashes) {
-            for each (var _local4 in _local3) {
+        for each (var _local3:* in glowHashes) {
+            for each (var _local4:* in _local3) {
                 delete _local3[_local4];
             }
             delete glowHashes[_local3];

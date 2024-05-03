@@ -43,7 +43,7 @@ namespace TKR.WorldServer.core
         public DateTime RestartCloseTime { get; private set; }
 
         public GameServer(string[] appArgs)
-        {	
+        {
 			var configPath = appArgs.Length == 0 ? "wServer.json" : appArgs[0];
 			Configuration = ServerConfig.ReadFile(configPath);
 			

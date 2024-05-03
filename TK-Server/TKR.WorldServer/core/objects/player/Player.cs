@@ -268,11 +268,8 @@ namespace TKR.WorldServer.core.objects
                 ApplyPermanentConditionEffect(ConditionEffectIndex.Hidden);
                 ApplyPermanentConditionEffect(ConditionEffectIndex.Invincible);
             }
-
-            ToggleLootChanceNotification = client.Account.ToggleLootChanceNotification;
         }
 
-        public bool ToggleLootChanceNotification;
 
         public void CalculateRank()
         {
@@ -906,7 +903,7 @@ namespace TKR.WorldServer.core.objects
         private void AnnounceDeath(string killer)
         {
             var maxed = GetMaxedStats();
-            var deathMessage = Name + " (" + maxed + (UpgradeEnabled ? "/16, " : "/8, ") + Client.Character.Fame + ") has been killed by " + killer + "! ";
+            var deathMessage = Name + " (" + maxed + "/8, " + Client.Character.Fame + ") has been killed by " + killer + "! ";
 
             if ((maxed >= 6 || Fame >= 1000) && !IsAdmin)
             {

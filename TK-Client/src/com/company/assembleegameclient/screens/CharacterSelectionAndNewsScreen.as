@@ -216,7 +216,7 @@ public class CharacterSelectionAndNewsScreen extends Sprite
         addChild(this.nameText);
     }
 
-    function getReferenceRectangle() : Rectangle
+    private function getReferenceRectangle() : Rectangle
     {
         var rectangle:Rectangle = new Rectangle();
         if(stage)

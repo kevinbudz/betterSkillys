@@ -1,4 +1,4 @@
-package kabam.rotmg.PotionStorage {
+package kabam.rotmg.storage {
 import com.company.assembleegameclient.objects.Player;
 import com.company.assembleegameclient.ui.StatusBar;
 import com.company.assembleegameclient.ui.tooltip.TextToolTip;

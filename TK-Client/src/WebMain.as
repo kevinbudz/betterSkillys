@@ -20,7 +20,6 @@ import kabam.rotmg.core.StaticInjectorContext;
 import kabam.rotmg.death.DeathConfig;
 import kabam.rotmg.dialogs.DialogsConfig;
 import kabam.rotmg.errors.ErrorConfig;
-import kabam.rotmg.Engine.EngineConfig;
 import kabam.rotmg.fame.FameConfig;
 import kabam.rotmg.game.GameConfig;
 import kabam.rotmg.hud.HUDConfig;

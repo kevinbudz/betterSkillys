@@ -152,7 +152,7 @@ public class BossHealthBar extends Sprite {
                     this.nameText_.htmlText = "<font color=\"#C183AF\">Epic</font> " + go.name_;
                     break;
                 case 0x82D9BC:
-                    this.nameText_.htmlText = "<font color=\"#82D9BC\">Legendary</font>" + go.name_;
+                    this.nameText_.htmlText = "<font color=\"#82D9BC\">Rare</font> " + go.name_;
                     break;
                 default:
                     this.nameText_.htmlText = go.name_;

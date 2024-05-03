@@ -75,8 +75,7 @@ namespace TKR.WorldServer.core.commands.player
 
     internal class AcceptParty : Command
     {
-        public override string CommandName => "partyaccept";
-        public override string Alias => "paccept";
+        public override string CommandName => "paccept";
 
         protected override bool Process(Player player, TickTime time, string args)
         {
@@ -104,8 +103,7 @@ namespace TKR.WorldServer.core.commands.player
 
     internal class CloseParty : Command
     {
-        public override string CommandName => "partyclose";
-        public override string Alias => "pclose";
+        public override string CommandName => "pclose";
 
         protected override bool Process(Player player, TickTime time, string args)
         {
@@ -159,8 +157,7 @@ namespace TKR.WorldServer.core.commands.player
 
     internal class LeaveParty : Command
     {
-        public override string CommandName => "partyleave";
-        public override string Alias => "pleave";
+        public override string CommandName => "pleave";
 
 
         protected override bool Process(Player player, TickTime time, string args)
@@ -188,7 +185,7 @@ namespace TKR.WorldServer.core.commands.player
                 }
                 else
                 {
-                    player.SendError("You're not in a Party!");
+                    player.SendError("You're not in a party!");
                     return false;
                 }
             }
@@ -198,7 +195,7 @@ namespace TKR.WorldServer.core.commands.player
                 return false;
             }
 
-            player.SendInfo("You have left the Party.");
+            player.SendInfo("You have left the party.");
             player.InvokeStatChange(StatDataType.PartyId, player.Client.Account.PartyId, true);
             return true;
         }
@@ -206,8 +203,7 @@ namespace TKR.WorldServer.core.commands.player
 
     internal class InviteParty : Command
     {
-        public override string CommandName => "partyinvite";
-        public override string Alias => "pinvite";
+        public override string CommandName => "pinvite";
 
         protected override bool Process(Player player, TickTime time, string args)
         {
@@ -239,13 +235,13 @@ namespace TKR.WorldServer.core.commands.player
 
             if (party == null)
             {
-                player.SendError("You're not in a Party!");
+                player.SendError("You're not in a party!");
                 return false;
             }
 
             if (party.PartyLeader.Item1 != player.Client.Account.Name)
             {
-                player.SendError("Only the leader can do this!");
+                player.SendError("Only the party leader can do this!");
                 return false;
             }
 
@@ -270,7 +266,7 @@ namespace TKR.WorldServer.core.commands.player
 
                 if (client.Account.PartyId != 0)
                 {
-                    player.SendError("He is already in a Party!");
+                    player.SendError("They are already in a party!");
                     client.Account.Reload("partyId");
                     return false;
                 }
@@ -281,7 +277,7 @@ namespace TKR.WorldServer.core.commands.player
                     PartyId = player.Client.Account.PartyId
                 });
 
-                player.SendInfo($"Invited successfully {client.Account.Name} to your Party!");
+                player.SendInfo($"Invited {client.Account.Name} to your party!");
                 return true;
             }
 
@@ -291,8 +287,7 @@ namespace TKR.WorldServer.core.commands.player
 
     internal class RemoveFromParty : Command
     {
-        public override string CommandName => "partyremove";
-        public override string Alias => "premove";
+        public override string CommandName => "premove";
 
         protected override bool Process(Player player, TickTime time, string args)
         {
@@ -308,7 +303,7 @@ namespace TKR.WorldServer.core.commands.player
 
             if (party.PartyLeader.Item1 != player.Name || party.PartyLeader.Item2 != player.AccountId)
             {
-                player.SendError("Only the Leader of the Party can do this!");
+                player.SendError("Only the party leader can do this!");
                 return false;
             }
 
@@ -342,11 +337,11 @@ namespace TKR.WorldServer.core.commands.player
 
                     if (playerDemoted != null)
                     {
-                        playerDemoted[0].SendError($"You have been removed from the Party of {party.PartyLeader.Item1}.");
+                        playerDemoted[0].SendError($"You have been removed from {party.PartyLeader.Item1}'s party!");
                         playerDemoted[0].InvokeStatChange(StatDataType.PartyId, playerDemoted[0].Client.Account.PartyId, true);
                     }
 
-                    player.GameServer.ChatManager.Party(player, player.Name + " has been removed from the Party.");
+                    player.GameServer.ChatManager.Party(player, player.Name + " has been removed from the party.");
                     player.SendInfo($"{acc.Name} removed from the Party.");
                     return true;
                 }
@@ -364,8 +359,7 @@ namespace TKR.WorldServer.core.commands.player
 
     internal class JoinWorldParty : Command
     {
-        public override string CommandName => "partyjoin";
-        public override string Alias => "pjoin";
+        public override string CommandName => "pjoin";
 
         protected override bool Process(Player player, TickTime time, string args)
         {
@@ -374,7 +368,7 @@ namespace TKR.WorldServer.core.commands.player
                 var party = DbPartySystem.Get(player.Client.Account.Database, player.Client.Account.PartyId);
                 if (party == null)
                 {
-                    player.SendError("You're not in a Party.");
+                    player.SendError("You're not in a party.");
                     return false;
                 }
 
@@ -382,7 +376,7 @@ namespace TKR.WorldServer.core.commands.player
 
                 if (leader == null)
                 {
-                    player.SendError("The Leader of the Party is disconnected.");
+                    player.SendError("The party leader is disconnected.");
                     return false;
                 }
 
@@ -420,20 +414,11 @@ namespace TKR.WorldServer.core.commands.player
                     return false;
                 }
 
-                if (world.IdName == "Trial of Souls")
-                {
-                    Console.WriteLine(player.Name + " tried to pjoin into Trial of Souls");
-                    party.WorldId = -1;
-                    player.GameServer.Database.FlushParty(party.PartyId, party);
-                    player.SendError("You can't connect to those Worlds.");
-                    return false;
-                }
-
                 if (party.ReturnWorldId() != -1 && (world.InstanceType == WorldResourceInstanceType.Guild || world is VaultWorld || world is NexusWorld))
                 {
                     party.WorldId = -1;
                     player.GameServer.Database.FlushParty(party.PartyId, party);
-                    player.SendError("You can't connect to those Worlds.");
+                    player.SendError("You can't connect to that world.");
                     return false;
                 }
 
@@ -451,8 +436,7 @@ namespace TKR.WorldServer.core.commands.player
 
     internal class InviteWorldParty : Command
     {
-        public override string CommandName => "partyinviteworld";
-        public override string Alias => "pinviteworld";
+        public override string CommandName => "pinviteworld";
 
         protected override bool Process(Player player, TickTime time, string args)
         {
@@ -462,13 +446,13 @@ namespace TKR.WorldServer.core.commands.player
 
                 if (party == null)
                 {
-                    player.SendError("You're not in a Party!");
+                    player.SendError("You're not in a party!");
                     return false;
                 }
 
                 if (party.PartyLeader.Item1 != player.Client.Account.Name && party.PartyLeader.Item2 != player.Client.Account.PartyId)
                 {
-                    player.SendError("You're not the leader of the Party!");
+                    player.SendError("You're not the party leader!");
                     return false;
                 }
 
@@ -478,26 +462,19 @@ namespace TKR.WorldServer.core.commands.player
 
                 if (world is RealmWorld && (world as RealmWorld).Closed)
                 {
-                    player.SendError("You can't invite players to this World.");
+                    player.SendError("You can't invite players to this world.");
                     return false;
                 }
 
                 if (world is VaultWorld || world.InstanceType == WorldResourceInstanceType.Guild)
                 {
-                    player.SendError("You can't invite players to this World.");
-                    return false;
-                }
-
-                if (world.IdName == "Trial of Souls")
-                {
-                    Console.WriteLine(player.Name + " tried to pinviteworlds into Trial of Souls");
-                    player.SendError("You can't invite players to this World.");
+                    player.SendError("You can't invite players to this world.");
                     return false;
                 }
 
                 if (party.WorldId == player.World.Id)
                 {
-                    player.SendError("Already invited your Party Members to this World!");
+                    player.SendError("Your party members are in the world already!");
                     return false;
                 }
 
@@ -516,7 +493,7 @@ namespace TKR.WorldServer.core.commands.player
                 foreach (var member in party.PartyMembers)
                 {
                     var clientMember = player.GameServer.ConnectionManager.Clients.Keys.Where(c => c.Player != null && c.Account.Name == member.name && c.Account.AccountId == member.accid).Select(c => c.Player).ToArray();
-                    clientMember[0].SendInfo($"You have invited to a {world.IdName ?? world.DisplayName}! use the command /pjoin to connect!");
+                    clientMember[0].SendInfo($"You have been invited to a '{world.IdName ?? world.DisplayName}'! use /pjoin to connect!");
                     return true;
                 }
             }
@@ -530,22 +507,9 @@ namespace TKR.WorldServer.core.commands.player
         }
     }
 
-    internal class PartyCommandsInfo : Command
-    {
-        public override string CommandName => "partycommands";
-        public override string Alias => "pcommands";
-
-        protected override bool Process(Player player, TickTime time, string args)
-        {
-            player.SendInfo("Party Commands: \n/p <text> -> Party Chat.\n/paccept <partyId> -> accept an Invitation of a Party.\n/pinvite <name> -> Invite a Player to your Party (Only Leader).\n/premove <name> -> Remove a Player from your Party (Only Leader).\n/pleave -> Leave from the Party.\n/pclose -> Close a Party (Only Leader).\n/pjoin -> Join the World you were invited.\n/pinviteworld -> Invite a Player to your World (Only Leader).\n/pinfo -> Show information about your Party.\n/pcommands -> Show all Party Commands.");
-            return true;
-        }
-    }
-
     internal class PartyInfo : Command
     {
-        public override string CommandName => "partyinfo";
-        public override string Alias => "pinfo";
+        public override string CommandName => "pinfo";
 
         protected override bool Process(Player player, TickTime time, string args)
         {
@@ -553,56 +517,24 @@ namespace TKR.WorldServer.core.commands.player
             var party = DbPartySystem.Get(db, player.Client.Account.PartyId);
             if (party == null)
             {
-                player.SendInfo("You don't have a Party.");
+                player.SendInfo("You're not apart a party.");
                 return false;
             }
 
             player.SendInfo("Party Information: ");
             player.SendInfo($"Party ID: {party.PartyId}");
-            player.SendInfo($"Party Leader => Name: {party.PartyLeader.Item1}");
-            player.SendInfo($"Party Max Players: {DbPartySystem.ReturnSize(player.Client.Rank.Rank)}");
+            player.SendInfo($"Owner: {party.PartyLeader.Item1}");
+            player.SendInfo($"Max Size: {DbPartySystem.ReturnSize(player.Client.Rank.Rank)} Members");
             player.SendInfo("Members: ");
             foreach (var member in party.PartyMembers)
             {
-                player.SendInfo($"Member => Name: {member.name}");
+                player.SendInfo($"Member: {member.name}");
             }
             return true;
         }
     }
 
     #endregion Party
-
-    internal class CheckGuildPoints : Command
-    {
-        public override string CommandName => "checkguildpoints";
-        public override string Alias => "cgp";
-
-        protected override bool Process(Player player, TickTime time, string args)
-        {
-            if (player.Guild == null)
-            {
-                player.SendError("Must join a guild first!");
-                return false;
-            }
-            var account = player.GameServer.Database.GetAccount(player.AccountId);
-            var guild = player.GameServer.Database.GetGuild(account.GuildId);
-            player.SendInfo("Total Guild Points: " + guild.GuildPoints);
-            return true;
-        }
-    }
-
-    internal class CheckFuelContributed : Command
-    {
-        public override string CommandName => "checkfuelcontributed";
-        public override string Alias => "cfc";
-
-        protected override bool Process(Player player, TickTime time, string args)
-        {
-            var account = player.GameServer.Database.GetAccount(player.AccountId);
-            player.SendInfo("Fuel Contributed: " + account.FuelContributed);
-            return true;
-        }
-    }
 
     internal class CheckAccId : Command
     {
@@ -629,12 +561,14 @@ namespace TKR.WorldServer.core.commands.player
         protected override bool Process(Player player, TickTime time, string args)
         {
             if (player.LDBoostTime > 0)
-                player.SendInfo($"Loot Drop provides: 25%");
+                player.SendInfo($"Your Loot Drop Potion provides: 25%");
             if (NexusWorld.WeekendLootBoostEvent > 0.0f)
                 player.SendInfo($"Weekend Bonus provides: {(int)(NexusWorld.WeekendLootBoostEvent * 100.0)}%");
 
-            var lootBoost = Loot.GetPlayerLootBoost(player);
-            player.SendInfo($"You have {Math.Round(lootBoost * 100.0f, 3)}% increased loot chance");
+            var ldBoost = player.LDBoostTime > 0 ? 0.25 : 0;
+            var wkndBoost = NexusWorld.WeekendLootBoostEvent;
+            var lootBoost = ldBoost + wkndBoost;
+            player.SendInfo($"You have {Math.Round(lootBoost * 100.0f, 3)}% loot boost.");
             return true;
         }
     }
@@ -1303,19 +1237,6 @@ namespace TKR.WorldServer.core.commands.player
                 return false;
             }
 
-            return true;
-        }
-    }
-
-    internal class ToggleLootChanceDisplaycommand : Command
-    {
-        public override string CommandName => "togglelootchances";
-
-        protected override bool Process(Player player, TickTime time, string args)
-        {
-            var state = player.Client.Account.ToggleLootChanceNotification = !player.Client.Account.ToggleLootChanceNotification;
-            player.ToggleLootChanceNotification = state;
-            player.SendInfo($"Loot chances now {(state ? "Enabled" : "Disabled")}.");
             return true;
         }
     }

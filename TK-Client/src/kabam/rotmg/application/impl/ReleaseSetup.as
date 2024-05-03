@@ -6,12 +6,12 @@ import com.company.assembleegameclient.parameters.Parameters;
 
    public class ReleaseSetup implements ApplicationSetup
    {
-      private const CDN_APPENGINE:String = "http://play.tkr.gg:lo";
-      private const CDN_APPENGINE_S:String = "https://tkr.gg";
-      private const TESTING_CDN_APPENGINE:String = "http://play.tkr.gg:2003";
+      private const CDN_APPENGINE:String = "";
+      private const CDN_APPENGINE_S:String = "";
+      private const TESTING_CDN_APPENGINE:String = "";
 
-      private const BUILD_LABEL:String = "<font color=\"#FF0000\">TKR</font> <font color=\"#FFFF00\">v{VERSION}.{MINOR}.{PATCH}</font>";
-      private const TESTING_BUILD_LABEL:String = "<font color=\"#FF0000\">TESTING - TKR</font> <font color=\"#FFFF00\">v{VERSION}.{MINOR}.{PATCH}</font>";
+      private const BUILD_LABEL:String = "<font color=\"#C8A2C8\">version:</font> v1.0";
+      private const TESTING_BUILD_LABEL:String = "<font color=\"#C8A2C8\">testing:</font> v1.0";
 
       public function getAppEngineUrl() : String
       {

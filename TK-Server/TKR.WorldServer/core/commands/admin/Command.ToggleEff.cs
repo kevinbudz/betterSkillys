@@ -24,12 +24,12 @@ namespace TKR.WorldServer.core.commands
                 if (!player.HasConditionEffect(effect))
                 {
                     player.ApplyPermanentConditionEffect(effect);
-                    player.SendInfo($"{effect} Has been added!");
+                    player.SendInfo($"You have been given '{effect}'!");
                 }
                 else
                 {
                     player.RemoveCondition(effect);
-                    player.SendInfo($"{effect} Has been removed!");
+                    player.SendInfo($"Your '{effect}' has been removed!");
                 }
                 return true;
             }

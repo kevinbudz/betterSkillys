@@ -38,6 +38,7 @@ namespace TKR.WorldServer.core.worlds.impl
 
         // i dont really want to use static but it works so?
         public static float WeekendLootBoostEvent = 0.0f;
+        public static int GetCurrentMonth = 0;
         public bool MarketEnabled = true;
 
         public KingdomPortalMonitor PortalMonitor { get; private set; }
@@ -48,6 +49,7 @@ namespace TKR.WorldServer.core.worlds.impl
 
         public override void Init()
         {
+            GetCurrentMonth = DateTime.Now.Month;
             var lootRegions = GetRegionPoints(TileRegion.Hallway_1);
             var marketRegions = GetRegionPoints(TileRegion.Hallway);
 

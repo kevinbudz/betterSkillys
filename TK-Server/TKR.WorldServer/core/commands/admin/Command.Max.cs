@@ -37,7 +37,7 @@ namespace TKR.WorldServer.core.commands
                 player.Experience = Player.GetLevelExp(20);
                 player.UpgradeEnabled = true;
 
-                player.SendInfo("You have been maxed.");
+                player.SendInfo("Your stats have been maxed.");
                 return true;
             }
         }

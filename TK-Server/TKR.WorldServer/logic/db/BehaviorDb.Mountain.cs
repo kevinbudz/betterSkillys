@@ -46,7 +46,13 @@ namespace TKR.WorldServer.logic
                     new Shoot(15, projectileIndex: 1, coolDown: 1000)
                     ),
                 new DropPortalOnDeath("Haunted Cemetery Portal", .5)
-                )
+                ),
+                new Threshold(0.01,
+                    LootTemplates.MountainDrop()
+                    ),
+                new Threshold(0.01,
+                    new ItemLoot("Potion of Wisdom", 0.05)
+                    )
             )
         .Init("White Demon",
             new State(
@@ -58,20 +64,12 @@ namespace TKR.WorldServer.logic
                 new Shoot(10, count: 3, shootAngle: 20, predictive: 1, coolDown: 500),
                 new Reproduce(densityMax: 3)
                 ),
-            new TierLoot(5, ItemType.Weapon, 0.08),
-            new TierLoot(6, ItemType.Weapon, 0.04),
-            new TierLoot(7, ItemType.Weapon, 0.02),
-            new TierLoot(8, ItemType.Weapon, 0.01),
-            new TierLoot(5, ItemType.Armor, 0.08),
-            new TierLoot(6, ItemType.Armor, 0.04),
-            new TierLoot(7, ItemType.Armor, 0.02),
-            new TierLoot(8, ItemType.Armor, 0.01),
-            new TierLoot(3, ItemType.Ring, 0.05),
-            new TierLoot(4, ItemType.Ring, 0.025),
-            new TierLoot(3, ItemType.Ability, 0.08),
-            new TierLoot(4, ItemType.Ability, 0.04),
-            
-            new Threshold(.18, new ItemLoot("Potion of Attack", 0.05))
+            new Threshold(0.01,
+                    LootTemplates.MountainDrop()
+                    ),
+                new Threshold(0.01,
+                    new ItemLoot("Potion of Attack", 0.05)
+                    )
         )
         .Init("Sprite God",
             new State(
@@ -84,20 +82,12 @@ namespace TKR.WorldServer.logic
                 new Reproduce(densityMax: 3),
                 new Spawn("Sprite Child", 5, 1)
                 ),
-            new TierLoot(5, ItemType.Weapon, 0.08),
-            new TierLoot(6, ItemType.Weapon, 0.04),
-            new TierLoot(7, ItemType.Weapon, 0.02),
-            new TierLoot(8, ItemType.Weapon, 0.01),
-            new TierLoot(5, ItemType.Armor, 0.08),
-            new TierLoot(6, ItemType.Armor, 0.04),
-            new TierLoot(7, ItemType.Armor, 0.02),
-            new TierLoot(8, ItemType.Armor, 0.01),
-            new TierLoot(3, ItemType.Ring, 0.05),
-            new TierLoot(4, ItemType.Ring, 0.025),
-            new TierLoot(3, ItemType.Ability, 0.08),
-            new TierLoot(4, ItemType.Ability, 0.04),
-            
-            new Threshold(.18, new ItemLoot("Potion of Attack", 0.05))
+            new Threshold(0.01,
+                    LootTemplates.MountainDrop()
+                    ),
+                new Threshold(0.01,
+                    new ItemLoot("Potion of Attack", 0.05)
+                    )
         )
         .Init("Sprite Child",
             new State(
@@ -121,20 +111,12 @@ namespace TKR.WorldServer.logic
                 new Grenade(4, 150, range: 8, coolDown: 3000),
                 new Reproduce(densityMax: 3)
                 ),
-            new TierLoot(5, ItemType.Weapon, 0.08),
-            new TierLoot(6, ItemType.Weapon, 0.04),
-            new TierLoot(7, ItemType.Weapon, 0.02),
-            new TierLoot(8, ItemType.Weapon, 0.01),
-            new TierLoot(5, ItemType.Armor, 0.08),
-            new TierLoot(6, ItemType.Armor, 0.04),
-            new TierLoot(7, ItemType.Armor, 0.02),
-            new TierLoot(8, ItemType.Armor, 0.01),
-            new TierLoot(3, ItemType.Ring, 0.05),
-            new TierLoot(4, ItemType.Ring, 0.025),
-            new TierLoot(3, ItemType.Ability, 0.08),
-            new TierLoot(4, ItemType.Ability, 0.04),
-            
-            new Threshold(.18, new ItemLoot("Potion of Speed", 0.05))
+            new Threshold(0.01,
+                    LootTemplates.MountainDrop()
+                    ),
+                new Threshold(0.01,
+                    new ItemLoot("Potion of Speed", 0.05)
+                    )
         )
         .Init("Ent God",
             new State(
@@ -150,20 +132,12 @@ namespace TKR.WorldServer.logic
                 new Shoot(12, count: 5, shootAngle: 10, predictive: 1, coolDown: 1250),
                 new Reproduce(densityMax: 3)
                 ),
-            new TierLoot(5, ItemType.Weapon, 0.08),
-            new TierLoot(6, ItemType.Weapon, 0.04),
-            new TierLoot(7, ItemType.Weapon, 0.02),
-            new TierLoot(8, ItemType.Weapon, 0.01),
-            new TierLoot(5, ItemType.Armor, 0.08),
-            new TierLoot(6, ItemType.Armor, 0.04),
-            new TierLoot(7, ItemType.Armor, 0.02),
-            new TierLoot(8, ItemType.Armor, 0.01),
-            new TierLoot(3, ItemType.Ring, 0.05),
-            new TierLoot(4, ItemType.Ring, 0.025),
-            new TierLoot(3, ItemType.Ability, 0.08),
-            new TierLoot(4, ItemType.Ability, 0.04),
-            
-            new Threshold(.18, new ItemLoot("Potion of Defense", 0.025))
+            new Threshold(0.01,
+                    LootTemplates.MountainDrop()
+                    ),
+                new Threshold(0.01,
+                    new ItemLoot("Potion of Defense", 0.05)
+                    )
             )
         .Init("Beholder",
             new State(
@@ -180,20 +154,12 @@ namespace TKR.WorldServer.logic
                 new Shoot(10, projectileIndex: 1, predictive: 1),
                 new Reproduce(densityMax: 3)
                 ),
-            new TierLoot(5, ItemType.Weapon, 0.08),
-            new TierLoot(6, ItemType.Weapon, 0.04),
-            new TierLoot(7, ItemType.Weapon, 0.02),
-            new TierLoot(8, ItemType.Weapon, 0.01),
-            new TierLoot(5, ItemType.Armor, 0.08),
-            new TierLoot(6, ItemType.Armor, 0.04),
-            new TierLoot(7, ItemType.Armor, 0.02),
-            new TierLoot(8, ItemType.Armor, 0.01),
-            new TierLoot(3, ItemType.Ring, 0.05),
-            new TierLoot(4, ItemType.Ring, 0.025),
-            new TierLoot(3, ItemType.Ability, 0.08),
-            new TierLoot(4, ItemType.Ability, 0.04),
-            
-            new Threshold(.18, new ItemLoot("Potion of Defense", 0.025))
+            new Threshold(0.01,
+                    LootTemplates.MountainDrop()
+                    ),
+                new Threshold(0.01,
+                    new ItemLoot("Potion of Defense", 0.05)
+                    )
             )
         .Init("Flying Brain",
             new State(
@@ -210,20 +176,12 @@ namespace TKR.WorldServer.logic
                 new Reproduce(densityMax: 3),
                 new DropPortalOnDeath("Mad Lab Portal", .17)
                 ),
-            new TierLoot(5, ItemType.Weapon, 0.08),
-            new TierLoot(6, ItemType.Weapon, 0.04),
-            new TierLoot(7, ItemType.Weapon, 0.02),
-            new TierLoot(8, ItemType.Weapon, 0.01),
-            new TierLoot(5, ItemType.Armor, 0.08),
-            new TierLoot(6, ItemType.Armor, 0.04),
-            new TierLoot(7, ItemType.Armor, 0.02),
-            new TierLoot(8, ItemType.Armor, 0.01),
-            new TierLoot(3, ItemType.Ring, 0.05),
-            new TierLoot(4, ItemType.Ring, 0.025),
-            new TierLoot(3, ItemType.Ability, 0.08),
-            new TierLoot(4, ItemType.Ability, 0.04),
-            
-            new Threshold(.18, new ItemLoot("Potion of Attack", 0.025))
+            new Threshold(0.01,
+                    LootTemplates.MountainDrop()
+                    ),
+                new Threshold(0.01,
+                    new ItemLoot("Potion of Attack", 0.05)
+                    )
         )
         .Init("Slime God",
             new State(
@@ -241,20 +199,12 @@ namespace TKR.WorldServer.logic
                 new Reproduce(densityMax: 2),
                 new DropPortalOnDeath("Toxic Sewers Portal", .3)
                 ),
-            new TierLoot(5, ItemType.Weapon, 0.08),
-            new TierLoot(6, ItemType.Weapon, 0.04),
-            new TierLoot(7, ItemType.Weapon, 0.02),
-            new TierLoot(8, ItemType.Weapon, 0.01),
-            new TierLoot(5, ItemType.Armor, 0.08),
-            new TierLoot(6, ItemType.Armor, 0.04),
-            new TierLoot(7, ItemType.Armor, 0.02),
-            new TierLoot(8, ItemType.Armor, 0.01),
-            new TierLoot(3, ItemType.Ring, 0.05),
-            new TierLoot(4, ItemType.Ring, 0.025),
-            new TierLoot(3, ItemType.Ability, 0.08),
-            new TierLoot(4, ItemType.Ability, 0.04),
-            
-            new Threshold(.18, new ItemLoot("Potion of Defense", 0.025))
+            new Threshold(0.01,
+                    LootTemplates.MountainDrop()
+                    ),
+                new Threshold(0.01,
+                    new ItemLoot("Potion of Defense", 0.05)
+                    )
             )
         .Init("Ghost God",
             new State(
@@ -271,21 +221,12 @@ namespace TKR.WorldServer.logic
                 new Reproduce(densityMax: 3),
                 new DropPortalOnDeath("Undead Lair Portal", 0.25)
                 ),
-            new TierLoot(5, ItemType.Weapon, 0.08),
-            new TierLoot(6, ItemType.Weapon, 0.04),
-            new TierLoot(7, ItemType.Weapon, 0.02),
-            new TierLoot(8, ItemType.Weapon, 0.01),
-            new TierLoot(5, ItemType.Armor, 0.08),
-            new TierLoot(6, ItemType.Armor, 0.04),
-            new TierLoot(7, ItemType.Armor, 0.02),
-            new TierLoot(8, ItemType.Armor, 0.01),
-            new TierLoot(3, ItemType.Ring, 0.05),
-            new TierLoot(4, ItemType.Ring, 0.025),
-            new TierLoot(3, ItemType.Ability, 0.08),
-            new TierLoot(4, ItemType.Ability, 0.04),
-            
-            new Threshold(.18, new ItemLoot("Potion of Speed", 0.05))
-            
+            new Threshold(0.01,
+                    LootTemplates.MountainDrop()
+                    ),
+                new Threshold(0.01,
+                    new ItemLoot("Potion of Speed", 0.05)
+                    )
         )
         .Init("Rock Bot",
             new State(
@@ -302,20 +243,12 @@ namespace TKR.WorldServer.logic
                     new TimedTransition(10000, "Waiting")
                     )
                 ),
-            new TierLoot(5, ItemType.Weapon, 0.08),
-            new TierLoot(6, ItemType.Weapon, 0.04),
-            new TierLoot(7, ItemType.Weapon, 0.02),
-            new TierLoot(8, ItemType.Weapon, 0.01),
-            new TierLoot(5, ItemType.Armor, 0.08),
-            new TierLoot(6, ItemType.Armor, 0.04),
-            new TierLoot(7, ItemType.Armor, 0.02),
-            new TierLoot(8, ItemType.Armor, 0.01),
-            new TierLoot(3, ItemType.Ring, 0.05),
-            new TierLoot(4, ItemType.Ring, 0.025),
-            new TierLoot(3, ItemType.Ability, 0.08),
-            new TierLoot(4, ItemType.Ability, 0.04),
-            
-            new Threshold(.18, new ItemLoot("Potion of Attack", 0.205))
+            new Threshold(0.01,
+                    LootTemplates.MountainDrop()
+                    ),
+                new Threshold(0.01,
+                    new ItemLoot("Potion of Dexterity", 0.05)
+                    )
             )
         .Init("Paper Bot",
             new State(
@@ -338,20 +271,12 @@ namespace TKR.WorldServer.logic
                     new Decay(0)
                     )
                 ),
-            new TierLoot(5, ItemType.Weapon, 0.08),
-            new TierLoot(6, ItemType.Weapon, 0.04),
-            new TierLoot(7, ItemType.Weapon, 0.02),
-            new TierLoot(8, ItemType.Weapon, 0.01),
-            new TierLoot(5, ItemType.Armor, 0.08),
-            new TierLoot(6, ItemType.Armor, 0.04),
-            new TierLoot(7, ItemType.Armor, 0.02),
-            new TierLoot(8, ItemType.Armor, 0.01),
-            new TierLoot(3, ItemType.Ring, 0.05),
-            new TierLoot(4, ItemType.Ring, 0.025),
-            new TierLoot(3, ItemType.Ability, 0.08),
-            new TierLoot(4, ItemType.Ability, 0.04),
-            
-            new Threshold(.18, new ItemLoot("Potion of Attack", 0.025))
+            new Threshold(0.01,
+                    LootTemplates.MountainDrop()
+                    ),
+                new Threshold(0.01,
+                    new ItemLoot("Potion of Vitality", 0.05)
+                    )
             )
         .Init("Steel Bot",
             new State(
@@ -374,20 +299,12 @@ namespace TKR.WorldServer.logic
                     new Decay(0)
                     )
                 ),
-            new TierLoot(5, ItemType.Weapon, 0.08),
-            new TierLoot(6, ItemType.Weapon, 0.04),
-            new TierLoot(7, ItemType.Weapon, 0.02),
-            new TierLoot(8, ItemType.Weapon, 0.01),
-            new TierLoot(5, ItemType.Armor, 0.08),
-            new TierLoot(6, ItemType.Armor, 0.04),
-            new TierLoot(7, ItemType.Armor, 0.02),
-            new TierLoot(8, ItemType.Armor, 0.01),
-            new TierLoot(3, ItemType.Ring, 0.05),
-            new TierLoot(4, ItemType.Ring, 0.025),
-            new TierLoot(3, ItemType.Ability, 0.08),
-            new TierLoot(4, ItemType.Ability, 0.04),
-            
-            new Threshold(.18, new ItemLoot("Potion of Speed", 0.05))
+             new Threshold(0.01,
+                    LootTemplates.MountainDrop()
+                    ),
+                new Threshold(0.01,
+                    new ItemLoot("Potion of Speed", 0.05)
+                    )           
             )
         .Init("Djinn",
             new State(
@@ -449,20 +366,12 @@ namespace TKR.WorldServer.logic
                     new Suicide()
                     )
                 ),
-            new TierLoot(5, ItemType.Weapon, 0.08),
-            new TierLoot(6, ItemType.Weapon, 0.04),
-            new TierLoot(7, ItemType.Weapon, 0.02),
-            new TierLoot(8, ItemType.Weapon, 0.01),
-            new TierLoot(5, ItemType.Armor, 0.08),
-            new TierLoot(6, ItemType.Armor, 0.04),
-            new TierLoot(7, ItemType.Armor, 0.02),
-            new TierLoot(8, ItemType.Armor, 0.01),
-            new TierLoot(3, ItemType.Ring, 0.05),
-            new TierLoot(4, ItemType.Ring, 0.025),
-            new TierLoot(3, ItemType.Ability, 0.08),
-            new TierLoot(4, ItemType.Ability, 0.04),
-            
-            new Threshold(.18, new ItemLoot("Potion of Speed", 0.05))
+               new Threshold(0.01,
+                    LootTemplates.MountainDrop()
+                    ),
+                new Threshold(0.01,
+                    new ItemLoot("Potion of Speed", 0.05)
+                    )
             )
         .Init("Lucky Djinn",
             new State(
@@ -525,20 +434,12 @@ namespace TKR.WorldServer.logic
                     new Suicide()
                     )
                 ),
-            new TierLoot(5, ItemType.Weapon, 0.08),
-            new TierLoot(6, ItemType.Weapon, 0.04),
-            new TierLoot(7, ItemType.Weapon, 0.02),
-            new TierLoot(8, ItemType.Weapon, 0.01),
-            new TierLoot(5, ItemType.Armor, 0.08),
-            new TierLoot(6, ItemType.Armor, 0.04),
-            new TierLoot(7, ItemType.Armor, 0.02),
-            new TierLoot(8, ItemType.Armor, 0.01),
-            new TierLoot(3, ItemType.Ring, 0.05),
-            new TierLoot(4, ItemType.Ring, 0.025),
-            new TierLoot(3, ItemType.Ability, 0.08),
-            new TierLoot(4, ItemType.Ability, 0.04),
-            
-            new Threshold(.18, new ItemLoot("Potion of Speed", 0.05))
+               new Threshold(0.01,
+                    LootTemplates.MountainDrop()
+                    ),
+                new Threshold(0.01,
+                    new ItemLoot("Potion of Defense", 0.05)
+                    )
             )
         .Init("Lucky Ent God",
             new State(
@@ -604,20 +505,12 @@ namespace TKR.WorldServer.logic
                         new TimedTransition(1500, "Wander"))
                     )
                 ),
-            new TierLoot(5, ItemType.Weapon, 0.08),
-            new TierLoot(6, ItemType.Weapon, 0.04),
-            new TierLoot(7, ItemType.Weapon, 0.02),
-            new TierLoot(8, ItemType.Weapon, 0.01),
-            new TierLoot(5, ItemType.Armor, 0.08),
-            new TierLoot(6, ItemType.Armor, 0.04),
-            new TierLoot(7, ItemType.Armor, 0.02),
-            new TierLoot(8, ItemType.Armor, 0.01),
-            new TierLoot(3, ItemType.Ring, 0.05),
-            new TierLoot(4, ItemType.Ring, 0.025),
-            new TierLoot(3, ItemType.Ability, 0.08),
-            new TierLoot(4, ItemType.Ability, 0.04),
-            
-            new Threshold(.18, new ItemLoot("Potion of Defense", 0.025))
+                new Threshold(0.01,
+                    LootTemplates.MountainDrop()
+                    ),
+                new Threshold(0.01,
+                    new ItemLoot("Potion of Defense", 0.05)
+                    )
             )
         ;
     }

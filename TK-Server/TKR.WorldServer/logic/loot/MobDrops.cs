@@ -4,6 +4,7 @@ using System.Linq;
 using TKR.Shared.resources;
 using NLog;
 using TKR.WorldServer.core;
+using TKR.WorldServer.core.worlds.impl;
 
 namespace TKR.WorldServer.logic.loot
 {
@@ -98,12 +99,112 @@ namespace TKR.WorldServer.logic.loot
 
     public class LootTemplates : MobDrops
     {
+        public static MobDrops[] MountainDrop()
+        {
+            return
+            [
+                new TierLoot(6, ItemType.Weapon, .1),
+                new TierLoot(7, ItemType.Weapon, .06),
+                new TierLoot(8, ItemType.Weapon, .04),
+                new TierLoot(6, ItemType.Armor, .1),
+                new TierLoot(7, ItemType.Armor, .06),
+                new TierLoot(8, ItemType.Armor, .04),
+                new TierLoot(9, ItemType.Armor, .04),
+                new TierLoot(2, ItemType.Ability, .06),
+                new TierLoot(3, ItemType.Ability, .04),
+                new TierLoot(4, ItemType.Ability, .04),
+                new TierLoot(3, ItemType.Ring, .06),
+                new TierLoot(4, ItemType.Ring, .04)
+            ];
+        }
+        public static MobDrops[] BasicDrop()
+        {
+            return
+            [
+                new TierLoot(10, ItemType.Weapon, .07),
+                new TierLoot(11, ItemType.Weapon, .07),
+                new TierLoot(4, ItemType.Ability, .07),
+                new TierLoot(5, ItemType.Ability, .07),
+                new TierLoot(11, ItemType.Armor, .07),
+                new TierLoot(12, ItemType.Armor, .07),
+                new TierLoot(4, ItemType.Ring, .07),
+                new TierLoot(5, ItemType.Ring, .07)
+            ];
+        }
+
+        public static MobDrops[] StrongerDrop()
+        {
+            return
+            [
+                new TierLoot(11, ItemType.Weapon, .1),
+                new TierLoot(12, ItemType.Weapon, .05),
+                new TierLoot(5, ItemType.Ability, .1),
+                new TierLoot(6, ItemType.Ability, .05),
+                new TierLoot(12, ItemType.Armor, .1),
+                new TierLoot(13, ItemType.Armor, .05),
+                new TierLoot(5, ItemType.Ring, .1),
+                new TierLoot(6, ItemType.Ring, .05)
+            ];
+        }
+
+        public static MobDrops[] BasicPots()
+        {
+            return
+            [
+                new ItemLoot("Potion of Defense", .16),
+                new ItemLoot("Potion of Attack", .16),
+                new ItemLoot("Potion of Speed", .16),
+                new ItemLoot("Potion of Vitality", .16),
+                new ItemLoot("Potion of Wisdom", .16),
+                new ItemLoot("Potion of Dexterity", .16)
+            ];
+        }
+
+        public static MobDrops[] StrongerPots()
+        {
+            return
+            [
+                new ItemLoot("Potion of Defense", .2),
+                new ItemLoot("Potion of Attack", .2),
+                new ItemLoot("Potion of Speed", .2),
+                new ItemLoot("Potion of Vitality", .2),
+                new ItemLoot("Potion of Wisdom", .2),
+                new ItemLoot("Potion of Dexterity", .2),
+                new ItemLoot("Potion of Life", .2),
+                new ItemLoot("Potion of Mana", .2)
+            ];
+        }
     }
 
     public class Threshold : MobDrops
     {
         public Threshold(double threshold, params MobDrops[] children)
         {
+            foreach (var i in children)
+                i.Populate(LootDefs, new LootDef(null, -1, threshold));
+        }
+    }
+
+    public class SeasonalThreshold : MobDrops
+    {
+        public SeasonalThreshold(string time, double threshold, params MobDrops[] children)
+        {
+            switch (time)
+            {
+                case "winter":
+                    if (NexusWorld.GetCurrentMonth != 12 ||
+                        NexusWorld.GetCurrentMonth != 1) return;
+                    break;
+                case "summer":
+                    if (NexusWorld.GetCurrentMonth != 5 ||
+                        NexusWorld.GetCurrentMonth != 6 ||
+                        NexusWorld.GetCurrentMonth != 7) return;
+                    break;
+                //case "spring":
+                //case "fall":
+                default:
+                    return;
+            }
             foreach (var i in children)
                 i.Populate(LootDefs, new LootDef(null, -1, threshold));
         }

@@ -8,7 +8,6 @@ import kabam.rotmg.account.core.control.IsAccountRegisteredGuard;
 import kabam.rotmg.account.core.services.GetCharListTask;
 import kabam.rotmg.account.core.signals.UpdateAccountInfoSignal;
 import kabam.rotmg.account.web.WebAccountConfig;
-import kabam.rotmg.assets.task.GetServerXmlsTask;
 import kabam.rotmg.core.signals.TaskErrorSignal;
    import kabam.rotmg.ui.signals.BuyCharacterSlotSignal;
    import org.swiftsuspenders.Injector;

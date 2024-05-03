@@ -19,7 +19,6 @@ package kabam.rotmg.ui.view
    import flash.events.Event;
    import flash.geom.Point;
 
-import kabam.rotmg.assets.MinimapOverlay;
 import kabam.rotmg.game.view.components.TabStripView;
    import kabam.rotmg.messaging.impl.incoming.TradeAccepted;
    import kabam.rotmg.messaging.impl.incoming.TradeChanged;

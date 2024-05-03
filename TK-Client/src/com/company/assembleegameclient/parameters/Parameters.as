@@ -3,10 +3,7 @@ import com.company.util.KeyCodes;
 
 import flash.display.DisplayObject;
 import flash.events.Event;
-import flash.filesystem.File;
 import flash.net.SharedObject;
-import flash.net.URLRequest;
-import flash.net.navigateToURL;
 import flash.utils.Dictionary;
 
 public class Parameters {

@@ -24,8 +24,6 @@ import com.company.util.MoreColorUtil;
 import com.company.util.PointUtil;
 import com.company.util.Trig;
 
-import kabam.rotmg.PotionStorage.PotionStorageModal;
-
 import flash.display.BitmapData;
 import flash.display.GraphicsPath;
 import flash.display.GraphicsSolidFill;
@@ -48,6 +46,7 @@ import kabam.rotmg.game.model.PotionInventoryModel;
 import kabam.rotmg.game.signals.AddTextLineSignal;
 import kabam.rotmg.messaging.impl.data.TalismanData;
 import kabam.rotmg.stage3D.GraphicsFillExtra;
+import kabam.rotmg.storage.PotionStorageModal;
 import kabam.rotmg.ui.model.TabStripModel;
 
 import org.swiftsuspenders.Injector;
