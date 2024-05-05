@@ -6,6 +6,8 @@
 package com.company.assembleegameclient.objects
 {
 
+import com.company.assembleegameclient.ui.tooltip.TooltipHelper;
+
 import flash.utils.Dictionary;
 import com.company.assembleegameclient.objects.animation.AnimationsData;
 import kabam.rotmg.assets.EmbeddedData;
@@ -314,6 +316,16 @@ public class ObjectLibrary
         _local_6 = TextureRedrawer.resize(_local_6, _local_8, _arg_2, _arg_3, _local_10, _local_11, _arg_5);
         _local_6 = GlowRedrawer.outlineGlow(_local_6, 0);
         return (_local_6);
+    }
+
+    public static function isRare(_arg_1:int):Boolean {
+        var _local_2:XML = xmlLibrary_[_arg_1];
+        return (((!((_local_2 == null))) && (_local_2.hasOwnProperty("Rare"))));
+    }
+
+    public static function isLegendary(_arg_1:int):Boolean {
+        var _local_2:XML = xmlLibrary_[_arg_1];
+        return (((!((_local_2 == null))) && (_local_2.hasOwnProperty("Legendary"))));
     }
 
     public static function getSizeFromType(_arg_1:int):int

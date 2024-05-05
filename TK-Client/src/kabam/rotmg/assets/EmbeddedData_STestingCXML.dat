@@ -39,7 +39,7 @@
       <BagType>6</BagType>
       <FameBonus>8</FameBonus>
       <feedPower>1000</feedPower>
-      <Soulbound/>
+       
    </Object>
    <Object type="0x741a" id="atst Low Range Obj">
       <Enemy/>

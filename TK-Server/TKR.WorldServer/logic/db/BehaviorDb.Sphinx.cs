@@ -85,22 +85,10 @@ namespace TKR.WorldServer.logic
                         )
                     ),
                 new Threshold(0.005,
-                    new TierLoot(10, ItemType.Weapon, .07),
-                    new TierLoot(11, ItemType.Weapon, .07),
-                    new TierLoot(4, ItemType.Ability, .07),
-                    new TierLoot(5, ItemType.Ability, .07),
-                    new TierLoot(11, ItemType.Armor, .07),
-                    new TierLoot(12, ItemType.Armor, .07),
-                    new TierLoot(4, ItemType.Ring, .07),
-                    new TierLoot(5, ItemType.Ring, .07)
+                    LootTemplates.BasicDrop()
                     ),
                 new Threshold(0.005,
-                    new ItemLoot("Potion of Defense", .16),
-                    new ItemLoot("Potion of Attack", .16),
-                    new ItemLoot("Potion of Speed", .16),
-                    new ItemLoot("Potion of Vitality", .16),
-                    new ItemLoot("Potion of Wisdom", .16),
-                    new ItemLoot("Potion of Dexterity", .16)
+                    LootTemplates.BasicPots()
                     ),
                 new Threshold(0.03,
                     new ItemLoot("Helm of the Juggernaut", 0.0015)

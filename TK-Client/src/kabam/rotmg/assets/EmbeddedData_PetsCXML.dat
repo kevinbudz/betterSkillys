@@ -3326,7 +3326,7 @@
       <Description>Unlocks Marid Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="35234">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Marid Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -3366,7 +3366,7 @@
       <Description>Sprite Credits: MillSup\n\nUnlocks Sir Bagston Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="24836">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Bagston Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -3405,7 +3405,7 @@
       <Description>Unlocks Goldy Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="24839">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Goldy Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -3446,7 +3446,7 @@
       <Description>Unlocks Jaco Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="24842">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Jaco Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -3489,7 +3489,7 @@
       <Description>Unlocks Giant Vampire Bat Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32764">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Giant Vampire Bat Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -3535,7 +3535,7 @@
       <Description>Unlocks Pumpkin Head Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32652">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Pumpkin Head Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -3575,7 +3575,7 @@
       <Description>Unlocks Christmas Tree Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32669">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Christmas Tree Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -3615,7 +3615,7 @@
       <Description>Unlocks Red Nose Skin of the Woodland family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32671">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Red Nosed Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -3655,7 +3655,7 @@
       <Description>Unlocks Red Bagston Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32704">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Red Bagston Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -3695,7 +3695,7 @@
       <Description>Unlocks Helper Bagston Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32707">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Helper Bagston Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -3735,7 +3735,7 @@
       <Description>Unlocks Red Helper Bagston Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32710">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Red Helper Bagston Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -3777,7 +3777,7 @@
       <Description>Unlocks Muddy Tidechaser Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32717">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Muddy Tidechaser Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -3991,7 +3991,7 @@
       <Description>Unlocks Turtle Skin of the Aquatic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32813">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Turtle Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4007,7 +4007,7 @@
       <Description>Unlocks Peppermint Snail Skin of the Aquatic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32853">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Peppermint Snail Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4024,7 +4024,7 @@
       <Description>Unlocks Golden Crab Skin of the Aquatic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32886">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Golden Crab Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -4040,7 +4040,7 @@
       <Description>Unlocks Robobuddy Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32824">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Robobuddy Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4056,7 +4056,7 @@
       <Description>Unlocks Redbot Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32866">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Redbot Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4073,7 +4073,7 @@
       <Description>Unlocks Gutsbot Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32899">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Gutsbot Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -4089,7 +4089,7 @@
       <Description>Unlocks Cardinal Skin of the Avian family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32785">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Cardinal Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4105,7 +4105,7 @@
       <Description>Unlocks USA Eagle Skin of the Avian family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32834">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>USA Eagle Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4122,7 +4122,7 @@
       <Description>Unlocks Griffin Skin of the Avian family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32873">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Griffin Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -4138,7 +4138,7 @@
       <Description>Unlocks Sheepdog Skin of the Canine family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32779">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Sheepdog Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4154,7 +4154,7 @@
       <Description>Unlocks Gold Bulldog Skin of the Canine family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32831">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Gold Bulldog Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4171,7 +4171,7 @@
       <Description>Unlocks Golden Hyena Skin of the Canine family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32871">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Golden Hyena Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -4187,7 +4187,7 @@
       <Description>Unlocks Elephant Skin of the Exotic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32786">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Elephant Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4203,7 +4203,7 @@
       <Description>Unlocks Panda Skin of the Exotic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32836">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Panda Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4220,7 +4220,7 @@
       <Description>Unlocks King Gorilla Skin of the Exotic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32875">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>King Gorilla Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -4236,7 +4236,7 @@
       <Description>Unlocks Duck Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32791">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Duck Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4252,7 +4252,7 @@
       <Description>Unlocks Mallard Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32839">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Mallard Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4269,7 +4269,7 @@
       <Description>Unlocks Enraged Yak Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32876">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Enraged Yak Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -4285,7 +4285,7 @@
       <Description>Unlocks Tan Cat Skin of the Feline family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32771">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Tan Cat Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4301,7 +4301,7 @@
       <Description>Unlocks White Lion Skin of the Feline family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32827">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>White Lion Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4318,7 +4318,7 @@
       <Description>Unlocks Tiger Skin of the Feline family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32868">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Tiger Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -4334,7 +4334,7 @@
       <Description>Unlocks Leprechaun Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32859">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Leprechaun Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4350,7 +4350,7 @@
       <Description>Unlocks Red Ant Skin of the Insect family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32802">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Red Ant Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4366,7 +4366,7 @@
       <Description>Unlocks Bee Skin of the Insect family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32846">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Bee Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4383,7 +4383,7 @@
       <Description>Unlocks Beetleman Skin of the Insect family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32882">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Beetleman Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -4399,7 +4399,7 @@
       <Description>Unlocks Penguin Skin of the Penguin family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32804">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Penguin Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4415,7 +4415,7 @@
       <Description>Unlocks Karate Purple Skin of the Penguin family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32851">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Karate Purple Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4432,7 +4432,7 @@
       <Description>Unlocks Tank Penguin Skin of the Penguin family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32885">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Tank Penguin Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -4448,7 +4448,7 @@
       <Description>Unlocks Dino Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32795">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Dino Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4489,7 +4489,7 @@
       <Description>Unlocks Frilled Lizard Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6581">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -4505,7 +4505,7 @@
       <Description>Unlocks Poison Drake Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32881">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Poison Drake Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -4521,7 +4521,7 @@
       <Description>Unlocks Spirit Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32818">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Spirit Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4537,7 +4537,7 @@
       <Description>Unlocks Werewolf Cub Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32856">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Werewolf Cub Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4553,7 +4553,7 @@
       <Description>Unlocks Hamster Skin of the Woodland family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32793">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Hamster Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4569,7 +4569,7 @@
       <Description>Unlocks Snowy Owl Skin of the Woodland family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32842">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Snowy Owl Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4585,7 +4585,7 @@
       <Description>Unlocks Sprite Star Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32822">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Sprite Star Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4601,7 +4601,7 @@
       <Description>Unlocks Gummy Bear Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32863">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Gummy Bear Pet Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -4641,7 +4641,7 @@
       <Description>Celebrate the 2017 Lunar New Year Skin of the Rooster!\n\nSprite Credits: Beige\n\nUnlocks Fire Rooster Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6591">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -4680,7 +4680,7 @@
       <Description>Lucky you! You've been blessed by luck for the entire year of 2017!\n\nSprite Credits: Beige\n\nUnlocks Rooster of Good Fortune Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6594">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -4723,7 +4723,7 @@
       <Description>Smaller than his Western counterpart, but no less dangerous!\n\nSprite Credits: Beige\n\nUnlocks Mini Chinese Dragon Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6597">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -4762,7 +4762,7 @@
       <Description>Don't eat me! Don't eat me!\n\nSprite Credits: Nmin\n\nUnlocks Gingerbread Man Skin of the ???? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6600">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -4801,7 +4801,7 @@
       <Description>Little Polaris didn't want to become a boss like Papa Polaris.\n\nSprite Credits: Poshun\n\nUnlocks Mini Polaris Skin of the ???? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6603">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -4843,7 +4843,7 @@
       <Description>Unlocks Small Lantern Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6606">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Mini Paper Lantern Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -4887,7 +4887,7 @@
       <Description>Light it up and get ready for the festivities!\n\nSprite Credits: Beige\n\nUnlocks Paper Lantern Skin of the ???? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6609">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Paper Lantern Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -4931,7 +4931,7 @@
       <Description>Smaller than his Western counterpart, but no less dangerous!\n\nSprite Credits: Beige\n\nUnlocks Chinese Dragon Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6612">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Chinese Dragon Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -4971,7 +4971,7 @@
       <Description>Unlocks Desert Cobra Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6615">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5010,7 +5010,7 @@
       <Description>Boing Boing!\n\nSprite Credits: Beige\n\nUnlocks White Bounsheep Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="10913">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5049,7 +5049,7 @@
       <Description>Boing Boing!\n\nSprite Credits: Beige\n\nUnlocks Grey Bounsheep Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="10916">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5088,7 +5088,7 @@
       <Description>Boing Boing!\n\nSprite Credits: Beige\n\nUnlocks Brown Bounsheep Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="10919">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5128,7 +5128,7 @@
       <Description>Awe at its wondrous defense!\n\nSprite Credits: Poshun\n\nUnlocks Bes' Artifact Skin of the ???? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="10922">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5168,7 +5168,7 @@
       <Description>It shall destroy your foes from their soul to their flesh!\n\nSprite Credits: Poshun\n\nUnlocks Geb's Artifact Skin of the ???? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="10925">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5208,7 +5208,7 @@
       <Description>It shall make your foes' lethargic lives end much more swiftly!\n\nSprite Credits: Poshun\n\nUnlocks Nut's Artifact Skin of the ???? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="10928">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5248,7 +5248,7 @@
       <Description>You hide like cowards... But you can&#8217;t deny its cuteness!\n\nSprite Credits: Fishfishd\n\nUnlocks Mini Sphinx Skin of the ???? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19140">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5288,7 +5288,7 @@
       <Description>Call all your friends to help you pet this little steed!\n\nSprite Credits: Poshun\n\nUnlocks Mini Crystal Steed Skin of the ???? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19142">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5327,7 +5327,7 @@
       <Description>This little plant loves to chew on insects!\n\nSprite Credits: Kingged\n\nUnlocks Carnivorous Plant Skin of the ???? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19144">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5366,7 +5366,7 @@
       <Description>i'm a ppe btw lel xd\n\nUnlocks Knight Companion Skin of the ???? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19146">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5405,7 +5405,7 @@
       <Description>Bueno pa' gozar, Mulata.\n\nSprite Credits: Beige\n\nUnlocks Mr Cactus Jr. Skin of the ???? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19148">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5444,7 +5444,7 @@
       <Description>¡Oye Como Va, Mi ritmo!\n\nSprite Credits: Beige\n\nUnlocks Mr Cactus Skin of the ???? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19150">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5484,7 +5484,7 @@
       <Description>The smallest and fastest Limon alive!\n\nSprite Credits: Beige\n\nUnlocks Mini Limon Skin of the ???? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19383">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5528,7 +5528,7 @@
       <Description>Unlocks the Killer Bee Queen Skin of the Insect family, once the ruler of a mighty insect kingdom. \n \nThe skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="2223">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Killer Bee Queen Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -5568,7 +5568,7 @@
       <Description>Your very own angry Oryx Statue!\n\nSprite Credits: PoloKai\n\nUnlocks Mini Stone Oryx Skin of the ???? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19462">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5608,7 +5608,7 @@
       <Description>Friendship is magic, especially when your friend is a tiny unicorn!\n\nSprite Credits: Septr, Lovens\n\nUnlocks Mini Gigacorn Skin of the ???? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19465">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5648,7 +5648,7 @@
       <Description>Warning: too much sweetness!\n\nSprite Credits: Septr, Lovens\n\nUnlocks Mini Creampuff Skin of the ???? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19468">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5688,7 +5688,7 @@
       <Description>Grants you one wish, but be careful with what you wish for!\n\nSprite Credits: Septr, Lovens\n\nUnlocks Mini Desire Troll Skin of the ???? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19471">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5728,7 +5728,7 @@
       <Description>Your friendly fluffy neighbor.\n\nSprite Credits: Septr, Lovens\n\nUnlocks Mini Rototo Skin of the ???? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19474">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5767,7 +5767,7 @@
       <Description>Because snakes weren't terrifying enough without the ability to fly.\n\nSprite Credits: Poshun\n\nUnlocks Mini Flying Stheno Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19477">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5806,7 +5806,7 @@
       <Description>Whoa, dude! Check out this MAD wave! Cowabunga!\n\nSprite Credits: Poshun\n\nUnlocks Surfing Bro Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19480">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5845,7 +5845,7 @@
       <Description>Aye, let's be miserable together!\n\nSprite Credits: Bloodqwen, Poshun\n\nUnlocks Mini Ghost King Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19503">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5884,7 +5884,7 @@
       <Description>I do not think. I'm doing my job. I'm your brain. I'm your pet.\n\nSprite Credits: Bloodqwen\n\nUnlocks Robo Brain Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19506">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5923,7 +5923,7 @@
       <Description>Orange is the best color for true Drake Masters.\n\nSprite Credits: Lovens\n\nUnlocks Baby Orange Drake Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19509">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -5962,7 +5962,7 @@
       <Description>Yellow Drakes hold the power of the sun, so strong that it can hurt.\n\nSprite Credits: Lovens\n\nUnlocks Baby Yellow Drake Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19512">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6001,7 +6001,7 @@
       <Description>This majestic creature is ready to assist you in battle like in good old times.\n\nSprite Credits: Lovens\n\nUnlocks Baby White Drake Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19515">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6040,7 +6040,7 @@
       <Description>Once forgotten and lost in the ancient forests, Green Drakes returned to help players again.\n\nSprite Credits: Lovens\n\nUnlocks Baby Green Drake Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19518">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6080,7 +6080,7 @@
       <Description>This cute manatee is ready to shoot your enemies with 10 billion guns!\n\nSprite Credits: Lovens\n\nUnlocks Baby Leviathan Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19521">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6119,7 +6119,7 @@
       <Description>His ancestors were the first pets who were able to paralyze enemies.\n\nSprite Credits: Lovens\n\nUnlocks Baby Blue Drake Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19524">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6158,7 +6158,7 @@
       <Description>Everyone knows that Purple Drakes are better than purple bags!\n\nSprite Credits: Lovens\n\nUnlocks Baby Purple Drake Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19527">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6197,7 +6197,7 @@
       <Description>HP Please!\n\nSprite Credits: Spunjah, Lovens\n\nUnlocks HP Pot Pet Skin of the ???? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19534">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6236,7 +6236,7 @@
       <Description>MP Please!\n\nSprite Credits: Spunjah, Lovens\n\nUnlocks MP Pot Pet Skin of the ???? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19537">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6275,7 +6275,7 @@
       <Description>By far the most evil thing you will ever encounter.\n\nSprite Credits: Kingged\n\nUnlocks Crowned Penguin Skin of the Penguin family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19596">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6315,7 +6315,7 @@
       <Description>Minions, minions! Get back to your corners! Middle, middle! Damage the boss!\n\nSprite Credits: Poshun\n\nUnlocks Mini Void Entity Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19599">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6354,7 +6354,7 @@
       <Description>This little bot loves to slide around!\n\nSprite Credits: PoloKai\n\nUnlocks Hoverbot Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19602">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6393,7 +6393,7 @@
       <Description>He seems a bit ruff around the edges, but don't worry his bark is worse than his bite!\n\nSprite Credits: WunderWafe\n\nUnlocks Zombie Dog Skin of the Canine family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19605">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6432,7 +6432,7 @@
       <Description>This whale be the biggest catch yet!\n\nSprite Credits: Poshun\n\nUnlocks Green Whale Skin of the Aquatic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19608">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6471,7 +6471,7 @@
       <Description>Everyone hail to the Mad God's song!\n\nSprite Credits: Poshun\n\nUnlocks Pumpking's Head Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19611">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6510,7 +6510,7 @@
       <Description>His mane may be fluffy, but his tail stings like hell!\n\nSprite Credits: Phops\n\nUnlocks Manticore Skin of the Feline family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19626">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6549,7 +6549,7 @@
       <Description>When pigs fly! When pigs fly! Pigs already fly, what now?\n\nSprite Credits: Phops\n\nUnlocks Flying Pig Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19629">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6588,7 +6588,7 @@
       <Description>Two heads, twice as dangerous!\n\nSprite Credits: Phops\n\nUnlocks Double Viper Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19632">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6627,7 +6627,7 @@
       <Description>Legends say that staring into a hellhound's eyes three times or more will ensure a swift death.\n\nSprite Credits: Beige\n\nUnlocks Black Hellhound Skin of the Canine family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19635">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6666,7 +6666,7 @@
       <Description>Okay, who let Craig in the Chimera Laboratory again? What even is that thing?\n\nSprite Credits: Phops\n\nUnlocks Deerigator Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19638">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6705,7 +6705,7 @@
       <Description>Don't hurt the bunny, or you'll be in for a pounding!\n\nUnlocks Moon Bunny Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19641">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6744,7 +6744,7 @@
       <Description>Ah, fresh meat for my pumpkin!\n\nSprite Credits: Lovens\n\nUnlocks Hungry Pumpkin Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19644">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6783,7 +6783,7 @@
       <Description>Lil' Ghost's big brother.\n\nSprite Credits: Lovens\n\nUnlocks Evil Ghost Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19647">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6822,7 +6822,7 @@
       <Description>Are you lost? Boo!\n\nSprite Credits: Gpc\n\nUnlocks Spooky Boi Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19650">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6861,7 +6861,7 @@
       <Description>Your daily reminder about the most exciting moments of this game!\n\nSprite Credits: Raikovm\n\nUnlocks Walking Grave Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="19653">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6900,7 +6900,7 @@
       <Description>Rolling around, to the godland ground! Got levels to reach, gotta follow my fame train!\n\nSprite Credits: Poshun\n\nUnlocks Autumn Hedgehog Skin of the Woodland family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6054">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6942,7 +6942,7 @@
       <Description>Ghost Ship has entered your vault ...... in model size.\n\nSprite Credits: PoloKai\n\nUnlocks Mini Ghost Ship Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6057">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6983,7 +6983,7 @@
       <Description>The latest product from the Nexus Model Shop, it'll look great in your vault!\n\nSprite Credits: PoloKai\n\nUnlocks Mini Model Ship Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6066">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7022,7 +7022,7 @@
       <Description>This humanoid mech, modeled after a priest, was once quite a popular product, back when healing fountains in the Nexus didn't exist.\n\nSprite Credits: Poshun\n\nUnlocks Healbot Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6069">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7068,7 +7068,7 @@
       <Description>Sweet and deadly.\n\nSprite Credits: Lovens\n\nUnlocks Sugar Skull Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6072">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7114,7 +7114,7 @@
       <Description>No estaba muerto, andaba de parranda.\n\nSprite Credits: Lovens\n\nUnlocks Señor Skeleton Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6081">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7160,7 +7160,7 @@
       <Description>Cousin to the Flying Brain, he's got an eye on you!\n\nSprite Credits: WunderWafe\n\nUnlocks Flying Eyeball Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6084">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7199,7 +7199,7 @@
       <Description>After decades of being used for misdeeds, crafting harmful potions and dangerous spells, the witches brought the cauldron to life.\n\nSprite Credits: UIPY\n\nUnlocks Mini Cauldron Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6087">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7238,7 +7238,7 @@
       <Description>Nothing can beat this dead horse!\n\nSprite Credits: Dappertron\n\nUnlocks Doom's Steed Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6096">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7277,7 +7277,7 @@
       <Description>Never laugh at live dragons, especially if they're not.\n\nSprite Credits: Dappertron\n\nUnlocks Lichwyrm Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6099">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7316,7 +7316,7 @@
       <Description>After decades of being used for misdeeds, crafting harmful potions and dangerous spells, the witches brought the cauldron to life.\n\nSprite Credits: UIPY\n\nUnlocks Cauldron Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6102">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7355,7 +7355,7 @@
       <Description>"A hero is never truly happy until it is loved by a pet."\n\nSprite Credits: Squzavvvv\n\nUnlocks King Skin of the Toys Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="24603">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7394,7 +7394,7 @@
       <Description>How did this sea slurp manage to wear a hat, anyway?\n\nSprite Credits: Poshun\n\nUnlocks Festive Slurp Skin of the Aquatic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="24606">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7433,7 +7433,7 @@
       <Description>By far the cutest thing you will ever encounter.\n\nSprite Credits: Lovens\n\nUnlocks Holiday Penguin Skin of the Penguin family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="24610">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7472,7 +7472,7 @@
       <Description>A young elk in its prime!\n\nSprite Credits: WunderWafe\n\nUnlocks Young Elk Skin of the Woodland family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="24613">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7511,7 +7511,7 @@
       <Description>You have been very, very naughty indeed...\n\nSprite Credits: WunderWafe\n\nUnlocks Krampus Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="24616">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7550,7 +7550,7 @@
       <Description>Whoooa?! A M-m-monster?!\n\nSprite Credits: Ruandrs\n\nUnlocks Egg Monster Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="24649">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7589,7 +7589,7 @@
       <Description>Strut your stuff and shake your tail feathers!\n\nSprite Credits: Dappertron\n\nUnlocks Peacock Skin of the Avian family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="24652">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7628,7 +7628,7 @@
       <Description>Looks like this Mini Bot found a way to improve its mobility!\n\nSprite Credits: PoloKai\n\nUnlocks Tricycle Bot Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="24655">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7667,7 +7667,7 @@
       <Description>This incredibly fast gnome really loves candy!\n\nSprite Credits: Ruandrs\n\nUnlocks Mini Candy Gnome Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="24658">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7707,7 +7707,7 @@
       <Description>A small sample of a scary mummy!\n\nSprite Credits: Ruandrs\n\nUnlocks Lil' Mummy Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="24661">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7746,7 +7746,7 @@
       <Description>65 MYA. Never forget.\n\nSprite Credits: Phops\n\nUnlocks Parasaurolophus Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="24664">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7785,7 +7785,7 @@
       <Description>65 MYA. Never forget.\n\nSprite Credits: Phops\n\nUnlocks Lambeosaurus Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="24667">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7824,7 +7824,7 @@
       <Description>Anything for my queen.\n\nSprite Credits: Smoothos\n\nUnlocks Guiding Spirit Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="24690">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7863,7 +7863,7 @@
       <Description>Love is the only force capable of transforming an enemy into a friend.\n\nSprite Credits: Lovens\n\nUnlocks Red Heart Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="24724">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7902,7 +7902,7 @@
       <Description>Love is the only force capable of transforming an enemy into a friend.\n\nSprite Credits: Lovens\n\nUnlocks Pink Heart Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="24727">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7941,7 +7941,7 @@
       <Description>Trustful winged friend of many Greek gods. Even though he looks young, he can help you a lot!\n\nSprite Credits: Lovens\n\nUnlocks Mini Pegasus Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="24730">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7980,7 +7980,7 @@
       <Description>Never stop searching for your true love, even if you need to kiss a thousand frogs to find it!\n\nSprite Credits: Lovens\n\nUnlocks Prince Frog Skin of the Aquatic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="24733">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8019,7 +8019,7 @@
       <Description>Goes without a tank, but can make you super tanky if you feed it properly!\n\nSprite Credits: Lovens\n\nUnlocks Goldfish Skin of the Aquatic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="25094">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8058,7 +8058,7 @@
       <Description>Treat this pet with special love and care, it can't stand a betrayal.\n\nSprite Credits: Lovens\n\nUnlocks Lovebird Skin of the Avian family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="25088">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8098,7 +8098,7 @@
       <Description>\nUnlocks Rat Skin of the Woodland family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="25091">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8137,7 +8137,7 @@
       <Description>One flap of these wings can create a hurricane on the other side Skin of the world.\n\nSprite Credits: Phops\n\nUnlocks Giant Monarch Skin of the Insect family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="25097">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8176,7 +8176,7 @@
       <Description>There has never been a gooder boy in a thousand dynasties.\n\nSprite Credits: Dappertron\n\nUnlocks Zodiac Dog Skin of the Canine family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="25100">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8215,7 +8215,7 @@
       <Description>A giant plush dinosaur brought to life through nefarious rituals - also doubles as a beanbag chair!\n\nSprite Credits: Santeripe\n\nUnlocks Floomp Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9163">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8254,7 +8254,7 @@
       <Description>A mythical mammoth whose flame strikes fear into even the most stalwart armies - now, its will is your command.\n\nSprite Credits: Piggby\n\nUnlocks Vermilion Dragon Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9167">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8293,7 +8293,7 @@
       <Description>A magical golden statue of Capricorn, brought to life with divine Ambrosia.\n\nSprite Credits: Lovens\n\nUnlocks Golden Capricorn Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9171">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8332,7 +8332,7 @@
       <Description>A magical golden statue of Sagittarius, brought to life with divine Ambrosia.\n\nSprite Credits: Lovens\n\nUnlocks Golden Sagittarius Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9174">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8371,7 +8371,7 @@
       <Description>A magical golden statue of Aquarius, brought to life with divine Ambrosia.\n\nSprite Credits: Lovens\n\nUnlocks Golden Aquarius Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9177">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8410,7 +8410,7 @@
       <Description>This mythical beast is enchanted to survive both on land and in the ocean and will follow you around wherever you go.\n\nSprite Credits: Lovens\n\nUnlocks Capricorn Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9180">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8449,7 +8449,7 @@
       <Description>A traveller from places far beyond our imagination can reach, she can shoot that arrow so fast that it will reach the stars.\n\nSprite Credits: Lovens\n\nUnlocks Sagittarius Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9183">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8488,7 +8488,7 @@
       <Description>If there's magic in this realm, it's contained in water.\n\nSprite Credits: Lovens\n\nUnlocks Aquarius Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9187">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8527,7 +8527,7 @@
       <Description>It just can't stop bouncing!\n\nSprite Credits: Ruandrs\n\nUnlocks Bouncing Slime Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9190">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8566,7 +8566,7 @@
       <Description>Catch it before it runs away!\n\nSprite Credits: Lovens\n\nUnlocks Mini Pot Of Gold Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9193">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8605,7 +8605,7 @@
       <Description>You don't choose this hat, it chooses you.\n\nUnlocks Leprechaun's Walking Hat Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9196">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8644,7 +8644,7 @@
       <Description>Unfortunately, he doesn't make cat noises while he blazes off into the stars.\n\nSprite Credits: Poshun\n\nUnlocks Rainbow Rocketeer Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9199">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8683,7 +8683,7 @@
       <Description>Blue blue blue canary - tweet tweet tweet - the whole day long.\n\nSprite Credits: Lovens\n\nUnlocks Tuxedo Bird Skin of the Avian family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9252">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8722,7 +8722,7 @@
       <Description>How many shrimps do you have to eat before you make your skin turn pink?\n\nSprite Credits: Lovens\n\nUnlocks Flamingo Skin of the Exotic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9255">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8761,7 +8761,7 @@
       <Description>I was going to help you get loot, but you weren't heron time.\n\nSprite Credits: Lovens\n\nUnlocks Heron Skin of the Avian family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9258">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8800,7 +8800,7 @@
       <Description>Won't you pray to God for divine grace?\n\nSprite Credits: Nazoado\n\nUnlocks Angelic Drake Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9261">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8839,7 +8839,7 @@
       <Description>Why don't you trade with demons?\n\nSprite Credits: Nazoado\n\nUnlocks Demonic Drake Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9264">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8878,7 +8878,7 @@
       <Description>This vigilant guardian is powered by the stuff of stars, its blade ablaze with searing plasma.\n\nSprite Credits: Piggby\n\nUnlocks Fusion Golem Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9267">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8917,7 +8917,7 @@
       <Description>A docile creature that brings with it the light of a thousand suns.\n\nSprite Credits: Piggby\n\nUnlocks Vibrant Seadragon Skin of the Aquatic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9270">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8956,7 +8956,7 @@
       <Description>Coal-powered and a hundred times cooler than a regular spider.\n\nSprite Credits: Santeripe\n\nUnlocks Arthro-bot Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9273">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8995,7 +8995,7 @@
       <Description>While not nearly as buff as the real Biff, he's just as protective of his precious colored eggs.\n\nSprite Credits: Nazoado\n\nUnlocks Mini Biff Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9276">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9034,7 +9034,7 @@
       <Description>Tame it early and it won't join the evil chicken army!\n\nSprite Credits: Lovens\n\nUnlocks Newborn Chick Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9279">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9073,7 +9073,7 @@
       <Description>¡Ay, caramba!\n\nSprite Credits: Lovens\n\nUnlocks Amazon Skin of the Exotic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9282">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9112,7 +9112,7 @@
       <Description>He just can't stop raven.\n\nSprite Credits: Lovens\n\nUnlocks Party Crow Skin of the Avian family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9285">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9151,7 +9151,7 @@
       <Description>The Ambrosia it stores in its abdomen is used as fuel.\n\nSprite Credits: Santeripe\n\nUnlocks Honey-bot Ant Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9288">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9191,7 +9191,7 @@
       <Description>She is a great swimmer.\n\nSprite Credits: Poshun\n\nUnlocks Fountain Child Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9291">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9230,7 +9230,7 @@
       <Description>A distant relative Skin of the scorpion queens found on the shorelines.\n\nSprite Credits: Poshun\n\nUnlocks Desert Scorpion Skin of the Insect family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9294">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9269,7 +9269,7 @@
       <Description>Giant centipedes share their territories with spider queens. Despite its impressive length, it&#8217;s a nimble navigator... And can be highly venomous.\n\nSprite Credits: Poshun\n\nUnlocks Giant Centipede Skin of the Insect family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9297">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9308,7 +9308,7 @@
       <Description>A divine serpent that takes on a peaceful appearance with its beautiful silver scales and angelic wings. When threatened, its fangs are able to release a venom similar to that of a baneserpent.\n\nSprite Credits: Poshun\n\nUnlocks Silver Sky Serpent Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9300">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9347,7 +9347,7 @@
       <Description>Your very own portable lamp! Just watch out for its teeth.\n\nSprite Credits: Piggby\n\nUnlocks Twilight Angler Skin of the Aquatic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9305">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9386,7 +9386,7 @@
       <Description>Well, it looks like SOMEONE skipped leg day.\n\nSprite Credits: Piggby\n\nUnlocks Abyss Goliath Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9308">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9426,7 +9426,7 @@
       <Description>Kawaii horror Skin of the deep.\n\nSprite Credits: Santeripe\n\nUnlocks Axolotl Skin of the Exotic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="606">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9465,7 +9465,7 @@
       <Description>Don't crush ladybugs, they grant you fortune!\n\nSprite Credits: Nazoado\n\nUnlocks Ladybug Skin of the Insect family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="5886">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9504,7 +9504,7 @@
       <Description>One day a morpho, frolicking in the wind, came into my sight.\n\nSprite Credits: Nazoado\n\nUnlocks Morpho Skin of the Insect family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="28813">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9543,7 +9543,7 @@
       <Description>Does it seem to have poison...?\n\nSprite Credits: Nazoado\n\nUnlocks Zebra Spider Skin of the Insect family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="3686">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9583,7 +9583,7 @@
       <Description>Well, somewhat I feel evil somethings into this larva...\n\nSprite Credits: Nazoado\n\nUnlocks Violet Larva Skin of the Insect family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="3689">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9623,7 +9623,7 @@
       <Description>It munches leaves.\n\nSprite Credits: Nazoado\n\nUnlocks Verdant Larva Skin of the Insect family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="5883">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9662,7 +9662,7 @@
       <Description>\nSprite Credits: Uomo\n\nUnlocks Platypus Skin of the Aquatic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="3012">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9702,7 +9702,7 @@
       <Description>\nSprite Credits: Uomo\n\nUnlocks Seal Skin of the Aquatic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="3597">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9741,7 +9741,7 @@
       <Description>\nSprite Credits: Uomo\n\nUnlocks Warlus Skin of the Aquatic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="3015">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9781,7 +9781,7 @@
       <Description>\nSprite Credits: Uomo\n\nUnlocks Blue Jay Skin of the Avian family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="3515">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9820,7 +9820,7 @@
       <Description>\nSprite Credits: Uomo\n\nUnlocks Vulture Skin of the Avian family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="3518">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9859,7 +9859,7 @@
       <Description>\nSprite Credits: Uomo\n\nUnlocks Cockatoo Skin of the Avian family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="1900">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9898,7 +9898,7 @@
       <Description>\nSprite Credits: Uomo\n\nUnlocks Brown Bulldog Skin of the Canine family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="8593">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9937,7 +9937,7 @@
       <Description>\nSprite Credits: Uomo\n\nUnlocks White Bulldog Skin of the Canine family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="8596">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9976,7 +9976,7 @@
       <Description>\nSprite Credits: Uomo\n\nUnlocks Dingo Skin of the Canine family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="8599">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -10016,7 +10016,7 @@
       <Description>\nSprite Credits: Uomo\n\nUnlocks Kiwi Skin of the Exotic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="3660">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -10055,7 +10055,7 @@
       <Description>\nSprite Credits: Uomo\n\nUnlocks Red Parrot Skin of the Exotic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="8662">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -10094,7 +10094,7 @@
       <Description>\nSprite Credits: Uomo\n\nUnlocks Cow Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6075">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -10133,7 +10133,7 @@
       <Description>\nSprite Credits: Uomo\n\nUnlocks White Duck Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6078">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -10172,7 +10172,7 @@
       <Description>\nSprite Credits: Uomo\n\nUnlocks Cheetah Skin of the Feline family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="8709">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -10211,7 +10211,7 @@
       <Description>\nSprite Credits: Uomo\n\nUnlocks Jaguar Skin of the Feline family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="8712">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -10250,7 +10250,7 @@
       <Description>\nSprite Credits: Uomo\n\nUnlocks Little Tiger Skin of the Feline family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6091">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -10290,7 +10290,7 @@
       <Description>\nSprite Credits: Uomo\n\nUnlocks Worm Skin of the Insect family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6094">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -10329,7 +10329,7 @@
       <Description>\nSprite Credits: Uomo\n\nUnlocks Blue Butterfly Skin of the Insect family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="4091">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -10368,7 +10368,7 @@
       <Description>\nSprite Credits: Uomo\n\nUnlocks Pink Butterfly Skin of the Insect family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="4094">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -10407,7 +10407,7 @@
       <Description>\nSprite Credits: Uomo\n\nUnlocks Bear Skin of the Woodland family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6379">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -10446,7 +10446,7 @@
       <Description>\nSprite Credits: Uomo\n\nUnlocks Moose Skin of the Woodland family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6382">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -10485,7 +10485,7 @@
       <Description>There's a pig in my boot!\n\nSprite Credits: Santeripe\n\nUnlocks Pigboot Skin of the Woodland family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="2382">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -10524,7 +10524,7 @@
       <Description>Rolling rolling...\n\nSprite Credits: Nazoado\n\nUnlocks Pillbug Skin of the Insect family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="8389">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -10539,7 +10539,7 @@
       <Description>Unlocks Demon Frog Skin of the Aquatic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32852">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Demon Frog Skin</DisplayId>
       <feedPower>500</feedPower>
@@ -10556,7 +10556,7 @@
       <Description>Unlocks Pink Lion Skin of the Feline family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32869">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Pink Lion Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10573,7 +10573,7 @@
       <Description>Unlocks Midnight Wolf Skin of the Canine family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32870">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Midnight Wolf Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10590,7 +10590,7 @@
       <Description>Unlocks Phoenix Skin of the Avian family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32872">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Phoenix Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10607,7 +10607,7 @@
       <Description>Unlocks War Elephant Skin of the Exotic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32874">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>War Elephant Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10624,7 +10624,7 @@
       <Description>Unlocks Night Mare Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32877">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Night Mare Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10641,7 +10641,7 @@
       <Description>Unlocks Silver Doe Skin of the Woodland family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32878">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Silver Doe Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10658,7 +10658,7 @@
       <Description>Unlocks Solar Owl Skin of the Woodland family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32879">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Solar Owl Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10675,7 +10675,7 @@
       <Description>Unlocks Tandem Cobra Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32880">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Tandem Cobra Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10692,7 +10692,7 @@
       <Description>Unlocks Ultrawasp Skin of the Insect family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32883">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Ultrawasp Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10709,7 +10709,7 @@
       <Description>Unlocks Battle Penguin Skin of the Penguin family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32884">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Battle Penguin Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10726,7 +10726,7 @@
       <Description>Unlocks Great Shark Skin of the Aquatic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32887">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Great Shark Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10743,7 +10743,7 @@
       <Description>Unlocks Blue Landfish Skin of the Aquatic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32888">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Blue Landfish Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10760,7 +10760,7 @@
       <Description>Unlocks Glowing Skull Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32889">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Glowing Skull Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10777,7 +10777,7 @@
       <Description>Unlocks Monkey Head Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32890">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Monkey Head Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10794,7 +10794,7 @@
       <Description>Unlocks Reaper Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32891">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Reaper Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10811,7 +10811,7 @@
       <Description>Unlocks Battle God Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32892">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Battle God Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10828,7 +10828,7 @@
       <Description>Unlocks Centaur Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32893">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Centaur Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10845,7 +10845,7 @@
       <Description>Unlocks Forest Fairy Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32894">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Forest Fairy Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10862,7 +10862,7 @@
       <Description>Unlocks Lil' Oryx Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32900">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Lil' Oryx Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10879,7 +10879,7 @@
       <Description>Unlocks Shroom Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32895">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Shroom Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10896,7 +10896,7 @@
       <Description>Unlocks Great Jelly Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32896">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Great Jelly Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10913,7 +10913,7 @@
       <Description>Unlocks Spiderbot Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32897">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Spiderbot Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10930,7 +10930,7 @@
       <Description>Unlocks Cylindron Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32898">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <DisplayId>Cylindron Pet Skin</DisplayId>
       <feedPower>1000</feedPower>
@@ -10971,7 +10971,7 @@
       <Description>I have a lot of growing up to do!\n\nUnlocks Living Tree Skin of the Woodland family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="29345">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11011,7 +11011,7 @@
       <Description>Don't mistake me for a fluffy bunny - I'm a genuine Chilean Chinchilla...\n\nUnlocks Chinchilla Skin of the Exotic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="29348">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11051,7 +11051,7 @@
       <Description>Rook no further!\n\nSprite Credits: Tero\n\nUnlocks Golden Chess Piece Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="29351">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11092,7 +11092,7 @@
       <Description>Yes that's right, ALL the way down.\n\nSprite Credits: Dappertron\n\nUnlocks World Turtles Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="25609">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11132,7 +11132,7 @@
       <Description>Surprisingly buoyant, all things considered.\n\nSprite Credits: Dappertron\n\nUnlocks Skelly Penguin Skin of the Penguin family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="14096">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11173,7 +11173,7 @@
       <Description>"Nature's" "perfect" predator.\n\nSprite Credits: Dappertron\n\nUnlocks Reticulated Longuin Skin of the Penguin family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="14099">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11214,7 +11214,7 @@
       <Description>Gaze into the infinite pupil of space and time, and bear witness to my million trillion truths: a penguin did it.\n\nSprite Credits: Dappertron\n\nUnlocks Transcendent Penguin Skin of the Penguin family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="14102">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11259,7 +11259,7 @@
       <Description>Look to the skies, and behold a dream fulfilled.\n\nSprite Credits: Dappertron\n\nUnlocks Aeronautical Penguin Skin of the Penguin family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="14105">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11300,7 +11300,7 @@
       <Description>A strange slime which grows a violet flower on its head.\n\nSprite Credits: Nazoado\n\nUnlocks Sprout Slime Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="29354">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11340,7 +11340,7 @@
       <Description>Careful, it stings!\n\nSprite Credits: Lovens\n\nUnlocks Mini Medusa Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6705">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11380,7 +11380,7 @@
       <Description>Were you asking for three wishes? Heal, magic heal and electric it is!\n\nSprite Credits: Lovens\n\nUnlocks Mini Djinn Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6708">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11424,7 +11424,7 @@
       <Description>Rumors say his real name is Septagon Jr.\n\nSprite Credits: Lovens\n\nUnlocks Mini Ghost God Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6711">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11468,7 +11468,7 @@
       <Description>Two brains are better than one!\n\nSprite Credits: Lovens\n\nUnlocks Mini Flying Brain Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6714">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11512,7 +11512,7 @@
       <Description>Little brother is always watching you.\n\nSprite Credits: Lovens\n\nUnlocks Mini Beholder Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6717">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11556,7 +11556,7 @@
       <Description>I always knew all these sprite children were adopted!\n\nSprite Credits: Beige, Lovens\n\nUnlocks Mini Sprite God Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6720">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11596,7 +11596,7 @@
       <Description>Almost harmless, but likes to pretend being scary.\n\nSprite Credits: Lovens\n\nUnlocks Mini Ent God Skin of the Woodland family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6723">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11636,7 +11636,7 @@
       <Description>He likes to play with Undead Lair Slimes when he meets them.\n\nSprite Credits: Lovens\n\nUnlocks Mini Slime God Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6726">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11676,7 +11676,7 @@
       <Description>The naughtiest of all tiny gods!\n\nSprite Credits: Lovens\n\nUnlocks Mini White Demon Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="6729">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11716,7 +11716,7 @@
       <Description>Tasteful outlandish pet but rarely shield. Protection crystals and guardians not included.\n\nSprite Credits: BlueHunt\n\nUnlocks Mini Lord Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="23309">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11757,7 +11757,7 @@
       <Description>This sentient tornado has somehow taken a liking to you. Caution: Do NOT let it into your bedroom.\n\nSprite Credits: Xers\n\nUnlocks Mini Tornado Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="23312">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11797,7 +11797,7 @@
       <Description>One little toy I found during my adventures, now I need to find its owner.\n\nUnlocks Wooden Burrito Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="23315">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11837,7 +11837,7 @@
       <Description>The sapphire dragon, as deadly as its predecessor.\n\nSprite Credits: Voltium\n\nUnlocks Mini Nikao Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="23318">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11877,7 +11877,7 @@
       <Description>I might be tiny, but I'm as deadly as they come!\n\nSprite Credits: Wetx\n\nUnlocks Lil' Davy Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="23321">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11922,7 +11922,7 @@
       <Description>A floating tiki mask that makes a strange, unintelligible sound whenever you equip him. No, getting three of these will not make you invincible.\n\nUnlocks Good Mask Spirit Skin of the Exotic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="15712">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -11967,7 +11967,7 @@
       <Description>Game... over...\n\nUnlocks Evil Mask Spirit Skin of the Exotic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="15715">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12007,7 +12007,7 @@
       <Description>You become responsible, forever, for what you have tamed.\n\nSprite Credits: Lovens\n\nUnlocks Little Fox Skin of the Canine family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9741">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12047,7 +12047,7 @@
       <Description>Comes with a free pint of beer!\n\nSprite Credits: Lovens\n\nUnlocks Mini Beer God Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9744">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12088,7 +12088,7 @@
       <Description>A fossil of an extinct race of prehistoric predators, reanimated through means of metal and wires.\n\nSprite Credits: Piggby\n\nUnlocks Titanium Rex Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9747">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12129,7 +12129,7 @@
       <Description>The red teddy bear of the east, ready to play with its new chewtoys: the minions of Oryx.\n\nSprite Credits: Piggby\n\nUnlocks Red Panda Skin of the Exotic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9750">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12170,7 +12170,7 @@
       <Description>These primal behemoths of legend are believed to have shaped the mountains of Earth. They are known as harbingers of earthquakes, ancient as the Earth itself.\n\nSprite Credits: Piggby\n\nUnlocks Gargantua Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="9753">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12210,7 +12210,7 @@
       <Description>I bring you good fortune, adventurer!\n\nUnlocks Maneki-neko Skin of the Feline family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="23324">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12251,7 +12251,7 @@
       <Description>An ancient being that quite enjoys the fall, hence retains an orange foliage year round in spirit of it all...\n\nSprite Credits: Trensient\n\nUnlocks Autumn Ent Skin of the Woodland family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="32515">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12292,7 +12292,7 @@
       <Description>Note: Anatomy not accurate to life.\n\nSprite Credits: Piggby\n\nUnlocks Ivory Narwhal Skin of the Aquatic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30059">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12333,7 +12333,7 @@
       <Description>A brutish orc clad in a full suit of armor, it&#8217;s not advised to be on the other side of this creature&#8217;s fist.\n\nSprite Credits: Trensient\n\nUnlocks Armored Orc Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30062">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12374,7 +12374,7 @@
       <Description>When I said I wanted a "clean sweep against Oryx," this isn't exactly what I had in mind.\n\nSprite Credits: Dappertron\n\nUnlocks Enchanted Broom Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30065">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12415,7 +12415,7 @@
       <Description>Once human, this insatiable creature is cursed with the gluttonous taboo of cannibalism. It endlessly lurks the wintry forest, hungering for the flesh of monsters.\n\nSprite Credits: Piggby\n\nUnlocks Hollow Wendigo Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30068">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12459,7 +12459,7 @@
       <Description>Customize your pet with this orient bird costume!\n\nSprite Credits: Nazoado\n\nUnlocks Tree Sparrow Skin of the Avian family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30071">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12503,7 +12503,7 @@
       <Description>Customize your pet with this cutie-eyed bird costume!\n\nSprite Credits: Nazoado\n\nUnlocks White Eyed Skin of the Avian family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30074">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12544,7 +12544,7 @@
       <Description>No matter how far away you are, I will catch your scent, find you and tear you to pieces!\n\nUnlocks Polar Bear Skin of the Exotic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30077">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12585,7 +12585,7 @@
       <Description>A distant cousin of the Cookie Monster, he often looks for frosted cookies around the Nexus.\n\nUnlocks Snow Monster Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30080">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12629,7 +12629,7 @@
       <Description>Customize your pet with this bird costume! Let it fly like snow fairy!\n\nSprite Credits: Nazoado\n\nUnlocks Longtailed Tit Skin of the Avian family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30083">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12670,7 +12670,7 @@
       <Description>It burns with the resolve of the fallen heroes of the nexus.\n\nSprite Credits: Aurum\n\nUnlocks Searing Soul Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30086">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12711,7 +12711,7 @@
       <Description>Limited Edition! Only obtainable during Lunar New Year 2019!\n\nUnlocks Zodiac Pig Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30089">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12752,7 +12752,7 @@
       <Description>Sharp-beaked, long-necked, pearly white-feathered looking for a mate for life.\n\nUnlocks Swan Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30103">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12792,7 +12792,7 @@
       <Description>The bunny doesn't grant you wealth, but heals your mind.\n\nSprite Credits: Nazoado\n\nUnlocks Green Hat Bunny Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30106">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12833,7 +12833,7 @@
       <Description>Best known for its three r's: Reading, Writing, and Ripping apart books.\n\nSprite Credits: Dappertron\n\nUnlocks Cultured Bookwyrm Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30109">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -12873,7 +12873,7 @@
       <Description>\nSprite Credits: Aurum\n\nUnlocks Mini Whale Skin of the Aquatic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30112">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12914,7 +12914,7 @@
       <Description>A menacing, but well-meaning spirit seeking to guide you in battle.\n\nSprite Credits: Aurum\n\nUnlocks Champion Spirit Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30115">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12955,7 +12955,7 @@
       <Description>An enraged phantom that reluctantly aides whoever it is bound to.\n\nSprite Credits: Aurum\n\nUnlocks Vicious Phantom Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30118">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -12996,7 +12996,7 @@
       <Description>All toasters toast toast!\n\nSprite Credits: Aurum\n\nUnlocks Toaster Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30121">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -13037,7 +13037,7 @@
       <Description>During the era where mages experimented with polymorphy (the very magic that turns Oryx into a chicken annually), one of the spells backfired, transforming a nearby warrior into a duck. Even with the mental capacity of a goose, the former warrior still remains loyal to the Nexus.\n\nSprite Credits: Trensient\n\nUnlocks Warrior Duck Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30124">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -13078,7 +13078,7 @@
       <Description>Unlocks Infested Bagston Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30127">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -13119,7 +13119,7 @@
       <Description>Few knew of the existence of this serpent. It was said to have burrowed its way to the caverns below, forever changed by the crystals within.\n\nSprite Credits: Aurum\n\nUnlocks Crystal Cobra Skin of the Reptile family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30130">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -13160,7 +13160,7 @@
       <Description>An old lantern said to harbor the lost souls of Daichi's followers.\n\nSprite Credits: Aurum\n\nUnlocks Possessed Lantern Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30133">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -13201,7 +13201,7 @@
       <Description>A mysterious vehicle recovered from the wild forests of Malogia.\n\nSprite Credits: Aurum\n\nUnlocks Malogian Saucer Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30136">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -13242,7 +13242,7 @@
       <Description>A mysterious vehicle recovered from the frigid tundra of Untaris.\n\nSprite Credits: Aurum\n\nUnlocks Untarian Saucer Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30139">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -13283,7 +13283,7 @@
       <Description>A mysterious vehicle recovered from the volatile rivers of Forax.\n\nSprite Credits: Aurum\n\nUnlocks Foraxian Saucer Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30142">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -13324,7 +13324,7 @@
       <Description>A mysterious vehicle recovered from the dunes of Katalund.\n\nSprite Credits: Aurum\n\nUnlocks Katalonian Saucer Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30145">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -13365,7 +13365,7 @@
       <Description>Chill, dude!\n\nSprite Credits: Artauris\n\nUnlocks Chill Chickey Skin of the Avian family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30148">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -13405,7 +13405,7 @@
       <Description>Hailing from a land beyond the realm, this curious fellow is determined to become the best knight there ever was, is and will be.\n\nSprite Credits: Santeripe\n\nUnlocks Sir Wumple Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30151">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -13445,7 +13445,7 @@
       <Description>Known for its loyalty and fidelity, this good boy will always be waiting for your return. Such patience, much love.\n\nSprite Credits: Mizumi\n\nUnlocks Shiba Inu Skin of the Canine family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30154">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -13486,7 +13486,7 @@
       <Description>See you in last place.\n\nSprite Credits: Aurum\n\nUnlocks Blue Turtle Shell Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30157">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -13526,7 +13526,7 @@
       <Description>It might not be as accurate as the others, but it gets the job done.\n\nSprite Credits: Aurum\n\nUnlocks Green Turtle Shell Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30160">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -13566,7 +13566,7 @@
       <Description>Good luck avoiding this; you're going to need it!\n\nSprite Credits: Aurum\n\nUnlocks Red Turtle Shell Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30163">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -13607,7 +13607,7 @@
       <Description>All of the muscle of a war elephant, with none of the muscle!\n\nSprite Credits: Dappertron\n\nUnlocks Skelephant Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30166">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -13648,7 +13648,7 @@
       <Description>Care for a spot of something resembling tea?\n\nSprite Credits: Dappertron\n\nUnlocks Phantom Tea Set Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30169">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -13689,7 +13689,7 @@
       <Description>AvERT yOUR atTenTiON TO thIS UNwARY wREtch. stArE deeP into iTS eYES, i beG YOU.\n\nSprite Credits: Dappertron\n\nUnlocks Fool's Penguin Skin of the Penguin family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30172">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -13730,7 +13730,7 @@
       <Description>This time I will survive.\n\nSprite Credits: Artauris\n\nUnlocks Phantom Ghost Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30175">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -13770,7 +13770,7 @@
       <Description>%$#!==%.\n\nSprite Credits: Artauris\n\nUnlocks UFO Bot Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30178">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -13811,7 +13811,7 @@
       <Description>I'll waddle back.\n\nSprite Credits: CrystalPX\n\nUnlocks Cyberpenguin Skin of the Penguin family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30181">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -13852,7 +13852,7 @@
       <Description>Pumpkins scream in the dead of night!\n\nSprite Credits: BLOODQWEN\n\nUnlocks Blue Flaming Pumpkin Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30184">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -13893,7 +13893,7 @@
       <Description>If you're brave enough, I'll show you the right way, Realmer!\n\nSprite Credits: BLOODQWEN\n\nUnlocks Orange Flaming Pumpkin Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30187">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -13933,7 +13933,7 @@
       <Description>And they said penguins can't fly... look at me now, you fools!\n\nSprite Credits: Lily\n\nUnlocks Flying Penguin Skin of the Penguin family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30190">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -13974,7 +13974,7 @@
       <Description>It would warm you up.\n\nSprite Credits: Nazoado\n\nUnlocks Fire Spirit Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30193">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14015,7 +14015,7 @@
       <Description>How about this mud clump as a flower pot?\n\nSprite Credits: Nazoado\n\nUnlocks Earth Spirit Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30196">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14056,7 +14056,7 @@
       <Description>What a silly face and big mouth.\n\nSprite Credits: Nazoado\n\nUnlocks Water Spirit Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30199">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14097,7 +14097,7 @@
       <Description>Into the mountains we go!\n\nSprite Credits: CrystalPX\n\nUnlocks Santa's Penguin Skin of the Penguin family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30202">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14138,7 +14138,7 @@
       <Description>This auroral sprite may grant you the brilliant future!\n\nSprite Credits: Nazoado\n\nUnlocks Auroral Sprite God Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30208">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14179,7 +14179,7 @@
       <Description>A legendary blade once belonging to a great hero. It has long since been corrupted by those using it for less than virtuous actions.\n\nSprite Credits: Aurum\n\nUnlocks Cursed Blade Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30211">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14219,7 +14219,7 @@
       <Description>Calling something a mini colossus is about as contradictory as a lava fissure surrounded by snow. What's really puzzling is that both of those exist.\n\nSprite Credits: Sturky\n\nUnlocks Mini Marble Colossus Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30214">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14260,7 +14260,7 @@
       <Description>This king of forest has a mild nature despite its gigantic physique. But it is said that no one stands a chance once it loses its temper.\n\nSprite Credits: Beige\n\nUnlocks Majestic Moose Skin of the Woodland family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30217">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14301,7 +14301,7 @@
       <Description>Who the hell doesn't wear pants during winter?\n\nSprite Credits: CrystalPX\n\nUnlocks Winter Guide Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30220">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14342,7 +14342,7 @@
       <Description>Crackle, crackle.\n\nSprite Credits: Nazoado\n\nUnlocks Air Spirit Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30223">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14383,7 +14383,7 @@
       <Description>One of sneakiest creatures, the rat can also outsmart even the most cunning of beings, taking its rightful place at the top of the zodiac.\n\nSprite Credits: Xagomuleto\n\nUnlocks Zodiac Rat Skin of the Farm family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30226">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14424,7 +14424,7 @@
       <Description>A brilliant, enchanted blade that shines even during the darkest of times.\n\nSprite Credits: Aurum\n\nUnlocks Blessed Blade Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30229">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14464,7 +14464,7 @@
       <Description>Did you hear about that awesome snowman party at the beach? Well, it didn't last very long.\n\nSprite Credits: Lily\n\nUnlocks Suntanned Snowman Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30232">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14505,7 +14505,7 @@
       <Description>Not to be confused with the Pet Wardrobe.\n\nSprite Credits: Lily\n\nUnlocks Pet Wardrobe Skin of the Spooky family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30235">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14546,7 +14546,7 @@
       <Description>Its steampunk look mixed with futuristic weaponry agitates enemies.\n\nSprite Credits: Kuro\n\nUnlocks Compact Enforcer Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30238">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14587,7 +14587,7 @@
       <Description>A long, furry friend who likes walking.\n\nSprite Credits: Tyii\n\nUnlocks Ferret Skin of the Woodland family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30241">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14628,7 +14628,7 @@
       <Description>Grub, a companion who loves helping and carrying your items.\n\nSprite Credits: Pitsdusth\n\nUnlocks Grub Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30244">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14673,7 +14673,7 @@
       <Description>A guardian looking over Realm protecting the fallen ones.\n\nSprite Credits: Deankill\n\nUnlocks Ascended Guardian Skin of the Penguin family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30247">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14714,7 +14714,7 @@
       <Description>You&#8217;ll never be lonely with a pirouetting, high-kicking ballerina music box!\n\nSprite Credits: Barzona\n\nUnlocks Music Box Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30250">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14755,7 +14755,7 @@
       <Description>These wretched hounds occasionally escape the Void to stalk powerful adventurers from the shadows, patiently awaiting the opportunity to rip their prey to shreds, and feed their souls to the Void Entity.\n\nSprite Credits: UltraUncle\n\nUnlocks Void Hound Skin of the Canine family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30253">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14796,7 +14796,7 @@
       <Description>This one isn't really like the others.\n\nSprite Credits: CrystalPX\n\nUnlocks Autumn Guide Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30256">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14837,7 +14837,7 @@
       <Description>Damn phone boxes!\n\nSprite Credits: CrystalPX\n\nUnlocks Time Traveling Phonebox Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30259">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14878,7 +14878,7 @@
       <Description>I bringeth forth the summer.\n\nSprite Credits: CrystalPX\n\nUnlocks Summer Guide Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30262">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14919,7 +14919,7 @@
       <Description>The last guard of the old fortress of peace.\n\nSprite Credits: Aurusenth\n\nUnlocks Old Nexus Orc Skin of the Humanoid family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30265">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14959,7 +14959,7 @@
       <Description>This little guy may not look it, but its got some of the best manufacturing you'll ever see! Though it's too bad the realm doesn't have any television stations.\n\nSprite Credits: Sturky\n\nUnlocks TV Buddy Skin of the ? ? ? ? family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30268">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -14999,7 +14999,7 @@
       <Description>A demon trapped inside a winged cat. Fits well together with the Apprentice Wizard.\n\nSprite Credits: Magycyan\n\nUnlocks Demon Cat Skin of the Feline family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30271">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -15039,7 +15039,7 @@
       <Description>The true master of the house.\n\nSprite Credits: Mizumi\n\nUnlocks House Cat Skin of the Feline family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30274">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -15079,7 +15079,7 @@
       <Description>He'll stay by your side in even the heaviest of blizzards.\n\nSprite Credits: Zquidx\n\nUnlocks Husky Skin of the Canine family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30277">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -15120,7 +15120,7 @@
       <Description>Searching for entities... ENEMIES DETECTED!\n\nSprite Credits: Nazoado\n\nUnlocks Floating Eye Bot Skin of the Automaton family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30280">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -15161,7 +15161,7 @@
       <Description>This elegant creature is rumoured to break the surface of the ocean once every 100 years, bringing hope to a captain lost at sea.\n\nSprite Credits: Zquidx\n\nUnlocks Enchanted Sea Turtle Skin of the Aquatic family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30283">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -15202,7 +15202,7 @@
       <Description>You found ground fissures? Maybe there's a dangerous string monster in the ground.\n\nSprite Credits: Nazoado\n\nUnlocks Giant Worm Skin of the Insect family. The skin will be added to your Pet Wardrobe in the Pet Yard and can be used to change the appearance of your pet!</Description>
       <Activate skinType="30286">UnlockPetSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>

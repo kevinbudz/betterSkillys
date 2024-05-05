@@ -441,7 +441,7 @@
       <ArcGap>40</ArcGap>
       <OldSound>bladeSwing</OldSound>
       <feedPower>800</feedPower>
-      <Soulbound/>
+       
    </Object>
    <Object type="0x0908" id="Malphas Protector">
       <Group>Demons</Group>

@@ -35,7 +35,7 @@ public class EquipmentToolTip extends ToolTip
       private var icon_:Bitmap;
       private var titleText_:SimpleText;
       private var tierText_:UILabel;
-      private var itemEffectText_:SimpleText;
+      private var rarityText_:SimpleText;
       private var descText_:SimpleText;
       private var passiveDescText_:SimpleText;
       private var line1_:LineBreakDesign;
@@ -121,6 +121,75 @@ public class EquipmentToolTip extends ToolTip
          this.makeLineTwo();
          this.makeRestrictionList();
          this.makeRestrictionText();
+         this.makeRarityText();
+      }
+
+      private function makeRarityText():void {
+         var color:int = 0;
+         var isRare:Boolean = this.objectXML_.hasOwnProperty("Rare");
+         var isLegendary:Boolean = this.objectXML_.hasOwnProperty("Legendary");
+         var isWinter:Boolean = this.objectXML_.hasOwnProperty("Winter");
+         var isSpring:Boolean = this.objectXML_.hasOwnProperty("Spring");
+         var isSummer:Boolean = this.objectXML_.hasOwnProperty("Summer");
+         var isFall:Boolean = this.objectXML_.hasOwnProperty("Fall");
+         var isSet:Boolean = this.objectXML_.hasOwnProperty("@setType");
+
+         this.rarityText_ = new SimpleText(12, color, false, MAX_WIDTH);
+         this.rarityText_.setBold(true);
+         this.rarityText_.wordWrap = true;
+         this.rarityText_.visible = false;
+         if (isRare)
+         {
+            this.rarityText_.text = "Rare Item.";
+            this.rarityText_.setColor(TooltipHelper.RARE_COLOR);
+            this.rarityText_.visible = true;
+         }
+         if (isLegendary)
+         {
+            this.rarityText_.text = "Legendary Item!";
+            this.rarityText_.setColor(TooltipHelper.LEGENDARY_COLOR);
+            this.rarityText_.visible = true;
+         }
+         if (isWinter)
+         {
+            this.rarityText_.text = "This item is a Winter re-skin.";
+            this.rarityText_.setColor(TooltipHelper.WINTER_COLOR);
+            this.rarityText_.visible = true;
+         }
+         if (isSpring)
+         {
+            this.rarityText_.text = "This item is a Spring re-skin.";
+            this.rarityText_.setColor(TooltipHelper.SPRING_COLOR);
+            this.rarityText_.visible = true;
+         }
+         if (isSummer)
+         {
+            this.rarityText_.text = "This item is a Summer re-skin.";
+            this.rarityText_.setColor(TooltipHelper.SUMMER_COLOR);
+            this.rarityText_.visible = true;
+         }
+         if (isFall)
+         {
+            this.rarityText_.text = "This item is an Autumn re-skin.";
+            this.rarityText_.setColor(TooltipHelper.FALL_COLOR);
+            this.rarityText_.visible = true;
+         }
+         if (isSet)
+         {
+            this.rarityText_.text = "Apart of the '" + this.props_.setName_ + "'.";
+            this.rarityText_.setColor(TooltipHelper.SET_COLOR);
+            this.rarityText_.visible = true;
+         }
+
+         switch (Parameters.data_.itemDataOutlines) {
+            case 0:
+               this.rarityText_.filters = FilterUtil.getTextOutlineFilter();
+               break;
+            case 1:
+               this.rarityText_.filters = [new DropShadowFilter(0, 0, 0, 0.5, 12, 12)];
+         }
+         addChild(this.rarityText_);
+
       }
 
       private function addRateOfFire() : void {
@@ -221,27 +290,6 @@ public class EquipmentToolTip extends ToolTip
            }
            this.repeat++;
        }
-      /*private function addTierText() : void
-      {
-         this.tierText_ = new SimpleText(16,16777215,false,30,0);
-         this.titleText_.setBold(true);
-         this.tierText_.y = this.icon_.height / 2 - this.titleText_.actualHeight_ / 2;
-         this.tierText_.x = MAX_WIDTH - 30;
-         if(!this.objectXML_.hasOwnProperty("Consumable") && !this.isPet())
-         {
-            if(this.objectXML_.hasOwnProperty("Tier"))
-            {
-               this.tierText_.text = "T" + this.objectXML_.Tier;
-            }
-            else
-            {
-               this.tierText_.setColor(9055202);
-               this.tierText_.text = "UT";
-            }
-            this.tierText_.updateMetrics();
-            addChild(this.tierText_);
-         }
-      }*/
 
       private function isPet() : Boolean
       {
@@ -619,11 +667,11 @@ public class EquipmentToolTip extends ToolTip
                this.powerText.y = _local1;
             }
          }*/
-         if (this.itemEffectText_) {
-            if (contains(this.itemEffectText_)) {
-               this.itemEffectText_.x = 4;
-               this.itemEffectText_.y = _local1;
-               this.itemEffectText_.useTextDimensions();
+         if (this.rarityText_) {
+            if (this.rarityText_.visible == true) {
+               this.rarityText_.x = 4;
+               this.rarityText_.y = _local1 - 2;
+               this.rarityText_.useTextDimensions();
             }
          }
       }

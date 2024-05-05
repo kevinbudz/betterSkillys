@@ -5990,7 +5990,7 @@
       <Description>A key which opens an entrance to Oryx's Sanctuary. For testing purposes.\n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
       <InvUse/>
-      <Soulbound/>
+      
       <Activate id="Oryx Sanctuary Portal" cooldown="30">CreatePortal</Activate>
       <feedPower>200</feedPower>
       <BagType>7</BagType>

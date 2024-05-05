@@ -48,6 +48,7 @@ public class ObjectProperties
    public var projectiles_:Dictionary = new Dictionary();
    public var angleCorrection_:Number = 0;
    public var rotation_:Number = 0;
+   public var setName_:String;
    public var isQuest_:Boolean = false;
    public var isChest_:Boolean = false;
 
@@ -83,6 +84,10 @@ public class ObjectProperties
       this.noMiniMap_ = _arg_1.hasOwnProperty("NoMiniMap");
       this.isChest_ = _arg_1.hasOwnProperty("Chest");
       this.isQuest_ = _arg_1.hasOwnProperty("Quest");
+      if (_arg_1.hasOwnProperty("@setType"))
+      {
+         this.setName_ = _arg_1.attribute("setName");
+      }
       if (_arg_1.hasOwnProperty("HealthBar"))
       {
          this.healthBar_ = _arg_1.HealthBar;

@@ -2146,7 +2146,7 @@
       <Description>A key which opens a portal to the Ivory Wyvern.</Description>
       <Sound>use_key</Sound>
       <Consumable/>
-      <Soulbound/>
+       
       <Activate id="Ivory Wyvern Portal">Create</Activate>
       <feedPower>100</feedPower>
    </Object>

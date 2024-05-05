@@ -397,31 +397,29 @@ namespace TKR.WorldServer.core.worlds
             if (eventDead.Name.Contains("Pentaract"))
                 dmgPercentage = (float)Math.Round(dmgPercentage / 5, 0);
 
-            var sb = new StringBuilder($"MVP goes to {mvp.Name} for doing {dmgPercentage}% damage to {name}");
+            var sb = new StringBuilder($"{mvp.Name} dealt {dmgPercentage}% damage to {name}");
             if (playerCount > 1)
             {
                 var playerAssist = playerCount - 1;
                 if (playerAssist == 1)
-                    _ = sb.Append(" one other person helping");
+                    _ = sb.Append(" with one other person helping");
                 else
                     _ = sb.Append($" with {playerAssist} people helping");
             }
             else
                 _ = sb.Append(" solo");
             _ = sb.Append("!");
-
             var text = new Text()
             {
                 BubbleTime = 0,
                 NumStars = -1,
-                Name = "Oryx the Mad Gad",
+                Name = "Oryx the Mad God",
                 Txt = sb.ToString(),
                 TextColor = 0xFFFFFF,
                 NameColor = 0xFF681F
             };
             World.Broadcast(text);
         }
-
         public void CountingEvents(string eventDead)
         {
             if (DisableSpawning)
@@ -431,10 +429,10 @@ namespace TKR.WorldServer.core.worlds
             _EventCount++;
             World.ForeachPlayer(player =>
             {
-                player.SendInfo($"({_EventCount}/40) {eventDead} has been defeated!");
+                player.SendInfo($"<Realm> {eventDead} has been defeated! [{_EventCount}/25]");
             });
 
-            if (_EventCount == 40)
+            if (_EventCount == 25)
                 _ = World.CloseRealm();
         }
 

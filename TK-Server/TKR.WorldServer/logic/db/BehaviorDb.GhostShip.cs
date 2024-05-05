@@ -235,16 +235,11 @@ namespace TKR.WorldServer.logic
             new Threshold(0.01,
                 new ItemLoot("Trap of the Vile Spirit", 0.001)
                 ),
-            new Threshold(0.001,
-                new TierLoot(4, ItemType.Ability, 0.07),
-                new TierLoot(10, ItemType.Armor, 0.12),
-                new TierLoot(11, ItemType.Armor, 0.09),
-                new TierLoot(10, ItemType.Weapon, 0.12),
-                new TierLoot(4, ItemType.Ring, 0.07),
-                new ItemLoot("Potion of Defense", 1),
-                new ItemLoot("Potion of Wisdom", 1),
-                new ItemLoot("Potion of Defense", 1),
-                new ItemLoot("Potion of Wisdom", 1)
+            new Threshold(.005,
+                LootTemplates.BasicDrop()
+                ),
+            new Threshold(.005,
+                LootTemplates.BasicPots()
                 )
             )
 

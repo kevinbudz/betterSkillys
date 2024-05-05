@@ -32,7 +32,7 @@
       <SlotType>10</SlotType>
       <Description>A key which opens an entrance to Guild Hall. For testing purposes.</Description>
       <Sound>use_key</Sound>
-      <Soulbound/>
+       
       <Activate id="GH1 Portal">CreatePortal</Activate>
       <feedPower>200</feedPower>
       <BagType>8</BagType>
@@ -60,7 +60,7 @@
       <SlotType>10</SlotType>
       <Description>A key which opens an entrance to Guild Hall 2. For testing purposes.</Description>
       <Sound>use_key</Sound>
-      <Soulbound/>
+       
       <Activate id="GH2 Portal">CreatePortal</Activate>
       <feedPower>200</feedPower>
       <BagType>8</BagType>
@@ -88,7 +88,7 @@
       <SlotType>10</SlotType>
       <Description>A key which opens an entrance to Guild Hall 3. For testing purposes.</Description>
       <Sound>use_key</Sound>
-      <Soulbound/>
+       
       <Activate id="GH3 Portal">CreatePortal</Activate>
       <feedPower>200</feedPower>
       <BagType>8</BagType>
@@ -116,7 +116,7 @@
       <SlotType>10</SlotType>
       <Description>A key which opens an entrance to Guild Hall 4. For testing purposes.</Description>
       <Sound>use_key</Sound>
-      <Soulbound/>
+       
       <Activate id="GH4 Portal">CreatePortal</Activate>
       <feedPower>200</feedPower>
       <BagType>8</BagType>

@@ -28,7 +28,7 @@
       <Description>Open this gift!</Description>
       <Activate>MysteryDyes</Activate>
       <Consumable/>
-      <Soulbound/>
+      
       <BagType>7</BagType>
    </Object>
    <Object type="0x203a" id="Oryx Horde Shiny Orb">
@@ -629,7 +629,7 @@
       <Description>A key which opens an entrance to The Oryx Horde event.</Description>
       <Sound>use_key</Sound>
       <Consumable/>
-      <Soulbound/>
+      
       <Track/>
    </Object>
    <Object type="0x1fe4" id="oHorde Portal">

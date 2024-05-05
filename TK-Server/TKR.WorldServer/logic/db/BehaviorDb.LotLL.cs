@@ -106,20 +106,12 @@ namespace TKR.WorldServer.logic
                     new Suicide()
                     )
                 ),
-            new Threshold(0.001,
-                new TierLoot(10, ItemType.Weapon, 0.12),
-                new TierLoot(11, ItemType.Weapon, 0.09),
-                new TierLoot(11, ItemType.Armor, 0.09),
-                new TierLoot(12, ItemType.Armor, 0.06),
-                new TierLoot(4, ItemType.Ability, 0.07),
-                new TierLoot(5, ItemType.Ability, 0.03),
-                new TierLoot(4, ItemType.Ring, 0.06),
-                new TierLoot(5, ItemType.Ring, 0.03),
-                new ItemLoot("Potion of Wisdom", 1),
-                new ItemLoot("Potion of Vitality", 1),
-                new ItemLoot("Potion of Wisdom", 0.5),
-                new ItemLoot("Potion of Vitality", 0.5)
-                ),
+                new Threshold(0.005,
+                    LootTemplates.BasicDrop()
+                    ),
+                new Threshold(0.005,
+                    LootTemplates.BasicPots()
+                    ),
             new Threshold(0.01,
                 new ItemLoot("Shield of Ogmur", 0.001, threshold: 0.03)
                 )

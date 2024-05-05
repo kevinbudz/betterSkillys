@@ -12,8 +12,12 @@ package com.company.assembleegameclient.ui.tooltip
       public static const SET_COLOR_INACTIVE:uint = 6835752;
 
       public static const UNCOMMON_COLOR:uint = 0xd1e0ff;
-      public static const RARE_COLOR:uint = 0xc1abff;
+      public static const RARE_COLOR:uint = 0x7154bf;
       public static const LEGENDARY_COLOR:uint = 0xff82ba;
+      public static const WINTER_COLOR:uint = 0xb8d3ff;
+      public static const SPRING_COLOR:uint = 0xfff196;
+      public static const SUMMER_COLOR:uint = 0xffd8b8;
+      public static const FALL_COLOR:uint = 0x8f77c7;
 
 
       public static function wrapInFontTag(_arg_1:String, _arg_2:String):String

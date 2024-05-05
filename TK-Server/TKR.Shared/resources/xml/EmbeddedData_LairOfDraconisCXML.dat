@@ -1699,64 +1699,6 @@
       <Connects/>
       <EnemyOccupySquare/>
    </Object>
-   <Object type="0x754a" id="lod Ivory Wyvern">
-      <DisplayId>Ivory Wyvern</DisplayId>
-      <Class>Character</Class>
-      <Group>Wyvern</Group>
-      <Enemy/>
-      <AnimatedTexture>
-         <File>chars16x16rEncounters</File>
-         <Index>118</Index>
-      </AnimatedTexture>
-      <HitSound>monster/skeletons_hit</HitSound>
-      <DeathSound>monster/skeletons_death</DeathSound>
-      <Size>175</Size>
-      <Z>.5</Z>
-      <ShadowSize>25</ShadowSize>
-      <MaxHitPoints>50000</MaxHitPoints>
-      <Defense>50</Defense>
-      <Exp>10000</Exp>
-      <Level>20</Level>
-      <ParalyzeImmune/>
-      <StasisImmune/>
-      <DazedImmune/>
-      <StunImmune/>
-      <EventChestBoss/>
-      <Projectile id="0">
-         <ObjectId>White Demon Shot</ObjectId>
-         <Speed>65</Speed>
-         <Damage>150</Damage>
-         <LifetimeMS>5000</LifetimeMS>
-      </Projectile>
-      <Projectile id="1">
-         <ObjectId>Dragon Attack Green Ball</ObjectId>
-         <Speed>30</Speed>
-         <Damage>90</Damage>
-         <LifetimeMS>4000</LifetimeMS>
-         <ConditionEffect duration="3">Slowed</ConditionEffect>
-      </Projectile>
-      <Projectile id="2">
-         <ObjectId>Dragon Attack Red Small Fireball</ObjectId>
-         <Speed>30</Speed>
-         <Damage>90</Damage>
-         <LifetimeMS>4000</LifetimeMS>
-         <ConditionEffect duration="3">Bleeding</ConditionEffect>
-      </Projectile>
-      <Projectile id="3">
-         <ObjectId>Dragon Attack Blue Blast</ObjectId>
-         <Speed>30</Speed>
-         <Damage>90</Damage>
-         <LifetimeMS>4000</LifetimeMS>
-         <ConditionEffect duration="3">Weak</ConditionEffect>
-      </Projectile>
-      <Projectile id="4">
-         <ObjectId>Dragon Attack Black Bullet</ObjectId>
-         <Speed>30</Speed>
-         <Damage>90</Damage>
-         <LifetimeMS>4000</LifetimeMS>
-         <ConditionEffect duration="3">Quiet</ConditionEffect>
-      </Projectile>
-   </Object>
    <Object type="0x742e" id="lod Mirror Wyvern1">
       <DisplayId>Mirror Wyvern</DisplayId>
       <Class>Character</Class>
@@ -2052,89 +1994,6 @@
          <MultiHit/>
       </Projectile>
    </Object>
-   <Object type="0x754d" id="lod White Dragon Orb">
-      <DisplayId>White Dragon Orb</DisplayId>
-      <Class>Character</Class>
-      <Enemy/>
-      <Texture>
-         <File>lofiCharBig</File>
-         <Index>0x04</Index>
-      </Texture>
-      <Animation prob="1" period="0">
-         <Frame time="0.2">
-            <Texture>
-               <File>lofiCharBig</File>
-               <Index>0x05</Index>
-            </Texture>
-         </Frame>
-         <Frame time="0.2">
-            <Texture>
-               <File>lofiCharBig</File>
-               <Index>0x04</Index>
-            </Texture>
-         </Frame>
-         <Frame time="0.2">
-            <Texture>
-               <File>lofiCharBig</File>
-               <Index>0x06</Index>
-            </Texture>
-         </Frame>
-         <Frame time="0.4">
-            <Texture>
-               <File>lofiCharBig</File>
-               <Index>0x07</Index>
-            </Texture>
-         </Frame>
-         <Frame time="0.2">
-            <Texture>
-               <File>lofiCharBig</File>
-               <Index>0x06</Index>
-            </Texture>
-         </Frame>
-         <Frame time="0.2">
-            <Texture>
-               <File>lofiCharBig</File>
-               <Index>0x04</Index>
-            </Texture>
-         </Frame>
-         <Frame time="0.2">
-            <Texture>
-               <File>lofiCharBig</File>
-               <Index>0x05</Index>
-            </Texture>
-         </Frame>
-         <Frame time="0.4">
-            <Texture>
-               <File>lofiCharBig</File>
-               <Index>0x08</Index>
-            </Texture>
-         </Frame>
-      </Animation>
-      <MaxHitPoints>30000</MaxHitPoints>
-      <Defense>50</Defense>
-      <Exp>0</Exp>
-      <Size>100</Size>
-      <ShadowSize>30</ShadowSize>
-      <Z>0.26</Z>
-      <Flying/>
-      <StasisImmune/>
-      <Projectile id="0">
-         <ObjectId>Red Planet Blast</ObjectId>
-         <Speed>43</Speed>
-         <Damage>100</Damage>
-         <Size>100</Size>
-         <LifetimeMS>2500</LifetimeMS>
-         <MultiHit/>
-      </Projectile>
-      <Projectile id="1">
-         <ObjectId>Red Planet Orb</ObjectId>
-         <Damage>100</Damage>
-         <Speed>40</Speed>
-         <LifetimeMS>2000</LifetimeMS>
-         <Size>80</Size>
-         <MultiHit/>
-      </Projectile>
-   </Object>
    <Object type="0xcd5" id="Ivory Wyvern Key">
       <Class>Equipment</Class>
       <Item/>
@@ -2146,7 +2005,7 @@
       <Description>A key which opens a portal to the Ivory Wyvern.</Description>
       <Sound>use_key</Sound>
       <Consumable/>
-      <Soulbound/>
+      
       <Activate id="Ivory Wyvern Portal">Create</Activate>
       <feedPower>100</feedPower>
    </Object>

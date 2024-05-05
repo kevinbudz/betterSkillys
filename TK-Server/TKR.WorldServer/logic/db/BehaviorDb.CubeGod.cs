@@ -35,21 +35,11 @@ namespace TKR.WorldServer.logic
             new Threshold(0.03,
                 new ItemLoot("Dirk of Cronus", 0.001)
                 ),
-            new Threshold(0.0015,
-                new TierLoot(10, ItemType.Armor, 0.12),
-                new TierLoot(11, ItemType.Armor, 0.09),
-                new TierLoot(10, ItemType.Weapon, 0.12),
-                new TierLoot(11, ItemType.Weapon, 0.09),
-                new TierLoot(4, ItemType.Ring, 0.07),
-                new TierLoot(5, ItemType.Ring, 0.03),
-                new TierLoot(4, ItemType.Ability, 0.07),
-                new TierLoot(5, ItemType.Ability, 0.03),
-                new ItemLoot("Potion of Speed", 1),
-                new ItemLoot("Potion of Attack", 1),
-                new ItemLoot("Potion of Defense", 1),
-                new ItemLoot("Potion of Speed", 1),
-                new ItemLoot("Potion of Attack", 1),
-                new ItemLoot("Potion of Defense", 1)
+            new Threshold(.005,
+                LootTemplates.BasicDrop()
+                ),
+            new Threshold(.005,
+                LootTemplates.BasicPots()
                 )
             )
         .Init("Cube Overseer",

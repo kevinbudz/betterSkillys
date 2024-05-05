@@ -5,6 +5,7 @@ using TKR.Shared.resources;
 using NLog;
 using TKR.WorldServer.core;
 using TKR.WorldServer.core.worlds.impl;
+using System.Reflection.Metadata;
 
 namespace TKR.WorldServer.logic.loot
 {

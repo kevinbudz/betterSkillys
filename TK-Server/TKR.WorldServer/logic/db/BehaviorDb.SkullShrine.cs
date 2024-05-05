@@ -15,22 +15,12 @@ namespace TKR.WorldServer.logic
                 new Reproduce("Red Flaming Skull", 40, 20, coolDown: 300),
                 new Reproduce("Blue Flaming Skull", 40, 20, coolDown: 300)
                 ),
-            new Threshold(0.001,
-                new ItemLoot("Potion of Attack", 1),
-                new ItemLoot("Potion of Dexterity", 1),
-                new ItemLoot("Potion of Wisdom", 1),
-                new ItemLoot("Potion of Attack", 0.5),
-                new ItemLoot("Potion of Dexterity", 0.5),
-                new ItemLoot("Potion of Wisdom", 0.5),
-                new TierLoot(10, ItemType.Weapon, 0.12),
-                new TierLoot(11, ItemType.Weapon, 0.09),
-                new TierLoot(4, ItemType.Ring, 0.07),
-                new TierLoot(5, ItemType.Ring, 0.03),
-                new TierLoot(11, ItemType.Armor, 0.12),
-                new TierLoot(12, ItemType.Armor, 0.09),
-                new TierLoot(4, ItemType.Ability, 0.07),
-                new TierLoot(5, ItemType.Ability, 0.03)
-                ),
+                new Threshold(0.005,
+                    LootTemplates.BasicDrop()
+                    ),
+                new Threshold(0.005,
+                    LootTemplates.BasicPots()
+                    ),
             new Threshold(0.01,
                 new ItemLoot("Orb of Conflict", 0.001, threshold: 0.03)
                 )

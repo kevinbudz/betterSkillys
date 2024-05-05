@@ -54,6 +54,7 @@ namespace TKR.Shared.resources
         public readonly bool StasisImmune;
         public readonly bool Static;
         public readonly bool StunImmune;
+        public readonly bool HealthBarBoss;
         public readonly TerrainType Terrain;
 
         public string Class;
@@ -89,6 +90,7 @@ namespace TKR.Shared.resources
             CanPutNormalObjects = e.HasElement("CanPutNormalObjects");
             CanPutSoulboundObjects = e.HasElement("CanPutSoulboundObjects");
             Loot = e.HasElement("Loot");
+            HealthBarBoss = e.HasElement("HealthBarBoss");
             Size = e.GetValue("Size", 100);
             Enemy = e.HasElement("Enemy");
             MaxHP = e.GetValue<int>("MaxHitPoints");

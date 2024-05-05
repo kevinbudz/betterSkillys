@@ -25,7 +25,7 @@
       <Backpack/>
       <Potion/>
       <BagType>8</BagType>
-      <Soulbound/>
+       
    </Object>
    <Object type="0x18f" id="Gift">
       <DisplayId>Gift of Krathan</DisplayId>
@@ -41,7 +41,7 @@
       <Activate objectId="Testing Gift Spawner">Pet</Activate>
       <Consumable/>
       <BagType>8</BagType>
-      <Soulbound/>
+       
       <feedPower>50000</feedPower>
    </Object>
    <Object type="0x641" id="Keys">
@@ -58,7 +58,7 @@
       <Activate id="Key Spawner">Create</Activate>
       <Consumable/>
       <BagType>8</BagType>
-      <Soulbound/>
+       
       <feedPower>50000</feedPower>
    </Object>
    <Object type="0x933" id="TKeys">
@@ -75,7 +75,7 @@
       <Activate id="Testing Key Dropper">Create</Activate>
       <Consumable/>
       <BagType>8</BagType>
-      <Soulbound/>
+       
       <feedPower>50000</feedPower>
    </Object>
    <Object type="0x025c" id="LH Lost Halls Debug Item">
@@ -90,7 +90,7 @@
       <Sound>use_potion</Sound>
       <Consumable/>
       <BagType>0</BagType>
-      <Soulbound/>
+       
       <Activate id="LH Lost Halls Debug">Create</Activate>
    </Object>
    <Object type="0x174f" id="Test TP">
@@ -103,7 +103,7 @@
       </Texture>
       <SlotType>10</SlotType>
       <Description>Teleports the user near the mountains.</Description>
-      <Soulbound/>
+       
       <Activate id="Death Flower">TeleportToObject</Activate>
       <BagType>8</BagType>
       <InvUse/>
@@ -118,7 +118,7 @@
       </AnimatedTexture>
       <SlotType>10</SlotType>
       <Description>Teleports the user to the Cursed Crown in the Shatters.</Description>
-      <Soulbound/>
+       
       <Activate id="shtrs The Cursed Crown">TeleportToObject</Activate>
       <BagType>8</BagType>
       <InvUse/>
@@ -133,7 +133,7 @@
       </Texture>
       <SlotType>10</SlotType>
       <Description>Kills 1 Heroes of Oryx.</Description>
-      <Soulbound/>
+       
       <Activate amount="1">KillRealmHeroes</Activate>
       <BagType>8</BagType>
       <InvUse/>
@@ -154,7 +154,7 @@
       <BagType>8</BagType>
       <FameBonus>7</FameBonus>
       <feedPower>1500</feedPower>
-      <Soulbound/>
+       
    </Object>
    <Object type="0x1a50" id="Snowy Spawner">
       <DisplayId>Snowy Spawner</DisplayId>
@@ -170,7 +170,7 @@
       <Activate id="Spawner">Create</Activate>
       <InvUse/>
       <BagType>8</BagType>
-      <Soulbound/>
+       
       <feedPower>10</feedPower>
    </Object>
    <Object type="0x705e" id="InvinceMe">
@@ -186,7 +186,7 @@
       <InvUse/>
       <BagType>6</BagType>
       <Activate effect="Invincible" duration="86400">ConditionEffectSelf</Activate>
-      <Soulbound/>
+       
    </Object>
    <Object type="0x710c" id="tots">
       <Class>Equipment</Class>
@@ -199,7 +199,7 @@
       <SlotType>10</SlotType>
       <Description>Summons Totalia.</Description>
       <Sound>use_key</Sound>
-      <Soulbound/>
+       
       <Activate id="Totalia the Malevolent" cooldown="30">Create</Activate>
       <feedPower>200</feedPower>
       <BagType>8</BagType>
@@ -216,7 +216,7 @@
       <SlotType>10</SlotType>
       <Description>A key which opens an entrance to FR Test FOREVER, AND EVER, AND EVER... \n\nKeys can only be used once you have 10 or more stars!</Description>
       <Sound>use_key</Sound>
-      <Soulbound/>
+       
       <Activate id="FR Test Portal" cooldown="30">CreatePortal</Activate>
       <feedPower>200</feedPower>
       <BagType>8</BagType>
@@ -234,7 +234,7 @@
       <SlotType>10</SlotType>
       <Description>Spawn a Snow Construct.\n\nBe a responsible tester and don't use this in the Nexus!</Description>
       <Sound>use_key</Sound>
-      <Soulbound/>
+       
       <Activate id="FR God">Create</Activate>
       <feedPower>200</feedPower>
       <BagType>8</BagType>
@@ -252,7 +252,7 @@
       <SlotType>10</SlotType>
       <Description>Spawns Test Guill!</Description>
       <Sound>use_key</Sound>
-      <Soulbound/>
+       
       <Activate id="TG">Create</Activate>
       <feedPower>200</feedPower>
       <BagType>8</BagType>
@@ -271,7 +271,7 @@
       <Description>Can spawn certain enemies. For testing purposes.</Description>
       <Sound>use_key</Sound>
       <InvUse/>
-      <Soulbound/>
+       
       <BagType>5</BagType>
       <Activate id="Prod Enemy Spawner">Create</Activate>
    </Object>

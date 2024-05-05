@@ -61,7 +61,7 @@
       <Description>Flip a TM Generic Bit's state on use. Range: 1.5</Description>
       <Sound>use_key</Sound>
       <InvUse/>
-      <Soulbound/>
+       
       <feedPower>200</feedPower>
       <Activate id="TM Single Use Generic Bit Inverter">Create</Activate>
    </Object>

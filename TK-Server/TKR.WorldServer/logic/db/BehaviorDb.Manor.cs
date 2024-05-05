@@ -38,9 +38,6 @@ namespace TKR.WorldServer.logic
                     )
                 ),
             new Threshold(0.01,
-                new ItemLoot("Potion of Attack", 1),
-                new ItemLoot("Potion of Dexterity", 1),
-                new ItemLoot("Potion of Wisdom", 1),
                 new ItemLoot("Potion of Attack", 0.5),
                 new ItemLoot("Potion of Dexterity", 0.5),
                 new ItemLoot("Potion of Wisdom", 0.5),

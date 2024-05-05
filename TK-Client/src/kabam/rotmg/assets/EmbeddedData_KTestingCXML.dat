@@ -304,7 +304,7 @@
       <Activate maxDistance="20">Teleport</Activate>
       <BagType>6</BagType>
       <feedPower>100000</feedPower>
-      <Soulbound/>
+       
    </Object>
    <Object type="0x5e22" id="TileSwap">
       <Class>GameObject</Class>
@@ -575,7 +575,7 @@
       </Projectile>
       <BagType>6</BagType>
       <feedPower>100000</feedPower>
-      <Soulbound/>
+       
    </Object>
    <Object type="0x9d6" id="Admin Wand">
       <Class>Equipment</Class>
@@ -598,7 +598,7 @@
       </Projectile>
       <BagType>6</BagType>
       <feedPower>100000</feedPower>
-      <Soulbound/>
+       
    </Object>
    <Object type="0x9d7" id="Admin Bow">
       <Class>Equipment</Class>
@@ -623,7 +623,7 @@
       <ArcGap>8</ArcGap>
       <BagType>6</BagType>
       <feedPower>100000</feedPower>
-      <Soulbound/>
+       
    </Object>
    <Object type="0x9d8" id="Admin Dagger">
       <Class>Equipment</Class>
@@ -647,7 +647,7 @@
       <ArcGap>10</ArcGap>
       <BagType>6</BagType>
       <feedPower>100000</feedPower>
-      <Soulbound/>
+       
    </Object>
    <Object type="0x9d3" id="Admin Staff">
       <Class>Equipment</Class>
@@ -674,7 +674,7 @@
       <ArcGap>0</ArcGap>
       <BagType>6</BagType>
       <feedPower>100000</feedPower>
-      <Soulbound/>
+       
    </Object>
    <Object type="0x9c2" id="Admin Katana">
       <Class>Equipment</Class>
@@ -699,6 +699,6 @@
       <ArcGap>2</ArcGap>
       <BagType>6</BagType>
       <feedPower>100000</feedPower>
-      <Soulbound/>
+       
    </Object>
 </Objects>

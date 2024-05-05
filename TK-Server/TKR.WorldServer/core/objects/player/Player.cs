@@ -1001,20 +1001,12 @@ namespace TKR.WorldServer.core.objects
         {
             var playerDesc = GameServer.Resources.GameData.Classes[ObjectType];
 
-            var maxed = playerDesc.Stats.Where((t, i) => Stats.Base[i] >= t.MaxValue).Count() + (UpgradeEnabled ? playerDesc.Stats.Where((t, i) => i == 0 ? Stats.Base[i] >= t.MaxValue + 50 : i == 1 ? Stats.Base[i] >= t.MaxValue + 50 : Stats.Base[i] >= t.MaxValue + 10).Count() : 0);
+            var maxed = playerDesc.Stats.Where((t, i) => Stats.Base[i] >= t.MaxValue).Count();
            
             ushort objType;
             int? time = null;
             switch (maxed)
             {
-                case 16: objType = 0xa00e; break;
-                case 15: objType = 0xa00d; break;
-                case 14: objType = 0xa00c; break;
-                case 13: objType = 0xa00b; break;
-                case 12: objType = 0xa00a; break;
-                case 11: objType = 0xa009; break;
-                case 10: objType = 0xa008; break;
-                case 9: objType = 0xa007; break;
                 case 8: objType = 0x0735; break;
                 case 7: objType = 0x0734; break;
                 case 6: objType = 0x072b; break;

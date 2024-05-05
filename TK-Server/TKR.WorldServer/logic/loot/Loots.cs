@@ -104,22 +104,49 @@ namespace TKR.WorldServer.logic.loot
 
             Items = Items.OrderBy(_ => _.Key).ToDictionary(_ => _.Key, _ => _.Value);
         }
-        private List<LootDef> GetEnemyClasifiedLoot(List<LootDef> list, Enemy enemy)
+        private List<LootDef> ExtraLootTables(List<LootDef> list, Enemy enemy)
         {
             var gameData = enemy.GameServer.Resources.GameData;
             var xmlitem = gameData.Items;
             var itemtoid = gameData.IdToObjectType;
 
-            if (enemy.Legendary)
+            if (enemy.ObjectDesc.HealthBarBoss == true)
             {
+                if (NexusWorld.GetCurrentMonth == 12 ||
+                    NexusWorld.GetCurrentMonth == 1)
+                {
+                    list.Add(new LootDef("Frost Citadel Armor", 0.01, 0.01));
+                    list.Add(new LootDef("Frost Drake Hide Armor", 0.01, 0.01));
+                    list.Add(new LootDef("Frost Elementalist Robe", 0.01, 0.01));
+                    list.Add(new LootDef("Scepter of Sainthood", 0.003, 0.01));
+                    list.Add(new LootDef("Snowbound Orb", 0.003, 0.01));
+                    list.Add(new LootDef("Pathfinder's Helm", 0.003, 0.01));
+                    list.Add(new LootDef("Coalbearing Quiver", 0.003, 0.01));
+                    list.Add(new LootDef("Skull of Krampus", 0.003, 0.01));
+                    list.Add(new LootDef("Vigil Spell", 0.003, 0.01));
+                    list.Add(new LootDef("Greedsnatcher Trap", 0.003, 0.01));
+                    list.Add(new LootDef("Resounding Shield", 0.003, 0.01));
+                    list.Add(new LootDef("Ornamental Prism", 0.003, 0.01));
+                    list.Add(new LootDef("Nativity Tome", 0.003, 0.01));
+                    list.Add(new LootDef("Holly Poison", 0.003, 0.01));
+                    list.Add(new LootDef("Cloak of Winter", 0.003, 0.01));
+                    list.Add(new LootDef("Advent Seal", 0.003, 0.01));
+                    list.Add(new LootDef("Ilex Star", 0.003, 0.01));
+                    list.Add(new LootDef("Frostbite", 0.01, 0.01));
+                    list.Add(new LootDef("Bow of Eternal Frost", 0.01, 0.01));
+                    list.Add(new LootDef("Present Dispensing Wand", 0.01, 0.01));
+                    list.Add(new LootDef("An Icicle", 0.01, 0.01));
+                    list.Add(new LootDef("Staff of Yuletide Carols", 0.01, 0.01));
+                    list.Add(new LootDef("Salju", 0.01, 0.01));
+                }
             }
-            else if (enemy.Epic)
-            {
-            }
-            else if (enemy.Rare)
-            {
-            }
+            /*if (NexusWorld.GetCurrentMonth == 5 ||
+                NexusWorld.GetCurrentMonth == 6 ||
+                NexusWorld.GetCurrentMonth == 7) */
 
+            /*if (enemy.Rare)
+            if (enemy.Epic)
+            if (enemy.Legendary)*/
             return list;
         }
 
@@ -133,7 +160,7 @@ namespace TKR.WorldServer.logic.loot
                 return;
 
             var possDrops = new List<LootDef>();
-            // GetEnemyClasifiedLoot(possDrops, enemy);
+            ExtraLootTables(possDrops, enemy);
             foreach (var i in this)
                 i.Populate(possDrops);
 
@@ -178,7 +205,7 @@ namespace TKR.WorldServer.logic.loot
                 if (enemy.Epic) enemyBoost = .5;
                 if (enemy.Legendary) enemyBoost = .75;
 
-                var dmgBoost = Math.Round(tupPlayer.Item2 / (double)enemy.DamageCounter.TotalDamage, 4) / 100;
+                var dmgBoost = Math.Round(tupPlayer.Item2 / (double)enemy.DamageCounter.TotalDamage, 4);
                 var ldBoost = player.LDBoostTime > 0 ? 0.25 : 0;
                 var wkndBoost = NexusWorld.WeekendLootBoostEvent;
                 var totalBoost = 1 + (ldBoost + wkndBoost + dmgBoost + enemyBoost);
@@ -271,11 +298,12 @@ namespace TKR.WorldServer.logic.loot
             var player = owners[0] ?? null;
             var idx = 0;
             var bagType = 0;
+
             var items = new Item[8];
             var boosted = false;
+            bool isWhite = false;
 
             var hitters = enemy.DamageCounter.GetHitters();
-            var dmgBoost = (hitters[player] / (double)enemy.DamageCounter.TotalDamage) / 4;
 
             if (owners.Count() == 1 && player.LDBoostTime > 0 || (Math.Round(hitters[player] / (double)enemy.DamageCounter.TotalDamage, 4) > .25 && Random.Shared.NextDouble() > .5))
                 boosted = true;
@@ -288,7 +316,8 @@ namespace TKR.WorldServer.logic.loot
                 {
                     var chat = core.ChatManager;
                     var world = player.World;
-                    if (player != null && bagType == 6)
+                    isWhite = i.BagType == 6;
+                    if (player != null && isWhite)
                     {
                         var msg = new StringBuilder($" {player.Client.Account.Name} has obtained:");
                         msg.Append($" [{i.DisplayId ?? i.ObjectId}], by doing {Math.Round(100.0 * (hitters[player] / (double)enemy.DamageCounter.TotalDamage), 0)}% damage!");
@@ -332,7 +361,7 @@ namespace TKR.WorldServer.logic.loot
 
             container.BagOwners = owners;
             container.Move(enemy.X + (float)((Random.Shared.NextDouble() * 2 - 1) * 0.5), enemy.Y + (float)((Random.Shared.NextDouble() * 2 - 1) * 0.5));
-            container.SetDefaultSize(80);
+            container.SetDefaultSize(bagType >= 3 ? 100 : 80);
             enemy.World.EnterWorld(container);
         }
     }

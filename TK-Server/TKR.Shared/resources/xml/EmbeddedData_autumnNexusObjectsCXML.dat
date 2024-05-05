@@ -2423,16 +2423,6 @@
       <NoMiniMap/>
       <ShadowSize>0</ShadowSize>
    </Object>
-   <Object type="0x4053" id="AN TwLioG DL">
-      <Class>Character</Class>
-      <DrawOnGround/>
-      <Texture>
-         <File>autumnNexusObjects8x8</File>
-         <Index>0x1a6</Index>
-      </Texture>
-      <NoMiniMap/>
-      <ShadowSize>0</ShadowSize>
-   </Object>
    <Object type="0x4054" id="AN TwLioG DM">
       <Class>Character</Class>
       <DrawOnGround/>
@@ -8301,42 +8291,6 @@
       <ShadowSize>0</ShadowSize>
       <Rotation>90</Rotation>
    </Object>
-   <Object type="0x413B" id="HN GtB Rt 3">
-      <Class>GameObject</Class>
-      <Model>Gate</Model>
-      <Texture>
-         <File>autumnNexusObjects16x16</File>
-         <Index>0xe0</Index>
-      </Texture>
-      <Static/>
-      <OccupySquare/>
-      <ShadowSize>0</ShadowSize>
-      <Rotation>90</Rotation>
-   </Object>
-   <Object type="0x413C" id="HN GtB Rt 4">
-      <Class>GameObject</Class>
-      <Model>Gate</Model>
-      <Texture>
-         <File>autumnNexusObjects16x16</File>
-         <Index>0xe1</Index>
-      </Texture>
-      <Static/>
-      <OccupySquare/>
-      <ShadowSize>0</ShadowSize>
-      <Rotation>90</Rotation>
-   </Object>
-   <Object type="0x413D" id="HN GtB Rt 5">
-      <Class>GameObject</Class>
-      <Model>Gate</Model>
-      <Texture>
-         <File>autumnNexusObjects16x16</File>
-         <Index>0xe2</Index>
-      </Texture>
-      <Static/>
-      <OccupySquare/>
-      <ShadowSize>0</ShadowSize>
-      <Rotation>90</Rotation>
-   </Object>
    <Object type="0x413E" id="HN GtB Rt 6">
       <Class>GameObject</Class>
       <Model>Gate</Model>
@@ -14083,10 +14037,10 @@ A dubious candy that specially made by a certain witch. Contains strange ingredi
       <Activate amount="50">Magic</Activate>
       <Activate effect="Hexed" duration="180">ConditionEffectSelf</Activate>
       <Activate effect="Hallucinating" duration="90">ConditionEffectSelf</Activate>
-      <Soulbound/>
+      
       <Consumable/>
       <Potion/>
-      <BagType>3</BagType>
+      <BagType>5</BagType>
    </Object>
    <Object type="0x41eb" id="HN WH ppkcst">
       <Class>Character</Class>

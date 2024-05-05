@@ -14,7 +14,7 @@
       <PetId>Black Cat</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -31,7 +31,7 @@
       <PetId>Grey Cat</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -48,7 +48,7 @@
       <PetId>Orange Cat</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -65,7 +65,7 @@
       <PetId>Tan Cat</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -82,7 +82,7 @@
       <PetId>Yellow Cat</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -99,7 +99,7 @@
       <PetId>Brown Pup</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -116,7 +116,7 @@
       <PetId>Grey Pup</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -133,7 +133,7 @@
       <PetId>Golden Pup</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -150,7 +150,7 @@
       <PetId>White Cat</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -167,7 +167,7 @@
       <PetId>Blue Snail</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -184,7 +184,7 @@
       <PetId>Grey Wolf</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -201,7 +201,7 @@
       <PetId>Brown Fox</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -218,7 +218,7 @@
       <PetId>Green Frog</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -236,7 +236,7 @@
       <PetSkin>Lion Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -253,7 +253,7 @@
       <PetId>Penguin</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -270,7 +270,7 @@
       <PetId>Sheepdog</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -288,7 +288,7 @@
       <PetSkin>Panda Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -305,7 +305,7 @@
       <PetId>Purple Snail</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -323,7 +323,7 @@
       <PetSkin>Black Wolf Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -340,7 +340,7 @@
       <PetId>Grey Fox</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -357,7 +357,7 @@
       <PetId>Purple Frog</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -375,7 +375,7 @@
       <PetSkin>White Lion Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -392,7 +392,7 @@
       <PetId>Green Penguin</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -410,7 +410,7 @@
       <PetSkin>Golden Sheepdog Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -427,7 +427,7 @@
       <PetId>Blue Parrot</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -444,7 +444,7 @@
       <PetId>Chick</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -461,7 +461,7 @@
       <PetId>Pig</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -478,7 +478,7 @@
       <PetId>Sea Slurp</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -495,7 +495,7 @@
       <PetId>Squirrel</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -512,7 +512,7 @@
       <PetId>Bat</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -529,7 +529,7 @@
       <PetId>Lil' Ghost</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -588,7 +588,7 @@
       <PetSkin>Leprechaun Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -606,7 +606,7 @@
       <PetSkin>Lil' Oryx Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -624,7 +624,7 @@
       <PetSkin>Toucan Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -642,7 +642,7 @@
       <PetSkin>Skunk Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -660,7 +660,7 @@
       <PetSkin>Mallard Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -677,7 +677,7 @@
       <PetId>Duck</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -695,7 +695,7 @@
       <PetSkin>Eagle Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -712,7 +712,7 @@
       <PetId>Turtle</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -730,7 +730,7 @@
       <PetSkin>Jelly Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -748,7 +748,7 @@
       <PetSkin>Bee Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -766,7 +766,7 @@
       <PetSkin>Raven Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -783,7 +783,7 @@
       <PetId>Grape Penguin</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -800,7 +800,7 @@
       <PetId>Grass Penguin</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -818,7 +818,7 @@
       <PetSkin>Elf Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -835,7 +835,7 @@
       <PetId>Crab</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -852,7 +852,7 @@
       <PetId>Hamster</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -869,7 +869,7 @@
       <PetId>Dino</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -886,7 +886,7 @@
       <PetId>Elephant</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -904,7 +904,7 @@
       <PetSkin>Demon Frog Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -922,7 +922,7 @@
       <PetSkin>Gargoyle Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -940,7 +940,7 @@
       <PetSkin>Gummy Bear Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -957,7 +957,7 @@
       <PetId>Dragonfly</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -975,7 +975,7 @@
       <PetSkin>Lil' Cyclops Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -993,7 +993,7 @@
       <PetSkin>Snowy Owl Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1011,7 +1011,7 @@
       <PetSkin>Turkey Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1028,7 +1028,7 @@
       <PetId>Baby</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1046,7 +1046,7 @@
       <PetSkin>Baby Dragon Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1064,7 +1064,7 @@
       <PetSkin>Karate Red Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1082,7 +1082,7 @@
       <PetSkin>Karate Blue Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1100,7 +1100,7 @@
       <PetSkin>Karate Yellow Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1118,7 +1118,7 @@
       <PetSkin>Karate Purple Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1136,7 +1136,7 @@
       <PetSkin>Robobuddy Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1154,7 +1154,7 @@
       <PetSkin>Snowman Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1171,7 +1171,7 @@
       <PetId>Black Ant</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1188,7 +1188,7 @@
       <PetId>Blue Ant</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1205,7 +1205,7 @@
       <PetId>Green Ant</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1222,7 +1222,7 @@
       <PetId>Red Ant</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1239,7 +1239,7 @@
       <PetId>Purple Ant</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1258,7 +1258,7 @@
       </ExtraTooltipData>
       <InvUse/>
       <VaultItem/>
-      <Soulbound/>
+       
       <Activate objectId="Beer Slurp" cooldown="10">PermaPet</Activate>
       <OldSound>use_potion</OldSound>
       <feedPower>1000</feedPower>
@@ -1293,7 +1293,7 @@
       <PetSkin>Peppermint Snail Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1310,7 +1310,7 @@
       <PetId>Oriole</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1327,7 +1327,7 @@
       <PetId>Goldfinch</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1344,7 +1344,7 @@
       <PetId>Bluebird</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1361,7 +1361,7 @@
       <PetId>Cardinal</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1379,7 +1379,7 @@
       <PetSkin>Werewolf Cub Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1396,7 +1396,7 @@
       <PetId>Tomb Snake</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1414,7 +1414,7 @@
       <PetSkin>Ninja Cat Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1432,7 +1432,7 @@
       <PetSkin>Praying Mantis Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1449,7 +1449,7 @@
       <PetId>Dreidel</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1467,7 +1467,7 @@
       <PetSkin>Reindeer Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1484,7 +1484,7 @@
       <PetId>Koala</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1502,7 +1502,7 @@
       <PetSkin>USA Eagle Skin</PetSkin>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1519,7 +1519,7 @@
       <PetId>Spirit</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1536,7 +1536,7 @@
       <PetId>Sprite Star</PetId>
       <Activate>CreatePet</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>3</BagType>
       <Track/>
    </Object>
@@ -1553,7 +1553,7 @@
       <BagType>8</BagType>
       <InvUse/>
       <Activate objectId="Beach Ball" cooldown="1" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x163f" id="Beach Ball">
@@ -1587,7 +1587,7 @@
       <BagType>8</BagType>
       <InvUse/>
       <Activate objectId="Valentine Heart" cooldown="1" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <feedPower>100</feedPower>
    </Object>
    <Object type="0x16f5" id="Valentine Heart">
@@ -1625,7 +1625,7 @@
       <Activate hideEffect="true" cooldown="20" objectId="Pet Rock">Pet</Activate>
       <InvUse/>
       <BagType>8</BagType>
-      <Soulbound/>
+       
       <feedPower>100</feedPower>
    </Object>
    <Object type="0x6a7" id="Pet Rock">
@@ -1666,7 +1666,7 @@
       <Activate hideEffect="true" objectId="Hearticles">Pet</Activate>
       <Consumable/>
       <BagType>2</BagType>
-      <Soulbound/>
+       
    </Object>
    <Object type="0x222" id="Hearticles">
       <Class>GameObject</Class>
@@ -1691,7 +1691,7 @@
       <Activate hideEffect="true" objectId="Snowflake">Pet</Activate>
       <InvUse/>
       <BagType>2</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x10c3" id="Snowflake Item">
@@ -1708,7 +1708,7 @@
       <Activate hideEffect="true" objectId="Snowflake">Pet</Activate>
       <Consumable/>
       <BagType>2</BagType>
-      <Soulbound/>
+       
       <feedPower>200</feedPower>
    </Object>
    <Object type="0x10c4" id="Snowflake">
@@ -1733,7 +1733,7 @@
       <BagType>8</BagType>
       <InvUse/>
       <Activate objectId="Snowball Throw" cooldown="0.2" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0xdde" id="Snowball Throw">
@@ -1778,7 +1778,7 @@
       <BagType>2</BagType>
       <Consumable/>
       <Activate objectId="Snowball Throw" cooldown="0.2" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <Quantity>1</Quantity>
    </Object>
    <Object type="0xbeb" id="Snowball x 2">
@@ -1797,7 +1797,7 @@
       <BagType>2</BagType>
       <Consumable/>
       <Activate objectId="Snowball Throw" cooldown="0.2" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <SuccessorId>Snowball x 1</SuccessorId>
       <Quantity>2</Quantity>
    </Object>
@@ -1817,7 +1817,7 @@
       <BagType>2</BagType>
       <Consumable/>
       <Activate objectId="Snowball Throw" cooldown="0.2" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <SuccessorId>Snowball x 2</SuccessorId>
       <Quantity>3</Quantity>
    </Object>
@@ -1837,7 +1837,7 @@
       <BagType>2</BagType>
       <Consumable/>
       <Activate objectId="Snowball Throw" cooldown="0.2" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <SuccessorId>Snowball x 3</SuccessorId>
       <Quantity>4</Quantity>
    </Object>
@@ -1857,7 +1857,7 @@
       <BagType>2</BagType>
       <Consumable/>
       <Activate objectId="Snowball Throw" cooldown="0.2" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <SuccessorId>Snowball x 4</SuccessorId>
       <Quantity>5</Quantity>
    </Object>
@@ -1877,7 +1877,7 @@
       <BagType>2</BagType>
       <Consumable/>
       <Activate objectId="Snowball Throw" cooldown="0.2" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <SuccessorId>Snowball x 5</SuccessorId>
       <Quantity>6</Quantity>
    </Object>
@@ -1897,7 +1897,7 @@
       <BagType>2</BagType>
       <Consumable/>
       <Activate objectId="Snowball Throw" cooldown="0.2" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <SuccessorId>Snowball x 6</SuccessorId>
       <Quantity>7</Quantity>
    </Object>
@@ -1917,7 +1917,7 @@
       <BagType>2</BagType>
       <Consumable/>
       <Activate objectId="Snowball Throw" cooldown="0.2" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <SuccessorId>Snowball x 7</SuccessorId>
       <Quantity>8</Quantity>
    </Object>
@@ -1937,7 +1937,7 @@
       <BagType>2</BagType>
       <Consumable/>
       <Activate objectId="Snowball Throw" cooldown="0.2" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <SuccessorId>Snowball x 8</SuccessorId>
       <Quantity>9</Quantity>
    </Object>
@@ -1957,7 +1957,7 @@
       <BagType>2</BagType>
       <Consumable/>
       <Activate objectId="Snowball Throw" cooldown="0.2" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <SuccessorId>Snowball x 9</SuccessorId>
       <Quantity>10</Quantity>
    </Object>
@@ -1977,7 +1977,7 @@
       <BagType>2</BagType>
       <Consumable/>
       <Activate objectId="Snowball Throw" cooldown="0.2" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <SuccessorId>Snowball x 10</SuccessorId>
       <Quantity>11</Quantity>
    </Object>
@@ -1997,7 +1997,7 @@
       <BagType>2</BagType>
       <Consumable/>
       <Activate objectId="Snowball Throw" cooldown="0.2" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <SuccessorId>Snowball x 11</SuccessorId>
       <Quantity>12</Quantity>
    </Object>
@@ -2017,7 +2017,7 @@
       <BagType>2</BagType>
       <Consumable/>
       <Activate objectId="Snowball Throw" cooldown="0.2" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <SuccessorId>Snowball x 12</SuccessorId>
       <Quantity>13</Quantity>
    </Object>
@@ -2037,7 +2037,7 @@
       <BagType>2</BagType>
       <Consumable/>
       <Activate objectId="Snowball Throw" cooldown="0.2" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <SuccessorId>Snowball x 13</SuccessorId>
       <Quantity>14</Quantity>
    </Object>
@@ -2057,7 +2057,7 @@
       <BagType>2</BagType>
       <Consumable/>
       <Activate objectId="Snowball Throw" cooldown="0.2" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <SuccessorId>Snowball x 14</SuccessorId>
       <Quantity>15</Quantity>
    </Object>
@@ -2077,7 +2077,7 @@
       <BagType>2</BagType>
       <Consumable/>
       <Activate objectId="Snowball Throw" cooldown="0.2" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <SuccessorId>Snowball x 15</SuccessorId>
       <Quantity>16</Quantity>
    </Object>
@@ -2097,7 +2097,7 @@
       <BagType>2</BagType>
       <Consumable/>
       <Activate objectId="Snowball Throw" cooldown="0.2" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <SuccessorId>Snowball x 16</SuccessorId>
       <Quantity>17</Quantity>
    </Object>
@@ -2117,7 +2117,7 @@
       <BagType>2</BagType>
       <Consumable/>
       <Activate objectId="Snowball Throw" cooldown="0.2" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <SuccessorId>Snowball x 17</SuccessorId>
       <Quantity>18</Quantity>
    </Object>
@@ -2137,7 +2137,7 @@
       <BagType>2</BagType>
       <Consumable/>
       <Activate objectId="Snowball Throw" cooldown="0.2" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <SuccessorId>Snowball x 18</SuccessorId>
       <Quantity>19</Quantity>
    </Object>
@@ -2157,7 +2157,7 @@
       <BagType>2</BagType>
       <Consumable/>
       <Activate objectId="Snowball Throw" cooldown="0.2" hideEffect="true">PermaPet</Activate>
-      <Soulbound/>
+       
       <SuccessorId>Snowball x 19</SuccessorId>
       <Quantity>20</Quantity>
    </Object>

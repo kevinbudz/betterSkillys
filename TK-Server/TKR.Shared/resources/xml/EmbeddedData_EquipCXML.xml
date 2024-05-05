@@ -327,7 +327,7 @@
 		<FameBonus>4</FameBonus>
 		<OldSound>bladeSwing</OldSound>
 		<feedPower>0</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0x9c9" id="Sword of Majesty">
 		<Class>Equipment</Class>
@@ -351,7 +351,7 @@
 		<FameBonus>5</FameBonus>
 		<OldSound>bladeSwing</OldSound>
 		<feedPower>0</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xa03" id="Crystal Sword">
 		<DisplayId>Crystal Sword</DisplayId>
@@ -376,7 +376,7 @@
 		<FameBonus>3</FameBonus>
 		<OldSound>bladeSwing</OldSound>
 		<feedPower>400</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc01" id="Demon Blade">
 		<Class>Equipment</Class>
@@ -402,7 +402,7 @@
 		<ArcGap>40</ArcGap>
 		<OldSound>bladeSwing</OldSound>
 		<feedPower>800</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc05" id="Ancient Stone Sword">
 		<Class>Equipment</Class>
@@ -426,7 +426,7 @@
 		<FameBonus>4</FameBonus>
 		<OldSound>bladeSwing</OldSound>
 		<feedPower>900</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xa04" id="Fire Wand">
 		<Class>Equipment</Class>
@@ -643,7 +643,7 @@
 		<BagType>3</BagType>
 		<OldSound>magicShoot</OldSound>
 		<feedPower>200</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xa07" id="Wand of Death">
 		<Class>Equipment</Class>
@@ -792,7 +792,7 @@
 		<FameBonus>4</FameBonus>
 		<OldSound>magicShoot</OldSound>
 		<feedPower>0</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0x9c0" id="Wand of Retribution">
 		<Class>Equipment</Class>
@@ -816,7 +816,7 @@
 		<FameBonus>5</FameBonus>
 		<OldSound>magicShoot</OldSound>
 		<feedPower>0</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xb3f" id="Crystal Wand">
 		<Class>Equipment</Class>
@@ -841,7 +841,7 @@
 		<FameBonus>4</FameBonus>
 		<OldSound>magicShoot</OldSound>
 		<feedPower>500</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc04" id="Wand of the Bulwark">
 		<Class>Equipment</Class>
@@ -867,7 +867,7 @@
 		<FameBonus>6</FameBonus>
 		<OldSound>magicShoot</OldSound>
 		<feedPower>650</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xa08" id="Wooden Shield">
 		<Class>Equipment</Class>
@@ -1130,7 +1130,7 @@
 		<Activate>Shoot</Activate>
 		<NumProjectiles>4</NumProjectiles>
 		<feedPower>175</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc0f" id="Shield of Ogmur">
 		<Class>Equipment</Class>
@@ -1164,7 +1164,7 @@
 		<Activate>Shoot</Activate>
 		<NumProjectiles>5</NumProjectiles>
 		<feedPower>1000</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xa78" id="Wolfskin Armor">
 		<Class>Equipment</Class>
@@ -1298,7 +1298,7 @@
 		<BagType>3</BagType>
 		<FameBonus>1</FameBonus>
 		<feedPower>120</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xad3" id="Drake Hide Armor">
 		<Class>Equipment</Class>
@@ -1395,7 +1395,7 @@
 		<BagType>3</BagType>
 		<FameBonus>5</FameBonus>
 		<feedPower>0</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0x9c3" id="Leviathan Armor">
 		<Class>Equipment</Class>
@@ -1411,7 +1411,7 @@
 		<BagType>3</BagType>
 		<FameBonus>6</FameBonus>
 		<feedPower>0</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xa7b" id="Iron Mail">
 		<Class>Equipment</Class>
@@ -1614,7 +1614,7 @@
 		<BagType>3</BagType>
 		<FameBonus>5</FameBonus>
 		<feedPower>0</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0x9c5" id="Annihilation Armor">
 		<Class>Equipment</Class>
@@ -1629,7 +1629,7 @@
 		<BagType>3</BagType>
 		<FameBonus>6</FameBonus>
 		<feedPower>0</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xa14" id="Steel Dagger">
 		<Class>Equipment</Class>
@@ -1813,7 +1813,7 @@
 		<BagType>3</BagType>
 		<OldSound>daggerSwing</OldSound>
 		<feedPower>150</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xa18" id="Mithril Dagger">
 		<Class>Equipment</Class>
@@ -1980,7 +1980,7 @@
 		<FameBonus>4</FameBonus>
 		<OldSound>daggerSwing</OldSound>
 		<feedPower>0</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0x9c7" id="Dagger of Dire Hatred">
 		<Class>Equipment</Class>
@@ -2004,7 +2004,7 @@
 		<FameBonus>5</FameBonus>
 		<OldSound>daggerSwing</OldSound>
 		<feedPower>0</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc0a" id="Dirk of Cronus">
 		<Class>Equipment</Class>
@@ -2029,7 +2029,7 @@
 		<FameBonus>6</FameBonus>
 		<OldSound>daggerSwing</OldSound>
 		<feedPower>950</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xa1a" id="Shortbow">
 		<Class>Equipment</Class>
@@ -2384,7 +2384,7 @@
 		<ArcGap>8</ArcGap>
 		<OldSound>arrowShoot</OldSound>
 		<feedPower>0</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0x9cd" id="Bow of Deep Enchantment">
 		<Class>Equipment</Class>
@@ -2411,7 +2411,7 @@
 		<ArcGap>8</ArcGap>
 		<OldSound>arrowShoot</OldSound>
 		<feedPower>0</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc02" id="Doom Bow">
 		<Class>Equipment</Class>
@@ -2437,7 +2437,7 @@
 		<NumProjectiles>1</NumProjectiles>
 		<OldSound>arrowShoot</OldSound>
 		<feedPower>900</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc10" id="Coral Bow">
 		<Class>Equipment</Class>
@@ -2463,7 +2463,7 @@
 		<NumProjectiles>2</NumProjectiles>
 		<OldSound>arrowShoot</OldSound>
 		<feedPower>1200</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xa1f" id="Potion of Attack">
 		<Class>Equipment</Class>
@@ -2612,7 +2612,7 @@
 		<Activate stat="20" amount="1">IncrementStat</Activate>
 		<Consumable/>
 		<Potion/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>150</feedPower>
 	</Object>
@@ -2629,7 +2629,7 @@
 		<Activate stat="21" amount="1">IncrementStat</Activate>
 		<Consumable/>
 		<Potion/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>150</feedPower>
 	</Object>
@@ -2646,7 +2646,7 @@
 		<Activate stat="22" amount="1">IncrementStat</Activate>
 		<Consumable/>
 		<Potion/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>150</feedPower>
 	</Object>
@@ -2663,7 +2663,7 @@
 		<Activate stat="26" amount="1">IncrementStat</Activate>
 		<Consumable/>
 		<Potion/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>150</feedPower>
 	</Object>
@@ -2680,7 +2680,7 @@
 		<Activate stat="27" amount="1">IncrementStat</Activate>
 		<Consumable/>
 		<Potion/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>150</feedPower>
 	</Object>
@@ -2697,7 +2697,7 @@
 		<Activate stat="28" amount="1">IncrementStat</Activate>
 		<Consumable/>
 		<Potion/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>150</feedPower>
 	</Object>
@@ -2714,7 +2714,7 @@
 		<Activate stat="0" amount="5">IncrementStat</Activate>
 		<Consumable/>
 		<Potion/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>250</feedPower>
 	</Object>
@@ -2731,7 +2731,7 @@
 		<Activate stat="3" amount="5">IncrementStat</Activate>
 		<Consumable/>
 		<Potion/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>250</feedPower>
 	</Object>
@@ -2746,7 +2746,7 @@
 		<Description>Customize your Warrior with the Olive Gladiator Skin.</Description>
 		<Activate skinType="1027">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>2000</feedPower>
 	</Object>
@@ -2761,7 +2761,7 @@
 		<Description>Customize your Warrior with the Ivory Gladiator Skin.</Description>
 		<Activate skinType="1028">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>2000</feedPower>
 	</Object>
@@ -2776,7 +2776,7 @@
 		<Description>Customize your Ninja with the Rosen Blade Skin.\n\nSprite Credits: Univoid</Description>
 		<Activate skinType="1029">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>2000</feedPower>
 	</Object>
@@ -2791,7 +2791,7 @@
 		<Description>Customize your Ninja with the Djinja Skin.</Description>
 		<Activate skinType="1030">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>2000</feedPower>
 	</Object>
@@ -2806,7 +2806,7 @@
 		<Description>Customize your Ninja with the Baby Djinja Skin.</Description>
 		<Activate skinType="29840">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -2821,7 +2821,7 @@
 		<Description>This rose might look peaceful, but her blade will strike you faster than you blink!\n\nSprite Credits: Lovens</Description>
 		<Activate skinType="29841">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -2836,7 +2836,7 @@
 		<Description>Customize your Priest with the Mini Geb Skin.</Description>
 		<Activate skinType="29842">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -2851,7 +2851,7 @@
 		<Description>Customize your Rogue with the Mini Skuld Skin.</Description>
 		<Activate skinType="29843">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -2866,7 +2866,7 @@
 		<Description>Customize your Knight with the Mini Oryx Skin.</Description>
 		<Activate skinType="29847">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -2881,7 +2881,7 @@
 		<Description>Customize your Paladin with the Mini Swoll Skin.</Description>
 		<Activate skinType="29845">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -2896,7 +2896,7 @@
 		<Description>Customize your Wizard with the Mini Twilight Skin.</Description>
 		<Activate skinType="29844">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -2911,7 +2911,7 @@
 		<Description>Customize your Mystic with the Mini Phylactery Skin.</Description>
 		<Activate skinType="29846">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -2926,7 +2926,7 @@
 		<Description>Customize your Huntress with the Mini Thessal Skin.</Description>
 		<Activate skinType="29848">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -2941,7 +2941,7 @@
 		<Description>Customize your Knight with the Slurp Knight Skin.</Description>
 		<Activate skinType="2521">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -2956,7 +2956,7 @@
 		<Description>Customize your Necromancer with the Vampire Lord Skin.</Description>
 		<Activate skinType="32766">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -2971,7 +2971,7 @@
 		<Description>Customize your Paladin with the Headless Rider Skin.</Description>
 		<Activate skinType="32654">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>750</feedPower>
 	</Object>
@@ -2986,7 +2986,7 @@
 		<Description>Customize your Paladin with the Pilgrim Father Skin.</Description>
 		<Activate skinType="32656">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -3001,7 +3001,7 @@
 		<Description>Customize your Mystic with the Pilgrim Mother Skin.</Description>
 		<Activate skinType="32657">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -3016,7 +3016,7 @@
 		<Description>Customize your Wizard with the Wizard Supreme Skin.</Description>
 		<Activate skinType="32658">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -3031,7 +3031,7 @@
 		<Description>Customize your Warrior with Rudolph the Berzerk Skin.</Description>
 		<Activate skinType="32675">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>750</feedPower>
 	</Object>
@@ -3046,7 +3046,7 @@
 		<Description>Customize your Paladin with Miss Santa Skin.</Description>
 		<Activate skinType="32676">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -3061,7 +3061,7 @@
 		<Description>Customize your Wizard with Snow Queen Skin.</Description>
 		<Activate skinType="32677">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -3076,7 +3076,7 @@
 		<Description>Customize your Warrior with Dragon Tamer Skin.</Description>
 		<Activate skinType="32701">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -3091,7 +3091,7 @@
 		<Description>Customize your Archer with the Inuit Skin.</Description>
 		<Activate skinType="312">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -3106,7 +3106,7 @@
 		<Description>Customize your Rogue  with the Snowcloaked Rogue Skin.</Description>
 		<Activate skinType="313">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -3361,7 +3361,7 @@
 		<Activate amount="125">Heal</Activate>
 		<Consumable/>
 		<SuccessorId>Elixir of Health 6</SuccessorId>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>2</BagType>
 		<feedPower>35</feedPower>
@@ -3381,7 +3381,7 @@
 		<Activate amount="125">Heal</Activate>
 		<Consumable/>
 		<SuccessorId>Elixir of Health 5</SuccessorId>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>2</BagType>
 		<feedPower>30</feedPower>
@@ -3401,7 +3401,7 @@
 		<Activate amount="125">Heal</Activate>
 		<Consumable/>
 		<SuccessorId>Elixir of Health 4</SuccessorId>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>2</BagType>
 		<feedPower>25</feedPower>
@@ -3421,7 +3421,7 @@
 		<Activate amount="125">Heal</Activate>
 		<Consumable/>
 		<SuccessorId>Elixir of Health 3</SuccessorId>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>2</BagType>
 		<feedPower>20</feedPower>
@@ -3441,7 +3441,7 @@
 		<Activate amount="125">Heal</Activate>
 		<Consumable/>
 		<SuccessorId>Elixir of Health 2</SuccessorId>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>2</BagType>
 		<feedPower>15</feedPower>
@@ -3461,7 +3461,7 @@
 		<Activate amount="125">Heal</Activate>
 		<Consumable/>
 		<SuccessorId>Elixir of Health 1</SuccessorId>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>2</BagType>
 		<feedPower>10</feedPower>
@@ -3479,7 +3479,7 @@
 		<Sound>use_potion</Sound>
 		<Activate amount="125">Heal</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>2</BagType>
 		<feedPower>5</feedPower>
@@ -3499,7 +3499,7 @@
 		<Activate amount="125">Magic</Activate>
 		<Consumable/>
 		<SuccessorId>Elixir of Magic 6</SuccessorId>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>2</BagType>
 		<feedPower>35</feedPower>
@@ -3519,7 +3519,7 @@
 		<Activate amount="125">Magic</Activate>
 		<Consumable/>
 		<SuccessorId>Elixir of Magic 5</SuccessorId>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>2</BagType>
 		<feedPower>30</feedPower>
@@ -3539,7 +3539,7 @@
 		<Activate amount="125">Magic</Activate>
 		<Consumable/>
 		<SuccessorId>Elixir of Magic 4</SuccessorId>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>2</BagType>
 		<feedPower>25</feedPower>
@@ -3559,7 +3559,7 @@
 		<Activate amount="125">Magic</Activate>
 		<Consumable/>
 		<SuccessorId>Elixir of Magic 3</SuccessorId>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>2</BagType>
 		<feedPower>20</feedPower>
@@ -3579,7 +3579,7 @@
 		<Activate amount="125">Magic</Activate>
 		<Consumable/>
 		<SuccessorId>Elixir of Magic 2</SuccessorId>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>2</BagType>
 		<feedPower>15</feedPower>
@@ -3599,7 +3599,7 @@
 		<Activate amount="125">Magic</Activate>
 		<Consumable/>
 		<SuccessorId>Elixir of Magic 1</SuccessorId>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>2</BagType>
 		<feedPower>10</feedPower>
@@ -3617,7 +3617,7 @@
 		<Sound>use_potion</Sound>
 		<Activate amount="125">Magic</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>2</BagType>
 		<feedPower>5</feedPower>
@@ -3666,7 +3666,7 @@
 		<Sound>use_potion</Sound>
 		<Activate amount="200">Heal</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>0</BagType>
 		<feedPower>50</feedPower>
@@ -3683,7 +3683,7 @@
 		<Sound>use_potion</Sound>
 		<Activate amount="200">Magic</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>0</BagType>
 		<feedPower>50</feedPower>
@@ -3699,7 +3699,7 @@
 		<Description>Adds speed and reduces attack.</Description>
 		<Sound>use_potion</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>4</BagType>
 		<Activate stat="22" amount="15" duration="45">StatBoostSelf</Activate>
@@ -3717,7 +3717,7 @@
 		<Description>Adds attack to everyone reduces speed for self.</Description>
 		<Sound>use_potion</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>4</BagType>
 		<Activate stat="22" amount="-10" duration="30">StatBoostSelf</Activate>
@@ -3735,7 +3735,7 @@
 		<Description>A potion that temporarily boosts dexterity.</Description>
 		<Sound>use_potion</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>4</BagType>
 		<Activate stat="28" amount="15" duration="30">StatBoostSelf</Activate>
@@ -3752,7 +3752,7 @@
 		<Description>A potion that temporarily boosts maximum health points.</Description>
 		<Sound>use_potion</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>4</BagType>
 		<Activate stat="0" amount="75" duration="30">StatBoostSelf</Activate>
@@ -3769,7 +3769,7 @@
 		<Description>A potion that temporarily boosts maximum magic points.</Description>
 		<Sound>use_potion</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>4</BagType>
 		<Activate stat="3" amount="75" duration="30">StatBoostSelf</Activate>
@@ -3786,7 +3786,7 @@
 		<Description>A potion that temporarily boosts defense.</Description>
 		<Sound>use_potion</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>4</BagType>
 		<Activate stat="21" amount="15" duration="30">StatBoostSelf</Activate>
@@ -3803,7 +3803,7 @@
 		<Description>A potion that temporarily boosts the dexterity of all nearby allies.</Description>
 		<Sound>use_potion</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>4</BagType>
 		<Activate stat="28" amount="30" duration="30" range="6">StatBoostAura</Activate>
@@ -3820,7 +3820,7 @@
 		<Description>A potion that temporarily boosts the maximum health points of all nearby allies.</Description>
 		<Sound>use_potion</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>4</BagType>
 		<Activate stat="0" amount="150" duration="30" range="6">StatBoostAura</Activate>
@@ -3837,7 +3837,7 @@
 		<Description>A potion that temporarily boosts the maximum magic points of all nearby allies.</Description>
 		<Sound>use_potion</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>4</BagType>
 		<Activate stat="3" amount="150" duration="30" range="6">StatBoostAura</Activate>
@@ -3854,7 +3854,7 @@
 		<Description>A potion that temporarily boosts the defense of all nearby allies.</Description>
 		<Sound>use_potion</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>4</BagType>
 		<Activate stat="21" amount="30" duration="30" range="6">StatBoostAura</Activate>
@@ -3873,7 +3873,7 @@
 		<ActivateOnEquip stat="22" amount="3">IncrementStat</ActivateOnEquip>
 		<BagType>3</BagType>
 		<feedPower>200</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0x708" id="Spider's Eye Ring">
 		<Class>Equipment</Class>
@@ -3888,7 +3888,7 @@
 		<ActivateOnEquip stat="27" amount="3">IncrementStat</ActivateOnEquip>
 		<BagType>3</BagType>
 		<feedPower>200</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xa4f" id="Ring of Minor Defense">
 		<Class>Equipment</Class>
@@ -4511,7 +4511,7 @@
 		<BagType>6</BagType>
 		<FameBonus>5</FameBonus>
 		<feedPower>500</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xba1" id="Ring of the Nile">
 		<Class>Equipment</Class>
@@ -4529,7 +4529,7 @@
 		<BagType>6</BagType>
 		<FameBonus>5</FameBonus>
 		<feedPower>900</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xba2" id="Ring of the Pyramid">
 		<Class>Equipment</Class>
@@ -4546,7 +4546,7 @@
 		<BagType>6</BagType>
 		<FameBonus>5</FameBonus>
 		<feedPower>900</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xa2e" id="Fire Spray Spell">
 		<Class>Equipment</Class>
@@ -4748,7 +4748,7 @@
 		<MpCost>75</MpCost>
 		<Activate>BulletNova</Activate>
 		<feedPower>1200</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xa31" id="Healing Tome">
 		<Class>Equipment</Class>
@@ -5065,7 +5065,7 @@
 		<Activate effect="Invulnerable" duration="1.2" useWisMod="true">ConditionEffectSelf</Activate>
 		<Cooldown>5</Cooldown>
 		<feedPower>750</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xa56" id="Cloak of Shadows">
 		<Class>Equipment</Class>
@@ -5227,7 +5227,7 @@
 		<Activate maxDistance="20">Teleport</Activate>
 		<Cooldown>6.5</Cooldown>
 		<feedPower>750</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xa5c" id="Robe of the Neophyte">
 		<Class>Equipment</Class>
@@ -5462,7 +5462,7 @@
 		<BagType>3</BagType>
 		<FameBonus>5</FameBonus>
 		<feedPower>0</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0x9d0" id="Robe of the Ancient Intellect">
 		<Class>Equipment</Class>
@@ -5480,7 +5480,7 @@
 		<BagType>3</BagType>
 		<FameBonus>6</FameBonus>
 		<feedPower>0</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xa61" id="Magic Quiver">
 		<Class>Equipment</Class>
@@ -5733,7 +5733,7 @@
 		<Activate>Shoot</Activate>
 		<Cooldown>6</Cooldown>
 		<feedPower>800</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xa66" id="Combat Helm">
 		<Class>Equipment</Class>
@@ -5893,7 +5893,7 @@
 		<Activate effect="Armored" duration="4.5">ConditionEffectSelf</Activate>
 		<Cooldown>6</Cooldown>
 		<feedPower>1250</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xa97" id="Energy Staff">
 		<Class>Equipment</Class>
@@ -6277,7 +6277,7 @@
 		<ArcGap>0</ArcGap>
 		<OldSound>magicShoot</OldSound>
 		<feedPower>0</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0x910" id="Staff of the Fundamental Core">
 		<Class>Equipment</Class>
@@ -6305,7 +6305,7 @@
 		<ArcGap>0</ArcGap>
 		<OldSound>magicShoot</OldSound>
 		<feedPower>0</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc03" id="Staff of Extreme Prejudice">
 		<Class>Equipment</Class>
@@ -6333,7 +6333,7 @@
 		<ArcGap>36</ArcGap>
 		<OldSound>magicShoot</OldSound>
 		<feedPower>600</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xaa3" id="Centipede Poison">
 		<Class>Equipment</Class>
@@ -6588,7 +6588,7 @@
 		<MpCost>135</MpCost>
 		<Activate radius="2" totalDamage="200">VampireBlast</Activate>
 		<feedPower>250</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xab1" id="Hunting Trap">
 		<Class>Equipment</Class>
@@ -6852,7 +6852,7 @@
 		<Activate effect="Damaging" duration="2" useWisMod="true">ConditionEffectSelf</Activate>
 		<Cooldown>5</Cooldown>
 		<feedPower>750</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xaa9" id="Purple Drake Egg">
 		<Class>Equipment</Class>
@@ -7095,7 +7095,7 @@
 		<Activate duration="5">Decoy</Activate>
 		<Activate duration="5" angleOffset="180">Decoy</Activate>
 		<feedPower>400</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xb21" id="Chicken Leg of Doom">
 		<Class>Equipment</Class>
@@ -7120,7 +7120,7 @@
 		<OldSound>daggerSwing</OldSound>
 		<FameBonus>4</FameBonus>
 		<feedPower>650</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xae5" id="Lightning Scepter">
 		<Class>Equipment</Class>
@@ -7256,7 +7256,7 @@
 			<Index>0x46</Index>
 		</Texture>
 		<SlotType>9</SlotType>
-		<Soulbound/>
+		
 		<Description>A historical amulet that has been passed down for generations. Although once cursed in the past, it still holds a hint of its ancient power.</Description>
 		<ActivateOnEquip stat="20" amount="1">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip stat="21" amount="1">IncrementStat</ActivateOnEquip>
@@ -7281,7 +7281,7 @@
 		<Description>A key which opens an entrance to an Undead Lair.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Undead Lair Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -7298,7 +7298,7 @@
 		<Description>A key which opens an entrance to a Pirate Cave.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Pirate Cave Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -7315,7 +7315,7 @@
 		<Description>A key which opens an entrance to a Spider Den.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Spider Den Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -7332,7 +7332,7 @@
 		<Description>A key which opens an entrance to an Abyss of Demons.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Abyss of Demons Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -7349,7 +7349,7 @@
 		<Description>A key which opens an entrance to a Snake Pit.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Snake Pit Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -7366,7 +7366,7 @@
 		<Description>A key which opens an entrance to the Tomb of the Ancients.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Tomb of the Ancients Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -7383,7 +7383,7 @@
 		<Description>A key which opens an entrance to the Tomb of the Ancients (Heroic).\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Tomb of the Ancients Portal (Heroic)">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -7400,7 +7400,7 @@
 		<Description>A key which opens an entrance to a Sprite World.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Glowing Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -7433,7 +7433,7 @@
 		<Description>A key which opens an entrance to an Ocean Trench.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Ocean Trench Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -7450,7 +7450,7 @@
 		<Description>Enter this destroyed Nexus at your own peril.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Battle Nexus Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -7488,7 +7488,7 @@
 		<BagType>3</BagType>
 		<FameBonus>4</FameBonus>
 		<feedPower>650</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc14" id="Robe of the Tlatoani">
 		<Class>Equipment</Class>
@@ -7504,7 +7504,7 @@
 		<BagType>3</BagType>
 		<FameBonus>2</FameBonus>
 		<feedPower>250</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc15" id="Staff of the Crystal Serpent">
 		<Class>Equipment</Class>
@@ -7532,7 +7532,7 @@
 		<ArcGap>0</ArcGap>
 		<OldSound>magicShoot</OldSound>
 		<feedPower>320</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc16" id="Cracked Crystal Skull">
 		<Class>Equipment</Class>
@@ -7549,7 +7549,7 @@
 		<MpCost>120</MpCost>
 		<Activate radius="4.25" totalDamage="80">VampireBlast</Activate>
 		<feedPower>270</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc17" id="Crystal Bone Ring">
 		<Class>Equipment</Class>
@@ -7564,7 +7564,7 @@
 		<ActivateOnEquip stat="27" amount="3">IncrementStat</ActivateOnEquip>
 		<BagType>3</BagType>
 		<feedPower>220</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc18" id="Coral Silk Armor">
 		<Class>Equipment</Class>
@@ -7581,7 +7581,7 @@
 		<BagType>3</BagType>
 		<FameBonus>5</FameBonus>
 		<feedPower>800</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc19" id="Totem Key">
 		<Class>Equipment</Class>
@@ -7594,7 +7594,7 @@
 		<Description>A key which opens a passage to the Forbidden Jungle.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Forbidden Jungle Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -7611,7 +7611,7 @@
 		<Description>It's cold in here.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Ice Cave Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -7659,7 +7659,7 @@
 		<NumProjectiles>1</NumProjectiles>
 		<OldSound>arrowShoot</OldSound>
 		<feedPower>900</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc1c" id="Coral Venom Trap">
 		<Class>Equipment</Class>
@@ -7678,7 +7678,7 @@
 		<MpCost>130</MpCost>
 		<Activate radius="4" totalDamage="350" condEffect="Paralyzed" condDuration="3.5">Trap</Activate>
 		<feedPower>500</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc1d" id="St. Abraham's Wand">
 		<Class>Equipment</Class>
@@ -7704,7 +7704,7 @@
 		<FameBonus>3</FameBonus>
 		<OldSound>magicShoot</OldSound>
 		<feedPower>700</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc1e" id="Tome of Holy Protection">
 		<Class>Equipment</Class>
@@ -7725,7 +7725,7 @@
 		<Activate amount="200" range="6" useWisMod="true">HealNova</Activate>
 		<Activate effect="Armored" duration="4" useWisMod="true">ConditionEffectSelf</Activate>
 		<feedPower>1300</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc09" id="Tome of Purification">
 		<Class>Equipment</Class>
@@ -7747,7 +7747,7 @@
 		<Activate range="6" effect="Speedy" checkExistingEffect="Hexed">ClearConditionEffectAura</Activate>
 		<Activate range="6">RemoveNegativeConditions</Activate>
 		<feedPower>900</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc1f" id="Chasuble of Holy Light">
 		<Class>Equipment</Class>
@@ -7765,7 +7765,7 @@
 		<BagType>3</BagType>
 		<FameBonus>3</FameBonus>
 		<feedPower>650</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc20" id="Ring of Divine Faith">
 		<Class>Equipment</Class>
@@ -7781,7 +7781,7 @@
 		<FameBonus>2</FameBonus>
 		<BagType>3</BagType>
 		<feedPower>500</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc21" id="Holy Water">
 		<Class>Equipment</Class>
@@ -7824,7 +7824,7 @@
 		<OldSound>daggerSwing</OldSound>
 		<FameBonus>2</FameBonus>
 		<feedPower>300</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc23" id="Manor Key">
 		<Class>Equipment</Class>
@@ -7837,7 +7837,7 @@
 		<Description>A key which opens a passage to the Manor of the Immortals.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Manor of the Immortals Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -7870,7 +7870,7 @@
 		<OldSound>magicShoot</OldSound>
 		<FameBonus>2</FameBonus>
 		<feedPower>550</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc25" id="Ghost Pirate Rum">
 		<Class>Equipment</Class>
@@ -7902,7 +7902,7 @@
 		<ActivateOnEquip stat="20" amount="20">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip stat="22" amount="20">IncrementStat</ActivateOnEquip>
 		<BagType>6</BagType>
-		<Soulbound/>
+		
 		<feedPower>0</feedPower>
 	</Object>
 	<Object type="0xc27" id="Captain's Ring">
@@ -7920,7 +7920,7 @@
 		<BagType>3</BagType>
 		<FameBonus>2</FameBonus>
 		<feedPower>400</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc28" id="Spectral Cloth Armor">
 		<Class>Equipment</Class>
@@ -7938,7 +7938,7 @@
 		<BagType>3</BagType>
 		<FameBonus>2</FameBonus>
 		<feedPower>650</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc29" id="Spirit Dagger">
 		<Class>Equipment</Class>
@@ -7964,7 +7964,7 @@
 		<OldSound>daggerSwing</OldSound>
 		<FameBonus>4</FameBonus>
 		<feedPower>900</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc2a" id="Ghostly Prism">
 		<Class>Equipment</Class>
@@ -7982,7 +7982,7 @@
 		<Activate maxDistance="20">Teleport</Activate>
 		<FameBonus>6</FameBonus>
 		<feedPower>1200</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc2b" id="Small Firecracker">
 		<Class>Equipment</Class>
@@ -7998,7 +7998,7 @@
 		<BagType>2</BagType>
 		<Activate objectId="Lil Firecracker">Pet</Activate>
 		<OldSound>use_potion</OldSound>
-		<Soulbound/>
+		
 		<feedPower>30</feedPower>
 	</Object>
 	<Object type="0xc2c" id="Large Firecracker">
@@ -8015,7 +8015,7 @@
 		<BagType>2</BagType>
 		<Activate objectId="Big Firecracker">Pet</Activate>
 		<OldSound>use_potion</OldSound>
-		<Soulbound/>
+		
 		<feedPower>50</feedPower>
 	</Object>
 	<Object type="0xc2d" id="America Ring">
@@ -8038,7 +8038,7 @@
 		<BagType>6</BagType>
 		<FameBonus>3</FameBonus>
 		<feedPower>700</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc2e" id="Davy's Key">
 		<Class>Equipment</Class>
@@ -8051,7 +8051,7 @@
 		<Description>A key that opens the way to Davy Jones' Locker.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Davy Jones' Locker Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -8075,7 +8075,7 @@
 		<MpCost>65</MpCost>
 		<Activate totalDamage="180" maxTargets="7" condEffect="Slowed" condDuration="3" color="0xff9933">Lightning</Activate>
 		<feedPower>1100</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc31" id="Experimental Ring">
 		<Class>Equipment</Class>
@@ -8093,7 +8093,7 @@
 		<BagType>3</BagType>
 		<FameBonus>4</FameBonus>
 		<feedPower>500</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc32" id="Robe of the Mad Scientist">
 		<Class>Equipment</Class>
@@ -8112,7 +8112,7 @@
 		<BagType>6</BagType>
 		<FameBonus>5</FameBonus>
 		<feedPower>800</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc33" id="Conducting Wand">
 		<Class>Equipment</Class>
@@ -8139,7 +8139,7 @@
 		<FameBonus>4</FameBonus>
 		<OldSound>magicShoot</OldSound>
 		<feedPower>900</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc34" id="Sand Pail 5">
 		<DisplayId>Sand Pail</DisplayId>
@@ -8158,7 +8158,7 @@
 		<BagType>2</BagType>
 		<Activate objectId="Sand Castle">Pet</Activate>
 		<OldSound>use_potion</OldSound>
-		<Soulbound/>
+		
 		<feedPower>80</feedPower>
 	</Object>
 	<Object type="0xc35" id="Sand Pail 4">
@@ -8178,7 +8178,7 @@
 		<BagType>2</BagType>
 		<Activate objectId="Sand Castle">Pet</Activate>
 		<OldSound>use_potion</OldSound>
-		<Soulbound/>
+		
 		<feedPower>60</feedPower>
 	</Object>
 	<Object type="0xc36" id="Sand Pail 3">
@@ -8198,7 +8198,7 @@
 		<BagType>2</BagType>
 		<Activate objectId="Sand Castle">Pet</Activate>
 		<OldSound>use_potion</OldSound>
-		<Soulbound/>
+		
 		<feedPower>40</feedPower>
 	</Object>
 	<Object type="0xc37" id="Sand Pail 2">
@@ -8218,7 +8218,7 @@
 		<BagType>2</BagType>
 		<Activate objectId="Sand Castle">Pet</Activate>
 		<OldSound>use_potion</OldSound>
-		<Soulbound/>
+		
 		<feedPower>20</feedPower>
 	</Object>
 	<Object type="0xc38" id="Sand Pail 1">
@@ -8236,7 +8236,7 @@
 		<BagType>2</BagType>
 		<Activate objectId="Sand Castle">Pet</Activate>
 		<OldSound>use_potion</OldSound>
-		<Soulbound/>
+		
 		<feedPower>10</feedPower>
 	</Object>
 	<Object type="0xc39" id="Bahama Sunrise">
@@ -8250,7 +8250,7 @@
 		<Description>A tangy fruit drink that boosts dexterity and life.</Description>
 		<Sound>use_potion</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>4</BagType>
 		<Activate stat="28" amount="10" duration="20">StatBoostSelf</Activate>
@@ -8269,7 +8269,7 @@
 		<Description>A refreshing tropical drink that boosts life and mana.</Description>
 		<Sound>use_potion</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>4</BagType>
 		<Activate stat="3" amount="50" duration="20">StatBoostSelf</Activate>
@@ -8288,7 +8288,7 @@
 		<Description>A sweet tropical drink that boosts attack and dexterity.</Description>
 		<Sound>use_potion</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>4</BagType>
 		<Activate stat="20" amount="10" duration="20">StatBoostSelf</Activate>
@@ -8307,7 +8307,7 @@
 		<Description>A bold island drink that boosts defense and vitality.</Description>
 		<Sound>use_potion</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Potion/>
 		<BagType>4</BagType>
 		<Activate stat="21" amount="10" duration="30">StatBoostSelf</Activate>
@@ -8326,7 +8326,7 @@
 		<Description>A key which opens a portal to the Beachzone.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Beachzone Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -8347,7 +8347,7 @@
 		<FameBonus>3</FameBonus>
 		<BagType>6</BagType>
 		<feedPower>500</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc3f" id="Silver Medal">
 		<Class>Equipment</Class>
@@ -8364,7 +8364,7 @@
 		<FameBonus>2</FameBonus>
 		<BagType>6</BagType>
 		<feedPower>350</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc40" id="Bronze Medal">
 		<Class>Equipment</Class>
@@ -8381,7 +8381,7 @@
 		<FameBonus>1</FameBonus>
 		<BagType>6</BagType>
 		<feedPower>200</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc2f" id="Lab Key">
 		<Class>Equipment</Class>
@@ -8394,7 +8394,7 @@
 		<Description>A key which reveals the way to the Mad Lab.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Mad Lab Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -8427,7 +8427,7 @@
 		<Description>Get 2x all XP gained! Lasts until level 20 or death.</Description>
 		<Sound>use_potion</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>2</BagType>
 		<Timer>-1.0</Timer>
 		<XpBoost/>
@@ -8445,7 +8445,7 @@
 		<Description>Get 2x all XP gained! Lasts until level 20 or death.</Description>
 		<Sound>use_potion</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>2</BagType>
 		<Timer>300</Timer>
 		<XpBoost/>
@@ -8789,7 +8789,7 @@
 		<BagType>3</BagType>
 		<OldSound>bladeSwing</OldSound>
 		<feedPower>300</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0x915" id="Ray Katana">
 		<Class>Equipment</Class>
@@ -8814,7 +8814,7 @@
 		<FameBonus>3</FameBonus>
 		<OldSound>bladeSwing</OldSound>
 		<feedPower>500</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc53" id="Basic Star">
 		<Class>Equipment</Class>
@@ -9095,7 +9095,7 @@
 		<MultiPhase/>
 		<Activate>ShurikenAbility</Activate>
 		<feedPower>850</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc5b" id="Mad God Ale">
 		<Class>Equipment</Class>
@@ -9186,7 +9186,7 @@
 		<ActivateOnEquip stat="27" amount="-10">IncrementStat</ActivateOnEquip>
 		<BagType>3</BagType>
 		<feedPower>400</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc60" id="Rock Candy">
 		<Class>Equipment</Class>
@@ -9218,7 +9218,7 @@
 		<BagType>6</BagType>
 		<FameBonus>4</FameBonus>
 		<feedPower>1000</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc62" id="Candy Key">
 		<Class>Equipment</Class>
@@ -9231,7 +9231,7 @@
 		<Description>A key which opens the way to the Candyland Hunting Grounds.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Candyland Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -9331,7 +9331,7 @@
 			<EffectInfo name="Duration" description="30 min"/>
 		</ExtraTooltipData>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate duration="1800">LTBoost</Activate>
 		<BagType>2</BagType>
 		<feedPower>150</feedPower>
@@ -9350,7 +9350,7 @@
 		</ExtraTooltipData>
 		<Sound>use_potion</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate duration="1800">LDBoost</Activate>
 		<BagType>2</BagType>
 		<feedPower>150</feedPower>
@@ -9369,7 +9369,7 @@
 		</ExtraTooltipData>
 		<Sound>use_potion</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>2</BagType>
 		<Activate duration="3600">XPBoost</Activate>
 		<feedPower>110</feedPower>
@@ -9388,7 +9388,7 @@
 		</ExtraTooltipData>
 		<Sound>use_potion</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>2</BagType>
 		<Activate duration="1200">XPBoost</Activate>
 		<feedPower>75</feedPower>
@@ -9410,7 +9410,7 @@
 		<Activate maxDistance="20">Teleport</Activate>
 		<BagType>6</BagType>
 		<feedPower>1000</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc6d" id="Plague Poison">
 		<Class>Equipment</Class>
@@ -9429,7 +9429,7 @@
 		<MpCost>80</MpCost>
 		<Activate radius="9" totalDamage="500" duration="15" color="8fa547">PoisonGrenade</Activate>
 		<feedPower>450</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc6c" id="Backpack">
 		<Class>Equipment</Class>
@@ -9444,7 +9444,7 @@
 		<Consumable/>
 		<Activate>Backpack</Activate>
 		<Backpack/>
-		<Soulbound/>
+		
 		<BagType>2</BagType>
 		<OldSound>use_potion</OldSound>
 		<feedPower>200</feedPower>
@@ -9464,7 +9464,7 @@
 		<BagType>6</BagType>
 		<FameBonus>4</FameBonus>
 		<feedPower>500</feedPower>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0xc6f" id="Cemetery Key">
 		<Class>Equipment</Class>
@@ -9477,7 +9477,7 @@
 		<Description>A key which opens a portal to the Haunted Cemetery.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Haunted Cemetery Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -9494,7 +9494,7 @@
 		<Description>A key which opens a portal to the Halloween Cemetery.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Halloween Cemetery Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -9801,7 +9801,7 @@
 		<BagType>0</BagType>
 		<Activate objectId="Lil Firecracker">Pet</Activate>
 		<OldSound>use_potion</OldSound>
-		<Soulbound/>
+		
 		<feedPower>400</feedPower>
 	</Object>
 
@@ -9835,7 +9835,7 @@
 		</ExtraTooltipData>
 		<Sound>use_potion</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<LDBoosted/>
 		<LTBoosted/>
 		<Timer>1200</Timer>
@@ -9880,7 +9880,7 @@
 		<Description>A key which opens a portal to the Lair of Draconis.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Lair of Draconis Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -9897,7 +9897,7 @@
 		<Description>A key which opens an entrance to the Forest Maze.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Forest Maze Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -9914,7 +9914,7 @@
 		<Description>A key which opens an entrance to the Woodland Labyrinth.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Woodland Labyrinth">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -9931,7 +9931,7 @@
 		<Description>A key which opens an entrance to Deadwater Docks.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Deadwater Docks">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -9948,7 +9948,7 @@
 		<Description>A key which opens an entrance to The Crawling Depths.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="The Crawling Depths">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -9965,7 +9965,7 @@
 		<Description>A key which opens an entrance to The Shatters.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="The Shatters">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -10146,7 +10146,7 @@
 		<Consumable/>
 		<BagType>4</BagType>
 		<Track/>
-		<Soulbound/>
+		
 	</Object>
 	<Object type="0x226c" id="Scarlett Skin">
 		<Class>Equipment</Class>
@@ -10276,7 +10276,7 @@
 		<Description>A key which opens an entrance to Belladonna's Garden.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Belladonna's Garden Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -10319,7 +10319,7 @@
 		<Description>A molten Key that links directly to the Lair of Shaitan, Advisor to Oryx.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Lair of Shaitan Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -10349,7 +10349,7 @@
 		<Description>This bunny is hopping mad that players have been looting all the eggs he hid.</Description>
 		<Activate skinType="8855">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>500</feedPower>
 	</Object>
@@ -10716,7 +10716,7 @@
 		<Description>A key which opens an entrance to the Puppet Master's Theatre.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Puppet Theatre Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -10785,7 +10785,7 @@
 		<Description>A key which opens a random dungeon.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate>MysteryPortal</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -10802,7 +10802,7 @@
 		<Description>A key which opens a random dungeon.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate>MysteryPortal</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -10819,7 +10819,7 @@
 		<Description>A key which opens a random dungeon.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate>MysteryPortal</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -11105,7 +11105,7 @@
 		<Description>A key which opens an entrance to the Puppet Master's Encore.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Puppet Encore Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -11164,7 +11164,7 @@
 		<Description>Lets you choose and change the physical form of your pet.\nYou must be in the pet yard to use it.</Description>
 		<BagType>3</BagType>
 		<feedPower>10</feedPower>
-		<Soulbound/>
+		
 		<PetFormStone/>
 	</Object>
 	<Object type="0xcfa" id="Crashy">
@@ -11193,7 +11193,7 @@
 		<Description>A key which opens an entrance to the Toxic Sewers.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Toxic Sewers Portal">Create</Activate>
 		<feedPower>260</feedPower>
 		<Track/>
@@ -11210,7 +11210,7 @@
 		<Description>A key which opens an entrance to The Hive.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="The Hive Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -11243,7 +11243,7 @@
 		<BagType>2</BagType>
 		<Activate objectId="Trick in a Box">Pet</Activate>
 		<OldSound>use_potion</OldSound>
-		<Soulbound/>
+		
 		<feedPower>100</feedPower>
 	</Object>
 	<Object type="0x1411" id="Trick White Bag">
@@ -11260,7 +11260,7 @@
 		<BagType>2</BagType>
 		<Activate objectId="Fake White Bag">Pet</Activate>
 		<OldSound>use_potion</OldSound>
-		<Soulbound/>
+		
 		<feedPower>100</feedPower>
 	</Object>
 	<Object type="0x7ffd" id="Giant Vampire Bat Pet Stone">
@@ -11274,7 +11274,7 @@
 		<Description>Transform your pet into Giant Vampire Bat of the Spooky family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
 		<Activate skinId="32763">PetSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>3</BagType>
 		<DisplayId>Giant Vampire Bat Skin</DisplayId>
 		<feedPower>5000</feedPower>
@@ -11290,7 +11290,7 @@
 		<Description>Transform your pet into Pumpkin Head of the Spooky family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
 		<Activate skinId="32651">PetSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>3</BagType>
 		<DisplayId>Pumpkin Head Pet Skin</DisplayId>
 		<feedPower>5000</feedPower>
@@ -11307,7 +11307,7 @@
 		<Sound>use_potion</Sound>
 		<Activate slot="char">Unlock</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>3</BagType>
 	</Object>
 	<Object type="0x32b" id="Vault Chest Unlocker">
@@ -11322,7 +11322,7 @@
 		<Sound>use_potion</Sound>
 		<Activate slot="vault">Unlock</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>3</BagType>
 	</Object>
 	<Object type="0x7f9a" id="Christmas Tree Pet Stone">
@@ -11336,7 +11336,7 @@
 		<Description>Transform your pet into Christmas Tree of the ? ? ? ? family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
 		<Activate skinId="32668">PetSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>3</BagType>
 		<DisplayId>Christmas Tree Skin</DisplayId>
 		<feedPower>5000</feedPower>
@@ -11352,7 +11352,7 @@
 		<Description>Transform your pet into Red Nose of the Woodland family. This is irreversible and the item is consumed upon use. The rarity and abilities of your pet will be retained. If you fuse your pet to reach a new rarity level it is not guaranteed that your pet will retain the current skin.</Description>
 		<Activate skinId="32670">PetSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>3</BagType>
 		<DisplayId>Red Nosed Skin</DisplayId>
 		<feedPower>5000</feedPower>
@@ -11369,7 +11369,7 @@
 		<Description>A key which opens an entrance to Oryx's Castle. For testing purposes.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Oryx's Castle Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -11387,7 +11387,7 @@
 		<Description>A key which opens an entrance to the Wine Cellar. For testing purposes.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Wine Cellar Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -11405,7 +11405,7 @@
 		<Description>A key which opens an entrance to Oryx's Chamber. For testing purposes.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Oryx Chamber Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -11423,7 +11423,7 @@
 		<Description>A key which opens an entrance to the Court of Oryx. Say hi to Craig for me. For testing purposes.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Court of Oryx Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -11441,7 +11441,7 @@
 		<Description>A key which opens an entrance to the Oryx Chicken Chamber. For testing purposes.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Oryx Chicken Chamber Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -11459,7 +11459,7 @@
 		<Description>A key which opens an entrance to Ice Tomb.\n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Ice Tomb Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -11488,7 +11488,7 @@
 		<Backpack/>
 		<Potion/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>100000</feedPower>
 	</Object>
 	<Object type="0x18f" id="Gift">
@@ -11505,7 +11505,7 @@
 		<Activate objectId="Testing Gift Spawner">Pet</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>50000</feedPower>
 	</Object>
 	<Object type="0x641" id="Keys">
@@ -11522,7 +11522,7 @@
 		<Activate id="Key Spawner">Create</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>50000</feedPower>
 	</Object>
 	<Object type="0x933" id="TKeys">
@@ -11539,7 +11539,7 @@
 		<Activate id="Testing Key Dropper">Create</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>50000</feedPower>
 	</Object>
 	<Object type="0x216" id="Lvl20">
@@ -11556,7 +11556,7 @@
 		<Activate objectId="Lvl20 Chicken Spawner">Pet</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>10000</feedPower>
 	</Object>
 	<Object type="0x218" id="Fame">
@@ -11573,7 +11573,7 @@
 		<Activate objectId="Fame Chicken Spawner">Pet</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>200000</feedPower>
 	</Object>
 	<Object type="0x6b5" id="Dragon Buddies">
@@ -11590,7 +11590,7 @@
 		<Activate objectId="Dragon Chain 1">Pet</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>5000</feedPower>
 	</Object>
 	<Object type="0x16eb" id="Chinese Dress Trickster Skin">
@@ -11604,7 +11604,7 @@
 		<Description>Fashionable AND dangerous.\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5859">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11619,7 +11619,7 @@
 		<Description>Looks a lot less cute once its sword is in your eye.\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5860">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11634,7 +11634,7 @@
 		<Description>Smaller than the real Frimar, but no less dangerous.\n\nSprite Credits: Poshun</Description>
 		<Activate skinType="5861">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11649,7 +11649,7 @@
 		<Description>Once sat on a Frozen Throne, but decided to go adventuring.\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5862">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11664,7 +11664,7 @@
 		<Description>Some say the world will end in fire, some say in ice.\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5863">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11679,7 +11679,7 @@
 		<Description>Crown not included to preserve sanity.\n\nSprite Credits: Kingged</Description>
 		<Activate skinType="5864">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11694,7 +11694,7 @@
 		<Description>In case of emergency use icicle to stab enemy.\n\nSprite Credits: Poshun</Description>
 		<Activate skinType="5865">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11709,7 +11709,7 @@
 		<Description>Do not follow, unless you like frostbite.\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5866">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11727,7 +11727,7 @@
 		<Activate hideEffect="true" objectId="Hearticles">Pet</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x171c" id="Warrior - Artist Extraordinaire Skin">
@@ -11741,7 +11741,7 @@
 		<Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5878">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11756,7 +11756,7 @@
 		<Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5879">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11771,7 +11771,7 @@
 		<Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5880">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11786,7 +11786,7 @@
 		<Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5881">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11801,7 +11801,7 @@
 		<Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5909">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11816,7 +11816,7 @@
 		<Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5910">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11831,7 +11831,7 @@
 		<Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5911">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11846,7 +11846,7 @@
 		<Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5912">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11861,7 +11861,7 @@
 		<Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5913">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11876,7 +11876,7 @@
 		<Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5914">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11891,7 +11891,7 @@
 		<Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5915">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11906,7 +11906,7 @@
 		<Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5968">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11921,7 +11921,7 @@
 		<Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5969">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11936,7 +11936,7 @@
 		<Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5970">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11951,7 +11951,7 @@
 		<Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5994">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11966,7 +11966,7 @@
 		<Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5995">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11981,7 +11981,7 @@
 		<Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5996">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -11996,7 +11996,7 @@
 		<Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5997">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12011,7 +12011,7 @@
 		<Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5998">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12026,7 +12026,7 @@
 		<Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="5999">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12041,7 +12041,7 @@
 		<Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="6000">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12056,7 +12056,7 @@
 		<Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="6001">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12071,7 +12071,7 @@
 		<Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="6002">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12086,7 +12086,7 @@
 		<Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="6003">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12101,7 +12101,7 @@
 		<Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="6004">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12116,7 +12116,7 @@
 		<Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="6005">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12131,7 +12131,7 @@
 		<Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="6006">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12146,7 +12146,7 @@
 		<Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="6007">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12161,7 +12161,7 @@
 		<Description>Oh white bag, white bag! Wherefore art thou white bag?\n\nSprite Credits: Poshun</Description>
 		<Activate skinType="6022">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12176,7 +12176,7 @@
 		<Description>She's coming for your heart!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="6023">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12191,7 +12191,7 @@
 		<Description>Is good loot a tender thing? It is too rare, too scarce, too extraordinary, and it pricks like a Poison Fang Dagger.\n\nSprite Credits: Poshun</Description>
 		<Activate skinType="6024">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12206,7 +12206,7 @@
 		<Description>Let's get this clown fiesta started!\n\nSprite Credits: Poshun</Description>
 		<Activate skinType="6025">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12221,7 +12221,7 @@
 		<Description>Totally not a Necromancer.\n\nSprite Credits: Beige</Description>
 		<Activate skinType="6026">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12236,7 +12236,7 @@
 		<Description>Random Dye</Description>
 		<Activate>MysteryDyes</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12251,7 +12251,7 @@
 		<Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="10930">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12266,7 +12266,7 @@
 		<Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="10931">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12281,7 +12281,7 @@
 		<Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="10932">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12296,7 +12296,7 @@
 		<Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="10933">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12311,7 +12311,7 @@
 		<Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="10934">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12326,7 +12326,7 @@
 		<Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="10935">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12341,7 +12341,7 @@
 		<Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="10936">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12356,7 +12356,7 @@
 		<Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="10937">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12371,7 +12371,7 @@
 		<Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="10938">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12386,7 +12386,7 @@
 		<Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="10940">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12401,7 +12401,7 @@
 		<Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="10941">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12416,7 +12416,7 @@
 		<Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="10942">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12431,7 +12431,7 @@
 		<Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="10943">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12446,7 +12446,7 @@
 		<Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="10944">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12461,7 +12461,7 @@
 		<Description>Make sure to Equip a Wind Circle for style points!\n\nSprite Credits: Poshun</Description>
 		<Activate skinType="10959">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12476,7 +12476,7 @@
 		<Description>Legends say she will lead you to a pot of gold if you catch her!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="10960">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12491,7 +12491,7 @@
 		<Description>The goddess of the sky. Make sure not to vandalize her property.\n\nSprite Credits: Poshun</Description>
 		<Activate skinType="10961">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12506,7 +12506,7 @@
 		<Description>The most ladylike of all leprechauns, or so she says. Don't tell the Mystic!\n\nSprite Credits: Kingged</Description>
 		<Activate skinType="10962">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12521,7 +12521,7 @@
 		<Description>200 POUNDS OF FLUFFY TESTOSTERONE!\n\nSprite Credits: Beige</Description>
 		<Activate skinType="10963">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12536,7 +12536,7 @@
 		<Description>Easily pulls his wool over people's eyes.\n\nSprite Credits: Beige</Description>
 		<Activate skinType="10964">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12551,7 +12551,7 @@
 		<Description>Ever thought about all the wizards who got polymorphed into sheep? \n\nSprite Credits: Beige</Description>
 		<Activate skinType="10965">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12566,7 +12566,7 @@
 		<Description>The hunters will now become the hunted! \n\nSprite Credits: Beige</Description>
 		<Activate skinType="10966">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12581,7 +12581,7 @@
 		<Description>Guides the lambs to greener pastures. \n\nSprite Credits: Beige</Description>
 		<Activate skinType="10967">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12596,7 +12596,7 @@
 		<Description>Little Bo-Peep has lost her sheep... \n\nSprite Credits: Beige</Description>
 		<Activate skinType="10968">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12611,7 +12611,7 @@
 		<Description>It's a bird... It's a plane... It's... just another wizard. \n\nSprite Credits: Kingged</Description>
 		<Activate skinType="10969">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12626,7 +12626,7 @@
 		<Description>MARVEL AT HIS ABILITY! \n\nSprite Credits: Poshun</Description>
 		<Activate skinType="10971">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12641,7 +12641,7 @@
 		<Description>Dye it green to become Stheno's sister! \n\nSprite Credits: Poshun</Description>
 		<Activate skinType="10970">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12656,7 +12656,7 @@
 		<Description>A divine leader of war and an exceptional musical artist. \n\nSprite Credits: Poshun</Description>
 		<Activate skinType="10974">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12671,7 +12671,7 @@
 		<Description>Sails the seven seas to sell his life pots. For overpay, naturally. \n\nSprite Credits: Poshun</Description>
 		<Activate skinType="10972">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>5000</feedPower>
 	</Object>
@@ -12686,7 +12686,7 @@
 		<Description>Customize your Rogue with the Beefcake Rogue Skin.</Description>
 		<Activate skinType="10973">UnlockSkin</Activate>
 		<Consumable/>
-		<Soulbound/>
+		
 		<BagType>4</BagType>
 		<feedPower>2000</feedPower>
 	</Object>
@@ -12702,7 +12702,7 @@
 		<Activate skinType="883">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4aab" id="B.B. Wolf Skin (SB)">
@@ -12717,7 +12717,7 @@
 		<Activate skinType="8967">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4aac" id="Agent Skin (SB)">
@@ -12732,7 +12732,7 @@
 		<Activate skinType="912">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4aad" id="Brigand Skin (SB)">
@@ -12747,7 +12747,7 @@
 		<Activate skinType="913">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4aae" id="Sorceress Skin (SB)">
@@ -12762,7 +12762,7 @@
 		<Activate skinType="899">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4aaf" id="Iceman Skin (SB)">
@@ -12777,7 +12777,7 @@
 		<Activate skinType="902">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4ab0" id="Scarlett Skin (SB)">
@@ -12792,7 +12792,7 @@
 		<Activate skinType="900">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4ab1" id="Lil Red Skin (SB)">
@@ -12807,7 +12807,7 @@
 		<Activate skinType="8968">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4ab2" id="Platinum Warrior Skin (SB)">
@@ -12822,7 +12822,7 @@
 		<Activate skinType="8965">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4ab3" id="Ranger Skin (SB)">
@@ -12837,7 +12837,7 @@
 		<Activate skinType="888">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4ab4" id="Huntsman Skin (SB)">
@@ -12852,7 +12852,7 @@
 		<Activate skinType="29799">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4ab5" id="Holy Avenger Skin (SB)">
@@ -12867,7 +12867,7 @@
 		<Activate skinType="885">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4ab6" id="Hunchback Skin (SB)">
@@ -12882,7 +12882,7 @@
 		<Activate skinType="29816">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4ab7" id="Witch Doctor Skin (SB)">
@@ -12897,7 +12897,7 @@
 		<Activate skinType="898">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4ab8" id="Nun Skin (SB)">
@@ -12912,7 +12912,7 @@
 		<Activate skinType="884">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4ab9" id="Witch Skin (SB)">
@@ -12927,7 +12927,7 @@
 		<Activate skinType="9012">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4aba" id="Artemis Skin (SB)">
@@ -12942,7 +12942,7 @@
 		<Activate skinType="901">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4abb" id="Bashing Bride Skin (SB)">
@@ -12957,7 +12957,7 @@
 		<Activate skinType="915">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>6</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4abc" id="Eligible Bachelor Skin (SB)">
@@ -12972,7 +12972,7 @@
 		<Activate skinType="916">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>6</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4abd" id="Dark Elf Huntress Skin (SB)">
@@ -12987,7 +12987,7 @@
 		<Activate skinType="29801">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4abe" id="Drow Trickster Skin (SB)">
@@ -13002,7 +13002,7 @@
 		<Activate skinType="8979">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4abf" id="Ascended Sorcerer Skin (SB)">
@@ -13017,7 +13017,7 @@
 		<Activate skinType="8976">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4ac0" id="King Knifeula Skin (SB)">
@@ -13032,7 +13032,7 @@
 		<Activate skinType="8969">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4ac1" id="Platinum Knight Skin (SB)">
@@ -13047,7 +13047,7 @@
 		<Activate skinType="8964">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4ac2" id="Platinum Rogue Skin (SB)">
@@ -13062,7 +13062,7 @@
 		<Activate skinType="8966">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4ac3" id="Deadly Vixen Skin (SB)">
@@ -13077,7 +13077,7 @@
 		<Activate skinType="917">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>500</feedPower>
 	</Object>
 	<Object type="0x4ad8" id="Mystic Emeritus Skin">
@@ -13092,7 +13092,7 @@
 		<Activate skinType="19152">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>5000</feedPower>
 	</Object>
 	<Object type="0x4ad9" id="Silver Ninja Skin">
@@ -13107,7 +13107,7 @@
 		<Activate skinType="19153">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>5000</feedPower>
 	</Object>
 	<Object type="0x4ada" id="Woodland Huntress Skin">
@@ -13122,7 +13122,7 @@
 		<Activate skinType="19154">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>5000</feedPower>
 	</Object>
 	<Object type="0x4adb" id="Bunny Trickster Skin">
@@ -13137,7 +13137,7 @@
 		<Activate skinType="19155">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>5000</feedPower>
 	</Object>
 	<Object type="0x4adc" id="Shrine Priestess Skin">
@@ -13152,7 +13152,7 @@
 		<Activate skinType="19156">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>5000</feedPower>
 	</Object>
 	<Object type="0x4add" id="Red Outlaw Skin">
@@ -13167,7 +13167,7 @@
 		<Activate skinType="19157">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>5000</feedPower>
 	</Object>
 	<Object type="0x4ade" id="Shadow Mage Skin">
@@ -13182,7 +13182,7 @@
 		<Activate skinType="19158">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>5000</feedPower>
 	</Object>
 	<Object type="0x4adf" id="Shield Maiden Skin">
@@ -13197,7 +13197,7 @@
 		<Activate skinType="19159">UnlockSkin</Activate>
 		<Consumable/>
 		<BagType>4</BagType>
-		<Soulbound/>
+		
 		<feedPower>5000</feedPower>
 	</Object>
 	<Object type="0x12f" id="Mountain Temple Key">
@@ -13212,7 +13212,7 @@
 		<Description>A key which opens an entrance to The Mountain Temple. \n\nKeys can only be used once you have 10 or more stars!</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Mountain Temple Portal">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>
@@ -13230,7 +13230,7 @@
 		<Description>Treasures await at the end of the rainbow.</Description>
 		<Sound>use_key</Sound>
 		<Consumable/>
-		<Soulbound/>
+		
 		<Activate id="Rainbow Road">Create</Activate>
 		<feedPower>200</feedPower>
 		<BagType>4</BagType>

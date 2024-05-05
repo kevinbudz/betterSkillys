@@ -14083,7 +14083,7 @@ A dubious candy that specially made by a certain witch. Contains strange ingredi
       <Activate amount="50">Magic</Activate>
       <Activate effect="Hexed" duration="180">ConditionEffectSelf</Activate>
       <Activate effect="Hallucinating" duration="90">ConditionEffectSelf</Activate>
-      <Soulbound/>
+       
       <Consumable/>
       <Potion/>
       <BagType>5</BagType>

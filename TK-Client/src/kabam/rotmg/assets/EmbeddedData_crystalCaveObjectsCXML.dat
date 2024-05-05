@@ -1377,7 +1377,7 @@
       <SlotType>10</SlotType>
       <Description>A key which opens an entrance to the Crystal Cavern. The deepest depths of the Abandoned Mineshaft protect an enigmatic diety.</Description>
       <Sound>use_key</Sound>
-      <Soulbound/>
+       
       <Track/>
       <BagType>8</BagType>
       <Consumable/>
@@ -1824,7 +1824,7 @@
       <SlotType>10</SlotType>
       <Description>GC encounter</Description>
       <Sound>use_key</Sound>
-      <Soulbound/>
+       
       <Track/>
       <BagType>8</BagType>
       <feedPower>200</feedPower>

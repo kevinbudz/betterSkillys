@@ -12,7 +12,7 @@
       <Description>Customize your Warrior with the Olive Gladiator Skin.\n\nSkin Class: Warrior</Description>
       <Activate skinType="1027">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -27,7 +27,7 @@
       <Description>Customize your Warrior with the Ivory Gladiator Skin.\n\nSkin Class: Warrior</Description>
       <Activate skinType="1028">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -42,7 +42,7 @@
       <Description>Customize your Ninja with the Rosen Blade Skin.\n\nSkin Class: Ninja\nSprite Credits: Univoid</Description>
       <Activate skinType="1029">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -57,7 +57,7 @@
       <Description>Customize your Ninja with the Djinja Skin.\n\nSkin Class: Ninja</Description>
       <Activate skinType="1030">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -72,7 +72,7 @@
       <Description>Customize your Ninja with the Baby Djinja Skin.\n\nSkin Class: Ninja</Description>
       <Activate skinType="29840">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -87,7 +87,7 @@
       <Description>This rose might look peaceful, but her blade will strike you faster than you blink!\n\nSkin Class: Ninja\nSprite Credits: Lovens</Description>
       <Activate skinType="29841">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -102,7 +102,7 @@
       <Description>Customize your Priest with the Mini Geb Skin.\n\nSkin Class: Priest</Description>
       <Activate skinType="29842">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -117,7 +117,7 @@
       <Description>Customize your Rogue with the Mini Skuld Skin.\n\nSkin Class: Rogue</Description>
       <Activate skinType="29843">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -132,7 +132,7 @@
       <Description>Customize your Knight with the Mini Oryx Skin.\n\nSkin Class: Knight</Description>
       <Activate skinType="29847">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -147,7 +147,7 @@
       <Description>Customize your Paladin with the Mini Swoll Skin.\n\nSkin Class: Paladin</Description>
       <Activate skinType="29845">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -162,7 +162,7 @@
       <Description>Customize your Wizard with the Mini Twilight Skin.\n\nSkin Class: Wizard</Description>
       <Activate skinType="29844">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -177,7 +177,7 @@
       <Description>Customize your Mystic with the Mini Phylactery Skin.\n\nSkin Class: Mystic</Description>
       <Activate skinType="29846">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -192,7 +192,7 @@
       <Description>Customize your Huntress with the Mini Thessal Skin.\n\nSkin Class: Huntress</Description>
       <Activate skinType="29848">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -207,7 +207,7 @@
       <Description>Customize your Knight with the Slurp Knight Skin.\n\nSkin Class: Knight</Description>
       <Activate skinType="2521">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -222,7 +222,7 @@
       <Description>Customize your Necromancer with the Vampire Lord Skin.\n\nSkin Class: Necromancer</Description>
       <Activate skinType="32766">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -237,7 +237,7 @@
       <Description>Customize your Paladin with the Headless Rider Skin.\n\nSkin Class: Paladin</Description>
       <Activate skinType="32654">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -252,7 +252,7 @@
       <Description>Customize your Paladin with the Pilgrim Father Skin.\n\nSkin Class: Paladin</Description>
       <Activate skinType="32656">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -267,7 +267,7 @@
       <Description>Customize your Mystic with the Pilgrim Mother Skin.\n\nSkin Class: Mystic</Description>
       <Activate skinType="32657">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -282,7 +282,7 @@
       <Description>Customize your Wizard with the Wizard Supreme Skin.\n\nSkin Class: Wizard</Description>
       <Activate skinType="32658">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -297,7 +297,7 @@
       <Description>Customize your Warrior with Rudolph the Berzerk Skin.\n\nSkin Class: Warrior</Description>
       <Activate skinType="32675">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -312,7 +312,7 @@
       <Description>Customize your Paladin with Miss Santa Skin.\n\nSkin Class: Paladin</Description>
       <Activate skinType="32676">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -327,7 +327,7 @@
       <Description>Customize your Wizard with Snow Queen Skin.\n\nSkin Class: Wizard\nSprite Credits: Beige</Description>
       <Activate skinType="32677">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -342,7 +342,7 @@
       <Description>Customize your Warrior with Dragon Tamer Skin.\n\nSkin Class: Warrior</Description>
       <Activate skinType="32701">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -357,7 +357,7 @@
       <Description>Customize your Archer with the Inuit Skin.\n\nSkin Class: Archer\nSprite Credits: Beige</Description>
       <Activate skinType="312">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -372,7 +372,7 @@
       <Description>Customize your Rogue with the Snowcloaked Rogue Skin.\n\nSkin Class: Rogue\nSprite Credits: Poshun</Description>
       <Activate skinType="313">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -468,7 +468,7 @@
       <Consumable/>
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
-      <Soulbound/>
+       
    </Object>
    <Object type="0x226c" id="Scarlett Skin">
       <Class>Equipment</Class>
@@ -655,7 +655,7 @@
       <Description>This bunny is hopping mad that players have been looting all the eggs he hid.\n\nSkin Class: Sorcerer</Description>
       <Activate skinType="8855">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -1284,7 +1284,7 @@
       <Description>Fashionable AND dangerous.\n\nSkin Class: Trickster\nSprite Credits: Beige</Description>
       <Activate skinType="5859">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -1299,7 +1299,7 @@
       <Description>Looks a lot less cute once its sword is in your eye.\n\nSkin Class: Knight\nSprite Credits: Beige</Description>
       <Activate skinType="5860">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -1314,7 +1314,7 @@
       <Description>Smaller than the real Frimar, but no less dangerous.\n\nSkin Class: Knight\nSprite Credits: Poshun</Description>
       <Activate skinType="5861">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -1329,7 +1329,7 @@
       <Description>Once sat on a Frozen Throne, but decided to go adventuring.\n\nSkin Class: Necromancer\nSprite Credits: Beige</Description>
       <Activate skinType="5862">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -1344,7 +1344,7 @@
       <Description>Some say the world will end in fire, some say in ice.\n\nSkin Class: Sorcerer\nSprite Credits: Beige</Description>
       <Activate skinType="5863">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -1359,7 +1359,7 @@
       <Description>Crown not included to preserve sanity.\n\nSkin Class: Priest\nSprite Credits: Kingged</Description>
       <Activate skinType="5864">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -1374,7 +1374,7 @@
       <Description>In case of emergency use icicle to stab enemy.\n\nSkin Class: Mystic\nSprite Credits: Poshun</Description>
       <Activate skinType="5865">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -1389,7 +1389,7 @@
       <Description>Do not follow, unless you like frostbite.\n\nSkin Class: Mystic\nSprite Credits: Beige</Description>
       <Activate skinType="5866">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -1404,7 +1404,7 @@
       <Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
       <Activate skinType="5878">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x171d" id="Paladin - Artist Extraordinaire Skin">
@@ -1418,7 +1418,7 @@
       <Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
       <Activate skinType="5879">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x171e" id="Knight - Artist Extraordinaire Skin">
@@ -1432,7 +1432,7 @@
       <Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
       <Activate skinType="5880">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x171f" id="Ninja - Artist Extraordinaire Skin">
@@ -1446,7 +1446,7 @@
       <Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
       <Activate skinType="5881">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x1739" id="Archer - Artist Extraordinaire Skin">
@@ -1460,7 +1460,7 @@
       <Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
       <Activate skinType="5909">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x173a" id="Rogue - Artist Extraordinaire Skin">
@@ -1474,7 +1474,7 @@
       <Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
       <Activate skinType="5910">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x173b" id="Assassin - Artist Extraordinaire Skin">
@@ -1488,7 +1488,7 @@
       <Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
       <Activate skinType="5911">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x173c" id="Wizard - Artist Extraordinaire Skin">
@@ -1502,7 +1502,7 @@
       <Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
       <Activate skinType="5912">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x173d" id="Necromancer - Artist Extraordinaire Skin">
@@ -1516,7 +1516,7 @@
       <Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
       <Activate skinType="5913">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x173e" id="Priest - Artist Extraordinaire Skin">
@@ -1530,7 +1530,7 @@
       <Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
       <Activate skinType="5914">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x173f" id="Sorcerer - Artist Extraordinaire Skin">
@@ -1544,7 +1544,7 @@
       <Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
       <Activate skinType="5915">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x1753" id="Huntress - Artist Extraordinaire Skin">
@@ -1558,7 +1558,7 @@
       <Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
       <Activate skinType="5968">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x1768" id="Mystic - Artist Extraordinaire Skin">
@@ -1572,7 +1572,7 @@
       <Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
       <Activate skinType="5969">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x1769" id="Trickster - Artist Extraordinaire Skin">
@@ -1586,7 +1586,7 @@
       <Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
       <Activate skinType="5970">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x1778" id="Wizard - Dungeon Mastermind Skin">
@@ -1600,7 +1600,7 @@
       <Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
       <Activate skinType="5994">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x1779" id="Priest - Dungeon Mastermind Skin">
@@ -1614,7 +1614,7 @@
       <Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
       <Activate skinType="5995">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x177a" id="Necromancer - Dungeon Mastermind Skin">
@@ -1628,7 +1628,7 @@
       <Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
       <Activate skinType="5996">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x177b" id="Sorcerer - Dungeon Mastermind Skin">
@@ -1642,7 +1642,7 @@
       <Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
       <Activate skinType="5997">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x177c" id="Mystic - Dungeon Mastermind Skin">
@@ -1656,7 +1656,7 @@
       <Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
       <Activate skinType="5998">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x177d" id="Rogue - Dungeon Mastermind Skin">
@@ -1670,7 +1670,7 @@
       <Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
       <Activate skinType="5999">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x177e" id="Warrior - Dungeon Mastermind Skin">
@@ -1684,7 +1684,7 @@
       <Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
       <Activate skinType="6000">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x177f" id="Assassin - Dungeon Mastermind Skin">
@@ -1698,7 +1698,7 @@
       <Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
       <Activate skinType="6001">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x1780" id="Ninja - Dungeon Mastermind Skin">
@@ -1712,7 +1712,7 @@
       <Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
       <Activate skinType="6002">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x1781" id="Paladin - Dungeon Mastermind Skin">
@@ -1726,7 +1726,7 @@
       <Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
       <Activate skinType="6003">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x1782" id="Knight - Dungeon Mastermind Skin">
@@ -1740,7 +1740,7 @@
       <Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
       <Activate skinType="6004">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x1783" id="Trickster - Dungeon Mastermind Skin">
@@ -1754,7 +1754,7 @@
       <Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
       <Activate skinType="6005">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x1784" id="Huntress - Dungeon Mastermind Skin">
@@ -1768,7 +1768,7 @@
       <Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
       <Activate skinType="6006">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x1785" id="Archer - Dungeon Mastermind Skin">
@@ -1782,7 +1782,7 @@
       <Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
       <Activate skinType="6007">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x178b" id="Juliet Trickster Skin">
@@ -1796,7 +1796,7 @@
       <Description>Oh white bag, white bag! Wherefore art thou white bag?\n\nSkin Class: Trickster\nSprite Credits: Poshun</Description>
       <Activate skinType="6022">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -1811,7 +1811,7 @@
       <Description>She's coming for your heart!\n\nSkin Class: Huntress\nSprite Credits: Beige</Description>
       <Activate skinType="6023">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -1826,7 +1826,7 @@
       <Description>Is good loot a tender thing? It is too rare, too scarce, too extraordinary, and it pricks like a Poison Fang Dagger.\n\nSkin Class: Assassin\nSprite Credits: Poshun</Description>
       <Activate skinType="6024">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -1841,7 +1841,7 @@
       <Description>Let's get this clown fiesta started!\n\nSkin Class: Sorcerer\nSprite Credits: Poshun</Description>
       <Activate skinType="6025">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -1856,7 +1856,7 @@
       <Description>Totally not a Necromancer.\n\nSkin Class: Necromancer\nSprite Credits: Beige</Description>
       <Activate skinType="6026">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -1871,7 +1871,7 @@
       <Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
       <Activate skinType="10930">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x2ac2" id="Knight - Future Seeker Tester Skin">
@@ -1885,7 +1885,7 @@
       <Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
       <Activate skinType="10931">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x2ac3" id="Paladin - Future Seeker Tester Skin">
@@ -1899,7 +1899,7 @@
       <Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
       <Activate skinType="10932">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x2ac4" id="Rogue - Future Seeker Tester Skin">
@@ -1913,7 +1913,7 @@
       <Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
       <Activate skinType="10933">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x2ac5" id="Assassin - Future Seeker Tester Skin">
@@ -1927,7 +1927,7 @@
       <Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
       <Activate skinType="10934">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x2ac6" id="Trickster - Future Seeker Tester Skin">
@@ -1941,7 +1941,7 @@
       <Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
       <Activate skinType="10935">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x2ac7" id="Ninja - Future Seeker Tester Skin">
@@ -1955,7 +1955,7 @@
       <Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Piggby</Description>
       <Activate skinType="10936">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x2ac8" id="Wizard - Future Seeker Tester Skin">
@@ -1969,7 +1969,7 @@
       <Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
       <Activate skinType="10937">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x2ac9" id="Necromancer - Future Seeker Tester Skin">
@@ -1983,7 +1983,7 @@
       <Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
       <Activate skinType="10938">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x2aca" id="Mystic - Future Seeker Tester Skin">
@@ -1997,7 +1997,7 @@
       <Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
       <Activate skinType="10940">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x2acb" id="Archer - Future Seeker Tester Skin">
@@ -2011,7 +2011,7 @@
       <Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
       <Activate skinType="10941">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x2acc" id="Huntress - Future Seeker Tester Skin">
@@ -2025,7 +2025,7 @@
       <Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
       <Activate skinType="10942">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x2acd" id="Priest - Future Seeker Tester Skin">
@@ -2039,7 +2039,7 @@
       <Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
       <Activate skinType="10943">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x2ace" id="Sorcerer - Future Seeker Tester Skin">
@@ -2053,7 +2053,7 @@
       <Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
       <Activate skinType="10944">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x2adf" id="Wind Flower Skin">
@@ -2067,7 +2067,7 @@
       <Description>Make sure to Equip a Wind Circle for style points!\n\nSkin Class: Ninja\nSprite Credits: Poshun</Description>
       <Activate skinType="10959">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -2082,7 +2082,7 @@
       <Description>Legends say she will lead you to a pot of gold if you catch her!\n\nSkin Class: Mystic\nSprite Credits: Beige</Description>
       <Activate skinType="10960">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -2097,7 +2097,7 @@
       <Description>The goddess of the sky. Make sure not to vandalize her property.\n\nSkin Class: Archer\nSprite Credits: Poshun</Description>
       <Activate skinType="10961">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -2112,7 +2112,7 @@
       <Description>The most ladylike of all leprechauns, or so she says. Don't tell the Mystic!\n\nSkin Class: Wizard\nSprite Credits: Kingged</Description>
       <Activate skinType="10962">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -2127,7 +2127,7 @@
       <Description>200 POUNDS OF FLUFFY TESTOSTERONE!\n\nSkin Class: Warrior\nSprite Credits: Beige</Description>
       <Activate skinType="10963">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -2142,7 +2142,7 @@
       <Description>Easily pulls his wool over people's eyes.\n\nSkin Class: Rogue\nSprite Credits: Beige</Description>
       <Activate skinType="10964">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -2157,7 +2157,7 @@
       <Description>Ever thought about all the wizards who got polymorphed into sheep?\n\nSkin Class: Wizard\nSprite Credits: Beige</Description>
       <Activate skinType="10965">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -2172,7 +2172,7 @@
       <Description>The hunters will now become the hunted!\n\nSkin Class: Archer\nSprite Credits: Beige</Description>
       <Activate skinType="10966">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -2187,7 +2187,7 @@
       <Description>Guides the lambs to greener pastures.\n\nSkin Class: Priest\nSprite Credits: Beige</Description>
       <Activate skinType="10967">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -2202,7 +2202,7 @@
       <Description>Little Bo-Peep has lost her sheep...\n\nSkin Class: Mystic\nSprite Credits: Beige</Description>
       <Activate skinType="10968">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -2217,7 +2217,7 @@
       <Description>It's a bird... It's a plane... It's... just another wizard.\n\nSkin Class: Wizard\nSprite Credits: Kingged</Description>
       <Activate skinType="10969">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -2232,7 +2232,7 @@
       <Description>MARVEL AT HIS ABILITY!\n\nSkin Class: Wizard\nSprite Credits: Poshun</Description>
       <Activate skinType="10971">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -2247,7 +2247,7 @@
       <Description>Dye it green to become Stheno's sister!\n\nSkin Class: Assassin\nSprite Credits: Poshun</Description>
       <Activate skinType="10970">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -2262,7 +2262,7 @@
       <Description>A divine leader of war and an exceptional musical artist.\n\nSkin Class: Paladin\nSprite Credits: Poshun</Description>
       <Activate skinType="10974">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -2277,7 +2277,7 @@
       <Description>Sails the seven seas to sell his life pots. For overpay, naturally.\n\nSkin Class: Warrior\nSprite Credits: Poshun</Description>
       <Activate skinType="10972">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -2292,7 +2292,7 @@
       <Description>Customize your Rogue with the Beefcake Rogue Skin.\n\nSkin Class: Rogue</Description>
       <Activate skinType="10973">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -2308,7 +2308,7 @@
       <Activate skinType="883">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4aab" id="B.B. Wolf Skin (SB)">
@@ -2323,7 +2323,7 @@
       <Activate skinType="8967">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4aac" id="Agent Skin (SB)">
@@ -2338,7 +2338,7 @@
       <Activate skinType="912">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4aad" id="Brigand Skin (SB)">
@@ -2353,7 +2353,7 @@
       <Activate skinType="913">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4aae" id="Sorceress Skin (SB)">
@@ -2368,7 +2368,7 @@
       <Activate skinType="899">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4aaf" id="Iceman Skin (SB)">
@@ -2383,7 +2383,7 @@
       <Activate skinType="902">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4ab0" id="Scarlett Skin (SB)">
@@ -2398,7 +2398,7 @@
       <Activate skinType="900">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4ab1" id="Lil Red Skin (SB)">
@@ -2413,7 +2413,7 @@
       <Activate skinType="8968">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4ab2" id="Platinum Warrior Skin (SB)">
@@ -2428,7 +2428,7 @@
       <Activate skinType="8965">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4ab3" id="Ranger Skin (SB)">
@@ -2443,7 +2443,7 @@
       <Activate skinType="888">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4ab4" id="Huntsman Skin (SB)">
@@ -2458,7 +2458,7 @@
       <Activate skinType="29799">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4ab5" id="Holy Avenger Skin (SB)">
@@ -2473,7 +2473,7 @@
       <Activate skinType="885">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4ab6" id="Hunchback Skin (SB)">
@@ -2488,7 +2488,7 @@
       <Activate skinType="29816">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4ab7" id="Witch Doctor Skin (SB)">
@@ -2503,7 +2503,7 @@
       <Activate skinType="898">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4ab8" id="Nun Skin (SB)">
@@ -2518,7 +2518,7 @@
       <Activate skinType="884">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4ab9" id="Witch Skin (SB)">
@@ -2533,7 +2533,7 @@
       <Activate skinType="9012">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4aba" id="Artemis Skin (SB)">
@@ -2548,7 +2548,7 @@
       <Activate skinType="901">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4abb" id="Bashing Bride Skin (SB)">
@@ -2563,7 +2563,7 @@
       <Activate skinType="915">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4abc" id="Eligible Bachelor Skin (SB)">
@@ -2578,7 +2578,7 @@
       <Activate skinType="916">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4abd" id="Dark Elf Huntress Skin (SB)">
@@ -2593,7 +2593,7 @@
       <Activate skinType="29801">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4abe" id="Drow Trickster Skin (SB)">
@@ -2608,7 +2608,7 @@
       <Activate skinType="8979">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4abf" id="Ascended Sorcerer Skin (SB)">
@@ -2623,7 +2623,7 @@
       <Activate skinType="8976">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4ac0" id="King Knifeula Skin (SB)">
@@ -2638,7 +2638,7 @@
       <Activate skinType="8969">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4ac1" id="Platinum Knight Skin (SB)">
@@ -2653,7 +2653,7 @@
       <Activate skinType="8964">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4ac2" id="Platinum Rogue Skin (SB)">
@@ -2668,7 +2668,7 @@
       <Activate skinType="8966">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4ac3" id="Deadly Vixen Skin (SB)">
@@ -2683,7 +2683,7 @@
       <Activate skinType="917">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4ad8" id="Mystic Emeritus Skin">
@@ -2698,7 +2698,7 @@
       <Activate skinType="19152">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4ad9" id="Silver Ninja Skin">
@@ -2713,7 +2713,7 @@
       <Activate skinType="19153">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x4ada" id="Woodland Huntress Skin">
@@ -2728,7 +2728,7 @@
       <Activate skinType="19154">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4adb" id="Bunny Trickster Skin">
@@ -2743,7 +2743,7 @@
       <Activate skinType="19155">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4adc" id="Shrine Priestess Skin">
@@ -2758,7 +2758,7 @@
       <Activate skinType="19156">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4add" id="Red Outlaw Skin">
@@ -2773,7 +2773,7 @@
       <Activate skinType="19157">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4ade" id="Shadow Mage Skin">
@@ -2788,7 +2788,7 @@
       <Activate skinType="19158">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4adf" id="Shield Maiden Skin">
@@ -2803,7 +2803,7 @@
       <Activate skinType="19159">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bb0" id="Markswoman Huntress Skin">
@@ -2818,7 +2818,7 @@
       <Activate skinType="19370">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bb1" id="Elf Archer Skin">
@@ -2834,7 +2834,7 @@
       <Activate skinType="19371">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bb2" id="Ordinary Magician Skin">
@@ -2849,7 +2849,7 @@
       <Activate skinType="19372">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bb3" id="Heroic Knight Skin">
@@ -2864,7 +2864,7 @@
       <Activate skinType="19373">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bb4" id="Ancient Sorcerer Skin">
@@ -2879,7 +2879,7 @@
       <Activate skinType="19374">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bb5" id="Dark Elf Assassin Skin">
@@ -2894,7 +2894,7 @@
       <Activate skinType="19375">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bba" id="Cunning Sorcerer Skin">
@@ -2909,7 +2909,7 @@
       <Activate skinType="19385">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bc3" id="Beach Trickster Skin">
@@ -2924,7 +2924,7 @@
       <Activate skinType="19387">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bc4" id="Hula Mystic Skin">
@@ -2939,7 +2939,7 @@
       <Activate skinType="19388">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bc5" id="Redcoat Assassin Skin">
@@ -2954,7 +2954,7 @@
       <Activate skinType="19389">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bc6" id="Patriot Paladin Skin">
@@ -2969,7 +2969,7 @@
       <Activate skinType="19390">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bc7" id="Swimsuit Mystic Skin">
@@ -2984,7 +2984,7 @@
       <Activate skinType="19391">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bc8" id="Swimsuit Huntress Skin">
@@ -2999,7 +2999,7 @@
       <Activate skinType="19392">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bc9" id="Swimsuit Trickster Skin">
@@ -3014,7 +3014,7 @@
       <Activate skinType="19393">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bca" id="Slashing Beauty Ninja Skin">
@@ -3029,7 +3029,7 @@
       <Activate skinType="19394">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bcd" id="Sunflower Archer Skin">
@@ -3044,7 +3044,7 @@
       <Activate skinType="19403">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bce" id="Thief Queen Skin">
@@ -3059,7 +3059,7 @@
       <Activate skinType="19404">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bd0" id="Mini Queen Bee Huntress Skin">
@@ -3074,7 +3074,7 @@
       <Activate skinType="19407">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bea" id="Lyrical Priestess Skin">
@@ -3089,7 +3089,7 @@
       <Activate skinType="19409">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4beb" id="Princess Warrior Skin">
@@ -3104,7 +3104,7 @@
       <Activate skinType="19410">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bec" id="Light Cavalry Warrior Skin">
@@ -3119,7 +3119,7 @@
       <Activate skinType="19411">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bed" id="Clockwork Mystic Skin">
@@ -3134,7 +3134,7 @@
       <Activate skinType="19412">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bee" id="Twilight Acolyte Rogue Skin">
@@ -3149,7 +3149,7 @@
       <Activate skinType="19413">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bef" id="Ethereal Princess Archer Skin">
@@ -3164,7 +3164,7 @@
       <Activate skinType="19414">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bf0" id="Antique Diver Knight Skin">
@@ -3179,7 +3179,7 @@
       <Activate skinType="19415">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bf1" id="Guerilla Archer Skin">
@@ -3194,7 +3194,7 @@
       <Activate skinType="19416">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bf2" id="Ordinary Box Rogue Skin">
@@ -3209,7 +3209,7 @@
       <Activate skinType="19417">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bf3" id="Lifeguard Priest Skin">
@@ -3224,7 +3224,7 @@
       <Activate skinType="19418">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4bf4" id="Stone Rogue Skin">
@@ -3242,7 +3242,7 @@
       <Activate skinType="19419">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -3261,7 +3261,7 @@
       <Activate skinType="19420">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -3280,7 +3280,7 @@
       <Activate skinType="19421">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -3299,7 +3299,7 @@
       <Activate skinType="19422">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -3318,7 +3318,7 @@
       <Activate skinType="19423">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -3337,7 +3337,7 @@
       <Activate skinType="19424">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -3356,7 +3356,7 @@
       <Activate skinType="19425">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -3375,7 +3375,7 @@
       <Activate skinType="19426">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -3394,7 +3394,7 @@
       <Activate skinType="19427">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -3413,7 +3413,7 @@
       <Activate skinType="19428">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -3432,7 +3432,7 @@
       <Activate skinType="19429">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -3451,7 +3451,7 @@
       <Activate skinType="19430">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -3470,7 +3470,7 @@
       <Activate skinType="19431">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -3489,7 +3489,7 @@
       <Activate skinType="19432">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -3505,7 +3505,7 @@
       <Activate skinType="19433">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c20" id="Undine Sorcerer Skin">
@@ -3520,7 +3520,7 @@
       <Activate skinType="19482">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c21" id="Lodestar Warrior Skin">
@@ -3535,7 +3535,7 @@
       <Activate skinType="19483">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c22" id="Alice Assassin Skin">
@@ -3550,7 +3550,7 @@
       <Activate skinType="19484">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c23" id="Mad Hatter Trickster Skin">
@@ -3565,7 +3565,7 @@
       <Activate skinType="19485">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c24" id="Queen Of Hearts Sorcerer Skin">
@@ -3580,7 +3580,7 @@
       <Activate skinType="19486">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c25" id="Mad Dwarf Paladin Skin">
@@ -3595,7 +3595,7 @@
       <Activate skinType="19487">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c27" id="Beachcake Rogue Skin">
@@ -3609,7 +3609,7 @@
       <Description>Ladies also need a bit of fanservice.\n\nSkin Class: Rogue\nSprite Credits: Phops, Beige</Description>
       <Activate skinType="19494">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -3624,7 +3624,7 @@
       <Description>Greek goddess of war and wisdom. She never fights without a purpose, but shines in battle if you make her fight!\n\nSkin Class: Warrior\nSprite Credits: Lovens</Description>
       <Activate skinType="19496">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -3639,7 +3639,7 @@
       <Description>She fights the horde, singing and crying: Valhalla, I am coming!\n\nSkin Class: Paladin\nSprite Credits: Lovens</Description>
       <Activate skinType="19497">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -3654,7 +3654,7 @@
       <Description>Times change, people change. One thing remains the same - revenge.\n\nSkin Class: Sorcerer\nSprite Credits: Bloodqwen</Description>
       <Activate skinType="19498">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -3669,7 +3669,7 @@
       <Description>Insanity in a can.\n\nSkin Class: Trickster\nSprite Credits: Poshun</Description>
       <Activate skinType="19529">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -3684,7 +3684,7 @@
       <Description>God giveth you beatings!\n\nSkin Class: Sorcerer\nSprite Credits: Protux</Description>
       <Activate skinType="19531">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -3699,7 +3699,7 @@
       <Description>Can't cook, can't clean, can kill.\n\nSkin Class: Trickster\nSprite Credits: Dappertron</Description>
       <Activate skinType="19539">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -3714,7 +3714,7 @@
       <Description>Has anyone seen a drake? It must be somewhere near!\n\nSkin Class: Huntress\nSprite Credits: Lovens</Description>
       <Activate skinType="19540">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -3729,7 +3729,7 @@
       <Description>I spend my vacations in Tomb of the Ancients: once summer starts, I rush past scarabs!\n\nSkin Class: Ninja\nSprite Credits: Lovens</Description>
       <Activate skinType="19541">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -3745,7 +3745,7 @@
       <Activate skinType="19545">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c73" id="Plague Doctor Assassin Skin">
@@ -3760,7 +3760,7 @@
       <Activate skinType="19546">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c74" id="Jack-o-mancer Skin">
@@ -3775,7 +3775,7 @@
       <Activate skinType="19547">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c75" id="Mini Malus Sorcerer Skin">
@@ -3790,7 +3790,7 @@
       <Activate skinType="19548">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c76" id="Knight Lady Skin">
@@ -3805,7 +3805,7 @@
       <Activate skinType="19549">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c77" id="Hollow Prince Necromancer Skin">
@@ -3820,7 +3820,7 @@
       <Activate skinType="19550">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c78" id="Kabuki Ninja Skin">
@@ -3835,7 +3835,7 @@
       <Activate skinType="19551">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c79" id="Candle Maid Sorceress Skin">
@@ -3850,7 +3850,7 @@
       <Activate skinType="19552">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c7a" id="Cleaner Maid Paladin Skin">
@@ -3865,7 +3865,7 @@
       <Activate skinType="19553">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c7b" id="Chu-Ko-Nu Archer Skin">
@@ -3880,7 +3880,7 @@
       <Activate skinType="19554">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c7c" id="Dark Rider Ninja Skin">
@@ -3895,7 +3895,7 @@
       <Activate skinType="19555">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c7d" id="Monster Hunter Knight Skin">
@@ -3910,7 +3910,7 @@
       <Activate skinType="19556">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c7e" id="Pandora Priestess Skin">
@@ -3925,7 +3925,7 @@
       <Activate skinType="19557">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c7f" id="Living Armor Warrior Skin">
@@ -3940,7 +3940,7 @@
       <Activate skinType="19558">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c80" id="Underworld Archer Skin">
@@ -3955,7 +3955,7 @@
       <Activate skinType="19559">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c81" id="Apprentice Wizard Skin">
@@ -3970,7 +3970,7 @@
       <Activate skinType="19560">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c82" id="Grand Enchantress Mystic Skin">
@@ -3985,7 +3985,7 @@
       <Activate skinType="19561">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c83" id="Lady Violetta Necromancer Skin">
@@ -4000,7 +4000,7 @@
       <Activate skinType="19562">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c84" id="Bruno the Rogue Steward Skin">
@@ -4015,7 +4015,7 @@
       <Activate skinType="19563">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c85" id="Misery Ghost Bride Huntress Skin">
@@ -4030,7 +4030,7 @@
       <Activate skinType="19564">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c86" id="Vampire Groom Assassin Skin">
@@ -4045,7 +4045,7 @@
       <Activate skinType="19565">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c87" id="Haunted Knight Skin">
@@ -4060,7 +4060,7 @@
       <Activate skinType="19566">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c88" id="Turkey Rogue Skin">
@@ -4075,7 +4075,7 @@
       <Activate skinType="19567">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c89" id="Adorable Lil' Warrior Skin">
@@ -4090,7 +4090,7 @@
       <Activate skinType="19568">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4c8a" id="Nerd Paladin Skin">
@@ -4105,7 +4105,7 @@
       <Activate skinType="19569">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4ca3" id="Schankmaid Assassin Skin">
@@ -4120,7 +4120,7 @@
       <Activate skinType="19613">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4ca4" id="Catrina Necromancer Skin">
@@ -4135,7 +4135,7 @@
       <Activate skinType="19614">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4ca5" id="Lunar Mystic Skin">
@@ -4150,7 +4150,7 @@
       <Activate skinType="19615">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4ca6" id="Sunrise Hunter Skin">
@@ -4165,7 +4165,7 @@
       <Activate skinType="19616">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4ca7" id="Heartless Dodger Rogue Skin">
@@ -4180,7 +4180,7 @@
       <Activate skinType="19617">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4ca8" id="Heart Thief Necromancer Skin">
@@ -4195,7 +4195,7 @@
       <Activate skinType="19618">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4cc8" id="Gladiator Skin">
@@ -4210,7 +4210,7 @@
       <Activate skinType="19655">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4cca" id="Haunted Robe Skin">
@@ -4225,7 +4225,7 @@
       <Activate skinType="19657">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x179e" id="Ducky Knight Skin">
@@ -4240,7 +4240,7 @@
       <Activate skinType="6039">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x179f" id="Gardener Ninja Skin">
@@ -4255,7 +4255,7 @@
       <Activate skinType="6040">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x17a0" id="White Bag-chan Priestess Skin">
@@ -4270,7 +4270,7 @@
       <Activate skinType="6041">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x17a1" id="Monkey King Paladin Skin">
@@ -4285,7 +4285,7 @@
       <Activate skinType="6042">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x17a2" id="Cleopatra Priestess Skin">
@@ -4300,7 +4300,7 @@
       <Activate skinType="6043">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x17a3" id="Timelock Mystic Skin">
@@ -4315,7 +4315,7 @@
       <Activate skinType="6044">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x17a4" id="Barefoot Rogue Skin">
@@ -4330,7 +4330,7 @@
       <Activate skinType="6045">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x17d9" id="Spooky Roommate Wizard Skin">
@@ -4345,7 +4345,7 @@
       <Activate skinType="6104">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x17e4" id="Eagle Eye Hunter Skin">
@@ -4360,7 +4360,7 @@
       <Activate skinType="6113">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x17e5" id="Water Lily Archer Skin">
@@ -4375,7 +4375,7 @@
       <Activate skinType="6114">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x17e6" id="Arms Merchant Assassin Skin">
@@ -4390,7 +4390,7 @@
       <Activate skinType="6115">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x207f" id="Oryxmas Rogue Skin">
@@ -4657,7 +4657,7 @@
       <Activate skinType="24594">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x1adc" id="Mystic of Christmas Past Skin">
@@ -4672,7 +4672,7 @@
       <Activate skinType="24595">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x1ade" id="Wizard of Christmas Present Skin">
@@ -4687,7 +4687,7 @@
       <Activate skinType="24596">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x1adf" id="Necro of Christmas Yet-to-Come Skin">
@@ -4702,7 +4702,7 @@
       <Activate skinType="24597">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x1aea" id="Snowland Priestess Skin">
@@ -4717,7 +4717,7 @@
       <Activate skinType="24598">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x1aeb" id="Frost Raider Warrior Skin">
@@ -4732,7 +4732,7 @@
       <Activate skinType="24599">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x1aec" id="Roguish Business Partner Skin">
@@ -4747,7 +4747,7 @@
       <Activate skinType="24600">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x1aed" id="Snowball Kid Assassin Skin">
@@ -4762,7 +4762,7 @@
       <Activate skinType="24601">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x3701" id="Father Time Priest Skin">
@@ -4777,7 +4777,7 @@
       <Activate skinType="852">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x3702" id="Amazonian Huntress Skin">
@@ -4792,7 +4792,7 @@
       <Activate skinType="843">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x3703" id="Merlin Wizard Skin">
@@ -4807,7 +4807,7 @@
       <Activate skinType="836">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x3704" id="Death Mage Necromancer Skin">
@@ -4822,7 +4822,7 @@
       <Activate skinType="842">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x3705" id="Warlock Sorcerer Skin">
@@ -4837,7 +4837,7 @@
       <Activate skinType="846">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x3706" id="Seer Mystic Skin">
@@ -4852,7 +4852,7 @@
       <Activate skinType="844">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x3707" id="Juggernaut Warrior Skin">
@@ -4867,7 +4867,7 @@
       <Activate skinType="838">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x3708" id="Knight of the Round Knight Skin">
@@ -4882,7 +4882,7 @@
       <Activate skinType="839">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x3709" id="Cupid Archer Skin">
@@ -4897,7 +4897,7 @@
       <Activate skinType="855">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x370a" id="Decorated Paladin Skin">
@@ -4912,7 +4912,7 @@
       <Activate skinType="840">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x370b" id="Bandit Rogue Skin">
@@ -4927,7 +4927,7 @@
       <Activate skinType="834">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x370c" id="Stealth Assassin Skin">
@@ -4942,7 +4942,7 @@
       <Activate skinType="841">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x370d" id="Loki Trickster Skin">
@@ -4957,7 +4957,7 @@
       <Activate skinType="845">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x370e" id="Shadow Ninja Skin">
@@ -4972,7 +4972,7 @@
       <Activate skinType="847">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x603b" id="Champagne Lady Assassin Skin">
@@ -4987,7 +4987,7 @@
       <Activate skinType="24634">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x603d" id="Halberdier Paladin Skin">
@@ -5002,7 +5002,7 @@
       <Activate skinType="24636">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x6043" id="Lunar High Priestess Skin">
@@ -5017,7 +5017,7 @@
       <Activate skinType="24638">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x6044" id="Dionysus Priest Skin">
@@ -5032,7 +5032,7 @@
       <Activate skinType="24639">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x6045" id="Lone Rogue Skin">
@@ -5047,7 +5047,7 @@
       <Activate skinType="24640">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x6046" id="Wise Swine Knight Skin">
@@ -5062,7 +5062,7 @@
       <Activate skinType="24641">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x6047" id="Sand Monk Warrior Skin">
@@ -5077,7 +5077,7 @@
       <Activate skinType="24642">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x605e" id="Gnome Trickster Skin">
@@ -5092,7 +5092,7 @@
       <Activate skinType="24669">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x6084" id="Aphrodite Mystic Skin">
@@ -5107,7 +5107,7 @@
       <Activate skinType="24693">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x6085" id="Raccoon Rogue Skin">
@@ -5122,7 +5122,7 @@
       <Activate skinType="24694">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x6086" id="Raven Archer Skin">
@@ -5137,7 +5137,7 @@
       <Activate skinType="24695">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x6087" id="Bunny Magician Skin">
@@ -5152,7 +5152,7 @@
       <Activate skinType="24696">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x6088" id="Panda Priest Skin">
@@ -5167,7 +5167,7 @@
       <Activate skinType="24697">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x6089" id="Penguin Warrior Skin">
@@ -5182,7 +5182,7 @@
       <Activate skinType="24698">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x608a" id="Turtle Knight Skin">
@@ -5197,7 +5197,7 @@
       <Activate skinType="24699">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x608b" id="Mouse Paladin Skin">
@@ -5212,7 +5212,7 @@
       <Activate skinType="24700">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x608c" id="Blue Frog Assassin Skin">
@@ -5227,7 +5227,7 @@
       <Activate skinType="24701">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x608d" id="Anubis Necromancer Skin">
@@ -5242,7 +5242,7 @@
       <Activate skinType="24702">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x608e" id="Reptilian Hunter Skin">
@@ -5257,7 +5257,7 @@
       <Activate skinType="24703">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x608f" id="Mystical Owl Skin">
@@ -5272,7 +5272,7 @@
       <Activate skinType="24704">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x6090" id="Fox Trickster Skin">
@@ -5287,7 +5287,7 @@
       <Activate skinType="24705">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x6091" id="Piglet Sorcerer Skin">
@@ -5302,7 +5302,7 @@
       <Activate skinType="24706">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x6092" id="Feline Blade Ninja Skin">
@@ -5317,7 +5317,7 @@
       <Activate skinType="24707">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x23Be" id="Parasol Maiden Ninja Skin">
@@ -5332,7 +5332,7 @@
       <Activate skinType="9139">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x23Bf" id="Harrowed Slinger Warrior Skin">
@@ -5347,7 +5347,7 @@
       <Activate skinType="9140">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x23c1" id="Oni Paladin Skin">
@@ -5362,7 +5362,7 @@
       <Activate skinType="9141">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x23c2" id="Dual Duelist Ninja Skin">
@@ -5377,7 +5377,7 @@
       <Activate skinType="9142">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x23c3" id="Wicked Dragon Wizard Skin">
@@ -5392,7 +5392,7 @@
       <Activate skinType="9143">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x23c4" id="Ancient Archivist Priest Skin">
@@ -5407,7 +5407,7 @@
       <Activate skinType="9144">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x23c5" id="Magma Dweller Archer Skin">
@@ -5422,7 +5422,7 @@
       <Activate skinType="9145">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x23c6" id="Yin Yang Sorcerer Skin">
@@ -5437,7 +5437,7 @@
       <Activate skinType="9146">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x23c7" id="Ebony Sorcerer Skin">
@@ -5452,7 +5452,7 @@
       <Activate skinType="9147">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x23c8" id="Ivory Priest Skin">
@@ -5467,7 +5467,7 @@
       <Activate skinType="9148">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x23c9" id="Moonlight Elf Huntress Skin">
@@ -5482,7 +5482,7 @@
       <Activate skinType="9149">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x23f2" id="Irish Dancer Trickster Skin">
@@ -5497,7 +5497,7 @@
       <Activate skinType="9201">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x23f4" id="Scarecrow Warrior Skin">
@@ -5512,7 +5512,7 @@
       <Activate skinType="9203">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x23fa" id="Templar Knight Skin">
@@ -5527,7 +5527,7 @@
       <Activate skinType="9209">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x23fb" id="Skink Necromancer Skin">
@@ -5542,7 +5542,7 @@
       <Activate skinType="9212">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x240b" id="Kingsman Cavalry Warrior Skin">
@@ -5560,7 +5560,7 @@
       <Activate skinType="9213">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -5579,7 +5579,7 @@
       <Activate skinType="9214">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -5598,7 +5598,7 @@
       <Activate skinType="9215">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
    </Object>
    <Object type="0x240e" id="Court Wizard Skin">
@@ -5616,7 +5616,7 @@
       <Activate skinType="9216">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -5635,7 +5635,7 @@
       <Activate skinType="9217">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -5654,7 +5654,7 @@
       <Activate skinType="9218">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -5673,7 +5673,7 @@
       <Activate skinType="9219">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -5692,7 +5692,7 @@
       <Activate skinType="9220">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -5711,7 +5711,7 @@
       <Activate skinType="9221">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -5730,7 +5730,7 @@
       <Activate skinType="9222">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -5749,7 +5749,7 @@
       <Activate skinType="9223">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -5768,7 +5768,7 @@
       <Activate skinType="9224">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -5787,7 +5787,7 @@
       <Activate skinType="9225">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -5806,7 +5806,7 @@
       <Activate skinType="9226">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -5822,7 +5822,7 @@
       <Activate skinType="9241">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x241f" id="Discoverer Sorcerer Skin">
@@ -5837,7 +5837,7 @@
       <Activate skinType="9242">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2420" id="Poisson d'Avril Paladin Skin">
@@ -5852,7 +5852,7 @@
       <Activate skinType="9243">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2421" id="Rabbit Warrior Skin">
@@ -5867,7 +5867,7 @@
       <Activate skinType="9244">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2422" id="Mysterious Wizard Skin">
@@ -5882,7 +5882,7 @@
       <Activate skinType="9245">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2457" id="Butterfly Wizard Skin">
@@ -5897,7 +5897,7 @@
       <Activate skinType="9302">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2463" id="Demonhunter Huntress Skin">
@@ -5912,7 +5912,7 @@
       <Activate skinType="9310">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2464" id="Blessed Champion Paladin Skin">
@@ -5927,7 +5927,7 @@
       <Activate skinType="9311">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2465" id="Sworded Inquisitor Paladin Skin">
@@ -5942,7 +5942,7 @@
       <Activate skinType="9312">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2466" id="Dapper Disguiser Rogue Skin">
@@ -5957,7 +5957,7 @@
       <Activate skinType="9313">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2467" id="Wise Elder Sorcerer Skin">
@@ -5972,7 +5972,7 @@
       <Activate skinType="9314">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2469" id="Jellyhead Trickster Skin">
@@ -5987,7 +5987,7 @@
       <Activate skinType="9320">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x7006" id="Mini Horrific Sorcerer Skin">
@@ -6001,7 +6001,7 @@
       <Description>Customize your Sorcerer with the Mini Horrific Sorcerer Skin.\n\nSkin Class: Sorcerer</Description>
       <Activate skinType="28677">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6016,7 +6016,7 @@
       <Description>Equally strong, but not quite as swoll.\n\nSkin Class: Rogue\nSprite Credits: Mrunibro, Orothorn, Beige</Description>
       <Activate skinType="322">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6031,7 +6031,7 @@
       <Description>I will reward those who killed the dragon.\n\nSkin Class: Warrior\nSprite Credits: Nazoado</Description>
       <Activate skinType="807">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6046,7 +6046,7 @@
       <Description>There's a legend that her lightning makes crops grow.\n\nSkin Class: Sorcerer\nSprite Credits: Nazoado</Description>
       <Activate skinType="402">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6061,7 +6061,7 @@
       <Description>Excellent singer and dancer, but incredibly deadly if you pull her into a fight!\n\nSkin Class: Sorcerer\nSprite Credits: Lovens</Description>
       <Activate skinType="2416">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6076,7 +6076,7 @@
       <Description>That's what happens when handling an unknown mutagen.\n\nSkin Class: Rogue</Description>
       <Activate skinType="2418">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6091,7 +6091,7 @@
       <Description>"RRrukr Horg" - probably an Orc proverb.\n\nSkin Class: Warrior</Description>
       <Activate skinType="1301">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6106,7 +6106,7 @@
       <Description>The meat's only good when it bites back!\n\nSkin Class: Assassin\nSprite Credits: Dappertron</Description>
       <Activate skinType="1305">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6121,7 +6121,7 @@
       <Description>Peace within, peace without...\n\nSkin Class: Paladin\nSprite Credits: Corrade</Description>
       <Activate skinType="1332">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6136,7 +6136,7 @@
       <Description>No parasite can pass by me!\n\nSkin Class: Assassin</Description>
       <Activate skinType="2180">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6152,7 +6152,7 @@
       <Activate skinType="6278">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x18cb" id="Beefcake Brutus Warrior Skin">
@@ -6166,7 +6166,7 @@
       <Description>After all this time spent fighting in the Arena, Brutus has new challenges to take on... and slash.\n\nSkin Class: Warrior</Description>
       <Activate skinType="6346">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6182,7 +6182,7 @@
       <Activate skinType="24373">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x1885" id="Cowboy Samurai Skin">
@@ -6197,7 +6197,7 @@
       <Activate skinType="6276">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x17da" id="Tennis Player Archer Skin">
@@ -6212,7 +6212,7 @@
       <Activate skinType="3586">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x17db" id="Beach Assassin Skin">
@@ -6226,7 +6226,7 @@
       <Description>Removing that mask from the face helps to get a better tan.\n\nSkin Class: Assassin\nSprite Credits: Lovens</Description>
       <Activate skinType="3587">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6242,7 +6242,7 @@
       <Activate skinType="3588">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x17dd" id="Beach Party Necromancer Skin">
@@ -6257,7 +6257,7 @@
       <Activate skinType="3589">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x17de" id="Banana Boat Paladin Skin">
@@ -6271,7 +6271,7 @@
       <Description>This guy can surf as well!\n\nSkin Class: Paladin\nSprite Credits: Lovens</Description>
       <Activate skinType="3590">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6286,7 +6286,7 @@
       <Description>When you can't get your hands on the Helm of the Juggernaut there is always a decent replacement.\n\nSkin Class: Warrior\nSprite Credits: Lovens</Description>
       <Activate skinType="3591">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6302,7 +6302,7 @@
       <Activate skinType="3592">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x749d" id="Storm Archer Skin">
@@ -6317,7 +6317,7 @@
       <Activate skinType="29850">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x749e" id="Foreign Prince Paladin Skin">
@@ -6331,7 +6331,7 @@
       <Description>Clear the way in the left bazaar, let him through, he's a bright new star!\n\nSkin Class: Paladin\nSprite Credits: Lovens</Description>
       <Activate skinType="29851">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6347,7 +6347,7 @@
       <Activate skinType="29852">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4ae1" id="Hermit Wizard Skin">
@@ -6362,7 +6362,7 @@
       <Activate skinType="19168">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x602b" id="Giant Sword Warrior Skin">
@@ -6376,7 +6376,7 @@
       <Description>They call me one slash man!\n\nSkin Class: Warrior</Description>
       <Activate skinType="24618">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6392,7 +6392,7 @@
       <Activate skinType="29794">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x280e" id="Stone Samurai Skin">
@@ -6410,7 +6410,7 @@
       <Activate skinType="10253">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -6426,7 +6426,7 @@
       <Activate skinType="8766">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2243" id="Baywatch Samurai Skin">
@@ -6441,7 +6441,7 @@
       <Activate skinType="8767">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2244" id="Shark Hunter Ninja Skin">
@@ -6456,7 +6456,7 @@
       <Activate skinType="8768">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2245" id="Kilnmaster Samurai Skin">
@@ -6471,7 +6471,7 @@
       <Activate skinType="8769">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2248" id="Slime Samurai Skin">
@@ -6503,7 +6503,7 @@
       <Activate skinType="8775">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x4849" id="Foreign General Samurai Skin">
@@ -6521,7 +6521,7 @@
       <Activate skinType="18504">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -6537,7 +6537,7 @@
       <Activate skinType="25102">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x6211" id="Random Mad Scientist Skin">
@@ -6552,7 +6552,7 @@
       <Activate skinType="25104">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x6213" id="Krathman Skin">
@@ -6567,7 +6567,7 @@
       <Activate skinType="25106">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x7355" id="Lizardman Warrior Skin">
@@ -6581,7 +6581,7 @@
       <Description>He doesn't like it when people stare.\n\nSkin Class: Warrior\nSprite Credits: Xaklor</Description>
       <Activate skinType="29520">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6596,7 +6596,7 @@
       <Description>A legendary Rogue who is the only soul to have escaped a deathly-unearthly place.\n\nSkin Class: Rogue\nSprite Credits: Downslott</Description>
       <Activate skinType="29521">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6612,7 +6612,7 @@
       <Activate skinType="29522">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x7358" id="Singer Warrior Skin">
@@ -6626,7 +6626,7 @@
       <Description>He'll never use deceit, injure you, bid adieu, cause you to shed a tear, circle and evade you, lower you, or give you up - but he will fight alongside you!\n\nSkin Class: Warrior\nSprite Credits: Yoblah</Description>
       <Activate skinType="29523">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6642,7 +6642,7 @@
       <Activate skinType="29524">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x7567" id="Lightning Mystic Skin">
@@ -6656,7 +6656,7 @@
       <Description>I'll zap you with my electrifying charm.\n\nSkin Class: Mystic</Description>
       <Activate skinType="30054">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6671,7 +6671,7 @@
       <Description>Samurai ST Skin\n\nSkin Class: Samurai</Description>
       <Activate skinType="30056">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6687,7 +6687,7 @@
       <Activate skinType="29988">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2605" id="Masked Samurai Skin">
@@ -6702,7 +6702,7 @@
       <Activate skinType="9732">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2607" id="Little Prince Rogue Skin">
@@ -6716,7 +6716,7 @@
       <Description>It is only with the heart that one can see rightly. What is essential is invisible to the eye.\n\nSkin Class: Rogue\nSprite Credits: Lovens</Description>
       <Activate skinType="9734">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6731,7 +6731,7 @@
       <Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Piggby</Description>
       <Activate skinType="9736">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x260b" id="Silent Samurai Skin">
@@ -6745,7 +6745,7 @@
       <Description>Despite his flashy looks he rarely says anything.\n\nSkin Class: Samurai\nSprite Credits: Squzavvvv</Description>
       <Activate skinType="9738">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6760,7 +6760,7 @@
       <Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
       <Activate skinType="29600">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x73a3" id="Samurai - Dungeon Mastermind Skin">
@@ -6774,7 +6774,7 @@
       <Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
       <Activate skinType="29602">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x73a5" id="Shogun Samurai Skin">
@@ -6788,7 +6788,7 @@
       <Description>Customize your Samurai with the Shogun Skin.\n\nSkin Class: Samurai\nSprite Credits: HadesIV</Description>
       <Activate skinType="29604">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6803,7 +6803,7 @@
       <Description>Let's dance.\n\nSkin Class: Samurai\nSprite Credits: HadesIV</Description>
       <Activate skinType="29606">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6818,7 +6818,7 @@
       <Description>Do you want to have this *cough cough* potion?\n\nSkin Class: Assassin\nSprite Credits: Nazoado</Description>
       <Activate skinType="29608">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6833,7 +6833,7 @@
       <Description>Don't confuse me with that other guy... Pooltable was it?\n\nSkin Class: Rogue</Description>
       <Activate skinType="29610">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6849,7 +6849,7 @@
       <Activate skinType="29612">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x73af" id="Sushi Chef Samurai Skin">
@@ -6864,7 +6864,7 @@
       <Activate skinType="29614">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x73b1" id="Vampire Beast Rogue Skin">
@@ -6878,7 +6878,7 @@
       <Description>At first glance, it has big adorable ears. But don't forget that this monster has an infectious disease!\n\nSkin Class: Rogue\nSprite Credits: Nazoado</Description>
       <Activate skinType="29616">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6893,7 +6893,7 @@
       <Description>Don't move, let me draw your blood.\n\nSkin Class: Assassin\nSprite Credits: Nazoado</Description>
       <Activate skinType="29618">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6908,7 +6908,7 @@
       <Description>The sole survivor of the Psychic Wars. If you see him after dark, don't turn your back on him.\n\nSkin Class: Sorcerer\nSprite Credits: Atrapper</Description>
       <Activate skinType="29620">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -6926,7 +6926,7 @@
       </ExtraTooltipData>
       <Activate skinType="6119">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x73b7" id="Supporter Extraordinaire - Paladin Skin">
@@ -6943,7 +6943,7 @@
       </ExtraTooltipData>
       <Activate skinType="6120">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x73b8" id="Supporter Extraordinaire - Samurai Skin">
@@ -6960,7 +6960,7 @@
       </ExtraTooltipData>
       <Activate skinType="6121">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x73b9" id="Supporter Extraordinaire - Knight Skin">
@@ -6977,7 +6977,7 @@
       </ExtraTooltipData>
       <Activate skinType="6122">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x73ba" id="Supporter Extraordinaire - Ninja Skin">
@@ -6994,7 +6994,7 @@
       </ExtraTooltipData>
       <Activate skinType="6123">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x73bb" id="Supporter Extraordinaire - Archer Skin">
@@ -7011,7 +7011,7 @@
       </ExtraTooltipData>
       <Activate skinType="6124">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x73bc" id="Supporter Extraordinaire - Rogue Skin">
@@ -7028,7 +7028,7 @@
       </ExtraTooltipData>
       <Activate skinType="6125">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x73bd" id="Supporter Extraordinaire - Assassin Skin">
@@ -7045,7 +7045,7 @@
       </ExtraTooltipData>
       <Activate skinType="6126">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x73be" id="Supporter Extraordinaire - Wizard Skin">
@@ -7062,7 +7062,7 @@
       </ExtraTooltipData>
       <Activate skinType="6127">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x73bf" id="Supporter Extraordinaire - Necromancer Skin">
@@ -7079,7 +7079,7 @@
       </ExtraTooltipData>
       <Activate skinType="6128">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x73c0" id="Supporter Extraordinaire - Priest Skin">
@@ -7096,7 +7096,7 @@
       </ExtraTooltipData>
       <Activate skinType="6129">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x73c1" id="Supporter Extraordinaire - Sorcerer Skin">
@@ -7113,7 +7113,7 @@
       </ExtraTooltipData>
       <Activate skinType="6130">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x73c2" id="Supporter Extraordinaire - Huntress Skin">
@@ -7130,7 +7130,7 @@
       </ExtraTooltipData>
       <Activate skinType="6131">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x73c3" id="Supporter Extraordinaire - Mystic Skin">
@@ -7147,7 +7147,7 @@
       </ExtraTooltipData>
       <Activate skinType="6132">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x73c4" id="Supporter Extraordinaire - Trickster Skin">
@@ -7164,7 +7164,7 @@
       </ExtraTooltipData>
       <Activate skinType="6133">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x73c6" id="Gravekeeper Hunter Skin">
@@ -7179,7 +7179,7 @@
       <Activate skinType="29637">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x73c8" id="Gravekeeper Warrior Skin">
@@ -7193,7 +7193,7 @@
       <Description>I should dig that 8 maxed stats gravestone, right?\n\nSkin Class: Warrior\nSprite Credits: Nazoado</Description>
       <Activate skinType="29639">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7208,7 +7208,7 @@
       <Description>Have you heard of that? All of who saw its face will die.\n\nSkin Class: Rogue\nSprite Credits: Nazoado</Description>
       <Activate skinType="29641">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7224,7 +7224,7 @@
       <Activate skinType="24224">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5ea3" id="Jiangshi Trickster Skin">
@@ -7239,7 +7239,7 @@
       <Activate skinType="24226">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5ea5" id="Royal Champion Samurai Skin">
@@ -7253,7 +7253,7 @@
       <Description>I will never die in the hands of the enemy, I prefer my own hands.\n\nSkin Class: Samurai\nSprite Credits: Tero</Description>
       <Activate skinType="24228">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7268,7 +7268,7 @@
       <Description>Nothing can penetrate this reinforced, very shiny, golden armor of mine.\n\nSkin Class: Warrior\nSprite Credits: Tero</Description>
       <Activate skinType="24230">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7301,7 +7301,7 @@
       <Activate skinType="24232">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5eab" id="Skeleton Knight Skin">
@@ -7316,7 +7316,7 @@
       <Activate skinType="24234">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5ead" id="Skeleton Archer Skin">
@@ -7331,7 +7331,7 @@
       <Activate skinType="24236">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5eaf" id="Scrooge Priest Skin">
@@ -7346,7 +7346,7 @@
       <Activate skinType="24238">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5eb1" id="Glacius Knight Skin">
@@ -7361,7 +7361,7 @@
       <Activate skinType="24240">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5eb3" id="Guillotiner Samurai Skin">
@@ -7375,7 +7375,7 @@
       <Description>A master of the flying guillotine, and a slayer of the unarmed.\n\nSkin Class: Samurai\nSprite Credits: Dappertron</Description>
       <Activate skinType="24242">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7391,7 +7391,7 @@
       <Activate skinType="24244">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5eb7" id="Spellmaster Wizard Skin">
@@ -7406,7 +7406,7 @@
       <Activate skinType="24246">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5eb9" id="Archbishop Priest Skin">
@@ -7421,7 +7421,7 @@
       <Activate skinType="24248">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5ebb" id="Hero Paladin Skin">
@@ -7435,7 +7435,7 @@
       <Description>Defeat the evil and change fate!\n\nSkin Class: Paladin\nSprite Credits: Nazoado</Description>
       <Activate skinType="24250">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7450,7 +7450,7 @@
       <Description>Being invisible really helps me catch these little critters.\n\nSkin Class: Rogue\nSprite Credits: Tero</Description>
       <Activate skinType="24252">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7466,7 +7466,7 @@
       <Activate skinType="24254">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5ec0" id="Mini Raijin Skin">
@@ -7481,7 +7481,7 @@
       <Activate skinType="7767">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5ec3" id="Electronic Scholar Sorcerer Skin">
@@ -7495,7 +7495,7 @@
       <Description>Making mistakes is the root of success.\n\nSkin Class: Sorcerer\nSprite Credits: Nazoado</Description>
       <Activate skinType="24258">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7511,7 +7511,7 @@
       <Activate skinType="24260">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5ec7" id="Morris Dancer Priest Skin">
@@ -7526,7 +7526,7 @@
       <Activate skinType="24262">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5ec9" id="Fire Goddess Mystic Skin">
@@ -7540,7 +7540,7 @@
       <Description>An ancient goddess who understands the whisper of fire.\n\nSkin Class: Mystic\nSprite Credits: Artauris</Description>
       <Activate skinType="24264">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7556,7 +7556,7 @@
       <Activate skinType="24266">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5ecd" id="Mini Ghost Archer Skin">
@@ -7571,7 +7571,7 @@
       <Activate skinType="24268">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5ecf" id="Pirate Chief Warrior Skin">
@@ -7585,7 +7585,7 @@
       <Description>I will be the king of the pirates!\n\nSkin Class: Warrior\nSprite Credits: Nazoado</Description>
       <Activate skinType="24270">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7601,7 +7601,7 @@
       <Activate skinType="24272">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5ed3" id="Doctor Priest Skin">
@@ -7616,7 +7616,7 @@
       <Activate skinType="24274">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5ed5" id="Astronaut Knight Skin">
@@ -7631,7 +7631,7 @@
       <Activate skinType="24276">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5ed7" id="Lost Lands Knight Skin">
@@ -7646,7 +7646,7 @@
       <Activate skinType="24278">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5ed9" id="Mini Totalia Mystic Skin">
@@ -7660,7 +7660,7 @@
       <Description>Woah, calm down there, no need to go on a witch hunt! I&#8217;m just collecting tokens for reskinned event whites!\n\nSkin Class: Mystic\nSprite Credits: Aurum and Lily</Description>
       <Activate skinType="24280">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7675,7 +7675,7 @@
       <Description>I'm not a thief, I&#8217;m a scrap hoarder. The things just happen to be worth a bag of gold.\n\nSkin Class: Rogue</Description>
       <Activate skinType="24282">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7690,7 +7690,7 @@
       <Description>A robot sent by Calbrik himself to scout the realm for potential threats. It seems to have lost interest in its original directive.\n\nSkin Class: Paladin\nSprite Credits: Aurum</Description>
       <Activate skinType="24284">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7705,7 +7705,7 @@
       <Description>A fungal growth that followed its dream to become a warrior! But he still has mush room for improvement!\n\nSkin Class: Warrior</Description>
       <Activate skinType="24286">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7721,7 +7721,7 @@
       <Activate skinType="24288">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5ee3" id="Angler Wizard Skin">
@@ -7736,7 +7736,7 @@
       <Activate skinType="24290">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5ee5" id="Lighthouse Keeper Paladin Skin">
@@ -7750,7 +7750,7 @@
       <Description>A lonely man who lives only with his thoughts in a tall lighthouse.\n\nSkin Class: Paladin\nSprite Credits: Kingged</Description>
       <Activate skinType="24292">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7765,7 +7765,7 @@
       <Description>Mine White Bags before Diamonds!\n\nSkin Class: Warrior\nSprite Credits: Nazoado</Description>
       <Activate skinType="24294">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -7781,7 +7781,7 @@
       <Activate skinType="24296">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2762" id="Warrior - Cyber Cop Skin">
@@ -7795,7 +7795,7 @@
       <Description>Discord officer: Requesting backup, rules broken outside of the realm!</Description>
       <Activate skinType="10081">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x2764" id="Paladin - Cyber Cop Skin">
@@ -7809,7 +7809,7 @@
       <Description>Discord officer: Requesting backup, rules broken outside of the realm!</Description>
       <Activate skinType="10083">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x2766" id="Knight - Cyber Cop Skin">
@@ -7823,7 +7823,7 @@
       <Description>Discord officer: Requesting backup, rules broken outside of the realm!</Description>
       <Activate skinType="10085">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x2768" id="Ninja - Cyber Cop Skin">
@@ -7837,7 +7837,7 @@
       <Description>Discord officer: Requesting backup, rules broken outside of the realm!</Description>
       <Activate skinType="10087">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x276a" id="Archer - Cyber Cop Skin">
@@ -7851,7 +7851,7 @@
       <Description>Discord officer: Requesting backup, rules broken outside of the realm!</Description>
       <Activate skinType="10089">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x276c" id="Rogue - Cyber Cop Skin">
@@ -7865,7 +7865,7 @@
       <Description>Discord officer: Requesting backup, rules broken outside of the realm!</Description>
       <Activate skinType="10091">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x276e" id="Assassin - Cyber Cop Skin">
@@ -7879,7 +7879,7 @@
       <Description>Discord officer: Requesting backup, rules broken outside of the realm!</Description>
       <Activate skinType="10093">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x2770" id="Wizard - Cyber Cop Skin">
@@ -7893,7 +7893,7 @@
       <Description>Discord officer: Requesting backup, rules broken outside of the realm!</Description>
       <Activate skinType="10095">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x2772" id="Necromancer - Cyber Cop Skin">
@@ -7907,7 +7907,7 @@
       <Description>Discord officer: Requesting backup, rules broken outside of the realm!</Description>
       <Activate skinType="10097">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x2774" id="Priest - Cyber Cop Skin">
@@ -7921,7 +7921,7 @@
       <Description>Discord officer: Requesting backup, rules broken outside of the realm!</Description>
       <Activate skinType="10099">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x2776" id="Sorcerer - Cyber Cop Skin">
@@ -7935,7 +7935,7 @@
       <Description>Discord officer: Requesting backup, rules broken outside of the realm!</Description>
       <Activate skinType="10101">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x2778" id="Huntress - Cyber Cop Skin">
@@ -7949,7 +7949,7 @@
       <Description>Discord officer: Requesting backup, rules broken outside of the realm!</Description>
       <Activate skinType="10103">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x277a" id="Mystic - Cyber Cop Skin">
@@ -7963,7 +7963,7 @@
       <Description>Discord officer: Requesting backup, rules broken outside of the realm!</Description>
       <Activate skinType="10105">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x277c" id="Trickster - Cyber Cop Skin">
@@ -7977,7 +7977,7 @@
       <Description>Discord officer: Requesting backup, rules broken outside of the realm!</Description>
       <Activate skinType="10107">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x277e" id="Samurai - Cyber Cop Skin">
@@ -7991,7 +7991,7 @@
       <Description>Discord officer: Requesting backup, rules broken outside of the realm!</Description>
       <Activate skinType="10109">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x5eeb" id="Haunted Doll Trickster Skin">
@@ -8006,7 +8006,7 @@
       <Activate skinType="24298">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5eed" id="Lazy Skeleton Assassin Skin">
@@ -8020,7 +8020,7 @@
       <Description>This is a very familiar skeleton in a blue hoodie and a glowing blue eye. It is said that if you anger him, he'll give you a bad time.\n\nSkin Class: Assassin\nSprite Credits: Lily</Description>
       <Activate skinType="24300">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8036,7 +8036,7 @@
       <Activate skinType="24302">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x5ef1" id="Demon Girl Samurai Skin">
@@ -8050,7 +8050,7 @@
       <Description>She has been a human ever since the time she was born.\n\nSkin Class: Samurai\nSprite Credits: Puppetchan</Description>
       <Activate skinType="24304">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8065,7 +8065,7 @@
       <Description>As a young mystic, she was so annoying she grew up into an urgle. Or at least that's what the old wives say to make little boys and girls behave.\n\nSkin Class: Mystic\nSprite Credits: Ickabod</Description>
       <Activate skinType="24306">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8080,7 +8080,7 @@
       <Description>A princess who uses her sharp metal hand fan to attack!\n\nSkin Class: Warrior\nSprite Credits: Awsad</Description>
       <Activate skinType="24308">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8095,7 +8095,7 @@
       <Description>Why would you use a key for fighting.\n\nSkin Class: Paladin\nSprite Credits: Wladov</Description>
       <Activate skinType="24310">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8110,7 +8110,7 @@
       <Description>Were you expecting someone else?\n\nSkin Class: Assassin\nSprite Credits: Aurum</Description>
       <Activate skinType="10111">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8126,7 +8126,7 @@
       <Activate skinType="10113">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2784" id="Wind Samurai Skin">
@@ -8140,7 +8140,7 @@
       <Description>A sword's poor company for a long road.\n\nSkin Class: Samurai\nSprite Credits: CrystalPX</Description>
       <Activate skinType="10115">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8155,7 +8155,7 @@
       <Description>Either his scythe is redundant, or he is.\n\nSkin Class: Warrior\nSprite Credits: CrystalPX</Description>
       <Activate skinType="10117">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8171,7 +8171,7 @@
       <Activate skinType="10119">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x278a" id="Cave Guy Assassin Skin">
@@ -8185,7 +8185,7 @@
       <Description>What's his quote anyways?\n\nSkin Class: Assassin\nSprite Credits: CrystalPX</Description>
       <Activate skinType="10121">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8200,7 +8200,7 @@
       <Description>She's got quite a lot of cave stories to tell!\n\nSkin Class: Mystic\nSprite Credits: CrystalPX</Description>
       <Activate skinType="10123">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8215,7 +8215,7 @@
       <Description>People keep running into my blade.\n\nSkin Class: Samurai\nSprite Credits: CrystalPX</Description>
       <Activate skinType="10125">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8230,7 +8230,7 @@
       <Description>Not suitable for Snake Pits!\n\nSkin Class: Samurai\nSprite Credits: CrystalPX</Description>
       <Activate skinType="10127">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8246,7 +8246,7 @@
       <Activate skinType="10129">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2794" id="Dante Trickster of the Abyss Skin">
@@ -8261,7 +8261,7 @@
       <Activate skinType="10131">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2796" id="Playful Demon Trickster Skin">
@@ -8276,7 +8276,7 @@
       <Activate skinType="10133">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2798" id="Fortune Teller Mystic Skin">
@@ -8290,7 +8290,7 @@
       <Description>It's up to you whether you believe in fortune-telling or not. Just don't say I never warned you...\n\nSkin Class: Mystic\nSprite Credits: Nazoado</Description>
       <Activate skinType="10135">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8306,7 +8306,7 @@
       <Activate skinType="10137">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x279c" id="Mini Messenger Priest Skin">
@@ -8321,7 +8321,7 @@
       <Activate skinType="10139">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x279e" id="Mini Pirate King Warrior Skin">
@@ -8335,7 +8335,7 @@
       <Description>It's a glorious thing to be pirate king!\n\nSkin Class: Warrior\nSprite Credits: CrystalPX</Description>
       <Activate skinType="10141">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8351,7 +8351,7 @@
       <Activate skinType="10143">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x27a2" id="Quickdraw Cowboy Sorcerer Skin">
@@ -8365,7 +8365,7 @@
       <Description>He also draws cards!\n\nSkin Class: Sorcerer\nSprite Credits: CrystalPX</Description>
       <Activate skinType="10145">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8381,7 +8381,7 @@
       <Activate skinType="10147">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x27a6" id="Exiled Princess Rogue Skin">
@@ -8395,7 +8395,7 @@
       <Description>She was once the beloved princess of a powerful kingdom. In a struggle for conflict, she was exiled from her home land, and is now wandering the world with no goal in mind.\n\nSkin Class: Rogue\nSprite Credits: Lily</Description>
       <Activate skinType="10149">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8410,7 +8410,7 @@
       <Description>They are 5 steps away from realizing I'm 10 steps ahead.\n\nSkin Class: Sorcerer\nSprite Credits: CrystalPX</Description>
       <Activate skinType="10151">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8425,7 +8425,7 @@
       <Description>Can you deal with this very swift bunny?\n\nSkin Class: Sorcerer\nSprite Credits: Nazoado</Description>
       <Activate skinType="10153">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8441,7 +8441,7 @@
       <Activate skinType="10155">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x27ae" id="Saber Wielder Warrior Skin">
@@ -8455,7 +8455,7 @@
       <Description>Smaller they are, dangerous more they are. In bushes, hard to find they are.\n\nSkin Class: Warrior\nSprite Credits: Nazoado</Description>
       <Activate skinType="10157">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8471,7 +8471,7 @@
       <Activate skinType="10159">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x27b2" id="Shadow Stalker Rogue Skin">
@@ -8485,7 +8485,7 @@
       <Description>You die, I die. Wait, what?\n\nSkin Class: Rogue\nSprite Credits: CrystalPX</Description>
       <Activate skinType="10161">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8500,7 +8500,7 @@
       <Description>Sometimes you go too far. THIS is when you go too far.\n\nSkin Class: Paladin\nSprite Credits: CrystalPX, Niegil</Description>
       <Activate skinType="10163">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8515,7 +8515,7 @@
       <Description>He lost his "Ken" a long time ago. Have you seen it?\n\nSkin Class: Samurai\nSprite Credits: Lily and Wilhuff</Description>
       <Activate skinType="10165">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8530,7 +8530,7 @@
       <Description>Sadly, this still isn't enough to fool the Undead Lair slimes into not attacking you.\n\nSkin Class: Assassin\nSprite Credits: Lily and Aurum</Description>
       <Activate skinType="10167">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8545,7 +8545,7 @@
       <Description>KRAKATOA!\n\nSkin Class: Mystic\nSprite Credits: Lily and Aurum</Description>
       <Activate skinType="10169">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8561,7 +8561,7 @@
       <Activate skinType="10171">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x27be" id="Fire Battlemaiden Wizard Skin">
@@ -8576,7 +8576,7 @@
       <Activate skinType="10173">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x27c0" id="Wolf Headdress Warrior Skin">
@@ -8590,7 +8590,7 @@
       <Description>This cleverly wildling sneaks soundlessly and flies at the prey like an arrow.\n\nSkin Class: Warrior\nSprite Credits: Nazoado</Description>
       <Activate skinType="10175">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8605,7 +8605,7 @@
       <Description>Ancient creature that has absorbed the power of Cronus.\n\nSkin Class: Assassin\nSprite Credits: Aurusenth</Description>
       <Activate skinType="10177">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8620,7 +8620,7 @@
       <Description>The samurai came from the beach's sand and said to the god, ruling the land, "Hey! Got any white bags?"\n\nSkin Class: Samurai\nSprite Credits: Lily</Description>
       <Activate skinType="10179">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8635,7 +8635,7 @@
       <Description>A skilled mage from somewhere in the south. Her life goal is to avenge the cruel murder of her family.\n\nSkin Class: Sorcerer\nSprite Credits: Lily</Description>
       <Activate skinType="10181">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8651,7 +8651,7 @@
       <Activate skinType="10183">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x27ca" id="Vengeful Yokai Necromancer Skin">
@@ -8666,7 +8666,7 @@
       <Activate skinType="10185">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x27cc" id="Mystery Rogue Skin">
@@ -8680,7 +8680,7 @@
       <Description>Hold on, I was told this unlocks a random Rogue skin!\n\nSprite Credits: Sturky</Description>
       <Activate skinType="10187">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -8695,7 +8695,7 @@
       <Description>Hold on, I was told this unlocks a random Archer skin!\n\nSprite Credits: Sturky</Description>
       <Activate skinType="10189">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -8710,7 +8710,7 @@
       <Description>Hold on, I was told this unlocks a random Wizard skin!\n\nSprite Credits: Sturky</Description>
       <Activate skinType="10191">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -8725,7 +8725,7 @@
       <Description>Hold on, I was told this unlocks a random Priest skin!\n\nSprite Credits: Sturky</Description>
       <Activate skinType="10193">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -8740,7 +8740,7 @@
       <Description>Hold on, I was told this unlocks a random Warriror skin!\n\nSprite Credits: Sturky</Description>
       <Activate skinType="10195">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -8755,7 +8755,7 @@
       <Description>Hold on, I was told this unlocks a random Knight skin!\n\nSprite Credits: Sturky</Description>
       <Activate skinType="10197">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -8770,7 +8770,7 @@
       <Description>Hold on, I was told this unlocks a random Paladin skin!\n\nSprite Credits: Sturky</Description>
       <Activate skinType="10199">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -8785,7 +8785,7 @@
       <Description>Hold on, I was told this unlocks a random Assassin skin!\n\nSprite Credits: Sturky</Description>
       <Activate skinType="10201">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -8800,7 +8800,7 @@
       <Description>Hold on, I was told this unlocks a random Necromancer skin!\n\nSprite Credits: Sturky</Description>
       <Activate skinType="10203">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -8815,7 +8815,7 @@
       <Description>Hold on, I was told this unlocks a random Huntress skin!\n\nSprite Credits: Sturky</Description>
       <Activate skinType="10205">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -8830,7 +8830,7 @@
       <Description>Hold on, I was told this unlocks a random Mystic skin!\n\nSprite Credits: Sturky</Description>
       <Activate skinType="10207">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -8845,7 +8845,7 @@
       <Description>Hold on, I was told this unlocks a random Trickster skin!\n\nSprite Credits: Sturky</Description>
       <Activate skinType="10209">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -8860,7 +8860,7 @@
       <Description>Hold on, I was told this unlocks a random Sorcerer skin!\n\nSprite Credits: Sturky</Description>
       <Activate skinType="10211">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -8875,7 +8875,7 @@
       <Description>Hold on, I was told this unlocks a random Ninja skin!\n\nSprite Credits: Sturky</Description>
       <Activate skinType="10213">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -8890,7 +8890,7 @@
       <Description>Hold on, I was told this unlocks a random Samurai skin!\n\nSprite Credits: Sturky</Description>
       <Activate skinType="10215">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>500</feedPower>
    </Object>
@@ -8906,7 +8906,7 @@
       <Activate skinType="10217">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x27ec" id="Mistral Druid Necromancer Skin">
@@ -8921,7 +8921,7 @@
       <Activate skinType="10219">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x27ee" id="Earth Battlemaiden Warrior Skin">
@@ -8935,7 +8935,7 @@
       <Description>A blind girl from a wealthy family who ran away from home, wanting to experience the world for herself.\n\nSkin Class: Warrior\nSprite Credits: Lily</Description>
       <Activate skinType="10221">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8950,7 +8950,7 @@
       <Description>Imprisoned by Oryx, this hero's soul was absorbed by darkness and emptiness. Now he has returned to become Oryx's worst nightmare...\n\nSkin Class: Sorcerer\nSprite Credits: Aurusenth</Description>
       <Activate skinType="10223">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8966,7 +8966,7 @@
       <Activate skinType="10225">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x27f4" id="The 10th Rogue Skin">
@@ -8980,7 +8980,7 @@
       <Description>I'd call you a genius, except I'm in the room.\n\nSkin Class: Rogue\nSprite Credits: CrystalPX</Description>
       <Activate skinType="10227">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -8995,7 +8995,7 @@
       <Description>A forgotten creation of Dr. Terrible who just LOVES staying in season.\n\nSkin Class: Sorcerer\nSprite Credits: TLMaelstrom</Description>
       <Activate skinType="10229">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9010,7 +9010,7 @@
       <Description>An excited explorer. Small in size, but large in ambition!\n\nSkin Class: Samurai\nSprite Credits: Lily</Description>
       <Activate skinType="10231">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9026,7 +9026,7 @@
       <Activate skinType="10233">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x27fc" id="Mini Court Magician Sorcerer Skin">
@@ -9040,7 +9040,7 @@
       <Description>What does a rabbit pull out of his hat? A confusing question, isn't it?\n\nSkin Class: Sorcerer\nSprite Credits: Lily</Description>
       <Activate skinType="10235">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9055,7 +9055,7 @@
       <Description>The world of music is wondrous and filled with unimaginable tunes. It makes me want to grab my ukulele and run into open air!\n\nSkin Class: Bard\nSprite Credits: Lily</Description>
       <Activate skinType="9335">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9070,7 +9070,7 @@
       <Description>His singing is like chirping of birds.\n\nSkin Class: Bard\nSprite Credits: Nazoado</Description>
       <Activate skinType="9337">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9089,7 +9089,7 @@
       <Activate skinType="9339">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -9104,7 +9104,7 @@
       <Description>Shooting left and right, and looking good while doing it.\n\nSkin Class: Assassin\nSprite Credits: CrystalPX</Description>
       <Activate skinType="9341">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9120,7 +9120,7 @@
       <Activate skinType="9343">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2482" id="Space Cowboy Rogue Skin">
@@ -9134,7 +9134,7 @@
       <Description>Bounty hunter for hire...as long as you got some food.\n\nSkin Class: Rogue\nSprite Credits: CrystalPX</Description>
       <Activate skinType="9345">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9150,7 +9150,7 @@
       <Activate skinType="9347">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2486" id="Presidential Paladin Skin">
@@ -9164,7 +9164,7 @@
       <Description>Can we defeat Oryx? Yes, we can!\n\nSkin Class: Paladin\nSprite Credits: CrystalPX</Description>
       <Activate skinType="9349">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9180,7 +9180,7 @@
       <Activate skinType="9351">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x248a" id="Shielded Pal Knight Skin">
@@ -9195,7 +9195,7 @@
       <Activate skinType="9353">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x248c" id="Pegasus Warrior Skin">
@@ -9209,7 +9209,7 @@
       <Description>Sometimes you got to fight alongside your friends.\n\nSkin Class: Warrior\nSprite Credits: CrystalPX</Description>
       <Activate skinType="9355">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9224,7 +9224,7 @@
       <Description>We have hearts too! Even if rotten...\n\nSkin Class: Warrior\nSprite Credits: CrystalPX</Description>
       <Activate skinType="9357">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9239,7 +9239,7 @@
       <Description>Audaces fortuna iuvat.\n\nSkin Class: Bard\nSprite Credits: CrystalPX</Description>
       <Activate skinType="9359">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9255,7 +9255,7 @@
       <Activate skinType="9361">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x2494" id="Chemist of Steel Paladin Skin">
@@ -9269,7 +9269,7 @@
       <Description>His buffs are short.\n\nSkin Class: Paladin\nSprite Credits: CrystalPX, Arcelios</Description>
       <Activate skinType="9363">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9284,7 +9284,7 @@
       <Description>Customize your player with the Tavern Bard skin.\n\nSkin Class: Bard\nSprite Credits: Lily</Description>
       <Activate skinType="9365">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9300,7 +9300,7 @@
       <Activate skinType="9367">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x249a" id="Skeleton Trumpeter Bard Skin">
@@ -9314,7 +9314,7 @@
       <Description>Doot doot.\n\nSkin Class: Bard\nSprite Credits: Soda</Description>
       <Activate skinType="9369">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9329,7 +9329,7 @@
       <Description>His songs bite like a shark, doo doo doo doo doo doo!\n\nSkin Class: Bard\nSprite Credits: Pitsdusth</Description>
       <Activate skinType="9371">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9344,7 +9344,7 @@
       <Description>A formally-dressed cricket who loves to play his fiddle.\n\nSkin Class: Bard\nSprite Credits: Zquidx</Description>
       <Activate skinType="9373">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9359,7 +9359,7 @@
       <Description>A blue-haired idol who inspires the masses.\n\nSkin Class: Bard\nSprite Credits: Mizumi</Description>
       <Activate skinType="9375">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9374,7 +9374,7 @@
       <Description>When he's not gathered around a campfire playing songs of old to his mutant pals, he's locked, loaded, and itching to sit on Oryx's throne. Also, he can roll.\n\nSkin Class: Bard\nSprite Credits: Dirtblock</Description>
       <Activate skinType="9377">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9389,7 +9389,7 @@
       <Description>A wandering spellcaster capable of using many types of magic. His cape and hat keep him warm and dry in any climate as he travels the world.\n\nSkin Class: Bard\nSprite Credits: Pepus</Description>
       <Activate skinType="9379">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9421,7 +9421,7 @@
       <Description>Testers assemble! Seek the bugs of tomorrow!\n\nSprite Credits: Beige</Description>
       <Activate skinType="9383">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x24aa" id="Bard - Dungeon Mastermind Skin">
@@ -9435,7 +9435,7 @@
       <Description>Our biggest thanks to our Community Dungeon Creators!\n\nSprite Credits: Beige</Description>
       <Activate skinType="9385">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x24ac" id="Bard - Artist Extraordinaire Skin">
@@ -9449,7 +9449,7 @@
       <Description>Our biggest thanks to our Community Artists!\n\nSprite Credits: Beige</Description>
       <Activate skinType="9387">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x24ae" id="Oryxmas Bard Skin">
@@ -9480,7 +9480,7 @@
       <Description>Discord officer: Requesting backup, rules broken outside of the realm!</Description>
       <Activate skinType="9391">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
    </Object>
    <Object type="0x24b2" id="Stone Bard Skin">
@@ -9498,7 +9498,7 @@
       <Activate skinType="9393">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>500</feedPower>
       <Track/>
    </Object>
@@ -9513,7 +9513,7 @@
       <Description>Walk in the shadows...Because the sun is REALLY hot!\n\nSkin Class: Rogue\nSprite Credits: CrystalPX</Description>
       <Activate skinType="9395">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9528,7 +9528,7 @@
       <Description>Mr. Oryx, I have an ideeeaaa!\n\nSkin Class: Bard\nSprite Credits: Lily</Description>
       <Activate skinType="9397">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9543,7 +9543,7 @@
       <Description>Let the flames of your soul engulf your blade to strike your enemies down.\n\nSkin Class: Samurai\nSprite Credits: Mizumi</Description>
       <Activate skinType="9399">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9558,7 +9558,7 @@
       <Description>Her speed and agility with a spear are unmatched by that of any swordsman.\n\nSkin Class: Paladin\nSprite Credits: Zquidx</Description>
       <Activate skinType="9401">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9574,7 +9574,7 @@
       <Activate skinType="9403">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x24be" id="Decapod Crustacean Warrior Skin">
@@ -9588,7 +9588,7 @@
       <Description>A confused creature that emerged from an elaborate calculator in a hidden dimension.\n\nSkin Class: Warrior\nSprite Credits: CrystalPX</Description>
       <Activate skinType="9405">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9604,7 +9604,7 @@
       <Activate skinType="9407">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x24c2" id="The 12th Sorcerer Skin">
@@ -9618,7 +9618,7 @@
       <Description>He's ready to go around the realm and see what it has to offer!\n\nSkin Class: Sorcerer\nSprite Credits: CrystalPX</Description>
       <Activate skinType="9409">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9633,7 +9633,7 @@
       <Description>Introducing: Brad the Bard! He's so good at music that he can shoot arrows through his singing voice!\n\nSkin Class: Bard\nSprite Credits: Lily</Description>
       <Activate skinType="9411">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9649,7 +9649,7 @@
       <Activate skinType="9413">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x24c8" id="Leech Robot Necromancer Skin">
@@ -9664,7 +9664,7 @@
       <Activate skinType="9415">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x24ca" id="Merfolk Paladin Skin">
@@ -9678,7 +9678,7 @@
       <Description>Caution. You cannot breathe in the water even if you use this skin.\n\nSkin Class: Paladin\nSprite Credits: Nazoado</Description>
       <Activate skinType="9417">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9694,7 +9694,7 @@
       <Activate skinType="9419">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x24ce" id="Ghost Captain Rogue Skin">
@@ -9708,7 +9708,7 @@
       <Description>Let's sail to our graves!\n\nSkin Class: Rogue\nSprite Credits: Zquidx</Description>
       <Activate skinType="9421">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9724,7 +9724,7 @@
       <Activate skinType="9423">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x24d2" id="Blorph the Archer Skin">
@@ -9739,7 +9739,7 @@
       <Activate skinType="9425">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x24d4" id="Mushroom Girl Rogue Skin">
@@ -9753,7 +9753,7 @@
       <Description>She releases a cloud of spores to conceal herself from enemies.\n\nSkin Class: Rogue\nSprite Credits: Mizumi</Description>
       <Activate skinType="9427">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9769,7 +9769,7 @@
       <Activate skinType="9429">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x24d8" id="Dungeon Recruit Huntress Skin">
@@ -9784,7 +9784,7 @@
       <Activate skinType="9431">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x24da" id="Dungeon Recruit Archer Skin">
@@ -9799,7 +9799,7 @@
       <Activate skinType="9433">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x24dc" id="Mini Treasure Hunter Archer Skin">
@@ -9814,7 +9814,7 @@
       <Activate skinType="9435">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x24de" id="Mini Vampire Rogue Skin">
@@ -9829,7 +9829,7 @@
       <Activate skinType="9437">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x24e0" id="Torched Paleolithic Wizard Skin">
@@ -9844,7 +9844,7 @@
       <Activate skinType="9439">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
    <Object type="0x24e2" id="Crab Samurai Skin">
@@ -9858,7 +9858,7 @@
       <Description>It loves boogieing to electronic dance music.\n\nSkin Class: Samurai\nSprite Credits: Zquidx</Description>
       <Activate skinType="9441">UnlockSkin</Activate>
       <Consumable/>
-      <Soulbound/>
+       
       <BagType>7</BagType>
       <feedPower>1000</feedPower>
    </Object>
@@ -9874,7 +9874,7 @@
       <Activate skinType="9443">UnlockSkin</Activate>
       <Consumable/>
       <BagType>7</BagType>
-      <Soulbound/>
+       
       <feedPower>1000</feedPower>
    </Object>
 </Objects>
