@@ -366,7 +366,7 @@ namespace TKR.WorldServer.logic
             )
             .Init("Encounter Altar",
                 new State(
-                    //new DropPortalOnDeath("Mountain Temple", .40),
+                    new DropPortalOnDeath("Mountain Temple Portal", 1),
                     new State("Wait",
                         new ConditionEffectBehavior(ConditionEffectIndex.Invincible, true),
                         new PlayerWithinTransition(6, "ActivateG&J")

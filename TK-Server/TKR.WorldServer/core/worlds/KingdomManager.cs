@@ -29,6 +29,22 @@ namespace TKR.WorldServer.core.worlds
 
         private static readonly Tuple<string, TauntData>[] CriticalEnemies = new Tuple<string, TauntData>[]
         {
+            Tuple.Create("Garnet Statue", new TauntData()
+            {
+                Spawn = new string[] {
+                    ""
+                },
+                NumberOfEnemies = new string[] {
+                    ""
+                },
+                Final = new string[] {
+                    ""
+                },
+                Killed = new string[] {
+                    ""
+                },
+                NameOfDeath = "The Statues"
+            }),
             Tuple.Create("Skull Shrine", new TauntData()
             {
                 Spawn = new string[] {
@@ -280,6 +296,7 @@ namespace TKR.WorldServer.core.worlds
             Tuple.Create("Grand Sphinx", (ISetPiece) new Sphinx()),
             Tuple.Create("Hermit God", (ISetPiece) new Hermit()),
             Tuple.Create("Skull Shrine", (ISetPiece) new SkullShrine()),
+            Tuple.Create("Garnet Statue", (ISetPiece) new GarnetJade()),
             Tuple.Create("Lucky Ent God", (ISetPiece) null),
             Tuple.Create("Lucky Djinn", (ISetPiece) null),
         };
@@ -500,9 +517,9 @@ namespace TKR.WorldServer.core.worlds
         public void OnPlayerEntered(Player player)
         {
             player.SendInfo("Welcome to betterSkilys");
-            player.SendEnemy("Oryx the Mad God", "You are a pest to my kingdom!");
             player.SendInfo("Use [WASDQE] to move; click to shoot!");
             player.SendInfo("Type \"/commands\" for more help");
+            player.SendEnemy("Oryx the Mad God", "You are a pest to my kingdom!");
         }
 
         private static double GetNormal(Random rand)

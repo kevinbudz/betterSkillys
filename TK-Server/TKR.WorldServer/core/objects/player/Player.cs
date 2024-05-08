@@ -657,9 +657,6 @@ namespace TKR.WorldServer.core.objects
                 
                 HandleBreath(ref time);
 
-                if(World is NexusWorld)
-                    HandleNexus(ref time);
-
                 CheckTradeTimeout(time);
                 HandleQuest(time);
 
@@ -681,23 +678,6 @@ namespace TKR.WorldServer.core.objects
         }
 
         public bool IsInMarket { get; private set; }
-
-        public void HandleNexus(ref TickTime time)
-        {
-            var inMarket = (World as NexusWorld).WithinBoundsOfMarket(X, Y);
-            if (inMarket && !IsInMarket)
-                SendInfo("You have entered the market");
-            if (!inMarket && IsInMarket)
-            {
-                SendInfo("You have left the market");
-                if (tradeTarget != null)
-                {
-                    tradeTarget.CancelTrade(true);
-                    CancelTrade(true);
-                }
-            }
-            IsInMarket = inMarket;
-        }
 
         public void HandleBreath(ref TickTime time)
         {

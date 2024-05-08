@@ -668,7 +668,7 @@ namespace TKR.WorldServer.logic
                 ),
             new Threshold(0.03,
                 new ItemLoot("Thousand Shot", 0.001, threshold: 0.0003),
-                new ItemLoot("Puppet Master's Encore Key", 0.001, 0, 0.003)
+                new ItemLoot("Puppet Master's Encore Key", 0.001, 0, 0.01)
                 ),
             new Threshold(0.02,
                 new TierLoot(12, ItemType.Armor, 0.15),

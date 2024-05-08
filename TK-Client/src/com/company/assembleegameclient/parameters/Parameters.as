@@ -122,10 +122,10 @@ public class Parameters {
         setDefaultKey("scrollChatDown", KeyCodes.PAGE_DOWN);
         setDefaultKey("miniMapZoomOut", KeyCodes.MINUS);
         setDefaultKey("miniMapZoomIn", KeyCodes.EQUAL);
-        setDefaultKey("resetToDefaultCameraAngle", KeyCodes.C);
-        setDefaultKey("togglePerformanceStats", KeyCodes.UNSET);
+        setDefaultKey("resetToDefaultCameraAngle", KeyCodes.UNSET);
+        setDefaultKey("togglePerformanceStats", KeyCodes.L);
         setDefaultKey("options", KeyCodes.O);
-        setDefaultKey("toggleCentering", KeyCodes.UNSET);
+        setDefaultKey("toggleCentering", KeyCodes.X);
         setDefaultKey("chat", KeyCodes.ENTER);
         setDefaultKey("chatCommand", KeyCodes.SLASH);
         setDefaultKey("tell", KeyCodes.TAB);
@@ -178,8 +178,6 @@ public class Parameters {
         setDefault("allyDamage", true);
         setDefault("noAllyNotifications", false);
         setDefault("fps", 60);
-        setDefault("vsync", true);
-        setDefault("inventoryFirstTabOption", false);
     }
 
     private static function setDefaultKey(keyName:String, key:uint):void {

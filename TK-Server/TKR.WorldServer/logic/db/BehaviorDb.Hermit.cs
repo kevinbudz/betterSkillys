@@ -1,7 +1,11 @@
-﻿using TKR.Shared.resources;
+﻿#region
+
+using TKR.Shared.resources;
 using TKR.WorldServer.logic.loot;
 using TKR.WorldServer.logic.behaviors;
 using TKR.WorldServer.logic.transitions;
+
+#endregion
 
 namespace TKR.WorldServer.logic
 {
@@ -132,7 +136,7 @@ namespace TKR.WorldServer.logic
             )
             .Init("Hermit God Drop",
                 new State(
-                    new ScaleHP2(8),
+                    new ScaleHP2(30),
                     new ConditionEffectBehavior(ConditionEffectIndex.Invincible, true),
                     new State("Waiting"),
                     new DropPortalOnDeath("Ocean Trench Portal", 1),
@@ -140,16 +144,8 @@ namespace TKR.WorldServer.logic
                         new Suicide()
                         )
                     ),
-                new Threshold(0.01,
-                    new ItemLoot("Robe of Parting Lakes", 0.007),
-                    new ItemLoot("Mossy Pearl", 0.007)
-                    ),
                 new Threshold(0.03,
-                    new ItemLoot("Helm of the Juggernaut", 0.0015),
-                    new ItemLoot("Shiv of Tides", 0.0015)
-                    ),
-                new Threshold(0.005,
-                    new ItemLoot("Support Fragment", 0.06)
+                    new ItemLoot("Helm of the Juggernaut", 0.008)
                     ),
                 new Threshold(0.005,
                     LootTemplates.BasicDrop()

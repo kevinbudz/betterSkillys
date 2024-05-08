@@ -10,10 +10,13 @@ namespace TKR.WorldServer.core.terrain
 {
     public class WmapTile
     {
+        private readonly WmapDesc _originalDesc;
+
         public short X;
         public short Y;
 
         public ushort TileId;
+        public TileDesc TileDesc;
 
         // static entity stuff
         public int ObjId;
@@ -28,15 +31,43 @@ namespace TKR.WorldServer.core.terrain
         public byte UpdateCount = 1;
         public bool Spawned;
 
-        public WmapTile(WmapDesc _originalDesc)
+        public WmapTile(WmapDesc desc)
+        {
+            _originalDesc = desc;
+            Reset();
+        }
+
+        public WmapTile Clone()
+        {
+            return new WmapTile(_originalDesc)
+            {
+                UpdateCount = (byte)(UpdateCount + 1),
+                TileId = _originalDesc.TileId,
+                ObjType = _originalDesc.ObjType,
+                ObjDesc = ObjDesc,
+                ObjCfg = _originalDesc.ObjCfg,
+                Terrain = _originalDesc.Terrain,
+                Region = _originalDesc.Region,
+            };
+        }
+
+        public void Reset(Wmap map = null, int x = 0, int y = 0)
         {
             TileId = _originalDesc.TileId;
+            TileDesc = _originalDesc.TileDesc;
+
             ObjType = _originalDesc.ObjType;
             ObjDesc = _originalDesc.ObjDesc;
             ObjCfg = _originalDesc.ObjCfg;
+
             Terrain = _originalDesc.Terrain;
             Region = _originalDesc.Region;
             Elevation = _originalDesc.Elevation;
+
+            if (map != null)
+                InitConnection(map, x, y);
+
+            UpdateCount++;
         }
 
         public void InitConnection(Wmap map, int x, int y)
@@ -51,6 +82,7 @@ namespace TKR.WorldServer.core.terrain
         public void CopyTo(WmapTile tile)
         {
             tile.TileId = TileId;
+            tile.TileDesc = TileDesc;
             tile.ObjType = ObjType;
             tile.ObjDesc = ObjDesc;
             tile.ObjCfg = ObjCfg;

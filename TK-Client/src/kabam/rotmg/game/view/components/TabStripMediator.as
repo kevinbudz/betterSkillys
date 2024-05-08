@@ -60,29 +60,15 @@ import kabam.rotmg.ui.signals.UpdateBackpackTabSignal;
       
       private function addTabs(player:Player) : void
       {
-         if(Parameters.data_.inventoryFirstTabOption){
-            this.addInventoryTab(player);
-            if(player.hasBackpack_)
-            {
-               this.addBackPackTab(player);
-            }
-            else
-            {
-               this.updateBackpack.add(this.onUpdateBackPack);
-            }
-            this.addStatsTab();
+         this.addInventoryTab(player);
+         this.addStatsTab();
+         if(player.hasBackpack_)
+         {
+            this.addBackPackTab(player);
          }
-         else{
-            this.addInventoryTab(player);
-            this.addStatsTab();
-            if(player.hasBackpack_)
-            {
-               this.addBackPackTab(player);
-            }
-            else
-            {
-               this.updateBackpack.add(this.onUpdateBackPack);
-            }
+         else
+         {
+            this.updateBackpack.add(this.onUpdateBackPack);
          }
       }
       

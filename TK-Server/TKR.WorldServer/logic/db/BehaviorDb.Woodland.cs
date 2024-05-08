@@ -82,12 +82,12 @@ namespace TKR.WorldServer.logic
                 new ItemLoot("Magic Potion", 0.01)
                 )
             )
-        .Init("Blood Ground Effector",
+        /*.Init("Blood Ground Effector",
             new State(
                 new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
                 new ApplySetpiece("Puke"),
                 new Suicide()
-                ))
+                ))*/
 
         .Init("Epic Larva",
             new State(
@@ -104,7 +104,7 @@ namespace TKR.WorldServer.logic
                     new Shoot(8.4, count: 1, fixedAngle: 135, projectileIndex: 0, coolDown: 1750),
                     new Shoot(8.4, count: 1, fixedAngle: 235, projectileIndex: 0, coolDown: 1750),
                     new Shoot(8.4, count: 1, fixedAngle: 315, projectileIndex: 0, coolDown: 1750),
-                    new TossObject("Blood Ground Effector", angle: null, coolDown: 3750),
+                    //new TossObject("Blood Ground Effector", angle: null, coolDown: 3750),
                     new DamageTakenTransition(12500, "tran")
                     ),
                 new State("tran",

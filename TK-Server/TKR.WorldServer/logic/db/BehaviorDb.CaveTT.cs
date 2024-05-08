@@ -408,7 +408,7 @@ namespace TKR.WorldServer.logic
                     )
                 ),
             new Threshold(0.01,
-                new ItemLoot("Sword of Golden Fragments", 0.003),
+                new ItemLoot("Sword of Golden Fragments", 0.01),
                 new ItemLoot("Jewel-Encrusted Helmet", 0.005),
                 new ItemLoot("Luminous Body Armor", 0.005),
                 new ItemLoot("Ring of Golden Shine", 0.005),

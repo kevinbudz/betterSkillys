@@ -1,83 +1,132 @@
-﻿using TKR.Shared.resources;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using TKR.WorldServer.core.worlds;
+using NLog;
+using TKR.Shared.resources;
 using TKR.WorldServer.core.setpieces;
-using TKR.WorldServer.core.terrain;
 using TKR.WorldServer.core.structures;
+using TKR.WorldServer.core.terrain;
+using TKR.WorldServer.core.worlds;
 
-namespace TKR.WorldServer.core.setpieces
+namespace TKR.WorldServer.core.worlds
 {
-    public static class SetPieces
+    partial class SetPieces
     {
-        private static readonly List<Tuple<ISetPiece, int, int, TerrainType[]>> Sets = new List<Tuple<ISetPiece, int, int, TerrainType[]>>()
-        {
-        };
-        private static Tuple<ISetPiece, int, int, TerrainType[]> MakeSetPiece(ISetPiece piece, int min, int max, params TerrainType[] terrains) => Tuple.Create(piece, min, max, terrains);
 
-        public static void ApplySetPieces(World world)
+        struct Rect
         {
-            var map = world.Map;
-            var w = map.Width;
-            var h = map.Height;
-            var rects = new HashSet<Rect>();
+            public int x;
+            public int y;
+            public int w;
+            public int h;
 
-            foreach (var dat in Sets)
+            public static bool Intersects(Rect r1, Rect r2)
             {
-                var size = dat.Item1.Size;
-                var count = Random.Shared.Next(dat.Item2, dat.Item3);
-
-                for (var i = 0; i < count; i++)
-                {
-                    Rect rect;
-
-                    var pt = new IntPoint();
-                    var max = 1024;
-
-                    do
-                    {
-                        pt.X = Random.Shared.Next(0, w);
-                        pt.Y = Random.Shared.Next(0, h);
-                        rect = new Rect() { x = pt.X, y = pt.Y, w = size, h = size };
-                        max--;
-                    }
-                    while ((Array.IndexOf(dat.Item4, map[pt.X, pt.Y].Terrain) == -1 || rects.Any(_ => Rect.Intersects(rect, _))) && max > 0);
-
-                    if (max <= 0)
-                        continue;
-
-                    dat.Item1.RenderSetPiece(world, pt);
-                    rects.Add(rect);
-                }
+                return !(r2.x > r1.x + r1.w ||
+                         r2.x + r2.w < r1.x ||
+                         r2.y > r1.y + r1.h ||
+                         r2.y + r2.h < r1.y);
             }
         }
 
-        public static int[,] ReflectHorizontal(int[,] mat)
+        static Tuple<ISetPiece, int, int, TerrainType[]> SetPiece(ISetPiece piece, int min, int max, params TerrainType[] terrains)
         {
-            var M = mat.GetLength(0);
-            var N = mat.GetLength(1);
-            var ret = new int[M, N];
+            return Tuple.Create(piece, min, max, terrains);
+        }
 
-            for (var x = 0; x < M; x++)
-                for (var y = 0; y < N; y++)
-                    ret[M - x - 1, y] = mat[x, y];
+        static readonly List<Tuple<ISetPiece, int, int, TerrainType[]>> setPieces = new List<Tuple<ISetPiece, int, int, TerrainType[]>>()
+        {
+            SetPiece(new Avatar(), 1, 1, TerrainType.Mountains),
+            //SetPiece(new Building(), 50, 50, TerrainType.LowForest, TerrainType.LowPlains, TerrainType.MidForest),
+            //SetPiece(new Graveyard(), 5, 10, TerrainType.LowSand, TerrainType.LowPlains),
+            //SetPiece(new Castle(), 3, 5, TerrainType.HighForest, TerrainType.HighPlains),
+            //SetPiece(new Tower(), 5, 10, TerrainType.HighForest, TerrainType.HighPlains),
+            SetPiece(new TempleA(), 5, 15, TerrainType.MidForest, TerrainType.MidPlains),
+            SetPiece(new TempleB(), 5, 15, TerrainType.MidForest, TerrainType.MidPlains),
+            SetPiece(new Oasis(), 0, 5, TerrainType.LowSand, TerrainType.MidSand),
+            SetPiece(new Pyre(), 0, 5, TerrainType.MidSand, TerrainType.HighSand),
+            SetPiece(new LavaFissure(), 3, 5, TerrainType.Mountains),
+            SetPiece(new Crystal(), 1, 1, TerrainType.Mountains),
+            SetPiece(new KageKami(), 2, 3, TerrainType.HighForest, TerrainType.HighPlains)
+        };
 
+        public static int[,] RotateCW(int[,] mat)
+        {
+            int M = mat.GetLength(0);
+            int N = mat.GetLength(1);
+            int[,] ret = new int[N, M];
+            for (int r = 0; r < M; r++)
+            {
+                for (int c = 0; c < N; c++)
+                {
+                    ret[c, M - 1 - r] = mat[r, c];
+                }
+            }
             return ret;
         }
 
         public static int[,] ReflectVertical(int[,] mat)
         {
-            var M = mat.GetLength(0);
-            var N = mat.GetLength(1);
-            var ret = new int[M, N];
-
-            for (var x = 0; x < M; x++)
-                for (var y = 0; y < N; y++)
+            int M = mat.GetLength(0);
+            int N = mat.GetLength(1);
+            int[,] ret = new int[M, N];
+            for (int x = 0; x < M; x++)
+                for (int y = 0; y < N; y++)
                     ret[x, N - y - 1] = mat[x, y];
-
             return ret;
+        }
+        public static int[,] ReflectHorizontal(int[,] mat)
+        {
+            int M = mat.GetLength(0);
+            int N = mat.GetLength(1);
+            int[,] ret = new int[M, N];
+            for (int x = 0; x < M; x++)
+                for (int y = 0; y < N; y++)
+                    ret[M - x - 1, y] = mat[x, y];
+            return ret;
+        }
+
+        static int DistSqr(IntPoint a, IntPoint b)
+        {
+            return (a.X - b.X) * (a.X - b.X) + (a.Y - b.Y) * (a.Y - b.Y);
+        }
+
+        public static void ApplySetPieces(World world)
+        {
+            //log.InfoFormat("Applying setpieces to: '{0}'. [ID: {1}]", world.DisplayName, world.Id);
+
+            var map = world.Map;
+            int w = map.Width, h = map.Height;
+
+            Random rand = new Random();
+            HashSet<Rect> rects = new HashSet<Rect>();
+            foreach (var dat in setPieces)
+            {
+                int size = dat.Item1.Size;
+                int count = rand.Next(dat.Item2, dat.Item3);
+                for (int i = 0; i < count; i++)
+                {
+                    IntPoint pt = new IntPoint();
+                    Rect rect;
+
+                    int max = 50;
+                    do
+                    {
+                        pt.X = rand.Next(0, w);
+                        pt.Y = rand.Next(0, h);
+                        rect = new Rect() { x = pt.X, y = pt.Y, w = size, h = size };
+                        max--;
+                    } while ((Array.IndexOf(dat.Item4, map[pt.X, pt.Y].Terrain) == -1 ||
+                             rects.Any(_ => Rect.Intersects(rect, _))) &&
+                             max > 0);
+                    if (max <= 0) continue;
+                    dat.Item1.RenderSetPiece(world, pt);
+                    rects.Add(rect);
+                }
+            }
+
+            //log.InfoFormat("Applied setpieces to: '{0}'. [ID: {1}]", world.DisplayName, world.Id);
         }
 
         public static void RenderFromData(World world, IntPoint pos, byte[] data)
@@ -88,28 +137,5 @@ namespace TKR.WorldServer.core.setpieces
             sp.Load(ms, 0);
             sp.ProjectOntoWorld(world, pos);
         }
-
-        public static int[,] RotateCW(int[,] mat)
-        {
-            var m = mat.GetLength(0);
-            var n = mat.GetLength(1);
-            var ret = new int[n, m];
-
-            for (var r = 0; r < m; r++)
-                for (var c = 0; c < n; c++)
-                    ret[c, m - 1 - r] = mat[r, c];
-            return ret;
-        }
-    }
-
-    public struct Rect
-    {
-        public int h;
-        public int w;
-        public int x;
-        public int y;
-
-        public static bool Intersects(Rect r1, Rect r2) => !(r2.x > r1.x + r1.w || r2.x + r2.w < r1.x || r2.y > r1.y + r1.h || r2.y + r2.h < r1.y);
-        public static bool ContainsPoint(Rect r1, float x, float y) => x > r1.x && x < r1.x + r1.w && y > r1.y && y < r1.y + r1.h;
     }
 }

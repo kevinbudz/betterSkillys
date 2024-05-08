@@ -364,7 +364,7 @@ namespace TKR.WorldServer.logic
                     )
                 ),
                 new Threshold(0.03,
-                    new ItemLoot("Bracer of the Guardian", 0.003)
+                    new ItemLoot("Bracer of the Guardian", 0.01)
                     ),
                 new Threshold(0.0001,
                     new TierLoot(11, ItemType.Weapon, .1),
@@ -2625,7 +2625,7 @@ namespace TKR.WorldServer.logic
                     new ItemLoot("Blade of Theos", 0.0008),
                     new ItemLoot("Glaives of Royalty", 0.0008),
                     new ItemLoot("Nameless Regalia", 0.0008),
-                    new ItemLoot("Shard of Divinity", 0.003),
+                    new ItemLoot("Shard of Divinity", 0.01),
                     new ItemLoot("Wrath of Stella", 0.000001),
                     new ItemLoot("Tears of Nihil", 0.000001)
                     ),

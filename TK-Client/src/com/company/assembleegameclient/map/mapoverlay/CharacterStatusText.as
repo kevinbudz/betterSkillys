@@ -10,7 +10,7 @@ import com.company.ui.SimpleText;
    
    public class CharacterStatusText extends Sprite implements IMapOverlayElement
    {
-      public const MAX_DRIFT:int = 40;
+      public const MAX_DRIFT:int = 20;
       
       public var go_:GameObject;
       public var offset_:Point;

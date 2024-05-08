@@ -29,6 +29,7 @@ public class BossHealthBar extends Sprite {
     private var hpText_:SimpleText;
     private var dmgText_:SimpleText;
     private var nameText_:SimpleText;
+    private var displayName:String;
 
     public function BossHealthBar() {
         this.overlay_ = this.makeOverlay();
@@ -36,6 +37,7 @@ public class BossHealthBar extends Sprite {
         this.foregroundMask = this.hiddenForeground();
         this.background = this.makeBackground();
         this.foreground.mask = this.foregroundMask;
+        this.displayName = "";
 
         this.portrait_ = new Bitmap();
         this.portrait_.filters = [new GlowFilter(0, 1, 3, 3, 2, 1)];

@@ -595,18 +595,13 @@ public class MapUserInput
 
    private function togglePerformanceStats() : void
    {
-      if(this.gs_.contains(stats_))
-      {
-         this.gs_.removeChild(stats_);
-         this.gs_.removeChild(this.gs_.gsc_.jitterWatcher_);
-         this.gs_.gsc_.disableJitterWatcher();
+      if(!this.gs_.gameStatistics_.visible){
+         this.gs_.enableGameStatistics();
+         this.gs_.creditDisplay_.visible = false;
       }
-      else
-      {
-         this.gs_.addChild(stats_);
-         this.gs_.gsc_.enableJitterWatcher();
-         this.gs_.gsc_.jitterWatcher_.y = stats_.height;
-         this.gs_.addChild(this.gs_.gsc_.jitterWatcher_);
+      else{
+         this.gs_.disableGameStatistics();
+         this.gs_.creditDisplay_.visible = true;
       }
    }
 }

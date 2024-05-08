@@ -339,7 +339,7 @@ namespace TKR.WorldServer.logic
                     new Shoot(10, 1, projectileIndex: 0, coolDown: 1000, predictive: 0.5)
                     )
                 ),
-            new Threshold(0.003,
+            new Threshold(0.01,
                 new TierLoot(7, ItemType.Weapon, 0.09),
                 new TierLoot(7, ItemType.Armor, 0.09)
                 )
@@ -364,7 +364,7 @@ namespace TKR.WorldServer.logic
                 new Shoot(10, 2, projectileIndex: 0, shootAngle: 0, coolDown: 1000),
                 new Shoot(10, 1, projectileIndex: 1, coolDown: 1000)
                 ),
-            new Threshold(0.003,
+            new Threshold(0.01,
                 new TierLoot(4, ItemType.Ability, 0.03)
                 )
             )
@@ -423,7 +423,7 @@ namespace TKR.WorldServer.logic
                 new Follow(0.6, 10, 1),
                 new Shoot(10, 3, shootAngle: 20, projectileIndex: 0, coolDown: 1000)
                 ),
-            new Threshold(0.003,
+            new Threshold(0.01,
                 new TierLoot(7, ItemType.Weapon, 0.05)
                 )
             )

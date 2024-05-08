@@ -84,6 +84,13 @@
 		<VisibilityType>1</VisibilityType>
 		<Dungeon/>
 	</World>
+	<World id="Mountain Temple">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>mountain_temple.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
 	<World id="Snake Pit">
 		<Width>256</Width>
 		<Height>256</Height>
@@ -247,7 +254,7 @@
 	<World id="Sprite World">
 		<Width>256</Width>
 		<Height>256</Height>
-		<MapJM>sprite_world/sprite_world.jm</MapJM>
+		<MapJM>sprite_world.jm</MapJM>
 		<Dungeon/>
 	</World>
 	<World id="Woodland Labyrinth">

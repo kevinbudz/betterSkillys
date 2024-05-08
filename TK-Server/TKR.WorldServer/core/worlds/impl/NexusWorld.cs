@@ -23,19 +23,6 @@ namespace TKR.WorldServer.core.worlds.impl
 
     public sealed class NexusWorld : World
     {
-        private const int ENGINE_STAGE1_TIMEOUT = 3600; //seconds
-        private const int ENGINE_STAGE2_TIMEOUT = ENGINE_STAGE1_TIMEOUT * 2;
-        private const int ENGINE_STAGE3_TIMEOUT = ENGINE_STAGE1_TIMEOUT * 3;
-
-        private const int ENGINE_FIRST_STAGE_AMOUNT = 100;
-        private const int ENGINE_SECOND_STAGE_AMOUNT = 250 + ENGINE_FIRST_STAGE_AMOUNT;
-        private const int ENGINE_THIRD_STAGE_AMOUNT = 500 + ENGINE_SECOND_STAGE_AMOUNT;
-
-        private int MARKET_BOUNDS_WIDTH = 33;
-        private int MARKET_BOUNDS_HEIGHT = 43;
-
-        private Rect? MarketBounds;
-
         // i dont really want to use static but it works so?
         public static float WeekendLootBoostEvent = 0.0f;
         public static int GetCurrentMonth = 0;
@@ -49,23 +36,8 @@ namespace TKR.WorldServer.core.worlds.impl
 
         public override void Init()
         {
-            GetCurrentMonth = DateTime.Now.Month;
+            GetCurrentMonth = 1; //DateTime.Now.Month;
             var lootRegions = GetRegionPoints(TileRegion.Hallway_1);
-            var marketRegions = GetRegionPoints(TileRegion.Hallway);
-
-            if (marketRegions.Length > 0)
-            {
-                var point = marketRegions[0];
-
-                MarketBounds = new Rect()
-                {
-                    x = point.Key.X,
-                    y = point.Key.Y,
-                    w = MARKET_BOUNDS_WIDTH,
-                    h = MARKET_BOUNDS_HEIGHT
-                };
-            }
-
 
             PortalMonitor = new KingdomPortalMonitor(GameServer, this);
 
@@ -134,13 +106,6 @@ namespace TKR.WorldServer.core.worlds.impl
             LeaveWorld(merchantData.NewMerchant);
             merchantData.NewMerchant = null;
             InactiveStorePoints.Add(merchantData);
-        }
-
-        public bool WithinBoundsOfMarket(float x, float y)
-        {
-            if (!MarketBounds.HasValue)
-                return false;
-            return Rect.ContainsPoint(MarketBounds.Value, x, y);
         }
 
         protected override void UpdateLogic(ref TickTime time)

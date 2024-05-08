@@ -891,13 +891,6 @@ public class GameObject extends BasicObject {
             if(pierce && proj.ownerId_ == map_.player_.objectId_){
                 pierced = true;
             }
-
-//            if (Parameters.data_.dynamicHPcolor) {
-//                _loc4_ = new CharacterStatusText(this, _loc3_, pierced ? (9437439) : (Character.green2redu((this.hp_ - damageAmount) * 100 / this.maxHP_)), 1000);
-//            }
-//            else {
-//            }
-
             var text:String = "-" + damageAmount;
             var statusText:CharacterStatusText = new CharacterStatusText(this, text, pierced ? (9437439) : (16711680), 1000, 0, true);
             map_.mapOverlay_.addStatusText(statusText);
@@ -905,8 +898,6 @@ public class GameObject extends BasicObject {
             rtHp_ -= damageAmount;
             if(rtHp_ < 0)
                 rtHp_ = 0;
-
-            //map_.mapOverlay_.addStatusText(new CharacterStatusText(this,"-" + damageAmount,pierced?9437439:16711680,1000));
         }
 
     }

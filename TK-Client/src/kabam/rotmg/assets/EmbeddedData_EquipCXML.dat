@@ -15006,7 +15006,7 @@
       <ArcGap>345</ArcGap>
       <OldSound>magicShoot</OldSound>
       <feedPower>1200</feedPower>
-       
+      <Legendary/>
    </Object>
    <Object type="0x0247" id="Vial of Pure Darkness">
       <Class>Equipment</Class>

@@ -12,7 +12,6 @@ namespace TKR.WorldServer.core.setpieces
         private static readonly string Floor = "Light Grass";
         private static readonly string Tree = "Cherry Tree";
 
-
         public override int Size => 25;
 
         public override void RenderSetPiece(World world, IntPoint pos)

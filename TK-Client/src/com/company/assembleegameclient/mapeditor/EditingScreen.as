@@ -8,7 +8,8 @@ import com.company.assembleegameclient.editor.CommandEvent;
    import com.company.assembleegameclient.map.RegionLibrary;
    import com.company.assembleegameclient.objects.ObjectLibrary;
    import com.company.assembleegameclient.screens.AccountScreen;
-   import com.company.assembleegameclient.ui.dropdown.DropDown;
+import com.company.assembleegameclient.screens.TitleMenuOption;
+import com.company.assembleegameclient.ui.dropdown.DropDown;
    import com.company.util.IntPoint;
    import com.company.util.SpriteUtil;
    import com.hurlant.util.Base64;
@@ -16,13 +17,17 @@ import com.company.assembleegameclient.editor.CommandEvent;
    import flash.events.Event;
    import flash.events.FocusEvent;
    import flash.events.IOErrorEvent;
-   import flash.geom.Rectangle;
+import flash.events.MouseEvent;
+import flash.geom.Rectangle;
    import flash.net.FileFilter;
    import flash.net.FileReference;
-   import flash.utils.ByteArray;
+import flash.text.TextFieldAutoSize;
+import flash.utils.ByteArray;
    import kabam.lib.json.JsonParser;
    import kabam.rotmg.core.StaticInjectorContext;
-   import kabam.rotmg.ui.view.components.ScreenBase;
+import kabam.rotmg.core.signals.SetScreenSignal;
+import kabam.rotmg.ui.view.TitleView;
+import kabam.rotmg.ui.view.components.ScreenBase;
    import net.hires.debug.Stats;
 
 import org.hamcrest.text.startsWith;
@@ -33,7 +38,6 @@ public class EditingScreen extends Sprite
       private static const MAP_Y:int = 600 - MEMap.SIZE - 10;
       
       public static const stats_:Stats = new Stats();
-       
       
       public var commandMenu_:MECommandMenu;
       
@@ -60,12 +64,14 @@ public class EditingScreen extends Sprite
       private var loadedFile_:FileReference = null;
 
       private var _search:TextInputField;
+
+      public var returnButton_:TitleMenuOption;
       
       public function EditingScreen()
       {
          super();
          addChild(new ScreenBase());
-         addChild(new AccountScreen());
+         //addChild(new AccountScreen());
          this._search = new TextInputField("", false, "", "Search");
          this._search.x = 550;
          this._search.y = 6;
@@ -108,6 +114,18 @@ public class EditingScreen extends Sprite
          this.regionChooser_ = new RegionChooser();
          this.regionChooser_.x = this.chooserDrowDown_.x;
          this.regionChooser_.y = this.chooserDrowDown_.y + this.chooserDrowDown_.height + 4;
+         this.returnButton_ = new TitleMenuOption("back to home", 18, false);
+         this.returnButton_.addEventListener(MouseEvent.CLICK, onReturn);
+         this.returnButton_.x = 795 - this.returnButton_.width;
+         this.returnButton_.y = 4;
+         addChild(this.returnButton_);
+      }
+
+      private function onReturn(e:Event) : void
+      {
+         this.returnButton_.removeEventListener(MouseEvent.CLICK, onReturn);
+         parent.removeChild(this);
+         stage.addChild(new TitleView());
       }
 
       public function get searchStr():String {

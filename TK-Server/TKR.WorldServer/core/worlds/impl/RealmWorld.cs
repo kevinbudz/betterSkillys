@@ -20,9 +20,9 @@ namespace TKR.WorldServer.core.worlds.impl
 
         public override void Init()
         {
-            SetPieces.ApplySetPieces(this);
-            KingdomManager.Init();
             base.Init();
+            KingdomManager.Init();
+            SetPieces.ApplySetPieces(this);
         }
 
         public override bool AllowedAccess(Client client) => !Closed || client.Rank.IsAdmin;

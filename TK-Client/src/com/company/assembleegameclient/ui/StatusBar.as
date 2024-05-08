@@ -225,12 +225,14 @@ public class StatusBar extends Sprite
    private function internalDraw() : void {
       graphics.clear();
       this.colorSprite.graphics.clear();
-      var textColor:uint = 16777215;
-      if (this.maxMax_ > 0 && this.max_ - this.boost_ == this.maxMax_) {
-         textColor = 16572160;
+      var textColor:uint = 0xFFFFFF;
+      if ((((this.maxMax_ > 0)) && (((this.max_ - this.boost_) == this.maxMax_)))) {
+         textColor = 0xFCDF00;
       }
-      if (this.boost_ > 0) {
-         textColor = 6206769;
+      else {
+         if (this.boost_ > 0) {
+            textColor = 6206769;
+         }
       }
       if (this.textColor_ != textColor) {
          this.setTextColor(textColor);
