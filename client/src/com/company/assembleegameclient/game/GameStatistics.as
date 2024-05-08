@@ -81,10 +81,11 @@ public class GameStatistics extends Sprite {
 
             fps_.setText("FPS: " + fps);
             ping_.setText("PING: " + lastPing_);
-            mem_.setText("MEM: " + Number((System.totalMemory * 0.000000954).toFixed(1)));
 
             fps = 0;
         }
+        if (timer - 5000 > ms_prev)
+            mem_.setText("MEM: " + Number((System.totalMemory * 0.000000954).toFixed(1)));
         fps++;
     }
 
