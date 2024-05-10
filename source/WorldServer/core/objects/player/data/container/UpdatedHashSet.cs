@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace WorldServer.core.objects
+namespace WorldServer.core.objects.player.data.container
 {
     public sealed class UpdatedHashSet : HashSet<Entity>
     {
