@@ -193,19 +193,18 @@ namespace WorldServer.logic.loot
             switch (time)
             {
                 case "winter":
-                    if (NexusWorld.GetCurrentMonth != 12 ||
-                        NexusWorld.GetCurrentMonth != 1) return;
+                    if (NexusWorld.CurrentMonth != 12 ||
+                        NexusWorld.CurrentMonth != 1) return;
                     break;
                 case "summer":
-                    if (NexusWorld.GetCurrentMonth != 5 ||
-                        NexusWorld.GetCurrentMonth != 6 ||
-                        NexusWorld.GetCurrentMonth != 7) return;
+                    if (NexusWorld.CurrentMonth != 5 || NexusWorld.CurrentMonth != 6 || NexusWorld.CurrentMonth != 7) return;
                     break;
                 //case "spring":
                 //case "fall":
                 default:
                     return;
             }
+
             foreach (var i in children)
                 i.Populate(LootDefs, new LootDef(null, -1, threshold));
         }

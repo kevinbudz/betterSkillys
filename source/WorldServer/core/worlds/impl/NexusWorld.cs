@@ -1,11 +1,9 @@
-﻿using System;
+﻿using Shared;
+using Shared.resources;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Shared;
-using Shared.resources;
-using WorldServer.core.objects;
 using WorldServer.core.objects.vendors;
-using WorldServer.core.setpieces;
 using WorldServer.core.structures;
 
 namespace WorldServer.core.worlds.impl
@@ -24,45 +22,60 @@ namespace WorldServer.core.worlds.impl
     public sealed class NexusWorld : World
     {
         // i dont really want to use static but it works so?
-        public static float WeekendLootBoostEvent = 0.0f;
-        public static int GetCurrentMonth = 0;
-        public bool MarketEnabled = true;
+        public static float WeekendLootBoostEvent { get; private set; } = 0.0f;
+        public static int CurrentMonth => 1;
+
+        private readonly List<MerchantData> _inactiveStorePoints = new List<MerchantData>();
+        private readonly List<MerchantData> _activeStorePoints = new List<MerchantData>();
 
         public RealmPortalMonitor PortalMonitor { get; private set; }
+        public bool MarketEnabled { get; private set; } = true;
 
         public NexusWorld(GameServer gameServer, int id, WorldResource resource) 
             : base(gameServer, id, resource)
         {
+            PortalMonitor = new RealmPortalMonitor(gameServer, this);
         }
 
         public override void Init()
         {
-            GetCurrentMonth = 1; //DateTime.Now.Month;
-            var lootRegions = GetRegionPoints(TileRegion.Hallway_1);
-
-            PortalMonitor = new RealmPortalMonitor(GameServer, this);
-
             foreach (var shop in MerchantLists.Shops)
-            {
-                var positions = Map.Regions.Where(r => shop.Key == r.Value);
-                foreach (var data in positions)
-                {
-                    var merchantData = new MerchantData();
-                    merchantData.TileRegion = data.Value;
-                    merchantData.Position = data.Key;
-                    InactiveStorePoints.Add(merchantData);
-                }
-            }
+                foreach (var data in Map.Regions.Where(r => shop.Key == r.Value))
+                    _inactiveStorePoints.Add(new MerchantData()
+                    {
+                        TileRegion = data.Value,
+                        Position = data.Key
+                    });
 
             base.Init();
         }
 
-        private List<MerchantData> InactiveStorePoints = new List<MerchantData>();
-        private List<MerchantData> ActiveStorePoints = new List<MerchantData>();
+        protected override void UpdateLogic(ref TickTime time)
+        {
+            CheckWeekendLootBoostEvent();
+            HandleMerchants(ref time);
+            PortalMonitor.Update(ref time);
+            base.UpdateLogic(ref time);
+        }
+
+        private void CheckWeekendLootBoostEvent()
+        {
+            var day = DateTime.Now.DayOfWeek;
+            if (day != DayOfWeek.Saturday && day != DayOfWeek.Sunday)
+                return;
+            
+            if (WeekendLootBoostEvent == 0.0f)
+                WeekendLootBoostEvent = 0.30f;
+            else if(WeekendLootBoostEvent == 0.30f && day == DayOfWeek.Monday)
+            {
+                WeekendLootBoostEvent = 0.0f;
+                GameServer.ChatManager.ServerAnnounce("The weekend loot event has ended!");
+            }
+        }
 
         public void SendOutMerchant(MerchantData merchantData)
         {
-            InactiveStorePoints.Remove(merchantData);
+            _inactiveStorePoints.Remove(merchantData);
             if (MerchantLists.Shops.TryGetValue(merchantData.TileRegion, out var data))
             {
                 var items = data.Item1;
@@ -82,14 +95,14 @@ namespace WorldServer.core.worlds.impl
                 _ = MerchantLists.Shops[merchantData.TileRegion].Item1.Remove(merchantData.SellableItem);
 
                 EnterWorld(merchantData.NewMerchant);
-                ActiveStorePoints.Add(merchantData);
+                _activeStorePoints.Add(merchantData);
             }
         }
 
         private void HandleMerchants(ref TickTime time)
         {
             var merchantsToAdd = new List<MerchantData>();
-            foreach (var merchantData in InactiveStorePoints)
+            foreach (var merchantData in _inactiveStorePoints)
             {
                 merchantData.TimeToSpawn -= time.DeltaTime;
                 if (merchantData.TimeToSpawn <= 0.0f)
@@ -106,31 +119,8 @@ namespace WorldServer.core.worlds.impl
             MerchantLists.Shops[merchantData.TileRegion].Item1.Add(merchantData.SellableItem);
             LeaveWorld(merchantData.NewMerchant);
             merchantData.NewMerchant = null;
-            InactiveStorePoints.Add(merchantData);
+            _inactiveStorePoints.Add(merchantData);
         }
 
-        protected override void UpdateLogic(ref TickTime time)
-        {
-            CheckWeekendLootBoostEvent();
-            HandleMerchants(ref time);
-            //HandleEngineTimeouts(ref time);
-            PortalMonitor.Update(ref time);
-            base.UpdateLogic(ref time);
-        }
-
-        private void CheckWeekendLootBoostEvent()
-        {
-            var day = DateTime.Now.DayOfWeek;
-            if (day != DayOfWeek.Saturday && day != DayOfWeek.Sunday)
-                return;
-            
-            if (WeekendLootBoostEvent == 0.0f)
-                WeekendLootBoostEvent = 0.30f;
-            else if(WeekendLootBoostEvent == 0.30f && day == DayOfWeek.Monday)
-            {
-                WeekendLootBoostEvent = 0.0f;
-                GameServer.ChatManager.ServerAnnounce("The weekend loot event has ended!");
-            }
-        }      
     }
 }
