@@ -169,7 +169,7 @@ namespace WorldServer.core.terrain
                         var kv = item.Split(':');
 
                         var type = kv[0];
-                        var value = kv[1];
+                        var value = kv.Length == 1 ? string.Empty : kv[1];
 
                         switch (type)
                         {
