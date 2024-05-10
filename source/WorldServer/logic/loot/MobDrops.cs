@@ -1,11 +1,8 @@
-﻿using System;
+﻿using Shared.resources;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Shared.resources;
-using NLog;
 using WorldServer.core;
-using WorldServer.core.worlds.impl;
-using System.Reflection.Metadata;
 
 namespace WorldServer.logic.loot
 {
@@ -188,22 +185,10 @@ namespace WorldServer.logic.loot
 
     public class SeasonalThreshold : MobDrops
     {
-        public SeasonalThreshold(string time, double threshold, params MobDrops[] children)
+        public SeasonalThreshold(string season, double threshold, params MobDrops[] children)
         {
-            switch (time)
-            {
-                case "winter":
-                    if (NexusWorld.CurrentMonth != 12 ||
-                        NexusWorld.CurrentMonth != 1) return;
-                    break;
-                case "summer":
-                    if (NexusWorld.CurrentMonth != 5 || NexusWorld.CurrentMonth != 6 || NexusWorld.CurrentMonth != 7) return;
-                    break;
-                //case "spring":
-                //case "fall":
-                default:
-                    return;
-            }
+            if(!GameServer.InSeason(season)) 
+                return;
 
             foreach (var i in children)
                 i.Populate(LootDefs, new LootDef(null, -1, threshold));

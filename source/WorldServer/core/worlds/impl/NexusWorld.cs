@@ -23,7 +23,6 @@ namespace WorldServer.core.worlds.impl
     {
         // i dont really want to use static but it works so?
         public static float WeekendLootBoostEvent { get; private set; } = 0.0f;
-        public static int CurrentMonth => 1;
 
         private readonly List<MerchantData> _inactiveStorePoints = new List<MerchantData>();
         private readonly List<MerchantData> _activeStorePoints = new List<MerchantData>();
