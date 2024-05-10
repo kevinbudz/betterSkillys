@@ -1,18 +1,16 @@
 ﻿using NLog;
-using System;
-using System.Diagnostics;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Threading;
 using Shared;
 using Shared.database;
 using Shared.isc;
 using Shared.resources;
+using System;
+using System.Diagnostics;
+using System.Globalization;
+using System.Linq;
+using System.Threading;
 using WorldServer.core.commands;
 using WorldServer.core.connection;
 using WorldServer.core.miscfile;
-using WorldServer.core.objects.inventory;
 using WorldServer.core.objects.vendors;
 using WorldServer.core.worlds;
 using WorldServer.logic;
@@ -23,22 +21,6 @@ namespace WorldServer.core
 {
     public sealed class GameServer
     {
-        public static int CurrentMonth => 1;
-
-        public static bool InSeason(string season) => season switch
-        {
-            "winter" => IsWinter(),
-            "summer" => IsSummer(),
-            "spring" => IsSpring(),
-            "fall" => IsFall(),
-            _ => throw new Exception($"Unknown Season: {season}"),
-        };
-
-        public static bool IsWinter() => CurrentMonth != 12 || CurrentMonth != 1;
-        public static bool IsSummer() => CurrentMonth != 5 || CurrentMonth != 6 || CurrentMonth != 7;
-        public static bool IsSpring() => false;
-        public static bool IsFall() => false;
-
         public string InstanceId { get; private set; }
         public ServerConfig Configuration { get; private set; }
         public Resources Resources { get; private set; }
