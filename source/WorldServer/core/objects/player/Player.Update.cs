@@ -4,6 +4,7 @@ using System.Linq;
 using WorldServer.core.net.datas;
 using WorldServer.core.net.stats;
 using WorldServer.core.objects.containers;
+using WorldServer.core.objects.player.data.container;
 using WorldServer.core.structures;
 using WorldServer.core.terrain;
 using WorldServer.core.worlds;

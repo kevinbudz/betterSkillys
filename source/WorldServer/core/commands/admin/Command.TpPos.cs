@@ -27,7 +27,7 @@ namespace WorldServer.core.commands
                     return false;
                 }
 
-                player.SetNewbiePeriod();
+                player.ResetNewbiePeriod();
                 player.TeleportPosition(time, x + 0.5f, y + 0.5f, true);
                 return true;
             }

@@ -641,7 +641,7 @@ namespace WorldServer.core.commands.player
                 return false;
             }
 
-            if (!player.TPCooledDown())
+            if (!player.CanTeleport())
             {
                 player.SendError("Too soon to teleport again!");
                 return false;

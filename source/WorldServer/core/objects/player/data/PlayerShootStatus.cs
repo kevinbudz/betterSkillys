@@ -1,4 +1,4 @@
-﻿namespace WorldServer.core.objects.player
+﻿namespace WorldServer.core.objects.player.data
 {
     public enum PlayerShootStatus
     {

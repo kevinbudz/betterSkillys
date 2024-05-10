@@ -7,11 +7,11 @@ namespace WorldServer.core.objects
     public partial class Player
     {
         private int _canTpCooldownTime;
-        private int _newbieTime;
+        private int _newbiePeriod;
 
         public bool IsVisibleToEnemy()
         {
-            if (_newbieTime > 0)
+            if (_newbiePeriod > 0)
                 return false;
 
             if (HasConditionEffect(ConditionEffectIndex.Paused))
@@ -26,13 +26,11 @@ namespace WorldServer.core.objects
             return true;
         }
 
-        public bool TPCooledDown() => !(_canTpCooldownTime > 0);
+        public bool CanTeleport() => !(_canTpCooldownTime > 0);
 
-        internal void RestartTPPeriod() => _canTpCooldownTime = 0;
+        internal void ResetNewbiePeriod() => _newbiePeriod = 3000;
 
-        internal void SetNewbiePeriod() => _newbieTime = 3000;
-
-        internal void SetTPDisabledPeriod() => _canTpCooldownTime = 10000;
+        internal void SetTeleportCooldown() => _canTpCooldownTime = 10000;
 
         private bool CanHpRegen() => !(HasConditionEffect(ConditionEffectIndex.Bleeding) || HasConditionEffect(ConditionEffectIndex.Sick));
 
@@ -86,11 +84,11 @@ namespace WorldServer.core.objects
                 }
             }
 
-            if (_newbieTime > 0)
+            if (_newbiePeriod > 0)
             {
-                _newbieTime -= time.ElapsedMsDelta;
-                if (_newbieTime < 0)
-                    _newbieTime = 0;
+                _newbiePeriod -= time.ElapsedMsDelta;
+                if (_newbiePeriod < 0)
+                    _newbiePeriod = 0;
             }
 
             if (_canTpCooldownTime > 0)

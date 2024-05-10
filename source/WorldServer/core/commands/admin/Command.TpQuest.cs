@@ -19,12 +19,13 @@ namespace WorldServer.core.commands
                     return false;
                 }
 
-                if (!player.TPCooledDown())
+                if (!player.CanTeleport())
                 {
                     player.SendError($"Teleport is on cooldown");
                     return true;
                 }
-                player.SetNewbiePeriod();
+
+                player.ResetNewbiePeriod();
 
                 var x = player.Quest.X;
                 var y = player.Quest.Y;

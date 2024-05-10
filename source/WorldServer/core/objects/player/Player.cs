@@ -420,7 +420,7 @@ namespace WorldServer.core.objects
             if (owner.IdName.Equals("Ocean Trench"))
                 Breath = 100;
 
-            SetNewbiePeriod();
+            ResetNewbiePeriod();
             InitializeUpdate();
         }
 
@@ -524,7 +524,6 @@ namespace WorldServer.core.objects
             if (IsInMarket && (World is NexusWorld))
             {
                 SendError("You cannot teleport while inside the market.");
-                RestartTPPeriod();
                 return;
             }
 
@@ -532,7 +531,6 @@ namespace WorldServer.core.objects
             if (obj == null)
             {
                 SendError("Target does not exist.");
-                RestartTPPeriod();
                 return;
             }
 
@@ -547,46 +545,40 @@ namespace WorldServer.core.objects
                 if (!World.AllowTeleport && !IsAdmin)
                 {
                     SendError("Cannot teleport here.");
-                    RestartTPPeriod();
                     return;
                 }
 
                 if (HasConditionEffect(ConditionEffectIndex.Paused))
                 {
                     SendError("Cannot teleport while paused.");
-                    RestartTPPeriod();
                     return;
                 }
 
                 if (obj is not Player)
                 {
                     SendError("Can only teleport to players.");
-                    RestartTPPeriod();
                     return;
                 }
 
                 if (obj.HasConditionEffect(ConditionEffectIndex.Invisible))
                 {
                     SendError("Cannot teleport to an invisible player.");
-                    RestartTPPeriod();
                     return;
                 }
 
                 if (obj.HasConditionEffect(ConditionEffectIndex.Paused))
                 {
                     SendError("Cannot teleport to a paused player.");
-                    RestartTPPeriod();
                     return;
                 }
 
                 if (obj.HasConditionEffect(ConditionEffectIndex.Hidden))
                 {
                     SendError("Target does not exist.");
-                    RestartTPPeriod();
                     return;
                 }
 
-                if (!TPCooledDown())
+                if (!CanTeleport())
                 {
                     SendError("Too soon to teleport again!");
                     return;
@@ -604,14 +596,14 @@ namespace WorldServer.core.objects
         {
             if (!ignoreRestrictions)
             {
-                if (!TPCooledDown())
+                if (!CanTeleport())
                 {
                     SendError("Too soon to teleport again!");
                     return;
                 }
 
-                SetTPDisabledPeriod();
-                SetNewbiePeriod();
+                SetTeleportCooldown();
+                ResetNewbiePeriod();
                 FameCounter.Teleport();
             }
 
