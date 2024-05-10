@@ -519,116 +519,6 @@ namespace WorldServer.core.objects
             Skin = skin;
         }
 
-        public void Teleport(TickTime time, int objId, bool ignoreRestrictions = false)
-        {
-            if (IsInMarket && (World is NexusWorld))
-            {
-                SendError("You cannot teleport while inside the market.");
-                return;
-            }
-
-            var obj = World.GetEntity(objId);
-            if (obj == null)
-            {
-                SendError("Target does not exist.");
-                return;
-            }
-
-            if (!ignoreRestrictions)
-            {
-                if (Id == objId)
-                {
-                    SendInfo("You are already at yourself, and always will be!");
-                    return;
-                }
-
-                if (!World.AllowTeleport && !IsAdmin)
-                {
-                    SendError("Cannot teleport here.");
-                    return;
-                }
-
-                if (HasConditionEffect(ConditionEffectIndex.Paused))
-                {
-                    SendError("Cannot teleport while paused.");
-                    return;
-                }
-
-                if (obj is not Player)
-                {
-                    SendError("Can only teleport to players.");
-                    return;
-                }
-
-                if (obj.HasConditionEffect(ConditionEffectIndex.Invisible))
-                {
-                    SendError("Cannot teleport to an invisible player.");
-                    return;
-                }
-
-                if (obj.HasConditionEffect(ConditionEffectIndex.Paused))
-                {
-                    SendError("Cannot teleport to a paused player.");
-                    return;
-                }
-
-                if (obj.HasConditionEffect(ConditionEffectIndex.Hidden))
-                {
-                    SendError("Target does not exist.");
-                    return;
-                }
-
-                if (!CanTeleport())
-                {
-                    SendError("Too soon to teleport again!");
-                    return;
-                }
-            }
-            
-            ApplyConditionEffect(ConditionEffectIndex.Invulnerable, 2500);
-            ApplyConditionEffect(ConditionEffectIndex.Stunned, 2500);
-            TeleportPosition(time, obj.X, obj.Y, ignoreRestrictions);
-        }
-
-        public void TeleportPosition(TickTime time, float x, float y, bool ignoreRestrictions = false) => TeleportPosition(time, new Position() { X = x, Y = y }, ignoreRestrictions);
-
-        public void TeleportPosition(TickTime time, Position position, bool ignoreRestrictions = false)
-        {
-            if (!ignoreRestrictions)
-            {
-                if (!CanTeleport())
-                {
-                    SendError("Too soon to teleport again!");
-                    return;
-                }
-
-                SetTeleportCooldown();
-                ResetNewbiePeriod();
-                FameCounter.Teleport();
-            }
-
-            var id = Id;
-            var tpPkts = new OutgoingMessage[]
-            {
-                new GotoMessage(id, position),
-                new ShowEffect()
-                {
-                    EffectType = EffectType.Teleport,
-                    TargetObjectId = id,
-                    Pos1 = position,
-                    Color = new ARGB(0xFFFFFFFF)
-                }
-            };
-
-            World.ForeachPlayer(_ =>
-            {
-                _.AwaitGotoAck(time.TotalElapsedMs);
-                _.Client.SendPackets(tpPkts);
-            });
-
-            UpdateTiles();
-        }
-        
         public bool DeltaTime;
 
         public override void Tick(ref TickTime time)
@@ -946,7 +836,7 @@ namespace WorldServer.core.objects
         private void HandleRegen(ref TickTime time)
         {
             var maxHP = Stats[0];
-            if(CanHpRegen() && Health < maxHP)
+            if(CanRegenerateHealth() && Health < maxHP)
             {
                 var vitalityStat = Stats[6];
 
@@ -963,7 +853,7 @@ namespace WorldServer.core.objects
             }
 
             var maxMP = Stats[1];
-            if (CanMpRegen() && Mana < maxMP)
+            if (CanRegenerateMana() && Mana < maxMP)
             {
                 var wisdomStat = Stats[7];
 

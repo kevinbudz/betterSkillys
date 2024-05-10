@@ -6,7 +6,6 @@ namespace WorldServer.core.objects
 {
     public partial class Player
     {
-        private int _canTpCooldownTime;
         private int _newbiePeriod;
 
         public bool IsVisibleToEnemy()
@@ -26,15 +25,10 @@ namespace WorldServer.core.objects
             return true;
         }
 
-        public bool CanTeleport() => !(_canTpCooldownTime > 0);
-
         internal void ResetNewbiePeriod() => _newbiePeriod = 3000;
 
-        internal void SetTeleportCooldown() => _canTpCooldownTime = 10000;
-
-        private bool CanHpRegen() => !(HasConditionEffect(ConditionEffectIndex.Bleeding) || HasConditionEffect(ConditionEffectIndex.Sick));
-
-        private bool CanMpRegen() => !(HasConditionEffect(ConditionEffectIndex.Quiet) || HasConditionEffect(ConditionEffectIndex.NinjaSpeedy));
+        private bool CanRegenerateHealth() => !(HasConditionEffect(ConditionEffectIndex.Bleeding) || HasConditionEffect(ConditionEffectIndex.Sick));
+        private bool CanRegenerateMana() => !(HasConditionEffect(ConditionEffectIndex.Quiet) || HasConditionEffect(ConditionEffectIndex.NinjaSpeedy));
 
         private void HandleEffects(ref TickTime time)
         {
