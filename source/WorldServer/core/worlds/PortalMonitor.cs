@@ -9,7 +9,7 @@ using WorldServer.core.structures;
 
 namespace WorldServer.core.worlds
 {
-    public class KingdomPortalMonitor
+    public class RealmPortalMonitor
     {
         public const int MAX_PER_REALM = 85;
 
@@ -41,7 +41,7 @@ namespace WorldServer.core.worlds
 
         private static readonly List<string> Actives = new List<string>();
 
-        public KingdomPortalMonitor(GameServer manager, World world)
+        public RealmPortalMonitor(GameServer manager, World world)
         {
             GameServer = manager;
             World = world;

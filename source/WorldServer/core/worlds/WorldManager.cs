@@ -68,7 +68,7 @@ namespace WorldServer.core.worlds
             _ = Task.Factory.StartNew(() =>
             {
                 var world = new RealmWorld(GameServer, nextId, worldResource);
-                world.SetMaxPlayers(KingdomPortalMonitor.MAX_PER_REALM);
+                world.SetMaxPlayers(RealmPortalMonitor.MAX_PER_REALM);
                 world.DisplayName = name;
                 var success = world.LoadMapFromData(worldResource);
                 if (!success)
@@ -186,7 +186,7 @@ namespace WorldServer.core.worlds
             }
         }
 
-        public List<World> GetRealms() => Worlds.Values.Where(_ => _ is RealmWorld && !(_ as RealmWorld).KingdomManager.DisableSpawning).ToList(); // todo mabye not have a tolist
+        public List<World> GetRealms() => Worlds.Values.Where(_ => _ is RealmWorld && !(_ as RealmWorld).RealmManager.DisableSpawning).ToList(); // todo mabye not have a tolist
 
         public RealmWorld GetRandomRealm()
         {

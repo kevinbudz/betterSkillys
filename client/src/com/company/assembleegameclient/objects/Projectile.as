@@ -93,7 +93,6 @@ public class Projectile extends BasicObject
 
    public function reset(containerType:int, bulletType:int, ownerId:int, bulletId:int, angle:Number, startTime:int) : void
    {
-      var size:Number = NaN;
       clear();
       this.containerType_ = containerType;
       this.bulletType_ = bulletType;
@@ -120,11 +119,22 @@ public class Projectile extends BasicObject
       else {
          this.size = ObjectLibrary.getSizeFromType(this.containerType_);
       }
-      var _local_12:Number = (this.texture_.width / 8);
-      this.p_.setSize((8 * ((this.size * ((Parameters.data_.projOutline) ? (_local_12 * 2) : 1)) / 100)));
-      if (this.texture_.width >= 16)
-         this.size /= this.texture_.width / 8;
-      this.p_.setSize(8 * (size / 100));
+
+      if(this.projProps_.size_ >= 0)
+      {
+         this.size = this.projProps_.size_;
+      }
+      else
+      {
+         this.size = ObjectLibrary.getSizeFromType(this.containerType_);
+      }
+
+      if (Parameters.data_.projOutline) {
+         this.texture_ = TextureRedrawer.redraw(this.texture_, this.size * 2, true, 0);
+      }
+
+      this.p_.setSize(8 * (this.size / 100));
+
       this.damage_ = 0;
    }
 
@@ -394,18 +404,13 @@ public class Projectile extends BasicObject
 
    override public function draw(_arg_1:Vector.<IGraphicsData>, _arg_2:Camera, _arg_3:int):void
    {
-      var _local_4:BitmapData = this.texture_;
-      if (Parameters.data_.projOutline)
-      {
-         _local_4 = TextureRedrawer.redraw(_local_4, this.size, true, 0);
-      };
       var _local_5:Number = ((this.props_.rotation_ == 0) ? 0 : (_arg_3 / this.props_.rotation_));
       this.staticVector3D_.x = x_;
       this.staticVector3D_.y = y_;
       this.staticVector3D_.z = z_;
       var _local_6:Number = ((Parameters.data_.smartProjectiles) ? this.getDirectionAngle(_arg_3) : this.angle_);
       var _local_7:Number = (((_local_6 - _arg_2.angleRad_) + this.props_.angleCorrection_) + _local_5);
-      this.p_.draw(_arg_1, this.staticVector3D_, _local_7, _arg_2.wToS_, _arg_2, _local_4);
+      this.p_.draw(_arg_1, this.staticVector3D_, _local_7, _arg_2.wToS_, _arg_2, this.texture_);
       if (this.projProps_.particleTrail_)
       {
          if (Parameters.data_.eyeCandyParticles)
@@ -413,8 +418,8 @@ public class Projectile extends BasicObject
             map_.addObj(new SparkParticle(100, 0xFF00FF, 600, 0.5, RandomUtil.plusMinus(3), RandomUtil.plusMinus(3)), x_, y_);
             map_.addObj(new SparkParticle(100, 0xFF00FF, 600, 0.5, RandomUtil.plusMinus(3), RandomUtil.plusMinus(3)), x_, y_);
             map_.addObj(new SparkParticle(100, 0xFF00FF, 600, 0.5, RandomUtil.plusMinus(3), RandomUtil.plusMinus(3)), x_, y_);
-         };
-      };
+         }
+      }
    }
 
    private function getDirectionAngle(time:*) : Number

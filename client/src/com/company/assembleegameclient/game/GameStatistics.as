@@ -86,6 +86,7 @@ public class GameStatistics extends Sprite {
 
             fps = 0;
         }
+
         if (timer - 5000 > mem_prev)
         {
             mem_prev = timer;

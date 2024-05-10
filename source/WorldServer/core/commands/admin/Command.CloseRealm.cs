@@ -17,7 +17,7 @@ namespace WorldServer.core.commands
                 // + 1 from automated realm creation system
                 for (var i = 0; i < 14; i++)
                     player.World.GameServer.WorldManager.Nexus.PortalMonitor.CreateNewRealm();
-                player.SendInfo("Creating 15 kingdoms");
+                player.SendInfo("Creating 15 realms");
                 return true;
             }
         }
@@ -34,7 +34,7 @@ namespace WorldServer.core.commands
                     if(world is RealmWorld rw)
                         rw.CloseRealm();
                 }
-                player.SendInfo("Closing all kingdoms");
+                player.SendInfo("Closing all realms");
                 return true;
             }
         }
@@ -49,17 +49,17 @@ namespace WorldServer.core.commands
             {
                 if (!(player.World is RealmWorld gw))
                 {
-                    player.SendError("You must be in a kingdom to clsoe it.");
+                    player.SendError("You must be in a realm to clsoe it.");
                     return true;
                 }
 
                 if (!gw.CloseRealm())
                 {
-                    player.SendError("Kingdom has already closed its borders.");
+                    player.SendError("Realm has already closed its borders.");
                     return true;
                 }
 
-                player.SendInfo("You have closed the kingdom borders.");
+                player.SendInfo("You have closed the realm.");
                 return true;
             }
         }

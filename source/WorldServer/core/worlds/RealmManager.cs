@@ -519,7 +519,7 @@ namespace WorldServer.core.worlds
             player.SendInfo("Welcome to betterSkilys");
             player.SendInfo("Use [WASDQE] to move; click to shoot!");
             player.SendInfo("Type \"/commands\" for more help");
-            player.SendEnemy("Oryx the Mad God", "You are a pest to my kingdom!");
+            player.SendEnemy("Oryx the Mad God", "You are a pest to my Realm!");
         }
 
         private static double GetNormal(Random rand)

@@ -52,7 +52,7 @@ namespace WorldServer.core.net.handlers
                 client.SendPacket(new CreateSuccessMessage(player.Id, client.Character.CharId));
 
                 if(target is RealmWorld realm)
-                    realm.KingdomManager.OnPlayerEntered(player);
+                    realm.RealmManager.OnPlayerEntered(player);
 
                 client.State = ProtocolState.Ready;
                 client.GameServer.ConnectionManager.ClientConnected(client);

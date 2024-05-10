@@ -8,11 +8,11 @@ namespace WorldServer.core.worlds.impl
     public class RealmWorld : World
     {
         public bool Closed { get; private set; }
-        public RealmManager KingdomManager { get; private set; }
+        public RealmManager RealmManager { get; private set; }
 
         public RealmWorld(GameServer gameServer, int id, WorldResource resource) : base(gameServer, id, resource)
         {
-            KingdomManager = new RealmManager(this);
+            RealmManager = new RealmManager(this);
             IsRealm = true;
         }
 
@@ -21,7 +21,7 @@ namespace WorldServer.core.worlds.impl
         public override void Init()
         {
             base.Init();
-            KingdomManager.Init();
+            RealmManager.Init();
             SetPieces.ApplySetPieces(this);
         }
 
@@ -34,14 +34,14 @@ namespace WorldServer.core.worlds.impl
             else if (!GameServer.WorldManager.Nexus.PortalMonitor.PortalIsOpen(Id))
                 GameServer.WorldManager.Nexus.PortalMonitor.OpenPortal(Id);
 
-            KingdomManager.Update(ref time);
+            RealmManager.Update(ref time);
             base.UpdateLogic(ref time);
         }
 
         public void EnemyKilled(Enemy enemy, Player killer)
         {
             if (!enemy.Spawned)
-                KingdomManager.OnEnemyKilled(enemy, killer);
+                RealmManager.OnEnemyKilled(enemy, killer);
         }
 
 
@@ -50,8 +50,8 @@ namespace WorldServer.core.worlds.impl
             if (Closed)
                 return false;
             Closed = true;
-            KingdomManager.DisableSpawning = true;
-            KingdomManager.CurrentState = RealmState.Emptying;
+            RealmManager.DisableSpawning = true;
+            RealmManager.CurrentState = RealmState.Emptying;
             GameServer.WorldManager.Nexus.PortalMonitor.RemovePortal(Id);
             FlagForClose();
             return true;

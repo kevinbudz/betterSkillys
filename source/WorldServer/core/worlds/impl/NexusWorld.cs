@@ -28,9 +28,10 @@ namespace WorldServer.core.worlds.impl
         public static int GetCurrentMonth = 0;
         public bool MarketEnabled = true;
 
-        public KingdomPortalMonitor PortalMonitor { get; private set; }
+        public RealmPortalMonitor PortalMonitor { get; private set; }
 
-        public NexusWorld(GameServer gameServer, int id, WorldResource resource) : base(gameServer, id, resource)
+        public NexusWorld(GameServer gameServer, int id, WorldResource resource) 
+            : base(gameServer, id, resource)
         {
         }
 
@@ -39,7 +40,7 @@ namespace WorldServer.core.worlds.impl
             GetCurrentMonth = 1; //DateTime.Now.Month;
             var lootRegions = GetRegionPoints(TileRegion.Hallway_1);
 
-            PortalMonitor = new KingdomPortalMonitor(GameServer, this);
+            PortalMonitor = new RealmPortalMonitor(GameServer, this);
 
             foreach (var shop in MerchantLists.Shops)
             {
