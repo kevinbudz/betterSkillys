@@ -8,8 +8,8 @@ An attempt of making a better 7.0, using TK-Reborn as a base.
 - Visual Studio,
 - .NET Core 8,
 - Intelij IDEA Ultimate,
-- AirSDK 50.2,
-- Redis (Comes with the Project @TKR.Redis)
+- AIR SDK 32 (later version work as well),
+- Redis (included).
 
 ## Credits.
 - Runes,
