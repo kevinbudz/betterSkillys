@@ -1,11 +1,7 @@
 ﻿using Shared.resources;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WorldServer.core.worlds;
 using WorldServer.core.net.stats;
+using WorldServer.core.worlds;
 
 namespace WorldServer.core.objects
 {
@@ -16,55 +12,53 @@ namespace WorldServer.core.objects
         public const byte NUMBER_CE_BATCHES = 2;
         public const byte NEW_CON_THREASHOLD = 32;
 
-        private StatTypeValue<int> Batch1;
-        private StatTypeValue<int> Batch2;
+        private readonly StatTypeValue<int> _batch1;
+        private readonly StatTypeValue<int> _batch2;
 
-        private int[] Masks;
-        private int[] Durations;
-
-        private Entity Host;
-
+        private readonly Entity _host;
+        private readonly int[] _masks;
+        private readonly int[] _durations;
 
         public ConditionEffectManager(Entity host)
         {
-            Host = host;
+            _host = host;
 
-            Masks = new int[NUMBER_CE_BATCHES];
-            Durations = new int[(int)ConditionEffectIndex.UnstableImmune];
+            _masks = new int[NUMBER_CE_BATCHES];
+            _durations = new int[(int)ConditionEffectIndex.UnstableImmune];
 
-            Batch1 = new StatTypeValue<int>(host, StatDataType.ConditionBatch1, 0);
-            Batch2 = new StatTypeValue<int>(host, StatDataType.ConditionBatch2, 0);
+            _batch1 = new StatTypeValue<int>(host, StatDataType.ConditionBatch1, 0);
+            _batch2 = new StatTypeValue<int>(host, StatDataType.ConditionBatch2, 0);
         }
 
         public void AddCondition(byte effect, int duration)
         {
-            Durations[effect] = duration;// Math.Max(Durations[effect], duration);
+            _durations[effect] = duration; // Math.Max(Durations[effect], duration);
 
             var batchType = GetBatch(effect);
-            Masks[batchType] |= GetBit(effect);
+            _masks[batchType] |= GetBit(effect);
 
             UpdateConditionStat(batchType);
         }
 
         public void AddPermanentCondition(byte effect)
         {
-            Durations[effect] = -1;
+            _durations[effect] = -1;
 
             var batchType = GetBatch(effect);
-            Masks[batchType] |= GetBit(effect);
+            _masks[batchType] |= GetBit(effect);
 
             UpdateConditionStat(batchType);
         }
 
-        public bool HasCondition(byte effect) => (Masks[GetBatch(effect)] & GetBit(effect)) != 0;
+        public bool HasCondition(byte effect) => (_masks[GetBatch(effect)] & GetBit(effect)) != 0;
 
         public void Update(ref TickTime time)
         {
             var dt = time.ElapsedMsDelta;
-            if (Masks[0] != 0 || Masks[1] != 0)
-                for (byte effect = 0; effect < Durations.Length; effect++)
+            if (_masks[CE_FIRST_BATCH] != 0 || _masks[CE_SECOND_BATCH] != 0)
+                for (byte effect = 0; effect < _durations.Length; effect++)
                 {
-                    var duration = Durations[effect];
+                    var duration = _durations[effect];
                     if (duration == -1)
                         continue;
 
@@ -74,16 +68,16 @@ namespace WorldServer.core.objects
                         continue;
                     }
 
-                    Durations[effect] -= dt;
+                    _durations[effect] -= dt;
                 }
         }
 
         public void RemoveCondition(byte effect)
         {
-            Durations[effect] = 0;
+            _durations[effect] = 0;
 
             var batchType = GetBatch(effect);
-            Masks[batchType] &= ~GetBit(effect);
+            _masks[batchType] &= ~GetBit(effect);
             UpdateConditionStat(batchType);
         }
 
@@ -93,18 +87,18 @@ namespace WorldServer.core.objects
             switch (batchType)
             {
                 case CE_FIRST_BATCH:
-                    Batch1.SetValue(Masks[CE_FIRST_BATCH]);
+                    _batch1.SetValue(_masks[CE_FIRST_BATCH]);
                     break;
                 case CE_SECOND_BATCH:
-                    Batch2.SetValue(Masks[CE_SECOND_BATCH]);
+                    _batch2.SetValue(_masks[CE_SECOND_BATCH]);
                     break;
             }
         }
 
         public void ExportStats(IDictionary<StatDataType, object> stats)
         {
-            stats[StatDataType.ConditionBatch1] = Batch1.GetValue();
-            stats[StatDataType.ConditionBatch2] = Batch2.GetValue();
+            stats[StatDataType.ConditionBatch1] = _batch1.GetValue();
+            stats[StatDataType.ConditionBatch2] = _batch2.GetValue();
         }
 
         private static int GetBit(int effect) => 1 << effect - (IsNewCondThreshold(effect) ? NEW_CON_THREASHOLD : 1);

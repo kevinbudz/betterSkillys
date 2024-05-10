@@ -46,13 +46,13 @@ namespace WorldServer.logic.behaviors
                             continue;
 
                         var maxHp = p.Stats[0];
-                        var newHp = Math.Min(p.HP + 50, maxHp);
+                        var newHp = Math.Min(p.Health + 50, maxHp);
 
-                        if (newHp != p.HP)
+                        if (newHp != p.Health)
                         {
-                            var n = newHp - p.HP;
+                            var n = newHp - p.Health;
 
-                            p.HP = newHp;
+                            p.Health = newHp;
                             p.World.BroadcastIfVisible(new ShowEffect() { EffectType = EffectType.Potion, TargetObjectId = p.Id, Color = new ARGB(0xffffffff) }, p);
                             p.World.BroadcastIfVisible(new ShowEffect()
                             {

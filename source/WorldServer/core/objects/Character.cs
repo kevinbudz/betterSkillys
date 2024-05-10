@@ -7,11 +7,19 @@ namespace WorldServer.core.objects
 {
     public abstract class Character : Entity
     {
-        public int HP { get => _hp.GetValue(); set => _hp.SetValue(value); }
-        public int MaximumHP { get => _maximumHP.GetValue(); set => _maximumHP.SetValue(value); }
-
         private StatTypeValue<int> _hp;
+        public int Health
+        {
+            get => _hp.GetValue();
+            set => _hp.SetValue(value);
+        }
+
         private StatTypeValue<int> _maximumHP;
+        public int MaxHealth
+        {
+            get => _maximumHP.GetValue(); 
+            set => _maximumHP.SetValue(value);
+        }
 
         protected Character(GameServer manager, ushort objType) : base(manager, objType)
         {
@@ -28,17 +36,17 @@ namespace WorldServer.core.objects
                 else
                     SetDefaultSize(ObjectDesc.MinSize);
 
-                HP = ObjectDesc.MaxHP;
-                MaximumHP = HP;
+                Health = ObjectDesc.MaxHP;
+                MaxHealth = Health;
             }
         }
 
         protected override void ExportStats(IDictionary<StatDataType, object> stats, bool isOtherPlayer)
         {
             base.ExportStats(stats, isOtherPlayer);
-            stats[StatDataType.Health] = HP;
+            stats[StatDataType.Health] = Health;
             if (!(this is Player))
-                stats[StatDataType.MaximumHealth] = MaximumHP;
+                stats[StatDataType.MaximumHealth] = MaxHealth;
         }
     }
 }

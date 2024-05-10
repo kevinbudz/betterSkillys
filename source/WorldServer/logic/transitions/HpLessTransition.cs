@@ -18,7 +18,7 @@ namespace WorldServer.logic.transitions
 
         protected override bool TickCore(Entity host, TickTime time, ref object state)
         {
-            return (double)(host as Enemy).HP / (host as Enemy).MaximumHP < threshold;
+            return (double)(host as Enemy).Health / (host as Enemy).MaxHealth < threshold;
         }
     }
 }

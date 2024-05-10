@@ -156,8 +156,8 @@ namespace WorldServer.core.objects
                     if (Stats.Base[i] > statInfo[i].MaxValue && !UpgradeEnabled)
                         Stats.Base[i] = statInfo[i].MaxValue;
                 }
-                HP = Stats[0];
-                MP = Stats[1];
+                Health = Stats[0];
+                Mana = Stats[1];
 
                 if (Level == 20)
                     World.ForeachPlayer(_ => _.SendInfo($"{Name} achieved level 20"));

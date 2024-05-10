@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Shared;
+using Shared.resources;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Shared;
-using Shared.resources;
 using WorldServer.core.net.datas;
 using WorldServer.core.net.stats;
 using WorldServer.core.objects.connection;
@@ -21,11 +21,6 @@ namespace WorldServer.core.objects
     {
         private const float COL_SKIP_BOUNDARY = 0.4f;
 
-        public bool GivesNoXp;
-        public float? savedAngle;
-        public bool Spawned;
-        public bool SpawnedByBehavior;
-
         private StatTypeValue<int> _altTextureIndex;
         private StatTypeValue<string> _name;
         private StatTypeValue<int> _size;
@@ -34,8 +29,14 @@ namespace WorldServer.core.objects
         private Dictionary<object, object> _states;
         private StatTypeValue<float> _x;
         private StatTypeValue<float> _y;
-        private ConditionEffectManager ConditionEffectManager;
-        public bool Dead { get; private set; }
+        private readonly ConditionEffectManager _conditionEffectManager;
+
+        public bool GivesNoXp { get; set; }
+        public float? SavedAngle { get; set; }
+        public bool Spawned { get; set; }
+        public bool SpawnedByBehavior { get; set; }
+
+        public bool Dead { get; protected set; }
 
         protected Entity(GameServer coreServerManager, ushort objType)
         {
@@ -47,7 +48,7 @@ namespace WorldServer.core.objects
             coreServerManager.Resources.GameData.ObjectDescs.TryGetValue(ObjectType, out var desc);
             ObjectDesc = desc;
 
-            ConditionEffectManager = new ConditionEffectManager(this);
+            _conditionEffectManager = new ConditionEffectManager(this);
 
             if (ObjectDesc == null)
                 throw new Exception($"ObjectDesc is NUll: {ObjectType.To4Hex()}");
@@ -121,8 +122,20 @@ namespace WorldServer.core.objects
             }
         }
 
-        public float X { get => _x.GetValue(); set => _x.SetValue(value); }
-        public float Y { get => _y.GetValue(); set => _y.SetValue(value); }
+        public Position Position => new Position(X, Y);
+
+        public float X
+        {
+            get => _x.GetValue(); 
+            set => _x.SetValue(value);
+        }
+
+        public float Y
+        {
+            get => _y.GetValue();
+            set => _y.SetValue(value);
+        }
+
         public float PrevX { get; private set; }
         public float PrevY { get; private set; }
 
@@ -194,14 +207,14 @@ namespace WorldServer.core.objects
         {
             if (!CanApplyCondition(effect))
                 return;
-            ConditionEffectManager.AddPermanentCondition((byte)effect);
+            _conditionEffectManager.AddPermanentCondition((byte)effect);
         }
 
         public void ApplyConditionEffect(ConditionEffectIndex effect, int durationMs)
         {
             if (!CanApplyCondition(effect))
                 return;
-            ConditionEffectManager.AddCondition((byte)effect, durationMs);
+            _conditionEffectManager.AddCondition((byte)effect, durationMs);
         }
 
         public void ApplyConditionEffect(params ConditionEffect[] effs)
@@ -210,12 +223,12 @@ namespace WorldServer.core.objects
             {
                 if (!CanApplyCondition(i.Effect))
                     continue;
-                ConditionEffectManager.AddCondition((byte)i.Effect, i.DurationMS);
+                _conditionEffectManager.AddCondition((byte)i.Effect, i.DurationMS);
             }
         }
 
-        public bool HasConditionEffect(ConditionEffectIndex effect) => ConditionEffectManager.HasCondition((byte)effect);
-        public void RemoveCondition(ConditionEffectIndex effect) => ConditionEffectManager.RemoveCondition((byte)effect);
+        public bool HasConditionEffect(ConditionEffectIndex effect) => _conditionEffectManager.HasCondition((byte)effect);
+        public void RemoveCondition(ConditionEffectIndex effect) => _conditionEffectManager.RemoveCondition((byte)effect);
 
         protected virtual bool CanApplyCondition(ConditionEffectIndex effect)
         {
@@ -302,7 +315,7 @@ namespace WorldServer.core.objects
 
         public virtual void Tick(ref TickTime time)
         {
-            ConditionEffectManager.Update(ref time);
+            _conditionEffectManager.Update(ref time);
 
             if (HasConditionEffect(ConditionEffectIndex.Stasis))
                 return;
@@ -462,7 +475,7 @@ namespace WorldServer.core.objects
             stats[StatDataType.Name] = Name;
             stats[StatDataType.Size] = Size;
             stats[StatDataType.AltTextureIndex] = AltTextureIndex;
-            ConditionEffectManager.ExportStats(stats);
+            _conditionEffectManager.ExportStats(stats);
         }
 
         private void CalcNewLocation(float x, float y, FPoint pos)

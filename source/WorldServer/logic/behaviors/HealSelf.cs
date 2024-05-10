@@ -41,20 +41,20 @@ namespace WorldServer.logic.behaviors
                     var newHealth = (int)_amount;
                     if (_percentage)
                     {
-                        newHealth = (int)_amount * entity.HP / 100;
+                        newHealth = (int)_amount * entity.Health / 100;
                     }
                     newHp = newHealth;
                 }
 
-                if (newHp > entity.MaximumHP)
-                    newHp = entity.MaximumHP;
+                if (newHp > entity.MaxHealth)
+                    newHp = entity.MaxHealth;
 
-                if (newHp != entity.HP)
+                if (newHp != entity.Health)
                 {
-                    entity.HP += newHp;
+                    entity.Health += newHp;
 
-                    if (entity.HP > entity.MaximumHP)
-                        entity.HP = entity.MaximumHP;
+                    if (entity.Health > entity.MaxHealth)
+                        entity.Health = entity.MaxHealth;
 
                     entity.World.BroadcastIfVisible(new ShowEffect() { EffectType = EffectType.Potion, TargetObjectId = entity.Id, Color = new ARGB(0xffffffff) }, entity);
                     entity.World.BroadcastIfVisible(new ShowEffect()

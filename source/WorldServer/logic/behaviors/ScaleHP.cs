@@ -37,7 +37,7 @@ namespace WorldServer.logic.behaviors
                 if (!(host is Enemy)) return;
 
                 if (scstate.maxHP == 0)
-                    scstate.maxHP = (host as Enemy).MaximumHP + maxAdditional;
+                    scstate.maxHP = (host as Enemy).MaxHealth + maxAdditional;
 
                 foreach (var i in host.World.Players)
                 {
@@ -65,26 +65,26 @@ namespace WorldServer.logic.behaviors
                         amountInc = Math.Min(maxAdditional, amountInc);
 
                     // ex: Enemy with 4000HP / 8000HP, being increased by 1200
-                    var curHp = (host as Enemy).HP;                             // ex: current hp was 4000HP
-                    var hpMaximum = (host as Enemy).MaximumHP;                  // ex: max hp was 8000HP
+                    var curHp = (host as Enemy).Health;                             // ex: current hp was 4000HP
+                    var hpMaximum = (host as Enemy).MaxHealth;                  // ex: max hp was 8000HP
                     var curHpPercent = (double)curHp / hpMaximum;          // ex: 0.5
-                    var newHpMaximum = (host as Enemy).MaximumHP + amountInc;   // ex: max hp is now 9200HP
+                    var newHpMaximum = (host as Enemy).MaxHealth + amountInc;   // ex: max hp is now 9200HP
                     var newHp = Convert.ToInt32(newHpMaximum * curHpPercent);   // ex: current has is now 4600HP
 
                     if (!scstate.hitMaxHP || healAfterMax)
                     {
-                        (host as Enemy).HP = newHp;
-                        (host as Enemy).MaximumHP = newHpMaximum;
+                        (host as Enemy).Health = newHp;
+                        (host as Enemy).MaxHealth = newHpMaximum;
                     }
 
-                    if ((host as Enemy).MaximumHP >= scstate.maxHP && maxAdditional != 0)
+                    if ((host as Enemy).MaxHealth >= scstate.maxHP && maxAdditional != 0)
                     {
-                        (host as Enemy).MaximumHP = scstate.maxHP;
+                        (host as Enemy).MaxHealth = scstate.maxHP;
                         scstate.hitMaxHP = true;
                     }
 
-                    if ((host as Enemy).HP > (host as Enemy).MaximumHP)
-                        (host as Enemy).HP = (host as Enemy).MaximumHP;
+                    if ((host as Enemy).Health > (host as Enemy).MaxHealth)
+                        (host as Enemy).Health = (host as Enemy).MaxHealth;
                 }
             }
             else

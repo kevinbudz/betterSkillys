@@ -130,10 +130,10 @@ namespace WorldServer.logic.behaviors
                     scstate.initialScaleAmount += plrCount - scstate.initialScaleAmount;
                     scstate.initialItemScaleAmount += itemCount - scstate.initialItemScaleAmount;
 
-                    var newHpMaximum = enemy.MaximumHP + amountInc;
+                    var newHpMaximum = enemy.MaxHealth + amountInc;
 
-                    enemy.HP += amountInc;
-                    enemy.MaximumHP = newHpMaximum;
+                    enemy.Health += amountInc;
+                    enemy.MaxHealth = newHpMaximum;
                 }
             }
             else

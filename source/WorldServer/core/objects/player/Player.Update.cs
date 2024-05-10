@@ -9,30 +9,29 @@ using WorldServer.core.terrain;
 using WorldServer.core.worlds;
 using WorldServer.networking.packets.outgoing;
 
-namespace WorldServer.core.objects.player
+namespace WorldServer.core.objects
 {
-    public sealed class PlayerUpdate
+    partial class Player
     {
         public const int VISIBILITY_CIRCUMFERENCE_SQR = (VISIBILITY_RADIUS - 2) * (VISIBILITY_RADIUS - 2);
         public const int VISIBILITY_RADIUS = 15;
         public const int VISIBILITY_RADIUS_SQR = VISIBILITY_RADIUS * VISIBILITY_RADIUS;
 
-        public Player Player { get; private set; }
         public int TickId { get; private set; }
         public int TickTime { get; private set; }
-        public World World { get; private set; }
-        private HashSet<IntPoint> ActiveTiles = new HashSet<IntPoint>();
-        private UpdatedHashSet NewObjects { get; set; }
-        private HashSet<WmapTile> NewStaticObjects = new HashSet<WmapTile>();
-        private Dictionary<int, byte> SeenTiles = new Dictionary<int, byte>();
-        private readonly Dictionary<Entity, Dictionary<StatDataType, object>> StatsUpdates = new Dictionary<Entity, Dictionary<StatDataType, object>>();
-        private bool NeedsUpdateTiles = true;
 
-        public PlayerUpdate(Player player)
+        private UpdatedHashSet _newObjects;
+        
+        private readonly HashSet<IntPoint> _activeTiles = new HashSet<IntPoint>();
+        private readonly HashSet<WmapTile> _newStaticObjects = new HashSet<WmapTile>();
+        private readonly Dictionary<int, byte> _seenTiles = new Dictionary<int, byte>();
+        private readonly Dictionary<Entity, Dictionary<StatDataType, object>> _statsUpdates = new Dictionary<Entity, Dictionary<StatDataType, object>>();
+        
+        private bool _needsUpdateTiles = true;
+        
+        public void InitializeUpdate()
         {
-            Player = player;
-            World = player.World;
-            NewObjects = new UpdatedHashSet(this);
+            _newObjects = new UpdatedHashSet(this);
         }
 
         public void GetDrops(Update update)
@@ -40,7 +39,7 @@ namespace WorldServer.core.objects.player
             var drops = new List<int>();
             var staticDrops = new List<int>();
 
-            foreach (var staticTile in NewStaticObjects)
+            foreach (var staticTile in _newStaticObjects)
             {
                 var x = staticTile.X;
                 var y = staticTile.Y;
@@ -52,9 +51,9 @@ namespace WorldServer.core.objects.player
                     }
             }
 
-            foreach (var entity in NewObjects)
+            foreach (var entity in _newObjects)
             {
-                if (entity == Player.Quest)
+                if (entity == Quest)
                     continue;
 
                 if (entity.Dead)
@@ -64,10 +63,10 @@ namespace WorldServer.core.objects.player
                     continue;
                 }
 
-                if (entity is Player && (entity as Player).CanBeSeenBy(Player))
+                if (entity is Player && (entity as Player).CanBeSeenBy(this))
                     continue;
 
-                if (entity is Player || ActiveTiles.Contains(new IntPoint((int)entity.X, (int)entity.Y)))
+                if (entity is Player || _activeTiles.Contains(new IntPoint((int)entity.X, (int)entity.Y)))
                     continue;
 
                 drops.Add(entity.Id);
@@ -75,30 +74,30 @@ namespace WorldServer.core.objects.player
             }
 
             if (drops.Count != 0)
-                NewObjects.RemoveWhere(_ => drops.Contains(_.Id));
+                _newObjects.RemoveWhere(_ => drops.Contains(_.Id));
             if (staticDrops.Count != 0)
-                _ = NewStaticObjects.RemoveWhere(_ => staticDrops.Contains(_.ObjId));
+                _ = _newStaticObjects.RemoveWhere(_ => staticDrops.Contains(_.ObjId));
         }
 
         public void HandleStatChanges(object entity, StatChangedEventArgs statChange)
         {
-            if (!(entity is Entity e) || e.Id != Player.Id && statChange.UpdateSelfOnly)
+            if (!(entity is Entity e) || e.Id != Id && statChange.UpdateSelfOnly)
                 return;
 
-            if (e.Id == Player.Id && statChange.Stat == StatDataType.None)
+            if (e.Id == Id && statChange.Stat == StatDataType.None)
                 return;
 
-            lock (StatsUpdates)
+            lock (_statsUpdates)
             {
-                if (!StatsUpdates.ContainsKey(e))
-                    StatsUpdates[e] = new Dictionary<StatDataType, object>();
+                if (!_statsUpdates.ContainsKey(e))
+                    _statsUpdates[e] = new Dictionary<StatDataType, object>();
 
                 if (statChange.Stat != StatDataType.None)
-                    StatsUpdates[e][statChange.Stat] = statChange.Value;
+                    _statsUpdates[e][statChange.Stat] = statChange.Value;
             }
         }
 
-        public void UpdateTiles() => NeedsUpdateTiles = true;
+        public void UpdateTiles() => _needsUpdateTiles = true;
 
         public void UpdateState(int dt)
         {
@@ -112,44 +111,44 @@ namespace WorldServer.core.objects.player
         private void HandleUpdate()
         {
             var update = new Update();
-            if (NeedsUpdateTiles)
+            if (_needsUpdateTiles)
             {
                 GetNewTiles(update);
-                NeedsUpdateTiles = false;
+                _needsUpdateTiles = false;
             }
             GetNewObjects(update);
             GetDrops(update);
 
             if (update.Tiles.Count == 0 && update.NewObjs.Count == 0 && update.Drops.Count == 0)
                 return;
-            Player.Client.SendPacket(update);
+            Client.SendPacket(update);
         }
 
         public void GetNewTiles(Update update)
         {
-            ActiveTiles.Clear();
+            _activeTiles.Clear();
             var cachedTiles = DetermineSight();
             foreach (var point in cachedTiles)
             {
-                var playerX = point.X + (int)Player.X;
-                var playerY = point.Y + (int)Player.Y;
+                var playerX = point.X + (int)X;
+                var playerY = point.Y + (int)Y;
 
-                _ = ActiveTiles.Add(new IntPoint(playerX, playerY));
+                _ = _activeTiles.Add(new IntPoint(playerX, playerY));
 
                 var tile = World.Map[playerX, playerY];
 
                 var hash = playerX << 16 | playerY;
-                _ = SeenTiles.TryGetValue(hash, out var updateCount);
+                _ = _seenTiles.TryGetValue(hash, out var updateCount);
 
                 if (tile == null || tile.TileId == 0xFF || updateCount >= tile.UpdateCount)
                     continue;
 
-                SeenTiles[hash] = tile.UpdateCount;
+                _seenTiles[hash] = tile.UpdateCount;
 
                 var tileData = new TileData(playerX, playerY, tile.TileId);
                 update.Tiles.Add(tileData);
             }
-            Player.FameCounter.TileSent(update.Tiles.Count); // adds the new amount to the tiles been sent
+            FameCounter.TileSent(update.Tiles.Count); // adds the new amount to the tiles been sent
         }
 
         public HashSet<IntPoint> DetermineSight()
@@ -158,7 +157,7 @@ namespace WorldServer.core.objects.player
             switch (World.Blocking)
             {
                 case 0:
-                    return SightPoints;
+                    return _sightPoints;
                 case 1:
                     CalculateLineOfSight(hashSet);
                     break;
@@ -171,10 +170,10 @@ namespace WorldServer.core.objects.player
 
         public void CalculateLineOfSight(HashSet<IntPoint> points)
         {
-            var px = (int)Player.X;
-            var py = (int)Player.Y;
+            var px = (int)X;
+            var py = (int)Y;
 
-            foreach (var point in CircleCircumferenceSightPoints)
+            foreach (var point in _circleCircumferenceSightPoints)
                 DrawLine(px, py, px + point.X, py + point.Y, (x, y) =>
                 {
                     _ = points.Add(new IntPoint(x - px, y - py));
@@ -190,8 +189,8 @@ namespace WorldServer.core.objects.player
 
         public void CalculatePath(HashSet<IntPoint> points)
         {
-            var px = (int)Player.X;
-            var py = (int)Player.Y;
+            var px = (int)X;
+            var py = (int)Y;
 
             var pathMap = new bool[World.Map.Width, World.Map.Height];
             StepPath(points, pathMap, px, py, px, py);
@@ -207,22 +206,22 @@ namespace WorldServer.core.objects.player
             pathMap[x, y] = true;
 
             var point = new IntPoint(x - px, y - py);
-            if (!SightPoints.Contains(point))
+            if (!_sightPoints.Contains(point))
                 return;
             _ = points.Add(point);
 
             var t = World.Map[x, y];
             if (!(t.ObjType != 0 && t.ObjDesc != null && t.ObjDesc.BlocksSight))
-                foreach (var p in SurroundingPoints)
+                foreach (var p in _surroundingPoints)
                     StepPath(points, pathMap, x + p.X, y + p.Y, px, py);
         }
 
         public void GetNewObjects(Update update)
         {
-            var x = Player.X;
-            var y = Player.Y;
+            var x = X;
+            var y = Y;
 
-            foreach (var point in ActiveTiles) //static objects
+            foreach (var point in _activeTiles) //static objects
             {
                 var pointX = point.X;
                 var pointY = point.Y;
@@ -231,7 +230,7 @@ namespace WorldServer.core.objects.player
                 if (tile == null)
                     continue;
 
-                if (tile.ObjId != 0 && tile.ObjType != 0 && NewStaticObjects.Add(tile))
+                if (tile.ObjId != 0 && tile.ObjType != 0 && _newStaticObjects.Add(tile))
                     update.NewObjs.Add(tile.ToObjectDef(pointX, pointY));
             }
 
@@ -240,9 +239,9 @@ namespace WorldServer.core.objects.player
             var count = 0;
             foreach (var player in players)
             {
-                if ((player.AccountId == Player.AccountId || player.Client.Account != null && player.CanBeSeenBy(Player)) && NewObjects.Add(player))
+                if ((player.AccountId == AccountId || player.Client.Account != null && player.CanBeSeenBy(this)) && _newObjects.Add(player))
                 {
-                    update.NewObjs.Add(player.ToDefinition(player.AccountId != Player.AccountId));
+                    update.NewObjs.Add(player.ToDefinition(player.AccountId != AccountId));
                     count++;
 
                     if (count > 12) // 12 players per tick max
@@ -251,7 +250,7 @@ namespace WorldServer.core.objects.player
             }
 
             foreach (var entity in World.PlayersCollision.HitTest(x, y, VISIBILITY_RADIUS))
-                if ((entity is Decoy || entity is Pet) && NewObjects.Add(entity))
+                if ((entity is Decoy || entity is Pet) && _newObjects.Add(entity))
                     update.NewObjs.Add(entity.ToDefinition());
 
             var intPoint = new IntPoint(0, 0);
@@ -263,7 +262,7 @@ namespace WorldServer.core.objects.player
                 intPoint.X = (int)entity.X;
                 intPoint.Y = (int)entity.Y;
 
-                if (ActiveTiles.Contains(intPoint) && NewObjects.Add(entity))
+                if (_activeTiles.Contains(intPoint) && _newObjects.Add(entity))
                     update.NewObjs.Add(entity.ToDefinition());
             }
 
@@ -271,12 +270,12 @@ namespace WorldServer.core.objects.player
             {
                 var entity = entry.Value;
                 var owners = entity.BagOwners;
-                if (owners.Length > 0 && Array.IndexOf(owners, Player.AccountId) == -1)
+                if (owners.Length > 0 && Array.IndexOf(owners, AccountId) == -1)
                     continue;
 
                 intPoint.X = (int)entity.X;
                 intPoint.Y = (int)entity.Y;
-                if (ActiveTiles.Contains(intPoint) && NewObjects.Add(entity))
+                if (_activeTiles.Contains(intPoint) && _newObjects.Add(entity))
                     update.NewObjs.Add(entity.ToDefinition());
             }
 
@@ -285,7 +284,7 @@ namespace WorldServer.core.objects.player
                 intPoint.X = (int)entity.X;
                 intPoint.Y = (int)entity.Y;
 
-                if (ActiveTiles.Contains(intPoint) && NewObjects.Add(entity))
+                if (_activeTiles.Contains(intPoint) && _newObjects.Add(entity))
                     update.NewObjs.Add(entity.ToDefinition());
             }
 
@@ -294,44 +293,44 @@ namespace WorldServer.core.objects.player
                 intPoint.X = (int)entity.X;
                 intPoint.Y = (int)entity.Y;
 
-                if (ActiveTiles.Contains(intPoint) && NewObjects.Add(entity))
+                if (_activeTiles.Contains(intPoint) && _newObjects.Add(entity))
                     update.NewObjs.Add(entity.ToDefinition());
             }
 
-            if (Player.Quest != null && NewObjects.Add(Player.Quest))
-                update.NewObjs.Add(Player.Quest.ToDefinition());
+            if (Quest != null && _newObjects.Add(Quest))
+                update.NewObjs.Add(Quest.ToDefinition());
         }
 
         private void HandleNewTick()
         {
             var newTick = new NewTickMessage(TickId, TickTime);
 
-            lock (StatsUpdates)
+            lock (_statsUpdates)
             {
-                newTick.Statuses = StatsUpdates.Select(_ => new ObjectStats()
+                newTick.Statuses = _statsUpdates.Select(_ => new ObjectStats()
                 {
                     Id = _.Key.Id,
                     X = _.Key.X,
                     Y = _.Key.Y,
                     Stats = _.Value.ToArray()
                 }).ToList();
-                StatsUpdates.Clear();
+                _statsUpdates.Clear();
             }
 
-            Player.Client.SendPacket(newTick);
-            Player.AwaitMove(TickId);
+            Client.SendPacket(newTick);
+            AwaitMove(TickId);
         }
 
-        public void Dispose()
+        public void CleanupPlayerUpdate()
         {
-            SeenTiles = null;
-            ActiveTiles.Clear();
-            NewStaticObjects.Clear();
-            StatsUpdates.Clear();
-            NewObjects.Dispose();
+            _seenTiles.Clear();
+            _activeTiles.Clear();
+            _newStaticObjects.Clear();
+            _statsUpdates.Clear();
+            _newObjects.Dispose();
         }
 
-        private static readonly IntPoint[] SurroundingPoints = new IntPoint[5]
+        private static readonly IntPoint[] _surroundingPoints = new IntPoint[5]
         {
             new IntPoint(0, 0),
             new IntPoint(1, 0),
@@ -340,8 +339,8 @@ namespace WorldServer.core.objects.player
             new IntPoint(0, -1)
         };
 
-        private static HashSet<IntPoint> CircleCircumferenceSightPoints = CircleCircumferenceSightPoints ?? (CircleCircumferenceSightPoints = Cache(true));
-        private static HashSet<IntPoint> SightPoints = SightPoints ?? (SightPoints = Cache());
+        private static readonly HashSet<IntPoint> _circleCircumferenceSightPoints = _circleCircumferenceSightPoints ??= Cache(true);
+        private static readonly HashSet<IntPoint> _sightPoints = _sightPoints ??= Cache();
 
         private static HashSet<IntPoint> Cache(bool circumferenceCheck = false)
         {

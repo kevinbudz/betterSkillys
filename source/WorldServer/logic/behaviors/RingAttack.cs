@@ -70,10 +70,10 @@ namespace WorldServer.logic.behaviors
                         if (rastate.angleToIncrement != null)
                         {
                             if (_useSavedAngle)
-                                rastate.fixedAngle = Host.savedAngle;
+                                rastate.fixedAngle = Host.SavedAngle;
 
                             rastate.fixedAngle += rastate.angleToIncrement;
-                            Host.savedAngle = rastate.fixedAngle;
+                            Host.SavedAngle = rastate.fixedAngle;
                         }
                         angle = (float)rastate.fixedAngle;
                     }

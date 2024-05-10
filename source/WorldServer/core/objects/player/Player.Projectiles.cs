@@ -1,119 +1,17 @@
-﻿using NLog.LayoutRenderers;
-using Pipelines.Sockets.Unofficial.Arenas;
+﻿using Shared.resources;
 using System;
 using System.Collections.Generic;
-using Shared.resources;
 using WorldServer.core.net.datas;
 using WorldServer.core.net.stats;
 using WorldServer.core.structures;
 using WorldServer.core.worlds;
 using WorldServer.logic;
 using WorldServer.networking.packets.outgoing;
-using static WorldServer.core.commands.Command;
 
 namespace WorldServer.core.objects
 {
     public partial class Player
     {
-        private struct ShootAcknowledgement
-        {
-            public readonly EnemyShootMessage EnemyShoot;
-            public readonly ServerPlayerShoot ServerPlayerShoot;
-
-            public ShootAcknowledgement(EnemyShootMessage enemyShoot)
-            {
-                EnemyShoot = enemyShoot;
-                ServerPlayerShoot = null;
-            }
-
-            public ShootAcknowledgement(ServerPlayerShoot serverPlayerShoot)
-            {
-                EnemyShoot = null;
-                ServerPlayerShoot = serverPlayerShoot;
-            }
-        }
-
-        public sealed class ValidatedProjectile
-        {
-            public int BulletType;
-            public int StartTime;
-            public float StartX;
-            public float StartY;
-            public float Angle;
-            public int ObjectType;
-            public int Damage;
-            public bool Spawned;
-            public bool DamagesPlayers;
-            public bool DamagesEnemies;
-            public bool Disabled;
-            public List<int> HitObjects = new List<int>();
-
-            public ValidatedProjectile(int time, bool spawned, int projectileType, float x, float y, float angle, int objectType, int damage, bool damagesPlayers, bool damagesEnemies)
-            {
-                Spawned = spawned;
-                BulletType = projectileType;
-                StartTime = time;
-                StartX = x;
-                StartY = y;
-                Angle = angle;
-                ObjectType = objectType;
-                Damage = damage;
-                DamagesPlayers = damagesPlayers;
-                DamagesEnemies = damagesEnemies;
-            }
-
-            public Position GetPosition(int elapsed, int bulletId, ProjectileDesc desc)
-            {
-                double periodFactor;
-                double amplitudeFactor;
-                double theta;
-
-                var pX = (double)StartX;
-                var pY = (double)StartY;
-                var dist = elapsed * desc.Speed / 10000.0;
-                var phase = bulletId % 2 == 0 ? 0 : Math.PI;
-
-                if (desc.Wavy)
-                {
-                    periodFactor = 6 * Math.PI;
-                    amplitudeFactor = Math.PI / 64;
-                    theta = Angle + amplitudeFactor * Math.Sin(phase + periodFactor * elapsed / 1000);
-                    pX += dist * Math.Cos(theta);
-                    pY += dist * Math.Sin(theta);
-                }
-                else if (desc.Parametric)
-                {
-                    var t = elapsed / desc.LifetimeMS * 2 * Math.PI;
-                    var x = Math.Sin(t) * (bulletId % 2 == 0 ? 1 : -1);
-                    var y = Math.Sin(2 * t) * (bulletId % 4 < 2 ? 1 : -1);
-                    var sin = Math.Sin(Angle);
-                    var cos = Math.Cos(Angle);
-                    pX += (x * cos - y * sin) * desc.Magnitude;
-                    pY += (x * sin + y * cos) * desc.Magnitude;
-                }
-                else
-                {
-                    if (desc.Boomerang)
-                    {
-                        var halfway = desc.LifetimeMS * (desc.Speed / 10000.0) / 2.0;
-                        if (dist > halfway)
-                            dist = halfway - (dist - halfway);
-                    }
-                    pX += dist * Math.Cos(Angle);
-                    pY += dist * Math.Sin(Angle);
-
-                    if (desc.Amplitude != 0.0)
-                    {
-                        var deflection = desc.Amplitude * Math.Sin(phase + elapsed / desc.LifetimeMS * desc.Frequency * 2.0 * Math.PI);
-                        pX += deflection * Math.Cos(Angle + Math.PI / 2.0);
-                        pY += deflection * Math.Sin(Angle + Math.PI / 2.0);
-                    }
-                }
-                return new Position((float)pX, (float)pY);
-            }
-
-        }
-
         private Queue<ShootAcknowledgement> PendingShootAcknowlegements = new Queue<ShootAcknowledgement>();
         private Dictionary<int, Dictionary<int, ValidatedProjectile>> VisibleProjectiles = new Dictionary<int, Dictionary<int, ValidatedProjectile>>();
 
@@ -235,7 +133,7 @@ namespace WorldServer.core.objects
             }
 
             var dmg = StatsManager.DamageWithDefense(this, projectile.Damage, projectileDesc.ArmorPiercing, Stats[3]);
-            HP -= dmg;
+            Health -= dmg;
 
             ApplyConditionEffect(projectileDesc.Effects);
             World.BroadcastIfVisibleExclude(new DamageMessage()
@@ -243,12 +141,12 @@ namespace WorldServer.core.objects
                 TargetId = Id,
                 Effects = 0,
                 DamageAmount = dmg,
-                Kill = HP <= 0,
+                Kill = Health <= 0,
                 BulletId = bulletId,
                 ObjectId = Id
             }, this, this);
 
-            if (HP <= 0)
+            if (Health <= 0)
                 Death(objectDesc.DisplayId ?? objectDesc.IdName, projectile.Spawned);
         }
 
@@ -298,7 +196,7 @@ namespace WorldServer.core.objects
                 var player = this;
 
                 var dmg = StatsManager.DamageWithDefense(entity, projectile.Damage, projectileDesc.ArmorPiercing, entity.Defense);
-                entity.HP -= dmg;
+                entity.Health -= dmg;
 
                 for (var i = 0; i < 4; i++)
                 {
@@ -323,14 +221,14 @@ namespace WorldServer.core.objects
                     TargetId = entity.Id,
                     Effects = 0,
                     DamageAmount = dmg,
-                    Kill = entity.HP < 0,
+                    Kill = entity.Health < 0,
                     BulletId = bulletId,
                     ObjectId = Id
                 }, entity, this);
 
                 entity.DamageCounter.HitBy(this, dmg);
 
-                if (entity.HP < 0)
+                if (entity.Health < 0)
                 {
                     entity.Death(ref tickTime);
                     if (entity.ObjectDesc.BlocksSight)
@@ -338,7 +236,7 @@ namespace WorldServer.core.objects
                         var tile = World.Map[(int)entity.X, (int)entity.Y];
                         tile.ObjType = 0;
                         tile.UpdateCount++;
-                        player.PlayerUpdate.UpdateTiles();
+                        player.UpdateTiles();
                     }
                 }
             }

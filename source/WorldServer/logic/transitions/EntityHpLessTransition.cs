@@ -28,7 +28,7 @@ namespace WorldServer.logic.transitions
             if (entity == null)
                 return false;
 
-            return (double)(entity as Enemy).HP / (entity as Enemy).MaximumHP < _threshold;
+            return (double)(entity as Enemy).Health / (entity as Enemy).MaxHealth < _threshold;
         }
     }
 }

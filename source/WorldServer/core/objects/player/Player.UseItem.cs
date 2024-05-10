@@ -1,9 +1,9 @@
-﻿using StackExchange.Redis;
+﻿using Shared;
+using Shared.resources;
+using StackExchange.Redis;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Shared;
-using Shared.resources;
 using WorldServer.core.net.datas;
 using WorldServer.core.net.stats;
 using WorldServer.core.objects.containers;
@@ -19,11 +19,12 @@ namespace WorldServer.core.objects
 {
     partial class Player
     {
-        public const int DEFAULT = 0;
+        public const int MAX_ABILITY_DIST = 14;
+        public const int MAX_ABILITY_DIST_SQR = MAX_ABILITY_DIST * MAX_ABILITY_DIST;
+
+        public const int DEFAULT_USE = 0;
         public const int START_USE = 1;
         public const int END_USE = 2;
-
-        public const int MaxAbilityDist = 14;
 
         public static readonly ConditionEffectIndex[] NegativeEffs = new ConditionEffectIndex[]
         {
@@ -44,8 +45,6 @@ namespace WorldServer.core.objects
             ConditionEffectIndex.Curse,
             ConditionEffectIndex.Unstable
         };
-
-        public bool PoisonWis = false;
 
         public void AEUnlockChest(TickTime time, Item item, Position target, int slot, int objId, ActivateEffect eff)
         {
@@ -117,7 +116,7 @@ namespace WorldServer.core.objects
 
             // get item
             Item item = null;
-            foreach (var stack in Stacks.Where(stack => stack.Slot == slot))
+            foreach (var stack in PotionStacks.Where(stack => stack.Slot == slot))
             {
                 item = stack.Pop();
                 if (item == null)
@@ -144,10 +143,10 @@ namespace WorldServer.core.objects
             }
 
             // make sure not trading and trying to cunsume item
-            if (tradeTarget != null && item.Consumable)
+            if (TradeTarget != null && item.Consumable)
                 return;
 
-            if (MP < item.MpCost)
+            if (Mana < item.MpCost)
             {
                 Client.SendPacket(new InvResult() { Result = 1 });
                 return;
@@ -228,19 +227,19 @@ namespace WorldServer.core.objects
             if (magic)
             {
                 var maxMp = player.Stats[1];
-                var newMp = Math.Min(maxMp, player.MP + amount);
-                if (newMp == player.MP)
+                var newMp = Math.Min(maxMp, player.Mana + amount);
+                if (newMp == player.Mana)
                     return;
-                player.MP = newMp;
+                player.Mana = newMp;
                 return;
             }
 
             var maxHp = player.Stats[0];
-            var newHp = Math.Min(maxHp, player.HP + amount);
-            if (newHp == player.HP)
+            var newHp = Math.Min(maxHp, player.Health + amount);
+            if (newHp == player.Health)
                 return;
 
-            player.HP = newHp;
+            player.Health = newHp;
         }
 
         public static void ActivateHealHp(Player player, int amount, bool broadcastSelf = false)
@@ -249,8 +248,8 @@ namespace WorldServer.core.objects
                 return;
 
             var maxHp = player.Stats[0];
-            var newHp = Math.Min(maxHp, player.HP + amount);
-            if (newHp == player.HP)
+            var newHp = Math.Min(maxHp, player.Health + amount);
+            if (newHp == player.Health)
                 return;
 
             var effect = new ShowEffect()
@@ -264,7 +263,7 @@ namespace WorldServer.core.objects
             {
                 Color = new ARGB(0xff00ff00),
                 ObjectId = player.Id,
-                Message = "+" + (newHp - player.HP)
+                Message = "+" + (newHp - player.Health)
             };
 
             if (broadcastSelf)
@@ -279,14 +278,14 @@ namespace WorldServer.core.objects
                 player.World.BroadcastIfVisible(notif, player);
             }
 
-            player.HP = newHp;
+            player.Health = newHp;
         }
 
         public static void ActivateHealMp(Player player, int amount, bool broadcastSelf = false)
         {
             var maxMp = player.Stats[1];
-            var newMp = Math.Min(maxMp, player.MP + amount);
-            if (newMp == player.MP)
+            var newMp = Math.Min(maxMp, player.Mana + amount);
+            if (newMp == player.Mana)
                 return;
 
             var effect = new ShowEffect()
@@ -300,7 +299,7 @@ namespace WorldServer.core.objects
             {
                 Color = new ARGB(0xff6084E0),
                 ObjectId = player.Id,
-                Message = "+" + (newMp - player.MP)
+                Message = "+" + (newMp - player.Mana)
             };
 
             if (broadcastSelf)
@@ -315,12 +314,12 @@ namespace WorldServer.core.objects
                 player.World.BroadcastIfVisible(notif, player);
             }
 
-            player.MP = newMp;
+            player.Mana = newMp;
         }
 
         private void Activate(int clientTime, TickTime time, Item item, int slot, Position target, int objId, int sellmaxed, int useType)
         {
-            MP -= item.MpCost;
+            Mana -= item.MpCost;
 
             var entity1 = World.GetEntity(objId);
 
@@ -1004,7 +1003,7 @@ namespace WorldServer.core.objects
             var mouseAngle = Math.Atan2(target.Y - Y, target.X - X);
 
             // get starting target
-            var startTarget = this.GetNearestEntity(MaxAbilityDist, false, e => e is Enemy &&
+            var startTarget = this.GetNearestEntity(MAX_ABILITY_DIST, false, e => e is Enemy &&
                 Math.Abs(mouseAngle - Math.Atan2(e.Y - Y, e.X - X)) <= coneRange);
 
             // no targets? bolt air animation
@@ -1013,8 +1012,8 @@ namespace WorldServer.core.objects
                 var angles = new double[] { mouseAngle, mouseAngle - coneRange, mouseAngle + coneRange };
                 for (var i = 0; i < 3; i++)
                 {
-                    var x = (int)(MaxAbilityDist * Math.Cos(angles[i])) + X;
-                    var y = (int)(MaxAbilityDist * Math.Sin(angles[i])) + Y;
+                    var x = (int)(MAX_ABILITY_DIST * Math.Cos(angles[i])) + X;
+                    var y = (int)(MAX_ABILITY_DIST * Math.Sin(angles[i])) + Y;
                     World.BroadcastIfVisible(new ShowEffect()
                     {
                         EffectType = EffectType.Trail,
@@ -1133,13 +1132,10 @@ namespace WorldServer.core.objects
 
         private void AEPoisonGrenade(TickTime time, Item item, Position target, ActivateEffect eff)
         {
-            if (MathsUtils.DistSqr(target.X, target.Y, X, Y) > MaxAbilityDist * MaxAbilityDist) return;
+            if (MathsUtils.DistSqr(target.X, target.Y, X, Y) > MAX_ABILITY_DIST_SQR) return;
             var impDamage = eff.ImpactDamage;
             if (eff.UseWisMod)
-            {
                 impDamage = (int)UseWisMod(eff.ImpactDamage);
-                PoisonWis = true;
-            }
 
             World.BroadcastIfVisible(new ShowEffect()
             {
@@ -1167,7 +1163,7 @@ namespace WorldServer.core.objects
 
                 world.AOE(target, eff.Radius, false, entity =>
                 {
-                    PoisonEnemy(world, (Enemy)entity, eff);
+                    PoisonEnemy(world, (Enemy)entity, eff, eff.UseWisMod);
                     ((Enemy)entity).Damage(this, ref time, impDamage, true);
                 });
             });
@@ -1210,8 +1206,8 @@ namespace WorldServer.core.objects
                     ApplyPermanentConditionEffect(ConditionEffectIndex.NinjaSpeedy);
                     break;
                 case END_USE:
-                    if (MP >= item.MpEndCost)
-                        MP -= item.MpEndCost;
+                    if (Mana >= item.MpEndCost)
+                        Mana -= item.MpEndCost;
                     RemoveCondition(ConditionEffectIndex.NinjaSpeedy);
                     break;
             }
@@ -1225,8 +1221,8 @@ namespace WorldServer.core.objects
                     ApplyPermanentConditionEffect(ConditionEffectIndex.NinjaBerserk);
                     break;
                 case END_USE:
-                    if (MP >= item.MpEndCost)
-                        MP -= item.MpEndCost;
+                    if (Mana >= item.MpEndCost)
+                        Mana -= item.MpEndCost;
                     RemoveCondition(ConditionEffectIndex.NinjaBerserk);
                     break;
             }
@@ -1240,8 +1236,8 @@ namespace WorldServer.core.objects
                     ApplyPermanentConditionEffect(ConditionEffectIndex.NinjaDamaging);
                     break;
                 case END_USE:
-                    if (MP >= item.MpEndCost)
-                        MP -= item.MpEndCost;
+                    if (Mana >= item.MpEndCost)
+                        Mana -= item.MpEndCost;
                     RemoveCondition(ConditionEffectIndex.NinjaDamaging);
                     break;
             }
@@ -1532,12 +1528,12 @@ namespace WorldServer.core.objects
             tmr = world.StartNewTimer(200, healTick);
         }
 
-        private void PoisonEnemy(World world, Enemy enemy, ActivateEffect eff)
+        private void PoisonEnemy(World world, Enemy enemy, ActivateEffect eff, bool poisonWis)
         {
             var remainingDmg = StatsManager.DamageWithDefense(enemy, eff.TotalDamage, false, enemy.Defense);
             var perDmg = remainingDmg * 1000 / eff.DurationMS;
 
-            if (PoisonWis)
+            if (poisonWis)
             {
                 remainingDmg = (int)UseWisMod(remainingDmg);
                 perDmg = (int)UseWisMod(perDmg);

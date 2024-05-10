@@ -26,7 +26,7 @@ namespace WorldServer.core.net.handlers
             if (player == null || client?.Player?.World is TestWorld)
                 return;
 
-            if (player.tradeTarget == null)
+            if (player.TradeTarget == null)
                 return;
 
             for (int i = 0; i < offer.Length; i++)
@@ -37,12 +37,12 @@ namespace WorldServer.core.net.handlers
                         offer[i] = false;
                     }
 
-            player.tradeAccepted = false;
-            player.tradeTarget.tradeAccepted = false;
-            player.trade = offer;
-            player.tradeTarget.Client.SendPacket(new TradeChanged()
+            player.TradeAccepted = false;
+            player.TradeTarget.TradeAccepted= false;
+            player.TradeOffers = offer;
+            player.TradeTarget.Client.SendPacket(new TradeChanged()
             {
-                Offer = player.trade
+                Offer = player.TradeOffers
             });
 
             if (sb)

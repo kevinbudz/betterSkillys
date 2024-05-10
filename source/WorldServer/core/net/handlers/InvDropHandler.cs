@@ -26,7 +26,7 @@ namespace WorldServer.core.net.handlers
             var slot = ObjectSlot.Read(rdr);
 
             var player = client.Player;
-            if (player == null || player.World == null || player.tradeTarget != null || player.Client == null)
+            if (player == null || player.World == null || player.TradeTarget != null || player.Client == null)
                 return;
 
             //if (player.Stars < 2 && player.Rank < 10)
@@ -63,7 +63,7 @@ namespace WorldServer.core.net.handlers
             else
                 con = player;
 
-            if (slot.ObjectId == player.Id && player.Stacks.Any(stack => stack.Slot == slot.SlotId))
+            if (slot.ObjectId == player.Id && player.PotionStacks.Any(stack => stack.Slot == slot.SlotId))
             {
                 player.Client.SendPacket(new InvResult() { Result = 1 });
                 return; // don't allow dropping of stacked items

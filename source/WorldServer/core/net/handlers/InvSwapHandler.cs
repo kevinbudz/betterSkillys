@@ -54,7 +54,7 @@ namespace WorldServer.core.net.handlers
                 return;
             }
 
-            if (!ValidateEntities(player, from, to) || player.tradeTarget != null)
+            if (!ValidateEntities(player, from, to) || player.TradeTarget != null)
             {
                 from.ForceUpdate(slotFrom);
                 to.ForceUpdate(slotTo);
@@ -68,7 +68,7 @@ namespace WorldServer.core.net.handlers
             // check if stacking operation
             if (to == player)
             {
-                foreach (var stack in player.Stacks)
+                foreach (var stack in player.PotionStacks)
                     if (stack.Slot == slotTo)
                     {
                         var stackTrans = conFrom.Inventory.CreateTransaction();

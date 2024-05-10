@@ -32,22 +32,22 @@ namespace WorldServer.core.net.handlers
             if (player == null || client?.Player?.World is TestWorld)
                 return;
 
-            if (player.tradeAccepted)
+            if (player.TradeAccepted)
                 return;
 
-            var tradeTarget = player.tradeTarget;
+            var tradeTarget = player.TradeTarget;
 
-            player.trade = myOffer;
-            if (tradeTarget.trade.SequenceEqual(yourOffer))
+            player.TradeOffers = myOffer;
+            if (tradeTarget.TradeOffers.SequenceEqual(yourOffer))
             {
-                player.tradeAccepted = true;
+                player.TradeAccepted = true;
                 tradeTarget.Client.SendPacket(new TradeAccepted()
                 {
-                    MyOffer = tradeTarget.trade,
-                    YourOffer = player.trade
+                    MyOffer = tradeTarget.TradeOffers,
+                    YourOffer = player.TradeOffers
                 });
 
-                if (player.tradeAccepted && tradeTarget.tradeAccepted)
+                if (player.TradeAccepted && tradeTarget.TradeAccepted)
                 {
                     if (!(player.IsAdmin && tradeTarget.IsAdmin))
                         if (player.IsAdmin || tradeTarget.IsAdmin)
@@ -68,7 +68,7 @@ namespace WorldServer.core.net.handlers
             var thisItems = new List<(Item, ItemData)>();
             var targetItems = new List<(Item, ItemData)>();
 
-            var tradeTarget = player.tradeTarget;
+            var tradeTarget = player.TradeTarget;
 
             // make sure trade targets are valid
             if (tradeTarget == null || player.World == null || tradeTarget.World == null || player.World != tradeTarget.World)
@@ -77,7 +77,7 @@ namespace WorldServer.core.net.handlers
                 return;
             }
 
-            if (!player.tradeAccepted || !tradeTarget.tradeAccepted)
+            if (!player.TradeAccepted || !tradeTarget.TradeAccepted)
                 return;
 
             var pInvTrans = player.Inventory.CreateTransaction();
@@ -86,15 +86,15 @@ namespace WorldServer.core.net.handlers
             var pInvDataTrans = player.Inventory.CreateDataTransaction();
             var tInvDataTrans = player.Inventory.CreateDataTransaction();
 
-            for (int i = 4; i < player.trade.Length; i++)
-                if (player.trade[i])
+            for (int i = 4; i < player.TradeOffers.Length; i++)
+                if (player.TradeOffers[i])
                 {
                     thisItems.Add((player.Inventory[i], player.Inventory.Data[i]));
                     pInvTrans[i] = null;
                 }
 
-            for (int i = 4; i < tradeTarget.trade.Length; i++)
-                if (tradeTarget.trade[i])
+            for (int i = 4; i < tradeTarget.TradeOffers.Length; i++)
+                if (tradeTarget.TradeOffers[i])
                 {
                     targetItems.Add((tradeTarget.Inventory[i], tradeTarget.Inventory.Data[i]));
                     tInvTrans[i] = null;

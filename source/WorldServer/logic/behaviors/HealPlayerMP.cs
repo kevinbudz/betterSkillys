@@ -37,13 +37,13 @@ namespace WorldServer.logic.behaviors
                         continue;
 
                     var maxMp = entity.Stats[1];
-                    var newMp = Math.Min(entity.MP + _healAmount, maxMp);
+                    var newMp = Math.Min(entity.Mana + _healAmount, maxMp);
 
-                    if (newMp != entity.MP)
+                    if (newMp != entity.Mana)
                     {
-                        var n = newMp - entity.MP;
+                        var n = newMp - entity.Mana;
 
-                        entity.MP = newMp;
+                        entity.Mana = newMp;
                         entity.World.BroadcastIfVisible(new ShowEffect() { EffectType = EffectType.Potion, TargetObjectId = entity.Id, Color = new ARGB(0xffffffff) }, entity);
                         entity.World.BroadcastIfVisible(new ShowEffect()
                         {

@@ -6,7 +6,8 @@ namespace WorldServer.core.worlds.impl
 {
     public class TestWorld : World
     {
-        public TestWorld(GameServer gameServer, int id, WorldResource resource) : base(gameServer, id, resource)
+        public TestWorld(GameServer gameServer, int id, WorldResource resource) 
+            : base(gameServer, id, resource)
         {
         }
 

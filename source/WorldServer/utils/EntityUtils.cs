@@ -1,25 +1,23 @@
-﻿using System;
+﻿using Shared.resources;
+using Shared.utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Shared.resources;
-using Shared.utils;
-using WorldServer.core.miscfile;
-using WorldServer.core.objects;
-using WorldServer.core.objects.player;
-using WorldServer.core.worlds;
-using WorldServer.core.objects.containers;
 using WorldServer.core.net.stats;
+using WorldServer.core.objects;
+using WorldServer.core.objects.containers;
 using WorldServer.core.structures;
+using WorldServer.core.worlds;
 
 namespace WorldServer.utils
 {
     public static class EntityUtils
     {
-        public static bool AnyEnemyNearby(this Entity entity, int radius = PlayerUpdate.VISIBILITY_RADIUS)
+        public static bool AnyEnemyNearby(this Entity entity, int radius = World.CULL_RANGE)
         {
             foreach (var i in entity.World.EnemiesCollision.HitTest(entity.X, entity.Y, radius))
             {
-                if (!(i is Enemy) || entity == i)
+                if (i is not Enemy || entity == i)
                     continue;
 
                 var d = i.SqDistTo(entity);
@@ -30,11 +28,11 @@ namespace WorldServer.utils
             return false;
         }
 
-        public static bool AnyEnemyNearby(this World world, float x, float y, int radius = PlayerUpdate.VISIBILITY_RADIUS)
+        public static bool AnyEnemyNearby(this World world, float x, float y, int radius = World.CULL_RANGE)
         {
             foreach (var i in world.EnemiesCollision.HitTest(x, y, radius))
             {
-                if (!(i is Enemy))
+                if (i is not Enemy)
                     continue;
 
                 var d = i.SqDistTo(x, y);
@@ -45,7 +43,7 @@ namespace WorldServer.utils
             return false;
         }
 
-        public static bool AnyPlayerNearby(this Entity entity, int radius = PlayerUpdate.VISIBILITY_RADIUS)
+        public static bool AnyPlayerNearby(this Entity entity, int radius = World.CULL_RANGE)
         {
             foreach (var i in entity.World.PlayersCollision.HitTest(entity.X, entity.Y, radius).Where(e => e is Player))
             {
@@ -61,7 +59,7 @@ namespace WorldServer.utils
             return false;
         }
 
-        public static bool AnyPlayerNearby(this World world, float x, float y, int radius = PlayerUpdate.VISIBILITY_RADIUS)
+        public static bool AnyPlayerNearby(this World world, float x, float y, int radius = World.CULL_RANGE)
         {
             foreach (var i in world.PlayersCollision.HitTest(x, y, radius).Where(e => e is Player))
             {
@@ -108,7 +106,7 @@ namespace WorldServer.utils
             else
                 foreach (var i in entity.World.EnemiesCollision.HitTest(entity.X, entity.Y, radius))
                 {
-                    if (!(i is Enemy))
+                    if (i is not Enemy)
                         continue;
 
                     var d = i.DistTo(entity);
@@ -237,11 +235,11 @@ namespace WorldServer.utils
                 case 25:
                 case 26:
                 case 254:
-                    e.InvokeStatChange(StatDataType.HealthStackCount, (e as Player).HealthPots.Count);
+                    e.InvokeStatChange(StatDataType.HealthStackCount, (e as Player).HealthPotionStack.Count);
                     break;
 
                 case 255:
-                    e.InvokeStatChange(StatDataType.MagicStackCount, (e as Player).MagicPots.Count);
+                    e.InvokeStatChange(StatDataType.MagicStackCount, (e as Player).MagicPotionStack.Count);
                     break;
             }
         }
@@ -253,9 +251,9 @@ namespace WorldServer.utils
             if (!entities.Any())
                 return null;
 
-            var lowestHp = entities.Min(e => e.HP);
+            var lowestHp = entities.Min(e => e.Health);
 
-            return entities.FirstOrDefault(e => e.HP == lowestHp);
+            return entities.FirstOrDefault(e => e.Health == lowestHp);
         }
 
         public static IEnumerable<Entity> GetNearestEntities(this Entity entity, double dist, ushort? objType, bool seeInvis = false)   //Null for player

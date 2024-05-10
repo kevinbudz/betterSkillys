@@ -1,6 +1,6 @@
 ﻿namespace Shared
 {
-    public enum RankingType
+    public enum RankingType : int
     {
         Regular = 0,
         Supporter1 = 1,

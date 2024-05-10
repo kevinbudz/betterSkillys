@@ -103,7 +103,7 @@ namespace WorldServer.logic
             if (!hitters.TryGetValue(player, out int totalDmg))
                 totalDmg = 0;
 
-            int trueDmg = Math.Min(dmg, Host.MaximumHP);
+            int trueDmg = Math.Min(dmg, Host.MaxHealth);
             TotalDamage += trueDmg;
             hitters[player] = totalDmg + trueDmg;
 

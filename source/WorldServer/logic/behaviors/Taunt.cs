@@ -108,7 +108,7 @@ namespace WorldServer.logic.behaviors
                 taunt = taunt.Replace("{PLAYER}", player.Name);
             }
 
-            taunt = taunt.Replace("{HP}", (host as Enemy).HP.ToString());
+            taunt = taunt.Replace("{HP}", (host as Enemy).Health.ToString());
 
             Enemy enemy = null;
 

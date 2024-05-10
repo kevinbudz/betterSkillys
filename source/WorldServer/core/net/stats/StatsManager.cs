@@ -272,10 +272,10 @@ namespace WorldServer.core.net.stats
             for (var i = 0; i < _stats.Length; i++)
                 _stats[i].SetValue(this[i]);
 
-            if (Owner.HP > Owner.Stats[0])
-                Owner.HP = Owner.Stats[0];
-            if (Owner.MP > Owner.Stats[1])
-                Owner.MP = Owner.Stats[1];
+            if (Owner.Health > Owner.Stats[0])
+                Owner.Health = Owner.Stats[0];
+            if (Owner.Mana > Owner.Stats[1])
+                Owner.Mana = Owner.Stats[1];
         }
 
         internal void StatChanged(int index) => _stats[index].SetValue(this[index]);

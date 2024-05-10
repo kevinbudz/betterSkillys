@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using WorldServer.core.net.stats;
 using WorldServer.core.objects.player;
 using WorldServer.core.worlds;
@@ -50,9 +51,8 @@ namespace WorldServer.core.objects
                         tile.ObjType = 0;
                         tile.UpdateCount++;
 
-                        foreach (var player in World.PlayersCollision.HitTest(x, y, PlayerUpdate.VISIBILITY_RADIUS))
-                            if (player is Player && (player as Player).PlayerUpdate != null)
-                                (player as Player).PlayerUpdate.UpdateTiles();
+                        foreach (var player in World.PlayersCollision.HitTest(x, y, Player.VISIBILITY_RADIUS).Cast<Player>())
+                            player.UpdateTiles();
                     }
                 World.LeaveWorld(this);
                 return false;

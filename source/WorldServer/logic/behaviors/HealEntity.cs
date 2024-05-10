@@ -37,20 +37,20 @@ namespace WorldServer.logic.behaviors
 
                 foreach (var entity in host.GetNearestEntitiesByName(_range, _name).OfType<Enemy>())
                 {
-                    var newHp = entity.MaximumHP;
+                    var newHp = entity.MaxHealth;
 
                     if (_amount != null)
                     {
-                        var newHealth = (int)_amount + entity.HP;
+                        var newHealth = (int)_amount + entity.Health;
 
                         if (newHp > newHealth)
                             newHp = newHealth;
                     }
-                    if (newHp != entity.HP)
+                    if (newHp != entity.Health)
                     {
-                        var n = newHp - entity.HP;
+                        var n = newHp - entity.Health;
 
-                        entity.HP = newHp;
+                        entity.Health = newHp;
                         entity.World.BroadcastIfVisible(new ShowEffect() { EffectType = EffectType.Potion, TargetObjectId = entity.Id, Color = new ARGB(0xffffffff) }, entity);
                         entity.World.BroadcastIfVisible(new ShowEffect()
                         {

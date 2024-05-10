@@ -11,10 +11,10 @@ namespace WorldServer.core.objects
 {
     partial class Player
     {
-        internal Dictionary<Player, int> potentialTrader = new Dictionary<Player, int>();
-        internal bool[] trade;
-        internal bool tradeAccepted;
-        internal Player tradeTarget;
+        private readonly Dictionary<Player, int> _tradeOffers = new Dictionary<Player, int>();
+        public bool[] TradeOffers { get; set; }
+        public bool TradeAccepted { get; set; }
+        public Player TradeTarget { get; set; }
 
         public void CancelTrade(bool leftmarket = false)
         {
@@ -26,8 +26,8 @@ namespace WorldServer.core.objects
                     Description = "Trade canceled!"
                 });
 
-                if (tradeTarget != null && tradeTarget.Client != null)
-                    tradeTarget.Client.SendPacket(new TradeDone()
+                if (TradeTarget != null && TradeTarget.Client != null)
+                    TradeTarget.Client.SendPacket(new TradeDone()
                     {
                         Code = 1,
                         Description = "Trade canceled!"
@@ -41,8 +41,8 @@ namespace WorldServer.core.objects
                     Description = "You left the market, Trade canceled!"
                 });
 
-                if (tradeTarget != null && tradeTarget.Client != null)
-                    tradeTarget.Client.SendPacket(new TradeDone()
+                if (TradeTarget != null && TradeTarget.Client != null)
+                    TradeTarget.Client.SendPacket(new TradeDone()
                     {
                         Code = 1,
                         Description = "Client left the market, Trade canceled!"
@@ -72,7 +72,7 @@ namespace WorldServer.core.objects
                 return;
             }
 
-            if (tradeTarget != null)
+            if (TradeTarget != null)
             {
                 SendError("Already trading!");
                 return;
@@ -113,22 +113,22 @@ namespace WorldServer.core.objects
             if (target.Client.Account.IgnoreList.Contains(AccountId))
                 return; // account is ignored
 
-            if (target.tradeTarget != null)
+            if (target.TradeTarget != null)
             {
                 SendError(target.Name + " is already trading!");
                 return;
             }
 
-            if (potentialTrader.ContainsKey(target))
+            if (_tradeOffers.ContainsKey(target))
             {
-                tradeTarget = target;
-                trade = new bool[12];
-                tradeAccepted = false;
-                target.tradeTarget = this;
-                target.trade = new bool[12];
-                target.tradeAccepted = false;
-                potentialTrader.Clear();
-                target.potentialTrader.Clear();
+                TradeTarget = target;
+                TradeOffers = new bool[12];
+                TradeAccepted = false;
+                target.TradeTarget = this;
+                target.TradeOffers = new bool[12];
+                target.TradeAccepted = false;
+                _tradeOffers.Clear();
+                target._tradeOffers.Clear();
 
                 // shouldn't be needed since there is checks on
                 // invswap, invdrop, and useitem packets for trading
@@ -174,7 +174,7 @@ namespace WorldServer.core.objects
             }
             else
             {
-                target.potentialTrader[this] = 1000 * 20;
+                target._tradeOffers[this] = 1000 * 20;
                 target.Client.SendPacket(new TradeRequested()
                 {
                     Name = Name
@@ -186,22 +186,22 @@ namespace WorldServer.core.objects
 
         public void ResetTrade()
         {
-            if (tradeTarget != null)
+            if (TradeTarget != null)
             {
-                tradeTarget.tradeTarget = null;
-                tradeTarget.trade = null;
-                tradeTarget.tradeAccepted = false;
+                TradeTarget.TradeTarget = null;
+                TradeTarget.TradeOffers = null;
+                TradeTarget.TradeAccepted = false;
             }
-            tradeTarget = null;
-            trade = null;
-            tradeAccepted = false;
+            TradeTarget = null;
+            TradeOffers = null;
+            TradeAccepted = false;
         }
 
         private void CheckTradeTimeout(TickTime time)
         {
             var newState = new List<Tuple<Player, int>>();
 
-            foreach (var i in potentialTrader)
+            foreach (var i in _tradeOffers)
                 newState.Add(new Tuple<Player, int>(i.Key, i.Value - time.ElapsedMsDelta));
 
             foreach (var i in newState)
@@ -209,10 +209,10 @@ namespace WorldServer.core.objects
                 if (i.Item2 < 0)
                 {
                     i.Item1.SendInfo("Trade to " + Name + " has timed out!");
-                    potentialTrader.Remove(i.Item1);
+                    _tradeOffers.Remove(i.Item1);
                 }
                 else
-                    potentialTrader[i.Item1] = i.Item2;
+                    _tradeOffers[i.Item1] = i.Item2;
             }
         }
     }

@@ -1,15 +1,12 @@
 ﻿using Pipelines.Sockets.Unofficial.Arenas;
+using Shared.database;
+using Shared.resources;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Shared;
-using Shared.database;
-using Shared.resources;
-using WorldServer.core.net.datas;
 using WorldServer.core.objects;
 using WorldServer.core.objects.containers;
-using WorldServer.core.objects.player;
 using WorldServer.core.objects.vendors;
 using WorldServer.core.structures;
 using WorldServer.core.terrain;
@@ -23,6 +20,8 @@ namespace WorldServer.core.worlds
 {
     public class World
     {
+        public const int CULL_RANGE = 30;
+        
         public const int NEXUS_ID = -2;
         public const int TEST_ID = -6;
 
@@ -35,7 +34,6 @@ namespace WorldServer.core.worlds
         public bool Persist { get; private set; }
         public int MaxPlayers { get; protected set; }
         public bool CreateInstance { get; private set; }
-
         public bool IsRealm { get; set; }
         public bool AllowTeleport { get; protected set; }
         public byte Background { get; protected set; }
@@ -118,7 +116,7 @@ namespace WorldServer.core.worlds
         public void BroadcastIfVisible(OutgoingMessage outgoingMessage, ref Position worldPosData)
         {
             foreach (var player in Players.Values)
-                if (player.SqDistTo(ref worldPosData) < PlayerUpdate.VISIBILITY_RADIUS_SQR)
+                if (player.SqDistTo(ref worldPosData) < CULL_RANGE)
                 {
                     if (outgoingMessage is ServerPlayerShoot)
                         player.ServerPlayerShoot(outgoingMessage as ServerPlayerShoot);
@@ -129,7 +127,7 @@ namespace WorldServer.core.worlds
         public void BroadcastIfVisible(OutgoingMessage outgoingMessage, Entity host)
         {
             foreach (var player in Players.Values)
-                if (player.SqDistTo(host) < PlayerUpdate.VISIBILITY_RADIUS_SQR)
+                if (player.SqDistTo(host) < CULL_RANGE)
                 {
                     if (outgoingMessage is EnemyShootMessage)
                         player.EnemyShoot(outgoingMessage as EnemyShootMessage);
@@ -140,14 +138,14 @@ namespace WorldServer.core.worlds
         public void BroadcastIfVisibleExclude(List<OutgoingMessage> outgoingMessage, Entity broadcaster, Entity exclude)
         {
             foreach (var player in Players.Values)
-                if (player.Id != exclude.Id && player.SqDistTo(broadcaster) <= PlayerUpdate.VISIBILITY_RADIUS_SQR)
+                if (player.Id != exclude.Id && player.SqDistTo(broadcaster) <= CULL_RANGE)
                     player.Client.SendPackets(outgoingMessage);
         }
 
         public void BroadcastIfVisibleExclude(OutgoingMessage outgoingMessage, Entity broadcaster, Entity exclude)
         {
             foreach (var player in Players.Values)
-                if (player.Id != exclude.Id && player.SqDistTo(broadcaster) <= PlayerUpdate.VISIBILITY_RADIUS_SQR)
+                if (player.Id != exclude.Id && player.SqDistTo(broadcaster) <= CULL_RANGE)
                     player.Client.SendPacket(outgoingMessage);
         }
 
@@ -342,7 +340,7 @@ namespace WorldServer.core.worlds
                 PlayersCollision.Remove(entity);
 
                 // if in trade, cancel it...
-                if (player != null && player.tradeTarget != null)
+                if (player != null && player.TradeTarget != null)
                     player.CancelTrade();
 
                 if (player != null && player.Pet != null)
@@ -570,15 +568,15 @@ namespace WorldServer.core.worlds
             EntitiesToRemove.Clear();
 
             foreach (var player in Players.Values)
-                player.PlayerUpdate?.UpdateState(time.ElapsedMsDelta);
+                player.UpdateState(time.ElapsedMsDelta);
         }
 
         public void FlagForClose()
         {
-            ForceLifetimeExpire = true;
+            _forceLifetimeExpire = true;
         }
 
-        private bool ForceLifetimeExpire = false;
+        private bool _forceLifetimeExpire = false;
 
         private bool IsPastLifetime(ref TickTime time)
         {
@@ -588,7 +586,7 @@ namespace WorldServer.core.worlds
             if (Players.Count > 0)
                 return false;
 
-            if (ForceLifetimeExpire)
+            if (_forceLifetimeExpire)
                 return true;
 
             if (Persist)

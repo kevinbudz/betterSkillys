@@ -49,39 +49,39 @@ namespace WorldServer.core.objects
                 GameServer.ConnectionManager.Clients[Client].Hidden = true;
             }
 
-            if (HasConditionEffect(ConditionEffectIndex.Quiet) && MP > 0)
-                MP = 0;
+            if (HasConditionEffect(ConditionEffectIndex.Quiet) && Mana > 0)
+                Mana = 0;
 
-            if (HasConditionEffect(ConditionEffectIndex.Bleeding) && HP > 1)
+            if (HasConditionEffect(ConditionEffectIndex.Bleeding) && Health > 1)
             {
-                HP -= (int)(20 * time.DeltaTime); // 20 per second
-                if (HP < 1)
-                    HP = 1;
+                Health -= (int)(20 * time.DeltaTime); // 20 per second
+                if (Health < 1)
+                    Health = 1;
             }
 
             if (HasConditionEffect(ConditionEffectIndex.NinjaSpeedy))
             {
-                MP -= (int)(10 * time.DeltaTime);
-                if (MP == 0)
+                Mana -= (int)(10 * time.DeltaTime);
+                if (Mana == 0)
                     RemoveCondition(ConditionEffectIndex.NinjaSpeedy);
             }
 
             if (HasConditionEffect(ConditionEffectIndex.NinjaBerserk))
             {
-                MP -= (int)(25 * time.DeltaTime);
-                if (MP <= 0)
+                Mana -= (int)(25 * time.DeltaTime);
+                if (Mana <= 0)
                 {
-                    MP = 0;
+                    Mana = 0;
                     RemoveCondition(ConditionEffectIndex.NinjaBerserk);
                 }
             }
 
             if (HasConditionEffect(ConditionEffectIndex.NinjaDamaging))
             {
-                MP -= (int)(10 * time.DeltaTime);
-                if (MP <= 0)
+                Mana -= (int)(10 * time.DeltaTime);
+                if (Mana <= 0)
                 {
-                    MP = 0;
+                    Mana = 0;
                     RemoveCondition(ConditionEffectIndex.NinjaDamaging);
                 }
             }

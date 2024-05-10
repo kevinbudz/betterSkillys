@@ -6,13 +6,13 @@ namespace WorldServer.core.objects
 {
     partial class Player
     {
-        private static Regex nonAlphaNum = new Regex("[^a-zA-Z0-9 ]", RegexOptions.CultureInvariant);
-        private static Regex repetition = new Regex("(.)(?<=\\1\\1)", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant | RegexOptions.Compiled);
+        private static readonly Regex _nonAlphaNum = new Regex("[^a-zA-Z0-9 ]", RegexOptions.CultureInvariant);
+        private static readonly Regex _repetition = new Regex("(.)(?<=\\1\\1)", RegexOptions.IgnoreCase | RegexOptions.CultureInvariant | RegexOptions.Compiled);
 
-        private string LastMessage = "";
-        private int LastMessageDeviation = int.MaxValue;
-        private long LastMessageTime = 0;
-        private bool Spam = false;
+        private string _lastMessage = "";
+        private int _lastMessageDeviation = int.MaxValue;
+        private long _lastMessageTime = 0;
+        private bool _spam = false;
 
         public static int LengthThreshold(int length) => length > 4 ? 3 : 0;
 
@@ -40,52 +40,52 @@ namespace WorldServer.core.objects
 
         public bool CompareAndCheckSpam(string message, long time)
         {
-            if (time - LastMessageTime < 500)
+            if (time - _lastMessageTime < 500)
             {
-                LastMessageTime = time;
+                _lastMessageTime = time;
 
-                if (Spam)
+                if (_spam)
                     return true;
                 else
                 {
-                    Spam = true;
+                    _spam = true;
                     return false;
                 }
             }
 
-            var strippedMessage = nonAlphaNum.Replace(message, "").ToLower();
-            strippedMessage = repetition.Replace(strippedMessage, "");
+            var strippedMessage = _nonAlphaNum.Replace(message, "").ToLower();
+            strippedMessage = _repetition.Replace(strippedMessage, "");
 
-            if (time - LastMessageTime > 10000)
+            if (time - _lastMessageTime > 10000)
             {
-                LastMessageDeviation = LevenshteinDistance(LastMessage, strippedMessage);
-                LastMessageTime = time;
-                LastMessage = strippedMessage;
-                Spam = false;
+                _lastMessageDeviation = LevenshteinDistance(_lastMessage, strippedMessage);
+                _lastMessageTime = time;
+                _lastMessage = strippedMessage;
+                _spam = false;
                 return false;
             }
             else
             {
-                var deviation = LevenshteinDistance(LastMessage, strippedMessage);
-                LastMessageTime = time;
-                LastMessage = strippedMessage;
+                var deviation = LevenshteinDistance(_lastMessage, strippedMessage);
+                _lastMessageTime = time;
+                _lastMessage = strippedMessage;
 
-                if (LastMessageDeviation <= LengthThreshold(LastMessage.Length) && deviation <= LengthThreshold(message.Length))
+                if (_lastMessageDeviation <= LengthThreshold(_lastMessage.Length) && deviation <= LengthThreshold(message.Length))
                 {
-                    LastMessageDeviation = deviation;
+                    _lastMessageDeviation = deviation;
 
-                    if (Spam)
+                    if (_spam)
                         return true;
                     else
                     {
-                        Spam = true;
+                        _spam = true;
                         return false;
                     }
                 }
                 else
                 {
-                    LastMessageDeviation = deviation;
-                    Spam = false;
+                    _lastMessageDeviation = deviation;
+                    _spam = false;
                     return false;
                 }
             }

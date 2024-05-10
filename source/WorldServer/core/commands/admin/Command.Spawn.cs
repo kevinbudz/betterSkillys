@@ -267,8 +267,8 @@ namespace WorldServer.core.commands
                     {
                         if (hp != null)
                         {
-                            enemy.HP = hp.Value;
-                            enemy.MaximumHP = enemy.HP;
+                            enemy.Health = hp.Value;
+                            enemy.MaxHealth = enemy.Health;
                         }
 
                         if (size != null)

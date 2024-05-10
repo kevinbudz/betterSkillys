@@ -84,8 +84,8 @@ namespace WorldServer.core.objects
                 }
 
                 Size += (type + 1) * 25;
-                MaximumHP *= type + 1;
-                HP = MaximumHP;
+                MaxHealth *= type + 1;
+                Health = MaxHealth;
             }
         }
 
@@ -102,8 +102,8 @@ namespace WorldServer.core.objects
                 else
                     Size = Random.Shared.Next(Size + 200, Size + 300);
 
-                MaximumHP = MaximumHP * 3;
-                HP = MaximumHP;
+                MaxHealth = MaxHealth * 3;
+                Health = MaxHealth;
                 Defense += 10;
                 GlowEnemy = 0xFFFFFF;
             }
@@ -116,8 +116,8 @@ namespace WorldServer.core.objects
                 else
                     Size = Random.Shared.Next(Size + 100, Size + 200);
 
-                MaximumHP = MaximumHP * 2;
-                HP = MaximumHP;
+                MaxHealth = MaxHealth * 2;
+                Health = MaxHealth;
                 Defense += 5;
                 GlowEnemy = 0x4B0082;
             }
@@ -146,11 +146,11 @@ namespace WorldServer.core.objects
 
                 var effDmg = dmgd;
 
-                if (effDmg > HP)
-                    effDmg = HP;
+                if (effDmg > Health)
+                    effDmg = Health;
 
                 if (!HasConditionEffect(ConditionEffectIndex.Invulnerable))
-                    HP -= effDmg;
+                    Health -= effDmg;
 
                 ApplyConditionEffect(effs);
                 World.BroadcastIfVisible(new DamageMessage()
@@ -158,14 +158,14 @@ namespace WorldServer.core.objects
                     TargetId = Id,
                     Effects = 0,
                     DamageAmount = effDmg,
-                    Kill = HP < 0,
+                    Kill = Health < 0,
                     BulletId = 0,
                     ObjectId = from.Id
                 }, this);
 
                 DamageCounter?.HitBy(from, effDmg);
 
-                if (HP < 0 && World != null)
+                if (Health < 0 && World != null)
                     Death(ref time);
 
                 return effDmg;
@@ -199,14 +199,14 @@ namespace WorldServer.core.objects
             if (pos == null)
                 pos = new Position() { X = X, Y = Y };
 
-            if (HP == 0 && !Dead)
+            if (Health == 0 && !Dead)
                 Death(ref time);
 
             if (HasConditionEffect(ConditionEffectIndex.Bleeding))
             {
                 if (bleeding > 1)
                 {
-                    HP -= (int)bleeding;
+                    Health -= (int)bleeding;
                     bleeding -= (int)bleeding;
                 }
 
@@ -220,9 +220,10 @@ namespace WorldServer.core.objects
         {
             if (player == null || player.World == null || player.Client == null)
                 return;
-            if (Random.Shared.NextDouble() < 0.3 && player.ApplyEffectCooldown(slot))
+
+            if (Random.Shared.NextDouble() < 0.3 && player.CanApplySlotEffect(slot))
             {
-                player.SetCooldownTime(4, slot);
+                player.SetSlotEffectCooldown(4, slot);
 
                 ApplyConditionEffect(ConditionEffectIndex.Curse, 5000);
 
@@ -297,7 +298,7 @@ namespace WorldServer.core.objects
                 if (!player.HasConditionEffect(ConditionEffectIndex.Sick))
                     ActivateHealHp(player, 50);
 
-                if (player.HP < player.MaximumHP && enemies.Count > 0)
+                if (player.Health < player.MaxHealth && enemies.Count > 0)
                 {
                     for (var i = 0; i < 5; i++)
                     {
@@ -320,8 +321,8 @@ namespace WorldServer.core.objects
                 return;
 
             var maxHp = player.Stats[0];
-            var newHp = Math.Min(maxHp, player.HP + amount);
-            if (newHp == player.HP)
+            var newHp = Math.Min(maxHp, player.Health + amount);
+            if (newHp == player.Health)
                 return;
 
             player.World.BroadcastIfVisible(new ShowEffect()
@@ -334,10 +335,10 @@ namespace WorldServer.core.objects
             {
                 Color = new ARGB(0xff00ff00),
                 ObjectId = player.Id,
-                Message = "+" + (newHp - player.HP)
+                Message = "+" + (newHp - player.Health)
             }, player);
 
-            player.HP = newHp;
+            player.Health = newHp;
         }
 
         public void Electrify(Player player, int slot, ref TickTime time, Entity firstHit)

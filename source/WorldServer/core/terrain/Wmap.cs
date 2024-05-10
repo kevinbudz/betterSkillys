@@ -171,8 +171,8 @@ namespace WorldServer.core.terrain
                         switch (kv[0])
                         {
                             case "hp":
-                                (entity as Enemy).HP = Utils.GetInt(kv[1]);
-                                (entity as Enemy).MaximumHP = (entity as Enemy).HP;
+                                (entity as Enemy).Health = Utils.GetInt(kv[1]);
+                                (entity as Enemy).MaxHealth = (entity as Enemy).Health;
                                 break;
 
                             case "name":

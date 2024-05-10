@@ -60,7 +60,7 @@ namespace WorldServer.core.objects
                 return;
             }
 
-            if (moveTickId > PlayerUpdate.TickId)
+            if (moveTickId > TickId)
             {
                 Client.Disconnect("[NewTick -> Move] Invalid tickId");
                 return;

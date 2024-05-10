@@ -46,9 +46,9 @@ namespace WorldServer.core.objects
             {
                 int dmg = (int)Client.Random.NextIntRange((uint)tileDesc.MinDamage, (uint)tileDesc.MaxDamage);
 
-                HP -= dmg;
+                Health -= dmg;
 
-                if (HP <= 0)
+                if (Health <= 0)
                 {
                     Death(tileDesc.ObjectId, tile.Spawned);
                     return;
@@ -58,7 +58,7 @@ namespace WorldServer.core.objects
                 {
                     TargetId = Id,
                     DamageAmount = dmg,
-                    Kill = HP <= 0,
+                    Kill = Health <= 0,
                 }, this, this);
                 anticheat = true;
             }
@@ -86,9 +86,9 @@ namespace WorldServer.core.objects
                 {
                     int dmg = (int)Client.Random.NextIntRange((uint)tileDesc.MinDamage, (uint)tileDesc.MaxDamage);
 
-                    HP -= dmg;
+                    Health -= dmg;
 
-                    if (HP <= 0)
+                    if (Health <= 0)
                     {
                         Death(tileDesc.ObjectId, tile.Spawned);
                         return;
@@ -98,7 +98,7 @@ namespace WorldServer.core.objects
                     {
                         TargetId = Id,
                         DamageAmount = dmg,
-                        Kill = HP <= 0,
+                        Kill = Health <= 0,
                     }, this, this);
 
                     l = time.TotalElapsedMs;
