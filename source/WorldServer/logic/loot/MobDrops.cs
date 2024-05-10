@@ -187,7 +187,7 @@ namespace WorldServer.logic.loot
     {
         public SeasonalThreshold(string season, double threshold, params MobDrops[] children)
         {
-            if(!GameServer.InSeason(season)) 
+            if(!TimeOfYear.InSeason(season)) 
                 return;
 
             foreach (var i in children)

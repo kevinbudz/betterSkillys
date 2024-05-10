@@ -112,8 +112,7 @@ namespace WorldServer.logic.loot
 
             if (enemy.ObjectDesc.HealthBarBoss == true)
             {
-                if (GameServer.CurrentMonth == 12 ||
-                    GameServer.CurrentMonth == 1)
+                if (TimeOfYear.CurrentMonth == 12 || TimeOfYear.CurrentMonth == 1)
                 {
                     list.Add(new LootDef("Frost Citadel Armor", 0.01, 0.01));
                     list.Add(new LootDef("Frost Drake Hide Armor", 0.01, 0.01));

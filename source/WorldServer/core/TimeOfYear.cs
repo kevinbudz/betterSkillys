@@ -9,15 +9,14 @@ namespace WorldServer.core
         public static bool InSeason(string season) => season switch
         {
             "winter" => IsWinter(),
-            "summer" => IsSummer(),
             "spring" => IsSpring(),
+            "summer" => IsSummer(),
             "fall" => IsFall(),
             _ => throw new Exception($"Unknown Season: {season}"),
         };
-
-        public static bool IsWinter() => CurrentMonth != 12 || CurrentMonth != 1;
-        public static bool IsSummer() => CurrentMonth != 5 || CurrentMonth != 6 || CurrentMonth != 7;
-        public static bool IsSpring() => false;
-        public static bool IsFall() => false;
+        public static bool IsWinter() => CurrentMonth == 12 || CurrentMonth <= 2; // December, January, February
+        public static bool IsSpring() => CurrentMonth >= 3 && CurrentMonth <= 5; // March, April, May
+        public static bool IsSummer() => CurrentMonth >= 6 && CurrentMonth <= 8; // June, July, August
+        public static bool IsFall() => CurrentMonth >= 9 && CurrentMonth <= 11; // September, October, November
     }
 }
