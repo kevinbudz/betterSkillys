@@ -84,9 +84,9 @@ namespace WorldServer.core.miscfile
                 enemy = entity as Enemy;
 
             var displayenemy =
-                  enemy.Legendary ? $"Legendary {entity.ObjectDesc.DisplayId ?? entity.ObjectDesc.IdName}" :
-                  enemy.Epic ? $"Epic {entity.ObjectDesc.DisplayId ?? entity.ObjectDesc.IdName}" :
-                  enemy.Rare ? $"Rare {entity.ObjectDesc.DisplayId ?? entity.ObjectDesc.IdName}" :
+                  enemy.IsLegendary ? $"Legendary {entity.ObjectDesc.DisplayId ?? entity.ObjectDesc.IdName}" :
+                  enemy.IsEpic ? $"Epic {entity.ObjectDesc.DisplayId ?? entity.ObjectDesc.IdName}" :
+                  enemy.IsRare ? $"Rare {entity.ObjectDesc.DisplayId ?? entity.ObjectDesc.IdName}" :
                   entity.ObjectDesc.DisplayId ?? entity.ObjectDesc.IdName;
 
             name = displayenemy;

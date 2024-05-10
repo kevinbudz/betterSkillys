@@ -46,7 +46,7 @@ namespace WorldServer.logic.behaviors
                     return;
 
                 var enemy = host as Enemy;
-                var enemyClasified = enemy.Legendary ? 50 : enemy.Epic ? 25 : enemy.Rare ? 10 : 0;
+                var enemyClasified = enemy.IsLegendary ? 50 : enemy.IsEpic ? 25 : enemy.IsRare ? 10 : 0;
                 var player = host.AttackTarget ?? host.GetNearestEntity(range, true);
 
                 if (player != null || fixedAngle != null)

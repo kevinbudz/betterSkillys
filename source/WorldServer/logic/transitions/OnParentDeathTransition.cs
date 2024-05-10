@@ -1,7 +1,5 @@
 ﻿using WorldServer.core.objects;
 using WorldServer.core.worlds;
-using WorldServer.logic;
-using WorldServer.utils;
 
 namespace WorldServer.logic.transitions
 {
@@ -24,8 +22,7 @@ namespace WorldServer.logic.transitions
                 var enemyHost = host as Enemy;
                 if (enemyHost.ParentEntity != null)
                 {
-                    (host as Enemy).ParentEntity.OnDeath +=
-                         (sender, e) => parentDead = true;
+                    (host as Enemy).ParentEntity.OnDeath += (sender, e) => parentDead = true;
                 }
             }
 

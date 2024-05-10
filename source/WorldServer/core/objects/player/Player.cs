@@ -233,7 +233,8 @@ namespace WorldServer.core.objects
 			set => _partyId.SetValue(value);
         }
 
-        public Player(Client client) : base(client.GameServer, client.Character.ObjectType)
+        public Player(Client client)
+            : base(client.GameServer, client.Character.ObjectType)
         {
             Client = client;
          
@@ -271,7 +272,7 @@ namespace WorldServer.core.objects
             UpgradeEnabled = character.UpgradeEnabled;
 
             Name = account.Name;
-            Health = character.HP;
+            Health = character.Health;
 
             XPBoostTime = character.XPBoostTime;
             LDBoostTime = character.LDBoostTime;
@@ -299,9 +300,7 @@ namespace WorldServer.core.objects
             MagicPotionStack = new PotionStack(this, 255, 0x0A23, count: character.MagicStackCount, settings.MaxStackablePotions);
             PotionStacks = [HealthPotionStack, MagicPotionStack];
 
-            if (character.Datas == null)
-                character.Datas = new ItemData[28];
-
+            character.Datas ??= new ItemData[28];
             Inventory = new Inventory(this, Utils.ResizeArray(character.Items.Select(_ => (_ == 0xffff || !gameData.Items.ContainsKey(_)) ? null : gameData.Items[_]).ToArray(), 28), Utils.ResizeArray(Client.Character.Datas, 28));
             Inventory.InventoryChanged += (sender, e) => Stats.ReCalculateValues();
             SlotTypes = Utils.ResizeArray(gameData.Classes[ObjectType].SlotTypes, 28);
@@ -492,7 +491,7 @@ namespace WorldServer.core.objects
             chr.Level = Level;
             chr.Experience = Experience;
             chr.Fame = Fame;
-            chr.HP = Health <= 0 ? 1 : Health;
+            chr.Health = Health <= 0 ? 1 : Health;
             chr.MP = Mana;
             chr.Stats = Stats.Base.GetStats();
             chr.Tex1 = Texture1;
@@ -907,60 +906,6 @@ namespace WorldServer.core.objects
                 World.ForeachPlayer(_ => _.DeathNotif(deathMessage));
         }
 
-        private void Clarification(int slot)
-        {
-            if (Random.Shared.NextDouble() < 0.1 && CanApplySlotEffect(slot))
-            {
-                World.BroadcastIfVisible(new ShowEffect()
-                {
-                    EffectType = EffectType.AreaBlast,
-                    TargetObjectId = Id,
-                    Color = new ARGB(0xff00A6FF),
-                    Pos1 = new Position() { X = 3 }
-                }, this);
-
-                World.BroadcastIfVisible(new Notification()
-                {
-                    Message = "Clarification!",
-                    Color = new ARGB(0xFF00A6FF),
-                    PlayerId = Id,
-                    ObjectId = Id
-                }, this);
-
-                ActivateHealMp(this, 30 * Stats[1] / 100);
-                SetSlotEffectCooldown(10, slot);
-            }
-        }
-
-        private void EternalEffects(Item item, int slot)
-        {
-            if (item.MonkeyKingsWrath)
-            {
-                if (Random.Shared.NextDouble() < .5 && CanApplySlotEffect(slot))// 50 % chance
-                {
-                    Size = 100;
-                    SetSlotEffectCooldown(10, slot);
-                    World.BroadcastIfVisible(new ShowEffect()
-                    {
-                        EffectType = EffectType.AreaBlast,
-                        TargetObjectId = Id,
-                        Color = new ARGB(0xFF98ff98),
-                        Pos1 = new Position() { X = 3 }
-                    }, this);
-
-                    World.BroadcastIfVisible(new Notification()
-                    {
-                        Message = "Monkey King's Wrath!",
-                        Color = new ARGB(0xFF98ff98),
-                        PlayerId = Id,
-                        ObjectId = Id
-                    }, this);
-                    //TO BE DECIDED
-                    Size = 300;
-                }
-            }
-        }
-
         private void GenerateGravestone(bool phantomDeath = false)
         {
             var playerDesc = GameServer.Resources.GameData.Classes[ObjectType];
@@ -1001,54 +946,6 @@ namespace WorldServer.core.objects
             obj.Move(X, Y);
             obj.Name = (!phantomDeath) ? deathMessage : $"{Name} got rekt";
             World.EnterWorld(obj);
-        }
-
-        private void GodBless(int slot)
-        {
-            if (Random.Shared.NextDouble() < 0.07 && CanApplySlotEffect(slot))
-            {
-                World.BroadcastIfVisible(new ShowEffect()
-                {
-                    EffectType = EffectType.AreaBlast,
-                    TargetObjectId = Id,
-                    Color = new ARGB(0xffA1A1A1),
-                    Pos1 = new Position() { X = 3 }
-                }, this);
-                World.BroadcastIfVisible(new Notification()
-                {
-                    Message = "God Bless!",
-                    Color = new ARGB(0xFFFFFFFF),
-                    PlayerId = Id,
-                    ObjectId = Id
-                }, this);
-
-                ApplyConditionEffect(ConditionEffectIndex.Invulnerable, 3000);
-                SetSlotEffectCooldown(10, slot);
-            }
-        }
-
-        private void GodTouch(int slot)
-        {
-            if (Random.Shared.NextDouble() < 0.02 && CanApplySlotEffect(slot))
-            {
-                ActivateHealHp(this, 25 * Stats[0] / 100);
-                World.BroadcastIfVisible(new ShowEffect()
-                {
-                    EffectType = EffectType.AreaBlast,
-                    TargetObjectId = Id,
-                    Color = new ARGB(0xffffffff),
-                    Pos1 = new Position() { X = 3 }
-                }, this);
-
-                World.BroadcastIfVisible(new Notification()
-                {
-                    Message = "God Touch!",
-                    Color = new ARGB(0xFFFFFFFF),
-                    PlayerId = Id,
-                    ObjectId = Id
-                }, this);
-                SetSlotEffectCooldown(30, slot);
-            }
         }
 
         private double HealthRegenCarry;
@@ -1092,86 +989,6 @@ namespace WorldServer.core.objects
             }
         }
 
-        private void LegendaryEffects(Item item, int slot)
-        {
-            var Slot = slot;
-
-            if (item.OutOfOneMind)
-            {
-                if (Random.Shared.NextDouble() < 0.02 && CanApplySlotEffect(Slot))
-                {
-                    World.BroadcastIfVisible(new Notification()
-                    {
-                        Message = "Out of One's Mind!",
-                        Color = new ARGB(0xFF00D5D8),
-                        PlayerId = Id,
-                        ObjectId = Id
-                    }, this);
-
-                    ApplyConditionEffect(ConditionEffectIndex.Berserk, 3000);
-                    SetSlotEffectCooldown(10, Slot);
-                }
-            }
-
-            if (item.SteamRoller)
-            {
-                if (Random.Shared.NextDouble() < 0.05 && CanApplySlotEffect(Slot))
-                {
-                    World.BroadcastIfVisible(new Notification()
-                    {
-                        Message = "Steam Roller!",
-                        Color = new ARGB(0xFF717171),
-                        PlayerId = Id,
-                        ObjectId = Id
-                    }, this);
-
-                    ApplyConditionEffect(ConditionEffectIndex.Armored, 5000);
-                    SetSlotEffectCooldown(10, Slot);
-                }
-            }
-
-            if (item.Mutilate)
-            {
-                if (Random.Shared.NextDouble() < 0.08 && CanApplySlotEffect(Slot))
-                {
-                    World.BroadcastIfVisible(new Notification()
-                    {
-                        Message = "Mutilate!",
-                        Color = new ARGB(0xFFFF4600),
-                        PlayerId = Id,
-                        ObjectId = Id
-                    }, this);
-
-                    ApplyConditionEffect(ConditionEffectIndex.Damaging, 3000);
-                    SetSlotEffectCooldown(10, Slot);
-                }
-            }
-        }
-
-        private void MonkeyKingsWrath(int slot)
-        {
-            if (Random.Shared.NextDouble() < .5 && CanApplySlotEffect(slot))// 50 % chance
-            {
-                World.BroadcastIfVisible(new ShowEffect()
-                {
-                    EffectType = EffectType.AreaBlast,
-                    TargetObjectId = Id,
-                    Color = new ARGB(0xffff0000),
-                    Pos1 = new Position() { X = 3 }
-                }, this);
-
-                World.BroadcastIfVisible(new Notification()
-                {
-                    Message = "Monkey King's Wrath!",
-                    Color = new ARGB(0xFFFF0000),
-                    PlayerId = Id,
-                    ObjectId = Id
-                }, this);
-                Client.SendPacket(new GlobalNotificationMessage(0, "monkeyKing"));
-                SetSlotEffectCooldown(10, slot);
-            }
-        }
-
         private void ReconnectToNexus()
         {
             Health = Stats[0];
@@ -1205,94 +1022,6 @@ namespace WorldServer.core.objects
             return false;
         }
 
-        private void RevengeEffects(Item item, int slot)
-        {
-            if (item.Insanity)
-            {
-                if (Random.Shared.NextDouble() < 0.05 && CanApplySlotEffect(slot))
-                {
-                    World.BroadcastIfVisible(new Notification()
-                    {
-                        Message = "Insanity!",
-                        Color = new ARGB(0xFFFF0000),
-                        PlayerId = Id,
-                        ObjectId = Id
-                    }, this);
-
-                    SetSlotEffectCooldown(10, slot);
-                    ApplyConditionEffect(ConditionEffectIndex.Berserk, 3000);
-                    ApplyConditionEffect(ConditionEffectIndex.Damaging, 3000);
-                }
-            }
-
-            if (item.HolyProtection)
-            {
-                if (Random.Shared.NextDouble() < 0.1 && CanApplySlotEffect(slot))
-                {
-                    if (!(HasConditionEffect(ConditionEffectIndex.Quiet)
-                        || HasConditionEffect(ConditionEffectIndex.Weak)
-                        || HasConditionEffect(ConditionEffectIndex.Slowed)
-                        || HasConditionEffect(ConditionEffectIndex.Sick)
-                        || HasConditionEffect(ConditionEffectIndex.Dazed)
-                        || HasConditionEffect(ConditionEffectIndex.Stunned)
-                        || HasConditionEffect(ConditionEffectIndex.Blind)
-                        || HasConditionEffect(ConditionEffectIndex.Hallucinating)
-                        || HasConditionEffect(ConditionEffectIndex.Drunk)
-                        || HasConditionEffect(ConditionEffectIndex.Confused)
-                        || HasConditionEffect(ConditionEffectIndex.Paralyzed)
-                        || HasConditionEffect(ConditionEffectIndex.Bleeding)
-                        || HasConditionEffect(ConditionEffectIndex.Hexed)
-                        || HasConditionEffect(ConditionEffectIndex.Unstable)
-                        || HasConditionEffect(ConditionEffectIndex.Curse)
-                        || HasConditionEffect(ConditionEffectIndex.Petrify)
-                        || HasConditionEffect(ConditionEffectIndex.Darkness)))
-                        return;
-                    World.BroadcastIfVisible(new Notification()
-                    {
-                        Message = "Holy Protection!",
-                        Color = new ARGB(0xFFFFFFFF),
-                        PlayerId = Id,
-                        ObjectId = Id
-                    }, this);
-
-                    SetSlotEffectCooldown(7, slot);
-
-                    foreach (var effect in NegativeEffs)
-                        RemoveCondition(effect);
-                }
-            }
-
-            /* God Touch, God Bless in HitByProjectile */
-
-            /* Electrify in HitByProjectile (Enemy) */
-        }
-
-        private void SonicBlaster(int slot)
-        {
-            if (CanApplySlotEffect(slot))
-            {
-                World.BroadcastIfVisible(new ShowEffect()
-                {
-                    EffectType = EffectType.AreaBlast,
-                    TargetObjectId = Id,
-                    Color = new ARGB(0xff6F00C0),
-                    Pos1 = new Position() { X = 3 }
-                }, this);
-
-                World.BroadcastIfVisible(new Notification()
-                {
-                    Message = "Sonic Blaster!",
-                    Color = new ARGB(0xFF9300FF),
-                    PlayerId = Id,
-                    ObjectId = Id
-                }, this);
-
-                ApplyConditionEffect(ConditionEffectIndex.Invisible, 4000);
-                ApplyConditionEffect(ConditionEffectIndex.Speedy, 4000);
-                SetSlotEffectCooldown(30, slot);
-            }
-        }
-
         private void SpawnPetIfAttached(World owner)
         {
             // despawn old pet if found
@@ -1311,47 +1040,6 @@ namespace WorldServer.core.objects
                 //owner.EnterWorld(pet);
                 //pet.SetDefaultSize(pet.ObjectDesc.Size);
                 //Pet = pet;
-            }
-        }
-
-        private void TryApplySpecialEffects()
-        {
-            for (var slot = 0; slot < 4; slot++)
-            {
-                var item = Inventory[slot];
-                if (item == null || !item.Legendary && !item.Mythical)
-                    continue;
-
-                if (item.Lucky)
-                {
-                    if (Random.Shared.NextDouble() < 0.1 && CanApplySlotEffect(slot))
-                    {
-                        SetSlotEffectCooldown(20, slot);
-                        for (var j = 0; j < 8; j++)
-                            Stats.Boost.ActivateBoost[j].Push(j == 0 || j == 1 ? 100 : 15, false);
-                        Stats.ReCalculateValues();
-                        World.StartNewTimer(5000, (world, t) =>
-                        {
-                            for (var i = 0; i < 8; i++)
-                                Stats.Boost.ActivateBoost[i].Pop(i == 0 || i == 1 ? 100 : 15, false);
-                            Stats.ReCalculateValues();
-                        });
-
-                        World.BroadcastIfVisible(new Notification()
-                        {
-                            Message = "Boosted!",
-                            Color = new ARGB(0xFF00FF00),
-                            PlayerId = Id,
-                            ObjectId = Id
-                        }, this);
-                    }
-                }
-
-                if (item.Mythical)
-                    RevengeEffects(item, slot);
-
-                if (item.Legendary)
-                    LegendaryEffects(item, slot);
             }
         }
 

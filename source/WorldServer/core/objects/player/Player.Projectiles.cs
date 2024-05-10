@@ -116,21 +116,7 @@ namespace WorldServer.core.objects
 
             // todo validate hit position
 
-            for (var i = 0; i < 4; i++)
-            {
-                var item = Inventory[i];
-                if (item == null || !item.Legendary && !item.Mythical)
-                    continue;
-
-                if (item.MonkeyKingsWrath)
-                    MonkeyKingsWrath(i);
-                if (item.GodTouch)
-                    GodTouch(i);
-                if (item.GodBless)
-                    GodBless(i);
-                if (item.Clarification)
-                    Clarification(i);
-            }
+            TryAddOnPlayerHitEffect();
 
             var dmg = StatsManager.DamageWithDefense(this, projectile.Damage, projectileDesc.ArmorPiercing, Stats[3]);
             Health -= dmg;
@@ -198,21 +184,7 @@ namespace WorldServer.core.objects
                 var dmg = StatsManager.DamageWithDefense(entity, projectile.Damage, projectileDesc.ArmorPiercing, entity.Defense);
                 entity.Health -= dmg;
 
-                for (var i = 0; i < 4; i++)
-                {
-                    var item = player.Inventory[i];
-                    if (item == null || !item.Legendary && !item.Mythical)
-                        continue;
-
-                    if (item.Demonized)
-                        entity.Demonized(player, i);
-
-                    if (item.Vampiric)
-                        entity.VampireBlast(player, i, ref tickTime, entity, projectileDesc.MultiHit);
-
-                    if (item.Electrify)
-                        entity.Electrify(player, i, ref tickTime, entity);
-                }
+                TryAddOnEnemyHitEffect(ref tickTime, entity, projectileDesc);
 
                 entity.ApplyConditionEffect(projectileDesc.Effects);
 

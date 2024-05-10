@@ -368,7 +368,7 @@ namespace Shared.database
                     playerDesc.Stats[6].StartingValue,
                     playerDesc.Stats[7].StartingValue,
                 },
-                HP = playerDesc.Stats[0].StartingValue,
+                Health = playerDesc.Stats[0].StartingValue,
                 MP = playerDesc.Stats[1].StartingValue,
                 Tex1 = 0,
                 Tex2 = 0,

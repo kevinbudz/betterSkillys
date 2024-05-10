@@ -1083,15 +1083,18 @@ namespace WorldServer.core.objects
 
         private void AEMagic(TickTime time, Item item, Position target, ActivateEffect eff)
         {
-            for (var i = 0; i < 4; i++)
+            for (var slot = 0; slot < 4; slot++)
             {
-                var item1 = Inventory[i];
+                if (!CanApplySlotEffect(slot))
+                    continue;
+
+                var item1 = Inventory[slot];
                 if (item1 == null || !item1.Legendary && !item1.Mythical)
                     continue;
 
                 if (item1.SonicBlaster)
                 {
-                    SonicBlaster(i);
+                    SonicBlaster(slot);
                     break;
                 }
             }

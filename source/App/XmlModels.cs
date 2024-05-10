@@ -393,7 +393,7 @@ namespace App
                 Dexterity = character.Stats[5],
                 HpRegen = character.Stats[6],
                 MpRegen = character.Stats[7],
-                HitPoints = character.HP,
+                HitPoints = character.Health,
                 MagicPoints = character.MP,
                 Tex1 = character.Tex1,
                 Tex2 = character.Tex2,

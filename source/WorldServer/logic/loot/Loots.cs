@@ -204,9 +204,9 @@ namespace WorldServer.logic.loot
                     continue;
 
                 double enemyBoost = 0;
-                if (enemy.Rare) enemyBoost = .25;
-                if (enemy.Epic) enemyBoost = .5;
-                if (enemy.Legendary) enemyBoost = .75;
+                if (enemy.IsRare) enemyBoost = .25;
+                if (enemy.IsEpic) enemyBoost = .5;
+                if (enemy.IsLegendary) enemyBoost = .75;
 
                 var dmgBoost = Math.Round(tupPlayer.Item2 / (double)enemy.DamageCounter.TotalDamage, 4);
                 var ldBoost = player.LDBoostTime > 0 ? 0.25 : 0;

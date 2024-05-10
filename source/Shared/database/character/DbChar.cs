@@ -25,7 +25,7 @@ namespace Shared.database.character
         public int FinalFame { get => GetValue<int>("finalFame"); set => SetValue("finalFame", value); }
         public bool HasBackpack { get => GetValue<bool>("hasBackpack"); set => SetValue("hasBackpack", value); }
         public int HealthStackCount { get => GetValue<int>("hpPotCount"); set => SetValue("hpPotCount", value); }
-        public int HP { get => GetValue<int>("hp"); set => SetValue("hp", value); }
+        public int Health { get => GetValue<int>("hp"); set => SetValue("hp", value); }
         public ushort[] Items { get => GetValue<ushort[]>("items"); set => SetValue("items", value); }
         public ItemData[] Datas { get => GetValue<ItemData[]>("datas"); set => SetValue("datas", value); }
         public DateTime LastSeen { get => GetValue<DateTime>("lastSeen"); set => SetValue("lastSeen", value); }

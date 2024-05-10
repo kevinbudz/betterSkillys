@@ -54,7 +54,7 @@ namespace WorldServer.logic.behaviors
             {
                 var entity = _radius == 0 ? null : Host.GetNearestEntity((float)_radius, null, _seeInvis);
                 var enemy = Host as Enemy;
-                var enemyClasified = enemy.Legendary ? 50 : enemy.Epic ? 25 : enemy.Rare ? 10 : 0;
+                var enemyClasified = enemy.IsLegendary ? 50 : enemy.IsEpic ? 25 : enemy.IsRare ? 10 : 0;
 
                 if (_radius == 0)
                 {
