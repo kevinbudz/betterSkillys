@@ -4,7 +4,7 @@ using WorldServer.core.terrain;
 
 namespace WorldServer.core.worlds.impl
 {
-    public class TestWorld : World
+    public sealed class TestWorld : World
     {
         public TestWorld(GameServer gameServer, int id, WorldResource resource) 
             : base(gameServer, id, resource)

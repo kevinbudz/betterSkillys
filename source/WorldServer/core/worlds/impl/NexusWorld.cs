@@ -29,7 +29,7 @@ namespace WorldServer.core.worlds.impl
         private readonly List<MerchantData> _activeStorePoints = new List<MerchantData>();
 
         public RealmPortalMonitor PortalMonitor { get; private set; }
-        public bool MarketEnabled { get; private set; } = true;
+        public bool MarketEnabled { get; set; } = true;
 
         public NexusWorld(GameServer gameServer, int id, WorldResource resource) 
             : base(gameServer, id, resource)

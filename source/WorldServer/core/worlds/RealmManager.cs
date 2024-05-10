@@ -344,7 +344,7 @@ namespace WorldServer.core.worlds
                 case RealmState.Emptying:
                     {
                         BroadcastMsg("RAAHH MY TROOPS HAVE FAILED ME!");
-                        BroadcastMsg("THIS KINGDOM SHALL NOT FALL!!");
+                        BroadcastMsg("THIS REALM SHALL NOT FALL!!");
 
                         CurrentState = RealmState.DoNothing;
 

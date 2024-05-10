@@ -1,11 +1,10 @@
 ﻿using Shared.resources;
 using WorldServer.core.objects;
-using WorldServer.core.setpieces;
 using WorldServer.networking;
 
 namespace WorldServer.core.worlds.impl
 {
-    public class RealmWorld : World
+    public sealed class RealmWorld : World
     {
         public bool Closed { get; private set; }
         public RealmManager RealmManager { get; private set; }
@@ -43,7 +42,6 @@ namespace WorldServer.core.worlds.impl
             if (!enemy.Spawned)
                 RealmManager.OnEnemyKilled(enemy, killer);
         }
-
 
         public bool CloseRealm()
         {
