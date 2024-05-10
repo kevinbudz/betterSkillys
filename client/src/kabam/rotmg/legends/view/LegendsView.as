@@ -20,39 +20,39 @@ import kabam.rotmg.legends.model.Legend;
    import kabam.rotmg.legends.model.Timespan;
    import kabam.rotmg.ui.view.components.ScreenBase;
    import org.osflash.signals.Signal;
-   
+
    public class LegendsView extends Sprite
    {
-       
-      
+
+
       public const timespanChanged:Signal = new Signal(Timespan);
-      
+
       public const showDetail:Signal = new Signal(Legend);
-      
+
       public const close:Signal = new Signal();
-      
+
       private const items:Vector.<LegendListItem> = new Vector.<LegendListItem>(0);
-      
+
       private const tabs:Object = {};
-      
+
       private var title:SimpleText;
-      
+
       private var loadingBanner:SimpleText;
-      
+
       private var mainContainer:Sprite;
 
       private var closeButton:TitleMenuOption;
-      
+
       private var scrollBar:Scrollbar;
-      
+
       private var listContainer:Sprite;
-      
+
       private var selectedTab:LegendsTab;
-      
+
       private var legends:Vector.<Legend>;
-      
+
       private var count:int;
-      
+
       public function LegendsView()
       {
          super();
@@ -66,12 +66,12 @@ import kabam.rotmg.legends.model.Legend;
          this.makeTimespanTabs();
          this.makeCloseButton();
       }
-      
+
       private function makeScreenBase() : void
       {
          addChild(new ScreenBase());
       }
-      
+
       private function makeTitleText() : void
       {
          this.title = new SimpleText(32,11776947,false,0,0);
@@ -83,7 +83,7 @@ import kabam.rotmg.legends.model.Legend;
          this.title.y = 24;
          addChild(this.title);
       }
-      
+
       private function makeLoadingBanner() : void
       {
          this.loadingBanner = new SimpleText(22,11776947,false,0,0);
@@ -96,7 +96,7 @@ import kabam.rotmg.legends.model.Legend;
          this.loadingBanner.visible = false;
          addChild(this.loadingBanner);
       }
-      
+
       private function makeMainContainer() : void
       {
          var shape:Shape = null;
@@ -106,13 +106,13 @@ import kabam.rotmg.legends.model.Legend;
          g.drawRect(0,0,LegendListItem.WIDTH,430);
          g.endFill();
          this.mainContainer = new Sprite();
-         this.mainContainer.x = 10;
+         this.mainContainer.x = 100;
          this.mainContainer.y = 110;
          this.mainContainer.addChild(shape);
          this.mainContainer.mask = shape;
          addChild(this.mainContainer);
       }
-      
+
       private function makeScreenGraphic() : void
       {
          var box:Sprite = new Sprite();
@@ -123,7 +123,7 @@ import kabam.rotmg.legends.model.Legend;
          b.endFill();
          addChild(box);
       }
-      
+
       private function makeLines() : void
       {
          var lines:Shape = new Shape();
@@ -133,7 +133,7 @@ import kabam.rotmg.legends.model.Legend;
          g.moveTo(0,100);
          g.lineTo(800,100);
       }
-      
+
       private function makeScrollbar() : void
       {
          this.scrollBar = new Scrollbar(16,400);
@@ -141,7 +141,7 @@ import kabam.rotmg.legends.model.Legend;
          this.scrollBar.y = 104;
          addChild(this.scrollBar);
       }
-      
+
       private function makeTimespanTabs() : void
       {
          var timespans:Vector.<Timespan> = Timespan.TIMESPANS;
@@ -151,7 +151,7 @@ import kabam.rotmg.legends.model.Legend;
             this.makeTab(timespans[i],i);
          }
       }
-      
+
       private function makeTab(timespan:Timespan, i:int) : LegendsTab
       {
          var tab:LegendsTab = null;
@@ -163,7 +163,7 @@ import kabam.rotmg.legends.model.Legend;
          addChild(tab);
          return tab;
       }
-      
+
       private function onTabSelected(tab:LegendsTab) : void
       {
          if(this.selectedTab != tab)
@@ -171,13 +171,13 @@ import kabam.rotmg.legends.model.Legend;
             this.updateTabAndSelectTimespan(tab);
          }
       }
-      
+
       private function updateTabAndSelectTimespan(tab:LegendsTab) : void
       {
          this.updateTabs(tab);
          this.timespanChanged.dispatch(this.selectedTab.getTimespan());
       }
-      
+
       private function updateTabs(selected:LegendsTab) : void
       {
          this.selectedTab && this.selectedTab.setIsSelected(false);
@@ -198,14 +198,14 @@ import kabam.rotmg.legends.model.Legend;
       {
          this.close.dispatch();
       }
-      
+
       public function clear() : void
       {
          this.listContainer && this.clearLegendsList();
          this.listContainer = null;
          this.scrollBar.visible = false;
       }
-      
+
       private function clearLegendsList() : void
       {
          var item:LegendListItem = null;
@@ -217,7 +217,7 @@ import kabam.rotmg.legends.model.Legend;
          this.mainContainer.removeChild(this.listContainer);
          this.listContainer = null;
       }
-      
+
       public function setLegendsList(timespan:Timespan, legends:Vector.<Legend>) : void
       {
          this.clear();
@@ -230,7 +230,7 @@ import kabam.rotmg.legends.model.Legend;
          this.mainContainer.addChild(this.listContainer);
          this.updateScrollbar();
       }
-      
+
       private function makeItemsFromLegends() : void
       {
          for(var i:int = 0; i < this.count; i++)
@@ -238,18 +238,18 @@ import kabam.rotmg.legends.model.Legend;
             this.items[i] = this.makeItemFromLegend(i);
          }
       }
-      
+
       private function makeItemFromLegend(index:int) : LegendListItem
       {
          var legend:Legend = this.legends[index];
          legend.place = index + 1;
          var item:LegendListItem = new LegendListItem(legend);
-         item.y = index * LegendListItem.HEIGHT;
+         item.y = index * LegendListItem.HEIGHT + (5 * index);
          item.selected.add(this.onItemSelected);
          this.listContainer.addChild(item);
          return item;
       }
-      
+
       private function updateScrollbar() : void
       {
          if(this.listContainer.height > 400)
@@ -265,7 +265,7 @@ import kabam.rotmg.legends.model.Legend;
             this.scrollBar.visible = false;
          }
       }
-      
+
       private function positionScrollbarToDisplayFocussedLegend() : void
       {
          var index:int = 0;
@@ -278,7 +278,7 @@ import kabam.rotmg.legends.model.Legend;
             this.scrollBar.setPos((position - 200) / (this.listContainer.height - 400));
          }
       }
-      
+
       private function getLegendFocus() : Legend
       {
          var focus:Legend = null;
@@ -293,22 +293,22 @@ import kabam.rotmg.legends.model.Legend;
          }
          return focus;
       }
-      
+
       private function onItemSelected(legend:Legend) : void
       {
          this.showDetail.dispatch(legend);
       }
-      
+
       private function onScrollBarChange(event:Event) : void
       {
          this.listContainer.y = -this.scrollBar.pos() * (this.listContainer.height - 400);
       }
-      
+
       public function showLoading() : void
       {
          this.loadingBanner.visible = true;
       }
-      
+
       public function hideLoading() : void
       {
          this.loadingBanner.visible = false;

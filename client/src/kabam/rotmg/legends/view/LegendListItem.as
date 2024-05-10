@@ -23,8 +23,8 @@ import kabam.rotmg.legends.model.Legend;
    public class LegendListItem extends Sprite
    {
 
-      public static const WIDTH:int = 770;
-      public static const HEIGHT:int = 70;
+      public static const WIDTH:int = 600;
+      public static const HEIGHT:int = 60;
        
       
       public const selected:Signal = new Signal(Legend);
@@ -45,8 +45,6 @@ import kabam.rotmg.legends.model.Legend;
       
       private var isOver:Boolean;
 
-      private var nameBackground:SliceScalingBitmap;
-      
       [inject]
       public var logger:ILogger;
       
@@ -54,7 +52,6 @@ import kabam.rotmg.legends.model.Legend;
       {
          super();
          this.legend = legend;
-         this.charBackground();
          this.makePlaceText();
          this.makeCharacterBitmap();
          this.makeNameText();
@@ -65,32 +62,22 @@ import kabam.rotmg.legends.model.Legend;
          this.draw();
       }
       
-      public function getLegend() : Legend
-      {
-         return this.legend;
-      }
-
-      private function charBackground():void{
-         this.nameBackground = TextureParser.instance.getSliceScalingBitmap("UI", "popup_header_title", 770);
-         addChild(this.nameBackground);
-      }
-      
       private function makePlaceText() : void
       {
          this.placeText = new SimpleText(22,this.getTextColor(),false,0,0);
          this.placeText.setBold(this.legend.place != -1);
-         this.placeText.text = this.legend.place == -1?"---":this.legend.place.toString() + ".";
+         this.placeText.text = this.legend.place == -1?"---":this.legend.place.toString();
          this.placeText.useTextDimensions();
          this.placeText.filters = [new DropShadowFilter(0,0,0,1,8,8)];
-         this.placeText.x = 82 - this.placeText.width;
-         this.placeText.y = HEIGHT / 2 - this.placeText.height / 2;
+         this.placeText.x = 20 - (this.placeText.width / 2);
+         this.placeText.y = 16;
          addChild(this.placeText);
       }
       
       private function makeCharacterBitmap() : void
       {
          this.characterBitmap = new Bitmap(this.legend.character);
-         this.characterBitmap.x = 104;
+         this.characterBitmap.x = 40;
          this.characterBitmap.y = HEIGHT / 2 - this.characterBitmap.height / 2 - 2;
          addChild(this.characterBitmap);
       }
@@ -102,7 +89,7 @@ import kabam.rotmg.legends.model.Legend;
          this.nameText.text = this.legend.name;
          this.nameText.useTextDimensions();
          this.nameText.filters = [new DropShadowFilter(0,0,0,1,8,8)];
-         this.nameText.x = 170;
+         this.nameText.x = 95;
          this.nameText.y = HEIGHT / 2 - this.nameText.height / 2;
          addChild(this.nameText);
       }
@@ -118,7 +105,7 @@ import kabam.rotmg.legends.model.Legend;
             interactiveItemTileIterator.setInteractive(false);
          }
          this.inventoryGrid.setItems(this.legend.equipment, this.legend.itemDatas_);
-         this.inventoryGrid.x = 400;
+         this.inventoryGrid.x = WIDTH / 2 - (this.inventoryGrid.width / 2) + 6;
          this.inventoryGrid.y = HEIGHT / 2 - Slot.HEIGHT / 2;
          addChild(this.inventoryGrid);
       }
@@ -130,8 +117,8 @@ import kabam.rotmg.legends.model.Legend;
          this.totalFameText.text = this.legend.totalFame.toString();
          this.totalFameText.useTextDimensions();
          this.totalFameText.filters = [new DropShadowFilter(0,0,0,1,8,8)];
-         this.totalFameText.x = 660 - this.totalFameText.width;
-         this.totalFameText.y = HEIGHT / 2 - this.totalFameText.height / 2;
+         this.totalFameText.x = 550 - this.totalFameText.width;
+         this.totalFameText.y = 16;
          addChild(this.totalFameText);
       }
       
@@ -139,26 +126,32 @@ import kabam.rotmg.legends.model.Legend;
       {
          var fameBD:BitmapData = AssetLibrary.getImageFromSet("lofiObj3",224);
          this.fameIcon = new Bitmap(TextureRedrawer.redraw(fameBD,40,true,0));
-         this.fameIcon.x = 652;
+         this.fameIcon.x = 542;
          this.fameIcon.y = HEIGHT / 2 - this.fameIcon.height / 2;
          addChild(this.fameIcon);
       }
-      
+
       private function getTextColor() : uint
       {
          var textColor:uint = 0;
-         if(this.legend.isOwnLegend)
+
+         if(this.legend.place == 1)
          {
-            textColor = 16564761;
+            textColor = 0xFFD700;
          }
-         else if(this.legend.place == 1)
+         else if (this.legend.place == 2)
          {
-            textColor = 16646031;
+            textColor = 0xC0C0C0;
+         }
+         else if (this.legend.place == 3)
+         {
+            textColor = 0xcd7f32;
          }
          else
          {
             textColor = 16777215;
          }
+
          return textColor;
       }
       
@@ -185,12 +178,31 @@ import kabam.rotmg.legends.model.Legend;
       {
          this.selected.dispatch(this.legend);
       }
-      
-      private function draw() : void
-      {
+
+      private function draw() : void {
+         var place:int;
+         if (this.legend.place == 1)
+         {
+            place = 0xFFD700;
+         }
+         else if (this.legend.place == 2)
+         {
+            place = 0xC0C0C0;
+         }
+         else if (this.legend.place == 3)
+         {
+            place = 0xcd7f32;
+         }
+         else
+         {
+            place = 0;
+         }
          graphics.clear();
-         graphics.beginFill(0,this.isOver?Number(0.4):Number(0.001));
+         graphics.beginFill(place,!!this.isOver?Number(0.3):Number(0.2));
          graphics.drawRect(0,0,WIDTH,HEIGHT);
+         graphics.endFill();
+         graphics.beginFill(0, 0.4);
+         graphics.drawCircle(20, 30, 15);
          graphics.endFill();
       }
    }

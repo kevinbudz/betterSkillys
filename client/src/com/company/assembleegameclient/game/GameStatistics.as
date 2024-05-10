@@ -55,7 +55,6 @@ public class GameStatistics extends Sprite {
    }
 
     private function init(e : Event) : void {
-
         addEventListener(Event.ENTER_FRAME, update);
     }
 
@@ -68,12 +67,15 @@ public class GameStatistics extends Sprite {
     }
 
     private var timer:uint = 0;
+    private var memTimer:uint = 0;
     private var fps:uint = 0;
     private var ms_prev:uint = 0;
+    private var mem_prev:uint = 0;
 
     private function update(e:Event) : void
     {
         timer = getTimer();
+        memTimer = getTimer();
 
         if (timer - 1000 > ms_prev)
         {
@@ -84,8 +86,11 @@ public class GameStatistics extends Sprite {
 
             fps = 0;
         }
-        if (timer - 5000 > ms_prev)
+        if (timer - 5000 > mem_prev)
+        {
+            mem_prev = timer;
             mem_.setText("MEM: " + Number((System.totalMemory * 0.000000954).toFixed(1)));
+        }
         fps++;
     }
 

@@ -67,7 +67,7 @@ public class WebMain extends Sprite {
         var startup:StartupSignal = this.context.injector.getInstance(StartupSignal);
         startup.dispatch();
         STAGE = stage;
-        stage.vsyncEnabled = false;
+        //stage.vsyncEnabled = false;
     }
 
     private function hackParameters():void {
