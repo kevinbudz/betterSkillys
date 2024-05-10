@@ -69,7 +69,7 @@ namespace WorldServer.core.worlds
                 var portal = (Portal)World.CreateNewEntity("Nexus Portal", pos.X + 0.5f, pos.Y + 0.5f);
                 portal.WorldInstance = world;
                 portal.Name = world.GetDisplayName() + $" (0/{MAX_PER_REALM})";
-                portal.SetDefaultSize(80);
+                portal.Size = 80;
 
                 Portals.Add(world.Id, portal);
             }

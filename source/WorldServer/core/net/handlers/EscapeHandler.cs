@@ -1,6 +1,4 @@
-﻿using System;
-using System.Runtime.InteropServices.Marshalling;
-using Shared;
+﻿using Shared;
 using Shared.resources;
 using WorldServer.core.worlds;
 using WorldServer.networking;
@@ -18,11 +16,11 @@ namespace WorldServer.core.net.handlers
                 return;
 
             var map = client.Player.World;
-            //if (map.Id == World.NEXUS_ID)
-            //{
-            //    client.Disconnect("Already in Nexus!");
-            //    return;
-            //}
+            if (map.Id == World.NEXUS_ID)
+            {
+                client.Disconnect("Already in Nexus!");
+                return;
+            }
 
             //client.Player.SendInfo("You issued a nexus, if you die its because you dont see this");
             client.Player.ApplyPermanentConditionEffect(ConditionEffectIndex.Invincible);

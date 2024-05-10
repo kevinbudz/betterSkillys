@@ -272,7 +272,7 @@ namespace WorldServer.core.commands
                         }
 
                         if (size != null)
-                            enemy.SetDefaultSize(size.Value);
+                            enemy.Size = size.Value;
 
                         if (target == true)
                             enemy.AttackTarget = player;

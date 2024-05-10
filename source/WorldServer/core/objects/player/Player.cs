@@ -32,6 +32,7 @@ namespace WorldServer.core.objects
     {
         public Client Client { get; private set; }
 
+        public bool ShowDeltaTimeLog { get; set; }
         public PotionStack[] PotionStacks { get; private set; }
         public PotionStack HealthPotionStack { get; private set; }
         public PotionStack MagicPotionStack { get; private set; }
@@ -59,7 +60,7 @@ namespace WorldServer.core.objects
         private double _breath;
 
         private int[] _slotEffectCooldowns = new int[4];
-        private int _originalSkin;
+
 
         public StatsManager Stats;
         public bool Muted { get; set; }
@@ -280,8 +281,8 @@ namespace WorldServer.core.objects
             var s = (ushort)character.Skin;
             if (gameData.Skins.ContainsKey(s))
             {
-                SetDefaultSkin(s);
-                SetDefaultSize(gameData.Skins[s].Size);
+                Skin = character.Skin;
+                Size = gameData.Skins[s].Size;
             }
 
             var guild = GameServer.Database.GetGuild(account.GuildId);
@@ -357,35 +358,6 @@ namespace WorldServer.core.objects
                 Death(src.ObjectDesc.DisplayId ?? src.ObjectDesc.IdName, src.Spawned);
         }
 
-        public void Death(string killer, bool rekt = false)
-        {
-            if (Client.State == ProtocolState.Disconnected || Dead)
-                return;
-            Dead = true;
-
-            if (rekt)
-            {
-                GenerateGravestone(true);
-                ReconnectToNexus();
-                return;
-            }
-
-            if (Resurrection())
-                return;
-
-            if (TestWorld(killer))
-                return;
-
-            SaveToCharacter();
-            GameServer.Database.Death(GameServer.Resources.GameData, Client.Account, Client.Character, FameCounter.Stats, killer);
-
-            GenerateGravestone();
-            AnnounceDeath(killer);
-
-            Client.SendPacket(new DeathMessage(AccountId, Client.Character.CharId, killer));
-            Client.Disconnect("Death");
-        }
-
         public int GetCurrency(CurrencyType currency)
         {
             switch (currency)
@@ -424,41 +396,6 @@ namespace WorldServer.core.objects
             InitializeUpdate();
         }
 
-        public void HandleIO(ref TickTime time)
-        {
-            while (IncomingMessages.TryDequeue(out var incomingMessage))
-            {
-                if (incomingMessage.Client.State == ProtocolState.Disconnected)
-                    break;
-
-                var handler = MessageHandlers.GetHandler(incomingMessage.MessageId);
-                if (handler == null)
-                {
-                    incomingMessage.Client.PacketSpamAmount++;
-                    if (incomingMessage.Client.PacketSpamAmount > 32)
-                        incomingMessage.Client.Disconnect($"Packet Spam: {incomingMessage.Client.IpAddress}");
-                    StaticLogger.Instance.Error($"Unknown MessageId: {incomingMessage.MessageId} - {Client.IpAddress}");
-                    continue;
-                }
-
-                try
-                {
-                    NetworkReader rdr = null;
-                    if (incomingMessage.Payload.Length != 0)
-                        rdr = new NetworkReader(new MemoryStream(incomingMessage.Payload));
-                    handler.Handle(incomingMessage.Client, rdr, ref time);
-                    rdr?.Dispose();
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Error processing packet ({((incomingMessage.Client.Account != null) ? incomingMessage.Client.Account.Name : "")}, {incomingMessage.Client.IpAddress})\n{ex}");
-                    if (ex is not EndOfStreamException)
-                        StaticLogger.Instance.Error($"Error processing packet ({((incomingMessage.Client.Account != null) ? incomingMessage.Client.Account.Name : "")}, {incomingMessage.Client.IpAddress})\n{ex}");
-                    incomingMessage.Client.SendFailure("An error occurred while processing data from your client.", FailureMessage.MessageWithDisconnect);
-                }
-            }
-        }
-
         public void Reconnect(World world)
         {
             if (world == null)
@@ -480,8 +417,6 @@ namespace WorldServer.core.objects
                 party.WorldId = -1;
         }
 
-        public void RestoreDefaultSkin() => Skin = _originalSkin;
-
         public void SaveToCharacter()
         {
             if (Client == null || Client.Character == null) 
@@ -496,7 +431,7 @@ namespace WorldServer.core.objects
             chr.Stats = Stats.Base.GetStats();
             chr.Tex1 = Texture1;
             chr.Tex2 = Texture2;
-            chr.Skin = _originalSkin;
+            chr.Skin = Skin;
             chr.FameStats = FameCounter?.Stats?.Write() ?? chr.FameStats;
             chr.LastSeen = DateTime.Now;
             chr.HealthStackCount = HealthPotionStack.Count;
@@ -513,19 +448,11 @@ namespace WorldServer.core.objects
             Stats.ReCalculateValues();
         }
 
-        public void SetDefaultSkin(int skin)
-        {
-            _originalSkin = skin;
-            Skin = skin;
-        }
-
-        public bool DeltaTime;
-
         public override void Tick(ref TickTime time)
         {
             if (KeepAlive(time))
             {
-                if (DeltaTime)
+                if (ShowDeltaTimeLog)
                     SendInfo($"[DeltaTime]: {World.DisplayName} -> {time.ElapsedMsDelta}");
                 
                 HandleBreath(ref time);
@@ -540,12 +467,9 @@ namespace WorldServer.core.objects
                 TickCooldownTimers(time);
 
                 TickSlotCooldowns(time);
-                TryApplySpecialEffects();
+                TryApplySpecialEffects(ref time);
 
                 FameCounter.Tick(time);
-
-                CerberusClaws(time);
-                CerberusCore(time);
             }
             base.Tick(ref time);
         }
@@ -662,6 +586,7 @@ namespace WorldServer.core.objects
                 stats[StatDataType.SPS_VITALITY_COUNT_MAX] = SPSVitalityCountMax;
             }
         }
+
         // minimal export for other players
         // things we wont see or need to know dont get exported
         private void ExportOther(IDictionary<StatDataType, object> stats)
@@ -699,135 +624,6 @@ namespace WorldServer.core.objects
             stats[StatDataType.InventoryData1] = Inventory.Data[1]?.GetData() ?? "{}";
             stats[StatDataType.InventoryData2] = Inventory.Data[2]?.GetData() ?? "{}";
             stats[StatDataType.InventoryData3] = Inventory.Data[3]?.GetData() ?? "{}";
-        }
-
-        private void CerberusClaws(TickTime time)
-        {
-            var elasped = time.TotalElapsedMs;
-            if (elasped % 2000 == 0)
-                Stats.ReCalculateValues();
-        }
-
-        private void CerberusCore(TickTime time)
-        {
-            var elasped = time.TotalElapsedMs;
-            if (elasped % 15000 == 0)
-                ApplyConditionEffect(ConditionEffectIndex.Berserk, 5000);
-        }
-
-        //private string CheckRankAPI(int accID, int charID)
-        //{
-        //    var httpWebRequest = (HttpWebRequest)WebRequest.Create($"https://tkr.gg/api/getRank");
-        //    httpWebRequest.ContentType = "application/json";
-        //    httpWebRequest.Method = "POST";
-
-        //    using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
-        //    {
-        //        string json = new JavaScriptSerializer().Serialize(new APIRank()
-        //        {
-        //            accID = accID,
-        //            charID = charID
-        //        });
-        //        streamWriter.Write(json);
-        //        streamWriter.Flush();
-        //        streamWriter.Close();
-        //    }
-
-        //    try
-        //    {
-        //        var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
-        //        using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
-        //        {
-        //            var result = streamReader.ReadToEnd();
-        //            var data = JsonConvert.DeserializeObject<APIResp>(result);
-        //            if (!result.Contains("200")) //200 is normal result, if it doesn't contains it, somethingb bad happened
-        //                Console.WriteLine(result);
-        //            return data.charRank;
-        //        }
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        Console.WriteLine(e);
-        //        return "n/a";
-        //    }
-        //}
-
-        private void AnnounceDeath(string killer)
-        {
-            var maxed = GetMaxedStats();
-            var deathMessage = Name + " (" + maxed + "/8, " + Client.Character.Fame + ") has been killed by " + killer + "! ";
-
-            if ((maxed >= 6 || Fame >= 1000) && !IsAdmin)
-            {
-                var worlds = GameServer.WorldManager.GetWorlds();
-                foreach(var world in worlds)
-                    world.ForeachPlayer(_ => _.DeathNotif(deathMessage));
-                return;
-            }
-
-            var pGuild = Client.Account.GuildId;
-
-            // guild case, only for level 20
-            if (pGuild > 0 && Level == 20)
-            {
-                var worlds = GameServer.WorldManager.GetWorlds();
-                foreach (var world in worlds)
-                    world.ForeachPlayer(_ =>
-                    {
-                        if (_.Client.Account.GuildId == pGuild)
-                            _.DeathNotif(deathMessage);
-                    });
-                World.ForeachPlayer(_ =>
-                {
-                    if (_.Client.Account.GuildId != pGuild)
-                        _.DeathNotif(deathMessage);
-                });
-            }
-            else
-                // guild less case
-                World.ForeachPlayer(_ => _.DeathNotif(deathMessage));
-        }
-
-        private void GenerateGravestone(bool phantomDeath = false)
-        {
-            var playerDesc = GameServer.Resources.GameData.Classes[ObjectType];
-
-            var maxed = playerDesc.Stats.Where((t, i) => Stats.Base[i] >= t.MaxValue).Count();
-           
-            ushort objType;
-            int? time = null;
-            switch (maxed)
-            {
-                case 8: objType = 0x0735; break;
-                case 7: objType = 0x0734; break;
-                case 6: objType = 0x072b; break;
-                case 5: objType = 0x072a; break;
-                case 4: objType = 0x0729; break;
-                case 3: objType = 0x0728; break;
-                case 2: objType = 0x0727; break;
-                case 1: objType = 0x0726; break;
-                default:
-                    objType = 0x0725;
-                    time = 300000;
-                    if (Level < 20)
-                    {
-                        objType = 0x0724;
-                        time = 60000;
-                    }
-                    if (Level <= 1)
-                    {
-                        objType = 0x0723;
-                        time = 30000;
-                    }
-                    break;
-            }
-
-            var deathMessage = Name + " (" + maxed + (UpgradeEnabled ? "/16, " : "/8, ") + Client.Character.Fame + ")";
-
-            var obj = new StaticObject(GameServer, objType, time, true, true, false);
-            obj.Move(X, Y);
-            obj.Name = (!phantomDeath) ? deathMessage : $"{Name} got rekt";
-            World.EnterWorld(obj);
         }
 
         private double HealthRegenCarry;
@@ -871,39 +667,6 @@ namespace WorldServer.core.objects
             }
         }
 
-        private void ReconnectToNexus()
-        {
-            Health = Stats[0];
-            Mana = Stats[1];
-            Client.Reconnect(new Reconnect()
-            {
-                Host = "",
-                Port = GameServer.Configuration.serverInfo.port,
-                GameId = World.NEXUS_ID,
-                Name = "Nexus"
-            });
-            var party = DbPartySystem.Get(Client.Account.Database, Client.Account.PartyId);
-            if (party != null && party.PartyLeader.Item1 == Client.Account.Name && party.PartyLeader.Item2 == Client.Account.AccountId)
-                party.WorldId = -1;
-        }
-
-        private bool Resurrection()
-        {
-            for (int i = 0; i < 4; i++)
-            {
-                var item = Inventory[i];
-
-                if (item == null || !item.Resurrects)
-                    continue;
-
-                Inventory[i] = null;
-                World.ForeachPlayer(_ => _.SendInfo($"{Name}'s {item.DisplayName} breaks and he disappears"));
-                ReconnectToNexus();
-                return true;
-            }
-            return false;
-        }
-
         private void SpawnPetIfAttached(World owner)
         {
             // despawn old pet if found
@@ -923,15 +686,6 @@ namespace WorldServer.core.objects
                 //pet.SetDefaultSize(pet.ObjectDesc.Size);
                 //Pet = pet;
             }
-        }
-
-        private bool TestWorld(string killer)
-        {
-            if (!(World is TestWorld))
-                return false;
-            GenerateGravestone();
-            ReconnectToNexus();
-            return true;
         }
 
         private void TickCooldownTimers(TickTime time)

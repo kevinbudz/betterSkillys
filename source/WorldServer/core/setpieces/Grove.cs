@@ -72,7 +72,7 @@ namespace WorldServer.core.setpieces
                 }
 
             var ent = Entity.Resolve(world.GameServer, "Ent Ancient");
-            ent.SetDefaultSize(140);
+            ent.Size = 140  ;
             ent.Move(pos.X + Size / 2 + 1, pos.Y + Size / 2 + 1);
             world.EnterWorld(ent);
         }

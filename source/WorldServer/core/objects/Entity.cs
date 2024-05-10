@@ -298,8 +298,6 @@ namespace WorldServer.core.objects
             }
         }
 
-        public void SetDefaultSize(int size) => Size = size;
-
         public void SwitchTo(State state)
         {
             var origState = CurrentState;

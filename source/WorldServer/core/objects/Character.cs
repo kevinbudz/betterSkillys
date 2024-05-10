@@ -31,10 +31,10 @@ namespace WorldServer.core.objects
                 if (ObjectDesc.SizeStep != 0)
                 {
                     var step = Random.Shared.Next(0, (ObjectDesc.MaxSize - ObjectDesc.MinSize) / ObjectDesc.SizeStep + 1) * ObjectDesc.SizeStep;
-                    SetDefaultSize(ObjectDesc.MinSize + step);
+                    Size = ObjectDesc.MinSize + step;
                 }
                 else
-                    SetDefaultSize(ObjectDesc.MinSize);
+                    Size = ObjectDesc.MinSize;
 
                 Health = ObjectDesc.MaxHP;
                 MaxHealth = Health;

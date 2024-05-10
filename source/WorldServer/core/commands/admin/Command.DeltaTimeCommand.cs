@@ -11,7 +11,7 @@ namespace WorldServer.core.commands
 
             protected override bool Process(Player player, TickTime time, string args)
             {
-                player.DeltaTime = !player.DeltaTime;
+                player.ShowDeltaTimeLog = !player.ShowDeltaTimeLog;
                 return true;
             }
         }

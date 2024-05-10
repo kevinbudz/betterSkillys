@@ -11,7 +11,7 @@ namespace WorldServer.core.net.handlers
 
         public override void Handle(Client client, NetworkReader rdr, ref TickTime tickTime)
         {
-            var skinId = (ushort)rdr.ReadInt32();
+            var skinType = (ushort)rdr.ReadInt32();
 
             if (client.Player == null)
                 return;
@@ -26,9 +26,9 @@ namespace WorldServer.core.net.handlers
             var skinData = gameData.Skins;
             var skinSize = 100;
 
-            if (skinId != 0)
+            if (skinType != 0)
             {
-                skinData.TryGetValue(skinId, out var skinDesc);
+                skinData.TryGetValue(skinType, out var skinDesc);
 
                 if (skinDesc == null)
                 {
@@ -36,7 +36,7 @@ namespace WorldServer.core.net.handlers
                     return;
                 }
 
-                if (!ownedSkins.Contains(skinId))
+                if (!ownedSkins.Contains(skinType))
                 {
                     client.Player.SendError("Skin not owned.");
                     return;
@@ -52,8 +52,8 @@ namespace WorldServer.core.net.handlers
             }
 
             // set skin
-            client.Player.SetDefaultSkin(skinId);
-            client.Player.SetDefaultSize(skinSize);
+            client.Player.Skin = skinType;
+            client.Player.Size = skinSize;
         }
     }
 }

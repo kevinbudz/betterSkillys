@@ -168,46 +168,49 @@ namespace WorldServer.core.terrain
                     {
                         var kv = item.Split(':');
 
-                        switch (kv[0])
+                        var type = kv[0];
+                        var value = kv[1];
+
+                        switch (type)
                         {
                             case "hp":
-                                (entity as Enemy).Health = Utils.GetInt(kv[1]);
+                                (entity as Enemy).Health = Utils.GetInt(value);
                                 (entity as Enemy).MaxHealth = (entity as Enemy).Health;
                                 break;
 
                             case "name":
-                                entity.Name = kv[1];
+                                entity.Name = value;
                                 break;
                             case "size":
-                                entity.SetDefaultSize(Math.Min(500, Utils.GetInt(kv[1])));
+                                entity.Size = Math.Min(500, Utils.GetInt(value));
                                 break;
 
                             case "eff":
-                                entity.ApplyPermanentConditionEffect((ConditionEffectIndex)ulong.Parse(kv[1]));
+                                entity.ApplyPermanentConditionEffect((ConditionEffectIndex)ulong.Parse(value));
                                 break;
 
                             case "conn":
-                                (entity as ConnectedObject).Connection = ConnectedObjectInfo.Infos[(uint)Utils.GetInt(kv[1])];
+                                (entity as ConnectedObject).Connection = ConnectedObjectInfo.Infos[(uint)Utils.GetInt(value)];
                                 break;
 
                             case "mtype":
-                                (entity as SellableMerchant).Item = (ushort)Utils.GetInt(kv[1]);
+                                (entity as SellableMerchant).Item = (ushort)Utils.GetInt(value);
                                 break;
 
                             case "mcost":
-                                (entity as SellableObject).Price = Math.Max(0, Utils.GetInt(kv[1]));
+                                (entity as SellableObject).Price = Math.Max(0, Utils.GetInt(value));
                                 break;
 
                             case "mcur":
-                                (entity as SellableObject).Currency = (CurrencyType)Utils.GetInt(kv[1]);
+                                (entity as SellableObject).Currency = (CurrencyType)Utils.GetInt(value);
                                 break;
 
                             case "mamnt":
-                                (entity as SellableMerchant).Count = Utils.GetInt(kv[1]);
+                                (entity as SellableMerchant).Count = Utils.GetInt(value);
                                 break;
 
                             case "mtime":
-                                (entity as SellableMerchant).TimeLeft = Utils.GetInt(kv[1]);
+                                (entity as SellableMerchant).TimeLeft = Utils.GetInt(value);
                                 break;
 
                             case "mdisc": // not implemented
@@ -215,21 +218,21 @@ namespace WorldServer.core.terrain
 
                             case "mrank":
                             case "stars": // provided for backwards compatibility with older maps
-                                (entity as SellableObject).RankRequired = Utils.GetInt(kv[1]);
+                                (entity as SellableObject).RankRequired = Utils.GetInt(value);
                                 break;
 
                             case "xOffset":
-                                var xo = float.Parse(kv[1]);
+                                var xo = float.Parse(value);
                                 entity.Move(entity.X + xo, entity.Y);
                                 break;
 
                             case "yOffset":
-                                var yo = float.Parse(kv[1]);
+                                var yo = float.Parse(value);
                                 entity.Move(entity.X, entity.Y + yo);
                                 break;
 
                             case "mtax":
-                                (entity as SellableObject).Tax = Utils.FromString(kv[1]);
+                                (entity as SellableObject).Tax = Utils.FromString(value);
                                 break;
                         }
                     }

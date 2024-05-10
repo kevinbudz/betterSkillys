@@ -307,7 +307,7 @@ namespace WorldServer.core.net.handlers
             bag.Inventory[0] = container.Inventory[slotId];
             bag.Inventory.Data[0] = container.Inventory.Data[slotId];
             bag.Move(player.X + (float)((random.NextDouble() * 2 - 1) * 0.5), player.Y + (float)((random.NextDouble() * 2 - 1) * 0.5));
-            bag.SetDefaultSize(75);
+            bag.Size = 75;
             player.World.EnterWorld(bag);
         }
     }

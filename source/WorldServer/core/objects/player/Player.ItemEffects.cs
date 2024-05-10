@@ -12,7 +12,21 @@ namespace WorldServer.core.objects
 {
     public partial class Player
     {
-        private void TryApplySpecialEffects()
+        private void CerberusClaws(ref TickTime time)
+        {
+            var elasped = time.TotalElapsedMs;
+            if (elasped % 2000 == 0)
+                Stats.ReCalculateValues();
+        }
+
+        private void CerberusCore(ref TickTime time)
+        {
+            var elasped = time.TotalElapsedMs;
+            if (elasped % 15000 == 0)
+                ApplyConditionEffect(ConditionEffectIndex.Berserk, 5000);
+        }
+
+        private void TryApplySpecialEffects(ref TickTime time)
         {
             for (var slot = 0; slot < 4; slot++)
             {
@@ -32,6 +46,9 @@ namespace WorldServer.core.objects
                 if (item.Legendary)
                     TryApplyLegendaryEffects(item, slot);
             }
+
+            CerberusClaws(ref time);
+            CerberusCore(ref time);
         }
 
         private void LuckyEffects(Item item, int slot)

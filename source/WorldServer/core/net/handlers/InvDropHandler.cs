@@ -96,13 +96,13 @@ namespace WorldServer.core.net.handlers
             var container = new Container(player.GameServer, isSoulbound ? soulBag : normBag, 60000, true);
 
             if (isSoulbound) //TODOS LOS ITEMS SE DROPEAN EN SOULBOUND BAG
-                container.BagOwners = new int[] { player.AccountId };
+                container.BagOwners = [player.AccountId];
 
             // init container
             container.Inventory[0] = item;
             container.Inventory.Data[0] = data;
             container.Move(player.X + (float)((Random.Shared.NextDouble() * 2 - 1) * 0.5), player.Y + (float)((Random.Shared.NextDouble() * 2 - 1) * 0.5));
-            container.SetDefaultSize(75);
+            container.Size = 75;
 
             player.World.EnterWorld(container);
 
