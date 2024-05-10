@@ -618,7 +618,9 @@ namespace WorldServer.core.objects
 
         private void AEDecoy(TickTime time, Item item, Position target, ActivateEffect eff)
         {
-            var decoy = new Decoy(this, eff.DurationMS);
+            var facing = MathF.Atan2(Y - PrevY, X - PrevX);
+
+            var decoy = new Decoy(this, eff.DurationMS, facing);
             decoy.Move(X, Y);
             World.EnterWorld(decoy);
         }

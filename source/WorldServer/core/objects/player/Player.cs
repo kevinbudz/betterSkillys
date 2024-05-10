@@ -358,18 +358,12 @@ namespace WorldServer.core.objects
                 Death(src.ObjectDesc.DisplayId ?? src.ObjectDesc.IdName, src.Spawned);
         }
 
-        public int GetCurrency(CurrencyType currency)
+        public int GetCurrency(CurrencyType currency) => currency switch
         {
-            switch (currency)
-            {
-                case CurrencyType.Gold:
-                    return Credits;
-                case CurrencyType.Fame:
-                    return CurrentFame;
-                default:
-                    return 0;
-            }
-        }
+            CurrencyType.Gold => Credits,
+            CurrencyType.Fame => CurrentFame,
+            _ => 0,
+        };
 
         public int GetMaxedStats()
         {

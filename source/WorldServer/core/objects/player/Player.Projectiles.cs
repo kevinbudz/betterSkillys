@@ -219,7 +219,7 @@ namespace WorldServer.core.objects
                 if (s.Vulnerable)
                 {
                     var dmg = StatsManager.DamageWithDefense(s, projectile.Damage, projectileDesc.ArmorPiercing, s.ObjectDesc.Defense);
-                    s.HP -= dmg;
+                    s.Health -= dmg;
 
                     World.BroadcastIfVisibleExclude(new DamageMessage()
                     {

@@ -11,38 +11,30 @@ namespace WorldServer.core.objects
 {
     internal class Decoy : StaticObject, IPlayer
     {
-        private readonly int Duration;
+        private readonly Player _player;
+        private readonly int _duration;
 
-        private Vector2 direction;
-        private bool exploded = false;
-        private Player Player;
+        private Vector2 _direction;
+        private bool _exploded = false;
 
-        public Decoy(Player player, int duration) : base(player.GameServer, 0x0715, duration, true, true, true)
+        public Decoy(Player player, int duration, float angle) 
+            : base(player.GameServer, 0x0715, duration, true, true, true)
         {
-            Player = player;
-            Duration = duration;
-
-            direction = new Vector2(player.X - player.PrevX, player.Y - player.PrevY);
-            if (direction.LengthSquared() == 0)
-                direction = GetRandDirection();
-            else
-                direction.Normalize();
+            _player = player;
+            _duration = duration;
+            _direction = new Vector2(MathF.Cos(angle), MathF.Sin(angle));
         }
 
-        public void Damage(int dmg, Entity src)
-        { }
-
         public bool IsVisibleToEnemy() => true;
+        public void Damage(int dmg, Entity src) { }
 
         public override void Tick(ref TickTime time)
         {
-            if (HP > Duration - 2000)
-                ValidateAndMove(X + direction.X * 1.0f * time.BehaviourTickTime, Y + direction.Y * 1.0f * time.BehaviourTickTime);
+            if (Health > _duration - 2000)
+                ValidateAndMove(X + _direction.X * time.BehaviourTickTime, Y + _direction.Y * time.BehaviourTickTime);
 
-            if (HP < 250 && !exploded)
+            if (Health < 250 && !_exploded)
             {
-                exploded = true;
-
                 World.BroadcastIfVisible(new ShowEffect()
                 {
                     EffectType = EffectType.AreaBlast,
@@ -50,6 +42,8 @@ namespace WorldServer.core.objects
                     TargetObjectId = Id,
                     Pos1 = new Position() { X = 1 }
                 }, this);
+
+                _exploded = true;
             }
 
             base.Tick(ref time);
@@ -57,15 +51,9 @@ namespace WorldServer.core.objects
 
         protected override void ExportStats(IDictionary<StatDataType, object> stats, bool isOtherPlayer)
         {
-            stats[StatDataType.Texture1] = Player.Texture1;
-            stats[StatDataType.Texture2] = Player.Texture2;
+            stats[StatDataType.Texture1] = _player.Texture1;
+            stats[StatDataType.Texture2] = _player.Texture2;
             base.ExportStats(stats, isOtherPlayer);
-        }
-
-        private Vector2 GetRandDirection()
-        {
-            var angle = Random.Shared.NextDouble() * 2 * Math.PI;
-            return new Vector2((float)Math.Cos(angle), (float)Math.Sin(angle));
         }
     }
 }

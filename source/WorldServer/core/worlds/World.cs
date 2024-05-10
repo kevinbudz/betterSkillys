@@ -382,17 +382,18 @@ namespace WorldServer.core.worlds
 
         public void ObjsWithin(Entity host, double radius, List<Entity> enemies)
         {
+            var radSqr = radius * radius;
             foreach (var enemy in EnemiesCollision.HitTest(host.X, host.Y, radius))
             {
-                if (enemy.SqDistTo(host.X, host.Y) >= radius * radius)
+                if (enemy.SqDistTo(host.X, host.Y) >= radSqr)
                     continue;
                 enemies.Add(enemy);
             }
         }
 
-        public void WorldAnnouncement(string msg)
+        public void WorldAnnouncement(string message)
         {
-            var announcement = string.Concat("<ANNOUNCMENT> ", msg);
+            var announcement = string.Concat("<ANNOUNCMENT> ", message);
             foreach (var player in Players.Values)
                 player.SendInfo(announcement);
         }

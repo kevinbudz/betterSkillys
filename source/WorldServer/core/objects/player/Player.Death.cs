@@ -13,7 +13,7 @@ namespace WorldServer.core.objects
         private void AnnounceDeath(string killer)
         {
             var maxed = GetMaxedStats();
-            var deathMessage = Name + " (" + maxed + "/8, " + Client.Character.Fame + ") has been killed by " + killer + "! ";
+            var deathMessage = $"{Name} ({maxed}/8, {Client.Character.Fame}) has been killed by {killer}!";
 
             if ((maxed >= 6 || Fame >= 1000) && !IsAdmin)
             {
@@ -35,6 +35,7 @@ namespace WorldServer.core.objects
                         if (_.Client.Account.GuildId == pGuild)
                             _.DeathNotif(deathMessage);
                     });
+
                 World.ForeachPlayer(_ =>
                 {
                     if (_.Client.Account.GuildId != pGuild)
