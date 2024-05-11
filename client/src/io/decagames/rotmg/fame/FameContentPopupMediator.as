@@ -86,28 +86,31 @@ import robotlegs.bender.bundles.mvcs.Mediator;
             this.totalFame = this.fameTracker.getCurrentTotalFame(this.characterID);
             this.bonuses = this.totalFame.bonuses;
             this.bonusesList = new Vector.<FameBonus>();
-            var _local_1:* = "";
-            if (!this.player.getCharacterById(this.characterID))
-            {
-                _local_2 = new DateFormatter();
-                _local_2.formatString = "MMMM DD, YYYY";
-                _local_1 = _local_2.format(new Date());
+
+            var bornOn:String = "";
+            try {
+                if (!this.player.getCharacterById(characterID)) {
+                    var fmt:DateFormatter = new DateFormatter();
+                    fmt.formatString = "MMMM DD, YYYY";
+                    bornOn = fmt.format(new Date());
+                } else {
+                    bornOn = this.player.getCharacterById(characterID).bornOn();
+                }
+            }catch (e) {
+                bornOn = "Unknown";
             }
-            else
-            {
-                _local_1 = this.player.getCharacterById(this.characterID).bornOn();
-            }
+
             this.showInfo();
             this.view.fameOnDeath = this.totalFame.currentFame;
             if (this.view.characterId == -1)
             {
                 _local_3 = this.hudModel.gameSprite.map.player_;
-                this.view.setCharacterData(this.totalFame.baseFame, _local_3.name_, _local_3.level_, ObjectLibrary.typeToDisplayId_[_local_3.objectType_], _local_1, _local_3.getFamePortrait(200));
+                this.view.setCharacterData(this.totalFame.baseFame, _local_3.name_, _local_3.level_, ObjectLibrary.typeToDisplayId_[_local_3.objectType_], bornOn, _local_3.getFamePortrait(200));
             }
             else
             {
                 _local_4 = this.player.getCharacterById(this.characterID);
-                this.view.setCharacterData(this.totalFame.baseFame, _local_4.name(), _local_4.level(), ObjectLibrary.typeToDisplayId_[_local_4.objectType()], _local_1, _local_4.getIcon(100));
+                this.view.setCharacterData(this.totalFame.baseFame, _local_4.name(), _local_4.level(), ObjectLibrary.typeToDisplayId_[_local_4.objectType()], bornOn, _local_4.getIcon(100));
             }
             this.toolTip = new TextToolTip(0x363636, 0x9B9B9B, "Fame calculation", "Refreshes when returning to the Nexus or main menu.", 230);
             this.hoverTooltipDelegate = new HoverTooltipDelegate();
