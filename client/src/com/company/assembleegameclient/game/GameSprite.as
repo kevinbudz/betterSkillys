@@ -194,12 +194,12 @@ public class GameSprite extends Sprite
       if(Parameters.data_.showStatistics)
       {
          this.creditDisplay_.visible = false;
-         this.enableGameStatistics();
       } else
       {
          this.creditDisplay_.visible = true;
       }
 
+      this.toggleStatistics();
       WebMain.STAGE.frameRate = Parameters.data_.fps;
    }
 
@@ -384,12 +384,14 @@ public class GameSprite extends Sprite
    }
 
    public var gameStatistics_:GameStatistics;
-   public function enableGameStatistics():void {
-      if (this.gameStatistics_ != null) {
-         this.gameStatistics_.visible = true;
-      }
-      else {
+   public function toggleStatistics():void {
+      if (this.gameStatistics_ == null)
+      {
          this.gameStatistics_ = new GameStatistics();
+         addChild(this.gameStatistics_);
+      }
+      if (Parameters.data_.showStatistics)
+      {
          if (Parameters.data_.uiscale)
          {
             this.gameStatistics_.scaleX = (800 / stage.stageWidth) / (600 / stage.stageHeight);
@@ -401,7 +403,12 @@ public class GameSprite extends Sprite
             this.gameStatistics_.scaleY = 600 / stage.stageHeight;
          }
          this.gameStatistics_.x = this.hudView.x - (this.gameStatistics_.container_.width * this.gameStatistics_.scaleX);
-         addChild(this.gameStatistics_);
+         this.creditDisplay_.visible = false;
+         this.gameStatistics_.visible = true;
+      } else
+      {
+         this.creditDisplay_.visible = true;
+         this.gameStatistics_.visible = false;
       }
    }
 

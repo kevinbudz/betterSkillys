@@ -595,14 +595,11 @@ public class MapUserInput
 
    private function togglePerformanceStats() : void
    {
-      if(!this.gs_.gameStatistics_.visible){
-         this.gs_.enableGameStatistics();
-         this.gs_.creditDisplay_.visible = false;
-      }
-      else{
-         this.gs_.disableGameStatistics();
-         this.gs_.creditDisplay_.visible = true;
-      }
+      if (Parameters.data_.showStatistics)
+         Parameters.data_.showStatistics = false;
+      else
+         Parameters.data_.showStatistics = true;
+      this.gs_.toggleStatistics();
    }
 }
 }
