@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<Objects>
+   <Object type="0x746A" id="md LightKey">
+      <DisplayId>Key of Light</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiCharBig</File>
+         <Index>0x1a0</Index>
+      </Texture>
+      <HitSound>monster/djinn_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Defense>50</Defense>
+      <Exp>0</Exp>
+      <Size>100</Size>
+      <ShadowSize>30</ShadowSize>
+      <Z>0.26</Z>
+      <Flying/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Armor Pierce Bullet</ObjectId>
+         <Speed>25</Speed>
+         <ArmorPiercing/>
+         <Damage>60</Damage>
+         <LifetimeMS>1400</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Armor Pierce Bullet</ObjectId>
+         <Speed>25</Speed>
+         <ArmorPiercing/>
+         <Damage>60</Damage>
+         <LifetimeMS>2400</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+      <Animation prob="1" period="0">
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x1a0</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x1a1</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x1a2</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x1a3</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x746B" id="md DarkKey">
+      <DisplayId>Key of Darkness</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiCharBig</File>
+         <Index>0x190</Index>
+      </Texture>
+      <HitSound>monster/djinn_hit</HitSound>
+      <DeathSound>monster/sprites_death</DeathSound>
+      <MaxHitPoints>6000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>0</Exp>
+      <Size>100</Size>
+      <ShadowSize>30</ShadowSize>
+      <Z>0.26</Z>
+      <Flying/>
+      <StasisImmune/>
+      <Projectile id="0">
+         <ObjectId>Armor Pierce Bullet</ObjectId>
+         <Speed>25</Speed>
+         <ArmorPiercing/>
+         <Damage>60</Damage>
+         <LifetimeMS>1400</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Armor Pierce Bullet</ObjectId>
+         <Speed>25</Speed>
+         <ArmorPiercing/>
+         <Damage>60</Damage>
+         <LifetimeMS>2400</LifetimeMS>
+         <Size>100</Size>
+      </Projectile>
+      <Animation prob="1" period="0">
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x190</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x191</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x192</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiCharBig</File>
+               <Index>0x193</Index>
+            </Texture>
+         </Frame>
+      </Animation>
+   </Object>
+   <Object type="0x2009" id="md dwGenerator">
+      <DisplayId>Janus the Doorwarden</DisplayId>
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x746D" id="md dwspawner">
+      <Class>Character</Class>
+      <Texture>
+         <File>d1lofiObjBig</File>
+         <Index>0x30</Index>
+      </Texture>
+      <NoMiniMap/>
+      <Size>200</Size>
+      <ShadowSize>0</ShadowSize>
+   </Object>
+   <Object type="0x2008" id="md Janus the Doorwarden">
+      <DisplayId>Janus the Doorwarden</DisplayId>
+      <Class>Character</Class>
+      <Enemy/>
+      <AnimatedTexture>
+         <File>d1chars16x16r</File>
+         <Index>3</Index>
+      </AnimatedTexture>
+      <Portrait>
+         <AnimatedTexture>
+            <File>d1chars16x16r</File>
+            <Index>3</Index>
+         </AnimatedTexture>
+      </Portrait>
+      <HitSound>monster/skeletons_hit</HitSound>
+      <DeathSound>monster/skeletons_death</DeathSound>
+      <Size>200</Size>
+      <ShadowSize>25</ShadowSize>
+      <MaxHitPoints>100000</MaxHitPoints>
+      <Defense>20</Defense>
+      <Exp>4000</Exp>
+      <ParalyzeImmune/>
+      <DazedImmune/>
+      <StasisImmune/>
+      <StunImmune/>
+      <EventChestBoss/>
+      <Quest/>
+      <HealthBarBoss/>
+      <KeepDamageRecord/>
+      <AltTexture id="1">
+         <Texture>
+            <File>invisible</File>
+            <Index>0</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="2">
+         <Texture>
+            <File>d1lofiObjBig</File>
+            <Index>0x30</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="3">
+         <Texture>
+            <File>d1lofiObjBig</File>
+            <Index>0x31</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="4">
+         <Texture>
+            <File>d1lofiObjBig</File>
+            <Index>0x32</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="5">
+         <Texture>
+            <File>d1lofiObjBig</File>
+            <Index>0x33</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="6">
+         <Texture>
+            <File>d1lofiObjBig</File>
+            <Index>0x34</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="7">
+         <Texture>
+            <File>d1lofiObjBig</File>
+            <Index>0x35</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="8">
+         <Texture>
+            <File>d1lofiObjBig</File>
+            <Index>0x36</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="9">
+         <Texture>
+            <File>d1lofiObjBig</File>
+            <Index>0x40</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="10">
+         <Texture>
+            <File>d1lofiObjBig</File>
+            <Index>0x41</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="11">
+         <Texture>
+            <File>d1lofiObjBig</File>
+            <Index>0x42</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="12">
+         <Texture>
+            <File>d1lofiObjBig</File>
+            <Index>0x43</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="13">
+         <Texture>
+            <File>d1lofiObjBig</File>
+            <Index>0x44</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="14">
+         <Texture>
+            <File>d1lofiObjBig</File>
+            <Index>0x45</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="15">
+         <Texture>
+            <File>d1lofiObjBig</File>
+            <Index>0x0D</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="16">
+         <Texture>
+            <File>d1lofiObjBig</File>
+            <Index>0x0E</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="17">
+         <Texture>
+            <File>d1lofiObjBig</File>
+            <Index>0x0F</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="18">
+         <Texture>
+            <File>d1lofiObjBig</File>
+            <Index>0x10</Index>
+         </Texture>
+      </AltTexture>
+      <AltTexture id="19">
+         <Texture>
+            <File>d1lofiObjBig</File>
+            <Index>0x11</Index>
+         </Texture>
+      </AltTexture>
+      <Projectile id="0">
+         <ObjectId>Purple Boomerang</ObjectId>
+         <Speed>55</Speed>
+         <ArmorPiercing/>
+         <Damage>50</Damage>
+         <LifetimeMS>1700</LifetimeMS>
+         <Size>125</Size>
+         <Boomerang/>
+      </Projectile>
+      <Projectile id="1">
+         <ObjectId>Purple Boomerang</ObjectId>
+         <Speed>55</Speed>
+         <ArmorPiercing/>
+         <Damage>50</Damage>
+         <LifetimeMS>3500</LifetimeMS>
+         <Size>125</Size>
+         <Boomerang/>
+         <MultiHit/>
+      </Projectile>
+   </Object>
+   <Object type="0x746F" id="md placer1">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x2002" id="md placer3">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x2003" id="md placer2">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x2004" id="md placer4">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x2005" id="Craig, Intern of the Mad God">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>d3Chars8x8rEmbed</File>
+         <Index>19</Index>
+      </AnimatedTexture>
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>100</Size>
+      <ShadowSize>50</ShadowSize>
+   </Object>
+   <Object type="0x2006" id="Dungeon placer A">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0xa4</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x224e" id="Portal Slot Maker">
+      <Class>GameObject</Class>
+      <Texture>
+         <File>lofiEnvironment</File>
+         <Index>0x15</Index>
+      </Texture>
+      <Size>0</Size>
+   </Object>
+   <Object type="0x2007" id="md Loot Balloon Doorwarden">
+      <DisplayId>Janus Chest</DisplayId>
+      <Class>GameObject</Class>
+      <Enemy/>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Size>0</Size>
+      <Invincible/>
+      <NoMiniMap/>
+      <TrackLoot/>
+   </Object>
+</Objects>

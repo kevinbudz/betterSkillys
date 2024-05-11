@@ -128,64 +128,35 @@ namespace WorldServer.core.objects
 
         private bool CheckLevelUp()
         {
-            var statInfo = GameServer.Resources.GameData.Classes[ObjectType].Stats;
             if (Experience - GetLevelExp(Level) >= ExperienceGoal && Level < 20)
             {
                 Level++;
                 ExperienceGoal = GetExpGoal(Level);
-                for (var i = 0; i < statInfo.Length; i++)
-                {
-                    if (Level < 20)
-                    {
-                        switch (UpgradeEnabled)
-                        {
-                            case true:
-                                if (i == 0 || i == 1 ? Stats.Base[i] >= statInfo[i].MaxValue + 50 : Stats.Base[i] >= statInfo[i].MaxValue + 10)
-                                    Stats.Base[i] = (i == 0 || i == 1) ? statInfo[i].MaxValue + 50 : statInfo[i].MaxValue + 10;
-                                break;
 
-                            case false:
-                                if (Stats.Base[i] >= statInfo[i].MaxValue)
-                                    Stats.Base[i] = statInfo[i].MaxValue;
-                                break;
-                        }
+                if (Level < 20)
+                {
+                    var statInfo = GameServer.Resources.GameData.Classes[ObjectType].Stats;
+                    for (var i = 0; i < statInfo.Length; i++)
+                    {
+                        var min = statInfo[i].MinIncrease;
+                        var max = statInfo[i].MaxIncrease + 1;
+
+                        Stats.Base[i] += Random.Shared.Next(min, max);
+                        if (Stats.Base[i] > statInfo[i].MaxValue)
+                            Stats.Base[i] = statInfo[i].MaxValue;
                     }
-                    var min = statInfo[i].MinIncrease;
-                    var max = statInfo[i].MaxIncrease + 1;
-                    Stats.Base[i] += Random.Shared.Next(min, max);
-                    if (Stats.Base[i] > statInfo[i].MaxValue && !UpgradeEnabled)
-                        Stats.Base[i] = statInfo[i].MaxValue;
                 }
+
                 Health = Stats[0];
                 Mana = Stats[1];
 
                 if (Level == 20)
                     World.ForeachPlayer(_ => _.SendInfo($"{Name} achieved level 20"));
                 else
-                    // to get exp scaled to new exp goal
                     InvokeStatChange(StatDataType.Experience, Experience - GetLevelExp(Level), true);
 
                 Quest = null;
                 return true;
-            }
-
-            for (var i = 0; i < statInfo.Length; i++)
-            {
-                if (Level >= 20)
-                {
-                    switch (UpgradeEnabled)
-                    {
-                        case true:
-                            if (i == 0 || i == 1 ? Stats.Base[i] >= statInfo[i].MaxValue + 50 : Stats.Base[i] >= statInfo[i].MaxValue + 10)
-                                Stats.Base[i] = (i == 0 || i == 1) ? statInfo[i].MaxValue + 50 : statInfo[i].MaxValue + 10;
-                            break;
-
-                        case false:
-                            if (Stats.Base[i] >= statInfo[i].MaxValue)
-                                Stats.Base[i] = statInfo[i].MaxValue;
-                            break;
-                    }
-                }
             }
 
             CalculateFame();

@@ -16,13 +16,12 @@ namespace WorldServer.core.net.handlers
             var slotObject = ObjectSlot.Read(rdr);
             var itemUsePos = Position.Read(rdr);
             var useType = rdr.ReadByte();
-            var sellMaxed = rdr.ReadByte();
 
             var player = client.Player;
             if (player?.World == null)
                 return;
 
-            player.UseItem(time, tickTime, slotObject.ObjectId, slotObject.SlotId, itemUsePos, sellMaxed, useType);
+            player.UseItem(time, tickTime, slotObject.ObjectId, slotObject.SlotId, itemUsePos, useType);
         }
     }
 }

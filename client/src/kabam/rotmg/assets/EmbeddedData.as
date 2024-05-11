@@ -5,8 +5,12 @@
 
 package kabam.rotmg.assets
 {
-    public class EmbeddedData 
+    import kabam.rotmg.assets.custom.xmls.*;
+    import kabam.rotmg.assets.prod.xmls.*
+
+    public class EmbeddedData
     {
+        // prod
 
         public static const PlayersCXML:Class = EmbeddedData_PlayersCXML;
         public static const GroundCXML:Class = EmbeddedData_GroundCXML;
@@ -140,18 +144,159 @@ package kabam.rotmg.assets
         private static const archbishopObjectsMenCXML:Class = EmbeddedData_archbishopObjectsMenCXML;
         private static const ancientRuinsGroundCXML:Class = EmbeddedData_ancientRuinsGroundCXML;
         private static const ancientRuinsObjectsCXML:Class = EmbeddedData_ancientRuinsObjectsCXML;
-        private static const dungeonsPatchXML:Class = EmbeddedData_dungeonsPatchXML;
+
+        // custom
+        private static const customGrounds:Class = CustomGrounds;
+        private static const customObjects:Class = CustomObjects;
+
         public static const skins:Array = [new SkinsCXML()];
         public static const eqSets:Array = [new EquipmentSetsCXML()];
         public static const skinsXML:XML = appendXML(skins, "Objects", "Object");
         public static const skinsEquipmentSetsXML:XML = appendXML(eqSets, "EquipmentSets", "EquipmentSet");
-        public static const groundFiles:Array = [new GroundCXML(), new parasiteDenGroundCXML(), new iceCaveGroundCXML(), new stPatricksGroundCXML(), new hanaminexusGroundCXML(), new theMachineGroundCXML(), new mountainTempleGroundCXML(), new oryxHordeGroundCXML(), new battleOryxGroundCXML(), new summerNexusGroundCXML(), new autumnNexusGroundCXML(), new xmasNexusGroundCXML(), new epicHiveGroundCXML(), new lostHallsGroundCXML(), new santaWorkshopGroundCXML(), new magicWoodsGroundCXML(), new cnidarianReefGroundCXML(), new secludedThicketGroundCXML(), new cursedLibraryGroundCXML(), new lairOfDraconisGroundCXML(), new alienInvasionGroundCXML(), new crystalCaveGroundCXML(), new fungalCavernGroundCXML(), new innerWorkingsGroundCXML(), new oryxSanctuaryGroundCXML(), new archbishopGroundCXML(), new ancientRuinsGroundCXML()];
-        public static const objectFiles:Array = [new ProjectilesCXML(), new EquipEggsCXML(), new EquipKeysCXML(), new EquipSkinsCXML(), new EquipTestCXML(), new EquipCXML(), new DyesCXML(), new TextilesCXML(), new PermapetsCXML(), new TokenCXML(), new GraveStonesCXML(), new WillemTestingCXML(), new TTestingCXML(), new BTestingCXML(), new STestingCXML(), new MTestingCXML(), new KTestingCXML(), new PlayersCXML(), new ContainersCXML(), new ObjectsCXML(), new PortalsCXML(), new TestingObjectsCXML(), new StaticObjectsCXML(), new TutorialObjectsCXML(), new TutorialMonstersCXML(), new AlliesCXML(), new HeroesCXML(), new PlayersZombiesCXML(), new PetsCXML(), new NPCsCXML(), new ShoreCXML(), new LowCXML(), new MidCXML(), new HighCXML(), new MountainsCXML(), new EncountersCXML(), new ArenaCXML(), new OryxCastleCXML(), new TombOfTheAncientsCXML(), new SpriteWorldCXML(), new UndeadLairCXML(), new OceanTrenchCXML(), new ForbiddenJungleCXML(), new OryxChamberCXML(), new OryxChickenChamberCXML(), new OryxWineCellarCXML(), new ManorOfTheImmortalsCXML(), new PirateCaveCXML(), new SnakePitCXML(), new SpiderDenCXML(), new AbyssOfDemonsCXML(), new GhostShipCXML(), new MadLabCXML(), new CaveOfAThousandTreasuresCXML(), new CandyLandCXML(), new HauntedCemeteryCXML(), new ForestMazeCXML(), new EpicForestMazeCXML(), new EpicPirateCaveCXML(), new EpicSpiderDenCXML(), new NexusDestroyedCXML(), new MiniDungeonHubCXML(), new LairOfDraconisCXML(), new LairOfShaitanCXML(), new ShattersCXML(), new BelladonnaCXML(), new PuppetMasterCXML(), new iceCaveObjectsCXML(), new TheHiveCXML(), new ToxicSewersCXML(), new PuppetMasterEncoreCXML(), new IceTombCXML(), new PermaFrostLordCXML(), new parasiteDenObjectsCXML(), new stPatricksObjectCXML(), new buffedBunnyObjectCXML(), new theMachineObjectsCXML(), new hanaminexusObjectCXML(), new mountainTempleObjectCXML(), new oryxHordeObjectsCXML(), new battleOryxObjectsCXML(), new summerNexusObjectCXML(), new autumnNexusObjectsCXML(), new xmasNexusObjectsCXML(), new epicHiveObjectsCXML(), new lostHallsObjectsCXML(), new santaWorkshopObjectsCXML(), new magicWoodsObjectsCXML(), new cnidarianReefObjectsCXML(), new secludedThicketObjectsCXML(), new eventChestObjectsCXML(), new cursedLibraryObjectsCXML(), new lairOfDraconisObjectsCXML(), new lairOfShaitanObjectsCXML(), new alienInvasionObjectsCXML(), new crystalCaveObjectsCXML(), new fungalCavernObjectsCXML(), new innerWorkingsObjectsCXML(), new oryxSanctuaryObjectsCXML(), new oryxSanctuaryUObjectsCXML(), new archbishopObjectsCXML(), new archbishopObjectsMenCXML(), new ancientRuinsObjectsCXML(), new SkinsCXML()];
+
+        public static const groundFiles:Array = [
+            new GroundCXML(),
+            new parasiteDenGroundCXML(),
+            new iceCaveGroundCXML(),
+            new stPatricksGroundCXML(),
+            new hanaminexusGroundCXML(),
+            new theMachineGroundCXML(),
+            new mountainTempleGroundCXML(),
+            new oryxHordeGroundCXML(),
+            new battleOryxGroundCXML(),
+            new summerNexusGroundCXML(),
+            new autumnNexusGroundCXML(),
+            new xmasNexusGroundCXML(),
+            new epicHiveGroundCXML(),
+            new lostHallsGroundCXML(),
+            new santaWorkshopGroundCXML(),
+            new magicWoodsGroundCXML(),
+            new cnidarianReefGroundCXML(),
+            new secludedThicketGroundCXML(),
+            new cursedLibraryGroundCXML(),
+            new lairOfDraconisGroundCXML(),
+            new alienInvasionGroundCXML(),
+            new crystalCaveGroundCXML(),
+            new fungalCavernGroundCXML(),
+            new innerWorkingsGroundCXML(),
+            new oryxSanctuaryGroundCXML(),
+            new archbishopGroundCXML(),
+            new ancientRuinsGroundCXML(),
+            new customGrounds()
+        ];
+
+        public static const objectFiles:Array = [
+            new customObjects(),
+            new ProjectilesCXML(),
+            new EquipEggsCXML(),
+            new EquipKeysCXML(),
+            new EquipSkinsCXML(),
+            new EquipTestCXML(),
+            new EquipCXML(),
+            new DyesCXML(),
+            new TextilesCXML(),
+            new PermapetsCXML(),
+            new TokenCXML(),
+            new GraveStonesCXML(),
+            new WillemTestingCXML(),
+            new TTestingCXML(),
+            new BTestingCXML(),
+            new STestingCXML(),
+            new MTestingCXML(),
+            new KTestingCXML(),
+            new PlayersCXML(),
+            new ContainersCXML(),
+            new ObjectsCXML(),
+            new PortalsCXML(),
+            new TestingObjectsCXML(),
+            new StaticObjectsCXML(),
+            new TutorialObjectsCXML(),
+            new TutorialMonstersCXML(),
+            new AlliesCXML(),
+            new HeroesCXML(),
+            new PlayersZombiesCXML(),
+            new PetsCXML(),
+            new NPCsCXML(),
+            new ShoreCXML(),
+            new LowCXML(),
+            new MidCXML(),
+            new HighCXML(),
+            new MountainsCXML(),
+            new EncountersCXML(),
+            new ArenaCXML(),
+            new OryxCastleCXML(),
+            new TombOfTheAncientsCXML(),
+            new SpriteWorldCXML(),
+            new UndeadLairCXML(),
+            new OceanTrenchCXML(),
+            new ForbiddenJungleCXML(),
+            new OryxChamberCXML(),
+            new OryxChickenChamberCXML(),
+            new OryxWineCellarCXML(),
+            new ManorOfTheImmortalsCXML(),
+            new PirateCaveCXML(),
+            new SnakePitCXML(),
+            new SpiderDenCXML(),
+            new AbyssOfDemonsCXML(),
+            new GhostShipCXML(),
+            new MadLabCXML(),
+            new CaveOfAThousandTreasuresCXML(),
+            new CandyLandCXML(),
+            new HauntedCemeteryCXML(),
+            new ForestMazeCXML(),
+            new EpicForestMazeCXML(),
+            new EpicPirateCaveCXML(),
+            new EpicSpiderDenCXML(),
+            new NexusDestroyedCXML(),
+            new MiniDungeonHubCXML(),
+            new LairOfDraconisCXML(),
+            new LairOfShaitanCXML(),
+            new ShattersCXML(),
+            new BelladonnaCXML(),
+            new PuppetMasterCXML(),
+            new iceCaveObjectsCXML(),
+            new TheHiveCXML(),
+            new ToxicSewersCXML(),
+            new PuppetMasterEncoreCXML(),
+            new IceTombCXML(),
+            new PermaFrostLordCXML(),
+            new parasiteDenObjectsCXML(),
+            new stPatricksObjectCXML(),
+            new buffedBunnyObjectCXML(),
+            new theMachineObjectsCXML(),
+            new hanaminexusObjectCXML(),
+            new mountainTempleObjectCXML(),
+            new oryxHordeObjectsCXML(),
+            new battleOryxObjectsCXML(),
+            new summerNexusObjectCXML(),
+            new autumnNexusObjectsCXML(),
+            new xmasNexusObjectsCXML(),
+            new epicHiveObjectsCXML(),
+            new lostHallsObjectsCXML(),
+            new santaWorkshopObjectsCXML(),
+            new magicWoodsObjectsCXML(),
+            new cnidarianReefObjectsCXML(),
+            new secludedThicketObjectsCXML(),
+            new eventChestObjectsCXML(),
+            new cursedLibraryObjectsCXML(),
+            new lairOfDraconisObjectsCXML(),
+            new lairOfShaitanObjectsCXML(),
+            new alienInvasionObjectsCXML(),
+            new crystalCaveObjectsCXML(),
+            new fungalCavernObjectsCXML(),
+            new innerWorkingsObjectsCXML(),
+            new oryxSanctuaryObjectsCXML(),
+            new oryxSanctuaryUObjectsCXML(),
+            new archbishopObjectsCXML(),
+            new archbishopObjectsMenCXML(),
+            new ancientRuinsObjectsCXML(),
+            new SkinsCXML()
+        ];
+
         public static const RegionsCXML:Class = EmbeddedData_RegionsCXML;
         public static const regionFiles:Array = [new RegionsCXML()];
         private static const TutorialScriptCXML:Class = EmbeddedData_TutorialScriptCXML;
         public static const tutorialXML:XML = XML(new TutorialScriptCXML());
-
 
         public static function appendXML(_arg_1:Array, _arg_2:String, _arg_3:String):XML
         {

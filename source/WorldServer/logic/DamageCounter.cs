@@ -45,7 +45,7 @@ namespace WorldServer.logic
             if (enemy.World is RealmWorld)
                 (enemy.World as RealmWorld).EnemyKilled(enemy, (Parent ?? this).LastHitter);
 
-            var lvlUps = 0;
+            var levelUpAssists = 0;
             foreach (var player in enemy.World.Players.Values)
             {
                 if (player.DistTo(enemy) > 25)
@@ -74,11 +74,11 @@ namespace WorldServer.logic
 
                 var killer = (Parent ?? this).LastHitter == player;
                 if (player.EnemyKilled(enemy, (int)playerXp, killer) && !killer)
-                    lvlUps++;
+                    levelUpAssists++;
             }
 
             if ((Parent ?? this).LastHitter != null)
-                (Parent ?? this).LastHitter.FameCounter.LevelUpAssist(lvlUps);
+                (Parent ?? this).LastHitter.FameCounter.LevelUpAssist(levelUpAssists);
         }
 
         public Tuple<Player, int>[] GetPlayerData()

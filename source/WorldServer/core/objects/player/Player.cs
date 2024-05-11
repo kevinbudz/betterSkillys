@@ -1,24 +1,17 @@
-﻿using Shared;
-using Shared.database.character.inventory;
-using Shared.database.party;
+﻿using Shared.database.party;
 using Shared.resources;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using WorldServer.core.net.datas;
-using WorldServer.core.net.handlers;
 using WorldServer.core.net.stats;
 using WorldServer.core.objects.containers;
 using WorldServer.core.objects.inventory;
-using WorldServer.core.structures;
 using WorldServer.core.worlds;
 using WorldServer.core.worlds.impl;
 using WorldServer.logic;
 using WorldServer.networking;
 using WorldServer.networking.packets.outgoing;
-using WorldServer.utils;
 
 namespace WorldServer.core.objects
 {
@@ -33,11 +26,6 @@ namespace WorldServer.core.objects
         public Client Client { get; private set; }
 
         public bool ShowDeltaTimeLog { get; set; }
-        public PotionStack[] PotionStacks { get; private set; }
-        public PotionStack HealthPotionStack { get; private set; }
-        public PotionStack MagicPotionStack { get; private set; }
-        public RInventory DbLink { get; private set; }
-        public Inventory Inventory { get; private set; }
         public FameCounter FameCounter { get; private set; }
         public ConcurrentQueue<InboundBuffer> IncomingMessages { get; private set; } = new ConcurrentQueue<InboundBuffer>();
         public Pet Pet { get; set; }
@@ -46,8 +34,8 @@ namespace WorldServer.core.objects
         public int? GuildInvite { get; set; }
         public bool IsInvulnerable => HasConditionEffect(ConditionEffectIndex.Paused) || HasConditionEffect(ConditionEffectIndex.Stasis) || HasConditionEffect(ConditionEffectIndex.Invincible) || HasConditionEffect(ConditionEffectIndex.Invulnerable);
         public int LDBoostTime { get; set; }
-        public bool UpgradeEnabled { get; set; }
         public int XPBoostTime { get; set; }
+
         public double Breath
         {
             get => _breath;
@@ -59,10 +47,8 @@ namespace WorldServer.core.objects
         }
         private double _breath;
 
-        private int[] _slotEffectCooldowns = new int[4];
+        public StatsManager Stats { get; private set; }
 
-
-        public StatsManager Stats;
         public bool Muted { get; set; }
 
 
@@ -234,8 +220,8 @@ namespace WorldServer.core.objects
 			set => _partyId.SetValue(value);
         }
 
-        public Player(Client client)
-            : base(client.GameServer, client.Character.ObjectType)
+        public Player(GameServer gameServer, Client client, ushort objectType)
+            : base(gameServer, objectType)
         {
             Client = client;
          
@@ -265,12 +251,9 @@ namespace WorldServer.core.objects
             _hasBackpack = new StatTypeValue<bool>(this, StatDataType.HasBackpack, character.HasBackpack, true);
             _oxygenBar = new StatTypeValue<int>(this, StatDataType.OxygenBar, -1, true);
             _baseStat = new StatTypeValue<int>(this, StatDataType.BaseStat, account.SetBaseStat, true);
-            
             _colornamechat = new StatTypeValue<int>(this, StatDataType.ColorNameChat, 0);
             _colorchat = new StatTypeValue<int>(this, StatDataType.ColorChat, 0);
             _partyId = new StatTypeValue<int>(this, StatDataType.PartyId, account.PartyId, true);
-
-            UpgradeEnabled = character.UpgradeEnabled;
 
             Name = account.Name;
             Health = character.Health;
@@ -278,11 +261,11 @@ namespace WorldServer.core.objects
             XPBoostTime = character.XPBoostTime;
             LDBoostTime = character.LDBoostTime;
 
-            var s = (ushort)character.Skin;
-            if (gameData.Skins.ContainsKey(s))
+            var skinType = (ushort)character.Skin;
+            if (gameData.Skins.ContainsKey(skinType))
             {
                 Skin = character.Skin;
-                Size = gameData.Skins[s].Size;
+                Size = gameData.Skins[skinType].Size;
             }
 
             var guild = GameServer.Database.GetGuild(account.GuildId);
@@ -292,19 +275,10 @@ namespace WorldServer.core.objects
                 GuildRank = account.GuildRank;
             }
 
-            if (account.Size > 0)
-                Size = account.Size;
-
             PetId = character.PetId;
 
-            HealthPotionStack = new PotionStack(this, 254, 0x0A22, count: character.HealthStackCount, settings.MaxStackablePotions);
-            MagicPotionStack = new PotionStack(this, 255, 0x0A23, count: character.MagicStackCount, settings.MaxStackablePotions);
-            PotionStacks = [HealthPotionStack, MagicPotionStack];
-
-            character.Datas ??= new ItemData[28];
-            Inventory = new Inventory(this, Utils.ResizeArray(character.Items.Select(_ => (_ == 0xffff || !gameData.Items.ContainsKey(_)) ? null : gameData.Items[_]).ToArray(), 28), Utils.ResizeArray(Client.Character.Datas, 28));
-            Inventory.InventoryChanged += (sender, e) => Stats.ReCalculateValues();
-            SlotTypes = Utils.ResizeArray(gameData.Classes[ObjectType].SlotTypes, 28);
+            InitializePotionStacks(character, settings);
+            InitializeInventory(gameData, character);
 
             Stats = new StatsManager(this);
 
@@ -368,7 +342,7 @@ namespace WorldServer.core.objects
         public int GetMaxedStats()
         {
             var playerDesc = GameServer.Resources.GameData.Classes[ObjectType];
-            return playerDesc.Stats.Where((t, i) => Stats.Base[i] >= t.MaxValue).Count() + (UpgradeEnabled ? playerDesc.Stats.Where((t, i) => i == 0 ? Stats.Base[i] >= t.MaxValue + 50 : i == 1 ? Stats.Base[i] >= t.MaxValue + 50 : Stats.Base[i] >= t.MaxValue + 10).Count() : 0);
+            return playerDesc.Stats.Where((t, i) => Stats.Base[i] >= t.MaxValue).Count();
         }
 
         public override void Init(World owner)
@@ -435,7 +409,6 @@ namespace WorldServer.core.objects
             chr.Items = Inventory.GetItemTypes();
             chr.XPBoostTime = XPBoostTime;
             chr.LDBoostTime = LDBoostTime;
-            chr.UpgradeEnabled = UpgradeEnabled;
             chr.Datas = Inventory.Data.GetDatas();
 
             Client.Account.TotalFame = Client.Account.Fame;

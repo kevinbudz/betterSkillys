@@ -10,6 +10,7 @@ namespace WorldServer.logic
         private _ SkullShrine = () => Behav()
         .Init("Skull Shrine",
             new State(
+                new PlaceMap("setpieces/skull_shrine.jm", true),
                 new ScaleHP2(35),
                 new Shoot(30, 13, 10, coolDown: 600, predictive: 1), // add prediction after fixing it...
                 new Reproduce("Red Flaming Skull", 40, 20, coolDown: 300),

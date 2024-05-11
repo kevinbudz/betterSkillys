@@ -18,12 +18,10 @@ namespace WorldServer.logic.behaviors
 
         protected override void TickCore(Entity host, TickTime time, ref object state)
         {
-            if (!(host is Enemy)) return;
-
             if (host.HasConditionEffect(ConditionEffectIndex.Paralyzed))
                 return;
 
-            var spawn = (host as Enemy).SpawnPoint;
+            var spawn = host.SpawnPoint.Value;
             var vect = new Vector2(spawn.X, spawn.Y) - new Vector2(host.X, host.Y);
 
             if (vect.Length() > _returnWithinRadius)

@@ -52,6 +52,7 @@ namespace WorldServer.logic.loot
         private static readonly int[] ArmorT = new int[] { 6, 7, 14, };
         private static readonly int[] RingT = new int[] { 9 };
         private static readonly int[] PotionT = new int[] { 10 };
+        private static readonly int[] EggT = new int[] { 26 };
 
         public static int[] GetSlotTypes(ItemType itemType)
         {
@@ -68,6 +69,8 @@ namespace WorldServer.logic.loot
                     types = RingT; break;
                 case ItemType.Potion:
                     types = PotionT; break;
+                case ItemType.Egg:
+                    types = EggT; break;
                 default:
                     throw new NotSupportedException(itemType.ToString());
             }
@@ -86,6 +89,8 @@ namespace WorldServer.logic.loot
                 return ItemType.Ring;
             if (PotionT.Contains(slotType))
                 return ItemType.Potion;
+            if (EggT.Contains(slotType))
+                return ItemType.Egg;
             throw new NotSupportedException(slotType.ToString());
         }
 

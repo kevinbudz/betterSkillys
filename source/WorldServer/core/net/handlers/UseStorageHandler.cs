@@ -1,7 +1,7 @@
 ﻿using Shared;
-using WorldServer.networking;
 using WorldServer.core.objects;
 using WorldServer.core.worlds;
+using WorldServer.networking;
 
 namespace WorldServer.core.net.handlers
 {
@@ -25,20 +25,21 @@ namespace WorldServer.core.net.handlers
 
             switch (action)
             {
-                case 0:
+                case 0: // add
                     ModifyAdd(player, type, typeName);
                     break;
-                case 1:
+                case 1: // remove
                     ModifyRemove(player, type, typeName);
                     break;
-                case 2:
+                case 2: // consume
                     ModifyRemove(player, type, typeName, false, true);
                     break;
-                case 3:
-                    ModifyRemove(player, type, typeName, true);
+                case 3: // sell
+                    player.SendInfo($"Sell feature has been temporarily removed");
+                    //ModifyRemove(player, type, typeName, true);
                     break;
-                case 4:
-                    ModifyRemove(player, type, typeName, false, false, true);
+                case 4: // max
+                    ModifyRemove(player, type, typeName, false, true);
                     break;
             }
         }
@@ -69,14 +70,13 @@ namespace WorldServer.core.net.handlers
             transaction[potIndex] = null;
             transaction.Execute(); // might not need this as a transaction
 
-            ModifyStat(player, type, true);
-            if (isGreater)
-                ModifyStat(player, type, true);
+            var amount = isGreater ? 2 : 1;
+            ModifyStat(player, type, true, amount);
 
             player.SendInfo($"You deposited a {(isGreater ? $"Greater {typeName}" : typeName)}!");
         }
 
-        private void ModifyRemove(Player player, byte type, string typeName, bool isSell = false, bool isConsume = false, bool isMax = false)
+        private void ModifyRemove(Player player, byte type, string typeName, bool isConsume = false, bool isMax = false)
         {
             if (CanModifyStat(player, type, true))
             {
@@ -84,79 +84,73 @@ namespace WorldServer.core.net.handlers
                 return;
             }
 
+            var statInfo = player.GameServer.Resources.GameData.Classes[player.ObjectType].Stats;
+            var maxStatValue = statInfo[type].MaxValue;
+
             if (isConsume)
             {
-                var statInfo = player.GameServer.Resources.GameData.Classes[player.ObjectType].Stats;
-                if (player.Stats.Base[type] >= statInfo[type].MaxValue)
+                if (player.Stats.Base[type] >= maxStatValue)
                 {
                     player.SendInfo($"You are already maxed");
                     return;
                 }
 
                 player.Stats.Base[type] += type < 2 ? 5 : 1;
-                if (player.Stats.Base[type] >= statInfo[type].MaxValue)
-                    player.Stats.Base[type] = statInfo[type].MaxValue;
+                if (player.Stats.Base[type] >= maxStatValue)
+                    player.Stats.Base[type] = maxStatValue;
 
                 ModifyStat(player, type, false);
+
                 player.SendInfo($"You consumed a {typeName}!");
                 return;
             }
-            else if (isSell)
+
+            if (isMax)
             {
-                var fameToAdd = type < 2 ? 5 : 2;
-                player.CurrentFame = player.Client.Account.Fame += fameToAdd;
-                player.Client.Account.TotalFame += fameToAdd;
-                player.GameServer.Database.ReloadAccount(player.Client.Account);
-                player.SendInfo($"You sold a {typeName} for {fameToAdd} fame!");
-            }
-            else if (isMax)
-            {
-                var statInfo = player.GameServer.Resources.GameData.Classes[player.ObjectType].Stats;
-                if (player.Stats.Base[type] >= statInfo[type].MaxValue)
+                if (player.Stats.Base[type] >= maxStatValue)
                 {
                     player.SendInfo($"You are already maxed");
                     return;
                 }
 
-                var toMax = type < 2 ? (statInfo[type].MaxValue - player.Stats.Base[type]) / 5 : statInfo[type].MaxValue - player.Stats.Base[type];
+                var toMax = type < 2 ? (maxStatValue - player.Stats.Base[type]) / 5 : maxStatValue - player.Stats.Base[type];
                 var newToMax = 0;
 
-                if (CheckMax(player, type, toMax))
+                if (CanMax(player, type, toMax))
                 {
-                    newToMax = toMax - ToMaxCalc(player, type, toMax);
+                    newToMax = toMax - PotionsToMaxCalc(player, type, toMax);
                     toMax = newToMax;
                     player.SendInfo($"Not enough {typeName} to max, using [{newToMax}]");
                 }
 
-
                 player.Stats.Base[type] += type < 2 ? 5 * toMax : 1 * toMax;
 
-                if (player.Stats.Base[type] >= statInfo[type].MaxValue)
-                    player.Stats.Base[type] = statInfo[type].MaxValue;
+                if (player.Stats.Base[type] >= maxStatValue)
+                    player.Stats.Base[type] = maxStatValue;
 
                 ModifyStat(player, type, false, toMax);
                 if (newToMax > 0)
                     return;
                 else
                     player.SendInfo($"You maxed {typeName.Remove(0, 9)}!");
+
                 return;
             }
-            else
+
+            var potionType = player.GameServer.Resources.GameData.Items[player.GameServer.Resources.GameData.IdToObjectType[typeName]];
+
+            var index = player.Inventory.GetAvailableInventorySlot(potionType);
+            if (index == -1)
             {
-                var potion = player.GameServer.Resources.GameData.Items[player.GameServer.Resources.GameData.IdToObjectType[typeName]];
-                var index = player.Inventory.GetAvailableInventorySlot(potion);
-                if (index == -1)
-                {
-                    player.SendInfo("Your inventory is full!");
-                    return;
-                }
-
-                var transaction = player.Inventory.CreateTransaction();
-                transaction[index] = potion;
-                transaction.Execute(); // might not need this as a transaction
-
-                player.SendInfo($"You withdrew a {typeName}!");
+                player.SendInfo("Your inventory is full!");
+                return;
             }
+
+            var transaction = player.Inventory.CreateTransaction();
+            transaction[index] = potionType;
+            transaction.Execute(); // might not need this as a transaction
+
+            player.SendInfo($"You withdrew a {typeName}!");
 
             ModifyStat(player, type, false, 1);
         }
@@ -169,98 +163,78 @@ namespace WorldServer.core.net.handlers
             return -1;
         }
 
-        private static void ModifyStat(Player Player, byte type, bool isAdd, int amount = 1)
+        private static void ModifyStat(Player player, byte type, bool isAdd, int amount = 1)
         {
             var newAmount = isAdd ? amount : -amount;
 
-            if (type == 0)
-            {
-                Player.SPSLifeCount += newAmount;
-                Player.Client.Account.SPSLifeCount += newAmount;
-            }
-            else if (type == 1)
-            {
-                Player.SPSManaCount += newAmount;
-                Player.Client.Account.SPSManaCount += newAmount;
-            }
-            else if (type == 2)
-            {
-                Player.SPSAttackCount += newAmount;
-                Player.Client.Account.SPSAttackCount += newAmount;
-            }
-            else if (type == 3)
-            {
-                Player.SPSDefenseCount += newAmount;
-                Player.Client.Account.SPSDefenseCount += newAmount;
-            }
-            else if (type == 4)
-            {
-                Player.SPSSpeedCount += newAmount;
-                Player.Client.Account.SPSSpeedCount += newAmount;
-            }
-            else if (type == 5)
-            {
-                Player.SPSDexterityCount += newAmount;
-                Player.Client.Account.SPSDexterityCount += newAmount;
-            }
-            else if (type == 6)
-            {
-                Player.SPSVitalityCount += newAmount;
-                Player.Client.Account.SPSVitalityCount += newAmount;
-            }
-            else if (type == 7)
-            {
-                Player.SPSWisdomCount += newAmount;
-                Player.Client.Account.SPSWisdomCount += newAmount;
-            }
-        }
-
-        private static int ToMaxCalc(Player player, byte type, int toMax)
-        {
             switch (type)
             {
-                case 0: return toMax - player.SPSLifeCount;
-                case 1: return toMax - player.SPSManaCount;
-                case 2: return toMax - player.SPSAttackCount;
-                case 3: return toMax - player.SPSDefenseCount;
-                case 4: return toMax - player.SPSSpeedCount;
-                case 5: return toMax - player.SPSDexterityCount;
-                case 6: return toMax - player.SPSVitalityCount;
-                case 7: return toMax - player.SPSWisdomCount;
-                default: return 0;
+                case 0:
+                    player.SPSLifeCount += newAmount;
+                    break;
+                case 1:
+                    player.SPSManaCount += newAmount;
+                    break;
+                case 2:
+                    player.SPSAttackCount += newAmount;
+                    break;
+                case 3:
+                    player.SPSDefenseCount += newAmount;
+                    break;
+                case 4:
+                    player.SPSSpeedCount += newAmount;
+                    break;
+                case 5:
+                    player.SPSDexterityCount += newAmount;
+                    break;
+                case 6:
+                    player.SPSVitalityCount += newAmount;
+                    break;
+                case 7:
+                    player.SPSWisdomCount += newAmount;
+                    break;
             }
+
+            player.SavePotionStorage();
         }
 
-        private static bool CheckMax(Player Player, byte type, int toMax)
+        private static int PotionsToMaxCalc(Player player, byte type, int toMax) => type switch
         {
-            switch (type)
-            {
-                case 0: return Player.SPSLifeCount < toMax;
-                case 1: return Player.SPSManaCount < toMax;
-                case 2: return Player.SPSAttackCount < toMax;
-                case 3: return Player.SPSDefenseCount < toMax;
-                case 4: return Player.SPSSpeedCount < toMax;
-                case 5: return Player.SPSDexterityCount < toMax;
-                case 6: return Player.SPSVitalityCount < toMax;
-                case 7: return Player.SPSWisdomCount < toMax;
-                default: return false;
-            }
-        }
+            0 => toMax - player.SPSLifeCount,
+            1 => toMax - player.SPSManaCount,
+            2 => toMax - player.SPSAttackCount,
+            3 => toMax - player.SPSDefenseCount,
+            4 => toMax - player.SPSSpeedCount,
+            5 => toMax - player.SPSDexterityCount,
+            6 => toMax - player.SPSVitalityCount,
+            7 => toMax - player.SPSWisdomCount,
+            _ => 0,
+        };
 
-        private static bool CanModifyStat(Player player, byte type, bool checkZero)
+        private static bool CanMax(Player Player, byte type, int toMax) => type switch
         {
-            switch (type)
-            {
-                case 0: return checkZero ? player.SPSLifeCount <= 0 : player.SPSLifeCount < player.SPSLifeCountMax;
-                case 1: return checkZero ? player.SPSManaCount <= 0 : player.SPSManaCount < player.SPSManaCountMax;
-                case 2: return checkZero ? player.SPSAttackCount <= 0 : player.SPSAttackCount < player.SPSAttackCountMax;
-                case 3: return checkZero ? player.SPSDefenseCount <= 0 : player.SPSDefenseCount < player.SPSDefenseCountMax;
-                case 4: return checkZero ? player.SPSSpeedCount <= 0 : player.SPSSpeedCount < player.SPSSpeedCountMax;
-                case 5: return checkZero ? player.SPSDexterityCount <= 0 : player.SPSDexterityCount < player.SPSDexterityCountMax;
-                case 6: return checkZero ? player.SPSVitalityCount <= 0 : player.SPSVitalityCount < player.SPSVitalityCountMax;
-                case 7: return checkZero ? player.SPSWisdomCount <= 0 : player.SPSWisdomCount < player.SPSWisdomCountMax;
-                default: return false;
-            }
-        }
+            0 => Player.SPSLifeCount < toMax,
+            1 => Player.SPSManaCount < toMax,
+            2 => Player.SPSAttackCount < toMax,
+            3 => Player.SPSDefenseCount < toMax,
+            4 => Player.SPSSpeedCount < toMax,
+            5 => Player.SPSDexterityCount < toMax,
+            6 => Player.SPSVitalityCount < toMax,
+            7 => Player.SPSWisdomCount < toMax,
+            _ => false,
+        };
+
+        private static bool CanModifyStat(Player player, byte type, bool checkZero) => type switch
+        {
+            0 => checkZero ? player.SPSLifeCount <= 0 : player.SPSLifeCount < player.SPSLifeCountMax,
+            1 => checkZero ? player.SPSManaCount <= 0 : player.SPSManaCount < player.SPSManaCountMax,
+            2 => checkZero ? player.SPSAttackCount <= 0 : player.SPSAttackCount < player.SPSAttackCountMax,
+            3 => checkZero ? player.SPSDefenseCount <= 0 : player.SPSDefenseCount < player.SPSDefenseCountMax,
+            4 => checkZero ? player.SPSSpeedCount <= 0 : player.SPSSpeedCount < player.SPSSpeedCountMax,
+            5 => checkZero ? player.SPSDexterityCount <= 0 : player.SPSDexterityCount < player.SPSDexterityCountMax,
+            6 => checkZero ? player.SPSVitalityCount <= 0 : player.SPSVitalityCount < player.SPSVitalityCountMax,
+            7 => checkZero ? player.SPSWisdomCount <= 0 : player.SPSWisdomCount < player.SPSWisdomCountMax,
+            _ => false,
+        };
     }
 }

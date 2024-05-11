@@ -6,6 +6,7 @@ using Shared.resources;
 using System;
 using System.Diagnostics;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Threading;
 using WorldServer.core.commands;
@@ -89,6 +90,29 @@ namespace WorldServer.core
 
         public void Run()
         {
+#if DEBUG
+            if (!Directory.Exists("GenerateXMLS"))
+                _ = Directory.CreateDirectory("GenerateXMLS");
+
+            var f = File.CreateText("GenerateXMLS/EmbeddedData_ObjectsCXML.xml");
+            f.Write(Resources.GameData.ObjectCombinedXML.ToString());
+            f.Close();
+
+            var f3 = File.CreateText("GenerateXMLS/EmbeddedData_SkinsCXML.xml");
+            f3.Write(Resources.GameData.SkinsCombinedXML.ToString());
+            f3.Close();
+
+            var f4 = File.CreateText("GenerateXMLS/EmbeddedData_PlayersCXML.xml");
+            f4.Write(Resources.GameData.CombinedXMLPlayers.ToString());
+            f4.Close();
+
+            var f2 = File.CreateText("GenerateXMLS/EmbeddedData_GroundsCXML.xml");
+            f2.Write(Resources.GameData.GroundCombinedXML.ToString());
+            f2.Close();
+
+            Console.WriteLine("GenerateXMLS is done ready for copying to src\\kabam\\rotmg\\assets");
+#endif
+
             CommandManager.Initialize(this);
             Loot.Initialize(this);
             MobDrops.Initialize(this);

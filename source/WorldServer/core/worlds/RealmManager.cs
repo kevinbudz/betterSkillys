@@ -287,18 +287,23 @@ namespace WorldServer.core.worlds
             },
         };
 
+        // most the entities spawn the map themselves as behaviour
+        // null will default to useing NamedEntitySetPiece which is the name specified there
+        
+        // todo max per realm?
         private readonly List<Tuple<string, ISetPiece>> _events = new List<Tuple<string, ISetPiece>>()
         {
             Tuple.Create("Cube God", (ISetPiece) null),
             Tuple.Create("Pentaract", (ISetPiece) new Pentaract()),
             Tuple.Create("Lord of the Lost Lands", (ISetPiece) null),
-            Tuple.Create("Ghost Ship", (ISetPiece) new GhostShip()),
-            Tuple.Create("Grand Sphinx", (ISetPiece) new Sphinx()),
-            Tuple.Create("Hermit God", (ISetPiece) new Hermit()),
-            Tuple.Create("Skull Shrine", (ISetPiece) new SkullShrine()),
+            Tuple.Create("Ghost Ship", (ISetPiece) null),
+            Tuple.Create("Grand Sphinx", (ISetPiece) null),
+            Tuple.Create("Hermit God", (ISetPiece) null),
+            Tuple.Create("Skull Shrine", (ISetPiece) null),
             Tuple.Create("Garnet Statue", (ISetPiece) new GarnetJade()),
             Tuple.Create("Lucky Ent God", (ISetPiece) null),
             Tuple.Create("Lucky Djinn", (ISetPiece) null),
+            Tuple.Create("shtrs Defense System", (ISetPiece)null)
         };
 
         private int[] EnemyCounts = new int[12];
@@ -455,8 +460,6 @@ namespace WorldServer.core.worlds
 
         public void Init()
         {
-            SpawnEvent("Skull Shrine", new SkullShrine(), 1024, 1024);
-
             var events = _events;
             var evt = events[Random.Shared.Next(0, events.Count)];
             var gameData = World.GameServer.Resources.GameData;

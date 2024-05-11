@@ -2,12 +2,12 @@
 {
     public enum ItemType
     {
+        None,
         Weapon,
         Ability,
         Armor,
         Ring,
         Potion,
-        StatPot,
-        None
+        Egg
     }
 }

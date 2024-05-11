@@ -109,7 +109,6 @@ namespace WorldServer.core.worlds.impl
                 var con = new Container(Client.GameServer, 0x0504, null, false, vaultChest)
                 {
                     BagOwners = new int[] { AccountId },
-                    Size = 65
                 };
                 con.Inventory.SetItems(con.Inventory.ConvertTypeToItemArray(vaultChest.Items));
                 con.Inventory.SetDataItems(vaultChest.ItemDatas);

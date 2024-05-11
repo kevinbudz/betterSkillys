@@ -74,7 +74,7 @@ namespace WorldServer.core.objects
             player1.SendInfo("New Character Slot Unlocked!, go to Character selector to use them!");
         }
 
-        public void UseItem(int clientTime, TickTime time, int objId, int slot, Position pos, int sellMaxed, int useType)
+        public void UseItem(int clientTime, TickTime time, int objId, int slot, Position pos, int useType)
         {
             //Log.Debug(objId + ":" + slot);
             var entity = World.GetEntity(objId);
@@ -203,7 +203,7 @@ namespace WorldServer.core.objects
                         }
                     }
 
-                    Activate(clientTime, time, item, slot, pos, objId, sellMaxed, useType);
+                    Activate(clientTime, time, item, slot, pos, objId, useType);
                     return;
                 }
 
@@ -214,7 +214,7 @@ namespace WorldServer.core.objects
                 FameCounter.DrinkPot();
 
             if (item.InvUse || item.Consumable || item.SlotType == slotType)
-                Activate(clientTime, time, item, slot, pos, objId, sellMaxed, useType);
+                Activate(clientTime, time, item, slot, pos, objId, useType);
             else
                 Client.SendPacket(new InvResult() { Result = 1 });
         }
@@ -317,7 +317,7 @@ namespace WorldServer.core.objects
             player.Mana = newMp;
         }
 
-        private void Activate(int clientTime, TickTime time, Item item, int slot, Position target, int objId, int sellmaxed, int useType)
+        private void Activate(int clientTime, TickTime time, Item item, int slot, Position target, int objId, int useType)
         {
             Mana -= item.MpCost;
 
@@ -360,7 +360,7 @@ namespace WorldServer.core.objects
                         break;
                     case ActivateEffects.Shoot: break; // handled in PlayerShoot.cs
                     case ActivateEffects.IncrementStat:
-                        AEIncrementStat(time, item, target, eff, objId, slot, sellmaxed);
+                        AEIncrementStat(time, item, target, eff, objId, slot);
                         break;
                     case ActivateEffects.Heal:
                         AEHeal(time, item, target, eff);
@@ -694,293 +694,33 @@ namespace WorldServer.core.objects
             }, this);
         }
 
-        private void AEIncrementStat(TickTime time, Item item, Position target, ActivateEffect eff, int objId, int slot, int sellMaxed)
+        private void AEIncrementStat(TickTime time, Item item, Position target, ActivateEffect eff, int objId, int slot)
         {
-            var totalAllowed = 50;
             var idx = StatsManager.GetStatIndex((StatDataType)eff.Stats);
+
             var statInfo = GameServer.Resources.GameData.Classes[ObjectType].Stats;
-            var statname = StatsManager.StatIndexToName(idx);
-            var ent = World.GetEntity(objId);
-            var container = ent as Container;
-            var storeAmount = eff.Amount == 5 ? 1 : eff.Amount == 10 ? 2 : eff.Amount == 2 ? 2 : 1;
-            if (Stats.Base[idx] < statInfo[idx].MaxValue)
-            {
-                Stats.Base[idx] += eff.Amount;
-                if (Stats.Base[idx] >= statInfo[idx].MaxValue)
-                {
-                    Stats.Base[idx] = statInfo[idx].MaxValue;
-                    return;
-                }
-            }
 
-            if (!UpgradeEnabled && Stats.Base[idx] >= statInfo[idx].MaxValue)
-            {
-                if (container != null)
-                {
-                    Stats.Base[idx] = statInfo[idx].MaxValue;
-                    container.Inventory[slot] = item;
-                }
-                else
-                {
-                    Stats.Base[idx] = statInfo[idx].MaxValue;
-                    Inventory[slot] = item;
-                }
-                SendError("You're maxed!");
-                return;
-            }
-            else if (UpgradeEnabled && item.Maxy)
-            {
-                if (container != null)
-                {
-                    container.Inventory[slot] = item;
-                }
-                else
-                {
-                    Inventory[slot] = item;
-                }
-                SendError("You're maxed!");
-                return;
-            }
+            var amount = eff.Amount;
 
-            if (statname == "MpRegen")
-                statname = "Wisdom";
-            else if (statname == "HpRegen")
-                statname = "Vitality";
-            else if (statname == "MaxHitPoints")
-                statname = "Life";
-            else if (statname == "MaxMagicPoints")
-                statname = "Mana";
-
-
-            if ((sellMaxed == 2) && UpgradeEnabled) //"Store" Selected where Supreme IS active
-            {
-                //Stats.Base[idx] = statInfo[idx].MaxValue + (idx == 0 ? 50 : idx == 1 ? 50 : 10); ??
-                if (container != null)
-                    container.Inventory[slot] = null;
-                else
-                    Inventory[slot] = null;
-                var storedAmount = HandleTX(statname, storeAmount);
-                GameServer.Database.ReloadAccount(Client.Account);
-                if (storedAmount == 998)
-                {
-                    int fameValue = idx < 2 ? 5 : 2;
-                    fameValue += eff.Amount == 10 ? 5 : eff.Amount == 2 ? 2 : 0;
-                    Client.Account.Reload("fame");
-                    Client.Account.Reload("totalFame");
-                    Client.Account.Fame += fameValue;
-                    Client.Account.TotalFame += fameValue;
-
-                    CurrentFame = Client.Account.Fame;
-                    GameServer.Database.ReloadAccount(Client.Account);
-                    SendError($"Your {statname} is currently Full. Sold for {fameValue} fame.");
-                }
-                else if (storedAmount == 999)
-                {
-                    SendError($"An error has occured, try again later.");
-                }
-                else
-                {
-                    bool checkVowel = statname.Substring(0, 1) == "A";
-                    string accForVowel = checkVowel ? "n" : "";
-                    switch (storeAmount)
-                    {
-                        case 1:
-                            SendInfo($"Added a{accForVowel} {statname} potion to your storage! [{storedAmount}/{totalAllowed}]");
-                            break;
-                        case 2:
-                            SendInfo($"Added two {statname} potions to your storage! [{storedAmount}/{totalAllowed}]");
-                            break;
-                        default:
-                            SendInfo($"Added multiple {statname} potions to your storage! [{storedAmount}/{totalAllowed}]");
-                            break;
-                    }
-                }
-
-                return;
-            }
-            else if (Stats.Base[idx] >= statInfo[idx].MaxValue && (sellMaxed == 2) && !UpgradeEnabled) //"Store" Selected where Supreme NOT active
+            if (Stats.Base[idx] >= statInfo[idx].MaxValue)
             {
                 Stats.Base[idx] = statInfo[idx].MaxValue;
-                if (container != null)
-                    container.Inventory[slot] = null;
-                else
-                    Inventory[slot] = null;
-                var storedAmount = HandleTX(statname, storeAmount);
-                GameServer.Database.ReloadAccount(Client.Account);
-                if (storedAmount == 998)
-                {
-                    int fameValue = idx < 2 ? 5 : 2;
-                    fameValue += eff.Amount == 10 ? 5 : eff.Amount == 2 ? 2 : 0;
-                    Client.Account.Reload("fame");
-                    Client.Account.Reload("totalFame");
-                    Client.Account.Fame += fameValue;
-                    Client.Account.TotalFame += fameValue;
 
-                    CurrentFame = Client.Account.Fame;
-                    GameServer.Database.ReloadAccount(Client.Account);
-                    SendError($"Your {statname} is currently Full. Sold for {fameValue} fame.");
-                }
-                else if (storedAmount == 999)
-                {
-                    SendError($"An error has occured, try again later.");
-                }
-                else
-                {
-                    SendInfo($"Added {storeAmount} {statname} to your Potion Storage! [{storedAmount} / {totalAllowed}]");
-                }
-
-                return;
-            }
-
-            if ((Stats.Base[idx] >= statInfo[idx].MaxValue + (idx == 0 ? 50 : idx == 1 ? 50 : 10)) && (sellMaxed == 1) && UpgradeEnabled) //"Sell" Selected where Supreme is active
-            {
-                Stats.Base[idx] = statInfo[idx].MaxValue + (idx == 0 ? 50 : idx == 1 ? 50 : 10);
-                if (container != null)
-                    container.Inventory[slot] = null;
-                else
-                    Inventory[slot] = null;
-                int fameValue = idx < 2 ? 5 : 2;
-                fameValue += eff.Amount == 10 ? 5 : eff.Amount == 2 ? 2 : 0;
-                Client.Account.Reload("fame");
-                Client.Account.Reload("totalFame");
-                Client.Account.Fame += fameValue;
-                Client.Account.TotalFame += fameValue;
-
-                CurrentFame = Client.Account.Fame;
-                GameServer.Database.ReloadAccount(Client.Account);
-                SendInfo($"Your {statname} got sold for {fameValue} Fame!");
-                return;
-            }
-            else if ((Stats.Base[idx] >= statInfo[idx].MaxValue + (idx == 0 ? 50 : idx == 1 ? 50 : 10)) && (sellMaxed == 0) && UpgradeEnabled)//"Off" Selected where Supreme IS active
-            {
-                if (container != null)
+                var ent = World.GetEntity(objId);
+                if (ent is Container container)
                     container.Inventory[slot] = item;
                 else
                     Inventory[slot] = item;
-                Stats.Base[idx] = statInfo[idx].MaxValue + (idx == 0 ? 50 : idx == 1 ? 50 : 10);
+
                 SendInfo("You're Maxed in this Stat!");
                 return;
             }
 
-            if (Stats.Base[idx] >= statInfo[idx].MaxValue && (sellMaxed == 1) && !UpgradeEnabled)//"Sell" Selected where Supreme NOT active
-            {
+            Stats.Base[idx] += amount;
+            if (Stats.Base[idx] >= statInfo[idx].MaxValue)
                 Stats.Base[idx] = statInfo[idx].MaxValue;
-                if (container != null)
-                    container.Inventory[slot] = null;
-                else
-                    Inventory[slot] = null;
-                int fameValue = idx < 2 ? 5 : 2;
-                fameValue += eff.Amount == 10 ? 5 : eff.Amount == 2 ? 2 : 0;
 
-                Client.Account.Reload("fame");
-                Client.Account.Reload("totalFame");
-                Client.Account.Fame += fameValue;
-                Client.Account.TotalFame += fameValue;
-                CurrentFame = Client.Account.Fame;
-
-                GameServer.Database.ReloadAccount(Client.Account);
-                SendInfo($"Your {statname} got sold for {fameValue} Fame!");
-                return;
-            }
-            else if (Stats.Base[idx] >= statInfo[idx].MaxValue && (sellMaxed == 0) && !UpgradeEnabled)//"Off" Selected where Supreme NOT active
-            {
-                if (container != null)
-                    container.Inventory[slot] = item;
-                else
-                    Inventory[slot] = item;
-                Stats.Base[idx] = statInfo[idx].MaxValue;
-                SendInfo("You're Maxed in this Stat!");
-                return;
-            }
-            else
-            {
-                SendInfo($"Consumed Potion of {statname}.");
-            }
-        }
-
-        private int HandleTX(string statname, int amount)
-        {
-            var addition = 0;
-            switch (Client.Rank.Rank)
-            {
-                case RankingType.Supporter1:
-                    addition = 10;
-                    break;
-                case RankingType.Supporter2:
-                    addition = 20;
-                    break;
-                case RankingType.Supporter3:
-                    addition = 30;
-                    break;
-                case RankingType.Supporter4:
-                    addition = 40;
-                    break;
-                case RankingType.Supporter5:
-                    addition = 50;
-                    break;
-            }
-            var maxAllowed = 50 + addition;
-
-            switch (statname)
-            {
-                case "Wisdom":
-                    if (Client.Account.SPSWisdomCount < maxAllowed)
-                    {
-                        Client.Account.SPSWisdomCount += amount;
-                        return Client.Account.SPSWisdomCount;
-                    }
-                    return 998;
-                case "Vitality":
-                    if (Client.Account.SPSVitalityCount < maxAllowed)
-                    {
-                        Client.Account.SPSVitalityCount += amount;
-                        return Client.Account.SPSVitalityCount;
-                    }
-                    return 998;
-                case "Life":
-                    if (Client.Account.SPSLifeCount < maxAllowed)
-                    {
-                        Client.Account.SPSLifeCount += amount;
-                        return Client.Account.SPSLifeCount;
-                    }
-                    return 998;
-                case "Mana":
-                    if (Client.Account.SPSManaCount < maxAllowed)
-                    {
-                        Client.Account.SPSManaCount += amount;
-                        return Client.Account.SPSManaCount;
-                    }
-                    return 998;
-                case "Speed":
-                    if (Client.Account.SPSSpeedCount < maxAllowed)
-                    {
-                        Client.Account.SPSSpeedCount += amount;
-                        return Client.Account.SPSSpeedCount;
-                    }
-                    return 998;
-                case "Attack":
-                    if (Client.Account.SPSAttackCount < maxAllowed)
-                    {
-                        Client.Account.SPSAttackCount += amount;
-                        return Client.Account.SPSAttackCount;
-                    }
-                    return 998;
-                case "Defense":
-                    if (Client.Account.SPSDefenseCount < maxAllowed)
-                    {
-                        Client.Account.SPSDefenseCount += amount;
-                        return Client.Account.SPSDefenseCount;
-                    }
-                    return 998;
-                case "Dexterity":
-                    if (Client.Account.SPSDexterityCount < maxAllowed)
-                    {
-                        Client.Account.SPSDexterityCount += amount;
-                        return Client.Account.SPSDexterityCount;
-                    }
-                    return 998;
-            }
-            return 999;
+            SendInfo($"{item.DisplayName} was consumed");
         }
 
         private void AELDBoost(TickTime time, Item item, Position target, ActivateEffect eff)

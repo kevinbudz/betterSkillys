@@ -6,14 +6,6 @@ namespace Shared.database.character
 {
     public class DbChar : RedisObject
     {
-        public DbChar(DbAccount acc, int charId, bool isAsync = false)
-        {
-            Account = acc;
-            CharId = charId;
-
-            Init(acc.Database, "char." + acc.AccountId + "." + charId, null, isAsync);
-        }
-
         public DbAccount Account { get; private set; }
 
         public int CharId { get; private set; }
@@ -40,8 +32,15 @@ namespace Shared.database.character
         public int[] Stats { get => GetValue<int[]>("stats"); set => SetValue("stats", value); }
         public int Tex1 { get => GetValue<int>("tex1"); set => SetValue("tex1", value); }
         public int Tex2 { get => GetValue<int>("tex2"); set => SetValue("tex2", value); }
-        public bool UpgradeEnabled { get => GetValue<bool>("upgradeEnabled"); set => SetValue("upgradeEnabled", value); }
         public int XPBoostTime { get => GetValue<int>("xpBoost"); set => SetValue("xpBoost", value); }
         public bool CompletedTrialOfSouls { get => GetValue<bool>("completedTrialOfSouls"); set => SetValue("completedTrialOfSouls", value); }
+
+        public DbChar(DbAccount account, int charId, bool isAsync = false)
+        {
+            Account = account;
+            CharId = charId;
+
+            Init(account.Database, $"char.{account.AccountId}.{charId}", null, isAsync);
+        }
     }
 }

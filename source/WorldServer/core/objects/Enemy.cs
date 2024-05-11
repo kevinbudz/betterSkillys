@@ -12,7 +12,6 @@ namespace WorldServer.core.objects
     public class Enemy : Character
     {
         private float _bleeding = 0;
-        private Position? _spawnPoint;
 
         protected StatTypeValue<int> _defense;
         public int Defense
@@ -32,7 +31,6 @@ namespace WorldServer.core.objects
         public Enemy ParentEntity { get; set; }
 
         public TerrainType Terrain { get; set; }
-        public Position SpawnPoint => _spawnPoint ??= Position;
 
         public bool IsEpic { get; set; }
         public bool IsLegendary { get; set; }

@@ -767,7 +767,7 @@ namespace WorldServer.logic
                             new Order(60, "shtrs obelisk timer", "timer1"),
                             new TimedTransition(1, "stopsettingoffmytimer")
                         ),
-                    new State("stopsettingoffmytimer",
+                    new State("stopsettingoffmytimer",  
                         new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable)
                         ),
                     new State("Shoot",

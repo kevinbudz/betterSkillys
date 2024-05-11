@@ -3,7 +3,7 @@ import com.company.assembleegameclient.game.GameSprite;
 
 import com.company.assembleegameclient.ui.panels.Panel;
 
-import kabam.rotmg.PotionStorage.PotionStoragePanel;
+import kabam.rotmg.storage.PotionStoragePanel;
 
 
 public class PotionStorage extends GameObject implements IInteractiveObject {

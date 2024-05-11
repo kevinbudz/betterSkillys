@@ -102,11 +102,18 @@ namespace Shared.resources
                 var displayId = e.GetValue<string>("DisplayId");
                 var displayName = string.IsNullOrWhiteSpace(displayId) ? id : displayId;
 
+                if (cls == "PetAbility" || cls == "PetBehavior") // dont add this
+                    return;
+
                 if (ObjectTypeToId.ContainsKey(type))
                     Log.Warn("'{0}' and '{1}' have the same type of '0x{2:x4}'", id, ObjectTypeToId[type], type);
 
                 if (IdToObjectType.ContainsKey(id))
-                    Log.Warn("'0x{0:x4}' and '0x{1:x4}' have the same id of '{2}'", type, IdToObjectType[id], id);
+                {
+                    // to prevent the situation where 'Something' and 'something' or 'SOMETHING' is flagging as same even if they have different capitalization
+                    if (ObjectTypeToId[IdToObjectType[id]].Equals(id))
+                        Log.Warn("'0x{0:x4}' and '0x{1:x4}' have the same id of '{2}'", type, IdToObjectType[id], id);
+                }
 
                 ObjectTypeToId[type] = id;
                 IdToObjectType[id] = type;
@@ -153,19 +160,15 @@ namespace Shared.resources
             directories.Add(basePath);
             foreach (var directory in directories)
             {
-                var directoryName = directory.Replace($@"{basePath}", "").Replace("\\", "");
+                var directoryName = directory.Replace($@"{basePath}", "").Replace("\\", "/");
 
                 var jms = Directory.GetFiles(directory, "*.jm");
                 foreach (var jm in jms)
                 {
                     var id = $"{(directoryName == "" ? "" : $"{directoryName}/")}{Path.GetFileName(jm)}";
-					
-					if(isDocker){
-						if(id[0] == '/'){
-							id = id.Substring(1, id.Length - 1);
-						}
-					}
-		
+					if(id[0] == '/')
+						id = id.Substring(1, id.Length - 1);
+
                     if (id == "realm.jm")
                         WorldDataCache.Add(id, File.ReadAllBytes(jm));
                     else

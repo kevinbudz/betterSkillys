@@ -47,7 +47,7 @@ namespace WorldServer.core.net.handlers
                     y = sRegion.Key.Y;
                 }
 
-                var player = client.Player = target.CreateNewPlayer(client, x, y);
+                var player = client.Player = target.CreateNewPlayer(client, client.Character.ObjectType, x, y);
 
                 client.SendPacket(new CreateSuccessMessage(player.Id, client.Character.CharId));
 

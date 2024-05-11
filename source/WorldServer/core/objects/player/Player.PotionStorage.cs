@@ -128,14 +128,10 @@ namespace WorldServer.core.objects
             set => _storageWisdomCountMax.SetValue(value);
         }
 
+        public int MaxAllowedPotions { get; private set; }
+
         public void InitializePotionStorage(DbAccount account)
         {
-            var iRank = (int)Rank;
-
-            var maxPotionAmount = 50;
-            if (iRank <= (int)RankingType.Supporter5)
-                maxPotionAmount += iRank * 10;
-
             _storageLifeCount = new StatTypeValue<int>(this, StatDataType.SPS_LIFE_COUNT, account.SPSLifeCount, true);
             _storageManaCount = new StatTypeValue<int>(this, StatDataType.SPS_MANA_COUNT, account.SPSManaCount, true);
             _storageDefenseCount = new StatTypeValue<int>(this, StatDataType.SPS_DEFENSE_COUNT, account.SPSDefenseCount, true);
@@ -145,6 +141,13 @@ namespace WorldServer.core.objects
             _storageVitalityCount = new StatTypeValue<int>(this, StatDataType.SPS_VITALITY_COUNT, account.SPSVitalityCount, true);
             _storageWisdomCount = new StatTypeValue<int>(this, StatDataType.SPS_WISDOM_COUNT, account.SPSWisdomCount, true);
 
+            var iRank = (int)Rank;
+            var maxPotionAmount = 50;
+            if (iRank <= (int)RankingType.Supporter5)
+                maxPotionAmount += iRank * 10;
+
+            MaxAllowedPotions = maxPotionAmount;
+
             _storageLifeCountMax = new StatTypeValue<int>(this, StatDataType.SPS_LIFE_COUNT_MAX, maxPotionAmount, true);
             _storageManaCountMax = new StatTypeValue<int>(this, StatDataType.SPS_MANA_COUNT_MAX, maxPotionAmount, true);
             _storageDefenseCountMax = new StatTypeValue<int>(this, StatDataType.SPS_DEFENSE_COUNT_MAX, maxPotionAmount, true);
@@ -153,6 +156,84 @@ namespace WorldServer.core.objects
             _storageSpeedCountMax = new StatTypeValue<int>(this, StatDataType.SPS_SPEED_COUNT_MAX, maxPotionAmount, true);
             _storageVitalityCountMax = new StatTypeValue<int>(this, StatDataType.SPS_VITALITY_COUNT_MAX, maxPotionAmount, true);
             _storageWisdomCountMax = new StatTypeValue<int>(this, StatDataType.SPS_WISDOM_COUNT_MAX, maxPotionAmount, true);
+        }
+
+        private int AddToStorage(string statName, int amount)
+        {
+            switch (statName)
+            {
+                case "Wisdom":
+                    if (SPSWisdomCount < MaxAllowedPotions)
+                    {
+                        SPSWisdomCount += amount;
+                        return SPSWisdomCount;
+                    }
+                    return 998;
+                case "Vitality":
+                    if (SPSVitalityCount < MaxAllowedPotions)
+                    {
+                        SPSVitalityCount += amount;
+                        return SPSVitalityCount;
+                    }
+                    return 998;
+                case "Life":
+                    if (SPSLifeCount < MaxAllowedPotions)
+                    {
+                        SPSLifeCount += amount;
+                        return SPSLifeCount;
+                    }
+                    return 998;
+                case "Mana":
+                    if (SPSManaCount < MaxAllowedPotions)
+                    {
+                        SPSManaCount += amount;
+                        return SPSManaCount;
+                    }
+                    return 998;
+                case "Speed":
+                    if (SPSSpeedCount < MaxAllowedPotions)
+                    {
+                        SPSSpeedCount += amount;
+                        return SPSSpeedCount;
+                    }
+                    return 998;
+                case "Attack":
+                    if (SPSAttackCount < MaxAllowedPotions)
+                    {
+                        SPSAttackCount += amount;
+                        return SPSAttackCount;
+                    }
+                    return 998;
+                case "Defense":
+                    if (SPSDefenseCount < MaxAllowedPotions)
+                    {
+                        SPSDefenseCount += amount;
+                        return SPSDefenseCount;
+                    }
+                    return 998;
+                case "Dexterity":
+                    if (SPSDexterityCount < MaxAllowedPotions)
+                    {
+                        SPSDexterityCount += amount;
+                        return SPSDexterityCount;
+                    }
+                    return 998;
+            }
+            return 999;
+        }
+
+        public void SavePotionStorage()
+        {
+            var account = Client.Account;
+            account.SPSLifeCount = SPSLifeCount;
+            account.SPSManaCount = SPSManaCount;
+            account.SPSDefenseCount = SPSDefenseCount;
+            account.SPSAttackCount = SPSAttackCount;
+            account.SPSDexterityCount = SPSDexterityCount;
+            account.SPSSpeedCount = SPSSpeedCount;
+            account.SPSVitalityCount = SPSVitalityCount;
+            account.SPSWisdomCount = SPSWisdomCount;
+            //account.FlushAsync(); // Disconnect will save it
         }
 
         public static string GetPotionFromType(int type) => type switch

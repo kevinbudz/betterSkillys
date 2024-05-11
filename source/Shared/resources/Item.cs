@@ -30,7 +30,6 @@ namespace Shared.resources
         public bool Legendary;
         public bool LTBoosted;
         public bool Lucky;
-        public bool Maxy;
         public bool MonkeyKingsWrath;
         public int MpCost;
         public int MpEndCost;
@@ -83,7 +82,6 @@ namespace Shared.resources
             Soulbound = e.HasElement("Soulbound");
             Potion = e.HasElement("Potion");
             Usable = e.HasElement("Usable");
-            Maxy = e.HasElement("Maxy");
             Legendary = e.HasElement("Legendary");
             Mythical = e.HasElement("Mythical");
             Resurrects = e.HasElement("Resurrects");

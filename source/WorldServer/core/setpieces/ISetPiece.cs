@@ -1,6 +1,8 @@
 ﻿using System;
+using WorldServer.core.objects;
 using WorldServer.core.structures;
 using WorldServer.core.worlds;
+using WorldServer.logic.behaviors;
 
 namespace WorldServer.core.setpieces
 {
@@ -8,6 +10,7 @@ namespace WorldServer.core.setpieces
     {
         public abstract int Size { get; }
         public virtual string Map { get; }
+        public virtual string EntityName { get; }
 
         protected Random rand => Random.Shared;
 

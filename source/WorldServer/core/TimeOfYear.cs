@@ -12,8 +12,9 @@ namespace WorldServer.core
             "spring" => IsSpring(),
             "summer" => IsSummer(),
             "fall" => IsFall(),
-            _ => throw new Exception($"Unknown Season: {season}"),
+            _ => throw new Exception($"Unknown Season: {season}")
         };
+
         public static bool IsWinter() => CurrentMonth == 12 || CurrentMonth <= 2; // December, January, February
         public static bool IsSpring() => CurrentMonth >= 3 && CurrentMonth <= 5; // March, April, May
         public static bool IsSummer() => CurrentMonth >= 6 && CurrentMonth <= 8; // June, July, August

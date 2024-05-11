@@ -174,9 +174,9 @@ namespace WorldServer.core.worlds
                 en.Value.OnChatTextReceived(player, text);
         }
 
-        public Player CreateNewPlayer(Client client, float x, float y)
+        public Player CreateNewPlayer(Client client, ushort type, float x, float y)
         {
-            var entity = new Player(client);
+            var entity = new Player(GameServer, client, type);
             entity.Id = GetNextEntityId();
             entity.Init(this);
             entity.Move(x, y);

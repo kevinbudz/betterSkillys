@@ -81,7 +81,7 @@ namespace WorldServer.core.objects
                     break;
             }
 
-            var deathMessage = Name + " (" + maxed + (UpgradeEnabled ? "/16, " : "/8, ") + Client.Character.Fame + ")";
+            var deathMessage = Name + " (" + maxed + "/8, " + Client.Character.Fame + ")";
 
             var obj = new StaticObject(GameServer, objType, time, true, true, false);
             obj.Move(X, Y);

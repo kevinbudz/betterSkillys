@@ -54,7 +54,7 @@ namespace WorldServer.core.objects
 
             foreach (var entity in _newObjects)
             {
-                if (entity == Quest)
+                if (entity == Quest && !entity.Dead)
                     continue;
 
                 if (entity.Dead)

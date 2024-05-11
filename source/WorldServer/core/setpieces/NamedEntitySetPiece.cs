@@ -6,16 +6,15 @@ namespace WorldServer.core.setpieces
 {
     public sealed class NamedEntitySetPiece : ISetPiece
     {
-        private string EntityName;
+        private readonly string _entityName;
 
-        public NamedEntitySetPiece(string entityName) => EntityName = entityName;
+        public NamedEntitySetPiece(string entityName) => _entityName = entityName;
 
         public override int Size => 5;
 
         public override void RenderSetPiece(World world, IntPoint pos)
         {
-            var entity = Entity.Resolve(world.GameServer, EntityName);
-
+            var entity = Entity.Resolve(world.GameServer, _entityName);
             if (entity == null)
                 return;
 

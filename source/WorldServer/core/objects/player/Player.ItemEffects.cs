@@ -12,6 +12,8 @@ namespace WorldServer.core.objects
 {
     public partial class Player
     {
+        private readonly int[] _slotEffectCooldowns = new int[4];
+
         private void CerberusClaws(ref TickTime time)
         {
             var elasped = time.TotalElapsedMs;

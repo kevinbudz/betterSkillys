@@ -37,7 +37,6 @@ namespace WorldServer.core.worlds
 
         static readonly List<Tuple<ISetPiece, int, int, TerrainType[]>> setPieces = new List<Tuple<ISetPiece, int, int, TerrainType[]>>()
         {
-            SetPiece(new Avatar(), 1, 1, TerrainType.Mountains),
             //SetPiece(new Building(), 50, 50, TerrainType.LowForest, TerrainType.LowPlains, TerrainType.MidForest),
             //SetPiece(new Graveyard(), 5, 10, TerrainType.LowSand, TerrainType.LowPlains),
             //SetPiece(new Castle(), 3, 5, TerrainType.HighForest, TerrainType.HighPlains),

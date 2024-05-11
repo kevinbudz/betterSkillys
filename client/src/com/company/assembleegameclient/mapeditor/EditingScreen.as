@@ -125,7 +125,9 @@ public class EditingScreen extends Sprite
       {
          this.returnButton_.removeEventListener(MouseEvent.CLICK, onReturn);
          parent.removeChild(this);
-         stage.addChild(new TitleView());
+
+         var setScreen:SetScreenSignal = StaticInjectorContext.injector.getInstance(SetScreenSignal);
+         setScreen.dispatch(new TitleView());
       }
 
       public function get searchStr():String {

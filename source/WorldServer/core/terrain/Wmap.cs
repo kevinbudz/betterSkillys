@@ -127,6 +127,8 @@ namespace WorldServer.core.terrain
         // copied to the supplied world at the said position
         public void ProjectOntoWorld(World world, IntPoint pos)
         {
+            pos.X -= Width / 2;
+            pos.Y -= Height / 2;
             for (var y = 0; y < Height; y++)
                 for (var x = 0; x < Width; x++)
                 {

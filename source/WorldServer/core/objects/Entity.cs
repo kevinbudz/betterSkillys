@@ -31,6 +31,9 @@ namespace WorldServer.core.objects
         private StatTypeValue<float> _y;
         private readonly ConditionEffectManager _conditionEffectManager;
 
+        private Position? _spawnPoint;
+        public Position? SpawnPoint => _spawnPoint ??= new Position(X, Y);
+
         public bool GivesNoXp { get; set; }
         public float? SavedAngle { get; set; }
         public bool Spawned { get; set; }
@@ -283,6 +286,8 @@ namespace WorldServer.core.objects
             Y = y;
             PrevX = prevX;
             PrevY = prevY;
+
+            _spawnPoint ??= new Position(X, Y);
         }
 
         public void OnChatTextReceived(Player player, string text)

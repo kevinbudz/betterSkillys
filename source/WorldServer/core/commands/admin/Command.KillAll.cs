@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Shared;
 using Shared.utils;
 using WorldServer.core.objects;
@@ -25,12 +26,10 @@ namespace WorldServer.core.commands
                 var total = 0;
                 foreach(var entity in player.World.Enemies.Values)
                 {
-                    if(entity.Dead || entity.ObjectDesc == null
-                        || entity.ObjectDesc.IdName == null
-                        || !entity.ObjectDesc.Enemy
-                        || !entity.ObjectDesc.IdName.ContainsIgnoreCase(args))
+                    if(entity.Dead || entity.ObjectDesc == null || entity.ObjectDesc.IdName == null || !entity.ObjectDesc.Enemy || !entity.ObjectDesc.IdName.ContainsIgnoreCase(args))
                         continue;
-                    entity.Expunge();
+
+                    entity.Death(ref time);
                     total++;
                 }
                 player.SendInfo($"{total} enem{(total > 1 ? "ies" : "y")} killed!");

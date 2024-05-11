@@ -14,6 +14,8 @@ namespace WorldServer.logic
         private _ Hermit = () => Behav()
             .Init("Hermit God",
                 new State(
+                    new PlaceMap("setpieces/hermit/spawn.jm", true),
+                    new PlaceMapAtDeath("setpieces/hermit/death.jm", true),
                     new ScaleHP2(30),
                     new TransferDamageOnDeath("Hermit God Drop"),
                     new OrderOnDeath(20, "Hermit God Tentacle Spawner", "Die", 1),
