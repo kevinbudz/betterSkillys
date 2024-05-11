@@ -47,6 +47,7 @@ package kabam.rotmg.ui.view.components
       private var buyOuterGraphicsData:Vector.<IGraphicsData>;
       private var buyInnerGraphicsData:Vector.<IGraphicsData>;
       private var text:SimpleText;
+      private var textTwo:SimpleText;
       private var potionIconDraggableSprite:Sprite;
       private var potionIcon:Bitmap;
       private var bg:Sprite;
@@ -72,9 +73,14 @@ package kabam.rotmg.ui.view.components
          mouseChildren = false;
          this.position = position;
          this.grayscaleMatrix = new ColorMatrixFilter(MoreColorUtil.greyscaleFilterMatrix);
-         this.text = new SimpleText(13,16777215,false,BUTTON_HEIGHT,BUTTON_WIDTH);
-         this.text.filters = [new DropShadowFilter(0,0,0,1,4,4,2)];
-         this.text.y = 2;
+         this.text = new SimpleText(16,0xfffff,false,BUTTON_HEIGHT,BUTTON_WIDTH);
+         this.text.setBold(true);
+         this.text.filters = [new DropShadowFilter(0, 0, 0, 1, 4, 4, 2)];
+         this.textTwo = new SimpleText(12,0xb3b3b3,false,BUTTON_HEIGHT,BUTTON_WIDTH);
+         this.textTwo.y = 7;
+         this.textTwo.x = (BUTTON_WIDTH / 2) + 25;
+         this.textTwo.setText("/6");
+         this.textTwo.filters = [new DropShadowFilter(0, 0, 0, 1, 4, 4, 2)];
          this.bg = new Sprite();
          GraphicsUtil.clearPath(this.outerPath);
          GraphicsUtil.drawCutEdgeRect(0,0,BUTTON_WIDTH,BUTTON_HEIGHT,4,cuts,this.outerPath);
@@ -83,6 +89,7 @@ package kabam.rotmg.ui.view.components
          this.bg.graphics.drawGraphicsData(this.buyInnerGraphicsData);
          addChild(this.bg);
          addChild(this.text);
+         addChild(this.textTwo);
          this.potionIconDraggableSprite = new Sprite();
          this.doubleClickTimer = new Timer(DOUBLE_CLICK_PAUSE,1);
          this.doubleClickTimer.addEventListener(TimerEvent.TIMER_COMPLETE,this.onDoubleClickTimerComplete);
@@ -94,53 +101,61 @@ package kabam.rotmg.ui.view.components
          this.buyUse = new Signal();
          this.drop = new Signal(DisplayObject);
       }
-      
-      public function setData(potions:int, available:Boolean, objectType:int = -1) : void
+
+      public function setData(potions:int, available:Boolean, objectType:int = -1):void
       {
-         var iconX:int = 0;
-         var iconBD:BitmapData = null;
-         var potionIconBig:Bitmap = null;
-         if(objectType != -1)
+         var iconX:int;
+         var iconBD:BitmapData;
+         var potionIconBig:Bitmap;
+         if (objectType != -1)
          {
             this.objectType = objectType;
-            if(this.potionIcon != null)
+            if (this.potionIcon != null)
             {
                removeChild(this.potionIcon);
             }
-            iconBD = ObjectLibrary.getRedrawnTextureFromType(objectType,55,false);
+            iconBD = ObjectLibrary.getRedrawnTextureFromType(objectType, 40, false);
             this.potionIcon = new Bitmap(iconBD);
-            this.potionIcon.y = -11;
+            this.potionIcon.y = -7;
             addChild(this.potionIcon);
-            iconBD = ObjectLibrary.getRedrawnTextureFromType(objectType,80,true);
+            iconBD = ObjectLibrary.getRedrawnTextureFromType(objectType, 80, true);
             potionIconBig = new Bitmap(iconBD);
-            potionIconBig.x = potionIconBig.x - 30;
+            potionIconBig.x = potionIconBig.x - 20;
             potionIconBig.y = potionIconBig.y - 30;
             this.potionIconDraggableSprite.addChild(potionIconBig);
          }
-         this.available = available;
-         filters = available?[]:[this.grayscaleMatrix];
-         showPots = potions > 0;
-         if(showPots)
+         this.setTextString(String(potions));
+         iconX = CENTER_ICON_X;
+         this.bg.graphics.clear();
+         this.bg.graphics.drawGraphicsData(this.useGraphicsData);
+         this.text.x = (BUTTON_WIDTH / 2) + 16;
+         if (this.potionIcon) {
+            this.potionIcon.x = iconX + 15;
+         }
+         if (potions <= 1)
          {
-            this.text.text = String(potions + "/6");
-            iconX = CENTER_ICON_X;
-            this.bg.graphics.clear();
-            this.bg.graphics.drawGraphicsData(this.useGraphicsData);
-            this.text.x = BUTTON_WIDTH / 2 + 5;
+            this.text.setColor(16589603);
          }
          else
          {
-            this.text.text = "0";
-            iconX = CENTER_ICON_X;
-            this.bg.graphics.clear();
-            this.bg.graphics.drawGraphicsData(this.buyOuterGraphicsData);
-            this.bg.graphics.drawGraphicsData(this.buyInnerGraphicsData);
-            this.text.x = BUTTON_WIDTH / 2 + 5;
+            if (potions <= 4)
+            {
+               this.text.setColor(16611363);
+            }
+            else
+            {
+               if (potions >= 4)
+               {
+                  this.text.setColor(3007543);
+               }
+            }
          }
-         if(this.potionIcon)
-         {
-            this.potionIcon.x = iconX;
-         }
+      }
+
+      public function setTextString(_arg1:String):void
+      {
+         this.text.setText(_arg1);
+         this.text.updateMetrics();
       }
       
       private function onMouseOut(e:MouseEvent) : void

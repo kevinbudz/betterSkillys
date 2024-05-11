@@ -65,7 +65,6 @@ public class EquipmentToolTip extends ToolTip
        private var repeat:int = 0;
       private var itemData_:Object = null;
       private var props_:ObjectProperties = null;
-      private var padding_:int = 0;
 
       public function EquipmentToolTip(objectType:int, player:Player, invType:int, inventoryOwnerType:String, inventorySlotID:uint = 1.0, isMarketItem:Boolean = false, itemData:Object = null)
       {
@@ -649,7 +648,7 @@ public class EquipmentToolTip extends ToolTip
          this.descText_.y = (this.icon_.height + 2);
          if (this.line1_ != null && this.effectsText_ != null) {
             this.line1_.x = 8;
-            this.line1_.y = ((this.descText_.y + this.descText_.height)) + this.padding_;
+            this.line1_.y = ((this.descText_.y + this.descText_.height) + 4);
             this.effectsText_.x = 4;
             this.effectsText_.y = (this.line1_.y + 8);
          }
@@ -936,15 +935,10 @@ public class EquipmentToolTip extends ToolTip
       private function addDescriptionText() : void
       {
          var _local_1:int = 0xB3B3B3;
-         this.descText_ = new SimpleText(14, _local_1, false, MAX_WIDTH, 0);
+         this.descText_ = new SimpleText(14, _local_1, false, MAX_WIDTH - 10);
          this.descText_.wordWrap = true;
-         this.descText_.text = String(this.objectXML_.Description);
+         this.descText_.htmlText = String(this.objectXML_.Description);
          this.descText_.useTextDimensions();
-         if (this.descText_.height < 20)
-            this.padding_ = 5;
-         else
-            this.padding_ = -(this.descText_.height / 10);
-
          switch(Parameters.data_.itemDataOutlines)
          {
             case 0:
