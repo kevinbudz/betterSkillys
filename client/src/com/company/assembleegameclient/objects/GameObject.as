@@ -210,9 +210,9 @@ public class GameObject extends BasicObject {
     private var icons_:Vector.<BitmapData> = null;
     private var iconFills_:Vector.<GraphicsBitmapFill> = null;
     private var iconPaths_:Vector.<GraphicsPath> = null;
-    private var hpBarBackFill:GraphicsBitmapFill = null;
+    private var hpBarBackFill:GraphicsSolidFill = null;
     private var hpBarBackPath:GraphicsPath = null;
-    private var hpBarFill:GraphicsBitmapFill = null;
+    private var hpBarFill:GraphicsSolidFill = null;
     private var hpBarPath:GraphicsPath = null;
     private var hpBarBackFillMatrix:Matrix = null;
     private var hpBarFillMatrix:Matrix = null;
@@ -1097,42 +1097,45 @@ public class GameObject extends BasicObject {
         return texture;
     }
 
-    protected function drawHpBar(param1:Vector.<IGraphicsData>, param2:int = 6) : void {
-        var _loc7_:Number = NaN;
-        var _loc3_:Number = NaN;
-        var _loc6_:* = 0;
-        if(this.hpBarPath == null || this.hpBarFill == null || this.hpBarBackFill == null || this.hpBarBackPath == null) {
-            this.hpBarFill = new GraphicsBitmapFill();
-            this.hpBarPath = new GraphicsPath(GraphicsUtil.QUAD_COMMANDS,new Vector.<Number>());
-            this.hpBarBackFill = new GraphicsBitmapFill();
-            this.hpBarBackPath = new GraphicsPath(GraphicsUtil.QUAD_COMMANDS,new Vector.<Number>());
-        }
-        this.hpBarBackFill.bitmapData = TextureRedrawer.redrawSolidSquare(1118481,42,7,-1);
+    /* used DoM for reference :P i ain't learning ab the difference between GraphicsBitmapFills and GraphicSolidFills rn fuck that */
+    protected function drawHpBar(param1:Vector.<IGraphicsData>, param2:int=6):void
+    {
+        var _loc6:Number;
+        var _loc7:Number;
+        if (this.hpBarPath == null)
+        {
+            this.hpBarBackFill = new GraphicsSolidFill();
+            this.hpBarBackPath = new GraphicsPath(GraphicsUtil.QUAD_COMMANDS, new Vector.<Number>());
+            this.hpBarFill = new GraphicsSolidFill();
+            this.hpBarPath = new GraphicsPath(GraphicsUtil.QUAD_COMMANDS, new Vector.<Number>());
+        };
+        if (((!(this is Player)) && (this.hp_ > this.maxHP_)))
+        {
+            this.maxHP_ = this.hp_;
+        };
+        this.hpBarBackFill.color = 0x111111;
+        var _loc3:int = 20;
+        var _loc4:int = 5;
         this.hpBarBackPath.data.length = 0;
-        var _loc4_:int = posS_[0];
-        var _loc5_:int = posS_[1];
-        (this.hpBarBackPath.data as Vector.<Number>).push(_loc4_ - 20 + 1,_loc5_ + param2 - 1,_loc4_ + 20 + 1,_loc5_ + param2 - 1,_loc4_ + 20 + 1,_loc5_ + param2 + 6,_loc4_ - 20 + 1,_loc5_ + param2 + 6);
-        this.hpBarBackFillMatrix.identity();
-        this.hpBarBackFillMatrix.translate(_loc4_ - 20 - 1 - 5,_loc5_ + param2 - 1);
-        this.hpBarBackFill.matrix = this.hpBarBackFillMatrix;
+        var _loc5:Number = 1.2;
+        (this.hpBarBackPath.data as Vector.<Number>).push(((posS_[0] - _loc3) - _loc5), ((posS_[1] + param2) - _loc5), ((posS_[0] + _loc3) + _loc5), ((posS_[1] + param2) - _loc5), ((posS_[0] + _loc3) + _loc5), (((posS_[1] + param2) + _loc4) + _loc5), ((posS_[0] - _loc3) - _loc5), (((posS_[1] + param2) + _loc4) + _loc5));
         param1.push(this.hpBarBackFill);
         param1.push(this.hpBarBackPath);
         param1.push(GraphicsUtil.END_FILL);
-        var _loc8_:int = this.hp_;
-        if(_loc8_ > 0) {
-            _loc7_ = _loc8_ / this.maxHP_;
-            _loc3_ = _loc7_ * 40;
+        if (this.hp_ > 0)
+        {
+            _loc6 = (this.hp_ / this.maxHP_);
+            _loc7 = ((_loc6 * 2) * _loc3);
             this.hpBarPath.data.length = 0;
-            (this.hpBarPath.data as Vector.<Number>).push(_loc4_ - 20,_loc5_ + param2,_loc4_ - 20 + _loc3_,_loc5_ + param2,_loc4_ - 20 + _loc3_,_loc5_ + param2 + 5,_loc4_ - 20,_loc5_ + param2 + 5);
-            _loc6_ = uint(Character.green2redu(_loc7_ * 100));
-            this.hpBarFill.bitmapData = TextureRedrawer.redrawSolidSquare(_loc6_,_loc3_,5,-1);
-            this.hpBarFillMatrix.identity();
-            this.hpBarFillMatrix.translate(_loc4_ - 20 - 5,_loc5_ + param2);
-            this.hpBarFill.matrix = this.hpBarFillMatrix;
+            (this.hpBarPath.data as Vector.<Number>).push((posS_[0] - _loc3), (posS_[1] + param2), ((posS_[0] - _loc3) + _loc7), (posS_[1] + param2), ((posS_[0] - _loc3) + _loc7), ((posS_[1] + param2) + _loc4), (posS_[0] - _loc3), ((posS_[1] + param2) + _loc4));
+            this.hpBarFill.color = ((_loc6 < 0.5) ? ((_loc6 < 0.2) ? 14684176 : 16744464) : 0x10FF00);
             param1.push(this.hpBarFill);
             param1.push(this.hpBarPath);
             param1.push(GraphicsUtil.END_FILL);
-        }
+        };
+        GraphicsFillExtra.setSoftwareDrawSolid(this.hpBarFill, true);
+        GraphicsFillExtra.setSoftwareDrawSolid(this.hpBarBackFill, true);
     }
+
 }
 }
