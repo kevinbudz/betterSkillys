@@ -80,8 +80,6 @@ public class CreditDisplay extends Sprite
       public function addResourceButtons():void
       {
          this._fameButton = new SliceScalingButton(TextureParser.instance.getSliceScalingBitmap("UI", "tab_info_button"));
-         this._fameButton.x = ((this.fameIcon_.x - this.fameText_.width) - 16);
-         this._fameButton.y = 19;
          addChild(this._fameButton);
       }
 
@@ -124,6 +122,11 @@ public class CreditDisplay extends Sprite
          this.fameText_.x = this.fameIcon_.x - this.fameText_.width + 8;
          this.fameText_.y = (creditsText_.height + 4 + this.fameIcon_.height / 2 - this.fameText_.height / 2) - 5;
          this.fameIcon_.y = 35 - this.fameIcon_.height /2 + 8;
+         if (this._fameButton)
+         {
+            this._fameButton.x = ((this.fameIcon_.x - this.fameText_.width) - 16);
+            this._fameButton.y = 19;
+         }
       }
    }
 }

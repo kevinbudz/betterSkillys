@@ -21,7 +21,9 @@ package io.decagames.rotmg.fame
     import io.decagames.rotmg.ui.tabs.UITab;
     import io.decagames.rotmg.ui.scroll.UIScrollbar;
 
-    public class FameContentPopup extends ModalPopup 
+import kabam.rotmg.stage3D.Renderer;
+
+public class FameContentPopup extends ModalPopup
     {
 
         private var characterDecorationBG:SliceScalingBitmap;
@@ -46,7 +48,7 @@ package io.decagames.rotmg.fame
         public function FameContentPopup(_arg_1:int=-1)
         {
             super(340, 505, "Fame Overview", DefaultLabelFormat.defaultSmallPopupTitle);
-            this.x = 130;
+            this.x = Renderer.inGame ? 130 : 230;
             this.y = 17;
             this.characterId = _arg_1;
             this.infoButton = new SliceScalingButton(TextureParser.instance.getSliceScalingBitmap("UI", "info_button"));
