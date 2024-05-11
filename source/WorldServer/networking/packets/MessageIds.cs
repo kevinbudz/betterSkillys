@@ -89,5 +89,5 @@ public enum MessageId : byte
     MARKET_REMOVE_RESULT = 83,
     MARKET_MY_OFFERS = 84,
     MARKET_MY_OFFERS_RESULT = 85,
-    BreakDownItem = 86
+    BreakDownSlot = 86
 }
