@@ -803,21 +803,9 @@ public class GameServerConnection
          var objectXML:XML = ObjectLibrary.xmlLibrary_[itemId];
          var sellMaxed:int = Parameters.data_.sellMaxyPots;
          if (objectXML && !itemOwner.isPaused() && (objectXML.hasOwnProperty("Consumable") || objectXML.hasOwnProperty("InvUse"))) {
-            if (sellMaxed == 1) {
-               this.applyUseItem(itemOwner, slotId, itemId, objectXML, sellMaxed);
-               SoundEffectLibrary.play("use_potion");
-               return true;
-            }
-            else if (sellMaxed == 2) {
-               this.applyUseItem(itemOwner, slotId, itemId, objectXML, sellMaxed);
-               SoundEffectLibrary.play("use_potion");
-               return true;
-            }
-            else {
-               this.applyUseItem(itemOwner, slotId, itemId, objectXML);
-               SoundEffectLibrary.play("use_potion");
-               return true;
-            }
+            this.applyUseItem(itemOwner, slotId, itemId, objectXML);
+            SoundEffectLibrary.play("use_potion");
+            return true;
          }
          SoundEffectLibrary.play("error");
          return false;
@@ -830,7 +818,7 @@ public class GameServerConnection
          this.serverConnection.sendMessage(_local_1);
       }
 
-      private function applyUseItem(owner:GameObject, slotId:int, objectType:int, itemData:XML, sellMax:int = 0) : void
+      private function applyUseItem(owner:GameObject, slotId:int, objectType:int, itemData:XML) : void
       {
          var useItem:UseItem = this.messages.require(USEITEM) as UseItem;
          useItem.time_ = getTimer();
@@ -839,7 +827,6 @@ public class GameServerConnection
          useItem.slotObject_.objectType_ = objectType;
          useItem.itemUsePos_.x_ = 0;
          useItem.itemUsePos_.y_ = 0;
-         useItem.sellMaxed_ = sellMax;
          this.serverConnection.sendMessage(useItem);
          if(itemData.hasOwnProperty("Consumable"))
          {

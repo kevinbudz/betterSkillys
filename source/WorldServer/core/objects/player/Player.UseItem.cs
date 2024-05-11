@@ -48,7 +48,6 @@ namespace WorldServer.core.objects
 
         public void UseItem(int clientTime, TickTime time, int objId, int slot, Position pos, int useType)
         {
-            //Log.Debug(objId + ":" + slot);
             var entity = World.GetEntity(objId);
             if (entity == null)
             {

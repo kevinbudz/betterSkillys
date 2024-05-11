@@ -369,7 +369,6 @@ public class Options extends Sprite
       this.addOption(new ChoiceOption("noAllyNotifications", new <String>["On","Off"], [true, false], "Disable Ally Notifications", "Disable text notifications above allies.", null));
       this.addOption(new ChoiceOption("projOutline", new <String>["On", "Off"], [true,false], "Projectile Outline", "Makes projectiles have an outline.", null));
       this.addOption(new ChoiceOption("smartProjectiles", new <String>["On", "Off"], [true,false], "Projectile Direction", "Makes projectiles face the direction they're going.", null));
-      this.addOption(new ChoiceOption("sellMaxyPots", new <String>["Off", "Sell", "Store"], [0, 1, 2], "Sell/Store Potions", "Sell/Store Pots that you are Maxed.", null));
       this.addOption(new ChoiceOption("HPBarcolors",new <String>["On","Off"],[true,false],"Dynamic HP Colors","Make the background of HPBar and others have color.",null));
       this.addOption(new ChoiceOption("dynamicHPcolor", new <String>["On","Off"],[true,false],"Dynamic Damage Text","Makes the damage text change color based on health",null));
    }

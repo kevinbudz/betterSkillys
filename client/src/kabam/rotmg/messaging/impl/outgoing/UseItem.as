@@ -10,7 +10,6 @@ public class UseItem extends OutgoingMessage {
    public var slotObject_:SlotObjectData;
    public var itemUsePos_:WorldPosData;
    public var useType_:int;
-   public var sellMaxed_:int;
 
    public function UseItem(_arg1:uint, _arg2:Function) {
       this.slotObject_ = new SlotObjectData();
@@ -23,7 +22,6 @@ public class UseItem extends OutgoingMessage {
       this.slotObject_.writeToOutput(_arg1);
       this.itemUsePos_.writeToOutput(_arg1);
       _arg1.writeByte(this.useType_);
-      _arg1.writeByte(this.sellMaxed_);
    }
 
    override public function toString():String {
