@@ -206,8 +206,8 @@ public class UIConfig implements IConfig
       this.mediatorMap.map(ClosePopupButton).toMediator(CancelButtonMediator);
       this.mediatorMap.map(ConfirmationModal).toMediator(ConfirmationModalMediator);
       this.startup.addSignal(ShowLoadingUISignal,-1);
-      this.startup.addTask(GetCharListTask); // switching those works
       this.startup.addTask(LoadAccountTask);
+      this.startup.addTask(GetCharListTask); // switching those works
       this.startup.addSignal(ShowTitleUISignal,StartupSequence.LAST);
       this.setupKeyUI();
       this.mapNoServersDialogFactory();

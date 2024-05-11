@@ -21,6 +21,7 @@ import io.decagames.rotmg.ui.defaults.DefaultLabelFormat;
 import io.decagames.rotmg.ui.popups.header.PopupHeader;
 import io.decagames.rotmg.ui.sliceScaling.SliceScalingBitmap;
 import io.decagames.rotmg.ui.texture.TextureParser;
+import io.decagames.rotmg.utils.colors.GreyScale;
 
 import kabam.rotmg.market.tabs.MemMarketBuyTab;
 
@@ -84,7 +85,7 @@ public class MemMarket extends Sprite
         this.header_.showFame(132).fameAmount = this.gameSprite_.map.player_.fame_;
         this.header_.addButton(this.closeButton_, PopupHeader.RIGHT_BUTTON, -15);
         this.menuOptionsBar_.addButton(this.doneButton_, MenuOptionsBar.CENTER);
-        Options.setDefault(this.doneButton_, "back", 100, false);
+        setDefault(this.doneButton_, "back", 100, false);
         this.doneButton_.y = 535;
         this.doneButton_.x = 800 / 2 - 50;
         addChild(this.menuOptionsBar_);
@@ -109,6 +110,18 @@ public class MemMarket extends Sprite
 
         /* Set tab to first in list. */
         this.setTab(this.tabs_[0]);
+    }
+
+    public static function setDefault(param1:SliceScalingButton, param2:String, param3:int = 100, param4:Boolean = true) : void
+    {
+        param1.setLabel(param2,DefaultLabelFormat.defaultModalTitle);
+        param1.x = 0;
+        param1.y = 0;
+        param1.width = param3;
+        if(param4)
+        {
+            GreyScale.greyScaleToDisplayObject(param1,true);
+        }
     }
 
     public function calculatePrice(player:Player):int

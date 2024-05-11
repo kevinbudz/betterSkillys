@@ -50,6 +50,10 @@ public class ObjectLibrary
     public static const TILE_FILTER_LIST:Vector.<String> = new <String>["ALL", "Walkable", "Unwalkable", "Slow", "Speed=1"];
     public static const defaultProps_:ObjectProperties = new ObjectProperties(null);
     public static var usePatchedData:Boolean = false;
+
+    public static const idToTypeItems_:Dictionary = new Dictionary();
+    public static const typeToIdItems_:Dictionary = new Dictionary();
+
     public static const TYPE_MAP:Object = {
         "CaveWall":CaveWall,
         "Character":Character,
@@ -77,7 +81,8 @@ public class ObjectLibrary
         "SpiderWeb":SpiderWeb,
         "Stalagmite":Stalagmite,
         "Wall":Wall,
-        "PotionStorage":PotionStorage
+        "PotionStorage":PotionStorage,
+        "MarketNPC":MarketNPC
     }
     private static var currentDungeon:String = "";
 
@@ -172,6 +177,12 @@ public class ObjectLibrary
                 xmlLibrary_[_local_6] = _local_3;
                 idToType_[_local_4] = _local_6;
                 typeToDisplayId_[_local_6] = _local_5;
+
+                if (String(_local_3.Class) == "Equipment") {
+                    typeToIdItems_[_local_6] = _local_4.toLowerCase(); /* Saves us the power to do this later */
+                    idToTypeItems_[_local_4.toLowerCase()] = _local_6;
+                }
+
                 if (_arg_2 != null)
                 {
                     (_arg_2(_local_6, _local_3));

@@ -184,8 +184,6 @@ namespace WorldServer.core.objects
                 var dmg = StatsManager.DamageWithDefense(entity, projectile.Damage, projectileDesc.ArmorPiercing, entity.Defense);
                 entity.Health -= dmg;
 
-                Console.WriteLine(dmg);
-
                 TryAddOnEnemyHitEffect(ref tickTime, entity, projectileDesc);
 
                 entity.ApplyConditionEffect(projectileDesc.Effects);
