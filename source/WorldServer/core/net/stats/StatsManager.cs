@@ -73,11 +73,13 @@ namespace WorldServer.core.net.stats
             var def = targetDefense;
             if (host.HasConditionEffect(ConditionEffectIndex.Armored))
                 def *= 2;
-            if (pierce || host.HasConditionEffect(ConditionEffectIndex.ArmorBroken))
+            else if (pierce || host.HasConditionEffect(ConditionEffectIndex.ArmorBroken))
                 def = 0;
+            if (host.HasConditionEffect(ConditionEffectIndex.Exposed))
+                def -= 20;
 
-            var min = dmg * 3 / 20;
-            var d = (double)Math.Max(min, dmg - def);
+            var min = (dmg * 2.0) / 20.0;
+            var d = Math.Max(min, dmg - def);
 
             if (host.HasConditionEffect(ConditionEffectIndex.Invulnerable) || host.HasConditionEffect(ConditionEffectIndex.Invincible))
                 d = 0;
@@ -86,7 +88,7 @@ namespace WorldServer.core.net.stats
                 d *= 0.9;
 
             if (host.HasConditionEffect(ConditionEffectIndex.Curse))
-                d *= 1.2;
+                d *= 1.25;
 
             return (int)d;
         }
@@ -206,7 +208,7 @@ namespace WorldServer.core.net.stats
             if (Owner.HasConditionEffect(ConditionEffectIndex.Dazed))
                 return MIN_ATTACK_FREQ;
             var rof = MIN_ATTACK_FREQ + this[5] / (double)75.0 * (MAX_ATTACK_FREQ - MIN_ATTACK_FREQ);
-            if (Owner.HasConditionEffect(ConditionEffectIndex.Berserk) || Owner.HasConditionEffect(ConditionEffectIndex.NinjaBerserk))
+            if (Owner.HasConditionEffect(ConditionEffectIndex.Berserk))
                 rof *= 1.25;
             return rof;
         }
@@ -220,7 +222,7 @@ namespace WorldServer.core.net.stats
                 return MIN_MOVE_SPEED * multiplier;
             var spdMult = MIN_MOVE_SPEED + this[4] / (double)75.0 * (MAX_MOVE_SPEED - MIN_MOVE_SPEED);
             if (Owner.HasConditionEffect(ConditionEffectIndex.Speedy))
-                spdMult *= 1.5;
+                spdMult *= 1.35;
             return spdMult * multiplier;
         }
 
@@ -230,7 +232,7 @@ namespace WorldServer.core.net.stats
                 return MIN_ATTACK_MULT;
 
             var mult = MIN_ATTACK_MULT + this[2] / (double)75.0 * (MAX_ATTACK_MULT - MIN_ATTACK_MULT);
-            if (Owner.HasConditionEffect(ConditionEffectIndex.Damaging) || Owner.HasConditionEffect(ConditionEffectIndex.NinjaDamaging))
+            if (Owner.HasConditionEffect(ConditionEffectIndex.Damaging))
                 mult *= 1.25;
             return mult;
         }

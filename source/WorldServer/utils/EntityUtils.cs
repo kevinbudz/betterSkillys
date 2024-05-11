@@ -45,11 +45,8 @@ namespace WorldServer.utils
 
         public static bool AnyPlayerNearby(this Entity entity, int radius = World.CULL_RANGE)
         {
-            foreach (var i in entity.World.PlayersCollision.HitTest(entity.X, entity.Y, radius).Where(e => e is Player))
+            foreach (var i in entity.World.PlayersCollision.HitTest(entity.X, entity.Y, radius).Where(e => e is Player p && !p.IsHidden))
             {
-                if (i.HasConditionEffect(ConditionEffectIndex.Hidden))
-                    continue;
-
                 var d = i.SqDistTo(entity);
 
                 if (d < radius * radius)
@@ -61,15 +58,12 @@ namespace WorldServer.utils
 
         public static bool AnyPlayerNearby(this World world, float x, float y, int radius = World.CULL_RANGE)
         {
-            foreach (var i in world.PlayersCollision.HitTest(x, y, radius).Where(e => e is Player))
+            foreach (var i in world.PlayersCollision.HitTest(x, y, radius).Where(e => e is Player p && !p.IsHidden))
             {
-                if (i.HasConditionEffect(ConditionEffectIndex.Hidden)) continue;
-
                 var d = i.SqDistTo(x, y);
                 if (d < radius * radius)
                     return true;
             }
-
             return false;
         }
 

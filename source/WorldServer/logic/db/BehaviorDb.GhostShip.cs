@@ -149,7 +149,6 @@ namespace WorldServer.logic
                 new PlaceMap("setpieces/ghost_ship/spawn.jm", true),
                 new PlaceMapAtDeath("setpieces/ghost_ship/death.jm", true),
                 new ScaleHP2(20),
-                new DropPortalOnDeath("Davy Jones' Locker Portal", 1, 120),
                 new State("idle",
                     new SetAltTexture(1),
                     new Wander(1),

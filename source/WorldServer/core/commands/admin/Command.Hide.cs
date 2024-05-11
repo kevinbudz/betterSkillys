@@ -21,13 +21,13 @@ namespace WorldServer.core.commands
 
                 if (acc.Hidden)
                 {
-                    player.ApplyPermanentConditionEffect(ConditionEffectIndex.Hidden);
+                    player.IsHidden = true;
                     player.ApplyPermanentConditionEffect(ConditionEffectIndex.Invincible);
                     player.GameServer.ConnectionManager.Clients[player.Client].Hidden = true;
                 }
                 else
                 {
-                    player.RemoveCondition(ConditionEffectIndex.Hidden);
+                    player.IsHidden = false;
                     player.RemoveCondition(ConditionEffectIndex.Invincible);
                     player.GameServer.ConnectionManager.Clients[player.Client].Hidden = false;
                 }

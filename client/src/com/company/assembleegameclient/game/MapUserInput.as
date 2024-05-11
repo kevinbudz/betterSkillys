@@ -228,7 +228,7 @@ public class MapUserInput
          {
             return;
          }
-         if(player.isUnstable() && !player.isUnstableImmune()){
+         if(player.isUnstable()){
             mouseX = ((Math.random() * 600) - 300);
             mouseY = ((Math.random() * 600) - 325);
          }
@@ -306,7 +306,7 @@ public class MapUserInput
          player = this.gs_.map.player_;
          if(player != null)
          {
-            if(player.isUnstable() && !player.isUnstableImmune()){
+            if(player.isUnstable()){
                player.attemptAttackAngle((Math.random() * 360));
             }
             else
@@ -396,7 +396,7 @@ public class MapUserInput
          case Parameters.data_.useSpecial:
             if(!this.specialKeyDown_)
             {
-               if(player.isUnstable() && !player.isUnstableImmune()){
+               if(player.isUnstable()){
                   success = player.useAltWeapon(((Math.random() * 600) - 300),((Math.random() * 600) - 300),UseType.START_USE);
                }
                else
@@ -546,7 +546,7 @@ public class MapUserInput
             {
                this.specialKeyDown_ = false;
                var player:Player = this.gs_.map.player_;
-               if(player.isUnstable() && !player.isUnstableImmune())
+               if(player.isUnstable())
                {
                   this.gs_.map.player_.useAltWeapon(((Math.random() * 600) - 300),((Math.random() * 600) - 325),UseType.END_USE);
                }

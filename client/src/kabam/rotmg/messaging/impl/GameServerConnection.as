@@ -43,6 +43,7 @@ import com.company.assembleegameclient.ui.dialogs.Dialog;
 import com.company.assembleegameclient.ui.panels.GuildInvitePanel;
 import com.company.assembleegameclient.ui.panels.PartyInvitePanel;
 import com.company.assembleegameclient.ui.panels.TradeRequestPanel;
+import com.company.assembleegameclient.util.ConditionEffect;
 import com.company.assembleegameclient.util.FreeList;
 import com.company.util.MoreStringUtil;
 import com.company.util.Random;
@@ -1069,7 +1070,7 @@ public class GameServerConnection
          var target:GameObject = map.goDict_[damage.targetId_];
          if(target != null)
          {
-            target.damage(-1,damage.damageAmount_,damage.effects_,damage.kill_,proj, damage.pierce_);
+            target.damage(damage.damageAmount_,damage.effects_,damage.kill_,proj, damage.pierce_);
          }
 
          if (damage.objectId_ != playerId_ && damage.targetId_ != playerId_) // aka nothing to do wit parent player
@@ -1524,7 +1525,7 @@ public class GameServerConnection
                   player.wisdom_ = value;
                   continue;
                case StatData.CONDITION_STAT:
-                  go.condition_[0] = value;
+                  go.condition_[ConditionEffect.CE_FIRST_BATCH] = value;
                   continue;
                case StatData.INVENTORY_0_STAT:
                case StatData.INVENTORY_1_STAT:
@@ -1824,7 +1825,7 @@ public class GameServerConnection
                   player.upgraded_ = value == 1;
                     continue;
                case StatData.CONDITION_STAT_2:
-                  go.condition_[1] = value;
+                  go.condition_[ConditionEffect.CE_SECOND_BATCH] = value;
                   continue;
                case StatData.PARTYID:
                        player.partyId_ = value;
@@ -2094,14 +2095,14 @@ public class GameServerConnection
          var hit:Boolean = this.player.distTo(aoe.pos_) < aoe.radius_;
          if(hit)
          {
-            d = GameObject.damageWithDefense(aoe.damage_,this.player.defense_,false,this.player.condition_[0]);
+            d = GameObject.damageWithDefense(aoe.damage_,this.player.defense_,false,this.player.condition_);
             effects = null;
             if(aoe.effect_ != 0)
             {
                effects = new Vector.<uint>();
                effects.push(aoe.effect_);
             }
-            this.player.damage(aoe.origType_,d,effects,false,null, false);
+            this.player.damage(d, effects,false,null, false);
          }
          this.aoeAck(this.gs_.lastUpdate_,this.player.x_,this.player.y_);
       }

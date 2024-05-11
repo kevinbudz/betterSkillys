@@ -57,7 +57,7 @@ namespace WorldServer.core
 
                 // set condition icon
 
-                var effect = (ConditionEffectIndex)((int)ConditionEffectIndex.HPBoost + i);
+                var effect = (ConditionEffectIndex)((int)ConditionEffectIndex.HpBoost + i);
                 var haveCondition = _player.HasConditionEffect(effect);
                 if (b > 0)
                 {
@@ -79,7 +79,7 @@ namespace WorldServer.core
                 if (_player.Inventory[i] == null)
                     continue;
 
-                foreach (var b in _player.Inventory[i].StatsBoost)
+                foreach (var b in _player.Inventory[i].ActivateOnEquips)
                     IncrementBoost((StatDataType)b.Key, b.Value);
             }
 
@@ -87,7 +87,7 @@ namespace WorldServer.core
             {
                 if (_player.Inventory[i] == null || _player.Inventory[i].SlotType != 26)
                     continue;
-                foreach (var b in _player.Inventory[i].StatsBoost)
+                foreach (var b in _player.Inventory[i].ActivateOnEquips)
                     IncrementBoost((StatDataType)b.Key, b.Value);
             }
         }

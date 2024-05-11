@@ -46,34 +46,6 @@ namespace WorldServer.core.objects
             ConditionEffectIndex.Unstable
         };
 
-        public void AEUnlockChest(TickTime time, Item item, Position target, int slot, int objId, ActivateEffect eff)
-        {
-            Player player = this;
-            var db = GameServer.Database;
-            var acc = player.Client.Account;
-            var trans = db.Conn.CreateTransaction();
-            GameServer.Database.CreateChest(acc, trans);
-            var t2 = trans.ExecuteAsync();
-            acc.Reload("vaultCount");
-            acc.Reload("fame");
-            acc.Reload("totalFame");
-            player.CurrentFame = acc.Fame;
-            //(Owner as Vault).AddChest(this);
-            player.SendInfo("Your Vault has been unlocked! If u are in your Vault, go out and enter again.");
-        }
-
-        public void AEUnlockSlotChar(TickTime time, Item item, Position target, int slot, int objId, ActivateEffect eff)
-        {
-            Player player1 = this;
-            var account = player1.Client.Account;
-            var transi = GameServer.Database.Conn.CreateTransaction();
-            transi.AddCondition(Condition.HashEqual(account.Key, "maxCharSlot", account.MaxCharSlot));
-            transi.HashIncrementAsync(account.Key, "maxCharSlot");
-            var tr2 = transi.ExecuteAsync();
-            account.MaxCharSlot++;
-            player1.SendInfo("New Character Slot Unlocked!, go to Character selector to use them!");
-        }
-
         public void UseItem(int clientTime, TickTime time, int objId, int slot, Position pos, int useType)
         {
             //Log.Debug(objId + ":" + slot);
@@ -333,18 +305,8 @@ namespace WorldServer.core.objects
             {
                 switch (eff.Effect)
                 {
-                    case ActivateEffects.Fame:
-                        AEAddFame(time, item, target, eff);
-                        break;
-
                     case ActivateEffects.XPBoost:
                         AEXPBoost(time, item, target, slot, objId, eff);
-                        break;
-                    case ActivateEffects.UnlockChest:
-                        AEUnlockChest(time, item, target, slot, objId, eff);
-                        break;
-                    case ActivateEffects.UnlockSlotChar:
-                        AEUnlockSlotChar(time, item, target, slot, objId, eff);
                         break;
                     case ActivateEffects.LDBoost:
                         AELDBoost(time, item, target, eff);
@@ -428,14 +390,6 @@ namespace WorldServer.core.objects
                     case ActivateEffects.ShurikenAbility:
                         AEShurikenAbility(clientTime, time, item, target, eff, useType);
                         break;
-                    case ActivateEffects.ShurikenAbilityBerserk:
-                        AEShurikenAbilityBerserk(clientTime, time, item, target, eff, useType);
-                        break;
-                    case ActivateEffects.ShurikenAbilityDamaging:
-                        AEShurikenAbilityDamaging(clientTime, time, item, target, eff, useType);
-                        break;
-                    case ActivateEffects.DazeBlast:
-                        break;
                     case ActivateEffects.PermaPet:
                         AEPermaPet(time, item, target, eff);
                         break;
@@ -445,33 +399,29 @@ namespace WorldServer.core.objects
                     case ActivateEffects.Backpack:
                         AEBackpack(time, item, target, slot, objId, eff);
                         break;
+
+                    case ActivateEffects.ObjectToss:
+                    case ActivateEffects.LevelTwenty:
+                    case ActivateEffects.Unlock:
+                    case ActivateEffects.MarkAndTeleport:
+                    case ActivateEffects.SelfTransform:
+                    case ActivateEffects.GroupTransform:
+                    case ActivateEffects.CreatePortal:
+                    case ActivateEffects.Exchange:
+                    case ActivateEffects.ChangeObject:
+                    case ActivateEffects.UnlockPetSkin:
+                    case ActivateEffects.CreatePet:
+                    case ActivateEffects.TeleportToObject:
+                    case ActivateEffects.MysteryPortal:
+                    case ActivateEffects.KillRealmHeroes:
+                    case ActivateEffects.BulletCreate:
+                        SendError($"{eff.Effect} is not yet implemented");
+                        break;
                     default:
                         StaticLogger.Instance.Warn("Activate effect {0} not implemented.", eff.Effect);
                         break;
                 }
             }
-        }
-        private void AEAddFame(TickTime time, Item item, Position target, ActivateEffect eff)
-        {
-            if (World is TestWorld || Client.Account == null)
-                return;
-
-            var acc = Client.Account;
-            acc.Reload("fame");
-            acc.Reload("totalFame");
-            acc.Fame += eff.Amount;
-            acc.TotalFame += eff.Amount;
-            acc.FlushAsync();
-            acc.Reload("fame");
-            acc.Reload("totalFame");
-            CurrentFame = acc.Fame;
-            //Manager.Database.UpdateFame(acc, eff.Amount, null);
-            /*Manager.Database.UpdateCurrency(acc, eff.Amount, CurrencyType.Fame, trans)
-                .ContinueWith(t =>
-                {
-                    CurrentFame = acc.Fame;
-                });
-            trans.Execute();*/
         }
 
         private void AEBackpack(TickTime time, Item item, Position target, int slot, int objId, ActivateEffect eff)
@@ -958,36 +908,6 @@ namespace WorldServer.core.objects
             }
         }
 
-        private void AEShurikenAbilityBerserk(int time, TickTime tickTime, Item item, Position target, ActivateEffect eff, int useType)
-        {
-            switch (useType)
-            {
-                case START_USE:
-                    ApplyPermanentConditionEffect(ConditionEffectIndex.NinjaBerserk);
-                    break;
-                case END_USE:
-                    if (Mana >= item.MpEndCost)
-                        Mana -= item.MpEndCost;
-                    RemoveCondition(ConditionEffectIndex.NinjaBerserk);
-                    break;
-            }
-        }
-
-        private void AEShurikenAbilityDamaging(int time, TickTime tickTime, Item item, Position target, ActivateEffect eff, int useType)
-        {
-            switch (useType)
-            {
-                case START_USE:
-                    ApplyPermanentConditionEffect(ConditionEffectIndex.NinjaDamaging);
-                    break;
-                case END_USE:
-                    if (Mana >= item.MpEndCost)
-                        Mana -= item.MpEndCost;
-                    RemoveCondition(ConditionEffectIndex.NinjaDamaging);
-                    break;
-            }
-        }
-
         private void AEStatBoostAura(TickTime time, Item item, Position target, ActivateEffect eff)
         {
             var idx = StatsManager.GetStatIndex((StatDataType)eff.Stats);
@@ -1003,7 +923,7 @@ namespace WorldServer.core.objects
 
             this.AOE(range, true, player =>
             {
-                if (player.HasConditionEffect(ConditionEffectIndex.HPBoost))
+                if (player.HasConditionEffect(ConditionEffectIndex.HpBoost))
                     return;
 
                 ((Player)player).Stats.Boost.ActivateBoost[idx].Push(amount, false);

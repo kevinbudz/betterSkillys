@@ -66,7 +66,7 @@ namespace WorldServer.core.objects
                     return;
                 }
 
-                if (obj.HasConditionEffect(ConditionEffectIndex.Hidden))
+                if (obj is Player p && p.IsHidden)
                 {
                     SendError("Target does not exist.");
                     return;

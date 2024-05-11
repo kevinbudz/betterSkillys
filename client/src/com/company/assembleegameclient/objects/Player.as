@@ -272,7 +272,7 @@ public class Player extends Character {
 
         if (map_.player_ == this && square_.props_.maxDamage_ > 0 && square_.lastDamage_ + 500 < time && !isInvincible() && (square_.obj_ == null || !square_.obj_.props_.protectFromGroundDamage_)) {
             d = map_.gs_.gsc_.getNextDamage(square_.props_.minDamage_, square_.props_.maxDamage_);
-            damage(-1, d, null, hp_ <= d, null, false);
+            damage( d, null, hp_ <= d, null, false);
             map_.gs_.gsc_.groundDamage(time, x_, y_);
             square_.lastDamage_ = time;
         }
@@ -396,7 +396,7 @@ public class Player extends Character {
             filteredTexture = GlowRedrawer.outlineGlow(texture, this.glowColor_);
             texturingCache_[texture] = filteredTexture;
         }
-        if (this.isCursed() && !this.isCurseImmune()) {
+        if (this.isCursed()) {
             filteredTexture = CachingColorTransformer.filterBitmapData(filteredTexture, CURSED_FILTER);
         }
         if (isPaused() || isStasis() || isPetrified()) {
@@ -728,7 +728,7 @@ public class Player extends Character {
             return MIN_ATTACK_FREQ;
         }
         var attFreq:Number = MIN_ATTACK_FREQ + this.dexterity_ / 75 * (MAX_ATTACK_FREQ - MIN_ATTACK_FREQ);
-        if (isBerserk() || isNinjaBerserk()) {
+        if (isBerserk()) {
             attFreq = attFreq * 1.25;
         }
         return attFreq;
@@ -826,7 +826,7 @@ public class Player extends Character {
     }
 
     public function isHexed():Boolean {
-        return (condition_[0] & ConditionEffect.HEXED_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.HEXED_BIT) != 0;
     }
 
     public function isInventoryFull():Boolean {
@@ -953,7 +953,7 @@ public class Player extends Character {
             return MIN_ATTACK_MULT;
         }
         var attMult:Number = MIN_ATTACK_MULT + this.attack_ / 75 * (MAX_ATTACK_MULT - MIN_ATTACK_MULT);
-        if (isDamaging() || isNinjaDamaging()) {
+        if (isDamaging()) {
             attMult = attMult * 1.25;
         }
         return attMult;

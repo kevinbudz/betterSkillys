@@ -57,26 +57,35 @@ public class GameObject extends BasicObject {
     public static const DEFAULT_HP_BAR_HEIGHT:int = 4;
     public static const DEFAULT_HP_BAR_WIDTH:int = 20;
 
-    public static function damageWithDefense(origDamage:int, targetDefense:int, armorPiercing:Boolean, targetCondition:uint):int {
+    private var isStunImmune_:Boolean = false;
+    private var isParalyzeImmune_:Boolean = false;
+    private var isSlowedImmune_:Boolean = false;
+    private var isDazedImmune_:Boolean = false;
+    private var isStasisImmune_:Boolean = false;
+    private var isInvincible_:Boolean = false;
+
+    static public function damageWithDefense(origDamage:int, targetDefense:int, armorPiercing:Boolean, targetCondition:Vector.<uint>):int {
         var def:int = targetDefense;
-        if (armorPiercing || (targetCondition & ConditionEffect.ARMORBROKEN_BIT) != 0) {
+        if (armorPiercing || ((targetCondition[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.ARMORBROKEN_BIT) != 0)) {
             def = 0;
         }
-        else if ((targetCondition & ConditionEffect.ARMORED_BIT) != 0) {
-            def *= 2;
+        else if ((targetCondition[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.ARMORED_BIT) != 0) {
+            def *= 1.5;
         }
-        var min:int = (origDamage * 3) / 20;
+        if ((targetCondition[ConditionEffect.CE_SECOND_BATCH] & ConditionEffect.EXPOSED_BIT) != 0) {
+            def -= 20;
+        }
+        var min:int = (origDamage * 2) / 20;
         var d:int = Math.max(min, origDamage - def);
-        if ((targetCondition & ConditionEffect.INVULNERABLE_BIT) != 0) {
+        if ((targetCondition[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.INVULNERABLE_BIT) != 0) {
             d = 0;
         }
-        if ((targetCondition & ConditionEffect.PETRIFY_BIT) != 0) {
-            d = (d * 0.9);
+        if ((targetCondition[ConditionEffect.CE_SECOND_BATCH] & ConditionEffect.PETRIFIED_BIT) != 0) {
+            d *= 0.9;
         }
-        if ((targetCondition & ConditionEffect.CURSE_BIT) != 0) {
-            d = (d * 1.2);
+        if ((targetCondition[ConditionEffect.CE_SECOND_BATCH] & ConditionEffect.CURSE_BIT) != 0) {
+            d *= 1.25;
         }
-
         return d;
     }
 
@@ -143,6 +152,24 @@ public class GameObject extends BasicObject {
         }
         if (objectXML.hasOwnProperty("Tex2")) {
             this.tex2Id_ = int(objectXML.Tex2);
+        }
+        if (objectXML.hasOwnProperty("StunImmune")) {
+            isStunImmune_ = true;
+        }
+        if (objectXML.hasOwnProperty("ParalyzeImmune")) {
+            isParalyzeImmune_ = true;
+        }
+        if (objectXML.hasOwnProperty("SlowImmune")) {
+            isSlowedImmune_ = true;
+        }
+        if (objectXML.hasOwnProperty("DazedImmune")) {
+            isDazedImmune_ = true;
+        }
+        if (objectXML.hasOwnProperty("StasisImmune")) {
+            isStasisImmune_ = true;
+        }
+        if (objectXML.hasOwnProperty("Invincible")) {
+            isInvincible_ = true;
         }
         this.props_.loadSounds();
 
@@ -439,7 +466,7 @@ public class GameObject extends BasicObject {
         graphicsData.push(this.bitmapFill_);
         graphicsData.push(this.path_);
         graphicsData.push(GraphicsUtil.END_FILL);
-        if (!this.isPaused() && (this.condition_[0] || this.condition_[1])) {
+        if (!this.isPaused() && (this.condition_[ConditionEffect.CE_FIRST_BATCH] || this.condition_[ConditionEffect.CE_SECOND_BATCH])) {
             this.drawConditionIcons(graphicsData, camera, time);
         }
         if (this.props_.showName_ && this.name_ != null && this.name_.length != 0) {
@@ -565,131 +592,165 @@ public class GameObject extends BasicObject {
     }
 
     public function isQuiet():Boolean {
-        return (this.condition_[0] & ConditionEffect.QUIET_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.QUIET_BIT) != 0;
     }
 
     public function isWeak():Boolean {
-        return (this.condition_[0] & ConditionEffect.WEAK_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.WEAK_BIT) != 0;
     }
 
     public function isSlowed():Boolean {
-        return (this.condition_[0] & ConditionEffect.SLOWED_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.SLOWED_BIT) != 0;
     }
 
     public function isSick():Boolean {
-        return (this.condition_[0] & ConditionEffect.SICK_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.SICK_BIT) != 0;
     }
 
     public function isDazed():Boolean {
-        return (this.condition_[0] & ConditionEffect.DAZED_BIT) != 0;
-    }
-
-    public function isUnstable():Boolean {
-        return (this.condition_[0] & ConditionEffect.UNSTABLE_BIT) != 0;
-    }
-
-    public function isUnstableImmune():Boolean {
-        return (this.condition_[1] & ConditionEffect.UNSTABLEIMMUNE_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.DAZED_BIT) != 0;
     }
 
     public function isStunned():Boolean {
-        return (this.condition_[0] & ConditionEffect.STUNNED_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.STUNNED_BIT) != 0;
     }
 
     public function isBlind():Boolean {
-        return (this.condition_[0] & ConditionEffect.BLIND_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.BLIND_BIT) != 0;
     }
 
     public function isDrunk():Boolean {
-        return (this.condition_[0] & ConditionEffect.DRUNK_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.DRUNK_BIT) != 0;
     }
 
     public function isConfused():Boolean {
-        return (this.condition_[0] & ConditionEffect.CONFUSED_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.CONFUSED_BIT) != 0;
     }
 
     public function isStunImmune():Boolean {
-        return (this.condition_[0] & ConditionEffect.STUN_IMMUNE_BIT) != 0;
+        return (((condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.STUN_IMMUNE_BIT) != 0) || isStunImmune_);
     }
 
     public function isInvisible():Boolean {
-        return (this.condition_[0] & ConditionEffect.INVISIBLE_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.INVISIBLE_BIT) != 0;
     }
 
     public function isParalyzed():Boolean {
-        return (this.condition_[0] & ConditionEffect.PARALYZED_BIT) != 0;
-    }
-
-    public function isPetrified():Boolean {
-        return (this.condition_[1] & ConditionEffect.PETRIFY_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.PARALYZED_BIT) != 0;
     }
 
     public function isSpeedy():Boolean {
-        return (this.condition_[0] & ConditionEffect.SPEEDY_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.SPEEDY_BIT) != 0;
     }
 
     public function isNinjaSpeedy():Boolean {
-        return (this.condition_[0] & ConditionEffect.NINJA_SPEEDY_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.NINJA_SPEEDY_BIT) != 0;
     }
 
     public function isHallucinating():Boolean {
-        return (this.condition_[0] & ConditionEffect.HALLUCINATING_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.HALLUCINATING_BIT) != 0;
     }
 
     public function isHealing():Boolean {
-        return (this.condition_[0] & ConditionEffect.HEALING_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.HEALING_BIT) != 0;
+    }
+
+    public function isEnergized():Boolean {
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.ENERGIZED_BIT) != 0;
     }
 
     public function isDamaging():Boolean {
-        return (this.condition_[0] & ConditionEffect.DAMAGING_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.DAMAGING_BIT) != 0;
     }
 
     public function isBerserk():Boolean {
-        return (this.condition_[0] & ConditionEffect.BERSERK_BIT) != 0;
-    }
-
-    public function isNinjaBerserk():Boolean {
-        return (this.condition_[1] & ConditionEffect.NINJABERSERK_BIT) != 0;
-    }
-
-    public function isNinjaDamaging():Boolean {
-        return (this.condition_[1] & ConditionEffect.NINJADAMAGING_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.BERSERK_BIT) != 0;
     }
 
     public function isPaused():Boolean {
-        return (this.condition_[0] & ConditionEffect.PAUSED_BIT) != 0;
-    }
-
-    public function isHidden():Boolean {
-        return (this.condition_[1] & ConditionEffect.HIDDEN_BIT) != 0;
-    }
-
-    public function isCursed():Boolean {
-        return (this.condition_[0] & ConditionEffect.CURSE_BIT) != 0;
-    }
-
-    public function isCurseImmune():Boolean {
-        return (this.condition_[0] & ConditionEffect.CURSEIMMUNE_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.PAUSED_BIT) != 0;
     }
 
     public function isStasis():Boolean {
-        return (this.condition_[0] & ConditionEffect.STASIS_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.STASIS_BIT) != 0;
+    }
+
+    public function isStasisImmune():Boolean {
+        return isStasisImmune_ || ((condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.STASIS_IMMUNE_BIT) != 0);
     }
 
     public function isInvincible():Boolean {
-        return (this.condition_[0] & ConditionEffect.INVINCIBLE_BIT) != 0;
+        return isInvincible_ || ((condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.INVINCIBLE_BIT) != 0);
     }
 
     public function isInvulnerable():Boolean {
-        return (this.condition_[0] & ConditionEffect.INVULNERABLE_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.INVULNERABLE_BIT) != 0;
     }
 
     public function isArmored():Boolean {
-        return (this.condition_[0] & ConditionEffect.ARMORED_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.ARMORED_BIT) != 0;
     }
 
     public function isArmorBroken():Boolean {
-        return (this.condition_[0] & ConditionEffect.ARMORBROKEN_BIT) != 0;
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.ARMORBROKEN_BIT) != 0;
+    }
+
+    public function isArmorBrokenImmune():Boolean {
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.ARMORBROKEN_IMMUNE_BIT) != 0;
+    }
+
+    public function isSlowedImmune():Boolean {
+        return isSlowedImmune_ || ((condition_[ConditionEffect.CE_SECOND_BATCH] & ConditionEffect.SLOWED_IMMUNE_BIT) != 0);
+    }
+
+    public function isUnstable():Boolean {
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.UNSTABLE_BIT) != 0;
+    }
+
+    public function isShowPetEffectIcon():Boolean {
+        return (condition_[ConditionEffect.CE_SECOND_BATCH] & ConditionEffect.PET_EFFECT_ICON) != 0;
+    }
+
+    public function isDarkness():Boolean {
+        return (condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.DARKNESS_BIT) != 0;
+    }
+
+    public function isParalyzeImmune():Boolean {
+        return isParalyzeImmune_ ||
+                ((condition_[ConditionEffect.CE_SECOND_BATCH] & ConditionEffect.PARALYZED_IMMUNE_BIT) != 0);
+    }
+
+    public function isDazedImmune():Boolean {
+        return isDazedImmune_ ||
+                ((condition_[ConditionEffect.CE_SECOND_BATCH] & ConditionEffect.DAZED_IMMUNE_BIT) != 0);
+    }
+
+    public function isPetrified():Boolean {
+        return (condition_[ConditionEffect.CE_SECOND_BATCH] & ConditionEffect.PETRIFIED_BIT) != 0;
+    }
+
+    public function isPetrifiedImmune():Boolean {
+        return (condition_[ConditionEffect.CE_SECOND_BATCH] & ConditionEffect.PETRIFIED_IMMUNE_BIT) != 0;
+    }
+
+    public function isCursed():Boolean {
+        return (condition_[ConditionEffect.CE_SECOND_BATCH] & ConditionEffect.CURSE_BIT) != 0;
+    }
+
+    public function isCursedImmune():Boolean {
+        return (condition_[ConditionEffect.CE_SECOND_BATCH] & ConditionEffect.CURSE_IMMUNE_BIT) != 0;
+    }
+
+    public function isSilenced():Boolean {
+        return (condition_[ConditionEffect.CE_SECOND_BATCH] & ConditionEffect.SILENCED_BIT) != 0;
+    }
+
+    public function isExposed():Boolean {
+        return (condition_[ConditionEffect.CE_SECOND_BATCH] & ConditionEffect.EXPOSED_BIT) != 0;
+    }
+
+    public function isInspired():Boolean {
+        return (condition_[ConditionEffect.CE_SECOND_BATCH] & ConditionEffect.INSPIRED_BIT) != 0;
     }
 
     public function isUntargetable():Boolean {
@@ -780,59 +841,133 @@ public class GameObject extends BasicObject {
         this.myLastTickId_ = tickId;
     }
 
-    public function damage(origType:int, damageAmount:int, effects:Vector.<uint>, kill:Boolean, proj:Projectile, pierce:Boolean):void {
-
-        var offsetTime:int = 0;
-        var conditionEffect:uint = 0;
-        var ce:ConditionEffect = null;
-        var pierced:Boolean = false;
+    public function damage(damageAmount:int, effects:Vector.<uint>, kill:Boolean, proj:Projectile, armorPierce:Boolean = false):void
+    {
+        var isGroundDamage:Boolean = false;
         if (kill) {
             this.dead_ = true;
         }
         else if (effects != null) {
-            offsetTime = 0;
-            for each(conditionEffect in effects) {
-                ce = null;
+            var offsetTime:int = 0;
+            for each (var conditionEffect:uint in effects) {
+                var ce:ConditionEffect = null;
                 switch (conditionEffect) {
                     case ConditionEffect.NOTHING:
                         break;
-                    case ConditionEffect.QUIET:
                     case ConditionEffect.WEAK:
-                    case ConditionEffect.SLOWED:
                     case ConditionEffect.SICK:
-                    case ConditionEffect.DAZED:
                     case ConditionEffect.BLIND:
                     case ConditionEffect.HALLUCINATING:
                     case ConditionEffect.DRUNK:
                     case ConditionEffect.CONFUSED:
                     case ConditionEffect.STUN_IMMUNE:
                     case ConditionEffect.INVISIBLE:
-                    case ConditionEffect.PARALYZED:
                     case ConditionEffect.SPEEDY:
                     case ConditionEffect.BLEEDING:
-                    case ConditionEffect.STASIS:
                     case ConditionEffect.STASIS_IMMUNE:
-                    case ConditionEffect.ARMORBROKEN:
                     case ConditionEffect.NINJA_SPEEDY:
+                    case ConditionEffect.UNSTABLE:
+                    case ConditionEffect.DARKNESS:
+                    case ConditionEffect.PETRIFIED_IMMUNE:
+                    case ConditionEffect.SILENCED:
+                    case ConditionEffect.EXPOSED:
                         ce = ConditionEffect.effects_[conditionEffect];
                         break;
-                    case ConditionEffect.STUNNED:
-                        if (this.isStunImmune()) {
-                            map_.mapOverlay_.addStatusText(new CharacterStatusText(this, "Immune", 16711680, 3000));
+
+                    case ConditionEffect.QUIET:
+                        if (map_.player_ == this)
+                            map_.player_.mp_ = 0;
+                        ce = ConditionEffect.effects_[conditionEffect];
+                        break;
+
+                    case ConditionEffect.STASIS:
+                        if (isStasisImmune()) {
+                            map_.mapOverlay_.addStatusText(new CharacterStatusText(this, "Stasis Immune", 0xFF0000, 3000));
                         }
                         else {
                             ce = ConditionEffect.effects_[conditionEffect];
                         }
+                        break;
+                    case ConditionEffect.SLOWED:
+                        if (isSlowedImmune()) {
+                            map_.mapOverlay_.addStatusText(new CharacterStatusText(this, "Slowed Immune", 0xFF0000, 3000));
+                        }
+                        else {
+                            ce = ConditionEffect.effects_[conditionEffect];
+                        }
+                        break;
+                    case ConditionEffect.ARMORBROKEN:
+                        if (isArmorBrokenImmune()) {
+                            map_.mapOverlay_.addStatusText(new CharacterStatusText(this, "Armor Broken Immune", 0xFF0000, 3000));
+                        }
+                        else {
+                            ce = ConditionEffect.effects_[conditionEffect];
+                        }
+                        break;
+                    case ConditionEffect.STUNNED:
+                        if (isStunImmune()) {
+                            map_.mapOverlay_.addStatusText(new CharacterStatusText(this, "Stunned Immune", 0xFF0000, 3000));
+                        }
+                        else {
+                            ce = ConditionEffect.effects_[conditionEffect];
+                        }
+                        break;
+                    case ConditionEffect.DAZED:
+                        if (isDazedImmune()) {
+                            map_.mapOverlay_.addStatusText(new CharacterStatusText(this, "Dazed Immune", 0xFF0000, 3000));
+                        }
+                        else {
+                            ce = ConditionEffect.effects_[conditionEffect];
+                        }
+                        break;
+                    case ConditionEffect.PARALYZED:
+                        if (isParalyzeImmune()) {
+                            map_.mapOverlay_.addStatusText(new CharacterStatusText(this, "Paralyze Immune", 0xFF0000, 3000));
+                        }
+                        else {
+                            ce = ConditionEffect.effects_[conditionEffect];
+                        }
+                        break;
+                    case ConditionEffect.PETRIFIED:
+                        if (isPetrifiedImmune()) {
+                            map_.mapOverlay_.addStatusText(new CharacterStatusText(this, "Petrified Immune", 0xFF0000, 3000));
+                        }
+                        else {
+                            ce = ConditionEffect.effects_[conditionEffect];
+                        }
+                        break;
+                    case ConditionEffect.CURSE:
+                        if (isCursedImmune()) {
+                            map_.mapOverlay_.addStatusText(new CharacterStatusText(this, "Curse Immune", 0xFF0000, 3000));
+                        }
+                        else {
+                            ce = ConditionEffect.effects_[conditionEffect];
+                        }
+                        break;
+                    case ConditionEffect.GROUND_DAMAGE:
+                        isGroundDamage = true;
+                        break;
                 }
                 if (ce != null) {
-                    if ((this.condition_[0] | ce.bit_) != this.condition_[0]) {
-                        this.condition_[0] = this.condition_[0] | ce.bit_;
-                        map_.mapOverlay_.addStatusText(new CharacterStatusText(this, ce.name_, 16711680, 3000, offsetTime));
-                        offsetTime = offsetTime + 500;
+                    if (conditionEffect < ConditionEffect.NEW_CON_THREASHOLD) {
+                        if ((condition_[ConditionEffect.CE_FIRST_BATCH] | ce.bit_) == condition_[ConditionEffect.CE_FIRST_BATCH]) {
+                            continue;
+                        }
+                        condition_[ConditionEffect.CE_FIRST_BATCH] = condition_[ConditionEffect.CE_FIRST_BATCH] | ce.bit_;
+                    } else {
+                        if ((condition_[ConditionEffect.CE_SECOND_BATCH] | ce.bit_) == condition_[ConditionEffect.CE_SECOND_BATCH]) {
+                            continue;
+                        }
+                        condition_[ConditionEffect.CE_SECOND_BATCH] = condition_[ConditionEffect.CE_SECOND_BATCH] | ce.bit_;
                     }
+
+                    map_.mapOverlay_.addStatusText(new CharacterStatusText(this, ce.name_, 16711680, 3000, offsetTime));
+
+                    offsetTime += 500;
                 }
             }
         }
+
         var colors:Vector.<uint> = BloodComposition.getBloodComposition(this.objectType_, this.texture_, this.props_.bloodProb_, this.props_.bloodColor_);
         if (this.dead_) {
             switch (Parameters.data_.reduceParticles) {
@@ -846,7 +981,6 @@ public class GameObject extends BasicObject {
                     break;
             }
         }
-
         else if (proj != null) {
             switch (Parameters.data_.reduceParticles) {
                 case 2:
@@ -873,12 +1007,10 @@ public class GameObject extends BasicObject {
         }
 
         if (damageAmount > 0) {
-            pierced = this.isArmorBroken() || proj != null && proj.projProps_.armorPiercing_;
-            if(pierce && proj.ownerId_ == map_.player_.objectId_){
-                pierced = true;
-            }
+            var pierced:Boolean = isArmorBroken() || (proj != null && proj.projProps_.armorPiercing_) || isGroundDamage || armorPierce;
+
             var text:String = "-" + damageAmount;
-            var statusText:CharacterStatusText = new CharacterStatusText(this, text, pierced ? (9437439) : (16711680), 1000, 0, true);
+            var statusText:CharacterStatusText = new CharacterStatusText(this, text, pierced ? 0x9000FF : 0xFF0000, 1000, 0, true);
             map_.mapOverlay_.addStatusText(statusText);
 
             rtHp_ -= damageAmount;
@@ -945,8 +1077,8 @@ public class GameObject extends BasicObject {
         }
         this.icons_.length = 0;
         var index:int = time / 500;
-        ConditionEffect.getConditionEffectIcons(this.condition_[0], this.icons_, index);
-        ConditionEffect.getConditionEffectIcons2(this.condition_[1], this.icons_, index);
+        ConditionEffect.getConditionEffectIcons(this.condition_[ConditionEffect.CE_FIRST_BATCH], this.icons_, index);
+        ConditionEffect.getConditionEffectIcons2(this.condition_[ConditionEffect.CE_SECOND_BATCH], this.icons_, index);
         var centerX:Number = posS_[3];
         var centerY:Number = this.vS_[1];
         var len:int = this.icons_.length;

@@ -38,11 +38,23 @@
         LTBoost,
         UnlockSkin,
         MysteryDyes,
-        Fame,
-        UnlockChest,
-        UnlockSlotChar,
-        ShurikenAbilityDamaging,
-        ShurikenAbilityBerserk,
-        GenericActivate
+        GenericActivate,
+
+        // to be added
+        ObjectToss,
+        LevelTwenty,
+        Unlock,
+        MarkAndTeleport,
+        SelfTransform,
+        GroupTransform,
+        CreatePortal,
+        Exchange,
+        ChangeObject,
+        UnlockPetSkin,
+        CreatePet,
+        TeleportToObject,
+        MysteryPortal,
+        KillRealmHeroes,
+        BulletCreate 
     }
 }

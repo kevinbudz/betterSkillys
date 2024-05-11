@@ -95,10 +95,14 @@ namespace Shared
 
         public static T GetAttribute<T>(this XElement e, string n, T def = default)
         {
+
             if (e.Attribute(n) == null) return def;
 
             var val = e.Attribute(n).Value;
             var t = typeof(T);
+
+            if (val == "-1") // hacky fix for ushort
+                val = "0xFFFF";
 
             if (t == typeof(string)) return (T)Convert.ChangeType(val, t);
             else if (t == typeof(ushort)) return (T)Convert.ChangeType(Convert.ToUInt16(val, 16), t);

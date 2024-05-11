@@ -206,7 +206,7 @@ namespace WorldServer.logic
                     ),
                 new State("Chase v3",
                     new ConditionEffectBehavior(ConditionEffectIndex.StunImmune),
-                    new ConditionEffectBehavior(ConditionEffectIndex.ParalyzeImmune),
+                    new ConditionEffectBehavior(ConditionEffectIndex.ParalyzedImmune),
                     new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 2000),
                     new Follow(1, 15, 0),
                     new Shoot(15, 2, shootAngle: 25, projectileIndex: 0, coolDown: 100),
@@ -378,7 +378,7 @@ namespace WorldServer.logic
             new State(
                 new ConditionEffectBehavior(ConditionEffectIndex.StasisImmune),
                 new ConditionEffectBehavior(ConditionEffectIndex.StunImmune),
-                new ConditionEffectBehavior(ConditionEffectIndex.ParalyzeImmune),
+                new ConditionEffectBehavior(ConditionEffectIndex.ParalyzedImmune),
                 new State("No player",
                     new Wander(0.6),
                     new PlayerWithinTransition(10, "Player")

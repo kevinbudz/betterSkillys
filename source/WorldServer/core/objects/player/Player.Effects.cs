@@ -19,9 +19,8 @@ namespace WorldServer.core.objects
             if (HasConditionEffect(ConditionEffectIndex.Invisible))
                 return false;
 
-            if (HasConditionEffect(ConditionEffectIndex.Hidden))
+            if (IsHidden)
                 return false;
-
             return true;
         }
 
@@ -32,15 +31,9 @@ namespace WorldServer.core.objects
 
         private void HandleEffects(ref TickTime time)
         {
-            if (Client == null || Client.Account == null) return;
-
-            if (Client.Account.Hidden && !HasConditionEffect(ConditionEffectIndex.Hidden))
-            {
-                RemoveCondition(ConditionEffectIndex.Hidden);
-                RemoveCondition(ConditionEffectIndex.Invincible);
-                GameServer.ConnectionManager.Clients[Client].Hidden = true;
-            }
-
+            if (Client == null || Client.Account == null)
+                return;
+            
             if (HasConditionEffect(ConditionEffectIndex.Quiet) && Mana > 0)
                 Mana = 0;
 
@@ -56,26 +49,6 @@ namespace WorldServer.core.objects
                 Mana -= (int)(10 * time.DeltaTime);
                 if (Mana == 0)
                     RemoveCondition(ConditionEffectIndex.NinjaSpeedy);
-            }
-
-            if (HasConditionEffect(ConditionEffectIndex.NinjaBerserk))
-            {
-                Mana -= (int)(25 * time.DeltaTime);
-                if (Mana <= 0)
-                {
-                    Mana = 0;
-                    RemoveCondition(ConditionEffectIndex.NinjaBerserk);
-                }
-            }
-
-            if (HasConditionEffect(ConditionEffectIndex.NinjaDamaging))
-            {
-                Mana -= (int)(10 * time.DeltaTime);
-                if (Mana <= 0)
-                {
-                    Mana = 0;
-                    RemoveCondition(ConditionEffectIndex.NinjaDamaging);
-                }
             }
 
             if (_newbiePeriod > 0)

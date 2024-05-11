@@ -88,7 +88,12 @@ namespace Shared.resources
                 VisualEffect = Utils.FromString(e.Attribute("visualEffect").Value);
 
             if (e.Attribute("color") != null)
-                Color = uint.Parse(e.Attribute("color").Value.Substring(2), System.Globalization.NumberStyles.AllowHexSpecifier);
+            {
+                if (e.Attribute("color").Value == "-1")
+                    Color = uint.MaxValue;
+                else
+                    Color = uint.Parse(e.Attribute("color").Value.Substring(2), System.Globalization.NumberStyles.AllowHexSpecifier);
+            }
 
             NoStack = e.HasElement("noStack");
             TotalDamage = e.GetAttribute<int>("totalDamage");

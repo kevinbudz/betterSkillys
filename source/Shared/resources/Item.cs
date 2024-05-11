@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Xml.Linq;
 
 namespace Shared.resources
@@ -51,7 +52,7 @@ namespace Shared.resources
         public bool Soulbound;
         public int SpellProjectiles;
         public bool SPlus;
-        public KeyValuePair<int, int>[] StatsBoost;
+        public KeyValuePair<int, int>[] ActivateOnEquips;
         public bool SteamRoller;
         public string SuccessorId;
         public int Texture1;
@@ -61,9 +62,6 @@ namespace Shared.resources
         public bool TypeOfConsumable;
         public bool Usable;
         public bool XpBoost;
-
-        public readonly List<XElement> Activates;
-        public readonly List<XElement> ActivateOnEquips;
 
         public readonly bool DonorItem;
 
@@ -105,34 +103,9 @@ namespace Shared.resources
             InvUse = e.HasElement("InvUse");
             TypeOfConsumable = InvUse || Consumable;
             DonorItem = e.HasElement("DonorItem");
-
-            var stats = new List<KeyValuePair<int, int>>();
-
-            ActivateOnEquips = new List<XElement>();
-            foreach (var i in e.Elements("ActivateOnEquip"))
-            {
-                ActivateOnEquips.Add(i);
-                stats.Add(new KeyValuePair<int, int>(i.GetAttribute<int>("stat"), i.GetAttribute<int>("amount")));
-            }
-
-            StatsBoost = stats.ToArray();
-
-            var activate = new List<ActivateEffect>();
-            Activates = new List<XElement>();
-            foreach (var i in e.Elements("Activate"))
-            {
-                Activates.Add(i);
-                activate.Add(new ActivateEffect(i));
-            }
-
-            ActivateEffects = activate.ToArray();
-
-            var projs = new List<ProjectileDesc>();
-
-            foreach (var i in e.Elements("Projectile"))
-                projs.Add(new ProjectileDesc(i));
-
-            Projectiles = projs.ToArray();
+            ActivateOnEquips = e.Elements("ActivateOnEquip").Select(_ => new KeyValuePair<int, int>(_.GetAttribute<int>("stat"), _.GetAttribute<int>("amount"))).ToArray();
+            ActivateEffects = e.Elements("Activate").Select(_ => new ActivateEffect(_)).ToArray();
+            Projectiles = e.Elements("Projectile").Select(_ => new ProjectileDesc(_)).ToArray();
             Quantity = e.GetValue("Quantity", 0);
             QuantityLimit = e.GetValue("QuantityLimit", 0);
             SNormal = e.Element("SNormal") != null;

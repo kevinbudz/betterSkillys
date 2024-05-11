@@ -24,7 +24,7 @@ namespace WorldServer.core.objects
             _host = host;
 
             _masks = new int[NUMBER_CE_BATCHES];
-            _durations = new int[(int)ConditionEffectIndex.UnstableImmune];
+            _durations = new int[(int)ConditionEffectIndex.ConditionCount];
 
             _batch1 = new StatTypeValue<int>(host, StatDataType.ConditionBatch1, 0);
             _batch2 = new StatTypeValue<int>(host, StatDataType.ConditionBatch2, 0);

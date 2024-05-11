@@ -1,9 +1,15 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Numerics;
 using System.Text;
+using Org.BouncyCastle.Utilities;
+using Pipelines.Sockets.Unofficial.Buffers;
 using Shared;
 using Shared.database.character.inventory;
+using Shared.logger;
 using Shared.resources;
 using WorldServer.core;
 using WorldServer.core.objects;
@@ -45,21 +51,6 @@ namespace WorldServer.logic.loot
     public class Loot : List<MobDrops>
     {
         #region Utils
-
-        /*  
-         *  Brown 0,
-         *  Pink 1,
-         *  Purple 2, 
-         *  Cyan 3, 
-         *  Blue 4, 
-         *  Gold 5, 
-         *  White 6,
-         *  Orange 7,
-         *  Egg 8
-         */
-
-        public static readonly ushort[] BAG_ID_TO_TYPE = new ushort[] { 0x0500, 0x0506, 0x0503, 0x0509, 0x050B, 0x050E, 0x050C, 0x0508 };
-        public static readonly ushort[] BOOSTED_BAG_ID_TO_TYPE = new ushort[] { 0x6ad, 0x6ae, 0x6ba, 0x6bd, 0x6be, 0x6bc, 0x0510, 0x6bb };
 
         public static bool DropsInSoulboundBag(ItemType type, int tier)
         {
@@ -203,9 +194,9 @@ namespace WorldServer.logic.loot
                     continue;
 
                 double enemyBoost = 0;
-                if (enemy.IsRare) enemyBoost = .25;
-                if (enemy.IsEpic) enemyBoost = .5;
-                if (enemy.IsLegendary) enemyBoost = .75;
+                if (enemy.IsRare) enemyBoost = .025;
+                if (enemy.IsEpic) enemyBoost = .05;
+                if (enemy.IsLegendary) enemyBoost = .075;
 
                 var dmgBoost = Math.Round(tupPlayer.Item2 / (double)enemy.DamageCounter.TotalDamage, 4);
                 var ldBoost = player.LDBoostTime > 0 ? 0.25 : 0;
@@ -269,13 +260,20 @@ namespace WorldServer.logic.loot
             }
         }
 
-        private static void ProcessPublic(List<Item> drops, Enemy enemy)
+        private static void ProcessPublic(IEnumerable<Item> drops, Enemy enemy)
         {
-            var bagType = 0;
+            var hitters = enemy.DamageCounter.GetHitters();
+
+            var bag = GetBagType(drops, false);
+
+            if (!enemy.GameServer.Resources.GameData.IdToObjectType.TryGetValue(bag, out var bagType))
+            {
+                Log.Error($"Unable to identify bag type: {bag}");
+                return;
+            }
+
             var idx = 0;
             var items = new Item[8];
-
-            bagType = drops.Max(_ => _.BagType);
 
             var ownerIds = Array.Empty<int>();
             foreach (var i in drops)
@@ -295,38 +293,50 @@ namespace WorldServer.logic.loot
                 DropBag(enemy, ownerIds, bagType, items, false);
         }
 
-        private static void ProcessSoulbound(Enemy enemy, IEnumerable<Item> loots, GameServer core, params Player[] owners)
+        private static readonly int[] LOOT_BAG_WEIGHTS = [0, 1, 2, 3, 4, 5, 9, 6, 7, 8];
+
+        public static string GetBagType(IEnumerable<Item> loots, bool boosted)
+        {
+            var bagType = 0;
+            foreach (var item in loots)
+                bagType = LOOT_BAG_WEIGHTS[item.BagType] <= LOOT_BAG_WEIGHTS[bagType] ? bagType : item.BagType;
+
+            var bag = $"Loot Bag {bagType}";
+            if (boosted)
+                bag += " Boost";
+            return bag;
+        }
+
+        private static void ProcessSoulbound(Enemy enemy, IEnumerable<Item> loots, GameServer gameServer, params Player[] owners)
         {
             var player = owners[0] ?? null;
             var idx = 0;
-            var bagType = 0;
-
-            var items = new Item[8];
-            var boosted = false;
-            bool isWhite = false;
 
             var hitters = enemy.DamageCounter.GetHitters();
 
-            if (owners.Count() == 1 && player.LDBoostTime > 0 || (Math.Round(hitters[player] / (double)enemy.DamageCounter.TotalDamage, 4) > .25 && Random.Shared.NextDouble() > .5))
-                boosted = true;
+            var boosted = owners.Length == 1 && player.LDBoostTime > 0;
 
-            bagType = loots.Max(_ => _.BagType);
+            var bag = GetBagType(loots, boosted);
 
+            if (!enemy.GameServer.Resources.GameData.IdToObjectType.TryGetValue(bag, out var bagType))
+            {
+                Log.Error($"Unable to identify bag type: {bag}");
+                return;
+            }
+
+            var items = new Item[8];
             foreach (var i in loots)
             {
                 if (player != null)
                 {
-                    var chat = core.ChatManager;
-                    var world = player.World;
-                    isWhite = i.BagType == 6;
-                    if (player != null && isWhite)
+                    if (player != null && i.BagType == 6) // white bag
                     {
                         var msg = new StringBuilder($" {player.Client.Account.Name} has obtained:");
                         msg.Append($" [{i.DisplayId ?? i.ObjectId}], by doing {Math.Round(100.0 * (hitters[player] / (double)enemy.DamageCounter.TotalDamage), 0)}% damage!");
-                        chat.AnnounceLoot(msg.ToString());
+                        gameServer.ChatManager.AnnounceLoot(msg.ToString());
                     }
                 }
-
+                
                 items[idx] = i;
                 idx++;
 
@@ -342,14 +352,9 @@ namespace WorldServer.logic.loot
                 DropBag(enemy, owners.Select(x => x.AccountId).ToArray(), bagType, items, boosted);
         }
 
-        private static void DropBag(Enemy enemy, int[] owners, int bagType, Item[] items, bool boosted)
+        private static void DropBag(Enemy enemy, int[] owners, ushort bagType, Item[] items, bool boosted)
         {
-            var bag = BAG_ID_TO_TYPE[bagType];
-            if (boosted)
-                bag = BOOSTED_BAG_ID_TO_TYPE[bagType];
-
-            var container = new Container(enemy.GameServer, bag, 1500 * 60, true);
-
+            var container = new Container(enemy.GameServer, bagType, 120000, true);
             for (int j = 0; j < 8; j++)
             {
                 if (items[j] != null && items[j].Quantity > 0 && items[j].QuantityLimit > 0)
@@ -363,7 +368,6 @@ namespace WorldServer.logic.loot
 
             container.BagOwners = owners;
             container.Move(enemy.X + (float)((Random.Shared.NextDouble() * 2 - 1) * 0.5), enemy.Y + (float)((Random.Shared.NextDouble() * 2 - 1) * 0.5));
-            container.Size = bagType >= 3 ? 100 : 80;
             enemy.World.EnterWorld(container);
         }
     }

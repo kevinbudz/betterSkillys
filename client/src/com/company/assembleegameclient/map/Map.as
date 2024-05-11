@@ -584,7 +584,7 @@ public class Map extends Sprite {
 
         // draw filters
         this.map_.filters.length = 0;
-        if (this.player_ != null && (this.player_.condition_[0] & ConditionEffect.MAP_FILTER_BITMASK) != 0) {
+        if (this.player_ != null && (this.player_.condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.MAP_FILTER_BITMASK) != 0) {
             var filters:Array = [];
             if (this.player_.isDrunk()) {
                 d = 20 + 10 * Math.sin(time / 1000);
@@ -605,7 +605,7 @@ public class Map extends Sprite {
 
     private function getFilterIndex():uint {
         var filterIndex:uint = 0;
-        if (player_ != null && (player_.condition_[0] & ConditionEffect.MAP_FILTER_BITMASK) != 0) {
+        if (player_ != null && (player_.condition_[ConditionEffect.CE_FIRST_BATCH] & ConditionEffect.MAP_FILTER_BITMASK) != 0) {
             if (player_.isPaused()) {
                 filterIndex = Renderer.STAGE3D_FILTER_PAUSE;
             }

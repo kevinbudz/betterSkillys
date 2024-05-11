@@ -36,6 +36,8 @@ namespace WorldServer.core.objects
         public int LDBoostTime { get; set; }
         public int XPBoostTime { get; set; }
 
+        public bool IsHidden { get; set; }
+
         public double Breath
         {
             get => _breath;
@@ -294,7 +296,7 @@ namespace WorldServer.core.objects
 
             if (account.Hidden)
             {
-                ApplyPermanentConditionEffect(ConditionEffectIndex.Hidden);
+                IsHidden = true;
                 ApplyPermanentConditionEffect(ConditionEffectIndex.Invincible);
             }
 
@@ -305,7 +307,7 @@ namespace WorldServer.core.objects
         public override bool CanBeSeenBy(Player player)
         {
             if (IsAdmin || IsCommunityManager)
-                return !HasConditionEffect(ConditionEffectIndex.Hidden);
+                return !IsHidden;
             return true;
         }
 
@@ -621,9 +623,6 @@ namespace WorldServer.core.objects
                 var wisdomStat = Stats[7];
 
                 ManaRegenCarry += (1.0 + (0.24 * wisdomStat)) * time.DeltaTime;
-
-                if (HasConditionEffect(ConditionEffectIndex.MPTRegeneration))
-                    ManaRegenCarry += 20.0 * time.DeltaTime;
 
                 var regen = (int)Math.Ceiling(ManaRegenCarry);
                 if (regen > 0)

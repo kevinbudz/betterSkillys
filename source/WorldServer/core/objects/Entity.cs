@@ -59,15 +59,15 @@ namespace WorldServer.core.objects
             if (ObjectDesc.Invincible)
                 ApplyPermanentConditionEffect(ConditionEffectIndex.Invincible);
             if (ObjectDesc.ArmorBreakImmune)
-                ApplyPermanentConditionEffect(ConditionEffectIndex.ArmorBreakImmune);
+                ApplyPermanentConditionEffect(ConditionEffectIndex.ArmorBrokenImmune);
             if (ObjectDesc.CurseImmune)
                 ApplyPermanentConditionEffect(ConditionEffectIndex.CurseImmune);
             if (ObjectDesc.DazedImmune)
                 ApplyPermanentConditionEffect(ConditionEffectIndex.DazedImmune);
             if (ObjectDesc.ParalyzeImmune)
-                ApplyPermanentConditionEffect(ConditionEffectIndex.ParalyzeImmune);
+                ApplyPermanentConditionEffect(ConditionEffectIndex.ParalyzedImmune);
             if (ObjectDesc.PetrifyImmune)
-                ApplyPermanentConditionEffect(ConditionEffectIndex.PetrifyImmune);
+                ApplyPermanentConditionEffect(ConditionEffectIndex.PetrifiedImmune);
             if (ObjectDesc.SlowedImmune)
                 ApplyPermanentConditionEffect(ConditionEffectIndex.SlowedImmune);
             if (ObjectDesc.StasisImmune)
@@ -239,15 +239,15 @@ namespace WorldServer.core.objects
                 return false;
             if (effect == ConditionEffectIndex.Stasis && HasConditionEffect(ConditionEffectIndex.StasisImmune))
                 return false;
-            if (effect == ConditionEffectIndex.Paralyzed && HasConditionEffect(ConditionEffectIndex.ParalyzeImmune))
+            if (effect == ConditionEffectIndex.Paralyzed && HasConditionEffect(ConditionEffectIndex.ParalyzedImmune))
                 return false;
-            if (effect == ConditionEffectIndex.ArmorBroken && HasConditionEffect(ConditionEffectIndex.ArmorBreakImmune))
+            if (effect == ConditionEffectIndex.ArmorBroken && HasConditionEffect(ConditionEffectIndex.ArmorBrokenImmune))
                 return false;
-            if (effect == ConditionEffectIndex.Unstable && HasConditionEffect(ConditionEffectIndex.UnstableImmune))
-                return false;
+            //if (effect == ConditionEffectIndex.Unstable && HasConditionEffect(ConditionEffectIndex.UnstableImmune))
+            //    return false;
             if (effect == ConditionEffectIndex.Curse && HasConditionEffect(ConditionEffectIndex.CurseImmune))
                 return false;
-            if (effect == ConditionEffectIndex.Petrify && HasConditionEffect(ConditionEffectIndex.PetrifyImmune))
+            if (effect == ConditionEffectIndex.Petrify && HasConditionEffect(ConditionEffectIndex.PetrifiedImmune))
                 return false;
             if (effect == ConditionEffectIndex.Dazed && HasConditionEffect(ConditionEffectIndex.DazedImmune))
                 return false;

@@ -311,7 +311,7 @@ public class Projectile extends BasicObject
          var sendMessage:Boolean = (isPlayer && this.damagesPlayers_) || (isTargetAnEnemy && this.ownerId_ == player.objectId_);
          if(sendMessage)
          {
-            var dmg:int = GameObject.damageWithDefense(this.damage_,target.defense_,this.projProps_.armorPiercing_,target.condition_[0]);
+            var dmg:int = GameObject.damageWithDefense(this.damage_,target.defense_,this.projProps_.armorPiercing_, target.condition_);
             var dead:Boolean = false;
             if(target.hp_ <= dmg)
             {
@@ -325,12 +325,12 @@ public class Projectile extends BasicObject
             if(target == player)
             {
                map_.gs_.gsc_.playerHit(this.bulletId_,this.ownerId_);
-               target.damage(this.containerType_, dmg, this.projProps_.effects_,false, this, false);
+               target.damage(dmg, this.projProps_.effects_,false, this, false);
             }
             else if(target.props_.isEnemy_)
             {
                map_.gs_.gsc_.enemyHit(time, this.bulletId_, target.objectId_, dead);
-               target.damage(this.containerType_, dmg, this.projProps_.effects_, dead, this, false);
+               target.damage(dmg, this.projProps_.effects_, dead, this, false);
                if(target != null && (target.props_.isQuest_ || target.props_.isChest_))
                {
                   if(isNaN(Parameters.DamageCounter[target.objectId_]))
@@ -376,7 +376,7 @@ public class Projectile extends BasicObject
             continue;
          }
 
-         if(go.isInvincible() || go.dead_ || go.isPaused() || go.isHidden() || go.isStasis()) {
+         if(go.isInvincible() || go.dead_ || go.isPaused() || go.isStasis()) {
             continue;
          }
 
