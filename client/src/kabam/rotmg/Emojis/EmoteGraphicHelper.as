@@ -4,10 +4,8 @@ import flash.display.Sprite;
 import flash.text.TextField;
 import flash.text.TextFieldAutoSize;
 import flash.text.TextFormat;
-
-import kabam.rotmg.text.view.StaticStringBuilder;
-
-import kabam.rotmg.text.view.StringBuilder;
+import kabam.rotmg.text.view.stringBuilder.StaticStringBuilder;
+import kabam.rotmg.text.view.stringBuilder.StringBuilder;
 
 
 public class EmoteGraphicHelper

@@ -2,11 +2,16 @@ package kabam.rotmg.ui.view
 {
    import com.company.assembleegameclient.appengine.SavedCharacter;
    import com.company.assembleegameclient.screens.charrects.CurrentCharacterRect;
-   import kabam.rotmg.characters.deletion.view.ConfirmDeleteCharacterDialog;
+
+import flash.display.Sprite;
+
+import kabam.rotmg.characters.deletion.view.ConfirmDeleteCharacterDialog;
    import kabam.rotmg.characters.model.CharacterModel;
    import kabam.rotmg.classes.model.CharacterClass;
    import kabam.rotmg.classes.model.ClassesModel;
-   import kabam.rotmg.dialogs.control.OpenDialogSignal;
+import kabam.rotmg.core.signals.HideTooltipsSignal;
+import kabam.rotmg.core.signals.ShowTooltipSignal;
+import kabam.rotmg.dialogs.control.OpenDialogSignal;
    import kabam.rotmg.game.model.GameInitData;
    import kabam.rotmg.game.signals.PlayGameSignal;
    import robotlegs.bender.bundles.mvcs.Mediator;
@@ -29,6 +34,12 @@ package kabam.rotmg.ui.view
       
       [Inject]
       public var openDialog:OpenDialogSignal;
+
+      [Inject]
+      public var showTooltip:ShowTooltipSignal;
+
+      [Inject]
+      public var hideTooltips:HideTooltipsSignal;
       
       public function CurrentCharacterRectMediator()
       {
@@ -39,10 +50,25 @@ package kabam.rotmg.ui.view
       {
          this.view.selected.add(this.onSelected);
          this.view.deleteCharacter.add(this.onDeleteCharacter);
+         this.view.showToolTip.add(this.onShow);
+         this.view.hideTooltip.add(this.onHide);
       }
-      
+
+      private function onShow(_arg_1:Sprite):void
+      {
+         this.showTooltip.dispatch(_arg_1);
+      }
+
+      private function onHide():void
+      {
+         this.hideTooltips.dispatch();
+      }
+
+
       override public function destroy() : void
       {
+         this.view.hideTooltip.remove(this.onHide);
+         this.view.showToolTip.remove(this.onShow);
          this.view.selected.remove(this.onSelected);
          this.view.deleteCharacter.remove(this.onDeleteCharacter);
       }

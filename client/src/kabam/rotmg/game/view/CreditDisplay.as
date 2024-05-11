@@ -11,32 +11,53 @@ package kabam.rotmg.game.view
    import flash.display.Sprite;
    import flash.events.MouseEvent;
    import flash.filters.DropShadowFilter;
-   import org.osflash.signals.Signal;
-   
-   public class CreditDisplay extends Sprite
+
+import io.decagames.rotmg.fame.FameContentPopup;
+
+import io.decagames.rotmg.ui.buttons.SliceScalingButton;
+import io.decagames.rotmg.ui.popups.signals.ShowPopupSignal;
+import io.decagames.rotmg.ui.texture.TextureParser;
+
+import kabam.rotmg.core.StaticInjectorContext;
+import kabam.rotmg.dialogs.control.OpenDialogSignal;
+import kabam.rotmg.ui.view.SignalWaiter;
+
+import org.osflash.signals.Signal;
+import org.swiftsuspenders.Injector;
+
+public class CreditDisplay extends Sprite
    {
-      
+
       private static const FONT_SIZE:int = 18;
-       
-      
+
+
       private var creditsText_:SimpleText;
-      
+
       private var fameText_:SimpleText;
-      
+
       private var coinIcon_:Bitmap;
-      
+
       private var fameIcon_:Bitmap;
-      
+
       private var credits_:int = -1;
-      
+
       private var fame_:int = -1;
-      
-      private var gs:GameSprite;
-      
-      public function CreditDisplay(gs:GameSprite = null)
+
+      public var _fameButton:SliceScalingButton;
+
+      public var displayFameTooltip:Signal = new Signal();
+
+      public var showButton:Boolean;
+
+      public var gs:GameSprite;
+
+      public static const waiter:SignalWaiter = new SignalWaiter();
+
+      public function CreditDisplay(gs:GameSprite = null, fameButton:Boolean = false)
       {
          super();
          this.gs = gs;
+         this.showButton = fameButton;
          this.creditsText_ = new SimpleText(FONT_SIZE,16777215,false,0,0);
          this.creditsText_.setBold(true);
          this.creditsText_.filters = [new DropShadowFilter(0,0,0,1,4,4,2)];
@@ -54,6 +75,32 @@ package kabam.rotmg.game.view
          this.draw(0,0);
          mouseEnabled = false;
          doubleClickEnabled = false;
+      }
+
+      public function addResourceButtons():void
+      {
+         this._fameButton = new SliceScalingButton(TextureParser.instance.getSliceScalingBitmap("UI", "tab_info_button"));
+         addChild(this._fameButton);
+      }
+
+      public function removeResourceButtons():void
+      {
+         if (this._fameButton)
+         {
+            removeChild(this._fameButton);
+         }
+      }
+
+      public function onFameClick(_arg_1:MouseEvent):void
+      {
+         this.onFameMask();
+      }
+
+      private function onFameMask():void
+      {
+         var _local_1:Injector = StaticInjectorContext.getInjector();
+         var _local_2:OpenDialogSignal = _local_1.getInstance(OpenDialogSignal);
+         _local_2.dispatch(new FameContentPopup());
       }
 
       public function draw(credits:int, fame:int) : void
@@ -75,6 +122,11 @@ package kabam.rotmg.game.view
          this.fameText_.x = this.fameIcon_.x - this.fameText_.width + 8;
          this.fameText_.y = (creditsText_.height + 4 + this.fameIcon_.height / 2 - this.fameText_.height / 2) - 5;
          this.fameIcon_.y = 35 - this.fameIcon_.height /2 + 8;
+         if (this._fameButton)
+         {
+            this._fameButton.x = ((this.fameIcon_.x - this.fameText_.width) - 16);
+            this._fameButton.y = 19;
+         }
       }
    }
 }

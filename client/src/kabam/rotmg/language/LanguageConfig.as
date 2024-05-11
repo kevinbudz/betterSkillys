@@ -33,8 +33,8 @@ public class LanguageConfig implements IConfig {
     public function configure():void {
         this.injector.map(LanguageModel).toValue(new CookieLanguageModel());
         this.injector.map(StringMap).toSingleton(StringMapConcrete);
-        //this.injector.map(GetLanguageService);
-        //this.startup.addTask(GetLanguageService, -999);
+        this.injector.map(GetLanguageService);
+        this.startup.addTask(GetLanguageService, -999);
         this.commandMap.map(ReloadCurrentScreenSignal).toCommand(ReloadCurrentScreenCommand);
         this.commandMap.map(SetLanguageSignal).toCommand(SetLanguageCommand);
         this.commandMap.map(RegisterChangeLanguageViaConsoleSignal).toCommand(RegisterChangeLanguageViaConsoleCommand);

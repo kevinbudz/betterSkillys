@@ -4,24 +4,42 @@ import com.company.assembleegameclient.appengine.CharacterStats;
 import com.company.assembleegameclient.appengine.SavedCharacter;
 import com.company.assembleegameclient.screens.events.DeleteCharacterEvent;
 import com.company.assembleegameclient.ui.tooltip.MyPlayerToolTip;
+import com.company.assembleegameclient.ui.tooltip.TextToolTip;
 import com.company.assembleegameclient.ui.tooltip.ToolTip;
 import com.company.assembleegameclient.util.FameUtil;
 import com.company.rotmg.graphics.DeleteXGraphic;
 import com.company.rotmg.graphics.StarGraphic;
 import com.company.ui.SimpleText;
+
+import flash.display.Bitmap;
+
+import flash.display.BitmapData;
 import flash.display.DisplayObject;
 import flash.display.Sprite;
 import flash.events.Event;
 import flash.events.MouseEvent;
 import flash.filters.DropShadowFilter;
 import flash.geom.ColorTransform;
+
+import io.decagames.rotmg.fame.FameContentPopup;
+
+import kabam.rotmg.assets.services.IconFactory;
+
 import kabam.rotmg.classes.model.CharacterClass;
+import kabam.rotmg.core.StaticInjectorContext;
+import kabam.rotmg.dialogs.control.OpenDialogSignal;
+
 import org.osflash.signals.Signal;
 import org.osflash.signals.natives.NativeMappedSignal;
+import org.swiftsuspenders.Injector;
 
 public class CurrentCharacterRect extends CharacterRect
 {
    private static var toolTip_:ToolTip = null;
+   private static var fameToolTip:TextToolTip = null;
+
+   public const showToolTip:Signal = new Signal(Sprite);
+   public const hideTooltip:Signal = new Signal();
 
    public var charName:String;
    private var charType:CharacterClass;
@@ -35,6 +53,8 @@ public class CurrentCharacterRect extends CharacterRect
    public var selected:Signal;
    public var deleteCharacter:Signal;
    private var icon:DisplayObject;
+   private var fameBitmap:Bitmap;
+   private var fameBitmapContainer:Sprite;
 
    public function CurrentCharacterRect(charName:String, charType:CharacterClass, char:SavedCharacter, charStats:CharacterStats)
    {
@@ -48,9 +68,11 @@ public class CurrentCharacterRect extends CharacterRect
       this.makeTagline();
       this.makeDeleteButton();
       this.makeStatsMaxedText();
+      this.makeFameUIIcon();
       this.selected = new NativeMappedSignal(selectContainer,MouseEvent.CLICK).mapTo(char);
       this.deleteCharacter = new NativeMappedSignal(this.deleteButton,MouseEvent.CLICK).mapTo(char);
       addEventListener(Event.REMOVED_FROM_STAGE,this.onRemovedFromStage);
+      this.fameBitmapContainer.addEventListener(MouseEvent.CLICK, this.onFameClick);
    }
 
    public function setIcon(value:DisplayObject) : void
@@ -61,6 +83,26 @@ public class CurrentCharacterRect extends CharacterRect
       this.icon.y = 3;
       this.icon && selectContainer.addChild(this.icon);
    }
+
+   private function onFameClick(_arg_1:MouseEvent):void
+   {
+      var _local_2:Injector = StaticInjectorContext.getInjector();
+      var _local_3:OpenDialogSignal = _local_2.getInstance(OpenDialogSignal);
+      _local_3.dispatch(new FameContentPopup(this.char.charId()));
+   }
+
+   private function makeFameUIIcon():void
+   {
+      var _local_1:BitmapData = IconFactory.makeFame();
+      this.fameBitmap = new Bitmap(_local_1);
+      this.fameBitmapContainer = new Sprite();
+      this.fameBitmapContainer.name = "fame_ui";
+      this.fameBitmapContainer.addChild(this.fameBitmap);
+      this.fameBitmapContainer.x = 364;
+      this.fameBitmapContainer.y = 20;
+      addChild(this.fameBitmapContainer);
+   }
+
 
    private function makeClassNameText() : void
    {
@@ -129,7 +171,7 @@ public class CurrentCharacterRect extends CharacterRect
       this.statsMaxedText.filters = [new DropShadowFilter(0,0,0,1,8,8)];
       this.statsMaxedText.setBold(true);
       this.statsMaxedText.setText(maxedStat + "/8");
-      this.statsMaxedText.x = 350;
+      this.statsMaxedText.x = 330;
       this.statsMaxedText.y = 18;
       if (maxedStat == 8){
          color = uint(16572160)
@@ -164,8 +206,15 @@ public class CurrentCharacterRect extends CharacterRect
    {
       super.onMouseOver(event);
       this.removeToolTip();
-      toolTip_ = new MyPlayerToolTip(this.charName,this.char.charXML_,this.charStats);
-      stage.addChild(toolTip_);
+      if (event.target.name == "fame_ui")
+      {
+         fameToolTip = new TextToolTip(0x363636, 0x9B9B9B, "Fame", "Click to get an Overview!", 225);
+         this.showToolTip.dispatch(fameToolTip);
+      } else
+      {
+         toolTip_ = new MyPlayerToolTip(this.charName,this.char.charXML_,this.charStats);
+         stage.addChild(toolTip_);
+      }
    }
 
    override protected function onRollOut(event:MouseEvent) : void
@@ -177,6 +226,7 @@ public class CurrentCharacterRect extends CharacterRect
    private function onRemovedFromStage(event:Event) : void
    {
       this.removeToolTip();
+      this.fameBitmapContainer.removeEventListener(MouseEvent.CLICK, this.onFameClick);
    }
 
    private function removeToolTip() : void

@@ -22,6 +22,12 @@ import com.company.assembleegameclient.ui.panels.itemgrids.ItemGrid;
 import com.company.assembleegameclient.ui.panels.mediators.InteractPanelMediator;
 import com.company.assembleegameclient.ui.panels.mediators.ItemGridMediator;
 
+import io.decagames.rotmg.fame.FameContentPopup;
+
+import io.decagames.rotmg.fame.FameContentPopupMediator;
+import io.decagames.rotmg.fame.FameStatsLineMediator;
+import io.decagames.rotmg.fame.StatsLine;
+
 import io.decagames.rotmg.ui.popups.PopupMediator;
 import io.decagames.rotmg.ui.popups.PopupView;
 import io.decagames.rotmg.ui.popups.modal.ConfirmationModal;
@@ -33,6 +39,7 @@ import io.decagames.rotmg.ui.popups.modal.buttons.BuyGoldButtonMediator;
 import io.decagames.rotmg.ui.popups.modal.buttons.CancelButtonMediator;
 import io.decagames.rotmg.ui.popups.modal.buttons.ClosePopupButton;
 import io.decagames.rotmg.ui.popups.signals.ClosePopupSignal;
+import io.decagames.rotmg.ui.popups.signals.ShowPopupSignal;
 import io.decagames.rotmg.ui.scroll.UIScrollbar;
 import io.decagames.rotmg.ui.scroll.UIScrollbarMediator;
 import io.decagames.rotmg.ui.spinner.NumberSpinner;
@@ -153,6 +160,8 @@ public class UIConfig implements IConfig
       this.injector.map(StatsTabHotKeyInputSignal).asSingleton();
       this.injector.map(LegendaryPopUpSignal).asSingleton();
       this.injector.map(MythicalPopUpSignal).asSingleton();
+      this.injector.map(ShowPopupSignal).asSingleton();
+      this.injector.map(ClosePopupSignal).asSingleton();
       this.commandMap.map(ShowLoadingUISignal).toCommand(ShowLoadingUICommand);
       this.commandMap.map(ShowTitleUISignal).toCommand(ShowTitleUICommand);
       this.commandMap.map(ChooseNameSignal).toCommand(ChooseNameCommand);
@@ -186,12 +195,13 @@ public class UIConfig implements IConfig
       this.mediatorMap.map(StatMetersView).toMediator(StatMetersMediator);
       this.mediatorMap.map(HUDView).toMediator(HUDMediator);
       this.mediatorMap.map(PotionSlotView).toMediator(PotionSlotMediator);
-      this.injector.map(ClosePopupSignal).asSingleton();
+      this.mediatorMap.map(FameContentPopup).toMediator(FameContentPopupMediator);
       this.mediatorMap.map(UIScrollbar).toMediator(UIScrollbarMediator);
+      this.mediatorMap.map(StatsLine).toMediator(FameStatsLineMediator);
       this.mediatorMap.map(UITab).toMediator(UITabMediator);
       this.mediatorMap.map(PopupView).toMediator(PopupMediator);
-      this.mediatorMap.map(NumberSpinner).toMediator(NumberSpinnerMediator);
       this.mediatorMap.map(ModalPopup).toMediator(ModalPopupMediator);
+      this.mediatorMap.map(NumberSpinner).toMediator(NumberSpinnerMediator);
       this.mediatorMap.map(BuyGoldButton).toMediator(BuyGoldButtonMediator);
       this.mediatorMap.map(ClosePopupButton).toMediator(CancelButtonMediator);
       this.mediatorMap.map(ConfirmationModal).toMediator(ConfirmationModalMediator);

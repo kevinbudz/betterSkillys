@@ -62,6 +62,8 @@ import flash.utils.ByteArray;
 import flash.utils.Timer;
 import flash.utils.getTimer;
 
+import io.decagames.rotmg.ui.popups.signals.ShowPopupSignal;
+
 import kabam.lib.json.JsonParser;
 
 import kabam.lib.net.api.MessageMap;
@@ -340,6 +342,7 @@ public class GameServerConnection
       private var playerModel:PlayerModel;
       private var injector:Injector;
       private var model:GameModel;
+      private var showPopupSignal:ShowPopupSignal;
 
       public function GameServerConnection(gs:GameSprite, server:Server, gameId:int, createCharacter:Boolean, charId:int, keyTime:int, key:ByteArray, mapJSON:String)
       {
@@ -350,6 +353,7 @@ public class GameServerConnection
          this.updateGameObjectTileSignal = this.injector.getInstance(UpdateGameObjectTileSignal);
          this.updateBackpackTab = StaticInjectorContext.getInjector().getInstance(UpdateBackpackTabSignal);
          this.logger = this.injector.getInstance(ILogger);
+         this.showPopupSignal = this.injector.getInstance(ShowPopupSignal);
          this.handleDeath = this.injector.getInstance(HandleDeathSignal);
          this.setGameFocus = this.injector.getInstance(SetGameFocusSignal);
          this.classesModel = this.injector.getInstance(ClassesModel);

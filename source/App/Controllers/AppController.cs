@@ -16,10 +16,7 @@ namespace App.Controllers
         }
 
         [HttpPost("getLanguageStrings")]
-        public void GetLanguageStrings()
-        {
-            Response.CreateError("Invalid Endpoint");
-        }
+        public void GetLanguageStrings() => Response.CreateBytes(ReadFile($"{_core.Resources.ResourcePath}/data/languages/en.txt"));
 
         [HttpPost("serverList")]
         public void ServerList()

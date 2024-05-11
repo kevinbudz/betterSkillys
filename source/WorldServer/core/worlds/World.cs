@@ -116,7 +116,7 @@ namespace WorldServer.core.worlds
         public void BroadcastIfVisible(OutgoingMessage outgoingMessage, ref Position worldPosData)
         {
             foreach (var player in Players.Values)
-                if (player.SqDistTo(ref worldPosData) < CULL_RANGE)
+                if (player.SqDistTo(ref worldPosData) < CULL_RANGE * CULL_RANGE)
                 {
                     if (outgoingMessage is ServerPlayerShoot)
                         player.ServerPlayerShoot(outgoingMessage as ServerPlayerShoot);
@@ -127,7 +127,7 @@ namespace WorldServer.core.worlds
         public void BroadcastIfVisible(OutgoingMessage outgoingMessage, Entity host)
         {
             foreach (var player in Players.Values)
-                if (player.SqDistTo(host) < CULL_RANGE)
+                if (player.SqDistTo(host) < CULL_RANGE * CULL_RANGE)
                 {
                     if (outgoingMessage is EnemyShootMessage)
                         player.EnemyShoot(outgoingMessage as EnemyShootMessage);
@@ -138,14 +138,14 @@ namespace WorldServer.core.worlds
         public void BroadcastIfVisibleExclude(List<OutgoingMessage> outgoingMessage, Entity broadcaster, Entity exclude)
         {
             foreach (var player in Players.Values)
-                if (player.Id != exclude.Id && player.SqDistTo(broadcaster) <= CULL_RANGE)
+                if (player.Id != exclude.Id && player.SqDistTo(broadcaster) <= CULL_RANGE * CULL_RANGE)
                     player.Client.SendPackets(outgoingMessage);
         }
 
         public void BroadcastIfVisibleExclude(OutgoingMessage outgoingMessage, Entity broadcaster, Entity exclude)
         {
             foreach (var player in Players.Values)
-                if (player.Id != exclude.Id && player.SqDistTo(broadcaster) <= CULL_RANGE)
+                if (player.Id != exclude.Id && player.SqDistTo(broadcaster) <= CULL_RANGE * CULL_RANGE)
                     player.Client.SendPacket(outgoingMessage);
         }
 
