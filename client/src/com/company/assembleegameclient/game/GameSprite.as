@@ -172,7 +172,7 @@ public class GameSprite extends Sprite
    public function initialize() : void
    {
       this.map.initialize();
-      this.creditDisplay_ = new CreditDisplay(this);
+      this.creditDisplay_ = new CreditDisplay(this, true);
       this.creditDisplay_.x = 594;
       this.creditDisplay_.y = 0;
       addChild(this.creditDisplay_);

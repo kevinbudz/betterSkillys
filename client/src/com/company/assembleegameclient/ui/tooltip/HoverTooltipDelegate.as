@@ -1,17 +1,21 @@
-package com.company.assembleegameclient.ui.tooltip {
+// Decompiled by AS3 Sorcerer 6.08
+// www.as3sorcerer.com
+
+//kabam.rotmg.tooltips.HoverTooltipDelegate
+
+package com.company.assembleegameclient.ui.tooltip
+{
 import com.company.assembleegameclient.ui.tooltip.controller.TooltipAble;
 
-import flash.display.DisplayObject;
 import flash.display.Sprite;
-import flash.events.Event;
-import flash.events.MouseEvent;
-
-import kabam.rotmg.core.StaticInjectorContext;
-
 import kabam.rotmg.core.signals.HideTooltipsSignal;
 import kabam.rotmg.core.signals.ShowTooltipSignal;
+import flash.display.DisplayObject;
+import flash.events.MouseEvent;
+import flash.events.Event;
 
-public class HoverTooltipDelegate implements TooltipAble {
+public class HoverTooltipDelegate implements TooltipAble
+{
 
     public var tooltip:Sprite;
     private var hideToolTips:HideTooltipsSignal;
@@ -19,15 +23,20 @@ public class HoverTooltipDelegate implements TooltipAble {
     private var displayObject:DisplayObject;
 
 
-    public function setDisplayObject(_arg1:DisplayObject):void {
-        this.displayObject = _arg1;
+    public function setDisplayObject(_arg_1:DisplayObject):void
+    {
+        this.displayObject = _arg_1;
+        this.displayObject.addEventListener(MouseEvent.CLICK, this.onMouseOut);
         this.displayObject.addEventListener(MouseEvent.MOUSE_OUT, this.onMouseOut);
         this.displayObject.addEventListener(MouseEvent.MOUSE_OVER, this.onMouseOver);
         this.displayObject.addEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
     }
 
-    public function removeDisplayObject():void {
-        if (this.displayObject != null) {
+    public function removeDisplayObject():void
+    {
+        if (this.displayObject != null)
+        {
+            this.displayObject.removeEventListener(MouseEvent.CLICK, this.onMouseOut);
             this.displayObject.removeEventListener(MouseEvent.MOUSE_OUT, this.onMouseOut);
             this.displayObject.removeEventListener(MouseEvent.MOUSE_OVER, this.onMouseOver);
             this.displayObject.removeEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
@@ -35,43 +44,54 @@ public class HoverTooltipDelegate implements TooltipAble {
         }
     }
 
-    public function getDisplayObject():DisplayObject {
+    public function getDisplayObject():DisplayObject
+    {
         return (this.displayObject);
     }
 
-    public function setShowToolTipSignal(_arg1:ShowTooltipSignal):void {
-        this.showToolTip = _arg1;
+    public function setShowToolTipSignal(_arg_1:ShowTooltipSignal):void
+    {
+        this.showToolTip = _arg_1;
     }
 
-    public function getShowToolTip():ShowTooltipSignal {
+    public function getShowToolTip():ShowTooltipSignal
+    {
         return (this.showToolTip);
     }
 
-    public function setHideToolTipsSignal(_arg1:HideTooltipsSignal):void {
-        this.hideToolTips = _arg1;
+    public function setHideToolTipsSignal(_arg_1:HideTooltipsSignal):void
+    {
+        this.hideToolTips = _arg_1;
     }
 
-    public function getHideToolTips():HideTooltipsSignal {
+    public function getHideToolTips():HideTooltipsSignal
+    {
         return (this.hideToolTips);
     }
 
-    private function onRemovedFromStage(_arg1:Event):void {
-        if (((!((this.tooltip == null))) && (!((this.tooltip.parent == null))))) {
+    private function onRemovedFromStage(_arg_1:Event):void
+    {
+        if (((!(this.tooltip == null)) && (!(this.tooltip.parent == null))))
+        {
             this.hideToolTips.dispatch();
         }
+        this.displayObject.removeEventListener(MouseEvent.CLICK, this.onMouseOut);
         this.displayObject.removeEventListener(MouseEvent.MOUSE_OVER, this.onMouseOver);
         this.displayObject.removeEventListener(MouseEvent.MOUSE_OUT, this.onMouseOut);
         this.displayObject.removeEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
     }
 
-    private function onMouseOut(_arg1:MouseEvent):void {
+    private function onMouseOut(_arg_1:MouseEvent):void
+    {
         this.hideToolTips.dispatch();
     }
 
-    private function onMouseOver(_arg1:MouseEvent):void {
+    private function onMouseOver(_arg_1:MouseEvent):void
+    {
         this.showToolTip.dispatch(this.tooltip);
     }
 
 
 }
-}
+}//package kabam.rotmg.tooltips
+

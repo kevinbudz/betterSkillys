@@ -24,6 +24,7 @@ package com.company.assembleegameclient.appengine
       public var savedChars_:Vector.<SavedCharacter>;
       public var charStats_:Object;
       public var totalFame_:int = 0;
+      public var bestCharFame_:int = 0;
       public var fame_:int = 0;
       public var credits_:int = 0;
       public var numStars_:int = 0;
@@ -96,6 +97,7 @@ package com.company.assembleegameclient.appengine
          this.isAdmin_ = accountXML.hasOwnProperty("Admin");
          this.totalFame_ = int(accountXML.Stats.TotalFame);
          this.fame_ = int(accountXML.Stats.Fame);
+         this.bestCharFame_ = int(accountXML.Stats.BestCharFame);
          this.credits_ = int(accountXML.Credits);
          this.nextCharSlotPrice_ = int(accountXML.NextCharSlotPrice);
          this.nextCharSlotCurrency_ = int(accountXML.NextCharSlotCurrency);

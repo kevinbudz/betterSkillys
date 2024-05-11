@@ -111,6 +111,11 @@ public class PlayerModel
       }
    }
 
+   public function getBestCharFame():int
+   {
+      return (this.charList.bestCharFame_);
+   }
+
    public function getAccountId() : int
    {
       return this.charList.accountId_;

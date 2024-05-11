@@ -111,6 +111,7 @@ public class Player extends Character {
         texturingCache_ = new Dictionary();
     }
 
+    private var famePortrait_:BitmapData = null;
     public var skinId:int;
     public var skin:AnimatedChar;
     public var accountId_:int = -1;
@@ -207,6 +208,45 @@ public class Player extends Character {
             this.nearestMerchant_ = this.getNearbyMerchant();
         }
         return ret;
+    }
+
+    public function getFamePortrait(_arg_1:int):BitmapData
+    {
+        var _local_2:MaskedImage;
+        var _local_3:int;
+        if (this.famePortrait_ == null)
+        {
+            _local_2 = animatedChar_.imageFromDir(AnimatedChar.RIGHT, AnimatedChar.STAND, 0);
+            _local_3 = int(((4 / _local_2.image_.width) * _arg_1));
+            this.famePortrait_ = TextureRedrawer.resize(_local_2.image_, _local_2.mask_, _local_3, true, tex1Id_, tex2Id_);
+            this.famePortrait_ = GlowRedrawer.outlineGlow(this.famePortrait_, 0);
+        }
+        return (this.famePortrait_);
+    }
+
+    public function getFameBonus():int
+    {
+        var _local_3:int;
+        var _local_4:XML;
+        var _local_1:int;
+        var _local_2:uint;
+        while (_local_2 < GeneralConstants.NUM_EQUIPMENT_SLOTS)
+        {
+            if (((equipment_) && (equipment_.length > _local_2)))
+            {
+                _local_3 = equipment_[_local_2];
+                if (_local_3 != -1)
+                {
+                    _local_4 = ObjectLibrary.xmlLibrary_[_local_3];
+                    if (((!(_local_4 == null)) && (_local_4.hasOwnProperty("FameBonus"))))
+                    {
+                        _local_1 = (_local_1 + int(_local_4.FameBonus));
+                    }
+                }
+            }
+            _local_2++;
+        }
+        return (_local_1);
     }
 
     override public function update(time:int, dt:int):Boolean {
