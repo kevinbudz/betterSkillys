@@ -102,13 +102,11 @@ public class ItemGridMediator extends Mediator
          }
          else if(target is TabStripView)
          {
-            if(this.tabStripModel.currentSelection != TabStripModel.TALISMANS) {
-               slot = sourceTile.ownerGrid.curPlayer.nextAvailableInventorySlot();
-               if (slot != -1) {
-                  GameServerConnection.instance.invSwap(this.view.curPlayer, sourceTile.ownerGrid.owner, sourceTile.tileId, sourceTile.itemSprite.itemId, this.view.curPlayer, slot, ItemConstants.NO_ITEM);
-                  sourceTile.setItem(ItemConstants.NO_ITEM, null);
-                  sourceTile.updateUseability(this.view.curPlayer);
-               }
+            slot = sourceTile.ownerGrid.curPlayer.nextAvailableInventorySlot();
+            if (slot != -1) {
+               GameServerConnection.instance.invSwap(this.view.curPlayer, sourceTile.ownerGrid.owner, sourceTile.tileId, sourceTile.itemSprite.itemId, this.view.curPlayer, slot, ItemConstants.NO_ITEM);
+               sourceTile.setItem(ItemConstants.NO_ITEM, null);
+               sourceTile.updateUseability(this.view.curPlayer);
             }
          }
          sourceTile.resetItemPosition();

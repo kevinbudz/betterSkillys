@@ -7,8 +7,7 @@ package kabam.rotmg.constants
       public static const NUM_EQUIPMENT_SLOTS:int = 4;
       public static const NUM_INVENTORY_SLOTS:int = 8;
       public static const NUM_BACKPACK_SLOTS:int = 8;
-      public static const NUM_TALISMAN_SLOTS:int = 8;
-       
+
       public function GeneralConstants()
       {
       }

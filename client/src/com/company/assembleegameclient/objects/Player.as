@@ -44,7 +44,6 @@ import kabam.rotmg.core.StaticInjectorContext;
 import kabam.rotmg.game.model.AddTextLineVO;
 import kabam.rotmg.game.model.PotionInventoryModel;
 import kabam.rotmg.game.signals.AddTextLineSignal;
-import kabam.rotmg.messaging.impl.data.TalismanData;
 import kabam.rotmg.stage3D.GraphicsFillExtra;
 import kabam.rotmg.storage.PotionStorageModal;
 import kabam.rotmg.ui.model.TabStripModel;
@@ -853,7 +852,7 @@ public class Player extends Character {
     public function swapInventoryIndex(current:String):int {
         var start:int = 0;
         var end:int = 0;
-        if (!this.hasBackpack_ || current == TabStripModel.TALISMANS) {
+        if (!this.hasBackpack_) {
             return -1;
         }
 
@@ -863,7 +862,7 @@ public class Player extends Character {
         }
         else {
             start = GeneralConstants.NUM_EQUIPMENT_SLOTS + GeneralConstants.NUM_INVENTORY_SLOTS;
-            end = equipment_.length - GeneralConstants.NUM_TALISMAN_SLOTS;
+            end = equipment_.length;
         }
 
         for (var i:uint = start; i < end; i++) {

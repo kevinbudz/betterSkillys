@@ -78,7 +78,6 @@ public class ItemTile extends Sprite
    {
       if(itemId == this.itemSprite.itemId && itemData == this.itemSprite.itemData)
          return false;
-      trace(itemId);
       this.itemSprite.setType(itemId, itemData);
       this.setTierTag();
       this.updateUseability(this.ownerGrid.curPlayer);

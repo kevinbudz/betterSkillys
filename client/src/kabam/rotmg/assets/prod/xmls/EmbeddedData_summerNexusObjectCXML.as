@@ -5,8 +5,6 @@
 
 package kabam.rotmg.assets.prod.xmls
 {
-import kabam.rotmg.assets.prod.*;
-import kabam.rotmg.assets.*;
     import mx.core.ByteArrayAsset;
 
 [Embed(source="EmbeddedData_summerNexusObjectCXML.xml", mimeType="application/octet-stream")]

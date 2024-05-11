@@ -135,7 +135,7 @@ public class Parameters {
         setDefaultKey("useHealthPotion", KeyCodes.F);
         setDefaultKey("useMagicPotion", KeyCodes.V);
         setDefaultKey("switchTabs", KeyCodes.B);
-        setDefaultKey("refresh_button_servers", KeyCodes.R);
+        setDefaultKey("refresh_button_servers", KeyCodes.F5);
         setDefault("showStatistics", false);
         setDefault("disableAllParticles", false);
         setDefault("uiQuality", false);

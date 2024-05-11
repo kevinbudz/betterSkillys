@@ -295,7 +295,7 @@ namespace WorldServer.core.net.handlers
 
         // todo add in talisman count checks
         private bool ValidateSlotSwap(IContainer conA, IContainer conB, int slotA, int slotB)
-            => slotA < 28 && slotB < 28 &&
+            => slotA < 20 && slotB < 20 &&
                 conB.AuditItem(conA.Inventory[slotA], slotB) && conA.AuditItem(conB.Inventory[slotB], slotA);
 
         public static void HandleUnavailableInventoryAction(Player player, Item item, int slotId, Random random, IContainer container)
