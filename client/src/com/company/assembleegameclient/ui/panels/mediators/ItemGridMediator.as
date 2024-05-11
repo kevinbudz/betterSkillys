@@ -66,6 +66,7 @@ public class ItemGridMediator extends Mediator
          this.view.addEventListener(ItemTileEvent.ITEM_SHIFT_CLICK,this.onShiftClick);
          this.view.addEventListener(ItemTileEvent.ITEM_DOUBLE_CLICK,this.onDoubleClick);
          this.view.addEventListener(ItemTileEvent.ITEM_CTRL_CLICK,this.onCtrlClick);
+         this.view.addEventListener(ItemTileEvent.ITEM_RIGHT_CTRL_CLICK,this.onRightCtrlClick);
       }
 
       override public function destroy() : void
@@ -239,6 +240,16 @@ public class ItemGridMediator extends Mediator
          if(tile.ownerGrid is InventoryGrid || tile.ownerGrid is ContainerGrid)
          {
             GameServerConnection.instance.useItem_new(tile.ownerGrid.owner,tile.tileId);
+         }
+      }
+
+      private function onRightCtrlClick(e:ItemTileEvent) : void
+      {
+         var tile:InteractiveItemTile = e.tile;
+         if(tile.ownerGrid is InventoryGrid || tile.ownerGrid is ContainerGrid)
+         {
+            var slot:int = tile.tileId;
+            GameServerConnection.instance.breakdownSlot(slot);
          }
       }
 

@@ -4,6 +4,18 @@ using System.Xml.Linq;
 
 namespace Shared.resources
 {
+    public class BreakDownData
+    {
+        public readonly int Fame;
+        public readonly string ItemName;
+
+        public BreakDownData(XElement e)
+        {
+            Fame = e.GetAttribute("fame", 0);
+            ItemName = e.Value;
+        }
+    }
+
     public class Item
     {
         public ActivateEffect[] ActivateEffects;
@@ -62,6 +74,7 @@ namespace Shared.resources
         public bool TypeOfConsumable;
         public bool Usable;
         public bool XpBoost;
+        public BreakDownData BreakDownData;
 
         public readonly bool DonorItem;
 
@@ -124,6 +137,9 @@ namespace Shared.resources
             Clarification = e.HasElement("Clarification");
             SonicBlaster = e.HasElement("SonicBlaster");
             Vampiric = e.HasElement("Vampiric");
+
+            if(e.Element("BreakDown") != null)
+                BreakDownData = new BreakDownData(e.Element("BreakDown"));
         }
     }
 }

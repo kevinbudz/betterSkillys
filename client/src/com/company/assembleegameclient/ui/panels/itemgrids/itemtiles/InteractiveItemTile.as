@@ -38,6 +38,8 @@ package com.company.assembleegameclient.ui.panels.itemgrids.itemtiles
          if(isInteractive)
          {
             addEventListener(MouseEvent.MOUSE_DOWN,this.onMouseDown);
+            addEventListener(MouseEvent.RIGHT_MOUSE_UP,this.onRightMouseUp);
+            addEventListener(MouseEvent.RIGHT_MOUSE_DOWN,this.onRightMouseDown);
             addEventListener(MouseEvent.MOUSE_UP,this.onMouseUp);
             addEventListener(MouseEvent.MOUSE_OUT,this.onMouseOut);
             addEventListener(Event.REMOVED_FROM_STAGE,this.onRemovedFromStage);
@@ -45,6 +47,8 @@ package com.company.assembleegameclient.ui.panels.itemgrids.itemtiles
          else
          {
             removeEventListener(MouseEvent.MOUSE_DOWN,this.onMouseDown);
+            removeEventListener(MouseEvent.RIGHT_MOUSE_UP,this.onRightMouseUp);
+            removeEventListener(MouseEvent.RIGHT_MOUSE_DOWN,this.onRightMouseDown);
             removeEventListener(MouseEvent.MOUSE_UP,this.onMouseUp);
             removeEventListener(MouseEvent.MOUSE_OUT,this.onMouseOut);
          }
@@ -67,7 +71,17 @@ package com.company.assembleegameclient.ui.panels.itemgrids.itemtiles
       {
          this.setPendingDoubleClick(false);
       }
-      
+
+      private function onRightMouseUp(e:MouseEvent) : void {
+
+      }
+
+      private function onRightMouseDown(e:MouseEvent) : void {
+         if (e.ctrlKey) {
+            dispatchEvent(new ItemTileEvent(ItemTileEvent.ITEM_RIGHT_CTRL_CLICK, this));
+         }
+      }
+
       private function onMouseUp(e:MouseEvent) : void
       {
          if(this.isDragging)

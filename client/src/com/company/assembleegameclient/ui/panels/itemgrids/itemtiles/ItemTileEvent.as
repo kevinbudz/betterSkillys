@@ -14,9 +14,11 @@ package com.company.assembleegameclient.ui.panels.itemgrids.itemtiles
       public static const ITEM_CLICK:String = "ITEM_CLICK";
       
       public static const ITEM_HOTKEY_PRESS:String = "ITEM_HOTKEY_PRESS";
-      
+
       public static const ITEM_CTRL_CLICK:String = "ITEM_CTRL_CLICK";
-       
+
+      public static const ITEM_RIGHT_CTRL_CLICK:String = "ITEM_RIGHT_CTRL_CLICK";
+
       
       public var tile:InteractiveItemTile;
       

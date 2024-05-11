@@ -169,6 +169,7 @@ import kabam.rotmg.messaging.impl.outgoing.PlayerText;
 import kabam.rotmg.messaging.impl.outgoing.Pong;
 import kabam.rotmg.messaging.impl.outgoing.PotionStorageInteraction;
 import kabam.rotmg.messaging.impl.outgoing.RequestTrade;
+import kabam.rotmg.messaging.impl.outgoing.BreakdownSlot;
 import kabam.rotmg.messaging.impl.outgoing.ShootAck;
 import kabam.rotmg.messaging.impl.outgoing.Reskin;
 import kabam.rotmg.messaging.impl.outgoing.SquareHit;
@@ -299,6 +300,8 @@ public class GameServerConnection
       public static const MARKET_REMOVE_RESULT:int = 83;
       public static const MARKET_MY_OFFERS:int = 84;
       public static const MARKET_MY_OFFERS_RESULT:int = 85;
+
+      public static const BREAKDOWN_SLOT = 86;
 
       private static const TO_MILLISECONDS:int = 1000;
 
@@ -500,6 +503,7 @@ public class GameServerConnection
          messages.map(USE_STORAGE).toMessage(PotionStorageInteraction);
          messages.map(AOEACK).toMessage(AoeAck);
          messages.map(SHOOTACK).toMessage(ShootAck);
+         messages.map(BREAKDOWN_SLOT).toMessage(BreakdownSlot);
       }
 
       private function unmapMessages() : void {
@@ -588,6 +592,7 @@ public class GameServerConnection
 
          messages.unmap(USE_STORAGE);
          messages.unmap(SWITCH_MUSIC);
+         messages.unmap(BREAKDOWN_SLOT);
       }
 
       private function onSwitchMusic(sm:SwitchMusic):void {
@@ -703,6 +708,14 @@ public class GameServerConnection
          var shootAck:ShootAck = this.messages.require(SHOOTACK) as ShootAck;
          shootAck.time_ = time;
          this.serverConnection.sendMessage(shootAck);
+      }
+
+      public function breakdownSlot(slot:int) : void
+      {
+         var breakdownSlot:BreakdownSlot = this.messages.require(BREAKDOWN_SLOT) as BreakdownSlot;
+         breakdownSlot.time_ = gs_.lastUpdate_;
+         breakdownSlot.slot_ = slot;
+         this.serverConnection.sendMessage(breakdownSlot);
       }
 
       public function playerText(textStr:String) : void

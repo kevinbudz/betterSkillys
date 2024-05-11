@@ -39,7 +39,6 @@ namespace Shared.database
             if (field != null && _entries != null)
             {
                 _entries[field] = new KeyValuePair<byte[], bool>(Database.HashGet(Key, field), false);
-
                 return;
             }
 
