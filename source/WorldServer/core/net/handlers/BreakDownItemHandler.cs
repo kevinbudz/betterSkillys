@@ -170,13 +170,16 @@ namespace WorldServer.core.net.handlers
                     break;
                 case ItemType.Potion:
                     {
-                        var name = item.DisplayName;
-                        if (name.Contains("Life") || name.Contains("Mana"))
-                            fameToGive = 5;
-                        else
-                            fameToGive = 2;
-                        if (item.DisplayName.Contains("Greater"))
-                            fameToGive *= 2;
+                        if (item.Tier == 2 || item.Tier == 4 || item.Tier == 5)
+                        {
+                            var name = item.DisplayName;
+                            if (name.Contains("Life") || name.Contains("Mana"))
+                                fameToGive = 5;
+                            else
+                                fameToGive = 2;
+                            if (item.DisplayName.Contains("Greater"))
+                                fameToGive *= 2;
+                        }
                     }
                     break;
             }
@@ -205,7 +208,8 @@ namespace WorldServer.core.net.handlers
 
                 acc.Reload();
 
-                e.Inventory[slot] = item;
+                e.Inventory[slot] = null;
+
                 player.SendInfo($"Tier {item.Tier} {type} was broken down into {fameToGive} fame");
             }).ContinueWith(e => StaticLogger.Instance.Error(e.Exception.InnerException.ToString()), TaskContinuationOptions.OnlyOnFaulted);
         }
