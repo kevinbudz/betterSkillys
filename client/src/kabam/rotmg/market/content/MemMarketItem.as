@@ -5,10 +5,18 @@ import com.company.assembleegameclient.objects.ObjectLibrary;
 import com.company.assembleegameclient.ui.tooltip.EquipmentToolTip;
 import com.company.assembleegameclient.ui.tooltip.ToolTip;
 import com.company.assembleegameclient.util.Currency;
+import com.company.util.GraphicsUtil;
 
 import flash.display.Bitmap;
+import flash.display.CapsStyle;
 
 import flash.display.Graphics;
+import flash.display.GraphicsPath;
+import flash.display.GraphicsSolidFill;
+import flash.display.GraphicsStroke;
+import flash.display.IGraphicsData;
+import flash.display.JointStyle;
+import flash.display.LineScaleMode;
 import flash.display.Shape;
 
 import flash.display.Sprite;
@@ -25,12 +33,19 @@ import mx.utils.StringUtil;
 public class MemMarketItem extends Sprite
 {
     /* Offers */
-    public static const OFFER_WIDTH:int = 100;
+    public static const OFFER_WIDTH:int = 150;
     public static const OFFER_HEIGHT:int = 83;
 
     /* Inventory slots */
     public static const SLOT_WIDTH:int = 50;
     public static const SLOT_HEIGHT:int = 50;
+
+    /* Graphics data */
+    private var outlineFill_:GraphicsSolidFill = new GraphicsSolidFill(0x484848,1);
+    private var lineStyle_:GraphicsStroke = new GraphicsStroke(2,false,LineScaleMode.NORMAL,CapsStyle.NONE,JointStyle.ROUND,3,outlineFill_);
+    private var backgroundFill_:GraphicsSolidFill = new GraphicsSolidFill(0x323232,1);
+    private var path_:GraphicsPath = new GraphicsPath(new Vector.<int>(),new Vector.<Number>());
+    private var graphicsData_:Vector.<IGraphicsData> = new <IGraphicsData>[lineStyle_,backgroundFill_,path_,GraphicsUtil.END_FILL,GraphicsUtil.END_STROKE];
 
     public var gameSprite_:GameSprite;
     public var itemType_:int;
@@ -52,7 +67,7 @@ public class MemMarketItem extends Sprite
 
         /* Draw background */
         this.shape_ = new Shape();
-        drawRoundRectAsFill(this.shape_.graphics, 0, 0, width, height, 5);
+        this.drawMarketSlot(this.shape_.graphics);
         addChild(this.shape_);
 
         if (this.itemType_ != -1)
@@ -142,16 +157,11 @@ public class MemMarketItem extends Sprite
 
     /* Taken from https://stackoverflow.com/a/25118121 */
     /* Used to draw rectangles with rounded edges */
-    public static function drawRoundRectAsFill(graphics:Graphics, x:Number, y:Number, w:Number, h:Number, radius:Number, lineColor:uint=0x676767, fillColor:uint=0x454545, lineThickness:Number=1, lineAlpha:Number=1, fillAlpha:Number=1) : void
+    public function drawMarketSlot(graphics:Graphics) : void
     {
-        graphics.lineStyle(0,0,0);
-        graphics.beginFill(lineColor, lineAlpha);
-        graphics.drawRoundRect(x, y, w, h, 2*radius, 2*radius);
-        graphics.drawRoundRect(x+lineThickness, y+lineThickness, w-2*lineThickness, h-2*lineThickness, 2*radius-2*lineThickness, 2*radius-2*lineThickness);
-        graphics.endFill();
-        graphics.beginFill(fillColor,fillAlpha);
-        graphics.drawRoundRect(x+lineThickness, y+lineThickness, w-2*lineThickness, h-2*lineThickness, 2*radius-2*lineThickness, 2*radius-2*lineThickness);
-        graphics.endFill();
+        GraphicsUtil.clearPath(this.path_);
+        GraphicsUtil.drawCutEdgeRect(0,0,SLOT_WIDTH,SLOT_HEIGHT,6,[1,1,1,1],this.path_);
+        graphics.drawGraphicsData(this.graphicsData_);
     }
 }
 }

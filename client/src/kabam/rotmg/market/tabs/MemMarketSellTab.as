@@ -2,6 +2,7 @@ package kabam.rotmg.market.tabs {
 import com.company.assembleegameclient.account.ui.TextInputField;
 import com.company.assembleegameclient.game.GameSprite;
 import com.company.assembleegameclient.ui.Scrollbar;
+import com.company.assembleegameclient.ui.TextButton;
 import com.company.assembleegameclient.ui.dialogs.Dialog;
 import com.company.assembleegameclient.ui.dropdown.DropDown;
 import com.company.assembleegameclient.util.Currency;
@@ -31,11 +32,11 @@ import kabam.rotmg.messaging.impl.incoming.market.MarketRemoveResult;
 
 public class MemMarketSellTab extends MemMarketTab
 {
-    private static const SLOT_X_OFFSET:int = 33;
-    private static const SLOT_Y_OFFSET:int = 109;
+    private static const SLOT_X_OFFSET:int = 16;
+    private static const SLOT_Y_OFFSET:int = 130;
 
     private static const RESULT_X_OFFSET:int = 270;
-    private static const RESULT_Y_OFFSET:int = 105;
+    private static const RESULT_Y_OFFSET:int = 120;
 
     /* Signals */
     public const addSignal_:MemMarketAddSignal = new MemMarketAddSignal();
@@ -45,7 +46,7 @@ public class MemMarketSellTab extends MemMarketTab
     private var inventorySlots_:Vector.<MemMarketInventoryItem>;
     private var priceField_:TextInputField;
     private var currencyFame_:Bitmap;
-    private var sellButton_:SliceScalingButton;
+    private var sellButton_:TextButton;
     private var shape_:Shape;
     private var resultMask_:Sprite;
     private var resultBackground_:Sprite;
@@ -77,29 +78,34 @@ public class MemMarketSellTab extends MemMarketTab
         var index:int = 0;
         for each (var o:MemMarketInventoryItem in this.inventorySlots_)
         {
-            o.x = MemMarketItem.SLOT_WIDTH * int(index % 4) + SLOT_X_OFFSET;
-            o.y = MemMarketItem.SLOT_HEIGHT * int(index / 4) + SLOT_Y_OFFSET + space;
+            if (index < 8)
+            {
+                o.x = MemMarketItem.SLOT_WIDTH * int(index % 4) + SLOT_X_OFFSET  + (int(index % 4) * 6);
+                o.y = MemMarketItem.SLOT_HEIGHT * int(index / 4) + SLOT_Y_OFFSET + (int(index / 4) * 6);
+            } else
+            {
+                o.x = MemMarketItem.SLOT_WIDTH * int(index % 4) + SLOT_X_OFFSET  + (int(index % 4) * 6);
+                o.y = 20 + MemMarketItem.SLOT_HEIGHT * int(index / 4) + SLOT_Y_OFFSET + (int(index / 4) * 6);
+            }
             index++; /* Increase before we check spacing */
             if (index % 8 == 0) /* Add small space between each inventory */
             {
-                space = 20;
+                space = 40;
             }
             addChild(o);
         }
 
-        this.priceField_ = new TextInputField("", false, "");
+        this.priceField_ = new TextInputField("", false, "", "Price", 170);
         this.priceField_.inputText_.restrict = "0-9";
-        this.priceField_.x = 13;
-        this.priceField_.y = 304;
+        this.priceField_.x = 54;
+        this.priceField_.y = 43;
         addChild(this.priceField_);
 
         this.uptime_ = 24; // 24 Hours
 
-        this.sellButton_ = new SliceScalingButton(TextureParser.instance.getSliceScalingBitmap("UI", "generic_green_button"));
-        this.sellButton_.setLabel("Sell", DefaultLabelFormat.defaultModalTitle);
-        this.sellButton_.width = 240;
-        this.sellButton_.x = 10;
-        this.sellButton_.y = 426;
+        this.sellButton_ = new TextButton(18, "Sell", 150);
+        this.sellButton_.x = 52;
+        this.sellButton_.y = 380;
         this.sellButton_.addEventListener(MouseEvent.CLICK, this.onSell);
         addChild(this.sellButton_);
 
@@ -117,8 +123,8 @@ public class MemMarketSellTab extends MemMarketTab
         this.resultItems_= new Vector.<MemMarketSellItem>();
 
         this.sortChoices_ = new DropDown(SortUtils.SORT_CHOICES, 200, 26);
-        this.sortChoices_.x = 597;
-        this.sortChoices_.y = 71;
+        this.sortChoices_.x = 590;
+        this.sortChoices_.y = 75;
         this.sortChoices_.setValue(SortUtils.JUST_ADDED);
         this.sortChoices_.addEventListener(Event.CHANGE, this.onSortChoicesChanged);
         addChild(this.sortChoices_);

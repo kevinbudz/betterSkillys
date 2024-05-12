@@ -29,12 +29,14 @@ import mx.utils.StringUtil;
 
 public class MemMarketBuyTab extends MemMarketTab
 {
-    private static const SEARCH_X_OFFSET:int = 4;
-    private static const SEARCH_Y_OFFSET:int = 170;
+    private static const SEARCH_X_OFFSET:int = 10;
+    private static const SEARCH_Y_OFFSET:int = 120;
     private static const SEARCH_ITEM_SIZE:int = 50;
 
     private static const RESULT_X_OFFSET:int = 270;
     private static const RESULT_Y_OFFSET:int = 105;
+
+    private static const PADDING:int = 6;
 
     /* Signals */
     public const buySignal_:MemMarketBuySignal = new MemMarketBuySignal();
@@ -62,15 +64,15 @@ public class MemMarketBuyTab extends MemMarketTab
         this.buySignal_.add(this.onBuy);
         this.searchSignal_.add(this.onSearch);
 
-        this.searchField_ = new TextInputField("Search", false, "");
-        this.searchField_.x = SEARCH_X_OFFSET + 9;
-        this.searchField_.y = 105;
+        this.searchField_ = new TextInputField("", false, "", "", 210);
+        this.searchField_.x = SEARCH_X_OFFSET + 4;
+        this.searchField_.y = 43;
         this.searchField_.addEventListener(KeyboardEvent.KEY_UP, this.onKeyUp);
         addChild(this.searchField_);
 
         this.shape_ = new Shape();
         this.shape_.graphics.beginFill(0);
-        this.shape_.graphics.drawRect(SEARCH_X_OFFSET, SEARCH_Y_OFFSET, 250, 350);
+        this.shape_.graphics.drawRect(SEARCH_X_OFFSET, SEARCH_Y_OFFSET, 250, 400);
         this.shape_.graphics.endFill();
         this.searchMask_ = new Sprite();
         this.searchMask_.addChild(this.shape_);
@@ -95,8 +97,8 @@ public class MemMarketBuyTab extends MemMarketTab
         this.resultItems_ = new Vector.<MemMarketBuyItem>();
 
         this.sortChoices_ = new DropDown(SortUtils.SORT_CHOICES, 200, 26);
-        this.sortChoices_.x = 597;
-        this.sortChoices_.y = 71;
+        this.sortChoices_.x = 590;
+        this.sortChoices_.y = 75;
         this.sortChoices_.setValue(SortUtils.LOWEST_TO_HIGHEST);
         this.sortChoices_.addEventListener(Event.CHANGE, this.onSortChoicesChanged);
         addChild(this.sortChoices_);
@@ -149,8 +151,8 @@ public class MemMarketBuyTab extends MemMarketTab
                 }
 
                 var preloaded:MemMarketItem = new MemMarketItem(this.gameSprite_, SEARCH_ITEM_SIZE, SEARCH_ITEM_SIZE, 80, ObjectLibrary.idToTypeItems_[w], null);
-                preloaded.x = SEARCH_ITEM_SIZE * int(index % 5) + SEARCH_X_OFFSET;
-                preloaded.y = SEARCH_ITEM_SIZE * int(index / 5) + SEARCH_Y_OFFSET;
+                preloaded.x = 1 + SEARCH_ITEM_SIZE * int(index % 4) + SEARCH_X_OFFSET + (int(index % 4) * PADDING);
+                preloaded.y = SEARCH_ITEM_SIZE * int(index / 4) + SEARCH_Y_OFFSET + (int(index / 4) * PADDING);
                 preloaded.addEventListener(MouseEvent.CLICK, this.onSearchClick);
                 this.searchItems.push(preloaded);
                 index++;
@@ -166,8 +168,8 @@ public class MemMarketBuyTab extends MemMarketTab
                         continue;
 
                     var item:MemMarketItem = new MemMarketItem(this.gameSprite_, SEARCH_ITEM_SIZE, SEARCH_ITEM_SIZE, 80, ObjectLibrary.idToTypeItems_[i], null);
-                    item.x = SEARCH_ITEM_SIZE * int(index % 5) + SEARCH_X_OFFSET;
-                    item.y = SEARCH_ITEM_SIZE * int(index / 5) + SEARCH_Y_OFFSET;
+                    item.x = 1 + SEARCH_ITEM_SIZE * int(index % 4) + SEARCH_X_OFFSET + (int(index % 4) * PADDING);
+                    item.y = SEARCH_ITEM_SIZE * int(index / 4) + SEARCH_Y_OFFSET + (int(index / 4) * PADDING);
                     item.addEventListener(MouseEvent.CLICK, this.onSearchClick);
                     this.searchItems.push(item);
                     index++;
@@ -181,12 +183,12 @@ public class MemMarketBuyTab extends MemMarketTab
         }
 
         this.searchBackground.y = 0; /* Reset height */
-        if (this.searchBackground.height > 350)
+        if (this.searchBackground.height > 400)
         {
-            this.searchScroll = new Scrollbar(6, 350);
-            this.searchScroll.x = 258;
+            this.searchScroll = new Scrollbar(10, 400);
+            this.searchScroll.x = 236;
             this.searchScroll.y = SEARCH_Y_OFFSET;
-            this.searchScroll.setIndicatorSize(350, this.searchBackground.height);
+            this.searchScroll.setIndicatorSize(400, this.searchBackground.height);
             this.searchScroll.addEventListener(Event.CHANGE, this.onSearchScrollChanged);
             addChild(this.searchScroll);
         }
@@ -279,8 +281,8 @@ public class MemMarketBuyTab extends MemMarketTab
         var index:int = 0;
         for each (var i:MemMarketBuyItem in this.resultItems_)
         {
-            i.x = MemMarketItem.OFFER_WIDTH * int(index % 5) + RESULT_X_OFFSET;
-            i.y = MemMarketItem.OFFER_HEIGHT * int(index / 5) + RESULT_Y_OFFSET;
+            i.x = 1 + MemMarketItem.OFFER_WIDTH * int(index % 4) + RESULT_X_OFFSET + ((int(index % 4) * PADDING));
+            i.y = MemMarketItem.OFFER_HEIGHT * int(index / 4) + RESULT_Y_OFFSET + ((int(index % 4) * PADDING));
             index++;
         }
     }

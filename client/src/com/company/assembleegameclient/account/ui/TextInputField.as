@@ -22,7 +22,7 @@ package com.company.assembleegameclient.account.ui
 
       public var detailText_:SimpleText;
       
-      public function TextInputField(name:String, isPassword:Boolean, error:String, detailText:String = "")
+      public function TextInputField(name:String, isPassword:Boolean, error:String, detailText:String = "", width:int = 238)
       {
          super();
          this.nameText_ = new SimpleText(18,11776947,false,0,0);
@@ -51,7 +51,7 @@ package com.company.assembleegameclient.account.ui
          addChild(this.inputText_);
          graphics.lineStyle(2,4539717,1,false,LineScaleMode.NORMAL,CapsStyle.ROUND,JointStyle.ROUND);
          graphics.beginFill(3355443,1);
-         graphics.drawRect(0,this.inputText_.y,238,30);
+         graphics.drawRect(0,this.inputText_.y,width,30);
          graphics.endFill();
          graphics.lineStyle();
          this.inputText_.addEventListener(Event.CHANGE,this.onInputChange);

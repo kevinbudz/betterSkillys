@@ -20,9 +20,9 @@ public class MemMarketTab extends Sprite
 
         /* Draw vertical line */
         graphics.clear();
-        graphics.lineStyle(1,6184542);
-        graphics.moveTo(265,100);
-        graphics.lineTo(265,525);
+        graphics.lineStyle(2,6184542);
+        graphics.moveTo(252,112);
+        graphics.lineTo(252,525);
         graphics.lineStyle();
     }
 

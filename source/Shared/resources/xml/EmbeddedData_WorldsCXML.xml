@@ -174,10 +174,10 @@
 		<VisibilityType>1</VisibilityType>
 		<Dungeon/>
 	</World>
-	<World id="Marketplace">
-		<Width>256</Width>
-		<Height>256</Height>
-		<MapJM>marketplace.jm</MapJM>
+	<World id="Daily Quest Room">
+		<Width>128</Width>
+		<Height>128</Height>
+		<MapJM>daily_quest.jm</MapJM>
 		<Persists/>
 	</World>
 	<World id="Pirate Cave">

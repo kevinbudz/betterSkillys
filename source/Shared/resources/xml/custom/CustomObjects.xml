@@ -1,19 +1,26 @@
 ﻿<Objects>
-	<Object type="0x9000" id="Potion Storage">
-		<Class>PotionStorage</Class>
-		<Texture>
-			<File>lofiObj3</File>
-			<Index>0x466</Index>
-		</Texture>
-		<Static />
-		<ShadowSize>75</ShadowSize>
-	</Object>
-	<Object type="0x4969" id="Market NPC">
-		<Class>MarketNPC</Class>
-		<Texture>
-			<File>lofiObj3</File>
-			<Index>0x467</Index>
-		</Texture>
-		<Static />
-	</Object>
+   <Object type="0x9000" id="Potion Storage">
+      <Class>PotionStorage</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x466</Index>
+      </Texture>
+      <Static />
+      <ShadowSize>75</ShadowSize>
+   </Object>
+   <Object type="0x4969" id="Market NPC">
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x467</Index>
+      </Texture>
+      <Static />
+   </Object>
+   <Object type="0x4970" id="Market Object">
+      <Class>MarketNPC</Class>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <Static />
+   </Object>
 </Objects>

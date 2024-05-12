@@ -8,6 +8,8 @@ import com.company.assembleegameclient.ui.options.OptionsTabTitle;
 import com.company.rotmg.graphics.ScreenGraphic;
 import com.company.ui.SimpleText;
 
+import flash.display.Graphics;
+
 import flash.display.Sprite;
 import flash.display3D.textures.Texture;
 import flash.events.Event;
@@ -32,15 +34,17 @@ import kabam.rotmg.ui.view.components.MenuOptionsBar;
 
 public class MemMarket extends Sprite
 {
-    private static const BUY:String = "Buy";
-    private static const SELL:String = "Sell";
+    private static const BUY:String = "buy";
+    private static const SELL:String = "sell";
     private static const TABS:Vector.<String> = new <String>[BUY, SELL];
 
     private var gameSprite_:GameSprite;
     private var titleText_:SimpleText;
     private var header_:PopupHeader;
     private var menuOptionsBar_:MenuOptionsBar;
-    private var closeButton_:SliceScalingButton;
+    private var closeButton_:TitleMenuOption;
+    private var buyButton_:TitleMenuOption;
+    private var sellButton_:TitleMenuOption;
     private var doneButton_:SliceScalingButton;
     private var background_:SliceScalingBitmap;
     private var tabs_:Vector.<OptionsTabTitle>;
@@ -56,74 +60,55 @@ public class MemMarket extends Sprite
         graphics.beginFill(2829099,0.8);
         graphics.drawRect(0,0,800,600);
         graphics.endFill();
-        graphics.lineStyle(1,6184542);
-        graphics.moveTo(0,100);
-        graphics.lineTo(800,100);
+        graphics.lineStyle(2,6184542);
+        graphics.moveTo(0,112);
+        graphics.lineTo(800,112);
         graphics.lineStyle();
 
         /* Draw title */
         this.titleText_ = new SimpleText(24, 0xFFFFFF, false, 800, 0);
         this.titleText_.setBold(true);
-        this.titleText_.setText(calculatePrice(this.gameSprite_.map.player_) + "% Tax");
+        this.titleText_.setText("Marketplace");
         this.titleText_.autoSize = TextFieldAutoSize.LEFT;
         this.titleText_.filters = [new DropShadowFilter(0,0,0)];
         this.titleText_.updateMetrics();
-        this.titleText_.x = (800 / 2 - 50) + 250;
-        this.titleText_.y = 30;
-
-        /* Draw Menu UI & Buttons */
-        this.menuOptionsBar_ = new MenuOptionsBar();
-        this.background_ = SliceScalingBitmap(TextureParser.instance.getSliceScalingBitmap("UI", "popup_header_title", 800));
-        this.background_.y = 516.5;
-        addChild(this.background_);
-        this.doneButton_ = new SliceScalingButton(TextureParser.instance.getSliceScalingBitmap("UI", "generic_green_button"));
-        this.doneButton_.addEventListener(MouseEvent.CLICK, this.onClose);
-        this.closeButton_ = new SliceScalingButton(TextureParser.instance.getSliceScalingBitmap("UI", "close_button"));
-        this.closeButton_.addEventListener(MouseEvent.CLICK, this.onClose);
-        this.header_ = new PopupHeader(800, PopupHeader.TYPE_FULL);
-        this.header_.setTitle("Market", 319, null);
-        this.header_.showFame(132).fameAmount = this.gameSprite_.map.player_.fame_;
-        this.header_.addButton(this.closeButton_, PopupHeader.RIGHT_BUTTON, -15);
-        this.menuOptionsBar_.addButton(this.doneButton_, MenuOptionsBar.CENTER);
-        setDefault(this.doneButton_, "back", 100, false);
-        this.doneButton_.y = 535;
-        this.doneButton_.x = 800 / 2 - 50;
-        addChild(this.menuOptionsBar_);
-        addChild(this.header_);
+        this.titleText_.x = 50;
+        this.titleText_.y = 40;
         addChild(this.titleText_);
 
-        /* Add tabs */
-        this.tabs_ = new Vector.<OptionsTabTitle>();
-        var xOffset:int = 14;
-        for (var i:int = 0; i < TABS.length; i++)
-        {
-            var tab:OptionsTabTitle = new OptionsTabTitle(TABS[i]);
-            tab.x = xOffset;
-            tab.y = 78;
-            tab.addEventListener(MouseEvent.CLICK, this.onTab);
-            addChild(tab);
-            this.tabs_.push(tab);
-            xOffset += 108;
-        }
+        this.makeScreenGraphic();
+        this.closeButton_ = new TitleMenuOption("close",36,false);
+        this.closeButton_.x = 400 - this.closeButton_.width / 2;
+        this.closeButton_.y = 525;
+        this.closeButton_.addEventListener(MouseEvent.CLICK, onClose);
+        addChild(this.closeButton_);
+
+        this.buyButton_ = new TitleMenuOption("buy",22,false);
+        this.buyButton_.addEventListener(MouseEvent.CLICK,this.onBuyClick);
+        this.buyButton_.x = 200 - this.buyButton_.width / 2;
+        this.buyButton_.y = 535;
+        addChild(this.buyButton_);
+
+        this.sellButton_ = new TitleMenuOption("sell",22,false);
+        this.sellButton_.addEventListener(MouseEvent.CLICK,this.onSellClick);
+        this.sellButton_.x = 600 - this.sellButton_.width / 2;
+        this.sellButton_.y = 535;
+        addChild(this.sellButton_);
 
         this.content_ = new Vector.<MemMarketTab>();
-
-        /* Set tab to first in list. */
-        this.setTab(this.tabs_[0]);
+        this.addContent(new MemMarketBuyTab(this.gameSprite_));
     }
 
-    public static function setDefault(param1:SliceScalingButton, param2:String, param3:int = 100, param4:Boolean = true) : void
+    private function makeScreenGraphic():void
     {
-        param1.setLabel(param2,DefaultLabelFormat.defaultModalTitle);
-        param1.x = 0;
-        param1.y = 0;
-        param1.width = param3;
-        if(param4)
-        {
-            GreyScale.greyScaleToDisplayObject(param1,true);
-        }
+        var box:Sprite = new Sprite();
+        var b:Graphics = box.graphics;
+        b.clear();
+        b.beginFill(0, 0.5);
+        b.drawRect(0, 525, 800, 75);
+        b.endFill();
+        addChild(box);
     }
-
     public function calculatePrice(player:Player):int
     {
         var price:int;
@@ -154,52 +139,32 @@ public class MemMarket extends Sprite
         return price;
     }
 
-    /* Change tab */
-    private function onTab(event:Event) : void
+    private function onBuyClick(e:Event):void
     {
-        var tab:OptionsTabTitle = event.target as OptionsTabTitle;
-        this.setTab(tab);
-    }
-
-    /* Replace tab content */
-    private function setTab(tab:OptionsTabTitle) : void
-    {
-        if (tab == this.selectedTab_)
-            return;
-
-        if (this.selectedTab_ != null)
-            this.selectedTab_.setSelected(false);
-
-        this.selectedTab_ = tab;
-        this.selectedTab_.setSelected(true);
-
         for each (var i:MemMarketTab in this.content_)
         {
             i.dispose(); /* Clear the tab */
             removeChild(i); /* Remove it */
         }
         this.content_.length = 0;
+        this.addContent(new MemMarketBuyTab(this.gameSprite_));
+    }
 
-        switch (this.selectedTab_.text_) /* Could potentially make this slightly faster by using pre-made tabs instead of creating new ones */
+    private function onSellClick(e:Event):void
+    {
+        for each (var i:MemMarketTab in this.content_)
         {
-            case SELL:
-                this.addContent(new MemMarketSellTab(this.gameSprite_));
-                break;
-            case BUY:
-                this.addContent(new MemMarketBuyTab(this.gameSprite_));
-                break;
+            i.dispose(); /* Clear the tab */
+            removeChild(i); /* Remove it */
         }
+        this.content_.length = 0;
+        this.addContent(new MemMarketSellTab(this.gameSprite_));
     }
 
     private function addContent(content:MemMarketTab) : void
     {
         this.addChild(content);
         this.content_.push(content);
-    }
-
-    private function removeLastContent() : void
-    {
-
     }
 
     /* Remove */
@@ -211,12 +176,6 @@ public class MemMarket extends Sprite
         this.titleText_ = null;
         this.closeButton_.removeEventListener(MouseEvent.CLICK, this.onClose);
         this.closeButton_ = null;
-
-        for each (var tab:OptionsTabTitle in this.tabs_)
-        {
-            tab.removeEventListener(MouseEvent.CLICK, this.onTab);
-            tab = null;
-        }
         this.tabs_.length = 0;
         this.tabs_ = null;
 
