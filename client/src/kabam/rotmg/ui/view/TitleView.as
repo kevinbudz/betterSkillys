@@ -8,9 +8,15 @@ import com.company.assembleegameclient.ui.SoundIcon;
 import com.company.rotmg.graphics.ScreenGraphic;
 import com.company.ui.SimpleText;
 
+import flash.display.Bitmap;
+
 import flash.display.Graphics;
 import flash.display.Sprite;
+import flash.events.Event;
 import flash.filters.DropShadowFilter;
+import flash.geom.Point;
+import flash.geom.Vector3D;
+
 import kabam.rotmg.ui.model.EnvironmentData;
 import kabam.rotmg.ui.view.components.DarkenFactory;
 import kabam.rotmg.ui.view.components.MapBackground;
@@ -31,6 +37,7 @@ public class TitleView extends Sprite
    public var editorClicked:Signal;
 
    private var container:Sprite;
+   private var parallaxLayers:Vector.<Bitmap>;
 
    private var playButton:TitleMenuOption;
    private var serversButton:TitleMenuOption;
@@ -43,6 +50,8 @@ public class TitleView extends Sprite
    private var copyrightText:SimpleText;
    private var darkenFactory:DarkenFactory;
    private var data:EnvironmentData;
+   public static var anchor:Point = new Point(-40, -40);
+   public static var anchor2:Point = new Point(0, -20);
 
    public function TitleView()
    {
@@ -51,11 +60,41 @@ public class TitleView extends Sprite
       //addChild(new MapBackground());
       addChild(new TitleView_TitleScreenBackground());
       addChild(this.darkenFactory.create());
-      addChild(new TitleScreenGraphic());
+      //addChild(new TitleScreenGraphic());
+      this.initLayers();
       this.makeScreenGraphic();
       addChild(new AccountScreen());
       this.makeChildren();
       addChild(new SoundIcon());
+   }
+
+   public function initLayers(): void
+   {
+      this.parallaxLayers = new Vector.<Bitmap>();
+      this.parallaxLayers[0] = new TitleView_BackgroundLayer();
+      this.parallaxLayers[1] = new TitleView_FlamesLayer();
+
+      this.parallaxLayers[0].x = 40;
+      this.parallaxLayers[0].y = 40;
+      this.parallaxLayers[1].x = 0;
+      this.parallaxLayers[1].y = 20;
+
+      for (var i:int = 0; i < 2; i++)
+      {
+         this.parallaxLayers.push(this.parallaxLayers[i]);
+         addChild(this.parallaxLayers[i]);
+         this.parallaxLayers[i].addEventListener(Event.ENTER_FRAME, onParallax);
+      }
+   }
+
+   public function onParallax(e:Event): void
+   {
+      var bgOffset:Vector3D = new Vector3D(anchor.x-mouseX,anchor.y-mouseY, 0);
+      var flameOffset:Vector3D = new Vector3D(anchor2.x-mouseX,anchor2.y-mouseY, 0);
+      this.parallaxLayers[0].x += (anchor.x + bgOffset.x * 0.015 - this.parallaxLayers[0].x) * 0.015;
+      this.parallaxLayers[0].y += (anchor.y + bgOffset.y * 0.015 - this.parallaxLayers[0].y) * 0.15;
+      this.parallaxLayers[1].x += (anchor2.x + flameOffset.x * 0.03 - this.parallaxLayers[1].x) * 0.03;
+      this.parallaxLayers[1].y += (anchor2.y + flameOffset.y * 0.03 - this.parallaxLayers[1].y) * 0.03;
    }
 
    private function makeScreenGraphic():void
