@@ -16,7 +16,6 @@ package kabam.rotmg.assets
         public static const GroundCXML:Class = EmbeddedData_GroundCXML;
         private static const ProjectilesCXML:Class = EmbeddedData_ProjectilesCXML;
         private static const EquipCXML:Class = EmbeddedData_EquipCXML;
-        private static const EquipEggsCXML:Class = EmbeddedData_EquipEggsCXML;
         private static const EquipKeysCXML:Class = EmbeddedData_EquipKeysCXML;
         private static const EquipSkinsCXML:Class = EmbeddedData_EquipSkinsCXML;
         private static const EquipTestCXML:Class = EmbeddedData_EquipTestCXML;
@@ -188,7 +187,6 @@ package kabam.rotmg.assets
         public static const objectFiles:Array = [
             new customObjects(),
             new ProjectilesCXML(),
-            new EquipEggsCXML(),
             new EquipKeysCXML(),
             new EquipSkinsCXML(),
             new EquipTestCXML(),

@@ -249,7 +249,7 @@ public class ItemGridMediator extends Mediator
          if(tile.ownerGrid is InventoryGrid || tile.ownerGrid is ContainerGrid)
          {
             var slot:int = tile.tileId;
-            GameServerConnection.instance.breakdownSlot(slot);
+            GameServerConnection.instance.breakdownSlot(slot, tile.ownerGrid.owner.objectId_);
          }
       }
 

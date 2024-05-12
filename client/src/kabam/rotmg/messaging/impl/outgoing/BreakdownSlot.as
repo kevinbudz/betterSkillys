@@ -6,6 +6,7 @@ package kabam.rotmg.messaging.impl.outgoing
    {
       public var time_:int;
       public var slot_:int;
+      public var objectId_:int;
 
       public function BreakdownSlot(id:uint, callback:Function)
       {
@@ -16,11 +17,12 @@ package kabam.rotmg.messaging.impl.outgoing
       {
          data.writeInt(time_);
          data.writeByte(slot_);
+         data.writeInt(objectId_);
       }
-      
+
       override public function toString() : String
       {
-         return formatToString("SELLITEM","time_", "slot_");
+         return formatToString("SELLITEM","time_", "slot_", "objectId_");
       }
    }
 }

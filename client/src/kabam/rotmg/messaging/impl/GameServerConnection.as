@@ -710,11 +710,12 @@ public class GameServerConnection
          this.serverConnection.sendMessage(shootAck);
       }
 
-      public function breakdownSlot(slot:int) : void
+      public function breakdownSlot(slot:int, objectId:int) : void
       {
          var breakdownSlot:BreakdownSlot = this.messages.require(BREAKDOWN_SLOT) as BreakdownSlot;
          breakdownSlot.time_ = gs_.lastUpdate_;
          breakdownSlot.slot_ = slot;
+         breakdownSlot.objectId_ = objectId;
          this.serverConnection.sendMessage(breakdownSlot);
       }
 

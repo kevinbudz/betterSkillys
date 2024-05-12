@@ -7,7 +7,6 @@
         Ability,
         Armor,
         Ring,
-        Potion,
-        Egg
+        Potion
     }
 }

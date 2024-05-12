@@ -48,11 +48,10 @@ namespace WorldServer.logic.loot
     public class TierLoot : MobDrops
     {
         private static readonly int[] WeaponT = new int[] { 1, 2, 3, 8, 17, 24 };
-        private static readonly int[] AbilityT = new int[] { 4, 5, 11, 12, 13, 15, 16, 18, 19, 20, 21, 22, 23, 25, };
+        private static readonly int[] AbilityT = new int[] { 4, 5, 11, 12, 13, 15, 16, 18, 19, 20, 21, 22, 23, 25 };
         private static readonly int[] ArmorT = new int[] { 6, 7, 14, };
         private static readonly int[] RingT = new int[] { 9 };
         private static readonly int[] PotionT = new int[] { 10 };
-        private static readonly int[] EggT = new int[] { 26 };
 
         public static int[] GetSlotTypes(ItemType itemType)
         {
@@ -69,8 +68,6 @@ namespace WorldServer.logic.loot
                     types = RingT; break;
                 case ItemType.Potion:
                     types = PotionT; break;
-                case ItemType.Egg:
-                    types = EggT; break;
                 default:
                     throw new NotSupportedException(itemType.ToString());
             }
@@ -89,8 +86,6 @@ namespace WorldServer.logic.loot
                 return ItemType.Ring;
             if (PotionT.Contains(slotType))
                 return ItemType.Potion;
-            if (EggT.Contains(slotType))
-                return ItemType.Egg;
             throw new NotSupportedException(slotType.ToString());
         }
 
