@@ -1,4 +1,4 @@
-package kabam.rotmg.Emojis
+package kabam.rotmg.emotes
 {
 import flash.display.Bitmap;
 import flash.display.BitmapData;

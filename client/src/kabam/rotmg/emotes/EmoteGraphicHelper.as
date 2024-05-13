@@ -1,4 +1,4 @@
-package kabam.rotmg.Emojis{
+package kabam.rotmg.emotes {
 import flash.display.DisplayObject;
 import flash.display.Sprite;
 import flash.text.TextField;

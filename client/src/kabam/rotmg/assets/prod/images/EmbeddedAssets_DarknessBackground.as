@@ -5,9 +5,8 @@
 
 package kabam.rotmg.assets.prod.images
 {
-import kabam.rotmg.assets.prod.*;
-import kabam.rotmg.assets.*;
-    import mx.core.BitmapAsset;
+
+import mx.core.BitmapAsset;
 
 [Embed(source="EmbeddedAssets_DarknessBackground.png")]
     public class EmbeddedAssets_DarknessBackground extends BitmapAsset 

@@ -1,4 +1,4 @@
-package kabam.rotmg.Emojis{
+package kabam.rotmg.emotes{
 import com.company.util.AssetLibrary;
 
 

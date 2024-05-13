@@ -11,7 +11,6 @@ import com.company.assembleegameclient.ui.options.Options;
 import com.company.assembleegameclient.sound.SFX;
 import com.company.util.AssetLibrary;
 
-import kabam.rotmg.Emojis.Emotes;
 import kabam.rotmg.assets.EmbeddedAssets;
 import com.company.assembleegameclient.sound.SoundEffectLibrary;
 import flash.utils.ByteArray;
@@ -22,6 +21,8 @@ import com.company.assembleegameclient.map.GroundLibrary;
 import com.company.assembleegameclient.objects.ObjectLibrary;
 import flash.utils.getQualifiedClassName;
 import com.company.assembleegameclient.map.RegionLibrary;
+
+import kabam.rotmg.emotes.Emotes;
 
 public class AssetLoader
 {

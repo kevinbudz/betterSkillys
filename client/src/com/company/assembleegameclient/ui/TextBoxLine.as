@@ -11,8 +11,8 @@ import flash.text.engine.GroupElement;
 import flash.text.engine.TextBlock;
 import flash.text.engine.TextElement;
 
-import kabam.rotmg.Emojis.Emote;
-import kabam.rotmg.Emojis.Emotes;
+import kabam.rotmg.emotes.Emote;
+import kabam.rotmg.emotes.Emotes;
 
 public class TextBoxLine
 {

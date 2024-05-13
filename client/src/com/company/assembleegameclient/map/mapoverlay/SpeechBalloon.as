@@ -1,7 +1,6 @@
 package com.company.assembleegameclient.map.mapoverlay {
 import com.company.assembleegameclient.map.Camera;
 import com.company.assembleegameclient.objects.GameObject;
-import com.company.assembleegameclient.objects.Player;
 import com.company.assembleegameclient.parameters.Parameters;
 import com.company.util.GraphicsUtil;
 
@@ -14,14 +13,10 @@ import flash.display.IGraphicsData;
 import flash.display.JointStyle;
 import flash.display.LineScaleMode;
 import flash.display.Sprite;
-import flash.events.MouseEvent;
 import flash.filters.DropShadowFilter;
 import flash.geom.Point;
 
-import kabam.rotmg.Emojis.EmoteGraphicHelper;
-
-import kabam.rotmg.core.StaticInjectorContext;
-import kabam.rotmg.ui.model.HUDModel;
+import kabam.rotmg.emotes.EmoteGraphicHelper;
 
 public class SpeechBalloon extends Sprite implements IMapOverlayElement {
 
