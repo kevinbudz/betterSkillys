@@ -100,35 +100,6 @@ public class MemMarket extends Sprite
         b.endFill();
         addChild(box);
     }
-    public function calculatePrice(player:Player):int
-    {
-        var price:int;
-        switch(player.rank)
-        {
-            case 10:
-                price = 4;
-                break;
-            case 20:
-                price = 3;
-                break;
-            case 30:
-                price = 2;
-                break;
-            case 40:
-                price = 1;
-                break;
-            case 50:
-                price = 1/2;
-                break;
-            case 60:
-                price = 0;
-                break;
-            default:
-                price = 5;
-                break;
-        }
-        return price;
-    }
 
     private function onBuyClick(e:Event):void
     {

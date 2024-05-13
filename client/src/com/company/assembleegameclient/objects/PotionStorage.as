@@ -3,7 +3,7 @@ import com.company.assembleegameclient.game.GameSprite;
 
 import com.company.assembleegameclient.ui.panels.Panel;
 
-import kabam.rotmg.storage.PotionStoragePanel;
+import kabam.rotmg.storage.PotionsPanel;
 
 
 public class PotionStorage extends GameObject implements IInteractiveObject {
@@ -14,7 +14,7 @@ public class PotionStorage extends GameObject implements IInteractiveObject {
     }
 
     public function getPanel(_arg1:GameSprite):Panel {
-        return new PotionStoragePanel(_arg1, this);
+        return new PotionsPanel(_arg1, this);
     }
 }
 }

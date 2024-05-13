@@ -121,7 +121,6 @@ public class GameConfig implements IConfig
          this.commandMap.map(GameClosedSignal).toCommand(TransitionFromGameToMenuCommand);
          this.commandMap.map(PlayGameSignal).toCommand(PlayGameCommand);
          this.commandMap.map(ParseChatMessageSignal).toCommand(ParseChatMessageCommand);
-         this.mediatorMap.map(PotionStorageModal).toMediator(PotionStorageModalMediator);
       }
 
       private function makeStatusDisplayMappings() : void

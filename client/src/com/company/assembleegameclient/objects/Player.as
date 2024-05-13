@@ -46,6 +46,7 @@ import kabam.rotmg.game.model.PotionInventoryModel;
 import kabam.rotmg.game.signals.AddTextLineSignal;
 import kabam.rotmg.stage3D.GraphicsFillExtra;
 import kabam.rotmg.storage.PotionStorageModal;
+import kabam.rotmg.storage.PotionsView;
 import kabam.rotmg.ui.model.TabStripModel;
 
 import org.swiftsuspenders.Injector;
@@ -200,7 +201,7 @@ public class Player extends Character {
     public var SPS_Speed_Max:int = 0;
     public var SPS_Vitality_Max:int = 0;
     public var SPS_Attack_Max:int = 0;
-    public var SPS_Modal:PotionStorageModal;
+    public var SPS_Modal:PotionsView;
 
     override public function moveTo(x:Number, y:Number):Boolean {
         var ret:Boolean = super.moveTo(x, y);

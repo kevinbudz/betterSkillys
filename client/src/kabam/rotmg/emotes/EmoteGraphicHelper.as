@@ -93,6 +93,7 @@ import flash.display.Sprite;
 import flash.geom.Rectangle;
 
 import kabam.rotmg.Emojis.Emote;
+import kabam.rotmg.emotes.Emote;
 
 
 class Drawer extends Sprite

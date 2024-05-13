@@ -24,7 +24,7 @@ import io.decagames.rotmg.ui.texture.TextureParser;
 import io.decagames.rotmg.ui.defaults.DefaultLabelFormat;
 
 
-public class PotionStorageContainer extends Sprite{
+public class PotionsContainer extends Sprite{
 
     private var statType_:int;
 
@@ -40,14 +40,16 @@ public class PotionStorageContainer extends Sprite{
 
     private var consumeTimer:Timer = new Timer(100);
     private var gs_:GameSprite;
-    private var model_:PotionStorageModal;
+    private var model_:PotionsView;
 
     private var bar_:StatusBar;
     private var glowFilter:GlowFilter = new GlowFilter(0xffffff, 0.9, 4, 4, 20, 1);
 
     private var player_:Player;
 
-    public function PotionStorageContainer(model:PotionStorageModal, gs:GameSprite, statType:int, player:Player){
+    public static const potionIndexes:Array = [38, 39, 52, 53, 54, 55, 48, 49];
+
+    public function PotionsContainer(model:PotionsView, gs:GameSprite, statType:int, player:Player){
 
         this.player_ = player;
         model_ = model;
@@ -58,42 +60,8 @@ public class PotionStorageContainer extends Sprite{
 
         draw();
 
-        // add the button here for the consume
-
-        switch(statType){
-            case 0: //life
-                var lifePotion:BitmapData = AssetLibrary.getImageFromSet("lofiObj2",38);
-                icon_ = new Bitmap(lifePotion);
-                break;
-            case 1://mana
-                var manaPotion:BitmapData = AssetLibrary.getImageFromSet("lofiObj2",39);
-                icon_ = new Bitmap(manaPotion);
-                break;
-            case 2://att
-                var attPotion:BitmapData = AssetLibrary.getImageFromSet("lofiObj2",52);
-                icon_ = new Bitmap(attPotion);
-                break;
-            case 3://def
-                var defPotion:BitmapData = AssetLibrary.getImageFromSet("lofiObj2",53);
-                icon_ = new Bitmap(defPotion);
-                break;
-            case 4://spd
-                var spdPotion:BitmapData = AssetLibrary.getImageFromSet("lofiObj2",54);
-                icon_ = new Bitmap(spdPotion);
-                break;
-            case 5://dex
-                var dexPotion:BitmapData = AssetLibrary.getImageFromSet("lofiObj2",55);
-                icon_ = new Bitmap(dexPotion);
-                break;
-            case 6://vit
-                var vitPotion:BitmapData = AssetLibrary.getImageFromSet("lofiObj2",48);
-                icon_ = new Bitmap(vitPotion);
-                break;
-            case 7://wis
-                var wisPotion:BitmapData = AssetLibrary.getImageFromSet("lofiObj2",49);
-                icon_ = new Bitmap(wisPotion);
-                break;
-        }
+        var potionIcon:BitmapData = AssetLibrary.getImageFromSet("lofiObj2", potionIndexes[statType]);
+        this.icon_ = new Bitmap(potionIcon);
         this.icon_.scaleX = 4;
         this.icon_.scaleY = 4;
         this.icon_.x = 4;
@@ -161,26 +129,8 @@ public class PotionStorageContainer extends Sprite{
         this.maxButton.addEventListener(MouseEvent.CLICK, onMaxPotion);
 
         draw();
-
-
     }
 
-
-    private function onAddPotion(e:Event):void {
-        model_.Interaction(statType_, 0);
-    }
-
-    private function onRemovePotion(e:Event):void {
-        model_.Interaction(statType_, 1);
-    }
-
-    private function onConsumePotionClick(e:Event):void {
-        model_.Interaction(statType_, 2);
-    }
-
-    private function onMaxPotion(e:Event):void {
-        model_.Interaction(statType_, 4);
-    }
 
     private function onConsumePotionDown(e:Event):void {
         consumeTimer.addEventListener(TimerEvent.TIMER, onConsumePotionTick)
@@ -196,53 +146,44 @@ public class PotionStorageContainer extends Sprite{
         this.removeEventListener(MouseEvent.MOUSE_UP, onConsumePotionUp);
     }
 
+    private function onAddPotion(e:Event):void {
+        model_.useStorage(statType_, 0);
+    }
+
+    private function onRemovePotion(e:Event):void {
+        model_.useStorage(statType_, 1);
+    }
+
+    private function onConsumePotionClick(e:Event):void {
+        model_.useStorage(statType_, 2);
+    }
+
+    private function onMaxPotion(e:Event):void {
+        model_.useStorage(statType_, 4);
+    }
+
     private function onConsumePotionTick(e:TimerEvent):void {
-        model_.Interaction(statType_, 2);
+        model_.useStorage(statType_, 2);
     }
 
     private function onSellPotion(e:Event):void {
-        model_.Interaction(statType_, 3);
+        model_.useStorage(statType_, 3);
     }
 
+    public function drawContainer():void
+    {
 
+    }
 
     public function draw():void{
-        var g:Graphics =  this.graphics;
+        var g:Graphics = this.graphics;
         g.clear();
         g.lineStyle(2,0x363636);
         g.beginFill(0,0.7);
         g.drawRoundRect(0, 0, 100, 180,5,5);
         g.endFill();
-        if (bar_ == null){
+        if (bar_ == null)
             return;
-        }
-        switch(statType_){
-            case 0: //life
-                this.bar_.draw(this.player_.SPS_Life,this.player_.SPS_Life_Max,0);
-                break;
-            case 1://mana
-                this.bar_.draw(this.player_.SPS_Mana,this.player_.SPS_Mana_Max,0);
-                break;
-            case 2://att
-                this.bar_.draw(this.player_.SPS_Attack,this.player_.SPS_Attack_Max,0);
-                break;
-            case 3://def
-                this.bar_.draw(this.player_.SPS_Defense,this.player_.SPS_Defense_Max,0);
-                break;
-            case 4://spd
-                this.bar_.draw(this.player_.SPS_Speed,this.player_.SPS_Speed_Max,0);
-                break;
-            case 5://dex
-                this.bar_.draw(this.player_.SPS_Dexterity,this.player_.SPS_Dexterity_Max,0);
-                break;
-            case 6://vit
-                this.bar_.draw(this.player_.SPS_Vitality,this.player_.SPS_Vitality_Max,0);
-                break;
-            case 7://wis
-                this.bar_.draw(this.player_.SPS_Wisdom,this.player_.SPS_Wisdom_Max,0);
-                break;
-        }
-
     }
 }
 }
