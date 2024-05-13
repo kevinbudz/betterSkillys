@@ -208,7 +208,7 @@ public class CharacterSelectionAndNewsScreen extends Sprite
     {
         this.nameText = new SimpleText(26,11776947,false,0,0);
         this.nameText.setBold(true);
-        this.nameText.text = "- " + this.model.getName() + " -";
+        this.nameText.text = this.model.getName();
         this.nameText.updateMetrics();
         this.nameText.filters = [this.DROP_SHADOW];
         this.nameText.y = 24;

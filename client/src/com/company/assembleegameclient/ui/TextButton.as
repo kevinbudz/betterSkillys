@@ -34,7 +34,7 @@ import flash.display.Sprite;
       public function TextButton(size:int, text:String, bWidth:int = 0)
       {
          super();
-         this.text_ = new SimpleText(size,0x727272,false,0,0);
+         this.text_ = new SimpleText(size,0xbbbbbb,false,0,0);
          this.text_.setBold(true);
          this.text_.text = text;
          this.text_.updateMetrics();
