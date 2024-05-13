@@ -1,6 +1,8 @@
 package kabam.rotmg.market.content {
 import com.company.assembleegameclient.game.GameSprite;
+import com.company.assembleegameclient.ui.TextButton;
 import com.company.assembleegameclient.ui.dialogs.Dialog;
+import com.company.assembleegameclient.util.FilterUtil;
 import com.company.ui.SimpleText;
 
 import flash.display.Bitmap;
@@ -17,7 +19,7 @@ import kabam.rotmg.messaging.impl.data.MarketData;
 
 public class MemMarketBuyItem extends MemMarketItem
 {
-    private var buyButton_:SliceScalingButton;
+    private var buyButton_:TextButton;
     private var priceText_:SimpleText;
     private var timeText_:SimpleText;
     private var currency_:Bitmap;
@@ -25,27 +27,25 @@ public class MemMarketBuyItem extends MemMarketItem
     public function MemMarketBuyItem(gameSprite:GameSprite, data:MarketData)
     {
         super(gameSprite, OFFER_WIDTH, OFFER_HEIGHT, 80, data.itemType_, data);
-        this.icon_.x = 22;
-        this.icon_.y = -8;
+        this.icon_.x = -3;
+        this.icon_.y = -3;
 
-        this.buyButton_ = new SliceScalingButton(TextureParser.instance.getSliceScalingBitmap("UI", "generic_green_button"));
-        this.buyButton_.setLabel("Buy");
-        this.buyButton_.scaleY = 0.5;
-        this.buyButton_.scaleX = 0.5;
-        this.buyButton_.width = 190;
-        this.buyButton_.x = 2;
-        this.buyButton_.y = 62;
+        this.buyButton_ = new TextButton(16, "Purchase", 80);
+        this.buyButton_.x = 58;
+        this.buyButton_.y = 24;
+        this.buyButton_.addEventListener(MouseEvent.CLICK, this.onBuyClick);
+        addChild(this.buyButton_);
 
         this.updateButton();
         addChild(this.buyButton_);
 
-        this.priceText_ = new SimpleText(10, 0xFFFFFF, false, width, 0);
+        var size:int = this.data_.price_ > 9999 ? 13 : 14;
+        this.priceText_ = new SimpleText(size, 0xFFFFFF, false, width, 0);
         this.priceText_.setBold(true);
-        this.priceText_.htmlText = "<p align=\"center\">" + this.data_.price_ + "</p>";
+        this.priceText_.text = this.data_.price_.toString();
         this.priceText_.wordWrap = true;
-        this.priceText_.multiline = true;
-        this.priceText_.autoSize = TextFieldAutoSize.CENTER;
-        this.priceText_.y = 49;
+        this.priceText_.x = 135 - this.priceText_.width / 2;
+        this.priceText_.y = 2;
         addChild(this.priceText_);
 
         var unix:Number = this.data_.timeLeft_ * 1000;
@@ -59,12 +59,14 @@ public class MemMarketBuyItem extends MemMarketItem
         this.timeText_.wordWrap = true;
         this.timeText_.multiline = true;
         this.timeText_.autoSize = TextFieldAutoSize.CENTER;
-        this.timeText_.y = 39;
+        this.timeText_.x = -75;
+        this.timeText_.y = 32;
+        this.timeText_.filters = FilterUtil.getTextOutlineFilter();
         addChild(this.timeText_);
 
         this.currency_ = new Bitmap(GeneralUtils.getFameIcon(24));
-        this.currency_.x = 76;
-        this.currency_.y = 38;
+        this.currency_.x = 50;
+        this.currency_.y = -4;
         addChild(this.currency_);
     }
 

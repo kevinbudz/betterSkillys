@@ -34,20 +34,11 @@ import kabam.rotmg.ui.view.components.MenuOptionsBar;
 
 public class MemMarket extends Sprite
 {
-    private static const BUY:String = "buy";
-    private static const SELL:String = "sell";
-    private static const TABS:Vector.<String> = new <String>[BUY, SELL];
-
     private var gameSprite_:GameSprite;
     private var titleText_:SimpleText;
-    private var header_:PopupHeader;
-    private var menuOptionsBar_:MenuOptionsBar;
     private var closeButton_:TitleMenuOption;
     private var buyButton_:TitleMenuOption;
     private var sellButton_:TitleMenuOption;
-    private var doneButton_:SliceScalingButton;
-    private var background_:SliceScalingBitmap;
-    private var tabs_:Vector.<OptionsTabTitle>;
     private var content_:Vector.<MemMarketTab>;
     private var selectedTab_:OptionsTabTitle;
 
@@ -176,8 +167,6 @@ public class MemMarket extends Sprite
         this.titleText_ = null;
         this.closeButton_.removeEventListener(MouseEvent.CLICK, this.onClose);
         this.closeButton_ = null;
-        this.tabs_.length = 0;
-        this.tabs_ = null;
 
         for each (var content:MemMarketTab in this.content_)
         {

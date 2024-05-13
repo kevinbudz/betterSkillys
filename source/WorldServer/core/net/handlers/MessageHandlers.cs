@@ -21,17 +21,6 @@ namespace WorldServer.core.net.handlers
             if (player.IsAdmin)
                 return true;
 
-            if(player.Stars < 5)
-            {
-                player.SendError("You must be atleast 5 stars to use the market");
-                return false;
-            }
-
-            if (player.Level != 20) {
-                player.SendError("You must be level 20 to use the market");
-                return false;
-            }
-
             if (player.GameServer.Configuration.serverInfo.adminOnly)
             {
                 if (!player.GameServer.IsWhitelisted(player.AccountId) || !player.IsAdmin)
