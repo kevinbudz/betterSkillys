@@ -10,20 +10,17 @@ import flash.events.MouseEvent;
 
 public class PotionsPanel extends ButtonPanel {
 
-    private var gameObject:GameObject;
-
-    public function PotionsPanel(gs:GameSprite, gm:GameObject) {
+    public function PotionsPanel(gs:GameSprite) {
         super(gs, "Potion Storage", "View");
-        this.gameObject = gm;
     }
 
     override protected function onButtonClick(evt:MouseEvent):void {
-        this.openDialog.dispatch(new PotionsView(this.gs_, this.gameObject));
+        this.openDialog.dispatch(new PotionsView(this.gs_));
     }
 
     override protected function onKeyDown(evt:KeyboardEvent):void {
         if (evt.keyCode == Parameters.data_.interact && !TextBox.isInputtingText) {
-            this.openDialog.dispatch(new PotionsView(this.gs_, this.gameObject));
+            this.openDialog.dispatch(new PotionsView(this.gs_));
         }
     }
 

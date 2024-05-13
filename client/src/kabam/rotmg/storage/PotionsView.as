@@ -43,7 +43,6 @@ import org.osflash.signals.Signal;
 public class PotionsView extends Sprite {
 
     public var gs_:GameSprite;
-    public var gO_:GameObject;
 
     internal var player:Player;
     internal var text_:String;
@@ -60,13 +59,12 @@ public class PotionsView extends Sprite {
     private var path_:GraphicsPath = new GraphicsPath(new Vector.<int>(),new Vector.<Number>());
     private var graphicsData_:Vector.<IGraphicsData> = new <IGraphicsData>[lineStyle_,backgroundFill_,path_,GraphicsUtil.END_FILL,GraphicsUtil.END_STROKE];
 
-    public function PotionsView(gs:GameSprite, gm:GameObject) {
+    public function PotionsView(gs:GameSprite) {
         this.x = 55;
         this.y = 105;
 
         this.gs_ = gs;
-        this.gO_ = gm;
-        this.player = gm as Player;
+        this.player = gs.map.player_;
         this.gs_.map.player_.SPS_Modal = this;
 
         this.alpha = 0;

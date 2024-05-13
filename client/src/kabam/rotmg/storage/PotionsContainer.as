@@ -158,8 +158,7 @@ public class PotionsContainer extends Sprite{
     public function draw():void{
         if (bar_ == null)
             return;
-        this.bar_.draw(10, 50, 0)
-        /*switch(statType_){
+        switch(statType_){
             case 0: //life
                 this.bar_.draw(this.player_.SPS_Life,this.player_.SPS_Life_Max,0);
                 break;
@@ -184,7 +183,7 @@ public class PotionsContainer extends Sprite{
             case 7://wis
                 this.bar_.draw(this.player_.SPS_Wisdom,this.player_.SPS_Wisdom_Max,0);
                 break;
-        }*/
+        }
     }
 }
 }

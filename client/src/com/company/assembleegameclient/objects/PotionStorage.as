@@ -14,7 +14,7 @@ public class PotionStorage extends GameObject implements IInteractiveObject {
     }
 
     public function getPanel(_arg1:GameSprite):Panel {
-        return new PotionsPanel(_arg1, this);
+        return new PotionsPanel(_arg1);
     }
 }
 }
