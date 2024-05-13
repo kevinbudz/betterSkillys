@@ -156,6 +156,8 @@ public class PotionsContainer extends Sprite{
     }
 
     public function draw():void{
+        if (bar_ == null)
+            return;
         switch(statType_){
             case 0: //life
                 this.bar_.draw(this.player_.SPS_Life,this.player_.SPS_Life_Max,0);
