@@ -1,16 +1,23 @@
 package kabam.rotmg.storage {
 import com.company.assembleegameclient.objects.Player;
 import com.company.assembleegameclient.ui.StatusBar;
+import com.company.assembleegameclient.ui.TextButton;
 import com.company.assembleegameclient.ui.tooltip.TextToolTip;
+import com.company.assembleegameclient.util.redrawers.GlowRedrawer;
+import com.company.ui.SimpleText;
 import com.company.util.AssetLibrary;
 import com.company.assembleegameclient.util.TextureRedrawer;
 import com.company.assembleegameclient.game.GameSprite;
 import com.company.util.BitmapUtil;
+import com.company.util.GraphicsUtil;
 import com.company.util.MoreColorUtil;
 
 import flash.display.Bitmap;
 import flash.display.BitmapData;
 import flash.display.Graphics;
+import flash.display.GraphicsPath;
+import flash.display.GraphicsSolidFill;
+import flash.display.IGraphicsData;
 import flash.display.Sprite;
 import flash.events.Event;
 import flash.events.MouseEvent;
@@ -26,28 +33,26 @@ import io.decagames.rotmg.ui.defaults.DefaultLabelFormat;
 
 public class PotionsContainer extends Sprite{
 
-    private var statType_:int;
+    private var fill_:GraphicsSolidFill = new GraphicsSolidFill(0x202020,1);
+    private var path_:GraphicsPath = new GraphicsPath(new Vector.<int>(),new Vector.<Number>());
+    private const graphicsData_:Vector.<IGraphicsData> = new <IGraphicsData>[fill_,path_,GraphicsUtil.END_FILL];
 
-    private var icon_:Bitmap;
+    public static const potionIndexes:Array = [38, 39, 52, 53, 54, 55, 48, 49];
 
     public var add_:Sprite;
     public var remove_:Sprite;
-    public var toolTip_:TextToolTip = null;
-
-    public var consumeButton:SliceScalingButton;
-    public var maxButton:SliceScalingButton;
-    public var sellButton:SliceScalingButton;
+    private var bar_:StatusBar;
+    private var icon_:Bitmap;
+    public var consumeButton:TextButton;
+    public var maxButton:TextButton;
+    private var statType_:int;
 
     private var consumeTimer:Timer = new Timer(100);
     private var gs_:GameSprite;
     private var model_:PotionsView;
-
-    private var bar_:StatusBar;
-    private var glowFilter:GlowFilter = new GlowFilter(0xffffff, 0.9, 4, 4, 20, 1);
-
     private var player_:Player;
 
-    public static const potionIndexes:Array = [38, 39, 52, 53, 54, 55, 48, 49];
+    public static const fillColors:Array = [0x5edddd, 0xffea55, 0xe87ee8, 0x686868, 0x70e08c, 0xfd9d3e, 0xf53434, 0x77b5f2];
 
     public function PotionsContainer(model:PotionsView, gs:GameSprite, statType:int, player:Player){
 
@@ -58,7 +63,8 @@ public class PotionsContainer extends Sprite{
         this.remove_ = new Sprite();
         this.add_ = new Sprite();
 
-        draw();
+        this.draw();
+        this.drawContainer();
 
         var potionIcon:BitmapData = AssetLibrary.getImageFromSet("lofiObj2", potionIndexes[statType]);
         this.icon_ = new Bitmap(potionIcon);
@@ -68,72 +74,48 @@ public class PotionsContainer extends Sprite{
         this.icon_.y = 6;
         addChild(this.icon_);
 
-        var upArrow:BitmapData = AssetLibrary.getImageFromSet("lofiInterface",54);
-        var upArrowBitmap:Bitmap = new Bitmap(upArrow);
-        upArrowBitmap.scaleX = 3.5;
-        upArrowBitmap.scaleY = 3.5;
-
-        this.add_.x = this.width - (upArrowBitmap.width) - 32;
-        this.add_.y = 28 - upArrowBitmap.height;
-        this.toolTip_ = new TextToolTip(3552822, 10197915, null, "Deposit", 100);
-        this.add_.addChild(upArrowBitmap);
-
-        var downArrow:BitmapData = AssetLibrary.getImageFromSet("lofiInterface", 55);
-        var downArrowBitmap:Bitmap = new Bitmap(downArrow);
-        downArrowBitmap.scaleX = 3.5;
-        downArrowBitmap.scaleY = 3.5;
-
-        this.remove_.x = this.width - downArrowBitmap.width - 4;
-        this.remove_.y = this.add_.y + (downArrowBitmap.height / 2) - 4;
-        this.toolTip_ = new TextToolTip(3552822, 10197915, null, "Withdraw", 100);
-        this.remove_.addChild(downArrowBitmap);
-
+        var upArrow:Bitmap = new Bitmap(AssetLibrary.getImageFromSet("lofiInterface",54));
+        upArrow.scaleX = 3;
+        upArrow.scaleY = 3;
+        this.add_.x = this.width - (upArrow.width) - 32;
+        this.add_.y = 28 - upArrow.height;
+        this.add_.addChild(upArrow);
         addChild(this.add_);
+
+        var downArrow:Bitmap = new Bitmap(AssetLibrary.getImageFromSet("lofiInterface", 55));
+        downArrow.scaleX = 3;
+        downArrow.scaleY = 3;
+        this.remove_.x = this.width - downArrow.width - 4;
+        this.remove_.y = this.add_.y + (downArrow.height / 2) - 4;
+        this.remove_.addChild(downArrow);
         addChild(this.remove_);
 
-        this.sellButton = new SliceScalingButton(TextureParser.instance.getSliceScalingBitmap("UI", "generic_green_button"));
-        this.sellButton.width = 96;
-        this.sellButton.setLabel("Sell", DefaultLabelFormat.defaultModalTitle);
-        this.sellButton.x = 4;
-        this.sellButton.y = this.height - this.sellButton.height - 4;
-        addChild(this.sellButton);
-
-        this.maxButton = new SliceScalingButton(TextureParser.instance.getSliceScalingBitmap("UI", "generic_green_button"));
-        this.maxButton.width = 96;
-        this.maxButton.setLabel("Max", DefaultLabelFormat.defaultModalTitle);
-        this.maxButton.x = 4;
-        this.maxButton.y = this.height - (this.maxButton.height * 2) - 4;
-
-        addChild(this.maxButton);
-
-        this.consumeButton = new SliceScalingButton(TextureParser.instance.getSliceScalingBitmap("UI", "generic_green_button"));
-        this.consumeButton.width = 96;
-        this.consumeButton.setLabel("Drink", DefaultLabelFormat.defaultModalTitle);
-        this.consumeButton.x = 4;
-        this.consumeButton.y = this.height - (this.consumeButton.height * 3) - 4;
-
+        this.consumeButton = new TextButton(16, "Consume", 100);
+        this.consumeButton.x = 5;
+        this.consumeButton.y = 70;
         addChild(this.consumeButton);
 
-        this.bar_ = new StatusBar(82,14, BitmapUtil.mostCommonColor(this.icon_.bitmapData),0);
-        this.bar_.filters = [glowFilter];
-        this.bar_.y = this.height / 2 - 45;
-        this.bar_.x = this.width / 2 - 41;
+        this.maxButton = new TextButton(16, "Max", 100);
+        this.maxButton.x = 5;
+        this.maxButton.y = 105;
+        addChild(this.maxButton);
 
+        this.bar_ = new StatusBar(100,16, fillColors[this.statType_],0);
+        this.bar_.y = 42;
+        this.bar_.x = 5;
         addChild(this.bar_);
 
         this.add_.addEventListener(MouseEvent.CLICK, onAddPotion);
         this.remove_.addEventListener(MouseEvent.CLICK, onRemovePotion);
         this.consumeButton.addEventListener(MouseEvent.CLICK, onConsumePotionClick);
         this.consumeButton.addEventListener(MouseEvent.MOUSE_DOWN, onConsumePotionDown);
-        this.sellButton.addEventListener(MouseEvent.CLICK, onSellPotion);
         this.maxButton.addEventListener(MouseEvent.CLICK, onMaxPotion);
-
         draw();
     }
 
 
     private function onConsumePotionDown(e:Event):void {
-        consumeTimer.addEventListener(TimerEvent.TIMER, onConsumePotionTick)
+        consumeTimer.addEventListener(TimerEvent.TIMER, onConsumePotionTick);
         this.addEventListener(MouseEvent.MOUSE_UP, onConsumePotionUp);
         consumeTimer.start();
     }
@@ -166,24 +148,43 @@ public class PotionsContainer extends Sprite{
         model_.useStorage(statType_, 2);
     }
 
-    private function onSellPotion(e:Event):void {
-        model_.useStorage(statType_, 3);
-    }
-
     public function drawContainer():void
     {
-
+        GraphicsUtil.clearPath(this.path_);
+        GraphicsUtil.drawCutEdgeRect(0,0,110, 145,8,[1,1,1,1],this.path_);
+        graphics.drawGraphicsData(this.graphicsData_);
     }
 
     public function draw():void{
-        var g:Graphics = this.graphics;
-        g.clear();
-        g.lineStyle(2,0x363636);
-        g.beginFill(0,0.7);
-        g.drawRoundRect(0, 0, 100, 180,5,5);
-        g.endFill();
         if (bar_ == null)
             return;
+        this.bar_.draw(10, 50, 0)
+        /*switch(statType_){
+            case 0: //life
+                this.bar_.draw(this.player_.SPS_Life,this.player_.SPS_Life_Max,0);
+                break;
+            case 1://mana
+                this.bar_.draw(this.player_.SPS_Mana,this.player_.SPS_Mana_Max,0);
+                break;
+            case 2://att
+                this.bar_.draw(this.player_.SPS_Attack,this.player_.SPS_Attack_Max,0);
+                break;
+            case 3://def
+                this.bar_.draw(this.player_.SPS_Defense,this.player_.SPS_Defense_Max,0);
+                break;
+            case 4://spd
+                this.bar_.draw(this.player_.SPS_Speed,this.player_.SPS_Speed_Max,0);
+                break;
+            case 5://dex
+                this.bar_.draw(this.player_.SPS_Dexterity,this.player_.SPS_Dexterity_Max,0);
+                break;
+            case 6://vit
+                this.bar_.draw(this.player_.SPS_Vitality,this.player_.SPS_Vitality_Max,0);
+                break;
+            case 7://wis
+                this.bar_.draw(this.player_.SPS_Wisdom,this.player_.SPS_Wisdom_Max,0);
+                break;
+        }*/
     }
 }
 }

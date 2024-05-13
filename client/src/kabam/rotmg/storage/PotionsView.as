@@ -3,6 +3,9 @@ import com.company.assembleegameclient.game.GameSprite;
 import com.company.assembleegameclient.objects.GameObject;
 import com.company.assembleegameclient.objects.Player;
 import com.company.assembleegameclient.screens.TitleMenuOption;
+import com.company.assembleegameclient.ui.LineBreakDesign;
+import com.company.rotmg.graphics.DeleteXGraphic;
+import com.company.ui.SimpleText;
 import com.company.util.GraphicsUtil;
 import com.gskinner.motion.GTween;
 
@@ -21,7 +24,9 @@ import flash.display.Sprite;
 
 import flash.events.Event;
 import flash.events.MouseEvent;
+import flash.filters.DropShadowFilter;
 import flash.filters.GlowFilter;
+import flash.text.TextFieldAutoSize;
 
 import io.decagames.rotmg.ui.buttons.SliceScalingButton;
 import io.decagames.rotmg.ui.popups.header.PopupHeader;
@@ -45,7 +50,9 @@ public class PotionsView extends Sprite {
 
     public var storageContainer:Sprite;
     public var potionContainers:Vector.<PotionsContainer>;
-    private var closeButton_:TitleMenuOption;
+    private var titleText_:SimpleText;
+    private var closeButton_:DeleteXGraphic;
+    private var lineBreak_:LineBreakDesign;
 
     private var outlineFill_:GraphicsSolidFill = new GraphicsSolidFill(0x484848,1);
     private var lineStyle_:GraphicsStroke = new GraphicsStroke(3,false,LineScaleMode.NORMAL,CapsStyle.NONE,JointStyle.ROUND,3,outlineFill_);
@@ -54,8 +61,8 @@ public class PotionsView extends Sprite {
     private var graphicsData_:Vector.<IGraphicsData> = new <IGraphicsData>[lineStyle_,backgroundFill_,path_,GraphicsUtil.END_FILL,GraphicsUtil.END_STROKE];
 
     public function PotionsView(gs:GameSprite, gm:GameObject) {
-        this.x = 50;
-        this.y = 100;
+        this.x = 55;
+        this.y = 105;
 
         this.gs_ = gs;
         this.gO_ = gm;
@@ -70,39 +77,43 @@ public class PotionsView extends Sprite {
         for(var i:int = 0; i < 8; i++)
         {
             var container:PotionsContainer = new PotionsContainer(this, this.gs_, i, this.player);
-            container.x = 20 + (container.width * int(i % 4)) + (i < 4 ? 5 * i : 5 * (i - 4));
-            container.y = i < 4 ? 20 : 200;
+            container.x = 13 + (container.width * int(i % 4)) + (i < 4 ? 8 * i : 8 * (i - 4));
+            container.y = i < 4 ? 65 : 215;
             this.storageContainer.addChild(container);
             this.potionContainers.push(container);
         }
 
-        this.makeScreenGraphic();
-        this.closeButton_ = new TitleMenuOption("close",36,false);
-        this.closeButton_.x = 400 - this.closeButton_.width / 2;
-        this.closeButton_.y = 525;
+        this.titleText_ = new SimpleText(24, 0xFFFFFF, false, 800, 0);
+        this.titleText_.setBold(true);
+        this.titleText_.setText("Potion Storage");
+        this.titleText_.autoSize = TextFieldAutoSize.LEFT;
+        this.titleText_.filters = [new DropShadowFilter(0,0,0)];
+        this.titleText_.updateMetrics();
+        this.titleText_.x = 170;
+        this.titleText_.y = 10;
+        this.storageContainer.addChild(this.titleText_);
+
+        this.closeButton_ = new DeleteXGraphic();
+        this.closeButton_.x = 480 - this.closeButton_.width;
+        this.closeButton_.y = 10;
         this.closeButton_.addEventListener(MouseEvent.CLICK, onClose);
-        addChild(this.closeButton_);
+        this.storageContainer.addChild(this.closeButton_);
+
+        this.lineBreak_ = new LineBreakDesign(225, 0x242424);
+        this.lineBreak_.scaleX = this.lineBreak_.scaleY = 2;
+        this.lineBreak_.x = 20;
+        this.lineBreak_.y = 48;
+        this.storageContainer.addChild(this.lineBreak_);
     }
 
     public function drawStorage():Sprite
     {
         var b:Sprite = new Sprite;
         GraphicsUtil.clearPath(this.path_);
-        GraphicsUtil.drawCutEdgeRect(0,0, 500, 400,8,[1,1,1,1],this.path_);
+        GraphicsUtil.drawCutEdgeRect(0,0, 490, 390,8,[1,1,1,1],this.path_);
         b.graphics.drawGraphicsData(this.graphicsData_);
         addChild(b);
         return b;
-    }
-
-    private function makeScreenGraphic():void
-    {
-        var box:Sprite = new Sprite();
-        var b:Graphics = box.graphics;
-        b.clear();
-        b.beginFill(0, 0.5);
-        b.drawRect(0, 525, 800, 75);
-        b.endFill();
-        addChild(box);
     }
 
     public function draw():void {

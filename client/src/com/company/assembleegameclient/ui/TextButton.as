@@ -2,10 +2,15 @@ package com.company.assembleegameclient.ui
 {
    import com.company.ui.SimpleText;
    import com.company.util.GraphicsUtil;
-   import flash.display.GraphicsPath;
+
+import flash.display.CapsStyle;
+import flash.display.GraphicsPath;
    import flash.display.GraphicsSolidFill;
-   import flash.display.IGraphicsData;
-   import flash.display.Sprite;
+import flash.display.GraphicsStroke;
+import flash.display.IGraphicsData;
+import flash.display.JointStyle;
+import flash.display.LineScaleMode;
+import flash.display.Sprite;
    import flash.events.MouseEvent;
    
    public class TextButton extends Sprite
@@ -15,19 +20,21 @@ package com.company.assembleegameclient.ui
       public var text_:SimpleText;
       
       public var w_:int;
+
+      private var outlineFill_:GraphicsSolidFill = new GraphicsSolidFill(0x484848,1);
+
+      private var lineStyle_:GraphicsStroke = new GraphicsStroke(2,false,LineScaleMode.NORMAL,CapsStyle.NONE,JointStyle.ROUND,3,outlineFill_);
       
-      private var enabledFill_:GraphicsSolidFill = new GraphicsSolidFill(16777215,1);
-      
-      private var disabledFill_:GraphicsSolidFill = new GraphicsSolidFill(8355711,1);
+      private var enabledFill_:GraphicsSolidFill = new GraphicsSolidFill(0x323232,1);
       
       private var path_:GraphicsPath = new GraphicsPath(new Vector.<int>(),new Vector.<Number>());
-      
-      private const graphicsData_:Vector.<IGraphicsData> = new <IGraphicsData>[enabledFill_,path_,GraphicsUtil.END_FILL];
+
+      private var graphicsData_:Vector.<IGraphicsData> = new <IGraphicsData>[lineStyle_,enabledFill_,path_,GraphicsUtil.END_FILL,GraphicsUtil.END_STROKE];
       
       public function TextButton(size:int, text:String, bWidth:int = 0)
       {
          super();
-         this.text_ = new SimpleText(size,3552822,false,0,0);
+         this.text_ = new SimpleText(size,0x727272,false,0,0);
          this.text_.setBold(true);
          this.text_.text = text;
          this.text_.updateMetrics();
@@ -50,7 +57,7 @@ package com.company.assembleegameclient.ui
          this.text_.y = 1;
       }
       
-      public function setEnabled(enabled:Boolean) : void
+      /*public function setEnabled(enabled:Boolean) : void
       {
          if(enabled == mouseEnabled)
          {
@@ -59,17 +66,17 @@ package com.company.assembleegameclient.ui
          mouseEnabled = enabled;
          this.graphicsData_[0] = !!enabled?this.enabledFill_:this.disabledFill_;
          this.draw();
-      }
+      }*/
       
       private function onMouseOver(event:MouseEvent) : void
       {
-         this.enabledFill_.color = 16768133;
+         this.enabledFill_.color = 0x484848;
          this.draw();
       }
       
       private function onRollOut(event:MouseEvent) : void
       {
-         this.enabledFill_.color = 16777215;
+         this.enabledFill_.color = 0x323232;
          this.draw();
       }
       

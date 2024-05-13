@@ -7,6 +7,7 @@ import com.company.assembleegameclient.ui.options.Options;
 import com.company.assembleegameclient.ui.options.OptionsTabTitle;
 import com.company.rotmg.graphics.ScreenGraphic;
 import com.company.ui.SimpleText;
+import com.gskinner.motion.GTween;
 
 import flash.display.Graphics;
 
@@ -45,6 +46,8 @@ public class MemMarket extends Sprite
     public function MemMarket(gameSprite:GameSprite)
     {
         this.gameSprite_ = gameSprite;
+        this.alpha = 0;
+        new GTween(this, 0.2, {"alpha": 1});
 
         /* Draw background */
         graphics.clear();
