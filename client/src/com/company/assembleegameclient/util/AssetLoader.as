@@ -39,10 +39,10 @@ public class AssetLoader
       this.parseGroundFiles();
       this.parseObjectFiles();
       this.parseRegionFiles();
-      Emotes.load();
       Parameters.load();
       Options.refreshCursor();
       SFX.load();
+      Emotes.load();
    }
 
    private function addImages():void

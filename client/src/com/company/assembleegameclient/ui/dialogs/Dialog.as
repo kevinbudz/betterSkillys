@@ -53,6 +53,7 @@ package com.company.assembleegameclient.ui.dialogs
       public var offsetX:Number = 0;
       
       public var offsetY:Number = 0;
+
       
       public function Dialog(text:String, title:String, button1:String, button2:String, background:Boolean = false)
       {
@@ -151,8 +152,10 @@ package com.company.assembleegameclient.ui.dialogs
       
       private function onAddedToStage(event:Event) : void
       {
-         this.box_.x = this.offsetX + stage.stageWidth / 2 - this.box_.width / 2;
-         this.box_.y = this.offsetY + stage.stageHeight / 2 - this.box_.height / 2;
+         this.box_.x = 300 - this.box_.width / 2;
+         this.box_.y = 300 - this.box_.height / 2;
+         this.box_.scaleX = 800 / stage.stageWidth;
+         this.box_.scaleY = 600 / stage.stageHeight;
       }
       
       private function onButton1Click(event:MouseEvent) : void
