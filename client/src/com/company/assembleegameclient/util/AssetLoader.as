@@ -48,6 +48,7 @@ public class AssetLoader
    private function addImages():void
    {
       AssetLibrary.addImageSet("emotes", new EmbeddedAssets.emotesEmbed_().bitmapData, 16, 16);
+      AssetLibrary.addImageSet("animEmotes", new EmbeddedAssets.animEmotesEmbed_().bitmapData, 32, 32);
       AssetLibrary.addImageSet("lofiChar8x8", new EmbeddedAssets.lofiCharEmbed_().bitmapData, 8, 8);
       AssetLibrary.addImageSet("lofiChar16x8", new EmbeddedAssets.lofiCharEmbed_().bitmapData, 16, 8);
       AssetLibrary.addImageSet("lofiChar16x16", new EmbeddedAssets.lofiCharEmbed_().bitmapData, 16, 16);

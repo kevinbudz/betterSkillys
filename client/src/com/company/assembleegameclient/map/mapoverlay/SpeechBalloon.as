@@ -70,6 +70,7 @@ public class SpeechBalloon extends Sprite implements IMapOverlayElement {
         var _loc4_:EmoteGraphicHelper = new EmoteGraphicHelper();
         return _loc4_.getChatBubbleText(param1,param2,param3);
     }
+
     public function draw(_arg1:Camera, _arg2:int):Boolean {
         if (this.startTime_ == 0) {
             this.startTime_ = _arg2;

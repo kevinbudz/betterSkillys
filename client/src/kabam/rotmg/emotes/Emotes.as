@@ -5,12 +5,14 @@ import com.company.util.AssetLibrary;
 import flash.display.BitmapData;
 import flash.utils.Dictionary;
 
+import kabam.rotmg.emotes.data.EmotesCXML;
+
 
 public class Emotes
 {
 
     private static var emotes:Dictionary = new Dictionary();
-
+    private static var animEmotes:Dictionary = new Dictionary();
 
     public function Emotes()
     {
@@ -19,6 +21,7 @@ public class Emotes
 
     public static function load() : void
     {
+        loadFromXMLs();
         addEmote(":pbag:",AssetLibrary.getImageFromSet("lofiObj4",145),1.5,true);
         addEmote(":cyanbag:",AssetLibrary.getImageFromSet("lofiObj4",146),1.5,true);
         addEmote(":bluebag:",AssetLibrary.getImageFromSet("lofiObj4",147),1.5,true);
@@ -921,19 +924,41 @@ public class Emotes
         addEmote(":zzz:",AssetLibrary.getImageFromSet("emotes",878));
     }
 
-    public static function addEmote(param1:String, param2:BitmapData, param3:Number = 1, param4:Boolean = true) : void
-    {
-        emotes[param1] = new Emote(param1,param2,param3,param4);
+    public static function addEmote(name:String, texture:BitmapData, scale:Number = 1, hq:Boolean = true):void {
+        emotes[name] = new Emote(name, texture, scale, hq);
     }
 
-    public static function hasEmote(param1:String) : Boolean
-    {
-        return emotes[param1] != undefined;
+    public static function addAnimEmote(name:String, textures:Vector.<BitmapData>, scale:Number = 1, hq:Boolean = true, frameIndex:int = 0, frameTime:int = 100):void {
+        animEmotes[name] = new AnimatedEmote(name, textures, scale, hq, frameIndex, frameTime);
     }
 
-    public static function getEmote(param1:String) : Emote
-    {
-        return (emotes[param1] as Emote).clone();
+    public static function hasEmote(name:String):Boolean {
+        return emotes[name] != undefined || animEmotes[name] != undefined;
+    }
+
+    public static function getEmote(name:String):Emote {
+        if (emotes[name] != undefined) {
+            return emotes[name] as Emote;
+        }
+        if (animEmotes[name] != undefined) {
+            return animEmotes[name] as AnimatedEmote;
+        }
+        return null;
+    }
+
+    private static function loadFromXMLs():void {
+        var emotesXML:XML = XML(new EmotesCXML());
+        for each (var emote:XML in emotesXML.Emote) {
+            addEmote(":" + String(emote.@id) + ":", AssetLibrary.getImageFromSet(String(emote.Texture.File), int(emote.Texture.Index)), Number(emote.@scale));
+        }
+
+        for each (var animEmote:XML in emotesXML.AnimatedEmote) {
+            var frames:Vector.<BitmapData> = new Vector.<BitmapData>();
+            for each (var frame:XML in animEmote.Animation.Frame) {
+                frames.push(AssetLibrary.getImageFromSet(String(frame.File), int(frame.Index)));
+            }
+            addAnimEmote(":" + String(animEmote.@id) + ":", frames, Number(animEmote.@scale));
+        }
     }
 }
 }

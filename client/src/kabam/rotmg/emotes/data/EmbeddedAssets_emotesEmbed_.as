@@ -1,7 +1,4 @@
-package kabam.rotmg.assets.prod.images{
-import kabam.rotmg.assets.prod.*;
-import kabam.rotmg.assets.*;
-
+package kabam.rotmg.emotes.data {
 import mx.core.BitmapAsset;
 
 

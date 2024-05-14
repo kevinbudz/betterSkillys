@@ -95,7 +95,6 @@ import kabam.rotmg.assets.prod.images.EmbeddedAssets_d3Chars8x8rEmbed_;
 import kabam.rotmg.assets.prod.images.EmbeddedAssets_d3LofiObjBigEmbed_;
 import kabam.rotmg.assets.prod.images.EmbeddedAssets_d3LofiObjEmbed_;
 import kabam.rotmg.assets.prod.objects.EmbeddedAssets_dodecahedronEmbed_;
-import kabam.rotmg.assets.prod.images.EmbeddedAssets_emotesEmbed_;
 import kabam.rotmg.assets.prod.images.EmbeddedAssets_epicHiveChars16x16Embed_;
 import kabam.rotmg.assets.prod.images.EmbeddedAssets_epicHiveChars8x8Embed_;
 import kabam.rotmg.assets.prod.images.EmbeddedAssets_epicHiveObjects16x16Embed_;
@@ -258,10 +257,13 @@ import kabam.rotmg.assets.prod.objects.EmbeddedAssets_xmasNexusChars16x16Embed_;
 import kabam.rotmg.assets.prod.objects.EmbeddedAssets_xmasNexusChars8x8Embed_;
 import kabam.rotmg.assets.prod.objects.EmbeddedAssets_xmasNexusObjects16x16Embed_;
 import kabam.rotmg.assets.prod.objects.EmbeddedAssets_xmasNexusObjects8x8Embed_;
+import kabam.rotmg.emotes.data.EmbeddedAssets_animEmotesEmbed_;
+import kabam.rotmg.emotes.data.EmbeddedAssets_emotesEmbed_;
 
 public class EmbeddedAssets
 {
 
+   public static var animEmotesEmbed_:Class = EmbeddedAssets_animEmotesEmbed_;
    public static var emotesEmbed_:Class = EmbeddedAssets_emotesEmbed_;
    public static var particlesEmbed:Class = EmbeddedAssets_particlesEmbed;
    public static const StarburstSpinner:Class = EmbeddedAssets_StarburstSpinner;
