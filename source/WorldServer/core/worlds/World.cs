@@ -68,6 +68,10 @@ namespace WorldServer.core.worlds
         public WorldBranch WorldBranch { get; private set; }
         public World ParentWorld { get; set; }
 
+        // used for behaviour system
+        // Hashset to have non duplicates
+        private readonly HashSet<string> Labels = new HashSet<string>();
+
         public World(GameServer gameServer, int id, WorldResource resource, World parent = null)
         {
             GameServer = gameServer;
@@ -98,6 +102,10 @@ namespace WorldServer.core.worlds
             WorldBranch = new WorldBranch(this);
             ParentWorld = parent;
         }
+
+        public bool HasLabel(string labelName) => Labels.Contains(labelName.ToLower());
+        public bool SetLabel(string labelName) => Labels.Equals(labelName.ToLower());
+        public bool RemoveLabel(string labelName) => Labels.Remove(labelName.ToLower());
 
         public virtual bool AllowedAccess(Client client) => true;
 

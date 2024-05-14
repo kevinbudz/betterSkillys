@@ -21,6 +21,13 @@ namespace WorldServer.core.objects
     {
         private const float COL_SKIP_BOUNDARY = 0.4f;
 
+        // used for behaviour system
+        // Hashset to have non duplicates
+        private readonly HashSet<string> Labels = new HashSet<string>();
+        public bool HasLabel(string labelName) => Labels.Contains(labelName.ToLower());
+        public bool SetLabel(string labelName) => Labels.Equals(labelName.ToLower());
+        public bool RemoveLabel(string labelName) => Labels.Remove(labelName.ToLower());
+
         private StatTypeValue<int> _altTextureIndex;
         private StatTypeValue<string> _name;
         private StatTypeValue<int> _size;
