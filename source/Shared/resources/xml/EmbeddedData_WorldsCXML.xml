@@ -111,6 +111,12 @@
 		<MapJM>belladonna.jm</MapJM>
 		<Dungeon/>
 	</World>
+	<World id="Beachzone">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>beachzone.jm</MapJM>
+		<Dungeon/>
+	</World>
 	<World id="Bilgewater's Grotto">
 		<Width>256</Width>
 		<Height>256</Height>

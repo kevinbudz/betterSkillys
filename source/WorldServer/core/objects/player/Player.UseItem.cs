@@ -406,6 +406,8 @@ namespace WorldServer.core.objects
                     case ActivateEffects.SelfTransform:
                     case ActivateEffects.GroupTransform:
                     case ActivateEffects.CreatePortal:
+                        AECreatePortal(time, item, target, slot, eff);
+                        break;
                     case ActivateEffects.Exchange:
                     case ActivateEffects.ChangeObject:
                     case ActivateEffects.UnlockPetSkin:
@@ -540,6 +542,32 @@ namespace WorldServer.core.objects
         }
 
         private void AECreate(TickTime time, Item item, Position target, int slot, ActivateEffect eff)
+        {
+            var gameData = GameServer.Resources.GameData;
+
+            if (!gameData.IdToObjectType.TryGetValue(eff.Id, out ushort objType) ||
+                !gameData.Portals.ContainsKey(objType))
+                return; // object not found, ignore
+
+            var entity = Resolve(GameServer, objType);
+            var timeoutTime = gameData.Portals[objType].Timeout;
+
+            entity.Move(X, Y);
+            World.EnterWorld(entity);
+
+            World.StartNewTimer(timeoutTime * 1000, (world, t) => world.LeaveWorld(entity));
+
+            var openedByMsg = gameData.Portals[objType].DungeonName + " opened by " + Name + "!";
+            World.Broadcast(new Notification
+            {
+                Color = new ARGB(0xFF00FF00),
+                ObjectId = Id,
+                Message = openedByMsg
+            });
+            World.ForeachPlayer(_ => _.SendInfo(openedByMsg));
+        }
+
+        private void AECreatePortal(TickTime time, Item item, Position target, int slot, ActivateEffect eff)
         {
             var gameData = GameServer.Resources.GameData;
 
