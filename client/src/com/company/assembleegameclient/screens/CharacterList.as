@@ -16,19 +16,19 @@ public class CharacterList extends Sprite
 
     public var charRectList_:CharacterRectList;
 
-    public function CharacterList(model:PlayerModel)
+    public function CharacterList(model:PlayerModel, additionalWidth:int)
     {
         var shape:Shape = null;
         var g:Graphics = null;
         super();
-        this.charRectList_ = new CharacterRectList();
+        this.charRectList_ = new CharacterRectList(additionalWidth);
         addChild(this.charRectList_);
         if(height > 400)
         {
             shape = new Shape();
             g = shape.graphics;
             g.beginFill(0);
-            g.drawRect(0,0,WIDTH,HEIGHT);
+            g.drawRect(0,0,WIDTH + additionalWidth,HEIGHT);
             g.endFill();
             addChild(shape);
             mask = shape;

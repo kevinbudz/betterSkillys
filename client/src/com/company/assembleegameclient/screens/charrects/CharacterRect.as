@@ -14,10 +14,12 @@ package com.company.assembleegameclient.screens.charrects
       private var overColor_:uint;
       private var box_:Shape;
       public var selectContainer:Sprite;
+      public var addWidth:int;
       
-      public function CharacterRect(color:uint, overColor:uint)
+      public function CharacterRect(color:uint, overColor:uint, additionalWidth:int)
       {
          super();
+         this.addWidth = additionalWidth;
          this.color_ = color;
          this.overColor_ = overColor;
          this.box_ = new Shape();
@@ -42,7 +44,7 @@ package com.company.assembleegameclient.screens.charrects
          var g:Graphics = this.box_.graphics;
          g.clear();
          g.beginFill(over?this.overColor_:this.color_);
-         g.drawRect(0,0,WIDTH,HEIGHT);
+         g.drawRect(0,0,WIDTH + this.addWidth,HEIGHT);
          g.endFill();
       }
       
@@ -52,7 +54,7 @@ package com.company.assembleegameclient.screens.charrects
          this.selectContainer.mouseChildren = false;
          this.selectContainer.buttonMode = true;
          this.selectContainer.graphics.beginFill(16711935,0);
-         this.selectContainer.graphics.drawRect(0,0,WIDTH,HEIGHT);
+         this.selectContainer.graphics.drawRect(0,0,WIDTH + this.addWidth,HEIGHT);
          addChild(this.selectContainer);
       }
    }

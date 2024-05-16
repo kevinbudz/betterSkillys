@@ -7,7 +7,8 @@ package kabam.rotmg.stage3D
    import flash.display.GraphicsGradientFill;
    import flash.display.IGraphicsData;
    import flash.display.Stage3D;
-   import flash.display.StageScaleMode;
+import flash.display.StageAlign;
+import flash.display.StageScaleMode;
    import flash.display3D.Context3D;
    import flash.display3D.Context3DProgramType;
    import flash.display3D.Context3DTextureFormat;
@@ -203,10 +204,12 @@ package kabam.rotmg.stage3D
          }
          if(Renderer.inGame)
          {
+            WebMain.STAGE.align = "";
             this.setTranslationToGame();
          }
          else
          {
+            WebMain.STAGE.align = StageAlign.TOP_LEFT;
             this.setTranslationToTitle();
          }
          if(filterIndex > 0)

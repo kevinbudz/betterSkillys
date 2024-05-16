@@ -13,6 +13,7 @@ import flash.display.Bitmap;
 import flash.display.Graphics;
 import flash.display.Sprite;
 import flash.events.Event;
+import flash.events.MouseEvent;
 import flash.filters.DropShadowFilter;
 import flash.geom.Point;
 import flash.geom.Vector3D;
@@ -38,6 +39,7 @@ public class TitleView extends Sprite
 
    private var container:Sprite;
    private var parallaxLayers:Vector.<Bitmap>;
+   private var graphic:Sprite;
 
    private var playButton:TitleMenuOption;
    private var serversButton:TitleMenuOption;
@@ -57,12 +59,9 @@ public class TitleView extends Sprite
    {
       this.darkenFactory = new DarkenFactory();
       super();
-      //addChild(new MapBackground());
-      addChild(new TitleView_TitleScreenBackground());
-      addChild(this.darkenFactory.create());
-      //addChild(new TitleScreenGraphic());
       this.initLayers();
-      this.makeScreenGraphic();
+      this.graphic = this.makeScreenGraphic();
+      addChild(this.graphic);
       addChild(new AccountScreen());
       this.makeChildren();
       addChild(new SoundIcon());
@@ -97,36 +96,42 @@ public class TitleView extends Sprite
       this.parallaxLayers[1].y += (anchor2.y + flameOffset.y * 0.03 - this.parallaxLayers[1].y) * 0.03;
    }
 
-   private function makeScreenGraphic():void
+   private function makeScreenGraphic():Sprite
    {
       var box:Sprite = new Sprite();
       var b:Graphics = box.graphics;
       b.clear();
       b.beginFill(0, 0.5);
-      b.drawRect(0, 525, 800, 75);
+      b.drawRect(0, 0, 1, 75);
       b.endFill();
       addChild(box);
+      return box;
    }
 
    private function makeChildren() : void
    {
       this.container = new Sprite();
       this.playButton = new TitleMenuOption(ScreenTypes.PLAY,36,true);
+      this.playButton.addEventListener(MouseEvent.CLICK, removeListener);
       this.playClicked = this.playButton.clicked;
       this.container.addChild(this.playButton);
       this.serversButton = new TitleMenuOption(ScreenTypes.SERVERS,22,false);
+      this.serversButton.addEventListener(MouseEvent.CLICK, removeListener);
       this.serversClicked = this.serversButton.clicked;
       this.container.addChild(this.serversButton);
       this.creditsButton = new TitleMenuOption(ScreenTypes.CREDITS,22,false);
       this.creditsClicked = this.creditsButton.clicked;
       //this.container.addChild(this.creditsButton);
       this.accountButton = new TitleMenuOption(ScreenTypes.ACCOUNT,22,false);
+      this.accountButton.addEventListener(MouseEvent.CLICK, removeListener);
       this.accountClicked = this.accountButton.clicked;
       this.container.addChild(this.accountButton);
       this.legendsButton = new TitleMenuOption(ScreenTypes.LEGENDS,22,false);
+      this.legendsButton.addEventListener(MouseEvent.CLICK, removeListener);
       this.legendsClicked = this.legendsButton.clicked;
       this.container.addChild(this.legendsButton);
       this.editorButton = new TitleMenuOption(ScreenTypes.EDITOR,22,false);
+      this.editorButton.addEventListener(MouseEvent.CLICK, removeListener);
       this.editorClicked = this.editorButton.clicked;
       this.versionText = new SimpleText(12,8355711,false,0,0);
       this.versionText.filters = [new DropShadowFilter(0,0,0)];
@@ -138,12 +143,35 @@ public class TitleView extends Sprite
       this.container.addChild(this.copyrightText);
    }
 
+   public function addListeners():void
+   {
+      this.playButton.addEventListener(MouseEvent.CLICK, removeListener);
+      this.serversButton.addEventListener(MouseEvent.CLICK, removeListener);
+      this.accountButton.addEventListener(MouseEvent.CLICK, removeListener);
+      this.legendsButton.addEventListener(MouseEvent.CLICK, removeListener);
+      this.editorButton.addEventListener(MouseEvent.CLICK, removeListener);
+   }
+
+   public function removeListener(e:Event):void
+   {
+      if (stage)
+         stage.removeEventListener("resize", positionButtons);
+      this.playButton.removeEventListener(MouseEvent.CLICK, removeListener);
+      this.serversButton.removeEventListener(MouseEvent.CLICK, removeListener);
+      this.accountButton.removeEventListener(MouseEvent.CLICK, removeListener);
+      this.legendsButton.removeEventListener(MouseEvent.CLICK, removeListener);
+      this.editorButton.removeEventListener(MouseEvent.CLICK, removeListener);
+   }
+
    public function initialize(data:EnvironmentData) : void
    {
       this.data = data;
       this.updateVersionText();
       this.positionButtons();
       this.addChildren();
+      this.addListeners();
+      if (stage)
+         stage.addEventListener("resize", positionButtons);
    }
 
    private function updateVersionText() : void
@@ -158,21 +186,31 @@ public class TitleView extends Sprite
       this.container.addChild(this.editorButton);
    }
 
-   private function positionButtons() : void
+   public function positionButtons(e:Event = null) : void
    {
-      this.playButton.x = stage.stageWidth / 2 - this.playButton.width / 2;
-      this.playButton.y = 525;
-      this.serversButton.x = stage.stageWidth / 2 - this.serversButton.width / 2 - 94;
-      this.serversButton.y = 535;
-      this.accountButton.x = stage.stageWidth / 2 - this.accountButton.width / 2 + 96;
-      this.accountButton.y = 535;
-      this.legendsButton.x = 550;
-      this.legendsButton.y = 535;
-      this.editorButton.x = 180;
-      this.editorButton.y = 535;
-      this.versionText.y = stage.stageHeight - this.versionText.height;
-      this.copyrightText.x = stage.stageWidth - this.copyrightText.width;
-      this.copyrightText.y = stage.stageHeight - this.copyrightText.height;
+      if (stage)
+      {
+         if (e != null)
+            AccountScreen.reSize(e);
+         this.graphic.width = stage.stageWidth;
+         this.graphic.y = stage.stageHeight - 75;
+         this.parallaxLayers[0].scaleX = this.parallaxLayers[1].scaleX = stage.stageWidth / 800;
+         this.parallaxLayers[0].scaleY = this.parallaxLayers[1].scaleY = stage.stageHeight / 600;
+
+         this.playButton.x = stage.stageWidth / 2 - this.playButton.width / 2;
+         this.playButton.y = stage.stageHeight - 75;
+         this.serversButton.x = stage.stageWidth / 2 - this.serversButton.width / 2 - 94;
+         this.serversButton.y =  stage.stageHeight - 65;
+         this.accountButton.x = stage.stageWidth / 2 - this.accountButton.width / 2 + 96;
+         this.accountButton.y = stage.stageHeight - 65;
+         this.legendsButton.x = this.accountButton.x + 96;
+         this.legendsButton.y = stage.stageHeight - 65;
+         this.editorButton.x = this.serversButton.x - 96;
+         this.editorButton.y = stage.stageHeight - 65;
+         this.versionText.y = stage.stageHeight - this.versionText.height;
+         this.copyrightText.x = stage.stageWidth - this.copyrightText.width;
+         this.copyrightText.y = stage.stageHeight - this.copyrightText.height;
+      }
    }
 }
 }

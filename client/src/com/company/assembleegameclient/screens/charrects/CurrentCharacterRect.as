@@ -56,9 +56,9 @@ public class CurrentCharacterRect extends CharacterRect
    private var fameBitmap:Bitmap;
    private var fameBitmapContainer:Sprite;
 
-   public function CurrentCharacterRect(charName:String, charType:CharacterClass, char:SavedCharacter, charStats:CharacterStats)
+   public function CurrentCharacterRect(charName:String, charType:CharacterClass, char:SavedCharacter, charStats:CharacterStats, addWidth:int)
    {
-      super(6052956,8355711);
+      super(6052956,8355711, addWidth);
       this.charName = charName;
       this.charType = charType;
       this.char = char;
@@ -98,7 +98,7 @@ public class CurrentCharacterRect extends CharacterRect
       this.fameBitmapContainer = new Sprite();
       this.fameBitmapContainer.name = "fame_ui";
       this.fameBitmapContainer.addChild(this.fameBitmap);
-      this.fameBitmapContainer.x = 435;
+      this.fameBitmapContainer.x = this.width - 70;
       this.fameBitmapContainer.y = 20;
       addChild(this.fameBitmapContainer);
    }
@@ -158,7 +158,7 @@ public class CurrentCharacterRect extends CharacterRect
    {
       this.deleteButton = new DeleteXGraphic();
       this.deleteButton.addEventListener(MouseEvent.MOUSE_DOWN,this.onDeleteDown);
-      this.deleteButton.x = WIDTH - 25;
+      this.deleteButton.x = this.width - 25;
       this.deleteButton.y = 5;
       addChild(this.deleteButton);
    }
@@ -171,7 +171,7 @@ public class CurrentCharacterRect extends CharacterRect
       this.statsMaxedText.filters = [new DropShadowFilter(0,0,0,1,8,8)];
       this.statsMaxedText.setBold(true);
       this.statsMaxedText.setText(maxedStat + "/8");
-      this.statsMaxedText.x = 400;
+      this.statsMaxedText.x = this.width - 105;
       this.statsMaxedText.y = 18;
       if (maxedStat == 8){
          color = uint(16572160)

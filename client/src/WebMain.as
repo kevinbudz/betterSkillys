@@ -6,6 +6,7 @@ import com.company.assembleegameclient.util.StageProxy;
 import flash.display.LoaderInfo;
 import flash.display.Sprite;
 import flash.display.Stage;
+import flash.display.StageAlign;
 import flash.display.StageScaleMode;
 import flash.events.Event;
 import kabam.lib.net.NetConfig;
@@ -29,6 +30,7 @@ import kabam.rotmg.maploading.MapLoadingConfig;
 import kabam.rotmg.minimap.MiniMapConfig;
 import kabam.rotmg.news.NewsConfig;
 import kabam.rotmg.servers.ServersConfig;
+import kabam.rotmg.stage3D.Renderer;
 import kabam.rotmg.stage3D.Stage3DConfig;
 import kabam.rotmg.startup.StartupConfig;
 import kabam.rotmg.startup.control.StartupSignal;
@@ -63,7 +65,8 @@ public class WebMain extends Sprite {
         this.hackParameters();
         this.createContext();
         new AssetLoader().load();
-        stage.scaleMode = StageScaleMode.EXACT_FIT;
+        stage.scaleMode = StageScaleMode.NO_SCALE;
+        stage.align = StageAlign.TOP_LEFT;
         var startup:StartupSignal = this.context.injector.getInstance(StartupSignal);
         startup.dispatch();
         STAGE = stage;
@@ -112,7 +115,7 @@ public class WebMain extends Sprite {
     }
 
     public function onStageResize(_arg_1:Event):void {
-        if (Parameters.data_.FS) {
+        if (Parameters.data_.FS && Renderer.inGame) {
             this.scaleX = (stage.stageWidth / 800);
             this.scaleY = (stage.stageHeight / 600);
             this.x = ((800 - stage.stageWidth) / 2);

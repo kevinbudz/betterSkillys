@@ -6,7 +6,8 @@ package com.company.assembleegameclient.screens
    import flash.display.DisplayObject;
    import flash.display.Shape;
    import flash.display.Sprite;
-   import flash.events.MouseEvent;
+import flash.events.Event;
+import flash.events.MouseEvent;
 
 import io.decagames.rotmg.ui.sliceScaling.SliceScalingBitmap;
 import io.decagames.rotmg.ui.texture.TextureParser;
@@ -37,6 +38,8 @@ import kabam.rotmg.account.core.view.AccountInfoView;
       private var guildText:GuildText;
       
       private var accountInfo:AccountInfoView;
+
+       private static var accountDisplay:DisplayObject;
 
       private var backgroundAll:SliceScalingBitmap;
 
@@ -110,13 +113,18 @@ import kabam.rotmg.account.core.view.AccountInfoView;
       
       public function setAccountInfo(accountInfo:AccountInfoView) : void
       {
-         var display:DisplayObject = null;
+         accountDisplay = null;
          this.accountInfo = accountInfo;
-         display = accountInfo as DisplayObject;
-         display.x = stage.stageWidth - 10;
-         display.y = 2;
-         this.accountInfoLayer.addChild(display);
+          accountDisplay = accountInfo as DisplayObject;
+          accountDisplay.x = stage.stageWidth - 10;
+          accountDisplay.y = 2;
+         this.accountInfoLayer.addChild(accountDisplay);
       }
+
+       public static function reSize(e:Event):void
+       {
+           accountDisplay.x = WebMain.STAGE.stageWidth - 10;
+       }
       
       protected function onMouseOver(event:MouseEvent) : void
       {

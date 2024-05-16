@@ -17,9 +17,9 @@ import kabam.rotmg.assets.services.IconFactory;
       private var priceText_:SimpleText;
       private var currency_:Bitmap;
       
-      public function BuyCharacterRect(model:PlayerModel)
+      public function BuyCharacterRect(model:PlayerModel, addWidth:int)
       {
-         super(2039583,4342338);
+         super(2039583,4342338, addWidth);
          var icon:Shape = this.buildIcon();
          icon.x = 7;
          icon.y = 9;
@@ -37,15 +37,15 @@ import kabam.rotmg.assets.services.IconFactory;
          this.priceText_.text = model.getNextCharSlotPrice().toString();
          this.priceText_.updateMetrics();
          this.priceText_.filters = [new DropShadowFilter(0,0,0,1,8,8)];
-         this.priceText_.x = WIDTH - 45 - this.priceText_.width;
-         this.priceText_.y = 18;
+         this.priceText_.x = this.width - 45 - this.priceText_.width;
+         this.priceText_.y = 16;
          selectContainer.addChild(this.priceText_);
          var bd:BitmapData =
                  model.isNextCharSlotCurrencyFame() ?
                          IconFactory.makeFame() :
                          IconFactory.makeCoin();
          this.currency_ = new Bitmap(bd);
-         this.currency_.x = WIDTH - 43;
+         this.currency_.x = this.width - 43;
          this.currency_.y = 18;
          selectContainer.addChild(this.currency_);
       }

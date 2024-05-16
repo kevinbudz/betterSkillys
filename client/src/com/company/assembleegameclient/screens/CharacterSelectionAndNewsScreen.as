@@ -53,6 +53,8 @@ public class CharacterSelectionAndNewsScreen extends Sprite
 
     private var lines:Shape;
 
+    private var linesTwo:Shape;
+
     private var scrollBar:Scrollbar;
 
     public var close:Signal;
@@ -65,11 +67,16 @@ public class CharacterSelectionAndNewsScreen extends Sprite
 
     public var playGame:Signal;
 
+    public var graphic:Sprite;
+
+    public var newsView:NewsView;
+
     public function CharacterSelectionAndNewsScreen()
     {
         this.playButton = new TitleMenuOption("play",36,true);
         this.backButton = new TitleMenuOption("main",22,false);
         this.classesButton = new TitleMenuOption("classes",22,false);
+        this.graphic = makeScreenGraphic();
         this.newCharacter = new Signal();
         this.chooseName = new Signal();
         this.playGame = new Signal();
@@ -99,6 +106,7 @@ public class CharacterSelectionAndNewsScreen extends Sprite
         this.createNewsText();
         this.createNews();
         this.createBoundaryLines();
+        this.createDividingLines();
         this.createCharacterList();
         this.createButtons();
         this.positionButtons();
@@ -110,37 +118,89 @@ public class CharacterSelectionAndNewsScreen extends Sprite
 
     private function createButtons() : void
     {
+        addChild(this.graphic);
+        addChild(this.playButton);
+        addChild(this.backButton);
+        addChild(this.classesButton);
+        this.addListeners();
+        if (stage)
+            stage.addEventListener("resize", positionButtons);
+        this.playButton.addEventListener(MouseEvent.CLICK,this.onPlayClick);
+    }
+
+    public function addListeners():void
+    {
+        this.playButton.addEventListener(MouseEvent.CLICK, removeListener);
+        this.backButton.addEventListener(MouseEvent.CLICK, removeListener);
+        this.classesButton.addEventListener(MouseEvent.CLICK, removeListener);
+    }
+
+    public function removeListener(e:Event):void
+    {
+        if (stage)
+            stage.removeEventListener("resize", positionButtons);
+        this.playButton.removeEventListener(MouseEvent.CLICK, removeListener);
+        this.backButton.removeEventListener(MouseEvent.CLICK, removeListener);
+        this.classesButton.removeEventListener(MouseEvent.CLICK, removeListener);
+    }
+
+    private function makeScreenGraphic():Sprite
+    {
         var box:Sprite = new Sprite();
         var b:Graphics = box.graphics;
         b.clear();
         b.beginFill(0, 0.5);
-        b.drawRect(0, 525, 800, 75);
+        b.drawRect(0, 0, 1, 75);
         b.endFill();
         addChild(box);
-
-        addChild(this.playButton);
-        addChild(this.backButton);
-        addChild(this.classesButton);
-        this.playButton.addEventListener(MouseEvent.CLICK,this.onPlayClick);
+        return box;
     }
 
-    private function positionButtons() : void
+    private var duringResizing:Boolean = false;
+
+    private function positionButtons(e:Event = null) : void
     {
+        if (e != null)
+        {
+            if (!duringResizing)
+            {
+                duringResizing = true;
+                stage.addEventListener(MouseEvent.MOUSE_OUT, redraw);
+            }
+            ScreenBase.reSize(e);
+            AccountScreen.reSize(e);
+        }
+        this.lines.width = stage.stageWidth;
+        this.linesTwo.x = stage.stageWidth - 173;
+        this.linesTwo.height = 100 - (stage.stageHeight - 75);
+        this.graphic.width = stage.stageWidth;
+        this.graphic.y = this.getReferenceRectangle().height - 75;
+        this.newsView.x = stage.stageWidth - 170;
+        this.creditDisplay.x = stage.stageWidth;
+        this.nameText.x = (stage.stageWidth / 2) - (this.nameText.width / 2);
         this.playButton.x = (this.getReferenceRectangle().width - this.playButton.width) / 2;
-        this.playButton.y = 525;
+        this.playButton.y = stage.stageHeight - 75;
         this.backButton.x = (this.getReferenceRectangle().width - this.backButton.width) / 2 - 94;
-        this.backButton.y = 535;
+        this.backButton.y = stage.stageHeight - 65;
         this.classesButton.x = (this.getReferenceRectangle().width - this.classesButton.width) / 2 + 96;
-        this.classesButton.y = 535;
+        this.classesButton.y = stage.stageHeight - 65;
+    }
+
+    public function redraw(e:Event):void
+    {
+        duringResizing = false;
+        removeChild(this.characterList);
+        this.createCharacterList();
+
+        stage.removeEventListener(MouseEvent.MOUSE_OUT, redraw);
     }
 
     private function createNews() : void
     {
-        var news:NewsView = null;
-        news = new NewsView();
-        news.x = 630;
-        news.y = 117;
-        addChild(news);
+        this.newsView = new NewsView();
+        this.newsView.x = stage.stageWidth - 170;
+        this.newsView.y = 117;
+        addChild(this.newsView);
     }
 
     private function createScrollbar() : void
@@ -155,7 +215,7 @@ public class CharacterSelectionAndNewsScreen extends Sprite
 
     private function createCharacterList() : void
     {
-        this.characterList = new CharacterList(this.model);
+        this.characterList = new CharacterList(this.model, this.getReferenceRectangle().width - 800);
         this.characterList.x = 58;
         this.characterList.y = 105;
         this.characterListHeight = this.characterList.height;
@@ -190,7 +250,7 @@ public class CharacterSelectionAndNewsScreen extends Sprite
     {
         this.creditDisplay = new CreditDisplay();
         this.creditDisplay.draw(this.model.getCredits(),this.model.getFame());
-        this.creditDisplay.x = this.getReferenceRectangle().width;
+        this.creditDisplay.x = stage.stageWidth;
         this.creditDisplay.y = 32;
         addChild(this.creditDisplay);
     }
@@ -212,7 +272,6 @@ public class CharacterSelectionAndNewsScreen extends Sprite
         this.nameText.updateMetrics();
         this.nameText.filters = [this.DROP_SHADOW];
         this.nameText.y = 24;
-        this.nameText.x = (this.getReferenceRectangle().width - this.nameText.width) / 2;
         addChild(this.nameText);
     }
 
@@ -233,10 +292,19 @@ public class CharacterSelectionAndNewsScreen extends Sprite
         this.lines.graphics.lineStyle(2,5526612);
         this.lines.graphics.moveTo(0,100);
         this.lines.graphics.lineTo(this.getReferenceRectangle().width,100);
-        this.lines.graphics.moveTo(616,100);
-        this.lines.graphics.lineTo(616,525);
         this.lines.graphics.lineStyle();
         addChild(this.lines);
+    }
+
+    private function createDividingLines():void
+    {
+        this.linesTwo = new Shape();
+        this.linesTwo.graphics.clear();
+        this.linesTwo.graphics.lineStyle(2,5526612);
+        this.linesTwo.graphics.moveTo(0,100);
+        this.linesTwo.graphics.lineTo(0,this.getReferenceRectangle().height - 75);
+        this.linesTwo.graphics.lineStyle();
+        addChild(this.linesTwo);
     }
 
     private function onChooseName(event:MouseEvent) : void

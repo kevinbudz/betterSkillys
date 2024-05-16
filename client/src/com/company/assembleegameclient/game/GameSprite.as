@@ -28,6 +28,7 @@ import com.gskinner.motion.GTween;
 import flash.display.Bitmap;
 import flash.display.BitmapData;
 import flash.display.Sprite;
+import flash.display.StageAlign;
 import flash.display.StageScaleMode;
 import flash.events.Event;
 import flash.events.MouseEvent;
@@ -460,7 +461,7 @@ public class GameSprite extends Sprite
          this.gsc_.serverConnection.disconnect();
          stage.removeEventListener(Event.ENTER_FRAME,this.onEnterFrame);
          stage.removeEventListener(Event.RESIZE, this.onScreenResize);
-         stage.scaleMode = StageScaleMode.EXACT_FIT;
+         stage.align = StageAlign.TOP_LEFT;
          stage.dispatchEvent(new Event(Event.RESIZE));
          contains(this.map) && removeChild(this.map);
          this.map.dispose();

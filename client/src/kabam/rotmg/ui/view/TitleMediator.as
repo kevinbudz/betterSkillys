@@ -78,32 +78,32 @@ package kabam.rotmg.ui.view
       
       private function handleIntentionToPlay() : void
       {
-         this.enterGame.dispatch();
+          this.enterGame.dispatch();
       }
       
       private function showCreditsScreen() : void
       {
-         this.setScreen.dispatch(new CreditsScreen());
+          this.setScreen.dispatch(new CreditsScreen());
       }
       
       private function showServersScreen() : void
       {
-         this.setScreen.dispatch(new ServersScreen());
+          this.setScreen.dispatch(new ServersScreen());
       }
       
       private function handleIntentionToReviewAccount() : void
       {
-         this.openAccountInfo.dispatch(false);
+          this.openAccountInfo.dispatch(false);
       }
       
       private function showLegendsScreen() : void
       {
-         this.setScreen.dispatch(new LegendsView());
+          this.setScreen.dispatch(new LegendsView());
       }
       
       private function showMapEditor() : void
       {
-         this.setScreen.dispatch(new MapEditor());
+          this.setScreen.dispatch(new MapEditor());
       }
    }
 }
