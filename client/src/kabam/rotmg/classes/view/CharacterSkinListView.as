@@ -10,20 +10,22 @@ package kabam.rotmg.classes.view
       public static const PADDING:int = 5;
       public static const WIDTH:int = 442;
       public static const HEIGHT:int = 410;
-       
-      
-      private const list:VerticalScrollingList = makeList();
+
+      private var list:VerticalScrollingList;
       private var items:Vector.<DisplayObject>;
       
-      public function CharacterSkinListView()
+      public function CharacterSkinListView(height:int = 0)
       {
+         trace(height);
+         this.list = makeList(height);
+         addChild(this.list);
          super();
       }
       
-      private function makeList() : VerticalScrollingList
+      private function makeList(height:int) : VerticalScrollingList
       {
          var list:VerticalScrollingList = new VerticalScrollingList();
-         list.setSize(new Size(WIDTH,HEIGHT));
+         list.setSize(new Size(WIDTH,HEIGHT + height));
          list.scrollStateChanged.add(this.onScrollStateChanged);
          list.setPadding(PADDING);
          addChild(list);

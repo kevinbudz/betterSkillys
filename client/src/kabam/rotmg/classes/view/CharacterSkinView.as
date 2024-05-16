@@ -8,7 +8,8 @@ import com.company.ui.SimpleText;
 import flash.display.Graphics;
 import flash.display.Shape;
    import flash.display.Sprite;
-   import flash.events.MouseEvent;
+import flash.events.Event;
+import flash.events.MouseEvent;
 import flash.filters.DropShadowFilter;
 
 import io.decagames.rotmg.ui.buttons.SliceScalingButton;
@@ -35,7 +36,7 @@ import kabam.rotmg.ui.view.components.ScreenBase;
       private const menuOptions:Sprite = makeMenuOptionsBar();
       private const playBtn:TitleMenuOption = makePlayButton();
       private const backBtn:TitleMenuOption = makeBackButton();
-      private const list:CharacterSkinListView = makeListView();
+      private var list:CharacterSkinListView;
       private const detail:ClassDetailView = makeClassDetailView();
       public const play:Signal = new NativeMappedSignal(playBtn,MouseEvent.CLICK);
       public const back:Signal = new NativeMappedSignal(backBtn,MouseEvent.CLICK);
@@ -43,6 +44,47 @@ import kabam.rotmg.ui.view.components.ScreenBase;
       
       public function CharacterSkinView()
       {
+         if (WebMain.STAGE)
+            WebMain.STAGE.addEventListener(Event.RESIZE, positionButtons);
+         this.makeListView();
+         this.positionButtons();
+      }
+
+      private var duringResizing:Boolean = false;
+      private function positionButtons(e:Event = null) : void
+      {
+         if (e != null)
+         {
+            if (!duringResizing)
+            {
+               duringResizing = true;
+               WebMain.STAGE.addEventListener(MouseEvent.MOUSE_OUT, redraw);
+            }
+            ScreenBase.reSize(e);
+            AccountScreen.reSize(e);
+         }
+
+         var width:int = WebMain.STAGE.stageWidth;
+         var height:int = WebMain.STAGE.stageHeight;
+         this.lines.width = width;
+         this.menuOptions.width = width;
+         this.menuOptions.y = height - 75;
+         this.detail.x = (width / 2) - 400;
+         this.list.x = (width / 2) - 45;
+         this.creditsDisplay.x = width;
+         this.titleText.x = (width / 2) - (this.titleText.width / 2);
+         this.playBtn.x = (width / 2) - (this.playBtn.width / 2);
+         this.playBtn.y = height - 75;
+         this.backBtn.y = height - 65;
+      }
+
+      public function redraw(e:Event):void
+      {
+         duringResizing = false;
+         removeChild(this.list);
+         this.makeListView();
+
+         WebMain.STAGE.removeEventListener(MouseEvent.MOUSE_OUT, redraw);
       }
 
       private function makeTitleText():SimpleText {
@@ -62,7 +104,7 @@ import kabam.rotmg.ui.view.components.ScreenBase;
          var b:Graphics = box.graphics;
          b.clear();
          b.beginFill(0, 0.5);
-         b.drawRect(0, 525, 800, 75);
+         b.drawRect(0, 0, 800, 75);
          b.endFill();
          addChild(box);
          return box;
@@ -85,7 +127,6 @@ import kabam.rotmg.ui.view.components.ScreenBase;
       private function makeCreditDisplay() : CreditDisplay
       {
          var display:CreditDisplay = new CreditDisplay();
-         display.x = 800;
          display.y = 32;
          addChild(display);
          return display;
@@ -98,25 +139,14 @@ import kabam.rotmg.ui.view.components.ScreenBase;
          shape.graphics.lineStyle(2,5526612);
          shape.graphics.moveTo(0,100);
          shape.graphics.lineTo(800,100);
-         shape.graphics.moveTo(346,100);
-         shape.graphics.lineTo(346,525);
          addChild(shape);
          return shape;
-      }
-
-      private function makeScreenGraphic() : ScreenGraphic
-      {
-         var graphic:ScreenGraphic = new ScreenGraphic();
-         addChild(graphic);
-         return graphic;
       }
 
       private function makePlayButton() : TitleMenuOption
       {
          var option:TitleMenuOption = null;
          option = new TitleMenuOption("play",36,false);
-         option.x = 400 - option.width / 2;
-         option.y = 525;
          addChild(option);
          return option;
       }
@@ -125,24 +155,21 @@ import kabam.rotmg.ui.view.components.ScreenBase;
       {
          var option:TitleMenuOption = new TitleMenuOption("back",22,false);
          option.x = 30;
-         option.y = 535;
          addChild(option);
          return option;
       }
       
-      private function makeListView() : CharacterSkinListView
+      private function makeListView():void
       {
-         var view:CharacterSkinListView = new CharacterSkinListView();
-         view.x = 351;
-         view.y = 110;
-         addChild(view);
-         return view;
+         this.list = new CharacterSkinListView(WebMain.STAGE.stageHeight - 600);
+         this.list.x = (WebMain.STAGE.width / 2) - 45;
+         this.list.y = 110;
+         addChild(this.list);
       }
       
       private function makeClassDetailView() : ClassDetailView
       {
          var view:ClassDetailView = new ClassDetailView();
-         view.x = 5;
          view.y = 110;
          addChild(view);
          return view;

@@ -31,6 +31,9 @@ import kabam.rotmg.core.model.PlayerModel;
       public var close:Signal;
       public var selected:Signal;
       private var title:SimpleText;
+      private var graphic:Sprite;
+      private var lines:Sprite;
+      private var container:Sprite;
 
       private var isInitialized:Boolean = false;
 
@@ -45,15 +48,16 @@ import kabam.rotmg.core.model.PlayerModel;
          addChild(new AccountScreen());
       }
 
-      private function makeBar():void
+      private function makeBar():Sprite
       {
          var box:Sprite = new Sprite();
          var b:Graphics = box.graphics;
          b.clear();
          b.beginFill(0, 0.5);
-         b.drawRect(0, 525, 800, 75);
+         b.drawRect(0, 0, 800, 75);
          b.endFill();
          addChild(box);
+         return box;
       }
 
       private function makeTitleText() : void
@@ -68,6 +72,39 @@ import kabam.rotmg.core.model.PlayerModel;
          addChild(this.title);
       }
 
+      private function positionButtons(e:Event = null) : void
+      {
+         if (e != null)
+         {
+            ScreenBase.reSize(e);
+            AccountScreen.reSize(e);
+         }
+
+         var width:int = WebMain.STAGE.stageWidth;
+         var height:int = WebMain.STAGE.stageHeight;
+         this.lines.width = width;
+         this.graphic.width = width;
+         this.graphic.y = height - 75;
+         this.container.x = (width / 2) - (this.container.width / 2);
+         this.creditDisplay_.x = width;
+         this.title.x = (width / 2) - (this.title.width / 2);
+         this.backButton_.x = (width / 2) - (this.backButton_.width / 2);
+         this.backButton_.y = height - 70;
+      }
+
+      private function drawLines():Sprite
+      {
+         var box:Sprite = new Sprite();
+         var b:Graphics = box.graphics;
+         b.clear();
+         b.lineStyle(2,6184542);
+         b.moveTo(0,100);
+         b.lineTo(800,100);
+         b.lineStyle();
+         addChild(box);
+         return box;
+      }
+
       public function initialize(model:PlayerModel) : void
       {
          var playerXML:XML = null;
@@ -80,7 +117,8 @@ import kabam.rotmg.core.model.PlayerModel;
             return;
          }
          this.isInitialized = true;
-         this.makeBar();
+         this.graphic = this.makeBar();
+         addChild(this.graphic);
          this.makeTitleText();
          this.backButton_ = new TitleMenuOption("back",36,false);
          this.backButton_.addEventListener(MouseEvent.CLICK,this.onBackClick);
@@ -88,6 +126,9 @@ import kabam.rotmg.core.model.PlayerModel;
          this.creditDisplay_ = new CreditDisplay();
          this.creditDisplay_.draw(model.getCredits(),model.getFame());
          addChild(this.creditDisplay_);
+         this.creditDisplay_.y = 32;
+         this.container = new Sprite();
+         addChild(this.container);
          for(var i:int = 0; i < ObjectLibrary.playerChars_.length; i++)
          {
             playerXML = ObjectLibrary.playerChars_[i];
@@ -97,28 +138,22 @@ import kabam.rotmg.core.model.PlayerModel;
             {
                overrideIsAvailable = model.isClassAvailability(characterType,SavedCharactersList.UNRESTRICTED);
                charBox = new CharacterBox(playerXML,model.getCharStats()[objectType],model,overrideIsAvailable);
-               charBox.x = 92 + 120 * int(i % 5) + 70 - charBox.width / 2;
+               charBox.x = 120 * int(i % 5) + 70 - charBox.width / 2;
                charBox.y = 120 + 120 * int(i / 5);
                this.boxes_[objectType] = charBox;
                charBox.addEventListener(MouseEvent.ROLL_OVER,this.onCharBoxOver);
                charBox.addEventListener(MouseEvent.ROLL_OUT,this.onCharBoxOut);
                charBox.characterSelectClicked_.add(this.onCharBoxClick);
-               addChild(charBox);
+               this.container.addChild(charBox);
             }
          }
-         this.backButton_.x = stage.stageWidth / 2 - this.backButton_.width / 2;
-         this.backButton_.y = 530;
-         this.creditDisplay_.x = stage.stageWidth;
-         this.creditDisplay_.y = 32;
 
-         var lines:Shape = new Shape();
-         var g:Graphics = lines.graphics;
-         g.clear();
-         g.lineStyle(2,5526612);
-         g.moveTo(0,100);
-         g.lineTo(stage.stageWidth,100);
-         g.lineStyle();
-         addChild(lines);
+         this.lines = drawLines();
+         addChild(this.lines);
+
+         this.positionButtons();
+         if (WebMain.STAGE)
+             WebMain.STAGE.addEventListener(Event.RESIZE, positionButtons);
       }
 
       private function onBackClick(event:Event) : void

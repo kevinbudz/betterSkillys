@@ -42,6 +42,9 @@ public class MemMarket extends Sprite
     private var sellButton_:TitleMenuOption;
     private var content_:Vector.<MemMarketTab>;
     private var selectedTab_:OptionsTabTitle;
+    private var screenGraphic_:Sprite;
+    private var background:Sprite;
+    private var lines:Sprite;
 
     public function MemMarket(gameSprite:GameSprite)
     {
@@ -49,15 +52,14 @@ public class MemMarket extends Sprite
         this.alpha = 0;
         new GTween(this, 0.2, {"alpha": 1});
 
-        /* Draw background */
-        graphics.clear();
-        graphics.beginFill(2829099,0.8);
-        graphics.drawRect(0,0,800,600);
-        graphics.endFill();
-        graphics.lineStyle(2,6184542);
-        graphics.moveTo(0,112);
-        graphics.lineTo(800,112);
-        graphics.lineStyle();
+        this.background = this.drawBackground();
+        addChild(this.background);
+
+        this.lines = this.drawLine();
+        addChild(this.lines);
+
+        this.screenGraphic_ = this.makeScreenGraphic();
+        addChild(this.screenGraphic_);
 
         /* Draw title */
         this.titleText_ = new SimpleText(24, 0xFFFFFF, false, 800, 0);
@@ -70,30 +72,67 @@ public class MemMarket extends Sprite
         this.titleText_.y = 40;
         addChild(this.titleText_);
 
-        this.makeScreenGraphic();
         this.closeButton_ = new TitleMenuOption("close",36,false);
-        this.closeButton_.x = 400 - this.closeButton_.width / 2;
         this.closeButton_.y = 525;
         this.closeButton_.addEventListener(MouseEvent.CLICK, onClose);
         addChild(this.closeButton_);
 
         this.buyButton_ = new TitleMenuOption("buy",22,false);
-        this.buyButton_.addEventListener(MouseEvent.CLICK,this.onBuyClick);
-        this.buyButton_.x = 200 - this.buyButton_.width / 2;
+        this.buyButton_.addEventListener(MouseEvent.CLICK,this.onBuyClick);;
         this.buyButton_.y = 535;
         addChild(this.buyButton_);
 
         this.sellButton_ = new TitleMenuOption("sell",22,false);
         this.sellButton_.addEventListener(MouseEvent.CLICK,this.onSellClick);
-        this.sellButton_.x = 600 - this.sellButton_.width / 2;
         this.sellButton_.y = 535;
         addChild(this.sellButton_);
 
         this.content_ = new Vector.<MemMarketTab>();
         this.addContent(new MemMarketBuyTab(this.gameSprite_));
+        this.positionAssets();
+        if (this.gameSprite_.stage)
+            this.gameSprite_.stage.addEventListener(Event.RESIZE, positionAssets);
     }
 
-    private function makeScreenGraphic():void
+    private function positionAssets(e:Event = null):void
+    {
+        var width:int = this.gameSprite_.stage.stageWidth;
+        var height:int = this.gameSprite_.stage.stageHeight;
+        var sWidth:* = 800 / width;
+        var sHeight:* = 600 / height;
+        var result:* = sHeight / sWidth;
+        this.background.width = 800 * result;
+        this.screenGraphic_.width = 800 * result;
+        this.lines.width = 800 * result;
+        this.closeButton_.x = (400 * result) - this.closeButton_.width / 2;
+        this.buyButton_.x = this.closeButton_.x - 160;
+        this.sellButton_.x = this.closeButton_.x + 200;
+    }
+
+    private function drawBackground():Sprite
+    {
+        var box:Sprite = new Sprite();
+        var b:Graphics = box.graphics;
+        b.clear();
+        b.beginFill(2829099,0.8);
+        b.drawRect(0,0,800,600);
+        b.endFill();
+        addChild(box);
+        return box;
+    }
+
+    private function drawLine():Sprite
+    {   var box:Sprite = new Sprite();
+        var b:Graphics = box.graphics;
+        b.lineStyle(2,6184542);
+        b.moveTo(0,112);
+        b.lineTo(800,112);
+        b.lineStyle();
+        addChild(box);
+        return box;
+    }
+
+    private function makeScreenGraphic():Sprite
     {
         var box:Sprite = new Sprite();
         var b:Graphics = box.graphics;
@@ -102,6 +141,7 @@ public class MemMarket extends Sprite
         b.drawRect(0, 525, 800, 75);
         b.endFill();
         addChild(box);
+        return box;
     }
 
     private function onBuyClick(e:Event):void

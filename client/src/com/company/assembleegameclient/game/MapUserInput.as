@@ -351,7 +351,7 @@ public class MapUserInput
       }
       if (event.keyCode === Parameters.data_.options) {
          this.clearInput();
-         this.layers.overlay.addChild(new Options(this.gs_));
+         this.gs_.forceScaledLayer.addChild(new Options(this.gs_));
       }
       var player:Player = this.gs_.map.player_;
       if(player == null || this.gs_ == null || this.gs_.map == null){ return; }

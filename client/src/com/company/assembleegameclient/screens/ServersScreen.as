@@ -51,6 +51,7 @@ public class ServersScreen extends Sprite
       public var updateServers:Signal;
       private var nexusClicked:NativeSignal;
       private var title:SimpleText;
+      private var screenGraphic:Sprite;
 
       public function ServersScreen()
       {
@@ -60,7 +61,29 @@ public class ServersScreen extends Sprite
          this.updateServers = new Signal();
          addChild(new ScreenBase());
          addChild(new AccountScreen());
+         this.screenGraphic = makeScreenGraphic();
+         addChild(this.screenGraphic);
          this.makeTitleText();
+      }
+
+      private function positionAssets(e:Event = null):void
+      {
+         if (e != null)
+         {
+            ScreenBase.reSize(e);
+            AccountScreen.reSize(e);
+         }
+         var width:int = WebMain.STAGE.stageWidth;
+         var height:int = WebMain.STAGE.stageHeight;
+
+         this.title.x = width / 2 - this.title.width / 2;
+         this.lines_.width = width;
+         this.screenGraphic.width = width;
+         this.screenGraphic.y = height - 75;
+         this.button.x = width / 2 + 200;
+         this.doneButton_.x = width / 2 - this.doneButton_.width / 2;
+         this.doneButton_.y = height - 70;
+         this.content_.x = width / 2 - this.content_.width / 2;
       }
 
       private function makeTitleText() : void
@@ -70,9 +93,20 @@ public class ServersScreen extends Sprite
          this.title.text = "Servers";
          this.title.updateMetrics();
          this.title.filters = [new DropShadowFilter(0,0,0,1,8,8)];
-         this.title.x = 400 - this.title.width / 2;
          this.title.y = 24;
          addChild(this.title);
+      }
+
+      private function makeScreenGraphic():Sprite
+      {
+         var box:Sprite = new Sprite();
+         var b:Graphics = box.graphics;
+         b.clear();
+         b.beginFill(0, 0.5);
+         b.drawRect(0, 0, 1, 75);
+         b.endFill();
+         addChild(box);
+         return box;
       }
       
       private function onScrollBarChange(event:Event) : void
@@ -93,7 +127,6 @@ public class ServersScreen extends Sprite
          this.lines_ = new Shape();
          addChild(this.lines_);
          this.content_ = new Sprite();
-         this.content_.x = 4;
          this.content_.y = 100;
          var maskShape:Shape = new Shape();
          maskShape.graphics.beginFill(16777215);
@@ -116,14 +149,6 @@ public class ServersScreen extends Sprite
             addChild(this.scrollBar_);
          }
 
-         var box:Sprite = new Sprite();
-         var b:Graphics = box.graphics;
-         b.clear();
-         b.beginFill(0, 0.5);
-         b.drawRect(0, 525, 800, 75);
-         b.endFill();
-         addChild(box);
-
          this.doneButton_ = new TitleMenuOption("done",36,false);
          this.doneButton_.addEventListener(MouseEvent.CLICK,this.onDone);
          addChild(this.doneButton_);
@@ -133,11 +158,8 @@ public class ServersScreen extends Sprite
          g.moveTo(0,100);
          g.lineTo(stage.stageWidth,100);
          g.lineStyle();
-         this.doneButton_.x = stage.stageWidth / 2 - this.doneButton_.width / 2;
-         this.doneButton_.y = 530;
 
          this.button = new IconButton(AssetLibrary.getImageFromSet("lofiInterfaceBig",15),"Refresh","refresh_button_servers");
-         this.button.x = 604;
          this.button.y = 126;
          addChild(this.button);
 
@@ -146,6 +168,9 @@ public class ServersScreen extends Sprite
 
          this.addEventListener(Event.ADDED_TO_STAGE,this.onAddedToStage);
          this.addEventListener(Event.REMOVED_FROM_STAGE,this.onRemovedFromStage);
+         this.positionAssets();
+         if (WebMain.STAGE)
+             WebMain.STAGE.addEventListener(Event.RESIZE, positionAssets);
       }
 
       private function onAddedToStage(event:Event) : void

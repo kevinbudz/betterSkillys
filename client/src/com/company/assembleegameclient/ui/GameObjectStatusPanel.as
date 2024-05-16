@@ -139,7 +139,7 @@ package com.company.assembleegameclient.ui
       private function onOptionsClick(event:MouseEvent) : void
       {
          this.gs_.mui_.clearInput();
-         this.gs_.addChild(new Options(this.gs_));
+         this.gs_.forceScaledLayer.addChild(new Options(this.gs_));
       }
       
       public function draw() : void

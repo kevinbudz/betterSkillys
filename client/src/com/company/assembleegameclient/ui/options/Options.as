@@ -14,6 +14,7 @@ import com.company.util.KeyCodes;
 
 import flash.display.BitmapData;
 import flash.display.Graphics;
+import flash.display.Shape;
 import flash.display.Sprite;
 import flash.display.StageDisplayState;
 import flash.display.StageQuality;
@@ -71,6 +72,9 @@ public class Options extends Sprite
    private var selected_:OptionsTabTitle = null;
    private var options_:Vector.<Sprite>;
    private var optionIndex_:int = 0;
+   private var screenGraphic:Sprite;
+   private var background:Sprite;
+   private var lines:Sprite;
 
    public function Options(gs:GameSprite)
    {
@@ -79,31 +83,28 @@ public class Options extends Sprite
       this.options_ = new Vector.<Sprite>();
       super();
       this.gs_ = gs;
-      graphics.clear();
-      graphics.beginFill(2829099,0.8);
-      graphics.drawRect(0,0,800,600);
-      graphics.endFill();
-      graphics.lineStyle(1,6184542);
-      graphics.moveTo(0,100);
-      graphics.lineTo(800,100);
-      graphics.lineStyle();
+      this.background = this.drawBackground();
+      addChild(this.background);
+      this.lines = this.drawLines();
+      addChild(this.lines);
+      this.screenGraphic = this.makeBar();
+      addChild(this.screenGraphic);
       this.title_ = new SimpleText(36,16777215,false,800,0);
       this.title_.setBold(true);
       this.title_.htmlText = "<p align=\"center\">Options</p>";
       this.title_.autoSize = TextFieldAutoSize.CENTER;
       this.title_.filters = [new DropShadowFilter(0,0,0)];
       this.title_.updateMetrics();
-      this.title_.x = 800 / 2 - this.title_.width / 2;
       this.title_.y = 8;
       addChild(this.title_);
       this.makeBar();
       this.continueButton_ = new TitleMenuOption("continue",36,false);
       this.continueButton_.addEventListener(MouseEvent.CLICK,this.onContinueClick);
       addChild(this.continueButton_);
-      this.resetToDefaultsButton_ = new TitleMenuOption("reset to defaults",22,false);
+      this.resetToDefaultsButton_ = new TitleMenuOption("reset",22,false);
       this.resetToDefaultsButton_.addEventListener(MouseEvent.CLICK,this.onResetToDefaultsClick);
       addChild(this.resetToDefaultsButton_);
-      this.homeButton_ = new TitleMenuOption("back to home",22,false);
+      this.homeButton_ = new TitleMenuOption("home",22,false);
       this.homeButton_.addEventListener(MouseEvent.CLICK,this.onHomeClick);
       addChild(this.homeButton_);
       var xOffset:int = 14;
@@ -119,9 +120,52 @@ public class Options extends Sprite
       }
       addEventListener(Event.ADDED_TO_STAGE,this.onAddedToStage);
       addEventListener(Event.REMOVED_FROM_STAGE,this.onRemovedFromStage);
+      this.positionAssets();
+      if (this.gs_.stage)
+          this.gs_.stage.addEventListener(Event.RESIZE, positionAssets);
    }
 
-   private function makeBar():void
+   private function positionAssets(e:Event = null):void
+   {
+      var width:int = this.gs_.stage.stageWidth;
+      var height:int = this.gs_.stage.stageHeight;
+      var sWidth:* = 800 / width;
+      var sHeight:* = 600 / height;
+      var result:* = sHeight / sWidth;
+      this.lines.width = 800 * result;
+      this.background.width = 800 * result;
+      this.screenGraphic.width = 800 * result;
+      this.title_.x = (400 * result) - this.title_.width / 2;
+      this.continueButton_.x =  (400 * result) - this.continueButton_.width / 2;
+      this.resetToDefaultsButton_.x = this.continueButton_.x - 200;
+      this.homeButton_.x = this.continueButton_.x + 250;
+   }
+
+   private function drawBackground():Sprite
+   {
+      var box:Sprite = new Sprite();
+      var b:Graphics = box.graphics;
+      b.clear();
+      b.beginFill(2829099,0.8);
+      b.drawRect(0,0,800,600);
+      b.endFill();
+      addChild(box);
+      return box;
+   }
+
+   private function drawLines():Sprite
+   {
+      var box:Sprite = new Sprite();
+      var b:Graphics = box.graphics;
+      b.clear();
+      b.lineStyle(2,6184542);
+      b.moveTo(0,100);
+      b.lineTo(800,100);
+      b.lineStyle();
+      addChild(box);
+      return box;
+   }
+   private function makeBar():Sprite
    {
       var box:Sprite = new Sprite();
       var b:Graphics = box.graphics;
@@ -130,6 +174,7 @@ public class Options extends Sprite
       b.drawRect(0, 525, 800, 75);
       b.endFill();
       addChild(box);
+      return box;
    }
 
    private function onContinueClick(event:MouseEvent) : void
@@ -220,15 +265,12 @@ public class Options extends Sprite
 
    private function onAddedToStage(event:Event) : void
    {
-      this.continueButton_.x = 400 - this.continueButton_.width / 2;
-      this.continueButton_.y = 525;
-      this.resetToDefaultsButton_.x = 20;
-      this.resetToDefaultsButton_.y = 535;
-      this.homeButton_.x = 620;
-      this.homeButton_.y = 535;
       this.setSelected(this.tabs_[0]);
       stage.addEventListener(KeyboardEvent.KEY_DOWN,this.onKeyDown,false,1);
       stage.addEventListener(KeyboardEvent.KEY_UP,this.onKeyUp,false,1);
+      this.continueButton_.y = 525;
+      this.resetToDefaultsButton_.y = 535;
+      this.homeButton_.y = 535;
    }
 
    private function onRemovedFromStage(event:Event) : void

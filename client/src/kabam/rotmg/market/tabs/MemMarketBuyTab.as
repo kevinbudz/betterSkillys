@@ -97,13 +97,25 @@ public class MemMarketBuyTab extends MemMarketTab
         this.resultItems_ = new Vector.<MemMarketBuyItem>();
 
         this.sortChoices_ = new DropDown(SortUtils.SORT_CHOICES, 200, 26);
-        this.sortChoices_.x = 590;
         this.sortChoices_.y = 75;
         this.sortChoices_.setValue(SortUtils.LOWEST_TO_HIGHEST);
         this.sortChoices_.addEventListener(Event.CHANGE, this.onSortChoicesChanged);
         addChild(this.sortChoices_);
 
         this.searchItemsFunc(true);
+        this.positionAssets();
+        if (this.gameSprite_.stage)
+            this.gameSprite_.stage.addEventListener(Event.RESIZE, positionAssets);
+    }
+
+    private function positionAssets(e:Event = null):void
+    {
+        var width:int = this.gameSprite_.stage.stageWidth;
+        var height:int = this.gameSprite_.stage.stageHeight;
+        var sWidth:* = 800 / width;
+        var sHeight:* = 600 / height;
+        var result:* = sHeight / sWidth;
+        this.sortChoices_.x = (800 * result) - this.sortChoices_.width - 10;
     }
 
     private function onSortChoicesChanged(event:Event) : void

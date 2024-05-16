@@ -53,6 +53,10 @@ import kabam.rotmg.legends.model.Legend;
 
       private var count:int;
 
+      private var screenGraphic:Sprite;
+
+      private var lines:Shape;
+
       public function LegendsView()
       {
          super();
@@ -60,16 +64,40 @@ import kabam.rotmg.legends.model.Legend;
          this.makeTitleText();
          this.makeLoadingBanner();
          this.makeMainContainer();
-         this.makeScreenGraphic();
+         this.screenGraphic = this.makeScreenGraphic();
+         addChild(this.screenGraphic);
+
          this.makeLines();
          this.makeScrollbar();
          this.makeTimespanTabs();
          this.makeCloseButton();
+         this.positionAssets();
+         if (WebMain.STAGE)
+             WebMain.STAGE.addEventListener(Event.RESIZE, positionAssets);
       }
 
       private function makeScreenBase() : void
       {
          addChild(new ScreenBase());
+      }
+
+      private function positionAssets(e:Event = null)
+      {
+         if (e != null)
+         {
+            ScreenBase.reSize(e);
+         }
+            var width:int = WebMain.STAGE.stageWidth;
+            var height:int = WebMain.STAGE.stageHeight;
+            this.title.x = width / 2 - this.title.width / 2;
+            this.closeButton.x = width / 2 - this.closeButton.width / 2;
+            this.closeButton.y = height - 70;
+            this.mainContainer.x = width / 2 - this.mainContainer.width / 2;
+
+            this.lines.width = width;
+            this.screenGraphic.width = width;
+            this.screenGraphic.y = height - 75;
+            this.scrollBar.x = width - this.scrollBar.width - 4;
       }
 
       private function makeTitleText() : void
@@ -79,7 +107,6 @@ import kabam.rotmg.legends.model.Legend;
          this.title.text = "Legends";
          this.title.updateMetrics();
          this.title.filters = [new DropShadowFilter(0,0,0,1,8,8)];
-         this.title.x = 400 - this.title.width / 2;
          this.title.y = 24;
          addChild(this.title);
       }
@@ -106,29 +133,29 @@ import kabam.rotmg.legends.model.Legend;
          g.drawRect(0,0,LegendListItem.WIDTH,430);
          g.endFill();
          this.mainContainer = new Sprite();
-         this.mainContainer.x = 100;
          this.mainContainer.y = 110;
          this.mainContainer.addChild(shape);
          this.mainContainer.mask = shape;
          addChild(this.mainContainer);
       }
 
-      private function makeScreenGraphic() : void
+      private function makeScreenGraphic():Sprite
       {
          var box:Sprite = new Sprite();
          var b:Graphics = box.graphics;
          b.clear();
          b.beginFill(0, 0.5);
-         b.drawRect(0, 525, 800, 75);
+         b.drawRect(0, 0, 800, 75);
          b.endFill();
          addChild(box);
+         return box;
       }
 
       private function makeLines() : void
       {
-         var lines:Shape = new Shape();
-         addChild(lines);
-         var g:Graphics = lines.graphics;
+         this.lines = new Shape();
+         addChild(this.lines);
+         var g:Graphics = this.lines.graphics;
          g.lineStyle(2,5526612);
          g.moveTo(0,100);
          g.lineTo(800,100);
@@ -137,7 +164,6 @@ import kabam.rotmg.legends.model.Legend;
       private function makeScrollbar() : void
       {
          this.scrollBar = new Scrollbar(16,400);
-         this.scrollBar.x = 800 - this.scrollBar.width - 4;
          this.scrollBar.y = 104;
          addChild(this.scrollBar);
       }
@@ -188,8 +214,6 @@ import kabam.rotmg.legends.model.Legend;
       private function makeCloseButton() : void
       {
          this.closeButton = new TitleMenuOption("done",36,false);
-         this.closeButton.x = 400 - this.closeButton.width / 2;
-         this.closeButton.y = 530;
          addChild(this.closeButton);
          this.closeButton.addEventListener(MouseEvent.CLICK,this.onCloseClick);
       }

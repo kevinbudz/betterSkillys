@@ -22,14 +22,14 @@ public class MarketPanel extends ButtonPanel {
         {
             this.gs_.mui_.setEnablePlayerInput(false); /* Disable player movement */
             this.gs_.mui_.setEnableHotKeysInput(false); /* Disable Hotkeys */
-            this.gs_.addChild(new MemMarket(this.gs_));
+            this.gs_.forceScaledLayer.addChild(new MemMarket(this.gs_));
         }
     }
 
     override protected function onButtonClick(evt:MouseEvent):void{
         this.gs_.mui_.setEnablePlayerInput(false); /* Disable player movement */
         this.gs_.mui_.setEnableHotKeysInput(false); /* Disable Hotkeys */
-        this.gs_.addChild(new MemMarket(this.gs_));
+        this.gs_.forceScaledLayer.addChild(new MemMarket(this.gs_));
     }
 
 

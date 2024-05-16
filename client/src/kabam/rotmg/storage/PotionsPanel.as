@@ -15,12 +15,12 @@ public class PotionsPanel extends ButtonPanel {
     }
 
     override protected function onButtonClick(evt:MouseEvent):void {
-        this.openDialog.dispatch(new PotionsView(this.gs_));
+        this.gs_.scaledLayer.addChild(new PotionsView(this.gs_));
     }
 
     override protected function onKeyDown(evt:KeyboardEvent):void {
         if (evt.keyCode == Parameters.data_.interact && !TextBox.isInputtingText) {
-            this.openDialog.dispatch(new PotionsView(this.gs_));
+            this.gs_.scaledLayer.addChild(new PotionsView(this.gs_));
         }
     }
 

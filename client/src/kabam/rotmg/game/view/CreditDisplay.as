@@ -100,7 +100,7 @@ public class CreditDisplay extends Sprite
       {
          var _local_1:Injector = StaticInjectorContext.getInjector();
          var _local_2:OpenDialogSignal = _local_1.getInstance(OpenDialogSignal);
-         _local_2.dispatch(new FameContentPopup());
+         this.gs.scaledLayer.addChild(new FameContentPopup());
       }
 
       public function draw(credits:int, fame:int) : void

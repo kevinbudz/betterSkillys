@@ -87,6 +87,8 @@ public class GameSprite extends Sprite
    private var displaysPosY:uint = 4;
    public var chatPlayerMenu:PlayerMenu;
    public var bossHealthBar:BossHealthBar;
+   public var scaledLayer:Sprite;
+   public var forceScaledLayer:Sprite;
 
    public function GameSprite(server:Server, gameId:int, createCharacter:Boolean, charId:int, keyTime:int, key:ByteArray, model:PlayerModel, mapJSON:String)
    {
@@ -168,6 +170,11 @@ public class GameSprite extends Sprite
       this.hudView = new HUDView();
       this.hudView.x = 600;
       addChild(this.hudView);
+
+      this.scaledLayer = new Sprite();
+      addChild(this.scaledLayer);
+      this.forceScaledLayer = new Sprite();
+      addChild(this.forceScaledLayer);
    }
 
    public function initialize() : void
@@ -276,6 +283,26 @@ public class GameSprite extends Sprite
       {
          this.map.scaleX = (sWidth * Parameters.data_.mscale);
          this.map.scaleY = (sHeight * Parameters.data_.mscale);
+      }
+      if (this.scaledLayer != null)
+      {
+         if (uiscale)
+         {
+            this.scaledLayer.scaleX = result;
+            this.scaledLayer.scaleY = 1;
+         }
+         else
+         {
+            this.scaledLayer.scaleX = sWidth;
+            this.scaledLayer.scaleY = sHeight;
+         }
+         this.scaledLayer.x = 400 - ((800 * this.scaledLayer.scaleX) / 2);
+         this.scaledLayer.y = 300 - ((600 * this.scaledLayer.scaleY) / 2);
+      }
+      if (this.forceScaledLayer != null)
+      {
+         this.forceScaledLayer.scaleX = result;
+         this.forceScaledLayer.scaleY = 1;
       }
       if (this.bossHealthBar != null)
       {

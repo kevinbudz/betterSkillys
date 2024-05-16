@@ -59,7 +59,7 @@ package kabam.rotmg.ui.view
       private function onGotoOptions() : void
       {
          this.hudModel.gameSprite.mui_.clearInput();
-         this.hudModel.gameSprite.addChild(new Options(this.hudModel.gameSprite));
+         this.hudModel.gameSprite.forceScaledLayer.addChild(new Options(this.hudModel.gameSprite));
       }
       
       private function onUpdateHUD(player:Player) : void

@@ -4,6 +4,8 @@ import com.company.assembleegameclient.ui.ClickableText;
 import com.company.assembleegameclient.ui.Scrollbar;
 import com.company.rotmg.graphics.ScreenGraphic;
 import com.company.ui.SimpleText;
+
+import flash.display.BlendMode;
 import flash.display.DisplayObject;
 import flash.display.Graphics;
 import flash.display.Shape;
@@ -53,7 +55,9 @@ public class CharacterSelectionAndNewsScreen extends Sprite
 
     private var lines:Shape;
 
-    private var linesTwo:Shape;
+    private var linesTwoContainer:Sprite;
+
+    private var linesTwo:Sprite;
 
     private var scrollBar:Scrollbar;
 
@@ -123,8 +127,8 @@ public class CharacterSelectionAndNewsScreen extends Sprite
         addChild(this.backButton);
         addChild(this.classesButton);
         this.addListeners();
-        if (stage)
-            stage.addEventListener("resize", positionButtons);
+        if (WebMain.STAGE)
+            WebMain.STAGE.addEventListener("resize", positionButtons);
         this.playButton.addEventListener(MouseEvent.CLICK,this.onPlayClick);
     }
 
@@ -137,8 +141,8 @@ public class CharacterSelectionAndNewsScreen extends Sprite
 
     public function removeListener(e:Event):void
     {
-        if (stage)
-            stage.removeEventListener("resize", positionButtons);
+        if (WebMain.STAGE)
+            WebMain.STAGE.removeEventListener("resize", positionButtons);
         this.playButton.removeEventListener(MouseEvent.CLICK, removeListener);
         this.backButton.removeEventListener(MouseEvent.CLICK, removeListener);
         this.classesButton.removeEventListener(MouseEvent.CLICK, removeListener);
@@ -165,25 +169,28 @@ public class CharacterSelectionAndNewsScreen extends Sprite
             if (!duringResizing)
             {
                 duringResizing = true;
-                stage.addEventListener(MouseEvent.MOUSE_OUT, redraw);
+                WebMain.STAGE.addEventListener(MouseEvent.MOUSE_OUT, redraw);
             }
             ScreenBase.reSize(e);
             AccountScreen.reSize(e);
         }
-        this.lines.width = stage.stageWidth;
-        this.linesTwo.x = stage.stageWidth - 173;
-        this.linesTwo.height = 100 - (stage.stageHeight - 75);
-        this.graphic.width = stage.stageWidth;
-        this.graphic.y = this.getReferenceRectangle().height - 75;
-        this.newsView.x = stage.stageWidth - 170;
-        this.creditDisplay.x = stage.stageWidth;
-        this.nameText.x = (stage.stageWidth / 2) - (this.nameText.width / 2);
-        this.playButton.x = (this.getReferenceRectangle().width - this.playButton.width) / 2;
-        this.playButton.y = stage.stageHeight - 75;
-        this.backButton.x = (this.getReferenceRectangle().width - this.backButton.width) / 2 - 94;
-        this.backButton.y = stage.stageHeight - 65;
-        this.classesButton.x = (this.getReferenceRectangle().width - this.classesButton.width) / 2 + 96;
-        this.classesButton.y = stage.stageHeight - 65;
+
+        var width:int = WebMain.STAGE.stageWidth;
+        var height:int = WebMain.STAGE.stageHeight;
+        this.lines.width = width;
+        this.linesTwo.x = width - 180;
+        this.linesTwo.height = (height - 75) - 100;
+        this.graphic.width = width;
+        this.graphic.y = height - 75;
+        this.newsView.x = width - 170;
+        this.creditDisplay.x = width;
+        this.nameText.x = (width / 2) - (this.nameText.width / 2);
+        this.playButton.x = (width - this.playButton.width) / 2;
+        this.playButton.y = height - 75;
+        this.backButton.x = (width - this.backButton.width) / 2 - 94;
+        this.backButton.y = height - 65;
+        this.classesButton.x = (width - this.classesButton.width) / 2 + 96;
+        this.classesButton.y = height - 65;
     }
 
     public function redraw(e:Event):void
@@ -192,13 +199,12 @@ public class CharacterSelectionAndNewsScreen extends Sprite
         removeChild(this.characterList);
         this.createCharacterList();
 
-        stage.removeEventListener(MouseEvent.MOUSE_OUT, redraw);
+        WebMain.STAGE.removeEventListener(MouseEvent.MOUSE_OUT, redraw);
     }
 
     private function createNews() : void
     {
         this.newsView = new NewsView();
-        this.newsView.x = stage.stageWidth - 170;
         this.newsView.y = 117;
         addChild(this.newsView);
     }
@@ -250,18 +256,8 @@ public class CharacterSelectionAndNewsScreen extends Sprite
     {
         this.creditDisplay = new CreditDisplay();
         this.creditDisplay.draw(this.model.getCredits(),this.model.getFame());
-        this.creditDisplay.x = stage.stageWidth;
         this.creditDisplay.y = 32;
         addChild(this.creditDisplay);
-    }
-
-    private function createChooseNameLink() : void
-    {
-        this.nameChooseLink_ = new ClickableText(16,false,"choose name");
-        this.nameChooseLink_.y = 50;
-        this.nameChooseLink_.x = this.getReferenceRectangle().width / 2 - this.nameChooseLink_.width / 2;
-        this.nameChooseLink_.addEventListener(MouseEvent.CLICK,this.onChooseName);
-        addChild(this.nameChooseLink_);
     }
 
     private function createNameText() : void
@@ -298,12 +294,13 @@ public class CharacterSelectionAndNewsScreen extends Sprite
 
     private function createDividingLines():void
     {
-        this.linesTwo = new Shape();
+        this.linesTwoContainer = new Sprite();
+        this.linesTwo = new Sprite();
         this.linesTwo.graphics.clear();
-        this.linesTwo.graphics.lineStyle(2,5526612);
-        this.linesTwo.graphics.moveTo(0,100);
-        this.linesTwo.graphics.lineTo(0,this.getReferenceRectangle().height - 75);
-        this.linesTwo.graphics.lineStyle();
+        this.linesTwo.graphics.beginFill(5526612, 1);
+        this.linesTwo.graphics.drawRect(0,0,2,100);
+        this.linesTwo.graphics.endFill();
+        this.linesTwo.y = 100;
         addChild(this.linesTwo);
     }
 

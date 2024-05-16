@@ -17,8 +17,10 @@ package com.company.assembleegameclient.ui.dialogs
    import flash.events.MouseEvent;
    import flash.filters.DropShadowFilter;
    import flash.text.TextFieldAutoSize;
-   
-   public class Dialog extends Sprite
+
+import kabam.rotmg.stage3D.Renderer;
+
+public class Dialog extends Sprite
    {
       
       public static const BUTTON1_EVENT:String = "DIALOG_BUTTON1";
@@ -152,10 +154,13 @@ package com.company.assembleegameclient.ui.dialogs
       
       private function onAddedToStage(event:Event) : void
       {
-         this.box_.x = 300 - this.box_.width / 2;
+         this.box_.x = 400 - this.box_.width / 2;
          this.box_.y = 300 - this.box_.height / 2;
-         this.box_.scaleX = 800 / stage.stageWidth;
-         this.box_.scaleY = 600 / stage.stageHeight;
+         if (Renderer.inGame)
+         {
+            this.box_.scaleX = 800 / stage.stageWidth;
+            this.box_.scaleY = 600 / stage.stageHeight;
+         }
       }
       
       private function onButton1Click(event:MouseEvent) : void
