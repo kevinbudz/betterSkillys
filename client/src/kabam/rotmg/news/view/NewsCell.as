@@ -44,7 +44,7 @@ package kabam.rotmg.news.view
       
       private var _loader:Loader;
       
-      private var textSize:uint = 18;
+      private var textSize:uint = 17;
       
       public var clickSignal:Signal;
       

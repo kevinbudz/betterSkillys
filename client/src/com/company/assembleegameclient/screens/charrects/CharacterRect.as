@@ -7,7 +7,7 @@ package com.company.assembleegameclient.screens.charrects
    
    public class CharacterRect extends Sprite
    {
-      public static const WIDTH:int = 419;
+      public static const WIDTH:int = 505;
       public static const HEIGHT:int = 59;
 
       private var color_:uint;

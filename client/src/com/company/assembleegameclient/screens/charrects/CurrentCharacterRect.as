@@ -98,7 +98,7 @@ public class CurrentCharacterRect extends CharacterRect
       this.fameBitmapContainer = new Sprite();
       this.fameBitmapContainer.name = "fame_ui";
       this.fameBitmapContainer.addChild(this.fameBitmap);
-      this.fameBitmapContainer.x = 364;
+      this.fameBitmapContainer.x = 435;
       this.fameBitmapContainer.y = 20;
       addChild(this.fameBitmapContainer);
    }
@@ -171,7 +171,7 @@ public class CurrentCharacterRect extends CharacterRect
       this.statsMaxedText.filters = [new DropShadowFilter(0,0,0,1,8,8)];
       this.statsMaxedText.setBold(true);
       this.statsMaxedText.setText(maxedStat + "/8");
-      this.statsMaxedText.x = 330;
+      this.statsMaxedText.x = 400;
       this.statsMaxedText.y = 18;
       if (maxedStat == 8){
          color = uint(16572160)

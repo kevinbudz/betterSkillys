@@ -7,9 +7,9 @@ package kabam.rotmg.news.view
    {
        
       
-      private const LARGE_CELL_WIDTH:Number = 306;
+      private const LARGE_CELL_WIDTH:Number = 154;
       
-      private const LARGE_CELL_HEIGHT:Number = 194;
+      private const LARGE_CELL_HEIGHT:Number = 395;
       
       private const SMALL_CELL_WIDTH:Number = 151;
       
@@ -33,25 +33,25 @@ package kabam.rotmg.news.view
       private function addChildren() : void
       {
          addChild(this.cellOne);
-         addChild(this.cellTwo);
-         addChild(this.cellThree);
+         //addChild(this.cellTwo);
+         //addChild(this.cellThree);
       }
       
       private function positionChildren() : void
       {
-         this.cellTwo.y = this.LARGE_CELL_HEIGHT + this.SPACER;
-         this.cellThree.x = this.SMALL_CELL_WIDTH + this.SPACER;
-         this.cellThree.y = this.LARGE_CELL_HEIGHT + this.SPACER;
+         //this.cellTwo.y = this.LARGE_CELL_HEIGHT + this.SPACER;
+         //this.cellThree.x = this.SMALL_CELL_WIDTH + this.SPACER;
+         //this.cellThree.y = this.LARGE_CELL_HEIGHT + this.SPACER;
       }
       
       internal function update(news:Vector.<NewsCellVO>) : void
       {
          this.cellOne.init(news[0]);
-         this.cellTwo.init(news[1]);
-         this.cellThree.init(news[2]);
+         //this.cellTwo.init(news[1]);
+         //this.cellThree.init(news[2]);
          this.cellOne.load();
-         this.cellTwo.load();
-         this.cellThree.load();
+         //this.cellTwo.load();
+         //this.cellThree.load();
       }
    }
 }

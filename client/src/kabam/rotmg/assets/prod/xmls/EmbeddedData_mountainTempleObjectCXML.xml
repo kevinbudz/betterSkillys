@@ -3205,6 +3205,7 @@
       </AltTexture>
       <Size>100</Size>
       <ShadowSize>60</ShadowSize>
+      <MaxHitPoints>10000</MaxHitPoints>
       <Z>.4</Z>
       <Flying/>
       <Invincible/>
@@ -3261,6 +3262,7 @@
       </AltTexture>
       <Size>100</Size>
       <ShadowSize>60</ShadowSize>
+      <MaxHitPoints>10000</MaxHitPoints>
       <Z>.4</Z>
       <Flying/>
       <Invincible/>
@@ -3320,6 +3322,7 @@
       <Z>.4</Z>
       <Flying/>
       <Invincible/>
+      <MaxHitPoints>10000</MaxHitPoints>
       <NoMiniMap/>
       <Projectile id="1">
          <ObjectId>Water Elemental Bolt</ObjectId>
@@ -3373,6 +3376,7 @@
       </AltTexture>
       <Size>100</Size>
       <ShadowSize>60</ShadowSize>
+      <MaxHitPoints>10000</MaxHitPoints>
       <Z>.4</Z>
       <Flying/>
       <Invincible/>

@@ -138,15 +138,15 @@ public class CharacterSelectionAndNewsScreen extends Sprite
     {
         var news:NewsView = null;
         news = new NewsView();
-        news.x = 475;
-        news.y = 112;
+        news.x = 630;
+        news.y = 117;
         addChild(news);
     }
 
     private function createScrollbar() : void
     {
         this.scrollBar = new Scrollbar(16,399);
-        this.scrollBar.x = 443;
+        this.scrollBar.x = 543;
         this.scrollBar.y = 113;
         this.scrollBar.setIndicatorSize(399,this.characterList.height);
         this.scrollBar.addEventListener(Event.CHANGE,this.onScrollBarChange);
@@ -156,7 +156,7 @@ public class CharacterSelectionAndNewsScreen extends Sprite
     private function createCharacterList() : void
     {
         this.characterList = new CharacterList(this.model);
-        this.characterList.x = 18;
+        this.characterList.x = 58;
         this.characterList.y = 105;
         this.characterListHeight = this.characterList.height;
         addChild(this.characterList);
@@ -171,7 +171,7 @@ public class CharacterSelectionAndNewsScreen extends Sprite
         this.newsText.filters = [this.DROP_SHADOW];
         this.newsText.x = 493;
         this.newsText.y = 74;
-        addChild(this.newsText);
+        //addChild(this.newsText);
     }
 
     private function createSelectCharacterText() : void
@@ -233,8 +233,8 @@ public class CharacterSelectionAndNewsScreen extends Sprite
         this.lines.graphics.lineStyle(2,5526612);
         this.lines.graphics.moveTo(0,100);
         this.lines.graphics.lineTo(this.getReferenceRectangle().width,100);
-        this.lines.graphics.moveTo(466,100);
-        this.lines.graphics.lineTo(466,526);
+        this.lines.graphics.moveTo(616,100);
+        this.lines.graphics.lineTo(616,525);
         this.lines.graphics.lineStyle();
         addChild(this.lines);
     }

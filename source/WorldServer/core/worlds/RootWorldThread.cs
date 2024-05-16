@@ -8,7 +8,7 @@ namespace WorldServer.core.worlds
 {
     public sealed class RootWorldThread
     {
-        public const int TICK_TIME_MS = 200;
+        public const int TICK_TIME_MS = 100;
 
         private readonly WorldManager WorldManager;
         private World World;
