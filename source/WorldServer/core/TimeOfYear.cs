@@ -31,7 +31,7 @@ namespace WorldServer.core
             _ => throw new Exception($"Unknown Season: {season}")
         };
 
-        public static bool IsWinter() => CurrentMonth == Month.May || CurrentMonth <= (Month)2; // December, January, February
+        public static bool IsWinter() => CurrentMonth == Month.December || CurrentMonth <= (Month)2; // December, January, February
         public static bool IsSpring() => CurrentMonth >= (Month)3 && CurrentMonth <= (Month)5; // March, April, May
         public static bool IsSummer() => CurrentMonth >= (Month)5 && CurrentMonth <= (Month)8; // June, July, August
         public static bool IsFall() => CurrentMonth >= (Month)9 && CurrentMonth <= (Month)11; // September, October, November
