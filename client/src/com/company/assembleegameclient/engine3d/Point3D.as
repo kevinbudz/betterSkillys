@@ -1,6 +1,7 @@
 package com.company.assembleegameclient.engine3d
 {
 import com.company.assembleegameclient.map.Camera;
+import com.company.assembleegameclient.parameters.Parameters;
 import com.company.util.Trig;
 import flash.display.BitmapData;
 import flash.display.GraphicsBitmapFill;
@@ -73,8 +74,13 @@ public class Point3D
          this.bitmapFill_.bitmapData = bitmapData;
          m = this.bitmapFill_.matrix;
          m.identity();
-         m.scale(2 * s / bitmapData.width,2 * s / bitmapData.height);
-         m.translate(-s,-s);
+         if (!Parameters.data_.projOutline) {
+           m.scale(2 * s / bitmapData.width, 2 * s / bitmapData.height);
+            m.translate(-s, -s);
+         }
+         else{
+            m.translate(-(bitmapData.width / 2), -(bitmapData.height / 2));
+         }
          m.rotate(angle);
          m.translate(this.posS_.x,this.posS_.y);
          graphicsData.push(this.bitmapFill_);

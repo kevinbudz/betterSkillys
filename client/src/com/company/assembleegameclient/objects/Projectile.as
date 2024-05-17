@@ -120,20 +120,15 @@ public class Projectile extends BasicObject
          this.size = ObjectLibrary.getSizeFromType(this.containerType_);
       }
 
-      if(this.projProps_.size_ >= 0)
-      {
+      if (this.projProps_.size_ > 0) {
          this.size = this.projProps_.size_;
       }
-      else
-      {
+      else {
          this.size = ObjectLibrary.getSizeFromType(this.containerType_);
       }
-
-      if (Parameters.data_.projOutline) {
-         this.texture_ = TextureRedrawer.redraw(this.texture_, this.size * 2, true, 0);
-      }
-
       this.p_.setSize(8 * (this.size / 100));
+      if (this.texture_.width >= 16)
+         this.size /= this.texture_.width / 8;
 
       this.damage_ = 0;
    }
@@ -404,13 +399,18 @@ public class Projectile extends BasicObject
 
    override public function draw(_arg_1:Vector.<IGraphicsData>, _arg_2:Camera, _arg_3:int):void
    {
+      var _local_4:BitmapData = this.texture_;
+      if (Parameters.data_.projOutline)
+      {
+         _local_4 = TextureRedrawer.redraw(_local_4, this.size, true, 0);
+      };
       var _local_5:Number = ((this.props_.rotation_ == 0) ? 0 : (_arg_3 / this.props_.rotation_));
       this.staticVector3D_.x = x_;
       this.staticVector3D_.y = y_;
       this.staticVector3D_.z = z_;
       var _local_6:Number = ((Parameters.data_.smartProjectiles) ? this.getDirectionAngle(_arg_3) : this.angle_);
       var _local_7:Number = (((_local_6 - _arg_2.angleRad_) + this.props_.angleCorrection_) + _local_5);
-      this.p_.draw(_arg_1, this.staticVector3D_, _local_7, _arg_2.wToS_, _arg_2, this.texture_);
+      this.p_.draw(_arg_1, this.staticVector3D_, _local_7, _arg_2.wToS_, _arg_2, _local_4);
       if (this.projProps_.particleTrail_)
       {
          if (Parameters.data_.eyeCandyParticles)
