@@ -56,20 +56,20 @@ public class Dialog extends Sprite
       
       public var offsetY:Number = 0;
 
+      private var background:Sprite;
+
       
       public function Dialog(text:String, title:String, button1:String, button2:String, background:Boolean = false)
       {
          this.box_ = new Sprite();
+         this.background = new Sprite();
          super();
 
          if (background)
          {
-            graphics.clear();
-            graphics.beginFill(2829099,0.8);
-            graphics.drawRect(0,0,WebMain.STAGE.width,WebMain.STAGE.height);
-            graphics.endFill();
+            this.background = this.drawBackground();
+            addChild(this.background);
          }
-
          this.initText(text);
          this.initTitleText(title);
          if(button1 != null)
@@ -84,6 +84,45 @@ public class Dialog extends Sprite
          }
          this.draw();
          addEventListener(Event.ADDED_TO_STAGE,this.onAddedToStage);
+         this.positionAssets();
+         if (WebMain.STAGE)
+            WebMain.STAGE.addEventListener(Event.RESIZE, positionAssets);
+      }
+
+      public function positionAssets(e:Event = null)
+      {
+         var width:int = WebMain.STAGE.stageWidth;
+         var height:int = WebMain.STAGE.stageHeight;
+         if (!Renderer.inGame)
+         {
+            this.background.width = width;
+            this.background.height = height;
+            this.box_.x = width / 2 - this.box_.width / 2;
+            this.box_.y = height / 2 - this.box_.height / 2;
+         } else
+         {
+            var sWidth:* = 800 / width;
+            var sHeight:* = 600 / height;
+            var result:* = sHeight / sWidth;
+            this.background.width = 800 * result;
+            this.background.height = 600 * result;
+            this.box_.scaleX = 800 / width;
+            this.box_.scaleY = 600 / height;
+            this.box_.x = 400 - this.box_.width / 2;
+            this.box_.y = 300 - this.box_.height / 2;
+         }
+      }
+
+      private function drawBackground():Sprite
+      {
+         var box:Sprite = new Sprite();
+         var b:Graphics = box.graphics;
+         b.clear();
+         b.beginFill(2829099,0.8);
+         b.drawRect(0,0,800,600);
+         b.endFill();
+         addChild(box);
+         return box;
       }
       
       protected function initText(text:String) : void
@@ -151,16 +190,9 @@ public class Dialog extends Sprite
          this.box_.filters = [new DropShadowFilter(0,0,0,1,16,16,1)];
          addChild(this.box_);
       }
-      
+
       private function onAddedToStage(event:Event) : void
       {
-         this.box_.x = 400 - this.box_.width / 2;
-         this.box_.y = 300 - this.box_.height / 2;
-         if (Renderer.inGame)
-         {
-            this.box_.scaleX = 800 / stage.stageWidth;
-            this.box_.scaleY = 600 / stage.stageHeight;
-         }
       }
       
       private function onButton1Click(event:MouseEvent) : void

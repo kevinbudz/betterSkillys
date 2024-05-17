@@ -62,7 +62,6 @@ import flash.events.MouseEvent;
          {
             ScreenBase.reSize(e);
          }
-         trace(infoContainer.width + ", " + continueBtn.width);
          var width:int = WebMain.STAGE.stageWidth;
          var height:int = WebMain.STAGE.stageHeight;
          this.infoContainer.x = width / 2 - this.infoContainer.width / 2 - 5;

@@ -8,6 +8,10 @@ package io.decagames.rotmg.fame
 import com.company.assembleegameclient.sound.SoundEffectLibrary;
 import com.company.assembleegameclient.ui.tooltip.HoverTooltipDelegate;
 
+import flash.events.Event;
+
+import flash.events.MouseEvent;
+
 import kabam.rotmg.dialogs.control.CloseDialogsSignal;
 
 import org.osflash.signals.Signal;
@@ -79,7 +83,7 @@ import robotlegs.bender.bundles.mvcs.Mediator;
             var _local_3:Player;
             var _local_4:SavedCharacter;
             this.closeButton = new SliceScalingButton(TextureParser.instance.getSliceScalingBitmap("UI", "close_button"));
-            this.closeButton.clickSignal.addOnce(this.onClose);
+            this.closeButton.addEventListener(MouseEvent.CLICK, onClose);
             this.close.add(this.onCancel);
             this.view.header.addButton(this.closeButton, PopupHeader.RIGHT_BUTTON);
             this.characterID = ((this.view.characterId == -1) ? this.hudModel.gameSprite.gsc_.charId_ : this.view.characterId);
@@ -145,10 +149,10 @@ import robotlegs.bender.bundles.mvcs.Mediator;
             this.closeDialogs.dispatch();
         }
 
-        private function onClose(_arg_1:BaseButton):void
+        private function onClose(e:Event):void
         {
+            this.view.parent.removeChild(this.view);
             this.view = null;
-            this.close.dispatch();
         }
 
         public function getTotalDungeonCompleted():int

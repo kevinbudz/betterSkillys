@@ -11,7 +11,7 @@ public class DialogUtils
     {
         var dialog:Dialog = new Dialog(description, title, "Close", null, true);
         dialog.addEventListener(Dialog.BUTTON1_EVENT, onDialogClose);
-        gameSprite.mui_.layers.overlay.addChild(dialog);
+        gameSprite.addChild(dialog);
     }
 
     /* Creates and adds a confirm dialog to the overlay */
@@ -21,7 +21,7 @@ public class DialogUtils
         dialog.addEventListener(Dialog.BUTTON1_EVENT, callback); /* Should probably remove this as it could potentially cause a memory leak if used often */
         dialog.addEventListener(Dialog.BUTTON1_EVENT, onDialogClose); /* Add this so we dont have to provide closing callback */
         dialog.addEventListener(Dialog.BUTTON2_EVENT, onDialogClose);
-        gameSprite.mui_.layers.overlay.addChild(dialog);
+        gameSprite.addChild(dialog);
     }
 
     public function returnDialog(gameSprite:GameSprite, title:String, description:String, textOne:String, textTwo:String) : Dialog

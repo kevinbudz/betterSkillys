@@ -20,7 +20,7 @@ import flash.display.Sprite;
          super();
          this.loadingText_ = new SimpleText(36,16777215,false,0,0);
          this.loadingText_.setBold(true);
-         this.loadingText_.htmlText = "<p align=\"center\">Loading...</p>";
+         this.loadingText_.htmlText = "Loading...";
          this.loadingText_.x = 325;
          this.loadingText_.y = 300 - (this.loadingText_.height / 2) + 10;
          this.loadingText_.updateMetrics();
@@ -28,6 +28,7 @@ import flash.display.Sprite;
          addChild(this.loadingText_);
          trace(this.loadingText_.width + ", " + this.loadingText_.height);
          addEventListener(Event.ADDED_TO_STAGE,this.onAddedToStage);
+         new GTween(this.loadingText_, 2, {"scaleX": 1.75, "scaleY": 1.75, "alpha": 0.5});
       }
       
       protected function onAddedToStage(event:Event) : void
