@@ -137,7 +137,7 @@ public class Options extends Sprite
       this.screenGraphic.width = 800 * result;
       this.title_.x = (400 * result) - this.title_.width / 2;
       this.continueButton_.x =  (400 * result) - this.continueButton_.width / 2;
-      this.resetToDefaultsButton_.x = this.continueButton_.x - 200;
+      this.resetToDefaultsButton_.x = this.continueButton_.x - 175;
       this.homeButton_.x = this.continueButton_.x + 250;
    }
 

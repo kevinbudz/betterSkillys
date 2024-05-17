@@ -8,8 +8,9 @@ package com.company.assembleegameclient.mapeditor
    import flash.events.Event;
    import kabam.rotmg.core.model.PlayerModel;
    import kabam.rotmg.servers.api.Server;
-   
-   public class MapEditor extends Sprite
+import kabam.rotmg.ui.view.components.ScreenBase;
+
+public class MapEditor extends Sprite
    {
        
       
@@ -24,9 +25,21 @@ package com.company.assembleegameclient.mapeditor
       public function MapEditor()
       {
          super();
+         addChild(new ScreenBase());
          this.editingScreen_ = new EditingScreen();
          this.editingScreen_.addEventListener(MapTestEvent.MAP_TEST,this.onMapTest);
          addChild(this.editingScreen_);
+         this.rePosition();
+         if (WebMain.STAGE)
+            WebMain.STAGE.addEventListener(Event.RESIZE, rePosition);
+      }
+
+      private function rePosition(e:Event = null)
+      {
+         if (e != null)
+            ScreenBase.reSize(e);
+         this.editingScreen_.scaleX = this.editingScreen_.scaleY = WebMain.STAGE.stageHeight / 600;
+         this.editingScreen_.x = WebMain.STAGE.stageWidth / 2 - this.editingScreen_.width / 2;
       }
       
       public function initialize(model:PlayerModel, server:Server) : void

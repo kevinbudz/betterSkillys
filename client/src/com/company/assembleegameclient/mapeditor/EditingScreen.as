@@ -66,12 +66,12 @@ public class EditingScreen extends Sprite
       private var _search:TextInputField;
 
       public var returnButton_:TitleMenuOption;
+
+      public var container:Sprite;
       
       public function EditingScreen()
       {
          super();
-         addChild(new ScreenBase());
-         //addChild(new AccountScreen());
          this._search = new TextInputField("", false, "", "Search");
          this._search.x = 550;
          this._search.y = 6;
@@ -119,6 +119,14 @@ public class EditingScreen extends Sprite
          this.returnButton_.x = 795 - this.returnButton_.width;
          this.returnButton_.y = 4;
          addChild(this.returnButton_);
+      }
+
+      private function rePosition(e:Event = null)
+      {
+         if (e != null)
+             ScreenBase.reSize(e);
+         this.scaleX = this.scaleY = WebMain.STAGE.stageHeight / 600;
+         this.x = WebMain.STAGE.stageWidth / 2 - this.width / 2;
       }
 
       private function onReturn(e:Event) : void
