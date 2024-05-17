@@ -193,6 +193,7 @@ namespace WorldServer.logic
                     new TimedTransition(250, "fightAgain")
                     ),
                 new State("fightAgain",
+                    new RemoveConditionalEffect(ConditionEffectIndex.Invincible),
                     new Spawn("chasingHorror", 1, 0.5, coolDown: 2000),
                     new Shoot(15, 16, 22.5, 0, coolDown: 5000),
                     new Shoot(10, 4, 90, 1, fixedAngle: 0, coolDown: 3200),
