@@ -3424,6 +3424,7 @@
       <DisplayId>Destroyed Killer Bee Nest</DisplayId>
       <Enemy/>
       <Size>80</Size>
+      <MaxHitPoints>10000</MaxHitPoints>
       <NoMiniMap/>
       <Projectile id="0">
          <ObjectId>EH Red Ball</ObjectId>
