@@ -220,6 +220,8 @@ import kabam.rotmg.legends.model.Legend;
 
       private function onCloseClick(event:MouseEvent) : void
       {
+         if (WebMain.STAGE)
+            WebMain.STAGE.addEventListener(Event.RESIZE, positionAssets);
          this.close.dispatch();
       }
 

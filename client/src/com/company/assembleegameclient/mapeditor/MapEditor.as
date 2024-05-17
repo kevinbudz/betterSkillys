@@ -73,6 +73,8 @@ public class MapEditor extends Sprite
       
       private function cleanupGameSprite() : void
       {
+         if (WebMain.STAGE)
+            WebMain.STAGE.removeEventListener(Event.RESIZE, rePosition);
          this.gameSprite_.removeEventListener(Event.COMPLETE,this.onMapTestDone);
          this.gameSprite_.removeEventListener(ReconnectEvent.RECONNECT,this.onMapTestDone);
          this.gameSprite_.removeEventListener(DeathEvent.DEATH,this.onMapTestDone);

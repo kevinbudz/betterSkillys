@@ -104,14 +104,14 @@ public class MemMarketBuyTab extends MemMarketTab
 
         this.searchItemsFunc(true);
         this.positionAssets();
-        if (this.gameSprite_.stage)
-            this.gameSprite_.stage.addEventListener(Event.RESIZE, positionAssets);
+        if (WebMain.STAGE)
+            WebMain.STAGE.addEventListener(Event.RESIZE, positionAssets);
     }
 
     private function positionAssets(e:Event = null):void
     {
-        var width:int = this.gameSprite_.stage.stageWidth;
-        var height:int = this.gameSprite_.stage.stageHeight;
+        var width:int = WebMain.STAGE.stage.stageWidth;
+        var height:int = WebMain.STAGE.stage.stageHeight;
         var sWidth:* = 800 / width;
         var sHeight:* = 600 / height;
         var result:* = sHeight / sWidth;
@@ -355,6 +355,8 @@ public class MemMarketBuyTab extends MemMarketTab
     /* Clear */
     public override function dispose() : void
     {
+        if (WebMain.STAGE)
+            WebMain.STAGE.removeEventListener(Event.RESIZE, positionAssets);
         this.buySignal_.remove(this.onBuy);
         this.searchSignal_.remove(this.onSearch);
 

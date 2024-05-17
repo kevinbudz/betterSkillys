@@ -6,7 +6,9 @@ package kabam.rotmg.fame.view
    import com.company.assembleegameclient.util.MaskedImage;
    import com.company.assembleegameclient.util.TextureRedrawer;
    import flash.display.BitmapData;
-   import kabam.rotmg.assets.services.CharacterFactory;
+import flash.events.Event;
+
+import kabam.rotmg.assets.services.CharacterFactory;
    import kabam.rotmg.core.signals.GotoPreviousScreenSignal;
    import kabam.rotmg.core.signals.SetScreenSignal;
    import kabam.rotmg.death.model.DeathModel;
@@ -59,6 +61,8 @@ package kabam.rotmg.fame.view
       
       override public function destroy() : void
       {
+         if (WebMain.STAGE)
+            WebMain.STAGE.addEventListener(Event.RESIZE, this.view.positionAssets);
          this.view.closed.remove(this.onClosed);
          this.view.clearBackground();
          this.death && this.death.disposeBackground();

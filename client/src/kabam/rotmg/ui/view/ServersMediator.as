@@ -2,6 +2,8 @@ package kabam.rotmg.ui.view
 {
    import com.company.assembleegameclient.screens.ServersScreen;
 
+import flash.events.Event;
+
 import kabam.lib.tasks.DispatchSignalTask;
 
 import kabam.lib.tasks.TaskMonitor;
@@ -41,6 +43,8 @@ import robotlegs.bender.bundles.mvcs.Mediator;
 
       override public function destroy() : void
       {
+         if (WebMain.STAGE)
+            WebMain.STAGE.addEventListener(Event.RESIZE, this.view.positionAssets);
          this.view.gotoTitle.remove(this.onGotoTitle);
       }
 

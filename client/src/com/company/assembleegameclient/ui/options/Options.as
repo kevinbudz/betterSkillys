@@ -121,14 +121,14 @@ public class Options extends Sprite
       addEventListener(Event.ADDED_TO_STAGE,this.onAddedToStage);
       addEventListener(Event.REMOVED_FROM_STAGE,this.onRemovedFromStage);
       this.positionAssets();
-      if (this.gs_.stage)
-          this.gs_.stage.addEventListener(Event.RESIZE, positionAssets);
+      if (WebMain.STAGE)
+         WebMain.STAGE.stage.addEventListener(Event.RESIZE, positionAssets);
    }
 
    private function positionAssets(e:Event = null):void
    {
-      var width:int = this.gs_.stage.stageWidth;
-      var height:int = this.gs_.stage.stageHeight;
+      var width:int = WebMain.STAGE.stageWidth;
+      var height:int = WebMain.STAGE.stageHeight;
       var sWidth:* = 800 / width;
       var sHeight:* = 600 / height;
       var result:* = sHeight / sWidth;
@@ -290,6 +290,8 @@ public class Options extends Sprite
 
    private function close() : void
    {
+      if (this.gs_.stage)
+         this.gs_.stage.addEventListener(Event.RESIZE, positionAssets);
       stage.focus = null;
       parent.removeChild(this);
    }

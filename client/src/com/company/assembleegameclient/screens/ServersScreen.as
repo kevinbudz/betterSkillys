@@ -66,7 +66,7 @@ public class ServersScreen extends Sprite
          this.makeTitleText();
       }
 
-      private function positionAssets(e:Event = null):void
+      public function positionAssets(e:Event = null):void
       {
          if (e != null)
          {

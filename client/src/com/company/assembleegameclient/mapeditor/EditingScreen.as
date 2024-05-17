@@ -121,14 +121,6 @@ public class EditingScreen extends Sprite
          addChild(this.returnButton_);
       }
 
-      private function rePosition(e:Event = null)
-      {
-         if (e != null)
-             ScreenBase.reSize(e);
-         this.scaleX = this.scaleY = WebMain.STAGE.stageHeight / 600;
-         this.x = WebMain.STAGE.stageWidth / 2 - this.width / 2;
-      }
-
       private function onReturn(e:Event) : void
       {
          this.returnButton_.removeEventListener(MouseEvent.CLICK, onReturn);

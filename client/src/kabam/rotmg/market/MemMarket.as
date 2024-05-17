@@ -90,14 +90,14 @@ public class MemMarket extends Sprite
         this.content_ = new Vector.<MemMarketTab>();
         this.addContent(new MemMarketBuyTab(this.gameSprite_));
         this.positionAssets();
-        if (this.gameSprite_.stage)
-            this.gameSprite_.stage.addEventListener(Event.RESIZE, positionAssets);
+        if (WebMain.STAGE)
+            WebMain.STAGE.addEventListener(Event.RESIZE, positionAssets);
     }
 
     private function positionAssets(e:Event = null):void
     {
-        var width:int = this.gameSprite_.stage.stageWidth;
-        var height:int = this.gameSprite_.stage.stageHeight;
+        var width:int = WebMain.STAGE.stageWidth;
+        var height:int = WebMain.STAGE.stageHeight;
         var sWidth:* = 800 / width;
         var sHeight:* = 600 / height;
         var result:* = sHeight / sWidth;
@@ -175,6 +175,8 @@ public class MemMarket extends Sprite
     /* Remove */
     private function onClose(event:Event) : void
     {
+        if (WebMain.STAGE)
+            WebMain.STAGE.removeEventListener(Event.RESIZE, positionAssets);
         this.gameSprite_.mui_.setEnableHotKeysInput(true); /* Enable Hotkeys */
         this.gameSprite_.mui_.setEnablePlayerInput(true); /* Enable player movement */
         this.gameSprite_ = null;

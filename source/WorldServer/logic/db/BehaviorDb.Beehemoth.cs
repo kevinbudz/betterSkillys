@@ -528,7 +528,7 @@ namespace WorldServer.logic
                     new Shoot(10, 2, 195, 1, 0, coolDown: 3500, coolDownOffset: 1400),
                     new Shoot(10, 2, 195, 1, 120, coolDown: 3500, coolDownOffset: 1400),
                     new Shoot(10, 2, 195, 1, 240, coolDown: 3500, coolDownOffset: 1400),
-                    new TimedTransition(250, "blueBuffer")
+                    new TimedTransition(3250, "blueBuffer")
                     ),
                 new State("blueBuffer",
                     new HpLessTransition(0.75, "kaboomBlue"),
