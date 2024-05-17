@@ -91,6 +91,7 @@ package kabam.rotmg.fame.view
          this.view.setDeathInfo(task.deathDate,task.killer);
          this.view.setIcon(icon);
          this.view.setScore(task.totalFame,task.xml);
+         this.view.positionAssets();
       }
       
       private function makeIcon() : BitmapData

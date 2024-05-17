@@ -14,8 +14,10 @@ package kabam.rotmg.fame.view
    import flash.display.Bitmap;
    import flash.display.BitmapData;
    import flash.display.DisplayObjectContainer;
-   import flash.display.Sprite;
-   import flash.events.MouseEvent;
+import flash.display.Graphics;
+import flash.display.Sprite;
+import flash.events.Event;
+import flash.events.MouseEvent;
    import flash.filters.DropShadowFilter;
    import flash.geom.Rectangle;
    import kabam.rotmg.ui.view.components.ScreenBase;
@@ -39,6 +41,7 @@ package kabam.rotmg.fame.view
       private var isAnimation:Boolean;
       private var isFadeComplete:Boolean;
       private var isDataPopulated:Boolean;
+      private var screenGraphic:Sprite;
       
       public function FameView()
       {
@@ -46,8 +49,40 @@ package kabam.rotmg.fame.view
          addChild(new ScreenBase());
          addChild(this.infoContainer = new Sprite());
          addChild(this.overlayContainer = new Bitmap());
+         this.screenGraphic = this.makeScreenGraphic();
          this.continueBtn = new TitleMenuOption("continue",36,false);
          this.closed = new NativeMappedSignal(this.continueBtn,MouseEvent.CLICK);
+         if (WebMain.STAGE)
+            WebMain.STAGE.addEventListener(Event.RESIZE, positionAssets);
+      }
+
+      public function positionAssets(e:Event = null)
+      {
+         if (e != null)
+         {
+            ScreenBase.reSize(e);
+         }
+         trace(infoContainer.width + ", " + continueBtn.width);
+         var width:int = WebMain.STAGE.stageWidth;
+         var height:int = WebMain.STAGE.stageHeight;
+         this.infoContainer.x = width / 2 - this.infoContainer.width / 2 - 5;
+
+         this.continueBtn.x = width / 2 - this.continueBtn.width / 2;
+         this.continueBtn.y = height - 70;
+         this.screenGraphic.width = width;
+         this.screenGraphic.y = height - 75;
+      }
+
+      private function makeScreenGraphic():Sprite
+      {
+         var box:Sprite = new Sprite();
+         var b:Graphics = box.graphics;
+         b.clear();
+         b.beginFill(0, 0.5);
+         b.drawRect(0, 0, 800, 75);
+         b.endFill();
+         addChild(box);
+         return box;
       }
       
       public function setIsAnimation(isAnimation:Boolean) : void
@@ -85,7 +120,7 @@ package kabam.rotmg.fame.view
          this.title.filters = [new DropShadowFilter(0,0,0,0.5,12,12)];
          this.title.text = CHARACTER_INFO.replace("${NAME}",name).replace("${LEVEL}",level).replace("${TYPE}",ObjectLibrary.typeToDisplayId_[type]);
          this.title.updateMetrics();
-         this.title.x = stage.stageWidth / 2 - this.title.width / 2;
+         this.title.x = 800 / 2 - this.title.width / 2;
          this.title.y = 225;
          this.infoContainer.addChild(this.title);
       }
@@ -97,7 +132,7 @@ package kabam.rotmg.fame.view
          this.date.filters = [new DropShadowFilter(0,0,0,0.5,12,12)];
          this.date.text = (Boolean(killer)?DEATH_INFO_LONG:DEATH_INFO_SHORT).replace("${DATE}",dateStr).replace("${KILLER}",killer);
          this.date.updateMetrics();
-         this.date.x = stage.stageWidth / 2 - this.date.width / 2;
+         this.date.x = 800 / 2 - this.date.width / 2;
          this.date.y = 272;
          this.infoContainer.addChild(this.date);
       }
@@ -114,7 +149,7 @@ package kabam.rotmg.fame.view
          bitmap.y = container.height / 2 - bitmap.height / 2;
          container.addChild(bitmap);
          container.y = 20;
-         container.x = stage.stageWidth / 2 - container.width / 2;
+         container.x = 800 / 2 - container.width / 2;
          this.infoContainer.addChild(container);
       }
       
@@ -140,10 +175,7 @@ package kabam.rotmg.fame.view
       
       private function makeContinueButton() : void
       {
-         this.infoContainer.addChild(new ScreenGraphic());
-         this.continueBtn.x = stage.stageWidth / 2 - this.continueBtn.width / 2;
-         this.continueBtn.y = 520;
-         this.infoContainer.addChild(this.continueBtn);
+         addChild(this.continueBtn);
          if(this.isAnimation)
          {
             this.scoringBox.animateScore();
