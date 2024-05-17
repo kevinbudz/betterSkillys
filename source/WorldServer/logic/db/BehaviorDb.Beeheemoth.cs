@@ -70,13 +70,14 @@ namespace WorldServer.logic
             )
         .Init("EH Blue Guardian Bee",
             new State(
+                new ScaleHP2(20),
                 new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
                 new State("idle",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
                     new TimedTransition(500, "start")
                     ),
                 new State("start",
-                    new Follow(0.8, 12, 2),
+                    new Follow(1.25, 12, 2),
                     new Shoot(10, 4, 90, 0, coolDown: 1000),
                     new Shoot(10, 3, 15, 1, coolDown: 1500),
                     new TossObject("EH Ev Chase Blue Fat Bees", 2, 30, 25000),
@@ -87,19 +88,21 @@ namespace WorldServer.logic
                     new HpLessTransition(0.5, "angy")
                     ),
                 new State("angy",
-                    new Follow(1, 12, 2),
+                    new Follow(1.25, 12, 2),
                     new Shoot(10, 4, 90, 0, coolDown: 1000),
                     new Shoot(10, 3, 15, 1, coolDown: 1500),
                     new Shoot(10, 6, 60, 2, angleOffset: 30, coolDown: 1500),
                     new EntityNotExistsTransition("EH Red Guardian Bee", 30, "oneBeeDead"),
-                    new EntityNotExistsTransition("EH Yellow Guardian Bee", 30, "oneBeeDead")
+                    new EntityNotExistsTransition("EH Yellow Guardian Bee", 30, "oneBeeDead"),
+                    new HpLessTransition(0.1, "decay")
                     ), 
                 new State("oneBeeDead",
                     new Orbit(2.5, 5, 30, "EH Event Hive Corpse"),
                     new Shoot(10, 4, 90, 0, coolDown: 1000),
                     new Shoot(10, 3, 15, 1, coolDown: 1500),
                     new Shoot(10, 6, 60, 2, angleOffset: 30, coolDown: 1500),
-                    new EntitiesNotExistsTransition(30, "backToCenter", "EH Yellow Guardian Bee", "EH Red Guardian Bee")
+                    new EntitiesNotExistsTransition(30, "backToCenter", "EH Yellow Guardian Bee", "EH Red Guardian Bee"),
+                    new HpLessTransition(0.1, "decay")
                     ),
                 new State("backToCenter",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
@@ -126,47 +129,31 @@ namespace WorldServer.logic
                     ),
                 new State("aggro",
                     new Follow(1, 12, 2),
+                    new Shoot(10, 4, 90, 3, 45, coolDown: 400),
+                    new Shoot(10, 4, 90, 4, 45, coolDown: 400, coolDownOffset: 200),
+
                     new Shoot(10, 4, 90, 0, coolDown: 1000),
                     new Shoot(10, 3, 15, 1, coolDown: 1500),
                     new Shoot(10, 6, 60, 2, angleOffset: 30, coolDown: 1500),
-
-                    new Shoot(10, 3, 120, 3, 0, coolDown: 7000),
-                    new Shoot(10, 3, 120, 3, 10, coolDown: 7000, coolDownOffset: 200),
-                    new Shoot(10, 3, 120, 3, 20, coolDown: 7000, coolDownOffset: 400),
-                    new Shoot(10, 3, 120, 3, 30, coolDown: 7000, coolDownOffset: 600),
-                    new Shoot(10, 3, 120, 3, 40, coolDown: 7000, coolDownOffset: 800),
-                    new Shoot(10, 3, 120, 3, 50, coolDown: 7000, coolDownOffset: 1000),
-                    new Shoot(10, 3, 120, 3, 60, coolDown: 7000, coolDownOffset: 1200),
-                    new Shoot(10, 3, 120, 3, 70, coolDown: 7000, coolDownOffset: 1400),
-                    new Shoot(10, 3, 120, 3, 80, coolDown: 7000, coolDownOffset: 1600),
-                    new Shoot(10, 3, 120, 3, 90, coolDown: 7000, coolDownOffset: 1800),
-                    new Shoot(10, 3, 120, 3, 100, coolDown: 7000, coolDownOffset: 2000),
-                    new Shoot(10, 3, 120, 3, 110, coolDown: 7000, coolDownOffset: 2200),
-
-                    new Shoot(10, 3, 120, 4, 120, coolDown: 7000, coolDownOffset: 3500),
-                    new Shoot(10, 3, 120, 4, 110, coolDown: 7000, coolDownOffset: 3700),
-                    new Shoot(10, 3, 120, 4, 100, coolDown: 7000, coolDownOffset: 3900),
-                    new Shoot(10, 3, 120, 4, 90, coolDown: 7000, coolDownOffset: 4100),
-                    new Shoot(10, 3, 120, 4, 80, coolDown: 7000, coolDownOffset: 4300),
-                    new Shoot(10, 3, 120, 4, 70, coolDown: 7000, coolDownOffset: 4500),
-                    new Shoot(10, 3, 120, 4, 60, coolDown: 7000, coolDownOffset: 4700),
-                    new Shoot(10, 3, 120, 4, 50, coolDown: 7000, coolDownOffset: 4900),
-                    new Shoot(10, 3, 120, 4, 40, coolDown: 7000, coolDownOffset: 5100),
-                    new Shoot(10, 3, 120, 4, 30, coolDown: 7000, coolDownOffset: 5300),
-                    new Shoot(10, 3, 120, 4, 20, coolDown: 7000, coolDownOffset: 5500),
-                    new Shoot(10, 3, 120, 4, 10, coolDown: 7000, coolDownOffset: 5700)
+                    new HpLessTransition(0.1, "decay")
+                    ),
+                new State("decay",
+                    new Flash(0xff00000, 2, 4),
+                    new Shoot(10, 18, 20, 2, coolDown: 1000),
+                    new Decay(100)
                     )
                 )
             )
         .Init("EH Yellow Guardian Bee",
             new State(
+                new ScaleHP2(20),
                 new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
                 new State("idle",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
                     new TimedTransition(500, "start")
                     ),
                 new State("start",  
-                    new Follow(0.8, 12, 2),
+                    new Follow(1, 12, 2),
                     new Shoot(10, 4, 90, 0, coolDown: 1000),
                     new Shoot(10, 3, 15, 1, coolDown: 1500),
                     new TossObject("EH Ev Chase Fat Bees", 2, 30, 25000),
@@ -182,14 +169,16 @@ namespace WorldServer.logic
                     new Shoot(10, 3, 15, 1, coolDown: 1500),
                     new Shoot(10, 6, 60, 2, angleOffset: 30, coolDown: 1500),
                     new EntityNotExistsTransition("EH Red Guardian Bee", 30, "oneBeeDead"),
-                    new EntityNotExistsTransition("EH Blue Guardian Bee", 30, "oneBeeDead")
+                    new EntityNotExistsTransition("EH Blue Guardian Bee", 30, "oneBeeDead"),
+                    new HpLessTransition(0.1, "decay")
                     ),
                 new State("oneBeeDead",
                     new Orbit(3, 5, 30, "EH Event Hive Corpse"),
                     new Shoot(10, 4, 90, 0, coolDown: 1000),
                     new Shoot(10, 3, 15, 1, coolDown: 1500),
                     new Shoot(10, 6, 60, 2, angleOffset: 30, coolDown: 1500),
-                    new EntitiesNotExistsTransition(30, "backToCenter", "EH Blue Guardian Bee", "EH Red Guardian Bee")
+                    new EntitiesNotExistsTransition(30, "backToCenter", "EH Blue Guardian Bee", "EH Red Guardian Bee"),
+                    new HpLessTransition(0.1, "decay")
                     ),
                 new State("backToCenter",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
@@ -216,47 +205,31 @@ namespace WorldServer.logic
                     ),
                 new State("aggro",
                     new Follow(1, 12, 2),
+                    new Shoot(10, 4, 90, 3, 45, coolDown: 400),
+                    new Shoot(10, 4, 90, 4, 45, coolDown: 400, coolDownOffset: 200),
+
                     new Shoot(10, 4, 90, 0, coolDown: 1000),
                     new Shoot(10, 3, 15, 1, coolDown: 1500),
                     new Shoot(10, 6, 60, 2, angleOffset: 30, coolDown: 1500),
-
-                    new Shoot(10, 3, 120, 3, 0, coolDown: 7000),
-                    new Shoot(10, 3, 120, 3, 10, coolDown: 7000, coolDownOffset: 200),
-                    new Shoot(10, 3, 120, 3, 20, coolDown: 7000, coolDownOffset: 400),
-                    new Shoot(10, 3, 120, 3, 30, coolDown: 7000, coolDownOffset: 600),
-                    new Shoot(10, 3, 120, 3, 40, coolDown: 7000, coolDownOffset: 800),
-                    new Shoot(10, 3, 120, 3, 50, coolDown: 7000, coolDownOffset: 1000),
-                    new Shoot(10, 3, 120, 3, 60, coolDown: 7000, coolDownOffset: 1200),
-                    new Shoot(10, 3, 120, 3, 70, coolDown: 7000, coolDownOffset: 1400),
-                    new Shoot(10, 3, 120, 3, 80, coolDown: 7000, coolDownOffset: 1600),
-                    new Shoot(10, 3, 120, 3, 90, coolDown: 7000, coolDownOffset: 1800),
-                    new Shoot(10, 3, 120, 3, 100, coolDown: 7000, coolDownOffset: 2000),
-                    new Shoot(10, 3, 120, 3, 110, coolDown: 7000, coolDownOffset: 2200),
-
-                    new Shoot(10, 3, 120, 4, 120, coolDown: 7000, coolDownOffset: 3500),
-                    new Shoot(10, 3, 120, 4, 110, coolDown: 7000, coolDownOffset: 3700),
-                    new Shoot(10, 3, 120, 4, 100, coolDown: 7000, coolDownOffset: 3900),
-                    new Shoot(10, 3, 120, 4, 90, coolDown: 7000, coolDownOffset: 4100),
-                    new Shoot(10, 3, 120, 4, 80, coolDown: 7000, coolDownOffset: 4300),
-                    new Shoot(10, 3, 120, 4, 70, coolDown: 7000, coolDownOffset: 4500),
-                    new Shoot(10, 3, 120, 4, 60, coolDown: 7000, coolDownOffset: 4700),
-                    new Shoot(10, 3, 120, 4, 50, coolDown: 7000, coolDownOffset: 4900),
-                    new Shoot(10, 3, 120, 4, 40, coolDown: 7000, coolDownOffset: 5100),
-                    new Shoot(10, 3, 120, 4, 30, coolDown: 7000, coolDownOffset: 5300),
-                    new Shoot(10, 3, 120, 4, 20, coolDown: 7000, coolDownOffset: 5500),
-                    new Shoot(10, 3, 120, 4, 10, coolDown: 7000, coolDownOffset: 5700)
+                    new HpLessTransition(0.1, "decay")
+                    ),
+                new State("decay",
+                    new Flash(0xff00000, 2, 4),
+                    new Shoot(10, 18, 20, 2, coolDown: 1000),
+                    new Decay(100)
                     )
                 )
             )
         .Init("EH Red Guardian Bee",
             new State(
+                new ScaleHP2(20),
                 new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
                 new State("idle",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
                     new TimedTransition(500, "start")
                     ),
                 new State("start",
-                    new Follow(0.8, 12, 2),
+                    new Follow(1.5, 12, 2),
                     new Shoot(10, 4, 90, 0, coolDown: 1000),
                     new Shoot(10, 3, 15, 1, coolDown: 1500),
                     new TossObject("EH Ev Chase Red Fat Bees", 2, 30, 25000),
@@ -267,19 +240,21 @@ namespace WorldServer.logic
                     new HpLessTransition(0.5, "angy")
                     ),
                 new State("angy",
-                    new Follow(1, 12, 2),
+                    new Follow(1.5, 12, 2),
                     new Shoot(10, 4, 90, 0, coolDown: 1000),
                     new Shoot(10, 3, 15, 1, coolDown: 1500),
                     new Shoot(10, 6, 60, 2, angleOffset: 30, coolDown: 1500),
                     new EntityNotExistsTransition("EH Blue Guardian Bee", 30, "oneBeeDead"),
-                    new EntityNotExistsTransition("EH Yellow Guardian Bee", 30, "oneBeeDead")
+                    new EntityNotExistsTransition("EH Yellow Guardian Bee", 30, "oneBeeDead"),
+                    new HpLessTransition(0.1, "decay")
                     ),
                 new State("oneBeeDead",
                     new Orbit(3.5, 5, 30, "EH Event Hive Corpse"),
                     new Shoot(10, 4, 90, 0, coolDown: 1000),
                     new Shoot(10, 3, 15, 1, coolDown: 1500),
                     new Shoot(10, 6, 60, 2, angleOffset: 30, coolDown: 1500),
-                    new EntitiesNotExistsTransition(30, "backToCenter", "EH Yellow Guardian Bee", "EH Blue Guardian Bee")
+                    new EntitiesNotExistsTransition(30, "backToCenter", "EH Yellow Guardian Bee", "EH Blue Guardian Bee"),
+                    new HpLessTransition(0.1, "decay")
                     ),
                 new State("backToCenter",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
@@ -306,40 +281,25 @@ namespace WorldServer.logic
                     ),
                 new State("aggro",
                     new Follow(1, 12, 2),
+                    new Shoot(10, 4, 90, 3, 45, coolDown: 400),
+                    new Shoot(10, 4, 90, 4, 45, coolDown: 400, coolDownOffset: 200),
+
                     new Shoot(10, 4, 90, 0, coolDown: 1000),
                     new Shoot(10, 3, 15, 1, coolDown: 1500),
                     new Shoot(10, 6, 60, 2, angleOffset: 30, coolDown: 1500),
                     new Shoot(10, 3, 120, 3, 0, coolDown: 7000),
-
-                    new Shoot(10, 3, 120, 3, 10, coolDown: 7000, coolDownOffset: 200),
-                    new Shoot(10, 3, 120, 3, 20, coolDown: 7000, coolDownOffset: 400),
-                    new Shoot(10, 3, 120, 3, 30, coolDown: 7000, coolDownOffset: 600),
-                    new Shoot(10, 3, 120, 3, 40, coolDown: 7000, coolDownOffset: 800),
-                    new Shoot(10, 3, 120, 3, 50, coolDown: 7000, coolDownOffset: 1000),
-                    new Shoot(10, 3, 120, 3, 60, coolDown: 7000, coolDownOffset: 1200),
-                    new Shoot(10, 3, 120, 3, 70, coolDown: 7000, coolDownOffset: 1400),
-                    new Shoot(10, 3, 120, 3, 80, coolDown: 7000, coolDownOffset: 1600),
-                    new Shoot(10, 3, 120, 3, 90, coolDown: 7000, coolDownOffset: 1800),
-                    new Shoot(10, 3, 120, 3, 100, coolDown: 7000, coolDownOffset: 2000),
-                    new Shoot(10, 3, 120, 3, 110, coolDown: 7000, coolDownOffset: 2200),
-
-                    new Shoot(10, 3, 120, 4, 120, coolDown: 7000, coolDownOffset: 3500),
-                    new Shoot(10, 3, 120, 4, 110, coolDown: 7000, coolDownOffset: 3700),
-                    new Shoot(10, 3, 120, 4, 100, coolDown: 7000, coolDownOffset: 3900),
-                    new Shoot(10, 3, 120, 4, 90, coolDown: 7000, coolDownOffset: 4100),
-                    new Shoot(10, 3, 120, 4, 80, coolDown: 7000, coolDownOffset: 4300),
-                    new Shoot(10, 3, 120, 4, 70, coolDown: 7000, coolDownOffset: 4500),
-                    new Shoot(10, 3, 120, 4, 60, coolDown: 7000, coolDownOffset: 4700),
-                    new Shoot(10, 3, 120, 4, 50, coolDown: 7000, coolDownOffset: 4900),
-                    new Shoot(10, 3, 120, 4, 40, coolDown: 7000, coolDownOffset: 5100),
-                    new Shoot(10, 3, 120, 4, 30, coolDown: 7000, coolDownOffset: 5300),
-                    new Shoot(10, 3, 120, 4, 20, coolDown: 7000, coolDownOffset: 5500),
-                    new Shoot(10, 3, 120, 4, 10, coolDown: 7000, coolDownOffset: 5700)
+                    new HpLessTransition(0.1, "decay")
+                    ),
+                new State("decay",
+                    new Flash(0xff00000, 2, 4),
+                    new Shoot(10, 18, 20, 2, coolDown: 1000),
+                    new Decay(100)
                     )
                 )
             )
         .Init("EH Hive Bomb",
             new State(
+                new ScaleHP2(10),
                 new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
                 new State("init",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
@@ -461,15 +421,17 @@ namespace WorldServer.logic
             )
         .Init("EH Event Hive",
             new State(
+                new ScaleHP2(20),
                 new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
                 new PlaceMap("setpieces/killer_bee_nest.jm", true),
                 new MoveLine(0.5, 315, 1),
                 new State("init",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
-                    new EntityNotExistsTransition("EH Hive Bomb", 20, "startBlue")
+                    new TimedTransition(1000, "invincBlue")
                     ),
                 new State("invincBlue",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
+                    new Grenade(3.5, 100, coolDown: 1250, color: 255),
                     new Shoot(10, 6, 6, 3, 0, coolDown: 3500),
                     new Shoot(10, 6, 6, 3, 90, coolDown: 3500),
                     new Shoot(10, 6, 6, 3, 180, coolDown: 3500),
@@ -479,10 +441,11 @@ namespace WorldServer.logic
                     new Shoot(10, 5, 7, 2, 180, coolDown: 3500),
                     new Shoot(10, 5, 7, 2, 270, coolDown: 3500),
                     new EntityNotExistsTransition("EH Hive Bomb", 20, "startBlue"),
-                    new TimedTransition(3500, "kaboomRed")
+                    new TimedTransition(3500, "invincRed")
                     ),
                 new State("invincRed",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
+                    new Grenade(3.5, 100, coolDown: 1250, color: 16742400),
                     new Shoot(10, 6, 6, 4, 0, coolDown: 3500),
                     new Shoot(10, 6, 6, 4, 90, coolDown: 3500),
                     new Shoot(10, 6, 6, 4, 180, coolDown: 3500),
@@ -492,10 +455,11 @@ namespace WorldServer.logic
                     new Shoot(10, 5, 7, 0, 180, coolDown: 3500),
                     new Shoot(10, 5, 7, 0, 270, coolDown: 3500),
                     new EntityNotExistsTransition("EH Hive Bomb", 20, "startBlue"),
-                    new TimedTransition(3500, "kaboomYellow")
+                    new TimedTransition(3500, "invincYellow")
                     ),
                 new State("invincYellow",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
+                    new Grenade(3.5, 100, coolDown: 1250, color: 16776960),
                     new Shoot(10, 6, 6, 5, 0, coolDown: 3500),
                     new Shoot(10, 6, 6, 5, 90, coolDown: 3500),
                     new Shoot(10, 6, 6, 5, 180, coolDown: 3500),
@@ -505,10 +469,13 @@ namespace WorldServer.logic
                     new Shoot(10, 5, 7, 2, 180, coolDown: 3500),
                     new Shoot(10, 5, 7, 2, 270, coolDown: 3500),
                     new EntityNotExistsTransition("EH Hive Bomb", 20, "startBlue"),
-                    new TimedTransition(3500, "skipToBees")
+                    new TimedTransition(3500, "invincBlue")
                     ),
                 new State("startBlue",
-                    new Grenade(2.5, 100, coolDown: 3500),
+                    new Grenade(3.5, 100, coolDown: 1250, color: 255),
+                    new Grenade(1.5, 80, 8, 0, coolDown: 2000),
+                    new Grenade(1.5, 80, 8, 120, coolDown: 2000),
+                    new Grenade(1.5, 80, 8, 240, coolDown: 2000),
                     new Shoot(10, 3, 120, 1, 0, coolDown: 3500),
                     new Shoot(10, 2, 35, 1, 0, coolDown: 3500, coolDownOffset: 200),
                     new Shoot(10, 2, 35, 1, 120, coolDown: 3500, coolDownOffset: 200),
@@ -535,7 +502,10 @@ namespace WorldServer.logic
                     new TimedTransition(3500, "startRed")
                     ),
                 new State("startRed",
-                    new Grenade(2.5, 100, coolDown: 3500),
+                    new Grenade(3.5, 100, coolDown: 1250, color: 16742400),
+                    new Grenade(1.5, 80, 8, 0, coolDown: 1500),
+                    new Grenade(1.5, 80, 8, 120, coolDown: 1500),
+                    new Grenade(1.5, 80, 8, 240, coolDown: 1500),
                     new Shoot(10, 3, 120, 0, 60, coolDown: 3500),
                     new Shoot(10, 2, 35, 0, 60, coolDown: 3500, coolDownOffset: 200),
                     new Shoot(10, 2, 35, 0, 180, coolDown: 3500, coolDownOffset: 200),
@@ -562,7 +532,10 @@ namespace WorldServer.logic
                     new TimedTransition(3500, "startYellow")
                     ),
                 new State("startYellow",
-                    new Grenade(2.5, 100, coolDown: 3500),
+                    new Grenade(3.5, 100, coolDown: 1250, color: 16776960),
+                    new Grenade(1.5, 80, 8, 0, coolDown: 1500),
+                    new Grenade(1.5, 80, 8, 120, coolDown: 1500),
+                    new Grenade(1.5, 80, 8, 240, coolDown: 1500),
                     new Shoot(10, 3, 120, 2, 0, coolDown: 3500),
                     new Shoot(10, 2, 35, 2, 0, coolDown: 3500, coolDownOffset: 200),
                     new Shoot(10, 2, 35, 2, 120, coolDown: 3500, coolDownOffset: 200),
@@ -589,6 +562,7 @@ namespace WorldServer.logic
                     new TimedTransition(3500, "startBlue")
                     ),
                 new State("kaboomBlue",
+                    new Grenade(3.5, 100, coolDown: 1000, color: 255),
                     new Shoot(10, 6, 6, 3, 0, coolDown: 3500),
                     new Shoot(10, 6, 6, 3, 90, coolDown: 3500),
                     new Shoot(10, 6, 6, 3, 180, coolDown: 3500),
@@ -601,6 +575,7 @@ namespace WorldServer.logic
                     new TimedTransition(3500, "kaboomRed")
                     ),
                 new State("kaboomRed",
+                    new Grenade(3.5, 100, coolDown: 1250, color: 16742400),
                     new Shoot(10, 6, 6, 4, 0, coolDown: 3500),
                     new Shoot(10, 6, 6, 4, 90, coolDown: 3500),
                     new Shoot(10, 6, 6, 4, 180, coolDown: 3500),
@@ -613,6 +588,7 @@ namespace WorldServer.logic
                     new TimedTransition(3500, "kaboomYellow")
                     ),
                 new State("kaboomYellow",
+                    new Grenade(3.5, 100, coolDown: 1250, color: 16776960),
                     new Shoot(10, 6, 6, 5, 0, coolDown: 3500),
                     new Shoot(10, 6, 6, 5, 90, coolDown: 3500),
                     new Shoot(10, 6, 6, 5, 180, coolDown: 3500),
