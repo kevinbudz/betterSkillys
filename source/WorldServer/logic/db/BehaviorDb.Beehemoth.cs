@@ -74,10 +74,10 @@ namespace WorldServer.logic
                 new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
                 new State("idle",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
-                    new TimedTransition(500, "start")
+                    new TimedTransition(1500, "start")
                     ),
                 new State("start",
-                    new Follow(1.25, 12, 2),
+                    new Follow(1.15, 12, 2),
                     new Shoot(10, 4, 90, 0, coolDown: 1000),
                     new Shoot(10, 3, 15, 1, coolDown: 1500),
                     new TossObject("EH Ev Chase Blue Fat Bees", 2, 30, 25000),
@@ -88,7 +88,7 @@ namespace WorldServer.logic
                     new HpLessTransition(0.5, "angy")
                     ),
                 new State("angy",
-                    new Follow(1.25, 12, 2),
+                    new Follow(1.15, 12, 2),
                     new Shoot(10, 4, 90, 0, coolDown: 1000),
                     new Shoot(10, 3, 15, 1, coolDown: 1500),
                     new Shoot(10, 6, 60, 2, angleOffset: 30, coolDown: 1500),
@@ -160,7 +160,7 @@ namespace WorldServer.logic
                 new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
                 new State("idle",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
-                    new TimedTransition(500, "start")
+                    new TimedTransition(1500, "start")
                     ),
                 new State("start",  
                     new Follow(1, 12, 2),
@@ -246,10 +246,10 @@ namespace WorldServer.logic
                 new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
                 new State("idle",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
-                    new TimedTransition(500, "start")
+                    new TimedTransition(1500, "start")
                     ),
                 new State("start",
-                    new Follow(1.5, 12, 2),
+                    new Follow(1.3, 12, 2),
                     new Shoot(10, 4, 90, 0, coolDown: 1000),
                     new Shoot(10, 3, 15, 1, coolDown: 1500),
                     new TossObject("EH Ev Chase Red Fat Bees", 2, 30, 25000),
@@ -260,7 +260,7 @@ namespace WorldServer.logic
                     new HpLessTransition(0.5, "angy")
                     ),
                 new State("angy",
-                    new Follow(1.5, 12, 2),
+                    new Follow(1.3, 12, 2),
                     new Shoot(10, 4, 90, 0, coolDown: 1000),
                     new Shoot(10, 3, 15, 1, coolDown: 1500),
                     new Shoot(10, 6, 60, 2, angleOffset: 30, coolDown: 1500),
