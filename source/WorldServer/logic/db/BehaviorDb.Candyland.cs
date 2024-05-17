@@ -88,15 +88,14 @@ namespace WorldServer.logic
                     new ItemLoot(item: "Purple Gumball", probability: 0.15),
                     new ItemLoot(item: "Blue Gumball", probability: 0.15),
                     new ItemLoot(item: "Green Gumball", probability: 0.15),
-                    new ItemLoot(item: "Yellow Gumball", probability: 0.15),
-                    new TierLoot(tier: 11, type: ItemType.Weapon, probability: 0.04),
-                    new TierLoot(tier: 12, type: ItemType.Weapon, probability: 0.06),
-                    new TierLoot(tier: 11, type: ItemType.Armor, probability: 0.04),
-                    new TierLoot(tier: 12, type: ItemType.Armor, probability: 0.06),
-                    new TierLoot(tier: 5, type: ItemType.Ability, probability: 0.05),
-                    new TierLoot(tier: 6, type: ItemType.Ability, probability: 0.03),
-                    new TierLoot(tier: 6, type: ItemType.Ring, probability: 0.05)
-                )
+                    new ItemLoot(item: "Yellow Gumball", probability: 0.15)
+                    ),
+                new Threshold(.005,
+                    LootTemplates.BasicDrop()
+                    ),
+                new Threshold(.005,
+                    LootTemplates.BasicPots()
+                    )
             )
             .Init("Spoiled Creampuff",
                 new State(
@@ -113,22 +112,20 @@ namespace WorldServer.logic
                     new Wander(speed: 0.4)
                 ),
                 new Threshold(0.01,
-                    new ItemLoot(item: "Potion of Attack", probability: 0.03),
-                    new ItemLoot(item: "Potion of Defense", probability: 0.03),
                     new ItemLoot(item: "Wine Cellar Incantation", probability: 0.02),
                     new ItemLoot(item: "Candy-Coated Armor", probability: 0.005),
                     new ItemLoot(item: "Red Gumball", probability: 0.15),
                     new ItemLoot(item: "Purple Gumball", probability: 0.15),
                     new ItemLoot(item: "Blue Gumball", probability: 0.15),
                     new ItemLoot(item: "Green Gumball", probability: 0.15),
-                    new ItemLoot(item: "Yellow Gumball", probability: 0.15),
-                    new TierLoot(tier: 11, type: ItemType.Weapon, probability: 0.04),
-                    new TierLoot(tier: 12, type: ItemType.Weapon, probability: 0.06),
-                    new TierLoot(tier: 11, type: ItemType.Armor, probability: 0.04),
-                    new TierLoot(tier: 12, type: ItemType.Armor, probability: 0.06),
-                    new TierLoot(tier: 5, type: ItemType.Ability, probability: 0.05),
-                    new TierLoot(tier: 5, type: ItemType.Ring, probability: 0.05)
-                )
+                    new ItemLoot(item: "Yellow Gumball", probability: 0.15)
+                    ),
+                new Threshold(.005,
+                    LootTemplates.BasicDrop()
+                    ),
+                new Threshold(.005,
+                    LootTemplates.BasicPots()
+                    )
             )
             .Init("Desire Troll",
                 new State(
@@ -179,22 +176,20 @@ namespace WorldServer.logic
                     new Wander(speed: 0.4)
                 ),
                 new Threshold(0.01,
-                    new ItemLoot(item: "Potion of Attack", probability: 0.05),
-                    new ItemLoot(item: "Potion of Wisdom", probability: 0.05),
                     new ItemLoot(item: "Wine Cellar Incantation", probability: 0.02),
                     new ItemLoot(item: "Candy-Coated Armor", probability: 0.005),
                     new ItemLoot(item: "Red Gumball", probability: 0.15),
                     new ItemLoot(item: "Purple Gumball", probability: 0.15),
                     new ItemLoot(item: "Blue Gumball", probability: 0.15),
                     new ItemLoot(item: "Green Gumball", probability: 0.15),
-                    new ItemLoot(item: "Yellow Gumball", probability: 0.15),
-                    new TierLoot(tier: 11, type: ItemType.Weapon, probability: 0.04),
-                    new TierLoot(tier: 12, type: ItemType.Weapon, probability: 0.06),
-                    new TierLoot(tier: 11, type: ItemType.Armor, probability: 0.04),
-                    new TierLoot(tier: 12, type: ItemType.Armor, probability: 0.06),
-                    new TierLoot(tier: 5, type: ItemType.Ability, probability: 0.05),
-                    new TierLoot(tier: 5, type: ItemType.Ring, probability: 0.05)
-                )
+                    new ItemLoot(item: "Yellow Gumball", probability: 0.15)
+                    ),
+                new Threshold(.005,
+                    LootTemplates.BasicDrop()
+                    ),
+                new Threshold(.005,
+                    LootTemplates.BasicPots()
+                    )
             )
 
         .Init("Wishing Troll",
@@ -266,23 +261,24 @@ namespace WorldServer.logic
                         )
                 ),
                 new Threshold(0.01,
-                    new ItemLoot(item: "Potion of Defense", probability: 0.05),
-                    new ItemLoot(item: "Potion of Wisdom", probability: 0.05),
+                    new ItemLoot(item: "PaladinST0", probability: 0.025),
+                    new ItemLoot(item: "PaladinST1", probability: 0.025),
+                    new ItemLoot(item: "PaladinST2", probability: 0.025),
+                    new ItemLoot(item: "PaladinST3", probability: 0.025),
                     new ItemLoot(item: "Wine Cellar Incantation", probability: 0.02),
                     new ItemLoot(item: "Candy-Coated Armor", probability: 0.005),
                     new ItemLoot(item: "Red Gumball", probability: 0.15),
                     new ItemLoot(item: "Purple Gumball", probability: 0.15),
                     new ItemLoot(item: "Blue Gumball", probability: 0.15),
                     new ItemLoot(item: "Green Gumball", probability: 0.15),
-                    new ItemLoot(item: "Yellow Gumball", probability: 0.15),
-                    new TierLoot(tier: 11, type: ItemType.Weapon, probability: 0.04),
-                    new TierLoot(tier: 12, type: ItemType.Weapon, probability: 0.06),
-                    new TierLoot(tier: 11, type: ItemType.Armor, probability: 0.04),
-                    new TierLoot(tier: 12, type: ItemType.Armor, probability: 0.06),
-                    new TierLoot(tier: 5, type: ItemType.Ability, probability: 0.05),
-                    new TierLoot(tier: 6, type: ItemType.Ability, probability: 0.03),
-                    new TierLoot(tier: 6, type: ItemType.Ring, probability: 0.05)
-                )
+                    new ItemLoot(item: "Yellow Gumball", probability: 0.15)
+                    ),
+                new Threshold(.005,
+                    LootTemplates.BasicDrop()
+                    ),
+                new Threshold(.005,
+                    LootTemplates.BasicPots()
+                    )
             )
         .Init("Unicorn",
              new State(
@@ -345,24 +341,21 @@ namespace WorldServer.logic
                         )
                 ),
                 new Threshold(0.01,
-                    new ItemLoot(item: "Potion of Attack", probability: 0.05),
-                    new ItemLoot(item: "Potion of Wisdom", probability: 0.05),
+                    new ItemLoot(item: "PaladinST0", probability: 0.025),
                     new ItemLoot(item: "Wine Cellar Incantation", probability: 0.02),
-                    new ItemLoot(item: "Candy-Coated Armor", probability: 0.0008),
+                    new ItemLoot(item: "Candy-Coated Armor", probability: 0.005),
                     new ItemLoot(item: "Red Gumball", probability: 0.15),
                     new ItemLoot(item: "Purple Gumball", probability: 0.15),
                     new ItemLoot(item: "Blue Gumball", probability: 0.15),
                     new ItemLoot(item: "Green Gumball", probability: 0.15),
-                    new ItemLoot(item: "Yellow Gumball", probability: 0.15),
-                    new TierLoot(tier: 11, type: ItemType.Weapon, probability: 0.04),
-                    new TierLoot(tier: 12, type: ItemType.Weapon, probability: 0.06),
-                    new TierLoot(tier: 11, type: ItemType.Armor, probability: 0.04),
-                    new TierLoot(tier: 12, type: ItemType.Armor, probability: 0.06),
-                    new TierLoot(tier: 5, type: ItemType.Ability, probability: 0.05),
-                    new TierLoot(tier: 6, type: ItemType.Ability, probability: 0.03),
-                    new TierLoot(tier: 6, type: ItemType.Ring, probability: 0.05),
-                    new ItemLoot("Pixie-Enchanted Sword", 0.005)
-                )
+                    new ItemLoot(item: "Yellow Gumball", probability: 0.15)
+                    ),
+                new Threshold(.005,
+                    LootTemplates.BasicDrop()
+                    ),
+                new Threshold(.005,
+                    LootTemplates.BasicPots()
+                    )
             )
             .Init("Candyland Boss Spawner",
                 new State(

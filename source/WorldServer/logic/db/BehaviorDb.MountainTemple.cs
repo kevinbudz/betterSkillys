@@ -258,8 +258,19 @@ namespace WorldServer.logic
                     new MoveTo(0.5f, 161.5f, 15.5f),
                     new TimedTransition(4000, "fightAgain")
                     )
+                ),
+                new Threshold(0.01,
+                    new ItemLoot("Wand of the Fallen", 0.003),
+                    new ItemLoot("Orb of Aether", 0.003),
+                    new ItemLoot("Jade Storm", 0.003)
+                    ),
+                new Threshold(.005,
+                    LootTemplates.BasicDrop()
+                    ),
+                new Threshold(.005,
+                    LootTemplates.BasicPots()
+                    )
                 )
-            )
         .Init("chasingHorror",
             new State(
                 new ConditionEffectBehavior(ConditionEffectIndex.Invincible),

@@ -142,8 +142,18 @@ namespace WorldServer.logic
                     new Shoot(10, 18, 20, 2, coolDown: 1000),
                     new Decay(100)
                     )
+                ),
+                new Threshold(0.01,
+                    new ItemLoot("EH Blue Quiver", 0.003),
+                    new ItemLoot("EH Blue Bee Armor", 0.02)
+                    ),
+                new Threshold(.005,
+                    LootTemplates.BasicDrop()
+                    ),
+                new Threshold(.005,
+                    LootTemplates.BasicPots()
+                    )
                 )
-            )
         .Init("EH Yellow Guardian Bee",
             new State(
                 new ScaleHP2(20),
@@ -218,8 +228,18 @@ namespace WorldServer.logic
                     new Shoot(10, 18, 20, 2, coolDown: 1000),
                     new Decay(100)
                     )
+                ),
+                new Threshold(0.01,
+                    new ItemLoot("EH Yellow Quiver", 0.003),
+                    new ItemLoot("EH Yellow Bee Armor", 0.02)
+                    ),
+                new Threshold(.005,
+                    LootTemplates.BasicDrop()
+                    ),
+                new Threshold(.005,
+                    LootTemplates.BasicPots()
+                    )
                 )
-            )
         .Init("EH Red Guardian Bee",
             new State(
                 new ScaleHP2(20),
@@ -295,8 +315,18 @@ namespace WorldServer.logic
                     new Shoot(10, 18, 20, 2, coolDown: 1000),
                     new Decay(100)
                     )
+                ),
+                new Threshold(0.01,
+                    new ItemLoot("EH Red Quiver", 0.003),
+                    new ItemLoot("EH Red Bee Armor", 0.02)
+                    ),
+                new Threshold(.005,
+                    LootTemplates.BasicDrop()
+                    ),
+                new Threshold(.005,
+                    LootTemplates.BasicPots()
+                    )
                 )
-            )
         .Init("EH Hive Bomb",
             new State(
                 new ScaleHP2(10),

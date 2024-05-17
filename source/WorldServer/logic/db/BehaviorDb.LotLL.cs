@@ -108,12 +108,12 @@ namespace WorldServer.logic
                 ),
                 new Threshold(0.005,
                     LootTemplates.BasicDrop()
-                    ),
+                ),
                 new Threshold(0.005,
                     LootTemplates.BasicPots()
-                    ),
-            new Threshold(0.01,
-                new ItemLoot("Shield of Ogmur", 0.001, threshold: 0.03)
+                ),
+                new Threshold(0.01,
+                    new ItemLoot("Shield of Ogmur", 0.003)
                 )
             )
         .Init("Protection Crystal",

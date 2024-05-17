@@ -504,22 +504,14 @@ namespace WorldServer.logic
                         new TimedTransition(time: 8000, targetState: "Ini")
                     )
                 ),
-                new Threshold(0.01,
-                    new TierLoot(10, ItemType.Weapon, .07),
-                    new TierLoot(11, ItemType.Weapon, .07),
-                    new TierLoot(4, ItemType.Ability, .07),
-                    new TierLoot(5, ItemType.Ability, .07),
-                    new TierLoot(11, ItemType.Armor, .07),
-                    new TierLoot(12, ItemType.Armor, .07),
-                    new TierLoot(4, ItemType.Ring, .07),
-                    new TierLoot(5, ItemType.Ring, .07)
+                new Threshold(.005,
+                    LootTemplates.BasicDrop()
                     ),
                 new Threshold(0.01,
-                    new ItemLoot("Potion Tablet", .05),
+                    new ItemLoot("RogueST2", .008),
                     new ItemLoot("Potion of Speed", 0.3, 3),
                     new ItemLoot("Potion of Wisdom", 0.3)
                 )
-            )
-            ;
+            );
     }
 }

@@ -205,28 +205,20 @@ namespace WorldServer.logic
                 new ItemLoot("Potion of Wisdom", 1)
                 ),
             new Threshold(0.03,
-                new ItemLoot("Scepter of Fulmination", 0.00125, threshold: 0.03),
-                new ItemLoot("Conducting Wand", 0.00125)
+                new ItemLoot("Scepter of Fulmination", 0.003),
+                new ItemLoot("Conducting Wand", 0.003)
                 ),
             new Threshold(0.01,
                 new ItemLoot("Robe of the Mad Scientist", 0.005),
                 new ItemLoot("Experimental Ring", 0.01),
-                new ItemLoot("Abomination's Wrath", 0.01),
-                new ItemLoot("Grotesque Scepter", 0.01),
-                new ItemLoot("Garment of the Beast", 0.01),
-                new ItemLoot("Horrific Claws", 0.01),
-                new ItemLoot("Lab Key", 0.001, 0, 0.03),
-                new TierLoot(8, ItemType.Weapon, 0.2),
-                new TierLoot(9, ItemType.Weapon, 0.15),
-                new TierLoot(10, ItemType.Weapon, 0.1),
-                new TierLoot(11, ItemType.Weapon, 0.07),
-                new TierLoot(8, ItemType.Armor, 0.2),
-                new TierLoot(9, ItemType.Armor, 0.15),
-                new TierLoot(10, ItemType.Armor, 0.1),
-                new TierLoot(11, ItemType.Armor, 0.07),
-                new TierLoot(4, ItemType.Ring, 0.15),
-                new TierLoot(4, ItemType.Ability, 0.15),
-                new TierLoot(5, ItemType.Ability, 0.1)
+                new ItemLoot("Abomination's Wrath", 0.005),
+                new ItemLoot("Grotesque Scepter", 0.005),
+                new ItemLoot("Garment of the Beast", 0.005),
+                new ItemLoot("Horrific Claws", 0.005),
+                new ItemLoot("Lab Key", 0.001, 0, 0.03)
+                ),
+                new Threshold(.005,
+                    LootTemplates.BasicDrop()
                 )
             )
         .Init("Dr Terrible Mini Bot",

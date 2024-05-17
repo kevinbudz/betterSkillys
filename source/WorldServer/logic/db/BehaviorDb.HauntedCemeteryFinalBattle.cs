@@ -304,17 +304,11 @@ namespace WorldServer.logic
                         new Suicide()
                         )
                     ),
-                new Threshold(0.01,
-                    new TierLoot(10, ItemType.Weapon, .07),
-                    new TierLoot(11, ItemType.Weapon, .07),
-                    new TierLoot(4, ItemType.Ability, .07),
-                    new TierLoot(5, ItemType.Ability, .07),
-                    new TierLoot(11, ItemType.Armor, .07),
-                    new TierLoot(12, ItemType.Armor, .07),
-                    new TierLoot(4, ItemType.Ring, .07),
-                    new TierLoot(5, ItemType.Ring, .07)
+                new Threshold(.005,
+                    LootTemplates.BasicDrop()
                     ),
                 new Threshold(0.001,
+                    new ItemLoot("RogueST0", 0.008),
                     new ItemLoot("Potion of Vitality", 1),
                     new ItemLoot("Potion of Wisdom", 1),
                     new ItemLoot("Resurrected Warrior's Armor", 0.002),

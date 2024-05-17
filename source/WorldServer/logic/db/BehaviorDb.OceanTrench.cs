@@ -255,11 +255,12 @@ namespace WorldServer.logic
                 ),
             new Threshold(0.02,
                 new ItemLoot("Potion of Mana", 1),
-                new ItemLoot("Potion of Mana", 1),
-                new ItemLoot("Potion of Wisdom", 0.5),
                 new ItemLoot("Potion of Wisdom", 0.5)
-                )
+                ),
+            new Threshold(.005,
+                LootTemplates.BasicDrop()
             )
+        )
         .Init("Thessal Dropper",
             new State(
                 new ConditionEffectBehavior(ConditionEffectIndex.Invincible),

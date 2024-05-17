@@ -258,9 +258,11 @@ namespace WorldServer.logic
                     new State("unset blue shield 5")
                     )
                 ),
+            new SeasonalThreshold("winter", 0.01,
+                new ItemLoot("Enchanted Ice Shard", 0.009)
+                ),
             new Threshold(0.01,
                 new ItemLoot("Potion of Life", 1),
-                new ItemLoot("Potion of Life", 0.5),
                 new ItemLoot("Tomb of the Ancients Key", 0.01, 0, 0.03),
                 new ItemLoot("Ring of the Sphinx", 0.009)
                 )
@@ -454,6 +456,9 @@ namespace WorldServer.logic
                         new TimedTransition(1500, "Grenade 13")
                         )
                     )
+                ),
+            new SeasonalThreshold("winter", 0.01,
+                new ItemLoot("Ring of the Northern Light", 0.009)
                 ),
             new Threshold(0.01,
                 new ItemLoot("Tomb of the Ancients Key", 0.01, 0, 0.03),

@@ -269,16 +269,15 @@ namespace WorldServer.logic
                     new DropPortalOnDeath("Puppet Encore Portal", 1, 0, 0f, 2f, 120)
                     )
                 ),
-            new Threshold(0.03,
-                new ItemLoot("Harlequin Armor", 0.00125, threshold: 0.03)
+            new Threshold(0.01,
+                new ItemLoot("Harlequin Armor", 0.0025),
+                new ItemLoot("Prism of Dancing Swords", 0.0025)
+                ),
+            new Threshold(.005,
+                LootTemplates.BasicDrop()
                 ),
             new Threshold(0.01,
-                new TierLoot(12, ItemType.Weapon, 0.05),
-                new TierLoot(5, ItemType.Ability, 0.045),
-                new TierLoot(12, ItemType.Armor, 0.05),
                 new ItemLoot("Potion of Attack", 1),
-                new ItemLoot("Potion of Attack", 0.5),
-                new ItemLoot("Prism of Dancing Swords", 0.00125),
                 new ItemLoot("Large Jester Argyle Cloth", 0.1),
                 new ItemLoot("Small Jester Argyle Cloth", 0.1),
                 new ItemLoot("Theatre Key", 0.01, 0, 0.03)

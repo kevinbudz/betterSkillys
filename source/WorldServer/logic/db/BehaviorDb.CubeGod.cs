@@ -33,7 +33,7 @@ namespace WorldServer.logic
                    )
                 ),
             new Threshold(0.03,
-                new ItemLoot("Dirk of Cronus", 0.001)
+                new ItemLoot("Dirk of Cronus", 0.003)
                 ),
             new Threshold(.005,
                 LootTemplates.BasicDrop()

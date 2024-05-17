@@ -138,22 +138,19 @@ namespace WorldServer.logic
                     new TimedTransition(6000, "blastcannonballs")
                     )
                 ),
-            new Threshold(0.01,
-                new ItemLoot("Potion of Speed", 1),
-                new ItemLoot("Potion of Dexterity", 1),
-                new ItemLoot("Potion of Speed", 0.5),
-                new ItemLoot("Potion of Dexterity", 0.5),
-                new ItemLoot("Potion of Life", 1),
-                new ItemLoot("Potion of Life", 0.5),
-                new TierLoot(13, ItemType.Weapon, 0.1),
-                new TierLoot(6, ItemType.Ability, 0.1),
-                new TierLoot(12, ItemType.Armor, 0.1),
-                new TierLoot(13, ItemType.Armor, 0.05),
-                new TierLoot(5, ItemType.Ring, 0.1),
-                new ItemLoot("Pirate King's Cutlass", 0.001),
-                new ItemLoot("Deadwater Docks Key", 0.01, 0, 0.03)
-                )
-            )
-        ;
+                new Threshold(0.01,
+                    new ItemLoot("Pirate King's Cutlass", 0.003),
+                    new ItemLoot("Deadwater Docks Key", 0.01, 0, 0.03)
+                    ),
+                new Threshold(.005,
+                    LootTemplates.StrongerDrop()
+                    ),
+                new Threshold(.005,
+                    new ItemLoot("Potion of Mana", 0.5),
+                    new ItemLoot("Potion of Life", 0.5),
+                    new ItemLoot("Potion of Dexterity", 0.25),
+                    new ItemLoot("Potion of Speed", 0.25)
+                    )
+                );
     }
 }

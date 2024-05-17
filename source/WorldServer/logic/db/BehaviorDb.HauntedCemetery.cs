@@ -815,17 +815,11 @@ namespace WorldServer.logic
                         new HpLessTransition(threshold: 0.4, targetState: "Summon")
                     )
                 ),
-                new Threshold(0.01,
-                    new TierLoot(10, ItemType.Weapon, .07),
-                    new TierLoot(11, ItemType.Weapon, .07),
-                    new TierLoot(4, ItemType.Ability, .07),
-                    new TierLoot(5, ItemType.Ability, .07),
-                    new TierLoot(11, ItemType.Armor, .07),
-                    new TierLoot(12, ItemType.Armor, .07),
-                    new TierLoot(4, ItemType.Ring, .07),
-                    new TierLoot(5, ItemType.Ring, .07)
+                new Threshold(.005,
+                    LootTemplates.BasicDrop()
                     ),
                 new Threshold(0.01,
+                    new ItemLoot("RogueST1"),
                     new ItemLoot("Potion of Speed", 0.8),
                     new ItemLoot("Potion of Wisdom", 0.8)
                 )

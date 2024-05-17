@@ -105,29 +105,29 @@ namespace WorldServer.logic.loot
             {
                 if (TimeOfYear.CurrentMonth == 12 || TimeOfYear.CurrentMonth == 1)
                 {
-                    list.Add(new LootDef("Frost Citadel Armor", 0.01, 0.01));
-                    list.Add(new LootDef("Frost Drake Hide Armor", 0.01, 0.01));
-                    list.Add(new LootDef("Frost Elementalist Robe", 0.01, 0.01));
-                    list.Add(new LootDef("Scepter of Sainthood", 0.01, 0.01));
-                    list.Add(new LootDef("Snowbound Orb", 0.01, 0.01));
-                    list.Add(new LootDef("Pathfinder's Helm", 0.01, 0.01));
-                    list.Add(new LootDef("Coalbearing Quiver", 0.01, 0.01));
-                    list.Add(new LootDef("Skull of Krampus", 0.01, 0.01));
-                    list.Add(new LootDef("Vigil Spell", 0.01, 0.01));
-                    list.Add(new LootDef("Greedsnatcher Trap", 0.01, 0.01));
-                    list.Add(new LootDef("Resounding Shield", 0.01, 0.01));
-                    list.Add(new LootDef("Ornamental Prism", 0.01, 0.01));
-                    list.Add(new LootDef("Nativity Tome", 0.01, 0.01));
-                    list.Add(new LootDef("Holly Poison", 0.01, 0.01));
-                    list.Add(new LootDef("Cloak of Winter", 0.01, 0.01));
-                    list.Add(new LootDef("Advent Seal", 0.01, 0.01));
-                    list.Add(new LootDef("Ilex Star", 0.01, 0.01));
-                    list.Add(new LootDef("Icicle Launcher", 0.01, 0.01));
-                    list.Add(new LootDef("Winter's Breath Wand", 0.01, 0.01));
-                    list.Add(new LootDef("Frosty's Walking Stick", 0.01, 0.01));
-                    list.Add(new LootDef("Frost Lich's Finger", 0.01, 0.01));
-                    list.Add(new LootDef("Saint Nicolas' Blade", 0.01, 0.01));
-                    list.Add(new LootDef("Yuki", 0.01, 0.01));
+                    list.Add(new LootDef("Frost Citadel Armor", 0.004, 0.01));
+                    list.Add(new LootDef("Frost Drake Hide Armor", 0.004, 0.01));
+                    list.Add(new LootDef("Frost Elementalist Robe", 0.004, 0.01));
+                    list.Add(new LootDef("Scepter of Sainthood", 0.002, 0.01));
+                    list.Add(new LootDef("Snowbound Orb", 0.002, 0.01));
+                    list.Add(new LootDef("Pathfinder's Helm", 0.002, 0.01));
+                    list.Add(new LootDef("Coalbearing Quiver", 0.002, 0.01));
+                    list.Add(new LootDef("Skull of Krampus", 0.002, 0.01));
+                    list.Add(new LootDef("Vigil Spell", 0.002, 0.01));
+                    list.Add(new LootDef("Greedsnatcher Trap", 0.002, 0.01));
+                    list.Add(new LootDef("Resounding Shield", 0.002, 0.01));
+                    list.Add(new LootDef("Ornamental Prism", 0.002, 0.01));
+                    list.Add(new LootDef("Nativity Tome", 0.002, 0.01));
+                    list.Add(new LootDef("Holly Poison", 0.002, 0.01));
+                    list.Add(new LootDef("Cloak of Winter", 0.002, 0.01));
+                    list.Add(new LootDef("Advent Seal", 0.002, 0.01));
+                    list.Add(new LootDef("Ilex Star", 0.002, 0.01));
+                    list.Add(new LootDef("Icicle Launcher", 0.003, 0.01));
+                    list.Add(new LootDef("Winter's Breath Wand", 0.003, 0.01));
+                    list.Add(new LootDef("Frosty's Walking Stick", 0.003, 0.01));
+                    list.Add(new LootDef("Frost Lich's Finger", 0.003, 0.01));
+                    list.Add(new LootDef("Saint Nicolas' Blade", 0.003, 0.01));
+                    list.Add(new LootDef("Yuki", 0.003, 0.01));
                 }
             }
             /*if (NexusWorld.GetCurrentMonth == 5 ||

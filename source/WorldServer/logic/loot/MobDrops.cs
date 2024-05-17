@@ -158,6 +158,19 @@ namespace WorldServer.logic.loot
             ];
         }
 
+        public static MobDrops[] PentaractPots()
+        {
+            return
+            [
+                new ItemLoot("Potion of Defense", .08),
+                new ItemLoot("Potion of Attack", .08),
+                new ItemLoot("Potion of Speed", .08),
+                new ItemLoot("Potion of Vitality", .08),
+                new ItemLoot("Potion of Wisdom", .08),
+                new ItemLoot("Potion of Dexterity", .08)
+            ];
+        }
+
         public static MobDrops[] StrongerPots()
         {
             return

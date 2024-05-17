@@ -49,23 +49,14 @@ namespace WorldServer.logic
                     )
                  ),
                  new Threshold(0.03,
-                    new ItemLoot("Ancient Stone Sword", 0.001),
-                    new ItemLoot("Head of War", 0.001)
+                    new ItemLoot("Ancient Stone Sword", 0.003)
                 ),
-                 new Threshold(0.005,
-                    new ItemLoot("Support Fragment", 0.06)
-                    ),
+                new Threshold(.005,
+                    LootTemplates.BasicDrop()
+                ),
                 new Threshold(0.0001,
-                    new ItemLoot("Defense Fragment", 0.05),
-                    new ItemLoot("Potion of Defense", 1),
-                    new ItemLoot("Potion Tablet", 0.5),
-                    new ItemLoot("Necklace of Dread", 0.015),
-                    new ItemLoot("Darksteel Lootbox", 0.1),
-                    new TierLoot(8, ItemType.Weapon, 0.1),
-                    new TierLoot(7, ItemType.Armor, 0.1),
-                    new TierLoot(3, ItemType.Ring, 0.1)
+                    new ItemLoot("Potion of Defense", 1)
                 )
-
             )
             .Init("Oryx Stone Guardian Left",
                 new State(
@@ -104,23 +95,11 @@ namespace WorldServer.logic
                         new RingAttack(20, 10, 0, projectileIndex: 2, 0.20, 0.0, coolDown: 3000, seeInvis: true)
                     )
                  ),
-                 new Threshold(0.01,
-                    new ItemLoot("Shield of Hate", 0.001)
+                new Threshold(.005,
+                    LootTemplates.BasicDrop()
                 ),
-                 new Threshold(0.005,
-                    new ItemLoot("Support Fragment", 0.06)
-                    ),
                 new Threshold(0.0001,
-                    new ItemLoot("Defense Fragment", 0.05),
-                    new ItemLoot("Potion of Defense", 1),
-                    new ItemLoot("Potion Tablet", 0.5),
-                    new ItemLoot("Living Armor of Despair", 0.015),
-                    new ItemLoot("Necklace of Pain", 0.015),
-                    new ItemLoot("Gemstone of Immunity Rune", 0.025),
-                    new ItemLoot("Darksteel Lootbox", 0.1),
-                    new TierLoot(8, ItemType.Weapon, 0.1),
-                    new TierLoot(7, ItemType.Armor, 0.1),
-                    new TierLoot(3, ItemType.Ring, 0.1)
+                    new ItemLoot("Potion of Defense", 1)
                 )
             )
             .Init("Oryx Guardian TaskMaster",

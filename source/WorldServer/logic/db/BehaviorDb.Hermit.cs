@@ -147,7 +147,7 @@ namespace WorldServer.logic
                         )
                     ),
                 new Threshold(0.03,
-                    new ItemLoot("Helm of the Juggernaut", 0.008)
+                    new ItemLoot("Helm of the Juggernaut", 0.003)
                     ),
                 new Threshold(0.005,
                     LootTemplates.BasicDrop()

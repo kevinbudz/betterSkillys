@@ -42,20 +42,15 @@ namespace WorldServer.logic
                 new ItemLoot("Potion of Dexterity", 0.5),
                 new ItemLoot("Potion of Wisdom", 0.5),
                 new ItemLoot("Manor Key", 0.01, 0, 0.03),
-                new TierLoot(12, ItemType.Weapon, 0.07),
-                new TierLoot(11, ItemType.Weapon, 0.1),
-                new TierLoot(5, ItemType.Ability, 0.1),
-                new TierLoot(12, ItemType.Armor, 0.1),
-                new TierLoot(11, ItemType.Armor, 0.05),
-                new TierLoot(4, ItemType.Ring, 0.2),
-                new TierLoot(5, ItemType.Ring, 0.07),
                 new ItemLoot("Holy Water", 0.5),
-                new ItemLoot("Chasuble of Holy Light", 0.001),
-                new ItemLoot("St. Abraham's Wand", 0.001),
-                new ItemLoot("Tome of Purification", 0.0001),
-                new ItemLoot("Ring of Divine Faith", 0.001),
-                new ItemLoot("Corrupted Pendant", 0.001),
+                new ItemLoot("Chasuble of Holy Light", 0.003),
+                new ItemLoot("St. Abraham's Wand", 0.003),
+                new ItemLoot("Tome of Purification", 0.003),
+                new ItemLoot("Ring of Divine Faith", 0.003),
                 new ItemLoot("Bone Dagger", 0.008)
+                ),
+                new Threshold(.005,
+                    LootTemplates.BasicDrop()
                 )
             )
         .Init("Hellhound",

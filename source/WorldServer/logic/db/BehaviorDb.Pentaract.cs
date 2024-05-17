@@ -53,38 +53,14 @@ namespace WorldServer.logic
                     new Suicide()
                     )
                 ),
-            new Threshold(0.001,
-                new ItemLoot("Potion of Defense", 1)
-                ),
-            new Threshold(0.001,
-                new ItemLoot("Potion of Speed", 1),
-                new ItemLoot("Potion of Wisdom", 1)
-                ),
             new Threshold(0.01,
-                new ItemLoot("Seal of Blasphemous Prayer", 0.0005),
-                new ItemLoot("Midnight Star", 0.001, threshold: 0.03)
+                new ItemLoot("Seal of Blasphemous Prayer", 0.003)
+                ),
+            new Threshold(.005,
+                LootTemplates.BasicDrop()
                 ),
             new Threshold(0.001,
-                new TierLoot(8, ItemType.Weapon, .03),
-                new TierLoot(9, ItemType.Weapon, .02),
-                new TierLoot(10, ItemType.Weapon, .014),
-                new TierLoot(11, ItemType.Weapon, .01),
-                new TierLoot(4, ItemType.Ability, .03),
-                new TierLoot(5, ItemType.Ability, .014),
-                new TierLoot(8, ItemType.Armor, .04),
-                new TierLoot(9, ItemType.Armor, .03),
-                new TierLoot(10, ItemType.Armor, .02),
-                new TierLoot(11, ItemType.Armor, .014),
-                new TierLoot(12, ItemType.Armor, .008),
-                new TierLoot(3, ItemType.Ring, .03),
-                new TierLoot(4, ItemType.Ring, .014),
-                new TierLoot(5, ItemType.Ring, .006),
-                new ItemLoot("Potion of Defense", 0.5),
-                new ItemLoot("Potion of Attack", 0.5),
-                new ItemLoot("Potion of Vitality", 0.5),
-                new ItemLoot("Potion of Wisdom", 0.5),
-                new ItemLoot("Potion of Speed", 0.5),
-                new ItemLoot("Potion of Dexterity", 0.5)
+                LootTemplates.PentaractPots()
                 )
             )
         ;

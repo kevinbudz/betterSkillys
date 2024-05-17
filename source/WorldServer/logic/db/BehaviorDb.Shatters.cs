@@ -571,6 +571,7 @@ namespace WorldServer.logic
                     new ItemLoot("The Twilight Gemstone", 0.0025)
                     ),
                new Threshold(0.0001,
+                   new ItemLoot("Shatters Key", 0.002),
                     new TierLoot(11, ItemType.Weapon, .1),
                     new TierLoot(12, ItemType.Weapon, .05),
                     new TierLoot(5, ItemType.Ability, .1),
@@ -579,18 +580,8 @@ namespace WorldServer.logic
                     new TierLoot(13, ItemType.Armor, .05),
                     new TierLoot(5, ItemType.Ring, .1),
                     new TierLoot(6, ItemType.Ring, .05)
-                    ),
-               new Threshold(0.005,
-                    new ItemLoot("Rusted Lootbox", 0.1),
-                    new ItemLoot("Support Fragment", 0.06)
-                    ),
-                new Threshold(0.00001,
-                    new ItemLoot("Mana Fragment", 0.05),
-                    new ItemLoot("Shatters Key", 0.002),
-                    new ItemLoot("Potion Tablet", 0.5),
-                    new ItemLoot("Potion of Mana", 1)
                     )
-            )
+                )
         #endregion 2ndboss
         #region birds
             .Init("shtrs Inferno",
@@ -2410,6 +2401,9 @@ namespace WorldServer.logic
                     )
                 ),
                 new Threshold(0.03,
+                    new ItemLoot("The Forgotten Crown", 0.0015)
+                    ),
+                new SeasonalThreshold("winter", 0.03,
                     new ItemLoot("The Forgotten Crown", 0.0015)
                     ),
                 new Threshold(0.0001,

@@ -521,11 +521,13 @@ namespace WorldServer.logic
                             new Shoot(radius: 8, count: 2, shootAngle: 30, projectileIndex: 1, fixedAngle: 270, coolDown: 1500, coolDownOffset: 300)
                         )
                     ),
+                    new Threshold(.005,
+                        LootTemplates.BasicDrop()
+                        ),
                     new Threshold(0.01,
                         new ItemLoot("Potion of Speed", 0.3, 3),
                         new ItemLoot("Potion of Wisdom", 0.3),
-                        new ItemLoot("Potion Tablet", .05),
-                        new ItemLoot("Spectral Ring of Horrors", 0.01)
+                        new ItemLoot("RogueST3", 0.008)
                     )
                 )
                 .Init("Arena Statue Right",

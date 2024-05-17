@@ -222,22 +222,17 @@ namespace WorldServer.logic
                     new TimedTransition(3000, "Daisy_attack")
                     )
                 ),
-            new Threshold(0.015,
-                new TierLoot(2, ItemType.Potion, numRequired: 3, threshold: 0.07)
-                ),
-             new Threshold(0.001,
-                new ItemLoot("Potion of Attack", 1),
-                new ItemLoot("Potion of Speed", 1),
-                new ItemLoot("Potion of Attack", 0.5),
-                new ItemLoot("Potion of Speed", 0.5)
-                ),
-
-            new Threshold(0.01,
-                new ItemLoot("Crystal Wand", 0.009),
-                new ItemLoot("Heart of the Realm", 0.001),
-                new ItemLoot("Crystal Sword", 0.009)
+                new Threshold(0.01,
+                    new ItemLoot("Crystal Sword", 0.003),
+                    new ItemLoot("Crystal Wand", 0.003)
+                    ),
+                new Threshold(.005,
+                    LootTemplates.BasicDrop()
+                    ),
+                new Threshold(.005,
+                    LootTemplates.BasicPots()
+                    )
                 )
-            )
         .Init("Crystal Prisoner Clone",
             new State(
                 new StayCloseToSpawn(0.85, range: 7),

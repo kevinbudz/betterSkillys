@@ -43,27 +43,17 @@ namespace WorldServer.logic
                     ),
                 new Threshold(0.0001,
                         new ItemLoot("The Crawling Depths Key", 0.008),
-                        new ItemLoot("Potion of Wisdom", 1),
-                        new ItemLoot("Potion of Dexterity", 1),
-                        new ItemLoot("Potion of Mana", 0.5)
-                       ),
-                   new Threshold(0.03,
-                        new ItemLoot("Doku No Ken", 0.0025),
-                        new ItemLoot("Potion of Wisdom", 0.5),
-                        new ItemLoot("Potion of Dexterity", 0.5),
+                        new ItemLoot("Potion of Wisdom", 0.8),
+                        new ItemLoot("Potion of Dexterity", 0.8),
                         new ItemLoot("Potion of Mana", 1)
                        ),
+                   new Threshold(0.03,
+                        new ItemLoot("Doku No Ken", 0.003)
+                       ),
                    new Threshold(0.005,
-                        new TierLoot(11, ItemType.Weapon, .1),
-                        new TierLoot(12, ItemType.Weapon, .05),
-                        new TierLoot(5, ItemType.Ability, .1),
-                        new TierLoot(6, ItemType.Ability, .05),
-                        new TierLoot(12, ItemType.Armor, .1),
-                        new TierLoot(13, ItemType.Armor, .05),
-                        new TierLoot(5, ItemType.Ring, .1),
-                        new TierLoot(6, ItemType.Ring, .05)
+                        LootTemplates.StrongerDrop()
                     )
-            )
+                )
            .Init("Crawling Depths Egg Sac",
                 new State(
                     new State("CheckOrDeath",
