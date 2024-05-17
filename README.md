@@ -3,12 +3,13 @@ An attempt of making a better version of skilly's 7.0, using TK-Reborn as a base
 
 ## Notes.
 - This source is not finished, I wouldn't recommend using it in this state. Below is a list of things that need to be done.
-- [ ] Mountain Temple,
+- [x] Mountain Temple,
 - [ ] Hive,
+- [x] Killer Bee Nest, 
 - [ ] Nest,
 - [ ] Behaviors like OpenGate, other events like Hermit not working..
 - [ ] Client memory leak,
-- [ ] Hardware Acceleration being off has several visual bugs (usually it's the other way around lmfao),
+- [x] Hardware Acceleration being off has several visual bugs (usually it's the other way around lmfao),
 - [ ] List will be updated accordingly.
 
 ## Prerequisites.
