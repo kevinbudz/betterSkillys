@@ -674,9 +674,7 @@ namespace WorldServer.core.objects
         private void AEIncrementStat(TickTime time, Item item, Position target, ActivateEffect eff, int objId, int slot)
         {
             var idx = StatsManager.GetStatIndex((StatDataType)eff.Stats);
-
             var statInfo = GameServer.Resources.GameData.Classes[ObjectType].Stats;
-
             var amount = eff.Amount;
 
             if (Stats.Base[idx] >= statInfo[idx].MaxValue)
@@ -689,7 +687,36 @@ namespace WorldServer.core.objects
                 else
                     Inventory[slot] = item;
 
-                SendInfo("You're Maxed in this Stat!");
+                var inc = eff.Amount == 5 ? 1 : eff.Amount == 10 ? 2 : eff.Amount == 2 ? 2 : 1;
+                string statname = StatsManager.StatIndexToName(idx);
+                if (statname == "MpRegen") statname = "Wisdom";
+                else if (statname == "HpRegen") statname = "Vitality";
+                else if (statname == "MaxHitPoints") statname = "Life";
+                else if (statname == "MaxMagicPoints") statname = "Mana";
+
+                var storedAmount = HandleTX(statname, inc);
+                if (inc != -1)
+                {
+                    GameServer.Database.ReloadAccount(Client.Account);
+                    bool checkVowel = statname.Substring(0, 1) == "A";
+                    string accForVowel = checkVowel ? "n" : "";
+                    switch (inc)
+                    {
+                        case 1:
+                            SendInfo($"Added a{accForVowel} {statname} potion to your storage! [{storedAmount}/50]");
+                            break;
+                        case 2:
+                            SendInfo($"Added two {statname} potions to your storage! [{storedAmount}/50]");
+                            break;
+                        default:
+                            SendInfo($"Added multiple {statname} potions to your storage! [{storedAmount}/50]");
+                            break;
+                    }
+                } 
+                else
+                {
+                    SendError("Your potion storage is full..");
+                }
                 return;
             }
 
@@ -698,6 +725,56 @@ namespace WorldServer.core.objects
                 Stats.Base[idx] = statInfo[idx].MaxValue;
 
             SendInfo($"{item.DisplayName} was consumed");
+        }
+
+        private int HandleTX(string statname, int amount)
+        {
+            var maxAllowed = 50;
+            switch (statname)
+            {
+                case "Wisdom":
+                    if (Client.Account.SPSWisdomCount < maxAllowed)
+                        Client.Account.SPSWisdomCount += amount;
+                    else return -1;
+                    return Client.Account.SPSWisdomCount;
+                case "Vitality":
+                    if (Client.Account.SPSVitalityCount < maxAllowed)
+                        Client.Account.SPSVitalityCount += amount;
+                    else return -1;
+                    return Client.Account.SPSVitalityCount;
+                case "Life":
+                    if (Client.Account.SPSLifeCount < maxAllowed)
+                        Client.Account.SPSLifeCount += amount;
+                    else return -1;
+                    return Client.Account.SPSLifeCount;
+                case "Mana":
+                    if (Client.Account.SPSManaCount < maxAllowed)
+                        Client.Account.SPSManaCount += amount;
+                    else return -1;
+                    return Client.Account.SPSManaCount;
+                case "Speed":
+                    if (Client.Account.SPSSpeedCount < maxAllowed)
+                        Client.Account.SPSSpeedCount += amount;
+                    else return -1;
+                    return Client.Account.SPSSpeedCount;
+                case "Attack":
+                    if (Client.Account.SPSAttackCount < maxAllowed)
+                        Client.Account.SPSAttackCount += amount;
+                    else return -1;
+                    return Client.Account.SPSAttackCount;
+                case "Defense":
+                    if (Client.Account.SPSDefenseCount < maxAllowed)
+                        Client.Account.SPSDefenseCount += amount;
+                    else return -1;
+                    return Client.Account.SPSDefenseCount;
+                case "Dexterity":
+                    if (Client.Account.SPSDexterityCount < maxAllowed)
+                        Client.Account.SPSDexterityCount += amount;
+                    else return -1;
+                    return Client.Account.SPSDexterityCount;
+                default:
+                    return -1;
+            }
         }
 
         private void AELDBoost(TickTime time, Item item, Position target, ActivateEffect eff)

@@ -209,7 +209,6 @@ import flash.display.StageScaleMode;
          }
          else
          {
-            WebMain.STAGE.align = StageAlign.TOP_LEFT;
             this.setTranslationToTitle();
          }
          if(filterIndex > 0)
