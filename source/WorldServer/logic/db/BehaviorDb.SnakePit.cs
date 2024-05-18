@@ -96,8 +96,7 @@ namespace WorldServer.logic
                 new State("Protect",
                     new Shoot(25, coolDown: 1000),
                     new State("Protect",
-                        new EntityNotExistsTransition("Stheno the Snake Queen", 100, "Wander"),
-                        new Orbit(2.5, 10, acquireRange: 50, target: "Undead Stheno")
+                        new EntityNotExistsTransition("Stheno the Snake Queen", 100, "Wander")
                         ),
                     new State("Wander",
                         new Prioritize(
@@ -209,11 +208,10 @@ namespace WorldServer.logic
                     new Shoot(15, count: 3, projectileIndex: 2, coolDown: 2000)
                     )
                 ),
-            new Threshold(0.32,
-                new ItemLoot("Potion of Speed", 1),
+            new Threshold(0.01,
                 new ItemLoot("Potion of Speed", 1)
                 ),
-            new Threshold(0.1,
+            new Threshold(0.03,
                 new ItemLoot("Wand of the Bulwark", 0.005),
                 new ItemLoot("Snake Skin Armor", 0.1),
                 new ItemLoot("Snake Skin Shield", 0.1),

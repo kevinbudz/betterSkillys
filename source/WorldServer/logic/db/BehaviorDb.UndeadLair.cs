@@ -10,7 +10,7 @@ namespace WorldServer.logic
         private _ UndeadLair = () => Behav()
             .Init("Septavius the Ghost God",
                 new State(
-                    new DropPortalOnDeath(target: "Realm Portal", probability: 1),
+                    new RealmPortalDrop(),
                     new State(
                         new PlayerWithinTransition(14, "transition1")
                         ),
@@ -79,23 +79,12 @@ namespace WorldServer.logic
                 new TierLoot(4, ItemType.Ability, 0.1),
                 new TierLoot(5, ItemType.Ability, 0.07),
                 new ItemLoot("Potion of Wisdom", 1),
-                new ItemLoot("Doom Bow", 0.009),
-                new ItemLoot("Edictum Praetoris", 0.009),
-                new ItemLoot("Memento Mori", 0.009),
-                new ItemLoot("Toga Picta", 0.009),
-                new ItemLoot("Interregnum", 0.009),
-                new ItemLoot("Tormentor's Wrath", 0.009),
+                new ItemLoot("Doom Bow", 0.005),
+                new ItemLoot("Edictum Praetoris", 0.005),
+                new ItemLoot("Memento Mori", 0.005),
+                new ItemLoot("Toga Picta", 0.005),
+                new ItemLoot("Interregnum", 0.005),
                 new ItemLoot("Undead Lair Key", 0.009, 0, 0.03)
-                )
-            )
-        .Init("invisible Spawner",
-            new State(
-                new State("idle",
-                    new EntityNotExistsTransition("Septavius the Ghost God", 30, "drop portal")
-                    ),
-                new State("drop portal",
-                    new RealmPortalDrop()
-                    )
                 )
             )
         .Init("Ghost Mage of Septavius",
@@ -216,24 +205,6 @@ namespace WorldServer.logic
                 ),
             new ItemLoot("Magic Potion", 0.05),
             new ItemLoot("Health Potion", 0.05)
-            )
-        .Init("Lair Skeleton King 1",
-            new State(
-                new Shoot(10, 3, shootAngle: 10),
-                new Prioritize(
-                    new Follow(1, range: 7),
-                    new Wander(0.4)
-                    )
-                )
-            )
-        .Init("Lair Skeleton Mage 1",
-            new State(
-                new Shoot(10),
-                new Prioritize(
-                    new Follow(1, range: 7),
-                    new Wander(0.5)
-                    )
-                )
             )
         .Init("Lair Skeleton Swordsman",
             new State(

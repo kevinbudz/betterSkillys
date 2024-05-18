@@ -124,7 +124,7 @@ namespace WorldServer.core.worlds
 
         public void CreateNewTest()
         {
-            Console.WriteLine($"CreateNewTest");
+            Console.WriteLine($"Create new test instance.");
 
             var worldResource = GameServer.Resources.GameData.GetWorld("Testing");
             if (worldResource == null)

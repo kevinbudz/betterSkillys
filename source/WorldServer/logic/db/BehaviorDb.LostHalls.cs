@@ -10,7 +10,7 @@ namespace WorldServer.logic
         private _ LostHalls = () => Behav()
             .Init("LH Marble Colossus",
                 new State(
-                    new DropPortalOnDeath("0xb024", 100, 0),
+                    new RealmPortalDrop(),
                     new State("A-P",
                         new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, true),
                         new SetAltTexture(1),
@@ -153,7 +153,7 @@ namespace WorldServer.logic
                         new State("P-8-1",
                             new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 2000),
                             new Taunt("SANGUIS! OSSE! CARO! Feel it rend from your body!"),
-                            new Order(3, "LH Colossus Colossus Rock 10", "R-TR-2"),
+                            new Order(3, "LH Colossus Rock 10", "R-TR-2"),
                             new Shoot(0, 4, projectileIndex: 6, coolDownOffset: 1200, coolDown: 1600),
                             new Shoot(0, 16, 22.5, 11, coolDownOffset: 1200, coolDown: 4000),
                             new HpLessTransition(0.50, "P-8-2")
@@ -513,12 +513,12 @@ namespace WorldServer.logic
                         )
                     ),
                     new Threshold(0.001,
-                        new ItemLoot("Potion of Health", 1),
+                        new ItemLoot("Potion of Life", 1),
                         new ItemLoot("Potion of Mana", 1),
-                        new ItemLoot("Potion of Health", 0.25),
+                        new ItemLoot("Potion of Life", 0.25),
                         new ItemLoot("Potion of Mana", 0.25),
-                        new ItemLoot("Potion of Attack", 1),
-                        new ItemLoot("Potion of Defense", 1),
+                        new ItemLoot("Potion of Attack", 0.25),
+                        new ItemLoot("Potion of Defense", 0.25),
                         new TierLoot(12, ItemType.Weapon, 0.4),
                         new TierLoot(13, ItemType.Weapon, 0.2),
                         new TierLoot(14, ItemType.Weapon, 0.05),
@@ -527,10 +527,19 @@ namespace WorldServer.logic
                         new TierLoot(14, ItemType.Armor, 0.05),
                         new TierLoot(6, ItemType.Ring, 0.2),
                         new ItemLoot("Ring of Decades", 0.025),
-                        new ItemLoot("Sword of the Colossus", 0.025),
-                        new ItemLoot("Breastplate of New Life", 0.025),
-                        new ItemLoot("Marble Seal", 0.025),
-                        new ItemLoot("Magical Lodestone", 0.025)
+                        new ItemLoot("Bow of the Void", 0.0008),
+                        new ItemLoot("Quiver of Nil", 0.0008),
+                        new ItemLoot("Armor of Nil", 0.0008),
+                        new ItemLoot("Sourcestone", 0.0008),
+                        new ItemLoot("Staff of Unholy Sacrifice", 0.0008),
+                        new ItemLoot("Skull of Corrupted Souls", 0.0008),
+                        new ItemLoot("Ritual Robe", 0.0008),
+                        new ItemLoot("Bloodshed Ring", 0.0008),
+                        new ItemLoot("Sword of the Colossus", 0.0008),
+                        new ItemLoot("Breastplate of New Life", 0.0008),
+                        new ItemLoot("Marble Seal", 0.0008),
+                        new ItemLoot("Magical Lodestone", 0.0008),
+                        new ItemLoot("Omnipotence Ring", 0.0004)
                     )
 
             )
