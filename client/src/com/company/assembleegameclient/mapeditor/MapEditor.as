@@ -25,7 +25,7 @@ public class MapEditor extends Sprite
       public function MapEditor()
       {
          super();
-         addChild(new ScreenBase());
+         //addChild(new ScreenBase());
          this.editingScreen_ = new EditingScreen();
          this.editingScreen_.addEventListener(MapTestEvent.MAP_TEST,this.onMapTest);
          addChild(this.editingScreen_);
@@ -36,8 +36,8 @@ public class MapEditor extends Sprite
 
       private function rePosition(e:Event = null)
       {
-         if (e != null)
-            ScreenBase.reSize(e);
+         //if (e != null)
+            //ScreenBase.reSize(e);
          this.editingScreen_.scaleX = this.editingScreen_.scaleY = WebMain.STAGE.stageHeight / 600;
          this.editingScreen_.x = WebMain.STAGE.stageWidth / 2 - this.editingScreen_.width / 2;
       }

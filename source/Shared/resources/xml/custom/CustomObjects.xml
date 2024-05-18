@@ -621,4 +621,16 @@
 		<Size>120</Size>
 		<Defense>40</Defense>
 	</Object>
+	/// invis
+	<Object type="0x4978" id="invisible Spawner">
+		<Class>Character</Class>
+		<Enemy />
+		<Texture>
+			<File>invisible</File>
+			<Index>0</Index>
+		</Texture>
+		<NoMiniMap />
+		<XpMult>0.0</XpMult>
+		<StasisImmune />
+	</Object>
 </Objects>

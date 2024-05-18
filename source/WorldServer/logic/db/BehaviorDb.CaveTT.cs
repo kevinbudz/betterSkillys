@@ -12,7 +12,7 @@ namespace WorldServer.logic
     partial class BehaviorDb
     {
         private _ CaveTT = () => Behav()
-        .Init("Treasure Flame Trap Fast",
+        .Init("Treasure Flame Trap 1.7 Sec",
             new State(
                 new ConditionEffectBehavior(ConditionEffectIndex.Invincible, true),
                 //new RingAttack(1, 1, 0, 0, 0),
