@@ -29,6 +29,22 @@ namespace WorldServer.core.worlds
 
         private static readonly Tuple<string, TauntData>[] CriticalEnemies = new Tuple<string, TauntData>[]
         {
+            Tuple.Create("EH Event Hive", new TauntData()
+            {
+                Spawn = new string[] {
+                    ""
+                },
+                NumberOfEnemies = new string[] {
+                    ""
+                },
+                Final = new string[] {
+                    ""
+                },
+                Killed = new string[] {
+                    ""
+                },
+                NameOfDeath = "Killer Bee Nest"
+            }),
             Tuple.Create("Garnet Statue", new TauntData()
             {
                 Spawn = new string[] {
@@ -303,7 +319,8 @@ namespace WorldServer.core.worlds
             Tuple.Create("Garnet Statue", (ISetPiece) new GarnetJade()),
             Tuple.Create("Lucky Ent God", (ISetPiece) null),
             Tuple.Create("Lucky Djinn", (ISetPiece) null),
-            Tuple.Create("shtrs Defense System", (ISetPiece)null)
+            Tuple.Create("shtrs Defense System", (ISetPiece)null),
+            Tuple.Create("EH Event Hive", (ISetPiece)null)
         };
 
         private int[] EnemyCounts = new int[12];
