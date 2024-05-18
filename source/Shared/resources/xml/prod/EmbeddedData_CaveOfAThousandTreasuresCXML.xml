@@ -24,7 +24,6 @@
 		</Texture>
 		<NoMiniMap/>
 		<ShadowSize>0</ShadowSize>
-		<DisplayId>{cave.Treasure_Chests}</DisplayId>
 		<DisplayId>Treasure Dropper</DisplayId>
 	</Object>
 	<Object type="0x1e42" id="Treasure Enemy">
