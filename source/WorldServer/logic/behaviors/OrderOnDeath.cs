@@ -7,6 +7,7 @@ using WorldServer.core.structures;
 using WorldServer.core.worlds;
 using WorldServer.core;
 using WorldServer.utils;
+using System.Collections.Generic;
 
 
 namespace WorldServer.logic.behaviors

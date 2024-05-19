@@ -212,4 +212,16 @@
 		<XpMult>0.0</XpMult>
 		<StasisImmune />
 	</Object>
+	<Object type="0x495d" id="Hermit portal maker">
+		<Class>Character</Class>
+		<MaxHitPoints>1000</MaxHitPoints>
+		<Texture>
+			<File>invisible</File>
+			<Index>0</Index>
+		</Texture>
+		<NoMiniMap />
+		<Size>0</Size>
+		<XpMult>0.0</XpMult>
+		<StasisImmune />
+	</Object>
 </Objects>
