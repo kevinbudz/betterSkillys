@@ -5,18 +5,18 @@ using WorldServer.logic;
 
 namespace WorldServer.logic.behaviors
 {
-    internal class RemoveObjectOnDeath : Behavior
+    internal class RemoveObject : Behavior
     {
         private readonly string _objName;
         private readonly int _range;
 
-        public RemoveObjectOnDeath(string objName, int range)
+        public RemoveObject(string objName, int range)
         {
             _objName = objName;
             _range = range;
         }
 
-        public override void OnDeath(Entity host, ref TickTime time)
+        protected override void TickCore(Entity host, TickTime time, ref object state)
         {
             var dat = host.GameServer.Resources.GameData;
             var objType = dat.IdToObjectType[_objName];
@@ -41,10 +41,7 @@ namespace WorldServer.logic.behaviors
                     tile.ObjType = 0;
                     tile.UpdateCount++;
                 }
-            Console.WriteLine("trigger");
+            return;
         }
-
-        protected override void TickCore(Entity host, TickTime time, ref object state)
-        { }
     }
 }

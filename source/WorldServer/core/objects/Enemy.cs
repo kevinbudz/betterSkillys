@@ -123,7 +123,7 @@ namespace WorldServer.core.objects
                 MaxHealth *= 3;
                 Health = MaxHealth;
                 Defense += 10;
-                GlowEnemy = 0xFFFFFF;
+                GlowEnemy = 0xD865A5;
             }
             else if (clasified == "epic")
             {
@@ -134,7 +134,7 @@ namespace WorldServer.core.objects
                 MaxHealth *= 2;
                 Health = MaxHealth;
                 Defense += 5;
-                GlowEnemy = 0x4B0082;
+                GlowEnemy = 0xC183AF;
             }
             else if (clasified == "rare")
             {
@@ -143,7 +143,7 @@ namespace WorldServer.core.objects
                 Size = Size <= 0 ? Size : Random.Shared.Next(Size, Size + 100);
                 
                 Defense += 2;
-                GlowEnemy = 0xEAC117;
+                GlowEnemy = 0x82D9BC;
             }
         }
 
