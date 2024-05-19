@@ -237,11 +237,6 @@ namespace WorldServer.logic
         .Init("shtrs Bridge Sentinel",
             new State(
                 new ScaleHP2(35),
-                new Shoot(2, projectileIndex: 6, count: 3, fixedAngle: 0, coolDown: 1000),
-                new Shoot(2, projectileIndex: 6, count: 3, fixedAngle: 45, coolDown: 1000),
-                new Shoot(2, projectileIndex: 6, count: 3, fixedAngle: 90, coolDown: 1000),
-                new Shoot(2, projectileIndex: 6, count: 3, fixedAngle: 135, coolDown: 1000),
-                new Shoot(2, projectileIndex: 6, count: 3, fixedAngle: 180, coolDown: 1000),
                 new HpLessTransition(0.1, "Death"),
                 new State("Idle",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable),
@@ -2674,7 +2669,7 @@ namespace WorldServer.logic
                     new EntityNotExistsTransition("shtrs Bridge Sentinel", 500, "Open")
                     ),
                 new State("Open",
-                    new Spawn("shtrs Loot Balloon Bridge", 1),
+                    new Spawn("shtrs Loot Balloon Bridge", 1, spawnedByBheav: false),
                     new Decay(100)
                     )
                 )
@@ -2687,7 +2682,7 @@ namespace WorldServer.logic
                     new EntityNotExistsTransition("shtrs Twilight Archmage", 500, "Open")
                     ),
                 new State("Open",
-                    new Spawn("shtrs Loot Balloon Mage", 1),
+                    new Spawn("shtrs Loot Balloon Mage", 1, spawnedByBheav: false),
                     new Decay(100)
                     )
                 )
@@ -2733,7 +2728,7 @@ namespace WorldServer.logic
                     new EntitiesNotExistsTransition(30, "Open", "shtrs The Cursed Crown", "shtrs The Forgotten King")
                     ),
                 new State("Open",
-                    new Spawn("shtrs Loot Balloon King", 1),
+                    new Spawn("shtrs Loot Balloon King", 1, spawnedByBheav: false),
                     new Decay(100)
                     )
                 )

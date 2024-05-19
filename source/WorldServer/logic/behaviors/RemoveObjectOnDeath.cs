@@ -41,7 +41,6 @@ namespace WorldServer.logic.behaviors
                     tile.ObjType = 0;
                     tile.UpdateCount++;
                 }
-            Console.WriteLine("trigger");
         }
 
         protected override void TickCore(Entity host, TickTime time, ref object state)
