@@ -127,6 +127,7 @@
 			<Index>0xac</Index>
 		</Texture>
 		<Invincible/>
+		<MaxHitPoints>1000</MaxHitPoints>
 		<Projectile id="0">
 			<ObjectId>Lanturn Blast</ObjectId>
 			<Speed>40</Speed>
@@ -163,6 +164,7 @@
 			<Index>0xae</Index>
 		</Texture>
 		<Size>80</Size>
+		<MaxHitPoints>1000</MaxHitPoints>
 		<NoMiniMap/>
 		<ShadowSize>80</ShadowSize>
 		<DeathSound>weapon/obsidian_dagger</DeathSound>
@@ -174,6 +176,7 @@
 			<Index>0xaf</Index>
 		</Texture>
 		<Size>80</Size>
+		<MaxHitPoints>1000</MaxHitPoints>
 		<NoMiniMap/>
 		<ShadowSize>80</ShadowSize>
 		<DeathSound>weapon/obsidian_dagger</DeathSound>
@@ -185,6 +188,7 @@
 			<Index>0xb6</Index>
 		</Texture>
 		<Size>80</Size>
+		<MaxHitPoints>1000</MaxHitPoints>
 		<NoMiniMap/>
 		<ShadowSize>80</ShadowSize>
 		<DeathSound>weapon/obsidian_dagger</DeathSound>
@@ -196,6 +200,7 @@
 			<Index>0xb7</Index>
 		</Texture>
 		<Size>80</Size>
+		<MaxHitPoints>1000</MaxHitPoints>
 		<NoMiniMap/>
 		<ShadowSize>80</ShadowSize>
 		<DeathSound>weapon/obsidian_dagger</DeathSound>

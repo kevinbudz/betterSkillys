@@ -180,11 +180,21 @@
 		<VisibilityType>1</VisibilityType>
 		<Dungeon/>
 	</World>
+	<World id="Davy Jones' Locker">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>davy_jones_locker.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
 	<World id="Daily Quest Room">
 		<Width>128</Width>
 		<Height>128</Height>
 		<MapJM>daily_quest.jm</MapJM>
 		<Persists/>
+		<DisableShooting/>
+		<DisableAbilities/>
+		<DisableTeleport/>
 	</World>
 	<World id="Pirate Cave">
 		<Width>256</Width>
