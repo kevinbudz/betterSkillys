@@ -1,16 +1,32 @@
 # betterSkillys.
-An attempt of making a better version of skilly's 7.0, using TK-Reborn as a base. This revamp keeps things like the potion storage and marketplace, and removes things like talismans and 16/16. My goal is to update the content (as in dungeons) to an X18.0.0 version of prod. Things like items are up to date with RotMG 1.0.3.0.
+I made this project in the hopes of it being a better version of Skilly's 7.0 that he put out several years ago. While the fact it's still based off of NR-CORE is a little spiffy, it can handle 200 concurrent players without much issue. I am using TK-Reborn by Slendergo as a base, stripping down all custom content with some exceptions. These exceptions include the Marketplace and Potion Storage, and have been revised as off me writing this. Features like over-maxing (16/16) and talismans have been removed, though. The end-goal is to get the existing content (as in dungeons) on-par with prod. version X18.0.0. So far I have added Mountain Temple, and Killer Bee Nest, with plans of adding the Hive and Nest dungeons. This source does not come without it's issues, but I will iron out the most detrimenting ones before an official release. All other items/assets are up to date with RotMG 1.0.4.0. (the last available RotMG flash client)
 
-## Notes.
-- This source is not finished, I wouldn't recommend using it in this state. Below is a list of things that need to be done.
-- [x] Mountain Temple,
-- [ ] Hive,
-- [x] Killer Bee Nest, 
-- [ ] Nest,
-- [ ] Behaviors like OpenGate, other events like Hermit not working..
-- [ ] Client memory leak,
-- [x] Hardware Acceleration being off has several visual bugs (usually it's the other way around lmfao),
-- [ ] List will be updated accordingly.
+## Things finished/to-be-done.
+[x] Removed TK-Reborn bloat. [me + Slendergo]
+[x] Renaming many TK-Reborn files. (ex: KingdomManager -> RealmManager, etc..)
+[x] XMLs up to date with 1.0.4.0. [Slendergo]
+[x] Client/Server asset sorting. [Slendergo]
+[x] Fixed things that broke upon importing XMLs. (Hermit, Treasure Cave, Davy, Shatters, etc..)
+[x] Redone Damage Counter from TK-Reborn.
+[x] Parallax on TitleView.
+[x] Bugs with hardware acceleration.
+[_] Client memory leak.
+[x] All screens scale with window.
+[_] Wis-mod on EquipmentTooltips.
+[_] Split up Player.cs into more partial classes. [Slendergo]
+[x] Labeling for entities/worlds. [Slendergo]
+[x] Redone how setpieces are called. [Slendergo]
+[x] Redone Potion Storage.
+[x] Redone Marketplace.
+[x] Seasonal Drop-tables.
+[x] Item Breakdowns. [Slendergo]
+[x] Animated emotes. [Zolmex]
+[x] Garnet/Jade Statues. [setpiece/behavior from: Evil]
+[x] Killer Bee Nest. 
+[x] Mountain Temple. [map from: MIKEEEEEE]
+[x] Toxic Sewers. [map from: MIKEEEEEE]
+[_] Hive. [map from: MIKEEEEEE]
+[_] Nest. [map from: MIKEEEEEE]
 
 ## Prerequisites.
 - Visual Studio,
@@ -20,9 +36,10 @@ An attempt of making a better version of skilly's 7.0, using TK-Reborn as a base
 - Redis (included).
 
 ## Credits.
-- Runes,
-- Slendergo (has been helping with bug fixes/general cleanup),
-- Orb, GlassBBQ (accreditted on TK-Reborn),
-- Zolmex (RotMG 1.0.3.0 repository),
-- MIKEEEEEEEEEE (provided maps for Hive, Nest, and Mountain Temple),
+- Runes.
+- Slendergo.
+- Zolmex.
+- MIKEEEEEEEEEE.
+- Evil.
+- Orb, GlassBBQ. (accredited on TK-Reborn)
 - . . . .
