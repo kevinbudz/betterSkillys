@@ -9,11 +9,11 @@ I made this project in the hopes of it being a better version of Skilly's 7.0 th
 [x] Fixed things that broke upon importing XMLs. (Hermit, Treasure Cave, Davy, Shatters, etc..)
 [x] Redone Damage Counter from TK-Reborn.
 [x] Parallax on TitleView.
-[x] Bugs with hardware acceleration.
+[] Bugs with hardware acceleration.
 [_] Client memory leak.
 [x] All screens scale with window.
-[_] Wis-mod on EquipmentTooltips.
-[_] Split up Player.cs into more partial classes. [Slendergo]
+[] Wis-mod on EquipmentTooltips.
+[] Split up Player.cs into more partial classes. [Slendergo]
 [x] Labeling for entities/worlds. [Slendergo]
 [x] Redone how setpieces are called. [Slendergo]
 [x] Redone Potion Storage.
@@ -25,8 +25,8 @@ I made this project in the hopes of it being a better version of Skilly's 7.0 th
 [x] Killer Bee Nest. 
 [x] Mountain Temple. [map from: MIKEEEEEE]
 [x] Toxic Sewers. [map from: MIKEEEEEE]
-[_] Hive. [map from: MIKEEEEEE]
-[_] Nest. [map from: MIKEEEEEE]
+[] Hive. [map from: MIKEEEEEE]
+[] Nest. [map from: MIKEEEEEE]
 
 ## Prerequisites.
 - Visual Studio,
