@@ -680,24 +680,12 @@ namespace WorldServer.core.objects
             if (Stats.Base[idx] >= statInfo[idx].MaxValue)
             {
                 Stats.Base[idx] = statInfo[idx].MaxValue;
-
-                var ent = World.GetEntity(objId);
-                if (ent is Container container)
-                    container.Inventory[slot] = item;
-                else
-                    Inventory[slot] = item;
-
                 var inc = eff.Amount == 5 ? 1 : eff.Amount == 10 ? 2 : eff.Amount == 2 ? 2 : 1;
-                string statname = StatsManager.StatIndexToName(idx);
-                if (statname == "MpRegen") statname = "Wisdom";
-                else if (statname == "HpRegen") statname = "Vitality";
-                else if (statname == "MaxHitPoints") statname = "Life";
-                else if (statname == "MaxMagicPoints") statname = "Mana";
 
+                string statname = item.DisplayName.Split(' ').Last();
                 var storedAmount = HandleTX(statname, inc);
                 if (inc != -1)
                 {
-                    GameServer.Database.ReloadAccount(Client.Account);
                     bool checkVowel = statname.Substring(0, 1) == "A";
                     string accForVowel = checkVowel ? "n" : "";
                     switch (inc)
@@ -715,16 +703,21 @@ namespace WorldServer.core.objects
                 } 
                 else
                 {
+                    var ent = World.GetEntity(objId);
+                    if (ent is Container container)
+                        container.Inventory[slot] = item;
+                    else
+                        Inventory[slot] = item;
                     SendError("Your potion storage is full..");
+                    return;
                 }
-                return;
+            } else
+            {
+                Stats.Base[idx] += amount;
+                if (Stats.Base[idx] >= statInfo[idx].MaxValue)
+                    Stats.Base[idx] = statInfo[idx].MaxValue;
+                SendInfo($"{item.DisplayName} was consumed");
             }
-
-            Stats.Base[idx] += amount;
-            if (Stats.Base[idx] >= statInfo[idx].MaxValue)
-                Stats.Base[idx] = statInfo[idx].MaxValue;
-
-            SendInfo($"{item.DisplayName} was consumed");
         }
 
         private int HandleTX(string statname, int amount)
