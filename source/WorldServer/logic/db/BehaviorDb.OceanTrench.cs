@@ -402,7 +402,7 @@ namespace WorldServer.logic
                     new TimedTransition(1500, "Shoot and Move")
                     )
                 )
-            )
-        .Init("Ocean Vent", new State(new RestoresBreathBehavior()));
+            );
+        //.Init("Ocean Vent", new State(new RestoresBreathBehavior()));
     }
 }

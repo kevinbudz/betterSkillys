@@ -423,8 +423,8 @@ namespace WorldServer.core.objects
             {
                 if (ShowDeltaTimeLog)
                     SendInfo($"[DeltaTime]: {World.DisplayName} -> {time.ElapsedMsDelta}");
-                
-                HandleBreath(ref time);
+
+                HandleOxygen(time);
 
                 CheckTradeTimeout(time);
                 HandleQuest(time);
@@ -444,19 +444,6 @@ namespace WorldServer.core.objects
         }
 
         public bool IsInMarket { get; private set; }
-
-        public void HandleBreath(ref TickTime time)
-        {
-            if (World.IdName != "Ocean Trench" || World.IdName != "Hideout of Thessal")
-                return;
-            if (Breath > 0)
-                Breath -= 20 * time.BehaviourTickTime;
-            else
-                Health -= (int)(20 * time.BehaviourTickTime);
-
-            if (Health < 0)
-                Death("Suffocation");
-        }
 
         // todo rename these damn things
         public bool CanApplySlotEffect(int slot)
