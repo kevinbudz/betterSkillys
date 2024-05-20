@@ -371,12 +371,7 @@ namespace WorldServer.core.worlds
                         CurrentState = RealmState.DoNothing;
 
                         foreach (var e in World.Enemies.Values)
-                        {
-                            if (e.ObjectDesc.IdName.Contains("Oryx Guardian TaskMaster") || e.ObjectDesc.IdName.Contains("Talisman King's Golden Guardian"))
-                                continue;
                             World.LeaveWorld(e);
-                        }
-
                         World.StartNewTimer(30000, (w, t) => CurrentState = RealmState.Closed);
                     }
                     break;
@@ -385,16 +380,6 @@ namespace WorldServer.core.worlds
                         BroadcastMsg("ENOUGH WAITING!");
                         BroadcastMsg("YOU SHALL MEET YOUR DOOM BY MY HAND!!!");
                         BroadcastMsg("GUARDIANS AWAKEN AND KILL THESE FOOLS!!!");
-
-                        foreach (var e in World.Enemies.Values)
-                        {
-                            if (e.ObjectDesc.IdName.Contains("Oryx Guardian TaskMaster"))
-                                continue;
-
-                            if (e.ObjectDesc.IdName.Contains("Talisman King's Golden Guardian"))
-                                e.Death(ref time);
-                        }
-
                         MovePeopleNearby(time);
 
                         CurrentState = RealmState.DoNothing;

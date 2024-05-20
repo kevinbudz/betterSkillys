@@ -3261,6 +3261,7 @@
       <StasisImmune/>
       <DontFaceAttacks/>
       <God/>
+	  <Hero/>
       <Quest/>
       <HealthBarBoss/>
       <Level>20</Level>
