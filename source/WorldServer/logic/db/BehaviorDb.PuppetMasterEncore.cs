@@ -209,7 +209,7 @@ namespace WorldServer.logic
                     new TimedTransition(3500, "7")
                     ),
                 new State("7",
-                    new RealmPortalDrop(),
+                    new DropPortalOnDeath("Realm Portal", probability: 1.0, timeout: null),
                     new Spawn("HomingFire", 1000, 0.001, coolDown: 2500),
                     new State("8",
                         new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false),

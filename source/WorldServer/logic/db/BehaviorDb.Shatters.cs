@@ -2588,7 +2588,7 @@ namespace WorldServer.logic
         #region 3rdbosschest
         .Init("shtrs Loot Balloon King",
             new State(
-                new RealmPortalDrop(),
+                new DropPortalOnDeath("Realm Portal", probability: 1.0, timeout: null),
                 new ScaleHP2(20),
                 new State("Idle",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable),

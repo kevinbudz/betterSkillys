@@ -231,6 +231,7 @@ namespace WorldServer.logic
             )
         .Init("Golden Oryx Effigy",
             new State(
+                new DropPortalOnDeath("Realm Portal", probability: 1.0, timeout: null),
                 new ScaleHP2(20),
                 new State("Ini",
                     new HpLessTransition(threshold: 0.99, targetState: "Q1 Spawn Minion")
@@ -408,10 +409,6 @@ namespace WorldServer.logic
                     )
                 ),
             new Threshold(0.01,
-                new ItemLoot("Sword of Golden Fragments", 0.01),
-                new ItemLoot("Jewel-Encrusted Helmet", 0.005),
-                new ItemLoot("Luminous Body Armor", 0.005),
-                new ItemLoot("Ring of Golden Shine", 0.005),
                 new ItemLoot(item: "Potion of Defense", probability: 1),
                 new ItemLoot(item: "Potion of Attack", probability: 1),
                 new ItemLoot(item: "Potion of Speed", probability: 1),

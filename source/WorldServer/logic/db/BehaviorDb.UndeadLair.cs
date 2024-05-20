@@ -10,7 +10,7 @@ namespace WorldServer.logic
         private _ UndeadLair = () => Behav()
             .Init("Septavius the Ghost God",
                 new State(
-                    new RealmPortalDrop(),
+                    new DropPortalOnDeath("Realm Portal", probability: 1.0, timeout: null),
                     new State(
                         new PlayerWithinTransition(14, "transition1")
                         ),

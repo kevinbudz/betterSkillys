@@ -162,7 +162,7 @@ namespace WorldServer.logic
             new State(
                 new ScaleHP(10000, 0, true, 15, 1),
                 new State(
-                    new RealmPortalDrop(),
+                    new DropPortalOnDeath("Realm Portal", probability: 1.0, timeout: null),
                     new Spawn("Mini Larva", 1, 14, coolDown: 90000),
                     new Spawn("Mini Larva", 1, 2, coolDown: 5500),
                     new Prioritize(

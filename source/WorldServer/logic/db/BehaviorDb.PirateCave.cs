@@ -14,7 +14,7 @@ namespace WorldServer.logic
         private _ PirateCave = () => Behav()
         .Init("Dreadstump the Pirate King",
             new State(
-                new RealmPortalDrop(),
+                new DropPortalOnDeath("Realm Portal", probability: 1.0, timeout: null),
                 new State("Idle",
                     new PlayerWithinTransition(15, "swiggity")
                     ),

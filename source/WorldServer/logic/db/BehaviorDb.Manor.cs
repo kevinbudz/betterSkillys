@@ -16,7 +16,7 @@ namespace WorldServer.logic
         .Init("Lord Ruthven",
             new State(
                 new ScaleHP2(15),
-                new RealmPortalDrop(),
+                new DropPortalOnDeath("Realm Portal", probability: 1.0, timeout: null),
                 new State("default",
                     new PlayerWithinTransition(8, "spooksters")
                     ),

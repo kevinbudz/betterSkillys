@@ -10,7 +10,7 @@ namespace WorldServer.logic
         private _ LostHalls = () => Behav()
             .Init("LH Marble Colossus",
                 new State(
-                    new RealmPortalDrop(),
+                    new DropPortalOnDeath("Realm Portal", probability: 1.0, timeout: null),
                     new State("A-P",
                         new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, true),
                         new SetAltTexture(1),

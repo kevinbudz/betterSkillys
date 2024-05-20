@@ -101,7 +101,7 @@ namespace WorldServer.logic
         .Init("Jon Bilgewater the Pirate King",
             new State(
                 new ScaleHP2(20),
-                new RealmPortalDrop(),
+                new DropPortalOnDeath("Realm Portal", probability: 1.0, timeout: null),
                 new State("default",
                     new PlayerWithinTransition(8, "coinphase")
                     ),

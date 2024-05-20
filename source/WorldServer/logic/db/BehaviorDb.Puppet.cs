@@ -287,7 +287,7 @@ namespace WorldServer.logic
             new State(
                 new ScaleHP2(20),
                 new TransformOnDeath("Puppet Loot Chest", 1, 1),
-                new RealmPortalDrop(),
+                new DropPortalOnDeath("Realm Portal", probability: 1.0, timeout: null),
                 new State("default",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
                     new PlayerWithinTransition(6, "move")
