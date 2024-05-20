@@ -3,31 +3,31 @@ I made this project in the hopes of it being a better version of Skilly's 7.0 th
 
 ## Things finished/to-be-done.
 - This list is bound to be updated.
--[x] Removed TK-Reborn bloat. *(me + Slendergo)*
--[x] Renaming many TK-Reborn files. *(ex: KingdomManager -> RealmManager, etc..)*
--[x] XMLs up to date with 1.0.4.0. *(Slendergo)*
--[x] Client/Server asset sorting. *(Slendergo)*
--[x] Fixed things that broke upon importing XMLs. *(Hermit, Treasure Cave, Davy, Shatters, etc..)*
--[x] Redone Damage Counter from TK-Reborn.
--[x] Parallax on TitleView.
--[ ] Bugs with hardware acceleration.
--[ ] Client memory leak.
--[x] All screens scale with window.
--[ ] Wis-mod on EquipmentTooltips.
--[ ] Split up Player.cs into more partial classes. *(Slendergo)*
--[x] Labeling for entities/worlds. *(Slendergo)*
--[x] Redone how setpieces are called. *(Slendergo)*
--[x] Redone Potion Storage.
--[x] Redone Marketplace.
--[x] Seasonal Drop-tables.
--[x] Item Breakdowns. *(Slendergo)*
--[x] Animated emotes. *(Zolmex)*
--[x] Garnet/Jade Statues. *(setpiece/behavior from: Evil)*
--[x] Killer Bee Nest. 
--[x] Mountain Temple. *(map from: MIKEEEEEE)*
--[x] Toxic Sewers. *(map from: MIKEEEEEE)*
--[ ] Hive. *(map from: MIKEEEEEE)*
--[ ] Nest. *(map from: MIKEEEEEE)*
+- [x] Removed TK-Reborn bloat. *(me + Slendergo)*
+- [x] Renaming many TK-Reborn files. *(ex: KingdomManager -> RealmManager, etc..)*
+- [x] XMLs up to date with 1.0.4.0. *(Slendergo)*
+- [x] Client/Server asset sorting. *(Slendergo)*
+- [x] Fixed things that broke upon importing XMLs. *(Hermit, Treasure Cave, Davy, Shatters, etc..)*
+- [x] Redone Damage Counter from TK-Reborn.
+- [x] Parallax on TitleView.
+- [ ] Bugs with hardware acceleration.
+- [ ] Client memory leak.
+- [x] All screens scale with window.
+- [ ] Wis-mod on EquipmentTooltips.
+- [ ] Split up Player.cs into more partial classes. *(Slendergo)*
+- [x] Labeling for entities/worlds. *(Slendergo)*
+- [x] Redone how setpieces are called. *(Slendergo)*
+- [x] Redone Potion Storage.
+- [x] Redone Marketplace.
+- [x] Seasonal Drop-tables.
+- [x] Item Breakdowns. *(Slendergo)*
+- [x] Animated emotes. *(Zolmex)*
+- [x] Garnet/Jade Statues. *(setpiece/behavior from: Evil)*
+- [x] Killer Bee Nest. 
+- [x] Mountain Temple. *(map from: MIKEEEEEE)*
+- [x] Toxic Sewers. *(map from: MIKEEEEEE)*
+- [ ] Hive. *(map from: MIKEEEEEE)*
+- [ ] Nest. *(map from: MIKEEEEEE)*
 
 ## Prerequisites.
 - Visual Studio,
