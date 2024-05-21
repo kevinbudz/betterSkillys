@@ -98,6 +98,13 @@
 		<VisibilityType>1</VisibilityType>
 		<Dungeon/>
 	</World>
+	<World id="The Hive">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>the_hive.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
 	<World id="Abyss of Demons">
 		<Width>256</Width>
 		<Height>256</Height>

@@ -35,7 +35,7 @@ namespace WorldServer.logic.behaviors
                 var enemyHost = host as Enemy;
                 var enemyEntity = entity as Enemy;
 
-                enemyEntity.SpawnedByBehavior = _spawnedByBehav;
+                //enemyEntity.SpawnedByBehavior = _spawnedByBehav;
 
                 entity.GivesNoXp = _givesNoXp;
 
