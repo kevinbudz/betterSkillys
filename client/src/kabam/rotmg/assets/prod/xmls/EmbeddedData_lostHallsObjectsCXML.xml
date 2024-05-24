@@ -2468,6 +2468,7 @@
             <Index>0x1e3</Index>
          </Texture>
       </AltTexture>
+      <MaxHitPoints>10000</MaxHitPoints>
       <Invincible/>
       <Z>0.2</Z>
       <Flying/>
@@ -2496,6 +2497,7 @@
             <Index>0x1e3</Index>
          </Texture>
       </AltTexture>
+      <MaxHitPoints>10000</MaxHitPoints>
       <Invincible/>
       <Z>0.2</Z>
       <Flying/>
@@ -2524,6 +2526,7 @@
             <Index>0x1e3</Index>
          </Texture>
       </AltTexture>
+      <MaxHitPoints>10000</MaxHitPoints>
       <Invincible/>
       <Z>0.2</Z>
       <Flying/>
@@ -2552,6 +2555,7 @@
             <Index>0x1e3</Index>
          </Texture>
       </AltTexture>
+      <MaxHitPoints>10000</MaxHitPoints>
       <Invincible/>
       <Z>0.2</Z>
       <Flying/>
@@ -2580,6 +2584,7 @@
             <Index>0x1e3</Index>
          </Texture>
       </AltTexture>
+      <MaxHitPoints>10000</MaxHitPoints>
       <Invincible/>
       <Z>0.2</Z>
       <Flying/>
@@ -2608,6 +2613,7 @@
             <Index>0x1e3</Index>
          </Texture>
       </AltTexture>
+      <MaxHitPoints>10000</MaxHitPoints>
       <Invincible/>
       <Z>0.2</Z>
       <Flying/>
@@ -2637,6 +2643,7 @@
          </Texture>
       </AltTexture>
       <Invincible/>
+      <MaxHitPoints>10000</MaxHitPoints>
       <Z>0.2</Z>
       <Flying/>
       <Sound id="0">spell/fire_spray</Sound>
@@ -2667,6 +2674,7 @@
       <Invincible/>
       <Z>0.2</Z>
       <Flying/>
+      <MaxHitPoints>10000</MaxHitPoints>
       <Sound id="0">spell/fire_spray</Sound>
       <Projectile id="0">
          <ObjectId>Colossal Spike</ObjectId>
@@ -2693,6 +2701,7 @@
          </Texture>
       </AltTexture>
       <Invincible/>
+      <MaxHitPoints>10000</MaxHitPoints>
       <Z>0.2</Z>
       <Flying/>
       <Sound id="0">spell/fire_spray</Sound>
@@ -2758,6 +2767,7 @@
       </AltTexture>
       <Invincible/>
       <Z>0.2</Z>
+      <MaxHitPoints>10000</MaxHitPoints>
       <Flying/>
       <Projectile id="0">
          <ObjectId>Purple Spiral</ObjectId>
@@ -2877,6 +2887,7 @@
       </AltTexture>
       <Invincible/>
       <Z>0.2</Z>
+      <MaxHitPoints>10000</MaxHitPoints>
       <Flying/>
       <Projectile id="0">
          <ObjectId>Purple Spiral</ObjectId>
@@ -2997,6 +3008,7 @@
       <Invincible/>
       <Z>0.2</Z>
       <Flying/>
+      <MaxHitPoints>10000</MaxHitPoints>
       <Projectile id="0">
          <ObjectId>Purple Spiral</ObjectId>
          <Damage>125</Damage>
@@ -3114,6 +3126,7 @@
          </AnimatedTexture>
       </AltTexture>
       <Invincible/>
+      <MaxHitPoints>10000</MaxHitPoints>
       <Z>0.2</Z>
       <Flying/>
       <Projectile id="0">
@@ -3233,6 +3246,7 @@
          </AnimatedTexture>
       </AltTexture>
       <Invincible/>
+      <MaxHitPoints>10000</MaxHitPoints>
       <Z>0.2</Z>
       <Flying/>
       <Projectile id="0">

@@ -97,7 +97,7 @@ namespace WorldServer.logic
                     new HpLessTransition(0.1, "decay")
                     ), 
                 new State("oneBeeDead",
-                    new Orbit(2.5, 5, 30, "EH Event Hive Corpse"),
+                    new Orbit(3.8, 5, 30, "EH Event Hive Corpse"),
                     new Shoot(10, 4, 90, 0, coolDown: 1000),
                     new Shoot(10, 3, 15, 1, coolDown: 1500),
                     new Shoot(10, 6, 60, 2, angleOffset: 30, coolDown: 1500),
@@ -135,10 +135,15 @@ namespace WorldServer.logic
                     new Shoot(10, 4, 90, 0, coolDown: 1000),
                     new Shoot(10, 3, 15, 1, coolDown: 1500),
                     new Shoot(10, 6, 60, 2, angleOffset: 30, coolDown: 1500),
-                    new HpLessTransition(0.1, "decay")
+                    new HpLessTransition(0.1, "startDecay")
+                    ),
+                new State("startDecay",
+                    new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
+                    new ProcEvent(),
+                    new Flash(0xff00000, 2, 4),
+                    new TimedTransition(1500, "decay")
                     ),
                 new State("decay",
-                    new Flash(0xff00000, 2, 4),
                     new Shoot(10, 18, 20, 2, coolDown: 1000),
                     new Decay(100)
                     )
@@ -183,7 +188,7 @@ namespace WorldServer.logic
                     new HpLessTransition(0.1, "decay")
                     ),
                 new State("oneBeeDead",
-                    new Orbit(3, 5, 30, "EH Event Hive Corpse"),
+                    new Orbit(4.4, 5, 30, "EH Event Hive Corpse"),
                     new Shoot(10, 4, 90, 0, coolDown: 1000),
                     new Shoot(10, 3, 15, 1, coolDown: 1500),
                     new Shoot(10, 6, 60, 2, angleOffset: 30, coolDown: 1500),
@@ -221,10 +226,15 @@ namespace WorldServer.logic
                     new Shoot(10, 4, 90, 0, coolDown: 1000),
                     new Shoot(10, 3, 15, 1, coolDown: 1500),
                     new Shoot(10, 6, 60, 2, angleOffset: 30, coolDown: 1500),
-                    new HpLessTransition(0.1, "decay")
+                    new HpLessTransition(0.1, "startDecay")
+                    ),
+                new State("startDecay",
+                    new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
+                    new ProcEvent(),
+                    new Flash(0xff00000, 2, 4),
+                    new TimedTransition(1500, "decay")
                     ),
                 new State("decay",
-                    new Flash(0xff00000, 2, 4),
                     new Shoot(10, 18, 20, 2, coolDown: 1000),
                     new Decay(100)
                     )
@@ -269,7 +279,7 @@ namespace WorldServer.logic
                     new HpLessTransition(0.1, "decay")
                     ),
                 new State("oneBeeDead",
-                    new Orbit(3.5, 5, 30, "EH Event Hive Corpse"),
+                    new Orbit(5, 5, 30, "EH Event Hive Corpse"),
                     new Shoot(10, 4, 90, 0, coolDown: 1000),
                     new Shoot(10, 3, 15, 1, coolDown: 1500),
                     new Shoot(10, 6, 60, 2, angleOffset: 30, coolDown: 1500),
@@ -308,10 +318,15 @@ namespace WorldServer.logic
                     new Shoot(10, 3, 15, 1, coolDown: 1500),
                     new Shoot(10, 6, 60, 2, angleOffset: 30, coolDown: 1500),
                     new Shoot(10, 3, 120, 3, 0, coolDown: 7000),
-                    new HpLessTransition(0.1, "decay")
+                    new HpLessTransition(0.1, "startDecay")
+                    ),
+                new State("startDecay",
+                    new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
+                    new ProcEvent(),
+                    new Flash(0xff00000, 2, 4),
+                    new TimedTransition(1500, "decay")
                     ),
                 new State("decay",
-                    new Flash(0xff00000, 2, 4),
                     new Shoot(10, 18, 20, 2, coolDown: 1000),
                     new Decay(100)
                     )

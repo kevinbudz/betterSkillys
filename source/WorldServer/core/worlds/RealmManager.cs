@@ -517,6 +517,16 @@ namespace WorldServer.core.worlds
                 }
         }
 
+        public void OnProcEvent(string enemy, Player killer)
+        {
+            foreach (var dat in CriticalEnemies)
+                if (enemy == dat.Item1)
+                {
+                    CountingEvents(dat.Item2.NameOfDeath);
+                    break;
+                }
+        }
+
         private bool HasQuestAlready;
 
         public void OnPlayerEntered(Player player)

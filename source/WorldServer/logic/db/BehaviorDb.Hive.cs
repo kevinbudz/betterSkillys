@@ -36,11 +36,11 @@ namespace WorldServer.logic
                     new ItemLoot("Bottled Honey", 0.5),
                     new ItemLoot("HoneyScepter", 0.05),
                     new ItemLoot("Orb of Sweet Demise", 0.05)
-                    ),
+                ),
                 new Threshold(0.05,
                     LootTemplates.MountainDrop()
-                    )
                 )
+            )
         .Init("TH Maggots",
             new State(
                 new Wander(0.8),
