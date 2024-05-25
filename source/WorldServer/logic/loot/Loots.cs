@@ -195,12 +195,12 @@ namespace WorldServer.logic.loot
                     continue;
 
                 double enemyBoost = 0;
-                if (enemy.IsRare) enemyBoost = .025;
-                if (enemy.IsEpic) enemyBoost = .05;
-                if (enemy.IsLegendary) enemyBoost = .075;
+                if (enemy.IsRare) enemyBoost = .25;
+                if (enemy.IsEpic) enemyBoost = .5;
+                if (enemy.IsLegendary) enemyBoost = .75;
 
                 var dmgBoost = Math.Round(tupPlayer.Item2 / (double)enemy.DamageCounter.TotalDamage, 4);
-                var ldBoost = player.LDBoostTime > 0 ? 0.25 : 0;
+                var ldBoost = player.LDBoostTime > 0 ? 0.5 : 0;
                 var wkndBoost = NexusWorld.WeekendLootBoostEvent;
                 var totalBoost = 1 + (ldBoost + wkndBoost + dmgBoost + enemyBoost);
 
@@ -314,9 +314,7 @@ namespace WorldServer.logic.loot
             var idx = 0;
 
             var hitters = enemy.DamageCounter.GetHitters();
-
             var boosted = owners.Length == 1 && player.LDBoostTime > 0;
-
             var bag = GetBagType(loots, boosted);
 
             if (!enemy.GameServer.Resources.GameData.IdToObjectType.TryGetValue(bag, out var bagType))

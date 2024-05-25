@@ -10,6 +10,7 @@ namespace WorldServer.logic
         private _ LostHalls = () => Behav()
             .Init("LH Marble Colossus",
                 new State(
+                    new ScaleHP2(20),
                     new DropPortalOnDeath("Realm Portal", probability: 1.0, timeout: null),
                     new State("A-P",
                         new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable),
@@ -23,7 +24,7 @@ namespace WorldServer.logic
                         new Timed(6000, new SetAltTexture(3)),
                         new Timed(8000, new SetAltTexture(4)),
                         new Timed(10000, new SetAltTexture(0), new Flash(0xffffff, 0.6, 17)),
-                        new TimedTransition(16600, "P-1")
+                        new TimedTransition(10000, "P-1")
                         ),
                     new State("P-1",
                         new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 1000),
@@ -96,15 +97,17 @@ namespace WorldServer.logic
                         new HpLessTransition(0.75, "P-5")
                         ),
                     new State("P-5",
+                        new Order(15, "LH Marble Colossus Laser A", "L-S"),
                         new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 2000),
                         new Taunt("INSOLENTIA! Darkness will consume you"),
-                        new Orbit(0.6, 4, 10, "LH Marble Colossus Anchor", 0.5),
+                        new Orbit(3, 4, 10, "LH Marble Colossus Anchor"),
                         new Timed(1400, new Grenade(5, 120, 10, coolDown: 2000)),
                         new Shoot(10, 1, 6, coolDownOffset: 1200, coolDown: 2000),
-                        new Shoot(10, 2, 180, 7, coolDownOffset: 1200, coolDown: 400)
+                        new Shoot(10, 2, 180, 7, coolDownOffset: 1200, coolDown: 400),
+                        new TimedTransition(2000, "P-5-01")
                         ),
                     new State("P-5-01",
-                        new Orbit(0.6, 4, 10, "LH Marble Colossus Anchor", 0.5),
+                        new Orbit(3, 4, 10, "LH Marble Colossus Anchor"),
                         new Grenade(5, 120, 10, coolDown: 2000),
                         new Shoot(10, 1, 6, coolDownOffset: 1200, coolDown: 2000),
                         new Shoot(10, 2, 180, 7, coolDown: 400),
@@ -124,7 +127,8 @@ namespace WorldServer.logic
                         new Spawn("LH Colossus Rock 5", 1, 1, 5000),
                         new Spawn("LH Colossus Rock 6", 1, 1, 5000),
                         new Spawn("LH Colossus Rock 7", 1, 1, 5000),
-                        new Shoot(10, 4, 90, 8, rotateAngle: 9, defaultAngle: 0, coolDown: 400)
+                        new Shoot(10, 4, 90, 8, rotateAngle: 9, defaultAngle: 0, coolDown: 400),
+                        new TimedTransition(2000, "P-6-01")
                         ),
                     new State("P-6-01",
                         new Shoot(10, 4, 90, 8, rotateAngle: 9, defaultAngle: 0, coolDown: 400),
@@ -139,12 +143,11 @@ namespace WorldServer.logic
                         new Spawn("LH Colossus Rock 9", 1, 1, 4000),
                         new Shoot(10, 36, 10, 10, 0, coolDownOffset: 1800, coolDown: 2000),
                         new Shoot(10, 36, 10, 9, 5, coolDownOffset: 1800, coolDown: 2600),
-                        new EntityNotExistsTransition("LH Marble Core 1", 20, "S-1")
+                        new EntityNotExistsTransition("LH Marble Core 1", 20, "P-8")
                         ),
-                    new State("S-1",
-                        new Follow(0.4, 15, 2),
-                        new Spawn("LH Colossus Rock 10", 1, 1, 2000000000),
                         new State("P-8",
+                            new Follow(0.4, 15, 2),
+                            new Spawn("LH Colossus Rock 10", 1, 1, 2000000000),
                             new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 2000),
                             new Taunt("Call of voice, for naught. Plea of mercy, for naught. None may enter this chamber and live!"),
                             new Shoot(10, 16, 22.5, 11, defaultAngle: 0, coolDownOffset: 1200, coolDown: 4000),
@@ -153,7 +156,7 @@ namespace WorldServer.logic
                         new State("P-8-1",
                             new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 2000),
                             new Taunt("SANGUIS! OSSE! CARO! Feel it rend from your body!"),
-                            new Order(3, "LH Colossus Rock 10", "R-TR-2"),
+                            new Order(5, "LH Colossus Rock 10", "R-TR-2"),
                             new Shoot(10, 4, projectileIndex: 6, coolDownOffset: 1200, coolDown: 1600),
                             new Shoot(10, 16, 22.5, 11, coolDownOffset: 1200, coolDown: 4000),
                             new HpLessTransition(0.50, "P-8-2")
@@ -165,8 +168,7 @@ namespace WorldServer.logic
                             new Shoot(10, 4, projectileIndex: 6, coolDownOffset: 2000, coolDown: 1600),
                             new Shoot(10, 16, 22.5, 11, coolDownOffset: 1200, coolDown: 4000),
                             new HpLessTransition(0.45, "PR-9")
-                            )
-                        ),
+                            ),
                     new State("PR-9",
                         new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable),
                         new Taunt("Enough! Pillars, serve your purpose!"),
@@ -183,10 +185,8 @@ namespace WorldServer.logic
                         new Duration(new Shoot(10, 3, 16, 13, coolDownOffset: 4200, coolDown: 1200), 6600),
                         new Shoot(10, 4, 16, 13, coolDownOffset: 6600, coolDown: 1200),
                         new Shoot(10, 5, 16, 13, coolDownOffset: 7800, coolDown: 1200),
-                        new HpLessTransition(0.40, "S-2")
+                        new HpLessTransition(0.40, "PR-10")
                         ),
-                    new State("S-2",
-                        new Flash(0x0000ff, 0.3, 6000),
                         new State("PR-10",
                             new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable),
                             new Taunt("Perish, blights upon this realm!"),
@@ -202,8 +202,7 @@ namespace WorldServer.logic
                             new Shoot(10, 3, 27, 13, coolDown: 2800),
                             new Shoot(10, 36, 10, 10, 0, coolDownOffset: 400, coolDown: 1600),
                             new EntitiesNotExistsTransition(30, "P-11", "LH Marble Core 2", "LH Marble Core 3")
-                            )
-                        ),
+                            ),
                     new State("P-11",
                         new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 2000),
                         new ConditionEffectBehavior(ConditionEffectIndex.Armored, true),
@@ -211,28 +210,25 @@ namespace WorldServer.logic
                         new Order(15, "LH Colossus Rock 11", "R-TR-4"),
                         new Order(15, "LH Colossus Rock 12", "R-TR-4"),
                         new Shoot(10, 3, 120, 3, rotateAngle: 3, defaultAngle: 0, coolDownOffset: 200, coolDown: 200),
-                        new HpLessTransition(0.35, "S-3")
+                        new HpLessTransition(0.35, "PR-12")
                         ),
-                     new State("S-3",
-                        new Flash(0x0000ff, 0.3, 6000),
-                        new State("PR-12",
-                            new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable),
-                            new Taunt("PATI! The prohibited arts allow untold power!"),
-                            new Spawn("LH Marble Core 4", 1, 0, 2000000000),
-                            new Spawn("LH Marble Core 5", 1, 0, 2000000000),
-                            new TimedTransition(2000, "P-12")
-                            ),
-                        new State("P-12",
-                            new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable),
-                            new Timed(3600, new Charge(4, 12, 4800)),
-                            new Shoot(10, 16, 22.5, 20, 0, coolDownOffset: 1600, coolDown: 4800),
-                            new Shoot(10, 16, 22.5, 20, 10, coolDownOffset: 2000, coolDown: 4800),
-                            new Shoot(10, 16, 22.5, 20, 0, coolDownOffset: 2400, coolDown: 4800),
-                            new Shoot(10, 3, 27, 13, predictive: 0.1, coolDownOffset: 2600, coolDown: 4800),
-                            new Shoot(10, 3, 27, 13, predictive: 0.1, coolDownOffset: 3800, coolDown: 4800),
-                            new Shoot(10, 3, 27, 13, predictive: 0.1, coolDownOffset: 4800, coolDown: 4800),
-                            new EntityNotExistsTransition("LH Marble Core 5", 20, "PR-13")
-                            )
+                    new State("PR-12",
+                        new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable),
+                        new Taunt("PATI! The prohibited arts allow untold power!"),
+                        new Spawn("LH Marble Core 4", 1, 0, 2000000000),
+                        new Spawn("LH Marble Core 5", 1, 0, 2000000000),
+                        new TimedTransition(2000, "P-12")
+                        ),
+                    new State("P-12",
+                        new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable),
+                        new Timed(3600, new Charge(4, 12, 4800)),
+                        new Shoot(10, 16, 22.5, 20, 0, coolDownOffset: 1600, coolDown: 4800),
+                        new Shoot(10, 16, 22.5, 20, 10, coolDownOffset: 2000, coolDown: 4800),
+                        new Shoot(10, 16, 22.5, 20, 0, coolDownOffset: 2400, coolDown: 4800),
+                        new Shoot(10, 3, 27, 13, predictive: 0.1, coolDownOffset: 2600, coolDown: 4800),
+                        new Shoot(10, 3, 27, 13, predictive: 0.1, coolDownOffset: 3800, coolDown: 4800),
+                        new Shoot(10, 3, 27, 13, predictive: 0.1, coolDownOffset: 4800, coolDown: 4800),
+                        new EntityNotExistsTransition("LH Marble Core 5", 20, "PR-13")
                         ),
                     new State("PR-13",
                         new Taunt("It is my duty to protect these catacombs! You dare threaten my purpose?"),
@@ -509,7 +505,10 @@ namespace WorldServer.logic
                         new Shoot(10, 45, 8, 16, angleOffset: 90, coolDownOffset: 7400, coolDown: 200),
                         new Shoot(10, 45, 8, 17, angleOffset: 90, coolDownOffset: 7400, coolDown: 200),
                         new Shoot(10, 30, 12, 18, angleOffset: 90, coolDownOffset: 7400, coolDown: 200),
-                        new Decay(7400)
+                        new TimedTransition(7400, "decay")
+                        ),
+                    new State("decay",
+                        new Suicide()
                         )
                     ),
                     new Threshold(0.001,
@@ -519,11 +518,8 @@ namespace WorldServer.logic
                         new ItemLoot("Potion of Mana", 0.25),
                         new ItemLoot("Potion of Attack", 0.25),
                         new ItemLoot("Potion of Defense", 0.25),
-                        new TierLoot(12, ItemType.Weapon, 0.4),
-                        new TierLoot(13, ItemType.Weapon, 0.2),
-                        new TierLoot(14, ItemType.Weapon, 0.05),
-                        new TierLoot(6, ItemType.Ability, 0.2),
-                        new TierLoot(13, ItemType.Armor, 0.2),
+                        new TierLoot(13, ItemType.Weapon, 0.25),
+                        new TierLoot(6, ItemType.Ability, 0.25),
                         new TierLoot(14, ItemType.Armor, 0.05),
                         new TierLoot(6, ItemType.Ring, 0.2),
                         new ItemLoot("Ring of Decades", 0.025),
@@ -540,9 +536,8 @@ namespace WorldServer.logic
                         new ItemLoot("Marble Seal", 0.0008),
                         new ItemLoot("Magical Lodestone", 0.0008),
                         new ItemLoot("Omnipotence Ring", 0.0004)
+                        )
                     )
-
-            )
             .Init("LH Void Rift Spawner",
                 new State(
                     new State("S-R",
@@ -583,11 +578,14 @@ namespace WorldServer.logic
                         new TossObject("LH Rift 20", 3, 90, 99999999, 5000, true),
                         new TossObject("LH Rift 22", 3, 56, 99999999, 5000, true),
                         new TossObject("LH Rift 23", 3, 46, 99999999, 5000, true),
-                        new Decay(5000)
+                        new TimedTransition(1000, "decay")
+                        ),
+                        new State("decay",
+                            new Suicide()
                         )
                     )
-            )
-            .Init("LH Colossus Pillar Summoner",//This object takes orders from the Colossus and spawns One pillar and orders it to have the correct phase (x4)
+                )
+            .Init("LH Colossus Pillar Summoner",
                 new State(
                     new OnParentDeathTransition("S-S"),
                     new State("S-P-1-A",
@@ -595,46 +593,39 @@ namespace WorldServer.logic
                         new EntityExistsTransition("LH Colossus Pillar", 3, "S-P-1-B")
                         ),
                     new State("S-P-1-B",
-                        new Spawn("LH Colossus Pillar", 0, 1, 5000),
-                        new TimedTransition(6000, "S-P-1-A")
+                        new EntityNotExistsTransition("LH Colossus Pillar", 3, "S-P-1-A")
                         ),
                     new State("S-P-2-A",
-                        new Order(3, "LH Colossus Pillar", "PL-TR-B"),
-                        new Spawn("LH Colossus Pillar", 1, 1, 30000),
-                        new EntityExistsTransition("LH Colossus Pillar", 3, "S-P-2-B")
+                        new EntityExistsTransition("LH Colossus Pillar", 3, "S-P-2-B"),
+                        new Order(3, "LH Colossus Pillar", "PL-TR-B")
                         ),
                     new State("S-P-2-B",
-                        new Spawn("LH Colossus Pillar", 0, 1, 5000),
                         new TimedTransition(6000, "S-P-1-A")
                         ),
                     new State("S-P-3-A",
-                        new Order(3, "LH Colossus Pillar", "PL-TR-C"),
-                        new Spawn("LH Colossus Pillar", 1, 1, 30000),
-                        new EntityExistsTransition("LH Colossus Pillar", 3, "S-P-3-B")
+                        new EntityExistsTransition("LH Colossus Pillar", 3, "S-P-3-B"),
+                        new Order(3, "LH Colossus Pillar", "PL-TR-C")
                         ),
                     new State("S-P-3-B",
-                        new Spawn("LH Colossus Pillar", 0, 1, 5000),
-                        new TimedTransition(6000, "S-P-1-A")
+                        new EntityNotExistsTransition("LH Colossus Pillar", 3, "S-P-1-A")
                         ),
                     new State("S-P-4-A",
-                        new Order(3, "LH Colossus Pillar", "PL-TR-D"),
-                        new Spawn("LH Colossus Pillar", 1, 1, 30000),
                         new EntityExistsTransition("LH Colossus Pillar", 3, "S-P-4-B")
                         ),
                     new State("S-P-4-B",
-                        new Spawn("LH Colossus Pillar", 0, 1, 5000),
-                        new TimedTransition(6000, "S-P-1-A")
+                        new EntityNotExistsTransition("LH Colossus Pillar", 3, "S-P-1-A")
                         ),
                     new State("S-S",
-                        new Timed(1000, new Order(15, "LH Colossus Pillar", targetState: "S-S")),
-                        new Decay(1000)
+                        new TimedTransition(100, "decay")
+                        ),
+                    new State("decay",
+                        new Suicide()
                         )
                     )
-            )
+                )
             .Init("LH Colossus Pillar",
                 new State(
                     new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 1800),
-                    new Decay(25000),
                     new State("PL-TR-A",
                         new TimedRandomTransition(0, false, "PL-0-A", "PL-1-A", "PL-2-A", "PL-3-A", "PL-4-A", "PL-5-A", "PL-6-A", "PL-7-A")
                         ),
@@ -830,7 +821,10 @@ namespace WorldServer.logic
                         ),
                 new State("PL-S",
                     new Flash(0xffffff, .6, 5),
-                    new Decay(3000)
+                    new TimedTransition(3000, "decay")
+                    ),
+                new State("decay",
+                    new Suicide()
                     )
                 )
             )
@@ -866,7 +860,10 @@ namespace WorldServer.logic
                         new Flash(0xFF0000, 0.2, 3),
                         new Charge(0.6, 1, 1000),
                         new Shoot(10, 8, 45, 0, coolDownOffset: 800, coolDown: 400),
-                        new Decay(800)
+                        new TimedTransition(800, "decay")
+                        ),
+                    new State("decay",
+                        new Suicide()
                         )
                     )
             )
@@ -898,8 +895,11 @@ namespace WorldServer.logic
                         new Flash(0xFF0000, 0.2, 3),
                         new Charge(0.6, 1, 1000),
                         new Shoot(10, 8, 45, 0, coolDownOffset: 800, coolDown: 400),
-                        new Decay(800)
-                    )
+                        new TimedTransition(800, "decay")
+                        ),
+                    new State("decay",
+                        new Suicide()
+                        )
                 )
             )
             .Init("LH Colossus Rock 3",
@@ -930,7 +930,10 @@ namespace WorldServer.logic
                         new Flash(0xFF0000, 0.2, 3),
                         new Charge(0.6, 1, 1000),
                         new Shoot(10, 8, 45, 0, coolDownOffset: 800, coolDown: 400),
-                        new Decay(800)
+                        new TimedTransition(800, "decay")
+                        ),
+                    new State("decay",
+                        new Suicide()
                         )
                     )
             )
@@ -968,7 +971,10 @@ namespace WorldServer.logic
                         new Flash(0xFF0000, 0.2, 3),
                         new Charge(0.5, 1, 1000),
                         new Shoot(10, 8, 45, 0, coolDownOffset: 800, coolDown: 400),
-                        new Decay(800)
+                        new TimedTransition(800, "decay")
+                        ),
+                    new State("decay",
+                        new Suicide()
                         )
                     )
             )
@@ -1000,7 +1006,10 @@ namespace WorldServer.logic
                         new Flash(0xFF0000, 0.2, 3),
                         new Charge(0.5, 1, 1000),
                         new Shoot(10, 8, 45, 0, coolDownOffset: 800, coolDown: 400),
-                        new Decay(800)
+                        new TimedTransition(800, "decay")
+                        ),
+                    new State("decay",
+                        new Suicide()
                         )
                     )
             )
@@ -1032,7 +1041,10 @@ namespace WorldServer.logic
                         new Flash(0xFF0000, 0.2, 3),
                         new Charge(0.5, 1, 1000),
                         new Shoot(10, 8, 45, 0, coolDownOffset: 800, coolDown: 400),
-                        new Decay(800)
+                        new TimedTransition(800, "decay")
+                        ),
+                    new State("decay",
+                        new Suicide()
                         )
                     )
             )
@@ -1064,7 +1076,10 @@ namespace WorldServer.logic
                         new Flash(0xFF0000, 0.2, 3),
                         new Charge(0.5, 1, 1000),
                         new Shoot(10, 8, 45, 0, coolDownOffset: 800, coolDown: 400),
-                        new Decay(800)
+                        new TimedTransition(800, "decay")
+                        ),
+                    new State("decay",
+                        new Suicide()
                         )
                     )
             )
@@ -1117,7 +1132,10 @@ namespace WorldServer.logic
                         new SetAltTexture(1),
                         new Flash(0xFF0000, 0.2, 3),
                         new Shoot(10, 8, 45, 0, coolDownOffset: 800, coolDown: 400),
-                        new Decay(800)
+                        new TimedTransition(800, "decay")
+                        ),
+                    new State("decay",
+                        new Suicide()
                         )
                     )
             )
@@ -1166,7 +1184,10 @@ namespace WorldServer.logic
                         new SetAltTexture(1),
                         new Flash(0xFF0000, 0.2, 3),
                         new Shoot(10, 8, 45, 0, coolDownOffset: 800, coolDown: 400),
-                        new Decay(800)
+                        new TimedTransition(800, "decay")
+                        ),
+                    new State("decay",
+                        new Suicide()
                         )
                     )
             )
@@ -1269,42 +1290,45 @@ namespace WorldServer.logic
                     new State("R-S-0",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 0, coolDownOffset: 400, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-1",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 1, coolDownOffset: 400, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-2",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 2, coolDownOffset: 400, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-3",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 3, coolDownOffset: 400, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-4",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 4, coolDownOffset: 400, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-5",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 5, coolDownOffset: 400, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-6",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 6, coolDownOffset: 400, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-7",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 7, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
+                        ),
+                    new State("decay",
+                        new Suicide()
                         )
                     )
             )
@@ -1466,42 +1490,45 @@ namespace WorldServer.logic
                     new State("R-S-0",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 0, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-1",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 1, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-2",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 2, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-3",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 3, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-4",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 4, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-5",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 5, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-6",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 6, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-7",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 7, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
+                        ),
+                    new State("decay",
+                        new Suicide()
                         )
                     )
             )
@@ -1621,42 +1648,45 @@ namespace WorldServer.logic
                     new State("R-S-0",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 0, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-1",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 1, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-2",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 2, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-3",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 3, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-4",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 4, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-5",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 5, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-6",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 6, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-7",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 7, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
+                        ),
+                    new State("decay",
+                        new Suicide()
                         )
                     )
             )
@@ -1725,42 +1755,45 @@ namespace WorldServer.logic
                     new State("R-S-0",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 0, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-1",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 1, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-2",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 2, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-3",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 3, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-4",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 4, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-5",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 5, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-6",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 6, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-7",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 7, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
+                        ),
+                    new State("decay",
+                        new Suicide()
                         )
                     )
             )
@@ -1829,42 +1862,45 @@ namespace WorldServer.logic
                     new State("R-S-0",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 0, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-1",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 1, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-2",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 2, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-3",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 3, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-4",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 4, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-5",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 5, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-6",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 6, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
                         ),
                     new State("R-S-7",
                         new Flash(0x000000, 0.20, 3),
                         new Shoot(10, 8, 45, 7, coolDownOffset: 600, coolDown: 200),
-                        new Decay(600)
+                        new TimedTransition(600, "decay")
+                        ),
+                    new State("decay",
+                        new Suicide()
                         )
                     )
             )
@@ -1934,8 +1970,9 @@ namespace WorldServer.logic
             )
             .Init("LH Marble Colossus Laser A",
                 new State(
-                    new Shoot(10, 6, 60, 0, rotateAngle: 3, defaultAngle: 0, coolDownOffset: 200, coolDown: 200),
-                    new EntityHpLessTransition(5, "LH Marble Colossus", 0.75, "L-S"),
+                    new State("shoot",
+                        new Shoot(10, 6, 60, 0, rotateAngle: 3, fixedAngle: 0, coolDownOffset: 100, coolDown: 100)
+                        ),
                     new State("L-S",
                         new Suicide()
                         )
@@ -1945,18 +1982,17 @@ namespace WorldServer.logic
                 new State(
                     new EntitiesNotExistsTransition(15, "L-S", "LH Marble Core 6", "LH Marble Core 7", "LH Marble Core 8"),
                     new State("C-W",
-                        new Shoot(10, 6, 60, 0, rotateAngle: 3, defaultAngle: 60, coolDown: 200),
+                        new Shoot(10, 6, 60, 0, rotateAngle: 3, fixedAngle: 60, coolDown: 100),
                         new TimedTransition(5000, "C-C-W")
                         ),
                     new State("C-C-W",
-                        new Shoot(10, 6, 60, 0, rotateAngle: -3, defaultAngle: 60, coolDown: 200),
+                        new Shoot(10, 6, 60, 0, rotateAngle: -3, fixedAngle: 60, coolDown: 100),
                         new TimedTransition(5000, "C-W")
                         ),
                     new State("L-S",
                         new Suicide()
                         )
                     )
-            )
-            ;
+            );
     }
 }

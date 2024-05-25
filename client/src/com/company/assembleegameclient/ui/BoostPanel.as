@@ -76,7 +76,7 @@ public class BoostPanel extends Sprite {
         graphics.clear();
         graphics.lineStyle(2, 0xFFFFFF);
         graphics.beginFill(0x333333);
-        graphics.drawRoundRect(0, 0, 150, (height + 5), 10);
+        graphics.drawRoundRect(0, 0, 150, 75, 10);
         this.resized.dispatch();
     }
 
@@ -89,7 +89,7 @@ public class BoostPanel extends Sprite {
 
     private function addDropTimerIfAble(_arg1:SignalWaiter):void {
         if (this.player.dropBoost) {
-            this.dropBoostTimer = returnBoostTimer("1.25x Drop Rate ", this.player.dropBoost);
+            this.dropBoostTimer = returnBoostTimer("1.5x Drop Rate", this.player.dropBoost);
             this.addTimer(_arg1, this.dropBoostTimer);
         }
     }

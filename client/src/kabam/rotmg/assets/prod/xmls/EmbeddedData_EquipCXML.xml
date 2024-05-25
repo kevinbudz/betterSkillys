@@ -9490,6 +9490,7 @@
 		<Soulbound/>
 		<LTBoosted/>
 		<Timer>1800</Timer>
+		<Activate duration="1800">LTBoost</Activate>
 		<BagType>7</BagType>
 		<feedPower>150</feedPower>
 		<Track/>
@@ -9511,6 +9512,7 @@
 		<Soulbound/>
 		<LDBoosted/>
 		<Timer>1800</Timer>
+		<Activate duration="1800">LDBoost</Activate>
 		<BagType>7</BagType>
 		<feedPower>150</feedPower>
 		<Track/>
@@ -9533,6 +9535,7 @@
 		<BagType>8</BagType>
 		<Timer>3600</Timer>
 		<XpBoost/>
+		<Activate duration="3600">XPBoost</Activate>
 		<feedPower>110</feedPower>
 		<Track/>
 	</Object>
@@ -9554,6 +9557,7 @@
 		<BagType>8</BagType>
 		<Timer>1200</Timer>
 		<XpBoost/>
+		<Activate duration="1200">XPBoost</Activate>
 		<feedPower>75</feedPower>
 		<Track/>
 	</Object>

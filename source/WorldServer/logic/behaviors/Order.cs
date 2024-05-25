@@ -43,8 +43,10 @@ namespace WorldServer.logic.behaviors
                 _targetState = FindState(host.GameServer.BehaviorDb.Definitions[_children].Item1, _targetStateName);
 
             foreach (var i in host.GetNearestEntities(_range, _children))
+            {
                 if (!i.CurrentState.Is(_targetState))
                     i.SwitchTo(_targetState);
+            }
         }
     }
 }

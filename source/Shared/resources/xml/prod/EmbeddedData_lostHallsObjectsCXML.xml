@@ -2149,6 +2149,7 @@
       </Texture>
       <NoMiniMap/>
       <Size>0</Size>
+	   <MaxHitPoints>10000</MaxHitPoints>
       <ShadowSize>0</ShadowSize>
       <Invincible/>
       <Projectile id="0">
@@ -2171,6 +2172,7 @@
       <NoMiniMap/>
       <Size>0</Size>
       <ShadowSize>0</ShadowSize>
+	   <MaxHitPoints>10000</MaxHitPoints>
       <Invincible/>
       <Projectile id="0">
          <ObjectId>Colossal Bullet</ObjectId>

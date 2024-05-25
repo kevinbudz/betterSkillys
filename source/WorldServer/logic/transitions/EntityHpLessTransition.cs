@@ -1,4 +1,5 @@
-﻿using WorldServer.core.objects;
+﻿using System;
+using WorldServer.core.objects;
 using WorldServer.core.worlds;
 using WorldServer.logic;
 using WorldServer.utils;
@@ -27,8 +28,10 @@ namespace WorldServer.logic.transitions
 
             if (entity == null)
                 return false;
-
-            return (double)(entity as Enemy).Health / (entity as Enemy).MaxHealth < _threshold;
+            if (entity is Enemy en)
+                return en.Health / en.MaxHealth < _threshold;
+            else
+                return false;
         }
     }
 }

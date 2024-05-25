@@ -39,7 +39,7 @@ public class BoostPanelButton extends Sprite {
 
     private function positionBoostPanel():void {
         this.boostPanel.x = -(this.boostPanel.width);
-        this.boostPanel.y = -(this.boostPanel.height);
+        this.boostPanel.y = -75;
     }
 
     private function onButtonOut(_arg1:Event):void {
