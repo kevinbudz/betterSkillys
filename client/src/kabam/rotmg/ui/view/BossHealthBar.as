@@ -4,11 +4,19 @@ import com.company.assembleegameclient.util.TextureRedrawer;
 import com.company.assembleegameclient.util.redrawers.GlowRedrawer;
 import com.company.ui.SimpleText;
 import com.company.util.AssetLibrary;
+import com.company.util.GraphicsUtil;
 import com.company.util.MoreColorUtil;
 
 import flash.display.Bitmap;
 import flash.display.BitmapData;
 import flash.display.BlendMode;
+import flash.display.CapsStyle;
+import flash.display.GraphicsPath;
+import flash.display.GraphicsSolidFill;
+import flash.display.GraphicsStroke;
+import flash.display.IGraphicsData;
+import flash.display.JointStyle;
+import flash.display.LineScaleMode;
 import flash.display.Sprite;
 import flash.filters.BitmapFilterQuality;
 import flash.filters.DropShadowFilter;
@@ -31,11 +39,29 @@ public class BossHealthBar extends Sprite {
     private var nameText_:SimpleText;
     private var displayName:String;
 
+    private var outlineFill_:GraphicsSolidFill = new GraphicsSolidFill(0,0.6);
+    private var lineStyle_:GraphicsStroke = new GraphicsStroke(2,false,LineScaleMode.NORMAL,CapsStyle.NONE,JointStyle.ROUND,3,outlineFill_);
+    private var backgroundFill_:GraphicsSolidFill = new GraphicsSolidFill(0, 0.45);
+    private var path_:GraphicsPath = new GraphicsPath(new Vector.<int>(),new Vector.<Number>());
+    private var graphicsData_:Vector.<IGraphicsData> = new <IGraphicsData>[lineStyle_,backgroundFill_,path_,GraphicsUtil.END_FILL,GraphicsUtil.END_STROKE];
+
+    private var hpBarFill_:GraphicsSolidFill = new GraphicsSolidFill(0x20FF20, 0.8);
+    private var hpGraphicsData_:Vector.<IGraphicsData> = new <IGraphicsData>[hpBarFill_,path_,GraphicsUtil.END_FILL,GraphicsUtil.END_STROKE];
+
+    //private var altGraphicsData_:Vector.<IGraphicsData> = new <IGraphicsData>[altLineStyle_,backgroundFill_,path_,GraphicsUtil.END_FILL,GraphicsUtil.END_STROKE];
+    //private var altLineStyle_:GraphicsStroke = new GraphicsStroke(1,false,LineScaleMode.NORMAL,CapsStyle.NONE,JointStyle.ROUND,3,outlineFill_);
+
     public function BossHealthBar() {
-        this.overlay_ = this.makeOverlay();
-        this.foreground = this.makeForeground();
+        this.overlay_ = new Sprite();
+        this.makeOverlay();
+
+        this.foreground = new Sprite();
+        this.makeForeground();
         this.foregroundMask = this.hiddenForeground();
-        this.background = this.makeBackground();
+
+        this.background = new Sprite();
+        this.makeBackground();
+
         this.foreground.mask = this.foregroundMask;
         this.displayName = "";
 
@@ -68,36 +94,25 @@ public class BossHealthBar extends Sprite {
         this.timeSinceNull_ = getTimer();
     }
 
-    public function makeOverlay():Sprite
+    public function makeOverlay():void
     {
-        var s:Sprite = new Sprite;
-        s.graphics.clear();
-        s.graphics.beginFill(0, 0.4);
-        s.graphics.lineStyle(1, 0, 0.4);
-        s.graphics.drawRoundRect(0, 0, 380, 62, 18, 18);
-        s.graphics.endFill();
-        addChild(s);
-        return s;
+        GraphicsUtil.clearPath(this.path_);
+        GraphicsUtil.drawCutEdgeRect(0,0,380, 62,8,[1,1,1,1],this.path_);
+        this.overlay_.graphics.drawGraphicsData(this.graphicsData_);
     }
 
-    public function makeForeground():Sprite
+    public function makeForeground():void
     {
-        var s:Sprite = new Sprite();
-        s.graphics.clear();
-        s.graphics.beginFill(0x20FF20, 0.7);
-        s.graphics.drawRoundRect(1,1,298,34, 18, 18);
-        s.graphics.endFill();
-        return s;
+        GraphicsUtil.clearPath(this.path_);
+        GraphicsUtil.drawCutEdgeRect(1,1,298, 34,8,[1,1,1,1],this.path_);
+        this.foreground.graphics.drawGraphicsData(this.hpGraphicsData_);
     }
 
-    public function makeBackground():Sprite
+    public function makeBackground():void
     {
-        var s:Sprite = new Sprite();
-        s.graphics.clear();
-        s.graphics.beginFill(0, 0.4);
-        s.graphics.drawRoundRect(0,0,300, 36, 18, 18);
-        s.graphics.endFill();
-        return s;
+        GraphicsUtil.clearPath(this.path_);
+        GraphicsUtil.drawCutEdgeRect(0,0,300, 36,8,[1,1,1,1],this.path_);
+        this.background.graphics.drawGraphicsData(this.graphicsData_);
     }
 
     public function hiddenForeground():Sprite
@@ -111,6 +126,7 @@ public class BossHealthBar extends Sprite {
     }
 
     private var damagePercentage_:Number;
+
     public function setDamageInflicted(percentage:Number):void{
         if(percentage == -1){
             this.damagePercentage_ = 0;
@@ -123,7 +139,7 @@ public class BossHealthBar extends Sprite {
         this.dmgText_.updateMetrics();
 
         this.dmgText_.x = this.background.x + this.background.width / 2 - this.dmgText_.width / 2;
-        this.dmgText_.y = 37;
+        this.dmgText_.y = 38;
     }
 
     private function getPortrait(go:GameObject):BitmapData {
@@ -142,8 +158,8 @@ public class BossHealthBar extends Sprite {
         if (!isNull) {
             this.portrait_.bitmapData = isNull ? null : getPortrait(go);
             this.background.x = this.portrait_.width + 2;
-            this.foreground.x = this.foregroundMask.x = this.background.x;
-            this.background.y = this.foregroundMask.y = this.foreground.y = 19;
+            this.foreground.x = this.foregroundMask.x = this.portrait_.width + 2;
+            this.background.y = this.foregroundMask.y = this.foreground.y = 20;
 
             switch (go.glowColorEnemy_)
             {
@@ -162,7 +178,7 @@ public class BossHealthBar extends Sprite {
             }
             this.nameText_.updateMetrics();
             this.nameText_.x = this.background.x + this.background.width / 2 - this.nameText_.width / 2;
-            this.nameText_.y = 1;
+            this.nameText_.y = 2;
             visible = true;
         }
     }
@@ -176,10 +192,10 @@ public class BossHealthBar extends Sprite {
         this.hpText_.text = this.go_.hp_ + "/" + this.go_.maxHP_;
         this.hpText_.updateMetrics();
         this.hpText_.x = this.background.x + this.background.width / 2 - this.hpText_.width / 2;
-        if (this.damagePercentage_ == 0)
+        if (this.dmgText_.text == "")
             this.hpText_.y = this.background.y + this.background.height / 2 - this.hpText_.height / 2 - 1;
         else
-            this.hpText_.y = 21;
+            this.hpText_.y = 22;
 
         if (go_.isInvulnerable()) {
             this.background.transform.colorTransform = new ColorTransform(50 / 255, 100 / 255,  190 / 255);
