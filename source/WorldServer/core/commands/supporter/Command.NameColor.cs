@@ -7,23 +7,23 @@ namespace WorldServer.core.commands
 {
     public abstract partial class Command
     {
-        internal class ColorChat : Command
+        internal class NameColor : Command
         {
             public override RankingType RankRequirement => RankingType.Donator;
-            public override string CommandName => "chatcolor";
+            public override string CommandName => "namecolor";
 
             protected override bool Process(Player player, TickTime time, string color)
             {
                 if (string.IsNullOrWhiteSpace(color))
                 {
-                    player.SendInfo("Usage: /chatcolor <color> \n (use hexcode format: 0xFFFFFF)");
+                    player.SendInfo("Usage: /namecolor <color> \n (use hexcode format: 0xFFFFFF)");
                     return true;
                 }
 
-                player.ColorChat = Utils.FromString(color);
+                player.ColorNameChat = Utils.FromString(color);
 
                 var acc = player.Client.Account;
-                acc.ColorChat = player.ColorChat;
+                acc.ColorNameChat = player.ColorNameChat;
                 acc.FlushAsync();
 
                 return true;

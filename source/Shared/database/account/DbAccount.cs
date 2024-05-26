@@ -18,6 +18,7 @@ namespace Shared.database.account
         public bool FirstDeath { get => GetValue<bool>("firstDeath"); set => SetValue("firstDeath", value); }
         public ushort[] Gifts { get => GetValue<ushort[]>("gifts") ?? new ushort[0]; set => SetValue("gifts", value); }
         public int GlowColor { get => GetValue<int>("glow"); set => SetValue("glow", value); }
+        public int Size { get => GetValue<int>("size"); set => SetValue("size", value); }
         public bool Guest { get => GetValue<bool>("guest"); set => SetValue("guest", value); }
         public int GuildFame { get => GetValue<int>("guildFame"); set => SetValue("guildFame", value); }
         public int GuildId { get => GetValue<int>("guildId"); set => SetValue("guildId", value); }
