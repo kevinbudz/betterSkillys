@@ -52,8 +52,8 @@ namespace App.Controllers
             var status = _db.Verify(guid, password, out DbAccount acc);
             if (status == DbLoginStatus.OK)
             {
-                using (var l = _db.Lock(acc))
-                    if (_db.LockOk(l))
+                using (var accountLock = _db.LockAccount(acc))
+                    if (accountLock.HasLock)
                     {
                         _db.DeleteCharacter(acc, int.Parse(charId));
                         Response.CreateSuccess();

@@ -1,5 +1,13 @@
 ﻿using Newtonsoft.Json;
 using NLog;
+using Shared.database.account;
+using Shared.database.character;
+using Shared.database.guild;
+using Shared.database.leaderboard;
+using Shared.database.market;
+using Shared.database.party;
+using Shared.database.vault;
+using Shared.resources;
 using StackExchange.Redis;
 using System;
 using System.Collections.Generic;
@@ -8,18 +16,29 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using Shared.database.account;
-using Shared.database.character;
-using Shared.database.guild;
-using Shared.database.leaderboard;
-using Shared.database.market;
-using Shared.database.party;
-using Shared.database.vault;
-using Shared.isc;
-using Shared.resources;
 
 namespace Shared.database
 {
+    public struct AccountLock : IDisposable
+    {
+        public bool HasLock { get; private set; }
+        private readonly DbAccount _acc;
+        private Database _db;
+
+        public AccountLock(Database db, DbAccount acc)
+        {
+            _db = db;
+            _acc = acc;
+            HasLock = db.AcquireLock(acc);
+        }
+
+        public readonly void Dispose()
+        {
+            if (HasLock)
+                _db.ReleaseLock(_acc);
+        }
+    }
+
     public class Database : IDisposable
     {
         public const string NAME_LOCK = "nameLock";
@@ -741,7 +760,7 @@ namespace Shared.database
             else return ret;
         }
 
-        public IDisposable Lock(DbAccount acc) => new l(this, acc);
+        public AccountLock LockAccount(DbAccount acc) => new AccountLock(this, acc);
 
         public void LockAccount(DbAccount target, DbAccount acc, bool add)
         {
@@ -758,8 +777,6 @@ namespace Shared.database
             target.LockList = lockList.ToArray();
             target.FlushAsync();
         }
-
-        public bool LockOk(IDisposable l) => ((l)l).lockOk;
 
         public void LogAccountByIp(string ip, int accountId)
         {
@@ -1372,28 +1389,6 @@ namespace Shared.database
         }
 
         protected void UpdatePlayerGuildFame(DbAccount acc, int amount) => acc.GuildFame = (int)_db.HashIncrement(acc.Key, "guildFame", amount);
-
-        // abstracted account locking funcs
-        protected struct l : IDisposable
-        {
-            internal bool lockOk;
-            private readonly DbAccount acc;
-            private Database db;
-
-            public l(Database db, DbAccount acc)
-            {
-                this.db = db;
-                this.acc = acc;
-
-                lockOk = db.AcquireLock(acc);
-            }
-
-            public void Dispose()
-            {
-                if (lockOk)
-                    db.ReleaseLock(acc);
-            }
-        }
 
         public static string GetHashedPassword(string password)
         {

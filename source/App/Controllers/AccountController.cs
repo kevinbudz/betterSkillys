@@ -58,49 +58,48 @@ namespace App.Controllers
             var db = _core.Database;
 
             var status = db.Verify(guid, password, out var acc);
-            if (status == DbLoginStatus.OK)
+            if (status != DbLoginStatus.OK)
             {
-                using (var l = db.Lock(acc))
-                {
-                    if (!db.LockOk(l))
-                    {
-                        Response.CreateError("Account in use");
-                        return;
-                    }
-
-                    var currency = _core.Resources.Settings.NewAccounts.SlotCurrency;
-                    var price = _core.Resources.Settings.NewAccounts.SlotCost;
-
-                    acc.Reload("fame");
-                    acc.Reload("totalFame");
-
-                    if (currency == CurrencyType.Gold && acc.Credits < price || currency == CurrencyType.Fame && acc.Fame < price)
-                    {
-                        Response.CreateError("Insufficient funds");
-                        return;
-                    }
-
-                    var trans = db.Conn.CreateTransaction();
-                    var t1 = db.UpdateCurrency(acc, -price, currency, trans);
-                    trans.AddCondition(Condition.HashEqual(acc.Key, "maxCharSlot", acc.MaxCharSlot));
-                    await trans.HashIncrementAsync(acc.Key, "maxCharSlot");
-                    var t2 = trans.ExecuteAsync();
-
-                    await Task.WhenAll(t1, t2).ContinueWith(r =>
-                    {
-                        if (t2.IsCanceled || !t2.Result)
-                        {
-                            Response.CreateError("<Error>Internal Server Error</Error>");
-                            return;
-                        }
-
-                        acc.MaxCharSlot++;
-                        Response.CreateSuccess();
-                    }).ContinueWith(e => _core.Logger.Error(e.Exception.InnerException.ToString()), TaskContinuationOptions.OnlyOnFaulted);
-                }
+                Response.CreateError(status.GetInfo());
                 return;
             }
-            Response.CreateError(status.GetInfo());
+
+            using (var accountLock = db.LockAccount(acc))
+            {
+                if (!accountLock.HasLock)
+                {
+                    Response.CreateError("Account in use");
+                    return;
+                }
+
+                var currency = _core.Resources.Settings.NewAccounts.SlotCurrency;
+                var price = _core.Resources.Settings.NewAccounts.SlotCost;
+
+                if (currency == CurrencyType.Gold && acc.Credits < price || currency == CurrencyType.Fame && acc.Fame < price)
+                {
+                    Response.CreateError("Insufficient funds");
+                    return;
+                }
+
+                var trans = db.Conn.CreateTransaction();
+
+                var t1 = db.UpdateCurrency(acc, -price, currency, trans);
+
+                trans.AddCondition(Condition.HashEqual(acc.Key, "maxCharSlot", acc.MaxCharSlot));
+
+                await trans.HashIncrementAsync(acc.Key, "maxCharSlot");
+                var t2 = trans.ExecuteAsync();
+
+                await Task.WhenAll(t1, t2);
+                    
+                if (t2.IsCanceled || !t2.Result)
+                {
+                    Response.CreateError("<Error>Internal Server Error</Error>");
+                    return;
+                }
+
+                Response.CreateSuccess();
+            }
         }
 
         // removed so that people cant call the api and get shit for free

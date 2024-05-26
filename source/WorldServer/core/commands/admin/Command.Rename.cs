@@ -61,8 +61,8 @@ namespace WorldServer.core.commands
                         return false;
                     }
 
-                    using (var l = db.Lock(acc))
-                        if (db.LockOk(l))
+                    using (var accountLock = db.LockAccount(acc))
+                        if (accountLock.HasLock)
                         {
                             while (!db.RenameIGN(acc, newPlayerName, lockToken)) ;
                             player.SendInfo("Rename successful.");

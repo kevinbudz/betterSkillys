@@ -44,10 +44,11 @@ namespace WorldServer.core.commands
                         return false;
                     }
 
-                    using (var l = db.Lock(acc))
-                        if (db.LockOk(l))
+                    using (var accountLock = db.LockAccount(acc))
+                        if (accountLock.HasLock)
                         {
-                            while (!db.UnnameIGN(acc, lockToken)) ;
+                            while (!db.UnnameIGN(acc, lockToken));
+
                             player.SendInfo("Account succesfully unnamed.");
                         }
                         else
