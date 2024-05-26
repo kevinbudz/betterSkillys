@@ -1,4 +1,5 @@
-﻿using Pipelines.Sockets.Unofficial.Arenas;
+﻿using Org.BouncyCastle.Bcpg;
+using Pipelines.Sockets.Unofficial.Arenas;
 using Shared.database;
 using Shared.resources;
 using System;
@@ -44,6 +45,8 @@ namespace WorldServer.core.worlds
         public bool DisableShooting { get; set; }
         public bool DisableAbilities { get; set; }
         private long Lifetime { get; set; }
+
+        public bool isWeekend { get; set; } = false;
 
         public readonly Wmap Map;
         public readonly GameServer GameServer;
@@ -101,6 +104,10 @@ namespace WorldServer.core.worlds
 
             WorldBranch = new WorldBranch(this);
             ParentWorld = parent;
+
+            var day = DateTime.Now.DayOfWeek;
+            if (day != DayOfWeek.Saturday && day != DayOfWeek.Sunday) { }
+            else isWeekend = true;
         }
 
         public bool HasLabel(string labelName) => Labels.Contains(labelName.ToLower());

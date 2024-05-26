@@ -412,6 +412,7 @@ public class GameSprite extends Sprite
    }
 
    public var gameStatistics_:GameStatistics;
+
    public function toggleStatistics():void {
       if (this.gameStatistics_ == null)
       {
@@ -456,24 +457,23 @@ public class GameSprite extends Sprite
          this.idleWatcher_.start(this);
          this.lastUpdate_ = getTimer();
          stage.addEventListener(Event.ENTER_FRAME,this.onEnterFrame);
-         if(Parameters.data_.FS){
-            if (Parameters.data_.mscale == undefined)
-            {
-               Parameters.data_.mscale = "1.0";
-            }
-            if (Parameters.data_.stageScale == undefined)
-            {
-               Parameters.data_.stageScale = StageScaleMode.NO_SCALE;
-            }
-            if (Parameters.data_.uiscale == undefined)
-            {
-               Parameters.data_.uiscale = true;
-            }
-            Parameters.save();
-            stage.scaleMode = Parameters.data_.stageScale;
-            stage.addEventListener(Event.RESIZE, this.onScreenResize);
-            stage.dispatchEvent(new Event(Event.RESIZE));
+         if (Parameters.data_.mscale == undefined)
+         {
+            Parameters.data_.mscale = "1.0";
          }
+         if (Parameters.data_.stageScale == undefined)
+         {
+            Parameters.data_.stageScale = StageScaleMode.NO_SCALE;
+         }
+         if (Parameters.data_.uiscale == undefined)
+         {
+            Parameters.data_.uiscale = true;
+         }
+         Parameters.save();
+         stage.scaleMode = Parameters.data_.stageScale;
+         stage.align = "";
+         stage.addEventListener(Event.RESIZE, this.onScreenResize);
+         stage.dispatchEvent(new Event(Event.RESIZE));
          Parameters.DamageCounter = [];
       }
    }
@@ -487,8 +487,8 @@ public class GameSprite extends Sprite
          this.idleWatcher_.stop();
          this.gsc_.serverConnection.disconnect();
          stage.removeEventListener(Event.ENTER_FRAME,this.onEnterFrame);
-         stage.removeEventListener(Event.RESIZE, this.onScreenResize);
          stage.align = StageAlign.TOP_LEFT;
+         stage.removeEventListener(Event.RESIZE, this.onScreenResize);
          stage.dispatchEvent(new Event(Event.RESIZE));
          contains(this.map) && removeChild(this.map);
          this.map.dispose();
@@ -538,7 +538,6 @@ public class GameSprite extends Sprite
             this.rankText_.draw(player.numStars_);
             this.guildText_.draw(player.guildName_,player.guildRank_);
          }
-
          if(player.isPaused())
          {
             this.map.filters = [PAUSED_FILTER];

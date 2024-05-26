@@ -319,14 +319,8 @@ public class Map extends Sprite {
 
     public function correctMapView(camera:Camera):Point {
         var clipRect:Rectangle = camera.clipRect_;
-        if (Parameters.data_.FS) {
-            x = ((-(clipRect.x) * 800) / (WebMain.sWidth / Parameters.data_.mscale));
-            y = ((-(clipRect.y) * 600) / (WebMain.sHeight / Parameters.data_.mscale));
-        }
-        else {
-            x = (-(clipRect.x) * Parameters.data_.mscale);
-            y = (-(clipRect.y) * Parameters.data_.mscale);
-        }
+        x = ((-(clipRect.x) * 800) / (WebMain.sWidth / Parameters.data_.mscale));
+        y = ((-(clipRect.y) * 600) / (WebMain.sHeight / Parameters.data_.mscale));
         var clipWidth:Number = ((-(clipRect.x) - (clipRect.width / 2)) / 50);
         var clipHeight:Number = ((-(clipRect.y) - (clipRect.height / 2)) / 50);
         var clipSqrt:Number = Math.sqrt(((clipWidth * clipWidth) + (clipHeight * clipHeight)));
@@ -369,25 +363,11 @@ public class Map extends Sprite {
         var t:Number = NaN;
         var d:Number = NaN;
         var screenRect:Rectangle = camera.clipRect_;
-        if (Parameters.data_.FS) {
-            x = -screenRect.x * 800 / WebMain.sWidth;
-            y = -screenRect.y * 600 / WebMain.sHeight;
-        }
-        else {
-            x = -screenRect.x;
-            y = -screenRect.y;
-        }
+        x = -screenRect.x * 800 / WebMain.sWidth;
+        y = -screenRect.y * 600 / WebMain.sHeight;
         var fsPos:Point;
-        if (Parameters.data_.FS) {
-            var plrPos:Point = this.correctMapView(camera);
-            fsPos = plrPos;
-        }
-        else {
-            var distW:Number = (-screenRect.y - screenRect.height / 2) / 50;
-            var screenCenterW:Point = new Point(camera.x_ + distW * Math.cos(camera.angleRad_ - Math.PI / 2), camera.y_ + distW * Math.sin(camera.angleRad_ - Math.PI / 2));
-            fsPos = screenCenterW;
-        }
-
+        var plrPos:Point = this.correctMapView(camera);
+        fsPos = plrPos;
         if (Parameters.isGpuRender()) {
             _loc6_ = WebMain.STAGE.stage3Ds[0];
             _loc6_.x = 400 - WebMain.STAGE.stageWidth / 2;

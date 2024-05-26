@@ -19,7 +19,7 @@ namespace WorldServer.core.commands
                     return true;
                 }*/
 
-                if(!player.IsAdmin && (args.ToLower() == "Ring of the Talisman's Kingdom".ToLower() || args.ToLower() == "Crown".ToLower() || args.ToLower() == "Excalibur".ToLower()))
+                if(!player.Client.Account.Admin && (args.ToLower() == "Ring of the Talisman's Kingdom".ToLower() || args.ToLower() == "Crown".ToLower() || args.ToLower() == "Excalibur".ToLower()))
                 {
                     player.SendError($"You are not an admin!");
                     return false;

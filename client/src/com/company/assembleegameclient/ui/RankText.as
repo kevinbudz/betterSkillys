@@ -24,7 +24,7 @@ package com.company.assembleegameclient.ui
          if(includePrefix)
          {
             this.prefix_ = new SimpleText(!!this.largeText_?int(18):int(16),11776947,false,0,0);
-            this.prefix_.setBold(this.largeText_);
+            this.prefix_.setBold(true);
             this.prefix_.text = "Rank: ";
             this.prefix_.updateMetrics();
             this.prefix_.filters = [new DropShadowFilter(0,0,0)];

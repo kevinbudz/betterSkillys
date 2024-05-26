@@ -20,6 +20,7 @@ public class Parameters {
     public static const PLAYER_ROTATE_SPEED:Number = 0.003;
     public static const BREATH_THRESH:int = 20;
     public static const SERVER_CHAT_NAME:String = "";
+    public static const SUBTEXT_NAME:String = "&";
     public static const CLIENT_CHAT_NAME:String = "*Client*";
     public static const ERROR_CHAT_NAME:String = "*Error*";
     public static const HELP_CHAT_NAME:String = "*Help*";

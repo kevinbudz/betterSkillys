@@ -50,17 +50,17 @@ namespace WorldServer.core.net.handlers
             var cManager = client.GameServer;
             var config = cManager.Configuration;
 
-            var rank = new DbRank(acc.Database, acc.AccountId);
+            var rank = acc.Rank;
 
             // first check: admin server
-            if (config.serverInfo.adminOnly && !rank.IsAdmin && !cManager.IsWhitelisted(acc.AccountId))
+            if (config.serverInfo.adminOnly && !client.Account.Admin && !cManager.IsWhitelisted(acc.AccountId))
             {
                 client.SendFailure("You must be whitelisted to join this server.", FailureMessage.MessageNoDisconnect);
                 return;
             }
 
             // second check: supporter server
-            if (config.serverSettings.supporterOnly && rank.Rank < RankingType.Supporter3)
+            if (config.serverSettings.supporterOnly && rank < (int)RankingType.Sponsor)
             {
                 client.SendFailure($"You must be a supporter join this server.", FailureMessage.MessageNoDisconnect);
                 return;

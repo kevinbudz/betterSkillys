@@ -80,7 +80,9 @@ package kabam.rotmg.legends.model
          legend.charId = xml.@charId;
          legend.name = xml.Name;
          legend.totalFame = xml.TotalFame;
-         legend.character = this.factory.makeIcon(skin.template,100,texture1,texture2);
+         legend.character = this.factory.makeIcon(skin.template, 100,texture1,texture2);
+         if (legend.character.width > 52)
+             legend.character = this.factory.makeIcon(skin.template, 50,texture1,texture2);
          legend.equipmentSlots = character.slotTypes;
          legend.equipment = ConversionUtil.toIntVector(xml.Equipment);
          legend.itemDatas_ = new Vector.<Object>();

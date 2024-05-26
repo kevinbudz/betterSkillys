@@ -22,8 +22,6 @@ namespace WorldServer.core.worlds.impl
     public sealed class NexusWorld : World
     {
         // i dont really want to use static but it works so?
-        public static float WeekendLootBoostEvent { get; private set; } = 0.0f;
-
         private readonly List<MerchantData> _inactiveStorePoints = new List<MerchantData>();
         private readonly List<MerchantData> _activeStorePoints = new List<MerchantData>();
 
@@ -51,25 +49,9 @@ namespace WorldServer.core.worlds.impl
 
         protected override void UpdateLogic(ref TickTime time)
         {
-            CheckWeekendLootBoostEvent();
             HandleMerchants(ref time);
             PortalMonitor.Update(ref time);
             base.UpdateLogic(ref time);
-        }
-
-        private void CheckWeekendLootBoostEvent()
-        {
-            var day = DateTime.Now.DayOfWeek;
-            if (day != DayOfWeek.Saturday && day != DayOfWeek.Sunday)
-                return;
-            
-            if (WeekendLootBoostEvent == 0.0f)
-                WeekendLootBoostEvent = 0.30f;
-            else if(WeekendLootBoostEvent == 0.30f && day == DayOfWeek.Monday)
-            {
-                WeekendLootBoostEvent = 0.0f;
-                GameServer.ChatManager.ServerAnnounce("The weekend loot event has ended!");
-            }
         }
 
         public void SendOutMerchant(MerchantData merchantData)

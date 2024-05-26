@@ -87,6 +87,10 @@ public class TextBoxLine
             name = "";
             textFormat = ELEMENT_FORMATS.serverFormat_;
             break;
+         case Parameters.SUBTEXT_NAME:
+            name = "";
+            textFormat = ELEMENT_FORMATS.subtextFormat;
+            break;
          case Parameters.CLIENT_CHAT_NAME:
             name = "";
             textFormat = ELEMENT_FORMATS.clientFormat_;

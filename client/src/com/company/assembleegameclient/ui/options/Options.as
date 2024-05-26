@@ -16,6 +16,7 @@ import flash.display.BitmapData;
 import flash.display.Graphics;
 import flash.display.Shape;
 import flash.display.Sprite;
+import flash.display.StageAlign;
 import flash.display.StageDisplayState;
 import flash.display.StageQuality;
 import flash.display.StageScaleMode;
@@ -291,7 +292,7 @@ public class Options extends Sprite
    private function close() : void
    {
       if (this.gs_.stage)
-         this.gs_.stage.addEventListener(Event.RESIZE, positionAssets);
+         this.gs_.stage.removeEventListener(Event.RESIZE, positionAssets);
       stage.focus = null;
       parent.removeChild(this);
    }

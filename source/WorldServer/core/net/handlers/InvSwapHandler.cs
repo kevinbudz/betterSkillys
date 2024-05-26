@@ -101,7 +101,7 @@ namespace WorldServer.core.net.handlers
                 return;
             }
 
-            if (player.IsAdmin && (from as Container ?? to as Container) != null && Array.IndexOf((from as Container ?? to as Container).BagOwners, player.AccountId) == -1)
+            if (player.Client.Account.Admin && (from as Container ?? to as Container) != null && Array.IndexOf((from as Container ?? to as Container).BagOwners, player.AccountId) == -1)
             {
                 from.ForceUpdate(slotFrom);
                 to.ForceUpdate(slotTo);
@@ -250,7 +250,7 @@ namespace WorldServer.core.net.handlers
                         //        return false;
                     }
             }
-            return container == player || item == null || !item.Soulbound && !player.IsAdmin || IsSoleContainerOwner(player, container);
+            return container == player || item == null || !item.Soulbound && !player.Client.Account.Admin || IsSoleContainerOwner(player, container);
         }
 
         private bool IsSoleContainerOwner(Player player, IContainer con)

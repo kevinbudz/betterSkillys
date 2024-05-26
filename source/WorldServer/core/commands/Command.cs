@@ -36,12 +36,12 @@ namespace WorldServer.core.commands
             if (player.GameServer.Configuration.serverInfo.testing && (CommandName == "give" || CommandName == "spawn" || CommandName == "max"))
                 return true; 
             
-            var rank = player.Client.Rank.Rank;
-            if (player.IsAdmin)
+            var rank = player.Client.Account.Rank;
+            if (player.Client.Account.Admin)
                 return true;
-            if (RankRequirement == RankingType.CommunityModerator)
-                return player.IsCommunityManager;
-            return rank >= RankRequirement;
+            if (RankRequirement == RankingType.Moderator)
+                return player.Client.Account.Rank >= (int)RankingType.Moderator;
+            return rank >= (int)RankRequirement;
         }
 
         protected abstract bool Process(Player player, TickTime time, string args);

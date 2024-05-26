@@ -132,7 +132,7 @@ namespace WorldServer.core
 
             acc.Reload(); // make sure we have the latest data
             client.Account = acc;
-            client.Rank = new DbRank(acc.Database, acc.AccountId);
+            client.Rank = acc.Rank;
 
             // connect client to realm manager
             if (!client.GameServer.ConnectionManager.TryConnect(client))
@@ -154,7 +154,7 @@ namespace WorldServer.core
                 world = client.GameServer.WorldManager.GetWorld(World.NEXUS_ID);
             }
 
-            if (world is TestWorld && !client.Rank.IsAdmin)
+            if (world is TestWorld && !client.Account.Admin)
             {
                 client.SendFailure("Only players with admin permissions can make test maps.", FailureMessage.MessageWithDisconnect);
                 return;

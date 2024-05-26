@@ -1,4 +1,6 @@
-﻿using Shared.database.party;
+﻿using Shared;
+using Shared.database;
+using Shared.database.party;
 using Shared.resources;
 using System;
 using System.Collections.Concurrent;
@@ -286,7 +288,7 @@ namespace WorldServer.core.objects
 
             _ = GameServer.Database.IsMuted(client.IpAddress).ContinueWith(t =>
             {
-                Muted = !Client.Rank.IsAdmin && t.IsCompleted && t.Result;
+                Muted = !Client.Account.Admin && t.IsCompleted && t.Result;
             });
 
             _ = GameServer.Database.IsLegend(AccountId).ContinueWith(t =>
@@ -300,13 +302,14 @@ namespace WorldServer.core.objects
                 ApplyPermanentConditionEffect(ConditionEffectIndex.Invincible);
             }
 
-            InitializeRank(account);
             InitializePotionStorage(account);
         }
 
         public override bool CanBeSeenBy(Player player)
         {
-            if (IsAdmin || IsCommunityManager)
+            var admin = player.Client.Account.Admin;
+            var moderator = (player.Client.Account.Rank == (int)RankingType.Moderator);
+            if (admin || moderator)
                 return !IsHidden;
             return true;
         }
@@ -361,7 +364,17 @@ namespace WorldServer.core.objects
 
             if (owner.IdName.Equals("Ocean Trench"))
                 Breath = 100;
-
+            if (owner is NexusWorld)
+            {
+                var settings = Client.GameServer.Configuration.serverSettings;
+                if (settings.lootEvent > 0)
+                    if (settings.expEvent > 0)
+                        SendInfo($"A server wide event is giving you a a {Math.Round(settings.lootEvent * 100, 0)}% loot boost and {Math.Round(settings.expEvent * 100, 0)}% XP boost.");
+                    else
+                        SendInfo($"A server wide event is giving you a {Math.Round(settings.lootEvent * 100, 0)}% loot boost.");
+                if (owner.isWeekend)
+                    SendInfo($"It's the weekend! You've been given an additional {Math.Round(settings.wkndBoost * 100, 0)}% loot boost.");
+            }
             ResetNewbiePeriod();
             InitializeUpdate();
         }

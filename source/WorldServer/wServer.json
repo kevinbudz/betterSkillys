@@ -25,6 +25,9 @@
         "maxRealms": 2,
         "supporterOnly": false,
         "restartTime": 2,
-        "whitelist": []
+        "whitelist": [],
+        "lootEvent": 0.25,
+        "expEvent": 0.25,
+        "wkndBoost": 0.3
     }
 }

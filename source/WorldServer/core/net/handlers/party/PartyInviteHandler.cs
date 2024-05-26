@@ -33,7 +33,7 @@ namespace WorldServer.core.net.handlers.party
                 {
                     PartyId = nextId,
                     PartyLeader = (client.Account.Name, client.Account.AccountId),
-                    PartyMembers = new List<DbPartyMemberData>(DbPartySystem.ReturnSize(client.Rank.Rank))
+                    PartyMembers = new List<DbPartyMemberData>(DbPartySystem.ReturnSize((RankingType)client.Account.Rank))
                 };
                 party.Flush();
 

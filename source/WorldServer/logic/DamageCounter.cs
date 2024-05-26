@@ -70,6 +70,10 @@ namespace WorldServer.logic
                 if (player.Level < 20 && player.XPBoostTime != 0)
                     playerXp *= 1.5f;
 
+                var xpEvent = player.Client.GameServer.Configuration.serverSettings.expEvent;
+                if (xpEvent > 0)
+                    playerXp *= (float)(1 + xpEvent);
+
                 if (enemy.GivesNoXp)
                     playerXp = 0;
 

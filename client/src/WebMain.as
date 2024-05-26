@@ -115,7 +115,7 @@ public class WebMain extends Sprite {
     }
 
     public function onStageResize(_arg_1:Event):void {
-        if (Parameters.data_.FS && Renderer.inGame) {
+        if (Renderer.inGame) {
             this.scaleX = (stage.stageWidth / 800);
             this.scaleY = (stage.stageHeight / 600);
             this.x = ((800 - stage.stageWidth) / 2);

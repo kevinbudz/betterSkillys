@@ -248,7 +248,7 @@ namespace WorldServer.core.commands
                 var pX = player.X;
                 var pY = player.Y;
 
-                for (var i = 0; i < num && i < (player.GameServer.Configuration.serverInfo.testing ? player.IsAdmin ? 500 : 1 : 500); i++)
+                for (var i = 0; i < num && i < (player.GameServer.Configuration.serverInfo.testing ? player.Client.Account.Admin ? 500 : 1 : 500); i++)
                 {
                     Entity entity;
                     try

@@ -38,7 +38,7 @@ namespace WorldServer.networking
         }
 
         public int PacketSpamAmount { get; set; }
-        public DbRank Rank { get; internal set; }
+        public int Rank { get; internal set; }
         public DbAccount Account { get; internal set; }
         public DbChar Character { get; internal set; }
         public GameServer GameServer { get; private set; }

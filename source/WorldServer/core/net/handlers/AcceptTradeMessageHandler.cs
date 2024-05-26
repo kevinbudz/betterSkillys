@@ -49,8 +49,8 @@ namespace WorldServer.core.net.handlers
 
                 if (player.TradeAccepted && tradeTarget.TradeAccepted)
                 {
-                    if (!(player.IsAdmin && tradeTarget.IsAdmin))
-                        if (player.IsAdmin || tradeTarget.IsAdmin)
+                    if (!(player.Client.Account.Admin && tradeTarget.Client.Account.Admin))
+                        if (player.Client.Account.Admin || tradeTarget.Client.Account.Admin)
                         {
                             tradeTarget.CancelTrade();
                             player.CancelTrade();

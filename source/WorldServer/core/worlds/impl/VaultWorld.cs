@@ -38,7 +38,7 @@ namespace WorldServer.core.worlds.impl
             LeaveWorld(original);
         }
 
-        public override bool AllowedAccess(Client client) => AccountId == client.Account.AccountId || client.Rank.IsAdmin;
+        public override bool AllowedAccess(Client client) => (AccountId == client.Account.AccountId) || client.Account.Admin;
 
         public override void LeaveWorld(Entity entity)
         {
@@ -137,7 +137,7 @@ namespace WorldServer.core.worlds.impl
                 var con = new GiftChest(Client.GameServer, 0x0744)
                 {
                     BagOwners = new int[] { Client.Account.AccountId },
-                    Size = 65
+                    Size = 100
                 };
                 con.Inventory.SetItems(con.Inventory.ConvertTypeToItemArray(items));
                 con.Move(giftChestPosition[0].X + 0.5f, giftChestPosition[0].Y + 0.5f);
@@ -149,7 +149,7 @@ namespace WorldServer.core.worlds.impl
 
             foreach (var i in giftChestPosition)
             {
-                var x = new StaticObject(Client.GameServer, 0x0743, null, true, false, false) { Size = 65 };
+                var x = new StaticObject(Client.GameServer, 0x0743, null, true, false, false) { Size = 100 };
                 x.Move(i.X + 0.5f, i.Y + 0.5f);
 
                 EnterWorld(x);

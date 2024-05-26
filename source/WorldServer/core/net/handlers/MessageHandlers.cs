@@ -18,12 +18,12 @@ namespace WorldServer.core.net.handlers
         public static bool IsEnabledOrIsVipMarket(Client client)
         {
             var player = client.Player;
-            if (player.IsAdmin)
+            if (player.Client.Account.Admin)
                 return true;
 
             if (player.GameServer.Configuration.serverInfo.adminOnly)
             {
-                if (!player.GameServer.IsWhitelisted(player.AccountId) || !player.IsAdmin)
+                if (!player.GameServer.IsWhitelisted(player.AccountId) || !player.Client.Account.Admin)
                 {
                     player.SendError("Admin Only, you need to be Whitelisted to use this.");
                     return false;

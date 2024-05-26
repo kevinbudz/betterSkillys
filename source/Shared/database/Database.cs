@@ -46,20 +46,20 @@ namespace Shared.database
 
         public static readonly string[] GuestNames =
         {
-            "SDarq", "SDeyst", "SDrac", "SDrol",
-            "SEango", "SEashy", "SEati", "SEendi", "SEhoni",
-            "SGharr",
-            "SIatho", "SIawa", "SIdrae", "SIri", "SIssz", "SItani",
-            "SLaen", "SLauk", "SLorz",
-            "SOalei", "SOdaru", "SOeti", "SOrothi", "SOshyu",
-            "SQueq",
-            "SRadph", "SRayr", "SRil", "SRilr", "SRisrr",
-            "SSaylt", "SScheev", "SSek", "SSerl", "SSeus",
-            "STal", "STiar",
-            "SUoro", "SUrake", "SUtanu",
-            "SVorck", "SVorv",
-            "SYangu", "SYimi",
-            "SZhiar"
+            "Darq", "Deyst", "Drac", "Drol",
+            "Eango", "Eashy", "Eati", "Eendi", "Ehoni",
+            "Gharr",
+            "Iatho", "Iawa", "Idrae", "Iri", "Issz", "Itani",
+            "Laen", "Lauk", "Lorz",
+            "Oalei", "Odaru", "Oeti", "Orothi", "Oshyu",
+            "Queq",
+            "Radph", "Rayr", "Ril", "Rilr", "Risrr",
+            "Saylt", "Scheev", "Sek", "Serl", "Seus",
+            "Tal", "Tiar",
+            "Uoro", "Urake", "Utanu",
+            "Vorck", "Vorv",
+            "Yangu", "Yimi",
+            "Zhiar"
         };
 
         public static readonly List<string> BlackListedNames = new List<string>
@@ -424,6 +424,8 @@ namespace Shared.database
             {
                 UUID = uuid,
                 Name = GuestNames[(uint)uuid.GetHashCode() % GuestNames.Length],
+                Rank = 0,
+                Admin = false,
                 NameChosen = false,
                 FirstDeath = true,
                 GuildId = 0,
@@ -532,15 +534,13 @@ namespace Shared.database
 
             var guild = new DbGuild(acc);
 
-            var rank = new DbRank(_db, acc.AccountId);
-
-            if (!guild.IsNull && !rank.IsAdmin)
+            if (!guild.IsNull && !acc.Admin)
             {
                 UpdateGuildFame(guild, finalFame);
                 UpdatePlayerGuildFame(acc, finalFame);
             }
 
-            if (!rank.IsAdmin)
+            if (!acc.Admin)
                 DbLegend.Insert(_db, acc.AccountId, character.CharId, finalFame);
         }
 
@@ -825,6 +825,8 @@ namespace Shared.database
             {
                 UUID = uuid,
                 Name = GuestNames[(uint)uuid.GetHashCode() % GuestNames.Length],
+                Rank = 0,
+                Admin = false,
                 NameChosen = false,
                 FirstDeath = true,
                 GuildId = 0,

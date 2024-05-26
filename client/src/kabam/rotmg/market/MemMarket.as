@@ -78,7 +78,7 @@ public class MemMarket extends Sprite
         addChild(this.closeButton_);
 
         this.buyButton_ = new TitleMenuOption("buy",22,false);
-        this.buyButton_.addEventListener(MouseEvent.CLICK,this.onBuyClick);;
+        this.buyButton_.addEventListener(MouseEvent.CLICK,this.onBuyClick);
         this.buyButton_.y = 535;
         addChild(this.buyButton_);
 

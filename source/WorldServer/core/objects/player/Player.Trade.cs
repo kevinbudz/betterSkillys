@@ -92,7 +92,7 @@ namespace WorldServer.core.objects
                 return;
             }
 
-            if (IsAdmin && !target.IsAdmin)
+            if (Client.Account.Admin && !target.Client.Account.Admin)
             {
                 SendError("You cannot trade.");
                 return;

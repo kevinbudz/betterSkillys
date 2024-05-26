@@ -37,12 +37,12 @@ public class PartyPanel extends Panel
          super(gs);
          var layers:Layers = StaticInjectorContext.getInjector().getInstance(Layers);
          this.menuLayer = layers.top;
-         this.memberPanels_[0] = this.createPartyMemberPanel(0,0);
-         this.memberPanels_[1] = this.createPartyMemberPanel(100,0);
-         this.memberPanels_[2] = this.createPartyMemberPanel(0,32);
-         this.memberPanels_[3] = this.createPartyMemberPanel(100,32);
-         this.memberPanels_[4] = this.createPartyMemberPanel(0,64);
-         this.memberPanels_[5] = this.createPartyMemberPanel(100,64);
+         this.memberPanels_[0] = this.createPartyMemberPanel(0,-10);
+         this.memberPanels_[1] = this.createPartyMemberPanel(100,-10);
+         this.memberPanels_[2] = this.createPartyMemberPanel(0,22);
+         this.memberPanels_[3] = this.createPartyMemberPanel(100,22);
+         this.memberPanels_[4] = this.createPartyMemberPanel(0,54);
+         this.memberPanels_[5] = this.createPartyMemberPanel(100,54);
          addEventListener(Event.ADDED_TO_STAGE,this.onAddedToStage);
          addEventListener(Event.REMOVED_FROM_STAGE,this.onRemovedFromStage);
       }

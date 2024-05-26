@@ -15,6 +15,7 @@ using WorldServer.core.structures;
 using WorldServer.core.worlds;
 using WorldServer.core.worlds.impl;
 using WorldServer.logic.loot;
+using WorldServer.networking;
 using WorldServer.networking.packets.outgoing;
 using WorldServer.networking.packets.outgoing.party;
 using WorldServer.utils;
@@ -221,7 +222,7 @@ namespace WorldServer.core.commands.player
                 {
                     PartyId = nextId,
                     PartyLeader = (player.Client.Account.Name, player.Client.Account.AccountId),
-                    PartyMembers = new List<DbPartyMemberData>(DbPartySystem.ReturnSize(player.Client.Rank.Rank))
+                    PartyMembers = new List<DbPartyMemberData>(DbPartySystem.ReturnSize((RankingType)player.Client.Account.Rank))
                 };
                 party.Flush();
 
@@ -524,7 +525,7 @@ namespace WorldServer.core.commands.player
             player.SendInfo("Party Information: ");
             player.SendInfo($"Party ID: {party.PartyId}");
             player.SendInfo($"Owner: {party.PartyLeader.Item1}");
-            player.SendInfo($"Max Size: {DbPartySystem.ReturnSize(player.Client.Rank.Rank)} Members");
+            player.SendInfo($"Max Size: {DbPartySystem.ReturnSize((RankingType)player.Client.Account.Rank)} Members");
             player.SendInfo("Members: ");
             foreach (var member in party.PartyMembers)
             {
@@ -554,21 +555,43 @@ namespace WorldServer.core.commands.player
         }
     }
 
-    internal class ChecKBoostsCommand : Command
+    internal class CheckBoostsCommand : Command
     {
-        public override string CommandName => "lb";
+        public override string CommandName => "boosts";
 
         protected override bool Process(Player player, TickTime time, string args)
         {
-            if (player.LDBoostTime > 0)
-                player.SendInfo($"Your Loot Drop Potion provides: 25%");
-            if (NexusWorld.WeekendLootBoostEvent > 0.0f)
-                player.SendInfo($"Weekend Bonus provides: {(int)(NexusWorld.WeekendLootBoostEvent * 100.0)}%");
+            var settings = player.Client.GameServer.Configuration.serverSettings;
 
-            var ldBoost = player.LDBoostTime > 0 ? 0.25 : 0;
-            var wkndBoost = NexusWorld.WeekendLootBoostEvent;
-            var lootBoost = ldBoost + wkndBoost;
-            player.SendInfo($"You have {Math.Round(lootBoost * 100.0f, 3)}% loot boost.");
+            var ldBoost = player.LDBoostTime > 0 ? 0.5 : 0;
+            var wkndBoost = player.World.isWeekend ? settings.wkndBoost : 0;
+            var lootEvent = settings.lootEvent;
+            var totalLootBoost = ldBoost + wkndBoost + lootEvent;
+
+            player.SendInfo($"You have a {totalLootBoost * 100}% loot boost.");
+            if (totalLootBoost > 0)
+            {
+                if (player.LDBoostTime > 0)
+                    player.SendSubtext($"   Your loot drop potion gives: 50%");
+                if (player.World.isWeekend)
+                    player.SendSubtext($"   It being a weekend gives: {settings.wkndBoost * 100.0}%");
+                if (settings.lootEvent > 0)
+                    player.SendSubtext($"   A server-wide event gives: {settings.lootEvent * 100.0}%");
+            }
+
+            // exp boost
+            var expBoost = player.XPBoostTime > 0 ? 0.5 : 0;
+            var expEvent = settings.expEvent;
+            var totalExpBoost = expEvent + expBoost;
+
+            if (totalExpBoost > 0)
+            {
+                player.SendInfo($"You have a {totalExpBoost * 100}% XP boost.");
+                if (player.XPBoostTime > 0)
+                    player.SendSubtext("   Your XP booster gives: 50%");
+                if (settings.expEvent > 0)
+                    player.SendSubtext($"   A server-wide event gives: {expEvent * 100}%");
+            }
             return true;
         }
     }
@@ -1181,7 +1204,7 @@ namespace WorldServer.core.commands.player
             {
                 if (!target.Name.EqualsIgnoreCase(args))
                     continue;
-                player.Teleport(time, target.Id, player.IsAdmin);
+                player.Teleport(time, target.Id, player.Client.Account.Admin);
                 return true;
             }
 
@@ -1259,7 +1282,7 @@ namespace WorldServer.core.commands.player
                 return false;
             }
 
-            if (player.IsAdmin)
+            if (player.Client.Account.Rank >= (int)RankingType.Sandbox)
             {
                 player.SendError("You cannot trade.");
                 return false;

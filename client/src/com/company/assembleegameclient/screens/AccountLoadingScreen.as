@@ -23,12 +23,13 @@ import flash.display.Sprite;
          this.loadingText_.htmlText = "Loading...";
          this.loadingText_.x = 325;
          this.loadingText_.y = 300 - (this.loadingText_.height / 2) + 10;
+         trace(this.loadingText_.y);
          this.loadingText_.updateMetrics();
          this.loadingText_.filters = [new DropShadowFilter(0,0,0,1,4,4)];
+         trace(this.loadingText_.width + "!!!! " + this.loadingText_.height);
          addChild(this.loadingText_);
-         trace(this.loadingText_.width + ", " + this.loadingText_.height);
          addEventListener(Event.ADDED_TO_STAGE,this.onAddedToStage);
-         new GTween(this.loadingText_, 2, {"scaleX": 1.75, "scaleY": 1.75, "alpha": 0.5});
+         new GTween(this.loadingText_, 2, {"x": 325 - 40.75, "y": 260 - 11.25, "scaleX": 1.5, "scaleY": 1.5, "alpha": 0.5});
       }
       
       protected function onAddedToStage(event:Event) : void
