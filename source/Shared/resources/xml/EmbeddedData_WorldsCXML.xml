@@ -76,11 +76,7 @@
 	<World id="Undead Lair">
 		<Width>256</Width>
 		<Height>256</Height>
-		<MapJM>undead_lair/undead_lair1.jm</MapJM>
-		<MapJM>undead_lair/undead_lair2.jm</MapJM>
-		<MapJM>undead_lair/undead_lair3.jm</MapJM>
-		<MapJM>undead_lair/undead_lair4.jm</MapJM>
-		<MapJM>undead_lair/undead_lair5.jm</MapJM>
+		<MapJM>undead_lair.jm</MapJM>
 		<VisibilityType>1</VisibilityType>
 		<Dungeon/>
 	</World>
@@ -108,7 +104,7 @@
 	<World id="Abyss of Demons">
 		<Width>256</Width>
 		<Height>256</Height>
-		<MapJM>abyss/abyss_of_demons.jm</MapJM>
+		<MapJM>abyss_of_demons.jm</MapJM>
 		<VisibilityType>1</VisibilityType>
 		<Dungeon/>
 	</World>
@@ -137,6 +133,36 @@
 		<MapJM>candyland_hunting_grounds.jm</MapJM>
 		<Dungeon/>
 	</World>
+	<World id="Haunted Cemetery">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>haunted_cemetery.jm</MapJM>
+		<Dungeon/>
+	</World>	
+	<World id="Haunted Cemetery Gates">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>haunted_cemetery_gates.jm</MapJM>
+		<Dungeon/>
+	</World>	
+	<World id="Haunted Cemetery Graves">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>haunted_cemetery_graves.jm</MapJM>
+		<Dungeon/>
+	</World>	
+	<World id="Haunted Cemetery Final Battle">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>haunted_cemetery_final.jm</MapJM>
+		<Dungeon/>
+	</World>	
+	<World id="The Inner Sanctum">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>the_inner_sanctum.jm</MapJM>
+		<Dungeon/>
+	</World>	
 	<World id="Oryx's Castle">
 		<Width>256</Width>
 		<Height>256</Height>
@@ -159,10 +185,17 @@
 		<VisibilityType>1</VisibilityType>
 		<Dungeon/>
 	</World>
+	<World id="Puppet Master's Theatre">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>puppet_masters_theatre.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
 	<World id="Puppet Master's Encore">
 		<Width>256</Width>
 		<Height>256</Height>
-		<MapJM>puppet_master_encore.jm</MapJM>
+		<MapJM>puppet_masters_encore.jm</MapJM>
 		<VisibilityType>1</VisibilityType>
 		<Dungeon/>
 	</World>
