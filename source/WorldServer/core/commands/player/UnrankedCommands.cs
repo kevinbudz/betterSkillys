@@ -568,15 +568,15 @@ namespace WorldServer.core.commands.player
             var lootEvent = settings.lootEvent;
             var totalLootBoost = ldBoost + wkndBoost + lootEvent;
 
-            player.SendInfo($"You have a {(int)totalLootBoost * 100}% loot boost.");
+            player.SendInfo($"You have a {totalLootBoost * 100}% loot boost.");
             if (totalLootBoost > 0)
             {
                 if (player.LDBoostTime > 0)
-                    player.SendInfo($"Your loot drop potion gives: 50%");
+                    player.SendSubtext($"   Your loot drop potion gives: 50%");
                 if (player.World.isWeekend)
-                    player.SendInfo($"It being a weekend gives: {(int)(settings.wkndBoost * 100.0)}%");
+                    player.SendSubtext($"   It being a weekend gives: {settings.wkndBoost * 100.0}%");
                 if (settings.lootEvent > 0)
-                    player.SendInfo($"A server-wide event gives: {(int)(settings.lootEvent * 100.0)}%");
+                    player.SendSubtext($"   A server-wide event gives: {settings.lootEvent * 100.0}%");
             }
 
             // exp boost
@@ -586,13 +586,11 @@ namespace WorldServer.core.commands.player
 
             if (totalExpBoost > 0)
             {
-                player.SendInfo("- - - -");
-                player.SendInfo($"You have a {(int)totalExpBoost * 100}% XP boost.");
+                player.SendInfo($"You have a {totalExpBoost * 100}% XP boost.");
                 if (player.XPBoostTime > 0)
-                    player.SendInfo("An XP booster gives: 50%");
+                    player.SendSubtext("   Your XP booster gives: 50%");
                 if (settings.expEvent > 0)
-                    player.SendInfo($"A server-wide event gives: {(int)settings.expEvent * 100}");
-
+                    player.SendSubtext($"   A server-wide event gives: {expEvent * 100}%");
             }
             return true;
         }

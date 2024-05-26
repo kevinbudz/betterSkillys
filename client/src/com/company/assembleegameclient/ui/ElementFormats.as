@@ -25,6 +25,7 @@ public class ElementFormats
    public var guildFormat_:ElementFormat = null;
    public var exportFormat_:ElementFormat = null;
    public var partyFormat_:ElementFormat = null;
+   public var subtextFormat:ElementFormat = null;
 
    public function ElementFormats(color:int = 0xFFFFFF)
    {
@@ -55,6 +56,8 @@ public class ElementFormats
       this.partyFormat_.color = 0xffc0cb;
       this.exportFormat_ = newDefaultFormat();
       this.exportFormat_.color = color;
+      this.subtextFormat = newDefaultFormat();
+      this.subtextFormat.color = 0xCCBB00;
    }
 
    private static function newDefaultFormat() : ElementFormat

@@ -166,6 +166,14 @@ namespace WorldServer.core.objects
             Txt = text
         });
 
+        public void SendSubtext(string text) => Client.SendPacket(new Text()
+        {
+            BubbleTime = 0,
+            NumStars = -1,
+            Name = "&",
+            Txt = text
+        });
+
         internal void AnnouncementReceived(string text, string user = null) => Client.Player.SendInfo(string.Concat($"<{user ?? "ANNOUNCEMENT"}> ", text));
 
         internal void DeathNotif(string text) => Client.SendPacket(new Text()

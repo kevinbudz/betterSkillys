@@ -372,7 +372,7 @@ namespace WorldServer.core.objects
                     else
                         SendInfo($"A server wide event is giving you a {Math.Round(settings.lootEvent * 100, 0)}% loot boost.");
                 if (owner.isWeekend)
-                    SendHelp($"It's the weekend! You've been given an additional {Math.Round(settings.wkndBoost * 100, 0)}% loot boost.");
+                    SendInfo($"It's the weekend! You've been given an additional {Math.Round(settings.wkndBoost * 100, 0)}% loot boost.");
             }
             ResetNewbiePeriod();
             InitializeUpdate();
