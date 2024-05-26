@@ -1,4 +1,6 @@
-﻿using Shared.database.party;
+﻿using Shared;
+using Shared.database;
+using Shared.database.party;
 using Shared.resources;
 using System;
 using System.Collections.Concurrent;
@@ -361,7 +363,17 @@ namespace WorldServer.core.objects
 
             if (owner.IdName.Equals("Ocean Trench"))
                 Breath = 100;
-
+            if (owner is NexusWorld)
+            {
+                var settings = Client.GameServer.Configuration.serverSettings;
+                if (settings.lootEvent > 0)
+                    if (settings.expEvent > 0)
+                        SendInfo($"A server wide event is giving you a a {Math.Round(settings.lootEvent * 100, 0)}% loot boost and {Math.Round(settings.expEvent * 100, 0)}% XP boost.");
+                    else
+                        SendInfo($"A server wide event is giving you a {Math.Round(settings.lootEvent * 100, 0)}% loot boost.");
+                if (owner.isWeekend)
+                    SendHelp($"It's the weekend! You've been given an additional {Math.Round(settings.wkndBoost * 100, 0)}% loot boost.");
+            }
             ResetNewbiePeriod();
             InitializeUpdate();
         }

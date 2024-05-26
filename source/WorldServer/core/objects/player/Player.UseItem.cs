@@ -1235,7 +1235,7 @@ namespace WorldServer.core.objects
 
             if (XPBoostTime > 0 && XPBoosted)
             {
-                SendInfo("You already have a XPBooster activated!");
+                SendInfo("You already have an XP Booster activated!");
                 if (containerItem != null)
                     containerItem.Inventory[slot] = item;
                 else
