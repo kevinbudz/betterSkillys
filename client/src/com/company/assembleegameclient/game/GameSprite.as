@@ -471,6 +471,7 @@ public class GameSprite extends Sprite
          }
          Parameters.save();
          stage.scaleMode = Parameters.data_.stageScale;
+         stage.align = "";
          stage.addEventListener(Event.RESIZE, this.onScreenResize);
          stage.dispatchEvent(new Event(Event.RESIZE));
          Parameters.DamageCounter = [];
@@ -486,6 +487,7 @@ public class GameSprite extends Sprite
          this.idleWatcher_.stop();
          this.gsc_.serverConnection.disconnect();
          stage.removeEventListener(Event.ENTER_FRAME,this.onEnterFrame);
+         stage.align = StageAlign.TOP_LEFT;
          stage.removeEventListener(Event.RESIZE, this.onScreenResize);
          stage.dispatchEvent(new Event(Event.RESIZE));
          contains(this.map) && removeChild(this.map);
