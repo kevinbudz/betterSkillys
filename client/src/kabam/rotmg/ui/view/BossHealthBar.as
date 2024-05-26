@@ -48,9 +48,6 @@ public class BossHealthBar extends Sprite {
     private var hpBarFill_:GraphicsSolidFill = new GraphicsSolidFill(0x20FF20, 0.8);
     private var hpGraphicsData_:Vector.<IGraphicsData> = new <IGraphicsData>[hpBarFill_,path_,GraphicsUtil.END_FILL,GraphicsUtil.END_STROKE];
 
-    //private var altGraphicsData_:Vector.<IGraphicsData> = new <IGraphicsData>[altLineStyle_,backgroundFill_,path_,GraphicsUtil.END_FILL,GraphicsUtil.END_STROKE];
-    //private var altLineStyle_:GraphicsStroke = new GraphicsStroke(1,false,LineScaleMode.NORMAL,CapsStyle.NONE,JointStyle.ROUND,3,outlineFill_);
-
     public function BossHealthBar() {
         this.overlay_ = new Sprite();
         this.makeOverlay();
