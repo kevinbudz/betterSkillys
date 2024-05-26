@@ -18,7 +18,7 @@ namespace WorldServer.core.commands
                 var playerSvr = player.GameServer.Configuration.serverInfo.name;
                 var servers = player.GameServer.InterServerManager.GetServerList();
                 var s = servers.Where(_ => _.type != ServerType.Account);
-                var sb = new StringBuilder($"There are: {s.Sum(_ => _.players)} Online Across: {string.Join(", ", s.Select(_ => _.name))}: ");
+                var sb = new StringBuilder($"On '{s.Sum(_ => _.players)}', there are {string.Join(", ", s.Select(_ => _.name))} online.");
                 player.SendInfo(sb.ToString());
                 return true;
             }
