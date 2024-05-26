@@ -62,51 +62,53 @@ namespace WorldServer.logic.behaviors
 
             if (cool <= 0)
             {
-                var count = host.CountEntity(_densityRadius, _group);
-
-                if (count < _densityMax)
+                if (!host.AnyPlayerNearby())
                 {
-                    double targetX = host.X;
-                    double targetY = host.Y;
-
-                    if (_reproduceRegions != null && _reproduceRegions.Count > 0)
+                    var count = host.CountEntity(_densityRadius, _group);
+                    if (count < _densityMax)
                     {
-                        var sx = (int)host.X;
-                        var sy = (int)host.Y;
-                        var regions = _reproduceRegions.Where(p => Math.Abs(sx - host.X) <= _regionRange && Math.Abs(sy - host.Y) <= _regionRange).ToList();
-                        var tile = regions[Random.Next(regions.Count)];
+                        double targetX = host.X;
+                        double targetY = host.Y;
 
-                        targetX = tile.X;
-                        targetY = tile.Y;
-                    }
-
-                    if (!host.World.IsPassable(targetX, targetY, true))
-                    {
-                        state = _coolDown.Next(Random);
-                        return;
-                    }
-
-                    var entity = Entity.Resolve(host.GameServer, _children[Random.Next(_children.Length)]);
-                    entity.GivesNoXp = true;
-                    entity.Move((float)targetX, (float)targetY);
-
-                    var enemyEntity = entity as Enemy;
-
-                    if (host is Enemy enemyHost && enemyEntity != null)
-                    {
-                        enemyEntity.Terrain = enemyHost.Terrain;
-
-                        if (enemyHost.Spawned)
+                        if (_reproduceRegions != null && _reproduceRegions.Count > 0)
                         {
-                            enemyEntity.Spawned = true;
-                            enemyEntity.ApplyPermanentConditionEffect(ConditionEffectIndex.Invisible);
+                            var sx = (int)host.X;
+                            var sy = (int)host.Y;
+                            var regions = _reproduceRegions.Where(p => Math.Abs(sx - host.X) <= _regionRange && Math.Abs(sy - host.Y) <= _regionRange).ToList();
+                            var tile = regions[Random.Next(regions.Count)];
+
+                            targetX = tile.X;
+                            targetY = tile.Y;
                         }
+
+                        if (!host.World.IsPassable(targetX, targetY, true))
+                        {
+                            state = _coolDown.Next(Random);
+                            return;
+                        }
+
+                        var entity = Entity.Resolve(host.GameServer, _children[Random.Next(_children.Length)]);
+                        //entity.GivesNoXp = true;
+                        entity.Move((float)targetX, (float)targetY);
+
+                        var enemyEntity = entity as Enemy;
+
+                        if (host is Enemy enemyHost && enemyEntity != null)
+                        {
+                            enemyEntity.Terrain = enemyHost.Terrain;
+
+                            if (enemyHost.Spawned)
+                            {
+                                enemyEntity.Spawned = true;
+                                enemyEntity.ApplyPermanentConditionEffect(ConditionEffectIndex.Invisible);
+                            }
+                        }
+
+                        host.World.EnterWorld(entity);
                     }
 
-                    host.World.EnterWorld(entity);
+                    cool = _coolDown.Next(Random);
                 }
-
-                cool = _coolDown.Next(Random);
             }
             else
                 cool -= time.ElapsedMsDelta;

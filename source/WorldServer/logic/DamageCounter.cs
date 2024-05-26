@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Shared;
 using Shared.resources;
 using WorldServer.core.objects;
+using WorldServer.core.worlds;
 using WorldServer.core.worlds.impl;
 
 namespace WorldServer.logic
@@ -48,7 +49,7 @@ namespace WorldServer.logic
             var levelUpAssists = 0;
             foreach (var player in enemy.World.Players.Values)
             {
-                if (player.DistTo(enemy) > 25)
+                if (player.SqDistTo(enemy) >= World.CULL_RANGE * World.CULL_RANGE)
                     continue;
 
                 var level = player.Level;

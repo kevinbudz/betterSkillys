@@ -8,7 +8,7 @@ namespace WorldServer.core.worlds
 {
     public sealed class RootWorldThread
     {
-        public const int TICK_TIME_MS = 100;
+        public const int TICK_TIME_MS = 100; // set this to 200 for 5tps 50 for 20 and 100 for 10 tps, never touch the deltatime value 
 
         private readonly WorldManager WorldManager;
         private World World;
@@ -28,7 +28,7 @@ namespace WorldServer.core.worlds
             {
                 var watch = Stopwatch.StartNew();
 
-                var sleep = TICK_TIME_MS; // 5 tps
+                var sleep = TICK_TIME_MS;
 
                 var lastMS = 0L;
                 var mre = new ManualResetEvent(false);
