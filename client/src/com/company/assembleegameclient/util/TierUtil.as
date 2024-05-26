@@ -47,20 +47,6 @@ public class TierUtil
             else
             {
                 color = TooltipHelper.UNTIERED_COLOR;
-                if (xml.hasOwnProperty("Uncommon"))
-                    color = TooltipHelper.UNCOMMON_COLOR;
-                if (xml.hasOwnProperty("Rare"))
-                    color = TooltipHelper.RARE_COLOR;
-                if (xml.hasOwnProperty("Legendary"))
-                    color = TooltipHelper.LEGENDARY_COLOR;
-                if (xml.hasOwnProperty("Winter"))
-                    color = TooltipHelper.WINTER_COLOR;
-                if (xml.hasOwnProperty("Spring"))
-                    color = TooltipHelper.SPRING_COLOR;
-                if (xml.hasOwnProperty("Summer"))
-                    color = TooltipHelper.SUMMER_COLOR;
-                if (xml.hasOwnProperty("Fall"))
-                    color = TooltipHelper.FALL_COLOR;
                 tierTag = "UT";
             }
             label.text = tierTag;
