@@ -15,6 +15,7 @@ using WorldServer.core.structures;
 using WorldServer.core.worlds;
 using WorldServer.core.worlds.impl;
 using WorldServer.logic.loot;
+using WorldServer.networking;
 using WorldServer.networking.packets.outgoing;
 using WorldServer.networking.packets.outgoing.party;
 using WorldServer.utils;
@@ -554,21 +555,45 @@ namespace WorldServer.core.commands.player
         }
     }
 
-    internal class ChecKBoostsCommand : Command
+    internal class CheckBoostsCommand : Command
     {
-        public override string CommandName => "lb";
+        public override string CommandName => "boosts";
 
         protected override bool Process(Player player, TickTime time, string args)
         {
-            if (player.LDBoostTime > 0)
-                player.SendInfo($"Your Loot Drop Potion provides: 25%");
-            if (NexusWorld.WeekendLootBoostEvent > 0.0f)
-                player.SendInfo($"Weekend Bonus provides: {(int)(NexusWorld.WeekendLootBoostEvent * 100.0)}%");
+            var settings = player.Client.GameServer.Configuration.serverSettings;
 
-            var ldBoost = player.LDBoostTime > 0 ? 0.25 : 0;
-            var wkndBoost = NexusWorld.WeekendLootBoostEvent;
-            var lootBoost = ldBoost + wkndBoost;
-            player.SendInfo($"You have {Math.Round(lootBoost * 100.0f, 3)}% loot boost.");
+            var ldBoost = player.LDBoostTime > 0 ? 0.5 : 0;
+            var wkndBoost = player.World.isWeekend ? settings.wkndBoost : 0;
+            var lootEvent = settings.lootEvent;
+            var totalLootBoost = ldBoost + wkndBoost + lootEvent;
+
+            player.SendInfo($"You have a {(int)totalLootBoost * 100}% loot boost.");
+            if (totalLootBoost > 0)
+            {
+                if (player.LDBoostTime > 0)
+                    player.SendInfo($"Your loot drop potion gives: 50%");
+                if (player.World.isWeekend)
+                    player.SendInfo($"It being a weekend gives: {(int)(settings.wkndBoost * 100.0)}%");
+                if (settings.lootEvent > 0)
+                    player.SendInfo($"A server-wide event gives: {(int)(settings.lootEvent * 100.0)}%");
+            }
+
+            // exp boost
+            var expBoost = player.XPBoostTime > 0 ? 0.5 : 0;
+            var expEvent = settings.expEvent;
+            var totalExpBoost = expEvent + expBoost;
+
+            if (totalExpBoost > 0)
+            {
+                player.SendInfo("- - - -");
+                player.SendInfo($"You have a {(int)totalExpBoost * 100}% XP boost.");
+                if (player.XPBoostTime > 0)
+                    player.SendInfo("An XP booster gives: 50%");
+                if (settings.expEvent > 0)
+                    player.SendInfo($"A server-wide event gives: {(int)settings.expEvent * 100}");
+
+            }
             return true;
         }
     }
