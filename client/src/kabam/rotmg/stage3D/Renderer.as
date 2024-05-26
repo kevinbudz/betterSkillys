@@ -204,7 +204,6 @@ import flash.display.StageScaleMode;
          }
          if(Renderer.inGame)
          {
-            WebMain.STAGE.align = "";
             this.setTranslationToGame();
          }
          else
@@ -220,13 +219,7 @@ import flash.display.StageScaleMode;
             this.renderScene(graphicsDatas,grahpicsData3d,mapWidth,mapHeight,camera);
          }
          this.context3D.present();
-         if(Parameters.data_.FS){
-            WebMain.STAGE.scaleMode = StageScaleMode.NO_SCALE;
-         }
-         else{
-            WebMain.STAGE.scaleMode = StageScaleMode.EXACT_FIT;
-         }
-
+         WebMain.STAGE.scaleMode = StageScaleMode.NO_SCALE;
       }
 
       private function resizeStage3DBackBuffer() : void

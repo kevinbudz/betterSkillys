@@ -74,7 +74,7 @@ public class Camera
 
    public function configureCamera(object:GameObject, isHallucinating:Boolean) : void
    {
-      var screenRect:Rectangle = Parameters.data_.FS?this.correctViewingArea(Parameters.data_.centerOnPlayer):Boolean(Parameters.data_.centerOnPlayer)?CENTER_SCREEN_RECT:OFFSET_SCREEN_RECT;
+      var screenRect:Rectangle = this.correctViewingArea(Parameters.data_.centerOnPlayer);
       var cameraAngle:Number = Parameters.data_.cameraAngle;
       this.configure(object.x_,object.y_,12,cameraAngle,screenRect,false);
       this.isHallucinating_ = isHallucinating;
