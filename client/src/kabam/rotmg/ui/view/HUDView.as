@@ -35,7 +35,7 @@ import kabam.rotmg.game.view.components.TabStripView;
       private const STAT_METERS_POSITION:Point = new Point(12, 230);
       private const EQUIPMENT_INVENTORY_POSITION:Point = new Point(14, 304);
       private const TAB_STRIP_POSITION:Point = new Point(7, 346);
-      private const INTERACT_PANEL_POSITION:Point = new Point(0, 500);
+      private const INTERACT_PANEL_POSITION:Point = new Point(0, 480);
       private const NEXUS_INDICATOR_POSITION:Point = new Point(200, 355);
 
       private var background:CharacterWindowBackground;
