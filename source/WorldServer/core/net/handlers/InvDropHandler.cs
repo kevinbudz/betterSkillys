@@ -92,7 +92,7 @@ namespace WorldServer.core.net.handlers
                 }
             }
 
-            var isSoulbound = player.IsAdmin || item.Soulbound;
+            var isSoulbound = player.Client.Account.Admin || item.Soulbound;
             var container = new Container(player.GameServer, isSoulbound ? soulBag : normBag, 60000, true);
 
             if (isSoulbound) //TODOS LOS ITEMS SE DROPEAN EN SOULBOUND BAG

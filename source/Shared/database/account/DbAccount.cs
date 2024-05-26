@@ -7,6 +7,8 @@ namespace Shared.database.account
     public class DbAccount : RedisObject
     {
         public int AccountId { get; private set; }
+        public int Rank { get => GetValue<int>("rank"); set => SetValue("rank", value); }
+        public bool Admin { get => GetValue<bool>("admin"); set => SetValue("admin", value); }
         public int BanLiftTime { get => GetValue<int>("banLiftTime"); set => SetValue("banLiftTime", value); }
         public bool Banned { get => GetValue<bool>("banned"); set => SetValue("banned", value); }
         public int ColorChat { get => GetValue<int>("colorchat"); set => SetValue("colorchat", value); }

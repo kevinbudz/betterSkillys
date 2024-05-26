@@ -57,7 +57,7 @@ namespace WorldServer.core.net.handlers
                     return;
                 }
 
-                if (!player.IsAdmin)
+                if (!player.Client.Account.Admin)
                     if (!player.GameServer.Configuration.serverInfo.testing && player.Stars < 2)
                     {
                         player.SendHelp("To use this feature you need 2 stars");

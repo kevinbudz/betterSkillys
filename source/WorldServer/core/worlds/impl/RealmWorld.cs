@@ -24,7 +24,7 @@ namespace WorldServer.core.worlds.impl
             SetPieces.ApplySetPieces(this);
         }
 
-        public override bool AllowedAccess(Client client) => !Closed || client.Rank.IsAdmin;
+        public override bool AllowedAccess(Client client) => !Closed || client.Account.Admin;
 
         protected override void UpdateLogic(ref TickTime time)
         {

@@ -32,7 +32,7 @@ namespace WorldServer.core.commands
 
                 var owner = target.Player.World;
 
-                if ((owner is VaultWorld || owner.IdName.Contains("Vault")) && !player.IsAdmin)
+                if ((owner is VaultWorld || owner.IdName.Contains("Vault")) && !player.Client.Account.Admin)
                 {
                     player.SendError("Only admins can visit other players' vault.");
                     return false;

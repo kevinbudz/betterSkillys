@@ -278,6 +278,7 @@ namespace App
         public string Name { get; set; }
 
         public bool NameChosen { get; private set; }
+        public int Rank { get; private set; }
         public bool Admin { get; private set; }
         public bool FirstDeath { get; private set; }
 
@@ -296,18 +297,17 @@ namespace App
 
         public static Account FromDb(CoreService core, DbAccount acc)
         {
-            var rank = new DbRank(acc.Database, acc.AccountId);
             return new Account()
             {
                 AccountId = acc.AccountId,
                 Name = acc.Name,
 
                 NameChosen = acc.NameChosen,
-                Admin = rank.IsAdmin,
+                Rank = acc.Rank,
+                Admin = acc.Admin,
                 FirstDeath = acc.FirstDeath,
 
                 Credits = acc.Credits,
-                AmountDonated = rank.TotalAmountDonated,
                 NextCharSlotPrice = core.Resources.Settings.NewAccounts.SlotCost,
                 NextCharSlotCurrency = (int)core.Resources.Settings.NewAccounts.SlotCurrency,
                 MenuMusic = core.Resources.Settings.MenuMusic,
@@ -327,9 +327,10 @@ namespace App
                 new XElement("Account",
                     new XElement("AccountId", AccountId),
                     new XElement("Name", Name),
+                    new XElement("Rank", Rank),
+                    new XElement("Admin", Admin),
 
                     NameChosen ? new XElement("NameChosen", "") : null,
-                    Admin ? new XElement("Admin", "") : null,
                     FirstDeath ? new XElement("isFirstDeath", "") : null,
 
                     new XElement("Credits", Credits),

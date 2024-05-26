@@ -119,12 +119,12 @@ namespace WorldServer.core.commands
         {
             var config = player.GameServer.Configuration;
 
-            if (player.IsAdmin)
+            if (player.Client.Account.Admin)
                 return true;
 
             if (config.serverInfo.adminOnly)
             {
-                if (!player.GameServer.IsWhitelisted(player.AccountId) || !player.IsAdmin)
+                if (!player.GameServer.IsWhitelisted(player.AccountId) || !player.Client.Account.Admin)
                 {
                     player.SendError("Admin Only, you need to be Whitelisted to use this.");
                     return false;

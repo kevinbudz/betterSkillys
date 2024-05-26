@@ -38,7 +38,7 @@ namespace WorldServer.core.worlds.impl
             LeaveWorld(original);
         }
 
-        public override bool AllowedAccess(Client client) => AccountId == client.Account.AccountId || client.Rank.IsAdmin;
+        public override bool AllowedAccess(Client client) => (AccountId == client.Account.AccountId) || client.Account.Admin;
 
         public override void LeaveWorld(Entity entity)
         {

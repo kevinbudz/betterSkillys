@@ -288,7 +288,7 @@ namespace WorldServer.core.objects
 
             _ = GameServer.Database.IsMuted(client.IpAddress).ContinueWith(t =>
             {
-                Muted = !Client.Rank.IsAdmin && t.IsCompleted && t.Result;
+                Muted = !Client.Account.Admin && t.IsCompleted && t.Result;
             });
 
             _ = GameServer.Database.IsLegend(AccountId).ContinueWith(t =>
@@ -302,13 +302,14 @@ namespace WorldServer.core.objects
                 ApplyPermanentConditionEffect(ConditionEffectIndex.Invincible);
             }
 
-            InitializeRank(account);
             InitializePotionStorage(account);
         }
 
         public override bool CanBeSeenBy(Player player)
         {
-            if (IsAdmin || IsCommunityManager)
+            var admin = player.Client.Account.Admin;
+            var moderator = (player.Client.Account.Rank == (int)RankingType.Moderator);
+            if (admin || moderator)
                 return !IsHidden;
             return true;
         }

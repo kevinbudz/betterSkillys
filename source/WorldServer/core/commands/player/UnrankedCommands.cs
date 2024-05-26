@@ -222,7 +222,7 @@ namespace WorldServer.core.commands.player
                 {
                     PartyId = nextId,
                     PartyLeader = (player.Client.Account.Name, player.Client.Account.AccountId),
-                    PartyMembers = new List<DbPartyMemberData>(DbPartySystem.ReturnSize(player.Client.Rank.Rank))
+                    PartyMembers = new List<DbPartyMemberData>(DbPartySystem.ReturnSize((RankingType)player.Client.Account.Rank))
                 };
                 party.Flush();
 
@@ -525,7 +525,7 @@ namespace WorldServer.core.commands.player
             player.SendInfo("Party Information: ");
             player.SendInfo($"Party ID: {party.PartyId}");
             player.SendInfo($"Owner: {party.PartyLeader.Item1}");
-            player.SendInfo($"Max Size: {DbPartySystem.ReturnSize(player.Client.Rank.Rank)} Members");
+            player.SendInfo($"Max Size: {DbPartySystem.ReturnSize((RankingType)player.Client.Account.Rank)} Members");
             player.SendInfo("Members: ");
             foreach (var member in party.PartyMembers)
             {
@@ -1204,7 +1204,7 @@ namespace WorldServer.core.commands.player
             {
                 if (!target.Name.EqualsIgnoreCase(args))
                     continue;
-                player.Teleport(time, target.Id, player.IsAdmin);
+                player.Teleport(time, target.Id, player.Client.Account.Admin);
                 return true;
             }
 
@@ -1282,7 +1282,7 @@ namespace WorldServer.core.commands.player
                 return false;
             }
 
-            if (player.IsAdmin)
+            if (player.Client.Account.Rank >= (int)RankingType.Sandbox)
             {
                 player.SendError("You cannot trade.");
                 return false;

@@ -50,7 +50,7 @@ namespace WorldServer.core.net.handlers
                     return;
                 }
 
-                if(!player.IsAdmin)
+                if(!player.Client.Account.Admin)
                     if (player.Stars <= 2 && player.Quest != null && player.DistTo(newX, newY) > 50 && player.Quest.DistTo(newX, newY) < 0.25)
                     {
                         StaticLogger.Instance.Warn($"{player.Name} was caught teleporting directly to a quest, uh oh");
@@ -87,7 +87,7 @@ namespace WorldServer.core.net.handlers
                 //    {
                 //        if(delta < 50)
                 //            foreach (var other in player.World.Players.Values)
-                //                if (other.IsAdmin || other.IsCommunityManager)
+                //                if (other.IsAdmin || other.IsModerator)
                 //                {
                 //                    if (delta > 1.0)
                 //                        other.SendInfo($"Warning: [{player.Name}] {player.AccountId}-{player.Client.Character.CharId} is moving exceptionally faster than expected! ({delta} | tolerance: 0.5)");

@@ -3,12 +3,11 @@
     public enum RankingType : int
     {
         Regular = 0,
-        Supporter1 = 1,
-        Supporter2 = 2,
-        Supporter3 = 3,
-        Supporter4 = 4,
-        Supporter5 = 5,
-        CommunityModerator = 500, // this is only used for command system
-        Admin = 1000,
+        Donator = 1,
+        Supporter = 2,
+        Sponsor = 3,
+        Sandbox = 4,
+        Moderator = 5, // this is only used for command system
+        Admin = 6,
     }
 }

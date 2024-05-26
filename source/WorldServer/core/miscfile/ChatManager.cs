@@ -148,28 +148,11 @@ namespace WorldServer.core.miscfile
                 return;
             }
 
-            var supporter = 0;
-            if (player.IsSupporter1)
-                supporter++;
-            if (player.IsSupporter2)
-                supporter++;
-            if (player.IsSupporter3)
-                supporter++;
-            if (player.IsSupporter4)
-                supporter++;
-            if (player.IsSupporter5)
-                supporter++;
-
             var nameTag = "";
-            if (player.IsCommunityManager)
-                nameTag = "[CM] ";
-            if (player.IsCommunityManager && supporter > 0)
-                nameTag = $"[CM | S-{supporter}] ";
-            else if (supporter > 0)
-                nameTag = $"[S-{supporter}] ";
-
-            if (player.Name == "Slendergo" || player.Name == "ModBBQ" || player.Name == "Orb")
-                nameTag = "[Owner] ";
+            if (player.Client.Account.Admin)
+                nameTag = "[*] ";
+            if (player.Client.Account.Rank == (int)RankingType.Moderator)
+                nameTag = "[!] ";
 
             var tp = new Text()
             {

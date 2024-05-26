@@ -36,7 +36,7 @@ namespace WorldServer.core.objects
                     return;
                 }
 
-                if (!World.AllowTeleport && !IsAdmin)
+                if (!World.AllowTeleport && !Client.Account.Admin)
                 {
                     SendError("Cannot teleport here.");
                     return;

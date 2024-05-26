@@ -141,11 +141,7 @@ namespace WorldServer.core.objects
             _storageVitalityCount = new StatTypeValue<int>(this, StatDataType.SPS_VITALITY_COUNT, account.SPSVitalityCount, true);
             _storageWisdomCount = new StatTypeValue<int>(this, StatDataType.SPS_WISDOM_COUNT, account.SPSWisdomCount, true);
 
-            var iRank = (int)Rank;
             var maxPotionAmount = 50;
-            if (iRank <= (int)RankingType.Supporter5)
-                maxPotionAmount += iRank * 10;
-
             MaxAllowedPotions = maxPotionAmount;
 
             _storageLifeCountMax = new StatTypeValue<int>(this, StatDataType.SPS_LIFE_COUNT_MAX, maxPotionAmount, true);

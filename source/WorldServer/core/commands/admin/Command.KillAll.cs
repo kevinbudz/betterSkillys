@@ -17,7 +17,7 @@ namespace WorldServer.core.commands
 
             protected override bool Process(Player player, TickTime time, string args)
             {
-                if (!(player.World is VaultWorld) && !player.IsAdmin)
+                if (!(player.World is VaultWorld) && !player.Client.Account.Admin)
                 {
                     player.SendError("Only in your Vault.");
                     return false;

@@ -15,7 +15,7 @@ namespace WorldServer.core.objects
             var maxed = GetMaxedStats();
             var deathMessage = $"{Name} ({maxed}/8, {Client.Character.Fame}) has been killed by {killer}!";
 
-            if ((maxed >= 6 || Fame >= 1000) && !IsAdmin)
+            if (maxed >= 6 || Fame >= 1000)
             {
                 var worlds = GameServer.WorldManager.GetWorlds();
                 foreach (var world in worlds)
@@ -57,8 +57,8 @@ namespace WorldServer.core.objects
             int? time = null;
             switch (maxed)
             {
-                case 8: objType = 0x0735; break;
-                case 7: objType = 0x0734; break;
+                case 8: objType = 0x073d; break;
+                case 7: objType = 0x073c; break;
                 case 6: objType = 0x072b; break;
                 case 5: objType = 0x072a; break;
                 case 4: objType = 0x0729; break;

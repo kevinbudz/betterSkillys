@@ -66,7 +66,7 @@ namespace WorldServer.core.commands
                     player?.SendError("Mute failed. That action would cause yourself to be muted (IPs are the same).");
                     return false;
                 }
-                if (player.IsAdmin)
+                if (player.Client.Account.Admin)
                 {
                     player?.SendError("Cannot mute other admins.");
                     return false;
@@ -76,7 +76,7 @@ namespace WorldServer.core.commands
                 var client = _manager.ConnectionManager.Clients
                     .Keys.Where(_ => _.Player != null
                         && _.IpAddress.Equals(acc.IP)
-                        && !_.Rank.IsAdmin)
+                        && !_.Account.Admin)
                     .SingleOrDefault();
                 if (client != default)
                     client.Player.Muted = true;
@@ -114,7 +114,7 @@ namespace WorldServer.core.commands
                 var client = _manager.ConnectionManager.Clients
                     .Keys.SingleOrDefault(_ => _.Player != null
                         && _.IpAddress.Equals(key.Substring(6))
-                        && !_.Rank.IsAdmin);
+                        && !_.Account.Admin);
                 if (client == default)
                     return;
 

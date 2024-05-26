@@ -7,10 +7,10 @@ namespace Shared.database.party
 {
     public enum PartySizes
     {
-        NPlayer = 3,
-        S1 = 4,
-        S3 = 5,
-        S5 = 6,
+        NPlayer = 4,
+        S1 = 5,
+        S2 = 6,
+        S3 = 7,
     }
 
     public class DbPartySystem
@@ -70,12 +70,16 @@ namespace Shared.database.party
             switch (rank)
             {
                 // todo
-                case RankingType.Supporter1:
+                case RankingType.Donator:
                     return (int)PartySizes.S1;
-                case RankingType.Supporter3:
+                case RankingType.Supporter:
+                    return (int)PartySizes.S2;
+                case RankingType.Sponsor:
                     return (int)PartySizes.S3;
-                case RankingType.Supporter5:
-                    return (int)PartySizes.S5;
+                case RankingType.Sandbox:
+                case RankingType.Moderator:
+                case RankingType.Admin:
+                    return (int)PartySizes.S3;
                 default:
                     return (int)PartySizes.NPlayer;
             }
