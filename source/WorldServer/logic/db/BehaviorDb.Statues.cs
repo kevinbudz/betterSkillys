@@ -308,8 +308,17 @@ namespace WorldServer.logic
                         new Shoot(10, count: 2, shootAngle: 20, coolDown: 99999, fixedAngle: 315, projectileIndex: 4, coolDownOffset: 1400),
                         new TimedTransition(1500, "ChooseRandomV2")
                     )
+                ),
+                new Threshold(0.01,
+                    LootTemplates.BasicPots()
+                    ),
+                new Threshold(0.01,
+                    LootTemplates.BasicDrop()
+                    ),
+                new Threshold(0.01,
+                    new ItemLoot("Kageboshi", 0.004)
+                    )
                 )
-            )
         #endregion
         #region Misc
             .Init("Corrupted Sprite",
