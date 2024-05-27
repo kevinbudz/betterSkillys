@@ -112,7 +112,6 @@
 		<MaxHitPoints>3000</MaxHitPoints>
 		<Defense>15</Defense>
 		<Flying/>
-		<Hero/>
 		<Quest/>
 		<Level>17</Level>
 		<Projectile id="0">
@@ -216,7 +215,6 @@
 		<Size>120</Size>
 		<MaxHitPoints>4500</MaxHitPoints>
 		<Defense>8</Defense>
-		<Hero/>
 		<Quest/>
 		<God/>
 		<Level>16</Level>
@@ -376,7 +374,6 @@
 		<MaxHitPoints>300000</MaxHitPoints>
 		<Defense>7</Defense>
 		<StasisImmune/>
-		<Hero/>
 		<Quest/>
 		<Level>15</Level>
 		<Projectile id="0">
@@ -636,7 +633,6 @@
 		<Size>100</Size>
 		<MaxHitPoints>3000</MaxHitPoints>
 		<Defense>15</Defense>
-		<Hero/>
 		<Quest/>
 		<TrackLoot/>
 		<Level>13</Level>
@@ -740,7 +736,6 @@
 		<MaxHitPoints>300000</MaxHitPoints>
 		<Defense>7</Defense>
 		<StasisImmune/>
-		<Hero/>
 		<TrackLoot/>
 		<Quest/>
 		<Level>11</Level>
@@ -768,7 +763,6 @@
 		<MaxHitPoints>1200</MaxHitPoints>
 		<Defense>15</Defense>
 		<StasisImmune/>
-		<Hero/>
 		<Quest/>
 		<Level>11</Level>
 		<Exp>384</Exp>
@@ -953,7 +947,6 @@
 		<MaxHitPoints>300000</MaxHitPoints>
 		<Defense>7</Defense>
 		<StasisImmune/>
-		<Hero/>
 		<Quest/>
 		<Level>9</Level>
 		<Exp>0</Exp>
@@ -989,7 +982,6 @@
 		<MaxHitPoints>1100</MaxHitPoints>
 		<Defense>7</Defense>
 		<StasisImmune/>
-		<Hero/>
 		<Quest/>
 		<Level>9</Level>
 		<Exp>165</Exp>
