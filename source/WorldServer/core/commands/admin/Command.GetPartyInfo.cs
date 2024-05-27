@@ -11,14 +11,14 @@ namespace WorldServer.core.commands
         internal class GetPartyInfo : Command
         {
             public override RankingType RankRequirement => RankingType.Admin;
-            public override string CommandName => "getpartyinfo";
-            public override string Alias => "gpt";
+            public override string CommandName => "partyinfo";
+            public override string Alias => "pt";
 
             protected override bool Process(Player player, TickTime time, string args)
             {
                 if (string.IsNullOrEmpty(args))
                 {
-                    player.SendInfo("Usage: /getPartyInfo <PartyID> or /getPartyInfo all for all Party ID's.");
+                    player.SendInfo("Usage: /partyinfo <PartyID> or /getPartyInfo all for all Party ID's.");
                     return false;
                 }
 
@@ -40,7 +40,7 @@ namespace WorldServer.core.commands
 
                 if (specificParty == null)
                 {
-                    player.SendError("That Party doesn't exists.");
+                    player.SendError("That party doesn't exists.");
                     return false;
                 }
 

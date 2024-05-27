@@ -49,7 +49,7 @@ namespace WorldServer.core.commands
             {
                 if (!(player.World is RealmWorld gw))
                 {
-                    player.SendError("You must be in a realm to clsoe it.");
+                    player.SendError("You must be in a realm to close it.");
                     return true;
                 }
 
