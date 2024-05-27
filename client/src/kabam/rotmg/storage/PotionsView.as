@@ -96,7 +96,7 @@ public class PotionsView extends Sprite {
         this.listClient_ = StaticInjectorContext.getInjector().getInstance(AppEngineClient);
         this.listClient_.setMaxRetries(2);
         this.listClient_.complete.addOnce(this.onComplete);
-        this.listClient_.sendRequest("/account/verify", _local6);
+        this.listClient_.sendRequest("/account/grabPotions", _local6);
     }
 
     private function onComplete(_arg1:Boolean, _arg2:*):void
@@ -111,8 +111,7 @@ public class PotionsView extends Sprite {
 
     private function setAssets(_arg1:XML): void
     {
-        trace(_arg1);
-        var potions:String = _arg1.StoredPotions;
+        var potions:String = _arg1;
         var parsed:Array = potions.split(",");
         for(var i:int = 0; i < 8; i++)
         {

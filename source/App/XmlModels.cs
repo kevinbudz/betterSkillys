@@ -348,6 +348,11 @@ namespace App
                     Guild.ToXml()
                 );
         }
+
+        public XElement PotionsToXml()
+        {
+            return new XElement("StoredPotions", string.Join(",", StoredPotions));
+        }
     }
 
     internal class Character

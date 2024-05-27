@@ -138,7 +138,7 @@ namespace WorldServer.core.net.handlers
                 return;
             }
 
-            var potionType = player.GameServer.Resources.GameData.Items[player.GameServer.Resources.GameData.IdToObjectType[typeName]];
+            var potionType = player.GameServer.Resources.GameData.Items[player.GameServer.Resources.GameData.IdToObjectType["Potion of " + typeName]];
 
             var index = player.Inventory.GetAvailableInventorySlot(potionType);
             if (index == -1)

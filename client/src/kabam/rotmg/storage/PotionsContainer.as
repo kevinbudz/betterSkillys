@@ -70,7 +70,7 @@ public class PotionsContainer extends Sprite{
         this.drawContainer();
         this.addIcons();
         this.addButtons();
-        draw();
+        this.draw();
     }
 
     public function drawContainer():void
@@ -103,7 +103,7 @@ public class PotionsContainer extends Sprite{
         this.add_.x = this.width - (upArrow.width) - 32;
         this.add_.y = 28 - upArrow.height;
         this.add_.addChild(upArrow);
-        this.add_.addEventListener(MouseEvent.CLICK, function(e:Event):void { handlePotions(0) });
+        this.add_.addEventListener(MouseEvent.CLICK, function(e:Event):void { handlePotions(0); });
         addChild(this.add_);
 
         this.remove_ = new Sprite();
@@ -113,7 +113,7 @@ public class PotionsContainer extends Sprite{
         this.remove_.x = this.width - downArrow.width - 4;
         this.remove_.y = this.add_.y + (downArrow.height / 2) - 4;
         this.remove_.addChild(downArrow);
-        this.remove_.addEventListener(MouseEvent.CLICK, function(e:Event):void { handlePotions(1) });
+        this.remove_.addEventListener(MouseEvent.CLICK, function(e:Event):void { handlePotions( 1); });
         addChild(this.remove_);
     }
 
@@ -122,13 +122,13 @@ public class PotionsContainer extends Sprite{
         this.consumeButton = new TextButton(16, "Consume", 100);
         this.consumeButton.x = 5;
         this.consumeButton.y = 70;
-        this.consumeButton.addEventListener(MouseEvent.CLICK, function(e:Event):void { handlePotions(2) });
+        this.consumeButton.addEventListener(MouseEvent.CLICK, function(e:Event):void { handlePotions(2); });
         addChild(this.consumeButton);
 
         this.maxButton = new TextButton(16, "Max", 100);
         this.maxButton.x = 5;
         this.maxButton.y = 105;
-        this.maxButton.addEventListener(MouseEvent.CLICK, function(e:Event):void { handlePotions(3) });
+        this.maxButton.addEventListener(MouseEvent.CLICK, function(e:Event):void { handlePotions(3); });
         addChild(this.maxButton);
 
         this.bar_ = new StatusBar(100,16, fillColors[this.statType_],0);
@@ -137,27 +137,27 @@ public class PotionsContainer extends Sprite{
         addChild(this.bar_);
     }
 
-    private function handlePotions(set:int)
+    private function handlePotions(type:int)
     {
-        switch (set)
+        switch (type)
         {
             case 0: // deposit via. inventory
                 var len:int = this.plr.equipment_.length;
                 for (var i:uint = 4; i < len; i++) {
-                    trace (this.plr.equipment_[i])
                     if (this.plr.equipment_[i] == potionsToIndex[statType_]) {
                         this.amount += 1;
                         this.bar_.draw(this.amount,50,0);
+                        break;
                     }
                     if (this.plr.equipment_[i] == greaterPotionsToIndex[statType_])
                     {
                         this.amount += 2;
                         this.bar_.draw(this.amount,50,0);
+                        break;
                     }
                 }
                 break;
             case 1: // withdraw to inventory
-                model_.useStorage(statType_, 1);
                 if (this.amount > 0)
                 {
                     this.amount -= 1;
@@ -165,7 +165,6 @@ public class PotionsContainer extends Sprite{
                 }
                 break;
             case 2: // consume potion.
-                model_.useStorage(statType_, 2);
                 if (this.amount > 0 && (this.stats[statType_] < this.statsMax[statType_]))
                 {
                     this.amount -= 1;
@@ -173,7 +172,6 @@ public class PotionsContainer extends Sprite{
                 }
                 break;
             case 3: // max potions.
-                model_.useStorage(statType_, 3);
                 if (this.amount >= (this.statsMax[statType_] - this.stats[statType_]))
                 {
                     this.amount -= this.statsMax[statType_] - this.stats[statType_];
@@ -190,7 +188,7 @@ public class PotionsContainer extends Sprite{
             default:
                 break;
         }
-        model_.useStorage(statType_, set);
+        model_.useStorage(statType_, type);
     }
 }
 }

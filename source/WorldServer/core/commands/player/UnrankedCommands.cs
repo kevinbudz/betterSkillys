@@ -41,6 +41,21 @@ namespace WorldServer.core.commands.player
         }
     }
 
+    internal class FixPotscommand : Command
+    {
+        public override string CommandName => "fixpots";
+
+        protected override bool Process(Player player, TickTime time, string args)
+        {
+            if (player.Client.Account.StoredPotions == null)
+            {
+                player.Client.Account.StoredPotions = new int[8];
+                player.Client.Account.FlushAsync();
+            }
+            return true;
+        }
+    }
+
     #region Party
 
     internal class PartyChatCommand : Command

@@ -157,6 +157,19 @@ namespace App.Controllers
             Response.CreateError(status.GetInfo());
         }
 
+        [HttpPost("grabPotions")]
+        public void GrabPotions([FromForm] string guid, [FromForm] string password, [FromForm] string secret)
+        {
+            var status = _core.Database.Verify(guid, password, out DbAccount acc);
+            if (status == DbLoginStatus.OK)
+            {
+                Response.CreateXml(Account.FromDb(_core, acc).PotionsToXml().ToString());
+                return;
+            }
+
+            Response.CreateError(status.GetInfo());
+        }
+
         [HttpPost("setName")]
         public void SetName()
         {
