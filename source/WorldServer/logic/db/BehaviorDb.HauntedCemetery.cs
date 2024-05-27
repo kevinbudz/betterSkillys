@@ -698,7 +698,7 @@ namespace WorldServer.logic
                     new Spawn("Troll 2", maxChildren: 1)
                     ),
                 new State("Stage 5",
-                    new Spawn("Troll 3", maxChildren: 1)
+                    new Spawn("Troll 3", maxChildren: 1, spawnedByBehav: false)
                     ),
                 new State("Stage 6",
                     new Spawn("Arena Ghost 1", maxChildren: 1)
@@ -713,7 +713,7 @@ namespace WorldServer.logic
                     new Spawn("Arena Ghost 1", maxChildren: 1)
                     ),
                 new State("Stage 10",
-                    new Spawn("Arena Ghost Bride", maxChildren: 1)
+                    new Spawn("Arena Ghost Bride", maxChildren: 1, spawnedByBehav: false)
                     ),
                 new State("Stage 11",
                     new Spawn("Arena Risen Mage", maxChildren: 1)
@@ -729,7 +729,7 @@ namespace WorldServer.logic
                     new Spawn("Arena Risen Warrior", maxChildren: 2)
                     ),
                 new State("Stage 15",
-                    new Spawn("Arena Grave Caretaker", maxChildren: 1)
+                    new Spawn("Arena Grave Caretaker", maxChildren: 1, spawnedByBehav: false)
                     )
                 )
             )
