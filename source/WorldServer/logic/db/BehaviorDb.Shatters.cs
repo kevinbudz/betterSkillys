@@ -2669,7 +2669,7 @@ namespace WorldServer.logic
                     new EntityNotExistsTransition("shtrs Bridge Sentinel", 500, "Open")
                     ),
                 new State("Open",
-                    new Spawn("shtrs Loot Balloon Bridge", 1, spawnedByBheav: false),
+                    new Spawn("shtrs Loot Balloon Bridge", 1, spawnedByBehav: false),
                     new Decay(100)
                     )
                 )
@@ -2682,7 +2682,7 @@ namespace WorldServer.logic
                     new EntityNotExistsTransition("shtrs Twilight Archmage", 500, "Open")
                     ),
                 new State("Open",
-                    new Spawn("shtrs Loot Balloon Mage", 1, spawnedByBheav: false),
+                    new Spawn("shtrs Loot Balloon Mage", 1, spawnedByBehav: false),
                     new Decay(100)
                     )
                 )
@@ -2728,7 +2728,7 @@ namespace WorldServer.logic
                     new EntitiesNotExistsTransition(30, "Open", "shtrs The Cursed Crown", "shtrs The Forgotten King")
                     ),
                 new State("Open",
-                    new Spawn("shtrs Loot Balloon King", 1, spawnedByBheav: false),
+                    new Spawn("shtrs Loot Balloon King", 1, spawnedByBehav: false),
                     new Decay(100)
                     )
                 )
