@@ -116,7 +116,7 @@ public class PotionsView extends Sprite {
         var parsed:Array = potions.split(",");
         for(var i:int = 0; i < 8; i++)
         {
-            var container:PotionsContainer = new PotionsContainer(this, this.gs_, i, parsed[i]);
+            var container:PotionsContainer = new PotionsContainer(this, this.gs_.map.player_, i, parsed[i]);
             container.x = 13 + (container.width * int(i % 4)) + (i < 4 ? 8 * i : 8 * (i - 4));
             container.y = i < 4 ? 65 : 215;
             this.storageContainer.addChild(container);

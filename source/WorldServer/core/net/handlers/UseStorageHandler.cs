@@ -36,11 +36,7 @@ namespace WorldServer.core.net.handlers
                 case 2: // consume
                     ModifyRemove(player, type, typeName, true);
                     break;
-                case 3: // sell
-                    player.SendInfo($"Sell feature has been temporarily removed");
-                    //ModifyRemove(player, type, typeName, true);
-                    break;
-                case 4: // max
+                case 3: // max
                     ModifyRemove(player, type, typeName, false, true);
                     break;
             }
@@ -55,10 +51,11 @@ namespace WorldServer.core.net.handlers
             }
 
             var isGreater = false;
-            var potIndex = ScanInventory(player, typeName);
+            var potIndex = ScanInventory(player, $"Potion of {typeName}");
+
             if (potIndex == -1)
             {
-                potIndex = ScanInventory(player, $"Greater {typeName}");
+                potIndex = ScanInventory(player, $"Greater Potion of {typeName}");
                 isGreater = true;
             }
 
@@ -75,7 +72,9 @@ namespace WorldServer.core.net.handlers
             var amount = isGreater ? 2 : 1;
             ModifyStat(player, type, true, amount);
 
-            player.SendInfo($"You deposited a {(isGreater ? $"Greater {typeName}" : typeName)}!");
+            bool checkVowel = typeName.Substring(0, 1) == "A";
+            string accForVowel = checkVowel ? "n" : "";
+            player.SendInfo($"You deposited {(isGreater ? $"two {typeName}" : $"a{accForVowel} {typeName}")}!");
         }
 
         private void ModifyRemove(Player player, byte type, string typeName, bool isConsume = false, bool isMax = false)
@@ -134,7 +133,7 @@ namespace WorldServer.core.net.handlers
                 if (newToMax > 0)
                     return;
                 else
-                    player.SendInfo($"You maxed {typeName.Remove(0, 9)}!");
+                    player.SendInfo($"You maxed {typeName}!");
 
                 return;
             }
