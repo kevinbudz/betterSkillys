@@ -11,6 +11,7 @@ namespace WorldServer.logic
         .Init("Lord of the Lost Lands",
             new State(
                 new ScaleHP2(20),
+                new DropPortalOnDeath("Ice Cave Portal", 0.5),
                 new State("Waiting",
                     new HpLessTransition(0.99, "Start1.0")
                     ),

@@ -13,14 +13,14 @@ namespace WorldServer.logic.behaviors
         private readonly bool _spawnedByBehav;
         private Cooldown _coolDown;
 
-        public Spawn(string children, int maxChildren = 5, double initialSpawn = 0.5, Cooldown coolDown = new Cooldown(), bool givesNoXp = true, bool spawnedByBheav = true)
+        public Spawn(string children, int maxChildren = 5, double initialSpawn = 0.5, Cooldown coolDown = new Cooldown(), bool givesNoXp = true, bool spawnedByBehav = true)
         {
             _children = GetObjType(children);
             _maxChildren = maxChildren;
             _initialSpawn = (int)(maxChildren * initialSpawn);
             _coolDown = coolDown.Normalize(0);
             _givesNoXp = givesNoXp;
-            _spawnedByBehav = spawnedByBheav;
+            _spawnedByBehav = spawnedByBehav;
         }
 
         protected override void OnStateEntry(Entity host, TickTime time, ref object state)
