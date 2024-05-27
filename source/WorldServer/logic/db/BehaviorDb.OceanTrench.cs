@@ -276,6 +276,8 @@ namespace WorldServer.logic
             new State(
                 new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
                 new Taunt("Is King Alexander alive?"),
+                new PlayerTextTransition("Prize", "He lives and reigns and conquers the world"),
+                new PlayerTextTransition("Prize", "He lives and reigns and conquers the world."),
                 new TimedTransition(12000, "Fail"),
                 new State("Texture1",
                     new SetAltTexture(1),
