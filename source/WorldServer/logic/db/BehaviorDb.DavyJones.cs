@@ -24,11 +24,15 @@ namespace WorldServer.logic
                     new ChangeSize(100, 100),
                     new SetAltTexture(1),
                     new SetAltTexture(3),
+                    new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable),
+                    new TimedTransition(200, "buffer")
+                    ),
+                new State("buffer",
+                    new StayCloseToSpawn(.1, 3),
                     new Wander(0.3),
                     new Shoot(10, 5, 10, 0, coolDown: 1000),
                     new Shoot(10, 1, 10, 1, coolDown: 2000),
-                    new EntityNotExistsTransition("Ghost Lanturn Off", 30, "Vunerable"),
-                    new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable)
+                    new EntityNotExistsTransition("Ghost Lanturn Off", 30, "Vunerable")
                     ),
                 new State("CheckOffLanterns",
                     new SetAltTexture(2),
