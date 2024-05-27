@@ -34,6 +34,15 @@ namespace WorldServer.core.miscfile
                     client.Player.AnnouncementReceived(text, player.Name);
         }
 
+        public void Realm(string text)
+        {
+            if (string.IsNullOrWhiteSpace(text))
+                return;
+            foreach (var client in GameServer.ConnectionManager.Clients.Keys)
+                if (client.Player != null)
+                    client.Player.RealmRecieved(text);
+        }
+
         public void AnnounceLoot(string text)
         {
             if (string.IsNullOrWhiteSpace(text))

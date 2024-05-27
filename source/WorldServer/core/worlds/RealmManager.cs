@@ -11,6 +11,7 @@ using WorldServer.core.structures;
 using WorldServer.core.worlds.impl;
 using WorldServer.networking.packets.outgoing;
 using WorldServer.utils;
+using WorldServer.core.miscfile;
 
 namespace WorldServer.core.worlds
 {
@@ -217,6 +218,19 @@ namespace WorldServer.core.worlds
                     ""
                 },
                 NameOfDeath = "Ghost Ship"
+            }),
+            Tuple.Create("shtrs Defense System", new TauntData()
+            {
+                Spawn = new string[] {
+                    ""
+                },
+                Final = new string[] {
+                    ""
+                },
+                Killed = new string[] {
+                    ""
+                },
+                NameOfDeath = "Avatar"
             })
         };
 
@@ -500,11 +514,7 @@ namespace WorldServer.core.worlds
             HasQuestAlready = false;
 
             _EventCount++;
-            World.ForeachPlayer(player =>
-            {
-                player.SendInfo($"<Realm> {eventDead} has been defeated! [{_EventCount}/25]");
-            });
-
+            RealmBroadcast($"{eventDead} has been defeated! [{_EventCount}/25]");
             if (_EventCount == 25)
                 _ = World.CloseRealm();
         }
@@ -561,7 +571,7 @@ namespace WorldServer.core.worlds
                 if (enemy.ObjectDesc.IdName == dat.Item1)
                 {
                     CountingEvents(dat.Item2.NameOfDeath);
-                    AnnounceMVP(enemy, dat.Item2.NameOfDeath);
+                    //AnnounceMVP(enemy, dat.Item2.NameOfDeath);
                     break;
                 }
         }
@@ -602,6 +612,8 @@ namespace WorldServer.core.worlds
         private static double GetUniform(Random rand) => ((uint)(rand.NextDouble() * uint.MaxValue) + 1.0) * 2.328306435454494e-10;
 
         private void BroadcastMsg(string message) => World.GameServer.ChatManager.Oryx(World, message);
+
+        private void RealmBroadcast(string message) => World.GameServer.ChatManager.Realm(message);
 
         private void EnsurePopulation()
         {
@@ -831,7 +843,7 @@ namespace WorldServer.core.worlds
 
             var taunt = $"{name} has been spawned!";
 
-            BroadcastMsg(taunt);
+            RealmBroadcast(taunt);
         }
 
         private struct TauntData

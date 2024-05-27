@@ -176,6 +176,8 @@ namespace WorldServer.core.objects
 
         internal void AnnouncementReceived(string text, string user = null) => Client.Player.SendInfo(string.Concat($"<{user ?? "ANNOUNCEMENT"}> ", text));
 
+        internal void RealmRecieved(string text) => Client.Player.SendRealm(text);
+
         internal void DeathNotif(string text) => Client.SendPacket(new Text()
         {
             BubbleTime = 0,
@@ -204,6 +206,16 @@ namespace WorldServer.core.objects
             Name = from,
             Recipient = "*Party*",
             Txt = text
+        });
+
+        internal void SendRealm(string text) => Client.SendPacket(new Text()
+        {
+            BubbleTime = 0,
+            NumStars = -1,
+            Name = "Realm",
+            Txt = text,
+            TextColor = 0xFFFFFF,
+            NameColor = 0xFF681F
         });
 
         internal void SendLootNotif(string text) => Client.SendPacket(new Text()
