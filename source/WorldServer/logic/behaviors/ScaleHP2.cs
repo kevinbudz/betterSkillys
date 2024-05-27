@@ -42,7 +42,7 @@ namespace WorldServer.logic.behaviors
                         defScaleState.pNamesCounted.Add(player.Name);
 
                 var playerCount = defScaleState.pNamesCounted.Count;
-                var amountInc = playerCount * AmountPerPerson;
+                var amountInc = (playerCount - 1) * AmountPerPerson;
                 enemy.Defense = enemy.ObjectDesc.Defense + (int)Math.Ceiling(amountInc);
             }
             else
