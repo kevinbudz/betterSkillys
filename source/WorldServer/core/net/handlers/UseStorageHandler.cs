@@ -34,7 +34,7 @@ namespace WorldServer.core.net.handlers
                     ModifyRemove(player, type, typeName);
                     break;
                 case 2: // consume
-                    ModifyRemove(player, type, typeName, false, true);
+                    ModifyRemove(player, type, typeName, true);
                     break;
                 case 3: // sell
                     player.SendInfo($"Sell feature has been temporarily removed");
@@ -120,7 +120,7 @@ namespace WorldServer.core.net.handlers
 
                 if (CanMax(player, type, toMax))
                 {
-                    newToMax = toMax - LefttoMax(player, type, toMax);
+                    newToMax = toMax - LeftToMax(player, type, toMax);
                     toMax = newToMax;
                     player.SendInfo($"Not enough {typeName} to max, using {newToMax} instead!");
                 }
@@ -167,12 +167,15 @@ namespace WorldServer.core.net.handlers
 
         private static void ModifyStat(Player player, byte type, bool isAdd, int amount = 1)
         {
+            var potions = player.Client.Account.StoredPotions;
             var newAmount = isAdd ? amount : -amount;
-            player.Client.Account.StoredPotions[type] += newAmount;
+            potions[type] += newAmount;
+
+            player.Client.Account.StoredPotions = potions;
             player.Client.Account.FlushAsync();
         }
 
-        private static int LefttoMax(Player player, byte type, int toMax)
+        private static int LeftToMax(Player player, byte type, int toMax)
         {
             return toMax - player.Client.Account.StoredPotions[type];
         }

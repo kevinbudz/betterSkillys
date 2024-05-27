@@ -111,6 +111,7 @@ public class PotionsView extends Sprite {
 
     private function setAssets(_arg1:XML): void
     {
+        trace(_arg1);
         var potions:String = _arg1.StoredPotions;
         var parsed:Array = potions.split(",");
         for(var i:int = 0; i < 8; i++)

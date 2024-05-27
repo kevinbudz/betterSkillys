@@ -107,24 +107,8 @@ public class PotionsContainer extends Sprite{
         this.add_.addEventListener(MouseEvent.CLICK, onAddPotion);
         this.remove_.addEventListener(MouseEvent.CLICK, onRemovePotion);
         this.consumeButton.addEventListener(MouseEvent.CLICK, onConsumePotionClick);
-        this.consumeButton.addEventListener(MouseEvent.MOUSE_DOWN, onConsumePotionDown);
         this.maxButton.addEventListener(MouseEvent.CLICK, onMaxPotion);
         draw();
-    }
-
-
-    private function onConsumePotionDown(e:Event):void {
-        consumeTimer.addEventListener(TimerEvent.TIMER, onConsumePotionTick);
-        this.addEventListener(MouseEvent.MOUSE_UP, onConsumePotionUp);
-        consumeTimer.start();
-    }
-
-    private function onConsumePotionUp(e:Event):void {
-        //removeEventListener(Event.ENTER_FRAME, onConsumePotionTick)
-        removeEventListener(TimerEvent.TIMER, onConsumePotionTick);
-        consumeTimer.stop();
-        consumeTimer.reset();
-        this.removeEventListener(MouseEvent.MOUSE_UP, onConsumePotionUp);
     }
 
     private function onAddPotion(e:Event):void {
@@ -141,10 +125,6 @@ public class PotionsContainer extends Sprite{
 
     private function onMaxPotion(e:Event):void {
         model_.useStorage(statType_, 4);
-    }
-
-    private function onConsumePotionTick(e:TimerEvent):void {
-        model_.useStorage(statType_, 2);
     }
 
     public function drawContainer():void
