@@ -1953,6 +1953,7 @@
          <Index>0</Index>
       </Texture>
       <Exp>0</Exp>
+      <MaxHitPoints>1000</MaxHitPoints>
       <ShadowSize>0</ShadowSize>
       <Size>0</Size>
       <Invincible/>
