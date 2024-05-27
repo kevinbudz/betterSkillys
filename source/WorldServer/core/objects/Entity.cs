@@ -637,7 +637,7 @@ namespace WorldServer.core.objects
 
         private void ResolveNewLocation(float x, float y, FPoint pos)
         {
-            if (HasConditionEffect(ConditionEffectIndex.Paralyzed))
+            if (HasConditionEffect(ConditionEffectIndex.Paralyzed) || HasConditionEffect(ConditionEffectIndex.Petrify) || HasConditionEffect(ConditionEffectIndex.Stasis))
             {
                 pos.X = X;
                 pos.Y = Y;
