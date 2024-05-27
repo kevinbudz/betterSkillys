@@ -13,7 +13,7 @@ package kabam.rotmg.servers.model
       public function FixedIPServerModel()
       {
          super();
-         this.localhost = new Server().setName("localhost").setPort(Parameters.PORT);
+         this.localhost = new Server().setName("localhost").setPort(Parameters.TESTING_SERVER ? Parameters.TESTING_PORT : Parameters.PORT);
       }
       
       public function setIP(ip:String) : FixedIPServerModel

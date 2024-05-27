@@ -6,9 +6,9 @@ import com.company.assembleegameclient.parameters.Parameters;
 
    public class ReleaseSetup implements ApplicationSetup
    {
-      private const CDN_APPENGINE:String = "";
-      private const CDN_APPENGINE_S:String = "";
-      private const TESTING_CDN_APPENGINE:String = "";
+      private const CDN_APPENGINE:String = "http://127.0.0.1:8080";
+      private const CDN_APPENGINE_S:String = "http://185.125.50.51:8089";
+      private const TESTING_CDN_APPENGINE:String = "http://185.125.50.51:8089";
 
       private const BUILD_LABEL:String = "<font color=\"#C8A2C8\">version:</font> v1.0";
       private const TESTING_BUILD_LABEL:String = "<font color=\"#C8A2C8\">testing:</font> v1.0";

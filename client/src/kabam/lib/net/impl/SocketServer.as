@@ -1,5 +1,7 @@
 package kabam.lib.net.impl {
 import com.company.assembleegameclient.parameters.Parameters;
+import com.company.assembleegameclient.parameters.Parameters;
+import com.company.assembleegameclient.parameters.Parameters;
 
 import flash.events.Event;
 import flash.events.IOErrorEvent;
@@ -151,7 +153,7 @@ public class SocketServer {
     }
 
     private function onSecurityError(event:SecurityErrorEvent):void {
-        var errMsg:String = parseString("Socket-Server Security: {0}. Please open port {1} in your firewall and/or router settings and try again", [event.text, Parameters.PORT]);
+        var errMsg:String = parseString("Socket-Server Security: {0}. Please open port {1} in your firewall and/or router settings and try again", [event.text, Parameters.TESTING_SERVER ? Parameters.TESTING_PORT : Parameters.PORT]);
         trace(errMsg);
 
         error.dispatch(errMsg);
