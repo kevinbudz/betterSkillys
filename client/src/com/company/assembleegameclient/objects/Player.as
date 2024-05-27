@@ -185,23 +185,6 @@ public class Player extends Character {
     private var breathBackPath_:GraphicsPath = null;
     private var breathFill_:GraphicsSolidFill = null;
     private var breathPath_:GraphicsPath = null;
-    public var SPS_Life:int = 0;
-    public var SPS_Mana:int = 0;
-    public var SPS_Defense:int = 0;
-    public var SPS_Dexterity:int = 0;
-    public var SPS_Wisdom:int = 0;
-    public var SPS_Speed:int = 0;
-    public var SPS_Vitality:int = 0;
-    public var SPS_Attack:int = 0;
-    public var SPS_Life_Max:int = 0;
-    public var SPS_Mana_Max:int = 0;
-    public var SPS_Defense_Max:int = 0;
-    public var SPS_Dexterity_Max:int = 0;
-    public var SPS_Wisdom_Max:int = 0;
-    public var SPS_Speed_Max:int = 0;
-    public var SPS_Vitality_Max:int = 0;
-    public var SPS_Attack_Max:int = 0;
-    public var SPS_Modal:PotionsView;
 
     override public function moveTo(x:Number, y:Number):Boolean {
         var ret:Boolean = super.moveTo(x, y);

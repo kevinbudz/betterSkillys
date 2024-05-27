@@ -680,12 +680,12 @@ namespace WorldServer.core.objects
             if (Stats.Base[idx] >= statInfo[idx].MaxValue)
             {
                 Stats.Base[idx] = statInfo[idx].MaxValue;
-                var inc = eff.Amount == 5 ? 1 : eff.Amount == 10 ? 2 : eff.Amount == 2 ? 2 : 1;
+                var inc = idx <= 1 ? eff.Amount / 5 : eff.Amount;
+                var storedAmount = AttemptToAdd(idx, inc);
 
-                string statname = item.DisplayName.Split(' ').Last();
-                var storedAmount = HandleTX(statname, inc);
-                if (inc != -1)
+                if (storedAmount != -1)
                 {
+                    string statname = item.DisplayName.Split(' ').Last();
                     bool checkVowel = statname.Substring(0, 1) == "A";
                     string accForVowel = checkVowel ? "n" : "";
                     switch (inc)
@@ -720,54 +720,16 @@ namespace WorldServer.core.objects
             }
         }
 
-        private int HandleTX(string statname, int amount)
+        private int AttemptToAdd(int idx, int amount)
         {
-            var maxAllowed = 50;
-            switch (statname)
+            var acc = Client.Account;
+            if (acc.StoredPotions[idx] < 50)
             {
-                case "Wisdom":
-                    if (Client.Account.SPSWisdomCount < maxAllowed)
-                        Client.Account.SPSWisdomCount += amount;
-                    else return -1;
-                    return Client.Account.SPSWisdomCount;
-                case "Vitality":
-                    if (Client.Account.SPSVitalityCount < maxAllowed)
-                        Client.Account.SPSVitalityCount += amount;
-                    else return -1;
-                    return Client.Account.SPSVitalityCount;
-                case "Life":
-                    if (Client.Account.SPSLifeCount < maxAllowed)
-                        Client.Account.SPSLifeCount += amount;
-                    else return -1;
-                    return Client.Account.SPSLifeCount;
-                case "Mana":
-                    if (Client.Account.SPSManaCount < maxAllowed)
-                        Client.Account.SPSManaCount += amount;
-                    else return -1;
-                    return Client.Account.SPSManaCount;
-                case "Speed":
-                    if (Client.Account.SPSSpeedCount < maxAllowed)
-                        Client.Account.SPSSpeedCount += amount;
-                    else return -1;
-                    return Client.Account.SPSSpeedCount;
-                case "Attack":
-                    if (Client.Account.SPSAttackCount < maxAllowed)
-                        Client.Account.SPSAttackCount += amount;
-                    else return -1;
-                    return Client.Account.SPSAttackCount;
-                case "Defense":
-                    if (Client.Account.SPSDefenseCount < maxAllowed)
-                        Client.Account.SPSDefenseCount += amount;
-                    else return -1;
-                    return Client.Account.SPSDefenseCount;
-                case "Dexterity":
-                    if (Client.Account.SPSDexterityCount < maxAllowed)
-                        Client.Account.SPSDexterityCount += amount;
-                    else return -1;
-                    return Client.Account.SPSDexterityCount;
-                default:
-                    return -1;
+                acc.StoredPotions[idx] += amount;
+                acc.FlushAsync();
             }
+            else return -1;
+            return acc.StoredPotions[idx];
         }
 
         private void AELDBoost(TickTime time, Item item, Position target, ActivateEffect eff)

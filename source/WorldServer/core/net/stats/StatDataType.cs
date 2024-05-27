@@ -107,22 +107,6 @@
         BackPackData5 = 139,
         BackPackData6 = 140,
         BackPackData7 = 141,
-        SPS_LIFE_COUNT = 142,
-        SPS_LIFE_COUNT_MAX = 143,
-        SPS_MANA_COUNT = 144,
-        SPS_MANA_COUNT_MAX = 145,
-        SPS_DEFENSE_COUNT = 146,
-        SPS_DEFENSE_COUNT_MAX = 147,
-        SPS_ATTACK_COUNT = 148,
-        SPS_ATTACK_COUNT_MAX = 149,
-        SPS_DEXTERITY_COUNT = 150,
-        SPS_DEXTERITY_COUNT_MAX = 151,
-        SPS_SPEED_COUNT = 152,
-        SPS_SPEED_COUNT_MAX = 153,
-        SPS_VITALITY_COUNT = 154,
-        SPS_VITALITY_COUNT_MAX = 155,
-        SPS_WISDOM_COUNT = 156,
-        SPS_WISDOM_COUNT_MAX = 157,
         None = 255
     }
 }

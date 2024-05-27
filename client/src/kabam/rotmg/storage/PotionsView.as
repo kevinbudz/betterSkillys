@@ -65,7 +65,6 @@ public class PotionsView extends Sprite {
 
         this.gs_ = gs;
         this.player = gs.map.player_;
-        this.gs_.map.player_.SPS_Modal = this;
 
         this.alpha = 0;
         new GTween(this, 0.2, {"alpha": 1});
@@ -125,7 +124,6 @@ public class PotionsView extends Sprite {
     }
 
     public function onClose(arg1:Event):void {
-        this.gs_.map.player_.SPS_Modal = null;
         parent.removeChild(this);
     }
 }

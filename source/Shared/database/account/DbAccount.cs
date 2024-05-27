@@ -45,15 +45,7 @@ namespace Shared.database.account
         public int TotalFame { get => GetValue<int>("totalFame"); set => SetValue("totalFame", value); }
         public string UUID { get => GetValue<string>("uuid"); set => SetValue("uuid", value); }
         public int VaultCount { get => GetValue<int>("vaultCount"); set => SetValue("vaultCount", value); }
-        public int SPSLifeCount { get => GetValue<int>("sps_lifeCount"); set => SetValue("sps_lifeCount", value); }
-        public int SPSManaCount { get => GetValue<int>("sps_manaCount"); set => SetValue("sps_manaCount", value); }
-        public int SPSDefenseCount { get => GetValue<int>("sps_defenseCount"); set => SetValue("sps_defenseCount", value); }
-        public int SPSAttackCount { get => GetValue<int>("sps_attackCount"); set => SetValue("sps_attackCount", value); }
-        public int SPSDexterityCount { get => GetValue<int>("sps_dexterityCount"); set => SetValue("sps_dexterityCount", value); }
-        public int SPSSpeedCount { get => GetValue<int>("sps_speedCount"); set => SetValue("sps_speedCount", value); }
-        public int SPSVitalityCount { get => GetValue<int>("sps_vitalityCount"); set => SetValue("sps_vitalityCount", value); }
-        public int SPSWisdomCount { get => GetValue<int>("sps_wisdomCount"); set => SetValue("sps_wisdomCount", value); }
-
+        public int[] StoredPotions { get => GetValue<int[]>("storedPotions"); set => SetValue("storedPotions", value); }
         internal string LockToken { get; set; }
 
         public DbAccount(IDatabase db, int accountId, string field = null, bool isAsync = false)

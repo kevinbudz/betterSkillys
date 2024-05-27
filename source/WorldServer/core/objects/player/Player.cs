@@ -301,8 +301,6 @@ namespace WorldServer.core.objects
                 IsHidden = true;
                 ApplyPermanentConditionEffect(ConditionEffectIndex.Invincible);
             }
-
-            InitializePotionStorage(account);
         }
 
         public override bool CanBeSeenBy(Player player)
@@ -535,25 +533,6 @@ namespace WorldServer.core.objects
             stats[StatDataType.BackPackData6] = Inventory.Data[18]?.GetData() ?? "{}";
             stats[StatDataType.BackPackData7] = Inventory.Data[19]?.GetData() ?? "{}";
             stats[StatDataType.Credits] = Credits;
-            if (World is VaultWorld)
-            {
-                stats[StatDataType.SPS_LIFE_COUNT] = SPSLifeCount;
-                stats[StatDataType.SPS_MANA_COUNT] = SPSManaCount;
-                stats[StatDataType.SPS_ATTACK_COUNT] = SPSAttackCount;
-                stats[StatDataType.SPS_DEFENSE_COUNT] = SPSDefenseCount;
-                stats[StatDataType.SPS_DEXTERITY_COUNT] = SPSDexterityCount;
-                stats[StatDataType.SPS_WISDOM_COUNT] = SPSWisdomCount;
-                stats[StatDataType.SPS_SPEED_COUNT] = SPSSpeedCount;
-                stats[StatDataType.SPS_VITALITY_COUNT] = SPSVitalityCount;
-                stats[StatDataType.SPS_LIFE_COUNT_MAX] = SPSLifeCountMax;
-                stats[StatDataType.SPS_MANA_COUNT_MAX] = SPSManaCountMax;
-                stats[StatDataType.SPS_ATTACK_COUNT_MAX] = SPSAttackCountMax;
-                stats[StatDataType.SPS_DEFENSE_COUNT_MAX] = SPSDefenseCountMax;
-                stats[StatDataType.SPS_DEXTERITY_COUNT_MAX] = SPSDexterityCountMax;
-                stats[StatDataType.SPS_WISDOM_COUNT_MAX] = SPSWisdomCountMax;
-                stats[StatDataType.SPS_SPEED_COUNT_MAX] = SPSSpeedCountMax;
-                stats[StatDataType.SPS_VITALITY_COUNT_MAX] = SPSVitalityCountMax;
-            }
         }
 
         // minimal export for other players

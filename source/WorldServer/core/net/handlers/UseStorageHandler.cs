@@ -1,6 +1,7 @@
 ﻿using Shared;
 using WorldServer.core.objects;
 using WorldServer.core.worlds;
+using WorldServer.logic.behaviors;
 using WorldServer.networking;
 
 namespace WorldServer.core.net.handlers
@@ -9,15 +10,16 @@ namespace WorldServer.core.net.handlers
     {
         public override MessageId MessageId => MessageId.USE_STORAGE;
 
+        public string[] Potions = ["Life", "Mana", "Attack", "Defense", "Speed", "Dexterity", "Vitality", "Wisdom", "Unknown"];
+
         public override void Handle(Client client, NetworkReader rdr, ref TickTime tickTime)
         {
             var type = rdr.ReadByte();
             var action = rdr.ReadByte();
-
             var player = client.Player;
+            var typeName = Potions[type];
 
-            var typeName = Player.GetPotionFromType(type);
-            if (player == null || typeName == Player.UNKNOWN_POTION)
+            if (player == null || typeName == Potions[8])
             {
                 player.SendInfo("Unknown Error");
                 return;
@@ -80,7 +82,7 @@ namespace WorldServer.core.net.handlers
         {
             if (CanModifyStat(player, type, true))
             {
-                player.SendInfo($"You have no more {typeName}");
+                player.SendInfo($"You have no more {typeName} left!");
                 return;
             }
 
@@ -91,7 +93,7 @@ namespace WorldServer.core.net.handlers
             {
                 if (player.Stats.Base[type] >= maxStatValue)
                 {
-                    player.SendInfo($"You are already maxed");
+                    player.SendInfo($"You are already maxed!");
                     return;
                 }
 
@@ -109,7 +111,7 @@ namespace WorldServer.core.net.handlers
             {
                 if (player.Stats.Base[type] >= maxStatValue)
                 {
-                    player.SendInfo($"You are already maxed");
+                    player.SendInfo($"You're already maxed in this stat!");
                     return;
                 }
 
@@ -118,9 +120,9 @@ namespace WorldServer.core.net.handlers
 
                 if (CanMax(player, type, toMax))
                 {
-                    newToMax = toMax - PotionsToMaxCalc(player, type, toMax);
+                    newToMax = toMax - LefttoMax(player, type, toMax);
                     toMax = newToMax;
-                    player.SendInfo($"Not enough {typeName} to max, using [{newToMax}]");
+                    player.SendInfo($"Not enough {typeName} to max, using {newToMax} instead!");
                 }
 
                 player.Stats.Base[type] += type < 2 ? 5 * toMax : 1 * toMax;
@@ -166,75 +168,24 @@ namespace WorldServer.core.net.handlers
         private static void ModifyStat(Player player, byte type, bool isAdd, int amount = 1)
         {
             var newAmount = isAdd ? amount : -amount;
-
-            switch (type)
-            {
-                case 0:
-                    player.SPSLifeCount += newAmount;
-                    break;
-                case 1:
-                    player.SPSManaCount += newAmount;
-                    break;
-                case 2:
-                    player.SPSAttackCount += newAmount;
-                    break;
-                case 3:
-                    player.SPSDefenseCount += newAmount;
-                    break;
-                case 4:
-                    player.SPSSpeedCount += newAmount;
-                    break;
-                case 5:
-                    player.SPSDexterityCount += newAmount;
-                    break;
-                case 6:
-                    player.SPSVitalityCount += newAmount;
-                    break;
-                case 7:
-                    player.SPSWisdomCount += newAmount;
-                    break;
-            }
-
-            player.SavePotionStorage();
+            player.Client.Account.StoredPotions[type] += newAmount;
+            player.Client.Account.FlushAsync();
         }
 
-        private static int PotionsToMaxCalc(Player player, byte type, int toMax) => type switch
+        private static int LefttoMax(Player player, byte type, int toMax)
         {
-            0 => toMax - player.SPSLifeCount,
-            1 => toMax - player.SPSManaCount,
-            2 => toMax - player.SPSAttackCount,
-            3 => toMax - player.SPSDefenseCount,
-            4 => toMax - player.SPSSpeedCount,
-            5 => toMax - player.SPSDexterityCount,
-            6 => toMax - player.SPSVitalityCount,
-            7 => toMax - player.SPSWisdomCount,
-            _ => 0,
-        };
+            return toMax - player.Client.Account.StoredPotions[type];
+        }
 
-        private static bool CanMax(Player Player, byte type, int toMax) => type switch
+        private static bool CanMax(Player player, byte type, int toMax)
         {
-            0 => Player.SPSLifeCount < toMax,
-            1 => Player.SPSManaCount < toMax,
-            2 => Player.SPSAttackCount < toMax,
-            3 => Player.SPSDefenseCount < toMax,
-            4 => Player.SPSSpeedCount < toMax,
-            5 => Player.SPSDexterityCount < toMax,
-            6 => Player.SPSVitalityCount < toMax,
-            7 => Player.SPSWisdomCount < toMax,
-            _ => false,
-        };
+            return player.Client.Account.StoredPotions[type] < toMax;
+        }
 
-        private static bool CanModifyStat(Player player, byte type, bool checkZero) => type switch
+        private static bool CanModifyStat(Player player, byte type, bool checkZero)
         {
-            0 => checkZero ? player.SPSLifeCount <= 0 : player.SPSLifeCount < player.SPSLifeCountMax,
-            1 => checkZero ? player.SPSManaCount <= 0 : player.SPSManaCount < player.SPSManaCountMax,
-            2 => checkZero ? player.SPSAttackCount <= 0 : player.SPSAttackCount < player.SPSAttackCountMax,
-            3 => checkZero ? player.SPSDefenseCount <= 0 : player.SPSDefenseCount < player.SPSDefenseCountMax,
-            4 => checkZero ? player.SPSSpeedCount <= 0 : player.SPSSpeedCount < player.SPSSpeedCountMax,
-            5 => checkZero ? player.SPSDexterityCount <= 0 : player.SPSDexterityCount < player.SPSDexterityCountMax,
-            6 => checkZero ? player.SPSVitalityCount <= 0 : player.SPSVitalityCount < player.SPSVitalityCountMax,
-            7 => checkZero ? player.SPSWisdomCount <= 0 : player.SPSWisdomCount < player.SPSWisdomCountMax,
-            _ => false,
-        };
+            var stored = player.Client.Account.StoredPotions;
+            return checkZero ? stored[type] <= 0 : stored[type] < 50;
+        }
     }
 }
