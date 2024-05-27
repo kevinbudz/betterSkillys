@@ -74,7 +74,7 @@ namespace WorldServer.logic
                 new State("Charge",
                     new TimedTransition(2000, "Follow"),
                     new Charge(1, 6, coolDown: 2000),
-                    new Shoot(5, 16, projectileIndex: 0, coolDown: 2400, coolDownOffset: 400)
+                    new Shoot(5, 16, projectileIndex: 1, coolDown: 2400, coolDownOffset: 400)
                     )
                 )
             )
@@ -810,8 +810,8 @@ namespace WorldServer.logic
                     ),
                 new State("Pause",
                     new RemoveConditionalEffect(ConditionEffectIndex.Invulnerable),
-                    new Spawn("shtrs Stone Knight", maxChildren: 1, initialSpawn: 1, coolDown: 7500),
-                    new Spawn("shtrs Stone Mage", maxChildren: 1, initialSpawn: 1, coolDown: 7500)
+                    new Spawn("shtrs Stone Knight", maxChildren: 1, initialSpawn: 1, coolDown: 99999),
+                    new Spawn("shtrs Stone Mage", maxChildren: 1, initialSpawn: 1, coolDown: 99999)
                     )
                 )
             )
@@ -898,8 +898,8 @@ namespace WorldServer.logic
                     ),
                 new State("Pause",
                     new RemoveConditionalEffect(ConditionEffectIndex.Invulnerable),
-                    new Spawn("shtrs Stone Knight", maxChildren: 1, initialSpawn: 1),
-                    new Spawn("shtrs Stone Mage", maxChildren: 1, initialSpawn: 1)
+                    new Spawn("shtrs Stone Knight", maxChildren: 1, initialSpawn: 1, coolDown: 99999),
+                    new Spawn("shtrs Stone Mage", maxChildren: 1, initialSpawn: 1, coolDown: 99999)
                     )
                 )
             )
@@ -986,8 +986,8 @@ namespace WorldServer.logic
                     ),
                 new State("Pause",
                     new RemoveConditionalEffect(ConditionEffectIndex.Invulnerable),
-                    new Spawn("shtrs Stone Knight", maxChildren: 1, initialSpawn: 1),
-                    new Spawn("shtrs Stone Mage", maxChildren: 1, initialSpawn: 1)
+                    new Spawn("shtrs Stone Knight", maxChildren: 1, initialSpawn: 1, coolDown: 99999),
+                    new Spawn("shtrs Stone Mage", maxChildren: 1, initialSpawn: 1, coolDown: 99999)
                     )
                 )
             )
@@ -1074,8 +1074,8 @@ namespace WorldServer.logic
                     ),
                 new State("Pause",
                     new RemoveConditionalEffect(ConditionEffectIndex.Invulnerable),
-                    new Spawn("shtrs Stone Knight", maxChildren: 1, initialSpawn: 1),
-                    new Spawn("shtrs Stone Mage", maxChildren: 1, initialSpawn: 1)
+                    new Spawn("shtrs Stone Knight", maxChildren: 1, initialSpawn: 1, coolDown: 99999),
+                    new Spawn("shtrs Stone Mage", maxChildren: 1, initialSpawn: 1, coolDown: 99999)
                     )
                 )
             )
@@ -1154,7 +1154,7 @@ namespace WorldServer.logic
                     ),
                 new State("Pause",
                     new ConditionEffectBehavior(ConditionEffectIndex.Armored),
-                    new Spawn("shtrs Stone Paladin", maxChildren: 1, initialSpawn: 1, coolDown: 7500),
+                    new Spawn("shtrs Stone Paladin", maxChildren: 1, initialSpawn: 1, coolDown: 99999),
                     new TimedTransition(7000, "Shoot")
                     )
                 )
@@ -1234,7 +1234,7 @@ namespace WorldServer.logic
                     ),
                 new State("Pause",
                     new ConditionEffectBehavior(ConditionEffectIndex.Armored),
-                    new Spawn("shtrs Stone Paladin", maxChildren: 1, initialSpawn: 1, coolDown: 7500),
+                    new Spawn("shtrs Stone Paladin", maxChildren: 1, initialSpawn: 1, coolDown: 99999),
                     new TimedTransition(7000, "Shoot")
                     )
                 )
