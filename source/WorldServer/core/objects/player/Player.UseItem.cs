@@ -722,13 +722,15 @@ namespace WorldServer.core.objects
 
         private int AttemptToAdd(int idx, int amount)
         {
+            var potions = Client.Account.StoredPotions;
             var acc = Client.Account;
-            if (acc.StoredPotions[idx] < 50)
-            {
-                acc.StoredPotions[idx] += amount;
-                acc.FlushAsync();
-            }
-            else return -1;
+            if (potions[idx] < 50)
+                potions[idx] += amount;
+            else 
+                return -1;
+
+            acc.StoredPotions = potions;
+            acc.FlushAsync();
             return acc.StoredPotions[idx];
         }
 

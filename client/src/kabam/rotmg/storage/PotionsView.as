@@ -7,6 +7,7 @@ import com.company.assembleegameclient.ui.LineBreakDesign;
 import com.company.rotmg.graphics.DeleteXGraphic;
 import com.company.ui.SimpleText;
 import com.company.util.GraphicsUtil;
+import com.company.util.MoreObjectUtil;
 import com.gskinner.motion.GTween;
 
 import flash.display.CapsStyle;
@@ -34,6 +35,9 @@ import io.decagames.rotmg.ui.popups.modal.ModalPopup;
 import io.decagames.rotmg.ui.texture.TextureParser;
 import io.decagames.rotmg.ui.defaults.DefaultLabelFormat;
 
+import kabam.rotmg.account.core.Account;
+import kabam.rotmg.appengine.api.AppEngineClient;
+
 import kabam.rotmg.core.StaticInjectorContext;
 import kabam.rotmg.game.model.GameModel;
 import kabam.rotmg.game.signals.AddTextLineSignal;
@@ -43,7 +47,6 @@ import org.osflash.signals.Signal;
 public class PotionsView extends Sprite {
 
     public var gs_:GameSprite;
-
     internal var player:Player;
     internal var text_:String;
 
@@ -58,34 +61,18 @@ public class PotionsView extends Sprite {
     private var backgroundFill_:GraphicsSolidFill = new GraphicsSolidFill(0x323232,1);
     private var path_:GraphicsPath = new GraphicsPath(new Vector.<int>(),new Vector.<Number>());
     private var graphicsData_:Vector.<IGraphicsData> = new <IGraphicsData>[lineStyle_,backgroundFill_,path_,GraphicsUtil.END_FILL,GraphicsUtil.END_STROKE];
+    private var listClient_:AppEngineClient;
 
     public function PotionsView(gs:GameSprite) {
         this.x = 55;
         this.y = 105;
-
-        this.gs_ = gs;
-        this.player = gs.map.player_;
-
-        this.alpha = 0;
-        new GTween(this, 0.2, {"alpha": 1});
-
         this.storageContainer = this.drawStorage();
         this.potionContainers = new Vector.<PotionsContainer>();
-        for(var i:int = 0; i < 8; i++)
-        {
-            var container:PotionsContainer = new PotionsContainer(this, this.gs_, i, this.player);
-            container.x = 13 + (container.width * int(i % 4)) + (i < 4 ? 8 * i : 8 * (i - 4));
-            container.y = i < 4 ? 65 : 215;
-            this.storageContainer.addChild(container);
-            this.potionContainers.push(container);
-        }
 
         this.titleText_ = new SimpleText(24, 0xFFFFFF, false, 800, 0);
         this.titleText_.setBold(true);
         this.titleText_.setText("Potion Storage");
         this.titleText_.autoSize = TextFieldAutoSize.LEFT;
-        this.titleText_.filters = [new DropShadowFilter(0,0,0)];
-        this.titleText_.updateMetrics();
         this.titleText_.x = 170;
         this.titleText_.y = 10;
         this.storageContainer.addChild(this.titleText_);
@@ -101,6 +88,39 @@ public class PotionsView extends Sprite {
         this.lineBreak_.x = 20;
         this.lineBreak_.y = 48;
         this.storageContainer.addChild(this.lineBreak_);
+
+        this.gs_ = gs;
+        var _local5:Account = StaticInjectorContext.getInjector().getInstance(Account);
+        var _local6:Object = {"num": this.gs_, "offset": 15};
+        MoreObjectUtil.addToObject(_local6, _local5.getCredentials());
+        this.listClient_ = StaticInjectorContext.getInjector().getInstance(AppEngineClient);
+        this.listClient_.setMaxRetries(2);
+        this.listClient_.complete.addOnce(this.onComplete);
+        this.listClient_.sendRequest("/account/verify", _local6);
+    }
+
+    private function onComplete(_arg1:Boolean, _arg2:*):void
+    {
+        this.getAssets(_arg2);
+    }
+
+    private function getAssets(_arg1:String):void
+    {
+        this.setAssets(XML(_arg1));
+    }
+
+    private function setAssets(_arg1:XML): void
+    {
+        var potions:String = _arg1.StoredPotions;
+        var parsed:Array = potions.split(",");
+        for(var i:int = 0; i < 8; i++)
+        {
+            var container:PotionsContainer = new PotionsContainer(this, this.gs_, i, parsed[i]);
+            container.x = 13 + (container.width * int(i % 4)) + (i < 4 ? 8 * i : 8 * (i - 4));
+            container.y = i < 4 ? 65 : 215;
+            this.storageContainer.addChild(container);
+            this.potionContainers.push(container);
+        }
     }
 
     public function drawStorage():Sprite

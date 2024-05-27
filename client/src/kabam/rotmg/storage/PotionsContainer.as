@@ -50,16 +50,15 @@ public class PotionsContainer extends Sprite{
     private var consumeTimer:Timer = new Timer(100);
     private var gs_:GameSprite;
     private var model_:PotionsView;
-    private var player_:Player;
+    private var amount:int;
 
     public static const fillColors:Array = [0x5edddd, 0xffea55, 0xe87ee8, 0x686868, 0x70e08c, 0xfd9d3e, 0xf53434, 0x77b5f2];
 
-    public function PotionsContainer(model:PotionsView, gs:GameSprite, statType:int, player:Player){
-
-        this.player_ = player;
-        model_ = model;
-        gs_ = gs;
-        statType_ = statType;
+    public function PotionsContainer(model:PotionsView, gs:GameSprite, statType:int, amount:int){
+        this.model_ = model;
+        this.gs_ = gs;
+        this.statType_ = statType;
+        this.amount = amount;
         this.remove_ = new Sprite();
         this.add_ = new Sprite();
 
@@ -158,32 +157,7 @@ public class PotionsContainer extends Sprite{
     public function draw():void{
         if (bar_ == null)
             return;
-        switch(statType_){
-            case 0: //life
-                this.bar_.draw(this.player_.SPS_Life,this.player_.SPS_Life_Max,0);
-                break;
-            case 1://mana
-                this.bar_.draw(this.player_.SPS_Mana,this.player_.SPS_Mana_Max,0);
-                break;
-            case 2://att
-                this.bar_.draw(this.player_.SPS_Attack,this.player_.SPS_Attack_Max,0);
-                break;
-            case 3://def
-                this.bar_.draw(this.player_.SPS_Defense,this.player_.SPS_Defense_Max,0);
-                break;
-            case 4://spd
-                this.bar_.draw(this.player_.SPS_Speed,this.player_.SPS_Speed_Max,0);
-                break;
-            case 5://dex
-                this.bar_.draw(this.player_.SPS_Dexterity,this.player_.SPS_Dexterity_Max,0);
-                break;
-            case 6://vit
-                this.bar_.draw(this.player_.SPS_Vitality,this.player_.SPS_Vitality_Max,0);
-                break;
-            case 7://wis
-                this.bar_.draw(this.player_.SPS_Wisdom,this.player_.SPS_Wisdom_Max,0);
-                break;
-        }
+        this.bar_.draw(this.amount,50,0);
     }
 }
 }
