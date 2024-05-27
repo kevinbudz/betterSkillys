@@ -224,4 +224,30 @@
       <XpMult>0.0</XpMult>
       <StasisImmune />
    </Object>
+   <Object type="0x4979" id="InnerSanctum Task Master">
+      <Class>Character</Class>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Texture>
+         <File>invisible</File>
+         <Index>0</Index>
+      </Texture>
+      <NoMiniMap />
+      <Size>0</Size>
+      <XpMult>0.0</XpMult>
+      <StasisImmune />
+   </Object>
+   <Object type="0x4780" id="ic Loot Balloon">
+      <Class>Character</Class>
+      <Enemy/>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x466</Index>
+      </Texture>
+      <MaxHitPoints>45000</MaxHitPoints>
+      <Defense>35</Defense>
+      <Size>160</Size>
+      <Exp>0</Exp>
+      <StasisImmune/>
+      <TrackLoot/>
+   </Object>
 </Objects>

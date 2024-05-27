@@ -122,6 +122,7 @@
          <Index>0x54F</Index>
       </Texture>
       <Size>0</Size>
+      <MaxHitPoints>10000</MaxHitPoints>
    </Object>
    <Object type="0x764" id="ic boss manager">
       <DisplayId>A Voice From Beyond</DisplayId>
@@ -131,6 +132,7 @@
          <Index>116</Index>
       </AnimatedTexture>
       <Size>0</Size>
+      <MaxHitPoints>10000</MaxHitPoints>
    </Object>
    <Object type="0x761" id="ic boss purifier generator">
       <Class>GameObject</Class>
@@ -139,6 +141,7 @@
          <Index>0x32</Index>
       </Texture>
       <Size>0</Size>
+      <MaxHitPoints>10000</MaxHitPoints>
    </Object>
    <Object type="0x760" id="ic boss purifier">
       <DisplayId>Cursed Grave</DisplayId>

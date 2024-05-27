@@ -243,6 +243,13 @@
 		<VisibilityType>1</VisibilityType>
 		<Dungeon/>
 	</World>
+	<World id="Ice Cave">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>ice_cave.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
 	<World id="Cave of A Thousand Treasures">
 		<Width>256</Width>
 		<Height>256</Height>

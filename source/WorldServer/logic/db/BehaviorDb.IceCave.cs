@@ -33,7 +33,7 @@ namespace WorldServer.logic
                      new Shoot(8.4, count: 1, projectileIndex: 0, coolDown: 1200)
                     )
             )
-                     .Init("Snow Bat Mama",
+           .Init("Snow Bat Mama",
              new State(
                    new State("geticey",
                        new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable),
@@ -54,7 +54,7 @@ namespace WorldServer.logic
                      new Shoot(8.4, count: 6, projectileIndex: 0, coolDown: 25)
                     )
             )
-                    .Init("ic shielded king",
+            .Init("ic shielded king",
                 new State(
                      new Taunt(0.40, "GRUUUUUUUUUUUUUU!"),
                       new Taunt(0.25, "Ssssshrrrrrrrrrrr!"),
@@ -63,18 +63,18 @@ namespace WorldServer.logic
                      new Shoot(8.4, count: 1, projectileIndex: 0, coolDown: 1100)
                     )
             )
-                            .Init("ic CreepyTime",
+            .Init("ic CreepyTime",
                 new State(
-                     new Follow(0.4, 8, 1)
+                     new Follow(0.8, 15, 1)
                     )
             )
-                            .Init("ic Whirlwind",
+           .Init("ic Whirlwind",
                 new State(
-                     new Follow(0.32, 8, 1),
+                     new Follow(0.6, 8, 1),
                      new Shoot(8.4, count: 7, projectileIndex: 1, coolDown: 2500)
                     )
             )
-                                    .Init("ic boss purifier",
+            .Init("ic boss purifier",
                 new State(
                     new TransformOnDeath("ic boss purifier generator", 1, 1, 1),
                     new Spawn("ic Whirlwind", 1, 1, coolDown: 3500),
@@ -92,19 +92,19 @@ namespace WorldServer.logic
                         new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
                          new Spawn("ic shielded king", 1, 1, coolDown: 10000),
                          new EntityExistsTransition("ic boss manager", 9999, "StagesBegin"),
-                        new EntitiesNotExistsTransition(9999, "TheKingIsDead", "ic Esben the Unwilling")
+                        new EntityNotExistsTransition("ic Esben the Unwilling", 99, "TheKingIsDead")
                           ),
                      new State("StagesBegin",
-                         new TransformOnDeath("ic boss purifier", 1, 1, 1),
+                         new Transform("ic boss purifier"),
                          new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
                           new EntitiesNotExistsTransition(9999, "leggo", "ic boss manager"),
-                           new EntitiesNotExistsTransition(9999, "TheKingIsDead", "ic Esben the Unwilling"),
-                           new Suicide()
+                           new EntityNotExistsTransition("ic Esben the Unwilling", 99, "TheKingIsDead"),
+                           new Decay(100)
                           ),
                        new State("TheKingIsDead",
-                         new TransformOnDeath("ic CreepyTime", 1, 1, 1),
+                         new Transform("ic CreepyTime"),
                          new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
-                           new Suicide()
+                           new Decay(100)
                           )
                    )
               )
@@ -118,13 +118,13 @@ namespace WorldServer.logic
                     new State("Commence",
                        new DropPortalOnDeath("Inner Sanctum Portal", 100, timeout: 99999),
                        new Taunt(true, "Innocent souls. So delicious. You have sated me. Now come, I shall give you your reward."),
-                       new Suicide()
+                       new Decay(100)
                     )))
 
         //ESBEN LETS GOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!
              .Init("ic Esben the Unwilling",
                 new State(
-                    new RealmPortalDrop(),
+                    new DropPortalOnDeath("Realm Portal", 1),
                     new TransformOnDeath("ic Loot Balloon", 1, 1, 1),
                     new State("Esben1",
                         new Taunt(0.40, "Your souls will soon nourish me."),
