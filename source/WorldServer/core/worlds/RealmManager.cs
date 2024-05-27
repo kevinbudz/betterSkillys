@@ -29,6 +29,54 @@ namespace WorldServer.core.worlds
 
         private static readonly Tuple<string, TauntData>[] CriticalEnemies = new Tuple<string, TauntData>[]
         {
+            Tuple.Create("Lucky Djinn", new TauntData()
+            {
+                Spawn = new string[] {
+                    ""
+                },
+                NumberOfEnemies = new string[] {
+                    ""
+                },
+                Final = new string[] {
+                    ""
+                },
+                Killed = new string[] {
+                    ""
+                },
+                NameOfDeath = "Lucky Djinn"
+            }),
+            Tuple.Create("Lucky Ent God", new TauntData()
+            {
+                Spawn = new string[] {
+                    ""
+                },
+                NumberOfEnemies = new string[] {
+                    ""
+                },
+                Final = new string[] {
+                    ""
+                },
+                Killed = new string[] {
+                    ""
+                },
+                NameOfDeath = "Lucky Ent God"
+            }),
+            Tuple.Create("Dragon Head", new TauntData()
+            {
+                Spawn = new string[] {
+                    ""
+                },
+                NumberOfEnemies = new string[] {
+                    ""
+                },
+                Final = new string[] {
+                    ""
+                },
+                Killed = new string[] {
+                    ""
+                },
+                NameOfDeath = "Dragon Head"
+            }),
             Tuple.Create("EH Event Hive", new TauntData()
             {
                 Spawn = new string[] {
@@ -318,6 +366,7 @@ namespace WorldServer.core.worlds
             Tuple.Create("Skull Shrine", (ISetPiece) null),
             Tuple.Create("Garnet Statue", (ISetPiece) new GarnetJade()),
             Tuple.Create("Lucky Ent God", (ISetPiece) null),
+            Tuple.Create("Dragon Head", (ISetPiece) null),
             Tuple.Create("Lucky Djinn", (ISetPiece) null),
             Tuple.Create("shtrs Defense System", (ISetPiece)null),
             Tuple.Create("EH Event Hive", (ISetPiece)null)
