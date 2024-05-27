@@ -819,7 +819,7 @@ namespace WorldServer.logic
                     LootTemplates.BasicDrop()
                     ),
                 new Threshold(0.01,
-                    new ItemLoot("RogueST1"),
+                    new ItemLoot("RogueST1", 0.008),
                     new ItemLoot("Potion of Speed", 0.8),
                     new ItemLoot("Potion of Wisdom", 0.8)
                 )

@@ -875,6 +875,7 @@
         <Enemy/>
         <Size>125</Size>
         <HitSound>monster/djinn_hit</HitSound>
+		<MaxHitPoints>10000</MaxHitPoints>
         <Texture><File>lofiObjBig</File><Index>0x54</Index></Texture>
 
         <AltTexture id="1">

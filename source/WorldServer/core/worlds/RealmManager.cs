@@ -335,7 +335,8 @@ namespace WorldServer.core.worlds
                     Tuple.Create("Ogre King", 0.4),
                     Tuple.Create("Dragon Egg", 0.1),
                     Tuple.Create("Lizard God", 0.5),
-                    Tuple.Create("Beer God", 0.1)
+                    Tuple.Create("Beer God", 0.08),
+                    Tuple.Create("Candy Gnome", 0.02)
                 })
             },
             { TerrainType.HighSand, Tuple.Create(
