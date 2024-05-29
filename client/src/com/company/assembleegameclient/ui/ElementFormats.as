@@ -53,7 +53,7 @@ public class ElementFormats
       this.guildFormat_ = newDefaultFormat();
       this.guildFormat_.color = 0xA6FF5D;
       this.partyFormat_ = newDefaultFormat();
-      this.partyFormat_.color = 0xffc0cb;
+      this.partyFormat_.color = 0x78a0ff;
       this.exportFormat_ = newDefaultFormat();
       this.exportFormat_.color = color;
       this.subtextFormat = newDefaultFormat();

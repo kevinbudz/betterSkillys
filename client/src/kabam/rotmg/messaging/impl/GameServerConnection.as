@@ -254,18 +254,12 @@ public class GameServerConnection
       public static const QUESTOBJID:int = 43;
       public static const CHOOSENAME:int = 44;
       public static const NAMERESULT:int = 45;
-
-      /* Guild */
       public static const CREATEGUILD:int = 46;
       public static const GUILDRESULT:int = 47;
       public static const GUILDREMOVE:int = 48;
       public static const GUILDINVITE:int = 49;
-
-      /* Shoots */
       public static const ALLYSHOOT:int = 50;
       public static const ENEMYSHOOT:int = 51;
-
-      /* Trade */
       public static const REQUESTTRADE:int = 52;
       public static const TRADEREQUESTED:int = 53;
       public static const TRADESTART:int = 54;
@@ -275,7 +269,6 @@ public class GameServerConnection
       public static const CANCELTRADE:int = 58;
       public static const TRADEDONE:int = 59;
       public static const TRADEACCEPTED:int = 60;
-
       public static const CLIENTSTAT:int = 61;
       public static const ESCAPE:int = 63;
       public static const FILE:int = 64;
@@ -300,7 +293,6 @@ public class GameServerConnection
       public static const MARKET_REMOVE_RESULT:int = 83;
       public static const MARKET_MY_OFFERS:int = 84;
       public static const MARKET_MY_OFFERS_RESULT:int = 85;
-
       public static const BREAKDOWN_SLOT = 86;
 
       private static const TO_MILLISECONDS:int = 1000;
@@ -311,7 +303,7 @@ public class GameServerConnection
       private static const ENEMY_SPEECH_COLORS:Vector.<uint> = new <uint>[5644060,16549442,13484223];
       private static const TELL_SPEECH_COLORS:Vector.<uint> = new <uint>[2493110,61695,13880567];
       private static const GUILD_SPEECH_COLORS:Vector.<uint> = new <uint>[4098560,10944349,13891532]; //first = background, second: outline, third: word color
-      private static const PARTY_SPEECH_COLORS:Vector.<uint> = new <uint>[0xFFA2A2,0xFFC0C0,0xFFEEEE];// "#FFA2A2"; "#FFC0C0"; "#FFEEEE";
+      private static const PARTY_SPEECH_COLORS:Vector.<uint> = new <uint>[0x78a0ff,0x5a7dd1,0xd9e4ff];// "#FFA2A2"; "#FFC0C0"; "#FFEEEE";
 
       public var gs_:GameSprite;
       public var server_:Server;
