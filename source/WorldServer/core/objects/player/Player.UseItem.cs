@@ -295,21 +295,15 @@ namespace WorldServer.core.objects
 
         private void OnOtherActivate(string param, Item item, Position target)
         {
-            var effs = item.ActivateEffects;
+            ActivateEffect[] effs;
             switch (param)
             {
-                case "hit":
-                    effs = item.OnPlayerHitActivateEffects;
-                    break;
-                case "shoot":
-                    effs = item.OnPlayerShootActivateEffects;
-                    break;
-                case "ability":
-                    effs = item.OnPlayerAbilityActivateEffects;
-                    break;
+                case "hit": effs = item.OnPlayerHitActivateEffects; break;
+                case "shoot": effs = item.OnPlayerShootActivateEffects; break;
+                case "ability": effs = item.OnPlayerAbilityActivateEffects; break;
+                default: return;
             }
-            if (effs == item.ActivateEffects)
-                return;
+
             foreach (var eff in effs)
             {
                 switch (eff.Effect)
@@ -731,14 +725,7 @@ namespace WorldServer.core.objects
         {
             if (HasConditionEffect(ConditionEffectIndex.Sick))
                 return;
-
-            if (eff.HealthThreshold != 0)
-            {
-                if (Health < eff.HealthThreshold)
-                    ActivateHealHp(this, eff.Amount);
-            }
-            else
-                ActivateHealHp(this, eff.Amount);
+            ActivateHealHp(this, eff.Amount);
         }
 
         private void AEHealNova(Item item, Position target, ActivateEffect eff)

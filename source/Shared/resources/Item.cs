@@ -79,10 +79,6 @@ namespace Shared.resources
         public bool XpBoost;
         public BreakDownData BreakDownData;
 
-        public bool HasPlayerHitEffect;
-        public bool HasPlayerShootEffect;
-        public bool HasPlayerAbilityEffect;
-
         public Item(ushort type, XElement e)
         {
             ObjectType = type;
@@ -122,16 +118,12 @@ namespace Shared.resources
             TypeOfConsumable = InvUse || Consumable;
             ActivateOnEquips = e.Elements("ActivateOnEquip").Select(_ => new KeyValuePair<int, int>(_.GetAttribute<int>("stat"), _.GetAttribute<int>("amount"))).ToArray();
             ActivateEffects = e.Elements("Activate").Select(_ => new ActivateEffect(_)).ToArray();
-            HasPlayerHitEffect = e.HasElement("OnPlayerHitActivate");
             OnPlayerHitActivateEffects = e.Elements("OnPlayerHitActivate").Select(_ => new ActivateEffect(_)).ToArray();
-            HasPlayerAbilityEffect = e.HasElement("OnPlayerAbilityActivate");
             OnPlayerAbilityActivateEffects = e.Elements("OnPlayerAbilityActivate").Select(_ => new ActivateEffect(_)).ToArray();
-            HasPlayerShootEffect = e.HasElement("OnPlayerShootActivate");
             OnPlayerShootActivateEffects = e.Elements("OnPlayerShootActivate").Select(_ => new ActivateEffect(_)).ToArray();
             Projectiles = e.Elements("Projectile").Select(_ => new ProjectileDesc(_)).ToArray();
             Quantity = e.GetValue("Quantity", 0);
             QuantityLimit = e.GetValue("QuantityLimit", 0);
-
             if(e.Element("BreakDown") != null)
                 BreakDownData = new BreakDownData(e.Element("BreakDown"));
         }

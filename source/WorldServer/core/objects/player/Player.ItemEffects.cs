@@ -61,27 +61,40 @@ namespace WorldServer.core.objects
             }
         }
 
-        private void TryAddOnPlayerHitEffect()
+        private void TryAddOnPlayerEffects(string type, int dmg = 0)
         {
-            for (var slot = 0; slot < 4; slot++)
-            {
-                //if (!CanApplySlotEffect(slot))
-                //    continue;
-
+            for (var slot = 0; slot < 4; slot++) {
                 var item = Inventory[slot];
                 if (item == null)
                     continue;
 
-                foreach (ActivateEffect eff in item.OnPlayerHitActivateEffects)
-                {
-                    if (eff.Proc != 0)
-                    {
+                ActivateEffect[] effs;
+                switch (type) {
+                    case "hit": effs = item.OnPlayerHitActivateEffects; break;
+                    case "shoot": effs = item.OnPlayerShootActivateEffects; break;
+                    case "ability": effs = item.OnPlayerAbilityActivateEffects; break;
+                    default: continue;
+                }
+
+                foreach (ActivateEffect eff in effs) {
+                    if (eff.Proc != 0) {
                         var rand = new Random();
                         if (eff.Proc > rand.NextDouble())
-                            OnOtherActivate("hit", item, Position);
+                            continue;
                     }
-                    else
-                        OnOtherActivate("hit", item, Position);
+                    if (eff.DamageThreshold != 0)
+                        if (dmg < eff.DamageThreshold)
+                            continue;
+                    if (eff.HealthRequired != 0)
+                        if (Health < eff.HealthRequired)
+                            continue;
+                    if (eff.HealthThreshold != 0)
+                        if (Health > eff.HealthThreshold)
+                            continue;
+                    if (eff.RequiredConditions != null)
+                        if (!HasConditionEffect(StringToConditionEffect(eff.RequiredConditions)))
+                            continue;
+                    OnOtherActivate(type, item, Position);
                 }
             }
         }

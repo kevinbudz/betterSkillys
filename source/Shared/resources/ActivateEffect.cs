@@ -45,6 +45,9 @@ namespace Shared.resources
         public string Target;
         public float Proc;
         public int HealthThreshold;
+        public int HealthRequired;
+        public int DamageThreshold;
+        public string RequiredConditions;
 
         public ActivateEffect(XElement e)
         {
@@ -129,6 +132,15 @@ namespace Shared.resources
 
             if (e.Attribute("hpMinThreshold") != null)
                 HealthThreshold = (int)float.Parse(e.Attribute("hpMinThreshold").Value);
+
+            if (e.Attribute("hpRequired") != null)
+                HealthRequired = (int)float.Parse(e.Attribute("hpRequired").Value);
+
+            if (e.Attribute("damageThreshold") != null)
+                DamageThreshold = (int)float.Parse(e.Attribute("damageThreshold").Value);
+
+            if (e.HasAttribute("requiredConditions"))
+                RequiredConditions = e.GetAttribute<string>("requiredConditions");
 
             if (e.HasAttribute("type"))
                 Type = (byte)e.GetAttribute<int>("type");
