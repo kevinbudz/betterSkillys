@@ -193,7 +193,7 @@ namespace WorldServer.logic
         .Init("Dr Terrible Bubble",
             new State(
                 new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
-                new State("idle"
+                new State("idle",
                     new SetAltTexture(0)
                     ),
                 new State("spawning",
