@@ -1,5 +1,4 @@
 package com.company.assembleegameclient.ui.tooltip {
-import com.company.assembleegameclient.desc.ItemData;
 import com.company.util.MathUtil2;
 
 import kabam.rotmg.constants.ItemConstants;

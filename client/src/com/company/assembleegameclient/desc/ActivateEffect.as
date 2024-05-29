@@ -39,42 +39,42 @@ public class ActivateEffect {
 
     public function ActivateEffect(obj:*) {
         //trace(XML(obj).toXMLString());
-        this.EffectName = ItemData.GetValue(obj, null, "EffectName/", null);
-        this.EffectId = ItemData.GetValue(obj, null, "Effect", 0);
-        this.ConditionEffect = ItemData.GetValue(obj, null, "ConditionEffectName/@effect", null);
+        this.EffectName = ItemAttributes.GetValue(obj, null, "EffectName/", null);
+        this.EffectId = ItemAttributes.GetValue(obj, null, "Effect", 0);
+        this.ConditionEffect = ItemAttributes.GetValue(obj, null, "ConditionEffectName/@effect", null);
         if (!this.ConditionEffect || this.ConditionEffect == "")
-            this.ConditionEffect = ItemData.GetValue(obj, null, "@condEffect", null);
-        this.CheckExistingEffect = ItemData.GetValue(obj, null, "CheckExistingEffect/@checkExistingEffect", 0);
-        this.TotalDamage = ItemData.GetValue(obj, null, "TotalDamage/@totalDamage", 0);
-        this.Radius = ItemData.GetValue(obj, null, "Radius/@radius", 0);
-        this.EffectDuration = ItemData.GetValue(obj, null, "EffectDuration/@condDuration", 0);
-        this.DurationSec = ItemData.GetValue(obj, null, "DurationSec/@duration", 0);
+            this.ConditionEffect = ItemAttributes.GetValue(obj, null, "@condEffect", null);
+        this.CheckExistingEffect = ItemAttributes.GetValue(obj, null, "CheckExistingEffect/@checkExistingEffect", 0);
+        this.TotalDamage = ItemAttributes.GetValue(obj, null, "TotalDamage/@totalDamage", 0);
+        this.Radius = ItemAttributes.GetValue(obj, null, "Radius/@radius", 0);
+        this.EffectDuration = ItemAttributes.GetValue(obj, null, "EffectDuration/@condDuration", 0);
+        this.DurationSec = ItemAttributes.GetValue(obj, null, "DurationSec/@duration", 0);
         this.DurationMS = this.DurationSec * 1000;
-        this.Amount = ItemData.GetValue(obj, null, "Amount/@amount", 0);
-        this.Range = ItemData.GetValue(obj, null, "Range/@range", 0);
-        this.MaximumDistance = ItemData.GetValue(obj, null, "MaximumDistance/@maxDistance", 0);
-        this.ObjectId = ItemData.GetValue(obj, null, "ObjectId/@objectId", null);
-        this.Id = ItemData.GetValue(obj, null, "Id/@id", null);
-        this.MaxTargets = ItemData.GetValue(obj, null, "MaxTargets/@maxTargets", 0);
-        this.Color = ItemData.GetValue(obj, null, "Color/@color", 0);
-        this.Stats = ItemData.GetValue(obj, null, "Stats/@stat", -1);
-        this.Cooldown = ItemData.GetValue(obj, null, "Cooldown/@cooldown", 0);
-        this.RemoveSelf = ItemData.GetValue(obj, null, "RemoveSelf/@removeSelf", false);
-        this.DungeonName = ItemData.GetValue(obj, null, "DungeonName/@dungeonName", null);
-        this.LockedName = ItemData.GetValue(obj, null, "LockedName/@lockedName", null);
-        this.Type = ItemData.GetValue(obj, null, "Type/@type", null);
-        this.UseWisMod = ItemData.GetValue(obj, null, "UseWisMod/@useWisMod", false);
-        this.Target = ItemData.GetValue(obj, null, "Target/@target", null);
-        this.Center = ItemData.GetValue(obj, null, "Center/@center", null);
-        this.VisualEffect = ItemData.GetValue(obj, null, "VisualEffect/@visualEffect", 0);
-        this.AirDurationMS = ItemData.GetValue(obj, null, "AirDurationMS/@airDurationMS", 1500);
-        this.SkinType = ItemData.GetValue(obj, null, "SkinType/@skinType", 0);
-        this.ImpactDmg = ItemData.GetValue(obj, null, "ImpactDmg/@impactDmg", 0);
-        this.NodeReq = ItemData.GetValue(obj, null, "NodeReq/@nodeReq", -1);
-        this.DosesReq = ItemData.GetValue(obj, null, "DosesReq/@dosesReq", 0);
-        this.CurrencyName = ItemData.GetValue(obj, null, "CurrencyName/@currency", null);
-        this.Currency = ItemData.GetValue(obj, null, "Currency", 0);
-        this.HealAmount = ItemData.GetValue(obj, null, "HealAmount/@heal", 0);
+        this.Amount = ItemAttributes.GetValue(obj, null, "Amount/@amount", 0);
+        this.Range = ItemAttributes.GetValue(obj, null, "Range/@range", 0);
+        this.MaximumDistance = ItemAttributes.GetValue(obj, null, "MaximumDistance/@maxDistance", 0);
+        this.ObjectId = ItemAttributes.GetValue(obj, null, "ObjectId/@objectId", null);
+        this.Id = ItemAttributes.GetValue(obj, null, "Id/@id", null);
+        this.MaxTargets = ItemAttributes.GetValue(obj, null, "MaxTargets/@maxTargets", 0);
+        this.Color = ItemAttributes.GetValue(obj, null, "Color/@color", 0);
+        this.Stats = ItemAttributes.GetValue(obj, null, "Stats/@stat", -1);
+        this.Cooldown = ItemAttributes.GetValue(obj, null, "Cooldown/@cooldown", 0);
+        this.RemoveSelf = ItemAttributes.GetValue(obj, null, "RemoveSelf/@removeSelf", false);
+        this.DungeonName = ItemAttributes.GetValue(obj, null, "DungeonName/@dungeonName", null);
+        this.LockedName = ItemAttributes.GetValue(obj, null, "LockedName/@lockedName", null);
+        this.Type = ItemAttributes.GetValue(obj, null, "Type/@type", null);
+        this.UseWisMod = ItemAttributes.GetValue(obj, null, "UseWisMod/@useWisMod", false);
+        this.Target = ItemAttributes.GetValue(obj, null, "Target/@target", null);
+        this.Center = ItemAttributes.GetValue(obj, null, "Center/@center", null);
+        this.VisualEffect = ItemAttributes.GetValue(obj, null, "VisualEffect/@visualEffect", 0);
+        this.AirDurationMS = ItemAttributes.GetValue(obj, null, "AirDurationMS/@airDurationMS", 1500);
+        this.SkinType = ItemAttributes.GetValue(obj, null, "SkinType/@skinType", 0);
+        this.ImpactDmg = ItemAttributes.GetValue(obj, null, "ImpactDmg/@impactDmg", 0);
+        this.NodeReq = ItemAttributes.GetValue(obj, null, "NodeReq/@nodeReq", -1);
+        this.DosesReq = ItemAttributes.GetValue(obj, null, "DosesReq/@dosesReq", 0);
+        this.CurrencyName = ItemAttributes.GetValue(obj, null, "CurrencyName/@currency", null);
+        this.Currency = ItemAttributes.GetValue(obj, null, "Currency", 0);
+        this.HealAmount = ItemAttributes.GetValue(obj, null, "HealAmount/@heal", 0);
     }
 }
 }

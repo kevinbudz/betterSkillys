@@ -6,8 +6,8 @@ public class StatBoost {
     public var Amount:int;
 
     public function StatBoost(obj:*) {
-        this.Stat = ItemData.GetValue(obj, null, "Key/@stat", -1);
-        this.Amount = ItemData.GetValue(obj, null, "Value/@amount", 0);
+        this.Stat = ItemAttributes.GetValue(obj, null, "Key/@stat", -1);
+        this.Amount = ItemAttributes.GetValue(obj, null, "Value/@amount", 0);
     }
 }
 }

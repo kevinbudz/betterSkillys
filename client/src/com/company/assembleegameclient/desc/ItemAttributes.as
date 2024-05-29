@@ -3,7 +3,7 @@ import com.adobe.serialization.json.JSON;
 import com.company.assembleegameclient.objects.ObjectLibrary;
 import com.company.assembleegameclient.util.AnimatedChars;
 
-public class ItemData {
+public class ItemAttributes {
 
     public var ObjectType:int;
     public var ObjectId:String;
@@ -39,7 +39,7 @@ public class ItemData {
     public var Projectile:ProjectileDesc;
     public var Texture:TextureDesc;
 
-    public function ItemData(val:*, objType:int, fromJson:Boolean = true) {
+    public function ItemAttributes(val:*, objType:int, fromJson:Boolean = true) {
         if (objType == -1)
             return;
         var obj:*;
@@ -99,10 +99,10 @@ public class ItemData {
         }
     }
 
-    public static function FromXML(objType:int):ItemData {
+    public static function FromXML(objType:int):ItemAttributes {
         if (objType == -1)
             return null;
-        return new ItemData(objType, objType, false);
+        return new ItemAttributes(objType, objType, false);
     }
 
     public static function GetValue(obj:*, xml:XML, prop:String, defValue:*):* {
