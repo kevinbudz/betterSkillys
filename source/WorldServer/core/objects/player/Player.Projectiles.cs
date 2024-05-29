@@ -41,6 +41,7 @@ namespace WorldServer.core.objects
 
             var allyShoot = new AllyShootMessage(newBulletId, Id, item.ObjectType, angle);
             World.BroadcastIfVisibleExclude(allyShoot, this, this);
+            TryAddOnPlayerEffects("shoot");
             FameCounter.Shoot();
         }
 
@@ -114,12 +115,10 @@ namespace WorldServer.core.objects
 
             projectile.Disabled = !projectileDesc.MultiHit;
 
-            // todo validate hit position
-
-            TryAddOnPlayerHitEffect();
-
             var dmg = StatsManager.DamageWithDefense(this, projectile.Damage, projectileDesc.ArmorPiercing, Stats[3]);
             Health -= dmg;
+
+            TryAddOnPlayerEffects("hit", dmg);
 
             ApplyConditionEffect(projectileDesc.Effects);
             World.BroadcastIfVisibleExclude(new DamageMessage()

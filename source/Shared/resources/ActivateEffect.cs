@@ -36,6 +36,7 @@ namespace Shared.resources
         public readonly float Distance;
         public readonly float AngleOffset;
         public readonly float Duration;
+        public readonly int SpellShots;
 
         public string Center;
         public string DungeonName;
@@ -43,6 +44,15 @@ namespace Shared.resources
         public string LockedName;
         public string ObjectId;
         public string Target;
+
+        public float Proc;
+        public int HealthThreshold;
+        public int HealthRequired;
+        public float HealthRequiredRelative;
+        public int ManaCost;
+        public int ManaRequired;
+        public int DamageThreshold;
+        public string RequiredConditions;
 
         public ActivateEffect(XElement e)
         {
@@ -104,7 +114,7 @@ namespace Shared.resources
             Amount = e.GetAttribute<int>("amount");
             Range = e.GetAttribute<float>("range");
             ObjectId = e.GetAttribute<string>("objectId");
-            Id = e.GetAttribute<string>("id");
+            Id = e.HasElement("id") ? e.GetAttribute<string>("id") : e.GetAttribute<string>("objectId");
             MaximumDistance = e.GetAttribute<float>("maxDistance");
             MaxTargets = e.GetAttribute<int>("maxTargets");
             Stats = e.GetAttribute<int>("stat");
@@ -112,6 +122,7 @@ namespace Shared.resources
             RemoveSelf = e.GetAttribute<bool>("removeSelf");
             DungeonName = e.GetAttribute<string>("dungeonName");
             LockedName = e.GetAttribute<string>("lockedName");
+            SpellShots = e.GetAttribute<int>("numShots");
 
             if (e.Attribute("totalDamage") != null)
                 TotalDamage = Utils.FromString(e.Attribute("totalDamage").Value);
@@ -121,6 +132,30 @@ namespace Shared.resources
 
             if (e.Attribute("throwTime") != null)
                 ThrowTime = (int)(float.Parse(e.Attribute("throwTime").Value) * 1000);
+
+            if (e.Attribute("proc") != null)
+                Proc = float.Parse(e.Attribute("proc").Value);
+
+            if (e.Attribute("hpMinThreshold") != null)
+                HealthThreshold = (int)float.Parse(e.Attribute("hpMinThreshold").Value);
+
+            if (e.Attribute("hpRequired") != null)
+                HealthRequired = (int)float.Parse(e.Attribute("hpRequired").Value);
+
+            if (e.HasAttribute("hpRequiredRelative"))
+                HealthRequiredRelative = float.Parse(e.Attribute("hpRequiredRelative").Value);
+
+            if (e.HasAttribute("manaCost"))
+                ManaCost = (int)float.Parse(e.Attribute("manaCost").Value);
+
+            if (e.HasAttribute("manaRequired"))
+                ManaRequired = (int)float.Parse(e.Attribute("manaRequired").Value);
+
+            if (e.Attribute("damageThreshold") != null)
+                DamageThreshold = (int)float.Parse(e.Attribute("damageThreshold").Value);
+
+            if (e.HasAttribute("requiredConditions"))
+                RequiredConditions = e.GetAttribute<string>("requiredConditions");
 
             if (e.HasAttribute("type"))
                 Type = (byte)e.GetAttribute<int>("type");

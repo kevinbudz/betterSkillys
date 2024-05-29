@@ -240,6 +240,20 @@ namespace WorldServer.core.objects
         public bool HasConditionEffect(ConditionEffectIndex effect) => _conditionEffectManager.HasCondition((byte)effect);
         public void RemoveCondition(ConditionEffectIndex effect) => _conditionEffectManager.RemoveCondition((byte)effect);
 
+        public static ConditionEffectIndex StringToConditionEffect(string conditionEffectName)
+        {
+            conditionEffectName = conditionEffectName.ToLower();
+            conditionEffectName = char.ToUpper(conditionEffectName[0]) + conditionEffectName.Substring(1);
+            if (Enum.TryParse(typeof(ConditionEffectIndex), conditionEffectName, out object result))
+            {
+                return (ConditionEffectIndex)result;
+            }
+            else
+            {
+                throw new ArgumentException("Invalid condition effect name", nameof(conditionEffectName));
+            }
+        }
+
         protected virtual bool CanApplyCondition(ConditionEffectIndex effect)
         {
             if (effect == ConditionEffectIndex.Stunned && HasConditionEffect(ConditionEffectIndex.StunImmune))
