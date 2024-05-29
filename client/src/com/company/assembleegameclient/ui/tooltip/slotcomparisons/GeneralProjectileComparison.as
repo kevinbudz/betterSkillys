@@ -45,7 +45,7 @@ package com.company.assembleegameclient.ui.tooltip.slotcomparisons
          var html:String = this.getDamageText();
          var range:Number = Number(this.projXML.Speed) * Number(this.projXML.LifetimeMS) / 10000;
          var otherRange:Number = Number(this.otherProjXML.Speed) * Number(this.otherProjXML.LifetimeMS) / 10000;
-         var rangeStr:String = TooltipHelper.getFormattedRangeStr(range);
+         var rangeStr:String = TooltipHelper.getFormattedRangeString(range);
          html = html + (wrapInColoredFont("Range: ",LABEL_COLOR) + wrapInColoredFont(rangeStr + "\n",getTextColor(range - otherRange)));
          if(this.projXML.hasOwnProperty("MultiHit"))
          {
