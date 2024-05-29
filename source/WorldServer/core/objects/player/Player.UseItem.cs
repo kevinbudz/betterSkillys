@@ -920,9 +920,6 @@ namespace WorldServer.core.objects
         {
             for (var slot = 0; slot < 4; slot++)
             {
-                if (!CanApplySlotEffect(slot))
-                    continue;
-
                 var item1 = Inventory[slot];
                 if (item1 == null || !item1.Legendary && !item1.Mythical)
                     continue;

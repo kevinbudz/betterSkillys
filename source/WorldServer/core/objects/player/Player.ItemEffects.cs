@@ -39,6 +39,9 @@ namespace WorldServer.core.objects
         private void TryAddOnPlayerEffects(string type, int dmg = 0)
         {
             for (var slot = 0; slot < 4; slot++) {
+                if (!CanApplySlotEffect(slot))
+                    continue;
+
                 var item = Inventory[slot];
                 if (item == null)
                     continue;
@@ -80,6 +83,7 @@ namespace WorldServer.core.objects
                         if (Mana < eff.ManaRequired)
                             continue;
                     OnOtherActivate(type, item, Position);
+                    SetSlotEffectCooldown((int)eff.Cooldown * 1000, slot);
                 }
             }
         }
