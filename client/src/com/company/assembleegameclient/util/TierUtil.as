@@ -35,8 +35,6 @@ public class TierUtil
             if(tier)
             {
                 color = 16777215;
-                if (xml.hasOwnProperty("Uncommon"))
-                    color = TooltipHelper.UNCOMMON_COLOR;
                 tierTag = "T" + xml.Tier;
             }
             else if(xml.hasOwnProperty("@setType"))
