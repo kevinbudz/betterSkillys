@@ -36,6 +36,7 @@ namespace Shared.resources
         public readonly float Distance;
         public readonly float AngleOffset;
         public readonly float Duration;
+        public readonly int SpellShots;
 
         public string Center;
         public string DungeonName;
@@ -120,6 +121,7 @@ namespace Shared.resources
             RemoveSelf = e.GetAttribute<bool>("removeSelf");
             DungeonName = e.GetAttribute<string>("dungeonName");
             LockedName = e.GetAttribute<string>("lockedName");
+            SpellShots = e.GetAttribute<int>("numShots");
 
             if (e.Attribute("totalDamage") != null)
                 TotalDamage = Utils.FromString(e.Attribute("totalDamage").Value);

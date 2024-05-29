@@ -524,7 +524,7 @@ namespace WorldServer.core.objects
 
         private void AEBulletNova(Item item, Position target, ActivateEffect eff)
         {
-            var numShots = item.SpellProjectiles == 0 ? 20 : item.SpellProjectiles;
+            var numShots = eff.SpellShots == 0 ? 20 : eff.SpellShots;
             var projectileDesc = item.Projectiles[0];
 
             var shoots = new List<OutgoingMessage>(numShots);
