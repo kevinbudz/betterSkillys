@@ -94,8 +94,6 @@ namespace Shared.resources
             Soulbound = e.HasElement("Soulbound");
             Potion = e.HasElement("Potion");
             Usable = e.HasElement("Usable");
-            Legendary = e.HasElement("Legendary");
-            Mythical = e.HasElement("Mythical");
             Resurrects = e.HasElement("Resurrects");
             RateOfFire = e.GetValue<float>("RateOfFire");
             Tier = e.GetValue("Tier", -1);

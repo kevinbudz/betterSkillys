@@ -82,17 +82,23 @@ namespace WorldServer.core.objects
                         if (eff.Proc > rand.NextDouble())
                             continue;
                     }
+                    if (eff.RequiredConditions != null)
+                        if (!HasConditionEffect(StringToConditionEffect(eff.RequiredConditions)))
+                            continue;
                     if (eff.DamageThreshold != 0)
                         if (dmg < eff.DamageThreshold)
-                            continue;
-                    if (eff.HealthRequired != 0)
-                        if (Health < eff.HealthRequired)
                             continue;
                     if (eff.HealthThreshold != 0)
                         if (Health > eff.HealthThreshold)
                             continue;
-                    if (eff.RequiredConditions != null)
-                        if (!HasConditionEffect(StringToConditionEffect(eff.RequiredConditions)))
+                    if (eff.HealthRequired != 0)
+                        if (Health < eff.HealthRequired)
+                            continue;
+                    if (eff.ManaCost != 0)
+                        if (Mana < eff.ManaCost)
+                            continue;
+                    if (eff.ManaRequired != 0)
+                        if (Mana < eff.ManaRequired)
                             continue;
                     OnOtherActivate(type, item, Position);
                 }
