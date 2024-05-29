@@ -101,7 +101,7 @@ namespace WorldServer.logic.behaviors
                     {
                         if (host.DistTo(player) < _range)
                         {
-                            for (var i = 0; i < 4; i++)
+                            /*for (var i = 0; i < 4; i++)
                             {
                                 var item = player.Inventory[i];
 
@@ -110,7 +110,7 @@ namespace WorldServer.logic.behaviors
                                 if (i == 0)
                                     itemCount = itemCount + 19;
                                 itemCount = itemCount + 4;
-                            }
+                            }*/
                             scstate.pNamesCounted.Add(player.Name);
                         }
                     }

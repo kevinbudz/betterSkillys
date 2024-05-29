@@ -361,6 +361,8 @@ namespace WorldServer.core.objects
                         AEPet(item, target, eff);
                         break;
                     case ActivateEffects.ObjectToss:
+                        AEObjectToss(item, target, eff);
+                        break;
                     case ActivateEffects.BulletCreate:
                         SendError($"{eff.Effect} is not yet implemented");
                         break;
@@ -485,6 +487,8 @@ namespace WorldServer.core.objects
                         AECreatePortal(time, item, target, slot, eff);
                         break;
                     case ActivateEffects.ObjectToss:
+                        AEObjectToss(item, target, eff);
+                        break;
                     case ActivateEffects.LevelTwenty:
                     case ActivateEffects.Unlock:
                     case ActivateEffects.MarkAndTeleport:
@@ -507,6 +511,15 @@ namespace WorldServer.core.objects
             }
         }
 
+        private void AEObjectToss(Item item, Position target, ActivateEffect eff)
+        {
+            GameServer.Resources.GameData.IdToObjectType.TryGetValue(eff.Id, out ushort objType);
+            Entity entity = Entity.Resolve(World.GameServer, objType);
+            if (entity == null)
+                return;
+            entity.Move(target.X, target.Y);
+            World.EnterWorld(entity);
+        }
         private void AEBackpack(TickTime time, Item item, Position target, int slot, int objId, ActivateEffect eff)
         {
             var entity = World.GetEntity(objId);
@@ -917,12 +930,6 @@ namespace WorldServer.core.objects
 
         private void AEMagic(Item item, Position target, ActivateEffect eff)
         {
-            for (var slot = 0; slot < 4; slot++)
-            {
-                var item1 = Inventory[slot];
-                if (item1 == null || !item1.Legendary && !item1.Mythical)
-                    continue;
-            }
             ActivateHealMp(this, eff.Amount);
         }
 

@@ -44,6 +44,7 @@ namespace Shared.resources
         public string LockedName;
         public string ObjectId;
         public string Target;
+
         public float Proc;
         public int HealthThreshold;
         public int HealthRequired;
@@ -113,7 +114,7 @@ namespace Shared.resources
             Amount = e.GetAttribute<int>("amount");
             Range = e.GetAttribute<float>("range");
             ObjectId = e.GetAttribute<string>("objectId");
-            Id = e.GetAttribute<string>("id");
+            Id = e.HasElement("id") ? e.GetAttribute<string>("id") : e.GetAttribute<string>("objectId");
             MaximumDistance = e.GetAttribute<float>("maxDistance");
             MaxTargets = e.GetAttribute<int>("maxTargets");
             Stats = e.GetAttribute<int>("stat");
