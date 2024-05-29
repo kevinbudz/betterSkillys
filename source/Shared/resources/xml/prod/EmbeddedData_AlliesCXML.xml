@@ -1253,6 +1253,7 @@
    <Object type="0x709f" id="Gambler's Fate Effect">
       <NoMiniMap/>
       <Class>Character</Class>
+	   <MaxHitPoints>100</MaxHitPoints>
       <Texture>
          <File>oryxSanctuaryObjects16x16</File>
          <Index>0x00</Index>

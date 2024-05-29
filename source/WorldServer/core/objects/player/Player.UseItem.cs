@@ -514,11 +514,38 @@ namespace WorldServer.core.objects
         private void AEObjectToss(Item item, Position target, ActivateEffect eff)
         {
             GameServer.Resources.GameData.IdToObjectType.TryGetValue(eff.Id, out ushort objType);
-            Entity entity = Entity.Resolve(World.GameServer, objType);
-            if (entity == null)
-                return;
-            entity.Move(target.X, target.Y);
-            World.EnterWorld(entity);
+            Entity entity = Resolve(World.GameServer, objType);
+
+            World.BroadcastIfVisible(new ShowEffect()
+            {
+                EffectType = EffectType.Throw,
+                Color = new ARGB(eff.Color != 0 ? eff.Color : 0xffffffff),
+                TargetObjectId = Id,
+                Pos1 = target,
+                Duration = eff.ThrowTime / 1000
+            }, this);
+
+            var facing = MathF.Atan2(Y - PrevY, X - PrevX);
+
+            var x = new Placeholder(GameServer, eff.ThrowTime * 1000);
+            x.Move(target.X, target.Y);
+            World.EnterWorld(x);
+
+            World.StartNewTimer(eff.ThrowTime, (world, t) =>
+            {
+                world.BroadcastIfVisible(new ShowEffect()
+                {
+                    EffectType = EffectType.AreaBlast,
+                    Color = new ARGB(eff.Color != 0 ? eff.Color : 0xffffffff),
+                    TargetObjectId = x.Id,
+                    Pos1 = new Position() { X = eff.Radius },
+                    Pos2 = new Position() { X = Id, Y = 255 }
+                }, x);
+                if (entity == null)
+                    return;
+                entity.Move(target.X, target.Y);
+                World.EnterWorld(entity);
+            });
         }
         private void AEBackpack(TickTime time, Item item, Position target, int slot, int objId, ActivateEffect eff)
         {
@@ -692,7 +719,7 @@ namespace WorldServer.core.objects
         {
             var facing = MathF.Atan2(Y - PrevY, X - PrevX);
 
-            var decoy = new Decoy(this, eff.DurationMS, facing);
+            var decoy = new Decoy(this, eff.DurationMS, facing, false);
             decoy.Move(X, Y);
             World.EnterWorld(decoy);
         }

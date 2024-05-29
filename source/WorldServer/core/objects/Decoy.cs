@@ -13,15 +13,18 @@ namespace WorldServer.core.objects
     {
         private readonly Player _player;
         private readonly int _duration;
+        private readonly bool _isStatic;
 
         private Vector2 _direction;
         private bool _exploded = false;
 
-        public Decoy(Player player, int duration, float angle) 
-            : base(player.GameServer, 0x0715, duration, true, true, true)
+        public Decoy(Player player, int duration, float angle, bool isStatic, ushort objType = 0x0715) 
+            : base(player.GameServer, objType, duration, true, true, true)
         {
             _player = player;
             _duration = duration;
+            _isStatic = isStatic;
+
             _direction = new Vector2(MathF.Cos(angle), MathF.Sin(angle));
         }
 
@@ -30,7 +33,7 @@ namespace WorldServer.core.objects
 
         public override void Tick(ref TickTime time)
         {
-            if (Health > _duration - 2000)
+            if (Health > _duration - 2000 && !_isStatic)
                 ValidateAndMove(X + _direction.X * time.BehaviourTickTime, Y + _direction.Y * time.BehaviourTickTime);
 
             if (Health < 250 && !_exploded)
