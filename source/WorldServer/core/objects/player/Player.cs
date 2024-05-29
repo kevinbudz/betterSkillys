@@ -305,7 +305,7 @@ namespace WorldServer.core.objects
 
         public override bool CanBeSeenBy(Player player)
         {
-            var admin = player.Client.Account.Admin;
+            var admin = player.Client?.Account.Admin ?? false;
             var moderator = (player.Client.Account.Rank == (int)RankingType.Moderator);
             if (admin || moderator)
                 return !IsHidden;
@@ -567,7 +567,7 @@ namespace WorldServer.core.objects
             stats[StatDataType.OxygenBar] = OxygenBar;
             stats[StatDataType.ColorNameChat] = ColorNameChat;
             stats[StatDataType.ColorChat] = ColorChat;
-            stats[StatDataType.PartyId] = Client.Account.PartyId;
+            stats[StatDataType.PartyId] = Client.Account?.PartyId ?? -1;
             stats[StatDataType.InventoryData0] = Inventory.Data[0]?.GetData() ?? "{}";
             stats[StatDataType.InventoryData1] = Inventory.Data[1]?.GetData() ?? "{}";
             stats[StatDataType.InventoryData2] = Inventory.Data[2]?.GetData() ?? "{}";

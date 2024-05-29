@@ -46,6 +46,7 @@ namespace Shared.resources
         public float Proc;
         public int HealthThreshold;
         public int HealthRequired;
+        public float HealthRequiredRelative;
         public int ManaCost;
         public int ManaRequired;
         public int DamageThreshold;
@@ -138,6 +139,9 @@ namespace Shared.resources
             if (e.Attribute("hpRequired") != null)
                 HealthRequired = (int)float.Parse(e.Attribute("hpRequired").Value);
 
+            if (e.HasAttribute("hpRequiredRelative"))
+                HealthRequiredRelative = float.Parse(e.Attribute("hpRequiredRelative").Value);
+
             if (e.HasAttribute("manaCost"))
                 ManaCost = (int)float.Parse(e.Attribute("manaCost").Value);
 
@@ -148,7 +152,7 @@ namespace Shared.resources
                 DamageThreshold = (int)float.Parse(e.Attribute("damageThreshold").Value);
 
             if (e.HasAttribute("requiredConditions"))
-                ManaCost = (int)float.Parse(e.Attribute("hpRequired").Value);
+                RequiredConditions = e.GetAttribute<string>("requiredConditions");
 
             if (e.HasAttribute("type"))
                 Type = (byte)e.GetAttribute<int>("type");

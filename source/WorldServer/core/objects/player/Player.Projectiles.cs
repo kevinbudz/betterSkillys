@@ -40,8 +40,8 @@ namespace WorldServer.core.objects
             VisibleProjectiles[Id][newBulletId] = new ValidatedProjectile(time, false, 0, startingPosition.X, startingPosition.Y, angle, item.ObjectType, damage, false, true);
 
             var allyShoot = new AllyShootMessage(newBulletId, Id, item.ObjectType, angle);
-            TryAddOnPlayerEffects("shoot");
             World.BroadcastIfVisibleExclude(allyShoot, this, this);
+            TryAddOnPlayerEffects("shoot");
             FameCounter.Shoot();
         }
 

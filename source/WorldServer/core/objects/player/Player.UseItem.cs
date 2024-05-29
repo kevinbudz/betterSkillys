@@ -1086,11 +1086,12 @@ namespace WorldServer.core.objects
         {
             var idx = StatsManager.GetStatIndex((StatDataType)eff.Stats);
             var s = eff.Amount;
-            Stats.Boost.ActivateBoost[idx].Push(s, false);
+            var stack = eff.NoStack;
+            Stats.Boost.ActivateBoost[idx].Push(s, stack);
             Stats.ReCalculateValues();
             World.StartNewTimer(eff.DurationMS, (world, t) =>
             {
-                Stats.Boost.ActivateBoost[idx].Pop(s, false);
+                Stats.Boost.ActivateBoost[idx].Pop(s, stack);
                 Stats.ReCalculateValues();
             });
 

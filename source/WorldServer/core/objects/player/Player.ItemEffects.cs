@@ -36,31 +36,6 @@ namespace WorldServer.core.objects
             }
         }
 
-        private void TryAddOnPlayerShootEffect()
-        {
-            for (var slot = 0; slot < 4; slot++)
-            {
-                //if (!CanApplySlotEffect(slot))
-                //    continue;
-
-                var item = Inventory[slot];
-                if (item == null)
-                    continue;
-
-                foreach (ActivateEffect eff in item.OnPlayerShootActivateEffects)
-                {
-                    if (eff.Proc != 0)
-                    {
-                        var rand = new Random();
-                        if (eff.Proc > rand.NextDouble())
-                            OnOtherActivate("shoot", item, Position);
-                    }
-                    else
-                        OnOtherActivate("shoot", item, Position);
-                }
-            }
-        }
-
         private void TryAddOnPlayerEffects(string type, int dmg = 0)
         {
             for (var slot = 0; slot < 4; slot++) {
@@ -77,9 +52,10 @@ namespace WorldServer.core.objects
                 }
 
                 foreach (ActivateEffect eff in effs) {
+                    Console.WriteLine($"{eff.Proc}, {eff.RequiredConditions}, {eff.DamageThreshold}, {eff.HealthThreshold}, {eff.HealthRequired}, {eff.HealthRequiredRelative}, {eff.ManaCost}, {eff.ManaRequired}");
                     if (eff.Proc != 0) {
                         var rand = new Random();
-                        if (eff.Proc > rand.NextDouble())
+                        if (eff.Proc < rand.NextDouble())
                             continue;
                     }
                     if (eff.RequiredConditions != null)
@@ -93,6 +69,9 @@ namespace WorldServer.core.objects
                             continue;
                     if (eff.HealthRequired != 0)
                         if (Health < eff.HealthRequired)
+                            continue;
+                    if (eff.HealthRequiredRelative != 0)
+                        if (Health / MaxHealth < eff.HealthRequiredRelative)
                             continue;
                     if (eff.ManaCost != 0)
                         if (Mana < eff.ManaCost)
