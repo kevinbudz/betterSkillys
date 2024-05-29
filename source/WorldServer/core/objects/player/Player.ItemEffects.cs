@@ -16,24 +16,28 @@ namespace WorldServer.core.objects
 
         private void TryApplySpecialEffects(ref TickTime time)
         {
-            for (var slot = 0; slot < 4; slot++)
+            /*(for (var slot = 0; slot < 4; slot++)
             {
-                //if (!CanApplySlotEffect(slot))
-                //    continue;
+                if (CantApplySlotEffect(slot))
+                    continue;
 
-                //var item = Inventory[slot];
-            }
+                var item = Inventory[slot];
+                if (item == null)
+                    continue;
+            }*/
         }
 
         private void TryAddOnEnemyHitEffect(ref TickTime tickTime, Enemy entity, ProjectileDesc projectileDesc)
         {
-            for (var slot = 0; slot < 4; slot++)
+            /*for (var slot = 0; slot < 4; slot++)
             {
-                //if (!CanApplySlotEffect(slot))
-                //    continue;
+                if (CantApplySlotEffect(slot))
+                    continue;
 
-                //var item = Inventory[slot];
-            }
+                var item = Inventory[slot];
+                if (item == null)
+                    continue;
+            }*/
         }
 
         private void TryAddOnPlayerEffects(string type, int dmg = 0)
@@ -54,10 +58,11 @@ namespace WorldServer.core.objects
                     default: continue;
                 }
 
-                foreach (ActivateEffect eff in effs) { 
+                foreach (ActivateEffect eff in effs) {
                     if (eff.Proc != 0) {
                         var rand = new Random();
-                        if (eff.Proc < rand.NextDouble())
+                        var doub = rand.NextDouble();
+                        if (eff.Proc < doub)
                             continue;
                     }
                     if (eff.RequiredConditions != null)

@@ -481,16 +481,15 @@ namespace WorldServer.core.objects
                     case ActivateEffects.Backpack:
                         AEBackpack(time, item, target, slot, objId, eff);
                         break;
-
+                    case ActivateEffects.CreatePortal:
+                        AECreatePortal(time, item, target, slot, eff);
+                        break;
                     case ActivateEffects.ObjectToss:
                     case ActivateEffects.LevelTwenty:
                     case ActivateEffects.Unlock:
                     case ActivateEffects.MarkAndTeleport:
                     case ActivateEffects.SelfTransform:
                     case ActivateEffects.GroupTransform:
-                    case ActivateEffects.CreatePortal:
-                        AECreatePortal(time, item, target, slot, eff);
-                        break;
                     case ActivateEffects.Exchange:
                     case ActivateEffects.ChangeObject:
                     case ActivateEffects.UnlockPetSkin:
