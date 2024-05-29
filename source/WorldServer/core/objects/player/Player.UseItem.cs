@@ -1,9 +1,11 @@
-﻿using Shared;
+﻿using NLog.Targets;
+using Shared;
 using Shared.resources;
 using StackExchange.Redis;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using WorldServer.core.net.datas;
 using WorldServer.core.net.stats;
 using WorldServer.core.objects.containers;
@@ -183,9 +185,12 @@ namespace WorldServer.core.objects
             }
             else
                 FameCounter.DrinkPot();
-
             if (item.InvUse || item.Consumable || item.SlotType == slotType)
+            {
                 Activate(clientTime, time, item, slot, pos, objId, useType);
+                if (item.SlotType == slotType)
+                    OnOtherActivate("ability", item, pos);
+            }
             else
                 Client.SendPacket(new InvResult() { Result = 1 });
         }
@@ -288,6 +293,90 @@ namespace WorldServer.core.objects
             player.Mana = newMp;
         }
 
+        private void OnOtherActivate(string param, Item item, Position target)
+        {
+            var effs = item.ActivateEffects;
+            switch (param)
+            {
+                case "hit":
+                    effs = item.OnPlayerHitActivateEffects;
+                    break;
+                case "shoot":
+                    effs = item.OnPlayerShootActivateEffects;
+                    break;
+                case "ability":
+                    effs = item.OnPlayerAbilityActivateEffects;
+                    break;
+            }
+            if (effs == item.ActivateEffects)
+                return;
+            foreach (var eff in effs)
+            {
+                switch (eff.Effect)
+                {
+                    case ActivateEffects.GenericActivate:
+                        AEGenericActivate(item, target, eff);
+                        break;
+                    case ActivateEffects.Shoot: break; // handled in PlayerShoot.cs
+                    case ActivateEffects.Heal:
+                        AEHeal(item, target, eff);
+                        break;
+                    case ActivateEffects.Magic:
+                        AEMagic(item, target, eff);
+                        break;
+                    case ActivateEffects.HealNova:
+                        AEHealNova(item, target, eff);
+                        break;
+                    case ActivateEffects.StatBoostSelf:
+                        AEStatBoostSelf(item, target, eff);
+                        break;
+                    case ActivateEffects.StatBoostAura:
+                        AEStatBoostAura(item, target, eff);
+                        break;
+                    case ActivateEffects.BulletNova:
+                        AEBulletNova(item, target, eff);
+                        break;
+                    case ActivateEffects.ConditionEffectSelf:
+                        AEConditionEffectSelf(item, target, eff);
+                        break;
+                    case ActivateEffects.ConditionEffectAura:
+                        AEConditionEffectAura(item, target, eff);
+                        break;
+                    case ActivateEffects.Trap:
+                        AETrap(item, target, eff);
+                        break;
+                    case ActivateEffects.StasisBlast:
+                        StasisBlast(item, target, eff);
+                        break;
+                    case ActivateEffects.MagicNova:
+                        AEMagicNova(item, target, eff);
+                        break;
+                    case ActivateEffects.ClearConditionEffectAura:
+                        AEClearConditionEffectAura(item, target, eff);
+                        break;
+                    case ActivateEffects.RemoveNegativeConditions:
+                        AERemoveNegativeConditions(item, target, eff);
+                        break;
+                    case ActivateEffects.ClearConditionEffectSelf:
+                        AEClearConditionEffectSelf(item, target, eff);
+                        break;
+                    case ActivateEffects.RemoveNegativeConditionsSelf:
+                        AERemoveNegativeConditionSelf(item, target, eff);
+                        break;
+                    case ActivateEffects.Pet:
+                        AEPet(item, target, eff);
+                        break;
+                    case ActivateEffects.ObjectToss:
+                    case ActivateEffects.BulletCreate:
+                        SendError($"{eff.Effect} is not yet implemented");
+                        break;
+                    default:
+                        StaticLogger.Instance.Warn("Activate effect {0} not implemented.", eff.Effect);
+                        break;
+                }
+            }
+        }
+
         private void Activate(int clientTime, TickTime time, Item item, int slot, Position target, int objId, int useType)
         {
             Mana -= item.MpCost;
@@ -311,7 +400,7 @@ namespace WorldServer.core.objects
                         AELDBoost(time, item, target, eff);
                         break;
                     case ActivateEffects.GenericActivate:
-                        AEGenericActivate(time, item, target, eff);
+                        AEGenericActivate(item, target, eff);
                         break;
                     case ActivateEffects.Create:
                         AECreate(time, item, target, slot, eff);
@@ -324,28 +413,28 @@ namespace WorldServer.core.objects
                         AEIncrementStat(time, item, target, eff, objId, slot);
                         break;
                     case ActivateEffects.Heal:
-                        AEHeal(time, item, target, eff);
+                        AEHeal(item, target, eff);
                         break;
                     case ActivateEffects.Magic:
-                        AEMagic(time, item, target, eff);
+                        AEMagic(item, target, eff);
                         break;
                     case ActivateEffects.HealNova:
-                        AEHealNova(time, item, target, eff);
+                        AEHealNova(item, target, eff);
                         break;
                     case ActivateEffects.StatBoostSelf:
-                        AEStatBoostSelf(time, item, target, eff);
+                        AEStatBoostSelf(item, target, eff);
                         break;
                     case ActivateEffects.StatBoostAura:
-                        AEStatBoostAura(time, item, target, eff);
+                        AEStatBoostAura(item, target, eff);
                         break;
                     case ActivateEffects.BulletNova:
                         AEBulletNova(item, target, eff);
                         break;
                     case ActivateEffects.ConditionEffectSelf:
-                        AEConditionEffectSelf(time, item, target, eff);
+                        AEConditionEffectSelf(item, target, eff);
                         break;
                     case ActivateEffects.ConditionEffectAura:
-                        AEConditionEffectAura(time, item, target, eff);
+                        AEConditionEffectAura(item, target, eff);
                         break;
                     case ActivateEffects.Teleport:
                         AETeleport(time, item, target, eff);
@@ -357,13 +446,13 @@ namespace WorldServer.core.objects
                         AEVampireBlast(time, item, target, eff);
                         break;
                     case ActivateEffects.Trap:
-                        AETrap(time, item, target, eff);
+                        AETrap(item, target, eff);
                         break;
                     case ActivateEffects.StasisBlast:
-                        StasisBlast(time, item, target, eff);
+                        StasisBlast(item, target, eff);
                         break;
                     case ActivateEffects.Decoy:
-                        AEDecoy(time, item, target, eff);
+                        AEDecoy(item, target, eff);
                         break;
                     case ActivateEffects.Lightning:
                         AELightning(time, item, target, eff);
@@ -372,19 +461,19 @@ namespace WorldServer.core.objects
                         AEUnlockPortal(time, item, target, eff);
                         break;
                     case ActivateEffects.MagicNova:
-                        AEMagicNova(time, item, target, eff);
+                        AEMagicNova(item, target, eff);
                         break;
                     case ActivateEffects.ClearConditionEffectAura:
-                        AEClearConditionEffectAura(time, item, target, eff);
+                        AEClearConditionEffectAura(item, target, eff);
                         break;
                     case ActivateEffects.RemoveNegativeConditions:
-                        AERemoveNegativeConditions(time, item, target, eff);
+                        AERemoveNegativeConditions(item, target, eff);
                         break;
                     case ActivateEffects.ClearConditionEffectSelf:
-                        AEClearConditionEffectSelf(time, item, target, eff);
+                        AEClearConditionEffectSelf(item, target, eff);
                         break;
                     case ActivateEffects.RemoveNegativeConditionsSelf:
-                        AERemoveNegativeConditionSelf(time, item, target, eff);
+                        AERemoveNegativeConditionSelf(item, target, eff);
                         break;
                     case ActivateEffects.ShurikenAbility:
                         AEShurikenAbility(clientTime, time, item, target, eff, useType);
@@ -393,7 +482,7 @@ namespace WorldServer.core.objects
                         AEPermaPet(time, item, target, eff);
                         break;
                     case ActivateEffects.Pet:
-                        AEPet(time, item, target, eff);
+                        AEPet(item, target, eff);
                         break;
                     case ActivateEffects.Backpack:
                         AEBackpack(time, item, target, slot, objId, eff);
@@ -474,7 +563,7 @@ namespace WorldServer.core.objects
             World.BroadcastIfVisible(shoots, ref target);
         }
 
-        private void AEClearConditionEffectAura(TickTime time, Item item, Position target, ActivateEffect eff)
+        private void AEClearConditionEffectAura(Item item, Position target, ActivateEffect eff)
         {
             this.AOE(eff.Range, true, player =>
             {
@@ -486,7 +575,7 @@ namespace WorldServer.core.objects
             });
         }
 
-        private void AEClearConditionEffectSelf(TickTime time, Item item, Position target, ActivateEffect eff)
+        private void AEClearConditionEffectSelf(Item item, Position target, ActivateEffect eff)
         {
             var condition = eff.CheckExistingEffect;
             ConditionEffectIndex conditions = 0;
@@ -498,7 +587,7 @@ namespace WorldServer.core.objects
                 RemoveCondition(eff.ConditionEffect.Value);
         }
 
-        private void AEConditionEffectAura(TickTime time, Item item, Position target, ActivateEffect eff)
+        private void AEConditionEffectAura(Item item, Position target, ActivateEffect eff)
         {
             var duration = eff.DurationMS;
             var range = eff.Range;
@@ -525,7 +614,7 @@ namespace WorldServer.core.objects
             }, this);
         }
 
-        private void AEConditionEffectSelf(TickTime time, Item item, Position target, ActivateEffect eff)
+        private void AEConditionEffectSelf(Item item, Position target, ActivateEffect eff)
         {
             var duration = eff.DurationMS;
             if (eff.UseWisMod)
@@ -593,7 +682,7 @@ namespace WorldServer.core.objects
             World.ForeachPlayer(_ => _.SendInfo(openedByMsg));
         }
 
-        private void AEDecoy(TickTime time, Item item, Position target, ActivateEffect eff)
+        private void AEDecoy(Item item, Position target, ActivateEffect eff)
         {
             var facing = MathF.Atan2(Y - PrevY, X - PrevX);
 
@@ -610,7 +699,7 @@ namespace WorldServer.core.objects
                 Texture2 = item.Texture2;
         }
 
-        private void AEGenericActivate(TickTime time, Item item, Position target, ActivateEffect eff)
+        private void AEGenericActivate(Item item, Position target, ActivateEffect eff)
         {
             var targetPlayer = eff.Target.Equals("player");
             var centerPlayer = eff.Center.Equals("player");
@@ -638,15 +727,21 @@ namespace WorldServer.core.objects
             }, this);
         }
 
-        private void AEHeal(TickTime time, Item item, Position target, ActivateEffect eff)
+        private void AEHeal(Item item, Position target, ActivateEffect eff)
         {
             if (HasConditionEffect(ConditionEffectIndex.Sick))
                 return;
 
-            ActivateHealHp(this, eff.Amount);
+            if (eff.HealthThreshold != 0)
+            {
+                if (Health < eff.HealthThreshold)
+                    ActivateHealHp(this, eff.Amount);
+            }
+            else
+                ActivateHealHp(this, eff.Amount);
         }
 
-        private void AEHealNova(TickTime time, Item item, Position target, ActivateEffect eff)
+        private void AEHealNova(Item item, Position target, ActivateEffect eff)
         {
             var amount = eff.Amount;
             var range = eff.Range;
@@ -834,7 +929,7 @@ namespace WorldServer.core.objects
             }
         }
 
-        private void AEMagic(TickTime time, Item item, Position target, ActivateEffect eff)
+        private void AEMagic(Item item, Position target, ActivateEffect eff)
         {
             for (var slot = 0; slot < 4; slot++)
             {
@@ -844,17 +939,11 @@ namespace WorldServer.core.objects
                 var item1 = Inventory[slot];
                 if (item1 == null || !item1.Legendary && !item1.Mythical)
                     continue;
-
-                if (item1.SonicBlaster)
-                {
-                    SonicBlaster(slot);
-                    break;
-                }
             }
             ActivateHealMp(this, eff.Amount);
         }
 
-        private void AEMagicNova(TickTime time, Item item, Position target, ActivateEffect eff)
+        private void AEMagicNova(Item item, Position target, ActivateEffect eff)
         {
             this.AOE(eff.Range, true, player =>
                 ActivateHealMp(player as Player, eff.Amount));
@@ -868,7 +957,7 @@ namespace WorldServer.core.objects
             }, this);
         }
 
-        private void AEPet(TickTime time, Item item, Position target, ActivateEffect eff)
+        private void AEPet(Item item, Position target, ActivateEffect eff)
         {
             var type = GameServer.Resources.GameData.IdToObjectType[eff.ObjectId];
 
@@ -925,7 +1014,7 @@ namespace WorldServer.core.objects
             });
         }
 
-        private void AERemoveNegativeConditions(TickTime time, Item item, Position target, ActivateEffect eff)
+        private void AERemoveNegativeConditions(Item item, Position target, ActivateEffect eff)
         {
             this.AOE(eff.Range, true, player =>
             {
@@ -941,7 +1030,7 @@ namespace WorldServer.core.objects
             }, this);
         }
 
-        private void AERemoveNegativeConditionSelf(TickTime time, Item item, Position target, ActivateEffect eff)
+        private void AERemoveNegativeConditionSelf(Item item, Position target, ActivateEffect eff)
         {
             foreach (var effect in NegativeEffs)
                 RemoveCondition(effect);
@@ -969,7 +1058,7 @@ namespace WorldServer.core.objects
             }
         }
 
-        private void AEStatBoostAura(TickTime time, Item item, Position target, ActivateEffect eff)
+        private void AEStatBoostAura(Item item, Position target, ActivateEffect eff)
         {
             var idx = StatsManager.GetStatIndex((StatDataType)eff.Stats);
             var amount = eff.Amount;
@@ -1006,7 +1095,7 @@ namespace WorldServer.core.objects
             }, this);
         }
 
-        private void AEStatBoostSelf(TickTime time, Item item, Position target, ActivateEffect eff)
+        private void AEStatBoostSelf(Item item, Position target, ActivateEffect eff)
         {
             var idx = StatsManager.GetStatIndex((StatDataType)eff.Stats);
             var s = eff.Amount;
@@ -1031,7 +1120,7 @@ namespace WorldServer.core.objects
             TeleportPosition(time, target, true);
         }
 
-        private void AETrap(TickTime time, Item item, Position target, ActivateEffect eff)
+        private void AETrap(Item item, Position target, ActivateEffect eff)
         {
             World.BroadcastIfVisible(new ShowEffect()
             {
@@ -1220,7 +1309,7 @@ namespace WorldServer.core.objects
             InvokeStatChange(StatDataType.XPBoostTime, XPBoostTime / 1000, true);
         }
 
-        private void HealingPlayersPoison(World world, Player player, ActivateEffect eff)
+        private void AEHealingPoison(World world, Player player, ActivateEffect eff)
         {
             var remainingHeal = eff.TotalDamage;
             var perHeal = eff.TotalDamage * 1000 / eff.DurationMS;
@@ -1293,7 +1382,7 @@ namespace WorldServer.core.objects
             tmr = world.StartNewTimer(200, poisonTick);
         }
 
-        private void StasisBlast(TickTime time, Item item, Position target, ActivateEffect eff)
+        private void StasisBlast(Item item, Position target, ActivateEffect eff)
         {
             World.BroadcastIfVisible(new ShowEffect()
             {

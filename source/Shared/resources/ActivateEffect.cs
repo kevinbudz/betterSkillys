@@ -43,6 +43,8 @@ namespace Shared.resources
         public string LockedName;
         public string ObjectId;
         public string Target;
+        public float Proc;
+        public int HealthThreshold;
 
         public ActivateEffect(XElement e)
         {
@@ -121,6 +123,12 @@ namespace Shared.resources
 
             if (e.Attribute("throwTime") != null)
                 ThrowTime = (int)(float.Parse(e.Attribute("throwTime").Value) * 1000);
+
+            if (e.Attribute("proc") != null)
+                Proc = float.Parse(e.Attribute("proc").Value);
+
+            if (e.Attribute("hpMinThreshold") != null)
+                HealthThreshold = (int)float.Parse(e.Attribute("hpMinThreshold").Value);
 
             if (e.HasAttribute("type"))
                 Type = (byte)e.GetAttribute<int>("type");

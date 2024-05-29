@@ -19,6 +19,9 @@ namespace Shared.resources
     public class Item
     {
         public ActivateEffect[] ActivateEffects;
+        public ActivateEffect[] OnPlayerHitActivateEffects;
+        public ActivateEffect[] OnPlayerShootActivateEffects;
+        public ActivateEffect[] OnPlayerAbilityActivateEffects;
         public float ArcGap;
         public bool Backpack;
         public int BagType;
@@ -76,7 +79,9 @@ namespace Shared.resources
         public bool XpBoost;
         public BreakDownData BreakDownData;
 
-        public readonly bool DonorItem;
+        public bool HasPlayerHitEffect;
+        public bool HasPlayerShootEffect;
+        public bool HasPlayerAbilityEffect;
 
         public Item(ushort type, XElement e)
         {
@@ -115,28 +120,17 @@ namespace Shared.resources
             MpEndCost = e.GetValue("MpEndCost", 0);
             InvUse = e.HasElement("InvUse");
             TypeOfConsumable = InvUse || Consumable;
-            DonorItem = e.HasElement("DonorItem");
             ActivateOnEquips = e.Elements("ActivateOnEquip").Select(_ => new KeyValuePair<int, int>(_.GetAttribute<int>("stat"), _.GetAttribute<int>("amount"))).ToArray();
             ActivateEffects = e.Elements("Activate").Select(_ => new ActivateEffect(_)).ToArray();
+            HasPlayerHitEffect = e.HasElement("OnPlayerHitActivate");
+            OnPlayerHitActivateEffects = e.Elements("OnPlayerHitActivate").Select(_ => new ActivateEffect(_)).ToArray();
+            HasPlayerAbilityEffect = e.HasElement("OnPlayerAbilityActivate");
+            OnPlayerAbilityActivateEffects = e.Elements("OnPlayerAbilityActivate").Select(_ => new ActivateEffect(_)).ToArray();
+            HasPlayerShootEffect = e.HasElement("OnPlayerShootActivate");
+            OnPlayerShootActivateEffects = e.Elements("OnPlayerShootActivate").Select(_ => new ActivateEffect(_)).ToArray();
             Projectiles = e.Elements("Projectile").Select(_ => new ProjectileDesc(_)).ToArray();
             Quantity = e.GetValue("Quantity", 0);
             QuantityLimit = e.GetValue("QuantityLimit", 0);
-            SNormal = e.Element("SNormal") != null;
-            SPlus = e.Element("SPlus") != null;
-            MonkeyKingsWrath = e.HasElement("MonkeyKingsWrath");
-            Lucky = e.HasElement("Lucky");
-            Insanity = e.HasElement("Insanity");
-            HolyProtection = e.HasElement("HolyProtection");
-            GodBless = e.HasElement("GodBless");
-            GodTouch = e.HasElement("GodTouch");
-            Electrify = e.HasElement("Electrify");
-            OutOfOneMind = e.HasElement("OutOfOneMind");
-            SteamRoller = e.HasElement("SteamRoller");
-            Mutilate = e.HasElement("Mutilate");
-            Demonized = e.HasElement("Demonized");
-            Clarification = e.HasElement("Clarification");
-            SonicBlaster = e.HasElement("SonicBlaster");
-            Vampiric = e.HasElement("Vampiric");
 
             if(e.Element("BreakDown") != null)
                 BreakDownData = new BreakDownData(e.Element("BreakDown"));

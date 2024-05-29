@@ -120,7 +120,7 @@ namespace WorldServer.core.objects
 
                 Size = Size <= 0 ? Size : Random.Shared.Next(Size + 200, Size + 300);
 
-                MaxHealth *= 3;
+                MaxHealth *= 2;
                 Health = MaxHealth;
                 Defense += 10;
                 GlowEnemy = 0xD865A5;
@@ -131,7 +131,7 @@ namespace WorldServer.core.objects
 
                 Size = Size <= 0 ? Size : Random.Shared.Next(Size + 100, Size + 200);
 
-                MaxHealth *= 2;
+                MaxHealth = (int)Math.Round(MaxHealth * 1.5, 0);
                 Health = MaxHealth;
                 Defense += 5;
                 GlowEnemy = 0xC183AF;
@@ -141,8 +141,9 @@ namespace WorldServer.core.objects
                 IsRare = true;
 
                 Size = Size <= 0 ? Size : Random.Shared.Next(Size, Size + 100);
-                
-                Defense += 2;
+
+                MaxHealth = (int)Math.Round(MaxHealth * 1.25, 0);
+                Defense += 3;
                 GlowEnemy = 0x82D9BC;
             }
         }

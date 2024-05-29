@@ -40,6 +40,7 @@ namespace WorldServer.core.objects
             VisibleProjectiles[Id][newBulletId] = new ValidatedProjectile(time, false, 0, startingPosition.X, startingPosition.Y, angle, item.ObjectType, damage, false, true);
 
             var allyShoot = new AllyShootMessage(newBulletId, Id, item.ObjectType, angle);
+            OnOtherActivate("shoot", item, startingPosition);
             World.BroadcastIfVisibleExclude(allyShoot, this, this);
             FameCounter.Shoot();
         }
@@ -113,8 +114,6 @@ namespace WorldServer.core.objects
             }
 
             projectile.Disabled = !projectileDesc.MultiHit;
-
-            // todo validate hit position
 
             TryAddOnPlayerHitEffect();
 
