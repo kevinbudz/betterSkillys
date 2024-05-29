@@ -35,7 +35,6 @@ namespace Shared.resources
         public int FameBonus;
         public bool InvUse;
         public bool LDBoosted;
-        public bool Legendary;
         public bool LTBoosted;
         public int MpCost;
         public int MpEndCost;
@@ -50,9 +49,7 @@ namespace Shared.resources
         public bool Resurrects;
         public int SlotType;
         public bool Soulbound;
-        public int SpellProjectiles;
         public KeyValuePair<int, int>[] ActivateOnEquips;
-        public bool SteamRoller;
         public string SuccessorId;
         public int Texture1;
         public int Texture2;
