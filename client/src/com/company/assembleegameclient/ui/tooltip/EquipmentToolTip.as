@@ -216,10 +216,9 @@ public class EquipmentToolTip extends ToolTip
    private function addTierText() : void
    {
       this.tierText_ = TierUtil.getTierTag(props_,16);
+      trace(this.tierText_.width);
       if(this.tierText_)
       {
-         this.tierText_.y = this.icon_.height / 2 - this.titleText_.actualHeight_ / 2;
-         this.tierText_.x = MAX_WIDTH - 30;
          switch(Parameters.data_.itemDataOutlines)
          {
             case 0:
@@ -270,7 +269,7 @@ public class EquipmentToolTip extends ToolTip
    private function drawAttributes():void {
       if (this.attributes.length <= 0)
          return;
-      this.line1_ = new LineBreakDesign(MAX_WIDTH - 12, 0x151515);
+      this.line1_ = new LineBreakDesign(MAX_WIDTH - 15, 0x151515);
       addChild(this.line1_);
       var sheet:StyleSheet = new StyleSheet();
       //sheet.parseCSS(CSS_TEXT);
@@ -943,8 +942,8 @@ public class EquipmentToolTip extends ToolTip
       this.titleText_.x = (this.icon_.width + 4);
       this.titleText_.y = ((this.icon_.height / 2) - (this.titleText_.height / 2));
       if (this.tierText_) {
-         this.tierText_.y = ((this.icon_.height / 2) - (this.tierText_.height / 2));
-         this.tierText_.x = (MAX_WIDTH - 30);
+         this.tierText_.y = this.icon_.height / 2 - (this.tierText_.height / 2);
+         this.tierText_.x = (MAX_WIDTH - 10) - (this.tierText_.width);
       }
       this.descText_.x = 4;
       this.descText_.y = (this.icon_.height + 2);
@@ -1142,7 +1141,7 @@ public class EquipmentToolTip extends ToolTip
    }
 
    private function makeLineTwo():void{
-      this.line2_ = new LineBreakDesign((MAX_WIDTH - 12), 0x151515);
+      this.line2_ = new LineBreakDesign((MAX_WIDTH - 15), 0x151515);
       addChild(this.line2_);
    }
 
