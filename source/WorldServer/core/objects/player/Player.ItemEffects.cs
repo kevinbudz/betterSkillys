@@ -39,7 +39,7 @@ namespace WorldServer.core.objects
         private void TryAddOnPlayerEffects(string type, int dmg = 0)
         {
             for (var slot = 0; slot < 4; slot++) {
-                if (!CanApplySlotEffect(slot))
+                if (CantApplySlotEffect(slot))
                     continue;
 
                 var item = Inventory[slot];
@@ -54,8 +54,7 @@ namespace WorldServer.core.objects
                     default: continue;
                 }
 
-                foreach (ActivateEffect eff in effs) {
-                    Console.WriteLine($"{eff.Proc}, {eff.RequiredConditions}, {eff.DamageThreshold}, {eff.HealthThreshold}, {eff.HealthRequired}, {eff.HealthRequiredRelative}, {eff.ManaCost}, {eff.ManaRequired}");
+                foreach (ActivateEffect eff in effs) { 
                     if (eff.Proc != 0) {
                         var rand = new Random();
                         if (eff.Proc < rand.NextDouble())
@@ -83,7 +82,7 @@ namespace WorldServer.core.objects
                         if (Mana < eff.ManaRequired)
                             continue;
                     OnOtherActivate(type, item, Position);
-                    SetSlotEffectCooldown((int)eff.Cooldown * 1000, slot);
+                    SetSlotEffectCooldown(eff.Cooldown, slot);
                 }
             }
         }
