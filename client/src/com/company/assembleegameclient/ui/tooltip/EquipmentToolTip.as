@@ -96,7 +96,7 @@ public class EquipmentToolTip extends ToolTip
       var equips:Vector.<ItemAttributes> = new Vector.<ItemAttributes>;
       for (var i:int = 0; i < 4; i++)
       {
-         equips[i] = ItemAttributes.FromXML(player.equipment_[equipId]);
+         equips[i] = ItemAttributes.FromXML(player.equipment_[i]);
       }
       if (player) {
          this.player_ = player;
@@ -152,6 +152,24 @@ public class EquipmentToolTip extends ToolTip
          if (effects[i].Effect == eff)
             return i;
       return -1;
+   }
+
+   private function buildUniqueTooltipData() : String
+   {
+      var effectDataList:XMLList = null;
+      var uniqueEffectList:Vector.<Effect> = null;
+      var effectDataXML:XML = null;
+      if(this.objectXML_.hasOwnProperty("ExtraTooltipData"))
+      {
+         effectDataList = this.objectXML_.ExtraTooltipData.EffectInfo;
+         uniqueEffectList = new Vector.<Effect>();
+         for each(effectDataXML in effectDataList)
+         {
+            uniqueEffectList.push(new Effect(effectDataXML.attribute("name"),effectDataXML.attribute("description")));
+         }
+         return this.BuildEffectsHTML(uniqueEffectList) + "\n";
+      }
+      return "";
    }
 
    private static function BuildRestrictionsHTML(restrictions:Vector.<Restriction>) : String
@@ -259,7 +277,7 @@ public class EquipmentToolTip extends ToolTip
       this.attributesText = new SimpleText(14, 0xB3B3B3, false, MAX_WIDTH - 10);
       //this.attributesText.styleSheet = sheet;
       this.attributesText.wordWrap = true;
-      this.attributesText.htmlText = this.attributes;
+      this.attributesText.htmlText = this.buildUniqueTooltipData() + this.attributes;
       this.attributesText.useTextDimensions();
       switch(Parameters.data_.itemDataOutlines)
       {
