@@ -1375,11 +1375,13 @@
       <ShadowSize>0</ShadowSize>
    </Object>
    <Object type="0x70ad" id="Cranium Effect">
-      <Class>GameObject</Class>
+      <Class>Character</Class>
+	   <Enemy/>
       <Texture>
          <File>d2LofiObjEmbed</File>
          <Index>0x298</Index>
       </Texture>
+	  <MaxHitPoints>1000</MaxHitPoints>
       <Flying/>
       <Size>100</Size>
       <Z>0.2</Z>

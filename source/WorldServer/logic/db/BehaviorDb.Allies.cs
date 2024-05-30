@@ -43,6 +43,36 @@ namespace WorldServer.logic
                     )
                 )
             )
+        .Init("Cranium Effect",
+            new State(
+                new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
+                new AllyDamage(150, 5, 200),
+                new AllyFollow(1, 10, 1),
+                new State("0",
+                    new AllyLightning(250, 0x9F2B68),
+                    new TimedTransition(1000, "1")
+                    ),
+                new State("1",
+                    new AllyLightning(250, 0x9F2B68),
+                    new TimedTransition(1000, "2")
+                    ),
+                new State("2",
+                    new AllyLightning(250, 0x9F2B68),
+                    new TimedTransition(1000, "3")
+                    ),
+                new State("3",
+                    new AllyLightning(250, 0x9F2B68),
+                    new TimedTransition(1000, "4")
+                    ),
+                new State("4",
+                    new AllyLightning(250, 0x9F2B68),
+                    new TimedTransition(1000, "decay")
+                    ),
+                new State("decay",
+                    new Decay(0)
+                    )
+                )
+            )
         .Init("Gambler's Fate Effect",
             new State(
                 new ActAsDecoy(),
@@ -60,7 +90,7 @@ namespace WorldServer.logic
                     ),
                 new State("3",
                     new SetAltTexture(3),
-                    new TimedRandomTransition(250, false, "1", "4")
+                    new TimedRandomTransition(250, false, "0", "4")
                     ),
                 new State("4",
                     new SetAltTexture(4),
@@ -79,7 +109,8 @@ namespace WorldServer.logic
                      new TimedRandomTransition(250, false, "4", "decay")
                     ),
                 new State("decay",
-                    new Decay(0)
+                    new SetAltTexture(4),
+                    new Decay(250)
                     )
                 )
             );

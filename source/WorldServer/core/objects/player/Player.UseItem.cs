@@ -515,20 +515,23 @@ namespace WorldServer.core.objects
         {
             GameServer.Resources.GameData.IdToObjectType.TryGetValue(eff.Id, out ushort objType);
             var throwTime = eff.ThrowTime == 0 ? 1000 : eff.ThrowTime;
-            World.BroadcastIfVisible(new ShowEffect()
+            if (eff.ThrowTime != -1)
             {
-                EffectType = EffectType.Throw,
-                Color = new ARGB(eff.Color != 0 ? eff.Color : 0xffffffff),
-                TargetObjectId = Id,
-                Pos1 = target,
-                Duration = throwTime / 1000
-            }, this);
+                World.BroadcastIfVisible(new ShowEffect()
+                {
+                    EffectType = EffectType.Throw,
+                    Color = new ARGB(eff.Color != 0 ? eff.Color : 0xffffffff),
+                    TargetObjectId = Id,
+                    Pos1 = target,
+                    Duration = throwTime / 1000
+                }, this);
+            }
 
             var x = new Placeholder(GameServer, eff.ThrowTime * 1000);
             x.Move(target.X, target.Y);
             World.EnterWorld(x);
 
-            World.StartNewTimer(throwTime, (world, t) =>
+            World.StartNewTimer(eff.ThrowTime == -1 ? 1 : throwTime, (world, t) =>
             {
                 world.BroadcastIfVisible(new ShowEffect()
                 {
