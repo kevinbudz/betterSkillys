@@ -514,24 +514,21 @@ namespace WorldServer.core.objects
         private void AEObjectToss(Item item, Position target, ActivateEffect eff)
         {
             GameServer.Resources.GameData.IdToObjectType.TryGetValue(eff.Id, out ushort objType);
-            Entity entity = Resolve(World.GameServer, objType);
-
+            var throwTime = eff.ThrowTime == 0 ? 1000 : eff.ThrowTime;
             World.BroadcastIfVisible(new ShowEffect()
             {
                 EffectType = EffectType.Throw,
                 Color = new ARGB(eff.Color != 0 ? eff.Color : 0xffffffff),
                 TargetObjectId = Id,
                 Pos1 = target,
-                Duration = eff.ThrowTime / 1000
+                Duration = throwTime / 1000
             }, this);
-
-            var facing = MathF.Atan2(Y - PrevY, X - PrevX);
 
             var x = new Placeholder(GameServer, eff.ThrowTime * 1000);
             x.Move(target.X, target.Y);
             World.EnterWorld(x);
 
-            World.StartNewTimer(eff.ThrowTime, (world, t) =>
+            World.StartNewTimer(throwTime, (world, t) =>
             {
                 world.BroadcastIfVisible(new ShowEffect()
                 {
@@ -541,6 +538,7 @@ namespace WorldServer.core.objects
                     Pos1 = new Position() { X = eff.Radius },
                     Pos2 = new Position() { X = Id, Y = 255 }
                 }, x);
+                Entity entity = Resolve(World.GameServer, objType);
                 if (entity == null)
                     return;
                 entity.Move(target.X, target.Y);

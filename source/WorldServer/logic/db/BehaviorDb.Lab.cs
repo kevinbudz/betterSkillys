@@ -432,6 +432,7 @@ namespace WorldServer.logic
 
         .Init("Monster Cage",
             new State(
+                new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
                 new State("no spawn"
                 //new SetAltTexture(0)
                 ),
