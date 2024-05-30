@@ -1,6 +1,7 @@
 ﻿using Shared.resources;
 using System;
 using System.Drawing;
+using System.Linq;
 using System.Text;
 using WorldServer.core;
 using WorldServer.core.net.datas;
@@ -37,11 +38,11 @@ namespace WorldServer.logic.behaviors
                 var plr = host.GetNearestEntity(20, null, true);
                 if (plr == null)
                     return;
-                Entity entity = host.GetNearestEntity(_radius, false);
-                if (entity == null)
-                    return;
-                if (entity is Enemy en)
-                    en.Damage(plr as Player, ref time, _damage, false);
+                foreach (var entity in host.GetNearestEntities(_radius, 0, false))
+                {
+                    if (entity is Enemy en)
+                        en.Damage(plr as Player, ref time, _damage, false);
+                }
                 cool = _coolDown;
             }
             else

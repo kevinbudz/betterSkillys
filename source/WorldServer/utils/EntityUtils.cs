@@ -266,6 +266,14 @@ namespace WorldServer.utils
                     if (d < dist)
                         yield return i;
                 }
+            else if (objType == 0)
+                foreach (var i in entity.World.EnemiesCollision.HitTest(entity.X, entity.Y, dist))
+                {
+                    var d = i.DistTo(entity);
+
+                    if (d < dist)
+                        yield return i;
+                }
             else
                 foreach (var i in entity.World.EnemiesCollision.HitTest(entity.X, entity.Y, dist))
                 {
