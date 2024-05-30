@@ -16,7 +16,7 @@ namespace WorldServer.logic
                     new TimedTransition(1000, "1")
                     ),
                 new State("1",
-                    new AllyAOE(600, 4, 0xffa447),
+                    new AllyAOE(600, 2, 0xffa447),
                     new SetAltTexture(1),
                     new TimedTransition(1000, "2")
                     ),
@@ -25,7 +25,7 @@ namespace WorldServer.logic
                     new TimedTransition(1000, "3")
                     ),
                 new State("3",
-                    new AllyAOE(600, 4, 0xffa447),
+                    new AllyAOE(600, 2, 0xffa447),
                     new SetAltTexture(1),
                     new TimedTransition(1000, "4")
                     ),
@@ -34,7 +34,7 @@ namespace WorldServer.logic
                     new TimedTransition(1000, "5")
                     ),
                 new State("5",
-                    new AllyAOE(600, 4, 0xffa447),
+                    new AllyAOE(600, 2, 0xffa447),
                     new SetAltTexture(1),
                     new TimedTransition(1000, "decay")
                     ),

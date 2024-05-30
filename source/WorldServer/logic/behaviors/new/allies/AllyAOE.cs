@@ -26,6 +26,8 @@ namespace WorldServer.logic.behaviors
         }
         protected override void OnStateEntry(Entity host, TickTime time, ref object state)
         {
+            if (host == null)
+                return;
             var world = host.World;
             world.BroadcastIfVisible(new ShowEffect()
             {
@@ -35,9 +37,14 @@ namespace WorldServer.logic.behaviors
                 Pos1 = new Position() { X = _radius },
                 Pos2 = new Position() { X = host.Id, Y = 255 }
             }, host);
+
+            var plr = host.GetNearestEntity(20, null, true);
+            if (plr == null)
+                return;
             world.AOE(host.Position, _radius, false, entity =>
             {
-                ((Enemy)entity).Damage(host.AttackTarget, ref time, _damage, true);
+                if (entity is Enemy en)
+                    en.Damage(plr as Player, ref time, _damage, true);
             });
         }
 

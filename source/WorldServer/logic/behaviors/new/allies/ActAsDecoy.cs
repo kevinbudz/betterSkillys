@@ -8,10 +8,16 @@ namespace WorldServer.logic.behaviors
 {
     public class ActAsDecoy : Behavior
     {
-        public Entity decoy;
+        public Entity decoy = null;
         public ActAsDecoy() { }
         protected override void OnStateEntry(Entity host, TickTime time, ref object state)
         {
+        }
+
+        protected override void TickCore(Entity host, TickTime time, ref object state)
+        {
+            if (decoy != null)
+                return;
             if (host == null)
                 return;
             if (host.GetNearestEntity(20, null, true) is Player pw)
@@ -20,10 +26,6 @@ namespace WorldServer.logic.behaviors
                 decoy.Move(host.X, host.Y);
                 host.World.EnterWorld(decoy);
             }
-        }
-
-        protected override void TickCore(Entity host, TickTime time, ref object state)
-        {
         }
 
         public override void OnDeath(Entity host, ref TickTime time)
