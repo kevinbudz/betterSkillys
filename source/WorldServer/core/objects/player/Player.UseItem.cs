@@ -541,11 +541,20 @@ namespace WorldServer.core.objects
                     Pos1 = new Position() { X = eff.Radius },
                     Pos2 = new Position() { X = Id, Y = 255 }
                 }, x);
+
                 Entity entity = Resolve(World.GameServer, objType);
                 if (entity == null)
                     return;
-                entity.Move(target.X, target.Y);
-                World.EnterWorld(entity);
+                if (entity is Enemy en)
+                {
+                    en.ApplyConditionEffect(ConditionEffectIndex.Invincible, -1);
+                    en.Move(target.X, target.Y);
+                    World.EnterWorld(en);
+                } else
+                {
+                    entity.Move(target.X, target.Y);
+                    World.EnterWorld(entity);
+                }
             });
         }
         private void AEBackpack(TickTime time, Item item, Position target, int slot, int objId, ActivateEffect eff)
@@ -575,6 +584,7 @@ namespace WorldServer.core.objects
                 var nextBulletId = GetNextBulletId(1, true);
 
                 var angle = (float)(i * (Math.PI * 2) / numShots);
+                Console.WriteLine(angle);
                 shoots.Add(new ServerPlayerShoot()
                 {
                     BulletType = projectileDesc.BulletType,

@@ -3,6 +3,7 @@ using Shared.utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using WorldServer.core.net.stats;
 using WorldServer.core.objects;
 using WorldServer.core.objects.containers;
@@ -67,7 +68,7 @@ namespace WorldServer.utils
             return false;
         }
 
-        public static void AOE(this Entity entity, float radius, ushort? objType, Action<Entity> callback)   //Null for player
+        public static void AOE(this Entity entity, float radius, ushort? objType, Action<Entity> callback)   //Null for entity
         {
             if (objType == null)
                 foreach (var i in entity.World.PlayersCollision.HitTest(entity.X, entity.Y, radius).Where(e => e is Player))
@@ -88,7 +89,7 @@ namespace WorldServer.utils
                 }
         }
 
-        public static void AOE(this Entity entity, float radius, bool players, Action<Entity> callback)   //Null for player
+        public static void AOE(this Entity entity, float radius, bool players, Action<Entity> callback)   //Null for entity
         {
             if (players)
                 foreach (var i in entity.World.PlayersCollision.HitTest(entity.X, entity.Y, radius).Where(e => e is Player))
@@ -110,7 +111,7 @@ namespace WorldServer.utils
                 }
         }
 
-        public static void AOE(this World world, Position pos, float radius, bool players, Action<Entity> callback)   //Null for player
+        public static void AOE(this World world, Position pos, float radius, bool players, Action<Entity> callback)   //Null for entity
         {
             if (players)
             {
@@ -238,7 +239,7 @@ namespace WorldServer.utils
             }
         }
 
-        public static Entity GetLowestHpEntity(this Entity entity, double dist, ushort? objType, bool seeInvis = false) // objType = null for player
+        public static Entity GetLowestHpEntity(this Entity entity, double dist, ushort? objType, bool seeInvis = false) // objType = null for entity
         {
             var entities = entity.GetNearestEntities(dist, objType, seeInvis).OfType<Character>();
 
@@ -250,7 +251,7 @@ namespace WorldServer.utils
             return entities.FirstOrDefault(e => e.Health == lowestHp);
         }
 
-        public static IEnumerable<Entity> GetNearestEntities(this Entity entity, double dist, ushort? objType, bool seeInvis = false)   //Null for player
+        public static IEnumerable<Entity> GetNearestEntities(this Entity entity, double dist, ushort? objType, bool seeInvis = false)   //Null for entity
         {
             if (entity.World == null)
                 yield break;
@@ -271,6 +272,15 @@ namespace WorldServer.utils
                 {
                     var d = i.DistTo(entity);
 
+                    if (d < dist)
+                        yield return i;
+                }
+            else if (objType == 1)
+                foreach (var i in entity.World.EnemiesCollision.HitTest(entity.X, entity.Y, dist))
+                {
+                    if (i.Name == entity.Name)
+                        continue;
+                    var d = i.DistTo(entity);
                     if (d < dist)
                         yield return i;
                 }
@@ -321,7 +331,7 @@ namespace WorldServer.utils
             }
         }
 
-        public static IEnumerable<Entity> GetNearestEntitiesBySquare(this Entity entity, double dist, ushort? objType, bool seeInvis = false)   //Null for player
+        public static IEnumerable<Entity> GetNearestEntitiesBySquare(this Entity entity, double dist, ushort? objType, bool seeInvis = false)   //Null for entity
         {
             if (entity.World == null)
                 yield break;
@@ -350,7 +360,7 @@ namespace WorldServer.utils
                 }
         }
 
-        public static Entity GetNearestEntity(this Entity entity, double dist, ushort? objType, bool seeInvis = false)   //Null for player
+        public static Entity GetNearestEntity(this Entity entity, double dist, ushort? objType, bool seeInvis = false)   //Null for entity
         {
             var entities = entity.GetNearestEntities(dist, objType, seeInvis).ToArray();
 

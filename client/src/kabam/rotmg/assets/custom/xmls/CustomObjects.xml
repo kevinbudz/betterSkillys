@@ -23,12 +23,48 @@
       </Texture>
       <Static />
    </Object>
-   <Object type="0x4971" id="TagAnchor">
+   <Object type="0x4971" id="Starlight Recurve">
+      <Class>Equipment</Class>
+      <Item/>
       <Texture>
-         <File>invisible</File>
-         <Index>0</Index>
+         <File>lofiObj5new</File>
+         <Index>0x90</Index>
       </Texture>
-      <Static />
+      <SlotType>3</SlotType>
+      <Description>A bow imbued with energy from faraway galaxies. It's origin is unknown.</Description>
+      <ExtraTooltipData>
+         <EffectInfo name="On Ability use" description=""/>
+         <EffectInfo name="" description="Summons a Pirate that charges enemies for 5 seconds."/>
+         <EffectInfo name="Pirate" description="Fires a shot does 250 damage every 0.5 seconds."/>
+      </ExtraTooltipData>
+      <RateOfFire>1</RateOfFire>
+      <Sound>weapon/golden_bow</Sound>
+      <Projectile>
+         <ObjectId>Recurve Shot</ObjectId>
+         <Speed>180</Speed>
+         <MinDamage>90</MinDamage>
+         <MaxDamage>110</MaxDamage>
+         <LifetimeMS>400</LifetimeMS>
+         <Amplitude>0.5</Amplitude>
+         <Frequency>1</Frequency>
+         <MultiHit/>
+      </Projectile>
+      <BagType>6</BagType>
+      <FameBonus>5</FameBonus>
+      <NumProjectiles>2</NumProjectiles>
+      <ArcGap>3</ArcGap>
+      <OldSound>arrowShoot</OldSound>
+      <feedPower>650</feedPower>
+      <OnPlayerAbilityActivate objectId="Pirate Ally" throwTime="0" color="0xff1919">ObjectToss</OnPlayerAbilityActivate>
+      <Soulbound/>
+   </Object>
+   <Object type="0x4974" id="Recurve Shot">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>lofiObj5new</File>
+         <Index>0x91</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
    </Object>
    <Object type="0x4972" id="InvisDecoy">
       <Class>Character</Class>
@@ -40,7 +76,22 @@
       <CanUseTexes/>
       <NoMiniMap/>
    </Object>
-
+   <Object type="0x4973" id="Pirate Ally">
+      <Class>Character</Class>
+      <AnimatedTexture>
+         <File>chars8x8rBeach</File>
+         <Index>1</Index>
+      </AnimatedTexture>
+      <Size>100</Size>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Projectile id="0">
+         <ObjectId>Blade</ObjectId>
+         <Damage>50</Damage>
+         <Speed>80</Speed>
+         <LifetimeMS>300</LifetimeMS>
+      </Projectile>
+   </Object>
    /// ocean trench
    <Object type="0x1554" id="Thessal Dropper">
       <Enemy/>
