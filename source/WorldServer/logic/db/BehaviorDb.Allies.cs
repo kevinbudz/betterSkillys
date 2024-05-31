@@ -13,7 +13,7 @@ namespace WorldServer.logic
             new State(
                 new State("0",
                     new AllyCharge(1, 10, 1),
-                    new AllyShoot(10, 250, 1, projectileIndex: 0, coolDown: 500),
+                    new AllyShoot(10, 1, projectileIndex: 0, coolDown: 500),
                     new TimedTransition(5000, "decay")
                     ),
                 new State("decay",

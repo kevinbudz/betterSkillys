@@ -1,10 +1,6 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.Runtime.InteropServices.ObjectiveC;
-using Shared.resources;
+﻿using Shared.resources;
+using System;
 using WorldServer.core.objects;
-using WorldServer.core.objects.player;
-using WorldServer.core.structures;
 using WorldServer.core.worlds;
 using WorldServer.networking.packets.outgoing;
 using WorldServer.utils;
@@ -15,7 +11,6 @@ namespace WorldServer.logic.behaviors
     {
         private const int PREDICT_NUM_TICKS = 4;
 
-        private readonly int _damage;
         private readonly float _angleOffset;
         private readonly int _coolDownOffset;
         private readonly int _count;
@@ -29,10 +24,9 @@ namespace WorldServer.logic.behaviors
         private Cooldown _coolDown;
         private int _rotateCount;
 
-        public AllyShoot(double radius, int damage, int count = 1, double? shootAngle = null, int projectileIndex = 0, double? fixedAngle = null, double? rotateAngle = null, double angleOffset = 0, double? defaultAngle = null, double predictive = 0, int coolDownOffset = 0, Cooldown coolDown = new Cooldown(), bool shootLowHp = false, bool seeInvis = false)
+        public AllyShoot(double radius, int count = 1, double? shootAngle = null, int projectileIndex = 0, double? fixedAngle = null, double? rotateAngle = null, double angleOffset = 0, double? defaultAngle = null, double predictive = 0, int coolDownOffset = 0, Cooldown coolDown = new Cooldown(), bool shootLowHp = false, bool seeInvis = false)
         {
             _radius = (float)radius;
-            _damage = damage;
             _count = count;
             _shootAngle = count == 1 ? 0 : (float)((shootAngle ?? 360.0 / count) * Math.PI / 180);
             _projectileIndex = projectileIndex;
@@ -81,30 +75,29 @@ namespace WorldServer.logic.behaviors
                 var hasProjectileDesc = host.ObjectDesc.Projectiles.TryGetValue(_projectileIndex, out var desc);
                 if (!hasProjectileDesc)
                 {
-                    Console.WriteLine($"{host.ObjectDesc.IdName} Doesnt have projectile: {_projectileIndex}");
                     cool = _coolDown.Next(Random);
                     Status = CycleStatus.Completed;
                     state = cool;
                     return;
                 }
 
-                float a;
+                float angle;
 
                 if (_fixedAngle != null)
-                    a = (float)_fixedAngle;
+                    angle = (float)_fixedAngle;
                 else if (entity != null)
                 {
                     if (_predictive != 0 && _predictive > Random.NextDouble())
-                        a = Predict(host, entity);
+                        angle = Predict(host, entity);
                     else
-                        a = (float)Math.Atan2(entity.Y - host.Y, entity.X - host.X);
+                        angle = (float)Math.Atan2(entity.Y - host.Y, entity.X - host.X);
                 }
                 else if (_defaultAngle != null)
-                    a = (float)_defaultAngle;
+                    angle = (float)_defaultAngle;
                 else
-                    a = 0;
+                    angle = 0;
 
-                a += _angleOffset + (_rotateAngle != null ? (float)_rotateAngle * _rotateCount : 0);
+                angle += _angleOffset + (_rotateAngle != null ? (float)_rotateAngle * _rotateCount : 0);
 
                 _rotateCount++;
 
@@ -113,21 +106,9 @@ namespace WorldServer.logic.behaviors
                 if (player == null)
                     return;
 
-                var prjId = host.GetNextBulletId(count);
-                var pkt = new ServerPlayerShoot()
-                {
-                    BulletType = host.ObjectDesc.Projectiles[_projectileIndex].BulletType,
-                    ObjectType = host.ObjectType,
-                    BulletId = prjId,
-                    OwnerId = player.Id,
-                    ContainerType = host.ObjectType,
-                    StartingPos = host.Position,
-                    Angle = a,
-                    Damage = _damage
-                };
-                Console.WriteLine($"{pkt.BulletId}, {pkt.OwnerId}, {pkt.ContainerType}, {pkt.StartingPos}, {pkt.Angle}, {pkt.Damage}");
-                player.ServerPlayerShoot(pkt);
-                host.World.BroadcastIfVisible(pkt, host);
+                var bulletId = host.GetNextBulletId(count);
+                var serverPlayerShoot = new ServerPlayerShoot(bulletId, player.Id, host.ObjectType, host.Position, angle, Random.Shared.Next(desc.MinDamage, desc.MaxDamage), host.ObjectType, desc);
+                host.World.BroadcastServerPlayerShoot(serverPlayerShoot, host);
             }
 
             cool = _coolDown.Next(Random);

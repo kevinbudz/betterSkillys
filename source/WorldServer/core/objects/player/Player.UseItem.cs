@@ -1,12 +1,8 @@
-﻿using NLog.Targets;
-using Org.BouncyCastle.Bcpg;
-using Shared;
+﻿using Shared;
 using Shared.resources;
-using StackExchange.Redis;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography;
 using WorldServer.core.net.datas;
 using WorldServer.core.net.stats;
 using WorldServer.core.objects.containers;
@@ -14,7 +10,6 @@ using WorldServer.core.objects.inventory;
 using WorldServer.core.structures;
 using WorldServer.core.worlds;
 using WorldServer.core.worlds.impl;
-using WorldServer.logic.behaviors;
 using WorldServer.networking;
 using WorldServer.networking.packets.outgoing;
 using WorldServer.utils;
@@ -587,18 +582,11 @@ namespace WorldServer.core.objects
 
                 var angle = (float)(i * (Math.PI * 2) / numShots);
                 Console.WriteLine(angle);
-                shoots.Add(new ServerPlayerShoot()
-                {
-                    BulletType = projectileDesc.BulletType,
-                    ObjectType = item.ObjectType,
-                    BulletId = nextBulletId,
-                    OwnerId = Id,
-                    ContainerType = item.ObjectType,
-                    StartingPos = target,
-                    Angle = angle,
-                    Damage = Random.Shared.Next(projectileDesc.MinDamage, projectileDesc.MaxDamage)
-                });
+
+                var damage = Random.Shared.Next(projectileDesc.MinDamage, projectileDesc.MaxDamage);
+                shoots.Add(new ServerPlayerShoot(nextBulletId, Id, item.ObjectType, target, angle, damage, item.ObjectType, projectileDesc));
             }
+
             World.BroadcastIfVisible(new ShowEffect()
             {
                 EffectType = EffectType.Trail,

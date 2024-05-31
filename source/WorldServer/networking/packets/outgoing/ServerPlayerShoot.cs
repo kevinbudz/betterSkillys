@@ -1,13 +1,12 @@
 ﻿using Shared;
+using Shared.resources;
 using WorldServer.core.structures;
 
 namespace WorldServer.networking.packets.outgoing
 {
-    public class ServerPlayerShoot : OutgoingMessage
+    public sealed class ServerPlayerShoot : OutgoingMessage
     {
-        public int BulletType { get; set; } // dont serialize
-        public int ObjectType { get; set; } // dont serialize
-
+        // Client Related Info
         public int BulletId { get; set; }
         public int OwnerId { get; set; }
         public int ContainerType { get; set; }
@@ -15,7 +14,24 @@ namespace WorldServer.networking.packets.outgoing
         public float Angle { get; set; }
         public int Damage { get; set; }
 
+        // Used for Validation
+        public int ObjectType { get; set; }
+        public ProjectileDesc ProjectileDesc { get; set; }
+
         public override MessageId MessageId => MessageId.SERVERPLAYERSHOOT;
+
+        public ServerPlayerShoot(int bulletId, int ownerId, int containerType, Position startPosition, float angle, int damage, int objectType, ProjectileDesc projectileDesc)
+        {
+            BulletId = bulletId;
+            OwnerId = ownerId;
+            ContainerType = containerType;
+            StartingPos = startPosition;
+            Angle = angle;
+            Damage = damage;
+
+            ObjectType = objectType;
+            ProjectileDesc = projectileDesc;
+        }
 
         public override void Write(NetworkWriter wtr)
         {

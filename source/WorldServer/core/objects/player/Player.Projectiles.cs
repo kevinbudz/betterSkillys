@@ -15,7 +15,7 @@ namespace WorldServer.core.objects
         private Queue<ShootAcknowledgement> PendingShootAcknowlegements = new Queue<ShootAcknowledgement>();
         private Dictionary<int, Dictionary<int, ValidatedProjectile>> VisibleProjectiles = new Dictionary<int, Dictionary<int, ValidatedProjectile>>();
 
-        public void EnemyShoot(EnemyShootMessage enemyShoot) => PendingShootAcknowlegements.Enqueue(new ShootAcknowledgement(enemyShoot));
+        public void ProcessEnemyShoot(EnemyShootMessage enemyShoot) => PendingShootAcknowlegements.Enqueue(new ShootAcknowledgement(enemyShoot));
         public void ServerPlayerShoot(ServerPlayerShoot serverPlayerShoot)
         {
             if(serverPlayerShoot.OwnerId != Id)

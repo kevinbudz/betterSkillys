@@ -145,8 +145,18 @@ namespace WorldServer.core.worlds
                 if (player.SqDistTo(host) < CULL_RANGE * CULL_RANGE)
                 {
                     if (outgoingMessage is EnemyShootMessage)
-                        player.EnemyShoot(outgoingMessage as EnemyShootMessage);
+                        player.ProcessEnemyShoot(outgoingMessage as EnemyShootMessage);
                     player.Client.SendPacket(outgoingMessage);
+                }
+        }
+
+        public void BroadcastEnemyShootIfVisible(EnemyShootMessage enemyShoot, Entity host)
+        {
+            foreach (var player in Players.Values)
+                if (player.SqDistTo(host) < CULL_RANGE * CULL_RANGE)
+                {
+                    player.ProcessEnemyShoot(enemyShoot);
+                    player.Client.SendPacket(enemyShoot);
                 }
         }
 

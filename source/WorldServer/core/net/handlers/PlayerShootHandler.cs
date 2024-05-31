@@ -1,12 +1,8 @@
 ﻿using Shared;
-using WorldServer.networking;
-using WorldServer.core.objects;
-using WorldServer.networking.packets.outgoing;
 using System;
-using WorldServer.core.worlds;
-using WorldServer.logic;
-using Shared.resources;
 using WorldServer.core.structures;
+using WorldServer.core.worlds;
+using WorldServer.networking;
 
 namespace WorldServer.core.net.handlers
 {
