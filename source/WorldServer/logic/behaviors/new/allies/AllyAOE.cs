@@ -18,7 +18,7 @@ namespace WorldServer.logic.behaviors
         private readonly uint _color;
         private readonly int _damage;
         private readonly float _radius;
-        private readonly float _coolDown;
+        private readonly int _coolDown;
 
         public AllyAOE(int damage, float radius, uint color = 0, int cooldown = 0) 
         {
@@ -33,7 +33,7 @@ namespace WorldServer.logic.behaviors
         }
         protected override void TickCore(Entity host, TickTime time, ref object state)
         {
-            var cool = (int?)state ?? -1;
+            var cool = (int)state;
             if (cool <= 0)
             {
                 if (host == null)
@@ -56,6 +56,7 @@ namespace WorldServer.logic.behaviors
                     if (entity is Enemy en)
                         en.Damage(player, ref time, _damage, true);
                 });
+                cool = _coolDown;
             }
             else
                 cool -= time.ElapsedMsDelta;

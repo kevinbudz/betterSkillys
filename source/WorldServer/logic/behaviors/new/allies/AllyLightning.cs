@@ -14,7 +14,7 @@ namespace WorldServer.logic.behaviors
     {
         private readonly uint _color;
         private readonly int _damage;
-        private readonly float _coolDown;
+        private readonly int _coolDown;
         public AllyLightning(int damage, uint color, int cooldown = 0) 
         {
             _color = color;
@@ -27,16 +27,10 @@ namespace WorldServer.logic.behaviors
         }
         protected override void TickCore(Entity host, TickTime time, ref object state)
         {
-            var cool = (int?)state ?? -1;
+            var cool = (int)state;
             if (cool <= 0)
             {
-                const double coneRange = Math.PI / 4;
-
-                // get starting target
-                var entAngle = 0;
-                var startTarget = host.GetNearestEntity(10, false, e => e is Enemy &&
-                    Math.Abs(entAngle - Math.Atan2(e.Y - host.Y, e.X - host.X)) <= coneRange);
-
+                var startTarget = host.GetNearestEntity(10, false, e => e is Enemy);
                 if (startTarget == null)
                     return;
 
@@ -89,6 +83,7 @@ namespace WorldServer.logic.behaviors
                         Pos2 = new Position() { X = 350 }
                     }, host);
                 }
+                cool = _coolDown;
             }
             else
                 cool -= time.ElapsedMsDelta;
