@@ -21,10 +21,13 @@ namespace WorldServer.logic.behaviors
             _damage = damage;
             _coolDown = cooldown;
         }
-        protected override void OnStateEntry(Entity host, TickTime time, ref object state) => state = _coolDown;
+        protected override void OnStateEntry(Entity host, TickTime time, ref object state)
+        {
+            state = _coolDown;
+        }
         protected override void TickCore(Entity host, TickTime time, ref object state)
         {
-            int cool = (int)state;
+            var cool = (int?)state ?? -1;
             if (cool <= 0)
             {
                 const double coneRange = Math.PI / 4;

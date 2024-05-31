@@ -39,12 +39,14 @@ namespace WorldServer.logic
             )
         .Init("Cranium Effect",
             new State(
-                new Decay(5000),
-                new AllyDamage(150, 5, 200),
-                new AllyFollow(1, 10, 1),
-                new AllyLightning(250, 0x9F2B68, 1000)
+                new State("0",
+                    new Decay(5000),
+                    new AllyDamage(150, 5, 200),
+                    new AllyFollow(1, 10, 1),
+                    new AllyLightning(250, 0x9F2B68, 1000)
+                    )
+                )
             )
-        )
         .Init("Gambler's Fate Effect",
             new State(
                 new ActAsDecoy(),
