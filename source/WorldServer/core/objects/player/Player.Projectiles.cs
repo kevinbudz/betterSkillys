@@ -34,6 +34,8 @@ namespace WorldServer.core.objects
             }
             PendingShootAcknowlegements.Enqueue(list);
         }
+
+        // todo make serverplayer shoot multiple at once per single packet for performance in future?
         public void ServerPlayerShoot(ServerPlayerShoot serverPlayerShoot)
         {
             if(serverPlayerShoot.ObjectId != Id)
