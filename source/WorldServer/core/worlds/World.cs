@@ -1,5 +1,4 @@
-﻿using Org.BouncyCastle.Bcpg;
-using Pipelines.Sockets.Unofficial.Arenas;
+﻿using Pipelines.Sockets.Unofficial.Arenas;
 using Shared.database;
 using Shared.resources;
 using System;
@@ -167,6 +166,17 @@ namespace WorldServer.core.worlds
                 {
                     player.ServerPlayerShoot(serverPlayerShoot);
                     player.Client.SendPacket(serverPlayerShoot);
+                }
+        }
+
+        public void BroadcastServerPlayerShoot(List<ServerPlayerShoot> serverPlayerShoots, Entity host)
+        {
+            foreach (var player in Players.Values)
+                if (player.SqDistTo(host) < CULL_RANGE * CULL_RANGE)
+                {
+                    foreach (var serverPlayerShoot in serverPlayerShoots)
+                        player.ServerPlayerShoot(serverPlayerShoot);
+                    player.Client.SendPackets(serverPlayerShoots);
                 }
         }
 

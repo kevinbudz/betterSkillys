@@ -735,18 +735,12 @@ namespace WorldServer.core.objects
                         var nextBulletId = GetNextBulletId(1, true);
                         var projectileDesc = item.Projectiles[0];
                         var angle = (float)(i * (Math.PI * 2) / numShots);
-                        shots.Add(new ServerPlayerShoot()
-                        {
-                            BulletType = projectileDesc.BulletType,
-                            ObjectType = item.ObjectType,
-                            BulletId = nextBulletId,
-                            OwnerId = Id,
-                            ContainerType = item.ObjectType,
-                            StartingPos = decoy.Position,
-                            Angle = angle,
-                            Damage = Random.Shared.Next(projectileDesc.MinDamage, projectileDesc.MaxDamage)
-                        });
+
+                        var damage = Random.Shared.Next(projectileDesc.MinDamage, projectileDesc.MaxDamage);
+
+                        shots.Add(new ServerPlayerShoot(nextBulletId, Id, item.ObjectType, decoy.Position, angle, damage, item.ObjectType, projectileDesc));
                     }
+
                     World.BroadcastIfVisible(shots, ref target);
                 });
             }
