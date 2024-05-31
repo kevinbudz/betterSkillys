@@ -1,5 +1,6 @@
 ﻿using Shared.resources;
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -25,23 +26,19 @@ namespace WorldServer.logic.behaviors
             _radius = radius;
             _coolDown = cooldown;
         }
-        protected override void OnStateEntry(Entity host, TickTime time, ref object state)
-        {
-            state = _coolDown;
-        }
-
+        protected override void OnStateEntry(Entity host, TickTime time, ref object state) => state = _coolDown;
         protected override void TickCore(Entity host, TickTime time, ref object state)
         {
             int cool = (int)state;
             if (cool <= 0)
             {
-                var plr = host.GetNearestEntity(20, null, true);
-                if (plr == null)
+                var player = host.World.Players.GetValueOrDefault(host.AllyOwnerId);
+                if (player == null)
                     return;
                 foreach (var entity in host.GetNearestEntities(_radius, 0, false))
                 {
                     if (entity is Enemy en)
-                        en.Damage(plr as Player, ref time, _damage, false);
+                        en.Damage(player, ref time, _damage, false);
                 }
                 cool = _coolDown;
             }

@@ -3,6 +3,7 @@ using System;
 using WorldServer.core.objects;
 using WorldServer.utils;
 using WorldServer.core.worlds;
+using System.Collections.Generic;
 
 namespace WorldServer.logic.behaviors
 {
@@ -24,10 +25,9 @@ namespace WorldServer.logic.behaviors
             if (host.HasConditionEffect(ConditionEffectIndex.Paralyzed))
                 return;
 
-            var player = host.GetNearestEntity(acquireRange, null, true);
+            var player = host.World.Players.GetValueOrDefault(host.AllyOwnerId);
             if (player == null)
                 return;
-
             var vect = new Vector2(player.X - host.X, player.Y - host.Y);
             if (vect.Length() > range)
             {

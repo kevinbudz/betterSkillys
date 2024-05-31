@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using WorldServer.core.objects;
 using WorldServer.core.structures;
 using WorldServer.core.worlds;
@@ -20,12 +21,12 @@ namespace WorldServer.logic.behaviors
                 return;
             if (host == null)
                 return;
-            if (host.GetNearestEntity(20, null, true) is Player pw)
-            {
-                decoy = new Decoy(pw, 999999, 0, true, 0x4972);
-                decoy.Move(host.X, host.Y);
-                host.World.EnterWorld(decoy);
-            }
+            var player = host.World.Players.GetValueOrDefault(host.AllyOwnerId);
+            if (player == null)
+                return;
+            decoy = new Decoy(player, 999999, 0, true, 0x4972);
+            decoy.Move(host.X, host.Y);
+            host.World.EnterWorld(decoy);
         }
 
         public override void OnDeath(Entity host, ref TickTime time)

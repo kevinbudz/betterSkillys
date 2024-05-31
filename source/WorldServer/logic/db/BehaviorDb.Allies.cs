@@ -15,9 +15,9 @@ namespace WorldServer.logic
                 new State("attack",
                     new AllyCharge(1, 10, 1),
                     new AllyShoot(10, 1, projectileIndex: 0, coolDown: 500),
-                    new NoEntityWithinAllyTransition(10, false, "wander")
+                    new NoEntityWithinAllyTransition(10, false, "follow")
                     ),
-                new State("wander",
+                new State("follow",
                     new AllyFollow(1, 10, 1.5),
                     new EntityWithinAllyTransition(10, "attack")
                     )
@@ -25,68 +25,26 @@ namespace WorldServer.logic
             )
         .Init("CR Friendly Cnidarian",
             new State(
+                new Decay(5000),
+                new AllyAOE(600, 2, 0xffa447, 1000),
                 new State("0",
                     new SetAltTexture(0),
                     new TimedTransition(1000, "1")
                     ),
                 new State("1",
-                    new AllyAOE(600, 2, 0xffa447),
                     new SetAltTexture(1),
-                    new TimedTransition(1000, "2")
-                    ),
-                new State("2",
-                    new SetAltTexture(0),
-                    new TimedTransition(1000, "3")
-                    ),
-                new State("3",
-                    new AllyAOE(600, 2, 0xffa447),
-                    new SetAltTexture(1),
-                    new TimedTransition(1000, "4")
-                    ),
-                new State("4",
-                    new SetAltTexture(0),
-                    new TimedTransition(1000, "5")
-                    ),
-                new State("5",
-                    new AllyAOE(600, 2, 0xffa447),
-                    new SetAltTexture(1),
-                    new TimedTransition(1000, "decay")
-                    ),
-                new State("decay",
-                    new Decay(0)
+                    new TimedTransition(1000, "0")
                     )
                 )
             )
         .Init("Cranium Effect",
             new State(
-                new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
+                new Decay(5000),
                 new AllyDamage(150, 5, 200),
                 new AllyFollow(1, 10, 1),
-                new State("0",
-                    new AllyLightning(250, 0x9F2B68),
-                    new TimedTransition(1000, "1")
-                    ),
-                new State("1",
-                    new AllyLightning(250, 0x9F2B68),
-                    new TimedTransition(1000, "2")
-                    ),
-                new State("2",
-                    new AllyLightning(250, 0x9F2B68),
-                    new TimedTransition(1000, "3")
-                    ),
-                new State("3",
-                    new AllyLightning(250, 0x9F2B68),
-                    new TimedTransition(1000, "4")
-                    ),
-                new State("4",
-                    new AllyLightning(250, 0x9F2B68),
-                    new TimedTransition(1000, "decay")
-                    ),
-                new State("decay",
-                    new Decay(0)
-                    )
-                )
+                new AllyLightning(250, 0x9F2B68, 1000)
             )
+        )
         .Init("Gambler's Fate Effect",
             new State(
                 new ActAsDecoy(),
