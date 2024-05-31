@@ -15,51 +15,38 @@ namespace WorldServer.core.objects
 
         public sealed class ValidatedProjectile
         {
-            public int Time { get; private set; }
+            public int Time { get; set; }
 
+            public readonly int ObjectId;
             public readonly int BulletId;
-
+            public readonly float Angle;
+            public readonly int ContainerType;
+            public readonly float StartX;
+            public readonly float StartY;
+            public readonly int Damage;
             public readonly DamageType DamageType;
+            public readonly ProjectileDesc ProjectileDesc;
 
-            public ValidatedProjectile(int bulletId, Position startPos, float angle, int objectType, int damage, DamageType damageType)
+            public ValidatedProjectile(int objectId, int bulletId, Position startPos, float angle, int containerType, int damage, DamageType damageType, ProjectileDesc projectileDesc)
             {
+
+                ObjectId = objectId;
                 BulletId = bulletId;
 
                 StartX = startPos.X;
                 StartY = startPos.Y;
                 Angle = angle;
-                ObjectType = objectType;
+                ContainerType = containerType;
                 Damage = damage;
 
                 DamageType = damageType;
+
+                ProjectileDesc = projectileDesc;
             }
 
-            public int BulletType;
-            public int StartTime;
-            public float StartX;
-            public float StartY;
-            public float Angle;
-            public int ObjectType;
-            public int Damage;
             public bool Spawned;
-            public bool DamagesPlayers;
-            public bool DamagesEnemies;
             public bool Disabled;
             public List<int> HitObjects = new List<int>();
-
-            public ValidatedProjectile(int time, bool spawned, int projectileType, float x, float y, float angle, int objectType, int damage, bool damagesPlayers, bool damagesEnemies)
-            {
-                Spawned = spawned;
-                BulletType = projectileType;
-                StartTime = time;
-                StartX = x;
-                StartY = y;
-                Angle = angle;
-                ObjectType = objectType;
-                Damage = damage;
-                DamagesPlayers = damagesPlayers;
-                DamagesEnemies = damagesEnemies;
-            }
 
             public Position GetPosition(int elapsed, int bulletId, ProjectileDesc desc)
             {

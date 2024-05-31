@@ -584,7 +584,7 @@ namespace WorldServer.core.objects
                 Console.WriteLine(angle);
 
                 var damage = Random.Shared.Next(projectileDesc.MinDamage, projectileDesc.MaxDamage);
-                shoots.Add(new ServerPlayerShoot(nextBulletId, Id, item.ObjectType, target, angle, damage, item.ObjectType, projectileDesc));
+                shoots.Add(new ServerPlayerShoot(Id, nextBulletId, item.ObjectType, target, angle, damage, projectileDesc));
             }
 
             World.BroadcastIfVisible(new ShowEffect()
@@ -738,7 +738,7 @@ namespace WorldServer.core.objects
 
                         var damage = Random.Shared.Next(projectileDesc.MinDamage, projectileDesc.MaxDamage);
 
-                        shots.Add(new ServerPlayerShoot(nextBulletId, Id, item.ObjectType, decoy.Position, angle, damage, item.ObjectType, projectileDesc));
+                        shots.Add(new ServerPlayerShoot(Id, nextBulletId, item.ObjectType, decoy.Position, angle, damage, projectileDesc));
                     }
 
                     World.BroadcastIfVisible(shots, ref target);

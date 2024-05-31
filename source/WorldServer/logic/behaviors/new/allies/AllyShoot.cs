@@ -107,7 +107,9 @@ namespace WorldServer.logic.behaviors
                     return;
 
                 var bulletId = host.GetNextBulletId(count);
-                var serverPlayerShoot = new ServerPlayerShoot(bulletId, player.Id, host.ObjectType, host.Position, angle, Random.Shared.Next(desc.MinDamage, desc.MaxDamage), host.ObjectType, desc);
+
+                var damage = Random.Shared.Next(desc.MinDamage, desc.MaxDamage);
+                var serverPlayerShoot = new ServerPlayerShoot(player.Id, bulletId, host.ObjectType, host.Position, angle, damage, desc);
                 host.World.BroadcastServerPlayerShoot(serverPlayerShoot, host);
             }
 

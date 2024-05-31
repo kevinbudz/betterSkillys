@@ -1,5 +1,4 @@
-﻿using Shared.resources;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using WorldServer.core.net.datas;
 using WorldServer.core.net.stats;
@@ -22,20 +21,34 @@ namespace WorldServer.core.objects
             {
                 var angle = enemyShoot.Angle + enemyShoot.AngleInc * i;
                 var bulletId = enemyShoot.BulletId + i;
-                list.Add(new ValidatedProjectile(bulletId, enemyShoot.StartingPos.X, enemyShoot.StartingPos.Y, angle, enemyShoot.ObjectType, enemyShoot.Damage, true, false));
+                list.Add(new ValidatedProjectile(enemyShoot.OwnerId, bulletId, enemyShoot.StartingPos, angle, enemyShoot.ObjectType, enemyShoot.Damage, DamageType.Player, enemyShoot.ProjectileDesc));
             }
             PendingShootAcknowlegements.Enqueue(list);
         }
         public void ServerPlayerShoot(ServerPlayerShoot serverPlayerShoot)
         {
-            if(serverPlayerShoot.OwnerId != Id)
-            {
-                if (!VisibleProjectiles.ContainsKey(serverPlayerShoot.OwnerId))
-                    VisibleProjectiles.Add(serverPlayerShoot.OwnerId, new Dictionary<int, ValidatedProjectile>());
-                VisibleProjectiles[serverPlayerShoot.OwnerId][serverPlayerShoot.BulletId] = new ValidatedProjectile(LastClientTime, false, serverPlayerShoot.BulletType, serverPlayerShoot.StartingPos.X, serverPlayerShoot.StartingPos.Y, serverPlayerShoot.Angle, serverPlayerShoot.ObjectType, serverPlayerShoot.Damage, false, true);
+            if(serverPlayerShoot.ObjectId != Id)
                 return;
-            }
-            PendingShootAcknowlegements.Enqueue(new ShootAcknowledgement(serverPlayerShoot));
+
+            var list = new List<ValidatedProjectile>();
+
+            //public int BulletId { get; set; }
+            //public int OwnerId { get; set; }
+            //public int ContainerType { get; set; }
+            //public Position StartingPos { get; set; }
+            //public float Angle { get; set; }
+            //public int Damage { get; set; }
+
+            list.Add(new ValidatedProjectile(
+                serverPlayerShoot.ObjectId,
+                serverPlayerShoot.BulletId, 
+                serverPlayerShoot.StartingPos, 
+                serverPlayerShoot.Angle, 
+                serverPlayerShoot.ContainerType,
+                serverPlayerShoot.Damage, 
+                DamageType.Player,
+                serverPlayerShoot.ProjectileDesc));
+            PendingShootAcknowlegements.Enqueue(list);
         }
 
         public void PlayerShoot(int time, int newBulletId, Position startingPosition, float angle, int slot)
@@ -47,7 +60,10 @@ namespace WorldServer.core.objects
 
             if (!VisibleProjectiles.ContainsKey(Id))
                 VisibleProjectiles[Id] = new Dictionary<int, ValidatedProjectile>();
-            VisibleProjectiles[Id][newBulletId] = new ValidatedProjectile(time, false, 0, startingPosition.X, startingPosition.Y, angle, item.ObjectType, damage, false, true);
+
+            var proj = new ValidatedProjectile(Id, newBulletId, startingPosition, angle, item.ObjectType, damage, DamageType.Enemy, projectileDesc);
+            proj.Time = time;
+            VisibleProjectiles[Id][newBulletId] = proj;
 
             var allyShoot = new AllyShootMessage(newBulletId, Id, item.ObjectType, angle);
             World.BroadcastIfVisibleExclude(allyShoot, this, this);
@@ -69,27 +85,12 @@ namespace WorldServer.core.objects
                 return;
             }
 
-            // validate projectiles here
-            var enemyShoot = topLevelShootAck.EnemyShoot;
+            var first = topLevelShootAck[0];
+            if (!VisibleProjectiles.ContainsKey(first.ObjectId))
+                VisibleProjectiles.Add(first.ObjectId, new Dictionary<int, ValidatedProjectile>());
 
-            if (enemyShoot != null)
-            {
-                if (!VisibleProjectiles.ContainsKey(enemyShoot.OwnerId))
-                    VisibleProjectiles.Add(enemyShoot.OwnerId, new Dictionary<int, ValidatedProjectile>());
-
-                for (var i = 0; i < enemyShoot.NumShots; i++)
-                {
-                    var angle = enemyShoot.Angle + enemyShoot.AngleInc * i;
-                    var bulletId = enemyShoot.BulletId + i;
-                    VisibleProjectiles[enemyShoot.OwnerId][bulletId] = new ValidatedProjectile(time, enemyShoot.Spawned, enemyShoot.BulletType, enemyShoot.StartingPos.X, enemyShoot.StartingPos.Y, angle, enemyShoot.ObjectType, enemyShoot.Damage, true, false);
-                }
-                return;
-            }
-
-            var serverPlayerShoot = topLevelShootAck.ServerPlayerShoot;
-            if (!VisibleProjectiles.ContainsKey(serverPlayerShoot.OwnerId))
-                VisibleProjectiles.Add(serverPlayerShoot.OwnerId, new Dictionary<int, ValidatedProjectile>());
-            VisibleProjectiles[serverPlayerShoot.OwnerId][serverPlayerShoot.BulletId] = new ValidatedProjectile(time, false, serverPlayerShoot.BulletType, serverPlayerShoot.StartingPos.X, serverPlayerShoot.StartingPos.Y, serverPlayerShoot.Angle, serverPlayerShoot.ObjectType, serverPlayerShoot.Damage, false, true);
+            foreach (var proj in topLevelShootAck)
+                VisibleProjectiles[proj.ObjectId][proj.BulletId] = proj;
         }
 
         public void PlayerHit(int bulletId, int objectId)
@@ -106,16 +107,16 @@ namespace WorldServer.core.objects
                 return;
             }
 
-            var objectDesc = GameServer.Resources.GameData.ObjectDescs[(ushort)projectile.ObjectType];
-            var projectileDesc = objectDesc.Projectiles[projectile.BulletType];
-
             if (projectile.Disabled)
             {
                 //Console.WriteLine($"[OtherHit] {Name} -> {bulletId} Projectile Already Disabled: Multihit: {projectileDesc.MultiHit}");
                 return;
             }
 
-            var elapsedSinceStart = LastClientTime - projectile.StartTime;
+            var objectDesc = GameServer.Resources.GameData.ObjectDescs[(ushort)projectile.ContainerType];
+            var projectileDesc = projectile.ProjectileDesc;
+
+            var elapsedSinceStart = LastClientTime - projectile.Time;
             if (elapsedSinceStart > projectileDesc.LifetimeMS)
             {
                 projectile.Disabled = true;
@@ -159,16 +160,15 @@ namespace WorldServer.core.objects
                 return;
             }
 
-            var objectDesc = GameServer.Resources.GameData.Items[(ushort)projectile.ObjectType];
-            var projectileDesc = objectDesc.Projectiles[projectile.BulletType];
-
             if (projectile.Disabled)
             {
                 //Console.WriteLine($"[OtherHit] {Name} -> {bulletId} Projectile Already Disabled: Multihit: {projectileDesc.MultiHit}");
                 return;
             }
 
-            var elapsedSinceStart = time - projectile.StartTime;
+            var projectileDesc = projectile.ProjectileDesc;
+
+            var elapsedSinceStart = time - projectile.Time;
             if (elapsedSinceStart > projectileDesc.LifetimeMS)
             {
                 projectile.Disabled = true;
@@ -257,19 +257,18 @@ namespace WorldServer.core.objects
                 return;
             }
 
-            var objectDesc = GameServer.Resources.GameData.ObjectDescs[(ushort)projectile.ObjectType];
-            var projectileDesc = objectDesc.Projectiles[projectile.BulletType];
-
             if (projectile.Disabled)
             {
                 //Console.WriteLine($"[OtherHit] {Name} -> {bulletId} Projectile Already Disabled: Multihit: {projectileDesc.MultiHit}");
                 return;
             }
 
-            var elapsed = time - projectile.StartTime;
+            var projectileDesc = projectile.ProjectileDesc;
+
+            var elapsed = time - projectile.Time;
             //var hitPos = projectile.GetPosition(elapsed, bulletId, projectileDesc);
 
-            var elapsedSinceStart = time - projectile.StartTime;
+            var elapsedSinceStart = time - projectile.Time;
             if (elapsedSinceStart > projectileDesc.LifetimeMS)
             {
                 projectile.Disabled = true;
@@ -296,8 +295,7 @@ namespace WorldServer.core.objects
                 return;
             }
 
-            var objectDesc = GameServer.Resources.GameData.ObjectDescs[(ushort)projectile.ObjectType];
-            var projectileDesc = objectDesc.Projectiles[projectile.BulletType];
+            var projectileDesc = projectile.ProjectileDesc;
 
             if (projectile.Disabled)
             {
@@ -305,10 +303,10 @@ namespace WorldServer.core.objects
                 return;
             }
 
-            var elapsed = time - projectile.StartTime;
+            var elapsed = time - projectile.Time;
             var hitPos = projectile.GetPosition(elapsed, bulletId, projectileDesc);
 
-            var elapsedSinceStart = time - projectile.StartTime;
+            var elapsedSinceStart = time - projectile.Time;
             if (elapsedSinceStart > projectileDesc.LifetimeMS)
             {
                 projectile.Disabled = true;
@@ -344,19 +342,9 @@ namespace WorldServer.core.objects
             foreach (var dict in VisibleProjectiles)
                 foreach (var kvp in dict.Value)
                 {
-                    ProjectileDesc projectileDesc;
-                    if (kvp.Value.DamagesEnemies)
-                    {
-                        var objectDesc = GameServer.Resources.GameData.Items[(ushort)kvp.Value.ObjectType];
-                        projectileDesc = objectDesc.Projectiles[0];
-                    }
-                    else
-                    {
-                        var objectDesc = GameServer.Resources.GameData.ObjectDescs[(ushort)kvp.Value.ObjectType];
-                        projectileDesc = objectDesc.Projectiles[kvp.Value.BulletType];
-                    }
+                    var projectileDesc = kvp.Value.ProjectileDesc;
 
-                    var elapsed = time - kvp.Value.StartTime;
+                    var elapsed = time - kvp.Value.Time;
                     if (elapsed > projectileDesc.LifetimeMS)
                         visibleProjectileToRemove.Add(ValueTuple.Create(dict.Key, kvp.Key));
                 }

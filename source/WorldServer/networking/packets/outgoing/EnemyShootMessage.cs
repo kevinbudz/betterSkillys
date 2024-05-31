@@ -1,4 +1,5 @@
 ﻿using Shared;
+using Shared.resources;
 using WorldServer.core.structures;
 
 namespace WorldServer.networking.packets.outgoing
@@ -7,6 +8,7 @@ namespace WorldServer.networking.packets.outgoing
     {
         public int ObjectType { get; set; } // dont serialize
         public bool Spawned { get; set; } // dont serialize
+        public ProjectileDesc ProjectileDesc { get; set; } // dont serialize
 
         public int BulletId { get; set; }
         public int OwnerId { get; set; }
