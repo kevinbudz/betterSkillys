@@ -87,7 +87,7 @@
       <Defense>0</Defense>
       <Projectile id="0">
          <ObjectId>Blade</ObjectId>
-         <Damage>50</Damage>
+         <Damage>250</Damage>
          <Speed>80</Speed>
          <LifetimeMS>300</LifetimeMS>
       </Projectile>

@@ -11,13 +11,15 @@ namespace WorldServer.logic
         private _ Allies = () => Behav()
         .Init("Pirate Ally",
             new State(
-                new State("0",
+                new Decay(5000),
+                new State("attack",
                     new AllyCharge(1, 10, 1),
                     new AllyShoot(10, 1, projectileIndex: 0, coolDown: 500),
-                    new TimedTransition(5000, "decay")
+                    new NoEntityWithinAllyTransition(10, false, "wander")
                     ),
-                new State("decay",
-                    new Decay(0)
+                new State("wander",
+                    new AllyFollow(1, 10, 1.5),
+                    new EntityWithinAllyTransition(10, "attack")
                     )
                 )
             )
