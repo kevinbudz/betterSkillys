@@ -108,6 +108,8 @@ namespace WorldServer.core.objects
         public int NextBulletId = 1;
         public int NextAbilityBulletId = 0x40000000;
 
+        public int AllyOwnerId = -1;
+
         public int GetNextBulletId(int numShots = 1, bool ability = false)
         {
             if (ability)

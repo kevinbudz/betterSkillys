@@ -35,6 +35,7 @@ namespace WorldServer.core.net.handlers
             var player = client.Player;
 
             player.HandleProjectileDetection(time, newX, newY, ref moveRecords);
+
             if (newX != -1 && newX != player.X || newY != -1 && newY != player.Y)
             {
                 if (!player.World.Map.Contains(newX, newY))

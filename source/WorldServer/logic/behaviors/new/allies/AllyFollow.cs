@@ -11,29 +11,24 @@ namespace WorldServer.logic.behaviors
         private readonly float acquireRange;
         private readonly float range;
         private readonly float speed;
-        private Entity player;
 
-        public AllyFollow(double speed, double acquireRange = 10, double range = 6, Entity player = null)
+        public AllyFollow(double speed, double acquireRange = 10, double range = 6)
         {
             this.speed = (float)speed;
             this.acquireRange = (float)acquireRange;
             this.range = (float)range;
-            this.player = player;
-        }
-
-        protected override void OnStateEntry(Entity host, TickTime time, ref object state)
-        {
-            player = host.GetNearestEntity(acquireRange, null, true);
         }
 
         protected override void TickCore(Entity host, TickTime time, ref object state)
         {
             if (host.HasConditionEffect(ConditionEffectIndex.Paralyzed))
                 return;
+
+            var player = host.GetNearestEntity(acquireRange, null, true);
             if (player == null)
                 return;
-            Vector2 vect;
-            vect = new Vector2(player.X - host.X, player.Y - host.Y);
+
+            var vect = new Vector2(player.X - host.X, player.Y - host.Y);
             if (vect.Length() > range)
             {
                 vect.X -= Random.Next(-2, 2) / 2f;
@@ -43,8 +38,6 @@ namespace WorldServer.logic.behaviors
                 var dist = host.GetSpeed(speed) * time.BehaviourTickTime;
                 host.ValidateAndMove(host.X + vect.X * dist, host.Y + vect.Y * dist);
             }
-            else
-                return;
         }
     }
 }

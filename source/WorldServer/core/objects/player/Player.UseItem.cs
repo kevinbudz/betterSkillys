@@ -542,12 +542,15 @@ namespace WorldServer.core.objects
                 Entity entity = Resolve(World.GameServer, objType);
                 if (entity == null)
                     return;
+
                 if (entity is Enemy en)
                 {
+                    en.AllyOwnerId = Id;
                     en.ApplyConditionEffect(ConditionEffectIndex.Invincible, -1);
                     en.Move(target.X, target.Y);
                     World.EnterWorld(en);
-                } else
+                }
+                else
                 {
                     entity.Move(target.X, target.Y);
                     World.EnterWorld(entity);
@@ -581,7 +584,6 @@ namespace WorldServer.core.objects
                 var nextBulletId = GetNextBulletId(1, true);
 
                 var angle = (float)(i * (Math.PI * 2) / numShots);
-                Console.WriteLine(angle);
 
                 var damage = Random.Shared.Next(projectileDesc.MinDamage, projectileDesc.MaxDamage);
                 shoots.Add(new ServerPlayerShoot(Id, nextBulletId, item.ObjectType, target, angle, damage, projectileDesc));

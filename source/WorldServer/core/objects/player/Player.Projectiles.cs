@@ -12,7 +12,7 @@ namespace WorldServer.core.objects
     public partial class Player
     {
         private readonly Queue<List<ValidatedProjectile>> PendingShootAcknowlegements = new Queue<List<ValidatedProjectile>>();
-        private readonly Dictionary<int, Dictionary<int, ValidatedProjectile>> VisibleProjectiles = new Dictionary<int, Dictionary<int, ValidatedProjectile>>();
+        private readonly Dictionary<int, Dictionary<int, ValidatedProjectile>> ActiveProjectiles = new Dictionary<int, Dictionary<int, ValidatedProjectile>>();
 
         public void ProcessEnemyShoot(EnemyShootMessage enemyShoot)
         {
@@ -21,7 +21,16 @@ namespace WorldServer.core.objects
             {
                 var angle = enemyShoot.Angle + enemyShoot.AngleInc * i;
                 var bulletId = enemyShoot.BulletId + i;
-                list.Add(new ValidatedProjectile(enemyShoot.OwnerId, bulletId, enemyShoot.StartingPos, angle, enemyShoot.ObjectType, enemyShoot.Damage, DamageType.Player, enemyShoot.ProjectileDesc));
+                list.Add(new ValidatedProjectile(
+                    enemyShoot.OwnerId, 
+                    bulletId, 
+                    enemyShoot.StartingPos, 
+                    angle, 
+                    enemyShoot.ObjectType, 
+                    enemyShoot.Damage, 
+                    DamageType.Player, 
+                    enemyShoot.ProjectileDesc
+                ));
             }
             PendingShootAcknowlegements.Enqueue(list);
         }
@@ -31,14 +40,6 @@ namespace WorldServer.core.objects
                 return;
 
             var list = new List<ValidatedProjectile>();
-
-            //public int BulletId { get; set; }
-            //public int OwnerId { get; set; }
-            //public int ContainerType { get; set; }
-            //public Position StartingPos { get; set; }
-            //public float Angle { get; set; }
-            //public int Damage { get; set; }
-
             list.Add(new ValidatedProjectile(
                 serverPlayerShoot.ObjectId,
                 serverPlayerShoot.BulletId, 
@@ -47,7 +48,8 @@ namespace WorldServer.core.objects
                 serverPlayerShoot.ContainerType,
                 serverPlayerShoot.Damage, 
                 DamageType.Player,
-                serverPlayerShoot.ProjectileDesc));
+                serverPlayerShoot.ProjectileDesc
+            ));
             PendingShootAcknowlegements.Enqueue(list);
         }
 
@@ -58,12 +60,12 @@ namespace WorldServer.core.objects
 
             var damage = (int)(Client.Random.NextIntRange((uint)projectileDesc.MinDamage, (uint)projectileDesc.MaxDamage) * Stats.GetAttackMult());
 
-            if (!VisibleProjectiles.ContainsKey(Id))
-                VisibleProjectiles[Id] = new Dictionary<int, ValidatedProjectile>();
+            if (!ActiveProjectiles.ContainsKey(Id))
+                ActiveProjectiles[Id] = new Dictionary<int, ValidatedProjectile>();
 
             var proj = new ValidatedProjectile(Id, newBulletId, startingPosition, angle, item.ObjectType, damage, DamageType.Enemy, projectileDesc);
             proj.Time = time;
-            VisibleProjectiles[Id][newBulletId] = proj;
+            ActiveProjectiles[Id][newBulletId] = proj;
 
             var allyShoot = new AllyShootMessage(newBulletId, Id, item.ObjectType, angle);
             World.BroadcastIfVisibleExclude(allyShoot, this, this);
@@ -74,28 +76,30 @@ namespace WorldServer.core.objects
         public void ShootAck(int time)
         {
             var topLevelShootAck = PendingShootAcknowlegements.Dequeue();
+
+            // -1 means that it was dead or null on client so we need to validate if this is the case
             if (time == -1)
             {
-                //var ownerId = topLevelShootAck.EnemyShoot?.OwnerId ?? topLevelShootAck.ServerPlayerShoot.OwnerId;
-                //var owner = World.GetEntity(ownerId);
-                //Console.WriteLine($"[ShootAck] {Name} -> Time: -1 for: {owner?.Name ?? "Unknown"}");
-                // check entity doesnt exist in our visible list
-                // if it doesnt its valid
-                // if it does its not valid
+                // todo validation here
+
+                // theres no need to add the projectile to live list if client doesnt
                 return;
             }
 
             var first = topLevelShootAck[0];
-            if (!VisibleProjectiles.ContainsKey(first.ObjectId))
-                VisibleProjectiles.Add(first.ObjectId, new Dictionary<int, ValidatedProjectile>());
+            if (!ActiveProjectiles.ContainsKey(first.ObjectId))
+                ActiveProjectiles.Add(first.ObjectId, new Dictionary<int, ValidatedProjectile>());
 
             foreach (var proj in topLevelShootAck)
-                VisibleProjectiles[proj.ObjectId][proj.BulletId] = proj;
+            {
+                proj.Time = time;
+                ActiveProjectiles[proj.ObjectId][proj.BulletId] = proj;
+            }
         }
 
         public void PlayerHit(int bulletId, int objectId)
         {
-            if (!VisibleProjectiles.TryGetValue(objectId, out var dict))
+            if (!ActiveProjectiles.TryGetValue(objectId, out var dict))
             {
                 //Console.WriteLine($"[PlayerHit] {Name} -> {Id} not present in VisibleProjectiles List");
                 return;
@@ -148,7 +152,7 @@ namespace WorldServer.core.objects
 
         public void EnemyHit(ref TickTime tickTime, int time, int bulletId, int targetId, bool killed)
         {
-            if (!VisibleProjectiles.TryGetValue(Id, out var dict))
+            if (!ActiveProjectiles.TryGetValue(Id, out var dict))
             {
                 //Console.WriteLine($"[EnemyHit] {Name} -> {Id} not present in VisibleProjectiles List");
                 return;
@@ -245,7 +249,7 @@ namespace WorldServer.core.objects
 
         public void SquareHit(ref TickTime tickTime, int time, int bulletId, int objectId)
         {
-            if (!VisibleProjectiles.TryGetValue(objectId, out var dict))
+            if (!ActiveProjectiles.TryGetValue(objectId, out var dict))
             {
                 //Console.WriteLine($"[SquareHit] {Name} -> {objectId} not present in VisibleProjectiles List");
                 return;
@@ -283,7 +287,7 @@ namespace WorldServer.core.objects
 
         public void OtherHit(ref TickTime tickTime, int time, int bulletId, int objectId, int targetId)
         {
-            if (!VisibleProjectiles.TryGetValue(objectId, out var dict))
+            if (!ActiveProjectiles.TryGetValue(objectId, out var dict))
             {
                 //Console.WriteLine($"[OtherHit] {Name} -> {objectId} not present in VisibleProjectiles List");
                 return;
@@ -339,21 +343,21 @@ namespace WorldServer.core.objects
             // todo more validation on records
 
             var visibleProjectileToRemove = new List<ValueTuple<int, int>>();
-            foreach (var dict in VisibleProjectiles)
+            foreach (var dict in ActiveProjectiles)
                 foreach (var kvp in dict.Value)
                 {
                     var projectileDesc = kvp.Value.ProjectileDesc;
 
                     var elapsed = time - kvp.Value.Time;
-                    if (elapsed > projectileDesc.LifetimeMS)
+                    if (elapsed >= projectileDesc.LifetimeMS)
                         visibleProjectileToRemove.Add(ValueTuple.Create(dict.Key, kvp.Key));
                 }
 
             foreach (var kvp in visibleProjectileToRemove)
             {
-                _ = VisibleProjectiles[kvp.Item1].Remove(kvp.Item2);
-                if (VisibleProjectiles[kvp.Item1].Count == 0)
-                    VisibleProjectiles.Remove(kvp.Item1);
+                _ = ActiveProjectiles[kvp.Item1].Remove(kvp.Item2);
+                if (ActiveProjectiles[kvp.Item1].Count == 0)
+                    ActiveProjectiles.Remove(kvp.Item1);
             }
         }
 

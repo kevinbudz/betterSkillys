@@ -1,5 +1,6 @@
 ﻿using Shared.resources;
 using System;
+using System.Collections.Generic;
 using WorldServer.core.objects;
 using WorldServer.core.worlds;
 using WorldServer.networking.packets.outgoing;
@@ -68,8 +69,7 @@ namespace WorldServer.logic.behaviors
             if (host.HasConditionEffect(ConditionEffectIndex.Dazed))
                 count = (int)Math.Ceiling(_count / 2.0);
 
-            var entity = host.GetNearestEntity(_radius, 1, true);
-
+            var entity = host.GetNearestEntity(_radius, false, e => (e is Enemy en && en.AllyOwnerId == -1 && !en.HasConditionEffect(ConditionEffectIndex.Invincible))); // kihnda hacky to rpevent t argeting other npcs
             if (entity != null || _defaultAngle != null || _fixedAngle != null)
             {
                 var hasProjectileDesc = host.ObjectDesc.Projectiles.TryGetValue(_projectileIndex, out var desc);
@@ -102,7 +102,8 @@ namespace WorldServer.logic.behaviors
                 _rotateCount++;
 
                 //var startAngle = a - _shootAngle * (count - 1) / 2;
-                var player = host.GetNearestEntity(20, null, true) as Player;
+
+                var player = host.World.Players.GetValueOrDefault(host.AllyOwnerId);
                 if (player == null)
                     return;
 

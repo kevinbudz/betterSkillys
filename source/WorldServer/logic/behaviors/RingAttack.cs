@@ -48,7 +48,6 @@ namespace WorldServer.logic.behaviors
                 return;
 
             var dist = (float)_radius;
-            var isQuest = Host.ObjectDesc.Quest;
 
             if (rastate.coolDown.CoolDown <= 0)
             {
@@ -101,21 +100,11 @@ namespace WorldServer.logic.behaviors
                         BulletType = (byte)desc.BulletType,
                         AngleInc = (float)angleInc,
                         NumShots = (byte)count,
-                        ObjectType = Host.ObjectType
+                        ObjectType = Host.ObjectType,
+                        ProjectileDesc = desc,
                     };
 
-                    if (isQuest)
-                        Host.World.ForeachPlayer(_ => _.Client.SendPacket(pkt));
-                    else
-                    {
-                        // replaced to this
-                        Host.World.BroadcastIfVisible(pkt, Host);
-
-                        // from this
-                        //var players = Host.World.Players.Values.Where(_ => _.DistSqr(Host) < PlayerUpdate.VISIBILITY_RADIUS_SQR);
-                        //for (var i = 0; i < players.Length; i++)
-                        //    players[i].Client.SendPacket(pkt);
-                    }
+                    Host.World.BroadcastEnemyShootIfVisible(pkt, Host);
                 }
 
                 rastate.coolDown = _coolDown.Next(Random);

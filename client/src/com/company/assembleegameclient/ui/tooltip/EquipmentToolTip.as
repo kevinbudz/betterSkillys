@@ -216,7 +216,6 @@ public class EquipmentToolTip extends ToolTip
    private function addTierText() : void
    {
       this.tierText_ = TierUtil.getTierTag(props_,16);
-      trace(this.tierText_.width);
       if(this.tierText_)
       {
          switch(Parameters.data_.itemDataOutlines)

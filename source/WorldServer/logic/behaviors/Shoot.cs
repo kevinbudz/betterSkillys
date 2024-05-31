@@ -128,11 +128,11 @@ namespace WorldServer.logic.behaviors
                     BulletType = (byte)desc.BulletType,
                     AngleInc = _shootAngle,
                     NumShots = (byte)count,
-                    ObjectType = host.ObjectType
+                    ObjectType = host.ObjectType,
+                    ProjectileDesc = desc,
                 };
 
-                // changed to this
-                host.World.BroadcastIfVisible(pkt, host);
+                host.World.BroadcastEnemyShootIfVisible(pkt, host);
             }
 
             cool = _coolDown.Next(Random);
