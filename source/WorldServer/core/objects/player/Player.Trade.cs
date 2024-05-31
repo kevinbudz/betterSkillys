@@ -56,9 +56,9 @@ namespace WorldServer.core.objects
         {
             if (World is TestWorld) return;
 
-            if (!IsInMarket && (World is NexusWorld))
+            if (World is MarketplaceWorld)
             {
-                SendError("You cannot trade outside the market.");
+                SendError("You cannot trade while in the Marketplace!");
                 return;
             }
 
@@ -104,9 +104,9 @@ namespace WorldServer.core.objects
                 return;
             }
 
-            if (!target.IsInMarket && (target.World is NexusWorld))
+            if (target.World is MarketplaceWorld)
             {
-                SendError("They are not inside the market.");
+                SendError("The targeted player is in the Marketplace!");
                 return;
             }
 

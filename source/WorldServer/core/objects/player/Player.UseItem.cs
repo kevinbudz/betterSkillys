@@ -69,10 +69,10 @@ namespace WorldServer.core.objects
                 return;
             }
 
-            if (IsInMarket && (World is NexusWorld))
+            if (World is MarketplaceWorld)
             {   
                 entity.ForceUpdate(slot);
-                SendInfo("You cannot use items inside the marketplace");
+                SendInfo("You cannot use items while in the Marketplace!");
                 Client.SendPacket(new InvResult() { Result = 1 });
                 return;
             }

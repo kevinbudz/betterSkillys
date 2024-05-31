@@ -232,6 +232,7 @@
 		<Height>128</Height>
 		<MapJM>daily_quest.jm</MapJM>
 		<Persists/>
+		<ShowDisplays/>
 		<DisableShooting/>
 		<DisableAbilities/>
 		<DisableTeleport/>

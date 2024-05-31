@@ -1420,9 +1420,9 @@ namespace WorldServer.core.commands.player
 
         protected override bool Process(Player player, TickTime time, string args)
         {
-            if (player.IsInMarket)
+            if (player.World is MarketplaceWorld)
             {
-                player.SendInfo("You cannot vault while in the market!");
+                player.SendInfo("You cannot go to your vault while in the Marketplace!");
                 return true;
             }
 
@@ -1430,7 +1430,7 @@ namespace WorldServer.core.commands.player
             (world as VaultWorld).SetOwner(player.AccountId);
             if (world == null)
             {
-                player.SendInfo("Unable to enter vault: BUG");
+                player.SendInfo("Unable to enter vault.");
                 return true;
             }
             player.Reconnect(world);

@@ -55,6 +55,8 @@ namespace WorldServer.core.objects
                     case "hit": effs = item.OnPlayerHitActivateEffects; break;
                     case "shoot": effs = item.OnPlayerShootActivateEffects; break;
                     case "ability": effs = item.OnPlayerAbilityActivateEffects; break;
+                    case "passive": effs = item.OnPlayerPassiveActivateEffects; break;
+                    case "enemyHit": effs = item.OnEnemyHitActivateEffects; break;
                     default: continue;
                 }
 

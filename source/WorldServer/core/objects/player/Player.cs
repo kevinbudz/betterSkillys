@@ -1,4 +1,5 @@
-﻿using Shared;
+﻿using Org.BouncyCastle.Asn1.Mozilla;
+using Shared;
 using Shared.database;
 using Shared.database.party;
 using Shared.resources;
@@ -37,8 +38,8 @@ namespace WorldServer.core.objects
         public bool IsInvulnerable => HasConditionEffect(ConditionEffectIndex.Paused) || HasConditionEffect(ConditionEffectIndex.Stasis) || HasConditionEffect(ConditionEffectIndex.Invincible) || HasConditionEffect(ConditionEffectIndex.Invulnerable);
         public int LDBoostTime { get; set; }
         public int XPBoostTime { get; set; }
-
         public bool IsHidden { get; set; }
+        public int TickTimer { get; set; }
 
         public double Breath
         {
@@ -367,7 +368,7 @@ namespace WorldServer.core.objects
                 var settings = Client.GameServer.Configuration.serverSettings;
                 if (settings.lootEvent > 0)
                     if (settings.expEvent > 0)
-                        SendInfo($"A server wide event is giving you a a {Math.Round(settings.lootEvent * 100, 0)}% loot boost and {Math.Round(settings.expEvent * 100, 0)}% XP boost.");
+                        SendInfo($"A server wide event is giving you a a {Math.Round(settings.lootEvent * 100, 0)}% Loot Boost and {Math.Round(settings.expEvent * 100, 0)}% XP Boost.");
                     else
                         SendInfo($"A server wide event is giving you a {Math.Round(settings.lootEvent * 100, 0)}% loot boost.");
                 if (owner.isWeekend)

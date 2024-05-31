@@ -26,7 +26,7 @@ namespace WorldServer.core.net.handlers.market
             var currency = rdr.ReadInt32();
             var hours = rdr.ReadInt32();
 
-            if (!IsAvailable(client) || !IsEnabledOrIsVipMarket(client))
+            if (!IsAvailable(client) || !IsEnabledOrAdminOnly(client))
                 return;
 
             var player = client.Player;

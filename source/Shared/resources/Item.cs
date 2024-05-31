@@ -22,6 +22,8 @@ namespace Shared.resources
         public ActivateEffect[] OnPlayerHitActivateEffects;
         public ActivateEffect[] OnPlayerShootActivateEffects;
         public ActivateEffect[] OnPlayerAbilityActivateEffects;
+        public ActivateEffect[] OnPlayerPassiveActivateEffects;
+        public ActivateEffect[] OnEnemyHitActivateEffects;
         public float ArcGap;
         public bool Backpack;
         public int BagType;
@@ -99,6 +101,8 @@ namespace Shared.resources
             OnPlayerHitActivateEffects = e.Elements("OnPlayerHitActivate").Select(_ => new ActivateEffect(_)).ToArray();
             OnPlayerAbilityActivateEffects = e.Elements("OnPlayerAbilityActivate").Select(_ => new ActivateEffect(_)).ToArray();
             OnPlayerShootActivateEffects = e.Elements("OnPlayerShootActivate").Select(_ => new ActivateEffect(_)).ToArray();
+            OnPlayerPassiveActivateEffects = e.Elements("OnPlayerPassiveHitActivate").Select(_ => new ActivateEffect(_)).ToArray();
+            OnEnemyHitActivateEffects = e.Elements("OnEnemyHitActivate").Select(_ => new ActivateEffect(_)).ToArray();
             Projectiles = e.Elements("Projectile").Select(_ => new ProjectileDesc(_)).ToArray();
             Quantity = e.GetValue("Quantity", 0);
             QuantityLimit = e.GetValue("QuantityLimit", 0);

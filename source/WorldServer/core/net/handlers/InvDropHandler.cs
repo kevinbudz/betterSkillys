@@ -39,10 +39,10 @@ namespace WorldServer.core.net.handlers
             //    }
             //}
 
-            if (player.IsInMarket && player.World is NexusWorld)
+            if (player.World is MarketplaceWorld)
             {
                 player.ForceUpdate(slot.SlotId);
-                player.SendInfo("You cannot drop items inside the marketplace");
+                player.SendInfo("You cannot drop items while in the Marketplace!");
                 player.Client.SendPacket(new InvResult() { Result = 1 });
                 return;
             }

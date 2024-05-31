@@ -20,7 +20,7 @@ namespace WorldServer.core.net.handlers.market
         {
             var id = rdr.ReadInt32();
 
-            if (!IsAvailable(client) || !IsEnabledOrIsVipMarket(client))
+            if (!IsAvailable(client) || !IsEnabledOrAdminOnly(client))
                 return;
 
             var player = client.Player;

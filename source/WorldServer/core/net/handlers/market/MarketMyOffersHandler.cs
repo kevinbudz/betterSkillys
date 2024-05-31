@@ -13,7 +13,7 @@ namespace WorldServer.core.net.handlers.market
 
         public override void Handle(Client client, NetworkReader rdr, ref TickTime tickTime)
         {
-            if (!IsAvailable(client) || !IsEnabledOrIsVipMarket(client))
+            if (!IsAvailable(client) || !IsEnabledOrAdminOnly(client))
                 return;
 
             client?.Account?.Reload("marketOffers");

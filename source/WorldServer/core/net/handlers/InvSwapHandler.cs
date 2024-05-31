@@ -45,11 +45,11 @@ namespace WorldServer.core.net.handlers
             if (player == null || player.Client == null || player.World == null)
                 return;
 
-            if (player.IsInMarket && player.World is NexusWorld)
+            if (player.World is MarketplaceWorld)
             {
                 from.ForceUpdate(slotFrom);
                 to.ForceUpdate(slotTo);
-                player.SendInfo("You cannot swap inventory items inside the marketplace");
+                player.SendInfo("You cannot swap inventory items inside the Marketplace!");
                 player.Client.SendPacket(new InvResult() { Result = 1 });
                 return;
             }

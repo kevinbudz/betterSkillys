@@ -15,7 +15,7 @@ namespace WorldServer.core.net.handlers
 
         public static bool IsAvailable(Client client) => client.GameServer.WorldManager.Nexus.MarketEnabled;
 
-        public static bool IsEnabledOrIsVipMarket(Client client)
+        public static bool IsEnabledOrAdminOnly(Client client)
         {
             var player = client.Player;
             if (player.Client.Account.Admin)
@@ -25,7 +25,7 @@ namespace WorldServer.core.net.handlers
             {
                 if (!player.GameServer.IsWhitelisted(player.AccountId) || !player.Client.Account.Admin)
                 {
-                    player.SendError("Admin Only, you need to be Whitelisted to use this.");
+                    player.SendError("This feature (as of right now) is Admin only!");
                     return false;
                 }
             }
