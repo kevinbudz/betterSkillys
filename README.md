@@ -10,12 +10,14 @@ I made this project in the hopes of it being a better version of *Skilly's 7.0* 
 - [x] Redone Damage Counter from TK-Reborn.
 - [x] Parallax on TitleView.
 - [x] Bugs with hardware acceleration.
-- [ ] Client memory leak.
+- [x] Support for OnPlayerHit/OnPlayerAbility/OnPlayerShoot Activate effects.
+- [ ] Get EVERY equipment item from RotMG ver. 1.0.4.0 working.
 - [x] All screens scale with window.
-- [x] Wis-mod on EquipmentTooltips. *(thanku Zolmex)*
-- [ ] Split up Player.cs into more partial classes. *(Slendergo)*
+- [x] Wis-mod on EquipmentTooltips. *(Zolmex)*
+- [x] Split up Player.cs into more partial classes. *(Slendergo)*
 - [x] Labeling for entities/worlds. *(Slendergo)*
 - [x] Redone how setpieces are called. *(Slendergo)*
+- [ ] Client memory leak. (not that big of a deal)
 - [x] Redone Potion Storage.
 - [x] Redone Marketplace.
 - [x] Seasonal Drop-tables.
@@ -27,6 +29,19 @@ I made this project in the hopes of it being a better version of *Skilly's 7.0* 
 - [x] Toxic Sewers. *(map from: MIKEEEEEE)*
 - [x] Hive. *(map from: MIKEEEEEE)*
 - [ ] Nest. *(map from: MIKEEEEEE)*
+- [ ] Lost Halls (Marble Colossus)
+- [ ] Lair of Draconis.
+- [ ] Ivory Wyvern.
+- [ ] Ice Cave/Inner Sanctum.
+- [ ] Abyss Idol.
+- [ ] Horrific Creation.
+
+## The maybes..
+- [ ] Ice Tomb.
+- [ ] Lost Halls. (Marble Defender, minions)
+- [ ] Cultist Hideout
+- [ ] Void.
+- [ ] Battle of the Nexus.
 
 ## Prerequisites.
 - Visual Studio,
