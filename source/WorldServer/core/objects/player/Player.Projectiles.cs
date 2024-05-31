@@ -22,14 +22,15 @@ namespace WorldServer.core.objects
                 var angle = enemyShoot.Angle + enemyShoot.AngleInc * i;
                 var bulletId = enemyShoot.BulletId + i;
                 list.Add(new ValidatedProjectile(
-                    enemyShoot.OwnerId, 
-                    bulletId, 
-                    enemyShoot.StartingPos, 
-                    angle, 
-                    enemyShoot.ObjectType, 
-                    enemyShoot.Damage, 
-                    DamageType.Player, 
-                    enemyShoot.ProjectileDesc
+                    enemyShoot.OwnerId,
+                    bulletId,
+                    enemyShoot.StartingPos,
+                    angle,
+                    enemyShoot.ObjectType,
+                    enemyShoot.Damage,
+                    DamageType.Player,
+                    enemyShoot.ProjectileDesc,
+                    enemyShoot.Spawned
                 ));
             }
             PendingShootAcknowlegements.Enqueue(list);
@@ -50,7 +51,8 @@ namespace WorldServer.core.objects
                 serverPlayerShoot.ContainerType,
                 serverPlayerShoot.Damage, 
                 DamageType.Player,
-                serverPlayerShoot.ProjectileDesc
+                serverPlayerShoot.ProjectileDesc,
+                false
             ));
             PendingShootAcknowlegements.Enqueue(list);
         }
@@ -65,7 +67,7 @@ namespace WorldServer.core.objects
             if (!ActiveProjectiles.ContainsKey(Id))
                 ActiveProjectiles[Id] = new Dictionary<int, ValidatedProjectile>();
 
-            var proj = new ValidatedProjectile(Id, newBulletId, startingPosition, angle, item.ObjectType, damage, DamageType.Enemy, projectileDesc);
+            var proj = new ValidatedProjectile(Id, newBulletId, startingPosition, angle, item.ObjectType, damage, DamageType.Enemy, projectileDesc, false);
             proj.Time = time;
             ActiveProjectiles[Id][newBulletId] = proj;
 
@@ -119,7 +121,6 @@ namespace WorldServer.core.objects
                 return;
             }
 
-            var objectDesc = GameServer.Resources.GameData.ObjectDescs[(ushort)projectile.ContainerType];
             var projectileDesc = projectile.ProjectileDesc;
 
             var elapsedSinceStart = LastClientTime - projectile.Time;
@@ -147,6 +148,8 @@ namespace WorldServer.core.objects
                 BulletId = bulletId,
                 ObjectId = Id
             }, this, this);
+
+            var objectDesc = GameServer.Resources.GameData.ObjectDescs[(ushort)projectile.ContainerType];
 
             if (Health <= 0)
                 Death(objectDesc.DisplayId ?? objectDesc.IdName, projectile.Spawned);

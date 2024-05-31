@@ -26,8 +26,9 @@ namespace WorldServer.core.objects
             public readonly int Damage;
             public readonly DamageType DamageType;
             public readonly ProjectileDesc ProjectileDesc;
+            public readonly bool Spawned;
 
-            public ValidatedProjectile(int objectId, int bulletId, Position startPos, float angle, int containerType, int damage, DamageType damageType, ProjectileDesc projectileDesc)
+            public ValidatedProjectile(int objectId, int bulletId, Position startPos, float angle, int containerType, int damage, DamageType damageType, ProjectileDesc projectileDesc, bool spawned)
             {
                 ObjectId = objectId;
                 BulletId = bulletId;
@@ -41,9 +42,9 @@ namespace WorldServer.core.objects
                 DamageType = damageType;
 
                 ProjectileDesc = projectileDesc;
+                Spawned = spawned;
             }
 
-            public bool Spawned { get; set; }
             public bool Disabled { get; set; }
             public List<int> HitObjects = new List<int>();
 
