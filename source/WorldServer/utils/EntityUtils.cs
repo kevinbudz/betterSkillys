@@ -255,46 +255,52 @@ namespace WorldServer.utils
         {
             if (entity.World == null)
                 yield break;
+            switch (objType)
+            {
+                case null:
+                    foreach (var i in entity.World.PlayersCollision.HitTest(entity.X, entity.Y, dist).Where(e => e is IPlayer))
+                    {
+                        if (!seeInvis && !(i as IPlayer).IsVisibleToEnemy())
+                            continue;
 
-            if (objType == null)
-                foreach (var i in entity.World.PlayersCollision.HitTest(entity.X, entity.Y, dist).Where(e => e is IPlayer))
-                {
-                    if (!seeInvis && !(i as IPlayer).IsVisibleToEnemy())
-                        continue;
+                        var d = i.DistTo(entity);
 
-                    var d = i.DistTo(entity);
+                        if (d < dist)
+                            yield return i;
+                    }
+                    break;
+                case 0:
+                    foreach (var i in entity.World.EnemiesCollision.HitTest(entity.X, entity.Y, dist))
+                    {
+                        var d = i.DistTo(entity);
 
-                    if (d < dist)
-                        yield return i;
-                }
-            else if (objType == 0)
-                foreach (var i in entity.World.EnemiesCollision.HitTest(entity.X, entity.Y, dist))
-                {
-                    var d = i.DistTo(entity);
+                        if (d < dist)
+                            yield return i;
+                    }
+                    break;
+                case 1:
+                    foreach (var i in entity.World.EnemiesCollision.HitTest(entity.X, entity.Y, dist))
+                    {
+                        if (i.Name == entity.Name)
+                            continue;
+                        var d = i.DistTo(entity);
+                        if (d < dist)
+                            yield return i;
+                    }
+                    break;
+                default:
+                    foreach (var i in entity.World.EnemiesCollision.HitTest(entity.X, entity.Y, dist))
+                    {
+                        if (i.ObjectType != objType.Value)
+                            continue;
 
-                    if (d < dist)
-                        yield return i;
-                }
-            else if (objType == 1)
-                foreach (var i in entity.World.EnemiesCollision.HitTest(entity.X, entity.Y, dist))
-                {
-                    if (i.Name == entity.Name)
-                        continue;
-                    var d = i.DistTo(entity);
-                    if (d < dist)
-                        yield return i;
-                }
-            else
-                foreach (var i in entity.World.EnemiesCollision.HitTest(entity.X, entity.Y, dist))
-                {
-                    if (i.ObjectType != objType.Value)
-                        continue;
+                        var d = i.DistTo(entity);
 
-                    var d = i.DistTo(entity);
-
-                    if (d < dist)
-                        yield return i;
-                }
+                        if (d < dist)
+                            yield return i;
+                    }
+                    break;
+            }
         }
 
         public static IEnumerable<Entity> GetNearestEntitiesByGroup(this Entity entity, double dist, string group)

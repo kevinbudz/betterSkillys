@@ -32,6 +32,11 @@
       </Texture>
       <SlotType>3</SlotType>
       <Description>A bow imbued with energy from faraway galaxies. It's origin is unknown.</Description>
+      <ExtraTooltipData>
+         <EffectInfo name="On Ability use" description=""/>
+         <EffectInfo name="" description="Summons a Pirate that charges enemies for 5 seconds."/>
+         <EffectInfo name="Pirate" description="Fires a shot does 250 damage every 0.5 seconds."/>
+      </ExtraTooltipData>
       <RateOfFire>1.1</RateOfFire>
       <Sound>weapon/golden_bow</Sound>
       <Projectile>
@@ -50,6 +55,7 @@
       <ArcGap>3</ArcGap>
       <OldSound>arrowShoot</OldSound>
       <feedPower>650</feedPower>
+      <OnPlayerAbilityActivate objectId="Pirate Ally" throwTime="0" color="0xff5050">ObjectToss</OnPlayerAbilityActivate>
       <Soulbound/>
    </Object>
    <Object type="0x4974" id="Recurve Shot">
