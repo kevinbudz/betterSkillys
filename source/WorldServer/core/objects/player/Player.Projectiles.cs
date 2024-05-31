@@ -15,7 +15,17 @@ namespace WorldServer.core.objects
         private readonly Queue<List<ValidatedProjectile>> PendingShootAcknowlegements = new Queue<List<ValidatedProjectile>>();
         private readonly Dictionary<int, Dictionary<int, ValidatedProjectile>> VisibleProjectiles = new Dictionary<int, Dictionary<int, ValidatedProjectile>>();
 
-        public void ProcessEnemyShoot(EnemyShootMessage enemyShoot) => PendingShootAcknowlegements.Enqueue(new ShootAcknowledgement(enemyShoot));
+        public void ProcessEnemyShoot(EnemyShootMessage enemyShoot)
+        {
+            var list = new List<ValidatedProjectile>();
+            for (var i = 0; i < enemyShoot.NumShots; i++)
+            {
+                var angle = enemyShoot.Angle + enemyShoot.AngleInc * i;
+                var bulletId = enemyShoot.BulletId + i;
+                list.Add(new ValidatedProjectile(bulletId, enemyShoot.StartingPos.X, enemyShoot.StartingPos.Y, angle, enemyShoot.ObjectType, enemyShoot.Damage, true, false));
+            }
+            PendingShootAcknowlegements.Enqueue(list);
+        }
         public void ServerPlayerShoot(ServerPlayerShoot serverPlayerShoot)
         {
             if(serverPlayerShoot.OwnerId != Id)

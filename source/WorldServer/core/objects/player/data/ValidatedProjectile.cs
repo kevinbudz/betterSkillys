@@ -7,8 +7,33 @@ namespace WorldServer.core.objects
 {
     public partial class Player
     {
+        public enum DamageType
+        {
+            Enemy,
+            Player,
+        }
+
         public sealed class ValidatedProjectile
         {
+            public int Time { get; private set; }
+
+            public readonly int BulletId;
+
+            public readonly DamageType DamageType;
+
+            public ValidatedProjectile(int bulletId, Position startPos, float angle, int objectType, int damage, DamageType damageType)
+            {
+                BulletId = bulletId;
+
+                StartX = startPos.X;
+                StartY = startPos.Y;
+                Angle = angle;
+                ObjectType = objectType;
+                Damage = damage;
+
+                DamageType = damageType;
+            }
+
             public int BulletType;
             public int StartTime;
             public float StartX;
