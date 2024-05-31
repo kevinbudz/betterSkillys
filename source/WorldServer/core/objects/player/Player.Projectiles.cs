@@ -38,7 +38,7 @@ namespace WorldServer.core.objects
         // todo make serverplayer shoot multiple at once per single packet for performance in future?
         public void ServerPlayerShoot(ServerPlayerShoot serverPlayerShoot)
         {
-            if(serverPlayerShoot.ObjectId != Id)
+            if(serverPlayerShoot.ObjectId != Id) // dont remove this this prevents appending the other players serevr shots as your own
                 return;
 
             var list = new List<ValidatedProjectile>();

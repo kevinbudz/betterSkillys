@@ -29,7 +29,6 @@ namespace WorldServer.core.objects
 
             public ValidatedProjectile(int objectId, int bulletId, Position startPos, float angle, int containerType, int damage, DamageType damageType, ProjectileDesc projectileDesc)
             {
-
                 ObjectId = objectId;
                 BulletId = bulletId;
 
@@ -44,8 +43,8 @@ namespace WorldServer.core.objects
                 ProjectileDesc = projectileDesc;
             }
 
-            public bool Spawned;
-            public bool Disabled;
+            public bool Spawned { get; set; }
+            public bool Disabled { get; set; }
             public List<int> HitObjects = new List<int>();
 
             public Position GetPosition(int elapsed, int bulletId, ProjectileDesc desc)
