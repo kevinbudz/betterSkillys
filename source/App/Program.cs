@@ -24,11 +24,8 @@ namespace App
             var core = app.Services.GetService<CoreService>();
 
             app.Urls.Clear();
-#if DEBUG
-            var address = "localhost";
-#else
             var address = core.Config.serverInfo.bindAddress;
-#endif
+
             app.Urls.Add($"http://{address}:{core.Config.serverInfo.port}");
             
             if (!core.IsProduction())

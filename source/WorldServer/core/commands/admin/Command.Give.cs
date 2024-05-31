@@ -13,18 +13,6 @@ namespace WorldServer.core.commands
 
             protected override bool Process(Player player, TickTime time, string args)
             {
-                /*if(player.Rank == 60)
-                {
-                    player.SendError("This feature is disabled!");
-                    return true;
-                }*/
-
-                if(!player.Client.Account.Admin && (args.ToLower() == "Ring of the Talisman's Kingdom".ToLower() || args.ToLower() == "Crown".ToLower() || args.ToLower() == "Excalibur".ToLower()))
-                {
-                    player.SendError($"You are not an admin!");
-                    return false;
-                }
-
                 var gameData = player.GameServer.Resources.GameData;
                 if (!gameData.DisplayIdToObjectType.TryGetValue(args, out ushort objType))
                 {
