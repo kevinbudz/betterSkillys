@@ -1,4 +1,5 @@
 ﻿using NLog.Targets;
+using Org.BouncyCastle.Bcpg;
 using Shared;
 using Shared.resources;
 using StackExchange.Redis;
@@ -13,6 +14,7 @@ using WorldServer.core.objects.inventory;
 using WorldServer.core.structures;
 using WorldServer.core.worlds;
 using WorldServer.core.worlds.impl;
+using WorldServer.logic.behaviors;
 using WorldServer.networking;
 using WorldServer.networking.packets.outgoing;
 using WorldServer.utils;
@@ -574,7 +576,7 @@ namespace WorldServer.core.objects
 
         private void AEBulletNova(Item item, Position target, ActivateEffect eff)
         {
-            var numShots = eff.SpellShots == 0 ? 20 : eff.SpellShots;
+            var numShots = eff.NumShots == 0 ? 20 : eff.NumShots;
             var projectileDesc = item.Projectiles[0];
 
             var shoots = new List<OutgoingMessage>(numShots);
@@ -733,6 +735,33 @@ namespace WorldServer.core.objects
             var decoy = new Decoy(this, eff.DurationMS, facing, false);
             decoy.Move(X, Y);
             World.EnterWorld(decoy);
+
+            var numShots = eff.NumShots;
+            if (eff.NumShots != 0)
+            {
+                World.StartNewTimer(eff.DurationMS - 5, (world, t) =>
+                {
+                    var shots = new List<OutgoingMessage>();
+                    for (var i = 0; i < numShots; i++)
+                    {
+                        var nextBulletId = GetNextBulletId(1, true);
+                        var projectileDesc = item.Projectiles[0];
+                        var angle = (float)(i * (Math.PI * 2) / numShots);
+                        shots.Add(new ServerPlayerShoot()
+                        {
+                            BulletType = projectileDesc.BulletType,
+                            ObjectType = item.ObjectType,
+                            BulletId = nextBulletId,
+                            OwnerId = Id,
+                            ContainerType = item.ObjectType,
+                            StartingPos = decoy.Position,
+                            Angle = angle,
+                            Damage = Random.Shared.Next(projectileDesc.MinDamage, projectileDesc.MaxDamage)
+                        });
+                    }
+                    World.BroadcastIfVisible(shots, ref target);
+                });
+            }
         }
 
         private void AEDye(TickTime time, Item item, Position target, ActivateEffect eff)
