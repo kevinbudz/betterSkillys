@@ -160,6 +160,16 @@ namespace WorldServer.core.worlds
                 }
         }
 
+        public void BroadcastServerPlayerShoot(ServerPlayerShoot serverPlayerShoot, Entity host)
+        {
+            foreach (var player in Players.Values)
+                if (player.SqDistTo(host) < CULL_RANGE * CULL_RANGE)
+                {
+                    player.ServerPlayerShoot(serverPlayerShoot);
+                    player.Client.SendPacket(serverPlayerShoot);
+                }
+        }
+
         public void BroadcastIfVisibleExclude(List<OutgoingMessage> outgoingMessage, Entity broadcaster, Entity exclude)
         {
             foreach (var player in Players.Values)
