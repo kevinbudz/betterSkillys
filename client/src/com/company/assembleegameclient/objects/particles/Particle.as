@@ -70,7 +70,7 @@ public class Particle extends BasicObject
 
       private function updateTexture() : void
       {
-         this.texture_ = TextureRedrawer.redrawSolidSquare(this.color_,this.size_, this.size_);
+         this.texture_ = TextureRedrawer.redrawSolidSquare(this.color_,this.size_);
          this.tW_ = this.texture_.width / 2;
          this.tH_ = this.texture_.height / 2;
       }

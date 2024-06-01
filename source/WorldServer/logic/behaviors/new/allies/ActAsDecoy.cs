@@ -24,7 +24,8 @@ namespace WorldServer.logic.behaviors
             var player = host.World.Players.GetValueOrDefault(host.AllyOwnerId);
             if (player == null)
                 return;
-            decoy = new Decoy(player, 999999, 0, true, 0x4972);
+            decoy = new Decoy(player, 999999, 0, host.Position,
+                0, null, 0x4972);
             decoy.Move(host.X, host.Y);
             host.World.EnterWorld(decoy);
         }

@@ -426,9 +426,11 @@ public class EquipmentToolTip extends ToolTip
    private function makeProjArcGap(proj:ProjectileDesc, proj2:ProjectileDesc):void {
       if (this.itemAtr.ArcGap <= 0)
          return;
+      if (this.itemAtr.NumProjectiles == 1)
+          return;
       var arc:Number = this.itemAtr.ArcGap;
       var color:String = TooltipHelper.NO_DIFF_COLOR;
-      if (this.equipData && this.equipData.ArcGap > 0) {
+      if (this.itemAtr && this.equipData.ArcGap > 0) {
          var arc2:Number = this.equipData.ArcGap;
          color = TooltipHelper.getTextColor(arc2 - arc);
       }

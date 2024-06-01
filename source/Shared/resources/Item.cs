@@ -60,6 +60,7 @@ namespace Shared.resources
         public bool TypeOfConsumable;
         public bool Usable;
         public bool XpBoost;
+        public int ManaCostPerSecond;
         public BreakDownData BreakDownData;
 
         public Item(ushort type, XElement e)
@@ -93,6 +94,7 @@ namespace Shared.resources
             LTBoosted = e.HasElement("LTBoosted");
             XpBoost = e.HasElement("XpBoost");
             Timer = e.GetValue<float>("Timer");
+            ManaCostPerSecond = e.GetValue("MpCostPerSecond", 0);
             MpEndCost = e.GetValue("MpEndCost", 0);
             InvUse = e.HasElement("InvUse");
             TypeOfConsumable = InvUse || Consumable;

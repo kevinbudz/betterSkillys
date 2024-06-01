@@ -39,7 +39,7 @@ namespace WorldServer.core.objects
         public int LDBoostTime { get; set; }
         public int XPBoostTime { get; set; }
         public bool IsHidden { get; set; }
-        public int TickTimer { get; set; }
+        public int TickCount { get; set; }
 
         public double Breath
         {
@@ -348,18 +348,16 @@ namespace WorldServer.core.objects
             var playerDesc = GameServer.Resources.GameData.Classes[ObjectType];
             return playerDesc.Stats.Where((t, i) => Stats.Base[i] >= t.MaxValue).Count();
         }
-
         public override void Init(World owner)
         {
             base.Init(owner);
-
-            // spawn pet if player has one attached
             SpawnPetIfAttached(owner);
 
             FameCounter = new FameCounter(this);
             FameGoal = GetFameGoal(FameCounter.ClassStats[ObjectType].BestFame);
             ExperienceGoal = GetExpGoal(Client.Character.Level);
             Stars = GetStars();
+            TickCount = 0;
 
             if (owner.IdName.Equals("Ocean Trench"))
                 Breath = 100;
@@ -374,6 +372,7 @@ namespace WorldServer.core.objects
                 if (owner.isWeekend)
                     SendInfo($"It's the weekend! You've been given an additional {Math.Round(settings.wkndBoost * 100, 0)}% loot boost.");
             }
+
             ResetNewbiePeriod();
             InitializeUpdate();
         }
@@ -428,29 +427,24 @@ namespace WorldServer.core.objects
             Client.Account.TotalFame = Client.Account.Fame;
             Stats.ReCalculateValues();
         }
-
         public override void Tick(ref TickTime time)
         {
             if (KeepAlive(time))
             {
                 if (ShowDeltaTimeLog)
                     SendInfo($"[DeltaTime]: {World.DisplayName} -> {time.ElapsedMsDelta}");
-
                 HandleOxygen(time);
-
                 CheckTradeTimeout(time);
                 HandleQuest(time);
-
                 HandleEffects(ref time);
                 HandleRegen(ref time);
-
                 GroundEffect(time);
                 TickCooldownTimers(time);
-
                 TickSlotCooldowns(time);
-                TryApplySpecialEffects(ref time);
-
                 FameCounter.Tick(time);
+                if (TickCount % 5 == 0)
+                    TryAddOnPlayerEffects("passive");
+                TickCount++;
             }
             base.Tick(ref time);
         }

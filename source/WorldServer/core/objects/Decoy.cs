@@ -13,17 +13,22 @@ namespace WorldServer.core.objects
     {
         private readonly Player _player;
         private readonly int _duration;
+        private readonly float _speed;
+        private readonly float? _distance;
         private readonly bool _isStatic;
+        private readonly Position _pos;
 
         private Vector2 _direction;
         private bool _exploded = false;
 
-        public Decoy(Player player, int duration, float angle, bool isStatic, ushort objType = 0x0715) 
+        public Decoy(Player player, int duration, float angle, Position pos, float speed, float? distance = null, ushort objType = 0x0715) 
             : base(player.GameServer, objType, duration, true, true, true)
         {
             _player = player;
             _duration = duration;
-            _isStatic = isStatic;
+            _speed = speed;
+            _distance = distance;
+            _pos = pos;
 
             _direction = new Vector2(MathF.Cos(angle), MathF.Sin(angle));
         }
@@ -31,10 +36,17 @@ namespace WorldServer.core.objects
         public bool IsVisibleToEnemy() => true;
         public void Damage(int dmg, Entity src) { }
 
+        public bool CheckDistance(Position pos)
+        {
+            if (_distance != null || _distance != 0)
+                return DistTo(pos.X, pos.Y) < _distance;
+            return true;
+        }
+
         public override void Tick(ref TickTime time)
         {
-            if (Health > _duration - 2000 && !_isStatic)
-                ValidateAndMove(X + _direction.X * time.BehaviourTickTime, Y + _direction.Y * time.BehaviourTickTime);
+            if (Health > _duration - 2000 && CheckDistance(_pos))
+                ValidateAndMove(X + (_direction.X * _speed) * time.BehaviourTickTime, Y + (_direction.Y * _speed) * time.BehaviourTickTime);
 
             if (Health < 250 && !_exploded)
             {

@@ -11307,7 +11307,6 @@
 		<Sound>use_potion</Sound>
 		<Activate slot="char">Unlock</Activate>
 		<Consumable/>
-		
 		<BagType>3</BagType>
 	</Object>
 	<Object type="0x32b" id="Vault Chest Unlocker">
@@ -11322,7 +11321,6 @@
 		<Sound>use_potion</Sound>
 		<Activate slot="vault">Unlock</Activate>
 		<Consumable/>
-		
 		<BagType>3</BagType>
 	</Object>
 	<Object type="0x7f9a" id="Christmas Tree Pet Stone">

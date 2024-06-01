@@ -39,7 +39,7 @@ package com.company.assembleegameclient.objects.particles
          }
          else
          {
-            this.bitmapData = TextureRedrawer.redrawSolidSquare(this.effectProps.color,this.effectProps.size,this.effectProps.size);
+            this.bitmapData = TextureRedrawer.redrawSolidSquare(this.effectProps.color,this.effectProps.size);
          }
       }
       

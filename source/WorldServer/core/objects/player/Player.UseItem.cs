@@ -721,15 +721,21 @@ namespace WorldServer.core.objects
         private void AEDecoy(Item item, Position target, ActivateEffect eff)
         {
             var facing = MathF.Atan2(Y - PrevY, X - PrevX);
+            float speed = eff.Speed;
+            float angleOffset = eff.AngleOffset * (MathF.PI / 180);
+            float? distance = eff.Distance != 0 ? eff.Distance : null;
+            ushort objType = eff.ObjectId != null ? Resolve(GameServer, eff.ObjectId).ObjectType : (ushort)1813;
 
-            var decoy = new Decoy(this, eff.DurationMS, facing, false);
+            var decoy = new Decoy(this, eff.DurationMS, facing + angleOffset, 
+                speed == 0 ? target : Position, 
+                speed, distance, objType);
             decoy.Move(X, Y);
             World.EnterWorld(decoy);
 
             var numShots = eff.NumShots;
             if (eff.NumShots != 0)
             {
-                World.StartNewTimer(eff.DurationMS - 5, (world, t) =>
+                World.StartNewTimer(eff.DurationMS, (world, t) =>
                 {
                     var shots = new List<OutgoingMessage>();
                     for (var i = 0; i < numShots; i++)
@@ -1086,15 +1092,20 @@ namespace WorldServer.core.objects
 
         private void AEShurikenAbility(int time, TickTime tickTime, Item item, Position target, ActivateEffect eff, int useType)
         {
+            ConditionEffectIndex effect = ConditionEffectIndex.NinjaSpeedy;
+            if (eff.ConditionEffect != null)
+                effect = (ConditionEffectIndex)eff.ConditionEffect;
             switch (useType)
             {
                 case START_USE:
-                    ApplyPermanentConditionEffect(ConditionEffectIndex.NinjaSpeedy);
+                    if (effect != ConditionEffectIndex.NinjaSpeedy)
+                        ApplyPermanentConditionEffect(ConditionEffectIndex.ManaDeplete);
+                    ApplyPermanentConditionEffect(effect);
                     break;
                 case END_USE:
                     if (Mana >= item.MpEndCost)
                         Mana -= item.MpEndCost;
-                    RemoveCondition(ConditionEffectIndex.NinjaSpeedy);
+                    RemoveCondition(effect);
                     break;
             }
         }

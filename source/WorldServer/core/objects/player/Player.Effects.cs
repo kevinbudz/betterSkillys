@@ -51,6 +51,15 @@ namespace WorldServer.core.objects
                     RemoveCondition(ConditionEffectIndex.NinjaSpeedy);
             }
 
+            if (HasConditionEffect(ConditionEffectIndex.ManaDeplete))
+            {
+                var abil = Inventory[1];
+                if (abil != null)
+                    Mana -= (int)(abil.ManaCostPerSecond * time.DeltaTime);
+                if (Mana < abil.ManaCostPerSecond)
+                    RemoveCondition(ConditionEffectIndex.ManaDeplete);
+            }
+
             if (_newbiePeriod > 0)
             {
                 _newbiePeriod -= time.ElapsedMsDelta;

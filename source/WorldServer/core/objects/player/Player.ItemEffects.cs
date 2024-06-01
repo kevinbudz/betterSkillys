@@ -13,33 +13,6 @@ namespace WorldServer.core.objects
     public partial class Player
     {
         private readonly int[] _slotEffectCooldowns = new int[4];
-
-        private void TryApplySpecialEffects(ref TickTime time)
-        {
-            /*(for (var slot = 0; slot < 4; slot++)
-            {
-                if (CantApplySlotEffect(slot))
-                    continue;
-
-                var item = Inventory[slot];
-                if (item == null)
-                    continue;
-            }*/
-        }
-
-        private void TryAddOnEnemyHitEffect(ref TickTime tickTime, Enemy entity, ProjectileDesc projectileDesc)
-        {
-            /*for (var slot = 0; slot < 4; slot++)
-            {
-                if (CantApplySlotEffect(slot))
-                    continue;
-
-                var item = Inventory[slot];
-                if (item == null)
-                    continue;
-            }*/
-        }
-
         private void TryAddOnPlayerEffects(string type, int dmg = 0)
         {
             for (var slot = 0; slot < 4; slot++) {
@@ -68,7 +41,7 @@ namespace WorldServer.core.objects
                             continue;
                     }
                     if (eff.RequiredConditions != null)
-                        if (!HasConditionEffect(StringToConditionEffect(eff.RequiredConditions)))
+                        if (!HasConditionEffect(Utils.GetEffect(eff.RequiredConditions)))
                             continue;
                     if (eff.DamageThreshold != 0)
                         if (dmg < eff.DamageThreshold)
