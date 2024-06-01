@@ -18502,7 +18502,7 @@
 		<FameBonus>4</FameBonus>
 		<MpCost>90</MpCost>
 		<Cooldown>5</Cooldown>
-		<Activate objectId="Aether Trap" throwTime="0" color="0xff1919">ObjectToss</Activate>
+		<Activate objectId="Aether Trap" throwTime="-1" color="0xff1919">ObjectToss</Activate>
 		<feedPower>800</feedPower>
 		<Soulbound/>
 	</Object>

@@ -566,7 +566,7 @@ public class GameObject extends BasicObject {
     }
 
     public function setGlow(glow:int):void {
-        if (this.glowColor_ == glow) {
+        if (this.glowColor_ == glow && !this is Portal) {
             return;
         }
         this.glowColor_ = glow;

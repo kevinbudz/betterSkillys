@@ -10,19 +10,22 @@ using WorldServer.core.structures;
 using WorldServer.core.worlds;
 using WorldServer.networking.packets.outgoing;
 using WorldServer.utils;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace WorldServer.logic.behaviors
 {
     internal class AllyAOE : Behavior
     {
         private readonly uint _color;
-        private readonly int _damage;
+        private readonly int _minDamage;
+        private readonly int _maxDamage;
         private readonly float _radius;
         private readonly int _coolDown;
 
-        public AllyAOE(int damage, float radius, uint color = 0, int cooldown = 0) 
+        public AllyAOE(int minDamage, int maxDamage, float radius, uint color = 0, int cooldown = 0) 
         {
-            _damage = damage;
+            _minDamage = minDamage;
+            _maxDamage = maxDamage;
             _radius = radius;
             _color = color;
             _coolDown = cooldown;
@@ -54,7 +57,7 @@ namespace WorldServer.logic.behaviors
                 world.AOE(host.Position, _radius, false, entity =>
                 {
                     if (entity is Enemy en)
-                        en.Damage(player, ref time, _damage, true);
+                        en.Damage(player, ref time, Random.Next(_minDamage, _maxDamage), true);
                 });
                 cool = _coolDown;
             }

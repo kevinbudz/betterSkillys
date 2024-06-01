@@ -1005,10 +1005,9 @@ namespace WorldServer.core.objects
         }
 
         private void AEPet(Item item, Position target, ActivateEffect eff)
-        {
-            var type = GameServer.Resources.GameData.IdToObjectType[eff.ObjectId];
-
-            var pet = new Pet(GameServer, this, type);
+        { 
+            var pet = Resolve(GameServer, eff.ObjectId);
+            pet.AllyOwnerId = Id;
             pet.Move(X, Y);
             World.EnterWorld(pet);
         }

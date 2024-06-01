@@ -1,6 +1,7 @@
 ﻿using Shared.resources;
 using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata;
 using WorldServer.core.objects;
 using WorldServer.core.worlds;
 using WorldServer.networking.packets.outgoing;
@@ -82,7 +83,6 @@ namespace WorldServer.logic.behaviors
                 }
 
                 float angle;
-
                 if (_fixedAngle != null)
                     angle = (float)_fixedAngle;
                 else if (entity != null)
@@ -101,17 +101,19 @@ namespace WorldServer.logic.behaviors
 
                 _rotateCount++;
 
-                //var startAngle = a - _shootAngle * (count - 1) / 2;
-
                 var player = host.World.Players.GetValueOrDefault(host.AllyOwnerId);
                 if (player == null)
                     return;
 
                 var bulletId = host.GetNextBulletId(count);
-
                 var damage = Random.Shared.Next(desc.MinDamage, desc.MaxDamage);
-                var serverPlayerShoot = new ServerPlayerShoot(player.Id, bulletId, host.ObjectType, host.Position, angle, damage, desc);
-                host.World.BroadcastServerPlayerShoot(serverPlayerShoot, host);
+                float startAngle = angle - _shootAngle * (count - 1) / 2;
+                for (int i = 0; i < count; i++)
+                {
+                    var shotAngle = startAngle + (i * _shootAngle);
+                    var serverPlayerShoot = new ServerPlayerShoot(player.Id, bulletId, host.ObjectType, host.Position, shotAngle, damage, desc);
+                    host.World.BroadcastServerPlayerShoot(serverPlayerShoot, host);
+                }
             }
 
             cool = _coolDown.Next(Random);

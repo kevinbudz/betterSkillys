@@ -15,6 +15,8 @@ package com.company.assembleegameclient.objects
       public var lockedPortal_:Boolean;
       
       public var active_:Boolean = true;
+
+      public static const rarities:Array = ["Rare", "Epic", "Legendary"];
       
       public function Portal(objectXML:XML)
       {
@@ -22,6 +24,12 @@ package com.company.assembleegameclient.objects
          isInteractive_ = true;
          this.nexusPortal_ = objectXML.hasOwnProperty("NexusPortal");
          this.lockedPortal_ = objectXML.hasOwnProperty("LockedPortal");
+         var portalName:String = objectXML.DisplayId;
+         var portalRarity:Array = portalName.split(" ");
+         if (rarities.indexOf(portalRarity) >= 0)
+         {
+            this.setGlow(0xffaa00);
+         }
       }
       
       override public function draw(graphicsData:Vector.<IGraphicsData>, camera:Camera, time:int) : void

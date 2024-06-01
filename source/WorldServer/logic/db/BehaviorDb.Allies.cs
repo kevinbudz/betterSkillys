@@ -9,12 +9,33 @@ namespace WorldServer.logic
     partial class BehaviorDb
     {
         private _ Allies = () => Behav()
+        .Init("Spirit Prism Bomb",
+            new State(
+                new State("0",
+                    new AllyShoot(10, 6, 60, 0, 0, coolDown: 200)
+                    )
+                )
+            )
+        .Init("Killer Shroom",
+            new State(
+                new Decay(4800),
+                new AllyAOE(1000, 3, 0xff1919, 1200),
+                new State("0",
+                    new SetAltTexture(0),
+                    new TimedTransition(500, "1")
+                    ),
+                new State("1",
+                    new SetAltTexture(1),
+                    new TimedTransition(500, "0")
+                    )
+                )
+            )
         .Init("Pirate Ally",
             new State(
                 new Decay(5000),
                 new State("attack",
                     new AllyCharge(1, 10, 1),
-                    new AllyShoot(10, 1, projectileIndex: 0, coolDown: 500),
+                    new AllyShoot(10, 3, 30, projectileIndex: 0, coolDown: 500),
                     new NoEntityWithinAllyTransition(10, false, "follow")
                     ),
                 new State("follow",

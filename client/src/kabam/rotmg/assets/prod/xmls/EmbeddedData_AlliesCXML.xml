@@ -160,22 +160,16 @@
          <File>lofiObj3</File>
          <Index>0xce</Index>
       </Texture>
-      <Animation prob="1" period="0.4">
-         <Frame time="0.2">
-            <Texture>
-               <File>lofiObj3</File>
-               <Index>0xcf</Index>
-            </Texture>
-         </Frame>
-         <Frame time="0.2">
-            <Texture>
-               <File>lofiObj3</File>
-               <Index>0xd6</Index>
-            </Texture>
-         </Frame>
-      </Animation>
+      <Size>100</Size>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Defense>0</Defense>
+      <Projectile id="0">
+         <ObjectId>Spirit Dagger Slash</ObjectId>
+         <Damage>420</Damage>
+         <Speed>60</Speed>
+         <LifetimeMS>300</LifetimeMS>
+      </Projectile>
       <NoMiniMap/>
-      <Sound id="0">weapon/fire_wand</Sound>
       <ShadowSize>70</ShadowSize>
       <Size>100</Size>
    </Object>
@@ -541,6 +535,8 @@
       <Class>Character</Class>
       <Size>-1</Size>
       <ShadowSize>100</ShadowSize>
+      <Enemy/>
+      <MaxHitPoints>1000</MaxHitPoints>
       <Texture>
          <File>mountainTempleObjects16x16</File>
          <Index>0x60</Index>
@@ -622,6 +618,8 @@
             <Index>0x145</Index>
          </Texture>
       </AltTexture>
+      <Enemy/>
+      <MaxHitPoints>1000</MaxHitPoints>
       <Size>100</Size>
    </Object>
    <Object type="0x04b7" id="Crystal Sentry">
