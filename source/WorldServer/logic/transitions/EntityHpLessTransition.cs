@@ -25,11 +25,13 @@ namespace WorldServer.logic.transitions
         protected override bool TickCore(Entity host, TickTime time, ref object state)
         {
             var entity = host.GetNearestEntityByName(_dist, _entity);
-
             if (entity == null)
                 return false;
             if (entity is Enemy en)
+            {
+                Console.WriteLine(en.Health / en.MaxHealth);
                 return en.Health / en.MaxHealth < _threshold;
+            }    
             else
                 return false;
         }

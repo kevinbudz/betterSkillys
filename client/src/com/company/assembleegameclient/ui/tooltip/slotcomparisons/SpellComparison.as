@@ -30,6 +30,8 @@ package com.company.assembleegameclient.ui.tooltip.slotcomparisons
       
       private function getDamageText() : String
       {
+         if (this.projXML == null)
+             return "";
          var minDamage:int = int(this.projXML.MinDamage);
          var maxDamage:int = int(this.projXML.MaxDamage);
          var otherMinDamage:int = int(this.otherProjXML.MinDamage);
@@ -43,6 +45,8 @@ package com.company.assembleegameclient.ui.tooltip.slotcomparisons
       
       private function getRangeText() : String
       {
+         if (this.projXML == null)
+            return "";
          var range:Number = Number(this.projXML.Speed) * Number(this.projXML.LifetimeMS) / 10000;
          var otherRange:Number = Number(this.otherProjXML.Speed) * Number(this.otherProjXML.LifetimeMS) / 10000;
          var textColor:String = getTextColor(range - otherRange);

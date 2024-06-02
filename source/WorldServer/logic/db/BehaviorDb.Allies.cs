@@ -11,15 +11,19 @@ namespace WorldServer.logic
         private _ Allies = () => Behav()
         .Init("Spirit Prism Bomb",
             new State(
+                new TimedTransition(2400, "suicide"),
                 new State("0",
                     new AllyShoot(10, 6, 60, 0, 0, coolDown: 200)
+                    ),
+                new State("suicide",
+                    new Suicide()
                     )
                 )
             )
         .Init("Killer Shroom",
             new State(
                 new Decay(4800),
-                new AllyAOE(1000, 3, 0xff1919, 1200),
+                new AllyAOE(1000, 1000, 3, 0xff1919, 1200),
                 new State("0",
                     new SetAltTexture(0),
                     new TimedTransition(500, "1")
@@ -27,12 +31,15 @@ namespace WorldServer.logic
                 new State("1",
                     new SetAltTexture(1),
                     new TimedTransition(500, "0")
+                    ),
+                new State("suicide",
+                    new Suicide()
                     )
                 )
             )
         .Init("Pirate Ally",
             new State(
-                new Decay(5000),
+                new TimedTransition(5000, "suicide"),
                 new State("attack",
                     new AllyCharge(1, 10, 1),
                     new AllyShoot(10, 3, 30, projectileIndex: 0, coolDown: 500),
@@ -41,12 +48,15 @@ namespace WorldServer.logic
                 new State("follow",
                     new AllyFollow(1, 10, 1.5),
                     new EntityWithinAllyTransition(10, "attack")
+                    ),
+                new State("suicide",
+                    new Suicide()
                     )
                 )
             )
         .Init("CR Friendly Cnidarian",
             new State(
-                new Decay(5000),
+                new TimedTransition(5000, "suicide"),
                 new AllyAOE(600, 2, 0xffa447, 1000),
                 new State("0",
                     new SetAltTexture(0),
@@ -55,16 +65,22 @@ namespace WorldServer.logic
                 new State("1",
                     new SetAltTexture(1),
                     new TimedTransition(1000, "0")
+                    ),
+                new State("suicide",
+                    new Suicide()
                     )
                 )
             )
         .Init("Cranium Effect",
             new State(
                 new State("0",
-                    new Decay(5000),
                     new AllyDamage(150, 5, 200),
                     new AllyFollow(1, 10, 1),
-                    new AllyLightning(250, 0x9F2B68, 1000)
+                    new AllyLightning(250, 0x9F2B68, 1000),
+                    new TimedTransition(5000, "suicide")
+                    ),
+                new State("suicide",
+                    new Suicide()
                     )
                 )
             )
@@ -105,7 +121,7 @@ namespace WorldServer.logic
                     ),
                 new State("decay",
                     new SetAltTexture(4),
-                    new Decay(250)
+                    new Suicide()
                     )
                 )
             );

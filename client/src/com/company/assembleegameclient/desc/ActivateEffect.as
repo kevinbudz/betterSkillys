@@ -36,6 +36,7 @@ public class ActivateEffect {
     public var CurrencyName:String;
     public var Currency:int;
     public var HealAmount:int;
+    public var NumShots:int;
 
     public function ActivateEffect(obj:*) {
         //trace(XML(obj).toXMLString());
@@ -55,6 +56,7 @@ public class ActivateEffect {
         this.MaximumDistance = ItemAttributes.GetValue(obj, null, "MaximumDistance/@maxDistance", 0);
         this.ObjectId = ItemAttributes.GetValue(obj, null, "ObjectId/@objectId", null);
         this.Id = ItemAttributes.GetValue(obj, null, "Id/@id", null);
+        this.NumShots = ItemAttributes.GetValue(obj, null, "NumShots/@numShots", 20);
         this.MaxTargets = ItemAttributes.GetValue(obj, null, "MaxTargets/@maxTargets", 0);
         this.Color = ItemAttributes.GetValue(obj, null, "Color/@color", 0);
         this.Stats = ItemAttributes.GetValue(obj, null, "Stats/@stat", -1);

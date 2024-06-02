@@ -33,7 +33,7 @@
       <SlotType>3</SlotType>
       <Description>A bow imbued with energy from faraway galaxies. It's origin is unknown.</Description>
       <ExtraTooltipData>
-         <EffectInfo name="On Ability use" description=""/>
+         <EffectInfo name="On Ability use:" description=""/>
          <EffectInfo name="" description="Summons a Pirate that charges enemies for 5 seconds."/>
          <EffectInfo name="Pirate" description="Fires a shot does 250 damage every 0.5 seconds."/>
       </ExtraTooltipData>

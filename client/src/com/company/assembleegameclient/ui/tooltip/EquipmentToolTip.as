@@ -461,16 +461,17 @@ public class EquipmentToolTip extends ToolTip
       }
       if (effs.length < 1)
          return;
-      this.attributes += "On Use:\n";
-      this.attributes += "<span class=\'aeIn\'>";
+      var atrText:String = "";
+      atrText += "On Use:\n";
+      atrText += "<span class=\'aeIn\'>";
       for each (ae in effs) {
          if (ae.DosesReq > 0)
-            this.attributes += TooltipHelper.wrapInFontTag("(Requires at least " + ae.DosesReq + " doses)", "#E0761E");
+            atrText += TooltipHelper.wrapInFontTag("(Requires at least " + ae.DosesReq + " doses)", "#E0761E");
          if (ae.NodeReq != -1)
-            this.attributes += TooltipHelper.wrapInFontTag("(Requires blessing)", "#E0761E");
+            atrText += TooltipHelper.wrapInFontTag("(Requires blessing)", "#E0761E");
          if (ae.DosesReq > 0 || ae.NodeReq != -1)
-            this.attributes += "\n";
-         this.attributes += "-";
+            atrText += "\n";
+         atrText += "-";
          var statColor:String = TooltipHelper.NO_DIFF_COLOR;
          var amountColor:String = TooltipHelper.NO_DIFF_COLOR;
          var rangeColor:String = TooltipHelper.NO_DIFF_COLOR;
@@ -626,7 +627,7 @@ public class EquipmentToolTip extends ToolTip
          }
          switch (ae.EffectName) {
             case ActivationType.GENERIC_ACTIVATE:
-               this.attributes += BuildGenericAE(
+               atrText += BuildGenericAE(
                        ae, ae.UseWisMod,
                        duration, wisModDuration, durationColor,
                        range, wisModRange, rangeColor,
@@ -634,122 +635,124 @@ public class EquipmentToolTip extends ToolTip
                );
                break;
             case ActivationType.INCREMENT_STAT:
-               this.attributes += "Increases " + TooltipHelper.wrapInFontTag(stat, TooltipHelper.NO_DIFF_COLOR) + " by " + TooltipHelper.wrapInFontTag(String(amount), TooltipHelper.NO_DIFF_COLOR);
+               atrText += "Increases " + TooltipHelper.wrapInFontTag(stat, TooltipHelper.NO_DIFF_COLOR) + " by " + TooltipHelper.wrapInFontTag(String(amount), TooltipHelper.NO_DIFF_COLOR);
                break;
             case ActivationType.HEAL:
                if (ae.UseWisMod && wisModAmount != amount)
-                  this.attributes += "Heals " + GetWisModText(amount, wisModAmount, amountColor) + " HP";
+                  atrText += "Heals " + GetWisModText(amount, wisModAmount, amountColor) + " HP";
                else
-                  this.attributes += "Heals " + TooltipHelper.wrapInFontTag(String(amount), amountColor) + " HP";
+                  atrText += "Heals " + TooltipHelper.wrapInFontTag(String(amount), amountColor) + " HP";
                break;
             case ActivationType.MAGIC:
                if (ae.UseWisMod && wisModAmount != amount)
-                  this.attributes += "Heals " + GetWisModText(amount, wisModAmount, amountColor) + " MP";
+                  atrText += "Heals " + GetWisModText(amount, wisModAmount, amountColor) + " MP";
                else
-                  this.attributes += "Heals " + TooltipHelper.wrapInFontTag(String(amount), amountColor) + " MP";
+                  atrText += "Heals " + TooltipHelper.wrapInFontTag(String(amount), amountColor) + " MP";
                break;
             case ActivationType.HEAL_NOVA:
                if (ae.UseWisMod && (wisModAmount != amount || wisModRange != range))
-                  this.attributes += "Heals " + GetWisModText(amount, wisModAmount, amountColor) + " in " + GetWisModText(range, wisModRange, rangeColor) + " sqrs";
+                  atrText += "Heals " + GetWisModText(amount, wisModAmount, amountColor) + " in " + GetWisModText(range, wisModRange, rangeColor) + " sqrs";
                else
-                  this.attributes += "Heals " + TooltipHelper.wrapInFontTag(String(amount), amountColor) + " HP in " + TooltipHelper.wrapInFontTag(String(range), rangeColor) + " sqrs";
+                  atrText += "Heals " + TooltipHelper.wrapInFontTag(String(amount), amountColor) + " HP in " + TooltipHelper.wrapInFontTag(String(range), rangeColor) + " sqrs";
                break;
             case ActivationType.STAT_BOOST_SELF:
                if (ae.UseWisMod && (wisModAmount != amount || wisModDuration != duration))
-                  this.attributes += "On Self: " + GetSign(amount) + GetWisModText(amount, wisModAmount, amountColor) + " " + TooltipHelper.wrapInFontTag(stat, statColor) + " for " + GetWisModText(duration, wisModDuration, durationColor) + " secs";
+                  atrText += "On Self: " + GetSign(amount) + GetWisModText(amount, wisModAmount, amountColor) + " " + TooltipHelper.wrapInFontTag(stat, statColor) + " for " + GetWisModText(duration, wisModDuration, durationColor) + " secs";
                else
-                  this.attributes += "On Self: " + GetSign(amount) + TooltipHelper.wrapInFontTag(String(amount), amountColor) + " " + TooltipHelper.wrapInFontTag(stat, statColor) + " for " + TooltipHelper.wrapInFontTag(String(duration), durationColor) + " secs";
+                  atrText += "On Self: " + GetSign(amount) + TooltipHelper.wrapInFontTag(String(amount), amountColor) + " " + TooltipHelper.wrapInFontTag(stat, statColor) + " for " + TooltipHelper.wrapInFontTag(String(duration), durationColor) + " secs";
                break;
             case ActivationType.STAT_BOOST_AURA:
                if (ae.UseWisMod && (wisModAmount != amount || wisModDuration != duration || wisModRange != range))
-                  this.attributes += "On Allies: " + GetSign(amount) + GetWisModText(amount, wisModAmount, amountColor) + " " + TooltipHelper.wrapInFontTag(stat, statColor) + " in " + GetWisModText(range, wisModRange, rangeColor) + " sqrs for " + GetWisModText(duration, wisModDuration, durationColor) + " secs";
+                  atrText += "On Allies: " + GetSign(amount) + GetWisModText(amount, wisModAmount, amountColor) + " " + TooltipHelper.wrapInFontTag(stat, statColor) + " in " + GetWisModText(range, wisModRange, rangeColor) + " sqrs for " + GetWisModText(duration, wisModDuration, durationColor) + " secs";
                else
-                  this.attributes += "On Allies: " + GetSign(amount) + TooltipHelper.wrapInFontTag(String(amount), amountColor) + " " + TooltipHelper.wrapInFontTag(stat, statColor) + " in " + TooltipHelper.wrapInFontTag(String(range), rangeColor) + " sqrs for " + TooltipHelper.wrapInFontTag(String(duration), durationColor) + " secs";
+                  atrText += "On Allies: " + GetSign(amount) + TooltipHelper.wrapInFontTag(String(amount), amountColor) + " " + TooltipHelper.wrapInFontTag(stat, statColor) + " in " + TooltipHelper.wrapInFontTag(String(range), rangeColor) + " sqrs for " + TooltipHelper.wrapInFontTag(String(duration), durationColor) + " secs";
                break;
             case ActivationType.BULLET_NOVA:
-               this.attributes += TooltipHelper.wrapInFontTag("Spell: ", TooltipHelper.SPECIAL_COLOR) + TooltipHelper.wrapInFontTag("20", TooltipHelper.NO_DIFF_COLOR) + " shots";
+               atrText += TooltipHelper.wrapInFontTag("Spell: ", TooltipHelper.SPECIAL_COLOR) + TooltipHelper.wrapInFontTag(ae.NumShots.toString(), TooltipHelper.NO_DIFF_COLOR) + " shots";
                break;
             case ActivationType.COND_EFFECT_SELF:
                if (ae.UseWisMod && wisModDuration != duration)
-                  this.attributes += "On Self: " + TooltipHelper.wrapInFontTag(condition, conditionColor) + " for " + GetWisModText(duration, wisModDuration, durationColor) + " secs";
+                  atrText += "On Self: " + TooltipHelper.wrapInFontTag(condition, conditionColor) + " for " + GetWisModText(duration, wisModDuration, durationColor) + " secs";
                else
-                  this.attributes += "On Self: " + TooltipHelper.wrapInFontTag(condition, conditionColor) + " for " + TooltipHelper.wrapInFontTag(String(duration), durationColor) + " secs";
+                  atrText += "On Self: " + TooltipHelper.wrapInFontTag(condition, conditionColor) + " for " + TooltipHelper.wrapInFontTag(String(duration), durationColor) + " secs";
                break;
             case ActivationType.COND_EFFECT_AURA:
                if (ae.UseWisMod && (wisModDuration != duration || wisModRange != range))
-                  this.attributes += "On Allies: " + TooltipHelper.wrapInFontTag(condition, conditionColor) + " in " + GetWisModText(range, wisModRange, rangeColor) + " sqrs for " + GetWisModText(duration, wisModDuration, durationColor) + " secs";
+                  atrText += "On Allies: " + TooltipHelper.wrapInFontTag(condition, conditionColor) + " in " + GetWisModText(range, wisModRange, rangeColor) + " sqrs for " + GetWisModText(duration, wisModDuration, durationColor) + " secs";
                else
-                  this.attributes += "On Allies: " + TooltipHelper.wrapInFontTag(condition, conditionColor) + " in " + TooltipHelper.wrapInFontTag(String(range), rangeColor) + " sqrs for " + TooltipHelper.wrapInFontTag(String(duration), durationColor) + " secs";
+                  atrText += "On Allies: " + TooltipHelper.wrapInFontTag(condition, conditionColor) + " in " + TooltipHelper.wrapInFontTag(String(range), rangeColor) + " sqrs for " + TooltipHelper.wrapInFontTag(String(duration), durationColor) + " secs";
                break;
             case ActivationType.TELEPORT:
-               this.attributes += "Teleports to cursor";
+               atrText += "Teleports to cursor";
                break;
             case ActivationType.POISON_GRENADE:
                if (ae.UseWisMod && (wisModTotalDamage != totalDamage))
-                  this.attributes += "Poison: Deals " + GetWisModText(totalDamage, wisModTotalDamage, totalDmgColor) + " damage (" + TooltipHelper.wrapInFontTag(String(impactDmg), impactDmgColor) + " on impact) in " + TooltipHelper.wrapInFontTag(String(radius), radiusColor) + " sqrs for " + TooltipHelper.wrapInFontTag(String(duration), durationColor) + " secs";
+                  atrText += "Poison: Deals " + GetWisModText(totalDamage, wisModTotalDamage, totalDmgColor) + " damage (" + TooltipHelper.wrapInFontTag(String(impactDmg), impactDmgColor) + " on impact) in " + TooltipHelper.wrapInFontTag(String(radius), radiusColor) + " sqrs for " + TooltipHelper.wrapInFontTag(String(duration), durationColor) + " secs";
                else
-                  this.attributes += "Poison: Deals " + TooltipHelper.wrapInFontTag(String(totalDamage), totalDmgColor) + " damage (" + TooltipHelper.wrapInFontTag(String(impactDmg), impactDmgColor) + " on impact) in " + TooltipHelper.wrapInFontTag(String(radius), radiusColor) + " sqrs for " + TooltipHelper.wrapInFontTag(String(duration), durationColor) + " secs";
+                  atrText += "Poison: Deals " + TooltipHelper.wrapInFontTag(String(totalDamage), totalDmgColor) + " damage (" + TooltipHelper.wrapInFontTag(String(impactDmg), impactDmgColor) + " on impact) in " + TooltipHelper.wrapInFontTag(String(radius), radiusColor) + " sqrs for " + TooltipHelper.wrapInFontTag(String(duration), durationColor) + " secs";
                break;
             case ActivationType.VAMPIRE_BLAST:
                if (ae.UseWisMod && (wisModTotalDamage != totalDamage || wisModRadius != radius))
-                  this.attributes += "Skull: Heals " + TooltipHelper.wrapInFontTag(String(healAmount), healAmountColor) + " HP dealing " + GetWisModText(totalDamage, wisModTotalDamage, totalDmgColor) + " damage in " + GetWisModText(radius, wisModRadius, radiusColor) + " sqrs";
+                  atrText += "Skull: Heals " + TooltipHelper.wrapInFontTag(String(healAmount), healAmountColor) + " HP dealing " + GetWisModText(totalDamage, wisModTotalDamage, totalDmgColor) + " damage in " + GetWisModText(radius, wisModRadius, radiusColor) + " sqrs";
                else
-                  this.attributes += "Skull: Heals " + TooltipHelper.wrapInFontTag(String(healAmount), healAmountColor) + " HP dealing " + TooltipHelper.wrapInFontTag(String(totalDamage), totalDmgColor) + " damage in " + TooltipHelper.wrapInFontTag(String(radius), radiusColor) + " sqrs";
+                  atrText += "Skull: Heals " + TooltipHelper.wrapInFontTag(String(healAmount), healAmountColor) + " HP dealing " + TooltipHelper.wrapInFontTag(String(totalDamage), totalDmgColor) + " damage in " + TooltipHelper.wrapInFontTag(String(radius), radiusColor) + " sqrs";
                break;
             case ActivationType.TRAP:
                if (ae.UseWisMod && (wisModTotalDamage != totalDamage || wisModRadius != radius || wisModCondDuration != condDuration)) {
-                  this.attributes += "Trap: Deals " + GetWisModText(totalDamage, wisModTotalDamage, totalDmgColor) + " damage in " + GetWisModText(radius, wisModRadius, radiusColor) + " sqrs\n";
-                  this.attributes += "    Applies " + TooltipHelper.wrapInFontTag(!condition ? "Slowed" : condition, conditionColor) + " for " + GetWisModText(condDuration, wisModCondDuration, condDurationColor) + " secs";
+                  atrText += "Trap: Deals " + GetWisModText(totalDamage, wisModTotalDamage, totalDmgColor) + " damage in " + GetWisModText(radius, wisModRadius, radiusColor) + " sqrs\n";
+                  atrText += "    Applies " + TooltipHelper.wrapInFontTag(!condition ? "Slowed" : condition, conditionColor) + " for " + GetWisModText(condDuration, wisModCondDuration, condDurationColor) + " secs";
                }
                else {
-                  this.attributes += "Trap: Deals " + TooltipHelper.wrapInFontTag(String(totalDamage), totalDmgColor) + " damage in " + TooltipHelper.wrapInFontTag(String(radius), radiusColor) + " sqrs\n";
-                  this.attributes += "    Applies " + TooltipHelper.wrapInFontTag(!condition ? "Slowed" : condition, conditionColor) + " for " + TooltipHelper.wrapInFontTag(String(condDuration), condDurationColor) + " secs";
+                  atrText += "Trap: Deals " + TooltipHelper.wrapInFontTag(String(totalDamage), totalDmgColor) + " damage in " + TooltipHelper.wrapInFontTag(String(radius), radiusColor) + " sqrs\n";
+                  atrText += "    Applies " + TooltipHelper.wrapInFontTag(!condition ? "Slowed" : condition, conditionColor) + " for " + TooltipHelper.wrapInFontTag(String(condDuration), condDurationColor) + " secs";
                }
                break;
             case ActivationType.STASIS_BLAST:
                if (ae.UseWisMod && (wisModDuration != duration))
-                  this.attributes += "Stasies enemies within 3 sqrs for " + GetWisModText(duration, wisModDuration, durationColor) + " secs";
+                  atrText += "Stasies enemies within 3 sqrs for " + GetWisModText(duration, wisModDuration, durationColor) + " secs";
                else
-                  this.attributes += "Stasies enemies within 3 sqrs for " + TooltipHelper.wrapInFontTag(String(duration), durationColor) + " secs";
+                  atrText += "Stasies enemies within 3 sqrs for " + TooltipHelper.wrapInFontTag(String(duration), durationColor) + " secs";
                break;
             case ActivationType.DECOY:
-               this.attributes += "Decoy: Lasts for " + TooltipHelper.wrapInFontTag(String(duration), durationColor) + " secs";
+               atrText += "Decoy: Lasts for " + TooltipHelper.wrapInFontTag(String(duration), durationColor) + " secs";
                break;
             case ActivationType.LIGHTNING:
                if (ae.UseWisMod && (wisModMaxTargets != maxTargets || wisModTotalDamage != totalDamage)) {
-                  this.attributes += "Lightning: Targets " + GetWisModText(maxTargets, wisModMaxTargets, maxTargetsColor) + " enemies dealing " + GetWisModText(totalDamage, wisModTotalDamage, totalDmgColor) + " damage";
+                  atrText += "Lightning: Targets " + GetWisModText(maxTargets, wisModMaxTargets, maxTargetsColor) + " enemies dealing " + GetWisModText(totalDamage, wisModTotalDamage, totalDmgColor) + " damage";
                   if (condition)
-                     this.attributes += "\n    Applies " + TooltipHelper.wrapInFontTag(condition, conditionColor) + " for " + TooltipHelper.wrapInFontTag(String(condDuration), condDurationColor) + " secs";
+                     atrText += "\n    Applies " + TooltipHelper.wrapInFontTag(condition, conditionColor) + " for " + TooltipHelper.wrapInFontTag(String(condDuration), condDurationColor) + " secs";
                }
                else {
-                  this.attributes += "Lightning: Targets " + TooltipHelper.wrapInFontTag(String(maxTargets), maxTargetsColor) + " enemies dealing " + TooltipHelper.wrapInFontTag(String(totalDamage), totalDmgColor) + " damage";
+                  atrText += "Lightning: Targets " + TooltipHelper.wrapInFontTag(String(maxTargets), maxTargetsColor) + " enemies dealing " + TooltipHelper.wrapInFontTag(String(totalDamage), totalDmgColor) + " damage";
                   if (condition)
-                     this.attributes += "\n    Applies " + TooltipHelper.wrapInFontTag(condition, conditionColor) + " for " + TooltipHelper.wrapInFontTag(String(condDuration), condDurationColor) + " secs";
+                     atrText += "\n    Applies " + TooltipHelper.wrapInFontTag(condition, conditionColor) + " for " + TooltipHelper.wrapInFontTag(String(condDuration), condDurationColor) + " secs";
                }
                break;
             case ActivationType.MAGIC_NOVA:
                if (ae.UseWisMod && (wisModAmount != amount || wisModRange != range))
-                  this.attributes += "Heals " + GetWisModText(amount, wisModAmount, amountColor) + " MP in " + GetWisModText(range, wisModRange, rangeColor) + " sqrs";
+                  atrText += "Heals " + GetWisModText(amount, wisModAmount, amountColor) + " MP in " + GetWisModText(range, wisModRange, rangeColor) + " sqrs";
                else
-                  this.attributes += "Heals " + TooltipHelper.wrapInFontTag(String(amount), amountColor) + " MP in " + TooltipHelper.wrapInFontTag(String(range), rangeColor) + " sqrs";
+                  atrText += "Heals " + TooltipHelper.wrapInFontTag(String(amount), amountColor) + " MP in " + TooltipHelper.wrapInFontTag(String(range), rangeColor) + " sqrs";
                break;
             case ActivationType.CLEAR_COND_EFFECT_AURA:
-               this.attributes += "Removes all condition effects from allies in " + TooltipHelper.wrapInFontTag(String(range), rangeColor) + " sqrs";
+               atrText += "Removes all condition effects from allies in " + TooltipHelper.wrapInFontTag(String(range), rangeColor) + " sqrs";
                break;
             case ActivationType.REMOVE_NEG_COND:
-               this.attributes += "Removes all negative condition effects from allies in " + TooltipHelper.wrapInFontTag(String(range), rangeColor) + " sqrs";
+               atrText += "Removes all negative condition effects from allies in " + TooltipHelper.wrapInFontTag(String(range), rangeColor) + " sqrs";
                break;
             case ActivationType.CLEAR_COND_EFFECT_SELF:
-               this.attributes += "Removes all condition effects";
+               atrText += "Removes all condition effects";
                break;
             case ActivationType.REMOVE_NEG_COND_SELF:
-               this.attributes += "Removes all negative condition effects";
+               atrText += "Removes all negative condition effects";
                break;
          }
          if (!LastElement(ae, effs))
-            this.attributes += "\n";
+            atrText += "\n";
       }
-      this.attributes += "</span>\n";
+      atrText += "</span>\n";
+      if (atrText.length > 36)
+         this.attributes += atrText;
    }
 
    private static function BuildGenericAE(eff:ActivateEffect, useWisMod:Boolean,
@@ -1193,14 +1196,14 @@ public class EquipmentToolTip extends ToolTip
 
    private function buildCategorySpecificText() : void
    {
-      if(this.curItemXML_ != null)
+      /*if(this.curItemXML_ != null)
       {
          this.comparisonResults = this.slotTypeToTextBuilder.getComparisonResults(this.objectXML_,this.curItemXML_);
       }
       else
       {
          this.comparisonResults = new SlotComparisonResult();
-      }
+      }*/
    }
 
    private function handleWisMod():void {
@@ -1313,7 +1316,7 @@ public class EquipmentToolTip extends ToolTip
          nameColor = effect.color_ != "" ? effect.color_ : null;
          if(effect.name_ != "")
          {
-            html = html + ("<font color=\"" + nameColor + "\">" + effect.name_ + "</font>" + ": ");
+            html = html + ("<font color=\"" + nameColor + "\">" + effect.name_ + "</font>" + (effect.name_.charAt(effect.name_.length - 1) == ":" ? " " : ": "));
          }
          if(this.isEmptyEquipSlot())
          {
