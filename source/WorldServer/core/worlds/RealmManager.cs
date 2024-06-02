@@ -591,7 +591,7 @@ namespace WorldServer.core.worlds
 
         public void OnPlayerEntered(Player player)
         {
-            player.SendInfo("Welcome to betterSkilys");
+            player.SendInfo("Welcome to betterSkillys");
             player.SendInfo("Use [WASDQE] to move; click to shoot!");
             player.SendInfo("Type \"/commands\" for more help");
             player.SendEnemy("Oryx the Mad God", "You are a pest to my Realm!");

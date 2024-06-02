@@ -125,7 +125,6 @@ namespace Shared.resources
                     case "Dye":
                         Items[type] = new Item(type, e);
                         break;
-
                     case "Player":
                         var pDesc = Classes[type] = new PlayerDesc(type, e);
                         ObjectDescs[type] = Classes[type];
@@ -134,17 +133,14 @@ namespace Shared.resources
                         SlotTypeToItemType[pDesc.SlotTypes[2]] = ItemType.Armor;
                         SlotTypeToItemType[pDesc.SlotTypes[3]] = ItemType.Ring;
                         break;
-
                     case "GuildHallPortal":
                     case "Portal":
                         Portals[type] = new PortalDesc(type, e);
                         ObjectDescs[type] = Portals[type];
                         break;
-
                     case "Skin":
                         Skins[type] = new SkinDesc(type, e);
                         break;
-
                     default:
                         ObjectDescs[type] = new ObjectDesc(type, e);
                         break;

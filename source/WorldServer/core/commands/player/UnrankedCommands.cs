@@ -583,15 +583,15 @@ namespace WorldServer.core.commands.player
             var lootEvent = settings.lootEvent;
             var totalLootBoost = ldBoost + wkndBoost + lootEvent;
 
-            player.SendInfo($"You have a {totalLootBoost * 100}% loot boost.");
+            player.SendInfo($"You have a {Math.Round(totalLootBoost * 100, 0)}% loot boost.");
             if (totalLootBoost > 0)
             {
                 if (player.LDBoostTime > 0)
                     player.SendSubtext($"   Your loot drop potion gives: 50%");
                 if (player.World.isWeekend)
-                    player.SendSubtext($"   It being a weekend gives: {settings.wkndBoost * 100.0}%");
+                    player.SendSubtext($"   It being a weekend gives: {Math.Round(settings.wkndBoost * 100.0, 0)}%");
                 if (settings.lootEvent > 0)
-                    player.SendSubtext($"   A server-wide event gives: {settings.lootEvent * 100.0}%");
+                    player.SendSubtext($"   A server-wide event gives: {Math.Round(settings.lootEvent * 100.0, 0)}%");
             }
 
             // exp boost

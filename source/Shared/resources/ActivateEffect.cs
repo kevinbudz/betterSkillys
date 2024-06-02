@@ -114,7 +114,7 @@ namespace Shared.resources
             Amount = e.GetAttribute<int>("amount");
             Range = e.GetAttribute<float>("range");
             ObjectId = e.GetAttribute<string>("objectId");
-            Id = e.HasElement("id") ? e.GetAttribute<string>("id") : e.GetAttribute<string>("objectId");
+            Id = e.GetAttribute<string>("id");
             MaximumDistance = e.GetAttribute<float>("maxDistance");
             MaxTargets = e.GetAttribute<int>("maxTargets");
             Stats = e.GetAttribute<int>("stat");

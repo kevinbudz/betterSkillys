@@ -366,7 +366,7 @@ namespace WorldServer.core.objects
                 var settings = Client.GameServer.Configuration.serverSettings;
                 if (settings.lootEvent > 0)
                     if (settings.expEvent > 0)
-                        SendInfo($"A server wide event is giving you a a {Math.Round(settings.lootEvent * 100, 0)}% Loot Boost and {Math.Round(settings.expEvent * 100, 0)}% XP Boost.");
+                        SendInfo($"A server wide event is giving you a {Math.Round(settings.expEvent * 100, 0)}% XP Boost and {Math.Round(settings.lootEvent * 100, 0)}% loot boost.");
                     else
                         SendInfo($"A server wide event is giving you a {Math.Round(settings.lootEvent * 100, 0)}% loot boost.");
                 if (owner.isWeekend)

@@ -510,7 +510,7 @@ namespace WorldServer.core.objects
 
         private void AEObjectToss(Item item, Position target, ActivateEffect eff)
         {
-            GameServer.Resources.GameData.IdToObjectType.TryGetValue(eff.Id, out ushort objType);
+            GameServer.Resources.GameData.IdToObjectType.TryGetValue(eff.Id == null ? eff.ObjectId : eff.Id, out ushort objType);
             var throwTime = eff.ThrowTime == 0 ? 1000 : eff.ThrowTime;
             if (eff.ThrowTime != -1)
             {
