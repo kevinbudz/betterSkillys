@@ -101,14 +101,14 @@ namespace WorldServer.logic
                         new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 2000),
                         new Order(15, "LH Marble Colossus Laser A", "L-S"),
                         new Taunt("INSOLENTIA! Darkness will consume you"),
-                        new Orbit(0.6, 4, 10, "LH Marble Colossus Anchor", 0.5),
+                        new Orbit(2, 4, 10, "LH Marble Colossus Anchor", 0.5),
                         new Timed(1400, new Grenade(5, 120, 10, coolDown: 2000)),
                         new Shoot(10, 1, 6, coolDownOffset: 1200, coolDown: 2000),
                         new Shoot(10, 2, 180, 7, coolDownOffset: 1200, coolDown: 400),
                         new TimedTransition(2000, "P-5-01")
                         ),
                     new State("P-5-01",
-                        new Orbit(0.6, 4, 10, "LH Marble Colossus Anchor", 0.5),
+                        new Orbit(2, 4, 10, "LH Marble Colossus Anchor", 0.5),
                         new Grenade(5, 120, 10, coolDown: 2000),
                         new Shoot(10, 1, 6, coolDownOffset: 1200, coolDown: 2000),
                         new Shoot(10, 2, 180, 7, coolDown: 400),
@@ -118,7 +118,7 @@ namespace WorldServer.logic
                         new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable),
                         new ConditionEffectBehavior(ConditionEffectIndex.Armored),
                         new Taunt("Brace for your demise!"),
-                        new ReturnToSpawn(0.6, 0),
+                        new ReturnToSpawn(0.6, 0.1),
                         new TimedTransition(2000, "P-6")
                         ),
                     new State("P-6",
@@ -157,13 +157,24 @@ namespace WorldServer.logic
                             new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 2000),
                             new Taunt("Call of voice, for naught. Plea of mercy, for naught. None may enter this chamber and live!"),
                             new Shoot(10, 16, 22.5, 11, defaultAngle: 0, coolDownOffset: 1200, coolDown: 4000),
+                            new TimedTransition(2000, "P-8-01")
+                            ),
+                        new State("P-8-01",
+                            new Follow(0.4, 15, 2),
+                            new Shoot(10, 16, 22.5, 11, defaultAngle: 0, coolDownOffset: 1200, coolDown: 4000),
                             new HpLessTransition(0.55, "P-8-1")
                             ),
                         new State("P-8-1",
                             new Follow(0.4, 15, 2),
                             new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 2000),
                             new Taunt("SANGUIS! OSSE! CARO! Feel it rend from your body!"),
-                            new Order(3, "LH Colossus Colossus Rock 10", "R-TR-2"),
+                            new Order(3, "LH Colossus Rock 10", "R-TR-2"),
+                            new Shoot(10, 4, projectileIndex: 6, coolDownOffset: 1200, coolDown: 1600),
+                            new Shoot(10, 16, 22.5, 11, coolDownOffset: 1200, coolDown: 4000),
+                            new TimedTransition(2000, "P-8-1-01")
+                            ),
+                        new State("P-8-1-01",
+                            new Follow(0.4, 15, 2),
                             new Shoot(10, 4, projectileIndex: 6, coolDownOffset: 1200, coolDown: 1600),
                             new Shoot(10, 16, 22.5, 11, coolDownOffset: 1200, coolDown: 4000),
                             new HpLessTransition(0.50, "P-8-2")
@@ -521,10 +532,7 @@ namespace WorldServer.logic
                     new Threshold(0.001,
                         new ItemLoot("Potion of Health", 1),
                         new ItemLoot("Potion of Mana", 1),
-                        new ItemLoot("Potion of Health", 0.25),
                         new ItemLoot("Potion of Mana", 0.25),
-                        new ItemLoot("Potion of Attack", 1),
-                        new ItemLoot("Potion of Defense", 1),
                         new TierLoot(12, ItemType.Weapon, 0.4),
                         new TierLoot(13, ItemType.Weapon, 0.2),
                         new TierLoot(14, ItemType.Weapon, 0.05),
@@ -533,10 +541,10 @@ namespace WorldServer.logic
                         new TierLoot(14, ItemType.Armor, 0.05),
                         new TierLoot(6, ItemType.Ring, 0.2),
                         new ItemLoot("Ring of Decades", 0.025),
-                        new ItemLoot("Sword of the Colossus", 0.025),
-                        new ItemLoot("Breastplate of New Life", 0.025),
-                        new ItemLoot("Marble Seal", 0.025),
-                        new ItemLoot("Magical Lodestone", 0.025)
+                        new ItemLoot("Sword of the Colossus", 0.00125),
+                        new ItemLoot("Breastplate of New Life", 0.00125),
+                        new ItemLoot("Marble Seal", 0.00125),
+                        new ItemLoot("Magical Lodestone", 0.00125)
                     )
 
             )

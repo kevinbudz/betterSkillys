@@ -1,0 +1,134 @@
+<Objects>
+	<Object type="0x4972" id="InvisDecoy">
+		<Class>Character</Class>
+		<Texture>
+			<File>invisible</File>
+			<Index>0</Index>
+		</Texture>
+		<Friendly/>
+		<CanUseTexes/>
+		<NoMiniMap/>
+	</Object>
+	<Object type="0x4973" id="Pirate Ally">
+		<Class>Character</Class>
+		<AnimatedTexture>
+			<File>chars8x8rBeach</File>
+			<Index>1</Index>
+		</AnimatedTexture>
+		<Size>100</Size>
+		<MaxHitPoints>1000</MaxHitPoints>
+		<Defense>0</Defense>
+		<Projectile id="0">
+			<ObjectId>Blade</ObjectId>
+			<Damage>250</Damage>
+			<Speed>80</Speed>
+			<LifetimeMS>300</LifetimeMS>
+		</Projectile>
+	</Object>
+	<Object type="0x1554" id="Thessal Dropper">
+		<Enemy/>
+		<Class>Character</Class>
+		<Texture>
+			<File>lofiObjBig</File>
+			<Index>0xb6</Index>
+		</Texture>
+		<MaxHitPoints>1000</MaxHitPoints>
+		<XpMult>0</XpMult>
+		<Size>0</Size>
+		<NoMiniMap/>
+		<StasisImmune/>
+	</Object>
+	<Object type="0x0731" id="Ocean Vent">
+		<Class>GameObject</Class>
+		<DrawOnGround/>
+		<Effect>Vent</Effect>
+		<Texture>
+			<File>lofiEnvironment2</File>
+			<Index>0x26</Index>
+		</Texture>
+	</Object>
+	<Object type="0x4977" id="Sea Slurp Home">
+		<Group>Ocean Trench</Group>
+		<Enemy/>
+		<Class>Character</Class>
+		<Texture>
+			<File>lofiChar216x8</File>
+			<Index>0x1b</Index>
+		</Texture>
+		<AltTexture id="1">
+			<Texture>
+				<File>lofiEnvironment2</File>
+				<Index>0x6d</Index>
+			</Texture>
+		</AltTexture>
+		<HitSound>monster/trees_hit</HitSound>
+		<DeathSound>monster/stone_walls_hit</DeathSound>
+		<MaxHitPoints>5000</MaxHitPoints>
+		<XpMult>1.5</XpMult>
+		<Projectile id="0">
+			<ObjectId>Oryx Insect Sting</ObjectId>
+			<Speed>65</Speed>
+			<Damage>55</Damage>
+			<Size>100</Size>
+			<LifetimeMS>1000</LifetimeMS>
+		</Projectile>
+		<Projectile id="1">
+			<ObjectId>Oryx Insect Sting Status</ObjectId>
+			<Speed>50</Speed>
+			<Damage>60</Damage>
+			<Size>120</Size>
+			<LifetimeMS>1000</LifetimeMS>
+		</Projectile>
+		<Size>120</Size>
+		<Defense>40</Defense>
+	</Object>
+	<Object type="0x4978" id="invisible Spawner">
+		<Class>Character</Class>
+		<Enemy />
+		<Texture>
+			<File>invisible</File>
+			<Index>0</Index>
+		</Texture>
+		<NoMiniMap />
+		<XpMult>0.0</XpMult>
+		<StasisImmune />
+	</Object>
+	<Object type="0x495d" id="Hermit portal maker">
+		<Class>Character</Class>
+		<MaxHitPoints>1000</MaxHitPoints>
+		<Texture>
+			<File>invisible</File>
+			<Index>0</Index>
+		</Texture>
+		<NoMiniMap />
+		<Size>0</Size>
+		<XpMult>0.0</XpMult>
+		<StasisImmune />
+	</Object>
+	<Object type="0x4979" id="InnerSanctum Task Master">
+		<Class>Character</Class>
+		<MaxHitPoints>1000</MaxHitPoints>
+		<Texture>
+			<File>invisible</File>
+			<Index>0</Index>
+		</Texture>
+		<NoMiniMap />
+		<Size>0</Size>
+		<XpMult>0.0</XpMult>
+		<StasisImmune />
+	</Object>
+	<Object type="0x4780" id="ic Loot Balloon">
+		<Class>Character</Class>
+		<Enemy/>
+		<Texture>
+			<File>lofiObj3</File>
+			<Index>0x466</Index>
+		</Texture>
+		<MaxHitPoints>45000</MaxHitPoints>
+		<Defense>35</Defense>
+		<Size>160</Size>
+		<Exp>0</Exp>
+		<StasisImmune/>
+		<TrackLoot/>
+	</Object>
+</Objects>

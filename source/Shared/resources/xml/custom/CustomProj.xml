@@ -1,0 +1,10 @@
+<Objects>
+	<Object type="0x4974" id="Recurve Shot">
+		<Class>Projectile</Class>
+		<Texture>
+			<File>lofiObj5new</File>
+			<Index>0x91</Index>
+		</Texture>
+		<AngleCorrection>1</AngleCorrection>
+	</Object>
+</Objects>

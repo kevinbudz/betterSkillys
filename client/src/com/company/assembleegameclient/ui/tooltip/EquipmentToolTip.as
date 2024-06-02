@@ -366,6 +366,9 @@ public class EquipmentToolTip extends ToolTip
    }
 
    private function makeProjRoF(proj:ProjectileDesc, proj2:ProjectileDesc):void {
+      var slotTypes:Array = [1, 2, 3, 8, 17, 24];
+      if (slotTypes.indexOf(this.itemAtr.SlotType) == -1)
+          return;
       if (this.itemAtr.RateOfFire == -1)
          return;
 
@@ -847,8 +850,6 @@ public class EquipmentToolTip extends ToolTip
    private function makeGlobalAttributes():void {
       if (this.itemAtr.Doses > 0)
          this.makeItemDoses();
-      if (this.itemAtr.FameBonus > 0)
-         this.makeItemFameBonus();
       if (!this.itemAtr.MultiPhase && this.itemAtr.MpCost != -1)
          this.makeItemMpCost();
       if (this.itemAtr.MultiPhase)
@@ -857,6 +858,8 @@ public class EquipmentToolTip extends ToolTip
          this.makeItemCooldown();
       if (this.itemAtr.Resurrects)
          this.attributes += "This item resurrects you from death\n";
+      if (this.itemAtr.FameBonus > 0)
+         this.makeItemFameBonus();
    }
 
    private static function ApplyWisMod(value:Number, player:Player, offset:int = 1):Number {

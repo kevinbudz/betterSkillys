@@ -149,6 +149,9 @@ public class EmbeddedData
         // custom
         private static const customGrounds:Class = CustomGrounds;
         private static const customObjects:Class = CustomObjects;
+        private static const customEntities:Class = CustomEntities;
+        private static const customItems:Class = CustomItems;
+        private static const customProj:Class = CustomProj;
 
         public static const skins:Array = [new SkinsCXML()];
         public static const eqSets:Array = [new EquipmentSetsCXML()];
@@ -187,6 +190,9 @@ public class EmbeddedData
         ];
 
         public static const objectFiles:Array = [
+            new customItems(),
+            new customProj(),
+            new customEntities(),
             new customObjects(),
             new ProjectilesCXML(),
             new EquipKeysCXML(),
