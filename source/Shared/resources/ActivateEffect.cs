@@ -37,6 +37,7 @@ namespace Shared.resources
         public readonly float AngleOffset;
         public readonly float Duration;
         public readonly int NumShots;
+        public readonly string Slot;
 
         public string Center;
         public string DungeonName;
@@ -123,6 +124,7 @@ namespace Shared.resources
             DungeonName = e.GetAttribute<string>("dungeonName");
             LockedName = e.GetAttribute<string>("lockedName");
             NumShots = e.GetAttribute<int>("numShots");
+            Slot = e.GetAttribute<string>("slot");
 
             if (e.Attribute("totalDamage") != null)
                 TotalDamage = Utils.FromString(e.Attribute("totalDamage").Value);

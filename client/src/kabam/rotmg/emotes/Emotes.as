@@ -5,6 +5,9 @@ import com.company.util.AssetLibrary;
 import flash.display.BitmapData;
 import flash.utils.Dictionary;
 
+import kabam.rotmg.assets.custom.images.Emotes;
+import kabam.rotmg.assets.custom.xmls.EmotesXML;
+
 import kabam.rotmg.emotes.data.EmotesCXML;
 
 
@@ -947,7 +950,7 @@ public class Emotes
     }
 
     private static function loadFromXMLs():void {
-        var emotesXML:XML = XML(new EmotesCXML());
+        var emotesXML:XML = XML(new EmotesXML());
         for each (var emote:XML in emotesXML.Emote) {
             addEmote(":" + String(emote.@id) + ":", AssetLibrary.getImageFromSet(String(emote.Texture.File), int(emote.Texture.Index)), Number(emote.@scale));
         }

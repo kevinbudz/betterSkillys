@@ -1,5 +1,7 @@
 ﻿using Shared;
+using Shared.isc;
 using Shared.resources;
+using StackExchange.Redis;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +15,7 @@ using WorldServer.core.worlds.impl;
 using WorldServer.networking;
 using WorldServer.networking.packets.outgoing;
 using WorldServer.utils;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace WorldServer.core.objects
 {
@@ -486,8 +489,13 @@ namespace WorldServer.core.objects
                     case ActivateEffects.ObjectToss:
                         AEObjectToss(item, target, eff);
                         break;
-                    case ActivateEffects.LevelTwenty:
                     case ActivateEffects.Unlock:
+                        AEUnlock(time, item, target, eff);
+                        break;
+                    case ActivateEffects.Fame:
+                        AEFame(time, item, target, eff);
+                        break;
+                    case ActivateEffects.LevelTwenty:
                     case ActivateEffects.MarkAndTeleport:
                     case ActivateEffects.SelfTransform:
                     case ActivateEffects.GroupTransform:
@@ -506,6 +514,73 @@ namespace WorldServer.core.objects
                         break;
                 }
             }
+        }
+
+        private void AEFame(TickTime time, Item item, Position target, ActivateEffect eff)
+        {
+            if (World is TestWorld || Client.Account == null)
+                return;
+
+            var acc = Client.Account;
+            var trans = GameServer.Database.Conn.CreateTransaction();
+            GameServer.Database.UpdateCurrency(acc, eff.Amount, CurrencyType.Fame, trans)
+                .ContinueWith(t =>
+                {
+                    CurrentFame = acc.Fame;
+                });
+            trans.Execute(CommandFlags.FireAndForget);
+        }
+
+        private void AEUnlock(TickTime time, Item item, Position target, ActivateEffect eff)
+        {
+            var acc = Client.Account;
+            var availableSlot = Inventory.GetAvailableInventorySlot(item);
+            switch (eff.Slot)
+            {
+                case "char":
+                    if (World is VaultWorld)
+                    {
+                        SendInfo("You unlocked a new Character Slot!");
+                        acc.MaxCharSlot++;
+                        acc.FlushAsync();
+                    }
+                    else
+                    {
+                        if (availableSlot != -1)
+                            Inventory[availableSlot] = item;
+                        SendInfo("You can only use this item in the vault.");
+                    }
+                    break;
+                case "vault":
+                    if (World is VaultWorld)
+                    {
+                        SendInfo("You unlocked a new Vault chest! Reload to see changes.");
+                        acc.VaultCount++;
+                        acc.FlushAsync();
+                    }
+                    else
+                    {
+                        if (availableSlot != -1)
+                            Inventory[availableSlot] = item;
+                        SendInfo("You can only use this item in the vault.");
+                    }
+                    break;
+            }
+        }
+
+        private void AEAddFame(TickTime time, Item item, Position target, ActivateEffect eff)
+        {
+            if (World is TestWorld || Client.Account == null)
+                return;
+
+            var acc = Client.Account;
+            var trans = GameServer.Database.Conn.CreateTransaction();
+            GameServer.Database.UpdateCurrency(acc, eff.Amount, CurrencyType.Fame, trans)
+                .ContinueWith(t =>
+                {
+                    CurrentFame = acc.Fame;
+                });
+            trans.Execute(CommandFlags.FireAndForget);
         }
 
         private void AEObjectToss(Item item, Position target, ActivateEffect eff)

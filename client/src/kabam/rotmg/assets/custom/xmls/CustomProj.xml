@@ -2,8 +2,8 @@
 	<Object type="0x4974" id="Recurve Shot">
 		<Class>Projectile</Class>
 		<Texture>
-			<File>lofiObj5new</File>
-			<Index>0x91</Index>
+			<File>customAssets8x8</File>
+			<Index>0x06</Index>
 		</Texture>
 		<AngleCorrection>1</AngleCorrection>
 	</Object>

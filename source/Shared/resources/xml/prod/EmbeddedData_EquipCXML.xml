@@ -26917,7 +26917,7 @@
 		<SlotType>22</SlotType>
 		<Description>A coin pilfered from the endless vault of Gemsbok's hoarded wealth. Only the most daring would stake their lives on the equal odds of a coin flip.</Description>
 		<ExtraTooltipData>
-			<EffectInfo name="On Ability Use" description="Summons a Gold Coin that acts as a decoy. Each second it has a 50% chance to become silver or continue to exist."/>
+			<EffectInfo name="On Ability Use:" description="Summons a Gold Coin that acts as a decoy. Each second it has a 50% chance to become silver or continue to exist."/>
 			<EffectInfo name="Silver Coin" description="Acts as a decoy. Each second it has a 50% chance to disappear or continue to exist."/>
 		</ExtraTooltipData>
 		<ActivateOnEquip stat="20" amount="4">IncrementStat</ActivateOnEquip>

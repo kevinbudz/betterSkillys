@@ -47,8 +47,7 @@ public class AssetLoader
 
    private function addImages():void
    {
-      AssetLibrary.addImageSet("emotes", new EmbeddedAssets.emotesEmbed_().bitmapData, 16, 16);
-      AssetLibrary.addImageSet("animEmotes", new EmbeddedAssets.animEmotesEmbed_().bitmapData, 32, 32);
+      // production
       AssetLibrary.addImageSet("lofiChar8x8", new EmbeddedAssets.lofiCharEmbed_().bitmapData, 8, 8);
       AssetLibrary.addImageSet("lofiChar16x8", new EmbeddedAssets.lofiCharEmbed_().bitmapData, 16, 8);
       AssetLibrary.addImageSet("lofiChar16x16", new EmbeddedAssets.lofiCharEmbed_().bitmapData, 16, 16);
@@ -161,6 +160,10 @@ public class AssetLoader
       AssetLibrary.addImageSet("archbishopObjects64x64", new EmbeddedAssets.archbishopObjects64x64Embed_().bitmapData, 64, 64);
       AssetLibrary.addImageSet("ancientRuinsObjects8x8", new EmbeddedAssets.ancientRuinsObjects8x8Embed_().bitmapData, 8, 8);
       AssetLibrary.addImageSet("ancientRuinsObjects16x16", new EmbeddedAssets.ancientRuinsObjects16x16Embed_().bitmapData, 16, 16);
+      // custom
+      AssetLibrary.addImageSet("emotes", new EmbeddedAssets.emotes().bitmapData, 16, 16);
+      AssetLibrary.addImageSet("animEmotes", new EmbeddedAssets.animEmotes().bitmapData, 32, 32);
+      AssetLibrary.addImageSet("customAssets8x8", new EmbeddedAssets.customAssets8x8().bitmapData, 8, 8);
    }
 
    private function addAnimatedCharacters():void

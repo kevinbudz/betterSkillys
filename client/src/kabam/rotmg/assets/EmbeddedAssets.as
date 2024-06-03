@@ -5,6 +5,9 @@
 
 package kabam.rotmg.assets
 {
+import kabam.rotmg.assets.custom.images.AnimEmotes;
+import kabam.rotmg.assets.custom.images.CustomAssets8x8;
+import kabam.rotmg.assets.custom.images.Emotes;
 import kabam.rotmg.assets.prod.images.EmbeddedAssets_DarknessBackground;
 import kabam.rotmg.assets.prod.images.EmbeddedAssets_EvolveBackground;
 import kabam.rotmg.assets.prod.images.EmbeddedAssets_Hanami8x8charsEmbed_;
@@ -257,14 +260,11 @@ import kabam.rotmg.assets.prod.objects.EmbeddedAssets_xmasNexusChars16x16Embed_;
 import kabam.rotmg.assets.prod.objects.EmbeddedAssets_xmasNexusChars8x8Embed_;
 import kabam.rotmg.assets.prod.objects.EmbeddedAssets_xmasNexusObjects16x16Embed_;
 import kabam.rotmg.assets.prod.objects.EmbeddedAssets_xmasNexusObjects8x8Embed_;
-import kabam.rotmg.emotes.data.EmbeddedAssets_animEmotesEmbed_;
-import kabam.rotmg.emotes.data.EmbeddedAssets_emotesEmbed_;
 
 public class EmbeddedAssets
 {
 
-   public static var animEmotesEmbed_:Class = EmbeddedAssets_animEmotesEmbed_;
-   public static var emotesEmbed_:Class = EmbeddedAssets_emotesEmbed_;
+   // production.
    public static var particlesEmbed:Class = EmbeddedAssets_particlesEmbed;
    public static const StarburstSpinner:Class = EmbeddedAssets_StarburstSpinner;
    public static const EvolveBackground:Class = EmbeddedAssets_EvolveBackground;
@@ -573,8 +573,12 @@ public class EmbeddedAssets
       "Oryx Cage":new oryxCage_(),
       "Oryx Hung Cage":new oryxCageHung_(),
       "Oryx Door":new oryxDoor_()
-   }
+   };
 
+   // custom.
+   public static var animEmotes:Class = AnimEmotes;
+   public static var emotes:Class = Emotes;
+   public static var customAssets8x8:Class = CustomAssets8x8;
 
 }
 }//package kabam.rotmg.assets

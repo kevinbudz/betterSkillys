@@ -3,8 +3,8 @@
 		<Class>Equipment</Class>
 		<Item/>
 		<Texture>
-			<File>lofiObj5new</File>
-			<Index>0x90</Index>
+			<File>customAssets8x8</File>
+			<Index>0x05</Index>
 		</Texture>
 		<SlotType>3</SlotType>
 		<Description>A bow imbued with energy from faraway galaxies. It's origin is unknown.</Description>
@@ -33,5 +33,80 @@
 		<feedPower>650</feedPower>
 		<OnPlayerAbilityActivate objectId="Pirate Ally" throwTime="0" color="0xff5050">ObjectToss</OnPlayerAbilityActivate>
 		<Soulbound/>
+	</Object>
+	<Object type="0x4981" id="50 Fame">
+		<Class>Equipment</Class>
+		<Item />
+		<Texture>
+			<File>customAssets8x8</File>
+			<Index>0x00</Index>
+		</Texture>
+		<SlotType>10</SlotType>
+		<Description>When consumed, gives fame.</Description>
+		<Sound>use_potion</Sound>
+		<Activate amount="50">Fame</Activate>
+		<Consumable />
+		<Potion />
+		<BagType>5</BagType>
+	</Object>
+	<Object type="0x4982" id="100 Fame">
+		<Class>Equipment</Class>
+		<Item />
+		<Texture>
+			<File>customAssets8x8</File>
+			<Index>0x01</Index>
+		</Texture>
+		<SlotType>10</SlotType>
+		<Description>When consumed, gives fame.</Description>
+		<Sound>use_potion</Sound>
+		<Activate amount="100">Fame</Activate>
+		<Consumable />
+		<Potion />
+		<BagType>5</BagType>
+	</Object>
+	<Object type="0x4983" id="500 Fame">
+		<Class>Equipment</Class>
+		<Item />
+		<Texture>
+			<File>customAssets8x8</File>
+			<Index>0x02</Index>
+		</Texture>
+		<SlotType>10</SlotType>
+		<Description>When consumed, gives fame.</Description>
+		<Sound>use_potion</Sound>
+		<Activate amount="500">Fame</Activate>
+		<Consumable />
+		<Potion />
+		<BagType>5</BagType>
+	</Object>
+	<Object type="0x4984" id="1000 Fame">
+		<Class>Equipment</Class>
+		<Item />
+		<Texture>
+			<File>customAssets8x8</File>
+			<Index>0x03</Index>
+		</Texture>
+		<SlotType>10</SlotType>
+		<Description>When consumed, gives fame.</Description>
+		<Sound>use_potion</Sound>
+		<Activate amount="1000">Fame</Activate>
+		<Consumable />
+		<Potion />
+		<BagType>5</BagType>
+	</Object>
+	<Object type="0x4985" id="5000 Fame">
+		<Class>Equipment</Class>
+		<Item />
+		<Texture>
+			<File>customAssets8x8</File>
+			<Index>0x04</Index>
+		</Texture>
+		<SlotType>10</SlotType>
+		<Description>When consumed, gives fame.</Description>
+		<Sound>use_potion</Sound>
+		<Activate amount="5000">Fame</Activate>
+		<Consumable />
+		<Potion/>
+		<BagType>5</BagType>
 	</Object>
 </Objects>

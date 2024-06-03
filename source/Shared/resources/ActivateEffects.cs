@@ -39,11 +39,12 @@
         UnlockSkin,
         MysteryDyes,
         GenericActivate,
+        Unlock,
+        ObjectToss,
+        Fame,
 
         // to be added
-        ObjectToss,
         LevelTwenty,
-        Unlock,
         MarkAndTeleport,
         SelfTransform,
         GroupTransform,
