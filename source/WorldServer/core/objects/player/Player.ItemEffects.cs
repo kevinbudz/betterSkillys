@@ -13,7 +13,7 @@ namespace WorldServer.core.objects
     public partial class Player
     {
         private readonly int[] _slotEffectCooldowns = new int[4];
-        private void TryAddOnPlayerEffects(string type, int dmg = 0)
+        private void TryAddOnPlayerEffects(string type, Position? pos = null, int dmg = 0)
         {
             for (var slot = 0; slot < 4; slot++) {
                 if (CantApplySlotEffect(slot))
@@ -61,7 +61,9 @@ namespace WorldServer.core.objects
                     if (eff.ManaRequired != 0)
                         if (Mana < eff.ManaRequired)
                             continue;
-                    OnOtherActivate(type, item, Position);
+
+                    var position = pos != null ? (Position)pos : Position;
+                    OnOtherActivate(type, item, position);
                     SetSlotEffectCooldown(eff.Cooldown, slot);
                 }
             }

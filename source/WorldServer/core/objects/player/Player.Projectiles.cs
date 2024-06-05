@@ -136,7 +136,7 @@ namespace WorldServer.core.objects
             var dmg = StatsManager.DamageWithDefense(this, projectile.Damage, projectileDesc.ArmorPiercing, Stats[3]);
             Health -= dmg;
 
-            TryAddOnPlayerEffects("hit", dmg);
+            TryAddOnPlayerEffects("hit", null, dmg);
 
             ApplyConditionEffect(projectileDesc.Effects);
             World.BroadcastIfVisibleExclude(new DamageMessage()

@@ -189,7 +189,7 @@ namespace WorldServer.core.objects
             {
                 Activate(clientTime, time, item, slot, pos, objId, useType);
                 if (item.SlotType == slotType)
-                    TryAddOnPlayerEffects("ability");
+                    TryAddOnPlayerEffects("ability", pos);
             }
             else
                 Client.SendPacket(new InvResult() { Result = 1 });

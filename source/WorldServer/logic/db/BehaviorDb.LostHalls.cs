@@ -139,7 +139,7 @@ namespace WorldServer.logic
                         new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, true),
                         new Taunt("Futility!"),
                         new Flash(0x0000ff, 0.3, 6000),
-                        new Spawn("LH Marble Core 1", 1, 1, 2000000000),
+                        new Spawn("LH Marble Core 1", 1, 1, 4000),
                         new Spawn("LH Colossus Rock 8", 1, 1, 4000),
                         new Spawn("LH Colossus Rock 9", 1, 1, 4000),
                         new Shoot(10, 36, 10, 10, 0, coolDownOffset: 1800, coolDown: 2000),
@@ -153,7 +153,7 @@ namespace WorldServer.logic
                         ),
                         new State("P-8",
                             new Follow(0.4, 15, 2),
-                            new Spawn("LH Colossus Rock 10", 1, 1, 2000000000),
+                            new Spawn("LH Colossus Rock 10", 1, 1, 4000),
                             new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 2000),
                             new Taunt("Call of voice, for naught. Plea of mercy, for naught. None may enter this chamber and live!"),
                             new Shoot(10, 16, 22.5, 11, defaultAngle: 0, coolDownOffset: 1200, coolDown: 4000),
@@ -229,7 +229,11 @@ namespace WorldServer.logic
                         new Taunt("You have seen your last glimpse of sunlight!"),
                         new Order(15, "LH Colossus Rock 11", "R-TR-4"),
                         new Order(15, "LH Colossus Rock 12", "R-TR-4"),
-                        new Shoot(10, 3, 120, 3, rotateAngle: 3, defaultAngle: 0, coolDownOffset: 200, coolDown: 200),
+                        new Shoot(10, 3, 120, 3, 0, rotateAngle: 3, coolDownOffset: 200, coolDown: 200),
+                        new TimedTransition(2000, "P-11-01")
+                        ),
+                    new State("P-11-01",
+                        new Shoot(10, 3, 120, 3, 0, rotateAngle: 3, coolDownOffset: 200, coolDown: 200),
                         new HpLessTransition(0.35, "PR-12")
                         ),
                         new State("PR-12",
@@ -277,6 +281,10 @@ namespace WorldServer.logic
                         new Spawn("LH Colossus Rock 2", 1, 1, 5000),
                         new Spawn("LH Colossus Rock 3", 1, 1, 5000),
                         new Shoot(10, 3, 27, 13, coolDown: 5000),
+                        new TimedTransition(2000, "P-14-01")
+                        ),
+                    new State("P-14-01",
+                        new Shoot(10, 3, 27, 13, coolDown: 5000),
                         new HpLessTransition(0.20, "P-15")
                         ),
                     new State("P-15",
@@ -289,7 +297,12 @@ namespace WorldServer.logic
                         new Spawn("LH Colossus Rock 7", 2, 1, 5000),
                         new Shoot(10, 3, 27, 13, coolDownOffset: 800, coolDown: 5000),
                         new Shoot(10, 36, 10, 9, 0, coolDownOffset: 800, coolDown: 5600),
-                        new HpLessTransition(0.15, "P-16")
+                        new TimedTransition(2000, "P-15-01")
+                        ),
+                    new State("P-15-01",
+                        new Shoot(10, 3, 27, 13, coolDownOffset: 800, coolDown: 5000),
+                        new Shoot(10, 36, 10, 9, 0, coolDownOffset: 800, coolDown: 5600),
+                        new HpLessTransition(0.20, "P-16")
                         ),
                     new State("P-16",
                         new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 2000),
@@ -360,7 +373,7 @@ namespace WorldServer.logic
                     new State("PR-20-B",
                         new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, true),
                         new ReturnToSpawn(0.6, 0),
-                        new NotMovingTransition("P-20-B", 200)
+                        new TimedTransition(5000, "P-20-B")
                         ),
                     new State("P-20-B",
                         new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 1000),
@@ -445,7 +458,7 @@ namespace WorldServer.logic
                     new State("PR-22-B",
                         new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, true),
                         new ReturnToSpawn(0.6, 0),
-                        new NotMovingTransition("P-22-B", 200)
+                        new TimedTransition(5000, "P-22-B")
                         ),
                     new State("P-22-B",
                         new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 1000),
@@ -468,7 +481,7 @@ namespace WorldServer.logic
                         new Timed(5600, new ReturnToSpawn(0.5, 0)),
                         new Shoot(10, 16, 22.5, 21, coolDown: 2000),
                         new HpLessTransition(0.20, "C-4"),
-                        new NotMovingTransition("C-3")
+                        new TimedTransition(5600, "C-3")
                         ),
                     new State("C-4",
                         new SetAltTexture(8),
@@ -487,7 +500,7 @@ namespace WorldServer.logic
                     new State("PR-23-B",
                         new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, true),
                         new ReturnToSpawn(0.6, 0),
-                        new NotMovingTransition("P-23-B", 200)
+                        new TimedTransition(5000, "P-23-B")
                         ),
                     new State("P-23-B",
                         new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 1000),
@@ -1869,7 +1882,7 @@ namespace WorldServer.logic
             )
             .Init("LH Marble Core 1",
             new State(
-                new State(
+                new State("active",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 2000),
                     new Orbit(0.5, 8, 20, "LH Marble Colossus Anchor")
                     )
@@ -1877,7 +1890,7 @@ namespace WorldServer.logic
             )
             .Init("LH Marble Core 2",
             new State(
-                new State(
+                new State("active",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 2000),
                     new Orbit(0.5, 8, 20, "LH Marble Colossus Anchor", orbitClockwise: true)
                     )
@@ -1885,7 +1898,7 @@ namespace WorldServer.logic
             )
             .Init("LH Marble Core 3",
             new State(
-                new State(
+                new State("active",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 2000),
                     new Orbit(0.5, 8, 20, "LH Marble Colossus Anchor")
                     )
@@ -1893,7 +1906,7 @@ namespace WorldServer.logic
             )
             .Init("LH Marble Core 4",
             new State(
-                new State(
+                new State("active",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 2000),
                     new Orbit(0.5, 8, 20, "LH Marble Colossus Anchor", orbitClockwise: true)
                     )
@@ -1901,7 +1914,7 @@ namespace WorldServer.logic
             )
             .Init("LH Marble Core 5",
             new State(
-                new State(
+                new State("active",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 2000),
                     new Orbit(0.3, 2, 20, "LH Marble Colossus", orbitClockwise: true)
                     )
@@ -1909,7 +1922,7 @@ namespace WorldServer.logic
             )
             .Init("LH Marble Core 6",
             new State(
-                new State(
+                new State("active",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 2000),
                     new Orbit(0.5, 11, 20, "LH Marble Colossus Anchor", orbitClockwise: true)
                     )
@@ -1917,7 +1930,7 @@ namespace WorldServer.logic
             )
             .Init("LH Marble Core 7",
                 new State(
-                    new State(
+                    new State("active",
                         new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 2000),
                         new Orbit(0.5, 9, 20, "LH Marble Colossus Anchor")
                         )
@@ -1925,7 +1938,7 @@ namespace WorldServer.logic
             )
             .Init("LH Marble Core 8",
             new State(
-                new State(
+                new State("active",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable, false, 2000),
                     new Orbit(0.5, 7, 20, "LH Marble Colossus Anchor", orbitClockwise: true)
                     )

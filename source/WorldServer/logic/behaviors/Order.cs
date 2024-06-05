@@ -44,6 +44,11 @@ namespace WorldServer.logic.behaviors
 
             foreach (var i in host.GetNearestEntities(_range, _children))
             {
+                if (i.CurrentState == null)
+                {
+                    Console.WriteLine(_targetState);
+                    return;
+                }
                 if (!i.CurrentState.Is(_targetState))
                     i.SwitchTo(_targetState);
             }

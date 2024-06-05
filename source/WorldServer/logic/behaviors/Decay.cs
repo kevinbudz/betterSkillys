@@ -19,7 +19,7 @@ namespace WorldServer.logic.behaviors
 
         protected override void TickCore(Entity host, TickTime time, ref object state)
         {
-            int cool = (int)state;
+            int cool = (int?)state ?? -1;
 
             if (cool <= 0)
                 if (!(host is Enemy))
