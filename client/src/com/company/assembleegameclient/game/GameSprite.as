@@ -135,7 +135,7 @@ public class GameSprite extends Sprite
                if(Parameters.DamageCounter[gameObject.objectId_] > gameObject.maxHP_)
                   Parameters.DamageCounter[gameObject.objectId_] = gameObject.maxHP_;
                var dmgInflicted:int = Parameters.DamageCounter[gameObject.objectId_] / gameObject.maxHP_ * 100;
-               bossHealthBar.setDamageInflicted(dmgInflicted);
+               bossHealthBar.setDamageInflicted(dmgInflicted, gameObject);
             }
          }
       }

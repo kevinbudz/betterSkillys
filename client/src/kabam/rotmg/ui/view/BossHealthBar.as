@@ -124,7 +124,9 @@ public class BossHealthBar extends Sprite {
 
     private var damagePercentage_:Number;
 
-    public function setDamageInflicted(percentage:Number):void{
+    public function setDamageInflicted(percentage:Number, go:GameObject = null):void{
+        if (go != this.go_)
+            return;
         if(percentage == -1){
             this.damagePercentage_ = 0;
             this.dmgText_.text = "";
