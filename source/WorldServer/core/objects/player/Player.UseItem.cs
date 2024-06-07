@@ -574,8 +574,8 @@ namespace WorldServer.core.objects
         private void AEObjectToss(Item item, Position target, ActivateEffect eff)
         {
             GameServer.Resources.GameData.IdToObjectType.TryGetValue(eff.Id == null ? eff.ObjectId : eff.Id, out ushort objType);
-            var throwTime = eff.ThrowTime == 0 ? 1000 : eff.ThrowTime;
-            if (eff.ThrowTime != -1)
+            var throwTime = eff.ThrowTime == -1 ? 1000 : eff.ThrowTime;
+            if (eff.ThrowTime != 0)
             {
                 World.BroadcastIfVisible(new ShowEffect()
                 {
@@ -591,17 +591,41 @@ namespace WorldServer.core.objects
             x.Move(target.X, target.Y);
             World.EnterWorld(x);
 
-            World.StartNewTimer(eff.ThrowTime == -1 ? 1 : throwTime, (world, t) =>
+            Console.WriteLine(throwTime / 1000);
+            if (throwTime != 0)
             {
-                world.BroadcastIfVisible(new ShowEffect()
+                World.StartNewTimer(throwTime / 1000, (world, t) =>
                 {
-                    EffectType = EffectType.AreaBlast,
-                    Color = new ARGB(eff.Color != 0 ? eff.Color : 0xffffffff),
-                    TargetObjectId = x.Id,
-                    Pos1 = new Position() { X = eff.Radius },
-                    Pos2 = new Position() { X = Id, Y = 255 }
-                }, x);
+                    Console.WriteLine("Timer over.");
+                    world.BroadcastIfVisible(new ShowEffect()
+                    {
+                        EffectType = EffectType.AreaBlast,
+                        Color = new ARGB(eff.Color != 0 ? eff.Color : 0xffffffff),
+                        TargetObjectId = x.Id,
+                        Pos1 = new Position() { X = eff.Radius },
+                        Pos2 = new Position() { X = Id, Y = 255 }
+                    }, x);
 
+                    Entity entity = Resolve(World.GameServer, objType);
+                    if (entity == null)
+                        return;
+
+                    if (entity is Enemy en)
+                    {
+                        en.AllyOwnerId = Id;
+                        en.GivesNoXp = true;
+                        en.ApplyConditionEffect(ConditionEffectIndex.Invincible, -1);
+                        en.Move(target.X, target.Y);
+                        World.EnterWorld(en);
+                    }
+                    else
+                    {
+                        entity.Move(target.X, target.Y);
+                        World.EnterWorld(entity);
+                    }
+                });
+            } else
+            {
                 Entity entity = Resolve(World.GameServer, objType);
                 if (entity == null)
                     return;
@@ -609,6 +633,7 @@ namespace WorldServer.core.objects
                 if (entity is Enemy en)
                 {
                     en.AllyOwnerId = Id;
+                    en.GivesNoXp = true;
                     en.ApplyConditionEffect(ConditionEffectIndex.Invincible, -1);
                     en.Move(target.X, target.Y);
                     World.EnterWorld(en);
@@ -618,7 +643,7 @@ namespace WorldServer.core.objects
                     entity.Move(target.X, target.Y);
                     World.EnterWorld(entity);
                 }
-            });
+            }
         }
         private void AEBackpack(TickTime time, Item item, Position target, int slot, int objId, ActivateEffect eff)
         {

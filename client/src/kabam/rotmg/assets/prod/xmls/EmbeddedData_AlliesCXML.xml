@@ -156,10 +156,25 @@
    </Object>
    <Object type="0x1409" id="Spirit Prism Bomb">
       <Class>Character</Class>
+      <Enemy/>
       <Texture>
          <File>lofiObj3</File>
          <Index>0xce</Index>
       </Texture>
+      <Animation prob="1" period="0.4">
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0xcf</Index>
+            </Texture>
+         </Frame>
+         <Frame time="0.2">
+            <Texture>
+               <File>lofiObj3</File>
+               <Index>0xd6</Index>
+            </Texture>
+         </Frame>
+      </Animation>
       <Size>100</Size>
       <MaxHitPoints>1000</MaxHitPoints>
       <Defense>0</Defense>
@@ -1403,6 +1418,8 @@
          <Index>0</Index>
       </Texture>
       <Size>0</Size>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Enemy/>
       <ShadowSize>0</ShadowSize>
       <Flying/>
       <NoMiniMap/>

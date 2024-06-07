@@ -135,6 +135,8 @@ namespace Shared.resources
 
             if (e.Attribute("throwTime") != null)
                 ThrowTime = (int)(float.Parse(e.Attribute("throwTime").Value) * 1000);
+            else
+                ThrowTime = -1;
 
             if (e.Attribute("proc") != null)
                 Proc = float.Parse(e.Attribute("proc").Value);

@@ -12,10 +12,19 @@ namespace WorldServer.logic
         .Init("Spirit Prism Bomb",
             new State(
                 new TimedTransition(2400, "suicide"),
-                new State("0",
-                    new AllyShoot(10, 6, 60, 0, 0, coolDown: 200)
-                    ),
+                new State("0"),
                 new State("suicide",
+                    new AllyShoot(10, 6, 60, 0, 0),
+                    new Suicide()
+                    )
+                )
+            )
+        .Init("Divinity Effect",
+            new State(
+                new TimedTransition(100, "suicide"),
+                new State("0"),
+                new State("suicide",
+                    new AllyAOE(600, 800, 2.25f, 0xffff00),
                     new Suicide()
                     )
                 )

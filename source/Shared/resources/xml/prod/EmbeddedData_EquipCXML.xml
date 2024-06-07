@@ -18502,7 +18502,7 @@
 		<FameBonus>4</FameBonus>
 		<MpCost>90</MpCost>
 		<Cooldown>5</Cooldown>
-		<Activate objectId="Aether Trap" throwTime="-1" color="0xff1919">ObjectToss</Activate>
+		<Activate objectId="Aether Trap" throwTime="0" color="0xff1919">ObjectToss</Activate>
 		<feedPower>800</feedPower>
 		<Soulbound/>
 	</Object>
@@ -27162,7 +27162,7 @@
 		<ActivateOnEquip stat="28" amount="3">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip stat="21" amount="6">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip stat="0" amount="120">IncrementStat</ActivateOnEquip>
-		<OnPlayerHitActivate cooldown="5" damageThreshold="50" proc="1.0" throwTime="-1" objectId="Cranium Effect">ObjectToss</OnPlayerHitActivate>
+		<OnPlayerHitActivate cooldown="5" damageThreshold="50" proc="1.0" throwTime="0" objectId="Cranium Effect">ObjectToss</OnPlayerHitActivate>
 		<BagType>6</BagType>
 		<FameBonus>7</FameBonus>
 		<feedPower>1000</feedPower>

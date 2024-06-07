@@ -24,7 +24,7 @@ namespace WorldServer.core.objects
                 {
                     if (!CheckParams(effs[l]))
                         continue;
-                    var position = PointAt(angle, effs[l].TargetMouseRange);
+                    var position = PointAt(angle, effs[l].TargetMouseRange + .25f);
                     OnOtherActivate(effs[l], item, position);
                     SetSlotEffectCooldown(effs[l].Cooldown, i);
                 }
@@ -41,7 +41,7 @@ namespace WorldServer.core.objects
                 if (item == null)
                     continue;
 
-                ActivateEffect[] effs = item.OnPlayerShootActivateEffects;
+                ActivateEffect[] effs = item.OnPlayerHitActivateEffects;
                 for (int l = 0; l < effs.Length; l++)
                 {
                     if (!CheckParams(effs[l], damage))
