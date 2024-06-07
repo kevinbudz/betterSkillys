@@ -167,7 +167,7 @@ public class GameSprite extends Sprite
 
    public function hudModelInitialized() : void
    {
-      this.hudView = new HUDView();
+      this.hudView = new HUDView(this);
       this.hudView.x = 600;
       addChild(this.hudView);
 

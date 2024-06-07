@@ -16,7 +16,6 @@ package kabam.rotmg.classes.view
       
       public function CharacterSkinListView(height:int = 0)
       {
-         trace(height);
          this.list = makeList(height);
          addChild(this.list);
          super();

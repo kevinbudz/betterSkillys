@@ -1,7 +1,8 @@
 package kabam.rotmg.ui.view
 {
    import com.company.assembleegameclient.game.GameSprite;
-   import com.company.assembleegameclient.objects.Player;
+import com.company.assembleegameclient.objects.GameObject;
+import com.company.assembleegameclient.objects.Player;
    import com.company.assembleegameclient.ui.TradePanel;
    import com.company.assembleegameclient.ui.panels.InteractPanel;
    import com.company.assembleegameclient.ui.panels.itemgrids.EquippedGrid;
@@ -58,9 +59,12 @@ import kabam.rotmg.game.view.components.TabStripView;
 
       private var nexusIndicatorBitmap_:Bitmap;
 
-      public function HUDView()
+      private var gs_:GameSprite;
+
+      public function HUDView(gs:GameSprite)
       {
          super();
+         this.gs_ = gs;
          this.createAssets();
          this.addAssets();
          this.positionAssets();
@@ -75,7 +79,7 @@ import kabam.rotmg.game.view.components.TabStripView;
       {
          this.background = new CharacterWindowBackground();
          this.miniMap = new MiniMap(192,192);
-         this.tabStrip = new TabStripView(186,153);
+         this.tabStrip = new TabStripView(186,153, this.gs_);
          this.characterDetails = new CharacterDetailsView();
          this.statMeters = new StatMetersView();
          var bitmapData:BitmapData = AssetLibrary.getImageFromSet("lofiInterfaceBig",6);

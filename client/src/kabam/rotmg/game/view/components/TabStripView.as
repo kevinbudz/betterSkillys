@@ -1,6 +1,7 @@
 package kabam.rotmg.game.view.components
 {
-   import com.company.util.GraphicsUtil;
+import com.company.assembleegameclient.game.GameSprite;
+import com.company.util.GraphicsUtil;
    import flash.display.Bitmap;
    import flash.display.Graphics;
    import flash.display.GraphicsPath;
@@ -21,7 +22,9 @@ package kabam.rotmg.game.view.components
       public static const TAB_Y_PADDING:Number = 8;
       public static const BACKGROUND_COLOR:uint = 2368034;
       public static const TAB_COLOR:uint = 7039594;
-      
+
+      public var gs_:GameSprite;
+
       public var tabs:Vector.<TabView>;
       private var contents:Vector.<Sprite>;
       private var tabSprite:Sprite;
@@ -31,12 +34,14 @@ package kabam.rotmg.game.view.components
       public var h:Number;
       public var currentTabIndex:int;
       public const tabSelected:Signal = new Signal(String);
-      
-      public function TabStripView(w:Number, h:Number)
+
+      public function TabStripView(w:Number, h:Number, gs:GameSprite)
       {
          super();
          this.w = w;
          this.h = h;
+         this.gs_ = gs;
+
          this.tabs = new Vector.<TabView>();
          this.contents = new Vector.<Sprite>();
          this.tabSprite = new Sprite();

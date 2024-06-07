@@ -450,11 +450,12 @@ public class TextBox extends Sprite
       }
    }
 
-   private function selectInput() : void
+   public function selectInput(text:String = "") : void
    {
       this.inputField_.type = TextFieldType.INPUT;
       this.inputField_.border = true;
       this.inputField_.borderColor = 16777215;
+      this.inputField_.text = text;
       TextBox.isInputtingText = true;
       addChild(this.inputField_);
       if(stage != null)

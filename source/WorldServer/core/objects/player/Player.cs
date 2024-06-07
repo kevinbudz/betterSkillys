@@ -71,6 +71,13 @@ namespace WorldServer.core.objects
 			set => _baseStat.SetValue(value);
         }
 
+        private StatTypeValue<int> _rank;
+        public int Rank
+        {
+            get => _rank.GetValue();
+            set => _rank.SetValue(value);
+        }
+
         private StatTypeValue<int> _colorchat;
         public int ColorChat
         {
@@ -256,6 +263,7 @@ namespace WorldServer.core.objects
             _hasBackpack = new StatTypeValue<bool>(this, StatDataType.HasBackpack, character.HasBackpack, true);
             _oxygenBar = new StatTypeValue<int>(this, StatDataType.OxygenBar, -1, true);
             _baseStat = new StatTypeValue<int>(this, StatDataType.BaseStat, account.SetBaseStat, true);
+            _rank = new StatTypeValue<int>(this, StatDataType.Rank, account.Rank);
             _colornamechat = new StatTypeValue<int>(this, StatDataType.ColorNameChat, 0);
             _colorchat = new StatTypeValue<int>(this, StatDataType.ColorChat, 0);
             _partyId = new StatTypeValue<int>(this, StatDataType.PartyId, account.PartyId, true);
@@ -511,6 +519,7 @@ namespace WorldServer.core.objects
             stats[StatDataType.XPBoost] = (XPBoostTime != 0) ? 1 : 0;
             stats[StatDataType.XPBoostTime] = XPBoostTime / 1000;
             stats[StatDataType.BaseStat] = Client?.Account?.SetBaseStat ?? 0;
+            stats[StatDataType.Rank] = Client?.Account?.Rank ?? 0;
             stats[StatDataType.InventoryData4] = Inventory.Data[4]?.GetData() ?? "{}";
             stats[StatDataType.InventoryData5] = Inventory.Data[5]?.GetData() ?? "{}";
             stats[StatDataType.InventoryData6] = Inventory.Data[6]?.GetData() ?? "{}";

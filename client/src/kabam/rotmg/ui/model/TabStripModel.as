@@ -6,6 +6,7 @@ package kabam.rotmg.ui.model
       public static const MAIN_INVENTORY:String = "Main Inventory";
       public static const STATS:String = "Stats";
       public static const BACKPACK:String = "Backpack";
+      public static const MOD_MENU:String = "Mod Menu";
 
       
       public var currentSelection:String;

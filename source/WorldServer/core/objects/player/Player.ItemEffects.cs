@@ -24,7 +24,7 @@ namespace WorldServer.core.objects
                 {
                     if (!CheckParams(effs[l]))
                         continue;
-                    var position = PointAt(angle, effs[l].TargetMouseRange + .25f);
+                    var position = PointAt(angle, effs[l].TargetMouseRange + .5f);
                     OnOtherActivate(effs[l], item, position);
                     SetSlotEffectCooldown(effs[l].Cooldown, i);
                 }
@@ -93,7 +93,7 @@ namespace WorldServer.core.objects
                 }
             }
         }
-        private void PassiveEffects()
+        private void PassiveEffects() // gets called every second. use proc activateeffect with that in mind.
         {
             for (var i = 0; i < 4; i++)
             {
