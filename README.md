@@ -30,9 +30,9 @@ I made this project in the hopes of it being a better version of *Skilly's 7.0* 
 - [x] Hive. *(map from: MIKEEEEEE)*
 - [ ] Nest. *(map from: MIKEEEEEE)*
 - [ ] Lost Halls (Marble Colossus)
-- [ ] Lair of Draconis.
-- [ ] Ivory Wyvern.
-- [ ] Ice Cave/Inner Sanctum.
+- [x] Lair of Draconis. (scuffed)
+- [x] Ivory Wyvern. (scuffed)
+- [x] Ice Cave/Inner Sanctum. (scuffed)
 - [ ] Abyss Idol.
 - [ ] Horrific Creation.
 
@@ -56,5 +56,6 @@ I made this project in the hopes of it being a better version of *Skilly's 7.0* 
 - Zolmex.
 - MIKEEEEEEEEEE.
 - Evil.
+- MoonMan.
 - Orb, GlassBBQ. (accredited on TK-Reborn)
 - . . . .
