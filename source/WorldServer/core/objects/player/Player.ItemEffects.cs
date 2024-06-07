@@ -25,7 +25,7 @@ namespace WorldServer.core.objects
                     if (!CheckParams(effs[l]))
                         continue;
                     var position = PointAt(angle, effs[l].TargetMouseRange);
-                    OnOtherActivate(effs, item, position);
+                    OnOtherActivate(effs[l], item, position);
                     SetSlotEffectCooldown(effs[l].Cooldown, i);
                 }
             }
@@ -46,7 +46,7 @@ namespace WorldServer.core.objects
                 {
                     if (!CheckParams(effs[l], damage))
                         continue;
-                    OnOtherActivate(effs, item, Position);
+                    OnOtherActivate(effs[l], item, Position);
                     SetSlotEffectCooldown(effs[l].Cooldown, i);
                 }
             }
@@ -67,7 +67,7 @@ namespace WorldServer.core.objects
                 {
                     if (!CheckParams(effs[l]))
                         continue;
-                    OnOtherActivate(effs, item, Position);
+                    OnOtherActivate(effs[l], item, Position);
                     SetSlotEffectCooldown(effs[l].Cooldown, i);
                 }
             }
@@ -88,7 +88,7 @@ namespace WorldServer.core.objects
                 {
                     if (!CheckParams(effs[l]))
                         continue;
-                    OnOtherActivate(effs, item, pos);
+                    OnOtherActivate(effs[l], item, pos);
                     SetSlotEffectCooldown(effs[l].Cooldown, i);
                 }
             }
@@ -109,7 +109,7 @@ namespace WorldServer.core.objects
                 {
                     if (!CheckParams(effs[l]))
                         continue;
-                    OnOtherActivate(effs, item, Position);
+                    OnOtherActivate(effs[l], item, Position);
                     SetSlotEffectCooldown(effs[l].Cooldown, i);
                 }
             }

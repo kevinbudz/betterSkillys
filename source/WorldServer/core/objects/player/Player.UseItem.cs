@@ -293,74 +293,71 @@ namespace WorldServer.core.objects
             player.Mana = newMp;
         }
 
-        private void OnOtherActivate(ActivateEffect[] effs, Item item, Position target)
+        private void OnOtherActivate(ActivateEffect eff, Item item, Position target)
         {
-            foreach (var eff in effs)
+            switch (eff.Effect)
             {
-                switch (eff.Effect)
-                {
-                    case ActivateEffects.GenericActivate:
-                        AEGenericActivate(item, target, eff);
-                        break;
-                    case ActivateEffects.Shoot: break; // handled in PlayerShoot.cs
-                    case ActivateEffects.Heal:
-                        AEHeal(item, target, eff);
-                        break;
-                    case ActivateEffects.Magic:
-                        AEMagic(item, target, eff);
-                        break;
-                    case ActivateEffects.HealNova:
-                        AEHealNova(item, target, eff);
-                        break;
-                    case ActivateEffects.StatBoostSelf:
-                        AEStatBoostSelf(item, target, eff);
-                        break;
-                    case ActivateEffects.StatBoostAura:
-                        AEStatBoostAura(item, target, eff);
-                        break;
-                    case ActivateEffects.BulletNova:
-                        AEBulletNova(item, target, eff);
-                        break;
-                    case ActivateEffects.ConditionEffectSelf:
-                        AEConditionEffectSelf(item, target, eff);
-                        break;
-                    case ActivateEffects.ConditionEffectAura:
-                        AEConditionEffectAura(item, target, eff);
-                        break;
-                    case ActivateEffects.Trap:
-                        AETrap(item, target, eff);
-                        break;
-                    case ActivateEffects.StasisBlast:
-                        StasisBlast(item, target, eff);
-                        break;
-                    case ActivateEffects.MagicNova:
-                        AEMagicNova(item, target, eff);
-                        break;
-                    case ActivateEffects.ClearConditionEffectAura:
-                        AEClearConditionEffectAura(item, target, eff);
-                        break;
-                    case ActivateEffects.RemoveNegativeConditions:
-                        AERemoveNegativeConditions(item, target, eff);
-                        break;
-                    case ActivateEffects.ClearConditionEffectSelf:
-                        AEClearConditionEffectSelf(item, target, eff);
-                        break;
-                    case ActivateEffects.RemoveNegativeConditionsSelf:
-                        AERemoveNegativeConditionSelf(item, target, eff);
-                        break;
-                    case ActivateEffects.Pet:
-                        AEPet(item, target, eff);
-                        break;
-                    case ActivateEffects.ObjectToss:
-                        AEObjectToss(item, target, eff);
-                        break;
-                    case ActivateEffects.BulletCreate:
-                        SendError($"{eff.Effect} is not yet implemented");
-                        break;
-                    default:
-                        StaticLogger.Instance.Warn("Activate effect {0} not implemented.", eff.Effect);
-                        break;
-                }
+                case ActivateEffects.GenericActivate:
+                    AEGenericActivate(item, target, eff);
+                    break;
+                case ActivateEffects.Shoot: break; // handled in PlayerShoot.cs
+                case ActivateEffects.Heal:
+                    AEHeal(item, target, eff);
+                    break;
+                case ActivateEffects.Magic:
+                    AEMagic(item, target, eff);
+                    break;
+                case ActivateEffects.HealNova:
+                    AEHealNova(item, target, eff);
+                    break;
+                case ActivateEffects.StatBoostSelf:
+                    AEStatBoostSelf(item, target, eff);
+                    break;
+                case ActivateEffects.StatBoostAura:
+                    AEStatBoostAura(item, target, eff);
+                    break;
+                case ActivateEffects.BulletNova:
+                    AEBulletNova(item, target, eff);
+                    break;
+                case ActivateEffects.ConditionEffectSelf:
+                    AEConditionEffectSelf(item, target, eff);
+                    break;
+                case ActivateEffects.ConditionEffectAura:
+                    AEConditionEffectAura(item, target, eff);
+                    break;
+                case ActivateEffects.Trap:
+                    AETrap(item, target, eff);
+                    break;
+                case ActivateEffects.StasisBlast:
+                    StasisBlast(item, target, eff);
+                    break;
+                case ActivateEffects.MagicNova:
+                    AEMagicNova(item, target, eff);
+                    break;
+                case ActivateEffects.ClearConditionEffectAura:
+                    AEClearConditionEffectAura(item, target, eff);
+                    break;
+                case ActivateEffects.RemoveNegativeConditions:
+                    AERemoveNegativeConditions(item, target, eff);
+                    break;
+                case ActivateEffects.ClearConditionEffectSelf:
+                    AEClearConditionEffectSelf(item, target, eff);
+                    break;
+                case ActivateEffects.RemoveNegativeConditionsSelf:
+                    AERemoveNegativeConditionSelf(item, target, eff);
+                    break;
+                case ActivateEffects.Pet:
+                    AEPet(item, target, eff);
+                    break;
+                case ActivateEffects.ObjectToss:
+                    AEObjectToss(item, target, eff);
+                    break;
+                case ActivateEffects.BulletCreate:
+                    SendError($"{eff.Effect} is not yet implemented");
+                    break;
+                default:
+                    StaticLogger.Instance.Warn("Activate effect {0} not implemented.", eff.Effect);
+                    break;
             }
         }
 
