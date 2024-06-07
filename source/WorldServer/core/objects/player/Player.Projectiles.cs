@@ -73,7 +73,7 @@ namespace WorldServer.core.objects
 
             var allyShoot = new AllyShootMessage(newBulletId, Id, item.ObjectType, angle);
             World.BroadcastIfVisibleExclude(allyShoot, this, this);
-            TryAddOnPlayerEffects("shoot");
+            PlayerShootEffects(angle);
             FameCounter.Shoot();
         }
 
@@ -136,7 +136,7 @@ namespace WorldServer.core.objects
             var dmg = StatsManager.DamageWithDefense(this, projectile.Damage, projectileDesc.ArmorPiercing, Stats[3]);
             Health -= dmg;
 
-            TryAddOnPlayerEffects("hit", null, dmg);
+            PlayerHitEffects(dmg);
 
             ApplyConditionEffect(projectileDesc.Effects);
             World.BroadcastIfVisibleExclude(new DamageMessage()
@@ -202,7 +202,7 @@ namespace WorldServer.core.objects
                 var dmg = StatsManager.DamageWithDefense(entity, projectile.Damage, projectileDesc.ArmorPiercing, entity.Defense);
                 entity.Health -= dmg;
 
-                TryAddOnPlayerEffects("enemyHit");
+                EnemyHitEffects();
 
                 entity.ApplyConditionEffect(projectileDesc.Effects);
 

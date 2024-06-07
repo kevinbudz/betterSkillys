@@ -443,7 +443,7 @@ namespace WorldServer.core.objects
                 TickSlotCooldowns(time);
                 FameCounter.Tick(time);
                 if (TickCount % 5 == 0)
-                    TryAddOnPlayerEffects("passive");
+                    PassiveEffects();
                 TickCount++;
             }
             base.Tick(ref time);

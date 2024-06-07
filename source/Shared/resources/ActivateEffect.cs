@@ -54,6 +54,7 @@ namespace Shared.resources
         public int ManaRequired;
         public int DamageThreshold;
         public string RequiredConditions;
+        public float TargetMouseRange;
 
         public ActivateEffect(XElement e)
         {
@@ -161,6 +162,9 @@ namespace Shared.resources
 
             if (e.HasAttribute("type"))
                 Type = (byte)e.GetAttribute<int>("type");
+
+            if (e.HasAttribute("targetMouseRange"))
+                TargetMouseRange = float.Parse(e.Attribute("targetMouseRange").Value);
         }
     }
 }

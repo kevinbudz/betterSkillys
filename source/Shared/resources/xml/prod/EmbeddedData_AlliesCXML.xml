@@ -1403,6 +1403,8 @@
          <Index>0</Index>
       </Texture>
       <Size>0</Size>
+	   <MaxHitPoints>1000</MaxHitPoints>
+	   <Enemy/>
       <ShadowSize>0</ShadowSize>
       <Flying/>
       <NoMiniMap/>

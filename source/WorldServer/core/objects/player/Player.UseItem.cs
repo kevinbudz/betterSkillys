@@ -189,7 +189,7 @@ namespace WorldServer.core.objects
             {
                 Activate(clientTime, time, item, slot, pos, objId, useType);
                 if (item.SlotType == slotType)
-                    TryAddOnPlayerEffects("ability", pos);
+                    AbilityUseEffects(pos);
             }
             else
                 Client.SendPacket(new InvResult() { Result = 1 });
@@ -293,17 +293,8 @@ namespace WorldServer.core.objects
             player.Mana = newMp;
         }
 
-        private void OnOtherActivate(string param, Item item, Position target)
+        private void OnOtherActivate(ActivateEffect[] effs, Item item, Position target)
         {
-            ActivateEffect[] effs;
-            switch (param)
-            {
-                case "hit": effs = item.OnPlayerHitActivateEffects; break;
-                case "shoot": effs = item.OnPlayerShootActivateEffects; break;
-                case "ability": effs = item.OnPlayerAbilityActivateEffects; break;
-                default: return;
-            }
-
             foreach (var eff in effs)
             {
                 switch (eff.Effect)
