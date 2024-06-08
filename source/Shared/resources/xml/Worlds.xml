@@ -1,0 +1,86 @@
+﻿<Worlds>
+	<World id="Testing">
+		<Width>256</Width>
+		<Height>256</Height>
+		<Dungeon/>
+		<Persists/>
+	</World>
+	<World id="Realm of the Mad God">
+		<Width>2048</Width>
+		<Height>2048</Height>
+		<MapJM>Realm of the Mad God.jm</MapJM>
+		<Music>
+			<Track>wanderlust</Track>
+		</Music>
+		<Persists/>
+	</World>
+	<World id="Nexus">
+		<Width>256</Width>
+		<Height>256</Height>
+		<Capacity>300</Capacity>
+		<MapJM>Exalt/Nexus.jm</MapJM>
+		<Instance enum="nexus"/>
+		<Music>
+			<Track>wanderlust</Track>
+		</Music>
+		<Persists/>
+		<ShowDisplays/>
+		<!--<DisableShooting/>-->
+		<!--<DisableAbilities/>-->
+		<DisableTeleport/>
+	</World>
+	<World id="Vault">
+		<Width>256</Width>
+		<Height>256</Height>
+		<Capacity>1</Capacity>
+		<MapJM>Exalt/Vault.jm</MapJM>
+		<Instance enum="vault"/>
+		<CreateInstance/>
+		<Persists/>
+		<DisableShooting/>
+		<DisableAbilities/>
+		<DisableTeleport/>
+	</World>
+	<World id="Guild Hall 1">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>Guild Hall/Guild Hall.jm</MapJM>
+		<Instance enum="guild"/>
+		<DisableShooting/>
+		<DisableAbilities/>
+	</World>
+	<World id="Guild Hall 2">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>Guild Hall/Guild Hall 2.jm</MapJM>
+		<Instance enum="guild"/>
+		<DisableShooting/>
+		<DisableAbilities/>
+	</World>
+	<World id="Guild Hall 3">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>Guild Hall/Guild Hall 3.jm</MapJM>
+		<Instance enum="guild"/>
+		<DisableShooting/>
+		<DisableAbilities/>
+	</World>
+	<World id="Guild Hall 4">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>Guild Hall/Guild Hall 4.jm</MapJM>
+		<Instance enum="guild"/>
+		<DisableShooting/>
+		<DisableAbilities/>
+	</World>
+	<World id="Daily Quest Room">
+		<Width>128</Width>
+		<Height>128</Height>
+		<MapJM>Daily Quest Room.jm</MapJM>
+		<Persists/>
+		<ShowDisplays/>
+		<DisableShooting/>
+		<DisableAbilities/>
+		<DisableTeleport/>
+	</World>	
+</Worlds>
