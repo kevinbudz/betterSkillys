@@ -1,4 +1,4 @@
-# betterSkillys.
+# **betterSkillys.**
 &emsp; This is a project meant to be a better version of **NR-CORE/Skilly's 7.0**. betterSkillys uses TK-Reborn from Slendergo as a base, with the goal being to use the 7.0 client provided to fix any bugs, add QoL features, and have content more up-to-date compared to any other source out there. Even though this is technically TK-Reborn, all custom content *(asides from Potion Storage and Marketplace)* have been removed. **All XMLs are from #RotMG 1.0.4.0**, with some exceptions to make sure dungeons I've ripped from other sources work.
 
 &emsp; My original goal was to get the source up-to-date with **#RotMG X18.0.0**, but recently I have gotten access to maps such as Cursed Library, Ancient Ruins, and many others. With this, I have decided to ignore my initial goal, and instead just get as much content from base RotMG as possible. *If you are interested in helping with behaviors, dm me* **@shilohdynasty7142** *on Discord, and I will offer to pay you for any work done and provide map files.*
