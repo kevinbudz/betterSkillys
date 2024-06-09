@@ -3,8 +3,8 @@ This is a project meant to be a better version of **NR-CORE/Skilly's 7.0**. bett
 
 My original goal was to get the source up-to-date with **RotMG X18.0.0**, but recently I have gotten access to maps such as Cursed Library, Ancient Ruins, and many others. With this, I have decided to ignore my initial goal, and instead just get as much content from base RotMG as possible. **If you are interested in helping with behaviors, dm me @ shilohdynasty7142 on Discord, and I will offer to pay you for work and provide map files.**
 
-Please refer to the Content/Dungeon & Bosses to-do to have an idea of what has been done so far.
-- Discord https://discord.gg/mDfcrFANfm
+Please refer to the Content/Dungeon & Bosses to-do to have an idea of what has been done so far. <br />
+- **Join the Discord:** https://discord.gg/mDfcrFANfm
 
 ## Content To-do.
 - [x] Removed TK-Reborn bloat. *[me + Slendergo]*
@@ -30,7 +30,7 @@ Please refer to the Content/Dungeon & Bosses to-do to have an idea of what has b
 - [x] Animated emotes. *[Zolmex]*
 
 ## Dungeons & Bosses to-do.
-**[✧] unfinished, but has map..**
+**[✧] unfinished, but has map..** <br />
 **[✮] finished, but scuffed.**
 - [x] Garnet/Jade Statues. *(setpiece/behavior from: Evil)*
 - [x] Killer Bee Nest.
@@ -38,17 +38,17 @@ Please refer to the Content/Dungeon & Bosses to-do to have an idea of what has b
 - [x] Toxic Sewers.
 - [x] Hive.
 - [x] Magic Woods.
-- [x] Lair of Draconis. [✮]
-- [x] Ivory Wyvern. [✮]
-- [x] Ice Cave/Inner Sanctum. [✮]
+- [x] Lair of Draconis. **[✮]**
+- [x] Ivory Wyvern. [✮]**
+- [x] Ice Cave/Inner Sanctum. [✮]**
 - [x] Ice Tomb. 
-- [ ] Battle of the Nexus. [✧]
-- [ ] Nest. [✧]
+- [ ] Battle of the Nexus. **[✧]**
+- [ ] Nest. **[✧]**
 - [ ] Lost Halls.
 - [ ] Cultist Hideout.
 - [ ] The Void.
-- [ ] Ancient Ruins. [✧]
-- [ ] Cursed Library. [✧]
+- [ ] Ancient Ruins. **[✧]**
+- [ ] Cursed Library. **[✧]**
 - [ ] Parasite Chambers.
 - [ ] Fungal Cavern.
 - [ ] Secluded Thicket.
