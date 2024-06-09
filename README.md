@@ -4,7 +4,7 @@ This is a project meant to be a better version of **NR-CORE/Skilly's 7.0**. bett
 My original goal was to get the source up-to-date with **RotMG X18.0.0**, but recently I have gotten access to maps such as Cursed Library, Ancient Ruins, and many others. With this, I have decided to ignore my initial goal, and instead just get as much content from base RotMG as possible. **If you are interested in helping with behaviors, dm me @ shilohdynasty7142 on Discord, and I will offer to pay you for work and provide map files.**
 
 Please refer to the Content/Dungeon & Bosses to-do to have an idea of what has been done so far.
-Discord Invite: https://discord.gg/mDfcrFANfm
+- Discord https://discord.gg/mDfcrFANfm
 
 ## Content To-do.
 - [x] Removed TK-Reborn bloat. *[me + Slendergo]*
@@ -65,23 +65,23 @@ Discord Invite: https://discord.gg/mDfcrFANfm
 - Redis (included).
 
 ## Credits.
-- **Runes.**
+- **Runes.** <br />
 *Made by your's truly. :)*
-- **Slendergo.**
+- **Slendergo.** <br />
 *Created TK-Reborn, which this is based off.
 He also helped with updating XMLs to RotMG 1.0.4.0 alongside other things.*
-- **Zolmex.**
+- **Zolmex.** <br />
 *Helped with animated emotes, wismod, and has a plethora
 of GitHub repositories that have been used to make betterSkillys.*
-- **MIKEEEEEEEEEE.**
+- **MIKEEEEEEEEEE.** <br />
 *Provided maps for Mountain Temple, Toxic Sewers, The Nest, and Hive.*
-- **Evil.**
+- **Evil.** <br />
 *Provided behaviors for Garnet/Jade statues, 
 has also informed me of sources that had behaviors I wasn't aware of.*
-- **MoonMan.**
+- **MoonMan.** <br />
 *Provided behaviors for Magic Woods and other entities.*
-- **animus.**
+- **animus.** <br />
 *Provided a proxy tool that allowed me to rip maps from RotMG Exalt.*
-- **Orb, GlassBBQ.**
+- **Orb, GlassBBQ.** <br />
 *Were accredited on TK-Reborn, I don't know what they did exactly. :P*
 - . . . .
