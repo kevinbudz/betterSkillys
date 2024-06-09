@@ -1,16 +1,15 @@
 # betterSkillys.
-This is a project meant to be a better version of **NR-CORE/Skilly's 7.0**. betterSkillys uses TK-Reborn from Slendergo as a base, with the goal being to use the 7.0 client provided to fix any bugs, add QoL features, and have content more up-to-date compared to any other source out there. Even though this is technically TK-Reborn, all custom content *(asides from Potion Storage and Marketplace)* have been removed. **All XMLs are from RotMG 1.0.4.0**, with some exceptions to make sure dungeons I've ripped from other sources work.
+&emsp; This is a project meant to be a better version of **NR-CORE/Skilly's 7.0**. betterSkillys uses TK-Reborn from Slendergo as a base, with the goal being to use the 7.0 client provided to fix any bugs, add QoL features, and have content more up-to-date compared to any other source out there. Even though this is technically TK-Reborn, all custom content *(asides from Potion Storage and Marketplace)* have been removed. **All XMLs are from RotMG 1.0.4.0**, with some exceptions to make sure dungeons I've ripped from other sources work.
 
-My original goal was to get the source up-to-date with **RotMG X18.0.0**, but recently I have gotten access to maps such as Cursed Library, Ancient Ruins, and many others. With this, I have decided to ignore my initial goal, and instead just get as much content from base RotMG as possible. **If you are interested in helping with behaviors, dm me @ shilohdynasty7142 on Discord, and I will offer to pay you for work and provide map files.**
+&emsp; My original goal was to get the source up-to-date with **RotMG X18.0.0**, but recently I have gotten access to maps such as Cursed Library, Ancient Ruins, and many others. With this, I have decided to ignore my initial goal, and instead just get as much content from base RotMG as possible. **If you are interested in helping with behaviors, dm me @ shilohdynasty7142 on Discord, and I will offer to pay you for work and provide map files.**
 
-Please refer to the Content/Dungeon & Bosses to-do to have an idea of what has been done so far. <br />
-- **Join the Discord:** https://discord.gg/mDfcrFANfm
+**Please refer to the Content/Dungeon & Bosses to-do to have an idea of what has been done so far.** <br />
 
 ## Content To-do.
-- [x] Removed TK-Reborn bloat. *[me + Slendergo]*
-- [x] Renaming many TK-Reborn files. *[ex: KingdomManager -> RealmManager, etc..]*
-- [x] XMLs up to date with 1.0.4.0. *[Slendergo]*
-- [x] Client/Server asset sorting. *[Slendergo]*
+- [x] Removed TK-Reborn bloat. ***[me + Slendergo]***
+- [x] Renaming many TK-Reborn files. ***[ex: KingdomManager -> RealmManager, etc..]***
+- [x] XMLs up to date with 1.0.4.0. ***[Slendergo]***
+- [x] Client/Server asset sorting. ***[Slendergo]***
 - [x] Fixed things that broke upon importing XMLs. *(Hermit, Treasure Cave, Davy, Shatters, etc..)*
 - [x] Redone Damage Counter from TK-Reborn.
 - [x] Parallax on TitleView.
@@ -18,16 +17,16 @@ Please refer to the Content/Dungeon & Bosses to-do to have an idea of what has b
 - [x] Support for OnPlayerHit/OnPlayerAbility/OnPlayerShoot Activate effects.
 - [ ] Get EVERY equipment item from RotMG ver. 1.0.4.0 working.
 - [x] All screens scale with window.
-- [x] Wis-mod on EquipmentTooltips. *[Zolmex]*
-- [x] Split up Player.cs into more partial classes. *[Slendergo]*
-- [x] Labeling for entities/worlds. *[Slendergo]*
-- [x] Redone how setpieces are called. *[Slendergo]*
+- [x] Wis-mod on EquipmentTooltips. ***[Zolmex]***
+- [x] Split up Player.cs into more partial classes. ***[Slendergo]***
+- [x] Labeling for entities/worlds. ***[Slendergo]***
+- [x] Redone how setpieces are called. ***[Slendergo]***
 - [ ] Client memory leak.
 - [x] Redone Potion Storage.
 - [x] Redone Marketplace.
 - [x] Seasonal Drop-tables.
-- [x] Item Breakdowns. *[Slendergo]*
-- [x] Animated emotes. *[Zolmex]*
+- [x] Item Breakdowns. ***[Slendergo]***
+- [x] Animated emotes. ***[Zolmex]***
 
 ## Dungeons & Bosses to-do.
 **[✧] unfinished, but has map..** <br />
