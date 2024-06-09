@@ -20,8 +20,9 @@ namespace WorldServer.logic.behaviors
         private readonly double? fixedAngle;
         private readonly float radius;
         private readonly double range;
+        private readonly int coolDownOffset;
 
-        public Grenade(double radius, int damage, double range = 5, double? fixedAngle = null, Cooldown coolDown = new Cooldown(), ConditionEffectIndex effect = 0, int effectDuration = 0, uint color = 0xffff0000)
+        public Grenade(double radius, int damage, double range = 5, double? fixedAngle = null, Cooldown coolDown = new Cooldown(), ConditionEffectIndex effect = 0, int effectDuration = 0, uint color = 0xffff0000, int coolDownOffset = 0)
         {
             this.radius = (float)radius;
             this.damage = damage;
@@ -31,9 +32,10 @@ namespace WorldServer.logic.behaviors
             this.effect = effect;
             this.effectDuration = effectDuration;
             this.color = color;
+            this.coolDownOffset = coolDownOffset;
         }
 
-        protected override void OnStateEntry(Entity host, TickTime time, ref object state) => state = 0;
+        protected override void OnStateEntry(Entity host, TickTime time, ref object state) => state = coolDownOffset;
 
         protected override void TickCore(Entity host, TickTime time, ref object state)
         {
