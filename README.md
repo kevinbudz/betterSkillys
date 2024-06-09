@@ -38,8 +38,8 @@
 - [x] Hive.
 - [x] Magic Woods.
 - [x] Lair of Draconis. **[✮]**
-- [x] Ivory Wyvern. [✮]**
-- [x] Ice Cave/Inner Sanctum. [✮]**
+- [x] Ivory Wyvern. **[✮]**
+- [x] Ice Cave/Inner Sanctum. **[✮]**
 - [x] Ice Tomb. 
 - [ ] Battle of the Nexus. **[✧]**
 - [ ] Nest. **[✧]**
