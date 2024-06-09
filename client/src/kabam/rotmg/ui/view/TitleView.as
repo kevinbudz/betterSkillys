@@ -27,7 +27,7 @@ public class TitleView extends Sprite
 {
    private static var TitleScreenGraphic:Class = TitleView_TitleScreenGraphic;
 
-   private static const COPYRIGHT:String = "© ripped by runes :)";
+   private static const COPYRIGHT:String = "© betterSkillys :)";
 
 
    public var playClicked:Signal;
@@ -92,8 +92,8 @@ public class TitleView extends Sprite
       var flameOffset:Vector3D = new Vector3D(anchor2.x-mouseX,anchor2.y-mouseY, 0);
       this.parallaxLayers[0].x += (anchor.x + bgOffset.x * 0.015 - this.parallaxLayers[0].x) * 0.015;
       this.parallaxLayers[0].y += (anchor.y + bgOffset.y * 0.015 - this.parallaxLayers[0].y) * 0.15;
-      this.parallaxLayers[1].x += (anchor2.x + flameOffset.x * 0.03 - this.parallaxLayers[1].x) * 0.03;
-      this.parallaxLayers[1].y += (anchor2.y + flameOffset.y * 0.03 - this.parallaxLayers[1].y) * 0.03;
+      this.parallaxLayers[1].x += (anchor2.x + flameOffset.x * 0.025 - this.parallaxLayers[1].x) * 0.025;
+      this.parallaxLayers[1].y += (anchor2.y + flameOffset.y * 0.025 - this.parallaxLayers[1].y) * 0.025;
    }
 
    private function makeScreenGraphic():Sprite
@@ -133,10 +133,10 @@ public class TitleView extends Sprite
       this.editorButton = new TitleMenuOption(ScreenTypes.EDITOR,22,false);
       this.editorButton.addEventListener(MouseEvent.CLICK, removeListener);
       this.editorClicked = this.editorButton.clicked;
-      this.versionText = new SimpleText(12,8355711,false,0,0);
+      this.versionText = new SimpleText(12,0xaaaaaa,false,0,0);
       this.versionText.filters = [new DropShadowFilter(0,0,0)];
       this.container.addChild(this.versionText);
-      this.copyrightText = new SimpleText(12,8355711,false,0,0);
+      this.copyrightText = new SimpleText(12,0xaaaaaa,false,0,0);
       this.copyrightText.text = COPYRIGHT;
       this.copyrightText.updateMetrics();
       this.copyrightText.filters = [new DropShadowFilter(0,0,0)];

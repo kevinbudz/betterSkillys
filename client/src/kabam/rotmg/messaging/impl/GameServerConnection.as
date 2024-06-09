@@ -1022,7 +1022,7 @@ public class GameServerConnection
       {
          var account:Account = StaticInjectorContext.getInjector().getInstance(Account);
          var hello:Hello = this.messages.require(HELLO) as Hello;
-         hello.buildVersion_ = Parameters.FULL_BUILD_VERSION;
+         hello.buildVersion_ = Parameters.GAME_VERSION;
          hello.gameId_ = this.gameId_;
          hello.guid_ = rsaEncrypt(account.getUserId());
          hello.password_ = rsaEncrypt(account.getPassword());
@@ -2121,7 +2121,7 @@ public class GameServerConnection
 
       private function handleIncorrectVersionFailure(event:Failure) : void
       {
-         var dialog:Dialog = new Dialog("Client version: " + Parameters.FULL_BUILD_VERSION + "\nServer version: " + event.errorDescription_,"Client Update Needed","Ok",null);
+         var dialog:Dialog = new Dialog("Client version: " + Parameters.GAME_VERSION + "\nServer version: " + event.errorDescription_,"Client Update Needed","Ok",null);
          dialog.addEventListener(Dialog.BUTTON1_EVENT,this.onDoClientUpdate);
          this.gs_.stage.addChild(dialog);
          this.retryConnection_ = false;

@@ -6,12 +6,18 @@ import com.company.assembleegameclient.parameters.Parameters;
 
    public class ReleaseSetup implements ApplicationSetup
    {
-      private const CDN_APPENGINE:String = "http://127.0.0.1:8080";
-      private const CDN_APPENGINE_S:String = "http://185.125.50.51:8089";
-      private const TESTING_CDN_APPENGINE:String = "http://185.125.50.51:8089";
+      private const HTTP:String = "http://";
+      private const HTTPS:String = "https://"
 
-      private const BUILD_LABEL:String = "<font color=\"#C8A2C8\">version:</font> v1.0";
-      private const TESTING_BUILD_LABEL:String = "<font color=\"#C8A2C8\">testing:</font> v1.0";
+      private const RELEASE_PORT:String = ":8080";
+      private const TESTING_PORT:String = ":8089";
+
+      private const CDN_APPENGINE:String =  HTTP + "127.0.0.1" + RELEASE_PORT;
+      private const CDN_APPENGINE_S:String = HTTPS + "127.0.0.1" + TESTING_PORT;
+      private const TESTING_CDN_APPENGINE:String = HTTP + "127.0.0.1" + TESTING_PORT;
+
+      private const BUILD_LABEL:String = "<font color=\"#4254d6\">release:</font> " + Parameters.GAME_VERSION;
+      private const TESTING_BUILD_LABEL:String = "<font color=\"#4254d6\">testing.</font>";
 
       public function getAppEngineUrl() : String
       {
@@ -25,7 +31,7 @@ import com.company.assembleegameclient.parameters.Parameters;
 
       public function getBuildLabel() : String
       {
-         return (Parameters.TESTING_SERVER ? TESTING_BUILD_LABEL : BUILD_LABEL).replace("{VERSION}",Parameters.BUILD_VERSION).replace("{MINOR}",Parameters.MINOR_VERSION).replace("{PATCH}",Parameters.PATCH_VERSION);
+         return (Parameters.TESTING_SERVER ? TESTING_BUILD_LABEL : BUILD_LABEL);
       }
 
       public function useProductionDialogs() : Boolean
