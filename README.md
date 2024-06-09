@@ -5,7 +5,7 @@
 
 ***Please refer to the Content/Dungeon & Bosses to-do to have an idea of what has been done so far.*** <br />
 
-## Content To-do.
+## Content to-do.
 - [x] Removed TK-Reborn bloat. ***[me + Slendergo]***
 - [x] Renaming many TK-Reborn files. ***[ex: KingdomManager -> RealmManager, etc..]***
 - [x] XMLs up to date with 1.0.4.0. ***[Slendergo]***
@@ -15,7 +15,7 @@
 - [x] Parallax on TitleView.
 - [x] Bugs with hardware acceleration.
 - [x] Support for OnPlayerHit/OnPlayerAbility/OnPlayerShoot Activate effects.
-- [ ] Get EVERY equipment item from RotMG ver. 1.0.4.0 working.
+- [ ] Get EVERY equipment item from *#RotMG 1.0.4.0* working.
 - [x] All screens scale with window.
 - [x] Wis-mod on EquipmentTooltips. ***[Zolmex]***
 - [x] Split up Player.cs into more partial classes. ***[Slendergo]***
