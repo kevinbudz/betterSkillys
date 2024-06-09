@@ -14,7 +14,7 @@ namespace WorldServer.logic
         private _ RockDragon = () => Behav()
             .Init("Dragon Head",
                 new State(
-                    new PlaceMap("setpieces/rock_dragon.jm", true),
+                    new PlaceMap("Setpieces/Rock Dragon.jm", true),
                     new Reproduce("Rock Dragon Bat", 5, 5, coolDown: 10000),
                     new DropPortalOnDeath("Lair of Draconis Portal", 1),
                     new State("default",

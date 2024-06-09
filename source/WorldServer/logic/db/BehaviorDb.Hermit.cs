@@ -11,8 +11,8 @@ namespace WorldServer.logic
         .Init("Hermit God",
                 new State(
                     new ScaleHP2(20),
-                    new PlaceMap("setpieces/hermit/spawn.jm", true),
-                    new PlaceMapAtDeath("setpieces/hermit/death.jm", true),
+                    new PlaceMap("Setpieces/Hermit God/Spawn.jm", true),
+                    new PlaceMapAtDeath("Setpieces/Hermit God/Death.jm", true),
                     new OrderOnDeath(20, "Hermit God Tentacle Spawner", "Die", 1),
                     new OrderOnDeath(20, "Hermit God Drop", "Die", 1),
                     new State("Spawn Tentacle",

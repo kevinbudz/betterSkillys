@@ -44,7 +44,7 @@
 	<World id="Guild Hall 1">
 		<Width>256</Width>
 		<Height>256</Height>
-		<MapJM>Guild Hall/Guild Hall.jm</MapJM>
+		<MapJM>Guild Hall.jm</MapJM>
 		<Instance enum="guild"/>
 		<DisableShooting/>
 		<DisableAbilities/>
@@ -52,7 +52,7 @@
 	<World id="Guild Hall 2">
 		<Width>256</Width>
 		<Height>256</Height>
-		<MapJM>Guild Hall/Guild Hall 2.jm</MapJM>
+		<MapJM>Guild Hall 2.jm</MapJM>
 		<Instance enum="guild"/>
 		<DisableShooting/>
 		<DisableAbilities/>
@@ -60,7 +60,7 @@
 	<World id="Guild Hall 3">
 		<Width>256</Width>
 		<Height>256</Height>
-		<MapJM>Guild Hall/Guild Hall 3.jm</MapJM>
+		<MapJM>Guild Hall 3.jm</MapJM>
 		<Instance enum="guild"/>
 		<DisableShooting/>
 		<DisableAbilities/>
@@ -68,7 +68,7 @@
 	<World id="Guild Hall 4">
 		<Width>256</Width>
 		<Height>256</Height>
-		<MapJM>Guild Hall/Guild Hall 4.jm</MapJM>
+		<MapJM>Guild Hall 4.jm</MapJM>
 		<Instance enum="guild"/>
 		<DisableShooting/>
 		<DisableAbilities/>

@@ -1,9 +1,9 @@
 ﻿<Objects>
-	<Object type="0x9000" id="Potion Storage">
+	<Object type="0x4969" id="Potion Storage">
 		<Class>PotionStorage</Class>
 		<Texture>
-			<File>lofiObj3</File>
-			<Index>0x466</Index>
+			<File>lofiCharBig</File>
+			<Index>0x0b</Index>
 		</Texture>
 		<Static />
 		<ShadowSize>75</ShadowSize>

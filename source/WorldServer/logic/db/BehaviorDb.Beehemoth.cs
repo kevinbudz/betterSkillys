@@ -468,7 +468,7 @@ namespace WorldServer.logic
             new State(
                 new ScaleHP2(20),
                 new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
-                new PlaceMap("setpieces/killer_bee_nest.jm", true, 1, -1),
+                new PlaceMap("Setpieces/Killer Bee Nest.jm", true, 1, -1),
                 new State("init",
                     new ConditionEffectBehavior(ConditionEffectIndex.Invincible),
                     new TimedTransition(1000, "invincBlue")

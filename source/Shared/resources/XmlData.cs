@@ -165,7 +165,7 @@ namespace Shared.resources
 					if(id[0] == '/')
 						id = id.Substring(1, id.Length - 1);
 
-                    if (id == "realm.jm")
+                    if (id == "Realm of the Mad God.jm")
                         WorldDataCache.Add(id, File.ReadAllBytes(jm));
                     else
                     {

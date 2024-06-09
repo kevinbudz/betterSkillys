@@ -10,7 +10,7 @@ namespace WorldServer.logic
         private _ Sphinx = () => Behav()
             .Init("Grand Sphinx",
                 new State(
-                    new PlaceMap("setpieces/grand_sphinx.jm", true),
+                    new PlaceMap("setpieces/Grand Sphinx.jm", true),
                     new DropPortalOnDeath("Tomb of the Ancients Portal", 1.0),
                     new State("Spawned",
                         new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable),
