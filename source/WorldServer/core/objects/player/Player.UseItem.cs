@@ -574,16 +574,18 @@ namespace WorldServer.core.objects
         private void AEObjectToss(Item item, Position target, ActivateEffect eff)
         {
             GameServer.Resources.GameData.IdToObjectType.TryGetValue(eff.Id == null ? eff.ObjectId : eff.Id, out ushort objType);
-            var throwTime = eff.ThrowTime == -1 ? 1000 : eff.ThrowTime;
+            var throwTime = eff.ThrowTime;
+            Console.WriteLine(eff.ThrowTime);
             if (eff.ThrowTime != 0)
             {
                 World.BroadcastIfVisible(new ShowEffect()
                 {
-                    EffectType = EffectType.Throw,
-                    Color = new ARGB(eff.Color != 0 ? eff.Color : 0xffffffff),
+                    EffectType = EffectType.BeachBall,
+                    ObjectType = item.ObjectType,
                     TargetObjectId = Id,
                     Pos1 = target,
-                    Duration = throwTime / 1000
+                    Pos2 = new Position { X = X, Y = Y },
+                    Duration = throwTime
                 }, this);
             }
 
@@ -591,59 +593,26 @@ namespace WorldServer.core.objects
             x.Move(target.X, target.Y);
             World.EnterWorld(x);
 
-            Console.WriteLine(throwTime / 1000);
-            if (throwTime != 0)
+            World.StartNewTimer(throwTime, (world, t) =>
             {
-                World.StartNewTimer(throwTime / 1000, (world, t) =>
+                world.BroadcastIfVisible(new ShowEffect()
                 {
-                    Console.WriteLine("Timer over.");
-                    world.BroadcastIfVisible(new ShowEffect()
-                    {
-                        EffectType = EffectType.AreaBlast,
-                        Color = new ARGB(eff.Color != 0 ? eff.Color : 0xffffffff),
-                        TargetObjectId = x.Id,
-                        Pos1 = new Position() { X = eff.Radius },
-                        Pos2 = new Position() { X = Id, Y = 255 }
-                    }, x);
+                    EffectType = EffectType.AreaBlast,
+                    Color = new ARGB(eff.Color != 0 ? eff.Color : 0xffffffff),
+                    TargetObjectId = x.Id,
+                    Pos1 = new Position() { X = eff.Radius },
+                    Pos2 = new Position() { X = Id, Y = 255 }
+                }, x);
 
-                    Entity entity = Resolve(World.GameServer, objType);
-                    if (entity == null)
-                        return;
-
-                    if (entity is Enemy en)
-                    {
-                        en.AllyOwnerId = Id;
-                        en.GivesNoXp = true;
-                        en.ApplyConditionEffect(ConditionEffectIndex.Invincible, -1);
-                        en.Move(target.X, target.Y);
-                        World.EnterWorld(en);
-                    }
-                    else
-                    {
-                        entity.Move(target.X, target.Y);
-                        World.EnterWorld(entity);
-                    }
-                });
-            } else
-            {
                 Entity entity = Resolve(World.GameServer, objType);
                 if (entity == null)
                     return;
-
-                if (entity is Enemy en)
-                {
-                    en.AllyOwnerId = Id;
-                    en.GivesNoXp = true;
-                    en.ApplyConditionEffect(ConditionEffectIndex.Invincible, -1);
-                    en.Move(target.X, target.Y);
-                    World.EnterWorld(en);
-                }
-                else
-                {
-                    entity.Move(target.X, target.Y);
-                    World.EnterWorld(entity);
-                }
-            }
+                entity.AllyOwnerId = Id;
+                entity.GivesNoXp = true;
+                entity.ApplyConditionEffect(ConditionEffectIndex.Invincible, -1);
+                entity.Move(target.X, target.Y);
+                World.EnterWorld(entity);
+            });
         }
         private void AEBackpack(TickTime time, Item item, Position target, int slot, int objId, ActivateEffect eff)
         {
@@ -1118,11 +1087,12 @@ namespace WorldServer.core.objects
 
             World.BroadcastIfVisible(new ShowEffect()
             {
-                EffectType = EffectType.Throw,
-                Color = new ARGB(eff.Color != 0 ? eff.Color : 0xffffffff),
+                EffectType = EffectType.BeachBall,
+                ObjectType = item.ObjectType,
                 TargetObjectId = Id,
                 Pos1 = target,
-                Duration = eff.ThrowTime / 1000
+                Pos2 = new Position { X = X, Y = Y },
+                Duration = eff.ThrowTime
             }, this);
 
             var x = new Placeholder(GameServer, eff.ThrowTime * 1000);
@@ -1264,11 +1234,13 @@ namespace WorldServer.core.objects
         {
             World.BroadcastIfVisible(new ShowEffect()
             {
-                EffectType = EffectType.Throw,
-                Color = new ARGB(0xff9000ff),
+                EffectType = EffectType.BeachBall,
+                ObjectType = item.ObjectType,
                 TargetObjectId = Id,
-                Pos1 = target
-            }, ref target);
+                Pos1 = target,
+                Pos2 = new Position { X = X, Y = Y },
+                Duration = eff.ThrowTime
+            }, this);
 
             World.StartNewTimer(1500, (world, t) =>
             {

@@ -65,8 +65,8 @@ namespace WorldServer.logic
             )
         .Init("CR Friendly Cnidarian",
             new State(
-                new TimedTransition(5000, "suicide"),
-                new AllyAOE(600, 2, 0xffa447, 1000),
+                new TimedTransition(3000, "suicide"),
+                new AllyAOE(600, 600, 2, 0xffa447, 1000),
                 new State("0",
                     new SetAltTexture(0),
                     new TimedTransition(1000, "1")
@@ -76,7 +76,7 @@ namespace WorldServer.logic
                     new TimedTransition(1000, "0")
                     ),
                 new State("suicide",
-                    new Suicide()
+                    new Decay(0)
                     )
                 )
             )

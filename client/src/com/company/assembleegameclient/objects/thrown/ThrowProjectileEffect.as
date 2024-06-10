@@ -26,7 +26,7 @@ package com.company.assembleegameclient.objects.thrown
          x_ = this.start_.x;
          y_ = this.start_.y;
          var size:int = 10000;
-         var projectile:ThrownProjectile = new ThrownProjectile(this.id_,duration_,this.start_,this.end_);
+         var projectile:ThrownProjectile = new ThrownProjectile(this.id_,this.duration_,this.start_,this.end_);
          if(duration_ == 0){
             projectile = new ThrownProjectile(this.id_, 1500, this.start_, this.end_);
          }

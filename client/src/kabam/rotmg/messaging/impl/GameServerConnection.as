@@ -1442,7 +1442,8 @@ public class GameServerConnection
             case ShowEffect.THROW_PROJECTILE_EFFECT_TYPE:
                go = map.goDict_[showEffect.targetObjectId_];
                start = (((start) != null) ? new Point(go.x_, go.y_) : showEffect.pos2_.toPoint());
-               e = new ThrowProjectileEffect(showEffect.objectType, showEffect.pos1_.toPoint(), start, showEffect.duration_ * 1000);
+               trace(showEffect.duration_);
+               e = new ThrowProjectileEffect(showEffect.objectType, showEffect.pos2_.toPoint(), showEffect.pos1_.toPoint(), showEffect.duration_);
                map.addObj(e, start.x, start.y);
                break;
             /*case ShowEffect.THROW_PROJECTILE_EFFECT_TYPE:
