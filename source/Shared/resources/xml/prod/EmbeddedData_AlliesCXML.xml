@@ -184,9 +184,6 @@
 			<Speed>60</Speed>
 			<LifetimeMS>300</LifetimeMS>
 		</Projectile>
-		<NoMiniMap/>
-		<ShadowSize>70</ShadowSize>
-		<Size>100</Size>
 	</Object>
    <Object type="0x140a" id="Sand Castle">
       <Class>Character</Class>

@@ -199,6 +199,7 @@ namespace WorldServer.core.objects
                 if (GameServer.BehaviorDb.Definitions.TryGetValue(ObjectType, out var loot))
                     loot.Item2?.Handle(this, time);
             }
+            Dead = true;
             World.LeaveWorld(this);
         }
     }

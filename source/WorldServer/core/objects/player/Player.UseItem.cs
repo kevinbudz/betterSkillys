@@ -4,6 +4,7 @@ using Shared.resources;
 using StackExchange.Redis;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using WorldServer.core.net.datas;
 using WorldServer.core.net.stats;
@@ -575,7 +576,6 @@ namespace WorldServer.core.objects
         {
             GameServer.Resources.GameData.IdToObjectType.TryGetValue(eff.Id == null ? eff.ObjectId : eff.Id, out ushort objType);
             var throwTime = eff.ThrowTime;
-            Console.WriteLine(eff.ThrowTime);
             if (eff.ThrowTime != 0)
             {
                 World.BroadcastIfVisible(new ShowEffect()
@@ -1062,11 +1062,15 @@ namespace WorldServer.core.objects
         }
 
         private void AEPet(Item item, Position target, ActivateEffect eff)
-        { 
-            var pet = Resolve(GameServer, eff.ObjectId);
-            pet.AllyOwnerId = Id;
-            pet.Move(X, Y);
-            World.EnterWorld(pet);
+        {
+            Entity entity = Resolve(World.GameServer, eff.ObjectId);
+            if (entity == null)
+                return;
+            entity.AllyOwnerId = Id;
+            entity.GivesNoXp = true;
+            entity.ApplyConditionEffect(ConditionEffectIndex.Invincible, -1);
+            entity.Move(X, Y);
+            World.EnterWorld(entity);
         }
 
         private void AEPermaPet(TickTime time, Item item, Position target, ActivateEffect eff)

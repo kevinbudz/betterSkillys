@@ -11,10 +11,11 @@ namespace WorldServer.logic
         private _ Allies = () => Behav()
         .Init("Spirit Prism Bomb",
             new State(
-                new TimedTransition(2400, "suicide"),
-                new State("0"),
+                new AllyShoot(10, 6, 60, 0, 0, coolDownOffset: 2400),
+                new State("0",
+                    new TimedTransition(2400, "suicide")
+                    ),
                 new State("suicide",
-                    new AllyShoot(10, 6, 60, 0, 0),
                     new Suicide()
                     )
                 )

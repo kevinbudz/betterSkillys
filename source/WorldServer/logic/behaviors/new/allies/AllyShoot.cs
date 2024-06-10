@@ -45,6 +45,9 @@ namespace WorldServer.logic.behaviors
 
         protected override void TickCore(Entity host, TickTime time, ref object state)
         {
+            if (host.Dead) // i hate that i have to do this.
+                return;
+
             var cool = (int?)state ?? -1; // <-- crashes server due to state being null... patched now but should be looked at.
 
             Status = CycleStatus.NotStarted;
