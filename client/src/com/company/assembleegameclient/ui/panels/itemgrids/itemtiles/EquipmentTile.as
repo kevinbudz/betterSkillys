@@ -122,6 +122,12 @@ import com.company.assembleegameclient.objects.Player;
             case ItemConstants.SHURIKEN_TYPE:
                bd = AssetLibrary.getImageFromSet("lofiObj3", 555);
                break;
+            case ItemConstants.NEW_ABIL_TYPE:
+               bd = AssetLibrary.getImageFromSet("lofiObj6", 224);
+               break;
+            case ItemConstants.LUTE_TYPE:
+               bd = AssetLibrary.getImageFromSet("lofiObj6", 208);
+               break;
          }
 
          if(bd != null)

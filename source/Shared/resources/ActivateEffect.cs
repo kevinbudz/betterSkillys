@@ -36,7 +36,6 @@ namespace Shared.resources
         public readonly float Distance;
         public readonly float AngleOffset;
         public readonly float Duration;
-        public readonly int NumShots;
         public readonly string Slot;
 
         public string Center;
@@ -55,6 +54,13 @@ namespace Shared.resources
         public int DamageThreshold;
         public string RequiredConditions;
         public float TargetMouseRange;
+
+        public readonly int NumShots;
+        public readonly float GapAngle;
+        public readonly float GapTiles;
+        public readonly float OffsetAngle;
+        public readonly float MinDistance;
+        public readonly float MaxDistance;
 
         public ActivateEffect(XElement e)
         {
@@ -124,8 +130,14 @@ namespace Shared.resources
             RemoveSelf = e.GetAttribute<bool>("removeSelf");
             DungeonName = e.GetAttribute<string>("dungeonName");
             LockedName = e.GetAttribute<string>("lockedName");
-            NumShots = e.GetAttribute<int>("numShots");
             Slot = e.GetAttribute<string>("slot");
+
+            NumShots = e.GetAttribute<int>("numShots", 3);
+            GapAngle = e.GetAttribute<float>("gapAngle");
+            GapTiles = e.GetAttribute<float>("gapTiles");
+            OffsetAngle = e.GetAttribute<float>("offsetAngle", 90);
+            MinDistance = e.GetAttribute<float>("minDistance");
+            MaxDistance = e.GetAttribute<float>("maxDistance", 4.4f);
 
             if (e.Attribute("totalDamage") != null)
                 TotalDamage = Utils.FromString(e.Attribute("totalDamage").Value);
@@ -133,10 +145,9 @@ namespace Shared.resources
             if (e.Attribute("impactDamage") != null)
                 ImpactDamage = Utils.FromString(e.Attribute("impactDamage").Value);
 
-            if (e.Attribute("throwTime") != null)
+            if (e.Attribute("throwTime") != null) 
                 ThrowTime = (int)(float.Parse(e.Attribute("throwTime").Value) * 1000);
-            else
-                ThrowTime = 1500;
+            else ThrowTime = 1500;
 
             if (e.Attribute("proc") != null)
                 Proc = float.Parse(e.Attribute("proc").Value);

@@ -28,6 +28,9 @@ public class ItemConstants {
    public static const SCEPTER_TYPE:int = 23;
    public static const KATANA_TYPE:int = 24;
    public static const SHURIKEN_TYPE:int = 25;
+   public static const EGG_TYPE:int = 26;
+   public static const NEW_ABIL_TYPE:int = 27;
+   public static const LUTE_TYPE:int = 28;
 
    public static function itemTypeToName(type:int):String {
       switch (type) {
@@ -83,6 +86,12 @@ public class ItemConstants {
             return "Katana";
          case SHURIKEN_TYPE:
             return "Shuriken";
+         case EGG_TYPE:
+            return ("Any");
+         case NEW_ABIL_TYPE:
+            return ("Wakizashi");
+         case LUTE_TYPE:
+            return ("Lute");
          default:
             return "Invalid Type!";
       }

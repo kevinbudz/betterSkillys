@@ -48,6 +48,50 @@ namespace WorldServer.core.objects
             public bool Disabled { get; set; }
             public List<int> HitObjects = new List<int>();
 
+            public static Position GetPosition(long elapsedTicks, int projId, ProjectileDesc desc, float angle, float speedMult)
+            {
+                var x = 0.0;
+                var y = 0.0;
+
+                var dist = elapsedTicks * (desc.Speed / 10000.0) * speedMult;
+                var period = projId % 2 == 0 ? 0 : Math.PI;
+
+                if (desc.Wavy)
+                {
+                    var theta = angle + (Math.PI * 64) * Math.Sin(period + 6 * Math.PI * (elapsedTicks / 1000.0));
+                    x += dist * Math.Cos(theta);
+                    y += dist * Math.Sin(theta);
+                }
+                else if (desc.Parametric)
+                {
+                    var theta = (double)elapsedTicks / desc.LifetimeMS * 2 * Math.PI;
+                    var a = Math.Sin(theta) * (projId % 2 != 0 ? 1 : -1);
+                    var b = Math.Sin(theta * 2) * (projId % 4 < 2 ? 1 : -1);
+                    var c = Math.Sin(angle);
+                    var d = Math.Cos(angle);
+                    x += (a * d - b * c) * desc.Magnitude;
+                    y += (a * c + b * d) * desc.Magnitude;
+                }
+                else
+                {
+                    if (desc.Boomerang)
+                    {
+                        var d = desc.LifetimeMS * (desc.Speed * speedMult) / 10000.0 / 2;
+                        if (dist > d)
+                            dist = d - (dist - d);
+                    }
+                    x += dist * Math.Cos(angle);
+                    y += dist * Math.Sin(angle);
+                    if (desc.Amplitude != 0)
+                    {
+                        var d = desc.Amplitude * Math.Sin(period + (double)elapsedTicks / desc.LifetimeMS * desc.Frequency * 2 * Math.PI);
+                        x += d * Math.Cos(angle + Math.PI / 2);
+                        y += d * Math.Sin(angle + Math.PI / 2);
+                    }
+                }
+
+                return new Position() { X = (float)x, Y = (float)y };
+            }
             public Position GetPosition(int elapsed, int bulletId, ProjectileDesc desc)
             {
                 double periodFactor;

@@ -1,4 +1,5 @@
-﻿using Shared;
+﻿using Pipelines.Sockets.Unofficial.Arenas;
+using Shared;
 using Shared.isc;
 using Shared.resources;
 using StackExchange.Redis;
@@ -478,6 +479,9 @@ namespace WorldServer.core.objects
                     case ActivateEffects.ObjectToss:
                         AEObjectToss(item, target, eff);
                         break;
+                    case ActivateEffects.BulletCreate:
+                        AEBulletCreate(item, target, eff);
+                        break;
                     case ActivateEffects.Unlock:
                         AEUnlock(time, item, target, eff);
                         break;
@@ -495,7 +499,6 @@ namespace WorldServer.core.objects
                     case ActivateEffects.TeleportToObject:
                     case ActivateEffects.MysteryPortal:
                     case ActivateEffects.KillRealmHeroes:
-                    case ActivateEffects.BulletCreate:
                         SendError($"{eff.Effect} is not yet implemented");
                         break;
                     default:
@@ -503,6 +506,39 @@ namespace WorldServer.core.objects
                         break;
                 }
             }
+        }
+
+        private void AEBulletCreate(Item item, Position target, ActivateEffect eff)
+        {
+            var shootAngle = Math.Atan2(target.Y - Y, target.X - X);
+            var distance = Math.Sqrt(Math.Pow(target.X - X, 2) + Math.Pow(target.Y - Y, 2));
+            var adjustedDistance = Math.Max(1, Math.Min(distance, 6.3)); //Minimum of 1 tile to 6.3tiles max range
+
+            var adjustedTargetX = X + adjustedDistance * Math.Cos(shootAngle);
+            var adjustedTargetY = Y + adjustedDistance * Math.Sin(shootAngle);
+
+            var angle = shootAngle + eff.OffsetAngle * (Math.PI / 180);
+            var prjDesc = item.Projectiles[0];
+
+            var midway = ValidatedProjectile.GetPosition((long)(prjDesc.LifetimeMS / 2), GetNextBulletId(eff.NumShots), prjDesc, (float)angle, 1);
+            var startingPos = new Position
+            {
+                X = (float)(adjustedTargetX - midway.X),
+                Y = (float)adjustedTargetY - midway.Y,
+            };
+
+            var shoots = new List<OutgoingMessage>(eff.NumShots);
+            for (var i = 0; i < eff.NumShots; i++)
+            {
+                var fPos = startingPos;
+                fPos.X += eff.GapTiles * (float)Math.Sin(-eff.GapAngle * (Math.PI / 180)) * i;
+                fPos.Y += eff.GapTiles * (float)Math.Cos(-eff.GapAngle * (Math.PI / 180)) * i;
+
+                var nextBulletId = GetNextBulletId(1, true);
+                var damage = Random.Shared.Next(prjDesc.MinDamage, prjDesc.MaxDamage);
+                shoots.Add(new ServerPlayerShoot(Id, nextBulletId, item.ObjectType, fPos, (float)angle, damage, prjDesc));
+            }
+            World.BroadcastIfVisible(shoots, ref target);
         }
 
         private void AEFame(TickTime time, Item item, Position target, ActivateEffect eff)

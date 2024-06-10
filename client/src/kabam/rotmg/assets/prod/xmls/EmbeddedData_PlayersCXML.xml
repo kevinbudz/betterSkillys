@@ -1,5 +1,5 @@
 <Objects>
-	
+
 	<Object type="0x0300" id="Rogue">
 		<Class>Player</Class>
 		<Description>The rogue relies on his speed to deal damage at medium range while avoiding attacks.</Description>
@@ -386,7 +386,7 @@
     <Object type="0x0326" id="Ninja">
 		<Class>Player</Class>
 		<Description>The ninja relies on speed and skill, using katanas and ninja stars to deal big damage.</Description>
-		
+
 		<AnimatedTexture><File>players</File><Index>13</Index></AnimatedTexture>
 		<HitSound>player/rogue_hit</HitSound>
 		<DeathSound>player/rogue_death</DeathSound>
@@ -413,5 +413,71 @@
 		<UnlockLevel level="20" type="0x0300">Rogue</UnlockLevel>
 		<UnlockLevel level="20" type="0x031d">Warrior</UnlockLevel>
         <UnlockCost>999</UnlockCost>
+	</Object>
+	<Object type="0x0311" id="Samurai">
+		<Class>Player</Class>
+		<Description>The samurai fights with a katana and uses his wakizashi sidearm to expose enemy weak points.</Description>
+		<AnimatedTexture>
+			<File>players</File>
+			<Index>14</Index>
+		</AnimatedTexture>
+		<HitSound>player/warrior_hit</HitSound>
+		<DeathSound>player/warrior_death</DeathSound>
+		<Player/>
+		<BloodProb>1.0</BloodProb>
+		<SlotTypes>24, 27, 7, 9, 0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+		<Equipment>0xc44, 0x1aaa, -1, -1, 0xa22, -1, -1, -1, -1, -1, -1, -1</Equipment>
+		<MaxHitPoints max="720">150</MaxHitPoints>
+		<MaxMagicPoints max="252">100</MaxMagicPoints>
+		<Attack max="75">12</Attack>
+		<Defense max="30">0</Defense>
+		<Speed max="55">10</Speed>
+		<Dexterity max="50">10</Dexterity>
+		<HpRegen max="60">12</HpRegen>
+		<MpRegen max="60">12</MpRegen>
+		<LevelIncrease min="20" max="30">MaxHitPoints</LevelIncrease>
+		<LevelIncrease min="2" max="8">MaxMagicPoints</LevelIncrease>
+		<LevelIncrease min="1" max="2">Attack</LevelIncrease>
+		<LevelIncrease min="0" max="0">Defense</LevelIncrease>
+		<LevelIncrease min="0" max="2">Speed</LevelIncrease>
+		<LevelIncrease min="0" max="2">Dexterity</LevelIncrease>
+		<LevelIncrease min="0" max="2">HpRegen</LevelIncrease>
+		<LevelIncrease min="1" max="2">MpRegen</LevelIncrease>
+		<UnlockLevel level="20" type="0x031e">Knight</UnlockLevel>
+		<UnlockLevel level="20" type="0x0326">Ninja</UnlockLevel>
+		<UnlockCost>999999</UnlockCost>
+	</Object>
+	<Object type="0x031c" id="Bard">
+		<Class>Player</Class>
+		<Description>The bard uses his lute to inspire allies and enhance their combat capabilities.</Description>
+		<AnimatedTexture>
+			<File>players</File>
+			<Index>15</Index>
+		</AnimatedTexture>
+		<HitSound>player/archer_hit</HitSound>
+		<DeathSound>player/archer_death</DeathSound>
+		<Player/>
+		<BloodProb>1.0</BloodProb>
+		<SlotTypes>3, 28, 14, 9, 0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+		<Equipment>0xa1a, 0xcff1, -1, -1, 0xa22, -1, -1, -1, -1, -1, -1, -1</Equipment>
+		<MaxHitPoints max="670">100</MaxHitPoints>
+		<MaxMagicPoints max="385">100</MaxMagicPoints>
+		<Attack max="55">10</Attack>
+		<Defense max="25">0</Defense>
+		<Speed max="55">10</Speed>
+		<Dexterity max="70">15</Dexterity>
+		<HpRegen max="45">12</HpRegen>
+		<MpRegen max="75">15</MpRegen>
+		<LevelIncrease min="20" max="30">MaxHitPoints</LevelIncrease>
+		<LevelIncrease min="5" max="15">MaxMagicPoints</LevelIncrease>
+		<LevelIncrease min="1" max="2">Attack</LevelIncrease>
+		<LevelIncrease min="0" max="0">Defense</LevelIncrease>
+		<LevelIncrease min="0" max="2">Speed</LevelIncrease>
+		<LevelIncrease min="1" max="2">Dexterity</LevelIncrease>
+		<LevelIncrease min="0" max="2">HpRegen</LevelIncrease>
+		<LevelIncrease min="1" max="2">MpRegen</LevelIncrease>
+		<UnlockLevel level="20" type="0x0322">Huntress</UnlockLevel>
+		<UnlockLevel level="20" type="0x031f">Paladin</UnlockLevel>
+		<UnlockCost>999</UnlockCost>
 	</Object>
 </Objects>

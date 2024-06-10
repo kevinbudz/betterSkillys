@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <Objects>
 	<Object type="0xafa" id="New Abilities">
@@ -9261,6 +9261,263 @@
 		<feedPower>850</feedPower>
 		<Soulbound/>
 	</Object>
+	<Object type="0x1aaa" id="Simple Wakizashi">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>lofiObj6</File>
+			<Index>0xe0</Index>
+		</Texture>
+		<SlotType>27</SlotType>
+		<Tier>0</Tier>
+		<Description>A small, quick-to-swing blade.</Description>
+		<Projectile>
+			<ObjectId>Wakizashi Slash 0</ObjectId>
+			<Speed>180</Speed>
+			<MinDamage>150</MinDamage>
+			<MaxDamage>250</MaxDamage>
+			<LifetimeMS>350</LifetimeMS>
+			<PassesCover/>
+			<MultiHit/>
+		</Projectile>
+		<Usable/>
+		<BagType>1</BagType>
+		<MpCost>40</MpCost>
+		<Activate numShots="2" gapAngle="45" gapTiles="0.4" offsetAngle="90">BulletCreate</Activate>
+		<feedPower>5</feedPower>
+		<DropTradable/>
+	</Object>
+	<Object type="0x1aab" id="Steel Wakizashi">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>lofiObj6</File>
+			<Index>0xe1</Index>
+		</Texture>
+		<SlotType>27</SlotType>
+		<Tier>1</Tier>
+		<Description>A heavy wakizashi crafted by a fine metalworker.</Description>
+		<Projectile>
+			<ObjectId>Wakizashi Slash 1</ObjectId>
+			<Speed>180</Speed>
+			<MinDamage>250</MinDamage>
+			<MaxDamage>350</MaxDamage>
+			<LifetimeMS>350</LifetimeMS>
+			<PassesCover/>
+			<MultiHit/>
+		</Projectile>
+		<Usable/>
+		<BagType>1</BagType>
+		<MpCost>50</MpCost>
+		<Activate numShots="2" gapAngle="45" gapTiles="0.4" offsetAngle="90">BulletCreate</Activate>
+		<ActivateOnEquip stat="28" amount="1">IncrementStat</ActivateOnEquip>
+		<feedPower>10</feedPower>
+		<DropTradable/>
+	</Object>
+	<Object type="0x1aac" id="Crimson Wakizashi">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>lofiObj6</File>
+			<Index>0xe2</Index>
+		</Texture>
+		<SlotType>27</SlotType>
+		<Tier>2</Tier>
+		<Description>A deep red wakizashi made of bronze.</Description>
+		<Projectile>
+			<ObjectId>Wakizashi Slash 2</ObjectId>
+			<Speed>180</Speed>
+			<MinDamage>200</MinDamage>
+			<MaxDamage>300</MaxDamage>
+			<LifetimeMS>350</LifetimeMS>
+			<PassesCover/>
+			<MultiHit/>
+		</Projectile>
+		<Usable/>
+		<BagType>1</BagType>
+		<MpCost>60</MpCost>
+		<Activate numShots="3" gapAngle="45" gapTiles="0.4" offsetAngle="90">BulletCreate</Activate>
+		<ActivateOnEquip stat="28" amount="2">IncrementStat</ActivateOnEquip>
+		<feedPower>20</feedPower>
+		<DropTradable/>
+	</Object>
+	<Object type="0x1aad" id="Enforced Wakizashi">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>lofiObj6</File>
+			<Index>0xe3</Index>
+		</Texture>
+		<SlotType>27</SlotType>
+		<Tier>3</Tier>
+		<Description>A heavy wakizashi created and used by a secluded sect of powerful swordsmen.</Description>
+		<Projectile>
+			<ObjectId>Wakizashi Slash 3</ObjectId>
+			<Speed>180</Speed>
+			<MinDamage>300</MinDamage>
+			<MaxDamage>400</MaxDamage>
+			<LifetimeMS>350</LifetimeMS>
+			<PassesCover/>
+			<MultiHit/>
+			<ConditionEffect duration="1.0">Exposed</ConditionEffect>
+		</Projectile>
+		<Usable/>
+		<BagType>2</BagType>
+		<FameBonus>1</FameBonus>
+		<MpCost>65</MpCost>
+		<Activate numShots="3" gapAngle="45" gapTiles="0.4" offsetAngle="90">BulletCreate</Activate>
+		<ActivateOnEquip stat="28" amount="3">IncrementStat</ActivateOnEquip>
+		<feedPower>45</feedPower>
+		<DropTradable/>
+	</Object>
+	<Object type="0x1aae" id="Turquoise Wakizashi">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>lofiObj6</File>
+			<Index>0xe4</Index>
+		</Texture>
+		<SlotType>27</SlotType>
+		<Tier>4</Tier>
+		<Description>A beautiful wakizashi, adorned with shining gemstones found within the extensive cavern, Okina Tomi.</Description>
+		<Projectile>
+			<ObjectId>Wakizashi Slash 4</ObjectId>
+			<Speed>180</Speed>
+			<MinDamage>250</MinDamage>
+			<MaxDamage>350</MaxDamage>
+			<LifetimeMS>350</LifetimeMS>
+			<PassesCover/>
+			<MultiHit/>
+			<ConditionEffect duration="2.0">Exposed</ConditionEffect>
+		</Projectile>
+		<Usable/>
+		<BagType>2</BagType>
+		<FameBonus>2</FameBonus>
+		<MpCost>70</MpCost>
+		<Activate numShots="4" gapAngle="45" gapTiles="0.4" offsetAngle="90">BulletCreate</Activate>
+		<ActivateOnEquip stat="28" amount="4">IncrementStat</ActivateOnEquip>
+		<feedPower>90</feedPower>
+		<DropTradable/>
+	</Object>
+	<Object type="0x1aaf" id="Jade-Imbued Wakizashi">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>lofiObj6</File>
+			<Index>0xe5</Index>
+		</Texture>
+		<SlotType>27</SlotType>
+		<Tier>5</Tier>
+		<Description>A wakizashi adorned with sea green stones, only given to the greatest swordsmen by the Grand Emperor himself.</Description>
+		<Projectile>
+			<ObjectId>Wakizashi Slash 5</ObjectId>
+			<Speed>180</Speed>
+			<MinDamage>300</MinDamage>
+			<MaxDamage>450</MaxDamage>
+			<LifetimeMS>350</LifetimeMS>
+			<PassesCover/>
+			<MultiHit/>
+			<ConditionEffect duration="3.0">Exposed</ConditionEffect>
+		</Projectile>
+		<Usable/>
+		<BagType>4</BagType>
+		<FameBonus>3</FameBonus>
+		<MpCost>75</MpCost>
+		<Activate numShots="4" gapAngle="45" gapTiles="0.4" offsetAngle="90">BulletCreate</Activate>
+		<ActivateOnEquip stat="28" amount="5">IncrementStat</ActivateOnEquip>
+		<feedPower>185</feedPower>
+	</Object>
+	<Object type="0x1ab0" id="Royal Wakizashi">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>lofiObj6</File>
+			<Index>0xe6</Index>
+		</Texture>
+		<SlotType>27</SlotType>
+		<Tier>6</Tier>
+		<Description>A gorgeous wakizashi made of starmetal and gifted to an ancient king by the god Shinsetsuna for his devotion.</Description>
+		<Projectile>
+			<ObjectId>Wakizashi Slash 6</ObjectId>
+			<Speed>180</Speed>
+			<MinDamage>400</MinDamage>
+			<MaxDamage>500</MaxDamage>
+			<LifetimeMS>350</LifetimeMS>
+			<PassesCover/>
+			<MultiHit/>
+			<ConditionEffect duration="3.5">Exposed</ConditionEffect>
+		</Projectile>
+		<ActivateOnEquip stat="0" amount="20">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip stat="3" amount="20">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip stat="28" amount="6">IncrementStat</ActivateOnEquip>
+		<Usable/>
+		<BagType>4</BagType>
+		<FameBonus>4</FameBonus>
+		<MpCost>80</MpCost>
+		<Activate numShots="4" gapAngle="45" gapTiles="0.4" offsetAngle="90">BulletCreate</Activate>
+		<feedPower>380</feedPower>
+	</Object>
+	<Object type="0x2322" id="Wakizashi of Eastern Winds">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>lofiObj6</File>
+			<Index>0xe9</Index>
+		</Texture>
+		<SlotType>27</SlotType>
+		<Description>A wakizashi used by a powerful swordsman in ancient times. It seems to dance through the air as you swing it.</Description>
+		<Projectile>
+			<ObjectId>Wakizashi Wind</ObjectId>
+			<Speed>140</Speed>
+			<MinDamage>260</MinDamage>
+			<MaxDamage>490</MaxDamage>
+			<LifetimeMS>400</LifetimeMS>
+			<PassesCover/>
+			<MultiHit/>
+			<ConditionEffect duration="4.5">Exposed</ConditionEffect>
+			<Amplitude>0.42</Amplitude>
+			<FaceDir/>
+		</Projectile>
+		<ActivateOnEquip stat="22" amount="5">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip stat="28" amount="3">IncrementStat</ActivateOnEquip>
+		<Usable/>
+		<BagType>6</BagType>
+		<FameBonus>5</FameBonus>
+		<MpCost>80</MpCost>
+		<Activate numShots="5" arcGap="8" gapAngle="0" gapTiles="0.3" offsetAngle="-90" maxDistance="4.6">BulletCreate</Activate>
+		<feedPower>800</feedPower>
+		<Soulbound/>
+	</Object>
+	<Object type="0x23c0" id="Wakizashi of Crossing Fires">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>lofiObj6</File>
+			<Index>0xea</Index>
+		</Texture>
+		<SlotType>27</SlotType>
+		<Description>A blade created within the Hellforge and enchanted with dark magics to grant its wielder the power of a demon king.</Description>
+		<Projectile>
+			<ObjectId>Wakizashi Fire</ObjectId>
+			<Speed>160</Speed>
+			<MinDamage>480</MinDamage>
+			<MaxDamage>600</MaxDamage>
+			<LifetimeMS>400</LifetimeMS>
+			<PassesCover/>
+			<MultiHit/>
+			<ConditionEffect duration="3.0">Exposed</ConditionEffect>
+		</Projectile>
+		<ActivateOnEquip stat="20" amount="4">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip stat="26" amount="2">IncrementStat</ActivateOnEquip>
+		<Usable/>
+		<BagType>6</BagType>
+		<FameBonus>6</FameBonus>
+		<MpCost>100</MpCost>
+		<Activate numShots="2" gapAngle="-45" gapTiles="0.5" offsetAngle="+75" maxDistance="4.0">BulletCreate</Activate>
+		<Activate numShots="2" gapAngle="+45" gapTiles="0.5" offsetAngle="-75" maxDistance="4.0">BulletCreate</Activate>
+		<feedPower>1000</feedPower>
+		<Soulbound/>
+	</Object>
 	<Object type="0xc5b" id="Mad God Ale">
 		<Class>Equipment</Class>
 		<Item/>
@@ -9490,7 +9747,6 @@
 		<Soulbound/>
 		<LTBoosted/>
 		<Timer>1800</Timer>
-		<Activate duration="1800">LTBoost</Activate>
 		<BagType>7</BagType>
 		<feedPower>150</feedPower>
 		<Track/>
@@ -9512,7 +9768,6 @@
 		<Soulbound/>
 		<LDBoosted/>
 		<Timer>1800</Timer>
-		<Activate duration="1800">LDBoost</Activate>
 		<BagType>7</BagType>
 		<feedPower>150</feedPower>
 		<Track/>
@@ -9535,7 +9790,6 @@
 		<BagType>8</BagType>
 		<Timer>3600</Timer>
 		<XpBoost/>
-		<Activate duration="3600">XPBoost</Activate>
 		<feedPower>110</feedPower>
 		<Track/>
 	</Object>
@@ -9557,7 +9811,6 @@
 		<BagType>8</BagType>
 		<Timer>1200</Timer>
 		<XpBoost/>
-		<Activate duration="1200">XPBoost</Activate>
 		<feedPower>75</feedPower>
 		<Track/>
 	</Object>
@@ -15617,7 +15870,7 @@
 			<EffectInfo name="Type" description="Quest item"/>
 			<EffectInfo name="Drop location" description="Obtained by defeating Dreadstump the Pirate King in the Pirate Cave"/>
 		</ExtraTooltipData>
-		ß
+		ï¿½
 		<Sound>spell/fire_nova</Sound>
 		<BagType>2</BagType>
 		<Treasure/>
@@ -19245,6 +19498,39 @@
 		<feedPower>400</feedPower>
 		<Soulbound/>
 	</Object>
+	<Object type="0xf3c" id="SamuraiST1" setType="0xf3d" setName="Akuma Slayer Set">
+		<DisplayId>Ryu's Blade</DisplayId>
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>d2LofiObjEmbed</File>
+			<Index>0xaa</Index>
+		</Texture>
+		<SlotType>27</SlotType>
+		<Description>Calls upon old energy to unleash a swarm of dragon like energy spirits.</Description>
+		<Projectile>
+			<ObjectId>Wakizashi Pink</ObjectId>
+			<Speed>120</Speed>
+			<MinDamage>125</MinDamage>
+			<MaxDamage>250</MaxDamage>
+			<LifetimeMS>800</LifetimeMS>
+			<ArmorPiercing/>
+			<PassesCover/>
+			<MultiHit/>
+			<ConditionEffect duration="3.5">Exposed</ConditionEffect>
+			<FaceDir/>
+			<Wavy/>
+		</Projectile>
+		<ActivateOnEquip stat="20" amount="2">IncrementStat</ActivateOnEquip>
+		<Usable/>
+		<MpCost>85</MpCost>
+		<Activate numShots="4" gapAngle="270" gapTiles="0.5" offsetAngle="165" minDistance="3" maxDistance="3">BulletCreate</Activate>
+		<Activate numShots="4" gapAngle="270" gapTiles="0.5" offsetAngle="195" minDistance="3" maxDistance="3">BulletCreate</Activate>
+		<BagType>8</BagType>
+		<FameBonus>4</FameBonus>
+		<feedPower>850</feedPower>
+		<Soulbound/>
+	</Object>
 	<Object type="0x36a2" id="Tezcacoatl's Tail">
 		<Class>Equipment</Class>
 		<Item/>
@@ -19563,6 +19849,35 @@
 		<feedPower>800</feedPower>
 		<PetFood/>
 		<Soulbound/>
+	</Object>
+	<Object type="0x265" id="Peppermint Wakizashi">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>d2LofiObjEmbed</File>
+			<Index>0xce</Index>
+		</Texture>
+		<SlotType>27</SlotType>
+		<Description>A wakizashi fashioned from perennial ice. Its innocent, festive appearance belies its lethal edge.\n\nSprite Credits: Dappertron</Description>
+		<Projectile>
+			<ObjectId>Wakizashi Slash Xmas</ObjectId>
+			<Speed>180</Speed>
+			<MinDamage>400</MinDamage>
+			<MaxDamage>500</MaxDamage>
+			<LifetimeMS>350</LifetimeMS>
+			<PassesCover/>
+			<MultiHit/>
+			<ConditionEffect duration="3.5">Exposed</ConditionEffect>
+		</Projectile>
+		<ActivateOnEquip stat="0" amount="20">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip stat="3" amount="20">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip stat="28" amount="6">IncrementStat</ActivateOnEquip>
+		<Usable/>
+		<BagType>4</BagType>
+		<FameBonus>4</FameBonus>
+		<MpCost>80</MpCost>
+		<Activate numShots="4" gapAngle="45" gapTiles="0.4" offsetAngle="90">BulletCreate</Activate>
+		<feedPower>380</feedPower>
 	</Object>
 	<Object type="0x260" id="Tome of Holy Furor">
 		<Class>Equipment</Class>
@@ -20271,6 +20586,39 @@
 		<feedPower>500</feedPower>
 		<Soulbound/>
 	</Object>
+	<Object type="0x5b3d" id="NSFWakizashi">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>theMachineObjects8x8</File>
+			<Index>0x107</Index>
+		</Texture>
+		<SlotType>27</SlotType>
+		<Description>A double-edged wakizashi that exposes in more ways than one.</Description>
+		<ExtraTooltipData>
+			<EffectInfo name="" description="Mistake"/>
+		</ExtraTooltipData>
+		<Projectile>
+			<ObjectId>Wakizashi Strip</ObjectId>
+			<Speed>95</Speed>
+			<MinDamage>0</MinDamage>
+			<MaxDamage>0</MaxDamage>
+			<LifetimeMS>200</LifetimeMS>
+			<Size>80</Size>
+			<PassesCover/>
+			<MultiHit/>
+			<ConditionEffect duration="10">Exposed</ConditionEffect>
+		</Projectile>
+		<Usable/>
+		<BagType>6</BagType>
+		<FameBonus>5</FameBonus>
+		<MpCost>60</MpCost>
+		<Activate numShots="1" arcGap="8" gapAngle="0" gapTiles="0.3" offsetAngle="-180" maxDistance="1">BulletCreate</Activate>
+		<Activate effect="Exposed" duration="10">ConditionEffectSelf</Activate>
+		<Activate skin="0x5b42" duration="10">SelfTransform</Activate>
+		<feedPower>500</feedPower>
+		<Soulbound/>
+	</Object>
 	<Object type="0x5b3f" id="Omni-Impotence Ring" setType="0x5b40" setName="The Mistake">
 		<Class>Equipment</Class>
 		<Item/>
@@ -20499,6 +20847,37 @@
 		<FameBonus>4</FameBonus>
 		<feedPower>600</feedPower>
 		<BagType>8</BagType>
+		<Soulbound/>
+	</Object>
+	<Object type="0x183e" id="Sakura Wakizashi">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>buffedBunnyObjects8x8</File>
+			<Index>0x40</Index>
+		</Texture>
+		<SlotType>27</SlotType>
+		<Description>A whimsical wakizashi of Eastern origin; it has a pleasant aroma of cherry blossoms.\n\nSprite Credits: Aurum</Description>
+		<Projectile>
+			<ObjectId>Wakizashi Cherry</ObjectId>
+			<Speed>140</Speed>
+			<MinDamage>260</MinDamage>
+			<MaxDamage>490</MaxDamage>
+			<LifetimeMS>400</LifetimeMS>
+			<PassesCover/>
+			<MultiHit/>
+			<ConditionEffect duration="4.5">Exposed</ConditionEffect>
+			<Amplitude>0.42</Amplitude>
+			<FaceDir/>
+		</Projectile>
+		<ActivateOnEquip stat="22" amount="5">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip stat="28" amount="3">IncrementStat</ActivateOnEquip>
+		<Usable/>
+		<BagType>6</BagType>
+		<FameBonus>7</FameBonus>
+		<MpCost>80</MpCost>
+		<Activate numShots="5" arcGap="8" gapAngle="0" gapTiles="0.3" offsetAngle="-90" maxDistance="4.6">BulletCreate</Activate>
+		<feedPower>800</feedPower>
 		<Soulbound/>
 	</Object>
 	<Object type="0x196d" id="Rogue Mystery Skin">
@@ -20770,6 +21149,36 @@
 		<Activate center="player" color="0xff0080" duration="3" effect="Healing" range="5" target="player" useWisMod="true" visualEffect="5">GenericActivate</Activate>
 		<Cooldown>5</Cooldown>
 		<feedPower>800</feedPower>
+		<Soulbound/>
+	</Object>
+	<Object type="0x57f" id="Ronin's Wakizashi">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>cursedLibraryObjects8x8</File>
+			<Index>0x4c</Index>
+		</Texture>
+		<SlotType>27</SlotType>
+		<Description>An artifact once wielded by a wandering samurai with no master to serve. It was preserved in the Cursed Library for historical purposes, but it remains just as deadly despite its age.</Description>
+		<Projectile>
+			<ObjectId>Ronin Slash</ObjectId>
+			<Speed>180</Speed>
+			<MinDamage>200</MinDamage>
+			<MaxDamage>300</MaxDamage>
+			<LifetimeMS>350</LifetimeMS>
+			<PassesCover/>
+			<MultiHit/>
+			<ConditionEffect duration="6">Slowed</ConditionEffect>
+			<FaceDir/>
+		</Projectile>
+		<ActivateOnEquip amount="4" stat="22">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip amount="4" stat="27">IncrementStat</ActivateOnEquip>
+		<Usable/>
+		<BagType>4</BagType>
+		<FameBonus>3</FameBonus>
+		<MpCost>70</MpCost>
+		<Activate gapAngle="315" gapTiles="0.53" numShots="4" offsetAngle="90">BulletCreate</Activate>
+		<feedPower>500</feedPower>
 		<Soulbound/>
 	</Object>
 	<Object type="0x580" id="Corruption Cutter">
@@ -21946,6 +22355,28 @@
 		<Activate duration="5.5" effect="Invisible">ConditionEffectSelf</Activate>
 		<Activate duration="2.5" speed="1.4" distance="6" angleOffset="180" objectId="Refraction Cloak Decoy">Decoy</Activate>
 		<Cooldown>7</Cooldown>
+		<feedPower>1000</feedPower>
+		<Soulbound/>
+	</Object>
+	<Object type="0x58a" id="Fractured Gemstone Wakizashi">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>crystalCaveObjects8x8</File>
+			<Index>0x87</Index>
+		</Texture>
+		<SlotType>27</SlotType>
+		<Description>Carved from the unblemished minerals deep beneath the realm, this unconventional wakizashi fractures itself when swung to release a strange supernatural energy.</Description>
+		<ExtraTooltipData>
+			<EffectInfo description="Summons sentient crystal star orbiting you for 5 seconds" name=""/>
+			<EffectInfo description="Inflicts Exposed for 4 seconds, deals 350 damage per hit" name="Crystal Star"/>
+		</ExtraTooltipData>
+		<Activate objectId="Friendly Neighborhood Gemstone">Pet</Activate>
+		<ActivateOnEquip amount="5" stat="21">IncrementStat</ActivateOnEquip>
+		<Usable/>
+		<BagType>6</BagType>
+		<FameBonus>6</FameBonus>
+		<MpCost>100</MpCost>
 		<feedPower>1000</feedPower>
 		<Soulbound/>
 	</Object>
@@ -25422,6 +25853,78 @@
 		<feedPower>800</feedPower>
 		<Soulbound/>
 	</Object>
+	<Object type="0x52e5" id="2SamuraiST1" setType="0x52e9" setName="Daring Discoverer Samurai Set">
+		<DisplayId>Watarimono</DisplayId>
+		<Class>Equipment</Class>
+		<Description>A blade made from iron stuck in firm dark oak. The raw power of each strike compensates for the blunt edge.</Description>
+		<Item/>
+		<Texture>
+			<File>d2LofiObjEmbed</File>
+			<Index>0x241</Index>
+		</Texture>
+		<SlotType>27</SlotType>
+		<Projectile>
+			<ObjectId>Wakizashi Discoverer</ObjectId>
+			<Speed>120</Speed>
+			<MinDamage>700</MinDamage>
+			<MaxDamage>800</MaxDamage>
+			<LifetimeMS>350</LifetimeMS>
+			<Frequency>1</Frequency>
+			<Amplitude>.5</Amplitude>
+			<PassesCover/>
+			<FaceDir/>
+		</Projectile>
+		<Usable/>
+		<BagType>8</BagType>
+		<FameBonus>5</FameBonus>
+		<MpCost>100</MpCost>
+		<Activate arcGap="0" numShots="2" gapAngle="0" gapTiles=".5" minDistance="0" maxDistance="5" offsetAngle="90">BulletCreate</Activate>
+		<Activate arcGap="0" numShots="2" gapAngle="0" gapTiles=".5" minDistance="0" maxDistance="5" offsetAngle="270">BulletCreate</Activate>
+		<feedPower>850</feedPower>
+		<Soulbound/>
+	</Object>
+	<Object type="0x52e7" id="2SamuraiST2" setType="0x52e9" setName="Daring Discoverer Samurai Set">
+		<Class>Equipment</Class>
+		<DisplayId>Reinforced Root Armor</DisplayId>
+		<Description>A breastplate crafted from sturdy plantlife and shards of iron. The plants seem to retreat when hit heavily.</Description>
+		<Item/>
+		<Usable/>
+		<Texture>
+			<File>d2LofiObjEmbed</File>
+			<Index>0x242</Index>
+		</Texture>
+		<SlotType>7</SlotType>
+		<ActivateOnEquip amount="20" stat="21">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip amount="4" stat="22">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip amount="60" stat="3">IncrementStat</ActivateOnEquip>
+		<OnPlayerHitActivate proc="1" amount="-15" stat="22" cooldown="10" duration="4" damageThreshold="60">StatBoostSelf</OnPlayerHitActivate>
+		<ExtraTooltipData>
+			<EffectInfo description="-15 Speed for 4 seconds when hit for at least 60 damage." name="Fragile Scales"/>
+			<EffectInfo description="10 seconds" name="Cooldown"/>
+		</ExtraTooltipData>
+		<BagType>8</BagType>
+		<FameBonus>5</FameBonus>
+		<feedPower>750</feedPower>
+		<Soulbound/>
+	</Object>
+	<Object type="0x52e8" id="2SamuraiST3" setType="0x52e9" setName="Daring Discoverer Samurai Set">
+		<DisplayId>Traveler's Trinket</DisplayId>
+		<Description>A handy compass that reminds travelers of the homes they will someday return to.</Description>
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>d2LofiObjEmbed</File>
+			<Index>0x243</Index>
+		</Texture>
+		<SlotType>9</SlotType>
+		<ActivateOnEquip amount="70" stat="0">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip amount="6" stat="22">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip amount="3" stat="20">IncrementStat</ActivateOnEquip>
+		<BagType>8</BagType>
+		<FameBonus>5</FameBonus>
+		<feedPower>650</feedPower>
+		<Soulbound/>
+	</Object>
 	<Object type="0x4f4e" id="2WizardST0" setType="0x4f52" setName="Slurp Scion Wizard Set">
 		<DisplayId>Tideturner Trident</DisplayId>
 		<Class>Equipment</Class>
@@ -25966,6 +26469,37 @@
 		<Soulbound/>
 		<feedPower>570</feedPower>
 	</Object>
+	<Object type="0x2063" id="Virtuous Wakizashi">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>lofiObj6</File>
+			<Index>0xe7</Index>
+		</Texture>
+		<SlotType>27</SlotType>
+		<Tier>7</Tier>
+		<Description>A pristine wakizashi exalted by the archangels themselves and awarded to combatants with the most pure hearts.</Description>
+		<Projectile>
+			<ObjectId>Wakizashi Slash 7</ObjectId>
+			<Speed>180</Speed>
+			<MinDamage>550</MinDamage>
+			<MaxDamage>600</MaxDamage>
+			<LifetimeMS>350</LifetimeMS>
+			<PassesCover/>
+			<MultiHit/>
+			<ConditionEffect duration="4">Exposed</ConditionEffect>
+		</Projectile>
+		<ActivateOnEquip stat="28" amount="7">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip stat="0" amount="40">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip stat="3" amount="40">IncrementStat</ActivateOnEquip>
+		<Usable/>
+		<BagType>9</BagType>
+		<FameBonus>5</FameBonus>
+		<MpCost>85</MpCost>
+		<Activate numShots="4" gapAngle="45" gapTiles="0.4" offsetAngle="90">BulletCreate</Activate>
+		<Soulbound/>
+		<feedPower>570</feedPower>
+	</Object>
 	<Object type="0x7080" id="Spell of Galactic Creation">
 		<Class>Equipment</Class>
 		<Item/>
@@ -26329,6 +26863,442 @@
 		<Soulbound/>
 		<feedPower>855</feedPower>
 	</Object>
+	<Object type="0x7094" id="Paragon Wakizashi">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>lofiObj6</File>
+			<Index>0xe8</Index>
+		</Texture>
+		<SlotType>27</SlotType>
+		<Tier>8</Tier>
+		<Description>A flawless diamond gifted as a symbol of gratitude from the shogunate and regarded among the finest blades ever constructed.</Description>
+		<Projectile>
+			<ObjectId>Wakizashi Slash 8</ObjectId>
+			<Speed>180</Speed>
+			<MinDamage>500</MinDamage>
+			<MaxDamage>550</MaxDamage>
+			<LifetimeMS>350</LifetimeMS>
+			<PassesCover/>
+			<MultiHit/>
+			<ConditionEffect duration="4.5">Exposed</ConditionEffect>
+		</Projectile>
+		<ActivateOnEquip stat="28" amount="8">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip stat="0" amount="60">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip stat="3" amount="60">IncrementStat</ActivateOnEquip>
+		<Usable/>
+		<BagType>9</BagType>
+		<FameBonus>6</FameBonus>
+		<MpCost>90</MpCost>
+		<Activate numShots="5" gapAngle="45" gapTiles="0.4" offsetAngle="90">BulletCreate</Activate>
+		<Soulbound/>
+		<feedPower>855</feedPower>
+	</Object>
+	<Object type="0xcff1" id="Novice's Lute">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>lofiObj6</File>
+			<Index>0xd0</Index>
+		</Texture>
+		<SlotType>28</SlotType>
+		<Tier>0</Tier>
+		<Description>A magical lute that inspires allies.</Description>
+		<ExtraTooltipData>
+			<EffectInfo name="Party Effect" description=" Within 4.5 sqrs Inspired for 3 seconds."/>
+			<EffectInfo name="Range Multiplier" description="x1.25"/>
+		</ExtraTooltipData>
+		<Sound>spell/major_heal</Sound>
+		<Usable/>
+		<Activate radius="4.5" speedBoost="1.25" lifeBoost="1" duration="3" targeted="false">BoostRange</Activate>
+		<Cooldown>4</Cooldown>
+		<BagType>1</BagType>
+		<MpCost>70</MpCost>
+		<feedPower>5</feedPower>
+		<DropTradable/>
+	</Object>
+	<Object type="0xcff2" id="Oakwood Lute">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>lofiObj6</File>
+			<Index>0xd1</Index>
+		</Texture>
+		<SlotType>28</SlotType>
+		<Tier>1</Tier>
+		<Description>A sturdy lute made of finely cut oakwood.</Description>
+		<ExtraTooltipData>
+			<EffectInfo name="Party Effect" description=" Within 4.5 sqrs Inspired for 3.5 seconds."/>
+			<EffectInfo name="Range Multiplier" description="x1.25"/>
+		</ExtraTooltipData>
+		<Sound>spell/major_heal</Sound>
+		<Usable/>
+		<Activate radius="4.5" speedBoost="1.25" lifeBoost="1" duration="3.5" targeted="false">BoostRange</Activate>
+		<Cooldown>4.5</Cooldown>
+		<BagType>1</BagType>
+		<MpCost>75</MpCost>
+		<feedPower>10</feedPower>
+		<DropTradable/>
+	</Object>
+	<Object type="0xcff3" id="Iron Lute">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>lofiObj6</File>
+			<Index>0xd2</Index>
+		</Texture>
+		<SlotType>28</SlotType>
+		<Tier>2</Tier>
+		<Description>A special lute given to apprentice musicians to compose their finest ballads.</Description>
+		<ExtraTooltipData>
+			<EffectInfo name="Party Effect" description=" Within 4.5 sqrs Inspired for 4 seconds."/>
+			<EffectInfo name="Range Multiplier" description="x1.25"/>
+		</ExtraTooltipData>
+		<Sound>spell/major_heal</Sound>
+		<Usable/>
+		<Activate radius="4.5" duration="4" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
+		<Cooldown>5</Cooldown>
+		<BagType>1</BagType>
+		<MpCost>80</MpCost>
+		<feedPower>20</feedPower>
+		<DropTradable/>
+	</Object>
+	<Object type="0xcff4" id="Silver Lute">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>lofiObj6</File>
+			<Index>0xd3</Index>
+		</Texture>
+		<SlotType>28</SlotType>
+		<Tier>3</Tier>
+		<Description>A polished lute built for combat against undead menaces.</Description>
+		<ExtraTooltipData>
+			<EffectInfo name="Party Effect" description=" Within 4.5 sqrs Inspired for 4.5 seconds."/>
+			<EffectInfo name="Range Multiplier" description="x1.25"/>
+		</ExtraTooltipData>
+		<Sound>spell/major_heal</Sound>
+		<Usable/>
+		<Activate radius="4.5" duration="4.5" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
+		<ActivateOnEquip stat="22" amount="1">IncrementStat</ActivateOnEquip>
+		<Activate stat="21" amount="4" duration="2.5">StatBoostSelf</Activate>
+		<Cooldown>5.5</Cooldown>
+		<BagType>2</BagType>
+		<MpCost>85</MpCost>
+		<feedPower>45</feedPower>
+		<FameBonus>1</FameBonus>
+		<DropTradable/>
+	</Object>
+	<Object type="0xcff5" id="Battle Lute">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>lofiObj6</File>
+			<Index>0xd4</Index>
+		</Texture>
+		<SlotType>28</SlotType>
+		<Tier>4</Tier>
+		<Description>A lightweight lute designed to project strong sounds across the chaos of battlefields.</Description>
+		<ExtraTooltipData>
+			<EffectInfo name="Party Effect" description=" Within 4.5 sqrs Inspired for 5 seconds."/>
+			<EffectInfo name="Range Multiplier" description="x1.25"/>
+		</ExtraTooltipData>
+		<Sound>spell/major_heal</Sound>
+		<Usable/>
+		<Activate radius="4.5" duration="5" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
+		<ActivateOnEquip stat="22" amount="2">IncrementStat</ActivateOnEquip>
+		<Activate stat="21" amount="6" duration="3">StatBoostSelf</Activate>
+		<Cooldown>6</Cooldown>
+		<BagType>2</BagType>
+		<MpCost>90</MpCost>
+		<feedPower>90</feedPower>
+		<FameBonus>2</FameBonus>
+		<DropTradable/>
+	</Object>
+	<Object type="0xcff6" id="Regal Lute">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>lofiObj6</File>
+			<Index>0xd5</Index>
+		</Texture>
+		<SlotType>28</SlotType>
+		<Tier>5</Tier>
+		<Description>An immaculate lute granted to the appointed bards of wealthy rulers as their travel companions.</Description>
+		<ExtraTooltipData>
+			<EffectInfo name="Party Effect" description=" Within 4.5 sqrs Inspired for 5.5 seconds."/>
+			<EffectInfo name="Range Multiplier" description="x1.25"/>
+		</ExtraTooltipData>
+		<Sound>spell/major_heal</Sound>
+		<Usable/>
+		<Activate radius="4.5" duration="5.5" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
+		<ActivateOnEquip stat="22" amount="3">IncrementStat</ActivateOnEquip>
+		<Activate stat="21" amount="8" duration="3.5">StatBoostSelf</Activate>
+		<BagType>4</BagType>
+		<MpCost>95</MpCost>
+		<feedPower>185</feedPower>
+		<FameBonus>3</FameBonus>
+		<Cooldown>6.5</Cooldown>
+	</Object>
+	<Object type="0xcff7" id="Skyward Lute">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>lofiObj6</File>
+			<Index>0xd6</Index>
+		</Texture>
+		<SlotType>28</SlotType>
+		<Tier>6</Tier>
+		<Description>A misty lute created by the exalted songweavers in their task to awaken the wind deity Shu.</Description>
+		<ExtraTooltipData>
+			<EffectInfo name="Party Effect" description=" Within 4.5 sqrs Inspired for 6 seconds."/>
+			<EffectInfo name="Range Multiplier" description="x1.25"/>
+		</ExtraTooltipData>
+		<Sound>spell/major_heal</Sound>
+		<Usable/>
+		<Activate radius="4.5" duration="6" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
+		<ActivateOnEquip stat="22" amount="4">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip stat="0" amount="20">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip stat="3" amount="20">IncrementStat</ActivateOnEquip>
+		<Activate stat="21" amount="10" duration="4">StatBoostSelf</Activate>
+		<BagType>4</BagType>
+		<MpCost>100</MpCost>
+		<feedPower>380</feedPower>
+		<FameBonus>4</FameBonus>
+		<Cooldown>7</Cooldown>
+	</Object>
+	<Object type="0xcff8" id="Nebular Lute">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>lofiObj6</File>
+			<Index>0xd7</Index>
+		</Texture>
+		<SlotType>28</SlotType>
+		<Tier>7</Tier>
+		<Description>A mysterious lute of dark matter, capable of playing joyous songs even in the oppressive sound void of space.</Description>
+		<ExtraTooltipData>
+			<EffectInfo name="Party Effect" description=" Within 4.5 sqrs Inspired for 6.5 seconds."/>
+			<EffectInfo name="Range Multiplier" description="x1.25"/>
+		</ExtraTooltipData>
+		<Sound>spell/major_heal</Sound>
+		<Usable/>
+		<Activate radius="4.5" duration="6.5" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
+		<ActivateOnEquip stat="22" amount="5">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip stat="0" amount="40">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip stat="3" amount="40">IncrementStat</ActivateOnEquip>
+		<Activate stat="21" amount="12" duration="4.5">StatBoostSelf</Activate>
+		<Cooldown>7.5</Cooldown>
+		<BagType>9</BagType>
+		<MpCost>105</MpCost>
+		<feedPower>570</feedPower>
+		<FameBonus>5</FameBonus>
+		<Soulbound/>
+	</Object>
+	<Object type="0xcffc" id="Nether Lute">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>lofiObj6</File>
+			<Index>0xd8</Index>
+		</Texture>
+		<SlotType>28</SlotType>
+		<Tier>8</Tier>
+		<Description>A fiery lute consumed in scorching heat, whose sounds inspire hope among grief for the anguished souls bound to eternal perdition.</Description>
+		<ExtraTooltipData>
+			<EffectInfo name="Party Effect" description=" Within 4.5 sqrs Inspired for 7 seconds."/>
+			<EffectInfo name="Range Multiplier" description="x1.25"/>
+		</ExtraTooltipData>
+		<Sound>spell/major_heal</Sound>
+		<Usable/>
+		<Activate radius="4.5" duration="7" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
+		<ActivateOnEquip stat="22" amount="6">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip stat="0" amount="60">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip stat="3" amount="60">IncrementStat</ActivateOnEquip>
+		<Activate stat="21" amount="14" duration="5">StatBoostSelf</Activate>
+		<Cooldown>8</Cooldown>
+		<BagType>9</BagType>
+		<MpCost>110</MpCost>
+		<feedPower>855</feedPower>
+		<FameBonus>6</FameBonus>
+		<Soulbound/>
+	</Object>
+	<Object id="BardST0" type="0x4df9" setType="0x4dfd" setName="Angelic Bard Set">
+		<DisplayId>Harmonious Harp</DisplayId>
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>d2LofiObjEmbed</File>
+			<Index>0x260</Index>
+		</Texture>
+		<SlotType>3</SlotType>
+		<Description>A delightful instrument played among the serene choirs of saintly singers in the hallowed realms above.</Description>
+		<RateOfFire>.8</RateOfFire>
+		<Sound>weapon/golden_bow</Sound>
+		<Projectile>
+			<ObjectId>Harp Notes Small</ObjectId>
+			<Size>100</Size>
+			<Speed>50</Speed>
+			<MinDamage>110</MinDamage>
+			<MaxDamage>140</MaxDamage>
+			<LifetimeMS>1200</LifetimeMS>
+			<MultiHit/>
+			<Amplitude>0.5</Amplitude>
+			<Frequency>2</Frequency>
+		</Projectile>
+		<BagType>8</BagType>
+		<FameBonus>5</FameBonus>
+		<NumProjectiles>2</NumProjectiles>
+		<ArcGap>0</ArcGap>
+		<OldSound>arrowShoot</OldSound>
+		<feedPower>1200</feedPower>
+		<Soulbound/>
+	</Object>
+	<Object id="BardST1" type="0x4dfa" setType="0x4dfd" setName="Angelic Bard Set">
+		<Class>Equipment</Class>
+		<DisplayId>Angel's Fanfare</DisplayId>
+		<Item/>
+		<Texture>
+			<File>d2LofiObjEmbed</File>
+			<Index>0x261</Index>
+		</Texture>
+		<SlotType>28</SlotType>
+		<Description>A resplendent trumpet used to signify the coming of the end times, prophesied to sound their most glorious note at the opening of the seventh seal.</Description>
+		<ExtraTooltipData>
+			<EffectInfo description="Increases your attack by 8 for 4 secs" name="Harp"/>
+			<EffectInfo description="Increases your defense by 12 for 4 secs" name="Wings"/>
+			<EffectInfo description="Within 4 sqrs Healing for 4 seconds" name="Halo"/>
+			<EffectInfo name="Party Effect" description="Within 4 sqrs Inspired for 4 seconds."/>
+		</ExtraTooltipData>
+		<Sound>spell/fire_spray</Sound>
+		<OnPlayerAbilityActivate proc="1" mustWear="0x4dfc" cooldown="0.5" center="player" color="0xff0080" duration="4" effect="Healing" range="4" target="player" visualEffect="5">GenericActivate</OnPlayerAbilityActivate>
+		<OnPlayerAbilityActivate proc="1" mustWear="0x4dfb" cooldown="0.5" amount="12" duration="4" noStack="true" stat="21">StatBoostSelf</OnPlayerAbilityActivate>
+		<OnPlayerAbilityActivate proc="1" mustWear="0x4df9" cooldown="0.5" amount="8" duration="4" noStack="true" stat="20">StatBoostSelf</OnPlayerAbilityActivate>
+		<Activate radius="4" duration="4" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
+		<Activate range="4" duration="4" stat="0" noStack="true" amount="80">StatBoostAura</Activate>
+		<Usable/>
+		<BagType>8</BagType>
+		<FameBonus>5</FameBonus>
+		<MpCost>120</MpCost>
+		<feedPower>1300</feedPower>
+		<Soulbound/>
+	</Object>
+	<Object id="BardST2" type="0x4dfb" setType="0x4dfd" setName="Angelic Bard Set">
+		<Class>Equipment</Class>
+		<DisplayId>Wings of Sanctity</DisplayId>
+		<Item/>
+		<Description>A breathtaking pair of delicate white wings used by the empyrean seraphim to reach the highest peaks of the heavens.</Description>
+		<Texture>
+			<File>d2LofiObjEmbed</File>
+			<Index>0x262</Index>
+		</Texture>
+		<SlotType>14</SlotType>
+		<ActivateOnEquip amount="50" stat="3">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip amount="10" stat="21">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip amount="5" stat="26">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip amount="5" stat="27">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip amount="5" stat="28">IncrementStat</ActivateOnEquip>
+		<BagType>8</BagType>
+		<FameBonus>5</FameBonus>
+		<feedPower>1000</feedPower>
+		<Soulbound/>
+	</Object>
+	<Object id="BardST3" type="0x4dfc" setType="0x4dfd" setName="Angelic Bard Set">
+		<Class>Equipment</Class>
+		<DisplayId>Heavenly Halo</DisplayId>
+		<Item/>
+		<Texture>
+			<File>d2LofiObjEmbed</File>
+			<Index>0x263</Index>
+		</Texture>
+		<SlotType>9</SlotType>
+		<Description>A ring of light bestowed upon the virtuous as a divine symbol of their consecration.</Description>
+		<ActivateOnEquip amount="70" stat="0">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip amount="50" stat="3">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip amount="6" stat="27">IncrementStat</ActivateOnEquip>
+		<BagType>8</BagType>
+		<FameBonus>5</FameBonus>
+		<feedPower>800</feedPower>
+		<Soulbound/>
+	</Object>
+	<Object id="Wavecrest Concertina" type="0x4dec">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>d2LofiObjEmbed</File>
+			<Index>0x26a</Index>
+		</Texture>
+		<SlotType>28</SlotType>
+		<Description>A rather peculiar instrument played by the sailors of the seven seas. Its music has the unique property of attracting parrots that will obey the musician's every command.</Description>
+		<ExtraTooltipData>
+			<EffectInfo description="Throws a fighting parrot at your target" name="Parrot Cannon"/>
+			<EffectInfo description="5% chance upon shooting for a fighting parrot to protect you for 3 seconds" name="Feather Frenzy"/>
+			<EffectInfo description="450 damage within 2 sqrs every 1 second" name="Fighting Parrot"/>
+			<EffectInfo name="Party Effect" description=" Within 4.5 sqrs Inspired for 4 seconds"/>
+		</ExtraTooltipData>
+		<Sound>spell/fire_spray</Sound>
+		<ActivateOnEquip amount="4" stat="20">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip amount="4" stat="28">IncrementStat</ActivateOnEquip>
+		<Usable/>
+		<Activate radius="4.5" duration="4" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
+		<Activate objectId="Concertina Big Parrot" throwTime="0.6">ObjectToss</Activate>
+		<OnPlayerShootActivate cooldown="1" objectId="Concertina Small Parrot" proc="0.05">Pet</OnPlayerShootActivate>
+		<BagType>6</BagType>
+		<FameBonus>5</FameBonus>
+		<MpCost>100</MpCost>
+		<feedPower>800</feedPower>
+		<Soulbound/>
+	</Object>
+	<Object id="Snake Charmer Pungi" type="0x4dee">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>d2LofiObjEmbed</File>
+			<Index>0x268</Index>
+		</Texture>
+		<SlotType>28</SlotType>
+		<Description>A ceremonial pungi that contains the spirits of fifteen snakes, guiding the righteous through their many paths ahead.</Description>
+		<Sound>spell/fire_spray</Sound>
+		<ActivateOnEquip amount="7" stat="22">IncrementStat</ActivateOnEquip>
+		<Usable/>
+		<Activate duration="4" effect="Speedy">ConditionEffectSelf</Activate>
+		<Activate stat="21" amount="8" duration="2.5">StatBoostSelf</Activate>
+		<BagType>6</BagType>
+		<FameBonus>4</FameBonus>
+		<MpCost>100</MpCost>
+		<Cooldown>5</Cooldown>
+		<feedPower>600</feedPower>
+		<Soulbound/>
+	</Object>
+	<Object id="Pharaoh's Requiem" type="0x4def">
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>d2LofiObjEmbed</File>
+			<Index>0x269</Index>
+		</Texture>
+		<SlotType>28</SlotType>
+		<Description>An unusually crafted lute with an ancient style of construction, meant to produce soothing sounds of deep sleep and keep wrathful gods dormant.</Description>
+		<ExtraTooltipData>
+			<EffectInfo description="Summons a Pharaoh's mask that inflicts Weak for 3 secs within 2.5 sqrs every 1 sec" name="Pharaoh's Wrath"/>
+			<EffectInfo description="Upon taking at least 50 damage, protects you with Armored on Self for 3 secs. Inflicts Weak on enemies for 5 secs within 5 sqrs" name="Pharaoh's Ward"/>
+			<EffectInfo description="15 seconds" name="Pharaoh's Ward Cooldown"/>
+			<EffectInfo name="Party Effect" description=" Within 4.5 sqrs Inspired for 4 seconds"/>
+		</ExtraTooltipData>
+		<Sound>spell/fire_spray</Sound>
+		<ActivateOnEquip amount="4" stat="21">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip amount="4" stat="26">IncrementStat</ActivateOnEquip>
+		<Usable/>
+		<Activate radius="4.5" duration="4" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
+		<Activate objectId="Lullaby Pharaoh Mask">Pet</Activate>
+		<OnPlayerHitActivate proc="1" damageThreshold="50" cooldown="15" effect="Weak" duration="5" range="5" color="0x808080" target="enemy" center="player">GenericActivate</OnPlayerHitActivate>
+		<OnPlayerHitActivate proc="1" damageThreshold="50" cooldown="15" effect="Armored" duration="3">ConditionEffectSelf</OnPlayerHitActivate>
+		<BagType>6</BagType>
+		<FameBonus>6</FameBonus>
+		<MpCost>120</MpCost>
+		<feedPower>1000</feedPower>
+		<Soulbound/>
+	</Object>
 	<Object type="0x6587" id="Abyssal Trophy">
 		<Class>Equipment</Class>
 		<Item/>
@@ -26474,6 +27444,46 @@
 		<FameBonus>5</FameBonus>
 		<MpCost>100</MpCost>
 		<Activate color="0xd6471c" numShots="10" duration="0.6" speed="0" objectId="AoO Spell Decoy" ignoreOnTooltip="true">Decoy</Activate>
+		<feedPower>700</feedPower>
+		<Soulbound/>
+	</Object>
+	<Object type="0x520a" id="AoOWaki">
+		<DisplayId>Amaterasu</DisplayId>
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>d2LofiObjEmbed</File>
+			<Index>0x274</Index>
+		</Texture>
+		<SlotType>27</SlotType>
+		<Description>A sacred blade forged by the ancient worshippers of the sun god. Though now corrupted under Oryx's rule, its unique craftsmanship still showcases its ability to focus a strike upon a single point.</Description>
+		<ExtraTooltipData>
+			<EffectInfo description="20% chance to not consume mana." name="Flawless Technique"/>
+		</ExtraTooltipData>
+		<Projectile>
+			<ObjectId>Amaterasu Strike</ObjectId>
+			<Speed>180</Speed>
+			<MinDamage>300</MinDamage>
+			<MaxDamage>350</MaxDamage>
+			<LifetimeMS>350</LifetimeMS>
+			<ConditionEffect duration="3.0">Exposed</ConditionEffect>
+			<PassesCover/>
+			<MultiHit/>
+			<FaceDir/>
+		</Projectile>
+		<Usable/>
+		<BagType>6</BagType>
+		<FameBonus>5</FameBonus>
+		<MpCost>120</MpCost>
+		<Activate maxDistance="5" numShots="1" offsetAngle="45" ignoreOnTooltip="true">BulletCreate</Activate>
+		<Activate maxDistance="5" numShots="1" offsetAngle="90" ignoreOnTooltip="true">BulletCreate</Activate>
+		<Activate maxDistance="5" numShots="1" offsetAngle="135" ignoreOnTooltip="true">BulletCreate</Activate>
+		<Activate maxDistance="5" numShots="1" offsetAngle="180" ignoreOnTooltip="true">BulletCreate</Activate>
+		<Activate maxDistance="5" numShots="1" offsetAngle="225" ignoreOnTooltip="true">BulletCreate</Activate>
+		<Activate maxDistance="5" numShots="1" offsetAngle="270" ignoreOnTooltip="true">BulletCreate</Activate>
+		<Activate maxDistance="5" numShots="1" offsetAngle="315" ignoreOnTooltip="true">BulletCreate</Activate>
+		<Activate maxDistance="5" numShots="1" offsetAngle="360" ignoreOnTooltip="true">BulletCreate</Activate>
+		<OnPlayerAbilityActivate amount="120" proc="0.2">Magic</OnPlayerAbilityActivate>
 		<feedPower>700</feedPower>
 		<Soulbound/>
 	</Object>
@@ -26651,6 +27661,36 @@
 		<OnPlayerAbilityActivate proc="1" cooldown="30" amount="10" duration="5" stat="20">StatBoostSelf</OnPlayerAbilityActivate>
 		<Cooldown>2</Cooldown>
 		<FameBonus>5</FameBonus>
+		<feedPower>700</feedPower>
+		<Soulbound/>
+	</Object>
+	<Object id="AoOLute" type="0x4e03">
+		<DisplayId>Chief's War Horn</DisplayId>
+		<Class>Equipment</Class>
+		<Item/>
+		<Texture>
+			<File>d2LofiObjEmbed</File>
+			<Index>0x27b</Index>
+		</Texture>
+		<SlotType>28</SlotType>
+		<Description>Chief Beisa personally made this decorated horn to produce a deep, booming sound, rallying troops and sending signals to coordinate unrelenting assaults.</Description>
+		<ExtraTooltipData>
+			<EffectInfo description="Apply Slowed for 4 seconds to enemies within 4 squares" name="Deafening Blast"/>
+			<EffectInfo description="10 seconds" name="Blast Cooldown"/>
+			<EffectInfo description="Place down a banner for 5 seconds that applies Berserk to allies within 4 squares." name="On Use"/>
+			<EffectInfo description="Within 5 sqrs Inspired for 5 seconds." name="Party Effect"/>
+		</ExtraTooltipData>
+		<Sound>spell/fire_spray</Sound>
+		<Usable/>
+		<Activate objectId="AoOLute Banner">Pet</Activate>
+		<Activate radius="5" duration="5" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
+		<OnPlayerAbilityActivate proc="1" cooldown="10" center="player" color="0x6e0400" duration="4" effect="Slowed" range="4" target="enemy">GenericActivate</OnPlayerAbilityActivate>
+		<ActivateOnEquip amount="3" stat="21">IncrementStat</ActivateOnEquip>
+		<ActivateOnEquip amount="3" stat="28">IncrementStat</ActivateOnEquip>
+		<Cooldown>5.0</Cooldown>
+		<BagType>6</BagType>
+		<FameBonus>5</FameBonus>
+		<MpCost>120</MpCost>
 		<feedPower>700</feedPower>
 		<Soulbound/>
 	</Object>
@@ -27162,7 +28202,7 @@
 		<ActivateOnEquip stat="28" amount="3">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip stat="21" amount="6">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip stat="0" amount="120">IncrementStat</ActivateOnEquip>
-		<OnPlayerHitActivate cooldown="5" damageThreshold="50" proc="1.0" throwTime="-1" objectId="Cranium Effect">ObjectToss</OnPlayerHitActivate>
+		<OnPlayerHitActivate cooldown="5" damageThreshold="50" proc="1.0" throwTime="0.0" objectId="Cranium Effect">ObjectToss</OnPlayerHitActivate>
 		<BagType>6</BagType>
 		<FameBonus>7</FameBonus>
 		<feedPower>1000</feedPower>
