@@ -28,7 +28,7 @@ namespace Shared.resources
         public readonly int TotalDamage;
         public readonly bool UseWisMod;
         public readonly int VisualEffect;
-        public readonly byte Type;
+        public readonly ushort Type;
         public readonly float SuccessChange;
         public readonly float SuccessDamage;
         public readonly float FailureDamage;
@@ -174,7 +174,7 @@ namespace Shared.resources
                 RequiredConditions = e.GetAttribute<string>("requiredConditions");
 
             if (e.HasAttribute("type"))
-                Type = (byte)e.GetAttribute<int>("type");
+                Type = e.GetAttribute<ushort>("type");
 
             if (e.HasAttribute("targetMouseRange"))
                 TargetMouseRange = float.Parse(e.Attribute("targetMouseRange").Value);

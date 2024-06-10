@@ -274,6 +274,14 @@
       </Texture>
       <AngleCorrection>1</AngleCorrection>
    </Object>
+   <Object type="0x267" id="Wakizashi Slash Xmas">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>d2LofiObjEmbed</File>
+         <Index>0xcf</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
    <Object type="0xf3d" id="Knight DPS Shield">
       <Class>Projectile</Class>
       <Texture>
@@ -2589,6 +2597,78 @@
          <Index>0x25f</Index>
       </Texture>
       <Rotation>-100</Rotation>
+   </Object>
+   <Object type="0x1640" id="Wakizashi Slash 0">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>lofiObj6</File>
+         <Index>0xf0</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x1641" id="Wakizashi Slash 1">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>lofiObj6</File>
+         <Index>0xf1</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x1642" id="Wakizashi Slash 2">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>lofiObj6</File>
+         <Index>0xf2</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x1643" id="Wakizashi Slash 3">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>lofiObj6</File>
+         <Index>0xf3</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x1644" id="Wakizashi Slash 4">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>lofiObj6</File>
+         <Index>0xf4</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x1645" id="Wakizashi Slash 5">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>lofiObj6</File>
+         <Index>0xf5</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x1646" id="Wakizashi Slash 6">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>lofiObj6</File>
+         <Index>0xf6</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
+   </Object>
+   <Object type="0x743c" id="Wakizashi Wind">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>lofiObj6</File>
+         <Index>0xf9</Index>
+      </Texture>
+      <Rotation>80</Rotation>
+   </Object>
+   <Object type="0x743d" id="Wakizashi Fire">
+      <Class>Projectile</Class>
+      <Texture>
+         <File>lofiObj3</File>
+         <Index>0x372</Index>
+      </Texture>
+      <AngleCorrection>1</AngleCorrection>
    </Object>
    <Object type="0x1928" id="Katana Slash Pink">
       <Class>Projectile</Class>
@@ -6501,6 +6581,22 @@
       <Texture>
          <File>oryxSanctuaryObjects8x8</File>
          <Index>0x17a</Index>
+      </Texture>
+   </Object>
+   <Object type="0x6459" id="O3 Red Spinner MRot">
+      <Class>Projectile</Class>
+      <Rotation>135</Rotation>
+      <Texture>
+         <File>oryxSanctuaryObjects8x8</File>
+         <Index>0x17b</Index>
+      </Texture>
+   </Object>
+   <Object type="0xabb5" id="O3 Red Magic MRot">
+      <Class>Projectile</Class>
+      <Rotation>135</Rotation>
+      <Texture>
+         <File>oryxSanctuaryObjects8x8</File>
+         <Index>0x17c</Index>
       </Texture>
    </Object>
    <Object type="0x6468" id="O3 Red Wheel FRot">

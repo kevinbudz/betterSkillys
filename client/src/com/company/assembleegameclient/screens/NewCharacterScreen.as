@@ -138,8 +138,10 @@ import kabam.rotmg.core.model.PlayerModel;
             {
                overrideIsAvailable = model.isClassAvailability(characterType,SavedCharactersList.UNRESTRICTED);
                charBox = new CharacterBox(playerXML,model.getCharStats()[objectType],model,overrideIsAvailable);
-               charBox.x = 120 * int(i % 5) + 70 - charBox.width / 2;
-               charBox.y = 120 + 120 * int(i / 5);
+               charBox.x = 120 * int(i % 6);
+               if (i > 11)
+                   charBox.x += 120;
+               charBox.y = 120 + 120 * int(i / 6);
                this.boxes_[objectType] = charBox;
                charBox.addEventListener(MouseEvent.ROLL_OVER,this.onCharBoxOver);
                charBox.addEventListener(MouseEvent.ROLL_OUT,this.onCharBoxOut);
