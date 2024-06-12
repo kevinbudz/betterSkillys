@@ -164,6 +164,7 @@ public class AssetLoader
       AssetLibrary.addImageSet("emotes", new EmbeddedAssets.emotes().bitmapData, 16, 16);
       AssetLibrary.addImageSet("animEmotes", new EmbeddedAssets.animEmotes().bitmapData, 32, 32);
       AssetLibrary.addImageSet("customAssets8x8", new EmbeddedAssets.customAssets8x8().bitmapData, 8, 8);
+      AssetLibrary.addImageSet("customUV128x128", new EmbeddedAssets.customUV128x128().bitmapData, 128, 128);
    }
 
    private function addAnimatedCharacters():void

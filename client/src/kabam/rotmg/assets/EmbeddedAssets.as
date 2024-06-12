@@ -7,7 +7,9 @@ package kabam.rotmg.assets
 {
 import kabam.rotmg.assets.custom.images.AnimEmotes;
 import kabam.rotmg.assets.custom.images.CustomAssets8x8;
+import kabam.rotmg.assets.custom.images.CustomUV128x128;
 import kabam.rotmg.assets.custom.images.Emotes;
+import kabam.rotmg.assets.custom.objects.japaneseSign;
 import kabam.rotmg.assets.prod.images.EmbeddedAssets_DarknessBackground;
 import kabam.rotmg.assets.prod.images.EmbeddedAssets_EvolveBackground;
 import kabam.rotmg.assets.prod.images.EmbeddedAssets_Hanami8x8charsEmbed_;
@@ -263,8 +265,14 @@ import kabam.rotmg.assets.prod.objects.EmbeddedAssets_xmasNexusObjects8x8Embed_;
 
 public class EmbeddedAssets
 {
+   // custom.
+   public static var animEmotes:Class = AnimEmotes;
+   public static var emotes:Class = Emotes;
+   public static var customAssets8x8:Class = CustomAssets8x8;
+   public static var customUV128x128:Class = CustomUV128x128;
 
    // production.
+   private static var JapaneseSign:Class = japaneseSign;
    public static var particlesEmbed:Class = EmbeddedAssets_particlesEmbed;
    public static const StarburstSpinner:Class = EmbeddedAssets_StarburstSpinner;
    public static const EvolveBackground:Class = EmbeddedAssets_EvolveBackground;
@@ -518,6 +526,7 @@ public class EmbeddedAssets
    public static var ancientRuinsChars16x16Embed_:Class = EmbeddedAssets_ancientRuinsChars16x16Embed_;
    public static var ancientRuinsChars8x8Embed_:Class = EmbeddedAssets_ancientRuinsChars8x8Embed_;
    public static var models_:Object = {
+      "Japanese Sign":new JapaneseSign(),
       "Monster Tank1":new monsterTank1Embed_(),
       "Monster Tank2":new monsterTank2Embed_(),
       "Monster Tank3":new monsterTank3Embed_(),
@@ -574,11 +583,6 @@ public class EmbeddedAssets
       "Oryx Hung Cage":new oryxCageHung_(),
       "Oryx Door":new oryxDoor_()
    };
-
-   // custom.
-   public static var animEmotes:Class = AnimEmotes;
-   public static var emotes:Class = Emotes;
-   public static var customAssets8x8:Class = CustomAssets8x8;
 
 }
 }//package kabam.rotmg.assets

@@ -131,4 +131,15 @@
 		<StasisImmune/>
 		<TrackLoot/>
 	</Object>
+	<Object id="Japanese Sign" type="0x9000">
+		<Class>GameObject</Class>
+		<Model>Japanese Sign</Model>
+		<Texture>
+			<File>customUV128x128</File>
+			<Index>0</Index>
+		</Texture>
+		<Static/>
+		<NoMiniMap/>
+		<ShadowSize>0</ShadowSize>
+	</Object>
 </Objects>
