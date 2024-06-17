@@ -111,22 +111,7 @@ public class StatData
    public static const BACKPACKDATA5:int = 139;
    public static const BACKPACKDATA6:int = 140;
    public static const BACKPACKDATA7:int = 141;
-   public static const SPS_LIFE_COUNT:int = 142;
-   public static const SPS_LIFE_COUNT_MAX:int = 143;
-   public static const SPS_MANA_COUNT:int = 144;
-   public static const SPS_MANA_COUNT_MAX:int = 145;
-   public static const SPS_DEFENSE_COUNT:int = 146;
-   public static const SPS_DEFENSE_COUNT_MAX:int = 147;
-   public static const SPS_ATTACK_COUNT:int = 148;
-   public static const SPS_ATTACK_COUNT_MAX:int = 149;
-   public static const SPS_DEXTERITY_COUNT:int = 150;
-   public static const SPS_DEXTERITY_COUNT_MAX:int = 151;
-   public static const SPS_SPEED_COUNT:int = 152;
-   public static const SPS_SPEED_COUNT_MAX:int = 153;
-   public static const SPS_VITALITY_COUNT:int = 154;
-   public static const SPS_VITALITY_COUNT_MAX:int = 155;
-   public static const SPS_WISDOM_COUNT:int = 156;
-   public static const SPS_WISDOM_COUNT_MAX:int = 157;
+   public static const SPEEDMULT:int = 142;
 
    public var statType_:uint = 0;
 

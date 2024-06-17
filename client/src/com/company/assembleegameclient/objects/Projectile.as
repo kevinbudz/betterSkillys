@@ -230,7 +230,7 @@ public class Projectile extends BasicObject
       {
          if(this.projProps_.boomerang_)
          {
-            halfway = this.projProps_.lifetime_ * ((this.projProps_.speed_ * this.speedMul_)/ 10000) / 2;
+            halfway = this.projProps_.lifetime_ * ((this.projProps_.speed_ * this.speedMul_) / 10000) / 2;
             if(dist > halfway)
             {
                dist = halfway - (dist - halfway);
@@ -395,7 +395,7 @@ public class Projectile extends BasicObject
             }
          }
       }
-
+      trace("called");
       return minGO;
    }
 

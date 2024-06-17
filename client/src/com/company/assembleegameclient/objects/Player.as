@@ -185,6 +185,7 @@ public class Player extends Character {
     private var breathBackPath_:GraphicsPath = null;
     private var breathFill_:GraphicsSolidFill = null;
     private var breathPath_:GraphicsPath = null;
+    public var projectileSpeedMult_:Number = 1;
 
     override public function moveTo(x:Number, y:Number):Boolean {
         var ret:Boolean = super.moveTo(x, y);
@@ -1028,10 +1029,10 @@ public class Player extends Character {
         doneAction(map_.gs_, Tutorial.ATTACK_ACTION);
         attackAngle_ = attackAngle;
         attackStart_ = time;
-        this.doShoot(attackStart_, weaponType, weaponXML, attackAngle_, true);
+        this.doShoot(attackStart_, weaponType, weaponXML, attackAngle_, true, true);
     }
 
-    private function doShoot(time:int, weaponType:int, weaponXML:XML, attackAngle:Number, useMult:Boolean):void {
+    private function doShoot(time:int, weaponType:int, weaponXML:XML, attackAngle:Number, useMult:Boolean, hasSpeedMult:Boolean = false):void {
         var bulletId:uint = 0;
         var proj:Projectile = null;
         var minDamage:int = 0;

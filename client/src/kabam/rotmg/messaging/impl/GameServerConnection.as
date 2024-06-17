@@ -653,6 +653,7 @@ public class GameServerConnection
 
       public function enemyHit(time:int, bulletId:int, targetId:int, kill:Boolean) : void
       {
+         trace("sent");
          var enemyHit:EnemyHit = this.messages.require(ENEMYHIT) as EnemyHit;
          enemyHit.time_ = time;
          enemyHit.bulletId_ = bulletId;
@@ -1777,6 +1778,8 @@ public class GameServerConnection
                   index = stat.statType_ - StatData.BACKPACKDATA0 + GeneralConstants.NUM_EQUIPMENT_SLOTS + GeneralConstants.NUM_INVENTORY_SLOTS;
                   (go as Player).equipData_[index] = JSON.parse(stat.strStatValue_);
                   continue;
+               case StatData.SPEEDMULT:
+                  player.projectileSpeedMult_ = value;
                default:
                   trace("unhandled stat: " + stat.statType_);
                   continue;

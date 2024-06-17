@@ -92,7 +92,7 @@ namespace WorldServer.core.objects
 
                 return new Position() { X = (float)x, Y = (float)y };
             }
-            public Position GetPosition(int elapsed, int bulletId, ProjectileDesc desc)
+            public Position GetPosition(int elapsed, int bulletId, ProjectileDesc desc, float speedMult)
             {
                 double periodFactor;
                 double amplitudeFactor;
@@ -100,7 +100,7 @@ namespace WorldServer.core.objects
 
                 var pX = (double)StartX;
                 var pY = (double)StartY;
-                var dist = elapsed * desc.Speed / 10000.0;
+                var dist = elapsed * (desc.Speed / 10000.0) * speedMult;
                 var phase = bulletId % 2 == 0 ? 0 : Math.PI;
 
                 if (desc.Wavy)
@@ -125,7 +125,7 @@ namespace WorldServer.core.objects
                 {
                     if (desc.Boomerang)
                     {
-                        var halfway = desc.LifetimeMS * (desc.Speed / 10000.0) / 2.0;
+                        var halfway = desc.LifetimeMS * ((desc.Speed * speedMult) / 10000.0) / 2.0;
                         if (dist > halfway)
                             dist = halfway - (dist - halfway);
                     }

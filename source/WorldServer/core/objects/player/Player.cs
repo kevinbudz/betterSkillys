@@ -232,6 +232,13 @@ namespace WorldServer.core.objects
 			set => _partyId.SetValue(value);
         }
 
+        private StatTypeValue<int> _speedMult;
+        public int SpeedMult
+        {
+            get => _speedMult.GetValue();
+            set => _speedMult.SetValue(value);
+        }
+
         public Player(GameServer gameServer, Client client, ushort objectType)
             : base(gameServer, objectType)
         {
@@ -267,6 +274,7 @@ namespace WorldServer.core.objects
             _colornamechat = new StatTypeValue<int>(this, StatDataType.ColorNameChat, 0);
             _colorchat = new StatTypeValue<int>(this, StatDataType.ColorChat, 0);
             _partyId = new StatTypeValue<int>(this, StatDataType.PartyId, account.PartyId, true);
+            _speedMult = new StatTypeValue<int>(this, StatDataType.SpeedMult, 100, true);
 
             Name = account.Name;
             Health = character.Health;

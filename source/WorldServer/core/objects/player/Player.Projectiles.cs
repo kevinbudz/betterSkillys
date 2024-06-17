@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Shared.resources;
+using System;
 using System.Collections.Generic;
 using WorldServer.core.net.datas;
 using WorldServer.core.net.stats;
@@ -61,6 +62,7 @@ namespace WorldServer.core.objects
         {
             var item = Inventory[slot];
             var projectileDesc = item.Projectiles[0];
+            Console.WriteLine(projectileDesc.Speed + " " + projectileDesc.NewSpeed);
 
             var damage = (int)(Client.Random.NextIntRange((uint)projectileDesc.MinDamage, (uint)projectileDesc.MaxDamage) * Stats.GetAttackMult());
 
@@ -181,7 +183,7 @@ namespace WorldServer.core.objects
             if (elapsedSinceStart > projectileDesc.LifetimeMS)
             {
                 projectile.Disabled = true;
-                //Console.WriteLine("[EnemyHit] -> A expired shot tried to hit entity");
+                Console.WriteLine("[EnemyHit] -> A expired shot tried to hit entity");
                 return;
             }
 
@@ -313,7 +315,7 @@ namespace WorldServer.core.objects
             }
 
             var elapsed = time - projectile.Time;
-            var hitPos = projectile.GetPosition(elapsed, bulletId, projectileDesc);
+            var hitPos = projectile.GetPosition(elapsed, bulletId, projectileDesc, HasConditionEffect(Shared.resources.ConditionEffectIndex.Inspired) ? 1.25f : 1);
 
             var elapsedSinceStart = time - projectile.Time;
             if (elapsedSinceStart > projectileDesc.LifetimeMS)

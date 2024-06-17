@@ -107,6 +107,7 @@
         BackPackData5 = 139,
         BackPackData6 = 140,
         BackPackData7 = 141,
+        SpeedMult = 142,
         None = 255
     }
 }
