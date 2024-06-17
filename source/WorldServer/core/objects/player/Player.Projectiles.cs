@@ -62,7 +62,6 @@ namespace WorldServer.core.objects
         {
             var item = Inventory[slot];
             var projectileDesc = item.Projectiles[0];
-            Console.WriteLine(projectileDesc.Speed + " " + projectileDesc.NewSpeed);
 
             var damage = (int)(Client.Random.NextIntRange((uint)projectileDesc.MinDamage, (uint)projectileDesc.MaxDamage) * Stats.GetAttackMult());
 
@@ -315,7 +314,7 @@ namespace WorldServer.core.objects
             }
 
             var elapsed = time - projectile.Time;
-            var hitPos = projectile.GetPosition(elapsed, bulletId, projectileDesc, HasConditionEffect(Shared.resources.ConditionEffectIndex.Inspired) ? 1.25f : 1);
+            var hitPos = projectile.GetPosition(elapsed, bulletId, projectileDesc, SpeedMult / 100);
 
             var elapsedSinceStart = time - projectile.Time;
             if (elapsedSinceStart > projectileDesc.LifetimeMS)
