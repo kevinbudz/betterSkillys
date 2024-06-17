@@ -12,6 +12,8 @@ namespace Shared.resources
         public ConditionEffect[] Effects;
         public float Frequency;
         public float LifetimeMS;
+        public float OrigSpeed;
+        public float NewSpeed;
         public float Magnitude;
         public int MaxDamage;
         public int MinDamage;
@@ -28,6 +30,8 @@ namespace Shared.resources
             ObjectId = e.GetValue<string>("ObjectId");
             LifetimeMS = e.GetValue<float>("LifetimeMS");
             Speed = e.GetValue<float>("Speed", 100);
+            OrigSpeed = e.GetValue<float>("Speed", 100);
+            NewSpeed = e.GetValue<float>("Speed", 100) * 1.25f;
 
             var dmg = e.Element("Damage");
 

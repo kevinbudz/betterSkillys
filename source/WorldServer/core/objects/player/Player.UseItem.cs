@@ -375,6 +375,18 @@ namespace WorldServer.core.objects
                 return;
             }
 
+            if (item.SlotType == 28)
+            {
+                World.BroadcastIfVisible(new ShowEffect()
+                {
+                    EffectType = EffectType.Inspired,
+                    TargetObjectId = Id,
+                    Color = new ARGB(0x6a0dad), //flash color
+                    Pos2 = new Position { X = 1, Y = 1 }, // flash X = period, Y = repeat times
+                    Pos1 = new Position { X = 4, Y = 0 }
+                }, this);
+            }
+
             foreach (var eff in item.ActivateEffects)
             {
                 switch (eff.Effect)

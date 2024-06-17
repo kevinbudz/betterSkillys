@@ -1,6 +1,8 @@
 package com.company.assembleegameclient.util
 {
-   public class TimeUtil
+import flash.utils.getTimer;
+
+public class TimeUtil
    {
       
       public static const DAY_IN_MS:int = 86400000;
@@ -12,7 +14,11 @@ package com.company.assembleegameclient.util
       {
          super();
       }
-      
+
+      public static function getTrueTime() : int {
+         return getTimer();
+      }
+
       public static function secondsToDays(time:Number) : Number
       {
          return time / DAY_IN_S;

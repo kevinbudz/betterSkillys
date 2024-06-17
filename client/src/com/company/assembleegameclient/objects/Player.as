@@ -1042,10 +1042,11 @@ public class Player extends Character {
         var arcGap:Number = (Boolean(weaponXML.hasOwnProperty("ArcGap")) ? Number(weaponXML.ArcGap) : 11.25) * Trig.toRadians;
         var totalArc:Number = arcGap * (numProjs - 1);
         var angle:Number = attackAngle - totalArc / 2;
+        var speedMult:Number = isInspired() ? 1.25 : 1;
         for (var i:int = 0; i < numProjs; i++) {
             bulletId = getBulletId();
             proj = FreeList.newObject(Projectile) as Projectile;
-            proj.reset(weaponType, 0, objectId_, bulletId, angle, time);
+            proj.reset(weaponType, 0, objectId_, bulletId, angle, time, speedMult);
             minDamage = int(proj.projProps_.minDamage_);
             maxDamage = int(proj.projProps_.maxDamage_);
             attMult = useMult ? Number(this.attackMultiplier()) : Number(1);

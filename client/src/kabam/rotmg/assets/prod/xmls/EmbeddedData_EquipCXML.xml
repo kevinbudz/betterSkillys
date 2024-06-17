@@ -26933,7 +26933,7 @@
 		</ExtraTooltipData>
 		<Sound>spell/major_heal</Sound>
 		<Usable/>
-		<Activate radius="4.5" speedBoost="1.25" lifeBoost="1" duration="3.5" targeted="false">BoostRange</Activate>
+		<Activate duration="3.5" effect="Inspired" range="4.5">ConditionEffectAura</Activate>
 		<Cooldown>4.5</Cooldown>
 		<BagType>1</BagType>
 		<MpCost>75</MpCost>
@@ -26956,7 +26956,7 @@
 		</ExtraTooltipData>
 		<Sound>spell/major_heal</Sound>
 		<Usable/>
-		<Activate radius="4.5" duration="4" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
+		<Activate duration="4" effect="Inspired" range="4.5">ConditionEffectAura</Activate>
 		<Cooldown>5</Cooldown>
 		<BagType>1</BagType>
 		<MpCost>80</MpCost>
@@ -26979,7 +26979,7 @@
 		</ExtraTooltipData>
 		<Sound>spell/major_heal</Sound>
 		<Usable/>
-		<Activate radius="4.5" duration="4.5" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
+		<Activate duration="4.5" effect="Inspired" range="4.5">ConditionEffectAura</Activate>
 		<ActivateOnEquip stat="22" amount="1">IncrementStat</ActivateOnEquip>
 		<Activate stat="21" amount="4" duration="2.5">StatBoostSelf</Activate>
 		<Cooldown>5.5</Cooldown>
@@ -27005,6 +27005,7 @@
 		</ExtraTooltipData>
 		<Sound>spell/major_heal</Sound>
 		<Usable/>
+		<Activate duration="5" effect="Inspired" range="4.5">ConditionEffectAura</Activate>
 		<Activate radius="4.5" duration="5" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
 		<ActivateOnEquip stat="22" amount="2">IncrementStat</ActivateOnEquip>
 		<Activate stat="21" amount="6" duration="3">StatBoostSelf</Activate>
@@ -27031,6 +27032,7 @@
 		</ExtraTooltipData>
 		<Sound>spell/major_heal</Sound>
 		<Usable/>
+		<Activate duration="5.5" effect="Inspired" range="4.5">ConditionEffectAura</Activate>
 		<Activate radius="4.5" duration="5.5" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
 		<ActivateOnEquip stat="22" amount="3">IncrementStat</ActivateOnEquip>
 		<Activate stat="21" amount="8" duration="3.5">StatBoostSelf</Activate>
@@ -27056,7 +27058,7 @@
 		</ExtraTooltipData>
 		<Sound>spell/major_heal</Sound>
 		<Usable/>
-		<Activate radius="4.5" duration="6" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
+		<Activate duration="6" effect="Inspired" range="4.5">ConditionEffectAura</Activate>
 		<ActivateOnEquip stat="22" amount="4">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip stat="0" amount="20">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip stat="3" amount="20">IncrementStat</ActivateOnEquip>
@@ -27083,7 +27085,7 @@
 		</ExtraTooltipData>
 		<Sound>spell/major_heal</Sound>
 		<Usable/>
-		<Activate radius="4.5" duration="6.5" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
+		<Activate duration="6.5" effect="Inspired" range="4.5">ConditionEffectAura</Activate>
 		<ActivateOnEquip stat="22" amount="5">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip stat="0" amount="40">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip stat="3" amount="40">IncrementStat</ActivateOnEquip>
@@ -27111,7 +27113,7 @@
 		</ExtraTooltipData>
 		<Sound>spell/major_heal</Sound>
 		<Usable/>
-		<Activate radius="4.5" duration="7" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
+		<Activate duration="7" effect="Inspired" range="4.5">ConditionEffectAura</Activate>
 		<ActivateOnEquip stat="22" amount="6">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip stat="0" amount="60">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip stat="3" amount="60">IncrementStat</ActivateOnEquip>
@@ -27174,7 +27176,7 @@
 		<OnPlayerAbilityActivate proc="1" mustWear="0x4dfc" cooldown="0.5" center="player" color="0xff0080" duration="4" effect="Healing" range="4" target="player" visualEffect="5">GenericActivate</OnPlayerAbilityActivate>
 		<OnPlayerAbilityActivate proc="1" mustWear="0x4dfb" cooldown="0.5" amount="12" duration="4" noStack="true" stat="21">StatBoostSelf</OnPlayerAbilityActivate>
 		<OnPlayerAbilityActivate proc="1" mustWear="0x4df9" cooldown="0.5" amount="8" duration="4" noStack="true" stat="20">StatBoostSelf</OnPlayerAbilityActivate>
-		<Activate radius="4" duration="4" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
+		<Activate duration="4" effect="Inspired" range="4">ConditionEffectAura</Activate>
 		<Activate range="4" duration="4" stat="0" noStack="true" amount="80">StatBoostAura</Activate>
 		<Usable/>
 		<BagType>8</BagType>
@@ -27240,7 +27242,7 @@
 		<ActivateOnEquip amount="4" stat="20">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip amount="4" stat="28">IncrementStat</ActivateOnEquip>
 		<Usable/>
-		<Activate radius="4.5" duration="4" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
+		<Activate duration="4" effect="Inspired" range="4.5">ConditionEffectAura</Activate>
 		<Activate objectId="Concertina Big Parrot" throwTime="0.6">ObjectToss</Activate>
 		<OnPlayerShootActivate cooldown="1" objectId="Concertina Small Parrot" proc="0.05">Pet</OnPlayerShootActivate>
 		<BagType>6</BagType>
@@ -27289,7 +27291,7 @@
 		<ActivateOnEquip amount="4" stat="21">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip amount="4" stat="26">IncrementStat</ActivateOnEquip>
 		<Usable/>
-		<Activate radius="4.5" duration="4" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
+		<Activate duration="5" effect="Inspired" range="4.5">ConditionEffectAura</Activate>
 		<Activate objectId="Lullaby Pharaoh Mask">Pet</Activate>
 		<OnPlayerHitActivate proc="1" damageThreshold="50" cooldown="15" effect="Weak" duration="5" range="5" color="0x808080" target="enemy" center="player">GenericActivate</OnPlayerHitActivate>
 		<OnPlayerHitActivate proc="1" damageThreshold="50" cooldown="15" effect="Armored" duration="3">ConditionEffectSelf</OnPlayerHitActivate>
@@ -27683,7 +27685,7 @@
 		<Sound>spell/fire_spray</Sound>
 		<Usable/>
 		<Activate objectId="AoOLute Banner">Pet</Activate>
-		<Activate radius="5" duration="5" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
+		<Activate duration="5" effect="Inspired" range="5">ConditionEffectAura</Activate>
 		<OnPlayerAbilityActivate proc="1" cooldown="10" center="player" color="0x6e0400" duration="4" effect="Slowed" range="4" target="enemy">GenericActivate</OnPlayerAbilityActivate>
 		<ActivateOnEquip amount="3" stat="21">IncrementStat</ActivateOnEquip>
 		<ActivateOnEquip amount="3" stat="28">IncrementStat</ActivateOnEquip>

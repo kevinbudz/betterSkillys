@@ -60,6 +60,20 @@ namespace WorldServer.core.objects
                     RemoveCondition(ConditionEffectIndex.ManaDeplete);
             }
 
+            if (HasConditionEffect(ConditionEffectIndex.Inspired))
+            {
+                var weap = Inventory[0];
+                if (weap == null)
+                    return;
+                weap.Projectiles[0].Speed = weap.Projectiles[0].NewSpeed;
+            } else
+            {
+                var weap = Inventory[0];
+                if (weap == null)
+                    return;
+                weap.Projectiles[0].LifetimeMS = weap.Projectiles[0].OrigSpeed;
+            }
+
             if (_newbiePeriod > 0)
             {
                 _newbiePeriod -= time.ElapsedMsDelta;

@@ -25,12 +25,14 @@ import com.company.assembleegameclient.objects.particles.CollapseEffect;
 import com.company.assembleegameclient.objects.particles.ConeBlastEffect;
 import com.company.assembleegameclient.objects.particles.FlowEffect;
 import com.company.assembleegameclient.objects.particles.HealEffect;
+import com.company.assembleegameclient.objects.particles.InspireEffect;
 import com.company.assembleegameclient.objects.particles.LightningEffect;
 import com.company.assembleegameclient.objects.particles.LineEffect;
 import com.company.assembleegameclient.objects.particles.NovaEffect;
 import com.company.assembleegameclient.objects.particles.ParticleEffect;
 import com.company.assembleegameclient.objects.particles.PoisonEffect;
 import com.company.assembleegameclient.objects.particles.RingEffect;
+import com.company.assembleegameclient.objects.particles.SpritesProjectEffect;
 import com.company.assembleegameclient.objects.particles.StreamEffect;
 import com.company.assembleegameclient.objects.particles.TeleportEffect;
 import com.company.assembleegameclient.objects.particles.ThrowEffect;
@@ -45,6 +47,7 @@ import com.company.assembleegameclient.ui.panels.PartyInvitePanel;
 import com.company.assembleegameclient.ui.panels.TradeRequestPanel;
 import com.company.assembleegameclient.util.ConditionEffect;
 import com.company.assembleegameclient.util.FreeList;
+import com.company.assembleegameclient.util.TimeUtil;
 import com.company.util.MoreStringUtil;
 import com.company.util.Random;
 import com.hurlant.crypto.Crypto;
@@ -1445,6 +1448,22 @@ public class GameServerConnection
                trace(showEffect.duration_);
                e = new ThrowProjectileEffect(showEffect.objectType, showEffect.pos2_.toPoint(), showEffect.pos1_.toPoint(), showEffect.duration_);
                map.addObj(e, start.x, start.y);
+               break;
+            case ShowEffect.INSPIRED_EFFECT_TYPE:
+               go = map.goDict_[showEffect.targetObjectId_];
+               if (go == null)
+               {
+                  break;
+               }
+               if (go && go.spritesProjectEffect)
+               {
+                  go.spritesProjectEffect.destroy();
+               }
+               map.addObj(new InspireEffect(go,16759296,5), go.x_, go.y_);
+               go.flash_ = new FlashDescription(TimeUtil.getTrueTime(), showEffect.color_, showEffect.pos2_.x_, showEffect.pos2_.y_);
+               go = new SpritesProjectEffect(go, showEffect.pos1_.x_);
+               go.spritesProjectEffect = SpritesProjectEffect(go);
+               this.gs_.map.addObj(go, go.x_, go.y_);
                break;
             /*case ShowEffect.THROW_PROJECTILE_EFFECT_TYPE:
                start = showEffect.pos1_.toPoint();

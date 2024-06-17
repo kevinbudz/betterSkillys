@@ -40,6 +40,7 @@ public class ShowEffect extends IncomingMessage
 
    public static const THROW_PROJECTILE_EFFECT_TYPE:int = 16;
 
+   public static const INSPIRED_EFFECT_TYPE:int = 17;
 
    public var effectType_:uint;
    public var targetObjectId_:int;

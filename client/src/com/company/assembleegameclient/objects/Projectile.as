@@ -58,6 +58,7 @@ public class Projectile extends BasicObject
    protected var shadowGradientFill_:GraphicsGradientFill;
    protected var shadowPath_:GraphicsPath;
    private var size:int;
+   public var speedMul_:Number;
 
    public function Projectile()
    {
@@ -91,7 +92,7 @@ public class Projectile extends BasicObject
       objBullIdToObjId_ = new Dictionary();
    }
 
-   public function reset(containerType:int, bulletType:int, ownerId:int, bulletId:int, angle:Number, startTime:int) : void
+   public function reset(containerType:int, bulletType:int, ownerId:int, bulletId:int, angle:Number, startTime:int, speedMult:Number = 1) : void
    {
       clear();
       this.containerType_ = containerType;
@@ -102,6 +103,7 @@ public class Projectile extends BasicObject
       this.startTime_ = startTime;
       objectId_ = getNewObjId(this.ownerId_,this.bulletId_);
       z_ = 0.5;
+      this.speedMul_ = speedMult;
       this.containerProps_ = ObjectLibrary.propsLibrary_[this.containerType_];
       this.projProps_ = this.containerProps_.projectiles_[bulletType];
       this.props_ = ObjectLibrary.getPropsFromId(this.projProps_.objectId_);
@@ -204,7 +206,7 @@ public class Projectile extends BasicObject
       var deflection:Number = NaN;
       p.x = this.startX_;
       p.y = this.startY_;
-      var dist:Number = elapsed * (this.projProps_.speed_ / 10000);
+      var dist:Number = elapsed * (this.projProps_.speed_ / 10000) * this.speedMul_;
       var phase:Number = this.bulletId_ % 2 == 0?Number(0):Number(Math.PI);
       if(this.projProps_.wavy_)
       {
@@ -228,7 +230,7 @@ public class Projectile extends BasicObject
       {
          if(this.projProps_.boomerang_)
          {
-            halfway = this.projProps_.lifetime_ * (this.projProps_.speed_ / 10000) / 2;
+            halfway = this.projProps_.lifetime_ * ((this.projProps_.speed_ * this.speedMul_)/ 10000) / 2;
             if(dist > halfway)
             {
                dist = halfway - (dist - halfway);

@@ -1,138 +1,123 @@
-﻿// Decompiled by AS3 Sorcerer 6.08
-// www.as3sorcerer.com
-
-//com.company.assembleegameclient.objects.particles.InspireEffect
-
-package com.company.assembleegameclient.objects.particles
+﻿package com.company.assembleegameclient.objects.particles
 {
-    import com.company.assembleegameclient.objects.GameObject;
-    
-    import kabam.lib.math.easing.Back;
-    
+import com.company.assembleegameclient.objects.GameObject;
+import kabam.lib.math.easing.Back;
 
-    public class InspireEffect extends ParticleEffect 
+public class InspireEffect extends ParticleEffect
+{
+    private static const LIFETIME:int = 1000;
+    public var go_:GameObject;
+    public var parts1_:Vector.<InspireParticle>;
+    public var parts2_:Vector.<InspireParticle>;
+    public var startTime_:int = -1;
+    private var percentageDone:Number = 0;
+
+    public function InspireEffect(object:GameObject, color:uint, count:int)
     {
-
-        private static const LIFETIME:int = 1000;
-
-        public var go_:GameObject;
-        public var parts1_:Vector.<InspireParticle> = new Vector.<InspireParticle>();
-        public var parts2_:Vector.<InspireParticle> = new Vector.<InspireParticle>();
-        public var startTime_:int = -1;
-        private var percentageDone:Number = 0;
-
-        public function InspireEffect(_arg_1:GameObject, _arg_2:uint, _arg_3:int)
+        var particle:InspireParticle = null;
+        this.parts1_ = new Vector.<InspireParticle>();
+        this.parts2_ = new Vector.<InspireParticle>();
+        super();
+        this.go_ = object;
+        var i:int = 0;
+        while(i < count)
         {
-            var _local_4:InspireParticle;
-            super();
-            this.go_ = _arg_1;
-            var _local_5:int;
-            while (_local_5 < _arg_3)
-            {
-                _local_4 = new InspireParticle(_arg_2, 100);
-                this.parts1_.push(_local_4);
-                _local_4 = new InspireParticle(_arg_2, 100);
-                this.parts2_.push(_local_4);
-                _local_5++;
-            }
+            particle = new InspireParticle(color,100);
+            this.parts1_.push(particle);
+            particle = new InspireParticle(color,100);
+            this.parts2_.push(particle);
+            i++;
         }
+    }
 
-        override public function update(_arg_1:int, _arg_2:int):Boolean
+    override public function update(time:int, param2:int) : Boolean
+    {
+        if (this.go_.map_ == null)
         {
-            if (this.go_.map_ == null)
-            {
-                this.endEffect();
-                return (false);
-            }
-            x_ = this.go_.x_;
-            y_ = this.go_.y_;
-            if (this.startTime_ < 0)
-            {
-                this.startTime_ = _arg_1;
-            }
-            var _local_3:Number = ((_arg_1 - this.startTime_) / LIFETIME);
-            if (_local_3 >= 1)
-            {
-                this.endEffect();
-                return (false);
-            }
-            this.updateSwirl(this.parts1_, 1, 0, _local_3);
-            this.updateSwirl(this.parts2_, 1, Math.PI, _local_3);
-            return (true);
+            this.endEffect();
+            return false;
         }
-
-        private function endEffect():void
+        x_ = this.go_.x_;
+        y_ = this.go_.y_;
+        if (this.startTime_ < 0)
         {
-            var _local_1:InspireParticle;
-            for each (_local_1 in this.parts1_)
-            {
-                _local_1.alive_ = false;
-            }
-            for each (_local_1 in this.parts2_)
-            {
-                _local_1.alive_ = false;
-            }
+            this.startTime_ = time;
         }
-
-        public function updateSwirl(_arg_1:Vector.<InspireParticle>, _arg_2:Number, _arg_3:Number, _arg_4:Number):void
+        var number:Number = (time - this.startTime_) / 1000;
+        if (number >= 1)
         {
-            var _local_5:int;
-            var _local_6:InspireParticle;
-            var _local_7:Number;
-            var _local_8:Number;
-            var _local_9:Number;
-            _local_5 = 0;
-            while (_local_5 < _arg_1.length)
+            this.endEffect();
+            return false;
+        }
+        this.updateSwirl(this.parts1_, 1, 0, number);
+        this.updateSwirl(this.parts2_, 1, 3.14159265358979, number);
+        return true;
+    }
+
+    public function updateSwirl(particles:Vector.<InspireParticle>, number:Number, number2:Number, number3:Number) : void
+    {
+        var i:int = 0;
+        var particle:InspireParticle = null;
+        var number4:Number = NaN;
+        var number5:Number = NaN;
+        var number6:Number = NaN;
+        while (i < particles.length)
+        {
+            particle = particles[i];
+            particle.z_ = Back.easeOut(number3) * 2 - 1 + i / particles.length;
+            if (particle.z_ >= 0)
             {
-                _local_6 = _arg_1[_local_5];
-                _local_6.z_ = (((Back.easeOut(_arg_4) * 2) - 1) + (_local_5 / _arg_1.length));
-                if (_local_6.z_ >= 0)
+                if (particle.z_ > 1)
                 {
-                    if (_local_6.z_ > 1)
+                    particle.alive_ = false;
+                }
+                else
+                {
+                    number4 = number * (6.28318530717958 * (i / particles.length) + 6.28318530717958 * Back.easeOut(number3) + number2);
+                    number5 = this.go_.x_ + 0.5 * Math.cos(number4);
+                    number6 = this.go_.y_ + 0.5 * Math.sin(number4);
+                    if (particle.map_ == null)
                     {
-                        _local_6.alive_ = false;
+                        map_.addObj(particle,number5,number6);
                     }
                     else
                     {
-                        _local_7 = (_arg_2 * ((((2 * Math.PI) * (_local_5 / _arg_1.length)) + ((2 * Math.PI) * Back.easeOut(_arg_4))) + _arg_3));
-                        _local_8 = (this.go_.x_ + (0.5 * Math.cos(_local_7)));
-                        _local_9 = (this.go_.y_ + (0.5 * Math.sin(_local_7)));
-                        if (_local_6.map_ == null)
-                        {
-                            map_.addObj(_local_6, _local_8, _local_9);
-                        }
-                        else
-                        {
-                            _local_6.moveTo(_local_8, _local_9);
-                        }
+                        particle.moveTo(number5,number6);
                     }
                 }
-                _local_5++;
             }
+            i++;
         }
-
-
     }
-}//package com.company.assembleegameclient.objects.particles
+
+    private function endEffect() : void
+    {
+        var particle:InspireParticle = null;
+        for each (particle in this.parts1_)
+        {
+            particle.alive_ = false;
+        }
+        for each (particle in this.parts2_)
+        {
+            particle.alive_ = false;
+        }
+    }
+}
+}
 
 import com.company.assembleegameclient.objects.particles.Particle;
 
-class InspireParticle extends Particle 
+class InspireParticle extends Particle
 {
-
     public var alive_:Boolean = true;
 
-    public function InspireParticle(_arg_1:uint, _arg_2:int)
+    function InspireParticle(color:uint, size:int)
     {
-        super(_arg_1, 0, _arg_2);
+        super(color, 0, size);
     }
 
-    override public function update(_arg_1:int, _arg_2:int):Boolean
+    override public function update(param1:int, param2:int) : Boolean
     {
-        return (this.alive_);
+        return this.alive_;
     }
-
-
 }
-
-

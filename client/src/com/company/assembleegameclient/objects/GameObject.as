@@ -10,6 +10,7 @@ import com.company.assembleegameclient.objects.animation.AnimationsData;
 import com.company.assembleegameclient.objects.particles.ExplosionEffect;
 import com.company.assembleegameclient.objects.particles.HitEffect;
 import com.company.assembleegameclient.objects.particles.ParticleEffect;
+import com.company.assembleegameclient.objects.particles.SpritesProjectEffect;
 import com.company.assembleegameclient.parameters.Parameters;
 import com.company.assembleegameclient.sound.SoundEffectLibrary;
 import com.company.assembleegameclient.util.AnimatedChar;
@@ -63,6 +64,7 @@ public class GameObject extends BasicObject {
     private var isDazedImmune_:Boolean = false;
     private var isStasisImmune_:Boolean = false;
     private var isInvincible_:Boolean = false;
+    public var spritesProjectEffect:SpritesProjectEffect;
 
     static public function damageWithDefense(origDamage:int, targetDefense:int, armorPiercing:Boolean, targetCondition:Vector.<uint>):int {
         var def:int = targetDefense;
