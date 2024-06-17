@@ -26910,7 +26910,7 @@
 		</ExtraTooltipData>
 		<Sound>spell/major_heal</Sound>
 		<Usable/>
-		<Activate radius="4.5" speedBoost="1.25" lifeBoost="1" duration="3" targeted="false">BoostRange</Activate>
+		<Activate duration="3" effect="Inspired" range="4.5">ConditionEffectAura</Activate>
 		<Cooldown>4</Cooldown>
 		<BagType>1</BagType>
 		<MpCost>70</MpCost>
@@ -27006,7 +27006,6 @@
 		<Sound>spell/major_heal</Sound>
 		<Usable/>
 		<Activate duration="5" effect="Inspired" range="4.5">ConditionEffectAura</Activate>
-		<Activate radius="4.5" duration="5" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
 		<ActivateOnEquip stat="22" amount="2">IncrementStat</ActivateOnEquip>
 		<Activate stat="21" amount="6" duration="3">StatBoostSelf</Activate>
 		<Cooldown>6</Cooldown>
@@ -27033,7 +27032,6 @@
 		<Sound>spell/major_heal</Sound>
 		<Usable/>
 		<Activate duration="5.5" effect="Inspired" range="4.5">ConditionEffectAura</Activate>
-		<Activate radius="4.5" duration="5.5" speedBoost="1.25" lifeBoost="1" targeted="false">BoostRange</Activate>
 		<ActivateOnEquip stat="22" amount="3">IncrementStat</ActivateOnEquip>
 		<Activate stat="21" amount="8" duration="3.5">StatBoostSelf</Activate>
 		<BagType>4</BagType>
