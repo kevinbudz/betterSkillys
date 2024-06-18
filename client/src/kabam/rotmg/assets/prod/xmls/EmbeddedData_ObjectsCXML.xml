@@ -82,8 +82,9 @@
       <ShadowSize>0</ShadowSize>
    </Object>
    <Object type="0x075b" id="Arena Portal">
-      <Class>ArenaPortal</Class>
+      <Class>Portal</Class>
       <IntergamePortal/>
+      <DungeonName>Arena</DungeonName>
       <Texture>
          <File>lofiObjBig</File>
          <Index>0xe9</Index>

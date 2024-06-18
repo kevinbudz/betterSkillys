@@ -27,7 +27,7 @@ import flash.display.Bitmap;
       public var newCharacter:Signal;
       public var buyCharacterSlot:Signal;
       
-      public function CharacterRectList(additionalWidth:int)
+      public function CharacterRectList()
       {
          var savedChar:SavedCharacter = null;
          var buyRect:BuyCharacterRect = null;
@@ -50,7 +50,7 @@ import flash.display.Bitmap;
          {
             charType = this.classes.getCharacterClass(savedChar.objectType());
             charStats = charType.getStats();
-            currCharBox = new CurrentCharacterRect(charName,charType,savedChar,charStats, additionalWidth);
+            currCharBox = new CurrentCharacterRect(charName,charType,savedChar,charStats);
             currCharBox.setIcon(this.getIcon(savedChar));
             currCharBox.y = yOffset;
             addChild(currCharBox);
@@ -60,14 +60,14 @@ import flash.display.Bitmap;
          {
             for(i = 0; i < this.model.getAvailableCharSlots(); i++)
             {
-               newCharRect = new CreateNewCharacterRect(this.model, additionalWidth);
+               newCharRect = new CreateNewCharacterRect(this.model);
                newCharRect.addEventListener(MouseEvent.MOUSE_DOWN,this.onNewChar);
                newCharRect.y = yOffset;
                addChild(newCharRect);
                yOffset = yOffset + (CharacterRect.HEIGHT + 4);
             }
          }
-         buyRect = new BuyCharacterRect(this.model, additionalWidth);
+         buyRect = new BuyCharacterRect(this.model);
          buyRect.addEventListener(MouseEvent.MOUSE_DOWN,this.onBuyCharSlot);
          buyRect.y = yOffset;
          addChild(buyRect);

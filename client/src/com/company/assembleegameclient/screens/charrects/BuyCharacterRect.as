@@ -17,9 +17,9 @@ import kabam.rotmg.assets.services.IconFactory;
       private var priceText_:SimpleText;
       private var currency_:Bitmap;
       
-      public function BuyCharacterRect(model:PlayerModel, addWidth:int)
+      public function BuyCharacterRect(model:PlayerModel)
       {
-         super(2039583,4342338, addWidth);
+         super(2039583,4342338);
          var icon:Shape = this.buildIcon();
          icon.x = 7;
          icon.y = 9;

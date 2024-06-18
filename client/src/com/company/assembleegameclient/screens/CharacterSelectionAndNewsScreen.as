@@ -4,6 +4,7 @@ import com.company.assembleegameclient.ui.ClickableText;
 import com.company.assembleegameclient.ui.Scrollbar;
 import com.company.rotmg.graphics.ScreenGraphic;
 import com.company.ui.SimpleText;
+import com.company.util.UIUtil;
 
 import flash.display.BlendMode;
 import flash.display.DisplayObject;
@@ -17,6 +18,7 @@ import flash.geom.Rectangle;
 import kabam.rotmg.core.model.PlayerModel;
 import kabam.rotmg.game.view.CreditDisplay;
 import kabam.rotmg.news.view.NewsView;
+import kabam.rotmg.ui.UIUtils;
 import kabam.rotmg.ui.view.components.ScreenBase;
 import org.osflash.signals.Signal;
 import org.osflash.signals.natives.NativeMappedSignal;
@@ -107,17 +109,14 @@ public class CharacterSelectionAndNewsScreen extends Sprite
         this.createNameText();
         this.createCreditDisplay();
         this.createSelectCharacterText();
-        this.createNewsText();
-        this.createNews();
+        //this.createNewsText();
+        //this.createNews();
         this.createBoundaryLines();
-        this.createDividingLines();
         this.createCharacterList();
+        if(this.characterListHeight > this.SCROLLBAR_REQUIREMENT_HEIGHT)
+            this.createScrollbar();
         this.createButtons();
         this.positionButtons();
-        if(this.characterListHeight > this.SCROLLBAR_REQUIREMENT_HEIGHT)
-        {
-            this.createScrollbar();
-        }
     }
 
     private function createButtons() : void
@@ -176,59 +175,63 @@ public class CharacterSelectionAndNewsScreen extends Sprite
         }
 
         var width:int = WebMain.STAGE.stageWidth;
-        var height:int = WebMain.STAGE.stageHeight;
         this.lines.width = width;
-        this.linesTwo.x = width - 180;
-        this.linesTwo.height = (height - 75) - 100;
         this.graphic.width = width;
-        this.graphic.y = height - 75;
-        this.newsView.x = width - 170;
         this.creditDisplay.x = width;
-        this.nameText.x = (width / 2) - (this.nameText.width / 2);
-        this.playButton.x = (width - this.playButton.width) / 2;
+
+        this.characterList.x = UIUtil.centerXAndOffset(this.characterList);
+        this.scrollBar.x = this.characterList.x + this.characterList.width + 5;
+        this.nameText.x = UIUtil.centerXAndOffset(this.nameText);
+        this.playButton.x = UIUtil.centerXAndOffset(this.playButton);
+        this.backButton.x = UIUtil.centerXAndOffset(this.backButton, -94);
+        this.classesButton.x = UIUtil.centerXAndOffset(this.backButton, 96);
+
+        var height:int = WebMain.STAGE.stageHeight;
         this.playButton.y = height - 75;
-        this.backButton.x = (width - this.backButton.width) / 2 - 94;
         this.backButton.y = height - 65;
-        this.classesButton.x = (width - this.classesButton.width) / 2 + 96;
         this.classesButton.y = height - 65;
+        this.graphic.y = height - 75;
     }
 
     public function redraw(e:Event):void
     {
         duringResizing = false;
         removeChild(this.characterList);
+        removeChild(this.scrollBar);
         this.createCharacterList();
+        this.createScrollbar();
 
         WebMain.STAGE.removeEventListener(MouseEvent.MOUSE_OUT, redraw);
     }
 
-    private function createNews() : void
+    /*private function createNews() : void
     {
         this.newsView = new NewsView();
         this.newsView.y = 117;
         addChild(this.newsView);
-    }
+    }*/
 
     private function createScrollbar() : void
     {
-        this.scrollBar = new Scrollbar(16,399);
-        this.scrollBar.x = 543;
+        var scrollSize:int = 399 + (WebMain.STAGE.stageHeight - 600);
+        this.scrollBar = new Scrollbar(16, scrollSize);
+        this.scrollBar.x = this.characterList.x + this.characterList.width + 5;
         this.scrollBar.y = 113;
-        this.scrollBar.setIndicatorSize(399,this.characterList.height);
+        this.scrollBar.setIndicatorSize(scrollSize,this.characterList.height);
         this.scrollBar.addEventListener(Event.CHANGE,this.onScrollBarChange);
         addChild(this.scrollBar);
     }
 
     private function createCharacterList() : void
     {
-        this.characterList = new CharacterList(this.model, this.getReferenceRectangle().width - 800);
-        this.characterList.x = 58;
+        this.characterList = new CharacterList(this.model);
+        this.characterList.x = WebMain.STAGE.stageWidth / 2 - this.characterList.width / 2;
         this.characterList.y = 105;
         this.characterListHeight = this.characterList.height;
         addChild(this.characterList);
     }
 
-    private function createNewsText() : void
+    /*private function createNewsText() : void
     {
         this.newsText = new SimpleText(18,11776947,false,0,0);
         this.newsText.setBold(true);
@@ -237,8 +240,8 @@ public class CharacterSelectionAndNewsScreen extends Sprite
         this.newsText.filters = [this.DROP_SHADOW];
         this.newsText.x = 493;
         this.newsText.y = 74;
-        //addChild(this.newsText);
-    }
+        addChild(this.newsText);
+    }*/
 
     private function createSelectCharacterText() : void
     {
@@ -290,18 +293,6 @@ public class CharacterSelectionAndNewsScreen extends Sprite
         this.lines.graphics.lineTo(this.getReferenceRectangle().width,100);
         this.lines.graphics.lineStyle();
         addChild(this.lines);
-    }
-
-    private function createDividingLines():void
-    {
-        this.linesTwoContainer = new Sprite();
-        this.linesTwo = new Sprite();
-        this.linesTwo.graphics.clear();
-        this.linesTwo.graphics.beginFill(5526612, 1);
-        this.linesTwo.graphics.drawRect(0,0,2,100);
-        this.linesTwo.graphics.endFill();
-        this.linesTwo.y = 100;
-        addChild(this.linesTwo);
     }
 
     private function onChooseName(event:MouseEvent) : void

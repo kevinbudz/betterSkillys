@@ -56,9 +56,9 @@ public class CurrentCharacterRect extends CharacterRect
    private var fameBitmap:Bitmap;
    private var fameBitmapContainer:Sprite;
 
-   public function CurrentCharacterRect(charName:String, charType:CharacterClass, char:SavedCharacter, charStats:CharacterStats, addWidth:int)
+   public function CurrentCharacterRect(charName:String, charType:CharacterClass, char:SavedCharacter, charStats:CharacterStats)
    {
-      super(6052956,8355711, addWidth);
+      super(6052956,8355711);
       this.charName = charName;
       this.charType = charType;
       this.char = char;

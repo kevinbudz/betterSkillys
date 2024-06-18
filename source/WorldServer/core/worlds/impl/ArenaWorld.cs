@@ -76,8 +76,8 @@ namespace WorldServer.core.worlds.impl
         private int _startingPlayers;
         public int count = 0;
 
-        public ArenaWorld(GameServer gameServer, int id, WorldResource resource)
-            : base(gameServer, id, resource)
+        public ArenaWorld(GameServer gameServer, int id, WorldResource resource, World parent)
+            : base(gameServer, id, resource, parent)
         {
             CurrentState = ArenaState.NotStarted;
             _wave = 1;
@@ -135,6 +135,9 @@ namespace WorldServer.core.worlds.impl
 
         private void Countdown(TickTime time)
         {
+            Console.WriteLine(Players.Count());
+            if (Players.Count() <= 0)
+                return;
             switch (_countDown)
             {
                 case CountDownState.NotifyMinute:

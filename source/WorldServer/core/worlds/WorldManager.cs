@@ -103,6 +103,9 @@ namespace WorldServer.core.worlds
                 case WorldResourceInstanceType.Vault:
                     world = new VaultWorld(GameServer, nextId, worldResource, parent);
                     break;
+                case WorldResourceInstanceType.Arena:
+                    world = new ArenaWorld(GameServer, nextId, worldResource, parent);
+                    break;
                 default:
                     world = new World(GameServer, nextId, worldResource, parent);
                     break;

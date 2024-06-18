@@ -41,6 +41,15 @@
 		<DisableAbilities/>
 		<DisableTeleport/>
 	</World>
+	<World id="Arena">
+		<Width>256</Width>
+		<Height>256</Height>
+		<Capacity>1</Capacity>
+		<MapJM>Arena.jm</MapJM>
+		<Instance enum="arena"/>
+		<Persists/>
+		<DisableTeleport/>
+	</World>
 	<World id="Guild Hall 1">
 		<Width>256</Width>
 		<Height>256</Height>

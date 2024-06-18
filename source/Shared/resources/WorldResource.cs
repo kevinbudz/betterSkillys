@@ -9,6 +9,7 @@ namespace Shared.resources
         Nexus,
         Vault,
         Guild,
+        Arena,
         Dungeon
     }
 

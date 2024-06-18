@@ -26,9 +26,9 @@ package com.company.assembleegameclient.screens.charrects
       
       private var taglineText_:SimpleText;
       
-      public function CreateNewCharacterRect(model:PlayerModel, addWidth:int)
+      public function CreateNewCharacterRect(model:PlayerModel)
       {
-         super(5526612,7829367, addWidth);
+         super(5526612,7829367);
          makeContainer();
          var playerXML:XML = ObjectLibrary.playerChars_[int(ObjectLibrary.playerChars_.length * Math.random())];
          var bd:BitmapData = SavedCharacter.getImage(null,playerXML,AnimatedChar.RIGHT,AnimatedChar.STAND,0,false,false);
