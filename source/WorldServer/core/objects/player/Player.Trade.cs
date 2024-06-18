@@ -56,7 +56,7 @@ namespace WorldServer.core.objects
         {
             if (World is TestWorld) return;
 
-            if (World is MarketplaceWorld)
+            if (World is DailyQuestWorld)
             {
                 SendError("You cannot trade while in the Marketplace!");
                 return;
@@ -104,7 +104,7 @@ namespace WorldServer.core.objects
                 return;
             }
 
-            if (target.World is MarketplaceWorld)
+            if (target.World is DailyQuestWorld)
             {
                 SendError("The targeted player is in the Marketplace!");
                 return;

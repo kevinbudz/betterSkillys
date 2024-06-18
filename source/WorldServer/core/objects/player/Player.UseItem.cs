@@ -71,7 +71,7 @@ namespace WorldServer.core.objects
                 return;
             }
 
-            if (World is MarketplaceWorld)
+            if (World is DailyQuestWorld)
             {   
                 entity.ForceUpdate(slot);
                 SendInfo("You cannot use items while in the Marketplace!");

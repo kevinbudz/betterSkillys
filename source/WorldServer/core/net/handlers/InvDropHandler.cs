@@ -39,7 +39,7 @@ namespace WorldServer.core.net.handlers
             //    }
             //}
 
-            if (player.World is MarketplaceWorld)
+            if (player.World is DailyQuestWorld)
             {
                 player.ForceUpdate(slot.SlotId);
                 player.SendInfo("You cannot drop items while in the Marketplace!");

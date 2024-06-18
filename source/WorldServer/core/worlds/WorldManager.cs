@@ -17,7 +17,7 @@ namespace WorldServer.core.worlds
         private int NextWorldId = 0;
 
         public NexusWorld Nexus { get; private set; }
-        public MarketplaceWorld Market { get; private set; }
+        public DailyQuestWorld Market { get; private set; }
         public TestWorld Test { get; private set; }
 
         private readonly ConcurrentDictionary<int, World> Worlds = new ConcurrentDictionary<int, World>();
@@ -37,7 +37,6 @@ namespace WorldServer.core.worlds
         public void Initialize()
         {
             CreateNexusWorld();
-            CreateMarketplace();
             CreateNewTest();
         }
 
@@ -51,24 +50,6 @@ namespace WorldServer.core.worlds
             var success = world.LoadMapFromData(worldResource);
             if (!success)
                 throw new Exception("Unable to initialize Nexus.");
-            world.Init();
-            _ = Worlds.TryAdd(world.Id, world);
-            lock (Threads)
-            {
-                Threads.Add(world.Id, new RootWorldThread(this, world));
-            }
-        }
-
-        public void CreateMarketplace()
-        {
-            var worldResource = GameServer.Resources.GameData.GetWorld("Daily Quest Room");
-            if (worldResource == null)
-                return;
-
-            var world = Market = new MarketplaceWorld(GameServer, -5, worldResource);
-            var success = world.LoadMapFromData(worldResource);
-            if (!success)
-                throw new Exception("Unable to initialize Market.");
             world.Init();
             _ = Worlds.TryAdd(world.Id, world);
             lock (Threads)

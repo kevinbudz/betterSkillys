@@ -1420,7 +1420,7 @@ namespace WorldServer.core.commands.player
 
         protected override bool Process(Player player, TickTime time, string args)
         {
-            if (player.World is MarketplaceWorld)
+            if (player.World is DailyQuestWorld)
             {
                 player.SendInfo("You cannot go to your vault while in the Marketplace!");
                 return true;

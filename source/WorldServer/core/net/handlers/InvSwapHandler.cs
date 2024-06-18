@@ -45,7 +45,7 @@ namespace WorldServer.core.net.handlers
             if (player == null || player.Client == null || player.World == null)
                 return;
 
-            if (player.World is MarketplaceWorld)
+            if (player.World is DailyQuestWorld)
             {
                 from.ForceUpdate(slotFrom);
                 to.ForceUpdate(slotTo);

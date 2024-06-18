@@ -8,9 +8,9 @@ using WorldServer.core.structures;
 
 namespace WorldServer.core.worlds.impl
 {
-    public sealed class MarketplaceWorld : World
+    public sealed class DailyQuestWorld : World
     {
-        public MarketplaceWorld(GameServer gameServer, int id, WorldResource resource)
+        public DailyQuestWorld(GameServer gameServer, int id, WorldResource resource)
             : base(gameServer, id, resource)
         {
         }
