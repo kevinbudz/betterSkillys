@@ -27,6 +27,8 @@
 - [x] Seasonal Drop-tables.
 - [x] Item Breakdowns. ***[Slendergo]***
 - [x] Animated emotes. ***[Zolmex]***
+- [x] Add Samurai.
+- [x] Add Bard.
 
 ## Dungeons & Bosses to-do.
 **[✧] unfinished, but has map..** <br />
@@ -41,16 +43,16 @@
 - [x] Ivory Wyvern. **[✮]**
 - [x] Ice Cave/Inner Sanctum. **[✮]**
 - [x] Ice Tomb. 
-- [ ] Battle of the Nexus. **[✧]**
-- [ ] Nest. **[✧]**
-- [ ] Lost Halls.
-- [ ] Cultist Hideout.
+- [x] Battle of the Nexus. **[✧]**
+- [x] Nest. **[✧]**
+- [x] Lost Halls. **[✧]**
+- [x] Cultist Hideout. **[✧]**
 - [ ] The Void.
-- [ ] Ancient Ruins. **[✧]**
-- [ ] Cursed Library. **[✧]**
-- [ ] Parasite Chambers.
-- [ ] Fungal Cavern.
-- [ ] Secluded Thicket.
+- [x] Ancient Ruins. **[✧]**
+- [x] Cursed Library. **[✧]**
+- [x] Parasite Chambers. **[✧]**
+- [x] Fungal Cavern. **[✧]**
+- [x] Secluded Thicket. **[✧]**
 - [ ] Abyss Idol.
 - [ ] Horrific Creation.
 - [ ] Court of Oryx.
@@ -81,6 +83,9 @@ has also informed me of sources that had behaviors I wasn't aware of.*
 *Provided behaviors for Magic Woods and other entities.*
 - **animus.** <br />
 *Provided a proxy tool that allowed me to rip maps from RotMG Exalt.*
+- **Boftheb.** <br />
+*Helped me rip maps for Fungal Cavern, Secluded Thicket, Lost Halls,
+Cultist, and many others.*
 - **Orb, GlassBBQ.** <br />
 *Were accredited on TK-Reborn, I don't know what they did exactly. :P*
 - . . . .
