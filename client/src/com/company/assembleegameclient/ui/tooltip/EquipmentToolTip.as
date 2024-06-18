@@ -433,7 +433,7 @@ public class EquipmentToolTip extends ToolTip
           return;
       var arc:Number = this.itemAtr.ArcGap;
       var color:String = TooltipHelper.NO_DIFF_COLOR;
-      if (this.itemAtr && this.equipData.ArcGap > 0) {
+      if (this.itemAtr && this.equipData && this.equipData.ArcGap > 0) {
          var arc2:Number = this.equipData.ArcGap;
          color = TooltipHelper.getTextColor(arc2 - arc);
       }
