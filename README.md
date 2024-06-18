@@ -86,6 +86,8 @@ has also informed me of sources that had behaviors I wasn't aware of.*
 - **Boftheb.** <br />
 *Helped me rip maps for Fungal Cavern, Secluded Thicket, Lost Halls,
 Cultist, and many others.*
+- **Gummy** <br />
+*Let me use his Lair of Draconis map. :)*
 - **Orb, GlassBBQ.** <br />
 *Were accredited on TK-Reborn, I don't know what they did exactly. :P*
 - . . . .
