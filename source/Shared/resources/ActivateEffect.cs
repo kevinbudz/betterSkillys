@@ -132,7 +132,7 @@ namespace Shared.resources
             LockedName = e.GetAttribute<string>("lockedName");
             Slot = e.GetAttribute<string>("slot");
 
-            NumShots = e.GetAttribute<int>("numShots", 3);
+            NumShots = e.GetAttribute<int>("numShots");
             GapAngle = e.GetAttribute<float>("gapAngle");
             GapTiles = e.GetAttribute<float>("gapTiles");
             OffsetAngle = e.GetAttribute<float>("offsetAngle", 90);
