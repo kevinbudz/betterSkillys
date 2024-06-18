@@ -13,6 +13,37 @@
 		<VisibilityType>1</VisibilityType>
 		<Dungeon/>
 	</World>
+	<World id="Parasite Chambers">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>Dungeons/Parasite Chambers.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<Dungeon/>
+	</World>
+	<World id="Fungal Cavern">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>Dungeons/Fungal Cavern.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<DisableTeleport/>
+		<Dungeon/>
+	</World>
+	<World id="Cultist Hideout">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>Dungeons/Cultist Hideout.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<DisableTeleport/>
+		<Dungeon/>
+	</World>
+	<World id="Secluded Thicket">
+		<Width>256</Width>
+		<Height>256</Height>
+		<MapJM>Dungeons/Secluded Thicket.jm</MapJM>
+		<VisibilityType>1</VisibilityType>
+		<DisableTeleport/>
+		<Dungeon/>
+	</World>
 	<World id="Snake Pit">
 		<Width>256</Width>
 		<Height>256</Height>
