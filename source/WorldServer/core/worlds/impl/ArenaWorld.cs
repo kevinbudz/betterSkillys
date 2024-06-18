@@ -76,8 +76,8 @@ namespace WorldServer.core.worlds.impl
         private int _startingPlayers;
         public int count = 0;
 
-        public ArenaWorld(GameServer gameServer, int id, WorldResource resource, World parent)
-            : base(gameServer, id, resource, parent)
+        public ArenaWorld(GameServer gameServer, int id, WorldResource resource)
+            : base(gameServer, id, resource)
         {
             CurrentState = ArenaState.NotStarted;
             _wave = 1;
