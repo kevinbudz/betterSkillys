@@ -85,7 +85,7 @@ public class ArenaMenu extends Sprite
         this.waveValueText = new SimpleText(28, 0xffffff, false, 800, 0);
         this.waveValueText.setBold(true);
         this.waveValueText.autoSize = TextFieldAutoSize.CENTER;
-        this.waveValueText.text = "0";
+        this.waveValueText.text = "00";
         this.waveValueText.filters = FilterUtil.getTextOutlineFilter();
         this.waveValueText.x = 190 - this.waveValueText.width / 2;
         this.waveValueText.y = 22;

@@ -666,10 +666,27 @@ namespace WorldServer.core.commands.player
         }
     }
 
-    internal class GLandCommand : Command
+    internal class ArenaCommand : Command
     {
-        public override string CommandName => "glands";
-        public override string Alias => "gland";
+        public override string CommandName => "arena";
+
+        protected override bool Process(Player player, TickTime time, string args)
+        {
+            player.Client.Reconnect(new Reconnect()
+            {
+                Host = "",
+                Port = 2050,
+                GameId = World.ARENA_ID,
+                Name = "Arena"
+            });
+            return true;
+        }
+    }
+
+    internal class GodlandsCommand : Command
+    {
+        public override string CommandName => "godlands";
+        public override string Alias => "glands";
 
         protected override bool Process(Player player, TickTime time, string args)
         {

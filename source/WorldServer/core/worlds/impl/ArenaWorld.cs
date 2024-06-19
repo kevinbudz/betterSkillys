@@ -20,7 +20,8 @@ namespace WorldServer.core.worlds.impl
             Start,
             Rest,
             Spawn,
-            Fight
+            Fight,
+            Over
         }
 
         private enum CountDownState
@@ -34,7 +35,7 @@ namespace WorldServer.core.worlds.impl
         private readonly string[] _randomEnemies =
 {
             "Djinn", "Beholder", "White Demon of the Abyss", "Flying Brain", "Slime God",
-            "Native Sprite God", "Ent God", "Medusa", "Ghost God", "Leviathan", "Chaos Guardians",
+            "Native Sprite God", "Ent God", "Medusa", "Ghost God", "Leviathan",
             "Mini Bot"
         };
 
@@ -72,6 +73,8 @@ namespace WorldServer.core.worlds.impl
         private long _restTime;
         private long _time;
         private int _startingPlayers;
+        private bool _lastOneStanding = false;
+        private bool _reset = false;
 
         public ArenaWorld(GameServer gameServer, int id, WorldResource resource)
             : base(gameServer, id, resource)
@@ -123,6 +126,10 @@ namespace WorldServer.core.worlds.impl
         protected override void UpdateLogic(ref TickTime time)
         {
             base.UpdateLogic(ref time);
+            if (CurrentState == ArenaState.Over && !_reset)
+                Over(time);
+            if (Players.Count <= 0)
+                return;
             _time += time.ElapsedMsDelta;
             switch (CurrentState)
             {
@@ -144,10 +151,27 @@ namespace WorldServer.core.worlds.impl
                 case ArenaState.Fight:
                     Fight(time);
                     break;
+                case ArenaState.Over:
+                    break;
                 default:
                     CurrentState = ArenaState.Start;
                     break;
             }
+        }
+
+        private void Over(TickTime time)
+        {
+            foreach (Enemy en in Enemies.Values)
+                LeaveWorld(en);
+
+            _reset = true;
+            _time = 0;
+            _restTime = 0;
+            _wave = 1;
+            _startingPlayers = 0;
+            _bossLevel = 0;
+            _countDown = CountDownState.NotifyMinute;
+            CurrentState = ArenaState.NotStarted;
         }
 
         private void Countdown(TickTime time)
@@ -170,8 +194,9 @@ namespace WorldServer.core.worlds.impl
                         return;
                     _countDown = CountDownState.Done;
                     _time = 0;
+                    _reset = false;
                     Broadcast(new ImminentArenaWave((int)_time, _wave));
-                    _startingPlayers = Players.Count();
+                    _startingPlayers = Players.Count;
                     CurrentState = ArenaState.Start;
                     break;
                 case CountDownState.Done:
@@ -187,12 +212,12 @@ namespace WorldServer.core.worlds.impl
 
         private void Fight(TickTime time)
         {
-            if (Players.Count(p => !p.Value.Client.Account.Admin) <= 1)
+            if (Players.Count <= 1 && _startingPlayers > 1 && !_lastOneStanding)
             {
-                var plr = Players.FirstOrDefault(p => !p.Value.Client.Account.Admin).Value;
+                _lastOneStanding = true;
+                var plr = Players.FirstOrDefault().Value;
                 if (plr != null && _startingPlayers > 1)
-                    GameServer.ChatManager.ServerAnnounce(
-                        "Congrats to " + plr.Name + " for being the sole survivor of the public arena. (Wave: " + _wave + ", Starting Players: " + _startingPlayers + ")");
+                    GameServer.ChatManager.ServerAnnounce($"Congrats, {plr.Name} for being the last survivor in the arena! (out of: {_startingPlayers} people)");
             }
 
             if (!Enemies.Any(e => e.Value.ObjectDesc.Enemy))
@@ -200,11 +225,9 @@ namespace WorldServer.core.worlds.impl
                 _wave++;
                 _restTime = _time;
                 CurrentState = ArenaState.Rest;
-
                 if (_bossLevel + 1 < _changeBossLevel.Length &&
                     _changeBossLevel[_bossLevel + 1] <= _wave)
                     _bossLevel++;
-
                 Rest(time, true);
             }
         }
@@ -322,8 +345,8 @@ namespace WorldServer.core.worlds.impl
         {
             base.LeaveWorld(entity);
             if (!(entity is Player)) return;
-            if (Players.Count == 0)
-                CurrentState = ArenaState.NotStarted;
+            if (_countDown == CountDownState.Done && Players.Count <= 1)
+                CurrentState = ArenaState.Over;
         }
     }
 }

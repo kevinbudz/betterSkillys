@@ -23,7 +23,8 @@ namespace WorldServer.core.worlds
         public const int CULL_RANGE = 30;
         
         public const int NEXUS_ID = -2;
-        public const int TEST_ID = -6;
+        public const int ARENA_ID = -3;
+        public const int TEST_ID = -4;
 
         private int NextEntityId;
 

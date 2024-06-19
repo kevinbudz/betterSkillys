@@ -55,6 +55,7 @@ namespace Shared.resources
         public readonly bool Static;
         public readonly bool StunImmune;
         public readonly bool HealthBarBoss;
+        public readonly bool ShowName;
         public readonly TerrainType Terrain;
 
         public string Class;
@@ -80,6 +81,7 @@ namespace Shared.resources
             BlocksSight = e.HasElement("BlocksSight");
             Container = e.HasElement("Container");
             isChest = e.HasElement("Chest");
+            ShowName = e.HasElement("ShowName");
 
             if (e.HasElement("SlotTypes"))
                 SlotTypes = e.GetValue<string>("SlotTypes").CommaToArray<int>();

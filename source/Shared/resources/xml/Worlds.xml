@@ -44,7 +44,7 @@
 	<World id="Arena">
 		<Width>256</Width>
 		<Height>256</Height>
-		<Capacity>1</Capacity>
+		<Capacity>100</Capacity>
 		<MapJM>Arena.jm</MapJM>
 		<Instance enum="arena"/>
 		<Persists/>

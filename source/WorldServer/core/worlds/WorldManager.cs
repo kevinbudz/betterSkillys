@@ -17,7 +17,7 @@ namespace WorldServer.core.worlds
         private int NextWorldId = 0;
 
         public NexusWorld Nexus { get; private set; }
-        public DailyQuestWorld Market { get; private set; }
+        public ArenaWorld Arena { get; private set; }
         public TestWorld Test { get; private set; }
 
         private readonly ConcurrentDictionary<int, World> Worlds = new ConcurrentDictionary<int, World>();
@@ -36,11 +36,12 @@ namespace WorldServer.core.worlds
 
         public void Initialize()
         {
-            CreateNexusWorld();
-            CreateNewTest();
+            CreateNexus();
+            CreateArena();
+            CreateTest();
         }
 
-        public void CreateNexusWorld()
+        public void CreateNexus()
         {
             var worldResource = GameServer.Resources.GameData.GetWorld("Nexus");
             if (worldResource == null)
@@ -56,6 +57,41 @@ namespace WorldServer.core.worlds
             {
                 Threads.Add(world.Id, new RootWorldThread(this, world));
             }
+        }
+
+        public void CreateArena()
+        {
+            var worldResource = GameServer.Resources.GameData.GetWorld("Arena");
+            if (worldResource == null)
+                return;
+
+            var world = Arena = new ArenaWorld(GameServer, -3, worldResource);
+            var success = world.LoadMapFromData(worldResource);
+            if (!success)
+                throw new Exception("Unable to initialize Arena.");
+            world.Init();
+            _ = Worlds.TryAdd(world.Id, world);
+            lock (Threads)
+            {
+                Threads.Add(world.Id, new RootWorldThread(this, world));
+            }
+        }
+
+        public void CreateTest()
+        {
+            Console.WriteLine($"Create new test instance.");
+
+            var worldResource = GameServer.Resources.GameData.GetWorld("Testing");
+            if (worldResource == null)
+            {
+                Console.WriteLine("Testing couldnt be made");
+                return;
+            }
+
+            var world = Test = new TestWorld(GameServer, -4, worldResource);
+            world.Init();
+            Worlds[world.Id] = world;
+            Nexus.WorldBranch.AddBranch(world);
         }
 
         public void CreateNewRealmAsync(string name)
@@ -124,23 +160,6 @@ namespace WorldServer.core.worlds
                 }
             parent?.WorldBranch.AddBranch(world);
             return world;
-        }
-
-        public void CreateNewTest()
-        {
-            Console.WriteLine($"Create new test instance.");
-
-            var worldResource = GameServer.Resources.GameData.GetWorld("Testing");
-            if (worldResource == null)
-            {
-                Console.WriteLine("Testing couldnt be made");
-                return;
-            }
-
-            var world = Test = new TestWorld(GameServer, -6, worldResource);
-            world.Init();
-            Worlds[world.Id] = world;
-            Nexus.WorldBranch.AddBranch(world);
         }
 
         public void AddGuildInstance(int guildId, World world)

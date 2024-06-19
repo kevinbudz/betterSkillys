@@ -85,6 +85,7 @@
       <Class>Portal</Class>
       <IntergamePortal/>
       <DungeonName>Arena</DungeonName>
+      <ShowName/>
       <Texture>
          <File>lofiObjBig</File>
          <Index>0xe9</Index>

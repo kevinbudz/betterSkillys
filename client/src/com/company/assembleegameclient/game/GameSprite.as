@@ -107,14 +107,13 @@ public class GameSprite extends Sprite
       this.textBox_.addEventListener(MouseEvent.MOUSE_DOWN,this.onChatDown);
       this.textBox_.addEventListener(MouseEvent.MOUSE_UP,this.onChatUp);
       this.idleWatcher_ = new IdleWatcher();
-      this.addBossBar();
    }
 
    public function addBossBar():void
    {
       this.bossHealthBar = new BossHealthBar();
-      this.bossHealthBar.x = 5;
-      this.bossHealthBar.y = 5;
+      this.bossHealthBar.x = 10;
+      this.bossHealthBar.y = 10;
       this.bossHealthBar.visible = false;
       addChild(this.bossHealthBar);
    }
@@ -193,14 +192,16 @@ public class GameSprite extends Sprite
 
       if(this.map.showDisplays_)
          this.showSafeAreaDisplays();
-      if (this.map.name_ == "Arena")
-         this.showArenaMenu();
       if(this.map.name_ == "Tutorial")
          this.startTutorial();
       if (this.map.name_ == "Nexus")
          isNexus_ = true;
       if (this.map.name_ == "Vault")
          isVault_ = true;
+      if (this.map.name_ == "Arena")
+         this.showArenaMenu();
+      else
+         this.addBossBar();
 
       this.hidePreloader();
       stage.dispatchEvent(new Event(Event.RESIZE));
@@ -243,9 +244,10 @@ public class GameSprite extends Sprite
 
    private function showArenaMenu():void
    {
+      var offset:Boolean = this.bossHealthBar != null;
       this.arenaMenu = new ArenaMenu();
       this.arenaMenu.x = 10;
-      this.arenaMenu.y = 10;
+      this.arenaMenu.y = offset ? 80 : 10;
       addChild(this.arenaMenu);
    }
 
@@ -331,6 +333,20 @@ public class GameSprite extends Sprite
             this.bossHealthBar.scaleX = sWidth;
             this.bossHealthBar.scaleY = sHeight;
          }
+      }
+      if (this.arenaMenu != null)
+      {
+         if (uiscale)
+         {
+            this.arenaMenu.scaleX = result;
+            this.arenaMenu.scaleY = 1;
+         }
+         else
+         {
+            this.arenaMenu.scaleX = sWidth;
+            this.arenaMenu.scaleY = sHeight;
+         }
+         this.arenaMenu.x = 10 * this.arenaMenu.scaleY;
       }
       if (this.hudView != null)
       {
@@ -531,10 +547,6 @@ public class GameSprite extends Sprite
       }
 
       this.updateNearestInteractive();
-      if(this.bossHealthBar != null && this.bossHealthBar.visible && this.map.name_ != "Arena"){
-         this.bossHealthBar.draw();
-         updateBossBar();
-      }
 
       this.map.update(time,dt);
       this.camera_.update(dt);
@@ -574,6 +586,11 @@ public class GameSprite extends Sprite
          this.moveRecords_.addRecord(time,player.x_,player.y_);
       }
       this.lastUpdate_ = time;
+
+      if(this.bossHealthBar != null && this.map.name_ != "Arena"){
+         this.bossHealthBar.draw();
+         updateBossBar();
+      }
    }
 
    public function onChatDown(param1:MouseEvent) : void
