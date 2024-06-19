@@ -395,7 +395,6 @@ public class Projectile extends BasicObject
             }
          }
       }
-      trace("called");
       return minGO;
    }
 

@@ -13,6 +13,7 @@ import kabam.lib.net.NetConfig;
 import kabam.rotmg.account.AccountConfig;
 import kabam.rotmg.appengine.AppEngineConfig;
 import kabam.rotmg.application.ApplicationConfig;
+import kabam.rotmg.arena.ArenaConfig;
 import kabam.rotmg.assets.AssetsConfig;
 import kabam.rotmg.characters.CharactersConfig;
 import kabam.rotmg.classes.ClassesConfig;

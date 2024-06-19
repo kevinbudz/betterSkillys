@@ -89,5 +89,6 @@ public enum MessageId : byte
     MARKET_REMOVE_RESULT = 83,
     MARKET_MY_OFFERS = 84,
     MARKET_MY_OFFERS_RESULT = 85,
-    BreakDownSlot = 86
+    BREAKDOWN_SLOT = 86,
+    IMMINENT_ARENA_WAVE = 87
 }

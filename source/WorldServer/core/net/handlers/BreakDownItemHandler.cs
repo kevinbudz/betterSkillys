@@ -20,7 +20,7 @@ namespace WorldServer.core.net.handlers
 {
     public sealed class BreakdownSlotMessage : IMessageHandler
     {
-        public override MessageId MessageId => MessageId.BreakDownSlot;
+        public override MessageId MessageId => MessageId.BREAKDOWN_SLOT;
 
         public override void Handle(Client client, NetworkReader rdr, ref TickTime tickTime)
         {

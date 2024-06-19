@@ -13,6 +13,7 @@ import com.company.assembleegameclient.tutorial.Tutorial;
 import com.company.assembleegameclient.ui.GuildText;
 import com.company.assembleegameclient.ui.RankText;
 import com.company.assembleegameclient.ui.TextBox;
+import com.company.assembleegameclient.ui.menu.ArenaMenu;
 import com.company.assembleegameclient.ui.menu.PlayerMenu;
 import com.company.assembleegameclient.util.FreeList;
 import com.company.assembleegameclient.util.TextureRedrawer;
@@ -87,6 +88,7 @@ public class GameSprite extends Sprite
    private var displaysPosY:uint = 4;
    public var chatPlayerMenu:PlayerMenu;
    public var bossHealthBar:BossHealthBar;
+   public var arenaMenu:ArenaMenu;
    public var scaledLayer:Sprite;
    public var forceScaledLayer:Sprite;
 
@@ -105,6 +107,11 @@ public class GameSprite extends Sprite
       this.textBox_.addEventListener(MouseEvent.MOUSE_DOWN,this.onChatDown);
       this.textBox_.addEventListener(MouseEvent.MOUSE_UP,this.onChatUp);
       this.idleWatcher_ = new IdleWatcher();
+      this.addBossBar();
+   }
+
+   public function addBossBar():void
+   {
       this.bossHealthBar = new BossHealthBar();
       this.bossHealthBar.x = 5;
       this.bossHealthBar.y = 5;
@@ -123,11 +130,9 @@ public class GameSprite extends Sprite
          {
             objectId = gameObject.objectId_;
          }
-
          if(objectId == 0){
             bossHealthBar.setDamageInflicted(-1);
          }
-
          if((gameObject.props_.isQuest_ || gameObject.props_.isChest_) && Parameters.DamageCounter[gameObject.objectId_] > 0)
          {
             if(gameObject != null)
@@ -188,6 +193,8 @@ public class GameSprite extends Sprite
 
       if(this.map.showDisplays_)
          this.showSafeAreaDisplays();
+      if (this.map.name_ == "Arena")
+         this.showArenaMenu();
       if(this.map.name_ == "Tutorial")
          this.startTutorial();
       if (this.map.name_ == "Nexus")
@@ -232,6 +239,14 @@ public class GameSprite extends Sprite
       this.rankText_.y = this.displaysPosY;
       this.displaysPosY = this.displaysPosY + UIUtils.NOTIFICATION_SPACE;
       addChild(this.rankText_);
+   }
+
+   private function showArenaMenu():void
+   {
+      this.arenaMenu = new ArenaMenu();
+      this.arenaMenu.x = 10;
+      this.arenaMenu.y = 10;
+      addChild(this.arenaMenu);
    }
 
    private function startTutorial() : void
@@ -329,7 +344,6 @@ public class GameSprite extends Sprite
          {
             this.hudView.scaleX = sWidth;
             this.hudView.scaleY = sHeight;
-            //this.hudView.y = (300 * (1 - sHeight));
          }
          this.hudView.x = (800 - (200 * this.hudView.scaleX));
          if (this.creditDisplay_ != null)
@@ -517,8 +531,9 @@ public class GameSprite extends Sprite
       }
 
       this.updateNearestInteractive();
-      if(this.bossHealthBar != null && this.bossHealthBar.visible){
+      if(this.bossHealthBar != null && this.bossHealthBar.visible && this.map.name_ != "Arena"){
          this.bossHealthBar.draw();
+         updateBossBar();
       }
 
       this.map.update(time,dt);
@@ -559,7 +574,6 @@ public class GameSprite extends Sprite
          this.moveRecords_.addRecord(time,player.x_,player.y_);
       }
       this.lastUpdate_ = time;
-      updateBossBar();
    }
 
    public function onChatDown(param1:MouseEvent) : void

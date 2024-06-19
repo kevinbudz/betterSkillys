@@ -14,7 +14,8 @@ package kabam.rotmg.game.view
    import kabam.rotmg.game.signals.GameClosedSignal;
    import kabam.rotmg.game.signals.PlayGameSignal;
    import kabam.rotmg.game.signals.SetWorldInteractionSignal;
-   import kabam.rotmg.ui.signals.HUDModelInitialized;
+import kabam.rotmg.maploading.signals.ShowLoadingViewSignal;
+import kabam.rotmg.ui.signals.HUDModelInitialized;
    import kabam.rotmg.ui.signals.HUDSetupStarted;
    import kabam.rotmg.ui.signals.UpdateHUDSignal;
    import robotlegs.bender.bundles.mvcs.Mediator;
@@ -64,6 +65,9 @@ package kabam.rotmg.game.view
       
       [Inject]
       public var hudModelInitialized:HUDModelInitialized;
+
+      [Inject]
+      public var showLoadingViewSignal:ShowLoadingViewSignal;
       
       public function GameSpriteMediator()
       {
@@ -72,6 +76,7 @@ package kabam.rotmg.game.view
       
       override public function initialize() : void
       {
+         this.showLoadingViewSignal.dispatch();
          this.setWorldInteraction.add(this.onSetWorldInteraction);
          addViewListener(ReconnectEvent.RECONNECT,this.onReconnect);
          this.view.modelInitialized.add(this.onGameSpriteModelInitialized);

@@ -75,6 +75,8 @@ import kabam.lib.net.impl.Message;
 import kabam.lib.net.impl.SocketServer;
 import kabam.rotmg.account.core.Account;
 import kabam.rotmg.application.api.ApplicationSetup;
+import kabam.rotmg.arena.control.ImminentArenaWaveSignal;
+import kabam.rotmg.arena.model.CurrentArenaRunModel;
 import kabam.rotmg.classes.model.CharacterClass;
 import kabam.rotmg.classes.model.ClassesModel;
 import kabam.rotmg.constants.GeneralConstants;
@@ -115,6 +117,7 @@ import kabam.rotmg.messaging.impl.incoming.File;
 import kabam.rotmg.messaging.impl.incoming.GlobalNotification;
 import kabam.rotmg.messaging.impl.incoming.Goto;
 import kabam.rotmg.messaging.impl.incoming.GuildResult;
+import kabam.rotmg.messaging.impl.incoming.ImminentArenaWave;
 import kabam.rotmg.messaging.impl.incoming.InvResult;
 import kabam.rotmg.messaging.impl.incoming.InvitedToGuild;
 import kabam.rotmg.messaging.impl.incoming.MapInfo;
@@ -296,7 +299,8 @@ public class GameServerConnection
       public static const MARKET_REMOVE_RESULT:int = 83;
       public static const MARKET_MY_OFFERS:int = 84;
       public static const MARKET_MY_OFFERS_RESULT:int = 85;
-      public static const BREAKDOWN_SLOT = 86;
+      public static const BREAKDOWN_SLOT:int = 86;
+      public static const IMMINENT_ARENA_WAVE:int = 87;
 
       private static const TO_MILLISECONDS:int = 1000;
 
@@ -499,6 +503,7 @@ public class GameServerConnection
          messages.map(AOEACK).toMessage(AoeAck);
          messages.map(SHOOTACK).toMessage(ShootAck);
          messages.map(BREAKDOWN_SLOT).toMessage(BreakdownSlot);
+         messages.map(IMMINENT_ARENA_WAVE).toMessage(ImminentArenaWave).toMethod(this.onImminentArenaWave);
       }
 
       private function unmapMessages() : void {
@@ -584,14 +589,19 @@ public class GameServerConnection
          messages.unmap(PARTY_INVITE);
          messages.unmap(INVITED_TO_PARTY);
          messages.unmap(JOIN_PARTY);
-
          messages.unmap(USE_STORAGE);
          messages.unmap(SWITCH_MUSIC);
          messages.unmap(BREAKDOWN_SLOT);
+         messages.unmap(IMMINENT_ARENA_WAVE);
       }
 
       private function onSwitchMusic(sm:SwitchMusic):void {
          Music.load(sm.music);
+      }
+
+      private function onImminentArenaWave(_arg1:ImminentArenaWave):void {
+         trace(_arg1.currentRuntime, _arg1.wave);
+         this.gs_.arenaMenu.onWaveInfo(_arg1.currentRuntime, _arg1.wave);
       }
 
       public function getNextDamage(minDamage:uint, maxDamage:uint) : uint
@@ -653,7 +663,6 @@ public class GameServerConnection
 
       public function enemyHit(time:int, bulletId:int, targetId:int, kill:Boolean) : void
       {
-         trace("sent");
          var enemyHit:EnemyHit = this.messages.require(ENEMYHIT) as EnemyHit;
          enemyHit.time_ = time;
          enemyHit.bulletId_ = bulletId;
@@ -1446,7 +1455,6 @@ public class GameServerConnection
             case ShowEffect.THROW_PROJECTILE_EFFECT_TYPE:
                go = map.goDict_[showEffect.targetObjectId_];
                start = (((start) != null) ? new Point(go.x_, go.y_) : showEffect.pos2_.toPoint());
-               trace(showEffect.duration_);
                e = new ThrowProjectileEffect(showEffect.objectType, showEffect.pos2_.toPoint(), showEffect.pos1_.toPoint(), showEffect.duration_);
                map.addObj(e, start.x, start.y);
                break;

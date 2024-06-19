@@ -342,7 +342,7 @@ namespace WorldServer.core.worlds
 
         public virtual void LeaveWorld(Entity entity) => entity.Expunge();
 
-        private void AddToWorld(Entity entity)
+        public virtual void AddToWorld(Entity entity)
         {
             if (entity is Player)
             {

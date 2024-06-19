@@ -1,7 +1,4 @@
-﻿using Pipelines.Sockets.Unofficial.Arenas;
-using Shared;
-using Shared.isc;
-using Shared.resources;
+﻿using Shared.resources;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +7,7 @@ using WorldServer.core.objects.inventory;
 using WorldServer.core.objects.vendors;
 using WorldServer.core.structures;
 using WorldServer.networking;
+using WorldServer.networking.packets.outgoing;
 
 namespace WorldServer.core.worlds.impl
 {
@@ -74,7 +72,6 @@ namespace WorldServer.core.worlds.impl
         private long _restTime;
         private long _time;
         private int _startingPlayers;
-        public int count = 0;
 
         public ArenaWorld(GameServer gameServer, int id, WorldResource resource)
             : base(gameServer, id, resource)
@@ -113,8 +110,19 @@ namespace WorldServer.core.worlds.impl
                   _countDown != CountDownState.Done || client.Account.Admin;
         }
 
+        public override void AddToWorld(Entity entity)
+        {
+            base.AddToWorld(entity);
+            if (entity is Player plr)
+            {
+                int time = _countDown == CountDownState.Done ? (int)_time : -1;
+                plr.Client.SendPacket(new ImminentArenaWave(time, _wave));
+            }
+        }
+
         protected override void UpdateLogic(ref TickTime time)
         {
+            base.UpdateLogic(ref time);
             _time += time.ElapsedMsDelta;
             switch (CurrentState)
             {
@@ -127,6 +135,15 @@ namespace WorldServer.core.worlds.impl
                 case ArenaState.Start:
                     Start(time);
                     break;
+                case ArenaState.Rest:
+                    Rest(time);
+                    break;
+                case ArenaState.Spawn:
+                    Spawn(time);
+                    break;
+                case ArenaState.Fight:
+                    Fight(time);
+                    break;
                 default:
                     CurrentState = ArenaState.Start;
                     break;
@@ -135,9 +152,6 @@ namespace WorldServer.core.worlds.impl
 
         private void Countdown(TickTime time)
         {
-            Console.WriteLine(Players.Count());
-            if (Players.Count() <= 0)
-                return;
             switch (_countDown)
             {
                 case CountDownState.NotifyMinute:
@@ -156,6 +170,7 @@ namespace WorldServer.core.worlds.impl
                         return;
                     _countDown = CountDownState.Done;
                     _time = 0;
+                    Broadcast(new ImminentArenaWave((int)_time, _wave));
                     _startingPlayers = Players.Count();
                     CurrentState = ArenaState.Start;
                     break;
@@ -243,11 +258,7 @@ namespace WorldServer.core.worlds.impl
             {
                 foreach (var plr in Players.Values)
                     plr.ApplyConditionEffect(ConditionEffectIndex.Healing, 5000);
-                /*BroadcastPacket(new ImminentArenaWave()
-                {
-                    CurrentRuntime = (int)_time,
-                    Wave = _wave
-                }, null);*/
+                Broadcast(new ImminentArenaWave((int)_time, _wave));
                 HandleWaveRewards();
                 return;
             }

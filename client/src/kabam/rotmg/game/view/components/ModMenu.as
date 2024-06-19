@@ -61,7 +61,6 @@ public class ModMenu extends Sprite
 
     public function setCommand(index:int):void
     {
-        trace("clicked: " + index);
         if (autoRun[index] == true)
             this.gs.gsc_.playerText(commands[index]);
         else

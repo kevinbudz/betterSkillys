@@ -2,7 +2,8 @@ package kabam.rotmg.maploading
 {
    import kabam.rotmg.maploading.commands.ShowMapLoadingCommand;
    import kabam.rotmg.maploading.signals.HideMapLoadingSignal;
-   import kabam.rotmg.maploading.signals.ShowMapLoadingSignal;
+import kabam.rotmg.maploading.signals.ShowLoadingViewSignal;
+import kabam.rotmg.maploading.signals.ShowMapLoadingSignal;
    import kabam.rotmg.maploading.view.MapLoadingMediator;
    import kabam.rotmg.maploading.view.MapLoadingView;
    import org.swiftsuspenders.Injector;

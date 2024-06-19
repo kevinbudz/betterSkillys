@@ -7,13 +7,10 @@ package kabam.rotmg.assets
 {
     import kabam.rotmg.assets.custom.xmls.*;
     import kabam.rotmg.assets.prod.xmls.*
-import kabam.rotmg.emotes.data.EmotesCXML;
 
 public class EmbeddedData
     {
         // prod
-
-        public static const EmotesCXML:Class = EmotesCXML;
         public static const PlayersCXML:Class = EmbeddedData_PlayersCXML;
         public static const GroundCXML:Class = EmbeddedData_GroundCXML;
         private static const ProjectilesCXML:Class = EmbeddedData_ProjectilesCXML;
