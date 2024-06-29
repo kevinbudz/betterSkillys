@@ -9868,6 +9868,7 @@
 		<BagType>2</BagType>
 		<OldSound>use_potion</OldSound>
 		<feedPower>200</feedPower>
+		<Activate>Backpack</Activate>
 		<Track/>
 	</Object>
 	<Object type="0xc6e" id="Resurrected Warrior's Armor">
@@ -13461,6 +13462,7 @@
 		<Activate stat="27" amount="20">IncrementStat</Activate>
 		<Activate stat="28" amount="20">IncrementStat</Activate>
 		<Activate stat="6" amount="18050">IncrementStat</Activate>
+		<Activate>Backpack</Activate>
 		<Consumable/>
 		<Backpack/>
 		<Potion/>
@@ -16960,6 +16962,7 @@
 		<Backpack/>
 		<Soulbound/>
 		<BagType>2</BagType>
+		<Activate>Backpack</Activate>
 		<OldSound>use_potion</OldSound>
 		<feedPower>200</feedPower>
 		<Track/>
@@ -21286,6 +21289,7 @@
 		<Activate stat="26" amount="2000">IncrementStat</Activate>
 		<Activate stat="27" amount="2000">IncrementStat</Activate>
 		<Activate stat="28" amount="2000">IncrementStat</Activate>
+		<Activate>Backpack</Activate>
 		<Consumable/>
 		<Backpack/>
 		<Potion/>

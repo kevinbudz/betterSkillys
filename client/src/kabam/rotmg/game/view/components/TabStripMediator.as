@@ -82,6 +82,7 @@ import kabam.rotmg.ui.signals.UpdateBackpackTabSignal;
       
       private function onUpdateBackPack(hasBackpack:Boolean) : void
       {
+         trace(hasBackpack);
          if(hasBackpack)
          {
             this.addBackPackTab(this.hudModel.gameSprite.map.player_);

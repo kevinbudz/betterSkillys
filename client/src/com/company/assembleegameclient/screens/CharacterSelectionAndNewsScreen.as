@@ -180,7 +180,8 @@ public class CharacterSelectionAndNewsScreen extends Sprite
         this.creditDisplay.x = width;
 
         this.characterList.x = UIUtil.centerXAndOffset(this.characterList);
-        this.scrollBar.x = this.characterList.x + this.characterList.width + 5;
+        if (this.scrollBar)
+            this.scrollBar.x = this.characterList.x + this.characterList.width + 5;
         this.nameText.x = UIUtil.centerXAndOffset(this.nameText);
         this.playButton.x = UIUtil.centerXAndOffset(this.playButton);
         this.backButton.x = UIUtil.centerXAndOffset(this.backButton, -94);
@@ -196,20 +197,18 @@ public class CharacterSelectionAndNewsScreen extends Sprite
     public function redraw(e:Event):void
     {
         duringResizing = false;
-        removeChild(this.characterList);
-        removeChild(this.scrollBar);
-        this.createCharacterList();
-        this.createScrollbar();
-
+        if (this.characterList)
+        {
+            removeChild(this.characterList);
+            this.createCharacterList();
+        }
+        if (this.scrollBar)
+        {
+            removeChild(this.scrollBar);
+            this.createScrollbar();
+        }
         WebMain.STAGE.removeEventListener(MouseEvent.MOUSE_OUT, redraw);
     }
-
-    /*private function createNews() : void
-    {
-        this.newsView = new NewsView();
-        this.newsView.y = 117;
-        addChild(this.newsView);
-    }*/
 
     private function createScrollbar() : void
     {
@@ -230,18 +229,6 @@ public class CharacterSelectionAndNewsScreen extends Sprite
         this.characterListHeight = this.characterList.height;
         addChild(this.characterList);
     }
-
-    /*private function createNewsText() : void
-    {
-        this.newsText = new SimpleText(18,11776947,false,0,0);
-        this.newsText.setBold(true);
-        this.newsText.text = "News";
-        this.newsText.updateMetrics();
-        this.newsText.filters = [this.DROP_SHADOW];
-        this.newsText.x = 493;
-        this.newsText.y = 74;
-        addChild(this.newsText);
-    }*/
 
     private function createSelectCharacterText() : void
     {
