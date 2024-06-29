@@ -47,7 +47,7 @@
 - [x] Nest. **[✧]**
 - [x] Lost Halls. **[✧]**
 - [x] Cultist Hideout. **[✧]**
-- [ ] The Void.
+- [x] The Void. **[✧]**
 - [x] Ancient Ruins. **[✧]**
 - [x] Cursed Library. **[✧]**
 - [x] Parasite Chambers. **[✧]**
@@ -55,8 +55,8 @@
 - [x] Secluded Thicket. **[✧]**
 - [ ] Abyss Idol.
 - [ ] Horrific Creation.
-- [ ] Court of Oryx.
-- [ ] Oryx's Sanctuary.
+- [x] Court of Oryx. **[✧]**
+- [x] Oryx's Sanctuary. **[✧]**
 
 ## Prerequisites.
 - Visual Studio,
