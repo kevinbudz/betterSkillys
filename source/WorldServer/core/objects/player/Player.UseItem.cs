@@ -530,15 +530,15 @@ namespace WorldServer.core.objects
             var adjustedTargetY = Y + adjustedDistance * Math.Sin(shootAngle);
 
             var angle = shootAngle + eff.OffsetAngle * (Math.PI / 180);
+
             var prjDesc = item.Projectiles[0];
             if (eff.Type != 0)
             {
-                Console.WriteLine(eff.Type);
                 var data = World.GameServer.Resources.GameData;
                 prjDesc = data.Items[eff.Type].Projectiles[0];
             }
 
-            var midway = ValidatedProjectile.GetPosition((long)(prjDesc.LifetimeMS / 2), GetNextBulletId(eff.NumShots), prjDesc, (float)angle, 1);
+            var midway = ValidatedProjectile.GetPosition((long)(prjDesc.LifetimeMS / 2), NextAbilityBulletId, prjDesc, (float)angle, 1);
             var startingPos = new Position
             {
                 X = (float)(adjustedTargetX - midway.X),
