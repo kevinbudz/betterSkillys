@@ -45,7 +45,7 @@ namespace WorldServer.core.net.handlers
             var newBulletId = player.GetNextBulletId();
             if (newBulletId != bulletId)
             {
-                Log.Warn($"{player.Name} ({player.ObjectDesc.DisplayId ?? player.ObjectDesc.IdName}}) has desynced. [bID: {bulletId}, nbID: {newBulletId}");
+                Log.Warn($"{player.Name} ({player.ObjectDesc.DisplayId ?? player.ObjectDesc.IdName}) has desynced. [bID: {bulletId}, nbID: {newBulletId}");
                 return;
             }
 
