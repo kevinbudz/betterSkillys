@@ -1,4 +1,5 @@
-﻿using Shared;
+﻿using NLog;
+using Shared;
 using System;
 using WorldServer.core.structures;
 using WorldServer.core.worlds;
@@ -9,6 +10,8 @@ namespace WorldServer.core.net.handlers
     public class PlayerShootHandler : IMessageHandler
     {
         public override MessageId MessageId => MessageId.PLAYERSHOOT;
+
+        protected static readonly Logger Log = LogManager.GetCurrentClassLogger();
 
         public override void Handle(Client client, NetworkReader rdr, ref TickTime tickTime)
         {
@@ -42,7 +45,7 @@ namespace WorldServer.core.net.handlers
             var newBulletId = player.GetNextBulletId();
             if (newBulletId != bulletId)
             {
-                Console.WriteLine($"DESYNC PROJECTILES: {player.Name} Class: {player.ObjectDesc.DisplayId ?? player.ObjectDesc.IdName}", true);
+                Log.Warn($"{player.Name} ({player.ObjectDesc.DisplayId ?? player.ObjectDesc.IdName}}) has desynced. [bID: {bulletId}, nbID: {newBulletId}");
                 return;
             }
 

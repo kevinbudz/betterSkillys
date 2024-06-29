@@ -600,8 +600,7 @@ public class GameServerConnection
       }
 
       private function onImminentArenaWave(_arg1:ImminentArenaWave):void {
-         trace(_arg1.currentRuntime, _arg1.wave);
-         this.gs_.arenaMenu.onWaveInfo(_arg1.currentRuntime, _arg1.wave);
+         this.gs_.arenaMenu.onWaveInfo(_arg1.currentRuntime, _arg1.wave, _arg1.currentState);
       }
 
       public function getNextDamage(minDamage:uint, maxDamage:uint) : uint

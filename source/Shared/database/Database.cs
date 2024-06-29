@@ -40,7 +40,8 @@ namespace Shared.database
     }
 
     public class Database : IDisposable
-    {
+    {);
+
         public const string NAME_LOCK = "nameLock";
         public const string REG_LOCK = "regLock";
 
@@ -98,14 +99,14 @@ namespace Shared.database
             if (!string.IsNullOrWhiteSpace(config.dbInfo.auth))
                 conString += ",password=" + config.dbInfo.auth;
 
-			Console.WriteLine($"Connecting to: {conString}");
+            Log.Info($"Connecting database to: {conString}")
 
             _multiplexer = ConnectionMultiplexer.Connect(conString);
             _server = _multiplexer.GetServer(_multiplexer.GetEndPoints(true)[0]);
             _db = _multiplexer.GetDatabase(DatabaseIndex);
             Subscriber = _multiplexer.GetSubscriber();
 
-            Log.Info("Database loaded");
+            Log.Info("Database connected!");
         }
 
         public IDatabase Conn => _db;

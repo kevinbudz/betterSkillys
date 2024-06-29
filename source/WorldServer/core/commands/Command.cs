@@ -1,4 +1,5 @@
-﻿using Shared;
+﻿using NLog;
+using Shared;
 using System;
 using WorldServer.core.objects;
 using WorldServer.core.worlds;
@@ -11,6 +12,8 @@ namespace WorldServer.core.commands
         public virtual string Alias { get; }
         public abstract string CommandName { get; }
         public virtual bool ListAsCommand => RankRequirement != RankingType.Admin;
+
+        private static readonly Logger Log = LogManager.GetCurrentClassLogger();
 
         public bool Execute(Player player, TickTime time, string args)
         {
@@ -26,7 +29,7 @@ namespace WorldServer.core.commands
             }
             catch (Exception e)
             {
-                Console.WriteLine($"{player.Name} | Error when executing the command: {CommandName}", e);
+                Log.Warn($"An error was thrown when {player.Name} tried using: '/{CommandName}'.", e);
                 return false;
             }
         }

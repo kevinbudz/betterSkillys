@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Xml.Linq;
+using NLog;
 using Shared;
 
 namespace Shared.resources
 {
     public class ActivateEffect
     {
+        protected static readonly Logger Log = LogManager.GetCurrentClassLogger();
+
         public readonly int Amount;
         public readonly ConditionEffectIndex? CheckExistingEffect;
         public readonly uint Color;
@@ -70,7 +73,7 @@ namespace Shared.resources
             }
             catch
             {
-                Console.WriteLine($"Unknown effect: {e.Value}");
+                Log.Info($"Unknown effect: '{e.Value}'.");
                 Effect = ActivateEffects.None;
             }
 

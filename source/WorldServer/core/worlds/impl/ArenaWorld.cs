@@ -117,10 +117,7 @@ namespace WorldServer.core.worlds.impl
         {
             base.AddToWorld(entity);
             if (entity is Player plr)
-            {
-                int time = _countDown == CountDownState.Done ? (int)_time : -1;
-                plr.Client.SendPacket(new ImminentArenaWave(time, _wave));
-            }
+                plr.Client.SendPacket(new ImminentArenaWave((int)_time, _wave, (int)CurrentState));
         }
 
         protected override void UpdateLogic(ref TickTime time)
@@ -195,9 +192,9 @@ namespace WorldServer.core.worlds.impl
                     _countDown = CountDownState.Done;
                     _time = 0;
                     _reset = false;
-                    Broadcast(new ImminentArenaWave((int)_time, _wave));
                     _startingPlayers = Players.Count;
                     CurrentState = ArenaState.Start;
+                    Broadcast(new ImminentArenaWave((int)_time, _wave, (int)CurrentState));
                     break;
                 case CountDownState.Done:
                     break;
@@ -281,7 +278,7 @@ namespace WorldServer.core.worlds.impl
             {
                 foreach (var plr in Players.Values)
                     plr.ApplyConditionEffect(ConditionEffectIndex.Healing, 5000);
-                Broadcast(new ImminentArenaWave((int)_time, _wave));
+                Broadcast(new ImminentArenaWave((int)_time, _wave, (int)CurrentState));
                 HandleWaveRewards();
                 return;
             }

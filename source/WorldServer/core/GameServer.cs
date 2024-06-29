@@ -22,6 +22,7 @@ namespace WorldServer.core
 {
     public sealed class GameServer
     {
+        static readonly Logger Log = LogManager.GetCurrentClassLogger();
         public string InstanceId { get; private set; }
         public ServerConfig Configuration { get; private set; }
         public Resources Resources { get; private set; }
@@ -36,9 +37,7 @@ namespace WorldServer.core
         public ISManager InterServerManager { get; private set; }
         public WorldManager WorldManager { get; private set; }
         public SignalListener SignalListener { get; private set; }
-
         private bool Running { get; set; } = true;
-
         public DateTime RestartCloseTime { get; private set; }
 
         public GameServer(string[] appArgs)
@@ -110,7 +109,7 @@ namespace WorldServer.core
             f2.Write(Resources.GameData.GroundCombinedXML.ToString());
             f2.Close();
 
-            Console.WriteLine("GenerateXMLS is done ready for copying to src\\kabam\\rotmg\\assets");
+            Log.Info("XMLs have been generated.");
 #endif
 
             CommandManager.Initialize(this);
@@ -141,9 +140,9 @@ namespace WorldServer.core
                 // server close event
                 if (!restart && DateTime.UtcNow >= RestartCloseTime)
                 {
-                    ChatManager.ServerAnnounce("Server **Restart** in 5 minutes, prepare to leave");
+                    ChatManager.ServerAnnounce("The server will restart in 5 minutes.");
 
-                    Console.WriteLine("[Restart] Procdure Commensing");
+                    Log.Info("Server restart procedure is commencing.");
                     ConnectionListener.Disable();
                     restart = true;
                 }
@@ -162,19 +161,15 @@ namespace WorldServer.core
             }
 
             if (restart)
-                Console.WriteLine("[Restart] Triggered");
+                Log.Info("A server restart has been triggered.");
             else
-                Console.WriteLine("[Shutdown] Triggered");
-
+                Log.Info("A server shutdown has been triggered.");
             Dispose();
 
             if (restart)
-            {
-                // need to test linux builds
                 _ = Process.Start($"{AppDomain.CurrentDomain.FriendlyName}.exe");
-            }
 
-            Console.WriteLine("[Program] Terminated");
+            Log.Info("Program has been terminated.");
             Thread.Sleep(10000);
         }
 
@@ -187,28 +182,28 @@ namespace WorldServer.core
 
         public void Dispose()
         {
-            Console.WriteLine("[Dispose] ConnectionListener");
+            Log.Info("Disposed 'ConnectionListener'.");
             ConnectionListener.Shutdown();
 
-            Console.WriteLine("[Dispose] InterServerManager");
+            Log.Info("Disposed 'InterServerManager'.");
             InterServerManager.Shutdown();
 
-            Console.WriteLine("[Dispose] Resources");
+            Log.Info("Disposed 'Resources'.");
             Resources.Dispose();
 
-            Console.WriteLine("[Dispose] Database");
+            Log.Info("Disposed 'Database'.");
             Database.Dispose();
 
-            Console.WriteLine("[Dispose] MarketSweeper");
+            Log.Info("Disposed 'MarketSweeper'.");
             MarketSweeper.Stop();
 
-            Console.WriteLine("[Dispose] ChatManager");
+            Log.Info("Disposed 'ChatManager'.");
             ChatManager.Dispose();
 
-            Console.WriteLine("[Dispose] WorldManager");
+            Log.Info("Disposed 'WorldManager'.");
             WorldManager.Dispose();
 
-            Console.WriteLine("[Dispose] Configuration");
+            Log.Info("Disposed 'Configuration'.");
             Configuration = null;
         }
     }

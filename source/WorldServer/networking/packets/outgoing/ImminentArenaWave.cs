@@ -9,19 +9,21 @@ namespace WorldServer.networking.packets.outgoing
     {
         private readonly int CurrentRuntime;
         private readonly int Wave;
-
+        private readonly int CurrentState;
         public override MessageId MessageId => MessageId.IMMINENT_ARENA_WAVE;
 
-        public ImminentArenaWave(int runtime, int wave)
+        public ImminentArenaWave(int runtime, int wave, int currentState)
         {
             CurrentRuntime = runtime;
             Wave = wave;
+            CurrentState = currentState;
         }
 
         public override void Write(NetworkWriter wtr)
         {
             wtr.Write(CurrentRuntime);
             wtr.Write(Wave);
+            wtr.Write(CurrentState);
         }
     }
 }

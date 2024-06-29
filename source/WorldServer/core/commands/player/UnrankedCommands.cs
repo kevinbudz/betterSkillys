@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using NLog;
 using Shared;
 using Shared.database;
 using Shared.database.account;
@@ -377,6 +378,8 @@ namespace WorldServer.core.commands.player
     {
         public override string CommandName => "pjoin";
 
+        private static readonly Logger Log = LogManager.GetCurrentClassLogger();
+
         protected override bool Process(Player player, TickTime time, string args)
         {
             try
@@ -443,7 +446,8 @@ namespace WorldServer.core.commands.player
             }
             catch (Exception ex)
             {
-                player.SendError("Error trying to use pjoin!");
+                player.SendError("Error when trying to join instance.");
+                Log.Warn($"An error was thrown when {player.Name} tried to use: '/pjoin'. {ex}");
                 Console.WriteLine($"Error trying to use pjoin: {ex}");
             }
             return true;

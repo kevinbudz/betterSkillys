@@ -23,18 +23,22 @@ import flash.utils.Timer;
 public class ArenaMenu extends Sprite
 {
     private const timer:Timer = new Timer(1000);
+    private var started:Boolean = false;
+    private var seconds:Number = 0;
+
+    private const downTimer:Timer = new Timer(1000);
+    private var downStarted:Boolean = false;
+    private var downSeconds:Number = 0;
 
     private var arenaText:SimpleText;
     private var waveText:SimpleText;
     private var waveValueText:SimpleText;
     private var timeText:SimpleText;
     private var timeValueText:SimpleText;
+    private var currentStateText:SimpleText;
 
     private var background:Sprite;
     private var foreground:Sprite;
-
-    private var started:Boolean = false;
-    private var seconds:Number = 0;
 
     private var backgroundFill_:GraphicsSolidFill = new GraphicsSolidFill(0x454545,1);
     private var outlineFill_:GraphicsSolidFill = new GraphicsSolidFill(0x909090,1);
@@ -85,7 +89,7 @@ public class ArenaMenu extends Sprite
         this.waveValueText = new SimpleText(28, 0xffffff, false, 800, 0);
         this.waveValueText.setBold(true);
         this.waveValueText.autoSize = TextFieldAutoSize.CENTER;
-        this.waveValueText.text = "00";
+        this.waveValueText.text = "1";
         this.waveValueText.filters = FilterUtil.getTextOutlineFilter();
         this.waveValueText.x = 190 - this.waveValueText.width / 2;
         this.waveValueText.y = 22;
@@ -94,11 +98,18 @@ public class ArenaMenu extends Sprite
         this.timeValueText = new SimpleText(28, 0xffffff, false, 800, 0);
         this.timeValueText.setBold(true);
         this.timeValueText.autoSize = TextFieldAutoSize.CENTER;
-        this.timeValueText.text = "0:00";
+        this.timeValueText.text = "00:00";
         this.timeValueText.filters = FilterUtil.getTextOutlineFilter();
         this.timeValueText.x = 60 - this.timeValueText.width / 2;
         this.timeValueText.y = 22;
         addChild(this.timeValueText);
+
+        this.currentStateText = new SimpleText(14, 0xaaaaaa, false, 800, 0);
+        this.currentStateText.setBold(true);
+        this.currentStateText.autoSize = TextFieldAutoSize.CENTER;
+        this.currentStateText.filters = FilterUtil.getTextOutlineFilter();
+        this.currentStateText.x = 125 - this.currentStateText.width / 2;
+        addChild(this.currentStateText);
     }
 
     private function startTimer():void
@@ -106,6 +117,13 @@ public class ArenaMenu extends Sprite
         this.started = true;
         this.timer.addEventListener(TimerEvent.TIMER, this.updateTimer);
         this.timer.start();
+    }
+
+    private function startDownTimer():void
+    {
+        this.downStarted = true;
+        this.downTimer.addEventListener(TimerEvent.TIMER, this.updateTimer);
+        this.downTimer.start();
     }
 
     private function updateTimer(e:TimerEvent = null):void
@@ -122,14 +140,20 @@ public class ArenaMenu extends Sprite
         this.seconds++;
     }
 
-    public function onWaveInfo(runtime:int, wave:int):void
+    public function onWaveInfo(runtime:int, wave:int, state:int):void
     {
         this.waveValueText.text = wave.toString();
         this.waveValueText.updateMetrics();
         this.waveValueText.x = 190 - this.waveValueText.width / 2;
-        this.seconds = int(runtime / 1000);
-        if (!this.started && runtime != -1)
-            startTimer();
+        if (state == 1)
+        {
+            if (!this.started)
+                startTimer();
+        }
+        else
+        {
+            seconds = int(runtime / 1000);
+        }
     }
 
     public function drawForeground():void

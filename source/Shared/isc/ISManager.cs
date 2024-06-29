@@ -182,7 +182,7 @@ namespace Shared.isc
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
+                Log.Info(e);
             }
         }
 
