@@ -191,13 +191,6 @@
 		<VisibilityType>1</VisibilityType>
 		<Dungeon/>
 	</World>
-	<World id="Lair of Draconis">
-		<Width>256</Width>
-		<Height>256</Height>
-		<MapJM>Dungeons/Lair of Draconis.jm</MapJM>
-		<VisibilityType>1</VisibilityType>
-		<Dungeon/>
-	</World>
 	<World id="Ivory Wyvern">
 		<Width>256</Width>
 		<Height>256</Height>

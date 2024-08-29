@@ -2320,7 +2320,7 @@
 		<Static />
 		<DisplayId>shtrs Wooden Gate 3</DisplayId>
 	</Object>
-	<Object type="0x666e" id="shtrs Wooden Gate 4">
+	<Object type="0x6672" id="shtrs Wooden Gate 4">
 		<Class>Wall</Class>
 		<Texture>
 			<File>lofiObj3</File>
@@ -2338,7 +2338,7 @@
 		<EnemyOccupySquare />
 		<BlocksSight />
 	</Object>
-	<Object type="0x666f" id="shtrs Wooden Gate 5">
+	<Object type="0x6673" id="shtrs Wooden Gate 5">
 		<Class>Wall</Class>
 		<Texture>
 			<File>lofiObj3</File>
