@@ -82,7 +82,8 @@ public class ObjectLibrary
         "Stalagmite":Stalagmite,
         "Wall":Wall,
         "PotionStorage":PotionStorage,
-        "MarketNPC":MarketNPC
+        "MarketNPC":MarketNPC,
+        "StatIncrementer":StatIncrementer
     }
     private static var currentDungeon:String = "";
 

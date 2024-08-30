@@ -193,6 +193,7 @@ import kabam.rotmg.messaging.impl.outgoing.market.MarketRemove;
 import kabam.rotmg.messaging.impl.outgoing.market.MarketSearch;
 import kabam.rotmg.messaging.impl.outgoing.party.JoinParty;
 import kabam.rotmg.messaging.impl.outgoing.party.PartyInvite;
+import kabam.rotmg.messaging.impl.outgoing.IncrementStat;
 import kabam.rotmg.minimap.control.UpdateGameObjectTileSignal;
 import kabam.rotmg.minimap.control.UpdateGroundTileSignal;
 import kabam.rotmg.minimap.model.UpdateGroundTileVO;
@@ -301,6 +302,7 @@ public class GameServerConnection
       public static const MARKET_MY_OFFERS_RESULT:int = 85;
       public static const BREAKDOWN_SLOT:int = 86;
       public static const IMMINENT_ARENA_WAVE:int = 87;
+      public static const INCREMENT_STAT:int = 88;
 
       private static const TO_MILLISECONDS:int = 1000;
 
@@ -504,6 +506,7 @@ public class GameServerConnection
          messages.map(SHOOTACK).toMessage(ShootAck);
          messages.map(BREAKDOWN_SLOT).toMessage(BreakdownSlot);
          messages.map(IMMINENT_ARENA_WAVE).toMessage(ImminentArenaWave).toMethod(this.onImminentArenaWave);
+         messages.map(INCREMENT_STAT).toMessage(IncrementStat);
       }
 
       private function unmapMessages() : void {
@@ -593,6 +596,7 @@ public class GameServerConnection
          messages.unmap(SWITCH_MUSIC);
          messages.unmap(BREAKDOWN_SLOT);
          messages.unmap(IMMINENT_ARENA_WAVE);
+         messages.unmap(INCREMENT_STAT);
       }
 
       private function onSwitchMusic(sm:SwitchMusic):void {
@@ -638,6 +642,14 @@ public class GameServerConnection
          var load:Load = this.messages.require(LOAD) as Load;
          load.charId_ = this.charId_;
          this.serverConnection.sendMessage(load);
+      }
+
+      public function onIncrementStat(statIndex:int, increase:int) : void
+      {
+         var incr:IncrementStat = this.messages.require(INCREMENT_STAT) as IncrementStat;
+         incr.statIndex_ = statIndex;
+         incr.increase_ = increase;
+         this.serverConnection.sendMessage(incr);
       }
 
       public function playerShoot(time:int, proj:Projectile) : void

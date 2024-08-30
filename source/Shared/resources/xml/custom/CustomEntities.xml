@@ -142,4 +142,13 @@
 		<NoMiniMap/>
 		<ShadowSize>0</ShadowSize>
 	</Object>
+	<Object type="0x9005" id="Stat Incrementer">
+		<Class>StatIncrementer</Class>
+		<Texture>
+			<File>lofiCharBig</File>
+			<Index>0x09</Index>
+		</Texture>
+		<Static />
+		<ShadowSize>75</ShadowSize>
+	</Object>
 </Objects>
