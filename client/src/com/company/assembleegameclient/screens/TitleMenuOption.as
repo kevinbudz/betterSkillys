@@ -1,7 +1,8 @@
 package com.company.assembleegameclient.screens
 {
    import com.company.assembleegameclient.sound.SoundEffectLibrary;
-   import com.company.ui.SimpleText;
+import com.company.assembleegameclient.util.FilterUtil;
+import com.company.ui.SimpleText;
    import com.company.util.MoreColorUtil;
    import flash.display.Sprite;
    import flash.events.Event;
@@ -46,7 +47,7 @@ package com.company.assembleegameclient.screens
          this.textField.setBold(true);
          this.textField.text = text.toLowerCase();
          this.textField.updateMetrics();
-         this.textField.filters = [new DropShadowFilter(0,0,0,0.5,12,12)];
+         this.textField.filters = FilterUtil.getTextOutlineFilter();
          addChild(this.textField);
       }
 

@@ -94,7 +94,7 @@ public class StatusBar extends Sprite
          this.labelText_.setBold(true);
          this.labelText_.text = label;
          this.labelText_.updateMetrics();
-         this.labelText_.y = -3;
+         this.labelText_.y = -2;
          this.labelText_.filters = [new DropShadowFilter(0,0,0)];
          this.labelText_.visible = visibleLabel;
          addChild(this.labelText_);
@@ -102,15 +102,13 @@ public class StatusBar extends Sprite
       this.valueText_ = new SimpleText(size,16777215,false,0,0);
       this.valueText_.setBold(true);
       this.valueText_.filters = [new DropShadowFilter(0,0,0)];
-      this.valueText_.y = -2;
+      this.valueText_.y = -1;
       this.boostText_ = new SimpleText(size,this.textColor_,false,0,0);
       this.boostText_.setBold(true);
       this.boostText_.alpha = 0.6;
-      this.boostText_.y = -1;
       this.boostText_.filters = [new DropShadowFilter(0,0,0)];
       this.multiplierIcon = new Sprite();
       this.multiplierIcon.x = this.w_ - 25;
-      this.multiplierIcon.y = -1;
       this.multiplierIcon.graphics.beginFill(16711935,0);
       this.multiplierIcon.graphics.drawRect(0,0,20,20);
       this.multiplierIcon.addEventListener("mouseOver",this.onMultiplierOver,false,0,true);

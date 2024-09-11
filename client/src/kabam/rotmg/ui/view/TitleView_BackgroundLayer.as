@@ -1,8 +1,9 @@
+//Created by Action Script Viewer - http://www.buraks.com/asv
 package kabam.rotmg.ui.view {
-import mx.core.BitmapAsset;
+import flash.utils.ByteArray;
 
-[Embed(source="TitleView_BackgroundLayer.png")]
-public class TitleView_BackgroundLayer extends BitmapAsset {
+[Embed(source="TitleView_BackgroundLayer.gif", mimeType="application/octet-stream")]
+public class TitleView_BackgroundLayer extends ByteArray {
 
 
 }

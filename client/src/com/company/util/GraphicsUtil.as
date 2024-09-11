@@ -22,7 +22,7 @@ public class GraphicsUtil
    public static const ALL_CUTS:Array = [true, true, true, true];
 
    public static const OUTER_FILL:GraphicsSolidFill = new GraphicsSolidFill(0x222222, 1);
-   public static const BACKGROUND_FILL:GraphicsSolidFill = new GraphicsSolidFill(0x323232, 1);
+   public static const BACKGROUND_FILL:GraphicsSolidFill = new GraphicsSolidFill(0x121212, 1);
 
    public static const CELL_OUTER_FILL:GraphicsSolidFill = new GraphicsSolidFill(0x363636, 1);
    public static const CELL_BACKGROUND_FILL:GraphicsSolidFill = new GraphicsSolidFill(0x262626, 1);

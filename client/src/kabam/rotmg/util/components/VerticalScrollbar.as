@@ -6,7 +6,7 @@ package kabam.rotmg.util.components
    
    public class VerticalScrollbar extends Sprite implements Scrollbar
    {
-      public static const WIDTH:int = 20;
+      public static const WIDTH:int = 16;
       public static const BEVEL:int = 4;
       public static const PADDING:int = 0;
 

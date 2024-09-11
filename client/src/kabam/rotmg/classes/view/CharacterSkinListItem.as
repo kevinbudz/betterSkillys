@@ -2,7 +2,8 @@ package kabam.rotmg.classes.view
 {
    import com.company.assembleegameclient.util.Currency;
    import com.company.ui.SimpleText;
-   import com.company.util.MoreColorUtil;
+import com.company.util.GraphicsUtil;
+import com.company.util.MoreColorUtil;
    import flash.display.Bitmap;
    import flash.display.BitmapData;
    import flash.display.Graphics;
@@ -21,7 +22,7 @@ package kabam.rotmg.classes.view
    
    public class CharacterSkinListItem extends Sprite
    {
-      public static const WIDTH:int = 420;
+      public static const WIDTH:int = 410;
       public static const PADDING:int = 16;
       public static const HEIGHT:int = 60;
       private static const UNLOCK_TEXT:String = "Unlock at Level {LEVEL}";
@@ -30,7 +31,7 @@ package kabam.rotmg.classes.view
       private static const LOCKED_COLOR:uint = 2631720;
 
       private const grayscaleMatrix:ColorMatrixFilter = new ColorMatrixFilter(MoreColorUtil.greyscaleFilterMatrix);
-      private const background:Shape = makeBackground();
+      private const background:Sprite = makeBackground();
       private const skinContainer:Sprite = makeSkinContainer();
       private const nameText:SimpleText = makeNameText();
       private const selectionButton:RadioButton = makeSelectionButton();
@@ -54,12 +55,11 @@ package kabam.rotmg.classes.view
          super();
       }
       
-      private function makeBackground() : Shape
+      private function makeBackground() : Sprite
       {
-         var shape:Shape = new Shape();
-         this.drawBackground(shape.graphics,WIDTH);
-         addChild(shape);
-         return shape;
+         var sprite:Sprite = GraphicsUtil.drawBackground(WIDTH, HEIGHT, 8);
+         addChild(sprite);
+         return sprite;
       }
       
       private function makeSkinContainer() : Sprite
@@ -74,8 +74,8 @@ package kabam.rotmg.classes.view
       private function makeNameText() : SimpleText
       {
          var text:SimpleText = new SimpleText(18,16777215,false,0,0);
-         text.x = 75;
-         text.y = 15;
+         text.x = 65;
+         text.y = 17;
          text.setBold(true);
          text.filters = [new DropShadowFilter(0,0,0,1,8,8)];
          addChild(text);
@@ -87,7 +87,7 @@ package kabam.rotmg.classes.view
          var button:RadioButton = new RadioButton();
          button.setSelected(false);
          button.x = WIDTH - button.width - 15;
-         button.y = HEIGHT / 2 - button.height / 2;
+         button.y = HEIGHT / 2 - button.height / 2 + 2;
          addChild(button);
          return button;
       }
@@ -181,7 +181,6 @@ package kabam.rotmg.classes.view
       private function updateState() : void
       {
          this.setButtonVisibilities();
-         this.updateBackground();
          this.setEventListeners();
          this.updateGrayFilter();
       }
@@ -226,7 +225,6 @@ package kabam.rotmg.classes.view
       {
          this.isSelected = value && this.state == CharacterSkinState.OWNED;
          this.selectionButton.setSelected(value);
-         this.updateBackground();
       }
       
       private function updateUnlockText() : void
@@ -262,22 +260,13 @@ package kabam.rotmg.classes.view
       private function onOver(e:MouseEvent) : void
       {
          this.isOver = true;
-         this.updateBackground();
          this.over.dispatch();
       }
       
       private function onOut(e:MouseEvent) : void
       {
          this.isOver = false;
-         this.updateBackground();
          this.out.dispatch();
-      }
-      
-      private function updateBackground() : void
-      {
-         var ct:ColorTransform = this.background.transform.colorTransform;
-         ct.color = this.getColor();
-         this.background.transform.colorTransform = ct;
       }
       
       private function getColor() : uint
@@ -304,15 +293,6 @@ package kabam.rotmg.classes.view
          this.lockText.x = width - this.lockText.width - 15;
          this.lock.x = this.lockText.x - this.lock.width - 5;
          this.selectionButton.x = width - this.selectionButton.width - 15;
-         this.drawBackground(this.background.graphics,width);
-      }
-      
-      private function drawBackground(graphics:Graphics, width:int) : void
-      {
-         graphics.clear();
-         graphics.beginFill(AVAILABLE_COLOR);
-         graphics.drawRect(0,0,width,HEIGHT);
-         graphics.endFill();
       }
    }
 }

@@ -12,7 +12,8 @@ package com.company.assembleegameclient.screens
    import com.company.rotmg.graphics.StarGraphic;
    import com.company.ui.SimpleText;
    import com.company.util.AssetLibrary;
-   import com.gskinner.motion.GTween;
+import com.company.util.GraphicsUtil;
+import com.gskinner.motion.GTween;
    import flash.display.Bitmap;
    import flash.display.Sprite;
    import flash.events.Event;
@@ -60,14 +61,7 @@ package com.company.assembleegameclient.screens
          this.playerXML_ = playerXML;
          this.charStats_ = charStats;
          this.available_ = overrideIsAvailable || model.isLevelRequirementsMet(this.objectType());
-         if(!this.available_)
-         {
-            this.graphic_ = new LockedCharBoxGraphic();
-         }
-         else
-         {
-            this.graphic_ = new FullCharBoxGraphic();
-         }
+         this.graphic_ = GraphicsUtil.drawBackground(100, 100, 8);
          this.graphicContainer_ = new Sprite();
          addChild(this.graphicContainer_);
          this.graphicContainer_.addChild(this.graphic_);
@@ -165,14 +159,6 @@ package com.company.assembleegameclient.screens
          if(!this.available_)
          {
             return;
-         }
-         if(over)
-         {
-            transform.colorTransform = new ColorTransform(1.2,1.2,1.2);
-         }
-         else
-         {
-            transform.colorTransform = new ColorTransform(1,1,1);
          }
       }
       

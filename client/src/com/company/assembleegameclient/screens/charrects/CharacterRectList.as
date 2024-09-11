@@ -54,7 +54,7 @@ import flash.display.Bitmap;
             currCharBox.setIcon(this.getIcon(savedChar));
             currCharBox.y = yOffset;
             addChild(currCharBox);
-            yOffset = yOffset + (CharacterRect.HEIGHT + 4);
+            yOffset = yOffset + (CharacterRect.HEIGHT + 6);
          }
          if(this.model.hasAvailableCharSlot())
          {
@@ -64,7 +64,7 @@ import flash.display.Bitmap;
                newCharRect.addEventListener(MouseEvent.MOUSE_DOWN,this.onNewChar);
                newCharRect.y = yOffset;
                addChild(newCharRect);
-               yOffset = yOffset + (CharacterRect.HEIGHT + 4);
+               yOffset = yOffset + (CharacterRect.HEIGHT + 6);
             }
          }
          buyRect = new BuyCharacterRect(this.model);

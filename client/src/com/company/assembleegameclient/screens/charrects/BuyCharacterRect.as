@@ -20,33 +20,38 @@ import kabam.rotmg.assets.services.IconFactory;
       public function BuyCharacterRect(model:PlayerModel)
       {
          super(2039583,4342338);
+
          var icon:Shape = this.buildIcon();
-         icon.x = 7;
-         icon.y = 9;
+         icon.x = 22;
+         icon.y = 11;
          addChild(icon);
          makeContainer();
+
          this.classNameText_ = new SimpleText(18,16777215,false,0,0);
          this.classNameText_.setBold(true);
          this.classNameText_.text = "Buy " + this.getOrdinalString(model.getMaxCharacters() + 1) + " Character Slot";
          this.classNameText_.updateMetrics();
          this.classNameText_.filters = [new DropShadowFilter(0,0,0,1,8,8)];
-         this.classNameText_.x = 58;
-         this.classNameText_.y = 13;
+         this.classNameText_.x = 70;
+         this.classNameText_.y = 17;
          selectContainer.addChild(this.classNameText_);
-         this.priceText_ = new SimpleText(18,16777215,false,0,0);
+
+         this.priceText_ = new SimpleText(18,0xffffff,false);
+         this.priceText_.autoSize = "center";
          this.priceText_.text = model.getNextCharSlotPrice().toString();
          this.priceText_.updateMetrics();
          this.priceText_.filters = [new DropShadowFilter(0,0,0,1,8,8)];
-         this.priceText_.x = this.width - 45 - this.priceText_.width;
-         this.priceText_.y = 16;
+         this.priceText_.x = this.width - 90;
+         this.priceText_.y = 17;
          selectContainer.addChild(this.priceText_);
+
          var bd:BitmapData =
                  model.isNextCharSlotCurrencyFame() ?
                          IconFactory.makeFame() :
                          IconFactory.makeCoin();
          this.currency_ = new Bitmap(bd);
-         this.currency_.x = this.width - 43;
-         this.currency_.y = 18;
+         this.currency_.x = this.priceText_.x + this.priceText_.width + 2;
+         this.currency_.y = 20;
          selectContainer.addChild(this.currency_);
       }
       

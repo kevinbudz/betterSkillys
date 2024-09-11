@@ -1,6 +1,8 @@
 package com.company.assembleegameclient.screens.charrects
 {
-   import flash.display.Graphics;
+import com.company.util.GraphicsUtil;
+
+import flash.display.Graphics;
    import flash.display.Shape;
    import flash.display.Sprite;
    import flash.events.MouseEvent;
@@ -12,7 +14,7 @@ package com.company.assembleegameclient.screens.charrects
 
       private var color_:uint;
       private var overColor_:uint;
-      private var box_:Shape;
+      private var box_:Sprite;
       public var selectContainer:Sprite;
       
       public function CharacterRect(color:uint, overColor:uint)
@@ -20,30 +22,25 @@ package com.company.assembleegameclient.screens.charrects
          super();
          this.color_ = color;
          this.overColor_ = overColor;
-         this.box_ = new Shape();
          this.drawBox(false);
-         addChild(this.box_);
          addEventListener(MouseEvent.MOUSE_OVER,this.onMouseOver);
          addEventListener(MouseEvent.ROLL_OUT,this.onRollOut);
       }
       
       protected function onMouseOver(event:MouseEvent) : void
       {
-         this.drawBox(true);
+         //this.drawBox(true);
       }
       
       protected function onRollOut(event:MouseEvent) : void
       {
-         this.drawBox(false);
+         //this.drawBox(false);
       }
       
       private function drawBox(over:Boolean) : void
       {
-         var g:Graphics = this.box_.graphics;
-         g.clear();
-         g.beginFill(over?this.overColor_:this.color_);
-         g.drawRect(0,0,WIDTH,HEIGHT);
-         g.endFill();
+         this.box_ = GraphicsUtil.drawBackground(WIDTH, HEIGHT, 12);
+         addChild(box_);
       }
       
       public function makeContainer() : void

@@ -7,6 +7,7 @@ import com.company.assembleegameclient.ui.tooltip.MyPlayerToolTip;
 import com.company.assembleegameclient.ui.tooltip.TextToolTip;
 import com.company.assembleegameclient.ui.tooltip.ToolTip;
 import com.company.assembleegameclient.util.FameUtil;
+import com.company.assembleegameclient.util.FilterUtil;
 import com.company.rotmg.graphics.DeleteXGraphic;
 import com.company.rotmg.graphics.StarGraphic;
 import com.company.ui.SimpleText;
@@ -79,7 +80,7 @@ public class CurrentCharacterRect extends CharacterRect
    {
       this.icon && selectContainer.removeChild(this.icon);
       this.icon = value;
-      this.icon.x = 0;
+      this.icon.x = 15;
       this.icon.y = 3;
       this.icon && selectContainer.addChild(this.icon);
    }
@@ -98,7 +99,7 @@ public class CurrentCharacterRect extends CharacterRect
       this.fameBitmapContainer = new Sprite();
       this.fameBitmapContainer.name = "fame_ui";
       this.fameBitmapContainer.addChild(this.fameBitmap);
-      this.fameBitmapContainer.x = this.width - 70;
+      this.fameBitmapContainer.x = this.statsMaxedText.x + this.statsMaxedText.width + 2;
       this.fameBitmapContainer.y = 20;
       addChild(this.fameBitmapContainer);
    }
@@ -111,7 +112,7 @@ public class CurrentCharacterRect extends CharacterRect
       this.classNameText.text = this.charType.name + " " + this.char.level();
       this.classNameText.updateMetrics();
       this.classNameText.filters = [new DropShadowFilter(0,0,0,1,8,8)];
-      this.classNameText.x = 58;
+      this.classNameText.x = 70;
       this.classNameText.y = 6;
       selectContainer.addChild(this.classNameText);
    }
@@ -137,7 +138,7 @@ public class CurrentCharacterRect extends CharacterRect
       this.taglineIcon.transform.colorTransform = new ColorTransform(179 / 255,179 / 255,179 / 255);
       this.taglineIcon.scaleX = 1.2;
       this.taglineIcon.scaleY = 1.2;
-      this.taglineIcon.x = 58;
+      this.taglineIcon.x = 70;
       this.taglineIcon.y = 31;
       this.taglineIcon.filters = [new DropShadowFilter(0,0,0)];
       selectContainer.addChild(this.taglineIcon);
@@ -149,8 +150,8 @@ public class CurrentCharacterRect extends CharacterRect
       this.taglineText.text = "Class Quest: " + this.char.fame() + " of " + nextStarFame + " Fame";
       this.taglineText.updateMetrics();
       this.taglineText.filters = [new DropShadowFilter(0,0,0,1,8,8)];
-      this.taglineText.x = 58 + this.taglineIcon.width + 2;
-      this.taglineText.y = 31;
+      this.taglineText.x = 70 + this.taglineIcon.width + 2;
+      this.taglineText.y = 29;
       selectContainer.addChild(this.taglineText);
    }
 
@@ -158,8 +159,8 @@ public class CurrentCharacterRect extends CharacterRect
    {
       this.deleteButton = new DeleteXGraphic();
       this.deleteButton.addEventListener(MouseEvent.MOUSE_DOWN,this.onDeleteDown);
-      this.deleteButton.x = this.width - 25;
-      this.deleteButton.y = 5;
+      this.deleteButton.x = this.width - 30;
+      this.deleteButton.y = 10;
       addChild(this.deleteButton);
    }
 
@@ -167,11 +168,12 @@ public class CurrentCharacterRect extends CharacterRect
    {
       var maxedStat:int = this.grabStats();
       var color:* = 11776947;
-      this.statsMaxedText = new SimpleText(18, 16777215);
+      this.statsMaxedText = new SimpleText(18, 16777215, false);
+      this.statsMaxedText.autoSize = "center";
       this.statsMaxedText.filters = [new DropShadowFilter(0,0,0,1,8,8)];
       this.statsMaxedText.setBold(true);
       this.statsMaxedText.setText(maxedStat + "/8");
-      this.statsMaxedText.x = this.width - 105;
+      this.statsMaxedText.x = this.width - 90;
       this.statsMaxedText.y = 18;
       if (maxedStat == 8){
          color = uint(16572160)

@@ -7,7 +7,7 @@ package kabam.lib.ui.impl
    {
        
       
-      private var padding:int = 0;
+      private var padding:int = -3;
       
       public function VerticalLayout()
       {
@@ -32,7 +32,8 @@ package kabam.lib.ui.impl
          for(var i:int = 0; i < length; i++)
          {
             element = elements[i];
-            element.y = y;
+            element.x = 1;
+            element.y = 1 + y;
             y = y + (element.height + this.padding);
          }
       }

@@ -21,14 +21,13 @@ import flash.geom.Vector3D;
 import kabam.rotmg.ui.model.EnvironmentData;
 import kabam.rotmg.ui.view.components.DarkenFactory;
 import kabam.rotmg.ui.view.components.MapBackground;
+import kabam.rotmg.ui.view.components.ScreenBase;
+
 import org.osflash.signals.Signal;
 
 public class TitleView extends Sprite
 {
-   private static var TitleScreenGraphic:Class = TitleView_TitleScreenGraphic;
-
-   private static const COPYRIGHT:String = "© betterSkillys :)";
-
+   private static const COPYRIGHT:String = "© runey :)";
 
    public var playClicked:Signal;
    public var serversClicked:Signal;
@@ -38,8 +37,9 @@ public class TitleView extends Sprite
    public var editorClicked:Signal;
 
    private var container:Sprite;
-   private var parallaxLayers:Vector.<Bitmap>;
    private var graphic:Sprite;
+   private var screenBase:ScreenBase;
+   private var background:TitleView_TitleScreenBackground;
 
    private var playButton:TitleMenuOption;
    private var serversButton:TitleMenuOption;
@@ -52,48 +52,20 @@ public class TitleView extends Sprite
    private var copyrightText:SimpleText;
    private var darkenFactory:DarkenFactory;
    private var data:EnvironmentData;
-   public static var anchor:Point = new Point(-40, -40);
-   public static var anchor2:Point = new Point(0, -20);
 
    public function TitleView()
    {
       this.darkenFactory = new DarkenFactory();
       super();
-      this.initLayers();
+      this.screenBase = new ScreenBase();
+      addChild(this.screenBase);
+      this.background = new TitleView_TitleScreenBackground();
+      addChild(this.background);
       this.graphic = this.makeScreenGraphic();
       addChild(this.graphic);
       addChild(new AccountScreen());
       this.makeChildren();
       addChild(new SoundIcon());
-   }
-
-   public function initLayers(): void
-   {
-      this.parallaxLayers = new Vector.<Bitmap>();
-      this.parallaxLayers[0] = new TitleView_BackgroundLayer();
-      this.parallaxLayers[1] = new TitleView_FlamesLayer();
-
-      this.parallaxLayers[0].x = 40;
-      this.parallaxLayers[0].y = 40;
-      this.parallaxLayers[1].x = 0;
-      this.parallaxLayers[1].y = 20;
-
-      for (var i:int = 0; i < 2; i++)
-      {
-         this.parallaxLayers.push(this.parallaxLayers[i]);
-         addChild(this.parallaxLayers[i]);
-         this.parallaxLayers[i].addEventListener(Event.ENTER_FRAME, onParallax);
-      }
-   }
-
-   public function onParallax(e:Event): void
-   {
-      var bgOffset:Vector3D = new Vector3D(anchor.x-mouseX,anchor.y-mouseY, 0);
-      var flameOffset:Vector3D = new Vector3D(anchor2.x-mouseX,anchor2.y-mouseY, 0);
-      this.parallaxLayers[0].x += (anchor.x + bgOffset.x * 0.015 - this.parallaxLayers[0].x) * 0.015;
-      this.parallaxLayers[0].y += (anchor.y + bgOffset.y * 0.015 - this.parallaxLayers[0].y) * 0.15;
-      this.parallaxLayers[1].x += (anchor2.x + flameOffset.x * 0.025 - this.parallaxLayers[1].x) * 0.025;
-      this.parallaxLayers[1].y += (anchor2.y + flameOffset.y * 0.025 - this.parallaxLayers[1].y) * 0.025;
    }
 
    private function makeScreenGraphic():Sprite
@@ -191,12 +163,14 @@ public class TitleView extends Sprite
       if (stage)
       {
          if (e != null)
+         {
             AccountScreen.reSize(e);
+            ScreenBase.reSize(e);
+         }
+         this.background.scaleX = stage.stageWidth / 800;
+         this.background.scaleY = stage.stageHeight / 600;
          this.graphic.width = stage.stageWidth;
          this.graphic.y = stage.stageHeight - 75;
-         this.parallaxLayers[0].scaleX = this.parallaxLayers[1].scaleX = stage.stageWidth / 800;
-         this.parallaxLayers[0].scaleY = this.parallaxLayers[1].scaleY = stage.stageHeight / 600;
-
          this.playButton.x = stage.stageWidth / 2 - this.playButton.width / 2;
          this.playButton.y = stage.stageHeight - 75;
          this.serversButton.x = stage.stageWidth / 2 - this.serversButton.width / 2 - 94;
