@@ -205,7 +205,9 @@ public class GameSprite extends Sprite
 
       this.hidePreloader();
       stage.dispatchEvent(new Event(Event.RESIZE));
-      this.parent.parent.setChildIndex((this.parent.parent as Layers).top, 2);
+      if (this.parent.parent as Layers != null) {
+         this.parent.parent.setChildIndex((this.parent.parent as Layers).top, 2);
+      }
 
       if(Parameters.data_.showStatistics)
       {
@@ -533,6 +535,7 @@ public class GameSprite extends Sprite
          if(this.gameStatistics_ != null && contains(this.gameStatistics_)){
             removeChild(this.gameStatistics_);
          }
+         dispatchEvent(new Event(Event.COMPLETE));
       }
    }
 

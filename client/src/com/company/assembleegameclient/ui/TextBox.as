@@ -314,7 +314,9 @@ public class TextBox extends Sprite
 
    private function onRemovedFromStage(event:Event) : void
    {
-      stage.removeEventListener(KeyboardEvent.KEY_UP,this.onKeyUp);
+      if (stage) {
+         stage.removeEventListener(KeyboardEvent.KEY_UP, this.onKeyUp);
+      }
       this.timer_.stop();
       this.timer_.removeEventListener(TimerEvent.TIMER,this.onTimer);
    }

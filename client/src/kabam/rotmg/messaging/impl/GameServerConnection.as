@@ -1596,7 +1596,9 @@ public class GameServerConnection
                        }
                   continue;
                case StatData.ACTIVE_STAT:
-                  (go as Portal).active_ = value != 0;
+                       if (go as Portal != null) {
+                          (go as Portal).active_ = value != 0;
+                       }
                   continue;
                case StatData.ACCOUNT_ID_STAT:
                   player.accountId_ = value;

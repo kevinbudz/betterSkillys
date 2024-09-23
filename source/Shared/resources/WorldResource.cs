@@ -10,7 +10,8 @@ namespace Shared.resources
         Vault,
         Guild,
         Arena,
-        Dungeon
+        Dungeon,
+        Test
     }
 
     public sealed class WorldResource

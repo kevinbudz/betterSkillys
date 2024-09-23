@@ -35,11 +35,11 @@ package com.company.assembleegameclient.util
       
       public var origImage_:MaskedImage;
       
-      private var width_:int;
+      public var width_:int;
       
-      private var height_:int;
+      public var height_:int;
       
-      private var firstDir_:int;
+      public var firstDir_:int;
       
       private var dict_:Dictionary;
       

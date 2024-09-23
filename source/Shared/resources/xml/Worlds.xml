@@ -4,6 +4,7 @@
 		<Height>256</Height>
 		<Dungeon/>
 		<Persists/>
+		<Instance enum="Test"/>
 	</World>
 	<World id="Realm of the Mad God">
 		<Width>2048</Width>

@@ -8,13 +8,13 @@ package com.company.util
    public class AssetLibrary
    {
       
-      private static var images_:Dictionary = new Dictionary();
+      public static var images_:Dictionary = new Dictionary();
       
-      private static var imageSets_:Dictionary = new Dictionary();
+      public static var imageSets_:Dictionary = new Dictionary();
       
-      private static var sounds_:Dictionary = new Dictionary();
+      public static var sounds_:Dictionary = new Dictionary();
       
-      private static var imageLookup_:Dictionary = new Dictionary();
+      public static var imageLookup_:Dictionary = new Dictionary();
        
       
       public function AssetLibrary(se:StaticEnforcer)
