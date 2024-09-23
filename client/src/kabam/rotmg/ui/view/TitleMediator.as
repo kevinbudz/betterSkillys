@@ -3,7 +3,9 @@ package kabam.rotmg.ui.view
    import com.company.assembleegameclient.mapeditor.MapEditor;
    import com.company.assembleegameclient.screens.CreditsScreen;
    import com.company.assembleegameclient.screens.ServersScreen;
-   import flash.events.Event;
+
+import flash.display.Sprite;
+import flash.events.Event;
    import flash.system.Capabilities;
    import kabam.rotmg.account.core.signals.OpenAccountInfoSignal;
    import kabam.rotmg.application.api.ApplicationSetup;
@@ -103,7 +105,7 @@ package kabam.rotmg.ui.view
       
       private function showMapEditor() : void
       {
-          this.setScreen.dispatch(new MapEditor());
+          this.setScreen.dispatch(new NewEditorScreen());
       }
    }
 }

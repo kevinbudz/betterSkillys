@@ -6,7 +6,7 @@ package com.company.assembleegameclient.util
    public class AnimatedChars
    {
       
-      private static var nameMap_:Dictionary = new Dictionary();
+      public static var nameMap_:Dictionary = new Dictionary();
        
       
       public function AnimatedChars()
