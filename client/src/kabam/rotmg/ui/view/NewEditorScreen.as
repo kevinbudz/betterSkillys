@@ -9,6 +9,8 @@ import com.company.assembleegameclient.parameters.Parameters;
 import com.company.assembleegameclient.util.AnimatedChars;
 import com.company.util.AssetLibrary;
 
+import flash.display.NativeWindow;
+
 import flash.display.Sprite;
 import flash.events.Event;
 
@@ -30,6 +32,7 @@ public class NewEditorScreen extends Sprite {
     private var gameSprite:GameSprite;
     private var server:Server;
     private var model:PlayerModel;
+    private var window:NativeWindow;
 
     public function NewEditorScreen() {
         this.injector = StaticInjectorContext.getInjector();
@@ -52,6 +55,8 @@ public class NewEditorScreen extends Sprite {
         this.editorView = EditorLoader.load(this);
         this.editorView.addEventListener(Event.REMOVED_FROM_STAGE, this.onEditorExit);
         this.editorView.addEventListener(Event.CONNECT, this.onMapTest);
+        this.window = stage.nativeWindow;
+        this.window.addEventListener(Event.CLOSING, this.onMapTestDone); // Closing the window
     }
 
     private function onEditorExit(e:Event):void { // Go back to title screen

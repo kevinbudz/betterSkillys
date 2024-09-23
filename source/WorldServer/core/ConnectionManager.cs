@@ -142,22 +142,36 @@ namespace WorldServer.core
             }
 
             var world = client.GameServer.WorldManager.GetWorld(gameId);
-            if (world == null || world.Deleted)
-            {
-                client.SendPacket(new Text()
-                {
+            if (connectionInfo.GameId == World.TEST_ID) { // Create new test world
+                if (!client.Account.Admin) {
+                    client.SendFailure("Only players with admin permissions can make test maps.", FailureMessage.MessageWithDisconnect);
+                    return;
+                }
+
+                world = client.GameServer.WorldManager.CreateNewWorld("Testing", null, client.GameServer.WorldManager.Nexus);
+
+                var mapFolder = $"{GameServer.Configuration.serverSettings.logFolder}/maps"; // Save map in directory
+
+                if (!Directory.Exists(mapFolder))
+                    Directory.CreateDirectory(mapFolder);
+
+                System.IO.File.WriteAllText($"{mapFolder}/{acc.Name}_{DateTime.Now.Ticks}.jm", connectionInfo.MapInfo);
+
+                try {
+                    (world as TestWorld).LoadJson(connectionInfo.MapInfo); // Load test map from json
+                }
+                catch (Exception e) {
+                    Console.WriteLine(e);
+                }
+            }
+            else if (world == null || world.Deleted){
+                client.SendPacket(new Text() {
                     BubbleTime = 0,
                     NumStars = -1,
                     Name = "*Error*",
                     Txt = "World does not exist."
                 });
                 world = client.GameServer.WorldManager.GetWorld(World.NEXUS_ID);
-            }
-
-            if (world is TestWorld && !client.Account.Admin)
-            {
-                client.SendFailure("Only players with admin permissions can make test maps.", FailureMessage.MessageWithDisconnect);
-                return;
             }
 
             if (!world.AllowedAccess(client))
@@ -168,25 +182,6 @@ namespace WorldServer.core
 
             if (world.InstanceType == WorldResourceInstanceType.Vault)
                 (world as VaultWorld).SetClient(client);
-
-            if (world is TestWorld)
-            {
-                var mapFolder = $"{GameServer.Configuration.serverSettings.logFolder}/maps";
-
-                if (!Directory.Exists(mapFolder))
-                    Directory.CreateDirectory(mapFolder);
-
-                System.IO.File.WriteAllText($"{mapFolder}/{acc.Name}_{DateTime.Now.Ticks}.jm", connectionInfo.MapInfo);
-
-                try
-                {
-                    (world as TestWorld).LoadJson(connectionInfo.MapInfo);
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e);
-                }
-            }
 
             var seed = (uint)((long)Environment.TickCount * connectionInfo.GUID.GetHashCode()) % uint.MaxValue;
 

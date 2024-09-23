@@ -113,7 +113,9 @@ import kabam.rotmg.ui.signals.HUDModelInitialized;
       private function onClosed() : void
       {
          this.closeDialogs.dispatch();
-         this.gameClosed.dispatch();
+         if (!this.view.isEditor) { // Don't go back to char screen if we're in editor mode
+            this.gameClosed.dispatch();
+         }
       }
       
       private function onReconnect(event:ReconnectEvent) : void

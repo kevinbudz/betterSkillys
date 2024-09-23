@@ -95,6 +95,10 @@ namespace WorldServer.core.objects
                 return;
 
             var tile = World.Map[(int)X, (int)Y];
+            if (tile == null) {
+                return;
+            }
+
             var objDesc = tile.ObjType == 0 ? null : GameServer.Resources.GameData.ObjectDescs[tile.ObjType];
             var tileDesc = GameServer.Resources.GameData.Tiles[tile.TileId];
 

@@ -38,7 +38,6 @@ namespace WorldServer.core.worlds
         {
             CreateNexus();
             CreateArena();
-            CreateTest();
         }
 
         public void CreateNexus()
@@ -75,23 +74,6 @@ namespace WorldServer.core.worlds
             {
                 Threads.Add(world.Id, new RootWorldThread(this, world));
             }
-        }
-
-        public void CreateTest()
-        {
-            Console.WriteLine($"Create new test instance.");
-
-            var worldResource = GameServer.Resources.GameData.GetWorld("Testing");
-            if (worldResource == null)
-            {
-                Console.WriteLine("Testing couldnt be made");
-                return;
-            }
-
-            var world = Test = new TestWorld(GameServer, -4, worldResource);
-            world.Init();
-            Worlds[world.Id] = world;
-            Nexus.WorldBranch.AddBranch(world);
         }
 
         public void CreateNewRealmAsync(string name)
@@ -142,14 +124,20 @@ namespace WorldServer.core.worlds
                 case WorldResourceInstanceType.Arena:
                     world = new ArenaWorld(GameServer, nextId, worldResource);
                     break;
+                case WorldResourceInstanceType.Test:
+                    world = new TestWorld(GameServer, nextId, worldResource);
+                    break;
                 default:
                     world = new World(GameServer, nextId, worldResource, parent);
                     break;
             }
 
-            var success = world.LoadMapFromData(worldResource);
-            if (!success)
-                return null;
+            if (worldResource.Instance != WorldResourceInstanceType.Test) {
+                var success = world.LoadMapFromData(worldResource);
+                if (!success)
+                    return null;
+            }
+
             world.Init();
             _ = Worlds.TryAdd(world.Id, world);
             // null parents are threaded as they get treated as the root

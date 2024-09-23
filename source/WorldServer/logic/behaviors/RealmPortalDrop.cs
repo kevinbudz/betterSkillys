@@ -31,6 +31,9 @@ namespace WorldServer.logic.behaviors
                 return;
 
             var opener = Entity.Resolve(host.GameServer, "Realm Portal Opener");
+            if (opener == null) {
+                return;
+            }
 
             host.World.EnterWorld(opener);
             opener.Move(host.X, host.Y);
