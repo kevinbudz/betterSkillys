@@ -5,11 +5,9 @@
 
 package kabam.rotmg.assets.task
 {
-    import kabam.lib.tasks.BaseTask;
-    import com.company.assembleegameclient.objects.particles.ThunderEffect;
-    import com.company.assembleegameclient.objects.particles.OrbEffect;
+import kabam.lib.tasks.BaseTask;
 
-    public class InitializeEffects extends BaseTask 
+public class InitializeEffects extends BaseTask
     {
 
 

@@ -5,9 +5,9 @@
 
 package kabam.rotmg.assets.custom.xmls
 {
-    import mx.core.ByteArrayAsset;
+import mx.core.ByteArrayAsset;
 
-    [Embed(source="CustomObjects.xml", mimeType="application/octet-stream")]
+[Embed(source="CustomObjects.xml", mimeType="application/octet-stream")]
     public class CustomObjects extends ByteArrayAsset
     {
     }
