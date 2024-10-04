@@ -5,13 +5,13 @@
 
 package kabam.rotmg.assets.model
 {
-    import flash.display.Sprite;
-    import flash.display.Bitmap;
-    import flash.display.BitmapData;
-    import flash.utils.Timer;
-    import flash.events.TimerEvent;
+import flash.display.Bitmap;
+import flash.display.BitmapData;
+import flash.display.Sprite;
+import flash.events.TimerEvent;
+import flash.utils.Timer;
 
-    public class Animation extends Sprite 
+public class Animation extends Sprite
     {
 
         private const DEFAULT_SPEED:int = 200;

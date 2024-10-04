@@ -5,7 +5,7 @@
 
 package kabam.rotmg.assets.custom.xmls
 {
-    import mx.core.ByteArrayAsset;
+import mx.core.ByteArrayAsset;
 
 [Embed(source="CustomGrounds.xml", mimeType="application/octet-stream")]
     public class CustomGrounds extends ByteArrayAsset

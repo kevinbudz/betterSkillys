@@ -5,143 +5,274 @@
 
 package kabam.rotmg.assets
 {
-    import kabam.rotmg.assets.custom.xmls.*;
-    import kabam.rotmg.assets.prod.xmls.*
+import kabam.rotmg.assets.custom.xmls.*;
+import kabam.rotmg.assets.prod.xmls.*;
 
 public class EmbeddedData
     {
         // prod
-        public static const PlayersCXML:Class = EmbeddedData_PlayersCXML;
-        public static const GroundCXML:Class = EmbeddedData_GroundCXML;
-        private static const ProjectilesCXML:Class = EmbeddedData_ProjectilesCXML;
-        private static const EquipCXML:Class = EmbeddedData_EquipCXML;
-        private static const EquipKeysCXML:Class = EmbeddedData_EquipKeysCXML;
-        private static const EquipSkinsCXML:Class = EmbeddedData_EquipSkinsCXML;
-        private static const EquipTestCXML:Class = EmbeddedData_EquipTestCXML;
-        private static const EquipmentSetsCXML:Class = EmbeddedData_EquipmentSetsCXML;
-        private static const SkinsCXML:Class = EmbeddedData_SkinsCXML;
-        private static const DyesCXML:Class = EmbeddedData_DyesCXML;
-        private static const TextilesCXML:Class = EmbeddedData_TextilesCXML;
-        private static const PermapetsCXML:Class = EmbeddedData_PermapetsCXML;
-        private static const TokenCXML:Class = EmbeddedData_TokenCXML;
-        private static const GraveStonesCXML:Class = EmbeddedData_GraveStonesCXML;
-        private static const WillemTestingCXML:Class = EmbeddedData_WillemTestingCXML;
-        private static const TTestingCXML:Class = EmbeddedData_TTestingCXML;
-        private static const BTestingCXML:Class = EmbeddedData_BTestingCXML;
-        private static const STestingCXML:Class = EmbeddedData_STestingCXML;
-        private static const MTestingCXML:Class = EmbeddedData_MTestingCXML;
-        private static const KTestingCXML:Class = EmbeddedData_KTestingCXML;
-        private static const TestingObjectsCXML:Class = EmbeddedData_TestingObjectsCXML;
-        private static const ContainersCXML:Class = EmbeddedData_ContainersCXML;
-        public static const ObjectsCXML:Class = EmbeddedData_ObjectsCXML;
-        private static const PortalsCXML:Class = EmbeddedData_PortalsCXML;
-        private static const StaticObjectsCXML:Class = EmbeddedData_StaticObjectsCXML;
-        private static const TutorialObjectsCXML:Class = EmbeddedData_TutorialObjectsCXML;
-        private static const TutorialMonstersCXML:Class = EmbeddedData_TutorialMonstersCXML;
-        private static const AlliesCXML:Class = EmbeddedData_AlliesCXML;
-        private static const PlayersZombiesCXML:Class = EmbeddedData_PlayersZombiesCXML;
-        private static const PetsCXML:Class = EmbeddedData_PetsCXML;
-        private static const NPCsCXML:Class = EmbeddedData_NPCsCXML;
-        private static const EncountersCXML:Class = EmbeddedData_EncountersCXML;
-        private static const HeroesCXML:Class = EmbeddedData_HeroesCXML;
-        private static const ShoreCXML:Class = EmbeddedData_ShoreCXML;
-        private static const LowCXML:Class = EmbeddedData_LowCXML;
-        private static const MidCXML:Class = EmbeddedData_MidCXML;
-        private static const HighCXML:Class = EmbeddedData_HighCXML;
-        private static const MountainsCXML:Class = EmbeddedData_MountainsCXML;
-        private static const ArenaCXML:Class = EmbeddedData_ArenaCXML;
-        private static const OryxCastleCXML:Class = EmbeddedData_OryxCastleCXML;
-        private static const TombOfTheAncientsCXML:Class = EmbeddedData_TombOfTheAncientsCXML;
-        private static const SpriteWorldCXML:Class = EmbeddedData_SpriteWorldCXML;
-        private static const UndeadLairCXML:Class = EmbeddedData_UndeadLairCXML;
-        private static const OceanTrenchCXML:Class = EmbeddedData_OceanTrenchCXML;
-        private static const ForbiddenJungleCXML:Class = EmbeddedData_ForbiddenJungleCXML;
-        private static const OryxChamberCXML:Class = EmbeddedData_OryxChamberCXML;
-        private static const OryxChickenChamberCXML:Class = EmbeddedData_OryxChickenChamberCXML;
-        private static const OryxWineCellarCXML:Class = EmbeddedData_OryxWineCellarCXML;
-        private static const ManorOfTheImmortalsCXML:Class = EmbeddedData_ManorOfTheImmortalsCXML;
-        private static const PirateCaveCXML:Class = EmbeddedData_PirateCaveCXML;
-        private static const SnakePitCXML:Class = EmbeddedData_SnakePitCXML;
-        private static const SpiderDenCXML:Class = EmbeddedData_SpiderDenCXML;
-        private static const AbyssOfDemonsCXML:Class = EmbeddedData_AbyssOfDemonsCXML;
-        private static const GhostShipCXML:Class = EmbeddedData_GhostShipCXML;
-        private static const MadLabCXML:Class = EmbeddedData_MadLabCXML;
-        private static const CaveOfAThousandTreasuresCXML:Class = EmbeddedData_CaveOfAThousandTreasuresCXML;
-        private static const CandyLandCXML:Class = EmbeddedData_CandyLandCXML;
-        private static const HauntedCemeteryCXML:Class = EmbeddedData_HauntedCemeteryCXML;
-        private static const ForestMazeCXML:Class = EmbeddedData_ForestMazeCXML;
-        private static const EpicPirateCaveCXML:Class = EmbeddedData_EpicPirateCaveCXML;
-        private static const EpicForestMazeCXML:Class = EmbeddedData_EpicForestMazeCXML;
-        private static const EpicSpiderDenCXML:Class = EmbeddedData_EpicSpiderDenCXML;
-        private static const NexusDestroyedCXML:Class = EmbeddedData_NexusDestroyedCXML;
-        private static const LairOfDraconisCXML:Class = EmbeddedData_LairOfDraconisCXML;
-        private static const MiniDungeonHubCXML:Class = EmbeddedData_MiniDungeonHubCXML;
-        private static const LairOfShaitanCXML:Class = EmbeddedData_LairOfShaitanCXML;
-        private static const ShattersCXML:Class = EmbeddedData_ShattersCXML;
-        private static const BelladonnaCXML:Class = EmbeddedData_BelladonnaCXML;
-        private static const PuppetMasterCXML:Class = EmbeddedData_PuppetMasterCXML;
-        private static const TheHiveCXML:Class = EmbeddedData_TheHiveCXML;
-        private static const ToxicSewersCXML:Class = EmbeddedData_ToxicSewersCXML;
-        private static const PuppetMasterEncoreCXML:Class = EmbeddedData_PuppetMasterEncoreCXML;
-        private static const IceTombCXML:Class = EmbeddedData_IceTombCXML;
-        private static const PermaFrostLordCXML:Class = EmbeddedData_PermaFrostLordCXML;
-        private static const parasiteDenGroundCXML:Class = EmbeddedData_parasiteDenGroundCXML;
-        private static const parasiteDenObjectsCXML:Class = EmbeddedData_parasiteDenObjectsCXML;
-        private static const iceCaveGroundCXML:Class = EmbeddedData_iceCaveGroundCXML;
-        private static const iceCaveObjectsCXML:Class = EmbeddedData_iceCaveObjectsCXML;
-        private static const stPatricksGroundCXML:Class = EmbeddedData_stPatricksGroundCXML;
-        private static const stPatricksObjectCXML:Class = EmbeddedData_stPatricksObjectCXML;
-        private static const buffedBunnyObjectCXML:Class = EmbeddedData_buffedBunnyObjectCXML;
-        private static const theMachineGroundCXML:Class = EmbeddedData_theMachineGroundCXML;
-        private static const theMachineObjectsCXML:Class = EmbeddedData_theMachineObjectsCXML;
-        private static const hanaminexusGroundCXML:Class = EmbeddedData_hanaminexusGroundCXML;
-        private static const hanaminexusObjectCXML:Class = EmbeddedData_hanaminexusObjectCXML;
-        private static const mountainTempleGroundCXML:Class = EmbeddedData_mountainTempleGroundCXML;
-        private static const mountainTempleObjectCXML:Class = EmbeddedData_mountainTempleObjectCXML;
-        private static const oryxHordeGroundCXML:Class = EmbeddedData_oryxHordeGroundCXML;
-        private static const oryxHordeObjectsCXML:Class = EmbeddedData_oryxHordeObjectsCXML;
-        private static const battleOryxGroundCXML:Class = EmbeddedData_battleOryxGroundCXML;
-        private static const battleOryxObjectsCXML:Class = EmbeddedData_battleOryxObjectsCXML;
-        private static const santaWorkshopGroundCXML:Class = EmbeddedData_santaWorkshopGroundCXML;
-        private static const santaWorkshopObjectsCXML:Class = EmbeddedData_santaWorkshopObjectsCXML;
-        private static const summerNexusGroundCXML:Class = EmbeddedData_summerNexusGroundCXML;
-        private static const summerNexusObjectCXML:Class = EmbeddedData_summerNexusObjectCXML;
-        private static const autumnNexusGroundCXML:Class = EmbeddedData_autumnNexusGroundCXML;
-        private static const autumnNexusObjectsCXML:Class = EmbeddedData_autumnNexusObjectsCXML;
-        private static const xmasNexusGroundCXML:Class = EmbeddedData_xmasNexusGroundCXML;
-        private static const xmasNexusObjectsCXML:Class = EmbeddedData_xmasNexusObjectsCXML;
-        private static const epicHiveObjectsCXML:Class = EmbeddedData_epicHiveObjectsCXML;
-        private static const epicHiveGroundCXML:Class = EmbeddedData_epicHiveGroundCXML;
-        private static const lostHallsGroundCXML:Class = EmbeddedData_lostHallsGroundCXML;
-        private static const lostHallsObjectsCXML:Class = EmbeddedData_lostHallsObjectsCXML;
-        private static const magicWoodsGroundCXML:Class = EmbeddedData_magicWoodsGroundCXML;
-        private static const magicWoodsObjectsCXML:Class = EmbeddedData_magicWoodsObjectsCXML;
-        private static const cnidarianReefGroundCXML:Class = EmbeddedData_cnidarianReefGroundCXML;
-        private static const cnidarianReefObjectsCXML:Class = EmbeddedData_cnidarianReefObjectsCXML;
-        private static const secludedThicketGroundCXML:Class = EmbeddedData_secludedThicketGroundCXML;
-        private static const secludedThicketObjectsCXML:Class = EmbeddedData_secludedThicketObjectsCXML;
-        private static const eventChestObjectsCXML:Class = EmbeddedData_eventChestObjectsCXML;
-        private static const cursedLibraryGroundCXML:Class = EmbeddedData_cursedLibraryGroundCXML;
-        private static const cursedLibraryObjectsCXML:Class = EmbeddedData_cursedLibraryObjectsCXML;
-        private static const lairOfDraconisGroundCXML:Class = EmbeddedData_lairOfDraconisGroundCXML;
-        private static const lairOfDraconisObjectsCXML:Class = EmbeddedData_lairOfDraconisObjectsCXML;
-        private static const lairOfShaitanObjectsCXML:Class = EmbeddedData_lairOfShaitanObjectsCXML;
-        private static const alienInvasionGroundCXML:Class = EmbeddedData_alienInvasionGroundCXML;
-        private static const alienInvasionObjectsCXML:Class = EmbeddedData_alienInvasionObjectsCXML;
-        private static const crystalCaveGroundCXML:Class = EmbeddedData_crystalCaveGroundCXML;
-        private static const crystalCaveObjectsCXML:Class = EmbeddedData_crystalCaveObjectsCXML;
-        private static const fungalCavernGroundCXML:Class = EmbeddedData_fungalCavernGroundCXML;
-        private static const fungalCavernObjectsCXML:Class = EmbeddedData_fungalCavernObjectsCXML;
-        private static const innerWorkingsGroundCXML:Class = EmbeddedData_innerWorkingsGroundCXML;
-        private static const innerWorkingsObjectsCXML:Class = EmbeddedData_innerWorkingsObjectsCXML;
-        private static const oryxSanctuaryGroundCXML:Class = EmbeddedData_oryxSanctuaryGroundCXML;
-        private static const oryxSanctuaryObjectsCXML:Class = EmbeddedData_oryxSanctuaryObjectsCXML;
-        private static const oryxSanctuaryUObjectsCXML:Class = EmbeddedData_oryxSanctuaryUObjectsCXML;
-        private static const archbishopGroundCXML:Class = EmbeddedData_archbishopGroundCXML;
-        private static const archbishopObjectsCXML:Class = EmbeddedData_archbishopObjectsCXML;
-        private static const archbishopObjectsMenCXML:Class = EmbeddedData_archbishopObjectsMenCXML;
-        private static const ancientRuinsGroundCXML:Class = EmbeddedData_ancientRuinsGroundCXML;
-        private static const ancientRuinsObjectsCXML:Class = EmbeddedData_ancientRuinsObjectsCXML;
+        [Embed(source="prod/xmls/Players.xml", mimeType="application/octet-stream")]
+        public static const PlayersCXML:Class;
+        [Embed(source="prod/xmls/Ground.xml", mimeType="application/octet-stream")]
+        public static const GroundCXML:Class;
+        [Embed(source="prod/xmls/Projectiles.xml", mimeType="application/octet-stream")]
+        private static const ProjectilesCXML:Class;
+        [Embed(source="prod/xmls/Equip.xml", mimeType="application/octet-stream")]
+        private static const EquipCXML:Class;
+        [Embed(source="prod/xmls/EquipKeys.xml", mimeType="application/octet-stream")]
+        private static const EquipKeysCXML:Class;
+        [Embed(source="prod/xmls/EquipSkins.xml", mimeType="application/octet-stream")]
+        private static const EquipSkinsCXML:Class;
+        [Embed(source="prod/xmls/EquipTest.xml", mimeType="application/octet-stream")]
+        private static const EquipTestCXML:Class;
+        [Embed(source="prod/xmls/EquipmentSets.xml", mimeType="application/octet-stream")]
+        private static const EquipmentSetsCXML:Class;
+        [Embed(source="prod/xmls/Skins.xml", mimeType="application/octet-stream")]
+        private static const SkinsCXML:Class;
+        [Embed(source="prod/xmls/Dyes.xml", mimeType="application/octet-stream")]
+        private static const DyesCXML:Class;
+        [Embed(source="prod/xmls/Textiles.xml", mimeType="application/octet-stream")]
+        private static const TextilesCXML:Class;
+        [Embed(source="prod/xmls/Permapets.xml", mimeType="application/octet-stream")]
+        private static const PermapetsCXML:Class;
+        [Embed(source="prod/xmls/Token.xml", mimeType="application/octet-stream")]
+        private static const TokenCXML:Class;
+        [Embed(source="prod/xmls/GraveStones.xml", mimeType="application/octet-stream")]
+        private static const GraveStonesCXML:Class;
+        [Embed(source="prod/xmls/WillemTesting.xml", mimeType="application/octet-stream")]
+        private static const WillemTestingCXML:Class;
+        [Embed(source="prod/xmls/TTesting.xml", mimeType="application/octet-stream")]
+        private static const TTestingCXML:Class;
+        [Embed(source="prod/xmls/BTesting.xml", mimeType="application/octet-stream")]
+        private static const BTestingCXML:Class;
+        [Embed(source="prod/xmls/STesting.xml", mimeType="application/octet-stream")]
+        private static const STestingCXML:Class;
+        [Embed(source="prod/xmls/MTesting.xml", mimeType="application/octet-stream")]
+        private static const MTestingCXML:Class;
+        [Embed(source="prod/xmls/KTesting.xml", mimeType="application/octet-stream")]
+        private static const KTestingCXML:Class;
+        [Embed(source="prod/xmls/TestingObjects.xml", mimeType="application/octet-stream")]
+        private static const TestingObjectsCXML:Class;
+        [Embed(source="prod/xmls/Containers.xml", mimeType="application/octet-stream")]
+        private static const ContainersCXML:Class;
+        [Embed(source="prod/xmls/Objects.xml", mimeType="application/octet-stream")]
+        public static const ObjectsCXML:Class;
+        [Embed(source="prod/xmls/Portals.xml", mimeType="application/octet-stream")]
+        private static const PortalsCXML:Class;
+        [Embed(source="prod/xmls/StaticObjects.xml", mimeType="application/octet-stream")]
+        private static const StaticObjectsCXML:Class;
+        [Embed(source="prod/xmls/TutorialObjects.xml", mimeType="application/octet-stream")]
+        private static const TutorialObjectsCXML:Class;
+        [Embed(source="prod/xmls/TutorialMonsters.xml", mimeType="application/octet-stream")]
+        private static const TutorialMonstersCXML:Class;
+        [Embed(source="prod/xmls/Allies.xml", mimeType="application/octet-stream")]
+        private static const AlliesCXML:Class;
+        [Embed(source="prod/xmls/PlayersZombies.xml", mimeType="application/octet-stream")]
+        private static const PlayersZombiesCXML:Class;
+        [Embed(source="prod/xmls/Pets.xml", mimeType="application/octet-stream")]
+        private static const PetsCXML:Class;
+        [Embed(source="prod/xmls/NPCs.xml", mimeType="application/octet-stream")]
+        private static const NPCsCXML:Class;
+        [Embed(source="prod/xmls/Encounters.xml", mimeType="application/octet-stream")]
+        private static const EncountersCXML:Class;
+        [Embed(source="prod/xmls/Heroes.xml", mimeType="application/octet-stream")]
+        private static const HeroesCXML:Class;
+        [Embed(source="prod/xmls/Shore.xml", mimeType="application/octet-stream")]
+        private static const ShoreCXML:Class;
+        [Embed(source="prod/xmls/Low.xml", mimeType="application/octet-stream")]
+        private static const LowCXML:Class;
+        [Embed(source="prod/xmls/Mid.xml", mimeType="application/octet-stream")]
+        private static const MidCXML:Class;
+        [Embed(source="prod/xmls/High.xml", mimeType="application/octet-stream")]
+        private static const HighCXML:Class;
+        [Embed(source="prod/xmls/Mountains.xml", mimeType="application/octet-stream")]
+        private static const MountainsCXML:Class;
+        [Embed(source="prod/xmls/Arena.xml", mimeType="application/octet-stream")]
+        private static const ArenaCXML:Class;
+        [Embed(source="prod/xmls/OryxCastle.xml", mimeType="application/octet-stream")]
+        private static const OryxCastleCXML:Class;
+        [Embed(source="prod/xmls/TombOfTheAncients.xml", mimeType="application/octet-stream")]
+        private static const TombOfTheAncientsCXML:Class;
+        [Embed(source="prod/xmls/SpriteWorld.xml", mimeType="application/octet-stream")]
+        private static const SpriteWorldCXML:Class;
+        [Embed(source="prod/xmls/UndeadLair.xml", mimeType="application/octet-stream")]
+        private static const UndeadLairCXML:Class;
+        [Embed(source="prod/xmls/OceanTrench.xml", mimeType="application/octet-stream")]
+        private static const OceanTrenchCXML:Class;
+        [Embed(source="prod/xmls/ForbiddenJungle.xml", mimeType="application/octet-stream")]
+        private static const ForbiddenJungleCXML:Class;
+        [Embed(source="prod/xmls/OryxChamber.xml", mimeType="application/octet-stream")]
+        private static const OryxChamberCXML:Class;
+        [Embed(source="prod/xmls/OryxChickenChamber.xml", mimeType="application/octet-stream")]
+        private static const OryxChickenChamberCXML:Class;
+        [Embed(source="prod/xmls/OryxWineCellar.xml", mimeType="application/octet-stream")]
+        private static const OryxWineCellarCXML:Class;
+        [Embed(source="prod/xmls/ManorOfTheImmortals.xml", mimeType="application/octet-stream")]
+        private static const ManorOfTheImmortalsCXML:Class;
+        [Embed(source="prod/xmls/PirateCave.xml", mimeType="application/octet-stream")]
+        private static const PirateCaveCXML:Class;
+        [Embed(source="prod/xmls/SnakePit.xml", mimeType="application/octet-stream")]
+        private static const SnakePitCXML:Class;
+        [Embed(source="prod/xmls/SpiderDen.xml", mimeType="application/octet-stream")]
+        private static const SpiderDenCXML:Class;
+        [Embed(source="prod/xmls/AbyssOfDemons.xml", mimeType="application/octet-stream")]
+        private static const AbyssOfDemonsCXML:Class;
+        [Embed(source="prod/xmls/GhostShip.xml", mimeType="application/octet-stream")]
+        private static const GhostShipCXML:Class;
+        [Embed(source="prod/xmls/MadLab.xml", mimeType="application/octet-stream")]
+        private static const MadLabCXML:Class;
+        [Embed(source="prod/xmls/CaveOfAThousandTreasures.xml", mimeType="application/octet-stream")]
+        private static const CaveOfAThousandTreasuresCXML:Class;
+        [Embed(source="prod/xmls/CandyLand.xml", mimeType="application/octet-stream")]
+        private static const CandyLandCXML:Class;
+        [Embed(source="prod/xmls/HauntedCemetery.xml", mimeType="application/octet-stream")]
+        private static const HauntedCemeteryCXML:Class;
+        [Embed(source="prod/xmls/ForestMaze.xml", mimeType="application/octet-stream")]
+        private static const ForestMazeCXML:Class;
+        [Embed(source="prod/xmls/EpicPirateCave.xml", mimeType="application/octet-stream")]
+        private static const EpicPirateCaveCXML:Class;
+        [Embed(source="prod/xmls/EpicForestMaze.xml", mimeType="application/octet-stream")]
+        private static const EpicForestMazeCXML:Class;
+        [Embed(source="prod/xmls/EpicSpiderDen.xml", mimeType="application/octet-stream")]
+        private static const EpicSpiderDenCXML:Class;
+        [Embed(source="prod/xmls/NexusDestroyed.xml", mimeType="application/octet-stream")]
+        private static const NexusDestroyedCXML:Class;
+        [Embed(source="prod/xmls/LairOfDraconis.xml", mimeType="application/octet-stream")]
+        private static const LairOfDraconisCXML:Class;
+        [Embed(source="prod/xmls/MiniDungeonHub.xml", mimeType="application/octet-stream")]
+        private static const MiniDungeonHubCXML:Class;
+        [Embed(source="prod/xmls/LairOfShaitan.xml", mimeType="application/octet-stream")]
+        private static const LairOfShaitanCXML:Class;
+        [Embed(source="prod/xmls/Shatters.xml", mimeType="application/octet-stream")]
+        private static const ShattersCXML:Class;
+        [Embed(source="prod/xmls/Belladonna.xml", mimeType="application/octet-stream")]
+        private static const BelladonnaCXML:Class;
+        [Embed(source="prod/xmls/PuppetMaster.xml", mimeType="application/octet-stream")]
+        private static const PuppetMasterCXML:Class;
+        [Embed(source="prod/xmls/TheHive.xml", mimeType="application/octet-stream")]
+        private static const TheHiveCXML:Class;
+        [Embed(source="prod/xmls/ToxicSewers.xml", mimeType="application/octet-stream")]
+        private static const ToxicSewersCXML:Class;
+        [Embed(source="prod/xmls/PuppetMasterEncore.xml", mimeType="application/octet-stream")]
+        private static const PuppetMasterEncoreCXML:Class;
+        [Embed(source="prod/xmls/IceTomb.xml", mimeType="application/octet-stream")]
+        private static const IceTombCXML:Class;
+        [Embed(source="prod/xmls/PermaFrostLord.xml", mimeType="application/octet-stream")]
+        private static const PermaFrostLordCXML:Class;
+        [Embed(source="prod/xmls/parasiteDenGround.xml", mimeType="application/octet-stream")]
+        private static const parasiteDenGroundCXML:Class;
+        [Embed(source="prod/xmls/parasiteDenObjects.xml", mimeType="application/octet-stream")]
+        private static const parasiteDenObjectsCXML:Class;
+        [Embed(source="prod/xmls/iceCaveGround.xml", mimeType="application/octet-stream")]
+        private static const iceCaveGroundCXML:Class;
+        [Embed(source="prod/xmls/iceCaveObjects.xml", mimeType="application/octet-stream")]
+        private static const iceCaveObjectsCXML:Class;
+        [Embed(source="prod/xmls/stPatricksGround.xml", mimeType="application/octet-stream")]
+        private static const stPatricksGroundCXML:Class;
+        [Embed(source="prod/xmls/stPatricksObject.xml", mimeType="application/octet-stream")]
+        private static const stPatricksObjectCXML:Class;
+        [Embed(source="prod/xmls/buffedBunnyObject.xml", mimeType="application/octet-stream")]
+        private static const buffedBunnyObjectCXML:Class;
+        [Embed(source="prod/xmls/theMachineGround.xml", mimeType="application/octet-stream")]
+        private static const theMachineGroundCXML:Class;
+        [Embed(source="prod/xmls/theMachineObjects.xml", mimeType="application/octet-stream")]
+        private static const theMachineObjectsCXML:Class;
+        [Embed(source="prod/xmls/hanaminexusGround.xml", mimeType="application/octet-stream")]
+        private static const hanaminexusGroundCXML:Class;
+        [Embed(source="prod/xmls/hanaminexusObject.xml", mimeType="application/octet-stream")]
+        private static const hanaminexusObjectCXML:Class;
+        [Embed(source="prod/xmls/mountainTempleGround.xml", mimeType="application/octet-stream")]
+        private static const mountainTempleGroundCXML:Class;
+        [Embed(source="prod/xmls/mountainTempleObject.xml", mimeType="application/octet-stream")]
+        private static const mountainTempleObjectCXML:Class;
+        [Embed(source="prod/xmls/oryxHordeGround.xml", mimeType="application/octet-stream")]
+        private static const oryxHordeGroundCXML:Class;
+        [Embed(source="prod/xmls/oryxHordeObjects.xml", mimeType="application/octet-stream")]
+        private static const oryxHordeObjectsCXML:Class;
+        [Embed(source="prod/xmls/battleOryxGround.xml", mimeType="application/octet-stream")]
+        private static const battleOryxGroundCXML:Class;
+        [Embed(source="prod/xmls/battleOryxObjects.xml", mimeType="application/octet-stream")]
+        private static const battleOryxObjectsCXML:Class;
+        [Embed(source="prod/xmls/santaWorkshopGround.xml", mimeType="application/octet-stream")]
+        private static const santaWorkshopGroundCXML:Class;
+        [Embed(source="prod/xmls/santaWorkshopObjects.xml", mimeType="application/octet-stream")]
+        private static const santaWorkshopObjectsCXML:Class;
+        [Embed(source="prod/xmls/summerNexusGround.xml", mimeType="application/octet-stream")]
+        private static const summerNexusGroundCXML:Class;
+        [Embed(source="prod/xmls/summerNexusObject.xml", mimeType="application/octet-stream")]
+        private static const summerNexusObjectCXML:Class;
+        [Embed(source="prod/xmls/autumnNexusGround.xml", mimeType="application/octet-stream")]
+        private static const autumnNexusGroundCXML:Class;
+        [Embed(source="prod/xmls/autumnNexusObjects.xml", mimeType="application/octet-stream")]
+        private static const autumnNexusObjectsCXML:Class;
+        [Embed(source="prod/xmls/xmasNexusGround.xml", mimeType="application/octet-stream")]
+        private static const xmasNexusGroundCXML:Class;
+        [Embed(source="prod/xmls/xmasNexusObjects.xml", mimeType="application/octet-stream")]
+        private static const xmasNexusObjectsCXML:Class;
+        [Embed(source="prod/xmls/epicHiveObjects.xml", mimeType="application/octet-stream")]
+        private static const epicHiveObjectsCXML:Class;
+        [Embed(source="prod/xmls/epicHiveGround.xml", mimeType="application/octet-stream")]
+        private static const epicHiveGroundCXML:Class;
+        [Embed(source="prod/xmls/lostHallsGround.xml", mimeType="application/octet-stream")]
+        private static const lostHallsGroundCXML:Class;
+        [Embed(source="prod/xmls/lostHallsObjects.xml", mimeType="application/octet-stream")]
+        private static const lostHallsObjectsCXML:Class;
+        [Embed(source="prod/xmls/magicWoodsGround.xml", mimeType="application/octet-stream")]
+        private static const magicWoodsGroundCXML:Class;
+        [Embed(source="prod/xmls/magicWoodsObjects.xml", mimeType="application/octet-stream")]
+        private static const magicWoodsObjectsCXML:Class;
+        [Embed(source="prod/xmls/cnidarianReefGround.xml", mimeType="application/octet-stream")]
+        private static const cnidarianReefGroundCXML:Class;
+        [Embed(source="prod/xmls/cnidarianReefObjects.xml", mimeType="application/octet-stream")]
+        private static const cnidarianReefObjectsCXML:Class;
+        [Embed(source="prod/xmls/secludedThicketGround.xml", mimeType="application/octet-stream")]
+        private static const secludedThicketGroundCXML:Class;
+        [Embed(source="prod/xmls/secludedThicketObjects.xml", mimeType="application/octet-stream")]
+        private static const secludedThicketObjectsCXML:Class;
+        [Embed(source="prod/xmls/eventChestObjects.xml", mimeType="application/octet-stream")]
+        private static const eventChestObjectsCXML:Class;
+        [Embed(source="prod/xmls/cursedLibraryGround.xml", mimeType="application/octet-stream")]
+        private static const cursedLibraryGroundCXML:Class;
+        [Embed(source="prod/xmls/cursedLibraryObjects.xml", mimeType="application/octet-stream")]
+        private static const cursedLibraryObjectsCXML:Class;
+        [Embed(source="prod/xmls/lairOfDraconisGround.xml", mimeType="application/octet-stream")]
+        private static const lairOfDraconisGroundCXML:Class;
+        [Embed(source="prod/xmls/lairOfDraconisObjects.xml", mimeType="application/octet-stream")]
+        private static const lairOfDraconisObjectsCXML:Class;
+        [Embed(source="prod/xmls/lairOfShaitanObjects.xml", mimeType="application/octet-stream")]
+        private static const lairOfShaitanObjectsCXML:Class;
+        [Embed(source="prod/xmls/alienInvasionGround.xml", mimeType="application/octet-stream")]
+        private static const alienInvasionGroundCXML:Class;
+        [Embed(source="prod/xmls/alienInvasionObjects.xml", mimeType="application/octet-stream")]
+        private static const alienInvasionObjectsCXML:Class;
+        [Embed(source="prod/xmls/crystalCaveGround.xml", mimeType="application/octet-stream")]
+        private static const crystalCaveGroundCXML:Class;
+        [Embed(source="prod/xmls/crystalCaveObjects.xml", mimeType="application/octet-stream")]
+        private static const crystalCaveObjectsCXML:Class;
+        [Embed(source="prod/xmls/fungalCavernGround.xml", mimeType="application/octet-stream")]
+        private static const fungalCavernGroundCXML:Class;
+        [Embed(source="prod/xmls/fungalCavernObjects.xml", mimeType="application/octet-stream")]
+        private static const fungalCavernObjectsCXML:Class;
+        [Embed(source="prod/xmls/innerWorkingsGround.xml", mimeType="application/octet-stream")]
+        private static const innerWorkingsGroundCXML:Class;
+        [Embed(source="prod/xmls/innerWorkingsObjects.xml", mimeType="application/octet-stream")]
+        private static const innerWorkingsObjectsCXML:Class;
+        [Embed(source="prod/xmls/oryxSanctuaryGround.xml", mimeType="application/octet-stream")]
+        private static const oryxSanctuaryGroundCXML:Class;
+        [Embed(source="prod/xmls/oryxSanctuaryObjects.xml", mimeType="application/octet-stream")]
+        private static const oryxSanctuaryObjectsCXML:Class;
+        [Embed(source="prod/xmls/oryxSanctuaryUObjects.xml", mimeType="application/octet-stream")]
+        private static const oryxSanctuaryUObjectsCXML:Class;
+        [Embed(source="prod/xmls/archbishopGround.xml", mimeType="application/octet-stream")]
+        private static const archbishopGroundCXML:Class;
+        [Embed(source="prod/xmls/archbishopObjects.xml", mimeType="application/octet-stream")]
+        private static const archbishopObjectsCXML:Class;
+        [Embed(source="prod/xmls/archbishopObjectsMen.xml", mimeType="application/octet-stream")]
+        private static const archbishopObjectsMenCXML:Class;
+        [Embed(source="prod/xmls/ancientRuinsGround.xml", mimeType="application/octet-stream")]
+        private static const ancientRuinsGroundCXML:Class;
+        [Embed(source="prod/xmls/ancientRuinsObjects.xml", mimeType="application/octet-stream")]
+        private static const ancientRuinsObjectsCXML:Class;
 
         // custom
         private static const customGrounds:Class = CustomGrounds;
@@ -296,9 +427,11 @@ public class EmbeddedData
             new SkinsCXML()
         ];
 
-        public static const RegionsCXML:Class = EmbeddedData_RegionsCXML;
+        [Embed(source="prod/xmls/Regions.xml", mimeType="application/octet-stream")]
+        public static const RegionsCXML:Class;
         public static const regionFiles:Array = [new RegionsCXML()];
-        private static const TutorialScriptCXML:Class = EmbeddedData_TutorialScriptCXML;
+        [Embed(source="prod/xmls/TutorialScript.xml", mimeType="application/octet-stream")]
+        private static const TutorialScriptCXML:Class;
         public static const tutorialXML:XML = XML(new TutorialScriptCXML());
 
         public static function appendXML(_arg_1:Array, _arg_2:String, _arg_3:String):XML
@@ -322,4 +455,3 @@ public class EmbeddedData
 
     }
 }//package kabam.rotmg.assets
-
