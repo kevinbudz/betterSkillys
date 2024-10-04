@@ -88,6 +88,8 @@ has also informed me of sources that had behaviors I wasn't aware of.*
 Cultist, and many others.*
 - **Gummy** <br />
 *Let me use his Lair of Draconis map. :)*
+- **nekoT** <br />
+*Added 'betterAssets' to the client. He also did something else but both me and him forgot what.*
 - **Orb, GlassBBQ.** <br />
 *Were accredited on TK-Reborn, I don't know what they did exactly. :P*
 - . . . .
