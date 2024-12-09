@@ -30,7 +30,7 @@ package kabam.rotmg.ui.view
       
       override public function destroy() : void
       {
-         this.updateHUD.add(this.onUpdateHUD);
+         this.updateHUD.remove(this.onUpdateHUD);
       }
       
       private function onUpdateHUD(player:Player) : void
