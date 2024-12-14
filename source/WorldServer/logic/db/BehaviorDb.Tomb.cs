@@ -612,16 +612,13 @@ namespace WorldServer.logic
         .Init("Inactive Sarcophagus",
             new State(
                 new State(
-                    new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable),
                     new EntityNotExistsTransition("Beam Priestess", 14, "checkPriest"),
                     new EntityNotExistsTransition("Beam Priest", 1000, "checkPriestess")
                     ),
                 new State("checkPriest",
-                    new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable),
                     new EntityNotExistsTransition("Beam Priest", 1000, "activate")
                     ),
                 new State("checkPriestess",
-                    new ConditionEffectBehavior(ConditionEffectIndex.Invulnerable),
                     new EntityNotExistsTransition("Beam Priestess", 1000, "activate")
                     ),
                 new State("activate",
@@ -774,14 +771,12 @@ namespace WorldServer.logic
             )
 
         .Init("Beam Priest",
-            new State(
                 new State("weakning",
-                    new Orbit(.4, 6, target: "Active Sarcophagus", radiusVariance: 0.5),
+                    new Orbit(.4, 10, target: "Inactive Sarcophagus", radiusVariance: 0.5),
                     new Shoot(50, 3, projectileIndex: 1, coolDown: 3500),
                     new Shoot(50, 6, projectileIndex: 0, coolDown: 7210)
 
                     )
-                )
             )
         .Init("Tomb Thunder Turret",
             new State(
@@ -955,16 +950,12 @@ namespace WorldServer.logic
             )
 
         .Init("Beam Priestess",
-            new State(
                 new State("weakning",
-                    new Prioritize(
-                        new Orbit(.6, 9, target: "Active Sarcophagus", radiusVariance: 0.5)
-                        ),
+                        new Orbit(.6, 9, target: "Inactive Sarcophagus", radiusVariance: 0.5),
                     new Shoot(50, 6, projectileIndex: 1, coolDown: 3500),
                     new Shoot(50, 2, projectileIndex: 0, coolDown: 7210)
 
                     )
-                )
             )
         .Init("Tomb Boss Anchor",
             new State(
